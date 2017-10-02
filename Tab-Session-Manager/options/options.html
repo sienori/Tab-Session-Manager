@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+
+<body>
+    <hr>
+    <label>
+        <input type="checkbox" id="ifOpenNewWindow" checked=true>
+        <span id=ifOpenNewWindowLabel>新しいウィンドウでセッションを開く</span>
+    </label>
+    <hr>
+    <label>
+        <input type="checkbox" id="ifAutoSave" checked=true>
+        <span id=ifAutoSaveLabel>定期的にセッションを保存する</span>
+    </label>
+    <label><span id="autoSaveIntervalLabel">保存間隔(分):</span>
+    <input id="autoSaveInterval" type="number" value="30" min="1">
+    </label>
+
+    <label><span id="autoSaveLimitLabel">自動保存の上限保存数:</span>
+        <input id="autoSaveLimit" type="number" value="50" min="1">
+    </label>
+    <hr>
+    <label><span id="dateFormatLabel">日付のフォーマット(例YYYY.MM.DD HH:mm:ss) : </span>
+        <input id="dateFormat" type="text" value="YYYY.MM.DD HH:mm:ss">
+    </label>
+    
+    <input id="save" type="button" value="save">
+
+    <script type="text/javascript" src="options.js"></script>
+</body>
+
+</html>

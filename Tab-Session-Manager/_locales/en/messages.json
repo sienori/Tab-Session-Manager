@@ -1,0 +1,65 @@
+{
+    "extName": {
+        "message": "Tab Session Manager"
+    },
+    "extDescription": {
+        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    },
+    "ifOpenNewWindowLabel": {
+        "message": "Open session in new window"
+    },
+    "ifAutoSaveLabel": {
+        "message": "Periodically save the status of open tabs"
+    },
+    "autoSaveIntervalLabel": {
+        "message": "interval(minutes) : "
+    },
+    "autoSaveLimitLabel": {
+        "message": "Maximum limit of auto save : "
+    },
+    "dateFormatLabel": {
+        "message": "Date format(Ex YYYY.MM.DD HH:mm:ss) : "
+    },
+    "save": {
+        "message": "save"
+    },
+    "initialNameValue": {
+        "message": "Save current Session"
+    },
+    "displayAllLabel": {
+        "message": "all"
+    },
+    "displayUserLabel": {
+        "message": "user saved"
+    },
+    "displayAutoLabel": {
+        "message": "auto saved"
+    },
+    "newestLabel":{
+        "message": "newest"
+    },
+    "oldestLabel":{
+        "message": "oldest"
+    },
+    "open":{
+        "message": "open"
+    },
+    "remove":{
+        "message": "remove"
+    },
+    "windowLabel":{
+        "message": "window"
+    },
+    "windowsLabel":{
+        "message": "windows"
+    },
+    "tabLabel":{
+        "message": "tab"
+    },
+    "tabsLabel":{
+        "message": "tabs"
+    },
+    "noSessionLabel":{
+        "message": "There is no session"
+    }
+}

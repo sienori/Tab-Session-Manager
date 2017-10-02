@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="tittle">Tab Session Manager</div>
+        <div id="setting"></div>
+    </div>
+    <div id="main">
+        <label><input type="radio" id="displayAll" name="display" checked="true"><span id="displayAllLabel">all</span></label>
+        <label><input type="radio" id="displayUser" name="display"><span id="displayUserLabel">user saved</span></label>
+        <label><input type="radio" id="displayAuto" name="display"><span id="displayAutoLabel">auto saved</span></label>
+        <select id="sort">
+            <option id="newestLabel" value="newest">newest</option>
+            <option id="oldestLabel" value="oldest">oldest</option>
+        </select>
+        <div id="sessionsArea">
+        </div>
+        <div id="saveArea">
+            <span id=saveLabel></span>
+            <input id="saveName" type="text" placeholder="現在のセッションを保存">
+            <span class="save" id="save">save</span>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="moment.js"></script>
+</body>
+
+</html>

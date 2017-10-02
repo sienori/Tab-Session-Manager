@@ -1,0 +1,45 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    
+    "name": "__MSG_extName__",
+    "description": "__MSG_extDescription__",
+    "default_locale": "en",
+    
+    "applications": {
+        "gecko": {
+            "id": "Tab-Session-Manager@sienori"
+        }
+    },
+    
+    "permissions": ["storage", "unlimitedStorage","tabs","cookies"],
+    
+    "options_ui": {
+        "page": "options/options.html"
+    },
+
+    "icons": {
+        "512": "icons/512.png",
+        "256": "icons/256.png",
+        "128": "icons/128.png",
+        "64": "icons/64.png",
+        "32": "icons/32.png",
+        "16": "icons/16.png"
+    },
+    
+    "background": {
+        "scripts": ["background.js"]
+    },
+    
+    "browser_action": {
+        "default_icon": {
+            "512": "icons/512.png",
+            "256": "icons/256.png",
+            "128": "icons/128.png",
+            "64": "icons/64.png",
+            "32": "icons/32.png",
+            "16": "icons/16.png"
+        },
+        "default_popup": "popup/popup.html"
+    }
+}

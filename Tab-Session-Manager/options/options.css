@@ -1,0 +1,42 @@
+body{
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
+
+    font-size: 13px;
+    background-color: #f9f9fa;
+}
+
+#autoSaveInterval, #autoSaveLimit{
+    width: 50px;
+}
+
+input[type="number"] {
+    -moz-appearance:textfield;
+}
+
+#save{
+    width: auto;
+    height: 30px;
+    margin-left: auto;
+    color: #111;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    background-color: #fbfbfb;
+}
+#save:hover{
+    background: #f5f5f5;
+}
+
+label{
+    padding: 3px 0px;
+}
+
+hr{
+    
+    width: 100%;
+    background-color: #d7d7db;
+    height: 1px;
+    border: none;
+}
+::-moz-selection {
+    background: #ebebeb;
+}

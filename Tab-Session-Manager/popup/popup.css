@@ -1,0 +1,252 @@
+body{
+    width: 348px;
+    height: 487px;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#main {
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
+    text-align: left;
+    font-size: 13px;
+    height: 100%;
+    width: auto;
+    margin: 0px 10px 10px 10px;
+    overflow: hidden;
+    cursor: default;
+    -moz-user-select: none;
+}
+
+#header{
+    background-color: #eee;
+    position: relative;
+    padding: 10px 20px 0px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 30px;
+    -moz-user-select: none;
+}
+#tittle{
+    size:9px;
+    font-weight: 100;
+    color: #666;
+    float: left;
+    cursor: default;
+}
+
+#setting{
+    height: 20px;
+    width: 20px;
+    background-image: url("/icons/setting.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    float:right;
+    cursor: pointer;
+}
+
+#sort{
+    float:right;
+}
+
+#sessionsArea{
+    padding: 5px 2px;
+    margin-top: 5px;
+    height: 350px;
+    overflow-y: auto;
+    
+}
+
+.session{
+    padding:5px;
+    padding-bottom: 0px;
+    margin: 10px 0px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    transition: all 300ms 0s ease;
+}
+
+.renameArea {
+    display: none;
+    min-height: 30px;
+}
+
+.renameInput{
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
+    font-size: 13px;
+    width: 200px;
+    padding: 0px 1px;
+    margin: 0px;
+    position: relative;
+    top:-3px;
+    left:-2px;
+    height: 20px;
+    border: #aaa solid 1px;
+}
+
+.renameInput:focus {
+    border: #36b2b2 solid 1px;
+}
+
+.renameSend{
+    position: relative;
+    top:-1px;
+    left:0px;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    background-image: url("/icons/check.png");
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+    border: none;
+    border: #aaa solid 1px;
+    cursor: pointer;
+    transition: all 100ms 0s ease;
+}
+
+.renameSend:hover{
+    border: rgb(54, 178, 178) solid 1px;
+    background-image: url("/icons/check2.png");
+    transition: all 100ms 0s ease;
+}
+
+.renameButton{
+    height: 20px;
+    width: 20px;
+    background-image: url("/icons/rename.png");
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+    margin: 0px;
+    float:left;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.renameButton:hover{
+    background-image: url("/icons/rename2.png");
+}
+
+.sessionName{
+    min-height: 30px;
+    word-break: break-all;
+    vertical-align:middle;
+}
+
+.detail{
+    color:#36b0b0;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    -moz-user-select: none;
+}
+
+.detail:hover{
+    text-decoration: underline;
+}
+
+.detailItems{
+    list-style-type: none;
+    text-decoration: none;
+    color:#333;
+    font-size:12px;
+    cursor: default;
+    margin-right: 5px;
+    width: 100%;
+    word-break: break-all;
+}
+.windows{
+    margin-left:0px;
+}
+.tabs{
+    margin-left: 20px;
+    list-style: square;
+}
+
+.open, .remove{
+    color:#36b2b2;
+    text-decoration: none;
+    cursor: pointer;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    -moz-user-select: none;
+}
+.open:hover, .remove:hover{
+    text-decoration: underline;
+}
+
+.sessionDate{
+    color:#aaa;
+    /*float: left;*/
+    width: 200px;
+    overflow:hidden;
+    word-break: break-all;
+    display: inline-block;
+    padding-bottom: 0px;
+    margin-left: 0px;
+    height: auto;
+    position:relative;
+    left: -5px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #aaa;
+    width: 100%;
+    margin: 0px 0px 20px;
+}
+
+#saveArea{
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;/*いらん*/
+}
+
+#saveName {
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
+    font-size: 13px;
+    width: 250px;/*250*/
+    padding: 0px 3px;
+    margin: 0px;
+    position: relative;
+    height: 28px;
+    border: #aaa solid 1px;
+    float: left;
+    overflow: hidden;
+    color: #333;
+}
+
+#saveName:focus {
+    border: #36b2b2 solid 1px;
+}
+
+::-moz-selection {
+    background: #ebebeb;
+}
+.save{
+    position: relative;
+    top:0px;
+    left:0px;
+    height: 18px;
+    width: auto;
+    display: inline-block;
+    padding:5px 5px;
+    background-color: #fff;
+    background-position: center;
+    border: none;
+    border: #aaa solid 1px;
+    cursor: pointer;
+    float: right;
+    transition: all 100ms 0s ease;
+}
+.save:hover{
+    border: #36b2b2 solid 1px;
+    color: #36b2b2;
+    transition: all 100ms 0s ease;
+}
