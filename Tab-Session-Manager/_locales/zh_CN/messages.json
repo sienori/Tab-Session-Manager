@@ -1,0 +1,65 @@
+{
+    "extName": {
+        "message": "Tab Session Manager"
+    },
+    "extDescription": {
+        "message": "保存和还原窗口及标签页的状态。支持自动保存。"
+    },
+    "ifOpenNewWindowLabel": {
+        "message": "新建窗口打开会话"
+    },
+    "ifAutoSaveLabel": {
+        "message": "定期保存已打开标签页的状态"
+    },
+    "autoSaveIntervalLabel": {
+        "message": "间隔(分钟)："
+    },
+    "autoSaveLimitLabel": {
+        "message": "自动保存上限："
+    },
+    "dateFormatLabel": {
+        "message": "日期格式(例如 YYYY.MM.DD HH:mm:ss)："
+    },
+    "save": {
+        "message": "保存"
+    },
+    "initialNameValue": {
+        "message": "保存当前会话"
+    },
+    "displayAllLabel": {
+        "message": "全部"
+    },
+    "displayUserLabel": {
+        "message": "用户保存"
+    },
+    "displayAutoLabel": {
+        "message": "自动保存"
+    },
+    "newestLabel":{
+        "message": "最新"
+    },
+    "oldestLabel":{
+        "message": "最旧"
+    },
+    "open":{
+        "message": "打开"
+    },
+    "remove":{
+        "message": "移除"
+    },
+    "windowLabel":{
+        "message": "窗口"
+    },
+    "windowsLabel":{
+        "message": "窗口"
+    },
+    "tabLabel":{
+        "message": "标签页"
+    },
+    "tabsLabel":{
+        "message": "标签页"
+    },
+    "noSessionLabel":{
+        "message": "没有会话"
+    }
+}
