@@ -1,0 +1,65 @@
+{
+    "extName": {
+        "message": "Tab Session Manager"
+    },
+    "extDescription": {
+        "message": "儲存與還原視窗跟分頁的瀏覽狀態，也支援自動儲存功能。"
+    },
+    "ifOpenNewWindowLabel": {
+        "message": "於新視窗中開啟工作階段"
+    },
+    "ifAutoSaveLabel": {
+        "message": "定期將開啟的分頁瀏覽狀態自動儲存"
+    },
+    "autoSaveIntervalLabel": {
+        "message": "儲存間隔(分鐘) : "
+    },
+    "autoSaveLimitLabel": {
+        "message": "自動儲存的儲存數上限 : "
+    },
+    "dateFormatLabel": {
+        "message": "日期格式(例如 YYYY.MM.DD HH:mm:ss) : "
+    },
+    "save": {
+        "message": "儲存"
+    },
+    "initialNameValue": {
+        "message": "儲存目前的工作階段"
+    },
+    "displayAllLabel": {
+        "message": "全部"
+    },
+    "displayUserLabel": {
+        "message": "手動儲存的"
+    },
+    "displayAutoLabel": {
+        "message": "自動儲存的"
+    },
+    "newestLabel":{
+        "message": "依最新排序"
+    },
+    "oldestLabel":{
+        "message": "依最舊排序"
+    },
+    "open":{
+        "message": "開啟"
+    },
+    "remove":{
+        "message": "移除"
+    },
+    "windowLabel":{
+        "message": " 個視窗"
+    },
+    "windowsLabel":{
+        "message": "視窗"
+    },
+    "tabLabel":{
+        "message": "分頁"
+    },
+    "tabsLabel":{
+        "message": " 個分頁"
+    },
+    "noSessionLabel":{
+        "message": "沒有已儲存的工作階段"
+    }
+}
