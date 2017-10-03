@@ -3,13 +3,13 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "ウィンドウやタブの状態を保存し，復元を行います。自動保存にも対応しています。"
+        "message": "開いているタブやウィンドウを保存し，復元することができます。自動保存にも対応しています。"
     },
     "ifOpenNewWindowLabel": {
         "message": "セッションを新しいウィンドウで開く"
     },
     "ifAutoSaveLabel": {
-        "message": "定期的に開いているタブの状態を自動保存する"
+        "message": "自動保存を有効にする"
     },
     "autoSaveIntervalLabel": {
         "message": "保存間隔(分) : "
