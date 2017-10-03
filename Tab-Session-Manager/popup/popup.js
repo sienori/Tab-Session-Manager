@@ -87,17 +87,6 @@ function sessionsHTML(i) {
         '</div>';
 }
 
-function getDateText(date){
-    date = date.getFullYear() + "." +
-    parseInt(date.getMonth() + 1) + "." +
-    ('00' + date.getDate()).slice(-2) + " " +
-    ('00' + date.getHours()).slice(-2) + ":" +
-    ('00' + date.getMinutes()).slice(-2) + "." +
-    ('00' + date.getSeconds()).slice(-2);
-    return date;
-};
-
-
 window.document.getElementById("sort").addEventListener("change", showSessions);
 function showSessions() {
     sessionsArea = window.document.getElementById("sessionsArea");
@@ -144,9 +133,15 @@ function showDetail(e) {
             i++;
             detail.insertAdjacentHTML('beforeend', '<li class="windows">'+ windowLabel + i + '</li>')
             for (let tab in sessions[sessionNo].windows[win]) {
+                
                 tabTitle = sessions[sessionNo].windows[win][tab].title;
                 tabUrl = sessions[sessionNo].windows[win][tab].url;
-                detail.insertAdjacentHTML('beforeend', '<li class="tabs">' + tabTitle + '</li>');
+                tabFavIconUrl=sessions[sessionNo].windows[win][tab].favIconUrl;
+                if(tabFavIconUrl==undefined) tabFavIconUrl="/icons/favicon.png";
+                
+                detail.insertAdjacentHTML('beforeend', '<a href='+tabUrl+'><div class="fav"></div><li class="tabs">' + tabTitle + '</li></a>');
+                arr=detail.getElementsByClassName("fav");
+                arr[arr.length-1].style.backgroundImage="url("+tabFavIconUrl+")";
             }
         }
     } else {

@@ -1,3 +1,6 @@
+html{
+    overflow: hidden;
+}
 body{
     width: 348px;
     height: 487px;
@@ -163,8 +166,30 @@ body{
     margin-left:0px;
 }
 .tabs{
-    margin-left: 20px;
-    list-style: square;
+    min-height: 20px;
+    margin-left: 30px;
+    list-style: none;/*square*/
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: #444;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.fav{
+    height: 20px;
+    width: 20px;
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
 }
 
 .open, .remove{
