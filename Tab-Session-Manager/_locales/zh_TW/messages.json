@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "儲存與還原視窗跟分頁的瀏覽狀態，也支援自動儲存功能。"
+        "message": "儲存與還原視窗跟分頁的瀏覽狀態。也支援自動儲存功能。"
     },
     "ifOpenNewWindowLabel": {
         "message": "於新視窗中開啟工作階段"
@@ -48,7 +48,7 @@
         "message": "移除"
     },
     "windowLabel":{
-        "message": " 個視窗"
+        "message": "視窗"
     },
     "windowsLabel":{
         "message": "視窗"
@@ -57,7 +57,7 @@
         "message": "分頁"
     },
     "tabsLabel":{
-        "message": " 個分頁"
+        "message": "分頁"
     },
     "noSessionLabel":{
         "message": "沒有已儲存的工作階段"
