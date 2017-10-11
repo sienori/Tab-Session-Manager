@@ -17,6 +17,12 @@
     "autoSaveLimitLabel": {
         "message": "自動保存の保存数上限 : "
     },
+    "ifAutoSaveWhenCloseLabel": {
+        "message": "ウィンドウを閉じたときにセッションを保存する"
+    },
+    "autoSaveWhenCloseLimitLabel": {
+        "message": "自動保存の保存数上限 : "
+    },
     "dateFormatLabel": {
         "message": "日付のフォーマット(例YYYY.MM.DD HH:mm:ss) : "
     },

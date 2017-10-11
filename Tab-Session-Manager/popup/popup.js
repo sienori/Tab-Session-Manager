@@ -108,7 +108,9 @@ function showSessions() {
             session.getElementsByClassName("sessionDate")[0].innerText = date.format(settings.dateFormat);
 
             //tag
-            session.classList.add(sessions[i].tag);
+             for(let t of sessions[i].tag.split(" ")){
+                session.classList.add(t);
+            }
 
             //detail
             detail = session.getElementsByClassName("detail")[0]; //.parentElement;
@@ -133,13 +135,21 @@ function showDetail(e) {
             i++;
             detail.insertAdjacentHTML('beforeend', '<li class="windows">'+ windowLabel + i + '</li>')
             for (let tab in sessions[sessionNo].windows[win]) {
-                
+                //index順になってない
                 tabTitle = sessions[sessionNo].windows[win][tab].title;
                 tabUrl = sessions[sessionNo].windows[win][tab].url;
                 tabFavIconUrl=sessions[sessionNo].windows[win][tab].favIconUrl;
                 if(tabFavIconUrl==undefined) tabFavIconUrl="/icons/favicon.png";
                 
-                detail.insertAdjacentHTML('beforeend', '<a href='+tabUrl+'><div class="fav"></div><li class="tabs">' + tabTitle + '</li></a>');
+                detail.insertAdjacentHTML('beforeend', '<div class="fav"></div><div class="tabs"><a></a></div>');
+                
+                a=detail.getElementsByTagName("a");
+                a[a.length-1].href=tabUrl;
+                a[a.length-1].innerText=tabTitle;
+                
+                tabs=detail.getElementsByClassName("tabs");
+                //tabs[tabs.length-1].insertAdjacentText=("afterbegin",tabTitle);
+                
                 arr=detail.getElementsByClassName("fav");
                 arr[arr.length-1].style.backgroundImage="url("+tabFavIconUrl+")";
             }

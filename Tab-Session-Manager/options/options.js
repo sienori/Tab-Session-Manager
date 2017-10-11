@@ -1,4 +1,4 @@
-labels = ["ifAutoSaveLabel", "autoSaveIntervalLabel", "autoSaveLimitLabel", "dateFormatLabel", "ifOpenNewWindowLabel"];
+labels = ["ifAutoSaveLabel", "ifAutoSaveWhenCloseLabel", "autoSaveIntervalLabel", "autoSaveLimitLabel", "autoSaveWhenCloseLimitLabel", "dateFormatLabel", "ifOpenNewWindowLabel"];
 setLabel(labels);
 function setLabel(labels) {
     for (let l of labels) {
@@ -7,14 +7,13 @@ function setLabel(labels) {
 }
 window.document.getElementById("save").value = browser.i18n.getMessage("save");
 
+var ifOpenNewWindow = document.getElementById("ifOpenNewWindow");
 var ifAutoSave = document.getElementById("ifAutoSave");
 var autoSaveInterval = document.getElementById("autoSaveInterval");
 var autoSaveLimit = document.getElementById("autoSaveLimit");
+var ifAutoSaveWhenClose = document.getElementById("ifAutoSaveWhenClose");
+var autoSaveWhenCloseLimit = document.getElementById("autoSaveWhenCloseLimit");
 var dateFormat = document.getElementById("dateFormat");
-var ifOpenNewWindow = document.getElementById("ifOpenNewWindow");
-
-
-
 
 settings = {};
 //設定を読み込んで反映
@@ -23,12 +22,16 @@ browser.storage.local.get(["settings"], function (value) {
         settings.ifAutoSave = true;
         settings.autoSaveInterval = 15;
         settings.autoSaveLimit = 50;
+        settings.ifAutoSaveWhenClose = true;
+        settings.autoSaveWhenCloseLimit = 10;
         settings.dateFormat = "YYYY.MM.DD HH:mm:ss";
         settings.ifOpenNewWindow=true;
     } else {
         settings.ifAutoSave = value.settings.ifAutoSave;
         settings.autoSaveInterval = value.settings.autoSaveInterval;
         settings.autoSaveLimit = value.settings.autoSaveLimit;
+        settings.ifAutoSaveWhenClose = value.settings.ifAutoSaveWhenClose;
+        settings.autoSaveWhenCloseLimit = value.settings.autoSaveWhenCloseLimit;
         settings.dateFormat = value.settings.dateFormat;
         settings.ifOpenNewWindow=value.settings.ifOpenNewWindow;
     }
@@ -36,6 +39,8 @@ browser.storage.local.get(["settings"], function (value) {
     ifAutoSave.checked = settings.ifAutoSave;
     autoSaveInterval.value = settings.autoSaveInterval;
     autoSaveLimit.value = settings.autoSaveLimit;
+    ifAutoSaveWhenClose.checked = settings.ifAutoSaveWhenClose;
+    autoSaveWhenCloseLimit.value = settings.autoSaveWhenCloseLimit;
     dateFormat.value = settings.dateFormat;
     ifOpenNewWindow.checked=settings.ifOpenNewWindow;
 });
@@ -44,6 +49,8 @@ function save() {
     settings.ifAutoSave = ifAutoSave.checked;
     settings.autoSaveInterval = autoSaveInterval.value;
     settings.autoSaveLimit = autoSaveLimit.value;
+    settings.ifAutoSaveWhenClose = ifAutoSaveWhenClose.checked;
+    settings.autoSaveWhenCloseLimit = autoSaveWhenCloseLimit.value;
     settings.dateFormat = dateFormat.value;
     settings.ifOpenNewWindow=ifOpenNewWindow.checked;
     browser.storage.local.set({

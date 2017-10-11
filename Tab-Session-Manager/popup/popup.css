@@ -1,3 +1,4 @@
+/*TODO:フォント*/
 html{
     overflow: hidden;
 }
@@ -68,6 +69,10 @@ body{
     border-radius: 3px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
     transition: all 300ms 0s ease;
+}
+
+.temp{
+    display: none !important;
 }
 
 .renameArea {
@@ -175,7 +180,7 @@ body{
 
 a{
     text-decoration: none;
-    color: #444;
+    color: #333;
 }
 a:hover{
     text-decoration: underline;
