@@ -5,8 +5,11 @@ body{
     background-color: #f9f9fa;
 }
 
-#autoSaveInterval, #autoSaveLimit{
+#autoSaveInterval, #autoSaveLimit, #autoSaveWhenCloseLimit{
     width: 50px;
+}
+#dateFormat{
+    width: 220px;
 }
 
 input[type="number"] {

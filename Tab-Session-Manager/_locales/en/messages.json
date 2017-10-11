@@ -9,55 +9,64 @@
         "message": "Open session in new window"
     },
     "ifAutoSaveLabel": {
-        "message": "Periodically save the status of open tabs"
+        "message": "Save the session regularly."
     },
     "autoSaveIntervalLabel": {
         "message": "interval(minutes) : "
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum limit of auto save : "
+        "message": "Maximum number of saved in this way : "
+    },
+    "ifAutoSaveWhenCloseLabel": {
+        "message": "Save the session when window was closed"
+    },
+    "autoSaveWhenCloseLimitLabel": {
+        "message": "Maximum number of saved in this way : "
     },
     "dateFormatLabel": {
         "message": "Date format(Ex YYYY.MM.DD HH:mm:ss) : "
     },
+    "ifSupportTstLabel": {
+        "message": "Supports Tree Style Tab(Firefox57++) : "
+    },
     "save": {
-        "message": "save"
+        "message": "Save"
     },
     "initialNameValue": {
         "message": "Save current session"
     },
     "displayAllLabel": {
-        "message": "all"
+        "message": "All"
     },
     "displayUserLabel": {
-        "message": "user saved"
+        "message": "User Saved"
     },
     "displayAutoLabel": {
-        "message": "auto saved"
+        "message": "Auto Saved"
     },
     "newestLabel":{
-        "message": "newest"
+        "message": "Newest"
     },
     "oldestLabel":{
-        "message": "oldest"
+        "message": "Oldest"
     },
     "open":{
-        "message": "open"
+        "message": "Open"
     },
     "remove":{
-        "message": "remove"
+        "message": "Remove"
     },
     "windowLabel":{
-        "message": "window"
+        "message": "Window"
     },
     "windowsLabel":{
-        "message": "windows"
+        "message": "Windows"
     },
     "tabLabel":{
-        "message": "tab"
+        "message": "Tab"
     },
     "tabsLabel":{
-        "message": "tabs"
+        "message": "Tabs"
     },
     "noSessionLabel":{
         "message": "There is no session"

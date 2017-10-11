@@ -9,22 +9,25 @@
         "message": "セッションを新しいウィンドウで開く"
     },
     "ifAutoSaveLabel": {
-        "message": "自動保存を有効にする"
+        "message": "定期的にセッションを保存する"
     },
     "autoSaveIntervalLabel": {
         "message": "保存間隔(分) : "
     },
     "autoSaveLimitLabel": {
-        "message": "自動保存の保存数上限 : "
+        "message": "この方法で保存されるセッションの上限保存数 : "
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "ウィンドウを閉じたときにセッションを保存する"
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "自動保存の保存数上限 : "
+        "message": "この方法で保存されるセッションの上限保存数 : "
     },
     "dateFormatLabel": {
         "message": "日付のフォーマット(例YYYY.MM.DD HH:mm:ss) : "
+    },
+    "ifSupportTstLabel": {
+        "message": "ツリー型タブに対応(Firefox57++) : "
     },
     "save": {
         "message": "保存"

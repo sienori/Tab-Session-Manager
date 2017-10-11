@@ -9,7 +9,9 @@ body{
     margin: 0px;
     overflow: hidden;
 }
-
+option{
+    font:inherit;
+}
 #main {
     font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
     text-align: left;
@@ -33,7 +35,7 @@ body{
 }
 #tittle{
     size:9px;
-    font-weight: 100;
+    font-weight: 300;
     color: #666;
     float: left;
     cursor: default;
@@ -213,7 +215,7 @@ a:hover{
 .sessionDate{
     color:#aaa;
     /*float: left;*/
-    width: 200px;
+    width: 180px;
     overflow:hidden;
     word-break: break-all;
     display: inline-block;
@@ -235,13 +237,13 @@ hr {
 #saveArea{
     width: 100%;
     margin-top: 10px;
-    height: 30px;/*いらん*/
+    height: 30px;
 }
 
 #saveName {
     font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
     font-size: 13px;
-    width: 250px;/*250*/
+    width: 250px;
     padding: 0px 3px;
     margin: 0px;
     position: relative;

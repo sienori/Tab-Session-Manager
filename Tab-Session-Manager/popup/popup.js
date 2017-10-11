@@ -1,4 +1,4 @@
-//TODO: remove確認
+//TODO: remove確認 絞込みの状態を保持
 
 labels=["displayAllLabel", "displayUserLabel", "displayAutoLabel", "newestLabel", "oldestLabel", "save"];
 setLabel(labels);

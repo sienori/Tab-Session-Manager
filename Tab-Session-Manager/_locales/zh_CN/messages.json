@@ -15,10 +15,19 @@
         "message": "间隔(分钟)："
     },
     "autoSaveLimitLabel": {
-        "message": "自动保存上限："
+        "message": "以这种方式保存的最大数量："
+    },
+    "ifAutoSaveWhenCloseLabel": {
+        "message": "关闭窗口时保存会话"
+    },
+    "autoSaveWhenCloseLimitLabel": {
+        "message": "以这种方式保存的最大数量 : "
     },
     "dateFormatLabel": {
         "message": "日期格式(例如 YYYY.MM.DD HH:mm:ss)："
+    },
+    "ifSupportTstLabel": {
+        "message": "支持树样式选项卡(Firefox57 ++): "
     },
     "save": {
         "message": "保存"

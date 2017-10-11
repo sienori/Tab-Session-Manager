@@ -1,5 +1,6 @@
-labels = ["ifAutoSaveLabel", "ifAutoSaveWhenCloseLabel", "autoSaveIntervalLabel", "autoSaveLimitLabel", "autoSaveWhenCloseLimitLabel", "dateFormatLabel", "ifOpenNewWindowLabel"];
+labels = ["ifAutoSaveLabel", "ifAutoSaveWhenCloseLabel", "autoSaveIntervalLabel", "autoSaveLimitLabel", "autoSaveWhenCloseLimitLabel", "dateFormatLabel", "ifOpenNewWindowLabel", "ifSupportTstLabel"];
 setLabel(labels);
+
 function setLabel(labels) {
     for (let l of labels) {
         window.document.getElementById(l).innerHTML = browser.i18n.getMessage(l);
@@ -14,26 +15,16 @@ var autoSaveLimit = document.getElementById("autoSaveLimit");
 var ifAutoSaveWhenClose = document.getElementById("ifAutoSaveWhenClose");
 var autoSaveWhenCloseLimit = document.getElementById("autoSaveWhenCloseLimit");
 var dateFormat = document.getElementById("dateFormat");
+var ifSupportTst = document.getElementById("ifSupportTst");
 
 settings = {};
 //設定を読み込んで反映
 browser.storage.local.get(["settings"], function (value) {
-    if (value.settings == undefined) {
-        settings.ifAutoSave = true;
-        settings.autoSaveInterval = 15;
-        settings.autoSaveLimit = 50;
-        settings.ifAutoSaveWhenClose = true;
-        settings.autoSaveWhenCloseLimit = 10;
-        settings.dateFormat = "YYYY.MM.DD HH:mm:ss";
-        settings.ifOpenNewWindow=true;
-    } else {
-        settings.ifAutoSave = value.settings.ifAutoSave;
-        settings.autoSaveInterval = value.settings.autoSaveInterval;
-        settings.autoSaveLimit = value.settings.autoSaveLimit;
-        settings.ifAutoSaveWhenClose = value.settings.ifAutoSaveWhenClose;
-        settings.autoSaveWhenCloseLimit = value.settings.autoSaveWhenCloseLimit;
-        settings.dateFormat = value.settings.dateFormat;
-        settings.ifOpenNewWindow=value.settings.ifOpenNewWindow;
+    
+    //例:settings.ifAutoSave = value.settings.ifAutoSave;
+    let settingItems = ["ifAutoSave", "autoSaveInterval", "autoSaveLimit", "ifAutoSaveWhenClose", "autoSaveWhenCloseLimit", "dateFormat", "ifOpenNewWindow", "ifSupportTst"];
+    for (let i = 0; i < settingItems.length; i++) {
+            settings[settingItems[i]] = value.settings[settingItems[i]];
     }
 
     ifAutoSave.checked = settings.ifAutoSave;
@@ -42,7 +33,9 @@ browser.storage.local.get(["settings"], function (value) {
     ifAutoSaveWhenClose.checked = settings.ifAutoSaveWhenClose;
     autoSaveWhenCloseLimit.value = settings.autoSaveWhenCloseLimit;
     dateFormat.value = settings.dateFormat;
-    ifOpenNewWindow.checked=settings.ifOpenNewWindow;
+    ifOpenNewWindow.checked = settings.ifOpenNewWindow;
+    ifSupportTst.checked = settings.ifSupportTst;
+
 });
 
 function save() {
@@ -52,7 +45,8 @@ function save() {
     settings.ifAutoSaveWhenClose = ifAutoSaveWhenClose.checked;
     settings.autoSaveWhenCloseLimit = autoSaveWhenCloseLimit.value;
     settings.dateFormat = dateFormat.value;
-    settings.ifOpenNewWindow=ifOpenNewWindow.checked;
+    settings.ifOpenNewWindow = ifOpenNewWindow.checked;
+    settings.ifSupportTst = ifSupportTst.checked;
     browser.storage.local.set({
         'settings': settings
     }, function () {});

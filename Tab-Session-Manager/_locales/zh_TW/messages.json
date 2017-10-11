@@ -15,10 +15,19 @@
         "message": "儲存間隔(分鐘) : "
     },
     "autoSaveLimitLabel": {
-        "message": "自動儲存的儲存數上限 : "
+        "message": "以這種方式保存的最大數量 : "
+    },
+    "ifAutoSaveWhenCloseLabel": {
+        "message": "關閉窗口時保存會話"
+    },
+    "autoSaveWhenCloseLimitLabel": {
+        "message": "以這種方式保存的最大數量 : "
     },
     "dateFormatLabel": {
         "message": "日期格式(例如 YYYY.MM.DD HH:mm:ss) : "
+    },
+    "ifSupportTstLabel": {
+        "message": "支持樹樣式選項卡(Firefox57 ++) : "
     },
     "save": {
         "message": "儲存"

@@ -5,42 +5,41 @@ var autoSaveTimerArray = new Array();
 
 InitialNameValue = browser.i18n.getMessage("initialNameValue");
 
+//起動時に設定の初期化
+browser.storage.local.get(["settings"], function (value) {
+    initSettings(value);
+    setSettings();
+});
+
+function initSettings(value) {
+        let settings={};
+        let settingItems = ["ifAutoSave", "autoSaveInterval", "autoSaveLimit", "ifAutoSaveWhenClose", "autoSaveWhenCloseLimit", "dateFormat", "ifOpenNewWindow", "ifSupportTst"];
+        let settingValue = [true, 15, 10, true, 10, "YYYY.MM.DD HH:mm:ss", true, true];
+
+        for (let i = 0; i < settingItems.length; i++) {
+            if (value.settings[settingItems[i]] == undefined) {
+                settings[settingItems[i]] = settingValue[i];
+            } else {
+                settings[settingItems[i]] = value.settings[settingItems[i]];
+            }
+        }
+    return settings;
+}
+
 getSettings();
 browser.storage.onChanged.addListener(getSettings);
-
-seveSessionWhenClose=function(){
-    saveSession("auto saved when window closed", "auto winClose temp");
-    removeOverLimit("winClose");
-};
 
 function getSettings() {
     browser.storage.local.get(["sessions", "settings"], function (value) {
         if (value.sessions != undefined) sessions = value.sessions;
         else sessions = [];
-        //initializeはoption.jsでやるからいらないのでは？
-        if (value.settings == undefined) {
-            settings.ifAutoSave = true;
-            settings.autoSaveInterval = 15;
-            settings.autoSaveLimit = 50;
-            settings.ifAutoSaveWhenClose = true;
-            settings.autoSaveWhenCloseLimit = 10;
-            settings.dateFormat = "YYYY.MM.DD HH:mm:ss";
-            settings.ifOpenNewWindow=true;
-        } else {
-            settings.ifAutoSave = value.settings.ifAutoSave;
-            settings.autoSaveInterval = value.settings.autoSaveInterval;
-            settings.autoSaveLimit = value.settings.autoSaveLimit;
-            settings.ifAutoSaveWhenClose = value.settings.ifAutoSaveWhenClose;
-            settings.autoSaveWhenCloseLimit = value.settings.autoSaveWhenCloseLimit;
-            settings.dateFormat = value.settings.dateFormat;
-            settings.ifOpenNewWindow=value.settings.ifOpenNewWindow;
-        }
+        settings = initSettings(value);
 
         //定期的に保存
         if (settings.ifAutoSave) {
             clearInterval(autoSaveTimerArray.shift());
-            autoSaveTimerArray.push(setInterval(function(){
-                saveSession("auto saved", "auto regular");
+            autoSaveTimerArray.push(setInterval(function () {
+                saveSession("Auto Saved - Regularly", "auto regular");
                 removeOverLimit("regular");
             }, settings.autoSaveInterval * 60 * 1000));
         } else {
@@ -49,17 +48,25 @@ function getSettings() {
 
         //ウィンドウを閉じたときに保存
         if (settings.ifAutoSaveWhenClose) {
-            browser.tabs.onCreated.addListener(seveSessionWhenClose);
-            browser.tabs.onRemoved.addListener(seveSessionWhenClose);
-            browser.windows.onCreated.addListener(seveSessionWhenClose);
-        } else if(browser.tabs.onCreated.hasListener){
-            browser.tabs.onCreated.removeListener(seveSessionWhenClose);
-            browser.tabs.onRemoved.removeListener(seveSessionWhenClose);
-            browser.windows.onCreated.removeListener(seveSessionWhenClose);
+            browser.tabs.onCreated.addListener(saveSessionWhenClose);
+            browser.tabs.onRemoved.addListener(saveSessionWhenClose);
+            browser.windows.onCreated.addListener(saveSessionWhenClose);
+        } else if (browser.tabs.onCreated.hasListener) {
+            browser.tabs.onCreated.removeListener(saveSessionWhenClose);
+            browser.tabs.onRemoved.removeListener(saveSessionWhenClose);
+            browser.windows.onCreated.removeListener(saveSessionWhenClose);
         }
-        
+
     });
 }
+
+saveSessionWhenClose();
+
+function saveSessionWhenClose() {
+    saveSession("Auto Saved - Window was closed", "auto winClose temp");
+    removeOverLimit("winClose");
+};
+
 
 function setSettings() {
     browser.storage.local.set({
@@ -82,6 +89,7 @@ function saveSession(name, tag) {
             }
             setSettings();
         })
+
     })
 }
 
@@ -174,9 +182,7 @@ function autoSaveWhenWindowClose(session) {
             }
         }
     }
-
 }
-
 
 function removeSession(number) {
     sessions.splice(number, 1);
@@ -265,20 +271,29 @@ function openTab(session, win, currentWindow, tab) {
             property.url = null;
         }
 
+        let createOption = {
+            active: property.active,
+            index: property.index,
+            pinned: property.pinned,
+            //openerTabId: tabList[property.openerTabId],
+            url: property.url,
+            windowId: currentWindow.id
+        }
+        //supported FF57++
+        if (settings.ifSupportTst){
+            createOption.openerTabId = tabList[property.openerTabId];
+            openDelay=150;
+        }else{
+            openDelay=0;
+        }
+
         setTimeout(function () {
-            browser.tabs.create({
-                active: property.active,
-                index: property.index,
-                pinned: property.pinned,
-                openerTabId: tabList[property.openerTabId],
-                url: property.url,
-                windowId: currentWindow.id
-            }).then(function (newTab) {
+            browser.tabs.create(createOption).then(function (newTab) {
                 tabList[property.id] = newTab.id;
                 //console.log("open complate", newTab.id);
                 resolve();
             });
-        }, 150) //ツリー型タブの処理を待つ
+        }, openDelay) //ツリー型タブの処理を待つ
     })
 }
 
@@ -297,11 +312,11 @@ function moveTabsInIndex(currentWindow) {
         });
     })
 }
-//whencloseのとき動かない
+
 function removeOverLimit(tagState) {
     let limit;
-    if(tagState=="regular") limit=setttings.autoSaveLimit;
-    else if(tagState=="winClose") limit=settings.autoSaveWhenCloseLimit+1; //temp分
+    if (tagState == "regular") limit = settings.autoSaveLimit;
+    else if (tagState == "winClose") limit = parseInt(settings.autoSaveWhenCloseLimit) + 1; //temp分
     setTimeout(function () {
         //定期保存を列挙
         let autoSavedArray = [];
@@ -310,7 +325,7 @@ function removeOverLimit(tagState) {
                 autoSavedArray.push(i);
             }
         }
-        
+
         //上限を超えている場合は削除
         if (autoSavedArray.length > limit) {
             let removeNum = autoSavedArray.length - limit;
@@ -319,15 +334,17 @@ function removeOverLimit(tagState) {
                 removeSession(i);
             }
         }
-    }, 1000)
+    }, 500)
 }
 
 //過去のバージョンのautosaveのタグを更新(起動時に一回だけ実行)
 setTimeout(updateAutoTag, 1000);
+
 function updateAutoTag() {
     for (let i in sessions) {
         if (sessions[i].tag == "auto") {
             sessions[i].tag = "auto regular";
+            sessions[i].name = "Auto Saved - Regularly";
         }
     }
     setSettings();
