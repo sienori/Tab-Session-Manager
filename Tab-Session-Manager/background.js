@@ -7,11 +7,11 @@ var sessionStartTime=Date.now();
 initSettings().then(function () {
     updateAutoTag();
     setStorage();
-    saveSessionWhenClose();
-    browser.storage.onChanged.addListener(getSettings);
+    autoSaveWhenCloseListener();
+    browser.storage.onChanged.addListener(loadStorage);
 });
 
-//起動時に設定の初期化
+//設定の初期化
 function initSettings(value) {
     return new Promise(function (resolve, reject) {
         browser.storage.local.get(["settings", "sessions"], function (value) {
@@ -37,7 +37,7 @@ function initSettings(value) {
     })
 }
 
-//過去のバージョンのautosaveのタグを更新(起動時に一回だけ実行)
+//過去のバージョンのautosaveのタグを更新
 function updateAutoTag() {
     for (let i in sessions) {
         if (sessions[i].tag == "auto") {
@@ -48,19 +48,27 @@ function updateAutoTag() {
 }
 
 
-function getSettings() {
+//設定とセッションを読み出す
+function loadStorage() {
     browser.storage.local.get(["sessions", "settings"], function (value) {
         sessions = value.sessions;
         settings = value.settings;
-
-        autoSaveSet();
+        setAutoSaveListener();
     });
 }
 
+//設定とセッションを保存
+function setStorage() {
+    browser.storage.local.set({
+        'sessions': sessions,
+        'settings': settings
+    });
+}
 
 var autoSaveTimerArray = new Array();
 
-function autoSaveSet() {
+//自動保存のリスナーを登録
+function setAutoSaveListener() {
     //定期的に保存
     if (settings.ifAutoSave) {
         clearInterval(autoSaveTimerArray.shift());
@@ -75,17 +83,17 @@ function autoSaveSet() {
 
     //ウィンドウを閉じたときに保存
     if (settings.ifAutoSaveWhenClose) {
-        browser.tabs.onCreated.addListener(saveSessionWhenClose);
-        browser.tabs.onRemoved.addListener(saveSessionWhenClose);
-        browser.windows.onCreated.addListener(saveSessionWhenClose);
+        browser.tabs.onCreated.addListener(autoSaveWhenCloseListener);
+        browser.tabs.onRemoved.addListener(autoSaveWhenCloseListener);
+        browser.windows.onCreated.addListener(autoSaveWhenCloseListener);
     } else if (browser.tabs.onCreated.hasListener) {
-        browser.tabs.onCreated.removeListener(saveSessionWhenClose);
-        browser.tabs.onRemoved.removeListener(saveSessionWhenClose);
-        browser.windows.onCreated.removeListener(saveSessionWhenClose);
+        browser.tabs.onCreated.removeListener(autoSaveWhenCloseListener);
+        browser.tabs.onRemoved.removeListener(autoSaveWhenCloseListener);
+        browser.windows.onCreated.removeListener(autoSaveWhenCloseListener);
     }
 }
 
-function saveSessionWhenClose() {
+function autoSaveWhenCloseListener() {
     saveSession("Auto Saved - Window was closed", "auto winClose temp").then(function () {
         removeOverLimit("winClose");
     });
@@ -114,14 +122,6 @@ function removeOverLimit(tagState) {
     }
 }
 
-
-function setStorage() {
-    browser.storage.local.set({
-        'sessions': sessions,
-        'settings': settings
-    });
-}
-
 function saveSession(name, tag) {
     return new Promise(function (resolve, reject) {
         loadCurrentSesssion(name, tag).then(function (session) {
@@ -129,7 +129,7 @@ function saveSession(name, tag) {
                 showSessionWhenWindowClose(session);
                 sessions.push(session);
             } else if (tag.indexOf("regular") != -1) {
-                if (ifChangeAutoSave(session)) sessions.push(session);
+                if (ifChangedAutoSaveSession(session)) sessions.push(session);
             } else {
                 sessions.push(session);
             }
@@ -167,15 +167,15 @@ function loadCurrentSesssion(name, tag) {
 
 //前回の自動保存からタブが変わっているか判定
 //自動保存する必要があればtrue
-function ifChangeAutoSave(session) {
+function ifChangedAutoSaveSession(session) {
     let lastAutoNumber = -1;
     for (let i in sessions) {
         if (sessions[i].tag.indexOf("regular") != -1) lastAutoNumber = i;
     }
-
     //自動保存が無ければtrue
     if (lastAutoNumber == -1) return true;
-
+    
+    //前回保存時のセッション
     let lastItems = [];
     for (let win in sessions[lastAutoNumber].windows) {
         lastItems.push(win);
@@ -185,7 +185,7 @@ function ifChangeAutoSave(session) {
             lastItems.push(id, url);
         }
     }
-
+    //現在のセッション
     let newItems = []
     for (let win in session.windows) {
         newItems.push(win);
@@ -235,11 +235,6 @@ function showSessionWhenWindowClose(session) {
     }
 }
 
-function removeSession(number) {
-    sessions.splice(number, 1);
-    setStorage();
-}
-
 function openSession(session) {
     let countFlag = 0;
     let p = Promise.resolve();
@@ -247,7 +242,7 @@ function openSession(session) {
         p = p.then(function () {
             if (countFlag == 0 && !settings.ifOpenNewWindow) { //一つ目のウィンドウは現在のウィンドウに上書き
                 countFlag = 1;
-                return removeTab().then(function (currentWindow) {
+                return removeNowOpenTabs().then(function (currentWindow) {
                     return createTabs(session, win, currentWindow);
                 });
             } else {
@@ -261,7 +256,7 @@ function openSession(session) {
 }
 
 //ウィンドウとタブを閉じてcurrentWindowを返す
-function removeTab() {
+function removeNowOpenTabs() {
     return new Promise(function (resolve, reject) {
         browser.windows.getAll({}).then(function (windows) {
             for (let win in windows) {
@@ -286,7 +281,7 @@ function removeTab() {
     })
 }
 
-
+//現在のウィンドウにタブを生成
 function createTabs(session, win, currentWindow) {
     return new Promise(function (resolve, reject) {
         firstTabId = currentWindow.tabs[0].id;
@@ -310,7 +305,7 @@ function createTabs(session, win, currentWindow) {
 }
 
 tabList = {};
-
+//実際にタブを開く
 function openTab(session, win, currentWindow, tab) {
     return new Promise(function (resolve, reject) {
         property = session.windows[win][tab];
@@ -344,6 +339,7 @@ function openTab(session, win, currentWindow, tab) {
     })
 }
 
+//indexに従ってタブを移動
 function moveTabsInIndex(currentWindow) {
     return new Promise(function (resolve, reject) {
         browser.tabs.query({
@@ -361,6 +357,13 @@ function moveTabsInIndex(currentWindow) {
 }
 
 
+function removeSession(number) {
+    sessions.splice(number, 1);
+    setStorage();
+}
+
+
+//popupからのリクエスト
 browser.runtime.onMessage.addListener(function (request) {
     switch (request.message) {
         case "save":
