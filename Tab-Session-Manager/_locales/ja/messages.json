@@ -27,7 +27,7 @@
         "message": "日付のフォーマット(例YYYY.MM.DD HH:mm:ss) : "
     },
     "ifSupportTstLabel": {
-        "message": "ツリー型タブに対応(Firefox57++) : "
+        "message": "ツリー型タブに対応(Firefox57++)"
     },
     "save": {
         "message": "保存"

@@ -27,7 +27,7 @@
         "message": "日期格式(例如 YYYY.MM.DD HH:mm:ss)："
     },
     "ifSupportTstLabel": {
-        "message": "支持树样式选项卡(Firefox57 ++): "
+        "message": "支持树样式选项卡(Firefox57 ++)"
     },
     "save": {
         "message": "保存"

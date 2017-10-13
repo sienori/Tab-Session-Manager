@@ -9,7 +9,7 @@
         "message": "Open session in new window"
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly."
+        "message": "Save the session regularly"
     },
     "autoSaveIntervalLabel": {
         "message": "interval(minutes) : "
@@ -27,7 +27,7 @@
         "message": "Date format(Ex YYYY.MM.DD HH:mm:ss) : "
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab(Firefox57++) : "
+        "message": "Supports Tree Style Tab(Firefox57++)"
     },
     "save": {
         "message": "Save"

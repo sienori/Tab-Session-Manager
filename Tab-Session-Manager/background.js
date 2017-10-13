@@ -1,93 +1,140 @@
-//TODO:
 var sessions = [];
 var settings = {}
-var autoSaveTimerArray = new Array();
+var sessionStartTime=Date.now();
 
-InitialNameValue = browser.i18n.getMessage("initialNameValue");
 
-//起動時に設定の初期化
-browser.storage.local.get(["settings"], function (value) {
-    initSettings(value);
-    setSettings();
+//起動時の設定
+initSettings().then(function () {
+    updateAutoTag();
+    setStorage();
+    saveSessionWhenClose();
+    browser.storage.onChanged.addListener(getSettings);
 });
 
+//起動時に設定の初期化
 function initSettings(value) {
-        let settings={};
-        let settingItems = ["ifAutoSave", "autoSaveInterval", "autoSaveLimit", "ifAutoSaveWhenClose", "autoSaveWhenCloseLimit", "dateFormat", "ifOpenNewWindow", "ifSupportTst"];
-        let settingValue = [true, 15, 10, true, 10, "YYYY.MM.DD HH:mm:ss", true, true];
+    return new Promise(function (resolve, reject) {
+        browser.storage.local.get(["settings", "sessions"], function (value) {
+            //sessions初期化
+            if (value.sessions != undefined) sessions = value.sessions;
+            else sessions = [];
+            
+            let settingItems = ["ifAutoSave", "autoSaveInterval", "autoSaveLimit", "ifAutoSaveWhenClose", "autoSaveWhenCloseLimit", "dateFormat", "ifOpenNewWindow", "ifSupportTst"];
+            let settingValue = [true, 15, 10, true, 10, "YYYY.MM.DD HH:mm:ss", true, true];
 
-        for (let i = 0; i < settingItems.length; i++) {
-            if (value.settings[settingItems[i]] == undefined) {
-                settings[settingItems[i]] = settingValue[i];
-            } else {
-                settings[settingItems[i]] = value.settings[settingItems[i]];
+            //settings初期化
+            for (let i = 0; i < settingItems.length; i++) {
+                if (value.settings == undefined) {
+                    settings[settingItems[i]] = settingValue[i];
+                } else if (value.settings[settingItems[i]] == undefined) {
+                    settings[settingItems[i]] = settingValue[i];
+                } else {
+                    settings[settingItems[i]] = value.settings[settingItems[i]];
+                }
             }
-        }
-    return settings;
+            resolve();
+        });
+    })
 }
 
-getSettings();
-browser.storage.onChanged.addListener(getSettings);
+//過去のバージョンのautosaveのタグを更新(起動時に一回だけ実行)
+function updateAutoTag() {
+    for (let i in sessions) {
+        if (sessions[i].tag == "auto") {
+            sessions[i].tag = "auto regular";
+            sessions[i].name = "Auto Saved - Regularly";
+        }
+    }
+}
+
 
 function getSettings() {
     browser.storage.local.get(["sessions", "settings"], function (value) {
-        if (value.sessions != undefined) sessions = value.sessions;
-        else sessions = [];
-        settings = initSettings(value);
+        sessions = value.sessions;
+        settings = value.settings;
 
-        //定期的に保存
-        if (settings.ifAutoSave) {
-            clearInterval(autoSaveTimerArray.shift());
-            autoSaveTimerArray.push(setInterval(function () {
-                saveSession("Auto Saved - Regularly", "auto regular");
-                removeOverLimit("regular");
-            }, settings.autoSaveInterval * 60 * 1000));
-        } else {
-            clearInterval(autoSaveTimerArray.shift());
-        }
-
-        //ウィンドウを閉じたときに保存
-        if (settings.ifAutoSaveWhenClose) {
-            browser.tabs.onCreated.addListener(saveSessionWhenClose);
-            browser.tabs.onRemoved.addListener(saveSessionWhenClose);
-            browser.windows.onCreated.addListener(saveSessionWhenClose);
-        } else if (browser.tabs.onCreated.hasListener) {
-            browser.tabs.onCreated.removeListener(saveSessionWhenClose);
-            browser.tabs.onRemoved.removeListener(saveSessionWhenClose);
-            browser.windows.onCreated.removeListener(saveSessionWhenClose);
-        }
-
+        autoSaveSet();
     });
 }
 
-saveSessionWhenClose();
+
+var autoSaveTimerArray = new Array();
+
+function autoSaveSet() {
+    //定期的に保存
+    if (settings.ifAutoSave) {
+        clearInterval(autoSaveTimerArray.shift());
+        autoSaveTimerArray.push(setInterval(function () {
+            saveSession("Auto Saved - Regularly", "auto regular").then(function () {
+                removeOverLimit("regular");
+            });
+        }, settings.autoSaveInterval * 60 * 1000));
+    } else {
+        clearInterval(autoSaveTimerArray.shift());
+    }
+
+    //ウィンドウを閉じたときに保存
+    if (settings.ifAutoSaveWhenClose) {
+        browser.tabs.onCreated.addListener(saveSessionWhenClose);
+        browser.tabs.onRemoved.addListener(saveSessionWhenClose);
+        browser.windows.onCreated.addListener(saveSessionWhenClose);
+    } else if (browser.tabs.onCreated.hasListener) {
+        browser.tabs.onCreated.removeListener(saveSessionWhenClose);
+        browser.tabs.onRemoved.removeListener(saveSessionWhenClose);
+        browser.windows.onCreated.removeListener(saveSessionWhenClose);
+    }
+}
 
 function saveSessionWhenClose() {
-    saveSession("Auto Saved - Window was closed", "auto winClose temp");
-    removeOverLimit("winClose");
+    saveSession("Auto Saved - Window was closed", "auto winClose temp").then(function () {
+        removeOverLimit("winClose");
+    });
 };
 
+function removeOverLimit(tagState) {
+    let limit;
+    if (tagState == "regular") limit = settings.autoSaveLimit;
+    else if (tagState == "winClose") limit = parseInt(settings.autoSaveWhenCloseLimit) + 1; //temp分
 
-function setSettings() {
+    //定期保存を列挙
+    let autoSavedArray = [];
+    for (let i in sessions) {
+        if (sessions[i].tag.indexOf(tagState) != -1) {
+            autoSavedArray.push(i);
+        }
+    }
+
+    //上限を超えている場合は削除
+    if (autoSavedArray.length > limit) {
+        let removeNum = autoSavedArray.length - limit;
+        let removeSessions = autoSavedArray.slice(0, removeNum);
+        for (let i of removeSessions) {
+            removeSession(i);
+        }
+    }
+}
+
+
+function setStorage() {
     browser.storage.local.set({
-        'sessions': sessions
+        'sessions': sessions,
+        'settings': settings
     });
 }
 
 function saveSession(name, tag) {
     return new Promise(function (resolve, reject) {
-
         loadCurrentSesssion(name, tag).then(function (session) {
             if (tag.indexOf("winClose") != -1) {
-                autoSaveWhenWindowClose(session);
+                showSessionWhenWindowClose(session);
                 sessions.push(session);
             } else if (tag.indexOf("regular") != -1) {
                 if (ifChangeAutoSave(session)) sessions.push(session);
-                resolve();
             } else {
                 sessions.push(session);
             }
-            setSettings();
+            setStorage();
+            resolve();
         })
 
     })
@@ -102,6 +149,7 @@ function loadCurrentSesssion(name, tag) {
             session.name = name;
             session.date = new Date();
             session.tag = tag;
+            session.sessionStartTime=sessionStartTime;
 
             //windouwsとtabのセット
             for (let tab of tabs) {
@@ -109,7 +157,10 @@ function loadCurrentSesssion(name, tag) {
                 session.windows[tab.windowId][tab.id] = tab;
                 session.tabsNumber++;
             }
-            resolve(session);
+
+            if (tabs.length > 0) resolve(session);
+            else reject();
+
         })
     })
 }
@@ -119,7 +170,6 @@ function loadCurrentSesssion(name, tag) {
 function ifChangeAutoSave(session) {
     let lastAutoNumber = -1;
     for (let i in sessions) {
-        //if (sessions[i].tag == "auto") lastAutoNumber = i;
         if (sessions[i].tag.indexOf("regular") != -1) lastAutoNumber = i;
     }
 
@@ -150,29 +200,30 @@ function ifChangeAutoSave(session) {
     return lastItems.toString() != newItems.toString();
 }
 
-function autoSaveWhenWindowClose(session) {
+//ウィンドウを閉じたときの自動保存が有効になっている時，セッションは常に非表示の状態で一時保存される
+//一時保存されたセッションを現在のセッションと比較してウィンドウの削除かFirefoxの再起動を確認したら表示する
+function showSessionWhenWindowClose(session) {
     //sessionsを新しいものから走査
     for (let i = sessions.length - 1; i >= 0; i--) {
         if (sessions[i].tag.indexOf('temp') != -1) {
 
-            let saveFlag = false;
+            let showFlag = false;
             let currentSession = Object.keys(session.windows);
             let oldSession = Object.keys(sessions[i].windows);
 
-            //oldSessionに現在存在しないウィンドウがあれば(保存が必要なら)saveFlag=true
+            //oldSessionに現在存在しないウィンドウがあれば(保存が必要なら)showFlag=true
             for (let os of oldSession) {
                 for (let cs of currentSession) {
                     if (os == cs) break;
-                    if (cs == currentSession[currentSession.length - 1]) saveFlag = true;
+                    if (cs == currentSession[currentSession.length - 1]) showFlag = true;
                 }
             }
 
-            //HACK:Firefoxを再起動するとdateが文字列型になることを利用 仕様変更で使えなくなる可能性大
-            //セッションごとに独自のIDを付与すればいいかも
-            if (typeof (sessions[i].date) == "string") saveFlag = true;
+            //sessionStartTimeが異なればFirefoxの再起動されたと見なしshowFlag=true
+            if(sessions[i].sessionStartTime!=session.sessionStartTime) showFlag=true;
 
             //保存が必要ならクラスからtempを削除し表示する
-            if (saveFlag) {
+            if (showFlag) {
                 sessions[i].tag = "auto winClose";
                 break;
             }
@@ -186,7 +237,7 @@ function autoSaveWhenWindowClose(session) {
 
 function removeSession(number) {
     sessions.splice(number, 1);
-    setSettings();
+    setStorage();
 }
 
 function openSession(session) {
@@ -194,11 +245,9 @@ function openSession(session) {
     let p = Promise.resolve();
     for (let win in session.windows) { //ウィンドウごと
         p = p.then(function () {
-            //console.log("open Window", win);
             if (countFlag == 0 && !settings.ifOpenNewWindow) { //一つ目のウィンドウは現在のウィンドウに上書き
                 countFlag = 1;
                 return removeTab().then(function (currentWindow) {
-                    //console.log("remove");
                     return createTabs(session, win, currentWindow);
                 });
             } else {
@@ -275,22 +324,20 @@ function openTab(session, win, currentWindow, tab) {
             active: property.active,
             index: property.index,
             pinned: property.pinned,
-            //openerTabId: tabList[property.openerTabId],
             url: property.url,
             windowId: currentWindow.id
         }
         //supported FF57++
-        if (settings.ifSupportTst){
+        if (settings.ifSupportTst) {
             createOption.openerTabId = tabList[property.openerTabId];
-            openDelay=150;
-        }else{
-            openDelay=0;
+            openDelay = 150;
+        } else {
+            openDelay = 0;
         }
 
         setTimeout(function () {
             browser.tabs.create(createOption).then(function (newTab) {
                 tabList[property.id] = newTab.id;
-                //console.log("open complate", newTab.id);
                 resolve();
             });
         }, openDelay) //ツリー型タブの処理を待つ
@@ -313,48 +360,11 @@ function moveTabsInIndex(currentWindow) {
     })
 }
 
-function removeOverLimit(tagState) {
-    let limit;
-    if (tagState == "regular") limit = settings.autoSaveLimit;
-    else if (tagState == "winClose") limit = parseInt(settings.autoSaveWhenCloseLimit) + 1; //temp分
-    setTimeout(function () {
-        //定期保存を列挙
-        let autoSavedArray = [];
-        for (let i in sessions) {
-            if (sessions[i].tag.indexOf(tagState) != -1) {
-                autoSavedArray.push(i);
-            }
-        }
-
-        //上限を超えている場合は削除
-        if (autoSavedArray.length > limit) {
-            let removeNum = autoSavedArray.length - limit;
-            let removeSessions = autoSavedArray.slice(0, removeNum);
-            for (let i of removeSessions) {
-                removeSession(i);
-            }
-        }
-    }, 500)
-}
-
-//過去のバージョンのautosaveのタグを更新(起動時に一回だけ実行)
-setTimeout(updateAutoTag, 1000);
-
-function updateAutoTag() {
-    for (let i in sessions) {
-        if (sessions[i].tag == "auto") {
-            sessions[i].tag = "auto regular";
-            sessions[i].name = "Auto Saved - Regularly";
-        }
-    }
-    setSettings();
-}
 
 browser.runtime.onMessage.addListener(function (request) {
     switch (request.message) {
         case "save":
-            if (request.name == InitialNameValue) name = "";
-            else name = request.name;
+            name = request.name;
             saveSession(name, "user");
             break;
         case "open":
