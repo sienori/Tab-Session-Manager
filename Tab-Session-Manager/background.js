@@ -2,11 +2,11 @@ var sessions = [];
 var settings = {}
 var sessionStartTime=Date.now();
 
-
 //起動時の設定
 initSettings().then(function () {
     updateAutoTag();
     setStorage();
+    setAutoSaveListener();
     autoSaveWhenCloseListener();
     browser.storage.onChanged.addListener(loadStorage);
 });
@@ -68,6 +68,7 @@ function setStorage() {
 var autoSaveTimerArray = new Array();
 
 //自動保存のリスナーを登録
+//TODO:clearIntervalにより動作しない
 function setAutoSaveListener() {
     //定期的に保存
     if (settings.ifAutoSave) {
@@ -239,6 +240,7 @@ function openSession(session) {
     let countFlag = 0;
     let p = Promise.resolve();
     for (let win in session.windows) { //ウィンドウごと
+        //console.log(session.windows[win]);
         p = p.then(function () {
             if (countFlag == 0 && !settings.ifOpenNewWindow) { //一つ目のウィンドウは現在のウィンドウに上書き
                 countFlag = 1;
@@ -284,20 +286,31 @@ function removeNowOpenTabs() {
 //現在のウィンドウにタブを生成
 function createTabs(session, win, currentWindow) {
     return new Promise(function (resolve, reject) {
-        firstTabId = currentWindow.tabs[0].id;
-        tabNumber = 0;
+        let sortedTabs=[];
+        
+        for(let tab in session.windows[win]){
+            sortedTabs[session.windows[win][tab].index]=session.windows[win][tab];
+        }
+        //console.log(sortedTabs);
+        
+        let firstTabId = currentWindow.tabs[0].id;
+        let tabNumber = 0;
         let p = Promise.resolve();
-        for (let tab in session.windows[win]) { //タブごと
+        for (let tab of sortedTabs) { //タブごと
+            
             p = p.then(function () {
                 tabNumber++;
-                return openTab(session, win, currentWindow, tab);
+                return openTab(session, win, currentWindow, tab.id);
             }).then(function () {
                 if (tabNumber == 1) {
                     browser.tabs.remove(firstTabId);
-                } else if (tabNumber == Object.keys(session.windows[win]).length) {
+                }
+                if (tabNumber == Object.keys(session.windows[win]).length) {
+                    resolve();
+                    /*sortTabsを導入したため不要
                     moveTabsInIndex(currentWindow).then(function () {
                         resolve();
-                    });
+                    });*/
                 }
             });
         }
@@ -307,6 +320,7 @@ function createTabs(session, win, currentWindow) {
 tabList = {};
 //実際にタブを開く
 function openTab(session, win, currentWindow, tab) {
+    //console.log("open", session.windows[win][tab]);
     return new Promise(function (resolve, reject) {
         property = session.windows[win][tab];
 
@@ -317,6 +331,7 @@ function openTab(session, win, currentWindow, tab) {
 
         let createOption = {
             active: property.active,
+            cookieStoreId: property.cookieStoreId,
             index: property.index,
             pinned: property.pinned,
             url: property.url,
