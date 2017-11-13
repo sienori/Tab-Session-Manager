@@ -1,17 +1,21 @@
 /*TODO:フォント*/
-html{
+
+html {
     overflow: hidden;
 }
-body{
+
+body {
     width: 348px;
     height: 487px;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
 }
-option{
-    font:inherit;
+
+option {
+    font: inherit;
 }
+
 #main {
     font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
     text-align: left;
@@ -24,7 +28,7 @@ option{
     -moz-user-select: none;
 }
 
-#header{
+#header {
     background-color: #eee;
     position: relative;
     padding: 10px 20px 0px;
@@ -33,38 +37,39 @@ option{
     height: 30px;
     -moz-user-select: none;
 }
-#tittle{
-    size:9px;
+
+#tittle {
+    size: 9px;
     font-weight: 300;
     color: #666;
     float: left;
     cursor: default;
 }
 
-#setting{
+#setting {
     height: 20px;
     width: 20px;
     background-image: url("/icons/setting.png");
     background-size: 20px;
     background-repeat: no-repeat;
-    float:right;
+    float: right;
     cursor: pointer;
 }
 
-#sort{
-    float:right;
+#sort {
+    float: right;
 }
 
-#sessionsArea{
+#sessionsArea {
     padding: 5px 2px;
     margin-top: 5px;
     height: 350px;
     overflow-y: auto;
-    
+
 }
 
-.session{
-    padding:5px;
+.session {
+    padding: 5px;
     padding-bottom: 0px;
     margin: 10px 0px;
     height: auto;
@@ -73,7 +78,7 @@ option{
     transition: all 300ms 0s ease;
 }
 
-.temp{
+.temp {
     display: none !important;
 }
 
@@ -82,15 +87,15 @@ option{
     min-height: 30px;
 }
 
-.renameInput{
+.renameInput {
     font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
     font-size: 13px;
     width: 200px;
     padding: 0px 1px;
     margin: 0px;
     position: relative;
-    top:-3px;
-    left:-2px;
+    top: -3px;
+    left: -2px;
     height: 20px;
     border: #aaa solid 1px;
 }
@@ -99,10 +104,10 @@ option{
     border: #36b2b2 solid 1px;
 }
 
-.renameSend{
+.renameSend {
     position: relative;
-    top:-1px;
-    left:0px;
+    top: -1px;
+    left: 0px;
     height: 22px;
     width: 22px;
     display: inline-block;
@@ -117,13 +122,13 @@ option{
     transition: all 100ms 0s ease;
 }
 
-.renameSend:hover{
+.renameSend:hover {
     border: rgb(54, 178, 178) solid 1px;
     background-image: url("/icons/check2.png");
     transition: all 100ms 0s ease;
 }
 
-.renameButton{
+.renameButton {
     height: 20px;
     width: 20px;
     background-image: url("/icons/rename.png");
@@ -132,63 +137,67 @@ option{
     background-color: #fff;
     background-position: center;
     margin: 0px;
-    float:left;
+    float: left;
     display: inline-block;
     cursor: pointer;
 }
 
-.renameButton:hover{
+.renameButton:hover {
     background-image: url("/icons/rename2.png");
 }
 
-.sessionName{
+.sessionName {
     min-height: 30px;
     word-break: break-all;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
-.detail{
-    color:#36b0b0;
+.detail {
+    color: #36b0b0;
     text-decoration: none;
     cursor: pointer;
     font-size: 12px;
     -moz-user-select: none;
 }
 
-.detail:hover{
+.detail:hover {
     text-decoration: underline;
 }
 
-.detailItems{
+.detailItems {
     list-style-type: none;
     text-decoration: none;
-    color:#333;
-    font-size:12px;
+    color: #333;
+    font-size: 12px;
     cursor: default;
     margin-right: 5px;
     width: 100%;
     word-break: break-all;
 }
-.windows{
-    margin-left:0px;
+
+.windows {
+    margin-left: 0px;
 }
-.tabs{
+
+.tabs {
     min-height: 20px;
     margin-left: 30px;
-    list-style: none;/*square*/
+    list-style: none;
+    /*square*/
     margin-top: 2px;
     margin-bottom: 2px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #333;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
 
-.fav{
+.fav {
     height: 20px;
     width: 20px;
     background-size: 16px;
@@ -199,8 +208,9 @@ a:hover{
     margin-left: 5px;
 }
 
-.open, .remove{
-    color:#36b2b2;
+.open,
+.remove {
+    color: #36b2b2;
     text-decoration: none;
     cursor: pointer;
     float: right;
@@ -208,21 +218,23 @@ a:hover{
     margin-bottom: 0px;
     -moz-user-select: none;
 }
-.open:hover, .remove:hover{
+
+.open:hover,
+.remove:hover {
     text-decoration: underline;
 }
 
-.sessionDate{
-    color:#aaa;
+.sessionDate {
+    color: #aaa;
     /*float: left;*/
     width: 180px;
-    overflow:hidden;
+    overflow: hidden;
     word-break: break-all;
     display: inline-block;
     padding-bottom: 0px;
     margin-left: 0px;
     height: auto;
-    position:relative;
+    position: relative;
     left: -5px;
 }
 
@@ -234,7 +246,7 @@ hr {
     margin: 0px 0px 20px;
 }
 
-#saveArea{
+#saveArea {
     width: 100%;
     margin-top: 10px;
     height: 30px;
@@ -261,14 +273,15 @@ hr {
 ::-moz-selection {
     background: #ebebeb;
 }
-.save{
+
+.save {
     position: relative;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     height: 18px;
     width: auto;
     display: inline-block;
-    padding:5px 5px;
+    padding: 5px 5px;
     background-color: #fff;
     background-position: center;
     border: none;
@@ -277,7 +290,8 @@ hr {
     float: right;
     transition: all 100ms 0s ease;
 }
-.save:hover{
+
+.save:hover {
     border: #36b2b2 solid 1px;
     color: #36b2b2;
     transition: all 100ms 0s ease;

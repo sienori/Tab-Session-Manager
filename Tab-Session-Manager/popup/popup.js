@@ -135,12 +135,12 @@ function showDetail(e) {
         for (let win in sessions[sessionNo].windows) {
             i++;
             detail.insertAdjacentHTML('beforeend', '<li class="windows">' + windowLabel + i + '</li>')
-            
-            let sortedTabs=[];
-            for(let tab in sessions[sessionNo].windows[win]){
-                sortedTabs[sessions[sessionNo].windows[win][tab].index]=sessions[sessionNo].windows[win][tab].id;
+
+            let sortedTabs = [];
+            for (let tab in sessions[sessionNo].windows[win]) {
+                sortedTabs[sessions[sessionNo].windows[win][tab].index] = sessions[sessionNo].windows[win][tab].id;
             }
-            
+
             for (let tab of sortedTabs) {
                 tabTitle = sessions[sessionNo].windows[win][tab].title;
                 tabUrl = sessions[sessionNo].windows[win][tab].url;
