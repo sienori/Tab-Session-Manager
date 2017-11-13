@@ -1,5 +1,3 @@
-/*TODO:フォント*/
-
 html {
     overflow: hidden;
 }
@@ -17,7 +15,7 @@ option {
 }
 
 #main {
-    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
+    font-family: 'Segoe UI', 'San Francisco', 'Ubuntu', 'Fira Sans', 'Roboto', 'Arial', 'Helvetica', sans-serif;
     text-align: left;
     font-size: 13px;
     height: 100%;
@@ -87,7 +85,7 @@ option {
 }
 
 .renameInput {
-    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
+    font-family: inherit;
     font-size: 13px;
     width: 200px;
     padding: 0px 1px;
@@ -252,7 +250,7 @@ hr {
 }
 
 #saveName {
-    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
+    font-family: inherit;
     font-size: 13px;
     width: 250px;
     padding: 0px 3px;

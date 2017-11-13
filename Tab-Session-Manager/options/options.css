@@ -1,22 +1,27 @@
-body{
-    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'Osaka', 'MS PGothic', 'arial', 'helvetica', 'sans-serif';
-
+body {
     font-size: 13px;
     background-color: #f9f9fa;
 }
 
-#autoSaveInterval, #autoSaveLimit, #autoSaveWhenCloseLimit{
+input {
+    font-family: inherit;
+}
+
+#autoSaveInterval,
+#autoSaveLimit,
+#autoSaveWhenCloseLimit {
     width: 50px;
 }
-#dateFormat{
+
+#dateFormat {
     width: 220px;
 }
 
 input[type="number"] {
-    -moz-appearance:textfield;
+    -moz-appearance: textfield;
 }
 
-#save{
+#save {
     width: auto;
     height: 30px;
     margin-left: auto;
@@ -25,21 +30,23 @@ input[type="number"] {
     border-radius: 2px;
     background-color: #fbfbfb;
 }
-#save:hover{
+
+#save:hover {
     background: #f5f5f5;
 }
 
-label{
+label {
     padding: 3px 0px;
 }
 
-hr{
-    
+hr {
+
     width: 100%;
     background-color: #d7d7db;
     height: 1px;
     border: none;
 }
+
 ::-moz-selection {
     background: #ebebeb;
 }
