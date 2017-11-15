@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build:tab-session-manager": "cd Tab-Session-Manager; web-ext build --overwrite-dest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sienori/Tab-Session-Manager.git"
+  }
+}
