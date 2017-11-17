@@ -1,3 +1,7 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
 //TODO: remove確認 絞込みの状態を保持 セッションはありません←tempのため表示されない
 
 labels = ["displayAllLabel", "displayUserLabel", "displayAutoLabel", "newestLabel", "oldestLabel", "save"];
