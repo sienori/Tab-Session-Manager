@@ -2,8 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+//初回起動時にオプションページを表示して設定を初期化
+browser.runtime.onInstalled.addListener(function(){
+    browser.runtime.openOptionsPage();
+});
+
+let S = new settingsObj()
+
 var sessions = [];
-var settings = {}
 var sessionStartTime=Date.now();
 
 //起動時の設定
@@ -12,30 +18,18 @@ initSettings().then(function () {
     setStorage();
     setAutoSaveListener();
     autoSaveWhenCloseListener();
-    browser.storage.onChanged.addListener(loadStorage);
+    browser.storage.onChanged.addListener(loadSessions);
 });
 
 //設定の初期化
 function initSettings(value) {
     return new Promise(function (resolve, reject) {
-        browser.storage.local.get(["settings", "sessions"], function (value) {
+        browser.storage.local.get(["sessions"], function (value) {
             //sessions初期化
             if (value.sessions != undefined) sessions = value.sessions;
             else sessions = [];
             
-            let settingItems = ["ifAutoSave", "autoSaveInterval", "autoSaveLimit", "ifAutoSaveWhenClose", "autoSaveWhenCloseLimit", "dateFormat", "ifOpenNewWindow", "ifSupportTst"];
-            let settingValue = [true, 15, 10, true, 10, "YYYY.MM.DD HH:mm:ss", true, true];
-
-            //settings初期化
-            for (let i = 0; i < settingItems.length; i++) {
-                if (value.settings == undefined) {
-                    settings[settingItems[i]] = settingValue[i];
-                } else if (value.settings[settingItems[i]] == undefined) {
-                    settings[settingItems[i]] = settingValue[i];
-                } else {
-                    settings[settingItems[i]] = value.settings[settingItems[i]];
-                }
-            }
+            S.init();
             resolve();
         });
     })
@@ -52,11 +46,10 @@ function updateAutoTag() {
 }
 
 
-//設定とセッションを読み出す
-function loadStorage() {
-    browser.storage.local.get(["sessions", "settings"], function (value) {
+//セッションを読み出す
+function loadSessions() {
+    browser.storage.local.get(["sessions"], function (value) {
         sessions = value.sessions;
-        settings = value.settings;
         setAutoSaveListener();
     });
 }
@@ -64,8 +57,7 @@ function loadStorage() {
 //設定とセッションを保存
 function setStorage() {
     browser.storage.local.set({
-        'sessions': sessions,
-        'settings': settings
+        'sessions': sessions
     });
 }
 
@@ -75,19 +67,19 @@ var autoSaveTimerArray = new Array();
 //TODO:clearIntervalにより動作しない
 function setAutoSaveListener() {
     //定期的に保存
-    if (settings.ifAutoSave) {
+    if (S.get().ifAutoSave) {
         clearInterval(autoSaveTimerArray.shift());
         autoSaveTimerArray.push(setInterval(function () {
             saveSession("Auto Saved - Regularly", "auto regular").then(function () {
                 removeOverLimit("regular");
             });
-        }, settings.autoSaveInterval * 60 * 1000));
+        }, S.get().autoSaveInterval * 60 * 1000));
     } else {
         clearInterval(autoSaveTimerArray.shift());
     }
 
     //ウィンドウを閉じたときに保存
-    if (settings.ifAutoSaveWhenClose) {
+    if (S.get().ifAutoSaveWhenClose) {
         browser.tabs.onCreated.addListener(autoSaveWhenCloseListener);
         browser.tabs.onRemoved.addListener(autoSaveWhenCloseListener);
         browser.windows.onCreated.addListener(autoSaveWhenCloseListener);
@@ -106,8 +98,8 @@ function autoSaveWhenCloseListener() {
 
 function removeOverLimit(tagState) {
     let limit;
-    if (tagState == "regular") limit = settings.autoSaveLimit;
-    else if (tagState == "winClose") limit = parseInt(settings.autoSaveWhenCloseLimit) + 1; //temp分
+    if (tagState == "regular") limit = S.get().autoSaveLimit;
+    else if (tagState == "winClose") limit = parseInt(S.get().autoSaveWhenCloseLimit) + 1; //temp分
 
     //定期保存を列挙
     let autoSavedArray = [];
@@ -246,7 +238,7 @@ function openSession(session) {
     for (let win in session.windows) { //ウィンドウごと
         //console.log(session.windows[win]);
         p = p.then(function () {
-            if (countFlag == 0 && !settings.ifOpenNewWindow) { //一つ目のウィンドウは現在のウィンドウに上書き
+            if (countFlag == 0 && !S.get().ifOpenNewWindow) { //一つ目のウィンドウは現在のウィンドウに上書き
                 countFlag = 1;
                 return removeNowOpenTabs().then(function (currentWindow) {
                     return createTabs(session, win, currentWindow);
@@ -342,7 +334,7 @@ function openTab(session, win, currentWindow, tab) {
             windowId: currentWindow.id
         }
         //supported FF57++
-        if (settings.ifSupportTst) {
+        if (S.get().ifSupportTst) {
             createOption.openerTabId = tabList[property.openerTabId];
             openDelay = 150;
         } else {

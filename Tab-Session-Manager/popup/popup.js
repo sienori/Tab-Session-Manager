@@ -21,23 +21,18 @@ tabLabel = browser.i18n.getMessage("tabLabel");
 tabsLabel = browser.i18n.getMessage("tabsLabel");
 noSessionLabel = browser.i18n.getMessage("noSessionLabel");
 
+let S = new settingsObj()
+S.init();
 
 var sessions = [];
-var settings = {};
-getSettings();
+getSessions();
 showSessions();
-browser.storage.onChanged.addListener(getSettings);
+browser.storage.onChanged.addListener(getSessions);
 
-function getSettings() {
-    browser.storage.local.get(["sessions", "settings"], function (value) {
+function getSessions() {
+    browser.storage.local.get(["sessions"], function (value) {
         if (value.sessions != undefined) sessions = value.sessions;
         else sessions = [];
-
-        if (value.settings == undefined) {
-            settings.dateFormat = "YYYY.MM.DD HH:mm:ss";
-        } else {
-            settings.dateFormat = value.settings.dateFormat;
-        }
 
         //既存の要素数と異なるとき描画
         sessionsNumber = Object.keys(sessions).length;
@@ -110,7 +105,7 @@ function showSessions() {
             session.getElementsByClassName("sessionName")[0].innerText = sessions[i].name;
 
             date = moment(sessions[i].date);
-            session.getElementsByClassName("sessionDate")[0].innerText = date.format(settings.dateFormat);
+            session.getElementsByClassName("sessionDate")[0].innerText = date.format(S.get().dateFormat);
 
             //tag
             for (let t of sessions[i].tag.split(" ")) {

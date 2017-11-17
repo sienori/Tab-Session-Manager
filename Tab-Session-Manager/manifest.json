@@ -28,7 +28,7 @@
     },
     
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["Settings.js", "background.js"]
     },
     
     "browser_action": {
