@@ -83,13 +83,13 @@ function settingsObj() {};
     }
 
     //let Settings = new settingsObj();
-    let Settings={};
+    let Settings = {};
     //S = new settingsObj(); //外部から呼び出し Call from outside
 
     //spanやoptionのid，buttonのclassに"Label"が含まれるときi18nから値を取得して書き換え
     //When "label" is included in span and option id, button class Retrieve the value from i18n and rewrite it
     function labelSet() {
-        
+
         //span idにLableが含まれていたら
         let spans = document.getElementsByTagName("span");
         for (let i in spans) {
@@ -98,32 +98,37 @@ function settingsObj() {};
             if (label == "") continue;
             spans[i].innerHTML = label;
         }
-        
+
         //button, submit, text classにLabelが含まれていたら
         let inputs = document.getElementsByTagName("input");
         for (let i in inputs) {
             if (inputs[i].id == undefined || inputs[i].className.indexOf("Label") == -1) continue;
-            let label=browser.i18n.getMessage(inputs[i].className);
-            if(label=="")continue;
-            
+            let classNames = inputs[i].className.split(' ');
+            let labelName;
+            for (let n in classNames) {
+                if (classNames[n].indexOf("Label") != -1) labelName = classNames[n];
+            }
+            let label = browser.i18n.getMessage(labelName);
+            if (label == "") continue;
+
             switch (inputs[i].type) {
                 case "button":
                 case "submit":
                     inputs[i].value = label;
                     break;
                 case "text":
-                    inputs[i].placeholder=label;
+                    inputs[i].placeholder = label;
             }
         }
-        
+
         //options idにLabelが含まれていたら
-        let options=document.getElementsByTagName("option");
-        for(let i in options){
+        let options = document.getElementsByTagName("option");
+        for (let i in options) {
             if (options[i].id == undefined || options[i].id.indexOf("Label") == -1) continue;
-            let label=browser.i18n.getMessage(options[i].id);
-            if(label=="")continue;
-            
-            options[i].innerHTML=label;
+            let label = browser.i18n.getMessage(options[i].id);
+            if (label == "") continue;
+
+            options[i].innerHTML = label;
         }
     }
 
@@ -132,9 +137,9 @@ function settingsObj() {};
     function overRideSettingsByStorage() {
         return new Promise(function (resolve, reject) {
             browser.storage.local.get("Settings", function (value) {
-                
+
                 for (let i in Settings) {
-                    if (value.Settings!=undefined && value.Settings[i] != undefined) {
+                    if (value.Settings != undefined && value.Settings[i] != undefined) {
                         Settings[i] = value.Settings[i];
                     }
                 }
@@ -151,7 +156,7 @@ function settingsObj() {};
     function overRideHtml() {
         let inputs = document.getElementsByTagName("input");
         for (let i in inputs) {
-            if(inputs[i].id==undefined) continue;
+            if (inputs[i].id == undefined) continue;
             if (inputs[i].className != undefined && inputs[i].className.indexOf("noSetting") != -1) continue;
 
             switch (inputs[i].type) {
@@ -181,19 +186,19 @@ function settingsObj() {};
                     break;
             }
         }
-        let textareas=document.getElementsByTagName("textarea");
-        for(let i in textareas){
-            if(textareas[i].id==undefined) continue;
+        let textareas = document.getElementsByTagName("textarea");
+        for (let i in textareas) {
+            if (textareas[i].id == undefined) continue;
             if (textareas[i].className != undefined && textareas[i].className.indexOf("noSetting") != -1) continue;
-            textareas[i].value=Settings[textareas[i].id];
+            textareas[i].value = Settings[textareas[i].id];
         }
-        
-        let selects=document.getElementsByTagName("select");
-        for(let i in selects){
-            if(selects[i].id==undefined) continue;
+
+        let selects = document.getElementsByTagName("select");
+        for (let i in selects) {
+            if (selects[i].id == undefined) continue;
             if (selects[i].className != undefined && inputs[i].className.indexOf("noSetting") != -1) continue;
-            
-            selects[i].value=Settings[selects[i].id];
+
+            selects[i].value = Settings[selects[i].id];
         }
     }
 
@@ -203,7 +208,7 @@ function settingsObj() {};
         let inputs = document.getElementsByTagName("input");
 
         for (let i in inputs) {
-            if(inputs[i].id==undefined) continue;
+            if (inputs[i].id == undefined) continue;
             if (inputs[i].className != undefined && inputs[i].className.indexOf("noSetting") != -1) continue;
 
             switch (inputs[i].type) {
@@ -233,25 +238,26 @@ function settingsObj() {};
                     break;
             }
         }
-        
-        let textareas=document.getElementsByTagName("textarea");
-        for(let i in textareas){
-            if(textareas[i].id==undefined) continue;
+
+        let textareas = document.getElementsByTagName("textarea");
+        for (let i in textareas) {
+            if (textareas[i].id == undefined) continue;
             if (textareas[i].className != undefined && textareas[i].className.indexOf("noSetting") != -1) continue;
-            Settings[textareas[i].id]=textareas[i].value;
+            Settings[textareas[i].id] = textareas[i].value;
         }
-        
-        let selects=document.getElementsByTagName("select");
-        for(let i in selects){
-            if(selects[i].id==undefined) continue;
+
+        let selects = document.getElementsByTagName("select");
+        for (let i in selects) {
+            if (selects[i].id == undefined) continue;
             if (selects[i].className != undefined && selects[i].className.indexOf("noSetting") != -1) continue;
-            
-            Settings[selects[i].id]=selects[i].value;
+
+            Settings[selects[i].id] = selects[i].value;
         }
     }
-    
+
     //ストレージが変更されたらget
     browser.storage.onChanged.addListener(getSettings);
+
     function getSettings() {
         return new Promise(function (resolve, reject) {
             browser.storage.local.get("Settings", function (value) {
