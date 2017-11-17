@@ -29,7 +29,7 @@
     "ifSupportTstLabel": {
         "message": "支援樹狀分頁(Firefox57 ++)"
     },
-    "save": {
+    "saveLabel": {
         "message": "儲存"
     },
     "initialNameValue": {

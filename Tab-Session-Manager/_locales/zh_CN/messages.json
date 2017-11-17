@@ -29,7 +29,7 @@
     "ifSupportTstLabel": {
         "message": "支持树样式选项卡(Firefox57 ++)"
     },
-    "save": {
+    "saveLabel": {
         "message": "保存"
     },
     "initialNameValue": {
