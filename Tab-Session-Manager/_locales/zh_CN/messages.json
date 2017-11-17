@@ -44,31 +44,37 @@
     "displayAutoLabel": {
         "message": "自动保存"
     },
-    "newestLabel":{
+    "newestLabel": {
         "message": "最新"
     },
-    "oldestLabel":{
+    "oldestLabel": {
         "message": "最旧"
     },
-    "open":{
+    "open": {
         "message": "打开"
     },
-    "remove":{
+    "remove": {
         "message": "移除"
     },
-    "windowLabel":{
+    "windowLabel": {
         "message": "窗口"
     },
-    "windowsLabel":{
+    "windowsLabel": {
         "message": "窗口"
     },
-    "tabLabel":{
+    "tabLabel": {
         "message": "标签页"
     },
-    "tabsLabel":{
+    "tabsLabel": {
         "message": "标签页"
     },
-    "noSessionLabel":{
+    "noSessionLabel": {
         "message": "没有会话"
+    },
+    "importLabel": {
+        "message": "进口"
+    },
+    "exportLabel": {
+        "message": "出口"
     }
 }

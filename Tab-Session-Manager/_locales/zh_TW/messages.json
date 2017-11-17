@@ -44,31 +44,37 @@
     "displayAutoLabel": {
         "message": "自動儲存的"
     },
-    "newestLabel":{
+    "newestLabel": {
         "message": "依最新排序"
     },
-    "oldestLabel":{
+    "oldestLabel": {
         "message": "依最舊排序"
     },
-    "open":{
+    "open": {
         "message": "開啟"
     },
-    "remove":{
+    "remove": {
         "message": "移除"
     },
-    "windowLabel":{
+    "windowLabel": {
         "message": "視窗"
     },
-    "windowsLabel":{
+    "windowsLabel": {
         "message": "視窗"
     },
-    "tabLabel":{
+    "tabLabel": {
         "message": "分頁"
     },
-    "tabsLabel":{
+    "tabsLabel": {
         "message": "分頁"
     },
-    "noSessionLabel":{
+    "noSessionLabel": {
         "message": "沒有已儲存的工作階段"
+    },
+    "importLabel": {
+        "message": "進口"
+    },
+    "exportLabel": {
+        "message": "出口"
     }
 }

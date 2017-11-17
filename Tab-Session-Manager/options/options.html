@@ -48,9 +48,17 @@
         <input type="checkbox" id="ifSupportTst" checked=true>
         <span id=ifSupportTstLabel>ツリー型タブに対応(Firefox57++)</span>
     </label>
+    <hr>
+    <label class=button for=import>
+        <span id=importLabel>import</span>
+        <input id=import type="file" accept=".json, .session" multiple onchange="importSessions(event)" value=import hidden>
+    </label>
+    <hr>
+    <input id="export" type="button" class="button exportLabel" value="export">
 
     <input id="save" type="button" class=saveLabel value="save">
 
+    <script type="text/javascript" src="../popup/moment.js"></script>
     <script type="text/javascript" src="../Settings.js"></script>
     <script type="text/javascript" src="options.js"></script>
 </body>

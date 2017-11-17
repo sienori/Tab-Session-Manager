@@ -44,31 +44,37 @@
     "displayAutoLabel": {
         "message": "Auto Saved"
     },
-    "newestLabel":{
+    "newestLabel": {
         "message": "Newest"
     },
-    "oldestLabel":{
+    "oldestLabel": {
         "message": "Oldest"
     },
-    "open":{
+    "open": {
         "message": "Open"
     },
-    "remove":{
+    "remove": {
         "message": "Remove"
     },
-    "windowLabel":{
+    "windowLabel": {
         "message": "Window"
     },
-    "windowsLabel":{
+    "windowsLabel": {
         "message": "Windows"
     },
-    "tabLabel":{
+    "tabLabel": {
         "message": "Tab"
     },
-    "tabsLabel":{
+    "tabsLabel": {
         "message": "Tabs"
     },
-    "noSessionLabel":{
+    "noSessionLabel": {
         "message": "There is no session"
+    },
+    "importLabel": {
+        "message": "import"
+    },
+    "exportLabel": {
+        "message": "export"
     }
 }

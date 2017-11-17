@@ -44,31 +44,37 @@
     "displayAutoLabel": {
         "message": "自動保存"
     },
-    "newestLabel":{
+    "newestLabel": {
         "message": "新しい順"
     },
-    "oldestLabel":{
+    "oldestLabel": {
         "message": "古い順"
     },
-    "open":{
+    "open": {
         "message": "開く"
     },
-    "remove":{
+    "remove": {
         "message": "削除"
     },
-    "windowLabel":{
+    "windowLabel": {
         "message": "ウィンドウ"
     },
-    "windowsLabel":{
+    "windowsLabel": {
         "message": "ウィンドウ"
     },
-    "tabLabel":{
+    "tabLabel": {
         "message": "タブ"
     },
-    "tabsLabel":{
+    "tabsLabel": {
         "message": "タブ"
     },
-    "noSessionLabel":{
+    "noSessionLabel": {
         "message": "セッションはありません"
+    },
+    "importLabel": {
+        "message": "インポート"
+    },
+    "exportLabel": {
+        "message": "エクスポート"
     }
 }
