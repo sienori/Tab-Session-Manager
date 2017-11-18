@@ -271,7 +271,7 @@ hr {
     background: #ebebeb;
 }
 
-.save {
+#saveButton {
     position: relative;
     top: 0px;
     left: 0px;
@@ -288,7 +288,7 @@ hr {
     transition: all 100ms 0s ease;
 }
 
-.save:hover {
+#saveButton:hover {
     border: #36b2b2 solid 1px;
     color: #36b2b2;
     transition: all 100ms 0s ease;

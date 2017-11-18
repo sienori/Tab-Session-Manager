@@ -3,14 +3,14 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 //初回起動時にオプションページを表示して設定を初期化
-browser.runtime.onInstalled.addListener(function(){
+browser.runtime.onInstalled.addListener(function () {
     browser.runtime.openOptionsPage();
 });
 
 let S = new settingsObj()
 
 var sessions = [];
-var sessionStartTime=Date.now();
+var sessionStartTime = Date.now();
 
 //起動時の設定
 initSettings().then(function () {
@@ -28,7 +28,7 @@ function initSettings(value) {
             //sessions初期化
             if (value.sessions != undefined) sessions = value.sessions;
             else sessions = [];
-            
+
             S.init();
             resolve();
         });
@@ -146,7 +146,7 @@ function loadCurrentSesssion(name, tag) {
             session.name = name;
             session.date = new Date();
             session.tag = tag;
-            session.sessionStartTime=sessionStartTime;
+            session.sessionStartTime = sessionStartTime;
 
             //windouwsとtabのセット
             for (let tab of tabs) {
@@ -171,7 +171,7 @@ function ifChangedAutoSaveSession(session) {
     }
     //自動保存が無ければtrue
     if (lastAutoNumber == -1) return true;
-    
+
     //前回保存時のセッション
     let lastItems = [];
     for (let win in sessions[lastAutoNumber].windows) {
@@ -217,7 +217,7 @@ function showSessionWhenWindowClose(session) {
             }
 
             //sessionStartTimeが異なればFirefoxの再起動されたと見なしshowFlag=true
-            if(sessions[i].sessionStartTime!=session.sessionStartTime) showFlag=true;
+            if (sessions[i].sessionStartTime != session.sessionStartTime) showFlag = true;
 
             //保存が必要ならクラスからtempを削除し表示する
             if (showFlag) {
@@ -282,18 +282,18 @@ function removeNowOpenTabs() {
 //現在のウィンドウにタブを生成
 function createTabs(session, win, currentWindow) {
     return new Promise(function (resolve, reject) {
-        let sortedTabs=[];
-        
-        for(let tab in session.windows[win]){
-            sortedTabs[session.windows[win][tab].index]=session.windows[win][tab];
+        let sortedTabs = [];
+
+        for (let tab in session.windows[win]) {
+            sortedTabs[session.windows[win][tab].index] = session.windows[win][tab];
         }
         //console.log(sortedTabs);
-        
+
         let firstTabId = currentWindow.tabs[0].id;
         let tabNumber = 0;
         let p = Promise.resolve();
         for (let tab of sortedTabs) { //タブごと
-            
+
             p = p.then(function () {
                 tabNumber++;
                 return openTab(session, win, currentWindow, tab.id);

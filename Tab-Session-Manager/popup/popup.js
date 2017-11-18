@@ -4,7 +4,7 @@
 
 //TODO: remove確認 絞込みの状態を保持 セッションはありません←tempのため表示されない
 
-labels = ["displayAllLabel", "displayUserLabel", "displayAutoLabel", "newestLabel", "oldestLabel", "save"];
+labels = ["displayAllLabel", "displayUserLabel", "displayAutoLabel", "newestLabel", "oldestLabel", "saveLabel"];
 setLabel(labels);
 
 function setLabel(labels) {

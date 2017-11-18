@@ -5,19 +5,39 @@
 let S = new settingsObj;
 S.initOptionsPage();
 
+let MargedSessions = {};
+
 document.addEventListener('click', function (e) {
     switch (e.target.id) {
-        case "save":
-            save();
-            break;
         case "export":
             exportSessions();
+            break;
+        case "removeSessions":
+            removeSessions();
+            break;
+        case "importSave":
+            importSave();
+            break;
+        case "importClear":
+            clearImportFile();
             break;
     }
 });
 
+let saveByChangeItems = document.getElementsByClassName("saveByChange");
+for (let item of saveByChangeItems) {
+    item.addEventListener("change", save);
+}
+
 function save() {
     S.saveOptionsPage();
+}
+
+function removeSessions() {
+    let res = confirm(browser.i18n.getMessage("warningRemoveAllMessage"));
+    if (res == true) {
+        saveSessions([]);
+    }
 }
 
 document.getElementById("import").addEventListener("change", importSessions, false);
@@ -26,6 +46,7 @@ async function importSessions() {
     let sessions = [];
     for (let file of this.files) {
         session = await fileOpen(file);
+        showImportFile(file.name, session);
         Array.prototype.push.apply(sessions, session);
     }
     margeSessions(sessions);
@@ -34,20 +55,40 @@ async function importSessions() {
 function fileOpen(file) {
     return new Promise(function (resolve, reject) {
         let reader = new FileReader();
-        reader.readAsText(file);
-
         reader.onload = function (event) {
             if (file.name.toLowerCase().endsWith('.json')) {
-                let jsonFile = JSON.parse(reader.result);
-                if (checkImportFile(jsonFile)) {
-                    resolve(jsonFile);
+
+                if (!isJSON(reader.result)) { //jsonの構文を判定
+                    resolve(); //失敗
+                } else {
+                    let jsonFile = JSON.parse(reader.result);
+                    if (checkImportFile(jsonFile)) { //データの構造を判定
+                        resolve(jsonFile);
+                    } else {
+                        resolve(); //失敗
+                    }
                 }
+
             } else if (file.name.toLowerCase().endsWith('.session')) {
                 resolve(parseOldSession(reader.result));
             }
         }
+        reader.readAsText(file);
     })
 }
+
+function isJSON(arg) {
+    arg = (typeof arg === "function") ? arg() : arg;
+    if (typeof arg !== "string") {
+        return false;
+    }
+    try {
+        arg = (!JSON) ? eval("(" + arg + ")") : JSON.parse(arg);
+        return true;
+    } catch (e) {
+        return false;
+    }
+};
 
 function checkImportFile(file) {
     let correctSession = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime"];
@@ -63,12 +104,12 @@ function parseOldSession(file) {
     let session = {};
     line = file.split(/\r\n|\r|\n/);
 
+    session.windows = {};
+    session.tabsNumber = 0;
     session.name = line[1].substr(5);
-    session.sessionStartTime = parseInt(line[2].substr(10));
     session.date = moment(session.sessionStartTime).toISOString();
     session.tag = 'user';
-    session.tabsNumber = 0;
-    session.windows = {};
+    session.sessionStartTime = parseInt(line[2].substr(10));
 
     let sessionData = JSON.parse(line[4]);
 
@@ -95,16 +136,7 @@ function parseOldSession(file) {
 
 async function margeSessions(newSessions) {
     let sessions = await getSessions();
-    /*
-    for(let newSession of newSessions){
-        for(let session of(sessions)){
-            if(moment(newSession.date).valueOf()>=moment(session.date).valueOf()){
-                sessions.splice(sessions.indexOf(session), 0, newSession)
-            }
-            console.log(session.);
-        }
-    }
-    */
+    Array.prototype.push.apply(sessions, MargedSessions);
 
     Array.prototype.push.apply(sessions, newSessions);
     sessions.sort(function (a, b) {
@@ -122,8 +154,16 @@ async function margeSessions(newSessions) {
             i--;
         }
     }
-    console.log(sessions);
-    //saveSessions(sessions);
+    MargedSessions = sessions;
+}
+
+function importSave() {
+    if (MargedSessions.length != undefined) {
+        saveSessions(MargedSessions);
+        alert(browser.i18n.getMessage("importMessage"));
+        clearImportFile();
+    }
+    MargedSessions = {};
 }
 
 async function exportSessions() {
@@ -153,7 +193,7 @@ function getSessions() {
     })
 }
 
-function saveSessions() {
+function saveSessions(sessions) {
     browser.storage.local.set({
         'sessions': sessions
     });
