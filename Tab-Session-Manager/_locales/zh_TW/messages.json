@@ -72,9 +72,9 @@
         "message": "沒有已儲存的工作階段"
     },
     "importLabel": {
-        "message": "進口"
+        "message": "匯入"
     },
     "exportLabel": {
-        "message": "出口"
+        "message": "匯出"
     }
 }
