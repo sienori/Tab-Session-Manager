@@ -106,13 +106,13 @@
         "message": "Supports Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the current session.<br>Please turn it off if it is less than fireFox 57."
+        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
     },
     "importLabel": {
         "message": "Import sessions"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer.<br>It also supports SessionManager's session file (.session)."
+        "message": "Load sessions saved on the computer and add them to the current session.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
         "message": "Reference..."
