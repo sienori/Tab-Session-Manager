@@ -73,7 +73,7 @@
         "message": "Save the session every set time."
     },
     "autoSaveIntervalLabel": {
-        "message": "interval(minutes)"
+        "message": "Interval (minutes)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Minimum value 0.1"
@@ -112,7 +112,7 @@
         "message": "Import sessions"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the current session.<br>It also supports SessionManager's session file (.session)."
+        "message": "Load sessions saved on the computer.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
         "message": "Reference..."
