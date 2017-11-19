@@ -52,49 +52,49 @@
 
 
     "settingsLabel": {
-        "message": "Settings"
+        "message": "設定"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "工作階段"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "附加元件資訊"
     },
     "ifOpenNewWindowLabel": {
         "message": "於新視窗中開啟工作階段"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "如果取消勾選，開啟工作階段時將會覆寫目前視窗"
     },
     "ifAutoSaveLabel": {
         "message": "定期將開啟的分頁瀏覽狀態自動儲存"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "定期儲存工作階段"
     },
     "autoSaveIntervalLabel": {
         "message": "儲存間隔(分鐘) : "
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "最小值為 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "最大數量"
+        "message": "最大儲存數量"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "使用這個方法儲存的工作階段數量"
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "關閉視窗時儲存工作階段"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "在關閉視窗或是結束瀏覽器時儲存工作階段"
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "最大數量"
+        "message": "最大儲存數量"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "使用這個方法儲存的工作階段數量。"
     },
     "dateFormatLabel": {
         "message": "日期格式"
@@ -106,70 +106,70 @@
         "message": "支援樹狀分頁"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "還原樹狀分頁<br>如果使用的 Firefox 版本低於 57 時，請關閉此功能"
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "匯入工作階段"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the current session.<br>It also supports SessionManager's session file (.session)."
+        "message": "匯入電腦中儲存的工作階段<br>此功能支援匯入 SessionManager 的工作階段備份檔案 (.session)"
     },
     "importButtonLabel": {
-        "message": "Reference..."
+        "message": "瀏覽..."
     },
     "importSaveButtonLabel": {
         "message": "匯入"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "清除"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "匯出工作階段"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "將目前的工作階段儲存至電腦中"
     },
     "exportButtonLabel": {
         "message": "匯出"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "刪除工作階段"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "刪除所有已儲存的工作階段"
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "刪除"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "授權條款"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "請贊助我吧！"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation.<br><br>Donation is accepted with eGift Cards of amazon.co.jp.<br>Please purchase an eGift Cards and send it to the following e-mail address.<br>email: sienori.firefox@gmail.com"
+        "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您可以贊助我。<br><br>您可以使用 amazon 電子禮品卡來贊助我。<br>請購買電子禮品卡並將它傳送至以下電子郵件地址。<br>電子郵件地址: sienori.firefox@gmail.com"
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "贊助我 amazon 電子禮品卡"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "AMO 附加元件頁面"
     },
 
 
 
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "已匯入工作階段。"
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "讀取失敗"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "確定要刪除所有工作階段嗎？"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "工作階段"
     },
     "amazonUrl": {
         "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=zh_CN"
