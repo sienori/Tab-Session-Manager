@@ -73,7 +73,7 @@
         "message": "Save the session every set time."
     },
     "autoSaveIntervalLabel": {
-        "message": "interval(minutes)"
+        "message": "Interval (minutes)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Minimum value 0.1"
