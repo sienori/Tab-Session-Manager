@@ -115,7 +115,7 @@
         "message": "Load sessions saved on the computer and add them to the current session.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Reference..."
+        "message": "Import"
     },
     "importSaveButtonLabel": {
         "message": "Import"
