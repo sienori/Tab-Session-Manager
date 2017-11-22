@@ -4,7 +4,9 @@
 
 //初回起動時にオプションページを表示して設定を初期化
 browser.runtime.onInstalled.addListener(function () {
-    browser.runtime.openOptionsPage();
+    browser.tabs.create({
+        url: "options/options.html#information"
+    });
 });
 
 let S = new settingsObj()
