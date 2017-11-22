@@ -320,11 +320,6 @@ function openTab(session, win, currentWindow, tab) {
     return new Promise(function (resolve, reject) {
         property = session.windows[win][tab];
 
-        //特殊ページは新しいタブに置き換える
-        if (property.url == "about:newtab" || property.url == "about:config" || property.url == "about:addons" || property.url == "about:debugging") {
-            property.url = null;
-        }
-
         let createOption = {
             active: property.active,
             cookieStoreId: property.cookieStoreId,
@@ -345,6 +340,14 @@ function openTab(session, win, currentWindow, tab) {
             browser.tabs.create(createOption).then(function (newTab) {
                 tabList[property.id] = newTab.id;
                 resolve();
+            }, function () { //タブオープン失敗時
+                createOption.url = "replaced/replaced.html" + "?tst_title=" + property.title + "&tst_url=" + property.url;
+                browser.tabs.create(createOption).then(function (newTab) {
+                    tabList[property.id] = newTab.id;
+                    resolve();
+                }, function () {
+                    resolve();
+                })
             });
         }, openDelay) //ツリー型タブの処理を待つ
     })

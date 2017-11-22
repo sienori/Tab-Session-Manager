@@ -172,5 +172,10 @@
     },
     "amazonUrl": {
         "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    },
+
+
+    "replacedPageMessage": {
+        "message": "This page can not be opened by Tab Session Manager."
     }
 }
