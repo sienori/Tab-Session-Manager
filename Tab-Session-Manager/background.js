@@ -16,7 +16,7 @@ var sessionStartTime = Date.now();
 
 //起動時の設定
 initSettings().then(function () {
-    updateAutoTag();
+    updateAutoName();
     setStorage();
     setAutoSaveListener();
     autoSaveWhenCloseListener();
@@ -83,12 +83,19 @@ function initSettings(value) {
     })
 }
 
-//過去のバージョンのautosaveのタグを更新
-function updateAutoTag() {
+//過去のバージョンのautosaveのセッション名を変更
+function updateAutoName() {
     for (let i in sessions) {
-        if (sessions[i].tag == "auto") {
-            sessions[i].tag = "auto regular";
-            sessions[i].name = "Auto Saved - Regularly";
+        if (sessions[i].tag.indexOf("auto winClose") != -1) {
+
+            if (sessions[i].name === "Auto Saved - Window was closed")
+                sessions[i].name = browser.i18n.getMessage("winCloseSessionName");
+
+        } else if (sessions[i].tag.indexOf("auto regular") != -1) {
+
+            if (sessions[i].name === "Auto Saved - Regularly")
+                sessions[i].name = browser.i18n.getMessage("regularSaveSessionName");
+
         }
     }
 }
@@ -118,7 +125,7 @@ function setAutoSaveListener() {
     if (S.get().ifAutoSave) {
         clearInterval(autoSaveTimerArray.shift());
         autoSaveTimerArray.push(setInterval(function () {
-            saveSession("Auto Saved - Regularly", "auto regular").then(function () {
+            saveSession(browser.i18n.getMessage("regularSaveSessionName"), "auto regular").then(function () {
                 removeOverLimit("regular");
             });
         }, S.get().autoSaveInterval * 60 * 1000));
@@ -148,7 +155,7 @@ function onUpdate(tabId, changeInfo, tab) {
 
 function autoSaveWhenCloseListener() {
     if (!IsOpeningSession) {
-        saveSession("Auto Saved - Window was closed", "auto winClose temp").then(function () {
+        saveSession(browser.i18n.getMessage("winCloseSessionName"), "auto winClose temp").then(function () {
             removeOverLimit("winClose");
         });
     }

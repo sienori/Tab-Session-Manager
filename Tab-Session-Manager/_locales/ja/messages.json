@@ -51,6 +51,14 @@
     },
 
 
+    "winCloseSessionName": {
+        "message": "自動保存 - ウィンドウ終了"
+    },
+    "regularSaveSessionName": {
+        "message": "自動保存 - 定期実行"
+    },
+
+
     "settingsLabel": {
         "message": "設定"
     },

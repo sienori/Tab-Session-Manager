@@ -51,6 +51,14 @@
     },
 
 
+    "winCloseSessionName": {
+        "message": "Auto Saved - Window was closed"
+    },
+    "regularSaveSessionName": {
+        "message": "Auto Saved - Regularly"
+    },
+
+
     "settingsLabel": {
         "message": "Настройки"
     },
