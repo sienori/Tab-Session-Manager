@@ -66,6 +66,12 @@
     "ifOpenNewWindowCaptionLabel": {
         "message": "チェックをオフにすると，セッションは現在のウィンドウを上書きします。"
     },
+    "ifLazyLoadingLabel": {
+        "message": "タブの遅延読み込み"
+    },
+    "ifLazyLoadingCaptionLabel": {
+        "message": "セッションを開いたとき，タブを選択するまで各ページの内容を読み込みません。<br>チェックをオフにすると，セッション復元時のメモリ使用量が増大します。"
+    },
     "ifAutoSaveLabel": {
         "message": "定期的にセッションを保存する"
     },

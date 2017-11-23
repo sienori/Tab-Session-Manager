@@ -21,7 +21,53 @@ initSettings().then(function () {
     setAutoSaveListener();
     autoSaveWhenCloseListener();
     browser.storage.onChanged.addListener(loadSessions);
+    browser.tabs.onActivated.addListener(replacePage);
+    browser.windows.onFocusChanged.addListener(replacePage);
 });
+
+function returnReplaceParamater(url) {
+    let paramater = {};
+    if (url.indexOf(browser.runtime.getURL("replaced/replaced.html")) === 0) {
+        paramater.isReplaced = true;
+        let paras = url.split('?')[1].split('&');
+        for (let p of paras) {
+            paramater[p.split('=')[0]] = decodeURIComponent(p.split('=')[1]);
+        }
+    } else {
+        paramater.isReplaced = false;
+    }
+
+    return paramater;
+}
+
+function replacePage() {
+    if (!IsOpeningSession) {
+        browser.tabs.query({
+            active: true,
+            currentWindow: true
+        }).then(function (info) {
+            if (info[0].status != "complete") {
+                setTimeout(replacePage, 500);
+            }
+            let paramater = returnReplaceParamater(info[0].url);
+            if (paramater.isReplaced && paramater.state == "redirect") {
+                browser.tabs.update({
+                    url: paramater.url
+                }).catch(function () {
+                    //失敗時
+                    browser.tabs.update({
+                        url: "replaced/replaced.html" +
+                            "?state=open_faild" +
+                            "&title=" + encodeURIComponent(paramater.title) +
+                            "&url=" + encodeURIComponent(paramater.url) +
+                            "&favIconUrl=" + encodeURIComponent(paramater.favIconUrl)
+                    })
+                })
+            }
+
+        })
+    }
+}
 
 //設定の初期化
 function initSettings(value) {
@@ -92,6 +138,7 @@ function setAutoSaveListener() {
     }
 }
 
+
 function autoSaveWhenCloseListener() {
     saveSession("Auto Saved - Window was closed", "auto winClose temp").then(function () {
         removeOverLimit("winClose");
@@ -153,6 +200,11 @@ function loadCurrentSesssion(name, tag) {
             //windouwsとtabのセット
             for (let tab of tabs) {
                 if (session.windows[tab.windowId] == undefined) session.windows[tab.windowId] = {};
+                //replacedPageなら元のページを保存
+                let paramater = returnReplaceParamater(tab.url)
+                if (paramater.isReplaced) {
+                    tab.url = paramater.url;
+                }
                 session.windows[tab.windowId][tab.id] = tab;
                 session.tabsNumber++;
             }
@@ -255,6 +307,7 @@ function openSession(session) {
     }
 }
 
+let IsOpeningSession = false;
 //ウィンドウとタブを閉じてcurrentWindowを返す
 function removeNowOpenTabs() {
     return new Promise(function (resolve, reject) {
@@ -284,6 +337,7 @@ function removeNowOpenTabs() {
 //現在のウィンドウにタブを生成
 function createTabs(session, win, currentWindow) {
     return new Promise(function (resolve, reject) {
+        IsOpeningSession = true;
         let sortedTabs = [];
 
         for (let tab in session.windows[win]) {
@@ -302,13 +356,10 @@ function createTabs(session, win, currentWindow) {
             }).then(function () {
                 if (tabNumber == 1) {
                     browser.tabs.remove(firstTabId);
-                }
-                if (tabNumber == Object.keys(session.windows[win]).length) {
+                } else if (tabNumber == Object.keys(session.windows[win]).length) {
+                    IsOpeningSession = false;
+                    replacePage();
                     resolve();
-                    /*sortTabsを導入したため不要
-                    moveTabsInIndex(currentWindow).then(function () {
-                        resolve();
-                    });*/
                 }
             });
         }
@@ -338,16 +389,29 @@ function openTab(session, win, currentWindow, tab) {
             openDelay = 0;
         }
 
+        //Lazy loading
+        if (S.get().ifLazyLoading) {
+            createOption.url = "replaced/replaced.html" +
+                "?state=redirect" +
+                "&title=" + encodeURIComponent(property.title) +
+                "&url=" + encodeURIComponent(property.url) +
+                "&favIconUrl=" + encodeURIComponent(property.favIconUrl);
+        }
+
         setTimeout(function () {
             browser.tabs.create(createOption).then(function (newTab) {
                 tabList[property.id] = newTab.id;
                 resolve();
             }, function () { //タブオープン失敗時
-                createOption.url = "replaced/replaced.html" + "?tst_title=" + property.title + "&tst_url=" + property.url;
+                createOption.url = "replaced/replaced.html" +
+                    "?state=open_faild" +
+                    "&title=" + encodeURIComponent(property.title) +
+                    "&url=" + encodeURIComponent(property.url) +
+                    "&favIconUrl=" + encodeURIComponent(property.favIconUrl)
                 browser.tabs.create(createOption).then(function (newTab) {
                     tabList[property.id] = newTab.id;
                     resolve();
-                }, function () {
+                }, function () { //失敗時(多分起こらないけど念のため)
                     resolve();
                 })
             });
@@ -377,6 +441,7 @@ function removeSession(number) {
     sessions.splice(number, 1);
     setStorage();
 }
+
 
 
 //popupからのリクエスト

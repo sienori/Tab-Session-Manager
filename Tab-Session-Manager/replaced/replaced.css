@@ -25,9 +25,9 @@ body {
     padding-left: 20px;
 }
 
-.replacedUrl {
-    font-size: 33px;
-    font-weight: 200;
+.title {
+    font-size: 22px;
+    font-weight: 600;
     color: var(--sub-text);
     line-height: 2;
 }
