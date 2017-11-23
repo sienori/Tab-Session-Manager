@@ -208,7 +208,11 @@ function loadCurrentSesssion(name, tag) {
 
             //windouwsとtabのセット
             for (let tab of tabs) {
+                //プライベートタブを無視
+                if (tab.cookieStoreId === "firefox-private") continue;
+
                 if (session.windows[tab.windowId] == undefined) session.windows[tab.windowId] = {};
+
                 //replacedPageなら元のページを保存
                 let paramater = returnReplaceParamater(tab.url)
                 if (paramater.isReplaced) {
