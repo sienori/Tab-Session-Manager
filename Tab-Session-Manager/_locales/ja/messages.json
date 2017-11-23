@@ -118,7 +118,7 @@
         "message": "セッションをインポート"
     },
     "importCaptionLabel": {
-        "message": "コンピュータに保存されたセッションを読み込んで現在のセッションに追加します。<br>Session Managerのセッションファイル(.session)にも対応しています。"
+        "message": "コンピュータに保存されたセッションを読み込んでセッションリストに追加します。<br>Session Managerのセッションファイル(.session)にも対応しています。"
     },
     "importButtonLabel": {
         "message": "参照..."

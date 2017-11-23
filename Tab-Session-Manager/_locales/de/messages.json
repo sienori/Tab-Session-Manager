@@ -181,5 +181,10 @@
     },
     "addonUrl": {
         "message": "https://addons.mozilla.org/de/firefox/addon/tab-session-manager/?src=optionpage"
+    },
+
+
+    "replacedPageMessage": {
+        "message": "This page can not be opened by Tab Session Manager."
     }
 }
