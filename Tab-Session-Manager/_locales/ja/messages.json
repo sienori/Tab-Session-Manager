@@ -179,6 +179,9 @@
     "amazonUrl": {
         "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=ja_JP"
     },
+    "addonUrl": {
+        "message": "https://addons.mozilla.org/ja/firefox/addon/tab-session-manager/?src=optionpage"
+    },
 
 
     "replacedPageMessage": {

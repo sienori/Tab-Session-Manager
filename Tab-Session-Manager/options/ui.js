@@ -69,3 +69,4 @@ function clearImportFile() {
 }
 
 document.getElementsByClassName("amazonUrl")[0].href = browser.i18n.getMessage("amazonUrl");
+document.getElementsByClassName("addonUrl")[0].href = browser.i18n.getMessage("addonUrl");
