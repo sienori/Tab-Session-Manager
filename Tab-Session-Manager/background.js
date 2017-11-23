@@ -289,6 +289,7 @@ function showSessionWhenWindowClose(session) {
 function openSession(session) {
     let countFlag = 0;
     let p = Promise.resolve();
+    tabList = {};
     for (let win in session.windows) { //ウィンドウごと
         //console.log(session.windows[win]);
         p = p.then(function () {
