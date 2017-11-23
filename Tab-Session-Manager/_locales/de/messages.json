@@ -70,7 +70,7 @@
         "message": "Sitzung regelmäßig sichern"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Speichtert die Sitzung in einstelltem Zeitabstand."
+        "message": "Speichert die Sitzung im einstellten Zeitabstand."
     },
     "autoSaveIntervalLabel": {
         "message": "Intervall(Minuten)"
@@ -85,10 +85,10 @@
         "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Sitzung speichern falls Fenster geschlossen wird"
+        "message": "Sitzung speichern, falls Fenster geschlossen wird"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Speichert die Sitzung wenn Fenster oder Firefox geschlossen werden."
+        "message": "Speichert die Sitzung, wenn Fenster oder Firefox geschlossen werden."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Maximal gespeicherte Anzahl"
@@ -97,22 +97,22 @@
         "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
     },
     "dateFormatLabel": {
-        "message": "Datumsformat"
+        "message": "Datumformat"
     },
     "dateFormatCaptionLabel": {
-        "message": "Bsp. DD.MM.YYYY ss:mm:HH"
+        "message": "Beispiel: DD.MM.YYYY ss:mm:HH"
     },
     "ifSupportTstLabel": {
         "message": "Tree Style Tab unterstützen"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Status des Tree Style Tab wiederherstellen.<br>Bittte deaktivieren falls Firefox älter Version 57 genutzt wird."
+        "message": "Status des Tree Style Tab wiederherstellen.<br>Bittte deaktivieren, falls Firefox älter Version 57 genutzt wird."
     },
     "importLabel": {
         "message": "Sitzungen importieren"
     },
     "importCaptionLabel": {
-        "message": "Lokal gespeichrte Sitzungen laden und der aktuellen Sitzung hinzufügen.<br>Es werden auch Session-Dateien von SessionManager unterstützt (.session)."
+        "message": "Lokal gespeicherte Sitzungen laden und der aktuellen Sitzung hinzufügen.<br>Es werden auch Session-Dateien von SessionManager unterstützt (.session)."
     },
     "importButtonLabel": {
         "message": "Auswählen..."
@@ -130,7 +130,7 @@
         "message": "Aktuelle Sitzung lokal auf dem PC speichern."
     },
     "exportButtonLabel": {
-        "message": "Exportierenn"
+        "message": "Exportieren"
     },
     "removeSessionsLabel": {
         "message": "Sitzungen löschen"
@@ -145,10 +145,10 @@
         "message": "Lizenz"
     },
     "donationLabel": {
-        "message": "Bitte Spenden Sie uns"
+        "message": "Bitte spenden Sie uns."
     },
     "donationCaptionLabel": {
-        "message": "Danke, dass Sie Tab Session Manager nutzen.<br>Ihre Unterstützung ist ein großer Ansporn bei der Weiterentwicklung dieses Add-ons.<br>Wenn Ihnen Tab Session Manager gefällt, erwägen Sie bitte eine Spende.<br><br>Spende Sie bitte in Form von eGift Cards von amazon.co.jp.<br>Diese bitte bei Amazon Japan erwerbn und an folgende Email-Adresse senden:<br>Email: sienori.firefox@gmail.com"
+        "message": "Danke, dass Sie Tab Session Manager nutzen.<br>Ihre Unterstützung ist ein großer Ansporn bei der Weiterentwicklung dieses Add-ons.<br>Wenn Ihnen Tab Session Manager gefällt, erwägen Sie bitte eine Spende.<br><br>Spenden Sie bitte in Form von eGift Cards von amazon.co.jp.<br>Diese bitte bei Amazon Japan erwerben und an folgende Email-Adresse senden:<br>Email: sienori.firefox@gmail.com"
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
