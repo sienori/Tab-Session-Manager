@@ -128,21 +128,30 @@ function setAutoSaveListener() {
 
     //ウィンドウを閉じたときに保存
     if (S.get().ifAutoSaveWhenClose) {
+        browser.tabs.onUpdated.addListener(onUpdate);
         browser.tabs.onCreated.addListener(autoSaveWhenCloseListener);
         browser.tabs.onRemoved.addListener(autoSaveWhenCloseListener);
         browser.windows.onCreated.addListener(autoSaveWhenCloseListener);
     } else if (browser.tabs.onCreated.hasListener) {
+        browser.tabs.onUpdated.removeListener(onUpdate);
         browser.tabs.onCreated.removeListener(autoSaveWhenCloseListener);
         browser.tabs.onRemoved.removeListener(autoSaveWhenCloseListener);
         browser.windows.onCreated.removeListener(autoSaveWhenCloseListener);
     }
 }
 
+function onUpdate(tabId, changeInfo, tab) {
+    if (changeInfo.status == "complete") {
+        autoSaveWhenCloseListener();
+    }
+}
 
 function autoSaveWhenCloseListener() {
-    saveSession("Auto Saved - Window was closed", "auto winClose temp").then(function () {
-        removeOverLimit("winClose");
-    });
+    if (!IsOpeningSession) {
+        saveSession("Auto Saved - Window was closed", "auto winClose temp").then(function () {
+            removeOverLimit("winClose");
+        });
+    }
 };
 
 function removeOverLimit(tagState) {
