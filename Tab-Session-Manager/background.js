@@ -19,10 +19,16 @@ initSettings().then(function () {
     updateAutoName();
     setStorage();
     setAutoSaveListener();
-    autoSaveWhenCloseListener();
+    autoSaveWhenClose();
     browser.storage.onChanged.addListener(loadSessions);
     browser.tabs.onActivated.addListener(replacePage);
     browser.windows.onFocusChanged.addListener(replacePage);
+
+    //ウィンドウを閉じたときに保存
+    browser.tabs.onUpdated.addListener(onUpdate);
+    browser.tabs.onCreated.addListener(autoSaveWhenClose);
+    browser.tabs.onRemoved.addListener(autoSaveWhenClose);
+    browser.windows.onCreated.addListener(autoSaveWhenClose);
 });
 
 function returnReplaceParamater(url) {
@@ -132,29 +138,16 @@ function setAutoSaveListener() {
     } else {
         clearInterval(autoSaveTimerArray.shift());
     }
-
-    //ウィンドウを閉じたときに保存
-    if (S.get().ifAutoSaveWhenClose) {
-        browser.tabs.onUpdated.addListener(onUpdate);
-        browser.tabs.onCreated.addListener(autoSaveWhenCloseListener);
-        browser.tabs.onRemoved.addListener(autoSaveWhenCloseListener);
-        browser.windows.onCreated.addListener(autoSaveWhenCloseListener);
-    } else if (browser.tabs.onCreated.hasListener) {
-        browser.tabs.onUpdated.removeListener(onUpdate);
-        browser.tabs.onCreated.removeListener(autoSaveWhenCloseListener);
-        browser.tabs.onRemoved.removeListener(autoSaveWhenCloseListener);
-        browser.windows.onCreated.removeListener(autoSaveWhenCloseListener);
-    }
 }
 
 function onUpdate(tabId, changeInfo, tab) {
     if (changeInfo.status == "complete") {
-        autoSaveWhenCloseListener();
+        autoSaveWhenClose();
     }
 }
 
-function autoSaveWhenCloseListener() {
-    if (!IsOpeningSession) {
+function autoSaveWhenClose() {
+    if (!IsOpeningSession && S.get().ifAutoSaveWhenClose) {
         saveSession(browser.i18n.getMessage("winCloseSessionName"), "auto winClose temp").then(function () {
             removeOverLimit("winClose");
         });
