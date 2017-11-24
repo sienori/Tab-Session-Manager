@@ -377,7 +377,8 @@ function createTabs(session, win, currentWindow) {
             }).then(function () {
                 if (tabNumber == 1) {
                     browser.tabs.remove(firstTabId);
-                } else if (tabNumber == Object.keys(session.windows[win]).length) {
+                }
+                if (tabNumber == Object.keys(session.windows[win]).length) {
                     IsOpeningSession = false;
                     replacePage();
                     resolve();
