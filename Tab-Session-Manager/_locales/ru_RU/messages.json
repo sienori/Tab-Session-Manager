@@ -3,64 +3,64 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Менеджер сессий позволяет сохранять и восстанавливать состояние окон и вкладок. Поддерживает автоматические сохранения."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Сохранить"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Сохранить текущий сеанс"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Все"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Пользовательские"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Автоматические"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Новые"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Старейшие"
     },
     "open": {
-        "message": "Open"
+        "message": "Открыть"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Удалить"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Окно"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Окна"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Вкладка"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Вкладки"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Пусто"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Настройки"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Сессии"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Информация"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Открыть сессию в новом окне"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Если выключено, сессия перезапишет текущее окно."
     },
     "ifLazyLoadingLabel": {
         "message": "Tab lazy loading"
@@ -69,112 +69,112 @@
         "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Периодически сохранять сессию"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "Сохранять сессию через выбранные отрезки времени."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "Интервал (минуты)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Минимальное значение 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Максимальное число сохранений"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Максимальное число сессий хранимых данным способом."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Сохранять сессию при закрытии окна"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "Сохранять сеанс при закрытии отдельного окна либо при выходе из Firefox"
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Максимальное число сохранений"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Максимальное число сессий хранимых данным способом."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Формат времени"
     },
     "dateFormatCaptionLabel": {
-        "message": "Ex YYYY.MM.DD HH:mm:ss"
+        "message": "Например: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Поддержка Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "Восстанавливать строение дерева Tree Style Tab.<br>Следует отключить на версиях Firefox до 57."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Импорт сессий"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Загрузить сохранённые ранее сессии.<br>Поддерживаются файлы SessionManager-а (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Открыть"
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Импорт"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Очистить"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Экспорт сессий"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "Сохранить текущую сессию в файл."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Экспорт"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Удалить сессии"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Удалить все сохранённые сессии."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Удалить"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Лицензия"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Пожалуйста поблагодарите автора"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation.<br><br>Donation is accepted with eGift Cards of amazon.co.jp.<br>Please purchase an eGift Cards and send it to the following e-mail address.<br>email: sienori.firefox+tsm@gmail.com"
+        "message": "Спасибо, что используете Tab Session Manager.<br>Ваша поддержка будет замечательным стимулом к продолжению разработки этого дополнения.<br>Если вам понравился Tab Session Manager, я буду очень благодарен вашим пожертвованиям.<br><br>Пожертвования возможны через eGift Cards amazon.co.jp<br>Вы можете купить карту и отправить её на указанный e-mail адрес:<br>sienori.firefox+tsm@gmail.com"
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "Страница дополнения"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Сессия импортирована."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Ошибка чтения"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "Будут удалены ВСЕ сохранённые сессии. Хотите продолжить?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Сессия"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/ru\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
         "message": "This page can not be opened by Tab Session Manager."
