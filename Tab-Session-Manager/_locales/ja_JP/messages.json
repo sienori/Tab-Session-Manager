@@ -3,180 +3,180 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "開いているタブやウィンドウを保存し，復元することができます。自動保存にも対応しています。"
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "保存"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "現在のセッションを保存"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "全て"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "ユーザ保存"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "自動保存"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "新しい順"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "古い順"
     },
     "open": {
-        "message": "Open"
+        "message": "開く"
     },
     "remove": {
-        "message": "Delete"
+        "message": "削除"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "ウィンドウ"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "ウィンドウ"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "タブ"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "タブ"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "セッションはありません"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "設定"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "セッション"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "情報"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "セッションを新しいウィンドウで開く"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "チェックをオフにすると，セッションは現在のウィンドウを上書きします。"
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "タブの遅延読み込み"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "セッションを開いたとき，タブを選択するまで各ページの内容を読み込みません。<br>チェックをオフにすると，セッション復元時のメモリ使用量が増大します。"
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "定期的にセッションを保存する"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "設定した時間ごとにセッションを保存します。"
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "保存間隔(分)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "最小値 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "上限保存数"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "この方法で保存できるセッションの上限"
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "ウィンドウを閉じたときにセッションを保存する"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "ウィンドウを閉じたときやfirefoxの終了時にセッションを保存します。"
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "上限保存数"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "この方法で保存できるセッションの上限"
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "日付のフォーマット"
     },
     "dateFormatCaptionLabel": {
-        "message": "Ex YYYY.MM.DD HH:mm:ss"
+        "message": "例 YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "ツリー型タブに対応"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "ツリー型タブのツリーの状態を復元します。<br>fireFox57未満ではオフにしてください。"
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "セッションをインポート"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "コンピュータに保存されたセッションを読み込んでセッションリストに追加します。<br>Session Managerのセッションファイル(.session)にも対応しています。"
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "参照..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "インポート"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "クリア"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "セッションをエクスポート"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "現在のセッションをコンピュータに保存します。"
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "エクスポート"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "セッションを削除"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "現在のセッションを全て削除します。"
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "削除"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "ライセンス"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "ご寄付のお願い"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation.<br><br>Donation is accepted with eGift Cards of amazon.co.jp.<br>Please purchase an eGift Cards and send it to the following e-mail address.<br>email: sienori.firefox+tsm@gmail.com"
+        "message": "Tab Session Managerをご利用いただきありがとうございます。<br>アドオンの開発を続けていく上で，皆様のご支援が大きな励みになります。<br>もしあなたがTab Session Managerを気に入ってくれたなら，ご寄付をご検討いただけると幸いです。<br><br>ご寄付はamazon.co.jpのamazonギフト券で受け付けております。<br>Eメールタイプをご購入いただき，以下のメールアドレス宛てにお送りください。<br>email: sienori.firefox+tsm@gmail.com"
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazonギフト券 Eメールタイプ"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "アドオンページ"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "セッションをインポートしました。"
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "読み込み失敗"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "全てのセッションを削除します。よろしいですか？"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "セッション"
     },
     "amazonUrl": {
-        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=ja_JP"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/ja\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "このページはTab Session Managerでは開けません。"
     }
 }
