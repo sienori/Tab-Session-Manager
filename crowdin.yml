@@ -1,0 +1,3 @@
+files:
+  - source: /Tab-Session-Manager/_locales/en/messages.json
+    translation: /Tab-Session-Manager/_locales/%locale_with_underscore%/messages.json
