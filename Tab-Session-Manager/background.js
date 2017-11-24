@@ -216,7 +216,7 @@ function loadCurrentSesssion(name, tag) {
             //windouwsとtabのセット
             for (let tab of tabs) {
                 //プライベートタブを無視
-                if (tab.cookieStoreId === "firefox-private") continue;
+                if (tab.incognito) continue;
 
                 if (session.windows[tab.windowId] == undefined) session.windows[tab.windowId] = {};
 
