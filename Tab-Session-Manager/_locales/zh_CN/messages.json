@@ -5,8 +5,6 @@
     "extDescription": {
         "message": "保存和还原窗口及标签页的状态。支持自动保存。"
     },
-
-
     "saveLabel": {
         "message": "保存"
     },
@@ -49,16 +47,6 @@
     "noSessionLabel": {
         "message": "没有会话"
     },
-
-
-    "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
-    },
-    "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
-    },
-
-
     "settingsLabel": {
         "message": "Settings"
     },
@@ -170,8 +158,6 @@
     "addonPageLabel": {
         "message": "add-on page"
     },
-
-
     "importMessage": {
         "message": "Sessions imported."
     },
@@ -185,13 +171,11 @@
         "message": "Session"
     },
     "amazonUrl": {
-        "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=zh_CN"
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
     },
     "addonUrl": {
-        "message": "https://addons.mozilla.org/zh-CN/firefox/addon/tab-session-manager/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/zh-CN\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
-
-
     "replacedPageMessage": {
         "message": "This page can not be opened by Tab Session Manager."
     }
