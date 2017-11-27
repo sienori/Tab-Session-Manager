@@ -47,6 +47,12 @@
     "noSessionLabel": {
         "message": "没有会话"
     },
+    "winCloseSessionName": {
+        "message": "Auto Saved - Window was closed"
+    },
+    "regularSaveSessionName": {
+        "message": "Auto Saved - Regularly"
+    },
     "settingsLabel": {
         "message": "Settings"
     },
