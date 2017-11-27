@@ -272,6 +272,6 @@ input[type="checkbox"]:checked + .checkbox::after {
     width: 6px;
     height: 14px;
     transform: rotate(40deg);
-    border-bottom: 3px solid #009a9a;
-    border-right: 3px solid #009a9a;
+    border-bottom: 3px solid var(--highlight);
+    border-right: 3px solid var(--highlight);
 }
