@@ -114,13 +114,13 @@
         "message": "Soportar pestañas estilo árbol"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "Restaurar el estado de pestañas estilo árbol <br>Desactivar si la versión de FireFox es menor a 57."
     },
     "importLabel": {
         "message": "Importar sesiones"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Cargar sesiones guardadas en el equipo y añadir a la lista de sesión. <br>También es compatible con los archivos de sesión de Session Manager (.session)."
     },
     "importButtonLabel": {
         "message": "Examinar..."
