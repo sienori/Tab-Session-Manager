@@ -48,10 +48,10 @@
         "message": "Keine Sitzung vorhanden"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Auto - Fenster wurde geschlossen"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Auto - Intervall Regel"
     },
     "settingsLabel": {
         "message": "Einstellungen"
