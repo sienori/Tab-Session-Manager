@@ -63,10 +63,10 @@
         "message": "Aktuelles Fenster wird überschrieben, falls Haken entfernt wird."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Tab - verzögertes Laden"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "Wenn Sie eine Sitzung öffnen wird der Inhalt eines Tabs erst nach anwählen geladen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
     },
     "ifAutoSaveLabel": {
         "message": "Sitzung regelmäßig sichern"
@@ -177,6 +177,6 @@
         "message": "https:\/\/addons.mozilla.org\/de\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Diese Seite kann von Tab Session Manager nicht geöffnet werden."
     }
 }
