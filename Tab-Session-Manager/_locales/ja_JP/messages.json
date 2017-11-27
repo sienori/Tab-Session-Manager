@@ -48,10 +48,10 @@
         "message": "セッションはありません"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "自動保存 - ウィンドウ終了"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "自動保存 - 定期実行"
     },
     "settingsLabel": {
         "message": "設定"
