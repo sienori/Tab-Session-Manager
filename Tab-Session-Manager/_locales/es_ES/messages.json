@@ -12,7 +12,7 @@
         "message": "Guardar sesión actual"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Todo"
     },
     "displayUserLabel": {
         "message": "Usuario guardado"
@@ -45,19 +45,19 @@
         "message": "Pestañas"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "No hay ninguna sesión"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Auto guardado - La ventana se cerró"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Auto guardado - Regularmente"
     },
     "settingsLabel": {
         "message": "Ajustes"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Sesiones"
     },
     "informationLabel": {
         "message": "Información"
@@ -66,22 +66,22 @@
         "message": "Abrir sesión en una nueva ventana"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Si está desmarcada, la sesión sobrescribe la ventana actual."
     },
     "ifLazyLoadingLabel": {
         "message": "Carga lenta de pestaña"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "Al abrir una sesión, el contenido de cada página no se carga hasta que seleccione la pestaña. <br>Si está desmarcada, el uso de memoria aumenta cuando se restablece la sesión."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Guardar la sesión regularmente"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "Guardar la sesión cada tiempo definido."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "Intervalo en minutos"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Valor mínimo 0.1"
@@ -90,19 +90,19 @@
         "message": "Guardado número máximo"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Número máximo de sesiones guardadas de esta forma."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Guardar la sesión cuando se cierre la ventana"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "Guardar la sesión cuando cierre la ventana o al salir de Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Guardado número máximo"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Número máximo de sesiones guardadas de esta forma."
     },
     "dateFormatLabel": {
         "message": "Formato de fecha"
