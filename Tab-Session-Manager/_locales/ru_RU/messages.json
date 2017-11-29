@@ -156,7 +156,7 @@
         "message": "Пожалуйста поблагодарите автора"
     },
     "donationCaptionLabel": {
-        "message": "Спасибо, что используете Tab Session Manager.<br>Ваша поддержка будет замечательным стимулом к продолжению разработки этого дополнения.<br>Если вам понравился Tab Session Manager, я буду очень благодарен вашим пожертвованиям.<br><br>Пожертвования возможны через eGift Cards amazon.co.jp<br>Вы можете купить карту и отправить её на указанный e-mail адрес:<br>sienori.firefox+tsm@gmail.com"
+        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
