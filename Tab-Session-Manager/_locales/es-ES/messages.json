@@ -1,0 +1,188 @@
+{
+    "extName": {
+        "message": "Tab Session Manager"
+    },
+    "extDescription": {
+        "message": "Guardar y restaurar el estado de las ventanas y pestañas. También soporta guardado automático."
+    },
+    "saveLabel": {
+        "message": "Guardar"
+    },
+    "initialNameValue": {
+        "message": "Guardar sesión actual"
+    },
+    "displayAllLabel": {
+        "message": "Todo"
+    },
+    "displayUserLabel": {
+        "message": "Usuario guardado"
+    },
+    "displayAutoLabel": {
+        "message": "Auto guardado"
+    },
+    "newestLabel": {
+        "message": "Más reciente"
+    },
+    "oldestLabel": {
+        "message": "Más antiguo"
+    },
+    "open": {
+        "message": "Abrir"
+    },
+    "remove": {
+        "message": "Eliminar"
+    },
+    "windowLabel": {
+        "message": "Ventana"
+    },
+    "windowsLabel": {
+        "message": "Ventanas"
+    },
+    "tabLabel": {
+        "message": "Pestaña"
+    },
+    "tabsLabel": {
+        "message": "Pestañas"
+    },
+    "noSessionLabel": {
+        "message": "No hay ninguna sesión"
+    },
+    "winCloseSessionName": {
+        "message": "Auto guardado - La ventana se cerró"
+    },
+    "regularSaveSessionName": {
+        "message": "Auto guardado - Regularmente"
+    },
+    "settingsLabel": {
+        "message": "Ajustes"
+    },
+    "sessionsLabel": {
+        "message": "Sesiones"
+    },
+    "informationLabel": {
+        "message": "Información"
+    },
+    "ifOpenNewWindowLabel": {
+        "message": "Abrir sesión en una nueva ventana"
+    },
+    "ifOpenNewWindowCaptionLabel": {
+        "message": "Si está desmarcada, la sesión sobrescribe la ventana actual."
+    },
+    "ifLazyLoadingLabel": {
+        "message": "Carga lenta de pestaña"
+    },
+    "ifLazyLoadingCaptionLabel": {
+        "message": "Al abrir una sesión, el contenido de cada página no se carga hasta que seleccione la pestaña. <br>Si está desmarcada, el uso de memoria aumenta cuando se restablece la sesión."
+    },
+    "ifAutoSaveLabel": {
+        "message": "Guardar la sesión regularmente"
+    },
+    "ifAutoSaveCaptionLabel": {
+        "message": "Guardar la sesión cada tiempo definido."
+    },
+    "autoSaveIntervalLabel": {
+        "message": "Intervalo en minutos"
+    },
+    "autoSaveIntervalCaptionLabel": {
+        "message": "Valor mínimo 0.1"
+    },
+    "autoSaveLimitLabel": {
+        "message": "Guardado número máximo"
+    },
+    "autoSaveLimitCaptionLabel": {
+        "message": "Número máximo de sesiones guardadas de esta forma."
+    },
+    "ifAutoSaveWhenCloseLabel": {
+        "message": "Guardar la sesión cuando se cierre la ventana"
+    },
+    "ifAutoSaveWhenCloseCaptionLabel": {
+        "message": "Guardar la sesión cuando cierre la ventana o al salir de Firefox."
+    },
+    "autoSaveWhenCloseLimitLabel": {
+        "message": "Guardado número máximo"
+    },
+    "autoSaveWhenCloseCaptionLabel": {
+        "message": "Número máximo de sesiones guardadas de esta forma."
+    },
+    "dateFormatLabel": {
+        "message": "Formato de fecha"
+    },
+    "dateFormatCaptionLabel": {
+        "message": "Ex YYYY.MM.DD HH:mm:ss"
+    },
+    "ifSupportTstLabel": {
+        "message": "Soportar pestañas estilo árbol"
+    },
+    "ifSupportTstCaptionLabel": {
+        "message": "Restaurar el estado de pestañas estilo árbol <br>Desactivar si la versión de FireFox es menor a 57."
+    },
+    "importLabel": {
+        "message": "Importar sesiones"
+    },
+    "importCaptionLabel": {
+        "message": "Cargar sesiones guardadas en el equipo y añadir a la lista de sesión. <br>También es compatible con los archivos de sesión de Session Manager (.session)."
+    },
+    "importButtonLabel": {
+        "message": "Examinar..."
+    },
+    "importSaveButtonLabel": {
+        "message": "Importar"
+    },
+    "importClearButtonLabel": {
+        "message": "Limpiar"
+    },
+    "exportLabel": {
+        "message": "Exportar sesiones"
+    },
+    "exportCaptionLabel": {
+        "message": "Guardar la sesión actual en el equipo."
+    },
+    "exportButtonLabel": {
+        "message": "Exportar"
+    },
+    "removeSessionsLabel": {
+        "message": "Eliminar sesiones"
+    },
+    "removeSessionsCaptionLabel": {
+        "message": "Eliminar todas las sesiones actuales."
+    },
+    "removeSessionsButtonLabel": {
+        "message": "Eliminar"
+    },
+    "LicenseLabel": {
+        "message": "Licencia"
+    },
+    "donationLabel": {
+        "message": "Haga una donación"
+    },
+    "donationCaptionLabel": {
+        "message": "Gracias por usar Tab Session Manager. <br>Su apoyo será un gran estímulo al continuar el desarrollo del complemento. <br>Si le gusta Tab Session Manager, me alegraría si pudiera considerar una donación."
+    },
+    "amazonTitleLabel": {
+        "message": "amazon.co.jp eGift Cards"
+    },
+    "addonPageLabel": {
+        "message": "página de complemento"
+    },
+    "importMessage": {
+        "message": "Sesiones importadas."
+    },
+    "readFailedMessage": {
+        "message": "No se pudo leer"
+    },
+    "warningRemoveAllMessage": {
+        "message": "Eliminar todas las sesiones. ¿Seguro?"
+    },
+    "sessionLabel": {
+        "message": "Sesión"
+    },
+    "amazonUrl": {
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    },
+    "addonUrl": {
+        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    },
+    "replacedPageMessage": {
+        "message": "Esta página no puede ser abierta por Tab Session Manager."
+    }
+}
