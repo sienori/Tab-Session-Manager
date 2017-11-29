@@ -5,8 +5,6 @@
     "extDescription": {
         "message": "儲存與還原視窗跟分頁的瀏覽狀態。也支援自動儲存功能。"
     },
-
-
     "saveLabel": {
         "message": "儲存"
     },
@@ -49,16 +47,12 @@
     "noSessionLabel": {
         "message": "沒有已儲存的工作階段"
     },
-
-
     "winCloseSessionName": {
         "message": "Auto Saved - Window was closed"
     },
     "regularSaveSessionName": {
         "message": "Auto Saved - Regularly"
     },
-
-
     "settingsLabel": {
         "message": "設定"
     },
@@ -162,7 +156,7 @@
         "message": "請贊助我吧！"
     },
     "donationCaptionLabel": {
-        "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您可以贊助我。<br><br>您可以使用 amazon 電子禮品卡來贊助我。<br>請購買電子禮品卡並將它傳送至以下電子郵件地址。<br>電子郵件地址: sienori.firefox+tsm@gmail.com"
+        "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您可以贊助我。"
     },
     "amazonTitleLabel": {
         "message": "贊助我 amazon 電子禮品卡"
@@ -170,9 +164,6 @@
     "addonPageLabel": {
         "message": "AMO 附加元件頁面"
     },
-
-
-
     "importMessage": {
         "message": "已匯入工作階段。"
     },
@@ -186,13 +177,11 @@
         "message": "工作階段"
     },
     "amazonUrl": {
-        "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=zh_CN"
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
     },
     "addonUrl": {
-        "message": "https://addons.mozilla.org/zh-TW/firefox/addon/tab-session-manager/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/zh-TW\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
-
-
     "replacedPageMessage": {
         "message": "This page can not be opened by Tab Session Manager."
     }
