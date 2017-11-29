@@ -51,6 +51,14 @@
     },
 
 
+    "winCloseSessionName": {
+        "message": "Auto Saved - Window was closed"
+    },
+    "regularSaveSessionName": {
+        "message": "Auto Saved - Regularly"
+    },
+
+
     "settingsLabel": {
         "message": "Settings"
     },
@@ -154,7 +162,7 @@
         "message": "Please make a donation"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation.<br><br>Donation is accepted with eGift Cards of amazon.co.jp.<br>Please purchase an eGift Cards and send it to the following e-mail address.<br>email: sienori.firefox+tsm@gmail.com"
+        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
