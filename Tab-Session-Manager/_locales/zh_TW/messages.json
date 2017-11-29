@@ -156,7 +156,7 @@
         "message": "請贊助我吧！"
     },
     "donationCaptionLabel": {
-        "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您可以贊助我。<br><br>您可以使用 amazon 電子禮品卡來贊助我。<br>請購買電子禮品卡並將它傳送至以下電子郵件地址。<br>電子郵件地址: sienori.firefox+tsm@gmail.com"
+        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
     },
     "amazonTitleLabel": {
         "message": "贊助我 amazon 電子禮品卡"
