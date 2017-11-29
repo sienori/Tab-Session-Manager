@@ -1,0 +1,188 @@
+{
+    "extName": {
+        "message": "Tab Session Manager"
+    },
+    "extDescription": {
+        "message": "保存和还原窗口及标签页的状态。支持自动保存。"
+    },
+    "saveLabel": {
+        "message": "保存"
+    },
+    "initialNameValue": {
+        "message": "保存当前会话"
+    },
+    "displayAllLabel": {
+        "message": "全部"
+    },
+    "displayUserLabel": {
+        "message": "用户保存"
+    },
+    "displayAutoLabel": {
+        "message": "自动保存"
+    },
+    "newestLabel": {
+        "message": "最新"
+    },
+    "oldestLabel": {
+        "message": "最旧"
+    },
+    "open": {
+        "message": "打开"
+    },
+    "remove": {
+        "message": "移除"
+    },
+    "windowLabel": {
+        "message": "窗口"
+    },
+    "windowsLabel": {
+        "message": "窗口"
+    },
+    "tabLabel": {
+        "message": "标签页"
+    },
+    "tabsLabel": {
+        "message": "标签页"
+    },
+    "noSessionLabel": {
+        "message": "没有会话"
+    },
+    "winCloseSessionName": {
+        "message": "Auto Saved - Window was closed"
+    },
+    "regularSaveSessionName": {
+        "message": "Auto Saved - Regularly"
+    },
+    "settingsLabel": {
+        "message": "Settings"
+    },
+    "sessionsLabel": {
+        "message": "Sessions"
+    },
+    "informationLabel": {
+        "message": "Information"
+    },
+    "ifOpenNewWindowLabel": {
+        "message": "新建窗口打开会话"
+    },
+    "ifOpenNewWindowCaptionLabel": {
+        "message": "If checked off, the session overwrites the current window."
+    },
+    "ifLazyLoadingLabel": {
+        "message": "Tab lazy loading"
+    },
+    "ifLazyLoadingCaptionLabel": {
+        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+    },
+    "ifAutoSaveLabel": {
+        "message": "定期保存已打开标签页的状态"
+    },
+    "ifAutoSaveCaptionLabel": {
+        "message": "Save the session every set time."
+    },
+    "autoSaveIntervalLabel": {
+        "message": "间隔(分钟)"
+    },
+    "autoSaveIntervalCaptionLabel": {
+        "message": "Minimum value 0.1"
+    },
+    "autoSaveLimitLabel": {
+        "message": "最大数量"
+    },
+    "autoSaveLimitCaptionLabel": {
+        "message": "Maximum number of saved sessions in this way."
+    },
+    "ifAutoSaveWhenCloseLabel": {
+        "message": "关闭窗口时保存会话"
+    },
+    "ifAutoSaveWhenCloseCaptionLabel": {
+        "message": "Save the session when closing the window or when exiting firefox."
+    },
+    "autoSaveWhenCloseLimitLabel": {
+        "message": "最大数量"
+    },
+    "autoSaveWhenCloseCaptionLabel": {
+        "message": "Maximum number of saved sessions in this way."
+    },
+    "dateFormatLabel": {
+        "message": "日期格式"
+    },
+    "dateFormatCaptionLabel": {
+        "message": "例如 YYYY.MM.DD HH:mm:ss"
+    },
+    "ifSupportTstLabel": {
+        "message": "支持树样式选项卡"
+    },
+    "ifSupportTstCaptionLabel": {
+        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+    },
+    "importLabel": {
+        "message": "Import sessions"
+    },
+    "importCaptionLabel": {
+        "message": "Load sessions saved on the computer and add them to the session list.<br>It also supports SessionManager's session file (.session)."
+    },
+    "importButtonLabel": {
+        "message": "Browse..."
+    },
+    "importSaveButtonLabel": {
+        "message": "Import"
+    },
+    "importClearButtonLabel": {
+        "message": "Clear"
+    },
+    "exportLabel": {
+        "message": "Export Sessions"
+    },
+    "exportCaptionLabel": {
+        "message": "Save the current session on the computer."
+    },
+    "exportButtonLabel": {
+        "message": "Export"
+    },
+    "removeSessionsLabel": {
+        "message": "Delete sessions"
+    },
+    "removeSessionsCaptionLabel": {
+        "message": "Delete all current sessions."
+    },
+    "removeSessionsButtonLabel": {
+        "message": "Delete"
+    },
+    "LicenseLabel": {
+        "message": "License"
+    },
+    "donationLabel": {
+        "message": "Please make a donation"
+    },
+    "donationCaptionLabel": {
+        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
+    },
+    "amazonTitleLabel": {
+        "message": "amazon.co.jp eGift Cards"
+    },
+    "addonPageLabel": {
+        "message": "add-on page"
+    },
+    "importMessage": {
+        "message": "Sessions imported."
+    },
+    "readFailedMessage": {
+        "message": "Read failed"
+    },
+    "warningRemoveAllMessage": {
+        "message": "Delete all sessions. Is it OK?"
+    },
+    "sessionLabel": {
+        "message": "Session"
+    },
+    "amazonUrl": {
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
+    },
+    "addonUrl": {
+        "message": "https:\/\/addons.mozilla.org\/zh-CN\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    },
+    "replacedPageMessage": {
+        "message": "This page can not be opened by Tab Session Manager."
+    }
+}
