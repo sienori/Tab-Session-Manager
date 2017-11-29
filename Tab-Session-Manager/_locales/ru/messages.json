@@ -49,16 +49,12 @@
     "noSessionLabel": {
         "message": "Пусто"
     },
-
-
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Автосохранение - закрыто окно"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Автосохранение - периодическое"
     },
-
-
     "settingsLabel": {
         "message": "Настройки"
     },
@@ -75,10 +71,10 @@
         "message": "Если выключено, сессия перезапишет текущее окно."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Отложенная загрузка вкладок"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет активирована вручную.<br>При отключении возрастёт расход памяти после восстановления сессии."
     },
     "ifAutoSaveLabel": {
         "message": "Периодически сохранять сессию"
@@ -193,6 +189,6 @@
 
 
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Эта страница не может быть открыта в Tab Session Manager."
     }
 }
