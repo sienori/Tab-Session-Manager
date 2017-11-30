@@ -120,7 +120,7 @@
         "message": "Sitzungen importieren"
     },
     "importCaptionLabel": {
-        "message": "Lokal gespeicherte Sitzungen laden und der aktuellen Sitzung hinzufügen.<br>Es werden auch Session-Dateien von SessionManager unterstützt (.session)."
+        "message": "Lokal gespeicherte Sitzungen laden und zu der aktuellen Liste der Sitzungen hin fügen.<br>Session-Dateien von SessionManager (.session) sind auch unterstützt."
     },
     "importButtonLabel": {
         "message": "Auswählen..."
@@ -168,10 +168,10 @@
         "message": "Sitzungen importiert."
     },
     "readFailedMessage": {
-        "message": "Einlesen fehlerhaft."
+        "message": "Fehler beim Einlesen"
     },
     "warningRemoveAllMessage": {
-        "message": "Wollen Sie wirkich alle Sitzungen löschen ?"
+        "message": "Wollen Sie wirklich alle Sitzungen löschen?"
     },
     "sessionLabel": {
         "message": "Sitzung"
