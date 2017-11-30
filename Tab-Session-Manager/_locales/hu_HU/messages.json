@@ -3,19 +3,19 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Ablakok és fülek állapotának mentése és visszaállítása. Automatikus állapot mentés is támogatva van."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Mentés"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Aktuális munkamenet mentése"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Összes"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Felhasználó mentve"
     },
     "displayAutoLabel": {
         "message": "Auto Saved"
