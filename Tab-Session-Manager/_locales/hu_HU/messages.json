@@ -84,34 +84,34 @@
         "message": "Időköz (percben)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Minimum érték 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Elmentettek maximális száma"
     },
     "autoSaveLimitCaptionLabel": {
         "message": "Maximum number of saved sessions in this way."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Munkamenet mentése ha az ablakot bezárták"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
         "message": "Save the session when closing the window or when exiting firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Elmentettek maximális száma"
     },
     "autoSaveWhenCloseCaptionLabel": {
         "message": "Maximum number of saved sessions in this way."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Dátum formátum"
     },
     "dateFormatCaptionLabel": {
-        "message": "Ex YYYY.MM.DD HH:mm:ss"
+        "message": "Pl.: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Fa struktúrájú fülek támogatása"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
@@ -165,10 +165,10 @@
         "message": "add-on page"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Munkamenetek importálva."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Beolvasás nem sikerült"
     },
     "warningRemoveAllMessage": {
         "message": "Delete all sessions. Is it OK?"
