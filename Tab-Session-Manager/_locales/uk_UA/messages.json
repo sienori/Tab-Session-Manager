@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Менеджер сесій дозволяє зберігати та відновлювати стан вікон та вкладок. Підтримує автоматичні збереження."
     },
     "saveLabel": {
         "message": "Зберегти"
@@ -66,7 +66,7 @@
         "message": "Відкрити сесію у новому вікні"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Якщо вимкнено, сесія перезапише поточне вікно."
     },
     "ifLazyLoadingLabel": {
         "message": "Відкладене завантаження вкладок"
@@ -156,7 +156,7 @@
         "message": "Будь ласка подякуйте автору"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
+        "message": "Дякую, що використовуєте Tab Session Manager. <br> Ваша підтримка буде чудовим стимулом до продовження розробки цього доповнення. <br>Якщо вам сподобався Tab Session Manager, я буду дуже вдячний вашим пожертвуванням."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
