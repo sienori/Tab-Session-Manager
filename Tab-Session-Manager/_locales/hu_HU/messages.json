@@ -78,10 +78,10 @@
         "message": "Munkamenet rendszeres mentése"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "Munkamenet mentése megadott időközönként."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "Időköz (percben)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Minimum value 0.1"
