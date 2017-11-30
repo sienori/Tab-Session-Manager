@@ -15,10 +15,10 @@
         "message": "Alle"
     },
     "displayUserLabel": {
-        "message": "Manuell"
+        "message": "Manuell gespeichert"
     },
     "displayAutoLabel": {
-        "message": "Auto"
+        "message": "Automatisch gespeichert"
     },
     "newestLabel": {
         "message": "Neueste"
