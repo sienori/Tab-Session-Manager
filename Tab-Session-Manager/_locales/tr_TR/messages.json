@@ -66,7 +66,7 @@
         "message": "Yeni penceredeki açık oturumlar"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "Bozulduysa, oturum geçerli pencerenin üzerine yazar."
+        "message": "Kontrol işareti koyulduysa, oturum geçerli pencerenin üzerinde yazar."
     },
     "ifLazyLoadingLabel": {
         "message": "Sekme yavaş yükleniyor"
@@ -156,25 +156,25 @@
         "message": "Lütfen bir bağış yapın"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
+        "message": "Sekme Oturum Yöneticisi'ni kullandığınız için teşekkürler.<br>Desteğiniz eklentiyi geliştirmem için büyük bir teşvik olacak.<br>Sekme Oturum Yöneticisi'ni beğendiyseniz, bağış yapmayı dikkate alırsanız memnun olurum."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "eklenti sayfası"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Oturum içe aktarıldı."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Okuma başarısız oldu"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "Tüm oturumlar silinsin mi? Tamam mı?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Oturum"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -183,6 +183,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Bu sayfa Sekme Oturum Yöneticisi tarafından açılamaz."
     }
 }
