@@ -114,7 +114,7 @@
         "message": "Unterstützung von baumstrukturierte Tabs"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Status des Tree Style Tab wiederherstellen.<br>Bittte deaktivieren, falls Firefox älter Version 57 genutzt wird."
+        "message": "Status des Tree Style Tab wiederherstellen.<br>Bitte deaktivieren, wenn die verwendete Version von Firefox älter als Firefox 57 ist."
     },
     "importLabel": {
         "message": "Sitzungen importieren"
