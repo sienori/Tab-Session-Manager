@@ -6,64 +6,64 @@
         "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Зберегти"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Зберегти поточну сесiю"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Всі"
     },
     "displayUserLabel": {
         "message": "User Saved"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Автозбереження"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Найновіші"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Найстаріші"
     },
     "open": {
-        "message": "Open"
+        "message": "Відкрити"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Видалити"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Вікно"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Вікна"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Вкладка"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Вкладки"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Немає сесії"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Автозбереження - закриття вікна"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Автозбереження - регулярне"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Налаштування"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Сесії"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Інформація"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Відкрити сесію у новому вікні"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "If checked off, the session overwrites the current window."
