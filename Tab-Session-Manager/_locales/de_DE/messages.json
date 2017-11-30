@@ -111,7 +111,7 @@
         "message": "Beispiel: DD.MM.YYYY ss:mm:HH"
     },
     "ifSupportTstLabel": {
-        "message": "Tree Style Tab unterstützen"
+        "message": "Unterstützung von baumstrukturierte Tabs"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Status des Tree Style Tab wiederherstellen.<br>Bittte deaktivieren, falls Firefox älter Version 57 genutzt wird."
