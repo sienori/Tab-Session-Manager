@@ -90,70 +90,70 @@
         "message": "Maksimum sayı kaydedildi"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Bu şekilde kaydedilen maksimum oturum."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Pencere kapandığında oturumu kaydet"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "Pencere kapanırken veya firefoxtan çıkarken oturumu kaydet."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Kaydedilen maksimum sayı"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Bu şekilde kaydedilen maksimum sayı."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Tarih formatı"
     },
     "dateFormatCaptionLabel": {
-        "message": "Ex YYYY.MM.DD HH:mm:ss"
+        "message": "Örn YYYY.AA.GG SS:dd:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Ağaç Stili Sekmeyi Destekler"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "Ağaç Stili Sekme'nin ağaç durumunu onar.<br> Eğer fireFox 57'den düşükse lütfen kapatın."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Oturumları al"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Bilgisayara kayıtlı oturumları yükle ve oturum listesine ekle.<br>Bu ayrıca SessionManager'in oturum dosyasını destekler(.oturum)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Gözat..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "İçe aktar"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Temizle"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Oturumları dışa aktar"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "Geçerli oturumları bilgisayara kaydet."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Dışa Aktar"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Oturumları sil"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Tüm geçerli oturumları sil."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Sil"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Lisans"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Lütfen bir bağış yapın"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
