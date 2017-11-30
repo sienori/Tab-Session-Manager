@@ -15,7 +15,7 @@
         "message": "Всі"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Користувацькі"
     },
     "displayAutoLabel": {
         "message": "Автозбереження"
@@ -69,25 +69,25 @@
         "message": "If checked off, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Відкладене завантаження вкладок"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Періодично зберігати сесію"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "Зберігати сесію через обрані відрізки часу."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "Інтервал (хвилини)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Мінімальне значення 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Максимальна кількість збережень"
     },
     "autoSaveLimitCaptionLabel": {
         "message": "Maximum number of saved sessions in this way."
@@ -105,7 +105,7 @@
         "message": "Maximum number of saved sessions in this way."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Формат дати"
     },
     "dateFormatCaptionLabel": {
         "message": "Ex YYYY.MM.DD HH:mm:ss"
@@ -123,22 +123,22 @@
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Перегляд..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Імпорт"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Очистити"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Експорт сесій"
     },
     "exportCaptionLabel": {
         "message": "Save the current session on the computer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Експорт"
     },
     "removeSessionsLabel": {
         "message": "Delete sessions"
@@ -147,13 +147,13 @@
         "message": "Delete all current sessions."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Видалити"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Ліцензія"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Будь ласка подякуйте автору"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
@@ -162,19 +162,19 @@
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "Сторінка доповнення"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Сесія імпортована."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Помилка читання"
     },
     "warningRemoveAllMessage": {
         "message": "Delete all sessions. Is it OK?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Сесія"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
