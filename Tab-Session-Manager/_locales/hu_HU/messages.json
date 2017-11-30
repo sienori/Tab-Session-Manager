@@ -123,46 +123,46 @@
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Tallózás..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importálás"
     },
     "importClearButtonLabel": {
         "message": "Clear"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Munkamenetek exportálása"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "Jelenlegi munkamenet mentése a számítógépre."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Exportálás"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Munkamenetek törlése"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Összes jelenlegi munkamenet törlése."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Töröl"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licensz"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Kérjük adakozzon"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazon.co.jp elektronikus ajándék kártyák"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "kiegészítő oldala"
     },
     "importMessage": {
         "message": "Munkamenetek importálva."
@@ -174,7 +174,7 @@
         "message": "Delete all sessions. Is it OK?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Munkamenet"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
