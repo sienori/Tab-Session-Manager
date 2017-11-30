@@ -9,7 +9,7 @@
         "message": "Mentés"
     },
     "initialNameValue": {
-        "message": "Aktuális munkamenet mentése"
+        "message": "Jelenlegi munkamenet mentése"
     },
     "displayAllLabel": {
         "message": "Összes"
@@ -18,52 +18,52 @@
         "message": "Felhasználó mentve"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Automatikusan mentve"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Legújabb"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Legrégebbi"
     },
     "open": {
-        "message": "Open"
+        "message": "Megnyit"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Töröl"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Ablak"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Ablakok"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Fül"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Fülek"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Nincs munkamenet"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Automatikusan mentett - Ablak be lett zárva"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Automatikusan mentett - Rendszeres"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Beállítások"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Munkamenetek"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Információ"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Munkamenet megnyitása új ablakban"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "If checked off, the session overwrites the current window."
