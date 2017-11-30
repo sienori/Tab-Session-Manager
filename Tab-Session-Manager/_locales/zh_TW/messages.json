@@ -48,10 +48,10 @@
         "message": "沒有已儲存的工作階段"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "自動儲存 - 視窗關閉"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "自動儲存 - 定期"
     },
     "settingsLabel": {
         "message": "設定"
@@ -69,7 +69,7 @@
         "message": "如果取消勾選，開啟工作階段時將會覆寫目前視窗"
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "分頁惰性載入"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
