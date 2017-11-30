@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Speichern und Wiederherstellen aller Fenster oder Tabs. Unterstützt automatisches Speichern."
+        "message": "Speichern und Wiederherstellen aller Fenster oder Tabs. Unterstützt automatisches Speicherung."
     },
     "saveLabel": {
         "message": "Speichern"
