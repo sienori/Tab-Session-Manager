@@ -90,19 +90,19 @@
         "message": "Elmentettek maximális száma"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Az ilyen módon elmentett munkamenetek maximális száma."
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "Munkamenet mentése ha az ablakot bezárták"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "Munkamenet elmentése ha az ablak bezáródik, vagy ha a Firefox kilép."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Elmentettek maximális száma"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Az ilyen módon elmentett munkamenetek maximális száma."
     },
     "dateFormatLabel": {
         "message": "Dátum formátum"
@@ -117,10 +117,10 @@
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Munkamenetek importálása"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Munkamenetek betöltése a számítógépről és hozzáadása a munkamenet listához.<br>A SessionManager munkamenet fájlja (.session) is támogatva van."
     },
     "importButtonLabel": {
         "message": "Tallózás..."
@@ -129,7 +129,7 @@
         "message": "Importálás"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Töröl"
     },
     "exportLabel": {
         "message": "Munkamenetek exportálása"
@@ -171,7 +171,7 @@
         "message": "Beolvasás nem sikerült"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "Minden munkamenet törlése. Biztos vagy benne?"
     },
     "sessionLabel": {
         "message": "Munkamenet"
@@ -183,6 +183,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Ez az oldal nem nyitható meg a Tab Session Manager által."
     }
 }
