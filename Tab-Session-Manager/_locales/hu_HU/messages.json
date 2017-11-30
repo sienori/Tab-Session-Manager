@@ -15,10 +15,10 @@
         "message": "Összes"
     },
     "displayUserLabel": {
-        "message": "Felhasználó mentve"
+        "message": "Manuálisan mentett"
     },
     "displayAutoLabel": {
-        "message": "Automatikusan mentve"
+        "message": "Automatikusan mentett"
     },
     "newestLabel": {
         "message": "Legújabb"
