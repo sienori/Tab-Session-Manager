@@ -96,13 +96,13 @@
         "message": "Enregistrer la session lorsque la fenêtre était fermée"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "Enregistrer la session lors de la fermeture de la fenêtre ou lorsque vous quittez firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Nombre maximum enregistré"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Nombre maximal de sessions enregistrées de cette façon."
     },
     "dateFormatLabel": {
         "message": "Format de date"
@@ -111,16 +111,16 @@
         "message": "Ex AAAA.MM.JJ HH:m:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Prend en charge l'onglet Style de l'arbre"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "Restaurer l'état de l'arbre de l'onglet Style de l'arbre.<br>Veuillez le désactiver s'il est inférieur à fireFox 57."
     },
     "importLabel": {
         "message": "Importer des sessions"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Charger les sessions enregistrées sur l’ordinateur et ajoutez-les à la liste de session.<br>Il prend également en charge les fichiers de session de SessionManager (.session)."
     },
     "importButtonLabel": {
         "message": "Feuilleter..."
@@ -156,7 +156,7 @@
         "message": "S’il vous plaît faire un don"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
+        "message": "Merci d'utiliser Tab Session Manager.<br>Votre soutien sera un grand encouragement alors que je continue de développer l'extension.<br>Si vous aimez Tab Session Manager, je serais heureux si vous pouviez envisager un don."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp Cartes Cadeaux"
