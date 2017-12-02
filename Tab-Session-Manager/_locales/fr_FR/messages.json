@@ -18,19 +18,19 @@
         "message": "Utilisateur enregistré"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Enregistrement automatique"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Plus récent"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Plus ancien"
     },
     "open": {
-        "message": "Open"
+        "message": "Ouvrir"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Supprimer"
     },
     "windowLabel": {
         "message": "Window"
@@ -45,16 +45,16 @@
         "message": "Tabs"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Il n’y a pas de session"
     },
     "winCloseSessionName": {
         "message": "Auto Saved - Window was closed"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Auto sauvé - régulièrement"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Paramètres"
     },
     "sessionsLabel": {
         "message": "Sessions"
@@ -75,16 +75,16 @@
         "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Enregistrer la session régulièrement"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "Enregistrer la session chaque heure réglée."
     },
     "autoSaveIntervalLabel": {
         "message": "Interval(minutes)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Valeur minimale 0.1"
     },
     "autoSaveLimitLabel": {
         "message": "Saved maximum number"
@@ -105,10 +105,10 @@
         "message": "Maximum number of saved sessions in this way."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Format de date"
     },
     "dateFormatCaptionLabel": {
-        "message": "Ex YYYY.MM.DD HH:mm:ss"
+        "message": "Ex AAAA.MM.JJ HH:m:ss"
     },
     "ifSupportTstLabel": {
         "message": "Supports Tree Style Tab"
@@ -126,7 +126,7 @@
         "message": "Browse..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importer"
     },
     "importClearButtonLabel": {
         "message": "Clear"
@@ -138,22 +138,22 @@
         "message": "Save the current session on the computer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Exporter"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Supprimer des sessions"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Supprimez tous les sessions."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Supprimer"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licence"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "S’il vous plaît faire un don"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
@@ -162,16 +162,16 @@
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "page complémentaire"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Sessions importées."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Lire a échoué"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "Supprimer toutes les sessions. Est-ce OK ?"
     },
     "sessionLabel": {
         "message": "Session"
@@ -183,6 +183,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Cette page ne peut pas être ouvert par Tab Session Manager."
     }
 }
