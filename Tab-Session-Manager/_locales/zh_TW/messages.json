@@ -69,10 +69,10 @@
         "message": "如果取消勾選，開啟工作階段時將會覆寫目前視窗"
     },
     "ifLazyLoadingLabel": {
-        "message": "分頁惰性載入"
+        "message": "分頁延遲載入"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>若關閉此項，恢復瀏覽階段時時記憶體使用量將會增加。"
+        "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>若關閉此項，恢復瀏覽階段時記憶體使用量將會增加。"
     },
     "ifAutoSaveLabel": {
         "message": "定期將開啟的分頁瀏覽狀態自動儲存"
@@ -114,7 +114,7 @@
         "message": "支援 Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "還原 Tree Style Tab 的樹狀結構<br>Firefox 57 以下請關閉。"
+        "message": "還原 Tree Style Tab 的樹狀分頁<br>如果使用的 Firefox 版本低於 57 時，請關閉此功能。"
     },
     "importLabel": {
         "message": "匯入工作階段"
@@ -183,6 +183,6 @@
         "message": "https:\/\/addons.mozilla.org\/zh-TW\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "Tab Session Manager 無法開啟此頁。"
+        "message": "Tab Session Manager 無法開啟此頁面。"
     }
 }
