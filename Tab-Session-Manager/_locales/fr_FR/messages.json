@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Enregistrer et restaurer l’état des fenêtres et onglets. Il prend également en charge la sauvegarde automatique."
     },
     "saveLabel": {
         "message": "Enregistrer"
@@ -33,22 +33,22 @@
         "message": "Supprimer"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Fenêtre"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Fenêtres"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Onglet"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Onglets"
     },
     "noSessionLabel": {
         "message": "Il n’y a pas de session"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Auto Saved - Fenêtre était fermée"
     },
     "regularSaveSessionName": {
         "message": "Auto sauvé - régulièrement"
@@ -63,16 +63,16 @@
         "message": "Information"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Ouvrir la session dans une nouvelle fenêtre"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Si cette case est cochée, la session écrase la fenêtre en cours."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Chargement différé onglet"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet. <br> Si cette case est cochée, l'utilisation de la mémoire augmente lorsque la session est restaurée."
     },
     "ifAutoSaveLabel": {
         "message": "Enregistrer la session régulièrement"
@@ -87,19 +87,19 @@
         "message": "Valeur minimale 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Nombre maximum enregistré"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Nombre maximal de sessions enregistrées de cette façon."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Enregistrer la session lorsque la fenêtre était fermée"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
         "message": "Save the session when closing the window or when exiting firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Nombre maximum enregistré"
     },
     "autoSaveWhenCloseCaptionLabel": {
         "message": "Maximum number of saved sessions in this way."
@@ -117,25 +117,25 @@
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Importer des sessions"
     },
     "importCaptionLabel": {
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Feuilleter..."
     },
     "importSaveButtonLabel": {
         "message": "Importer"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Nettoyer"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Exporter des sessions"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "Enregistrer la session actuelle sur l’ordinateur."
     },
     "exportButtonLabel": {
         "message": "Exporter"
@@ -159,7 +159,7 @@
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazon.co.jp Cartes Cadeaux"
     },
     "addonPageLabel": {
         "message": "page complémentaire"
