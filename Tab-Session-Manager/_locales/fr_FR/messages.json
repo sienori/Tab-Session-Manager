@@ -6,16 +6,16 @@
         "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Enregistrer"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Enregistrer la session actuelle"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Tout"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Utilisateur enregistré"
     },
     "displayAutoLabel": {
         "message": "Auto Saved"
