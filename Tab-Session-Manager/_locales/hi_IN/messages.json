@@ -54,13 +54,13 @@
         "message": "Auto Saved - Regularly"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "सेटिंग्स"
     },
     "sessionsLabel": {
         "message": "Sessions"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "जानकारी"
     },
     "ifOpenNewWindowLabel": {
         "message": "Open session in new window"
@@ -105,7 +105,7 @@
         "message": "Maximum number of saved sessions in this way."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "दिनांक स्वरूप"
     },
     "dateFormatCaptionLabel": {
         "message": "Ex YYYY.MM.DD HH:mm:ss"
