@@ -27,10 +27,10 @@
         "message": "सबसे पुराना"
     },
     "open": {
-        "message": "Open"
+        "message": "खोलें"
     },
     "remove": {
-        "message": "Delete"
+        "message": "हटाएँ"
     },
     "windowLabel": {
         "message": "Window"
@@ -39,10 +39,10 @@
         "message": "Windows"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "टैब"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "टैब्स"
     },
     "noSessionLabel": {
         "message": "There is no session"
@@ -123,7 +123,7 @@
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "ब्राउज़ करें..."
     },
     "importSaveButtonLabel": {
         "message": "Import"
@@ -147,7 +147,7 @@
         "message": "Delete all current sessions."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "हटाएँ"
     },
     "LicenseLabel": {
         "message": "लाइसेन्स"
