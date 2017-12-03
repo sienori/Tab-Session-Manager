@@ -12,7 +12,7 @@
         "message": "Save current session"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "सभी"
     },
     "displayUserLabel": {
         "message": "User Saved"
@@ -21,10 +21,10 @@
         "message": "Auto Saved"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "सबसे नया"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "सबसे पुराना"
     },
     "open": {
         "message": "Open"
@@ -81,10 +81,10 @@
         "message": "Save the session every set time."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "अंतराल (मिनट)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "न्यूनतम मान 0.1"
     },
     "autoSaveLimitLabel": {
         "message": "Saved maximum number"
@@ -129,7 +129,7 @@
         "message": "Import"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "साफ करें"
     },
     "exportLabel": {
         "message": "Export Sessions"
@@ -150,10 +150,10 @@
         "message": "Delete"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "लाइसेन्स"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "कृपया एक दान करें"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
@@ -168,7 +168,7 @@
         "message": "Sessions imported."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "पठन विफल"
     },
     "warningRemoveAllMessage": {
         "message": "Delete all sessions. Is it OK?"
