@@ -6,7 +6,7 @@
         "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "सहेजें"
     },
     "initialNameValue": {
         "message": "Save current session"
@@ -33,10 +33,10 @@
         "message": "हटाएँ"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "विंडो"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "विंडोज"
     },
     "tabLabel": {
         "message": "टैब"
@@ -69,7 +69,7 @@
         "message": "If checked off, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "टैब आलसी लोड हो रहा है"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
@@ -87,7 +87,7 @@
         "message": "न्यूनतम मान 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "अधिकतम संख्या सहेजा"
     },
     "autoSaveLimitCaptionLabel": {
         "message": "Maximum number of saved sessions in this way."
@@ -99,7 +99,7 @@
         "message": "Save the session when closing the window or when exiting firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "अधिकतम संख्या सहेजा"
     },
     "autoSaveWhenCloseCaptionLabel": {
         "message": "Maximum number of saved sessions in this way."
@@ -126,7 +126,7 @@
         "message": "ब्राउज़ करें..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "आयात करें"
     },
     "importClearButtonLabel": {
         "message": "साफ करें"
@@ -138,7 +138,7 @@
         "message": "Save the current session on the computer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "निर्यात करें"
     },
     "removeSessionsLabel": {
         "message": "Delete sessions"
@@ -159,7 +159,7 @@
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazon.co.jp eGift कार्ड"
     },
     "addonPageLabel": {
         "message": "add-on page"
