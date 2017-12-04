@@ -72,49 +72,49 @@
         "message": "Fül lusta betöltése"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
+        "message": "A munkamenet megnyitásakor az egyes oldalak tartalma nem töltődik be, amíg ki nem választódik a fül.<br>Ha nincs bejelölve, a memória használat nagy mértékben megnövekszik amikor a munkamenet visszaállítódik."
     },
     "ifAutoSaveLabel": {
         "message": "Munkamenet rendszeres mentése"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "Munkamenet mentése megadott időközönként."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Időköz (percben)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Minimum érték 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Elmentettek maximális száma"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Az ilyen módon elmentett munkamenetek maximális száma."
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "Munkamenet mentése ha az ablakot bezárták"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "Munkamenet elmentése ha az ablak bezáródik, vagy ha a Firefox kilép."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Elmentettek maximális száma"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Az ilyen módon elmentett munkamenetek maximális száma."
     },
     "dateFormatLabel": {
         "message": "Dátum formátum"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "Pl.: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
         "message": "Fa struktúrájú fülek támogatása"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Fa struktúrájú fülek visszaállítása.<br>Firefox 57 (Quantum) -nál régebbi verzió esetén ki kell kapcsolni."
     },
     "importLabel": {
         "message": "Munkamenetek importálása"
@@ -135,7 +135,7 @@
         "message": "Munkamenetek exportálása"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Jelenlegi munkamenet mentése a számítógépre."
     },
     "exportButtonLabel": {
         "message": "Exportálás"
@@ -156,7 +156,7 @@
         "message": "Kérjük adakozzon"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "Köszönöm hogy a Tab Session Manager -t használod.<br>A támogatásod nagy ösztönzést jelent számomra, hogy folytassam ennek a kiegészítőnek a fejlesztését.<br>Ha tetszik a Tab Session Manager, örülnék ha megfontolnád az adakozást."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp elektronikus ajándék kártyák"
@@ -171,7 +171,7 @@
         "message": "Beolvasás nem sikerült"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Minden munkamenet törlése. Biztos vagy benne?"
     },
     "sessionLabel": {
         "message": "Munkamenet"
