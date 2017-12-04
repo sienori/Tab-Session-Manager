@@ -72,49 +72,49 @@
         "message": "Отложенная загрузка вкладок"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет активирована вручную.<br>При отключении возрастёт расход памяти после восстановления сессии."
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
     },
     "ifAutoSaveLabel": {
         "message": "Периодически сохранять сессию"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Сохранять сессию через выбранные отрезки времени."
+        "message": "Save the session every X minutes."
     },
     "autoSaveIntervalLabel": {
-        "message": "Интервал (минуты)"
+        "message": "Interval (minutes)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Минимальное значение 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Максимальное число сохранений"
+        "message": "Maximum number Saved"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Максимальное число сессий хранимых данным способом."
+        "message": "Maximum number of saved sessions (in this way)."
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "Сохранять сессию при закрытии окна"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Сохранять сеанс при закрытии отдельного окна либо при выходе из Firefox"
+        "message": "Save the session when closing the window or when exiting Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Максимальное число сохранений"
+        "message": "Maximum number Saved"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Максимальное число сессий хранимых данным способом."
+        "message": "Maximum number of saved sessions (in this way)."
     },
     "dateFormatLabel": {
         "message": "Формат времени"
     },
     "dateFormatCaptionLabel": {
-        "message": "Например: YYYY.MM.DD HH:mm:ss"
+        "message": "Example: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
         "message": "Поддержка Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Восстанавливать строение дерева Tree Style Tab.<br>Следует отключить на версиях Firefox до 57."
+        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
     },
     "importLabel": {
         "message": "Импорт сессий"
@@ -135,7 +135,7 @@
         "message": "Экспорт сессий"
     },
     "exportCaptionLabel": {
-        "message": "Сохранить текущую сессию в файл."
+        "message": "Save the current session to the computer."
     },
     "exportButtonLabel": {
         "message": "Экспорт"
@@ -156,7 +156,7 @@
         "message": "Пожалуйста поблагодарите автора"
     },
     "donationCaptionLabel": {
-        "message": "Спасибо, что используете Tab Session Manager.<br>Ваша поддержка будет замечательным стимулом к продолжению разработки этого дополнения.<br>Если вам понравился Tab Session Manager, я буду очень благодарен вашим пожертвованиям."
+        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
@@ -171,7 +171,7 @@
         "message": "Ошибка чтения"
     },
     "warningRemoveAllMessage": {
-        "message": "Будут удалены ВСЕ сохранённые сессии. Хотите продолжить?"
+        "message": "Delete all sessions. Are you sure?"
     },
     "sessionLabel": {
         "message": "Сессия"
