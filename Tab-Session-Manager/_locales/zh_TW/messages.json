@@ -72,49 +72,49 @@
         "message": "分頁延遲載入"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>若關閉此項，恢復瀏覽階段時記憶體使用量將會增加。"
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
     },
     "ifAutoSaveLabel": {
         "message": "定期將開啟的分頁瀏覽狀態自動儲存"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "定期儲存工作階段"
+        "message": "Save the session every X minutes."
     },
     "autoSaveIntervalLabel": {
-        "message": "儲存間隔(分鐘) : "
+        "message": "Interval (minutes)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "最小值為 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "最大儲存數量"
+        "message": "Maximum number Saved"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "使用這個方法儲存的工作階段數量"
+        "message": "Maximum number of saved sessions (in this way)."
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "關閉視窗時儲存工作階段"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "在關閉視窗或是結束瀏覽器時儲存工作階段"
+        "message": "Save the session when closing the window or when exiting Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "最大儲存數量"
+        "message": "Maximum number Saved"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "使用這個方法儲存的工作階段數量。"
+        "message": "Maximum number of saved sessions (in this way)."
     },
     "dateFormatLabel": {
         "message": "日期格式"
     },
     "dateFormatCaptionLabel": {
-        "message": "例如 YYYY.MM.DD HH:mm:ss"
+        "message": "Example: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
         "message": "支援 Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "還原 Tree Style Tab 的樹狀分頁<br>如果使用的 Firefox 版本低於 57 時，請關閉此功能。"
+        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
     },
     "importLabel": {
         "message": "匯入工作階段"
@@ -135,7 +135,7 @@
         "message": "匯出工作階段"
     },
     "exportCaptionLabel": {
-        "message": "將目前的工作階段儲存至電腦中"
+        "message": "Save the current session to the computer."
     },
     "exportButtonLabel": {
         "message": "匯出"
@@ -156,7 +156,7 @@
         "message": "請贊助我吧！"
     },
     "donationCaptionLabel": {
-        "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您可以贊助我。"
+        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
     },
     "amazonTitleLabel": {
         "message": "贊助我 amazon 電子禮品卡"
@@ -171,7 +171,7 @@
         "message": "讀取失敗"
     },
     "warningRemoveAllMessage": {
-        "message": "確定要刪除所有工作階段嗎？"
+        "message": "Delete all sessions. Are you sure?"
     },
     "sessionLabel": {
         "message": "工作階段"
