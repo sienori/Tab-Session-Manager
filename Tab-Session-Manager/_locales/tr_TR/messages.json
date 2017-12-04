@@ -72,49 +72,49 @@
         "message": "Sekme yavaş yükleniyor"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
+        "message": "Bir oturum açtığında, her sayfanın içeriği siz sekme seçene kadar her sayfanın içeriği yüklenmez.<br>Kontrol işareti konulursa, oturum onarıldığında bellek kullanımı artar."
     },
     "ifAutoSaveLabel": {
         "message": "Oturumu düzenli olarak kaydet"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "Her dizi zamanında oturumu kaydet."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Aralık(dakika)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Minimum değer 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Maksimum sayı kaydedildi"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Bu şekilde kaydedilen maksimum oturum."
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "Pencere kapandığında oturumu kaydet"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "Pencere kapanırken veya firefoxtan çıkarken oturumu kaydet."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Kaydedilen maksimum sayı"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Bu şekilde kaydedilen maksimum sayı."
     },
     "dateFormatLabel": {
         "message": "Tarih formatı"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "Örn YYYY.AA.GG SS:dd:ss"
     },
     "ifSupportTstLabel": {
         "message": "Ağaç Stili Sekmeyi Destekler"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Ağaç Stili Sekme'nin ağaç durumunu onar.<br> Eğer fireFox 57'den düşükse lütfen kapatın."
     },
     "importLabel": {
         "message": "Oturumları al"
@@ -135,7 +135,7 @@
         "message": "Oturumları dışa aktar"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Geçerli oturumları bilgisayara kaydet."
     },
     "exportButtonLabel": {
         "message": "Dışa Aktar"
@@ -156,7 +156,7 @@
         "message": "Lütfen bir bağış yapın"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "Sekme Oturum Yöneticisi'ni kullandığınız için teşekkürler.<br>Desteğiniz eklentiyi geliştirmem için büyük bir teşvik olacak.<br>Sekme Oturum Yöneticisi'ni beğendiyseniz, bağış yapmayı dikkate alırsanız memnun olurum."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
@@ -171,7 +171,7 @@
         "message": "Okuma başarısız oldu"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Tüm oturumlar silinsin mi? Tamam mı?"
     },
     "sessionLabel": {
         "message": "Oturum"
