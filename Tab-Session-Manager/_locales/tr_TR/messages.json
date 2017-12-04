@@ -3,178 +3,178 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Kaydedin ve pencerelerin ve sekmelerin durumunu onarın. Bu otomatik kaydetmeyi de destekler."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Kaydet"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Geçerli oturumu kaydet"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Tümü"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Kullanıcı kaydedildi"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Otomatik kaydedildi"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "En yeni"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "En eski"
     },
     "open": {
-        "message": "Open"
+        "message": "Açık"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Sil"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Pencere"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Pencereler"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Sekme"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Sekmeler"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Oturum yok"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Otomatik kaydedildi - Pencere kapatıldı"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Otomatik kaydedildi - Düzenli olarak"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Ayarlar"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Oturumlar"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Bilgi"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Yeni penceredeki açık oturumlar"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Kontrol işareti koyulduysa, oturum geçerli pencerenin üzerinde yazar."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Sekme yavaş yükleniyor"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "Bir oturum açtığında, her sayfanın içeriği siz sekme seçene kadar her sayfanın içeriği yüklenmez.<br>Kontrol işareti konulursa, oturum onarıldığında bellek kullanımı artar."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Oturumu düzenli olarak kaydet"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "Her dizi zamanında oturumu kaydet."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "Aralık(dakika)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Minimum değer 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Maksimum sayı kaydedildi"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Bu şekilde kaydedilen maksimum oturum."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Pencere kapandığında oturumu kaydet"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "Pencere kapanırken veya firefoxtan çıkarken oturumu kaydet."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Kaydedilen maksimum sayı"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Bu şekilde kaydedilen maksimum sayı."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Tarih formatı"
     },
     "dateFormatCaptionLabel": {
-        "message": "Ex YYYY.MM.DD HH:mm:ss"
+        "message": "Örn YYYY.AA.GG SS:dd:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Ağaç Stili Sekmeyi Destekler"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "Ağaç Stili Sekme'nin ağaç durumunu onar.<br> Eğer fireFox 57'den düşükse lütfen kapatın."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Oturumları al"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Bilgisayara kayıtlı oturumları yükle ve oturum listesine ekle.<br>Bu ayrıca SessionManager'in oturum dosyasını destekler(.oturum)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Gözat..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "İçe aktar"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Temizle"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Oturumları dışa aktar"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "Geçerli oturumları bilgisayara kaydet."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Dışa Aktar"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Oturumları sil"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Tüm geçerli oturumları sil."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Sil"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Lisans"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Lütfen bir bağış yapın"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
+        "message": "Sekme Oturum Yöneticisi'ni kullandığınız için teşekkürler.<br>Desteğiniz eklentiyi geliştirmem için büyük bir teşvik olacak.<br>Sekme Oturum Yöneticisi'ni beğendiyseniz, bağış yapmayı dikkate alırsanız memnun olurum."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "eklenti sayfası"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Oturum içe aktarıldı."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Okuma başarısız oldu"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "Tüm oturumlar silinsin mi? Tamam mı?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Oturum"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -183,6 +183,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Bu sayfa Sekme Oturum Yöneticisi tarafından açılamaz."
     }
 }

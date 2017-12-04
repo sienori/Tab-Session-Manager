@@ -3,178 +3,178 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Менеджер сесій дозволяє зберігати та відновлювати стан вікон та вкладок. Підтримує автоматичні збереження."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Зберегти"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Зберегти поточну сесiю"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Всі"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Користувацькі"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Автозбереження"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Найновіші"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Найстаріші"
     },
     "open": {
-        "message": "Open"
+        "message": "Відкрити"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Видалити"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Вікно"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Вікна"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Вкладка"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Вкладки"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Немає сесії"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Автозбереження - закриття вікна"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Автозбереження - регулярне"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Налаштування"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Сесії"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Інформація"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Відкрити сесію у новому вікні"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Якщо вимкнено, сесія перезапише поточне вікно."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Відкладене завантаження вкладок"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "Під час відкриття сесії вміст вкладок не завантажується, поки вкладка не буде активована вручну. <br>При відключенні зросте витрата пам'яті після відновлення сесії."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Періодично зберігати сесію"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "Зберігати сесію через обрані відрізки часу."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "Інтервал (хвилини)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Мінімальне значення 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Максимальна кількість збережень"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Максимальна кількість сесій збережених таким чином."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Зберігати сесію під час закриття вікна"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "Зберігати сесію під час закриття вікна або при виході з Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Saved maximum number"
+        "message": "Максимальна кількість збережень"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "Максимальна кількість сесій збережених таким чином."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Формат дати"
     },
     "dateFormatCaptionLabel": {
-        "message": "Ex YYYY.MM.DD HH:mm:ss"
+        "message": "Наприклад: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Підтримка Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "Відновлення структури дерева Tree Style Tab. <br>Будь ласка вимкніть цю опцію на версіях Firefox до 57."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Імпорт сесій"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Завантажити збережені раніше сесії. <br>Файли SessionManager (.session) також підтримуються."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Перегляд..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Імпорт"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Очистити"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Експорт сесій"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "Зберегти поточну сесію в файл."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Експорт"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Видалити сесії"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Видалити всі поточні сесії."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Видалити"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Ліцензія"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Будь ласка подякуйте автору"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
+        "message": "Дякую, що використовуєте Tab Session Manager. <br> Ваша підтримка буде чудовим стимулом до продовження розробки цього доповнення. <br>Якщо вам сподобався Tab Session Manager, я буду дуже вдячний вашим пожертвуванням."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "Сторінка доповнення"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Сесія імпортована."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Помилка читання"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "Будуть видалені ВСІ збережені сесії. Бажаєте продовжити?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Сесія"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -183,6 +183,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Цю сторінку не можна відкрити в Tab Session Manager."
     }
 }
