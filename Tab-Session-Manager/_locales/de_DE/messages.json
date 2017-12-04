@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Speichern und Wiederherstellen aller Fenster oder Tabs. Unterstützt automatisches Speichern."
+        "message": "Speichern und Wiederherstellen aller Fenster und Tabs. Unterstützt automatisches Speicherung."
     },
     "saveLabel": {
         "message": "Speichern"
@@ -15,10 +15,10 @@
         "message": "Alle"
     },
     "displayUserLabel": {
-        "message": "Manuell"
+        "message": "Manuell gespeichert"
     },
     "displayAutoLabel": {
-        "message": "Auto"
+        "message": "Automatisch gespeichert"
     },
     "newestLabel": {
         "message": "Neueste"
@@ -111,16 +111,16 @@
         "message": "Beispiel: DD.MM.YYYY ss:mm:HH"
     },
     "ifSupportTstLabel": {
-        "message": "Tree Style Tab unterstützen"
+        "message": "Unterstützung von baumstrukturierte Tabs"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Status des Tree Style Tab wiederherstellen.<br>Bittte deaktivieren, falls Firefox älter Version 57 genutzt wird."
+        "message": "Status des Tree Style Tab wiederherstellen.<br>Bitte deaktivieren, wenn die verwendete Version von Firefox älter als Firefox 57 ist."
     },
     "importLabel": {
         "message": "Sitzungen importieren"
     },
     "importCaptionLabel": {
-        "message": "Lokal gespeicherte Sitzungen laden und der aktuellen Sitzung hinzufügen.<br>Es werden auch Session-Dateien von SessionManager unterstützt (.session)."
+        "message": "Lokal gespeicherte Sitzungen laden und zu der aktuellen Liste der Sitzungen hin fügen.<br>Session-Dateien von SessionManager (.session) sind auch unterstützt."
     },
     "importButtonLabel": {
         "message": "Auswählen..."
@@ -168,10 +168,10 @@
         "message": "Sitzungen importiert."
     },
     "readFailedMessage": {
-        "message": "Einlesen fehlerhaft."
+        "message": "Fehler beim Einlesen"
     },
     "warningRemoveAllMessage": {
-        "message": "Wollen Sie wirkich alle Sitzungen löschen ?"
+        "message": "Wollen Sie wirklich alle Sitzungen löschen?"
     },
     "sessionLabel": {
         "message": "Sitzung"
