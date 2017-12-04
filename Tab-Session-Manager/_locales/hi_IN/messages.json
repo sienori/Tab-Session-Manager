@@ -1,0 +1,188 @@
+{
+    "extName": {
+        "message": "Tab Session Manager"
+    },
+    "extDescription": {
+        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    },
+    "saveLabel": {
+        "message": "सहेजें"
+    },
+    "initialNameValue": {
+        "message": "Save current session"
+    },
+    "displayAllLabel": {
+        "message": "सभी"
+    },
+    "displayUserLabel": {
+        "message": "User Saved"
+    },
+    "displayAutoLabel": {
+        "message": "Auto Saved"
+    },
+    "newestLabel": {
+        "message": "सबसे नया"
+    },
+    "oldestLabel": {
+        "message": "सबसे पुराना"
+    },
+    "open": {
+        "message": "खोलें"
+    },
+    "remove": {
+        "message": "हटाएँ"
+    },
+    "windowLabel": {
+        "message": "विंडो"
+    },
+    "windowsLabel": {
+        "message": "विंडोज"
+    },
+    "tabLabel": {
+        "message": "टैब"
+    },
+    "tabsLabel": {
+        "message": "टैब्स"
+    },
+    "noSessionLabel": {
+        "message": "There is no session"
+    },
+    "winCloseSessionName": {
+        "message": "Auto Saved - Window was closed"
+    },
+    "regularSaveSessionName": {
+        "message": "Auto Saved - Regularly"
+    },
+    "settingsLabel": {
+        "message": "सेटिंग्स"
+    },
+    "sessionsLabel": {
+        "message": "Sessions"
+    },
+    "informationLabel": {
+        "message": "जानकारी"
+    },
+    "ifOpenNewWindowLabel": {
+        "message": "Open session in new window"
+    },
+    "ifOpenNewWindowCaptionLabel": {
+        "message": "If checked off, the session overwrites the current window."
+    },
+    "ifLazyLoadingLabel": {
+        "message": "टैब आलसी लोड हो रहा है"
+    },
+    "ifLazyLoadingCaptionLabel": {
+        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+    },
+    "ifAutoSaveLabel": {
+        "message": "Save the session regularly"
+    },
+    "ifAutoSaveCaptionLabel": {
+        "message": "Save the session every set time."
+    },
+    "autoSaveIntervalLabel": {
+        "message": "अंतराल (मिनट)"
+    },
+    "autoSaveIntervalCaptionLabel": {
+        "message": "न्यूनतम मान 0.1"
+    },
+    "autoSaveLimitLabel": {
+        "message": "अधिकतम संख्या सहेजा"
+    },
+    "autoSaveLimitCaptionLabel": {
+        "message": "Maximum number of saved sessions in this way."
+    },
+    "ifAutoSaveWhenCloseLabel": {
+        "message": "Save the session when window was closed"
+    },
+    "ifAutoSaveWhenCloseCaptionLabel": {
+        "message": "Save the session when closing the window or when exiting firefox."
+    },
+    "autoSaveWhenCloseLimitLabel": {
+        "message": "अधिकतम संख्या सहेजा"
+    },
+    "autoSaveWhenCloseCaptionLabel": {
+        "message": "Maximum number of saved sessions in this way."
+    },
+    "dateFormatLabel": {
+        "message": "दिनांक स्वरूप"
+    },
+    "dateFormatCaptionLabel": {
+        "message": "Ex YYYY.MM.DD HH:mm:ss"
+    },
+    "ifSupportTstLabel": {
+        "message": "Supports Tree Style Tab"
+    },
+    "ifSupportTstCaptionLabel": {
+        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+    },
+    "importLabel": {
+        "message": "Import sessions"
+    },
+    "importCaptionLabel": {
+        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+    },
+    "importButtonLabel": {
+        "message": "ब्राउज़ करें..."
+    },
+    "importSaveButtonLabel": {
+        "message": "आयात करें"
+    },
+    "importClearButtonLabel": {
+        "message": "साफ करें"
+    },
+    "exportLabel": {
+        "message": "Export Sessions"
+    },
+    "exportCaptionLabel": {
+        "message": "Save the current session on the computer."
+    },
+    "exportButtonLabel": {
+        "message": "निर्यात करें"
+    },
+    "removeSessionsLabel": {
+        "message": "Delete sessions"
+    },
+    "removeSessionsCaptionLabel": {
+        "message": "Delete all current sessions."
+    },
+    "removeSessionsButtonLabel": {
+        "message": "हटाएँ"
+    },
+    "LicenseLabel": {
+        "message": "लाइसेन्स"
+    },
+    "donationLabel": {
+        "message": "कृपया एक दान करें"
+    },
+    "donationCaptionLabel": {
+        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
+    },
+    "amazonTitleLabel": {
+        "message": "amazon.co.jp eGift कार्ड"
+    },
+    "addonPageLabel": {
+        "message": "add-on page"
+    },
+    "importMessage": {
+        "message": "Sessions imported."
+    },
+    "readFailedMessage": {
+        "message": "पठन विफल"
+    },
+    "warningRemoveAllMessage": {
+        "message": "Delete all sessions. Is it OK?"
+    },
+    "sessionLabel": {
+        "message": "Session"
+    },
+    "amazonUrl": {
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    },
+    "addonUrl": {
+        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    },
+    "replacedPageMessage": {
+        "message": "This page can not be opened by Tab Session Manager."
+    }
+}
