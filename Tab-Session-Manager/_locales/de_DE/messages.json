@@ -72,49 +72,49 @@
         "message": "Tab - verzögertes Laden"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "Wenn Sie eine Sitzung öffnen wird der Inhalt eines Tabs erst nach anwählen geladen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
     },
     "ifAutoSaveLabel": {
         "message": "Sitzung regelmäßig sichern"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Speichert die Sitzung im einstellten Zeitabstand."
+        "message": "Save the session every X minutes."
     },
     "autoSaveIntervalLabel": {
-        "message": "Intervall(Minuten)"
+        "message": "Interval (minutes)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Minimaler Wert 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximal gespeicherte Anzahl"
+        "message": "Maximum number Saved"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
+        "message": "Maximum number of saved sessions (in this way)."
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "Sitzung speichern, falls Fenster geschlossen wird"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Speichert die Sitzung, wenn Fenster oder Firefox geschlossen werden."
+        "message": "Save the session when closing the window or when exiting Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximal gespeicherte Anzahl"
+        "message": "Maximum number Saved"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
+        "message": "Maximum number of saved sessions (in this way)."
     },
     "dateFormatLabel": {
         "message": "Datumformat"
     },
     "dateFormatCaptionLabel": {
-        "message": "Beispiel: DD.MM.YYYY ss:mm:HH"
+        "message": "Example: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
         "message": "Unterstützung von baumstrukturierte Tabs"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Status des Tree Style Tab wiederherstellen.<br>Bitte deaktivieren, wenn die verwendete Version von Firefox älter als Firefox 57 ist."
+        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
     },
     "importLabel": {
         "message": "Sitzungen importieren"
@@ -135,7 +135,7 @@
         "message": "Sitzungen exportieren"
     },
     "exportCaptionLabel": {
-        "message": "Aktuelle Sitzung lokal auf dem PC speichern."
+        "message": "Save the current session to the computer."
     },
     "exportButtonLabel": {
         "message": "Exportieren"
@@ -156,7 +156,7 @@
         "message": "Bitte spenden Sie uns."
     },
     "donationCaptionLabel": {
-        "message": "Danke, dass Sie Tab Session Manager nutzen.<br>Ihre Unterstützung ist ein großer Ansporn bei der Weiterentwicklung dieses Add-ons.<br>Wenn Ihnen Tab Session Manager gefällt, erwägen Sie bitte eine Spende."
+        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
@@ -171,7 +171,7 @@
         "message": "Fehler beim Einlesen"
     },
     "warningRemoveAllMessage": {
-        "message": "Wollen Sie wirklich alle Sitzungen löschen?"
+        "message": "Delete all sessions. Are you sure?"
     },
     "sessionLabel": {
         "message": "Sitzung"
