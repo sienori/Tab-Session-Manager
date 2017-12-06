@@ -111,19 +111,19 @@
         "message": "Voorbeeld: jjjj. MM. DD uu"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Ondersteunt Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Boomstatus herstellen van de Tree Style tabblad. <br> Schakel dit uit voor Firefox-versies ouder dan Firefox 57 (Quantum)."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Sessies importeren"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Laad sessies die op de computer zijn opgeslagen en voeg ze toe aan de sessielijst.<br>Het ondersteunt ook het sessiebestand van SessionManager (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Blader..."
     },
     "importSaveButtonLabel": {
         "message": "Import"
