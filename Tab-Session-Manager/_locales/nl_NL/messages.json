@@ -126,31 +126,31 @@
         "message": "Blader..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importeer"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Wissen"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Sessies exporteren"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Sla de huidige sessie op de computer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Exporteren"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Sessies verwijderen"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Verwijder alle huidige sessies."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Verwijder"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licentie"
     },
     "donationLabel": {
         "message": "Please make a donation"
