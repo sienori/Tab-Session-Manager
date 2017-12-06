@@ -3,13 +3,13 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Sla de status van vensters en tabbladen op en herstel ze. Het ondersteunt ook automatisch opslaan."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Opslaan"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Huidige sessie opslaan"
     },
     "displayAllLabel": {
         "message": "All"
