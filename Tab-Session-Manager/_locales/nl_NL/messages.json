@@ -153,28 +153,28 @@
         "message": "Licentie"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Doe alstublieft een donatie"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "Bedankt voor het gebruik van Tab Session Manager.<br>Uw steun zal een grote aanmoediging zijn, terwijl ik de add-on verder ontwikkel.<br>Als u van Tab Session Manager houdt, zou ik blij zijn als u zou kunnen overwegen om te doneren."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazon.co.jp eGift Kaarten"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "add-on-pagina"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Sessies geïmporteerd."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Lezen is mislukt"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Verwijder alle sessies. Weet je het zeker?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Sessie"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -183,6 +183,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Deze pagina kan niet worden geopend door Tab Session Manager."
     }
 }
