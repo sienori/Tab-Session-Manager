@@ -3,16 +3,16 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Salve e restaure o estado de janelas e abas. Também suporta salvamento automático."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Salvar"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Salvar a sessão atual"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Todos"
     },
     "displayUserLabel": {
         "message": "User Saved"
