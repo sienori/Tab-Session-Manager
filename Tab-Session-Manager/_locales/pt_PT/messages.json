@@ -78,103 +78,103 @@
         "message": "Salvar a sessão regularmente"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "Salve a sessão a cada X minutos."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Intervado (minutos)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Valor minimo 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Número máximo guardado"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Número máximo de sessões salvas (desta forma)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Salvar a sessão quando a janela foi fechada"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "Salve a sessão quando fechar a janela ou ao sair do Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Número máximo guardado"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Número máximo de sessões salvas (desta forma)."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Formato da data"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "Exemplo: AAAA. MM. DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Suporta Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Restaure tree state na tab Tree Style.<br> Por favor, desligue-o para versões do Firefox anteriores ao Firefox 57 (Quantum)."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Sessões de importação"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Carregar sessões gravadas no computador e adicioná-las à lista de sessão.<br> Ele também suporta o arquivo de sessão do SessionManager (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Explorar..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importar"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Limpar"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Sessões de exportação"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Salve a sessão atual no computador."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Exportar"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Apagar as sessões"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Exclua todas as sessões."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Excluir"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licença"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Faça uma doação"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "Obrigado por usar Tab Session Manager.<br>Seu apoio será um grande incentivo, como eu continuar a desenvolver o complemento. <br> Se você gosta de Tab Session Manager, ficaria satisfeito se você poderia considerar a doação."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazon.co.jp Gift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "página do complemento"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Sessões de importados."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Falha de leitura"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Apagar todas as sessões. Tem certeza?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Sessão"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -183,6 +183,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Esta página não pode ser aberta pelo Tab Session Manager."
     }
 }
