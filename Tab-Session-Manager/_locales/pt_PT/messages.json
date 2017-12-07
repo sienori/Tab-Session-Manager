@@ -15,67 +15,67 @@
         "message": "Todos"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Usuário salvado"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Auto salvou"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "O mais novo"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Mais antigo"
     },
     "open": {
-        "message": "Open"
+        "message": "Abrir"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Excluir"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Janela"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Janelas"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Aba"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Abas"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Não há nenhuma sessão"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Auto salvados - janela estava fechado"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Auto salvados - regularmente"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Configurações"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Sessões"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Informações"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Sessão aberta em nova janela"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Se desmarcada, a sessão substitui a janela atual."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Carregamento lento de aba"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
+        "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba. <br> Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Salvar a sessão regularmente"
     },
     "ifAutoSaveCaptionLabel": {
         "message": "Save the session every X minutes."
