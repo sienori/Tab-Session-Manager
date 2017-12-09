@@ -66,7 +66,7 @@
         "message": "Buka sesi di jendela baru"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Jika tidak dicentang, sesi akan menimpa jendela sekarang."
     },
     "ifLazyLoadingLabel": {
         "message": "Tab lazy loading"
