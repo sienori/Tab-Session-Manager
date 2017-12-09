@@ -156,25 +156,25 @@
         "message": "Silakan memberi donasi"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "Terima kasih telah menggunakan Tab Session Manager.<br>Dukunganmu akan menjadi dorongan besar, karena saya akan terus mengembangkan pengaya ini.<br>Jika Anda menyukai Tab Session Manager, saya akan sangat menghargai jika Anda bisa mempertimbangkan memberikan sumbangan."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazon.co.jp Kartu eGift"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "halaman pengaya"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Sesi diimpor."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Gagal membaca"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Hapus semua sesi. Anda yakin?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Sesi"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -183,6 +183,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Halaman ini tidak bisa dibuka oleh Tab Session Manager."
     }
 }
