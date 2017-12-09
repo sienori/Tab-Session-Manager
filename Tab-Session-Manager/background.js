@@ -20,7 +20,6 @@ initSettings().then(function () {
     setStorage();
     setAutoSaveListener();
     autoSaveWhenClose();
-    browser.storage.onChanged.addListener(loadSessions);
     browser.tabs.onActivated.addListener(replacePage);
     browser.windows.onFocusChanged.addListener(replacePage);
 
@@ -106,15 +105,6 @@ function updateAutoName() {
     }
 }
 
-
-//セッションを読み出す
-function loadSessions() {
-    browser.storage.local.get(["sessions"], function (value) {
-        sessions = value.sessions;
-        setAutoSaveListener();
-    });
-}
-
 //設定とセッションを保存
 function setStorage() {
     browser.storage.local.set({
@@ -147,7 +137,7 @@ function onUpdate(tabId, changeInfo, tab) {
 }
 
 function autoSaveWhenClose() {
-    if (!IsOpeningSession && S.get().ifAutoSaveWhenClose) {
+    if (!IsOpeningSession && !IsSavingSession && S.get().ifAutoSaveWhenClose) {
         saveSession(browser.i18n.getMessage("winCloseSessionName"), "auto winClose temp").then(function () {
             removeOverLimit("winClose");
         });
@@ -177,7 +167,10 @@ function removeOverLimit(tagState) {
     }
 }
 
+IsSavingSession = false;
+
 function saveSession(name, tag) {
+    IsSavingSession = true;
     return new Promise(function (resolve, reject) {
         loadCurrentSesssion(name, tag).then(function (session) {
             if (tag.indexOf("winClose") != -1) {
@@ -189,6 +182,7 @@ function saveSession(name, tag) {
                 sessions.push(session);
             }
             setStorage();
+            IsSavingSession = false;
             resolve();
         })
 
