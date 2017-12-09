@@ -96,22 +96,22 @@
         "message": "Simpan sesi ketika jendela ditutup"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "Simpan sesi ketika menutup jendela atau ketika keluar dari Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Jumlah maksimun yang disimpan"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Jumlah maksimum sesi yang bisa disimpan dengan cara ini."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Format tanggal"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "Contoh: TTTT.BB.HH JJ:mm:dd"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Mendukung Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
