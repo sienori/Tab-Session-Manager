@@ -9,40 +9,40 @@
         "message": "Simpan"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Simpan sesi saat ini"
     },
     "displayAllLabel": {
         "message": "Semua"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Disimpan oleh Pengguna"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Disimpan Secara Otomatis"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Paling Baru"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Paling Lama"
     },
     "open": {
-        "message": "Open"
+        "message": "Buka"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Hapus"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Jendela"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Jendela"
     },
     "tabLabel": {
         "message": "Tab"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Tab"
     },
     "noSessionLabel": {
         "message": "There is no session"
