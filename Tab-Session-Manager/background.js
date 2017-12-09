@@ -18,8 +18,9 @@ var sessionStartTime = Date.now();
 initSettings().then(function () {
     updateAutoName();
     setStorage();
-    setAutoSaveListener();
+    setAutoSave();
     autoSaveWhenClose();
+    browser.storage.onChanged.addListener(setAutoSave);
     browser.tabs.onActivated.addListener(replacePage);
     browser.windows.onFocusChanged.addListener(replacePage);
 
@@ -112,21 +113,45 @@ function setStorage() {
     });
 }
 
-var autoSaveTimerArray = new Array();
+let BeforeSettings = {};
+//ifAutoSaveとautoSaveIntervalに変更があったらtrue
+function isChangeAutoSaveSettings() {
+    return new Promise(function (resolve, reject) {
+        browser.storage.local.get(["Settings"], function (value) {
+            if (JSON.stringify(BeforeSettings) != JSON.stringify(value.Settings)) {
+                if (BeforeSettings.ifAutoSave != value.Settings.ifAutoSave || BeforeSettings.autoSaveInterval != value.Settings.autoSaveInterval) {
 
-//自動保存のリスナーを登録
-//TODO:clearIntervalにより動作しない
-function setAutoSaveListener() {
-    //定期的に保存
-    if (S.get().ifAutoSave) {
-        clearInterval(autoSaveTimerArray.shift());
-        autoSaveTimerArray.push(setInterval(function () {
-            saveSession(browser.i18n.getMessage("regularSaveSessionName"), "auto regular").then(function () {
-                removeOverLimit("regular");
-            });
-        }, S.get().autoSaveInterval * 60 * 1000));
-    } else {
-        clearInterval(autoSaveTimerArray.shift());
+                    resolve(true);
+                }
+            }
+            BeforeSettings = value.Settings;
+            resolve(false);
+        });
+    })
+}
+
+let autoSaveTimer;
+
+function startAutoSave() {
+    autoSaveTimer = setInterval(function () {
+        let name = browser.i18n.getMessage("regularSaveSessionName");
+        let tag = "auto regular";
+        saveSession(name, tag).then(() => {
+            removeOverLimit("regular");
+        });
+    }, S.get().autoSaveInterval * 60 * 1000);
+}
+
+function stopAutoSave() {
+    clearInterval(autoSaveTimer);
+}
+
+async function setAutoSave() {
+    if (await isChangeAutoSaveSettings()) {
+        stopAutoSave();
+        if (S.get().ifAutoSave) {
+            startAutoSave();
+        }
     }
 }
 
