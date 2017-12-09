@@ -114,46 +114,46 @@
         "message": "Mendukung Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Kembali ke status pohon Tree Style Tab.<br>Silakan menonaktifkannya jika Anda menggunakan di bawah Firefox 57 (Quantum)."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Impor sesi"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Muat sesi yang tersimpan di komputer dan tambahkan ke Daftar sesi<br>Juga mendukung berkas sesi SessionManager (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Telusuri..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Impor"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Bersihkan"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Ekspor Sesi"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Simpan sesi saat ini di komputer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Ekspor"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Hapus sesi"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Hapus semua sesi saat ini."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Hapus"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Lisensi"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Silakan memberi donasi"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
