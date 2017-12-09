@@ -45,25 +45,25 @@
         "message": "Tab"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Tidak ada sesi"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Menyimpan Otomatis - Jendela ditutup"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Menyimpan Otomatis - Secara berkala"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Pengaturan"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Sesi"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Informasi"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Buka sesi di jendela baru"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "If checked off, the session overwrites the current window."
