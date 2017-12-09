@@ -117,9 +117,9 @@ function showSessions() {
             tabsNumber = sessions[i].tabsNumber;
             windowsNumber = Object.keys(sessions[i].windows).length;
             if (windowsNumber == 1) detail.innerText += windowsNumber + " " + windowLabel;
-              else detail.innerText += windowsNumber + " - " + windowsLabel;
+            else detail.innerText += windowsNumber + " " + windowsLabel;
             if (tabsNumber == 1) detail.innerText += " - " + tabsNumber + " " + tabLabel;
-              else detail.innerText += " " + tabsNumber + " " + tabsLabel;
+            else detail.innerText += " - " + tabsNumber + " " + tabsLabel;
 
         }
     }
