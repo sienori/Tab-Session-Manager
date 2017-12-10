@@ -20,6 +20,8 @@ let S = new settingsObj();
 
 S.init().then(function () {
     S.labelSet();
+    if (S.get().filter != undefined) document.getElementById('filter').value = S.get().filter;
+    if (S.get().sort != undefined) document.getElementById('sort').value = S.get().sort;
 });
 
 
@@ -51,6 +53,9 @@ window.document.getElementById("filter").addEventListener("change", displayChang
 
 function displayChange() {
     let filter = window.document.getElementById("filter").value;
+    S.save({
+        'filter': filter
+    });
     let sessionItems = document.getElementsByClassName("session");
     let noSessionLabel = document.getElementsByClassName('noSessionLabel')[0];
     let showSessionsCount = 0;
@@ -114,6 +119,9 @@ function showSessions() {
     scrollPosition = sessionsArea.scrollTop;
     sessionsArea.innerHTML = "";
     sort = window.document.getElementById("sort").value
+    S.save({
+        'sort': sort
+    })
     for (i = 0; i < Object.keys(sessions).length; i++) { //sessionごとに
         //sessionをソートオプションに応じて追加
         if (sort == "newest") sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(i));
