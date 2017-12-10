@@ -476,6 +476,10 @@ function removeSession(number) {
     setStorage();
 }
 
+function renameSession(sessionNo, name) {
+    sessions[sessionNo].name = name;
+    setStorage();
+}
 
 
 //popupからのリクエスト
@@ -491,5 +495,8 @@ browser.runtime.onMessage.addListener(function (request) {
         case "remove":
             removeSession(request.number);
             break;
+        case "rename":
+            renameSession(request.sessionNo, request.name);
+            break
     }
 });

@@ -53,9 +53,11 @@ window.document.getElementById("filter").addEventListener("change", displayChang
 
 function displayChange() {
     let filter = window.document.getElementById("filter").value;
-    S.save({
-        'filter': filter
-    });
+    if (S.get().filter != filter) {
+        S.save({
+            'filter': filter
+        });
+    }
     let sessionItems = document.getElementsByClassName("session");
     let noSessionLabel = document.getElementsByClassName('noSessionLabel')[0];
     let showSessionsCount = 0;
@@ -119,9 +121,11 @@ function showSessions() {
     scrollPosition = sessionsArea.scrollTop;
     sessionsArea.innerHTML = "";
     sort = window.document.getElementById("sort").value
-    S.save({
-        'sort': sort
-    })
+    if (S.get().sort != sort) {
+        S.save({
+            'sort': sort
+        })
+    }
     for (i = 0; i < Object.keys(sessions).length; i++) { //sessionごとに
         //sessionをソートオプションに応じて追加
         if (sort == "newest") sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(i));
@@ -205,19 +209,35 @@ function rename(e) {
 }
 
 function renameSend(e) {
-    sessionNo = getParentSessionNo(e.target); //.parentElement.parentElement.id;
+    sessionNo = getParentSessionNo(e.target);
     sessionName = window.document.getElementById(sessionNo).getElementsByClassName("sessionName")[0];
     renameArea = window.document.getElementById(sessionNo).getElementsByClassName("renameArea")[0];
     renameInput = renameArea.getElementsByClassName("renameInput")[0].value;
 
     sessions[sessionNo].name = renameInput;
+    sessionName.innerText = renameInput;
 
+    browser.runtime.sendMessage({
+        message: "rename",
+        sessionNo: sessionNo,
+        name: renameInput
+    }).then(() => {
+        showSessions();
+        displayChange();
+    });
+
+
+    /*
     browser.storage.local.set({
         'sessions': sessions
+    }).then(() => {
+        displayChange();
+        showSessions();
     });
+    */
     renameArea.style.display = "none";
     sessionName.style.display = "block";
-    showSessions();
+
 }
 
 function clickSaveInput() {
