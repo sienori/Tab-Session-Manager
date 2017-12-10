@@ -32,6 +32,12 @@
     "remove": {
         "message": "Löschen"
     },
+    "removeConfirmLabel": {
+        "message": "Delete this session?"
+    },
+    "cancelLabel": {
+        "message": "Cancel"
+    },
     "windowLabel": {
         "message": "Fenster"
     },
