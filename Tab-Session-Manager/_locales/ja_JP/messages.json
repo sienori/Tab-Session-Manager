@@ -33,10 +33,10 @@
         "message": "削除"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "このセッションを削除しますか？"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "キャンセル"
     },
     "windowLabel": {
         "message": "ウィンドウ"
