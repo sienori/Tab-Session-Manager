@@ -33,10 +33,10 @@
         "message": "Удалить"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Удалить эту сессию?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Отмена"
     },
     "windowLabel": {
         "message": "Окно"
