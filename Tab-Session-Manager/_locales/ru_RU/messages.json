@@ -32,6 +32,12 @@
     "remove": {
         "message": "Удалить"
     },
+    "removeConfirmLabel": {
+        "message": "Delete this session?"
+    },
+    "cancelLabel": {
+        "message": "Cancel"
+    },
     "windowLabel": {
         "message": "Окно"
     },
