@@ -2,17 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-//TODO: remove確認 絞込みの状態を保持 セッションはありません←tempのため表示されない
+window.document.getElementById("saveName").placeholder = browser.i18n.getMessage("initialNameValue");
+window.document.getElementById("winCloseSessionName").innerText = browser.i18n.getMessage("winCloseSessionName");
+window.document.getElementById("regularSaveSessionName").innerText = browser.i18n.getMessage("regularSaveSessionName");
 
-labels = ["displayAllLabel", "displayUserLabel", "displayAutoLabel", "newestLabel", "oldestLabel", "saveLabel"];
-setLabel(labels);
-
-function setLabel(labels) {
-    for (let l of labels) {
-        window.document.getElementById(l).innerHTML = browser.i18n.getMessage(l);
-    }
-}
-window.document.getElementById("saveName").placeholder = browser.i18n.getMessage("initialNameValue")
 openLabel = browser.i18n.getMessage("open");
 removeLabel = browser.i18n.getMessage("remove");
 windowLabel = browser.i18n.getMessage("windowLabel");
@@ -20,74 +13,97 @@ windowsLabel = browser.i18n.getMessage("windowsLabel");
 tabLabel = browser.i18n.getMessage("tabLabel");
 tabsLabel = browser.i18n.getMessage("tabsLabel");
 noSessionLabel = browser.i18n.getMessage("noSessionLabel");
+removeConfirmLabel = browser.i18n.getMessage("removeConfirmLabel");
+cancelLabel = browser.i18n.getMessage("cancelLabel");
 
-let S = new settingsObj()
-S.init();
+let S = new settingsObj();
 
-var sessions = [];
-getSessions();
-showSessions();
-browser.storage.onChanged.addListener(getSessions);
+S.init().then(function () {
+    S.labelSet();
+});
+
+
+//storageが大きいと表示に時間がかかる場合があるためディレイ
+setTimeout(() => {
+    getSessions();
+    showSessions();
+    browser.storage.onChanged.addListener(getSessions);
+}, 100);
+
+let sessions = [];
+let BeforeSessions = {};
 
 function getSessions() {
     browser.storage.local.get(["sessions"], function (value) {
         if (value.sessions != undefined) sessions = value.sessions;
         else sessions = [];
 
-        //既存の要素数と異なるとき描画
-        sessionsNumber = Object.keys(sessions).length;
-        displaiedNumber = window.document.getElementById("sessionsArea").childElementCount;
-        if (sessionsNumber != displaiedNumber) showSessions();
-
-        displayChange();
+        if (JSON.stringify(BeforeSessions) != JSON.stringify(sessions)) {
+            //TODO:tempの変化でhtmlが更新されてしまう
+            showSessions();
+            displayChange();
+        }
+        BeforeSessions = sessions;
     });
 }
 
+window.document.getElementById("filter").addEventListener("change", displayChange);
+
 function displayChange() {
-    if (window.document.getElementById("displayAll").checked) {
-        items = document.getElementsByClassName("session");
-        for (let i of items) {
-            i.style.display = "block";
+    let filter = window.document.getElementById("filter").value;
+    let sessionItems = document.getElementsByClassName("session");
+    let noSessionLabel = document.getElementsByClassName('noSessionLabel')[0];
+    let showSessionsCount = 0;
+    for (let item of sessionItems) {
+        let tags = item.dataset.tag.split(' ');
+
+        if (tags.includes('temp')) {
+            item.classList.add('hidden');
+            continue;
         }
-    } else if (window.document.getElementById("displayUser").checked) {
-        items = document.getElementsByClassName("user");
-        for (let i of items) {
-            i.style.display = "block";
+
+        if (tags.includes(filter) || filter == "displayAll") {
+            item.classList.remove('hidden');
+            showSessionsCount++;
+        } else {
+            item.classList.add('hidden');
         }
-        items = document.getElementsByClassName("auto");
-        for (let i of items) {
-            i.style.display = "none";
-        }
-    } else if (window.document.getElementById("displayAuto").checked) {
-        items = document.getElementsByClassName("auto");
-        for (let i of items) {
-            i.style.display = "block";
-        }
-        items = document.getElementsByClassName("user");
-        for (let i of items) {
-            i.style.display = "none";
-        }
+    }
+    if (showSessionsCount == 0) {
+        noSessionLabel.classList.remove('hidden');
+    } else {
+        noSessionLabel.classList.add('hidden');
     }
 }
 
 function sessionsHTML(i) {
     return '<div id=' + String(i) + ' class="session">' +
+        '<div class=nameContainer>' +
         '<div class="renameButton"></div>' +
         '<div class="renameArea">' +
+        '<div class=renameContainer>' +
         '<input class="renameInput" type="text">' +
         '<input class=renameSend type="button">' +
         '</div>' +
+        '</div>' +
         '<div class="sessionName"></div>' +
-        '<span class="detail"></span><br>' +
-        '<span class="detailItems"></span>' +
+        '</div>' +
+        '<div class=dateContainer>' +
         '<span class="sessionDate"></span>' +
-        '<span class="remove">' + removeLabel + '</span>' +
+        '</div>' +
+        '<div class=buttonContainer>' +
+        '<span class="detail"></span>' +
+        '<div class=removeOpenButton>' +
         '<span class="open">' + openLabel + '</span> ' +
+        '<span class="remove">' + removeLabel + '</span>' +
+        '</div>' +
+        '</div>' +
         '<div class="removeConfirm hidden"><span>' + removeConfirmLabel + '</span>' +
         '<div class=buttonContainer>' +
         '<span class="reallyRemove">' + removeLabel + '</span>' +
         '<span class="cancel">' + cancelLabel + '</span> ' +
         '</div></div> ' +
+        '<div class="detailItems"></div>' +
         '</div>';
 }
 
@@ -96,49 +112,44 @@ window.document.getElementById("sort").addEventListener("change", showSessions);
 function showSessions() {
     sessionsArea = window.document.getElementById("sessionsArea");
     scrollPosition = sessionsArea.scrollTop;
-    if (Object.keys(sessions).length == 0) {
-        sessionsArea.innerHTML = noSessionLabel;
-    } else {
-        sessionsArea.innerHTML = "";
-        for (i = 0; i < Object.keys(sessions).length; i++) { //sessionごとに
-            //sessionをソートオプションに応じて追加
-            sort = window.document.getElementById("sort").value
-            if (sort == "newest") sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(i));
-            else if (sort == "oldest") sessionsArea.insertAdjacentHTML('beforeend', sessionsHTML(i));
+    sessionsArea.innerHTML = "";
+    sort = window.document.getElementById("sort").value
+    for (i = 0; i < Object.keys(sessions).length; i++) { //sessionごとに
+        //sessionをソートオプションに応じて追加
+        if (sort == "newest") sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(i));
+        else if (sort == "oldest") sessionsArea.insertAdjacentHTML('beforeend', sessionsHTML(i));
 
-            session = window.document.getElementById(String(i));
-            session.getElementsByClassName("sessionName")[0].innerText = sessions[i].name;
+        session = window.document.getElementById(String(i));
+        session.getElementsByClassName("sessionName")[0].innerText = sessions[i].name;
 
-            date = moment(sessions[i].date);
-            session.getElementsByClassName("sessionDate")[0].innerText = date.format(S.get().dateFormat);
+        date = moment(sessions[i].date);
+        session.getElementsByClassName("sessionDate")[0].innerText = date.format(S.get().dateFormat);
 
-            //tag
-            for (let t of sessions[i].tag.split(" ")) {
-                session.classList.add(t);
-            }
+        //tag
+        session.dataset.tag = sessions[i].tag;
 
-            //detail
-            detail = session.getElementsByClassName("detail")[0]; //.parentElement;
-            tabsNumber = sessions[i].tabsNumber;
-            windowsNumber = Object.keys(sessions[i].windows).length;
-            if (windowsNumber == 1) detail.innerText += windowsNumber + " " + windowLabel;
-            else detail.innerText += windowsNumber + " " + windowsLabel;
-            if (tabsNumber == 1) detail.innerText += " - " + tabsNumber + " " + tabLabel;
-            else detail.innerText += " - " + tabsNumber + " " + tabsLabel;
+        //detail
+        detail = session.getElementsByClassName("detail")[0]; //.parentElement;
+        tabsNumber = sessions[i].tabsNumber;
+        windowsNumber = Object.keys(sessions[i].windows).length;
+        if (windowsNumber == 1) detail.innerText += windowsNumber + " " + windowLabel;
+        else detail.innerText += windowsNumber + " " + windowsLabel;
+        if (tabsNumber == 1) detail.innerText += " - " + tabsNumber + " " + tabLabel;
+        else detail.innerText += " - " + tabsNumber + " " + tabsLabel;
 
-        }
     }
+    sessionsArea.insertAdjacentHTML('afterbegin', '<div class="noSessionLabel hidden">' + noSessionLabel + '</div>');
     sessionsArea.scrollTop = scrollPosition;
 }
 
 function showDetail(e) {
-    sessionNo = e.target.parentElement.id;
+    sessionNo = getParentSessionNo(e.target); //.parentElement.id;
     detail = window.document.getElementById(sessionNo).getElementsByClassName("detailItems")[0];
     if (detail.innerHTML == "") {
-        i = 0;
+        let i = 0;
         for (let win in sessions[sessionNo].windows) {
             i++;
-            detail.insertAdjacentHTML('beforeend', '<li class="windows">' + windowLabel + i + '</li>')
+            detail.insertAdjacentHTML('beforeend', '<li class="windowContainer"><div class="windowIcon"></div><span class=windowTitle>' + windowLabel + " " + i + '</span></li>')
 
             let sortedTabs = [];
             for (let tab in sessions[sessionNo].windows[win]) {
@@ -146,22 +157,23 @@ function showDetail(e) {
             }
 
             for (let tab of sortedTabs) {
-                tabTitle = sessions[sessionNo].windows[win][tab].title;
-                tabUrl = sessions[sessionNo].windows[win][tab].url;
+                let tabTitle = sessions[sessionNo].windows[win][tab].title;
+                let tabUrl = sessions[sessionNo].windows[win][tab].url;
                 tabFavIconUrl = sessions[sessionNo].windows[win][tab].favIconUrl;
-                if (tabFavIconUrl == undefined) tabFavIconUrl = "/icons/favicon.png";
 
-                detail.insertAdjacentHTML('beforeend', '<div class="fav"></div><div class="tabs"><a></a></div>');
+                if (tabFavIconUrl == undefined || tabFavIconUrl.match(/^chrome:\/\//))
+                    tabFavIconUrl = "/icons/favicon.png";
 
-                a = detail.getElementsByTagName("a");
-                a[a.length - 1].href = tabUrl;
-                a[a.length - 1].innerText = tabTitle;
+                let tabHtml = '<li class=tabContainer>' +
+                    '<div class=fav style="background-image:url(' + tabFavIconUrl + ')"></div>' +
+                    '<div class="tabTitle"><a href=' + tabUrl + '></a></div>' +
+                    '</li>'
 
-                tabs = detail.getElementsByClassName("tabs");
-                //tabs[tabs.length-1].insertAdjacentText=("afterbegin",tabTitle);
+                detail.insertAdjacentHTML('beforeend', tabHtml);
 
-                arr = detail.getElementsByClassName("fav");
-                arr[arr.length - 1].style.backgroundImage = "url(" + tabFavIconUrl + ")";
+                //tabTitleにhtmlタグが含まれている事があるので，innerTextで挿入
+                let tabTitleElements = detail.getElementsByClassName('tabTitle');
+                tabTitleElements[tabTitleElements.length - 1].getElementsByTagName('a')[0].innerText = tabTitle;
             }
         }
     } else {
@@ -170,7 +182,7 @@ function showDetail(e) {
 }
 
 function rename(e) {
-    sessionNo = e.target.parentElement.id;
+    sessionNo = getParentSessionNo(e.target);
     sessionName = window.document.getElementById(sessionNo).getElementsByClassName("sessionName")[0];
     renameArea = window.document.getElementById(sessionNo).getElementsByClassName("renameArea")[0];
 
@@ -178,7 +190,6 @@ function rename(e) {
     if (renameArea.style.display == "none" || renameArea.style.display == "") {
         renameArea.style.display = "block";
         sessionName.style.display = "none";
-
     } else {
         renameArea.style.display = "none";
         sessionName.style.display = "block";
@@ -186,7 +197,7 @@ function rename(e) {
 }
 
 function renameSend(e) {
-    sessionNo = e.target.parentElement.parentElement.id;
+    sessionNo = getParentSessionNo(e.target); //.parentElement.parentElement.id;
     sessionName = window.document.getElementById(sessionNo).getElementsByClassName("sessionName")[0];
     renameArea = window.document.getElementById(sessionNo).getElementsByClassName("renameArea")[0];
     renameInput = renameArea.getElementsByClassName("renameInput")[0].value;
@@ -217,42 +228,42 @@ function showRemoveConfirm(e) {
     let removeElement = document.getElementById(sessionNo).getElementsByClassName("remove")[0];
     if (confirmElement.classList.contains("hidden")) {
         confirmElement.classList.remove("hidden");
-        removeElement.classList.add("hidden");
+        //removeElement.classList.add("hidden");
+        removeElement.innerText = cancelLabel;
     } else {
         confirmElement.classList.add("hidden");
-        removeElement.classList.remove("hidden");
+        //removeElement.classList.remove("hidden");
+        removeElement.innerText = removeLabel;
+    }
+}
+
+function getParentSessionNo(element) {
+    while (true) {
+        element = element.parentElement;
+        if (element.id != "") {
+            let sessionNo = element.id;
+            return sessionNo;
+        }
     }
 }
 
 window.document.addEventListener('click', function (e) {
-    //console.log(e.target);
     switch (e.target.id) {
-        case "displayAll":
-        case "displayUser":
-        case "displayAuto":
-            displayChange();
-            break;
         case "setting":
             browser.runtime.openOptionsPage();
             break;
         case "saveName":
             clickSaveInput();
             break;
+        case "saveButton":
+            save();
+            break;
     }
     switch (e.target.className) {
-        case "save":
-            if (window.document.getElementById("saveName").value == "") name = "";
-            else name = window.document.getElementById("saveName").value;
-            browser.runtime.sendMessage({
-                message: "save",
-                name: name
-            });
-            window.document.getElementById("saveName").value = "";
-            break;
         case "open":
             browser.runtime.sendMessage({
                 message: "open",
-                number: parseInt(e.target.parentElement.id)
+                number: parseInt(getParentSessionNo(e.target))
             });
             break;
         case "remove":
@@ -262,7 +273,7 @@ window.document.addEventListener('click', function (e) {
         case "reallyRemove":
             browser.runtime.sendMessage({
                 message: "remove",
-                number: parseInt(e.target.parentElement.id)
+                number: parseInt(getParentSessionNo(e.target))
             });
             break;
         case "detail":

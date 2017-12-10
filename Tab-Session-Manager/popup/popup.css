@@ -1,3 +1,320 @@
+:root {
+    --main-text: #0c0c0d;
+    --sub-text: #737373;
+    --line: #ededf0;
+    --button: #d7d7db;
+    --highlight: #36b2b2;
+    --main-bg: #ffffff;
+    --confirm: #ff4f4f;
+}
+
+html {
+    font-family: 'Segoe UI', 'San Francisco', 'Ubuntu', 'Fira Sans', 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font-size: 13px;
+    overflow: hidden;
+    background-color: var(--main-bg);
+
+}
+
+body {
+    width: 350px;
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    padding: 10px;
+    background-color: var(--line);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    -moz-user-select: none;
+}
+
+#tittle {
+    font-size: 17px;
+    font-weight: 400;
+    color: #666;
+    cursor: default;
+}
+
+#setting {
+    height: 20px;
+    width: 20px;
+    background-image: url("/icons/setting.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#optionsArea {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    -moz-user-select: none;
+}
+
+/* select */
+
+.filterContainer {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+
+.sortContainer {
+    flex-shrink: 0;
+}
+
+select {
+    -moz-appearance: none;
+    text-overflow: ellipsis;
+    border: var(--button) solid 1px;
+    padding: 3px 5px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+select:hover {
+    border: var(--highlight) solid 1px;
+}
+
+.selectWrap {
+    position: relative;
+}
+
+.selectWrap:before {
+    pointer-events: none;
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    right: 7px;
+    width: 5px;
+    height: 5px;
+
+    transform: rotate(45deg);
+    border-bottom: 2px solid var(--sub-text);
+    border-right: 2px solid var(--sub-text);
+}
+
+.selectWrap:hover::before {
+    border-bottom: 2px solid var(--highlight);
+    border-right: 2px solid var(--highlight);
+}
+
+option {
+    font-family: 'Segoe UI', 'San Francisco', 'Ubuntu', 'Fira Sans', 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+
+/* session */
+
+#sessionsArea {
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    -moz-user-select: none;
+
+}
+
+.session {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px 0px;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+/* rename */
+
+.renameArea {
+    display: none;
+}
+
+.renameContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.renameInput {
+    font-family: inherit;
+    font-size: inherit;
+    border: var(--button) solid 1px;
+    margin-right: -1px;
+}
+
+.renameInput:focus {
+    z-index: 1;
+    border: var(--highlight) solid 1px;
+}
+
+.renameSend {
+    background-size: 13px;
+    background-color: var(--main-bg);
+    background-image: url("/icons/check.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22px;
+    border: var(--button) solid 1px;
+    cursor: pointer;
+    transition: all 100ms 0s ease;
+}
+
+.renameSend:hover {
+    border: rgb(54, 178, 178) solid 1px;
+    background-image: url("/icons/check2.png");
+    transition: all 100ms 0s ease;
+}
+
+.renameButton {
+    height: 20px;
+    width: 20px;
+    background-image: url("/icons/rename.png");
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-color: var(--main-bg);
+    background-position: center;
+    cursor: pointer;
+}
+
+.renameButton:hover {
+    background-image: url("/icons/rename2.png");
+}
+
+/* name */
+
+.nameContainer {
+    display: flex;
+    align-items: center;
+}
+
+.sessionName {
+    min-height: 20px;
+    word-break: break-all;
+}
+
+/* date */
+
+.sessionDate {
+    color: var(--sub-text);
+    overflow: hidden;
+    word-break: break-all;
+    display: inline-block;
+}
+
+/* button*/
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.open,
+.remove {
+    color: var(--highlight);
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 8px;
+    word-break: break-all;
+}
+
+.open:hover,
+.remove:hover {
+    text-decoration: underline;
+}
+
+.remove:hover {
+    color: var(--confirm);
+}
+
+
+/* detail */
+
+.detail {
+    color: var(--highlight);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.detail:hover {
+    text-decoration: underline;
+}
+
+.detailItems {
+    list-style-type: none;
+    color: var(--main-text);
+    font-size: 12px;
+    word-break: break-all;
+}
+
+.windowContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.windowIcon {
+    height: 16px;
+    width: 16px;
+    background-image: url("../icons/window.png");
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.windowTitle {
+    padding-left: 8px;
+}
+
+.tabContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3px 0px;
+    padding-left: 25px;
+}
+
+.fav {
+    height: 16px;
+    width: 16px;
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.tabTitle {
+    padding-left: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*confirm*/
 
 .removeConfirm {
     background-color: var(--confirm);
@@ -27,299 +344,51 @@
 .reallyRemove:hover {
     text-decoration: underline;
 }
-html {
-    overflow: hidden;
-    background-color: #fff;
-}
 
-body {
-    width: 348px;
-    height: 487px;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
 
-option {
-    font: inherit;
-}
 
-#main {
-    font-family: 'Segoe UI', 'San Francisco', 'Ubuntu', 'Fira Sans', 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    text-align: left;
-    font-size: 13px;
-    height: 100%;
-    width: auto;
-    margin: 0px 10px 10px 10px;
-    overflow: hidden;
-    cursor: default;
-    -moz-user-select: none;
-}
-
-#header {
-    background-color: #eee;
-    position: relative;
-    padding: 10px 20px 0px;
-    margin-bottom: 10px;
-    width: auto;
-    height: 30px;
-    -moz-user-select: none;
-}
-
-#tittle {
-    size: 9px;
-    font-weight: 300;
-    color: #666;
-    float: left;
-    cursor: default;
-}
-
-#setting {
-    height: 20px;
-    width: 20px;
-    background-image: url("/icons/setting.png");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    float: right;
-    cursor: pointer;
-}
-
-#sort {
-    float: right;
-}
-
-#sessionsArea {
-    width: 100%;
-    height: 350px;
-    overflow-y: auto;
-
-}
-
-.session {
-    padding: 5px;
-    padding-bottom: 0px;
-    margin: 10px 5px;
-    height: auto;
-    border-radius: 3px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-    transition: all 300ms 0s ease;
-}
-
-.temp {
-    display: none !important;
-}
-
-.renameArea {
-    display: none;
-    min-height: 30px;
-}
-
-.renameInput {
-    font-family: inherit;
-    font-size: 13px;
-    width: 200px;
-    padding: 0px 1px;
-    margin: 0px;
-    position: relative;
-    top: -3px;
-    left: -2px;
-    height: 20px;
-    border: #aaa solid 1px;
-}
-
-.renameInput:focus {
-    border: #36b2b2 solid 1px;
-}
-
-.renameSend {
-    position: relative;
-    top: -1px;
-    left: 0px;
-    height: 22px;
-    width: 22px;
-    display: inline-block;
-    background-image: url("/icons/check.png");
-    background-size: 13px;
-    background-repeat: no-repeat;
-    background-color: #fff;
-    background-position: center;
-    border: none;
-    border: #aaa solid 1px;
-    cursor: pointer;
-    transition: all 100ms 0s ease;
-}
-
-.renameSend:hover {
-    border: rgb(54, 178, 178) solid 1px;
-    background-image: url("/icons/check2.png");
-    transition: all 100ms 0s ease;
-}
-
-.renameButton {
-    height: 20px;
-    width: 20px;
-    background-image: url("/icons/rename.png");
-    background-size: 13px;
-    background-repeat: no-repeat;
-    background-color: #fff;
-    background-position: center;
-    margin: 0px;
-    float: left;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.renameButton:hover {
-    background-image: url("/icons/rename2.png");
-}
-
-.sessionName {
-    min-height: 30px;
-    word-break: break-all;
-    vertical-align: middle;
-}
-
-.detail {
-    color: #36b0b0;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 12px;
-    -moz-user-select: none;
-}
-
-.detail:hover {
-    text-decoration: underline;
-}
-
-.detailItems {
-    list-style-type: none;
-    text-decoration: none;
-    color: #333;
-    font-size: 12px;
-    cursor: default;
-    margin-right: 5px;
-    width: 100%;
-    word-break: break-all;
-}
-
-.windows {
-    margin-left: 0px;
-}
-
-.tabs {
-    min-height: 20px;
-    margin-left: 30px;
-    list-style: none;
-    /*square*/
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.fav {
-    height: 20px;
-    width: 20px;
-    background-size: 16px;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    float: left;
-    margin-left: 5px;
-}
-
-.open,
-.remove {
-    color: #36b2b2;
-    text-decoration: none;
-    cursor: pointer;
-    float: right;
-    margin-left: 5px;
-    margin-bottom: 0px;
-    -moz-user-select: none;
-}
-
-.open:hover,
-.remove:hover {
-    text-decoration: underline;
-}
-
-.sessionDate {
-    color: #aaa;
-    /*float: left;*/
-    width: 180px;
-    overflow: hidden;
-    word-break: break-all;
-    display: inline-block;
-    padding-bottom: 0px;
-    margin-left: 0px;
-    height: auto;
-    position: relative;
-    left: -5px;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    background: #aaa;
-    width: 100%;
-    margin: 0px 0px 20px;
-}
+/* saveArea */
 
 #saveArea {
-    width: 100%;
-    margin-top: 10px;
     height: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #saveName {
-    font-family: inherit;
-    font-size: 13px;
-    width: 250px;
     padding: 0px 3px;
-    margin: 0px;
-    position: relative;
-    height: 28px;
-    border: #aaa solid 1px;
-    float: left;
-    overflow: hidden;
-    color: #333;
+    margin-right: -1px;
+    font-family: inherit;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 10px;
+    border: var(--button) solid 1px;
+    color: var(--main-text);
 }
 
 #saveName:focus {
-    border: #36b2b2 solid 1px;
-}
-
-::-moz-selection {
-    background: #ebebeb;
+    border: var(--highlight) solid 1px;
+    z-index: 1;
 }
 
 #saveButton {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    height: 18px;
     width: auto;
-    display: inline-block;
-    padding: 5px 5px;
+    padding: 5px 10px;
     background-color: #fff;
-    background-position: center;
-    border: none;
-    border: #aaa solid 1px;
+    border: var(--button) solid 1px;
     cursor: pointer;
-    float: right;
     transition: all 100ms 0s ease;
 }
 
 #saveButton:hover {
-    border: #36b2b2 solid 1px;
-    color: #36b2b2;
+    border: var(--highlight) solid 1px;
+    color: var(--highlight);
     transition: all 100ms 0s ease;
+}
+
+
+*::-moz-selection {
+    background: var(--line);
 }

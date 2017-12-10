@@ -12,20 +12,29 @@
         <div id="tittle">Tab Session Manager</div>
         <div id="setting"></div>
     </div>
-    <div id="main">
-        <select id="sort">
+    <div id="optionsArea">
+        <div class="selectWrap filterContainer">
+            <select id="filter">
+            <option id="displayAllLabel" value="displayAll">All</option>
+            <option id="displayUserLabel" value="user">User saved</option>
+            <option id="displayAutoLabel" value="auto">Auto saved</option>
+            
+            <option id="winCloseSessionName" value="winClose">Auto saved - Window was closed</option>
+            <option id="regularSaveSessionName" value="regular">Auto saved - Regularly</option>
+        </select>
+        </div>
+        <div class="selectWrap sortContainer">
+            <select id="sort">
             <option id="newestLabel" value="newest">newest</option>
             <option id="oldestLabel" value="oldest">oldest</option>
         </select>
-        <label><input type="radio" id="displayAll" name="display" checked="true"><span id="displayAllLabel">all</span></label>
-        <label><input type="radio" id="displayUser" name="display"><span id="displayUserLabel">user saved</span></label>
-        <label><input type="radio" id="displayAuto" name="display"><span id="displayAutoLabel">auto saved</span></label>
-        <div id="sessionsArea">
         </div>
-        <div id="saveArea">
-            <input id="saveName" type="text" placeholder="現在のセッションを保存">
-            <span id=saveButton class=save><span id=saveLabel class=save>save</span></span>
-        </div>
+    </div>
+    <div id="sessionsArea">
+    </div>
+    <div id="saveArea">
+        <input id="saveName" type="text" placeholder="現在のセッションを保存">
+        <input type=button id=saveButton class="save saveLabel" value="save">
     </div>
 
     <script src="moment.js"></script>

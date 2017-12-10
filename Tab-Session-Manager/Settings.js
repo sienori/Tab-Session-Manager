@@ -81,6 +81,9 @@ function settingsObj() {};
             })
         })
     }
+    settingsObj.prototype.labelSet = function () {
+        labelSet();
+    }
 
     //let Settings = new settingsObj();
     let Settings = {};
@@ -138,7 +141,7 @@ function settingsObj() {};
         //button, submit, text classにLabelが含まれていたら
         let inputs = document.getElementsByTagName("input");
         for (let i in inputs) {
-            if (inputs[i].id == undefined || inputs[i].className.indexOf("Label") == -1) continue;
+            if (inputs[i].className == undefined || inputs[i].className.indexOf("Label") == -1) continue;
             let classNames = inputs[i].className.split(' ');
             let labelName;
             for (let n in classNames) {
