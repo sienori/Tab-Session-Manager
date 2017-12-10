@@ -1,0 +1,188 @@
+{
+    "extName": {
+        "message": "Tab Session Manager"
+    },
+    "extDescription": {
+        "message": "Anda bisa menyimpan dan mengembalikan tab dan jendela yang terbuka. Juga mendukung penghematan otomatis."
+    },
+    "saveLabel": {
+        "message": "Simpan"
+    },
+    "initialNameValue": {
+        "message": "Simpan sesi saat ini"
+    },
+    "displayAllLabel": {
+        "message": "Semua"
+    },
+    "displayUserLabel": {
+        "message": "Disimpan oleh Pengguna"
+    },
+    "displayAutoLabel": {
+        "message": "Disimpan Secara Otomatis"
+    },
+    "newestLabel": {
+        "message": "Paling Baru"
+    },
+    "oldestLabel": {
+        "message": "Paling Lama"
+    },
+    "open": {
+        "message": "Buka"
+    },
+    "remove": {
+        "message": "Hapus"
+    },
+    "windowLabel": {
+        "message": "Jendela"
+    },
+    "windowsLabel": {
+        "message": "Jendela"
+    },
+    "tabLabel": {
+        "message": "Tab"
+    },
+    "tabsLabel": {
+        "message": "Tab"
+    },
+    "noSessionLabel": {
+        "message": "Tidak ada sesi"
+    },
+    "winCloseSessionName": {
+        "message": "Menyimpan Otomatis - Jendela ditutup"
+    },
+    "regularSaveSessionName": {
+        "message": "Menyimpan Otomatis - Secara berkala"
+    },
+    "settingsLabel": {
+        "message": "Pengaturan"
+    },
+    "sessionsLabel": {
+        "message": "Sesi"
+    },
+    "informationLabel": {
+        "message": "Informasi"
+    },
+    "ifOpenNewWindowLabel": {
+        "message": "Buka sesi di jendela baru"
+    },
+    "ifOpenNewWindowCaptionLabel": {
+        "message": "Jika tidak dicentang, sesi akan menimpa jendela sekarang."
+    },
+    "ifLazyLoadingLabel": {
+        "message": "Tab malas memuat"
+    },
+    "ifLazyLoadingCaptionLabel": {
+        "message": "Ketika memuat sesi, isi dari setiap halaman tidak langsung dimuat sampai Anda memilih tab tersebut.<br>Jika tidak dicentang, penggunaan memori akan meningkat ketika sesi akan dipulihkan."
+    },
+    "ifAutoSaveLabel": {
+        "message": "Simpan sesi secara berkala"
+    },
+    "ifAutoSaveCaptionLabel": {
+        "message": "Simpan sesi setiap X menit."
+    },
+    "autoSaveIntervalLabel": {
+        "message": "Interval (menit)"
+    },
+    "autoSaveIntervalCaptionLabel": {
+        "message": "Nilai minimum 0.1"
+    },
+    "autoSaveLimitLabel": {
+        "message": "Jumlah maksimum yang disimpan"
+    },
+    "autoSaveLimitCaptionLabel": {
+        "message": "Jumlah maksimum sesi yang bisa disimpan dengan cara ini."
+    },
+    "ifAutoSaveWhenCloseLabel": {
+        "message": "Simpan sesi ketika jendela ditutup"
+    },
+    "ifAutoSaveWhenCloseCaptionLabel": {
+        "message": "Simpan sesi ketika menutup jendela atau ketika keluar dari Firefox."
+    },
+    "autoSaveWhenCloseLimitLabel": {
+        "message": "Jumlah maksimun yang disimpan"
+    },
+    "autoSaveWhenCloseCaptionLabel": {
+        "message": "Jumlah maksimum sesi yang bisa disimpan dengan cara ini."
+    },
+    "dateFormatLabel": {
+        "message": "Format tanggal"
+    },
+    "dateFormatCaptionLabel": {
+        "message": "Contoh: TTTT.BB.HH JJ:mm:dd"
+    },
+    "ifSupportTstLabel": {
+        "message": "Mendukung Tree Style Tab"
+    },
+    "ifSupportTstCaptionLabel": {
+        "message": "Kembali ke status pohon Tree Style Tab.<br>Silakan menonaktifkannya jika Anda menggunakan di bawah Firefox 57 (Quantum)."
+    },
+    "importLabel": {
+        "message": "Impor sesi"
+    },
+    "importCaptionLabel": {
+        "message": "Muat sesi yang tersimpan di komputer dan tambahkan ke Daftar sesi<br>Juga mendukung berkas sesi SessionManager (.session)."
+    },
+    "importButtonLabel": {
+        "message": "Telusuri..."
+    },
+    "importSaveButtonLabel": {
+        "message": "Impor"
+    },
+    "importClearButtonLabel": {
+        "message": "Bersihkan"
+    },
+    "exportLabel": {
+        "message": "Ekspor Sesi"
+    },
+    "exportCaptionLabel": {
+        "message": "Simpan sesi saat ini di komputer."
+    },
+    "exportButtonLabel": {
+        "message": "Ekspor"
+    },
+    "removeSessionsLabel": {
+        "message": "Hapus sesi"
+    },
+    "removeSessionsCaptionLabel": {
+        "message": "Hapus semua sesi saat ini."
+    },
+    "removeSessionsButtonLabel": {
+        "message": "Hapus"
+    },
+    "LicenseLabel": {
+        "message": "Lisensi"
+    },
+    "donationLabel": {
+        "message": "Silakan memberi donasi"
+    },
+    "donationCaptionLabel": {
+        "message": "Terima kasih telah menggunakan Tab Session Manager.<br>Dukunganmu akan menjadi dorongan besar, karena saya akan terus mengembangkan pengaya ini.<br>Jika Anda menyukai Tab Session Manager, saya akan sangat menghargai jika Anda bisa mempertimbangkan memberikan sumbangan."
+    },
+    "amazonTitleLabel": {
+        "message": "amazon.co.jp Kartu eGift"
+    },
+    "addonPageLabel": {
+        "message": "halaman pengaya"
+    },
+    "importMessage": {
+        "message": "Sesi diimpor."
+    },
+    "readFailedMessage": {
+        "message": "Gagal membaca"
+    },
+    "warningRemoveAllMessage": {
+        "message": "Hapus semua sesi. Anda yakin?"
+    },
+    "sessionLabel": {
+        "message": "Sesi"
+    },
+    "amazonUrl": {
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    },
+    "addonUrl": {
+        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    },
+    "replacedPageMessage": {
+        "message": "Halaman ini tidak bisa dibuka oleh Tab Session Manager."
+    }
+}

@@ -114,7 +114,7 @@
         "message": "ツリー型タブに対応"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "ツリー型タブのツリーの状態を復元します。<br>fireFox57未満ではオフにしてください。"
+        "message": "ツリー型タブのツリーの状態を復元します。<br>FireFox57 (Quantum) 未満ではオフにしてください。"
     },
     "importLabel": {
         "message": "セッションをインポート"
