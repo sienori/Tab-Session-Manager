@@ -295,3 +295,23 @@ window.document.addEventListener('click', function (e) {
             break;
     }
 })
+
+window.document.addEventListener('keypress', (e) => {
+    if (e.key == 'Enter') {
+        if (e.target.id == 'saveName') {
+            save();
+        } else if (e.target.className == 'renameInput') {
+            renameSend(e);
+        }
+    }
+})
+
+function save() {
+    if (window.document.getElementById("saveName").value == "") name = "";
+    else name = window.document.getElementById("saveName").value;
+    browser.runtime.sendMessage({
+        message: "save",
+        name: name
+    });
+    window.document.getElementById("saveName").value = "";
+}
