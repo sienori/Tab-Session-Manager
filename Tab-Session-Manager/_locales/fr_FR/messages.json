@@ -33,10 +33,10 @@
         "message": "Supprimer"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Supprimer cette session?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Annuler"
     },
     "windowLabel": {
         "message": "Fenêtre"
