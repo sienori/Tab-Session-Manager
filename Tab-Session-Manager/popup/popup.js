@@ -83,6 +83,11 @@ function sessionsHTML(i) {
         '<span class="sessionDate"></span>' +
         '<span class="remove">' + removeLabel + '</span>' +
         '<span class="open">' + openLabel + '</span> ' +
+        '<div class="removeConfirm hidden"><span>' + removeConfirmLabel + '</span>' +
+        '<div class=buttonContainer>' +
+        '<span class="reallyRemove">' + removeLabel + '</span>' +
+        '<span class="cancel">' + cancelLabel + '</span> ' +
+        '</div></div> ' +
         '</div>';
 }
 
@@ -206,6 +211,19 @@ function clickSaveInput() {
     }
 }
 
+function showRemoveConfirm(e) {
+    let sessionNo = getParentSessionNo(e.target);
+    let confirmElement = document.getElementById(sessionNo).getElementsByClassName("removeConfirm")[0];
+    let removeElement = document.getElementById(sessionNo).getElementsByClassName("remove")[0];
+    if (confirmElement.classList.contains("hidden")) {
+        confirmElement.classList.remove("hidden");
+        removeElement.classList.add("hidden");
+    } else {
+        confirmElement.classList.add("hidden");
+        removeElement.classList.remove("hidden");
+    }
+}
+
 window.document.addEventListener('click', function (e) {
     //console.log(e.target);
     switch (e.target.id) {
@@ -238,6 +256,10 @@ window.document.addEventListener('click', function (e) {
             });
             break;
         case "remove":
+        case "cancel":
+            showRemoveConfirm(e);
+            break;
+        case "reallyRemove":
             browser.runtime.sendMessage({
                 message: "remove",
                 number: parseInt(e.target.parentElement.id)

@@ -1,3 +1,32 @@
+
+.removeConfirm {
+    background-color: var(--confirm);
+    color: #fff;
+    padding: 10px 5px;
+    margin: 5px -6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hidden {
+    display: none;
+}
+
+.cancel,
+.reallyRemove {
+    color: var(--main-bg);
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 8px;
+    word-break: break-all;
+}
+
+.cancel:hover,
+.reallyRemove:hover {
+    text-decoration: underline;
+}
 html {
     overflow: hidden;
     background-color: #fff;
