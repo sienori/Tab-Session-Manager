@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Enregistrer et restaurer l’état des fenêtres et onglets. Prend également en charge la sauvegarde automatique."
+        "message": "Enregistre et restaure l’état des fenêtres et onglets. Prend également en charge la sauvegarde automatique."
     },
     "saveLabel": {
         "message": "Enregistrer"
@@ -33,7 +33,7 @@
         "message": "Supprimer"
     },
     "removeConfirmLabel": {
-        "message": "Supprimer cette session?"
+        "message": "Supprimer cette session ?"
     },
     "cancelLabel": {
         "message": "Annuler"
