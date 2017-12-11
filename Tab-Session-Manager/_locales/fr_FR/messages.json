@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Enregistrer et restaurer l’état des fenêtres et onglets. Il prend également en charge la sauvegarde automatique."
+        "message": "Enregistrer et restaurer l’état des fenêtres et onglets. Prend également en charge la sauvegarde automatique."
     },
     "saveLabel": {
         "message": "Enregistrer"
@@ -12,7 +12,7 @@
         "message": "Enregistrer la session actuelle"
     },
     "displayAllLabel": {
-        "message": "Tout"
+        "message": "Toutes"
     },
     "displayUserLabel": {
         "message": "Enregistrées par l'utilisateur"
@@ -54,10 +54,10 @@
         "message": "Il n’y a pas de session"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Fenêtre était fermée"
+        "message": "Auto - À la fermeture d'une fenêtre"
     },
     "regularSaveSessionName": {
-        "message": "Auto sauvé - régulièrement"
+        "message": "Auto - Sauvegardes régulières"
     },
     "settingsLabel": {
         "message": "Paramètres"
@@ -75,19 +75,19 @@
         "message": "Si cette case est cochée, la session écrase la fenêtre en cours."
     },
     "ifLazyLoadingLabel": {
-        "message": "Chargement différé onglet"
+        "message": "Chargement différé des onglets"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet. <br> Si cette case est cochée, l'utilisation de la mémoire augmente lorsque la session est restaurée."
     },
     "ifAutoSaveLabel": {
-        "message": "Enregistrer la session régulièrement"
+        "message": "Enregistrer régulièrement la session"
     },
     "ifAutoSaveCaptionLabel": {
         "message": "Enregistrer la session chaque heure réglée."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "Intervalle (minutes)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Valeur minimale 0.1"
@@ -99,7 +99,7 @@
         "message": "Nombre maximal de sessions enregistrées de cette façon."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Enregistrer la session lorsque la fenêtre était fermée"
+        "message": "Enregistrer la session à la fermeture d'une fenêtre"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
         "message": "Enregistrer la session lors de la fermeture de la fenêtre ou lorsque vous quittez firefox."
@@ -117,10 +117,10 @@
         "message": "Ex AAAA.MM.JJ HH:m:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Prend en charge l'onglet Style de l'arbre"
+        "message": "Prendre en charge Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restaurer l'état de l'arbre de l'onglet Style de l'arbre.<br>Veuillez le désactiver s'il est inférieur à fireFox 57."
+        "message": "Restaurer l'état du panneau des onglets de Tree Style Tab.<br>Veuillez désactiver pour les versions antérieures à Firefox 57 (Quantum)."
     },
     "importLabel": {
         "message": "Importer des sessions"
