@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Guardar y restaurar el estado de las ventanas y pestañas. También soporta guardado automático."
+        "message": "Guardar y restaurar el estado de las ventanas y pestañas. También permite guardado automático."
     },
     "saveLabel": {
         "message": "Guardar"
