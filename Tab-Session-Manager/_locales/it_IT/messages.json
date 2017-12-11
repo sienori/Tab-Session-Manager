@@ -3,52 +3,52 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Salva e ripristina lo stato di finestre e schede. Supporta anche il salvataggio automatico."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Salva"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Salva sessione corrente"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Tutto"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Salvato dall'utente"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Salvato automaticamente"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Più recente"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Meno recente"
     },
     "open": {
-        "message": "Open"
+        "message": "Apri"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Elimina"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Vuoi eliminare questa sessione?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Annulla"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Finestra"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Finestre"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Scheda"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Schede"
     },
     "noSessionLabel": {
         "message": "There is no session"
