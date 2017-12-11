@@ -51,28 +51,28 @@
         "message": "Schede"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Non è presente alcuna sessione"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Salvato automaticamente - La finestra è stata chiusa"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Salvato automaticamente - Regolare"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Impostazioni"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Sessioni"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Informazioni"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Apri sessione in una nuova finestra"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Se disattivato, la sessione sovrascrive la finestra corrente."
     },
     "ifLazyLoadingLabel": {
         "message": "Tab lazy loading"
@@ -81,16 +81,16 @@
         "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Salva la sessione regolarmente"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "Salva la sessione ogni X minuti."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Intervallo (minuti)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Valore minimo 0.1"
     },
     "autoSaveLimitLabel": {
         "message": "Maximum number Saved"
@@ -111,10 +111,10 @@
         "message": "Maximum number of saved sessions (in this way)."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Formato data"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "Esempio: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
         "message": "Supports Tree Style Tab"
@@ -129,34 +129,34 @@
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Sfoglia..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importa"
     },
     "importClearButtonLabel": {
         "message": "Clear"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Esporta sessioni"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Salva la sessione corrente sul computer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Esporta"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Elimina sessioni"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Elimina tutte le sessioni correnti."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Elimina"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licenza"
     },
     "donationLabel": {
         "message": "Please make a donation"
@@ -171,16 +171,16 @@
         "message": "add-on page"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Sessioni importate."
     },
     "readFailedMessage": {
         "message": "Read failed"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Sei sicuro di voler eliminare tutte le sessioni?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Sessione"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
