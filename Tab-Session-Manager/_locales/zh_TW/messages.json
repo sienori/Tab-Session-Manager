@@ -33,10 +33,10 @@
         "message": "移除"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "刪除此瀏覽階段？"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "取消"
     },
     "windowLabel": {
         "message": "視窗"
