@@ -99,10 +99,10 @@
         "message": "Numero massimo di sessioni salvate (in questa modalità)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Salva la sessione quando la finestra viene chiusa"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "Salva la sessione quando la finestra o Firefox vengono chiusi."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Numero massimo salvato"
