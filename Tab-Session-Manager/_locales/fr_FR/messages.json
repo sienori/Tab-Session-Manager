@@ -78,7 +78,7 @@
         "message": "Chargement différé des onglets"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet. <br> Si cette case est cochée, l'utilisation de la mémoire augmente lorsque la session est restaurée."
+        "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet. <br> Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsque la session est restaurée."
     },
     "ifAutoSaveLabel": {
         "message": "Enregistrer régulièrement la session"
@@ -126,10 +126,10 @@
         "message": "Importer des sessions"
     },
     "importCaptionLabel": {
-        "message": "Charger les sessions enregistrées sur l’ordinateur et ajoutez-les à la liste de session.<br>Il prend également en charge les fichiers de session de SessionManager (.session)."
+        "message": "Charger les sessions enregistrées sur l’ordinateur et les ajouter à la liste de session.<br>Les fichiers de session de SessionManager (.session) sont également pris en charge."
     },
     "importButtonLabel": {
-        "message": "Feuilleter..."
+        "message": "Parcourir..."
     },
     "importSaveButtonLabel": {
         "message": "Importer"
@@ -147,10 +147,10 @@
         "message": "Exporter"
     },
     "removeSessionsLabel": {
-        "message": "Supprimer des sessions"
+        "message": "Supprimer les sessions"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Supprimez tous les sessions."
+        "message": "Supprimer toutes les sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Supprimer"
@@ -159,7 +159,7 @@
         "message": "Licence"
     },
     "donationLabel": {
-        "message": "S’il vous plaît faire un don"
+        "message": "Veuillez faire un don"
     },
     "donationCaptionLabel": {
         "message": "Merci d'utiliser Tab Session Manager.<br>Votre soutien sera un grand encouragement alors que je continue de développer l'extension.<br>Si vous aimez Tab Session Manager, je serais heureux si vous pouviez envisager un don."
@@ -168,16 +168,16 @@
         "message": "amazon.co.jp Cartes Cadeaux"
     },
     "addonPageLabel": {
-        "message": "page complémentaire"
+        "message": "Page de l'extension"
     },
     "importMessage": {
         "message": "Sessions importées."
     },
     "readFailedMessage": {
-        "message": "Lire a échoué"
+        "message": "Échec de lecture"
     },
     "warningRemoveAllMessage": {
-        "message": "Supprimer toutes les sessions. Est-ce OK ?"
+        "message": "Voulez-vous vraiment supprimer toutes les sessions ?"
     },
     "sessionLabel": {
         "message": "Session"
@@ -186,7 +186,7 @@
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/fr\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
         "message": "Cette page ne peut pas être ouvert par Tab Session Manager."
