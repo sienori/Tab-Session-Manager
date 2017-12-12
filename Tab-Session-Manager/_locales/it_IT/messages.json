@@ -126,7 +126,7 @@
         "message": "Importa sessioni"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Ripristina sessioni salvate sul computer e le aggiunge alla lista delle sessioni.<br>Supporta anche i file sessione di SessionManager (.session)."
     },
     "importButtonLabel": {
         "message": "Sfoglia..."
@@ -135,7 +135,7 @@
         "message": "Importa"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Ripulisci"
     },
     "exportLabel": {
         "message": "Esporta sessioni"
@@ -162,7 +162,7 @@
         "message": "Per favore, considera una donazione"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "Grazie per utilizzare Tab Session Manager.<br>Il tuo supporto sarà un grande incoraggiamento mentre continuo a sviluppare questo componente aggiuntivo.<br>Se ti piace Tab Session Manager, sarei felice se potessi prendere in considerazione una donazione."
     },
     "amazonTitleLabel": {
         "message": "Buoni Regalo amazon.co.jp"
