@@ -54,10 +54,10 @@
         "message": "Nu există nici o sesiune"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Salvare automată - Fereastra a fost închisă"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Salvare automată - În mod regulat"
     },
     "settingsLabel": {
         "message": "Setări"
