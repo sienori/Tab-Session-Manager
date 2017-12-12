@@ -75,10 +75,10 @@
         "message": "Se disattivato, la sessione sovrascrive la finestra corrente."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Caricamento schede posticipato"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
+        "message": "Quando viene aperta una sessione, il contenuto di ogni pagina non viene caricato finché selezioni la scheda.<br>Se disattivato, l'utilizzo della memoria aumenta notevolmente quando la sessione viene ripristinata."
     },
     "ifAutoSaveLabel": {
         "message": "Salva la sessione regolarmente"
@@ -117,10 +117,10 @@
         "message": "Esempio: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Supporta Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Ripristina la struttura ad albero di Tree Style Tab.<br>Disattiva questa funzionalità su versioni precedenti a Firefox 57 (Quantum)."
     },
     "importLabel": {
         "message": "Importa sessioni"
