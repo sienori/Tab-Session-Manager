@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Enregistre et restaure l’état des fenêtres et onglets. Prend également en charge la sauvegarde automatique."
+        "message": "Enregistrer et restaurer l’état des fenêtres et onglets. Prend également en charge la sauvegarde automatique."
     },
     "saveLabel": {
         "message": "Enregistrer"
@@ -18,7 +18,7 @@
         "message": "Enregistrées par l'utilisateur"
     },
     "displayAutoLabel": {
-        "message": "Enregistrement automatique"
+        "message": "Enregistré automatiquement"
     },
     "newestLabel": {
         "message": "Plus récent"
@@ -81,10 +81,10 @@
         "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet. <br> Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsque la session est restaurée."
     },
     "ifAutoSaveLabel": {
-        "message": "Enregistrer régulièrement la session"
+        "message": "Enregistrer la session régulièrement"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Enregistrer la session chaque heure réglée."
+        "message": "Enregistrer la session toutes les X minutes."
     },
     "autoSaveIntervalLabel": {
         "message": "Intervalle (minutes)"
@@ -102,7 +102,7 @@
         "message": "Enregistrer la session à la fermeture d'une fenêtre"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Enregistrer la session lors de la fermeture de la fenêtre ou lorsque vous quittez firefox."
+        "message": "Enregistrer la session lors de la fermeture de la fenêtre ou lorsque vous quittez Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Nombre maximum enregistré"
@@ -147,7 +147,7 @@
         "message": "Exporter"
     },
     "removeSessionsLabel": {
-        "message": "Supprimer les sessions"
+        "message": "Supprimer des sessions"
     },
     "removeSessionsCaptionLabel": {
         "message": "Supprimer toutes les sessions."
