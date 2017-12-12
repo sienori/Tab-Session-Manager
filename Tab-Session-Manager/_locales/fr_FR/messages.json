@@ -162,10 +162,10 @@
         "message": "Veuillez faire un don"
     },
     "donationCaptionLabel": {
-        "message": "Merci d'utiliser Tab Session Manager.<br>Votre soutien sera un grand encouragement alors que je continue de développer l'extension.<br>Si vous aimez Tab Session Manager, je serais heureux si vous pouviez envisager un don."
+        "message": "Merci d’utiliser le module \"Gestionnaire de Session\". <br>Votre soutien sera un grand encouragement, car je continue à développer l’add-on. <br> Si vous aimez Session Manager, je serais heureux si vous pourriez envisager de faire un don."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp Cartes Cadeaux"
+        "message": "Cartes Cadeaux (amazon.co.jp)"
     },
     "addonPageLabel": {
         "message": "Page de l'extension"
