@@ -6,16 +6,16 @@
         "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Salvaţi"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Salvează sesiunea curentă"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Tot"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Utilizator salvat"
     },
     "displayAutoLabel": {
         "message": "Auto Saved"
