@@ -9,7 +9,7 @@
         "message": "सहेजें"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "मौजूदा सत्र को बचाएं"
     },
     "displayAllLabel": {
         "message": "सभी"
@@ -33,7 +33,7 @@
         "message": "हटाएँ"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "इस सत्र को हटाएं?"
     },
     "cancelLabel": {
         "message": "Cancel"
@@ -51,7 +51,7 @@
         "message": "टैब्स"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "कोई सत्र नहीं है"
     },
     "winCloseSessionName": {
         "message": "Auto Saved - Window was closed"
@@ -63,13 +63,13 @@
         "message": "सेटिंग्स"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "सत्र"
     },
     "informationLabel": {
         "message": "जानकारी"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "नई विंडो में सत्र खोलें"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "If checked off, the session overwrites the current window."
@@ -141,7 +141,7 @@
         "message": "Export Sessions"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "वर्तमान सत्र को कंप्यूटर पर सहेजें|"
     },
     "exportButtonLabel": {
         "message": "निर्यात करें"
@@ -177,10 +177,10 @@
         "message": "पठन विफल"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "सभी सत्र हटाएं| क्या आपको यकीन है?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "सत्र"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -189,6 +189,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "यह पृष्ठ टैब सत्र प्रबंधक द्वारा खोला नहीं जा सकता।"
     }
 }
