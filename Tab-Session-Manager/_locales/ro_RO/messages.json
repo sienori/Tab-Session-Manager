@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Salvează și restabiliește starea ferestrelor și a filelor. De asemenea, susține salvarea automată."
     },
     "saveLabel": {
         "message": "Salvaţi"
@@ -45,10 +45,10 @@
         "message": "Ferestre"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Filă"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "File"
     },
     "noSessionLabel": {
         "message": "Nu există nici o sesiune"
@@ -78,46 +78,46 @@
         "message": "Fila se încarcă greu"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
+        "message": "La deschiderea unei sesiuni, conținutul fiecărei pagini nu este încărcat până când se selectează fila. <br>Dacă este deazctivat, utilizarea memoriei crește foarte mult când sesiunea este restabilită."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Salvează sesiunea în mod regulat"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "Salvează sesiunea la fiecare X minute."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Interval (minute)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Valoarea minimă 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Numărul maxim salvate"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Numărul maxim de sesiuni salvate (în acest fel)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Salvează sesiunea când fereastra a fost închisă"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "Salvează sesiunea la închiderea ferestrei sau la ieşirea din Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Numărul maxim salvate"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Numărul maxim de sesiuni salvate (în acest fel)."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Format dată"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "Exemplu: aaaa. MM. DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Suportă Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
@@ -135,13 +135,13 @@
         "message": "Importă"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Golește"
     },
     "exportLabel": {
         "message": "Exportă sesiuni"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Salvează sesiunea curentă în computer."
     },
     "exportButtonLabel": {
         "message": "Exportă"
@@ -150,16 +150,16 @@
         "message": "Ștergere sesiuni"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Şterge toate sesiunile curente."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Șterge"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licenţă"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Vă rugăm să faceți o donație"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
