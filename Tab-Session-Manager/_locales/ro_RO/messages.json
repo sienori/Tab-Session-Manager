@@ -123,7 +123,7 @@
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Importă sesiuni"
     },
     "importCaptionLabel": {
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
