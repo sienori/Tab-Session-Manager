@@ -18,31 +18,31 @@
         "message": "Utilizator salvat"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Salvare automată"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Cel mai nou"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Cel mai vechi"
     },
     "open": {
-        "message": "Open"
+        "message": "Deschide"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Șterge"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Ştergeţi această sesiune?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Anulare"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Fereastră"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Ferestre"
     },
     "tabLabel": {
         "message": "Tab"
@@ -51,7 +51,7 @@
         "message": "Tabs"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Nu există nici o sesiune"
     },
     "winCloseSessionName": {
         "message": "Auto Saved - Window was closed"
@@ -60,13 +60,13 @@
         "message": "Auto Saved - Regularly"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Setări"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Sesiuni"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Informaţii"
     },
     "ifOpenNewWindowLabel": {
         "message": "Open session in new window"
@@ -129,22 +129,22 @@
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Caută..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importă"
     },
     "importClearButtonLabel": {
         "message": "Clear"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Exportă sesiuni"
     },
     "exportCaptionLabel": {
         "message": "Save the current session to the computer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Exportă"
     },
     "removeSessionsLabel": {
         "message": "Delete sessions"
