@@ -126,7 +126,7 @@
         "message": "Importă sesiuni"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Încarcă sesiunile valvate pe computer și adauga-le la lista de sesiuni. <br>De asemnea, acceptă fișierul sesiunii SessionManager (.session)."
     },
     "importButtonLabel": {
         "message": "Caută..."
