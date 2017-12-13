@@ -33,7 +33,7 @@
         "message": "Töröl"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Törli ezt a munkamenetet?"
     },
     "cancelLabel": {
         "message": "Mégse"
@@ -48,7 +48,7 @@
         "message": "Fül"
     },
     "tabsLabel": {
-        "message": "Fülek"
+        "message": "Fül"
     },
     "noSessionLabel": {
         "message": "Nincs munkamenet"
@@ -69,13 +69,13 @@
         "message": "Információ"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Munkamenet megnyitása új ablakban"
+        "message": "Munkamenetek megnyitása új ablakban"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "Ha nincs bejelölve, a munkamenet felülírja a jelenlegi ablakot."
     },
     "ifLazyLoadingLabel": {
-        "message": "Fül lusta betöltése"
+        "message": "Fülek lusta betöltése"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "A munkamenet megnyitásakor az egyes oldalak tartalma nem töltődik be, amíg ki nem választódik a fül.<br>Ha nincs bejelölve, a memória használat nagy mértékben megnövekszik amikor a munkamenet visszaállítódik."
@@ -117,7 +117,7 @@
         "message": "Pl.: YYYY.MM.DD HH:mm:ss"
     },
     "ifSupportTstLabel": {
-        "message": "Fa struktúrájú fülek támogatása"
+        "message": "Fa struktúrájú fülek (Tree Style Tab) támogatása"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Fa struktúrájú fülek visszaállítása.<br>Firefox 57 (Quantum) -nál régebbi verzió esetén ki kell kapcsolni."
