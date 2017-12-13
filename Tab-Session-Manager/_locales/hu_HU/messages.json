@@ -162,13 +162,13 @@
         "message": "Kérjük adakozzon"
     },
     "donationCaptionLabel": {
-        "message": "Köszönöm hogy a Tab Session Manager -t használod.<br>A támogatásod nagy ösztönzést jelent számomra, hogy folytassam ennek a kiegészítőnek a fejlesztését.<br>Ha tetszik a Tab Session Manager, örülnék ha megfontolnád az adakozást."
+        "message": "Köszönöm hogy a Tab Session Manager -t használod!<br>A támogatásod nagy ösztönzést jelent számomra, hogy folytassam ennek a kiegészítőnek a fejlesztését.<br>Ha tetszik a Tab Session Manager, örülnék ha megfontolnád az adakozást."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp elektronikus ajándék kártyák"
+        "message": "amazon.co.jp elektronikus ajándék kártya"
     },
     "addonPageLabel": {
-        "message": "kiegészítő oldala"
+        "message": "A kiegészítő oldala"
     },
     "importMessage": {
         "message": "Munkamenetek importálva."
