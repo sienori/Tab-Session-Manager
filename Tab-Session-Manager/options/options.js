@@ -90,7 +90,12 @@ function isJSON(arg) {
     }
 };
 
+function isArray(o) {
+    return Object.prototype.toString.call(o) === '[object Array]';
+}
+
 function checkImportFile(file) {
+    if (!isArray(file)) return false;
     let correctSession = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime"];
     for (let session of file) {
         if (Object.keys(session).toString() != correctSession.toString()) {
@@ -110,6 +115,8 @@ function parseOldSession(file) {
     session.date = moment(parseInt(line[2].substr(10))).toISOString();
     session.tag = 'user';
     session.sessionStartTime = parseInt(line[2].substr(10));
+
+    if (!isJSON(line[4])) return;
 
     let sessionData = JSON.parse(line[4]);
 
