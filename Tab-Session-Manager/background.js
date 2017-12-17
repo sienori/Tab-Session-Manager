@@ -107,7 +107,15 @@ function updateAutoName() {
     }
 }
 
-//設定とセッションを保存
+//セッションを読み出す
+function loadSessions() {
+    console.log("load");
+    browser.storage.local.get(["sessions"], function (value) {
+        sessions = value.sessions;
+    });
+}
+
+//セッションを保存
 function setStorage() {
     browser.storage.local.set({
         'sessions': sessions
@@ -498,6 +506,9 @@ browser.runtime.onMessage.addListener(function (request) {
             break;
         case "rename":
             renameSession(request.sessionNo, request.name);
-            break
+            break;
+        case "import":
+            loadSessions();
+            break;
     }
 });

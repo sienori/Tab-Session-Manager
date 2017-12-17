@@ -196,5 +196,9 @@ function getSessions() {
 function saveSessions(sessions) {
     browser.storage.local.set({
         'sessions': sessions
-    });
+    }).then(() => {
+        browser.runtime.sendMessage({
+            message: "import"
+        });
+    })
 }
