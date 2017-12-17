@@ -28,25 +28,27 @@ S.init().then(function () {
 //storageが大きいと表示に時間がかかる場合があるためディレイ
 setTimeout(() => {
     getSessions();
-    showSessions();
-    browser.storage.onChanged.addListener(getSessions);
+    browser.storage.onChanged.addListener(changeSessions);
 }, 100);
 
 let sessions = [];
-let BeforeSessions = {};
 
 function getSessions() {
     browser.storage.local.get(["sessions"], function (value) {
         if (value.sessions != undefined) sessions = value.sessions;
         else sessions = [];
-
-        if (JSON.stringify(BeforeSessions) != JSON.stringify(sessions)) {
-            //TODO:tempの変化でhtmlが更新されてしまう
-            showSessions();
-            displayChange();
-        }
-        BeforeSessions = sessions;
+        showSessions();
+        displayChange();
     });
+}
+
+function changeSessions(changes, areaName) {
+    //TODO: tempのみの変化なら無視したい
+    if (Object.keys(changes)[0] == "sessions") {
+        sessions = changes.sessions.newValue;
+        showSessions();
+        displayChange();
+    }
 }
 
 window.document.getElementById("filter").addEventListener("change", displayChange);
@@ -83,74 +85,75 @@ function displayChange() {
     }
 }
 
-function sessionsHTML(i) {
-    return '<div id=' + String(i) + ' class="session">' +
-        '<div class=nameContainer>' +
-        '<div class="renameButton"></div>' +
-        '<div class="renameArea">' +
-        '<div class=renameContainer>' +
-        '<input class="renameInput" type="text">' +
-        '<input class=renameSend type="button">' +
-        '</div>' +
-        '</div>' +
-        '<div class="sessionName"></div>' +
-        '</div>' +
-        '<div class=dateContainer>' +
-        '<span class="sessionDate"></span>' +
-        '</div>' +
-        '<div class=buttonContainer>' +
-        '<span class="detail"></span>' +
-        '<div class=removeOpenButton>' +
-        '<span class="open">' + openLabel + '</span> ' +
-        '<span class="remove">' + removeLabel + '</span>' +
-        '</div>' +
-        '</div>' +
-        '<div class="removeConfirm hidden"><span>' + removeConfirmLabel + '</span>' +
-        '<div class=buttonContainer>' +
-        '<span class="reallyRemove">' + removeLabel + '</span>' +
-        '<span class="cancel">' + cancelLabel + '</span> ' +
-        '</div></div> ' +
-        '<div class="detailItems"></div>' +
-        '</div>';
+function sessionsHTML(i, info) {
+    const detail = `${info.windowsNumber} ${(info.windowsNumber==1)?windowLabel:windowsLabel} - ${info.tabsNumber} ${(info.tabsNumber==1)?tabsLabel:tabLabel}`;
+
+    return `<div id=${String(i)} class="session" data-tag="${info.tag}" style="order:${info.order}">
+        <div class=nameContainer>
+            <div class="renameButton"></div>
+            <div class="renameArea">
+                <div class=renameContainer>
+                    <input class="renameInput" type="text">
+                    <input class=renameSend type="button">
+                </div>
+            </div>
+            <div class="sessionName">${info.sessionName}</div>
+        </div>
+        <div class=dateContainer>
+            <span class="sessionDate">${info.sessionDate}</span>
+        </div>
+        <div class=buttonContainer>
+            <span class="detail">${detail}</span>
+            <div class=removeOpenButton>
+                <span class="open">${openLabel}</span>
+                <span class="remove">${removeLabel}</span>
+            </div>
+        </div>
+        <div class="removeConfirm hidden">
+            <span>${removeConfirmLabel}</span>
+            <div class=buttonContainer>
+                <span class="reallyRemove">${removeLabel}</span>
+                <span class="cancel">${cancelLabel}</span>
+            </div>
+        </div>
+        <div class="detailItems"></div>
+    </div>`;
 }
 
 window.document.getElementById("sort").addEventListener("change", showSessions);
 
 function showSessions() {
-    sessionsArea = window.document.getElementById("sessionsArea");
-    scrollPosition = sessionsArea.scrollTop;
+    const sessionsArea = window.document.getElementById("sessionsArea");
     sessionsArea.innerHTML = "";
-    sort = window.document.getElementById("sort").value
-    if (S.get().sort != sort) {
-        S.save({
-            'sort': sort
-        })
-    }
+    sessionsArea.insertAdjacentHTML('afterbegin', `<div class="noSessionLabel hidden">${noSessionLabel}</div>`);
+    const sort = window.document.getElementById("sort").value;
+    const scrollPosition = sessionsArea.scrollTop;
+
+    if (S.get().sort != sort) S.save({
+        'sort': sort
+    });
     for (i = 0; i < Object.keys(sessions).length; i++) { //sessionごとに
-        //sessionをソートオプションに応じて追加
-        if (sort == "newest") sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(i));
-        else if (sort == "oldest") sessionsArea.insertAdjacentHTML('beforeend', sessionsHTML(i));
-
-        session = window.document.getElementById(String(i));
-        session.getElementsByClassName("sessionName")[0].innerText = sessions[i].name;
-
-        date = moment(sessions[i].date);
-        session.getElementsByClassName("sessionDate")[0].innerText = date.format(S.get().dateFormat);
-
-        //tag
-        session.dataset.tag = sessions[i].tag;
-
-        //detail
-        detail = session.getElementsByClassName("detail")[0]; //.parentElement;
-        tabsNumber = sessions[i].tabsNumber;
-        windowsNumber = Object.keys(sessions[i].windows).length;
-        if (windowsNumber == 1) detail.innerText += windowsNumber + " " + windowLabel;
-        else detail.innerText += windowsNumber + " " + windowsLabel;
-        if (tabsNumber == 1) detail.innerText += " - " + tabsNumber + " " + tabLabel;
-        else detail.innerText += " - " + tabsNumber + " " + tabsLabel;
-
+        let order;
+        switch (sort) {
+            case "newest":
+                order = Object.keys(sessions).length - i;
+                break;
+            case "oldest":
+                order = i;
+                break;
+        }
+        const date = moment(sessions[i].date);
+        const info = {
+            sessionName: sessions[i].name,
+            sessionDate: date.format(S.get().dateFormat),
+            tag: sessions[i].tag,
+            tabsNumber: sessions[i].tabsNumber,
+            windowsNumber: Object.keys(sessions[i].windows).length,
+            order: order
+        }
+        sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(i, info));
     }
-    sessionsArea.insertAdjacentHTML('afterbegin', '<div class="noSessionLabel hidden">' + noSessionLabel + '</div>');
+    displayChange();
     sessionsArea.scrollTop = scrollPosition;
 }
 
