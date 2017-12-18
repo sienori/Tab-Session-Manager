@@ -80,6 +80,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>若關閉此項，恢復瀏覽階段時記憶體使用量將會增加。"
     },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
+    },
     "ifAutoSaveLabel": {
         "message": "定期將開啟的分頁瀏覽階段自動儲存"
     },
@@ -115,6 +121,12 @@
     },
     "dateFormatCaptionLabel": {
         "message": "例如 YYYY.MM.DD HH:mm:ss"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "支援 Tree Style Tab"
