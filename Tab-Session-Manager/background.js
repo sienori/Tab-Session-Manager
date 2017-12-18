@@ -112,7 +112,6 @@ function updateAutoName() {
 
 //セッションを読み出す
 function loadSessions() {
-    console.log("load");
     browser.storage.local.get(["sessions"], function (value) {
         sessions = value.sessions;
     });
@@ -252,7 +251,10 @@ function loadCurrentSesssion(name, tag) {
             //windouwsとtabのセット
             for (let tab of tabs) {
                 //プライベートタブを無視
-                if (tab.incognito) continue;
+
+                if (!S.get().ifSavePrivateWindow) {
+                    if (tab.incognito) continue;
+                }
 
                 if (session.windows[tab.windowId] == undefined) session.windows[tab.windowId] = {};
 
@@ -342,24 +344,29 @@ function showSessionWhenWindowClose(session) {
     }
 }
 
-function openSession(session) {
+function openSession(session, openCurrentWindow = false) {
     let countFlag = 0;
     let p = Promise.resolve();
     tabList = {};
     for (let win in session.windows) { //ウィンドウごと
         //console.log(session.windows[win]);
+        const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
+
+        let createData = {
+            incognito: firstTab.incognito
+        };
+
         p = p.then(function () {
-            if (countFlag == 0 && !S.get().ifOpenNewWindow) { //一つ目のウィンドウは現在のウィンドウに上書き
+            if (countFlag == 0 && (!S.get().ifOpenNewWindow || openCurrentWindow)) { //一つ目のウィンドウは現在のウィンドウに上書き
                 countFlag = 1;
                 return removeNowOpenTabs().then(function (currentWindow) {
                     return createTabs(session, win, currentWindow);
                 });
             } else {
-                return browser.windows.create().then(function (currentWindow) {
+                return browser.windows.create(createData).then(function (currentWindow) {
                     return createTabs(session, win, currentWindow);
                 });
             }
-
         })
     }
 }
@@ -429,8 +436,7 @@ tabList = {};
 function openTab(session, win, currentWindow, tab) {
     //console.log("open", session.windows[win][tab]);
     return new Promise(function (resolve, reject) {
-        property = session.windows[win][tab];
-
+        let property = session.windows[win][tab];
         let createOption = {
             active: property.active,
             cookieStoreId: property.cookieStoreId,
@@ -439,6 +445,8 @@ function openTab(session, win, currentWindow, tab) {
             url: property.url,
             windowId: currentWindow.id
         }
+        if (property.cookieStoreId == "firefox-private") delete property.cookieStoreId;
+
         //supported FF57++
         if (S.get().ifSupportTst) {
             createOption.openerTabId = tabList[property.openerTabId];

@@ -128,6 +128,12 @@
     "dateFormatCaptionLabel": {
         "message": "Example: YYYY.MM.DD HH:mm:ss"
     },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
+    },
     "ifSupportTstLabel": {
         "message": "Supports Tree Style Tab"
     },
