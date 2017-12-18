@@ -33,7 +33,7 @@
         "message": "移除"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "删除课程"
     },
     "cancelLabel": {
         "message": "取消"
@@ -159,40 +159,40 @@
         "message": "导出"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "删除课程"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "删除所有当前课程。"
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "删除"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "许可证书"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "请捐款"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazon.co.jp 电子礼品卡"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "附加页面"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "进口课程"
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "读取失败"
     },
     "warningRemoveAllMessage": {
         "message": "Delete all sessions. Is it OK?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "课程"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
@@ -201,6 +201,6 @@
         "message": "https:\/\/addons.mozilla.org\/zh-CN\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "这个页面不能被Tab课程管理员打开。"
     }
 }
