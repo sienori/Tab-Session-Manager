@@ -81,10 +81,10 @@
         "message": "セッションを開いたとき，タブを選択するまで各ページの内容を読み込みません。<br>チェックをオフにすると，セッション復元時のメモリ使用量が増大します。"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "起動時に前回のセッションを復元"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "Firefox起動時に，最後に開いていたセッションを開きます。"
     },
     "ifAutoSaveLabel": {
         "message": "定期的にセッションを保存する"
@@ -123,10 +123,10 @@
         "message": "例 YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "プライベートウィンドウを保存する"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "チェックをオフにすると，セッションの保存時にプライベートウィンドウを無視します。"
     },
     "ifSupportTstLabel": {
         "message": "ツリー型タブに対応"
