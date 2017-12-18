@@ -80,6 +80,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "Під час відкриття сесії вміст вкладок не завантажується, поки вкладка не буде активована вручну. <br>При відключенні зросте витрата пам'яті після відновлення сесії."
     },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
+    },
     "ifAutoSaveLabel": {
         "message": "Періодично зберігати сесію"
     },
@@ -115,6 +121,12 @@
     },
     "dateFormatCaptionLabel": {
         "message": "Наприклад: YYYY.MM.DD HH:mm:ss"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Підтримка Tree Style Tab"
