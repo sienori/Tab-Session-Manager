@@ -80,6 +80,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "La deschiderea unei sesiuni, conținutul fiecărei pagini nu este încărcat până când se selectează fila. <br>Dacă este deazctivat, utilizarea memoriei crește foarte mult când sesiunea este restabilită."
     },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
+    },
     "ifAutoSaveLabel": {
         "message": "Salvează sesiunea în mod regulat"
     },
@@ -115,6 +121,12 @@
     },
     "dateFormatCaptionLabel": {
         "message": "Exemplu: aaaa. MM. DD HH:mm:ss"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Suportă Tree Style Tab"
