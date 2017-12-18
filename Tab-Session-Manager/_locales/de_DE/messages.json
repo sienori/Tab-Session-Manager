@@ -80,6 +80,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "Wenn Sie eine Sitzung öffnen wird der Inhalt eines Tabs erst nach anwählen geladen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
     },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
+    },
     "ifAutoSaveLabel": {
         "message": "Sitzung regelmäßig sichern"
     },
@@ -115,6 +121,12 @@
     },
     "dateFormatCaptionLabel": {
         "message": "Beispiel: DD.MM.YYYY ss:mm:HH"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Unterstützung von baumstrukturierte Tabs"
