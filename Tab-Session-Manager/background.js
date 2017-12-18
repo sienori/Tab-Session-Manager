@@ -84,8 +84,10 @@ function initSettings(value) {
             if (value.sessions != undefined) sessions = value.sessions;
             else sessions = [];
 
-            S.init();
-            resolve();
+            S.init()
+                .then(() => {
+                    resolve();
+                });
         });
     })
 }
