@@ -92,82 +92,43 @@ function settingsObj() {};
     //spanやoptionのid，buttonのclassに"Label"が含まれるときi18nから値を取得して書き換え
     //When "label" is included in span and option id, button class Retrieve the value from i18n and rewrite it
     function labelSet() {
-        /*
-                //span idにLableが含まれていたら
-                let spans = document.getElementsByTagName("span");
-                for (let i in spans) {
-                    if (spans[i].id == undefined || spans[i].id.indexOf("Label") == -1) continue;
-                    let label = browser.i18n.getMessage(spans[i].id);
-                    if (label == "") continue;
-                    spans[i].innerHTML = label;
-                }
-
-                //p idにLableが含まれていたら
-                let p = document.getElementsByTagName("p");
-                for (let i in p) {
-                    if (p[i].id == undefined || p[i].id.indexOf("Label") == -1) continue;
-                    let label = browser.i18n.getMessage(p[i].id);
-                    if (label == "") continue;
-                    p[i].innerHTML = label;
-                }
-        */
-        //span,p: idかclassにLabelが含まれていたら
         textLabelSet("p");
         textLabelSet("span");
+        textLabelSet("option");
+        textLabelSet("input");
 
         function textLabelSet(tagName) {
-            let items = document.getElementsByTagName(tagName);
+            const items = document.getElementsByTagName(tagName);
             for (let i of items) {
                 let label;
-                if (i.id != undefined && i.id.indexOf("Label") != -1) {
+                if (i.id != undefined && i.id.includes("Label")) {
                     label = browser.i18n.getMessage(i.id);
-                } else if (i.className != undefined && i.className.indexOf("Label") != -1) {
-                    let classNames = i.className.split(' ');
-                    let labelName;
-                    for (let n in classNames) {
-                        if (classNames[n].indexOf("Label") != -1) {
-                            labelName = classNames[n];
-                            break;
-                        }
-                    }
-                    label = browser.i18n.getMessage(labelName);
+                } else if (i.className != undefined && i.className.includes("Label")) {
+                    const labelList = i.className.split(' ').filter((element, index, array) => {
+                        return element.includes("Label");
+                    });
+                    label = browser.i18n.getMessage(labelList[0]);
                 } else {
                     continue;
                 }
-                i.innerHTML = label;
+
+                if (!label == "") {
+                    if (tagName == "input") {
+                        switch (i.type) {
+                            case "button":
+                            case "submit":
+                                i.value = label;
+                                break;
+                            case "text":
+                                i.placeholder = label;
+                                break;
+                        }
+                    } else {
+                        i.innerHTML = label;
+                    }
+                }
+
             }
-        }
-
-        //button, submit, text classにLabelが含まれていたら
-        let inputs = document.getElementsByTagName("input");
-        for (let i in inputs) {
-            if (inputs[i].className == undefined || inputs[i].className.indexOf("Label") == -1) continue;
-            let classNames = inputs[i].className.split(' ');
-            let labelName;
-            for (let n in classNames) {
-                if (classNames[n].indexOf("Label") != -1) labelName = classNames[n];
-            }
-            let label = browser.i18n.getMessage(labelName);
-            if (label == "") continue;
-
-            switch (inputs[i].type) {
-                case "button":
-                case "submit":
-                    inputs[i].value = label;
-                    break;
-                case "text":
-                    inputs[i].placeholder = label;
-            }
-        }
-
-        //options idにLabelが含まれていたら
-        let options = document.getElementsByTagName("option");
-        for (let i in options) {
-            if (options[i].id == undefined || options[i].id.indexOf("Label") == -1) continue;
-            let label = browser.i18n.getMessage(options[i].id);
-            if (label == "") continue;
-
-            options[i].innerHTML = label;
         }
     }
 
