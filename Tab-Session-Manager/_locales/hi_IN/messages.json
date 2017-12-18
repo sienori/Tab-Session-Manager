@@ -80,6 +80,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "सत्र खोलने पर, प्रत्येक पृष्ठ की सामग्री तब तक लोड नहीं होती जब तक आप टैब का चयन नहीं करते।<br>यदि चेक ऑफ किया गया है, तो सत्र का पुन: स्थापित होने पर स्मृति उपयोग बहुत बढ़ जाता है।"
     },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
+    },
     "ifAutoSaveLabel": {
         "message": "सत्र को नियमित रूप से सहेजें"
     },
@@ -115,6 +121,12 @@
     },
     "dateFormatCaptionLabel": {
         "message": "उदाहरण: YYYY.MM.DD HH:mm:ss"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "ट्री स्टाइल टैब का समर्थन करता है"
