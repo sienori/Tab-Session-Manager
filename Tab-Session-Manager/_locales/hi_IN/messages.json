@@ -3,22 +3,22 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "विंडो और टैब की स्थिति को सहेजें और पुनर्स्थापित करें| यह स्वचालित बचत का भी समर्थन करता है।"
     },
     "saveLabel": {
         "message": "सहेजें"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "मौजूदा सत्र को बचाएं"
     },
     "displayAllLabel": {
         "message": "सभी"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "उपयोगकर्ता द्वारा सहेजा गया"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "स्वतः सहेजा गया"
     },
     "newestLabel": {
         "message": "सबसे नया"
@@ -33,10 +33,10 @@
         "message": "हटाएँ"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "इस सत्र को हटाएं?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "रद्द करना"
     },
     "windowLabel": {
         "message": "विंडो"
@@ -51,82 +51,94 @@
         "message": "टैब्स"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "कोई सत्र नहीं है"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "स्वतः सहेजा गया - विंडो बंद थी"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "स्वतः सहेजा गया - नियमित तौर पर"
     },
     "settingsLabel": {
         "message": "सेटिंग्स"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "सत्र"
     },
     "informationLabel": {
         "message": "जानकारी"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "नई विंडो में सत्र खोलें"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "यदि चेक किया गया हो, तो सत्र वर्तमान विंडो को ओवरराइट करता है।"
     },
     "ifLazyLoadingLabel": {
         "message": "टैब आलसी लोड हो रहा है"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "सत्र खोलने पर, प्रत्येक पृष्ठ की सामग्री तब तक लोड नहीं होती जब तक आप टैब का चयन नहीं करते।<br>यदि चेक ऑफ किया गया है, तो सत्र का पुन: स्थापित होने पर स्मृति उपयोग बहुत बढ़ जाता है।"
+    },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "सत्र को नियमित रूप से सहेजें"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "सत्र को हर X मिनट में सहेजें|"
     },
     "autoSaveIntervalLabel": {
-        "message": "अंतराल (मिनट)"
+        "message": "मध्यान्तर (मिनट)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "न्यूनतम मान 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "अधिकतम संख्या सहेजा"
+        "message": "अधिकतम संख्या सहेजा गया"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "सहेजे गए सत्रों की अधिकतम संख्या (इस तरह से)|"
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "सत्र को बचाओ जब विंडो बंद हो गई थी"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "विंडो को बंद करने पर या फ़ायरफ़ॉक्स से बाहर निकलने पर सत्र को सहेजें।"
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "अधिकतम संख्या सहेजा"
+        "message": "अधिकतम संख्या सहेजा गया"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "सहेजे गए सत्रों की अधिकतम संख्या (इस तरह से)|"
     },
     "dateFormatLabel": {
         "message": "दिनांक स्वरूप"
     },
     "dateFormatCaptionLabel": {
-        "message": "Ex YYYY.MM.DD HH:mm:ss"
+        "message": "उदाहरण: YYYY.MM.DD HH:mm:ss"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "ट्री स्टाइल टैब का समर्थन करता है"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "ट्री स्टाइल टैब के ट्री स्टेट को पुनर्स्थापित करें|<br>कृपया फ़ायरफ़ॉक्स 57 (क्वांटम) से पुराने संस्करणों के लिए इसे बंद करें।"
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "सत्रों को आयात करें"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "कंप्यूटर पर सहेजे गए सत्र लोड करें और उन्हें सत्र सूची में जोड़ें।<br>यह सत्र प्रबंधक की सत्र फ़ाइल (.सत्र) का भी समर्थन करता है।"
     },
     "importButtonLabel": {
         "message": "ब्राउज़ करें..."
@@ -138,19 +150,19 @@
         "message": "साफ करें"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "सत्रों को निर्यात करें"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "वर्तमान सत्र को कंप्यूटर पर सहेजें|"
     },
     "exportButtonLabel": {
         "message": "निर्यात करें"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "सत्र हटाएं"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "सभी वर्तमान सत्र हटाएं"
     },
     "removeSessionsButtonLabel": {
         "message": "हटाएँ"
@@ -162,25 +174,25 @@
         "message": "कृपया एक दान करें"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
+        "message": "टैब सत्र प्रबंधक का उपयोग करने के लिए धन्यवाद।<br>आपका समर्थन एक बड़ा प्रोत्साहन होगा, जैसा कि मैं ऐड-ऑन विकसित करना जारी रखता हूं।\n<br>यदि आप टैब सत्र प्रबंधक पसंद करते हैं, तो मुझे खुशी होगी अगर आप दान करने पर विचार करें|"
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift कार्ड"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "ऐड-ऑन पृष्ठ"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "सत्र आयात किए गए|"
     },
     "readFailedMessage": {
         "message": "पठन विफल"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Is it OK?"
+        "message": "सभी सत्र हटाएं| क्या आपको यकीन है?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "सत्र"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -189,6 +201,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "यह पृष्ठ टैब सत्र प्रबंधक द्वारा खोला नहीं जा सकता।"
     }
 }
