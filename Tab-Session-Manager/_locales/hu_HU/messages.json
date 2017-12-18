@@ -126,7 +126,7 @@
         "message": "Privát ablak elmentése"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "Ha nincs bejelölve, nem menti a privát ablak tartalmát a munkamenet mentésekor."
     },
     "ifSupportTstLabel": {
         "message": "Fa struktúrájú fülek (Tree Style Tab) támogatása"
