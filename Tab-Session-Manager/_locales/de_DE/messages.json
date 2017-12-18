@@ -123,7 +123,7 @@
         "message": "Beispiel: DD.MM.YYYY ss:mm:HH"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Private Fenster speichern"
     },
     "ifSavePrivateWindowCaptionLabel": {
         "message": "If checked off, ignores the private window when saving the session."
