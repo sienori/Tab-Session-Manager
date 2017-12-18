@@ -80,6 +80,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "Ketika memuat sesi, isi dari setiap halaman tidak langsung dimuat sampai Anda memilih tab tersebut.<br>Jika tidak dicentang, penggunaan memori akan meningkat ketika sesi akan dipulihkan."
     },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
+    },
     "ifAutoSaveLabel": {
         "message": "Simpan sesi secara berkala"
     },
@@ -115,6 +121,12 @@
     },
     "dateFormatCaptionLabel": {
         "message": "Contoh: TTTT.BB.HH JJ:mm:dd"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Mendukung Tree Style Tab"
