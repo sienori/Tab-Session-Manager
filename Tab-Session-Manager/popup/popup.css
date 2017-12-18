@@ -262,10 +262,13 @@ option {
 }
 
 .windowContainer {
+    padding-left: 10px;
+}
+
+.windowTitleContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 10px;
 }
 
 .windowIcon {

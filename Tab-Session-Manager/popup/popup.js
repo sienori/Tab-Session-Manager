@@ -164,7 +164,13 @@ function showDetail(e) {
         let i = 0;
         for (let win in sessions[sessionNo].windows) {
             i++;
-            detail.insertAdjacentHTML('beforeend', '<li class="windowContainer"><div class="windowIcon"></div><span class=windowTitle>' + windowLabel + " " + i + '</span></li>')
+            detail.insertAdjacentHTML('beforeend',
+                `<ul class="windowContainer">
+                    <li class="windowTitleContainer">
+                        <div class="windowIcon"></div>
+                        <span class=windowTitle>${windowLabel} ${i}</span>
+                    </li>
+                </ul>`);
 
             let sortedTabs = [];
             for (let tab in sessions[sessionNo].windows[win]) {
@@ -179,12 +185,15 @@ function showDetail(e) {
                 if (tabFavIconUrl == undefined || tabFavIconUrl.match(/^chrome:\/\//))
                     tabFavIconUrl = "/icons/favicon.png";
 
-                let tabHtml = '<li class=tabContainer>' +
-                    '<div class=fav style="background-image:url(' + tabFavIconUrl + ')"></div>' +
-                    '<div class="tabTitle"><a href=' + tabUrl + '></a></div>' +
-                    '</li>'
+                let tabHtml =
+                    `<li class=tabContainer>
+                        <div class=fav style="background-image:url(${tabFavIconUrl})"></div>
+                        <div class=tabTitle><a href=${tabUrl}></a></div>
+                    </li>`;
 
-                detail.insertAdjacentHTML('beforeend', tabHtml);
+                detail.getElementsByClassName("windowContainer")[i - 1].insertAdjacentHTML('beforeend', tabHtml);
+
+                replaseImageUrl(tabFavIconUrl, sessionNo, i);
 
                 //tabTitleにhtmlタグが含まれている事があるので，innerTextで挿入
                 let tabTitleElements = detail.getElementsByClassName('tabTitle');
@@ -193,6 +202,16 @@ function showDetail(e) {
         }
     } else {
         detail.innerHTML = "";
+    }
+}
+
+function replaseImageUrl(url, sessionNo, win) {
+    const favElements = document.getElementById(sessionNo).getElementsByClassName("windowContainer")[win - 1].getElementsByClassName("fav");
+    const favElement = favElements[favElements.length - 1];
+    let img = new Image();
+    img.src = url;
+    img.onerror = function () {
+        favElement.style.backgroundImage = "url(/icons/favicon.png)";
     }
 }
 
