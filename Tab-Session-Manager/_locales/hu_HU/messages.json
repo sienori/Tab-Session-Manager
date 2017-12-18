@@ -33,10 +33,10 @@
         "message": "Töröl"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Törli ezt a munkamenetet?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Mégse"
     },
     "windowLabel": {
         "message": "Ablak"
@@ -48,7 +48,7 @@
         "message": "Fül"
     },
     "tabsLabel": {
-        "message": "Fülek"
+        "message": "Fül"
     },
     "noSessionLabel": {
         "message": "Nincs munkamenet"
@@ -69,16 +69,22 @@
         "message": "Információ"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Munkamenet megnyitása új ablakban"
+        "message": "Munkamenetek megnyitása új ablakban"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "Ha nincs bejelölve, a munkamenet felülírja a jelenlegi ablakot."
     },
     "ifLazyLoadingLabel": {
-        "message": "Fül lusta betöltése"
+        "message": "Fülek lusta betöltése"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "A munkamenet megnyitásakor az egyes oldalak tartalma nem töltődik be, amíg ki nem választódik a fül.<br>Ha nincs bejelölve, a memória használat nagy mértékben megnövekszik amikor a munkamenet visszaállítódik."
+    },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
     },
     "ifAutoSaveLabel": {
         "message": "Munkamenet rendszeres mentése"
@@ -116,8 +122,14 @@
     "dateFormatCaptionLabel": {
         "message": "Pl.: YYYY.MM.DD HH:mm:ss"
     },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
+    },
     "ifSupportTstLabel": {
-        "message": "Fa struktúrájú fülek támogatása"
+        "message": "Fa struktúrájú fülek (Tree Style Tab) támogatása"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Fa struktúrájú fülek visszaállítása.<br>Firefox 57 (Quantum) -nál régebbi verzió esetén ki kell kapcsolni."
@@ -162,13 +174,13 @@
         "message": "Kérjük adakozzon"
     },
     "donationCaptionLabel": {
-        "message": "Köszönöm hogy a Tab Session Manager -t használod.<br>A támogatásod nagy ösztönzést jelent számomra, hogy folytassam ennek a kiegészítőnek a fejlesztését.<br>Ha tetszik a Tab Session Manager, örülnék ha megfontolnád az adakozást."
+        "message": "Köszönöm hogy a Tab Session Manager -t használod!<br>A támogatásod nagy ösztönzést jelent számomra, hogy folytassam ennek a kiegészítőnek a fejlesztését.<br>Ha tetszik a Tab Session Manager, örülnék ha megfontolnád az adakozást."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp elektronikus ajándék kártyák"
+        "message": "amazon.co.jp elektronikus ajándék kártya"
     },
     "addonPageLabel": {
-        "message": "kiegészítő oldala"
+        "message": "A kiegészítő oldala"
     },
     "importMessage": {
         "message": "Munkamenetek importálva."

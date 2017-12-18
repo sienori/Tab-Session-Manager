@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Enregistrer et restaurer l’état des fenêtres et onglets. Il prend également en charge la sauvegarde automatique."
+        "message": "Enregistrer et restaurer l’état des fenêtres et onglets. Prend également en charge la sauvegarde automatique."
     },
     "saveLabel": {
         "message": "Enregistrer"
@@ -12,13 +12,13 @@
         "message": "Enregistrer la session actuelle"
     },
     "displayAllLabel": {
-        "message": "Tout"
+        "message": "Toutes"
     },
     "displayUserLabel": {
-        "message": "Utilisateur enregistré"
+        "message": "Enregistrées par l'utilisateur"
     },
     "displayAutoLabel": {
-        "message": "Enregistrement automatique"
+        "message": "Enregistré automatiquement"
     },
     "newestLabel": {
         "message": "Plus récent"
@@ -33,10 +33,10 @@
         "message": "Supprimer"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Supprimer cette session ?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Annuler"
     },
     "windowLabel": {
         "message": "Fenêtre"
@@ -54,10 +54,10 @@
         "message": "Il n’y a pas de session"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Fenêtre était fermée"
+        "message": "Auto - À la fermeture d'une fenêtre"
     },
     "regularSaveSessionName": {
-        "message": "Auto sauvé - régulièrement"
+        "message": "Auto - Sauvegardes régulières"
     },
     "settingsLabel": {
         "message": "Paramètres"
@@ -75,19 +75,25 @@
         "message": "Si cette case est cochée, la session écrase la fenêtre en cours."
     },
     "ifLazyLoadingLabel": {
-        "message": "Chargement différé onglet"
+        "message": "Chargement différé des onglets"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet. <br> Si cette case est cochée, l'utilisation de la mémoire augmente lorsque la session est restaurée."
+        "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet. <br> Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsque la session est restaurée."
+    },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
     },
     "ifAutoSaveLabel": {
         "message": "Enregistrer la session régulièrement"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Enregistrer la session chaque heure réglée."
+        "message": "Enregistrer la session toutes les X minutes."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval(minutes)"
+        "message": "Intervalle (minutes)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Valeur minimale 0.1"
@@ -99,10 +105,10 @@
         "message": "Nombre maximal de sessions enregistrées de cette façon."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Enregistrer la session lorsque la fenêtre était fermée"
+        "message": "Enregistrer la session à la fermeture d'une fenêtre"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Enregistrer la session lors de la fermeture de la fenêtre ou lorsque vous quittez firefox."
+        "message": "Enregistrer la session lors de la fermeture de la fenêtre ou lorsque vous quittez Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Nombre maximum enregistré"
@@ -116,20 +122,26 @@
     "dateFormatCaptionLabel": {
         "message": "Ex AAAA.MM.JJ HH:m:ss"
     },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
+    },
     "ifSupportTstLabel": {
-        "message": "Prend en charge l'onglet Style de l'arbre"
+        "message": "Prendre en charge Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restaurer l'état de l'arbre de l'onglet Style de l'arbre.<br>Veuillez le désactiver s'il est inférieur à fireFox 57."
+        "message": "Restaurer l'état du panneau des onglets de Tree Style Tab.<br>Veuillez désactiver pour les versions antérieures à Firefox 57 (Quantum)."
     },
     "importLabel": {
         "message": "Importer des sessions"
     },
     "importCaptionLabel": {
-        "message": "Charger les sessions enregistrées sur l’ordinateur et ajoutez-les à la liste de session.<br>Il prend également en charge les fichiers de session de SessionManager (.session)."
+        "message": "Charger les sessions enregistrées sur l’ordinateur et les ajouter à la liste de session.<br>Les fichiers de session de SessionManager (.session) sont également pris en charge."
     },
     "importButtonLabel": {
-        "message": "Feuilleter..."
+        "message": "Parcourir..."
     },
     "importSaveButtonLabel": {
         "message": "Importer"
@@ -150,7 +162,7 @@
         "message": "Supprimer des sessions"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Supprimez tous les sessions."
+        "message": "Supprimer toutes les sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Supprimer"
@@ -159,25 +171,25 @@
         "message": "Licence"
     },
     "donationLabel": {
-        "message": "S’il vous plaît faire un don"
+        "message": "Veuillez faire un don"
     },
     "donationCaptionLabel": {
-        "message": "Merci d'utiliser Tab Session Manager.<br>Votre soutien sera un grand encouragement alors que je continue de développer l'extension.<br>Si vous aimez Tab Session Manager, je serais heureux si vous pouviez envisager un don."
+        "message": "Merci d’utiliser le module \"Gestionnaire de Session\". <br>Votre soutien sera un grand encouragement, car je continue à développer l’add-on. <br> Si vous aimez Session Manager, je serais heureux si vous pourriez envisager de faire un don."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp Cartes Cadeaux"
+        "message": "Cartes Cadeaux (amazon.co.jp)"
     },
     "addonPageLabel": {
-        "message": "page complémentaire"
+        "message": "Page de l'extension"
     },
     "importMessage": {
         "message": "Sessions importées."
     },
     "readFailedMessage": {
-        "message": "Lire a échoué"
+        "message": "Échec de lecture"
     },
     "warningRemoveAllMessage": {
-        "message": "Supprimer toutes les sessions. Est-ce OK ?"
+        "message": "Voulez-vous vraiment supprimer toutes les sessions ?"
     },
     "sessionLabel": {
         "message": "Session"
@@ -186,7 +198,7 @@
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/fr\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
         "message": "Cette page ne peut pas être ouvert par Tab Session Manager."

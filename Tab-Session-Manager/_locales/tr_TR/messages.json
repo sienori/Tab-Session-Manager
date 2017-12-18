@@ -80,6 +80,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "Bir oturum açtığında, her sayfanın içeriği siz sekme seçene kadar her sayfanın içeriği yüklenmez.<br>Kontrol işareti konulursa, oturum onarıldığında bellek kullanımı artar."
     },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
+    },
     "ifAutoSaveLabel": {
         "message": "Oturumu düzenli olarak kaydet"
     },
@@ -115,6 +121,12 @@
     },
     "dateFormatCaptionLabel": {
         "message": "Örn YYYY.AA.GG SS:dd:ss"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Ağaç Stili Sekmeyi Destekler"
