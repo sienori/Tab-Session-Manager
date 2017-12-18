@@ -72,7 +72,7 @@
         "message": "於新視窗中開啟瀏覽階段"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "如果取消勾選，開啟瀏覽階段時將會覆寫目前視窗"
+        "message": "如果取消勾選，開啟瀏覽階段時將會覆寫目前視窗。"
     },
     "ifLazyLoadingLabel": {
         "message": "分頁延遲載入"
@@ -126,7 +126,7 @@
         "message": "Save private window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "如果勾選此項，儲存瀏覽階段時將會忽略隱私視窗。"
     },
     "ifSupportTstLabel": {
         "message": "支援 Tree Style Tab"
