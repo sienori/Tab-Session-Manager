@@ -81,10 +81,10 @@
         "message": "A munkamenet megnyitásakor az egyes oldalak tartalma nem töltődik be, amíg ki nem választódik a fül.<br>Ha nincs bejelölve, a memória használat nagy mértékben megnövekszik amikor a munkamenet visszaállítódik."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Előző munkamenet visszaállítása induláskor"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "Firefox indulásakor, visszaállítódik a leg utóbbi bezáráskor elmentődött munkamenet."
     },
     "ifAutoSaveLabel": {
         "message": "Munkamenet rendszeres mentése"
@@ -123,7 +123,7 @@
         "message": "Pl.: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Privát ablak elmentése"
     },
     "ifSavePrivateWindowCaptionLabel": {
         "message": "If checked off, ignores the private window when saving the session."
