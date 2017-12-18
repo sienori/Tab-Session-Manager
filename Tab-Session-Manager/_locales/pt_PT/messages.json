@@ -80,6 +80,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba. <br> Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
     },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
+    },
     "ifAutoSaveLabel": {
         "message": "Salvar a sessão regularmente"
     },
@@ -115,6 +121,12 @@
     },
     "dateFormatCaptionLabel": {
         "message": "Exemplo: AAAA. MM. DD HH:mm:ss"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Suporta Tree Style Tab"
