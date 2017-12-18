@@ -30,10 +30,10 @@
         "message": "開啟"
     },
     "remove": {
-        "message": "移除"
+        "message": "刪除"
     },
     "removeConfirmLabel": {
-        "message": "刪除此瀏覽階段？"
+        "message": "確定要刪除此瀏覽階段？"
     },
     "cancelLabel": {
         "message": "取消"
@@ -147,10 +147,10 @@
         "message": "匯出"
     },
     "removeSessionsLabel": {
-        "message": "刪除工作階段"
+        "message": "刪除瀏覽階段"
     },
     "removeSessionsCaptionLabel": {
-        "message": "刪除所有已儲存的工作階段"
+        "message": "刪除所有已儲存的瀏覽階段"
     },
     "removeSessionsButtonLabel": {
         "message": "刪除"
@@ -177,7 +177,7 @@
         "message": "讀取失敗"
     },
     "warningRemoveAllMessage": {
-        "message": "確定要刪除所有工作階段嗎？"
+        "message": "確定要刪除所有瀏覽階段嗎？"
     },
     "sessionLabel": {
         "message": "工作階段"
