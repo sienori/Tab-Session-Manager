@@ -9,7 +9,7 @@
         "message": "儲存"
     },
     "initialNameValue": {
-        "message": "儲存目前的工作階段"
+        "message": "儲存目前的瀏覽階段"
     },
     "displayAllLabel": {
         "message": "全部"
@@ -30,13 +30,13 @@
         "message": "開啟"
     },
     "remove": {
-        "message": "移除"
+        "message": "刪除"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "確定要刪除此瀏覽階段？"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "取消"
     },
     "windowLabel": {
         "message": "視窗"
@@ -51,7 +51,7 @@
         "message": "分頁"
     },
     "noSessionLabel": {
-        "message": "沒有已儲存的工作階段"
+        "message": "沒有已儲存的瀏覽階段"
     },
     "winCloseSessionName": {
         "message": "自動儲存 - 視窗關閉"
@@ -63,16 +63,16 @@
         "message": "設定"
     },
     "sessionsLabel": {
-        "message": "工作階段"
+        "message": "瀏覽階段"
     },
     "informationLabel": {
         "message": "附加元件資訊"
     },
     "ifOpenNewWindowLabel": {
-        "message": "於新視窗中開啟工作階段"
+        "message": "於新視窗中開啟瀏覽階段"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "如果取消勾選，開啟工作階段時將會覆寫目前視窗"
+        "message": "如果取消勾選，開啟瀏覽階段時將會覆寫目前視窗"
     },
     "ifLazyLoadingLabel": {
         "message": "分頁延遲載入"
@@ -80,11 +80,17 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>若關閉此項，恢復瀏覽階段時記憶體使用量將會增加。"
     },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Restore previous session at startup"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "When Firefox starts up, restore the session that was closed the last time."
+    },
     "ifAutoSaveLabel": {
-        "message": "定期將開啟的分頁瀏覽狀態自動儲存"
+        "message": "定期將開啟的分頁瀏覽階段自動儲存"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "定期儲存工作階段"
+        "message": "定期儲存瀏覽階段"
     },
     "autoSaveIntervalLabel": {
         "message": "儲存間隔(分鐘) : "
@@ -96,25 +102,31 @@
         "message": "最大儲存數量"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "使用這個方法儲存的工作階段數量"
+        "message": "使用這個方法儲存的瀏覽階段數量"
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "關閉視窗時儲存工作階段"
+        "message": "關閉視窗時儲存瀏覽階段"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "在關閉視窗或是結束瀏覽器時儲存工作階段"
+        "message": "在關閉視窗或是結束瀏覽器時儲存瀏覽階段"
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "最大儲存數量"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "使用這個方法儲存的工作階段數量。"
+        "message": "使用這個方法儲存的瀏覽階段數量。"
     },
     "dateFormatLabel": {
         "message": "日期格式"
     },
     "dateFormatCaptionLabel": {
         "message": "例如 YYYY.MM.DD HH:mm:ss"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Save private window"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "If checked off, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "支援 Tree Style Tab"
@@ -123,10 +135,10 @@
         "message": "還原 Tree Style Tab 的樹狀分頁<br>如果使用的 Firefox 版本低於 57 時，請關閉此功能。"
     },
     "importLabel": {
-        "message": "匯入工作階段"
+        "message": "匯入瀏覽階段"
     },
     "importCaptionLabel": {
-        "message": "匯入電腦中儲存的工作階段<br>此功能支援匯入 SessionManager 的工作階段備份檔案 (.session)"
+        "message": "匯入電腦中儲存的瀏覽階段<br>此功能支援匯入 SessionManager 的瀏覽階段備份檔案 (.session)"
     },
     "importButtonLabel": {
         "message": "瀏覽..."
@@ -138,19 +150,19 @@
         "message": "清除"
     },
     "exportLabel": {
-        "message": "匯出工作階段"
+        "message": "匯出瀏覽階段"
     },
     "exportCaptionLabel": {
-        "message": "將目前的工作階段儲存至電腦中"
+        "message": "將目前的瀏覽階段儲存至電腦中"
     },
     "exportButtonLabel": {
         "message": "匯出"
     },
     "removeSessionsLabel": {
-        "message": "刪除工作階段"
+        "message": "刪除瀏覽階段"
     },
     "removeSessionsCaptionLabel": {
-        "message": "刪除所有已儲存的工作階段"
+        "message": "刪除所有已儲存的瀏覽階段"
     },
     "removeSessionsButtonLabel": {
         "message": "刪除"
@@ -171,16 +183,16 @@
         "message": "AMO 附加元件頁面"
     },
     "importMessage": {
-        "message": "已匯入工作階段。"
+        "message": "已匯入瀏覽階段。"
     },
     "readFailedMessage": {
         "message": "讀取失敗"
     },
     "warningRemoveAllMessage": {
-        "message": "確定要刪除所有工作階段嗎？"
+        "message": "確定要刪除所有瀏覽階段嗎？"
     },
     "sessionLabel": {
-        "message": "工作階段"
+        "message": "瀏覽階段"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
