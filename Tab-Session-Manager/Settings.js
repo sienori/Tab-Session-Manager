@@ -295,7 +295,13 @@ function settingsObj() {};
     }
 
     //ストレージが変更されたらget
-    browser.storage.onChanged.addListener(getSettings);
+    browser.storage.onChanged.addListener(changedSettings);
+
+    function changedSettings(changes, area) {
+        if (Object.keys(changes).includes("Settings")) {
+            Settings = changes.Settings.newValue;
+        }
+    }
 
     function getSettings() {
         return new Promise(function (resolve, reject) {
