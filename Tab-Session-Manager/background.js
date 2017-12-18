@@ -20,7 +20,8 @@ initSettings().then(function () {
     updateAutoName();
     setStorage();
     setAutoSave();
-    autoSaveWhenClose();
+    autoSaveWhenClose()
+        .then(openLastSession);
     browser.storage.onChanged.addListener(setAutoSave);
     browser.tabs.onActivated.addListener(replacePage);
     browser.windows.onFocusChanged.addListener(replacePage);
@@ -173,12 +174,24 @@ function onUpdate(tabId, changeInfo, tab) {
 }
 
 function autoSaveWhenClose() {
-    if (!IsOpeningSession && !IsSavingSession && S.get().ifAutoSaveWhenClose) {
-        saveSession(browser.i18n.getMessage("winCloseSessionName"), "auto winClose temp").then(function () {
-            removeOverLimit("winClose");
-        });
-    }
+    return new Promise((resolve, reject) => {
+        if (!IsOpeningSession && !IsSavingSession && (S.get().ifAutoSaveWhenClose || S.get().ifOpenLastSessionWhenStartUp)) {
+            saveSession(browser.i18n.getMessage("winCloseSessionName"), "auto winClose temp").then(function () {
+                removeOverLimit("winClose");
+                resolve();
+            });
+        }
+    })
 };
+
+function openLastSession() {
+    if (S.get().ifOpenLastSessionWhenStartUp) {
+        const winCloseSessions = (sessions.filter((element, index, array) => {
+            return (element.tag.includes("winClose") && !element.tag.includes("temp"));
+        }));
+        openSession(winCloseSessions[winCloseSessions.length - 1], true);
+    }
+}
 
 function removeOverLimit(tagState) {
     let limit;
