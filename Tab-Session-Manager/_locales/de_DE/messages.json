@@ -81,7 +81,7 @@
         "message": "Wenn Sie eine Sitzung öffnen wird der Inhalt eines Tabs erst nach anwählen geladen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Vorherige Sitzung beim Start wiederherstellen"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
         "message": "When Firefox starts up, restore the session that was closed the last time."
