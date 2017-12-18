@@ -84,7 +84,7 @@
         "message": "在启动时恢复以前的会话"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "当Firefox启动时，恢复上次关闭的会话。"
     },
     "ifAutoSaveLabel": {
         "message": "定期保存已打开标签页的状态"
@@ -96,7 +96,7 @@
         "message": "间隔(分钟)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "最小值0.1"
     },
     "autoSaveLimitLabel": {
         "message": "最大数量"
@@ -123,10 +123,10 @@
         "message": "例如 YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "保存私人 Window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "如果选中，保存会话时将忽略私人Window。"
     },
     "ifSupportTstLabel": {
         "message": "支持树样式选项卡"
@@ -135,28 +135,28 @@
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "导入课程"
     },
     "importCaptionLabel": {
         "message": "Load sessions saved on the computer and add them to the session list.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "浏览..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "导入"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "清除"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "导出课程"
     },
     "exportCaptionLabel": {
         "message": "Save the current session on the computer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "导出"
     },
     "removeSessionsLabel": {
         "message": "Delete sessions"
