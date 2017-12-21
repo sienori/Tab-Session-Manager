@@ -3,79 +3,79 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Zapisz i przywróć stan okien i kart. Obsługuje także automatyczne zapisywanie."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Zapisz"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Zapisz bierzącą sesje"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Wszystkie"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Użytkownik zapisany"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Automatycznie zapisano"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Najnowsze"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Najstarsze"
     },
     "open": {
-        "message": "Open"
+        "message": "Otwórz"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Usuń"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Usunąć tę sesje?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Anuluj"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Okno"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Okna"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Karta"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Karty"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Nie ma żadnej sesji"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Automatycznie zapisano - okno zostało zamknięte"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Zapisuj automatycznie - regularnie"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Ustawienia"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Sesje"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Informacje"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Otwórz sesje w nowym oknie"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "Jeżeli odznaczone, sesja zastępuje bieżące otwarte okno."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Karta leniwego ładowania"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage greatly increases when session is restored."
@@ -93,16 +93,16 @@
         "message": "Save the session every X minutes."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Odstęp czasowy (w minutach)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Wartość minimalna 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Makslymalna ilość zapisanych"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Maksymalna ilość zapisanych sesji (w ten sposób)."
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "Save the session when window was closed"
@@ -141,58 +141,58 @@
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Przeglądaj..."
     },
     "importSaveButtonLabel": {
         "message": "Import"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Wyczyść"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Eksportuj sesje"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Zapisz bieżącą sesje do komputera."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Eksport"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Usuń sesje"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Usuń wszystkie bieżące sesje."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Usuń"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licencja"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Proszę o dokonanie dotacji"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "eKarty podarunkowe amazon.co.jp"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "strona dodatków"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Sesje zaimportowane."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Odczyt nie powiódł się"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Usuń wszystkie sesje. Czy na pewno?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Sesja"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -201,6 +201,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Ta strona nie mogła zostać otworzona przez Tab Session Manager."
     }
 }
