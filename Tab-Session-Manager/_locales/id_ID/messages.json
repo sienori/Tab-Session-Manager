@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "Paling Lama"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "Buka"
     },
