@@ -27,10 +27,10 @@
         "message": "Найстаріші"
     },
     "aToZLabel": {
-        "message": "A-Z"
+        "message": "А-Я"
     },
     "zToALabel": {
-        "message": "Z-A"
+        "message": "Я-А"
     },
     "open": {
         "message": "Відкрити"
@@ -87,7 +87,7 @@
         "message": "Під час відкриття сесії вміст вкладок не завантажується, поки вкладка не буде активована вручну. <br>При відключенні зросте витрата пам'яті після відновлення сесії."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Відновлювати попередню сесію при запуску"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
         "message": "When Firefox starts up, restore the session that was closed the last time."
