@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "最旧"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "打开"
     },
