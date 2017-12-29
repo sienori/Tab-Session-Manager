@@ -38,7 +38,6 @@ function getSessions() {
         if (value.sessions != undefined) sessions = value.sessions;
         else sessions = [];
         showSessions();
-        displayChange();
     });
 }
 
@@ -47,18 +46,19 @@ function changeSessions(changes, areaName) {
     if (Object.keys(changes)[0] == "sessions") {
         sessions = changes.sessions.newValue;
         showSessions();
-        displayChange();
     }
 }
 
-window.document.getElementById("filter").addEventListener("change", displayChange);
+window.document.getElementById("filter").addEventListener("change", filterChange);
 
-function displayChange() {
+function filterChange() {
+    const sessionsArea = window.document.getElementById("sessionsArea");
     let filter = window.document.getElementById("filter").value;
     if (S.get().filter != filter) {
         S.save({
             'filter': filter
         });
+        sessionsArea.scrollTo(0, 0);
     }
     let sessionItems = document.getElementsByClassName("session");
     let noSessionLabel = document.getElementsByClassName('noSessionLabel')[0];
@@ -85,10 +85,72 @@ function displayChange() {
     }
 }
 
+window.document.getElementById("sort").addEventListener("change", sortChange);
+
+function sortChange() {
+    const sessionsArea = document.getElementById("sessionsArea");
+    const sort = document.getElementById("sort").value;
+
+    if (S.get().sort != sort) {
+        S.save({
+            'sort': sort
+        });
+        sessionsArea.scrollTo(0, 0);
+    }
+
+    const newestSort = (a, b) => {
+        return b.date - a.date;
+    }
+    const alphabeticallySort = (a, b) => {
+        if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+        else if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+    }
+    //名前の無いセッションを最後に，同じ名前なら新しい順に
+    const namelessSort = (a, b) => {
+        if (a.name == "" && b.name != "") return 1;
+        else if (a.name != "" && b.name == "") return -1;
+        else if (a.name == b.name) return newestSort(a, b);
+    }
+
+    let sortArray = sessions.map((currentValue, index) => {
+        let rObj = {};
+        rObj.name = currentValue.name;
+        rObj.id = index;
+        rObj.date = moment(currentValue.date).unix();
+        return rObj;
+    });
+
+    switch (sort) {
+        case "newest":
+            sortArray.sort(newestSort);
+            break;
+        case "oldest":
+            sortArray.sort(newestSort);
+            sortArray.reverse();
+            break;
+        case "aToZ":
+            sortArray.sort(alphabeticallySort);
+            sortArray.sort(namelessSort);
+            break;
+        case "zToA":
+            sortArray.sort(alphabeticallySort);
+            sortArray.reverse();
+            sortArray.sort(namelessSort);
+            break;
+    }
+    for (let i in sessions) {
+        const order = sortArray.findIndex((element) => {
+            return element.id == i;
+        });
+        document.getElementById(i).style.order = order;
+    }
+}
+
+
 function sessionsHTML(i, info) {
     const detail = `${info.windowsNumber} ${(info.windowsNumber==1)?windowLabel:windowsLabel} - ${info.tabsNumber} ${(info.tabsNumber==1)?tabsLabel:tabLabel}`;
 
-    return `<div id=${String(i)} class="session" data-tag="${info.tag}" style="order:${info.order}">
+    return `<div id=${String(i)} class="session" data-tag="${info.tag}">
         <div class=nameContainer>
             <div class="renameButton"></div>
             <div class="renameArea">
@@ -120,41 +182,24 @@ function sessionsHTML(i, info) {
     </div>`;
 }
 
-window.document.getElementById("sort").addEventListener("change", showSessions);
-
 function showSessions() {
     const sessionsArea = window.document.getElementById("sessionsArea");
     sessionsArea.innerHTML = "";
     sessionsArea.insertAdjacentHTML('afterbegin', `<div class="noSessionLabel hidden">${noSessionLabel}</div>`);
-    const sort = window.document.getElementById("sort").value;
-    const scrollPosition = sessionsArea.scrollTop;
 
-    if (S.get().sort != sort) S.save({
-        'sort': sort
-    });
-    for (i = 0; i < Object.keys(sessions).length; i++) { //sessionごとに
-        let order;
-        switch (sort) {
-            case "newest":
-                order = Object.keys(sessions).length - i;
-                break;
-            case "oldest":
-                order = i;
-                break;
-        }
+    for (let i in sessions) {
         const date = moment(sessions[i].date);
         const info = {
             sessionName: sessions[i].name,
             sessionDate: date.format(S.get().dateFormat),
             tag: sessions[i].tag,
             tabsNumber: sessions[i].tabsNumber,
-            windowsNumber: Object.keys(sessions[i].windows).length,
-            order: order
+            windowsNumber: Object.keys(sessions[i].windows).length
         }
         sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(i, info));
     }
-    displayChange();
-    sessionsArea.scrollTop = scrollPosition;
+    filterChange();
+    sortChange();
 }
 
 function showDetail(e) {
@@ -245,18 +290,8 @@ function renameSend(e) {
         name: renameInput
     }).then(() => {
         showSessions();
-        displayChange();
     });
 
-
-    /*
-    browser.storage.local.set({
-        'sessions': sessions
-    }).then(() => {
-        displayChange();
-        showSessions();
-    });
-    */
     renameArea.style.display = "none";
     sessionName.style.display = "block";
 
