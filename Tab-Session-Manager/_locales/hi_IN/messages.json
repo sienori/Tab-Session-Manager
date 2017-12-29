@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "सबसे पुराना"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "खोलें"
     },
