@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "En eski"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "Açık"
     },
