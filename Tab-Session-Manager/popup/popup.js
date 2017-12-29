@@ -42,10 +42,21 @@ function getSessions() {
 }
 
 function changeSessions(changes, areaName) {
-    //TODO: tempのみの変化なら無視したい
     if (Object.keys(changes)[0] == "sessions") {
         sessions = changes.sessions.newValue;
-        showSessions();
+
+        let diffSessions = changes.sessions.newValue.filter((element, index, array) => {
+            return JSON.stringify(element) != JSON.stringify(changes.sessions.oldValue[index]);
+        });
+
+        const tempOnly = (element) => {
+            return element.tag.split(' ').includes('temp');
+        }
+
+        //temp以外の更新のとき
+        if (!diffSessions.every(tempOnly)) {
+            showSessions();
+        }
     }
 }
 
