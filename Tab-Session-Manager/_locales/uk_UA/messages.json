@@ -90,7 +90,7 @@
         "message": "Відновлювати попередню сесію при запуску"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "Під час запуску Firefox, відновити сеанс, який був закритий в останній раз."
     },
     "ifAutoSaveLabel": {
         "message": "Періодично зберігати сесію"
@@ -129,10 +129,10 @@
         "message": "Наприклад: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Зберігати приватне вікно"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
     },
     "ifSupportTstLabel": {
         "message": "Підтримка Tree Style Tab"
