@@ -162,15 +162,27 @@ function sessionsHTML(i, info) {
     const detail = `${info.windowsNumber} ${(info.windowsNumber==1)?windowLabel:windowsLabel} - ${info.tabsNumber} ${(info.tabsNumber==1)?tabsLabel:tabLabel}`;
 
     return `<div id=${String(i)} class="session" data-tag="${info.tag}">
-        <div class=nameContainer>
-            <div class="renameButton"></div>
-            <div class="renameArea">
-                <div class=renameContainer>
-                    <input class="renameInput" type="text">
-                    <input class=renameSend type="button">
+        <div class=topContainer>
+            <div class=nameContainer>
+                <div class="renameButton"></div>
+                <div class="renameArea">
+                    <div class=renameContainer>
+                        <input class="renameInput" type="text">
+                        <input class=renameSend type="button">
+                    </div>
+                </div>
+                <div class="sessionName">${info.sessionName}</div>
+            </div>
+            <div class=menuContainer>
+                <div class=menuIcon>
+                    <svg>
+                        <use xlink:href="#menu"></use>
+                    </svg>
+                </div>
+                <div class="popupMenu hidden">
+                    <li class=renameButton>Rename</li>
                 </div>
             </div>
-            <div class="sessionName">${info.sessionName}</div>
         </div>
         <div class=dateContainer>
             <span class="sessionDate">${info.sessionDate}</span>
@@ -333,6 +345,49 @@ function showRemoveConfirm(e) {
     }
 }
 
+function showPopupMenu(e) {
+    const sessionNo = getParentSessionNo(e.target);
+    const popupMenu = document.getElementById(sessionNo).getElementsByClassName("popupMenu")[0];
+    if (popupMenu.classList.contains("hidden")) {
+        popupMenu.classList.remove("hidden");
+
+        //クリックしたセッション以外のポップアップを非表示
+        const sessionElements = document.getElementsByClassName("session");
+        for (let i of sessionElements) {
+            if (i.id != sessionNo) {
+                i.getElementsByClassName("popupMenu")[0].classList.add("hidden");
+            }
+        }
+
+    } else {
+        popupMenu.classList.add("hidden");
+    }
+}
+
+function hideAllPopupMenu(e) {
+
+    const isInMenuContainer = (element) => {
+        while (true) {
+            element = element.parentElement;
+            if (!element.parentElement) {
+                return false;
+            }
+            if (element.className == "menuContainer") {
+                element.getElementsByClassName("popup")
+                return true;
+            }
+
+        }
+    }
+
+    if (!isInMenuContainer(e.target)) {
+        const popupMenus = document.getElementsByClassName("popupMenu");
+        for (let i of popupMenus) {
+            i.classList.add("hidden");
+        }
+    }
+}
+
 function getParentSessionNo(element) {
     while (true) {
         element = element.parentElement;
@@ -344,6 +399,7 @@ function getParentSessionNo(element) {
 }
 
 window.document.addEventListener('click', function (e) {
+    hideAllPopupMenu(e);
     switch (e.target.id) {
         case "setting":
             browser.runtime.openOptionsPage();
@@ -380,6 +436,9 @@ window.document.addEventListener('click', function (e) {
             break;
         case "renameSend":
             renameSend(e);
+            break;
+        case "menuIcon":
+            showPopupMenu(e);
             break;
     }
 })

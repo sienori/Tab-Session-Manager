@@ -136,6 +136,14 @@ option {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
+/* top */
+
+.topContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /* rename */
 
 .renameArea {
@@ -177,6 +185,7 @@ option {
     transition: all 100ms 0s ease;
 }
 
+/*
 .renameButton {
     height: 20px;
     width: 20px;
@@ -187,6 +196,7 @@ option {
     background-position: center;
     cursor: pointer;
 }
+*/
 
 .renameButton:hover {
     background-image: url("/icons/rename2.png");
@@ -202,6 +212,55 @@ option {
 .sessionName {
     min-height: 20px;
     word-break: break-all;
+}
+
+/* menu */
+
+svg {
+    pointer-events: none;
+}
+
+.menuContainer {
+    position: relative;
+}
+
+.menuIcon {
+    cursor: pointer;
+    padding-left: 11px;
+}
+
+.menuIcon svg {
+    flex-shrink: 0;
+    height: 16px;
+    width: 5px;
+    fill: var(--sub-text);
+}
+
+.menuIcon:hover svg {
+    fill: var(--highlight)
+}
+
+.popupMenu {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    background-color: var(--main-bg);
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.popupMenu li {
+    list-style: none;
+    margin: 0px -10px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+.popupMenu li:hover {
+    color: var(--highlight);
+    background-color: var(--line);
 }
 
 /* date */
