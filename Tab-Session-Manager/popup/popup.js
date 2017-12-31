@@ -176,7 +176,7 @@ function sessionsHTML(i, info) {
             <div class=menuContainer>
                 <div class=menuIcon>
                     <svg>
-                        <use xlink:href="#menu"></use>
+                        <use xlink:href="#menuSvg"></use>
                     </svg>
                 </div>
                 <div class="popupMenu hidden">

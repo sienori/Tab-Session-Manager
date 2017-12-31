@@ -25,6 +25,10 @@ body {
     flex-direction: column;
 }
 
+svg {
+    pointer-events: none;
+}
+
 #header {
     padding: 10px;
     background-color: var(--line);
@@ -45,12 +49,20 @@ body {
 }
 
 #setting {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#setting svg {
+    flex-shrink: 0;
     height: 20px;
     width: 20px;
-    background-image: url("/icons/setting.png");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    fill: var(--sub-text);
+}
+
+#setting:hover svg {
+    fill: var(--highlight);
 }
 
 #optionsArea {
@@ -215,10 +227,6 @@ option {
 }
 
 /* menu */
-
-svg {
-    pointer-events: none;
-}
 
 .menuContainer {
     position: relative;
