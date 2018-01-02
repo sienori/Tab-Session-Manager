@@ -156,7 +156,7 @@
         "message": "Nettoyer"
     },
     "exportLabel": {
-        "message": "Exporter des sessions"
+        "message": "Exporter les sessions"
     },
     "exportCaptionLabel": {
         "message": "Enregistrer la session actuelle sur l’ordinateur."
