@@ -21,10 +21,10 @@
         "message": "Enregistré automatiquement"
     },
     "newestLabel": {
-        "message": "Plus récent"
+        "message": "Plus récentes"
     },
     "oldestLabel": {
-        "message": "Plus ancien"
+        "message": "Plus anciennes"
     },
     "aToZLabel": {
         "message": "A-Z"
@@ -72,13 +72,13 @@
         "message": "Sessions"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Informations"
     },
     "ifOpenNewWindowLabel": {
         "message": "Ouvrir la session dans une nouvelle fenêtre"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "Si cette case est cochée, la session écrase la fenêtre en cours."
+        "message": "Si cette case n'est pas cochée, la session écrasera la fenêtre en cours."
     },
     "ifLazyLoadingLabel": {
         "message": "Chargement différé des onglets"
@@ -87,13 +87,13 @@
         "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet. <br> Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsque la session est restaurée."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Restaurer la dernière session au démarrage"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "Au démarrage de Firefox, restaurer la session qui était en cours lors de sa fermeture."
     },
     "ifAutoSaveLabel": {
-        "message": "Enregistrer la session régulièrement"
+        "message": "Enregistrer régulièrement la session"
     },
     "ifAutoSaveCaptionLabel": {
         "message": "Enregistrer la session toutes les X minutes."
@@ -105,7 +105,7 @@
         "message": "Valeur minimale 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Nombre maximum enregistré"
+        "message": "Nombre maximum enregistrées"
     },
     "autoSaveLimitCaptionLabel": {
         "message": "Nombre maximal de sessions enregistrées de cette façon."
@@ -117,7 +117,7 @@
         "message": "Enregistrer la session lors de la fermeture de la fenêtre ou lorsque vous quittez Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Nombre maximum enregistré"
+        "message": "Nombre maximum enregistrées"
     },
     "autoSaveWhenCloseCaptionLabel": {
         "message": "Nombre maximal de sessions enregistrées de cette façon."
@@ -129,10 +129,10 @@
         "message": "Ex AAAA.MM.JJ HH:m:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Enregistrer les fenêtres privées"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "Si cette case n'est pas cochée, les fenêtres privées ne seront pas enregistrées."
     },
     "ifSupportTstLabel": {
         "message": "Prendre en charge Tree Style Tab"
