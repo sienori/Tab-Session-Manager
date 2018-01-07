@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "Meno recente"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "Apri"
     },
@@ -52,6 +58,18 @@
     },
     "noSessionLabel": {
         "message": "Non è presente alcuna sessione"
+    },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
     },
     "winCloseSessionName": {
         "message": "Salvato automaticamente - La finestra è stata chiusa"
@@ -126,7 +144,7 @@
         "message": "Save private window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Supporta Tree Style Tab"
