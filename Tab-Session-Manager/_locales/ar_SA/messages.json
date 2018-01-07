@@ -195,30 +195,30 @@
         "message": "شكرا لك لاستخدام Tab Session Manager.<br> دعمك سوف يكون تشجيع كبير،كما أني اواصل تطوير الوظائف الإضافية.<br>إذا أعجبك Tab Session Manager، سوف أكون مسرورا إذا قدمت تبرعات."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "بطاقات هدايا amazon.co.jp"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "قائمة اللواحق"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "الجلسات مستوردة."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "فشلت عملية القراءة"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "حذف كل الجلسات، هل أنت متأكد؟"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "الجلسة"
     },
     "amazonUrl": {
-        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=ar_DZ"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/ar-DZ\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "لا يمكن فتح هذه الصفحة بواسطة Tab Session Manager."
     }
 }
