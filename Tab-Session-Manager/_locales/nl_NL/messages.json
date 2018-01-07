@@ -59,6 +59,18 @@
     "noSessionLabel": {
         "message": "Er is geen sessie"
     },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
+    },
     "winCloseSessionName": {
         "message": "Automatisch opgeslagen - venster was gesloten"
     },
