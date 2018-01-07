@@ -90,13 +90,13 @@
         "message": "नई विंडो में सत्र खोलें"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "यदि चेक किया गया हो, तो सत्र वर्तमान विंडो को ओवरराइट करता है।"
+        "message": "If unchecked, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
         "message": "टैब आलसी लोड हो रहा है"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "सत्र खोलने पर, प्रत्येक पृष्ठ की सामग्री तब तक लोड नहीं होती जब तक आप टैब का चयन नहीं करते।<br>यदि चेक ऑफ किया गया है, तो सत्र का पुन: स्थापित होने पर स्मृति उपयोग बहुत बढ़ जाता है।"
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restore previous session at startup"
@@ -144,7 +144,7 @@
         "message": "Save private window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "ट्री स्टाइल टैब का समर्थन करता है"
