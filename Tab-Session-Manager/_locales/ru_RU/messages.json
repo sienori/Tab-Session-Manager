@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "Старейшие"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "Открыть"
     },
@@ -52,6 +58,18 @@
     },
     "noSessionLabel": {
         "message": "Пусто"
+    },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
     },
     "winCloseSessionName": {
         "message": "Автосохранение - закрыто окно"
@@ -126,7 +144,7 @@
         "message": "Save private window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Поддержка Tree Style Tab"
@@ -171,7 +189,7 @@
         "message": "Лицензия"
     },
     "donationLabel": {
-        "message": "Пожалуйста поблагодарите автора"
+        "message": "Пожалуйста, поблагодарите автора"
     },
     "donationCaptionLabel": {
         "message": "Спасибо, что используете Tab Session Manager.<br>Ваша поддержка будет замечательным стимулом к продолжению разработки этого дополнения.<br>Если вам понравился Tab Session Manager, я буду очень благодарен вашим пожертвованиям."
