@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "Cel mai vechi"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "Deschide"
     },
@@ -52,6 +58,18 @@
     },
     "noSessionLabel": {
         "message": "Nu există nici o sesiune"
+    },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
     },
     "winCloseSessionName": {
         "message": "Salvare automată - Fereastra a fost închisă"
@@ -126,7 +144,7 @@
         "message": "Save private window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Suportă Tree Style Tab"
