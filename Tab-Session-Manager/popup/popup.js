@@ -184,7 +184,13 @@ function sessionsHTML(i, info) {
                     </svg>
                 </div>
                 <div class="popupMenu hidden">
-                    <li class=renameButton>Rename</li>
+                    <ul>
+                    <li class=renameButton>${Labels.renameLabel}</li>
+                    <hr>
+                    <li class=openInNewWindow>${Labels.openInNewWindowLabel}</li>
+                    <li class=openInCurrentWindow>${Labels.openInCurrentWindowLabel}</li>
+                    <li class=addToCurrentWindow>${Labels.addToCurrentWindowLabel}</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -426,10 +432,7 @@ window.document.addEventListener('click', function (e) {
     }
     switch (e.target.className) {
         case "open":
-            browser.runtime.sendMessage({
-                message: "open",
-                number: parseInt(getParentSessionNo(e.target))
-            });
+            sendOpenMessage(e, "default");
             break;
         case "remove":
         case "cancel":
@@ -453,6 +456,15 @@ window.document.addEventListener('click', function (e) {
         case "menuIcon":
             showPopupMenu(e);
             break;
+        case "openInCurrentWindow":
+            sendOpenMessage(e, "openInCurrentWindow");
+            break;
+        case "openInNewWindow":
+            sendOpenMessage(e, "openInNewWindow");
+            break;
+        case "addToCurrentWindow":
+            sendOpenMessage(e, "addToCurrentWindow");
+            break;
     }
 })
 
@@ -465,6 +477,14 @@ window.document.addEventListener('keypress', (e) => {
         }
     }
 })
+
+function sendOpenMessage(e, property) {
+    browser.runtime.sendMessage({
+        message: "open",
+        number: parseInt(getParentSessionNo(e.target)),
+        property: property
+    });
+}
 
 function save() {
     if (window.document.getElementById("saveName").value == "") name = "";

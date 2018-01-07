@@ -188,7 +188,7 @@ function openLastSession() {
         const winCloseSessions = (sessions.filter((element, index, array) => {
             return (element.tag.includes("winClose") && !element.tag.includes("temp"));
         }));
-        openSession(winCloseSessions[winCloseSessions.length - 1], true);
+        openSession(winCloseSessions[winCloseSessions.length - 1], "OpenInCurrentWindow");
     }
 }
 
@@ -344,30 +344,59 @@ function showSessionWhenWindowClose(session) {
     }
 }
 
-function openSession(session, openCurrentWindow = false) {
-    let countFlag = 0;
-    let p = Promise.resolve();
+async function openSession(session, property = "default") {
+    let isFirstWindowFlag = true;
     tabList = {};
-    for (let win in session.windows) { //ウィンドウごと
-        //console.log(session.windows[win]);
-        const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
+    for (let win in session.windows) {
 
-        let createData = {
-            incognito: firstTab.incognito
+        const openInCurrentWindow = () => {
+            return removeNowOpenTabs().then((currentWindow) => {
+                return createTabs(session, win, currentWindow);
+            });
+        };
+        const openInNewWindow = () => {
+            const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
+            const createData = {
+                incognito: firstTab.incognito
+            };
+
+            return browser.windows.create(createData).then((currentWindow) => {
+                return createTabs(session, win, currentWindow);
+            });
+        };
+        const addToCurrentWindow = () => {
+            return browser.windows.getCurrent({
+                populate: true
+            }).then((currentWindow) => {
+                return createTabs(session, win, currentWindow, true);
+            });
+
         };
 
-        p = p.then(function () {
-            if (countFlag == 0 && (!S.get().ifOpenNewWindow || openCurrentWindow)) { //一つ目のウィンドウは現在のウィンドウに上書き
-                countFlag = 1;
-                return removeNowOpenTabs().then(function (currentWindow) {
-                    return createTabs(session, win, currentWindow);
-                });
+        const open = () => {
+            if (isFirstWindowFlag) {
+                isFirstWindowFlag = false;
+                switch (property) {
+                    case "default":
+                        if (S.get().ifOpenNewWindow) return openInNewWindow();
+                        else return openInCurrentWindow();
+                        break;
+                    case "openInCurrentWindow":
+                        return openInCurrentWindow();
+                        break;
+                    case "openInNewWindow":
+                        return openInNewWindow();
+                        break;
+                    case "addToCurrentWindow":
+                        return addToCurrentWindow();
+                        break;
+                }
             } else {
-                return browser.windows.create(createData).then(function (currentWindow) {
-                    return createTabs(session, win, currentWindow);
-                });
+                return openInNewWindow();
             }
-        })
+        };
+
+        await open();
     }
 }
 
@@ -399,7 +428,7 @@ function removeNowOpenTabs() {
 }
 
 //現在のウィンドウにタブを生成
-function createTabs(session, win, currentWindow) {
+function createTabs(session, win, currentWindow, isAddtoCurrentWindow = false) {
     return new Promise(function (resolve, reject) {
         IsOpeningSession = true;
         let sortedTabs = [];
@@ -407,18 +436,17 @@ function createTabs(session, win, currentWindow) {
         for (let tab in session.windows[win]) {
             sortedTabs[session.windows[win][tab].index] = session.windows[win][tab];
         }
-        //console.log(sortedTabs);
 
         let firstTabId = currentWindow.tabs[0].id;
         let tabNumber = 0;
         let p = Promise.resolve();
-        for (let tab of sortedTabs) { //タブごと
 
+        for (let tab of sortedTabs) {
             p = p.then(function () {
                 tabNumber++;
-                return openTab(session, win, currentWindow, tab.id);
+                return openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow);
             }).then(function () {
-                if (tabNumber == 1) {
+                if (tabNumber == 1 && !isAddtoCurrentWindow) {
                     browser.tabs.remove(firstTabId);
                 }
                 if (tabNumber == Object.keys(session.windows[win]).length) {
@@ -433,9 +461,9 @@ function createTabs(session, win, currentWindow) {
 
 tabList = {};
 //実際にタブを開く
-function openTab(session, win, currentWindow, tab) {
+function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     //console.log("open", session.windows[win][tab]);
-    return new Promise(function (resolve, reject) {
+    return new Promise(async function (resolve, reject) {
         let property = session.windows[win][tab];
         let createOption = {
             active: property.active,
@@ -446,6 +474,18 @@ function openTab(session, win, currentWindow, tab) {
             windowId: currentWindow.id
         }
         if (property.cookieStoreId == "firefox-private") delete property.cookieStoreId;
+
+        //タブをindexの最後に開く
+        if (isOpenToLastIndex) {
+            const getLastIndex = new Promise((resolve, reject) => {
+                browser.tabs.query({
+                    currentWindow: true
+                }).then((tabs) => {
+                    resolve(tabs.length);
+                });
+            });
+            createOption.index = await getLastIndex;
+        }
 
         //supported FF57++
         if (S.get().ifSupportTst) {
@@ -522,7 +562,7 @@ browser.runtime.onMessage.addListener(function (request) {
             saveSession(name, "user");
             break;
         case "open":
-            openSession(sessions[request.number]);
+            openSession(sessions[request.number], request.property);
             break;
         case "remove":
             removeSession(request.number);
