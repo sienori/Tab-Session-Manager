@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "依最舊排序"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "開啟"
     },
@@ -53,6 +59,18 @@
     "noSessionLabel": {
         "message": "沒有已儲存的瀏覽階段"
     },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
+    },
     "winCloseSessionName": {
         "message": "自動儲存 - 視窗關閉"
     },
@@ -72,19 +90,19 @@
         "message": "於新視窗中開啟瀏覽階段"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "如果取消勾選，開啟瀏覽階段時將會覆寫目前視窗"
+        "message": "如果取消勾選，開啟瀏覽階段時將會覆寫目前視窗。"
     },
     "ifLazyLoadingLabel": {
         "message": "分頁延遲載入"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>若關閉此項，恢復瀏覽階段時記憶體使用量將會增加。"
+        "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>如果關閉此選項，還原瀏覽階段時的記憶體使用量將會增加。"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "啟動時還原上次開啟的瀏覽階段"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "當 Firefox 啟動時，還原上次開啟的瀏覽階段。"
     },
     "ifAutoSaveLabel": {
         "message": "定期將開啟的分頁瀏覽階段自動儲存"
@@ -123,10 +141,10 @@
         "message": "例如 YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "儲存隱私視窗"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "如果取消勾選，儲存瀏覽階段時將會忽略隱私視窗。"
     },
     "ifSupportTstLabel": {
         "message": "支援 Tree Style Tab"
