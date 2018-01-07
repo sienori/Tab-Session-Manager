@@ -90,13 +90,13 @@
         "message": "Sitzung im neuen Fenster öffnen"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "Aktuelles Fenster wird überschrieben, falls Haken entfernt wird."
+        "message": "If unchecked, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
         "message": "Tab - verzögertes Laden"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "Wenn Sie eine Sitzung öffnen wird der Inhalt eines Tabs erst nach anwählen geladen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Vorherige Sitzung beim Start wiederherstellen"
@@ -144,7 +144,7 @@
         "message": "Private Fenster speichern"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "Wenn abgehakt, ignoriert privaten Fenster, beim Speicherung der Sitzung."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Unterstützung von baumstrukturierte Tabs"
