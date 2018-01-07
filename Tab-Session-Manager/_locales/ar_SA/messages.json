@@ -27,52 +27,52 @@
         "message": "الأقدم"
     },
     "aToZLabel": {
-        "message": "A-Z"
+        "message": "أ-ي"
     },
     "zToALabel": {
-        "message": "Z-A"
+        "message": "ي-أ"
     },
     "open": {
-        "message": "Open"
+        "message": "افتح"
     },
     "remove": {
-        "message": "Delete"
+        "message": "احذف"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "هل تريد حذف هذا الجلسة؟"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "إلغاء"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "النافذة"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "النوافذ"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "التبويب"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "التبويبات"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "لا توجد جلسة"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "أعد التسمية"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "افتح في نافذة جديدة"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "افتح في النافذة الحالية"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "أضف للنافذة الحالية"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "تم الحفظ تلقائياً- النافذة مغلقة"
     },
     "regularSaveSessionName": {
         "message": "Auto Saved - Regularly"
