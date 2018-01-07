@@ -90,13 +90,13 @@
         "message": "Munkamenetek megnyitása új ablakban"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "Ha nincs bejelölve, a munkamenet felülírja a jelenlegi ablakot."
+        "message": "If unchecked, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
         "message": "Fülek lusta betöltése"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "A munkamenet megnyitásakor az egyes oldalak tartalma nem töltődik be, amíg ki nem választódik a fül.<br>Ha nincs bejelölve, a memória használat nagy mértékben megnövekszik amikor a munkamenet visszaállítódik."
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Előző munkamenet visszaállítása induláskor"
@@ -144,7 +144,7 @@
         "message": "Privát ablak elmentése"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "Ha nincs bejelölve, nem menti a privát ablak tartalmát a munkamenet mentésekor."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Fa struktúrájú fülek (Tree Style Tab) támogatása"
