@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "Paling Lama"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "Buka"
     },
@@ -53,6 +59,18 @@
     "noSessionLabel": {
         "message": "Tidak ada sesi"
     },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
+    },
     "winCloseSessionName": {
         "message": "Menyimpan Otomatis - Jendela ditutup"
     },
@@ -78,7 +96,7 @@
         "message": "Tab malas memuat"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "Ketika memuat sesi, isi dari setiap halaman tidak langsung dimuat sampai Anda memilih tab tersebut.<br>Jika tidak dicentang, penggunaan memori akan meningkat ketika sesi akan dipulihkan."
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restore previous session at startup"
@@ -126,7 +144,7 @@
         "message": "Save private window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Mendukung Tree Style Tab"
