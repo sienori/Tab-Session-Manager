@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "最旧"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "打开"
     },
@@ -33,10 +39,10 @@
         "message": "移除"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "删除课程"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "取消"
     },
     "windowLabel": {
         "message": "窗口"
@@ -53,38 +59,50 @@
     "noSessionLabel": {
         "message": "没有会话"
     },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
+    },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "自动保存 - Window 已关闭"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "自动保存 - 定期"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "设置"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "课程"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "资讯"
     },
     "ifOpenNewWindowLabel": {
         "message": "新建窗口打开会话"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If checked off, the session overwrites the current window."
+        "message": "如果选中，会话将覆盖当前 Window。"
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "标签延迟加载"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "在启动时恢复以前的会话"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "当Firefox启动时，恢复上次关闭的会话。"
     },
     "ifAutoSaveLabel": {
         "message": "定期保存已打开标签页的状态"
@@ -96,7 +114,7 @@
         "message": "间隔(分钟)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "最小值0.1"
     },
     "autoSaveLimitLabel": {
         "message": "最大数量"
@@ -123,10 +141,10 @@
         "message": "例如 YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "保存私人 Window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "如果选中，保存会话时将忽略私人Window。"
     },
     "ifSupportTstLabel": {
         "message": "支持树样式选项卡"
@@ -135,64 +153,64 @@
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "导入课程"
     },
     "importCaptionLabel": {
         "message": "Load sessions saved on the computer and add them to the session list.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "浏览..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "导入"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "清除"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "导出课程"
     },
     "exportCaptionLabel": {
         "message": "Save the current session on the computer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "导出"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "删除课程"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "删除所有当前课程。"
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "删除"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "许可证书"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "请捐款"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazon.co.jp 电子礼品卡"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "附加页面"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "进口课程"
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "读取失败"
     },
     "warningRemoveAllMessage": {
         "message": "Delete all sessions. Is it OK?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "课程"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
@@ -201,6 +219,6 @@
         "message": "https:\/\/addons.mozilla.org\/zh-CN\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "这个页面不能被Tab课程管理员打开。"
     }
 }
