@@ -141,10 +141,10 @@
         "message": "مثال: اليوم.الشهر.السنة ثانية:دقيقة:ساعة"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "احفظ النافذة الخاصة"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "إذا لم يتم التحديد، يتجاهل النافذة الخاصة عند حفظ الجلسة."
     },
     "ifSupportTstLabel": {
         "message": "Supports Tree Style Tab"
