@@ -90,13 +90,13 @@
         "message": "於新視窗中開啟瀏覽階段"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "如果取消勾選，開啟瀏覽階段時將會覆寫目前視窗。"
+        "message": "If unchecked, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
         "message": "分頁延遲載入"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>如果關閉此選項，還原瀏覽階段時的記憶體使用量將會增加。"
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "啟動時還原上次開啟的瀏覽階段"
@@ -144,7 +144,7 @@
         "message": "儲存隱私視窗"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "如果取消勾選，儲存瀏覽階段時將會忽略隱私視窗。"
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "支援 Tree Style Tab"
