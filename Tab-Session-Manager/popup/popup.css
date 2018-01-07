@@ -509,7 +509,8 @@ a:hover {
     transition: all 100ms;
 }
 
-#saveName:focus {
+#saveName:focus,
+#saveName:hover {
     border: var(--highlight) solid 1px;
     z-index: 1;
 }
