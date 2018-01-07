@@ -60,16 +60,16 @@
         "message": "Nincs munkamenet"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Átnevez"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Megnyitás új ablakban"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Megnyitás jelenlegi ablakban"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Jelenlegi ablakhoz hozzáadás"
     },
     "winCloseSessionName": {
         "message": "Automatikusan mentett - Ablak be lett zárva"
