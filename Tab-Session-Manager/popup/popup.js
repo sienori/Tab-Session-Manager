@@ -206,7 +206,7 @@ function sessionsHTML(i, info) {
                 <span class="cancel">${cancelLabel}</span>
             </div>
         </div>
-        <div class="detailItems"></div>
+        <div class="detailItems hidden"></div>
     </div>`;
 }
 
@@ -233,13 +233,14 @@ function showSessions() {
 function showDetail(e) {
     sessionNo = getParentSessionNo(e.target); //.parentElement.id;
     detail = window.document.getElementById(sessionNo).getElementsByClassName("detailItems")[0];
-    if (detail.innerHTML == "") {
+    if (detail.classList.contains("hidden")) {
+        detail.innerHTML = "";
         let i = 0;
         for (let win in sessions[sessionNo].windows) {
             i++;
             detail.insertAdjacentHTML('beforeend',
                 `<ul class="windowContainer">
-                    <li class="windowTitleContainer">
+                    <li class="windowTitleContainer hidden">
                         <div class="windowIcon"></div>
                         <span class=windowTitle>${windowLabel} ${i}</span>
                     </li>
@@ -259,7 +260,7 @@ function showDetail(e) {
                     tabFavIconUrl = "/icons/favicon.png";
 
                 let tabHtml =
-                    `<li class=tabContainer>
+                    `<li class="tabContainer hidden">
                         <div class=fav style="background-image:url(${tabFavIconUrl})"></div>
                         <div class=tabTitle><a href=${tabUrl}></a></div>
                     </li>`;
@@ -273,8 +274,18 @@ function showDetail(e) {
                 tabTitleElements[tabTitleElements.length - 1].getElementsByTagName('a')[0].innerText = tabTitle;
             }
         }
+        //クラスを付け替えてアニメーションさせるために必要なディレイ
+        setTimeout(() => {
+            detail.classList.remove("hidden");
+            for (let li of detail.getElementsByTagName("li")) {
+                li.classList.remove("hidden");
+            }
+        }, 10);
     } else {
-        detail.innerHTML = "";
+        for (let li of detail.getElementsByTagName("li")) {
+            li.classList.add("hidden");
+        }
+        detail.classList.add("hidden");
     }
 }
 
