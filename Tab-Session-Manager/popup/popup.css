@@ -211,23 +211,6 @@ option {
     transition: all 100ms 0s ease;
 }
 
-/*
-.renameButton {
-    height: 20px;
-    width: 20px;
-    background-image: url("/icons/rename.png");
-    background-size: 13px;
-    background-repeat: no-repeat;
-    background-color: var(--main-bg);
-    background-position: center;
-    cursor: pointer;
-}
-*/
-
-.renameButton:hover {
-    background-image: url("/icons/rename2.png");
-}
-
 /* name */
 
 .nameContainer {
