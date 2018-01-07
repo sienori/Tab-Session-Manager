@@ -60,16 +60,16 @@
         "message": "セッションはありません"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "リネーム"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "新しいウィンドウで開く"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "現在のウィンドウで開く"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "現在のウィンドウに追加する"
     },
     "winCloseSessionName": {
         "message": "自動保存 - ウィンドウ終了"
@@ -90,13 +90,13 @@
         "message": "セッションを新しいウィンドウで開く"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "チェックをオフにすると，セッションは現在のウィンドウを上書きします。"
     },
     "ifLazyLoadingLabel": {
         "message": "タブの遅延読み込み"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "セッションを開いたとき，タブを選択するまで各ページの内容を読み込みません。<br>チェックをオフにすると，セッション復元時のメモリ使用量が増大します。"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "起動時に前回のセッションを復元"
@@ -144,7 +144,7 @@
         "message": "プライベートウィンドウを保存する"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "チェックをオフにすると，セッションの保存時にプライベートウィンドウを無視します。"
     },
     "ifSupportTstLabel": {
         "message": "ツリー型タブに対応"
