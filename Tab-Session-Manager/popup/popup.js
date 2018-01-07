@@ -53,8 +53,12 @@ function changeSessions(changes, areaName) {
             return element.tag.split(' ').includes('temp');
         }
 
-        //temp以外の更新のとき
-        if (!diffSessions.every(tempOnly)) {
+        const isSessionsRemoved = () => {
+            return changes.sessions.newValue.length < changes.sessions.oldValue.length;
+        }
+
+        //temp以外が更新された時，またはセッションが削除された時
+        if (!diffSessions.every(tempOnly) || isSessionsRemoved()) {
             showSessions();
         }
     }
