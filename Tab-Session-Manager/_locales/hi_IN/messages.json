@@ -59,6 +59,18 @@
     "noSessionLabel": {
         "message": "कोई सत्र नहीं है"
     },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
+    },
     "winCloseSessionName": {
         "message": "स्वतः सहेजा गया - विंडो बंद थी"
     },
