@@ -90,13 +90,13 @@
         "message": "Sessão aberta em nova janela"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "Se desmarcada, a sessão substitui a janela atual."
+        "message": "If unchecked, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
         "message": "Carregamento lento de aba"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba. <br> Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restore previous session at startup"
@@ -144,7 +144,7 @@
         "message": "Save private window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Suporta Tree Style Tab"
