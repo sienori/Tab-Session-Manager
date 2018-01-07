@@ -5,6 +5,7 @@
 window.document.getElementById("saveName").placeholder = browser.i18n.getMessage("initialNameValue");
 window.document.getElementById("winCloseSessionName").innerText = browser.i18n.getMessage("winCloseSessionName");
 window.document.getElementById("regularSaveSessionName").innerText = browser.i18n.getMessage("regularSaveSessionName");
+window.document.getElementById("setting").title = browser.i18n.getMessage("settingsLabel");
 
 openLabel = browser.i18n.getMessage("open");
 removeLabel = browser.i18n.getMessage("remove");
