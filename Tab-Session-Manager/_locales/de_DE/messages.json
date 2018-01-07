@@ -60,16 +60,16 @@
         "message": "Keine Sitzung vorhanden"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Umbenennen"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Im neuen Fenster öffnen"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Im aktuellen Fenster öffnen"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Zur aktuellen Fenster hinzufügen"
     },
     "winCloseSessionName": {
         "message": "Auto - Fenster wurde geschlossen"
