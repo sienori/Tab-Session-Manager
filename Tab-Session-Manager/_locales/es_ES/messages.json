@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "Más antiguo"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "Abrir"
     },
@@ -52,6 +58,18 @@
     },
     "noSessionLabel": {
         "message": "No hay ninguna sesión"
+    },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
     },
     "winCloseSessionName": {
         "message": "Auto guardado - La ventana se cerró"
@@ -126,7 +144,7 @@
         "message": "Save private window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If checked off, ignores the private window when saving the session."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Soportar pestañas estilo árbol"
