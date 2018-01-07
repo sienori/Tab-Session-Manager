@@ -102,25 +102,25 @@
         "message": "استعد الجلسة السابقة عند بدء التشغيل"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "عند بدء تشغيل فايرفوكس، استعد الجلسة التي تم الإغلاق عندها المرة الأخيرة."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "احفظ الجلسة بإنتظام"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "احفظ الجلسة كل X دقائق."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "الفترة الزمنية (دقائق)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "قيمة الحد الأدنى 0,1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "الحد الأقصى محفوظ"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "Save the session when window was closed"
