@@ -26,6 +26,12 @@
     "oldestLabel": {
         "message": "古い順"
     },
+    "aToZLabel": {
+        "message": "A-Z"
+    },
+    "zToALabel": {
+        "message": "Z-A"
+    },
     "open": {
         "message": "開く"
     },
@@ -52,6 +58,18 @@
     },
     "noSessionLabel": {
         "message": "セッションはありません"
+    },
+    "renameLabel": {
+        "message": "リネーム"
+    },
+    "openInNewWindowLabel": {
+        "message": "新しいウィンドウで開く"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "現在のウィンドウで開く"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "現在のウィンドウに追加する"
     },
     "winCloseSessionName": {
         "message": "自動保存 - ウィンドウ終了"
