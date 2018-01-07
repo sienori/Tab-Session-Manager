@@ -59,6 +59,18 @@
     "noSessionLabel": {
         "message": "セッションはありません"
     },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
+    },
     "winCloseSessionName": {
         "message": "自動保存 - ウィンドウ終了"
     },
