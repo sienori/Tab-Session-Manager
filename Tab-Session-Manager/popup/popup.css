@@ -90,6 +90,7 @@ select {
     -moz-appearance: none;
     text-overflow: ellipsis;
     border: var(--button) solid 1px;
+    border-radius: 2px;
     padding: 3px 5px;
     padding-right: 20px;
     width: 100%;
@@ -435,6 +436,7 @@ a:hover {
     flex-shrink: 1;
     min-width: 10px;
     border: var(--button) solid 1px;
+    border-radius: 2px 0px 0px 2px;
     color: var(--main-text);
 }
 
@@ -448,6 +450,7 @@ a:hover {
     padding: 5px 10px;
     background-color: #fff;
     border: var(--button) solid 1px;
+    border-radius: 0px 2px 2px 0px;
     cursor: pointer;
     transition: all 100ms 0s ease;
 }
