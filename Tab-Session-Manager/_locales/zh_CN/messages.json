@@ -90,13 +90,13 @@
         "message": "新建窗口打开会话"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "如果选中，会话将覆盖当前 Window。"
+        "message": "If unchecked, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
         "message": "标签延迟加载"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session,the contents of each page are not loaded until you select the tab.<br>If checked off, memory usage increases when session is restored."
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "在启动时恢复以前的会话"
@@ -144,7 +144,7 @@
         "message": "保存私人 Window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "如果选中，保存会话时将忽略私人Window。"
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "支持树样式选项卡"
