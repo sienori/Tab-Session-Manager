@@ -90,13 +90,13 @@
         "message": "Открыть сессию в новом окне"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "Если выключено, сессия перезапишет текущее окно."
     },
     "ifLazyLoadingLabel": {
         "message": "Отложенная загрузка вкладок"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет активирована вручную.<br>При отключении возрастёт расход памяти после восстановления сессии."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restore previous session at startup"
