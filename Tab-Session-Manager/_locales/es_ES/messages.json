@@ -90,13 +90,13 @@
         "message": "Abrir sesión en una nueva ventana"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "Si está desmarcada, la sesión sobrescribe la ventana actual."
     },
     "ifLazyLoadingLabel": {
         "message": "Carga lenta de pestaña"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "Al abrir una sesión, el contenido de cada página no se carga hasta que seleccione la pestaña. <br>Si está desmarcada, el uso de memoria aumenta cuando se restablece la sesión."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restore previous session at startup"
