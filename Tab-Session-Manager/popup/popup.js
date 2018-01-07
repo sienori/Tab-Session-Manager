@@ -2,20 +2,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-window.document.getElementById("saveName").placeholder = browser.i18n.getMessage("initialNameValue");
-window.document.getElementById("winCloseSessionName").innerText = browser.i18n.getMessage("winCloseSessionName");
-window.document.getElementById("regularSaveSessionName").innerText = browser.i18n.getMessage("regularSaveSessionName");
-window.document.getElementById("setting").title = browser.i18n.getMessage("settingsLabel");
+const Labels = {};
+const setLabels = (labels) => {
+    for (let i of labels) {
+        Labels[i] = browser.i18n.getMessage(i);
+    }
+}
+setLabels(['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel']);
 
-openLabel = browser.i18n.getMessage("open");
-removeLabel = browser.i18n.getMessage("remove");
-windowLabel = browser.i18n.getMessage("windowLabel");
-windowsLabel = browser.i18n.getMessage("windowsLabel");
-tabLabel = browser.i18n.getMessage("tabLabel");
-tabsLabel = browser.i18n.getMessage("tabsLabel");
-noSessionLabel = browser.i18n.getMessage("noSessionLabel");
-removeConfirmLabel = browser.i18n.getMessage("removeConfirmLabel");
-cancelLabel = browser.i18n.getMessage("cancelLabel");
+window.document.getElementById("saveName").placeholder = Labels.initialNameValue;
+window.document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
+window.document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
+window.document.getElementById("setting").title = Labels.settingsLabel;
+
 
 let S = new settingsObj();
 
@@ -195,15 +194,15 @@ function sessionsHTML(i, info) {
         <div class=buttonContainer>
             <span class="detail">${detail}</span>
             <div class=removeOpenButton>
-                <span class="open">${openLabel}</span>
-                <span class="remove">${removeLabel}</span>
+                <span class="open">${Labels.open}</span>
+                <span class="remove">${Labels.remove}</span>
             </div>
         </div>
         <div class="removeConfirm hidden">
-            <span>${removeConfirmLabel}</span>
+            <span>${Labels.removeConfirmLabel}</span>
             <div class=buttonContainer>
-                <span class="reallyRemove">${removeLabel}</span>
-                <span class="cancel">${cancelLabel}</span>
+                <span class="reallyRemove">${Labels.remove}</span>
+                <span class="cancel">${Labels.cancelLabel}</span>
             </div>
         </div>
         <div class="detailItems hidden"></div>
@@ -213,7 +212,7 @@ function sessionsHTML(i, info) {
 function showSessions() {
     const sessionsArea = window.document.getElementById("sessionsArea");
     sessionsArea.innerHTML = "";
-    sessionsArea.insertAdjacentHTML('afterbegin', `<div class="noSessionLabel hidden">${noSessionLabel}</div>`);
+    sessionsArea.insertAdjacentHTML('afterbegin', `<div class="noSessionLabel hidden">${Labels.noSessionLabel}</div>`);
 
     for (let i in sessions) {
         const date = moment(sessions[i].date);
@@ -242,7 +241,7 @@ function showDetail(e) {
                 `<ul class="windowContainer">
                     <li class="windowTitleContainer hidden">
                         <div class="windowIcon"></div>
-                        <span class=windowTitle>${windowLabel} ${i}</span>
+                        <span class=windowTitle>${Labels.windowLabel} ${i}</span>
                     </li>
                 </ul>`);
 
@@ -352,12 +351,10 @@ function showRemoveConfirm(e) {
     let removeElement = document.getElementById(sessionNo).getElementsByClassName("remove")[0];
     if (confirmElement.classList.contains("hidden")) {
         confirmElement.classList.remove("hidden");
-        //removeElement.classList.add("hidden");
-        removeElement.innerText = cancelLabel;
+        removeElement.innerText = Labels.cancelLabel;
     } else {
         confirmElement.classList.add("hidden");
-        //removeElement.classList.remove("hidden");
-        removeElement.innerText = removeLabel;
+        removeElement.innerText = Labels.remove;
     }
 }
 
