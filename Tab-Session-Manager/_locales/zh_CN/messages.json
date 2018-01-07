@@ -90,7 +90,7 @@
         "message": "新建窗口打开会话"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "如果选中，会话将覆盖当前 Window。"
     },
     "ifLazyLoadingLabel": {
         "message": "标签延迟加载"
@@ -144,7 +144,7 @@
         "message": "保存私人 Window"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "如果选中，保存会话时将忽略私人Window。"
     },
     "ifSupportTstLabel": {
         "message": "支持树样式选项卡"
