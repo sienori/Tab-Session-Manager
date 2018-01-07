@@ -90,13 +90,13 @@
         "message": "Otwórz sesje w nowym oknie"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "Jeżeli odznaczone, sesja zastępuje bieżące otwarte okno."
     },
     "ifLazyLoadingLabel": {
         "message": "Karta leniwego ładowania"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "Przy otwieraniu sesji, zawartości każdej strony nie są załadowane dopóki nie wybierzesz karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Przywróć ostatnie sesje podczas uruchamiania"
@@ -144,7 +144,7 @@
         "message": "Zapisz okno prywatne"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Jeżeli odznaczone, ignoruje okna prywatne podczas zapisywania sesji."
     },
     "ifSupportTstLabel": {
         "message": "Wspiera styl drzewa karty"
