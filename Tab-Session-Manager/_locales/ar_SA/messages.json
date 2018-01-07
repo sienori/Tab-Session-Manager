@@ -75,22 +75,22 @@
         "message": "تم الحفظ تلقائياً- النافذة مغلقة"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "الحفظ تلقائياً - بانتظام"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "الإعدادات"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "الجلسات"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "معلومة"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "افتح جلسة في نافذة جديدة"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "إذا لم يتم التحقق، الجلسة تكتب فوق النافذة الحالية."
     },
     "ifLazyLoadingLabel": {
         "message": "Tab lazy loading"
