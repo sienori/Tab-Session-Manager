@@ -399,7 +399,7 @@ function hideAllPopupMenu(e) {
         }
     }
 
-    if (!isInMenuContainer(e.target)) {
+    if (!e.target.classList.contains("menuIcon")) {
         const popupMenus = document.getElementsByClassName("popupMenu");
         for (let i of popupMenus) {
             i.classList.add("hidden");
