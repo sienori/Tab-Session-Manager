@@ -123,19 +123,19 @@
         "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "احفظ الجلسة عند إغلاق النافذة"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "احفظ اجلسة عند غلق النافذة أو عند إغلاق فايرفوكس."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "الحد الأقصى محفوظ"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "صيغة التاريخ"
     },
     "dateFormatCaptionLabel": {
         "message": "Example: YYYY.MM.DD HH:mm:ss"
