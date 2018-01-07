@@ -163,7 +163,7 @@ function sortChange() {
 
 
 function sessionsHTML(i, info) {
-    const detail = `${info.windowsNumber} ${(info.windowsNumber==1)?windowLabel:windowsLabel} - ${info.tabsNumber} ${(info.tabsNumber==1)?tabsLabel:tabLabel}`;
+    const detail = `${info.windowsNumber} ${(info.windowsNumber==1)?Labels.windowLabel:Labels.windowsLabel} - ${info.tabsNumber} ${(info.tabsNumber==1)?Labels.tabLabel:Labels.tabsLabel}`;
 
     return `<div id=${String(i)} class="session" data-tag="${info.tag}">
         <div class=topContainer>
