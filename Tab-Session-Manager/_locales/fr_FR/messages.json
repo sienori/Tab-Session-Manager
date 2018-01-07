@@ -90,13 +90,13 @@
         "message": "Ouvrir la session dans une nouvelle fenêtre"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "Si cette case n'est pas cochée, la session écrasera la fenêtre en cours."
+        "message": "If unchecked, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
         "message": "Chargement différé des onglets"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet. <br> Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsque la session est restaurée."
+        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restaurer la dernière session au démarrage"
@@ -144,7 +144,7 @@
         "message": "Enregistrer les fenêtres privées"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "Si cette case n'est pas cochée, les fenêtres privées ne seront pas enregistrées."
+        "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
         "message": "Prendre en charge Tree Style Tab"
