@@ -150,7 +150,7 @@
         "message": "يدعم نمط التبويب على شكل شجرة"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "استعد حالة شكل التبويب لنمط التبويب المعمول على شكل شجرة.<br> الرجاء أقف تشغيل نسخة الفايرفوكس الأقدم من 57 (Quantum)."
     },
     "importLabel": {
         "message": "Import sessions"
