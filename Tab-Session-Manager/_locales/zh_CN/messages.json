@@ -59,6 +59,18 @@
     "noSessionLabel": {
         "message": "没有会话"
     },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
+    },
     "winCloseSessionName": {
         "message": "自动保存 - Window 已关闭"
     },
