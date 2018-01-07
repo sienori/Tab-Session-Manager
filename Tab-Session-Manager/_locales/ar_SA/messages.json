@@ -156,43 +156,43 @@
         "message": "استرد جلسات"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "حمل الجلسات المحفوظة على الكمبيوتر و أضفهم إلى قائمة الجلسة.<br> كما انها يدعم ملف جلسة مسير الجلسة (. الجلسة)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "تصفح..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "استرد"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "امسح"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "أصدر الجلسات"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "احفظ الجلسة الحالية على جهاز الكمبيوتر."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "أصدر"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "احذف الجلسات"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "احذف كل الجلسات الحالية."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "احذف"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "الترخيص"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "الرجاء قدم تبرع"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "شكرا لك لاستخدام Tab Session Manager.<br> دعمك سوف يكون تشجيع كبير،كما أني اواصل تطوير الوظائف الإضافية.<br>إذا أعجبك Tab Session Manager، سوف أكون مسرورا إذا قدمت تبرعات."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
