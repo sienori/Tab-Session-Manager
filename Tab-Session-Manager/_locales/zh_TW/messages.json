@@ -59,6 +59,18 @@
     "noSessionLabel": {
         "message": "沒有已儲存的瀏覽階段"
     },
+    "renameLabel": {
+        "message": "Rename"
+    },
+    "openInNewWindowLabel": {
+        "message": "Open in new window"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Open in current window"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Add to current window"
+    },
     "winCloseSessionName": {
         "message": "自動儲存 - 視窗關閉"
     },
