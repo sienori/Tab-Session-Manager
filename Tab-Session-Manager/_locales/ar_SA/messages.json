@@ -3,28 +3,28 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "احفظ و استعد حالة النوافذ و التبويبات. كما أنها تدعم الحفظ التلقائي."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "احفظ"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "احفظ الجلسة الحالية"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "الكل"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "المستخدم حفظ"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "حفظ تلقائياً"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "الأحدث"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "الأقدم"
     },
     "aToZLabel": {
         "message": "A-Z"
