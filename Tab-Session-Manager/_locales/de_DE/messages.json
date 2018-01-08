@@ -144,7 +144,7 @@
         "message": "Private Fenster speichern"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Ignoriert privaten Fenster beim Speicherung der Sitzung, wenn Haken entfernt wird."
     },
     "ifSupportTstLabel": {
         "message": "Unterstützung von baumstrukturierte Tabs"
