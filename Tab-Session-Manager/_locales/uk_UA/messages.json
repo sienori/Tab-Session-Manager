@@ -60,16 +60,16 @@
         "message": "Немає сесії"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Перейменувати"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Відкрити у новому вікні"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Відкрити у поточному вікні"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Додати до поточного вікна"
     },
     "winCloseSessionName": {
         "message": "Автозбереження - закриття вікна"

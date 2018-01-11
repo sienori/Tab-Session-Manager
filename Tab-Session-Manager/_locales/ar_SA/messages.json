@@ -3,222 +3,222 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "احفظ و استعد حالة النوافذ و التبويبات. كما أنها تدعم الحفظ التلقائي."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "احفظ"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "احفظ الجلسة الحالية"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "الكل"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "المستخدم حفظ"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "حفظ تلقائياً"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "الأحدث"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "الأقدم"
     },
     "aToZLabel": {
-        "message": "A-Z"
+        "message": "أ-ي"
     },
     "zToALabel": {
-        "message": "Z-A"
+        "message": "ي-أ"
     },
     "open": {
-        "message": "Open"
+        "message": "افتح"
     },
     "remove": {
-        "message": "Delete"
+        "message": "احذف"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "هل تريد حذف هذا الجلسة؟"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "إلغاء"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "النافذة"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "النوافذ"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "التبويب"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "التبويبات"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "لا توجد جلسة"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "أعد التسمية"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "افتح في نافذة جديدة"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "افتح في النافذة الحالية"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "أضف للنافذة الحالية"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "تم الحفظ تلقائياً- النافذة مغلقة"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "الحفظ تلقائياً - بانتظام"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "الإعدادات"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "الجلسات"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "معلومة"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "افتح جلسة في نافذة جديدة"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "إذا لم يتم تحديد النافذة، الجلسة تكتب فوق النافذة الحالية."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "تحميل التبويب ببطء"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "عند فتح جلسة، لن يتم تحميل محتوى كل صفحة حتى يتم تحديد التبويب.<br>إذا لم يتم تحديدها، فسيزيد استخدام الذاكرة بشكل كبير عند استعادة الجلسة."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "استعد الجلسة السابقة عند بدء التشغيل"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "عند بدء تشغيل فايرفوكس، استعد الجلسة التي تم الإغلاق عندها المرة الأخيرة."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "احفظ الجلسة بإنتظام"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "احفظ الجلسة كل X دقائق."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "الفترة الزمنية (دقائق)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "قيمة الحد الأدنى 0,1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "الحد الأقصى محفوظ"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "احفظ الجلسة عند إغلاق النافذة"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "احفظ اجلسة عند غلق النافذة أو عند إغلاق فايرفوكس."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "الحد الأقصى محفوظ"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "صيغة التاريخ"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "مثال: اليوم.الشهر.السنة ثانية:دقيقة:ساعة"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "احفظ النافذة الخاصة"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "إذا لم يتم التحديد، يتجاهل النافذة الخاصة عند حفظ الجلسة."
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "يدعم نمط التبويب على شكل شجرة"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "استعد حالة شكل التبويب لنمط التبويب المعمول على شكل شجرة.<br> الرجاء أقف تشغيل نسخة الفايرفوكس الأقدم من 57 (Quantum)."
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "استرد جلسات"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "حمل الجلسات المحفوظة على الكمبيوتر و أضفهم إلى قائمة الجلسة.<br> كما انها يدعم ملف جلسة مسير الجلسة (. الجلسة)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "تصفح..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "استرد"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "امسح"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "أصدر الجلسات"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "احفظ الجلسة الحالية على جهاز الكمبيوتر."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "أصدر"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "احذف الجلسات"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "احذف كل الجلسات الحالية."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "احذف"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "الترخيص"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "الرجاء قدم تبرع"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "شكرا لك لاستخدام Tab Session Manager.<br> دعمك سوف يكون تشجيع كبير،كما أني اواصل تطوير الوظائف الإضافية.<br>إذا أعجبك Tab Session Manager، سوف أكون مسرورا إذا قدمت تبرعات."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "بطاقات هدايا amazon.co.jp"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "قائمة اللواحق"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "الجلسات مستوردة."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "فشلت عملية القراءة"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "حذف كل الجلسات، هل أنت متأكد؟"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "الجلسة"
     },
     "amazonUrl": {
-        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=ar_DZ"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/ar-DZ\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "لا يمكن فتح هذه الصفحة بواسطة Tab Session Manager."
     }
 }

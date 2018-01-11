@@ -60,16 +60,16 @@
         "message": "沒有已儲存的瀏覽階段"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "重新命名"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "在新視窗中開啟"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "在目前視窗中開啟"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "新增至目前視窗"
     },
     "winCloseSessionName": {
         "message": "自動儲存 - 視窗關閉"

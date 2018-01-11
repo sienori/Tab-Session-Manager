@@ -141,10 +141,10 @@
         "message": "例如 YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "保存私人 Window"
+        "message": "保存隐私窗口"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "如果选中，保存会话时将忽略私人Window。"
+        "message": "如果未勾选，保存会话时将忽略隐私窗口。"
     },
     "ifSupportTstLabel": {
         "message": "支持树样式选项卡"
