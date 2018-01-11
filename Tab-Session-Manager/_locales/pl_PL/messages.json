@@ -195,7 +195,7 @@
         "message": "Dziękuję za korzystanie z Tab Session Managera.<br>Twoje wsparcie będzie wielką zachętą do dalszego rozwijania dodatku.<br>Jeśli podoba ci się Tab Session Manager, byłbym bardzo wdzięczny za wszelkie datki."
     },
     "amazonTitleLabel": {
-        "message": "eKarty podarunkowe amazon.co.jp"
+        "message": "amazon.co.jp Karty podarunkowe"
     },
     "addonPageLabel": {
         "message": "strona dodatków"
@@ -204,21 +204,21 @@
         "message": "Sesje zaimportowane."
     },
     "readFailedMessage": {
-        "message": "Odczyt nie powiódł się"
+        "message": "Błąd odczytu"
     },
     "warningRemoveAllMessage": {
-        "message": "Usuń wszystkie sesje. Czy na pewno?"
+        "message": "Czy na pewno chcesz usunąć wszystkie sesje?"
     },
     "sessionLabel": {
         "message": "Sesja"
     },
     "amazonUrl": {
-        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=pl_PL"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/pl\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "Ta strona nie mogła zostać otworzona przez Tab Session Manager."
+        "message": "Ta strona nie może zostać otwarta przez Tab Session Managera."
     }
 }
