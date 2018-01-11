@@ -60,10 +60,10 @@
         "message": "Nie ma żadnej sesji"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Zmień nazwę"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Otwórz w nowym oknie"
     },
     "openInCurrentWindowLabel": {
         "message": "Open in current window"
