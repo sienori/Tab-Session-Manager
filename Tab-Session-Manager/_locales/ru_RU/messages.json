@@ -27,10 +27,10 @@
         "message": "Старейшие"
     },
     "aToZLabel": {
-        "message": "A-Z"
+        "message": "А-Я"
     },
     "zToALabel": {
-        "message": "Z-A"
+        "message": "Я-А"
     },
     "open": {
         "message": "Открыть"
@@ -60,16 +60,16 @@
         "message": "Пусто"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Переименовать"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Открыть в новом окне"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Открыть в текущем окне"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Добавить в текущее окно"
     },
     "winCloseSessionName": {
         "message": "Автосохранение - закрыто окно"
@@ -99,10 +99,10 @@
         "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет активирована вручную.<br>При отключении возрастёт расход памяти после восстановления сессии."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Восстанавливать предыдущую сессию при запуске"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "При запуске Firefox, восстановить сессию, закрытую в последний раз."
     },
     "ifAutoSaveLabel": {
         "message": "Периодически сохранять сессию"
@@ -141,10 +141,10 @@
         "message": "Например: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Сохранять секретное окно"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Если отключено, игнорирует приватное окно при сохранении сессии."
     },
     "ifSupportTstLabel": {
         "message": "Поддержка Tree Style Tab"
