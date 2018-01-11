@@ -9,7 +9,7 @@
         "message": "Zapisz"
     },
     "initialNameValue": {
-        "message": "Zapisz bierzącą sesje"
+        "message": "Zapisz bieżącą sesję"
     },
     "displayAllLabel": {
         "message": "Wszystkie"
@@ -39,7 +39,7 @@
         "message": "Usuń"
     },
     "removeConfirmLabel": {
-        "message": "Usunąć tę sesje?"
+        "message": "Usunąć tę sesję?"
     },
     "cancelLabel": {
         "message": "Anuluj"
@@ -66,16 +66,16 @@
         "message": "Otwórz w nowym oknie"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Otwórz w bieżącym oknie"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Dodaj do bieżącego okna"
     },
     "winCloseSessionName": {
-        "message": "Automatycznie zapisano - okno zostało zamknięte"
+        "message": "Zapisano automatycznie - okno zostało zamknięte"
     },
     "regularSaveSessionName": {
-        "message": "Zapisuj automatycznie - regularnie"
+        "message": "Zapisano automatycznie - regularnie"
     },
     "settingsLabel": {
         "message": "Ustawienia"
@@ -87,16 +87,16 @@
         "message": "Informacje"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Otwórz sesje w nowym oknie"
+        "message": "Otwórz sesję w nowym oknie"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "Jeżeli odznaczone, sesja zastępuje bieżące otwarte okno."
     },
     "ifLazyLoadingLabel": {
-        "message": "Karta leniwego ładowania"
+        "message": "Opóźnione ładowanie kart"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "Przy otwieraniu sesji, zawartości każdej strony nie są załadowane dopóki nie wybierzesz karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
+        "message": "Przy otwieraniu sesji zawartość każdej strony nie jest ładowana, dopóki nie wybierzesz danej karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Przywróć ostatnie sesje podczas uruchamiania"
