@@ -188,7 +188,7 @@ function openLastSession() {
         const winCloseSessions = (sessions.filter((element, index, array) => {
             return (element.tag.includes("winClose") && !element.tag.includes("temp"));
         }));
-        openSession(winCloseSessions[winCloseSessions.length - 1], "OpenInCurrentWindow");
+        openSession(winCloseSessions[winCloseSessions.length - 1], "openInCurrentWindow");
     }
 }
 
