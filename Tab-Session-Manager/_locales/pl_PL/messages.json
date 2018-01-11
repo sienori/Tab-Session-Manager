@@ -99,16 +99,16 @@
         "message": "Przy otwieraniu sesji zawartość każdej strony nie jest ładowana, dopóki nie wybierzesz danej karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Przywróć ostatnie sesje podczas uruchamiania"
+        "message": "Przywróć poprzednią sesję podczas uruchamiania"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "Po uruchomieniu przeglądarki Firefox, przywróć sesje która została zamknięta ostatnim razem."
+        "message": "Po uruchomieniu przeglądarki Firefox, przywróć sesję, która została zamknięta ostatnim razem."
     },
     "ifAutoSaveLabel": {
-        "message": "Zapisuj sesje regualrnie"
+        "message": "Zapisuj sesję regularnie"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Zapisuj sesje co x minut."
+        "message": "Zapisuj sesję co X minut."
     },
     "autoSaveIntervalLabel": {
         "message": "Odstęp czasowy (w minutach)"
@@ -117,16 +117,16 @@
         "message": "Wartość minimalna 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Makslymalna ilość zapisanych"
+        "message": "Maksymalna ilość zapisanych"
     },
     "autoSaveLimitCaptionLabel": {
         "message": "Maksymalna ilość zapisanych sesji (w ten sposób)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Zapisuj sesje kiedy okno zostało zamknięte"
+        "message": "Zapisuj sesję, kiedy okno zostało zamknięte"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Zapisuj sesje podczas zamykania okna lub przy zamykaniu przeglądarki Firefox."
+        "message": "Zapisuj sesję podczas zamykania okna lub przy zamykaniu przeglądarki Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Maksymalna ilość zapisanych"
@@ -138,16 +138,16 @@
         "message": "Format daty"
     },
     "dateFormatCaptionLabel": {
-        "message": "Przykład RRRR.MM.DD HH:mm:ss"
+        "message": "Przykład: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Zapisz okno prywatne"
+        "message": "Zapisuj okno prywatne"
     },
     "ifSavePrivateWindowCaptionLabel": {
         "message": "Jeżeli odznaczone, ignoruje okna prywatne podczas zapisywania sesji."
     },
     "ifSupportTstLabel": {
-        "message": "Wspiera styl drzewa karty"
+        "message": "Wesprzyj Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Przywróć stan Stylu Drzewa Karty. <br>Proszę wyłączyć go dla Firefox w starszych wersjach niż Firefox 57 (Quantum)."
