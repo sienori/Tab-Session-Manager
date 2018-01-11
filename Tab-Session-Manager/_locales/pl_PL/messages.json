@@ -171,7 +171,7 @@
         "message": "Eksportuj sesje"
     },
     "exportCaptionLabel": {
-        "message": "Zapisz bieżącą sesje do komputera."
+        "message": "Zapisz bieżącą sesję na komputerze."
     },
     "exportButtonLabel": {
         "message": "Eksport"
@@ -189,10 +189,10 @@
         "message": "Licencja"
     },
     "donationLabel": {
-        "message": "Proszę o dokonanie dotacji"
+        "message": "Proszę o dotację"
     },
     "donationCaptionLabel": {
-        "message": "Dziękujemy za korzystanie z Tab Session Manager.<br> Twoje wsparcie jest niesamowice dużo dla mnie warte i zachęca do dalszej pracy i w dalszym ciągu rozwijam dodatek.<br>Jeżeli lubisz Tab Session Manager, byłbym bardzo wdzięczny jeżeli móglbyś\/aś rozważyć wykonanie dotacji."
+        "message": "Dziękuję za korzystanie z Tab Session Managera.<br>Twoje wsparcie będzie wielką zachętą do dalszego rozwijania dodatku.<br>Jeśli podoba ci się Tab Session Manager, byłbym bardzo wdzięczny za wszelkie datki."
     },
     "amazonTitleLabel": {
         "message": "eKarty podarunkowe amazon.co.jp"
