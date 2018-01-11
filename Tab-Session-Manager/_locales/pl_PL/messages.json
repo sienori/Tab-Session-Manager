@@ -147,22 +147,22 @@
         "message": "Jeżeli odznaczone, ignoruje okna prywatne podczas zapisywania sesji."
     },
     "ifSupportTstLabel": {
-        "message": "Wesprzyj Tree Style Tab"
+        "message": "Obsługa Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Przywróć stan Stylu Drzewa Karty. <br>Proszę wyłączyć go dla Firefox w starszych wersjach niż Firefox 57 (Quantum)."
+        "message": "Przywraca stan kart drzewiastych rozszerzenia Tree Style Tab.<br>Proszę wyłączyć tę opcję dla Firefoksa w wersji starszej niż 57 (Quantum)."
     },
     "importLabel": {
-        "message": "Importu sesje"
+        "message": "Importuj sesje"
     },
     "importCaptionLabel": {
-        "message": "Załaduj sesje zapisane na komputerze i dodaj je do listy sesji.<br>Obsługuje rownież plik Session Managera plik session (.session)."
+        "message": "Załaduj sesje zapisane na komputerze i dodaj je do listy sesji.<br>Obsługuje również pliki sesji SessionManagera (.session)."
     },
     "importButtonLabel": {
         "message": "Przeglądaj..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importuj"
     },
     "importClearButtonLabel": {
         "message": "Wyczyść"
