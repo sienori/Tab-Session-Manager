@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "保存和还原窗口及标签页的状态。支持自动保存。"
+        "message": "保存、还原窗口及标签页的状态，支持自动保存。"
     },
     "saveLabel": {
         "message": "保存"
@@ -15,7 +15,7 @@
         "message": "全部"
     },
     "displayUserLabel": {
-        "message": "用户保存"
+        "message": "手动保存"
     },
     "displayAutoLabel": {
         "message": "自动保存"
@@ -27,19 +27,19 @@
         "message": "最旧"
     },
     "aToZLabel": {
-        "message": "A-Z"
+        "message": "字母顺序"
     },
     "zToALabel": {
-        "message": "Z-A"
+        "message": "字母倒序"
     },
     "open": {
         "message": "打开"
     },
     "remove": {
-        "message": "移除"
+        "message": "删除"
     },
     "removeConfirmLabel": {
-        "message": "删除课程"
+        "message": "是否删除此会话？"
     },
     "cancelLabel": {
         "message": "取消"
@@ -60,19 +60,19 @@
         "message": "没有会话"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "重命名"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "在新窗口中打开"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "在当前窗口中打开"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "添加到当前窗口"
     },
     "winCloseSessionName": {
-        "message": "自动保存 - Window 已关闭"
+        "message": "自动保存 - 窗口关闭时"
     },
     "regularSaveSessionName": {
         "message": "自动保存 - 定期"
@@ -81,7 +81,7 @@
         "message": "设置"
     },
     "sessionsLabel": {
-        "message": "课程"
+        "message": "会话"
     },
     "informationLabel": {
         "message": "资讯"
@@ -96,7 +96,7 @@
         "message": "标签延迟加载"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "还原会话后，选中相应标签页才会开始加载网页。 <br> 如果取消勾选, 那么还原会话时，内存的使用量将会大大增加。"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "在启动时恢复以前的会话"
