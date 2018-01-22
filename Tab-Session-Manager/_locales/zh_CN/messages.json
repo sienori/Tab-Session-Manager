@@ -72,7 +72,7 @@
         "message": "添加到当前窗口"
     },
     "winCloseSessionName": {
-        "message": "自动保存 - 窗口关闭时"
+        "message": "自动保存 - 浏览器关闭时"
     },
     "regularSaveSessionName": {
         "message": "自动保存 - 定期"
@@ -84,55 +84,55 @@
         "message": "会话"
     },
     "informationLabel": {
-        "message": "资讯"
+        "message": "信息"
     },
     "ifOpenNewWindowLabel": {
-        "message": "新建窗口打开会话"
+        "message": "在新窗口中打开会话"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "如果选中，会话将覆盖当前 Window。"
+        "message": "如果取消选中，该会话将会覆盖当前窗口的所有标签页。"
     },
     "ifLazyLoadingLabel": {
-        "message": "标签延迟加载"
+        "message": "延迟加载标签"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "还原会话后，选中相应标签页才会开始加载网页。 <br> 如果取消勾选, 那么还原会话时，内存的使用量将会大大增加。"
+        "message": "还原会话后，选中相应标签页才会开始加载网页。 <br> 如果取消勾选, 那么在还原会话时，内存的使用量将会大大增加。"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "在启动时恢复以前的会话"
+        "message": "在启动时恢复上次的会话"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "当Firefox启动时，恢复上次关闭的会话。"
+        "message": "在 Firefox 启动时恢复上一次关闭的会话。"
     },
     "ifAutoSaveLabel": {
-        "message": "定期保存已打开标签页的状态"
+        "message": "定期保存已打开标签页为会话"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "在每 X 分钟保存一次会话。"
     },
     "autoSaveIntervalLabel": {
         "message": "间隔(分钟)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "最小值0.1"
+        "message": "最小值为 0.1"
     },
     "autoSaveLimitLabel": {
         "message": "最大数量"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "（以此种方式）自动保存的会话的最大数量。"
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "关闭窗口时保存会话"
+        "message": "关闭窗口时自动保存会话"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "在关闭窗口或退出 Firefox 时自动保存会话。"
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "最大数量"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "（以此种方式）自动保存的会话的最大数量。"
     },
     "dateFormatLabel": {
         "message": "日期格式"
@@ -156,7 +156,7 @@
         "message": "导入会话"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session list.<br>It also supports SessionManager's session file (.session)."
+        "message": "导入保存在本地的会话备份文件，并将其中的会话加入会话列表中。<br>支持 SessionManager 的会话备份文件 (.session)。"
     },
     "importButtonLabel": {
         "message": "浏览..."
@@ -168,19 +168,19 @@
         "message": "清除"
     },
     "exportLabel": {
-        "message": "导出课程"
+        "message": "导出会话"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "将当前会话保存到本地。"
     },
     "exportButtonLabel": {
         "message": "导出"
     },
     "removeSessionsLabel": {
-        "message": "删除课程"
+        "message": "删除会话"
     },
     "removeSessionsCaptionLabel": {
-        "message": "删除所有当前课程。"
+        "message": "删除当前所有会话。"
     },
     "removeSessionsButtonLabel": {
         "message": "删除"
