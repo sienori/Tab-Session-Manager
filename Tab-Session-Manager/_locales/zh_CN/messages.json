@@ -96,7 +96,7 @@
         "message": "延迟加载标签"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "还原会话后，选中相应标签页才会开始加载网页。 <br> 如果取消勾选, 那么在还原会话时，内存的使用量将会大大增加。"
+        "message": "还原会话后，选中相应标签页才会开始加载网页。 <br> 如果未勾选, 那么在还原会话时，内存的使用量将会大大增加。"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "在启动时恢复上次的会话"
@@ -138,7 +138,7 @@
         "message": "日期格式"
     },
     "dateFormatCaptionLabel": {
-        "message": "例如 YYYY.MM.DD HH:mm:ss"
+        "message": "格式示例： YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "保存隐私窗口"
@@ -147,7 +147,7 @@
         "message": "如果未勾选，保存会话时将忽略隐私窗口。"
     },
     "ifSupportTstLabel": {
-        "message": "支持树样式选项卡"
+        "message": "支持 Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
         "message": "还原 Tree Style Tab 的标签树状态。<br>如果你的 Firefox 版本低于 57 (即 Firefox Quantum)，请取消勾选。"
