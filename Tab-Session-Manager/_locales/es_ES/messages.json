@@ -39,10 +39,10 @@
         "message": "Eliminar"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "¿Eliminar esta sesión?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Cancelar"
     },
     "windowLabel": {
         "message": "Ventana"
@@ -60,13 +60,13 @@
         "message": "No hay ninguna sesión"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Renombrar"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Abrir en una ventana nueva"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Abrir en ventana actual"
     },
     "addToCurrentWindowLabel": {
         "message": "Add to current window"
