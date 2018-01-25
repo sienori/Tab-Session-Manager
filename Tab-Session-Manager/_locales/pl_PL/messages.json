@@ -9,7 +9,7 @@
         "message": "Zapisz"
     },
     "initialNameValue": {
-        "message": "Zapisz bierzącą sesje"
+        "message": "Zapisz bieżącą sesję"
     },
     "displayAllLabel": {
         "message": "Wszystkie"
@@ -39,7 +39,7 @@
         "message": "Usuń"
     },
     "removeConfirmLabel": {
-        "message": "Usunąć tę sesje?"
+        "message": "Usunąć tę sesję?"
     },
     "cancelLabel": {
         "message": "Anuluj"
@@ -60,22 +60,22 @@
         "message": "Nie ma żadnej sesji"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Zmień nazwę"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Otwórz w nowym oknie"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Otwórz w bieżącym oknie"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Dodaj do bieżącego okna"
     },
     "winCloseSessionName": {
-        "message": "Automatycznie zapisano - okno zostało zamknięte"
+        "message": "Zapisano automatycznie - okno zostało zamknięte"
     },
     "regularSaveSessionName": {
-        "message": "Zapisuj automatycznie - regularnie"
+        "message": "Zapisano automatycznie - regularnie"
     },
     "settingsLabel": {
         "message": "Ustawienia"
@@ -87,28 +87,28 @@
         "message": "Informacje"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Otwórz sesje w nowym oknie"
+        "message": "Otwórz sesję w nowym oknie"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "Jeżeli odznaczone, sesja zastępuje bieżące otwarte okno."
     },
     "ifLazyLoadingLabel": {
-        "message": "Karta leniwego ładowania"
+        "message": "Opóźnione ładowanie kart"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "Przy otwieraniu sesji, zawartości każdej strony nie są załadowane dopóki nie wybierzesz karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
+        "message": "Przy otwieraniu sesji zawartość każdej strony nie jest ładowana, dopóki nie wybierzesz danej karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Przywróć ostatnie sesje podczas uruchamiania"
+        "message": "Przywróć poprzednią sesję podczas uruchamiania"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "Po uruchomieniu przeglądarki Firefox, przywróć sesje która została zamknięta ostatnim razem."
+        "message": "Po uruchomieniu przeglądarki Firefox, przywróć sesję, która została zamknięta ostatnim razem."
     },
     "ifAutoSaveLabel": {
-        "message": "Zapisuj sesje regualrnie"
+        "message": "Zapisuj sesję regularnie"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Zapisuj sesje co x minut."
+        "message": "Zapisuj sesję co X minut."
     },
     "autoSaveIntervalLabel": {
         "message": "Odstęp czasowy (w minutach)"
@@ -117,16 +117,16 @@
         "message": "Wartość minimalna 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Makslymalna ilość zapisanych"
+        "message": "Maksymalna ilość zapisanych"
     },
     "autoSaveLimitCaptionLabel": {
         "message": "Maksymalna ilość zapisanych sesji (w ten sposób)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Zapisuj sesje kiedy okno zostało zamknięte"
+        "message": "Zapisuj sesję, kiedy okno zostało zamknięte"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Zapisuj sesje podczas zamykania okna lub przy zamykaniu przeglądarki Firefox."
+        "message": "Zapisuj sesję podczas zamykania okna lub przy zamykaniu przeglądarki Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Maksymalna ilość zapisanych"
@@ -138,31 +138,31 @@
         "message": "Format daty"
     },
     "dateFormatCaptionLabel": {
-        "message": "Przykład RRRR.MM.DD HH:mm:ss"
+        "message": "Przykład: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Zapisz okno prywatne"
+        "message": "Zapisuj okno prywatne"
     },
     "ifSavePrivateWindowCaptionLabel": {
         "message": "Jeżeli odznaczone, ignoruje okna prywatne podczas zapisywania sesji."
     },
     "ifSupportTstLabel": {
-        "message": "Wspiera styl drzewa karty"
+        "message": "Obsługa Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Przywróć stan Stylu Drzewa Karty. <br>Proszę wyłączyć go dla Firefox w starszych wersjach niż Firefox 57 (Quantum)."
+        "message": "Przywraca stan kart drzewiastych rozszerzenia Tree Style Tab.<br>Proszę wyłączyć tę opcję dla Firefoksa w wersji starszej niż 57 (Quantum)."
     },
     "importLabel": {
-        "message": "Importu sesje"
+        "message": "Importuj sesje"
     },
     "importCaptionLabel": {
-        "message": "Załaduj sesje zapisane na komputerze i dodaj je do listy sesji.<br>Obsługuje rownież plik Session Managera plik session (.session)."
+        "message": "Załaduj sesje zapisane na komputerze i dodaj je do listy sesji.<br>Obsługuje również pliki sesji SessionManagera (.session)."
     },
     "importButtonLabel": {
         "message": "Przeglądaj..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importuj"
     },
     "importClearButtonLabel": {
         "message": "Wyczyść"
@@ -171,7 +171,7 @@
         "message": "Eksportuj sesje"
     },
     "exportCaptionLabel": {
-        "message": "Zapisz bieżącą sesje do komputera."
+        "message": "Zapisz bieżącą sesję na komputerze."
     },
     "exportButtonLabel": {
         "message": "Eksport"
@@ -189,13 +189,13 @@
         "message": "Licencja"
     },
     "donationLabel": {
-        "message": "Proszę o dokonanie dotacji"
+        "message": "Proszę o dotację"
     },
     "donationCaptionLabel": {
-        "message": "Dziękujemy za korzystanie z Tab Session Manager.<br> Twoje wsparcie jest niesamowice dużo dla mnie warte i zachęca do dalszej pracy i w dalszym ciągu rozwijam dodatek.<br>Jeżeli lubisz Tab Session Manager, byłbym bardzo wdzięczny jeżeli móglbyś\/aś rozważyć wykonanie dotacji."
+        "message": "Dziękuję za korzystanie z Tab Session Managera.<br>Twoje wsparcie będzie wielką zachętą do dalszego rozwijania dodatku.<br>Jeśli podoba ci się Tab Session Manager, byłbym bardzo wdzięczny za wszelkie datki."
     },
     "amazonTitleLabel": {
-        "message": "eKarty podarunkowe amazon.co.jp"
+        "message": "amazon.co.jp Karty podarunkowe"
     },
     "addonPageLabel": {
         "message": "strona dodatków"
@@ -204,21 +204,21 @@
         "message": "Sesje zaimportowane."
     },
     "readFailedMessage": {
-        "message": "Odczyt nie powiódł się"
+        "message": "Błąd odczytu"
     },
     "warningRemoveAllMessage": {
-        "message": "Usuń wszystkie sesje. Czy na pewno?"
+        "message": "Czy na pewno chcesz usunąć wszystkie sesje?"
     },
     "sessionLabel": {
         "message": "Sesja"
     },
     "amazonUrl": {
-        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=pl_PL"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/pl\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "Ta strona nie mogła zostać otworzona przez Tab Session Manager."
+        "message": "Ta strona nie może zostać otwarta przez Tab Session Managera."
     }
 }

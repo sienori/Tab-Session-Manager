@@ -60,16 +60,16 @@
         "message": "Il n’y a pas de session"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Renommer"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Ouvrir dans une nouvelle fenêtre"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Ouvrir dans la fenêtre actuelle"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Ajouter à la fenêtre en cours"
     },
     "winCloseSessionName": {
         "message": "Auto - À la fermeture d'une fenêtre"
@@ -90,13 +90,13 @@
         "message": "Ouvrir la session dans une nouvelle fenêtre"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "Si cette case n'est pas cochée, la session écrasera la fenêtre en cours."
     },
     "ifLazyLoadingLabel": {
         "message": "Chargement différé des onglets"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet.<br>Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsqu'une session est restaurée."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restaurer la dernière session au démarrage"
@@ -144,7 +144,7 @@
         "message": "Enregistrer les fenêtres privées"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Si cette case n'est pas cochée, les fenêtres privées ne seront pas enregistrées."
     },
     "ifSupportTstLabel": {
         "message": "Prendre en charge Tree Style Tab"
@@ -156,7 +156,7 @@
         "message": "Importer des sessions"
     },
     "importCaptionLabel": {
-        "message": "Charger les sessions enregistrées sur l’ordinateur et les ajouter à la liste de session.<br>Les fichiers de session de SessionManager (.session) sont également pris en charge."
+        "message": "Charger des sessions enregistrées sur l’ordinateur et les ajouter à la liste de session.<br>Les fichiers de session de SessionManager (.session) sont également pris en charge."
     },
     "importButtonLabel": {
         "message": "Parcourir..."
@@ -171,13 +171,13 @@
         "message": "Exporter les sessions"
     },
     "exportCaptionLabel": {
-        "message": "Enregistrer la session actuelle sur l’ordinateur."
+        "message": "Enregistrer les sessions sur l’ordinateur."
     },
     "exportButtonLabel": {
         "message": "Exporter"
     },
     "removeSessionsLabel": {
-        "message": "Supprimer des sessions"
+        "message": "Supprimer les sessions"
     },
     "removeSessionsCaptionLabel": {
         "message": "Supprimer toutes les sessions."
@@ -192,7 +192,7 @@
         "message": "Veuillez faire un don"
     },
     "donationCaptionLabel": {
-        "message": "Merci d’utiliser le module \"Gestionnaire de Session\". <br>Votre soutien sera un grand encouragement, car je continue à développer l’add-on. <br> Si vous aimez Session Manager, je serais heureux si vous pourriez envisager de faire un don."
+        "message": "Merci d’utiliser Tab Session Manager. <br>Votre soutien sera un grand encouragement, car je continue de développer l’extension. <br> Si vous aimez Session Manager, je serais heureux si vous pouviez envisager de faire un don."
     },
     "amazonTitleLabel": {
         "message": "Cartes Cadeaux (amazon.co.jp)"

@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "保存和还原窗口及标签页的状态。支持自动保存。"
+        "message": "保存、还原窗口及标签页的状态，支持自动保存。"
     },
     "saveLabel": {
         "message": "保存"
@@ -15,7 +15,7 @@
         "message": "全部"
     },
     "displayUserLabel": {
-        "message": "用户保存"
+        "message": "手动保存"
     },
     "displayAutoLabel": {
         "message": "自动保存"
@@ -27,19 +27,19 @@
         "message": "最旧"
     },
     "aToZLabel": {
-        "message": "A-Z"
+        "message": "字母顺序"
     },
     "zToALabel": {
-        "message": "Z-A"
+        "message": "字母倒序"
     },
     "open": {
         "message": "打开"
     },
     "remove": {
-        "message": "移除"
+        "message": "删除"
     },
     "removeConfirmLabel": {
-        "message": "删除课程"
+        "message": "是否删除此会话？"
     },
     "cancelLabel": {
         "message": "取消"
@@ -60,19 +60,19 @@
         "message": "没有会话"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "重命名"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "在新窗口中打开"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "在当前窗口中打开"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "添加到当前窗口"
     },
     "winCloseSessionName": {
-        "message": "自动保存 - Window 已关闭"
+        "message": "自动保存 - 浏览器关闭时"
     },
     "regularSaveSessionName": {
         "message": "自动保存 - 定期"
@@ -81,64 +81,64 @@
         "message": "设置"
     },
     "sessionsLabel": {
-        "message": "课程"
+        "message": "会话"
     },
     "informationLabel": {
-        "message": "资讯"
+        "message": "信息"
     },
     "ifOpenNewWindowLabel": {
-        "message": "新建窗口打开会话"
+        "message": "在新窗口中打开会话"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "如果选中，会话将覆盖当前 Window。"
+        "message": "如果取消选中，该会话将会覆盖当前窗口的所有标签页。"
     },
     "ifLazyLoadingLabel": {
-        "message": "标签延迟加载"
+        "message": "延迟加载标签"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "还原会话后，选中相应标签页才会开始加载网页。 <br> 如果未勾选, 那么在还原会话时，内存的使用量将会大大增加。"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "在启动时恢复以前的会话"
+        "message": "在启动时恢复上次的会话"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "当Firefox启动时，恢复上次关闭的会话。"
+        "message": "在 Firefox 启动时恢复上一次关闭的会话。"
     },
     "ifAutoSaveLabel": {
-        "message": "定期保存已打开标签页的状态"
+        "message": "定期保存已打开标签页为会话"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every set time."
+        "message": "在每 X 分钟保存一次会话。"
     },
     "autoSaveIntervalLabel": {
         "message": "间隔(分钟)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "最小值0.1"
+        "message": "最小值为 0.1"
     },
     "autoSaveLimitLabel": {
         "message": "最大数量"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "（以此种方式）自动保存的会话的最大数量。"
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "关闭窗口时保存会话"
+        "message": "关闭窗口时自动保存会话"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting firefox."
+        "message": "在关闭窗口或退出 Firefox 时自动保存会话。"
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "最大数量"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions in this way."
+        "message": "（以此种方式）自动保存的会话的最大数量。"
     },
     "dateFormatLabel": {
         "message": "日期格式"
     },
     "dateFormatCaptionLabel": {
-        "message": "例如 YYYY.MM.DD HH:mm:ss"
+        "message": "格式示例： YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "保存隐私窗口"
@@ -147,16 +147,16 @@
         "message": "如果未勾选，保存会话时将忽略隐私窗口。"
     },
     "ifSupportTstLabel": {
-        "message": "支持树样式选项卡"
+        "message": "支持 Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off if it is less than fireFox 57."
+        "message": "还原 Tree Style Tab 的标签树状态。<br>如果你的 Firefox 版本低于 57 (即 Firefox Quantum)，请取消勾选。"
     },
     "importLabel": {
-        "message": "导入课程"
+        "message": "导入会话"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session list.<br>It also supports SessionManager's session file (.session)."
+        "message": "导入保存在本地的会话备份文件，并将其中的会话加入会话列表中。<br>支持 SessionManager 的会话备份文件 (.session)。"
     },
     "importButtonLabel": {
         "message": "浏览..."
@@ -168,19 +168,19 @@
         "message": "清除"
     },
     "exportLabel": {
-        "message": "导出课程"
+        "message": "导出会话"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session on the computer."
+        "message": "将当前会话保存到本地。"
     },
     "exportButtonLabel": {
         "message": "导出"
     },
     "removeSessionsLabel": {
-        "message": "删除课程"
+        "message": "删除会话"
     },
     "removeSessionsCaptionLabel": {
-        "message": "删除所有当前课程。"
+        "message": "删除当前所有会话。"
     },
     "removeSessionsButtonLabel": {
         "message": "删除"
@@ -189,19 +189,19 @@
         "message": "许可证书"
     },
     "donationLabel": {
-        "message": "请捐款"
+        "message": "请捐一波款吧～"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement as I continue to develop the add-on.<br>If you like Tab Session Manager,I would be pleased if you could consider donation."
+        "message": "感谢您使用 Tab Session Manager.<br>你的支持将会成为我继续开发此附加组件的巨大鼓励。 <br>如果您喜欢 Tab Session Manager，希望您可以考虑捐助，我将为此感到欣慰。"
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp 电子礼品卡"
     },
     "addonPageLabel": {
-        "message": "附加页面"
+        "message": "附加组件页面"
     },
     "importMessage": {
-        "message": "进口课程"
+        "message": "导入会话"
     },
     "readFailedMessage": {
         "message": "读取失败"
@@ -210,7 +210,7 @@
         "message": "Delete all sessions. Is it OK?"
     },
     "sessionLabel": {
-        "message": "课程"
+        "message": "会话(Session)"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
@@ -219,6 +219,6 @@
         "message": "https:\/\/addons.mozilla.org\/zh-CN\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "这个页面不能被Tab课程管理员打开。"
+        "message": "Tab Session Manager 无法打开此页面。"
     }
 }

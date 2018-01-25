@@ -39,10 +39,10 @@
         "message": "Eliminar"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "¿Eliminar esta sesión?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Cancelar"
     },
     "windowLabel": {
         "message": "Ventana"
@@ -60,16 +60,16 @@
         "message": "No hay ninguna sesión"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Renombrar"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Abrir en una ventana nueva"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Abrir en ventana actual"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Agregar a ventana actual"
     },
     "winCloseSessionName": {
         "message": "Auto guardado - La ventana se cerró"
@@ -99,10 +99,10 @@
         "message": "Al abrir una sesión, el contenido de cada página no se carga hasta que seleccione la pestaña. <br>Si está desmarcada, el uso de memoria aumenta cuando se restablece la sesión."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Restaurar la sesión anterior al iniciar"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "Cuando Firefox se inicie, restaurar la útima sesión cerrada."
     },
     "ifAutoSaveLabel": {
         "message": "Guardar la sesión regularmente"
@@ -141,10 +141,10 @@
         "message": "Ex YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Guardar ventana privada"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Si no está marcada, ignorar la ventana privada al guardar la sesión."
     },
     "ifSupportTstLabel": {
         "message": "Soportar pestañas estilo árbol"
