@@ -44,7 +44,10 @@ document.getElementById("import").addEventListener("change", importSessions, fal
 
 async function importSessions() {
     let sessions = [];
-    for (let file of this.files) {
+    const files = document.getElementById("import").files;
+    if (files == undefined) return;
+
+    for (let file of files) {
         session = await fileOpen(file);
         showImportFile(file.name, session);
         Array.prototype.push.apply(sessions, session);
@@ -71,6 +74,8 @@ function fileOpen(file) {
 
             } else if (file.name.toLowerCase().endsWith('.session')) {
                 resolve(parseOldSession(reader.result));
+            } else {
+                resolve();
             }
         }
         reader.readAsText(file);
