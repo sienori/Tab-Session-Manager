@@ -11,6 +11,9 @@
     "initialNameValue": {
         "message": "Huidige sessie opslaan"
     },
+    "saveCurrentWindowOnlyLabel": {
+        "message": "Save current window only"
+    },
     "displayAllLabel": {
         "message": "Alle"
     },
