@@ -8,12 +8,13 @@ const setLabels = (labels) => {
         Labels[i] = browser.i18n.getMessage(i);
     }
 }
-setLabels(['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel']);
+setLabels(['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveCurrentWindowOnlyLabel']);
 
 window.document.getElementById("saveName").placeholder = Labels.initialNameValue;
 window.document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
 window.document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
 window.document.getElementById("setting").title = Labels.settingsLabel;
+window.document.getElementsByClassName("saveCurrentWindowOnly")[0].innerText = Labels.saveCurrentWindowOnlyLabel;
 
 
 let S = new settingsObj();
@@ -383,9 +384,20 @@ function showPopupMenu(e) {
     }
 }
 
+function showSaveOptionPopup(e) {
+    const popupMenu = document.getElementById("saveArea").getElementsByClassName("popupMenu")[0];
+    //const popupMenu = document.getElementsByClassName("popupMenuContainer")[0].getElementsByClassName("popupMenu")[0];
+
+    if (popupMenu.classList.contains("hidden")) {
+        popupMenu.classList.remove("hidden");
+    } else {
+        popupMenu.classList.add("hidden");
+    }
+}
+
 function hideAllPopupMenu(e) {
 
-    const isInMenuContainer = (element) => {
+    const isInMenuContainer = (element, className) => {
         while (true) {
             element = element.parentElement;
             if (!element.parentElement) {
@@ -399,7 +411,7 @@ function hideAllPopupMenu(e) {
         }
     }
 
-    if (!e.target.classList.contains("menuIcon")) {
+    if (!e.target.classList.contains("menuIcon") && !(e.target.id == "saveOptionButton")) {
         const popupMenus = document.getElementsByClassName("popupMenu");
         for (let i of popupMenus) {
             i.classList.add("hidden");
@@ -428,6 +440,9 @@ window.document.addEventListener('click', function (e) {
             break;
         case "saveButton":
             save();
+            break;
+        case "saveOptionButton":
+            showSaveOptionPopup(e);
             break;
     }
     switch (e.target.className) {
@@ -465,6 +480,9 @@ window.document.addEventListener('click', function (e) {
         case "addToCurrentWindow":
             sendOpenMessage(e, "addToCurrentWindow");
             break;
+        case "saveCurrentWindowOnly":
+            save("saveCurrentWindowOnly");
+            break;
     }
 })
 
@@ -486,12 +504,13 @@ function sendOpenMessage(e, property) {
     });
 }
 
-function save() {
+function save(property = "default") {
     if (window.document.getElementById("saveName").value == "") name = "";
     else name = window.document.getElementById("saveName").value;
     browser.runtime.sendMessage({
         message: "save",
-        name: name
+        name: name,
+        property: property
     });
     window.document.getElementById("saveName").value = "";
 }

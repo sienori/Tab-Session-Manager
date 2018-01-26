@@ -147,7 +147,8 @@ function startAutoSave() {
     autoSaveTimer = setInterval(function () {
         let name = browser.i18n.getMessage("regularSaveSessionName");
         let tag = "auto regular";
-        saveSession(name, tag).then(() => {
+        let property = "default";
+        saveSession(name, tag, property).then(() => {
             removeOverLimit("regular");
         });
     }, S.get().autoSaveInterval * 60 * 1000);
@@ -175,7 +176,7 @@ function onUpdate(tabId, changeInfo, tab) {
 function autoSaveWhenClose() {
     return new Promise((resolve, reject) => {
         if (!IsOpeningSession && !IsSavingSession && (S.get().ifAutoSaveWhenClose || S.get().ifOpenLastSessionWhenStartUp)) {
-            saveSession(browser.i18n.getMessage("winCloseSessionName"), "auto winClose temp").then(function () {
+            saveSession(browser.i18n.getMessage("winCloseSessionName"), "auto winClose temp", "default").then(function () {
                 removeOverLimit("winClose");
                 resolve();
             });
@@ -217,10 +218,10 @@ function removeOverLimit(tagState) {
 
 IsSavingSession = false;
 
-function saveSession(name, tag) {
+function saveSession(name, tag, property) {
     IsSavingSession = true;
     return new Promise(function (resolve, reject) {
-        loadCurrentSesssion(name, tag).then(function (session) {
+        loadCurrentSesssion(name, tag, property).then(function (session) {
             if (tag.indexOf("winClose") != -1) {
                 showSessionWhenWindowClose(session);
                 sessions.push(session);
@@ -237,10 +238,17 @@ function saveSession(name, tag) {
     })
 }
 
-function loadCurrentSesssion(name, tag) {
+function loadCurrentSesssion(name, tag, property) {
     return new Promise(function (resolve, reject) {
         let session = {};
-        browser.tabs.query({}).then(function (tabs) {
+        const queryInfo = {};
+        switch (property) {
+            case "default":
+                break;
+            case "saveCurrentWindowOnly":
+                queryInfo.currentWindow = true;
+        }
+        browser.tabs.query(queryInfo).then(function (tabs) {
             session.windows = {};
             session.tabsNumber = 0;
             session.name = name;
@@ -558,8 +566,9 @@ function renameSession(sessionNo, name) {
 browser.runtime.onMessage.addListener(function (request) {
     switch (request.message) {
         case "save":
-            name = request.name;
-            saveSession(name, "user");
+            const name = request.name;
+            const property = request.property;
+            saveSession(name, "user", property);
             break;
         case "open":
             openSession(sessions[request.number], request.property);
