@@ -12,7 +12,7 @@
         "message": "現在のセッションを保存"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "現在のウィンドウのみを保存"
     },
     "displayAllLabel": {
         "message": "全て"
