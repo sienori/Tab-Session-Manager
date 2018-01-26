@@ -11,6 +11,9 @@
     "initialNameValue": {
         "message": "Salvează sesiunea curentă"
     },
+    "saveCurrentWindowOnlyLabel": {
+        "message": "Save current window only"
+    },
     "displayAllLabel": {
         "message": "Tot"
     },
