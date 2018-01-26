@@ -11,6 +11,9 @@
     "initialNameValue": {
         "message": "Зберегти поточну сесiю"
     },
+    "saveCurrentWindowOnlyLabel": {
+        "message": "Save current window only"
+    },
     "displayAllLabel": {
         "message": "Всі"
     },
