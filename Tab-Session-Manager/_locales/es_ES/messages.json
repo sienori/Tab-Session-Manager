@@ -11,6 +11,9 @@
     "initialNameValue": {
         "message": "Guardar sesión actual"
     },
+    "saveCurrentWindowOnlyLabel": {
+        "message": "Save current window only"
+    },
     "displayAllLabel": {
         "message": "Todo"
     },
