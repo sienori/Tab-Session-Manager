@@ -11,6 +11,9 @@
     "initialNameValue": {
         "message": "मौजूदा सत्र को बचाएं"
     },
+    "saveCurrentWindowOnlyLabel": {
+        "message": "Save current window only"
+    },
     "displayAllLabel": {
         "message": "सभी"
     },
