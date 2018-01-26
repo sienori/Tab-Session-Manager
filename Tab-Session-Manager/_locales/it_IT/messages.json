@@ -11,8 +11,8 @@
     "initialNameValue": {
         "message": "Salva sessione corrente"
     },
-    "saveCurrentWindowOnlyLabel": {
-        "message": "Save current window only"
+    "saveOnlyCurrentWindowLabel": {
+        "message": "Save only current window"
     },
     "displayAllLabel": {
         "message": "Tutto"
