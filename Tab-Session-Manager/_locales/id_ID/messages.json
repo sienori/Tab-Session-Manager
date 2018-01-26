@@ -11,8 +11,8 @@
     "initialNameValue": {
         "message": "Simpan sesi saat ini"
     },
-    "saveCurrentWindowOnlyLabel": {
-        "message": "Save current window only"
+    "saveOnlyCurrentWindowLabel": {
+        "message": "Save only current window"
     },
     "displayAllLabel": {
         "message": "Semua"
