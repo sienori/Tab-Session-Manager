@@ -11,6 +11,9 @@
     "initialNameValue": {
         "message": "儲存目前的瀏覽階段"
     },
+    "saveCurrentWindowOnlyLabel": {
+        "message": "Save current window only"
+    },
     "displayAllLabel": {
         "message": "全部"
     },
