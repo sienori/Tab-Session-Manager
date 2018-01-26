@@ -11,6 +11,9 @@
     "initialNameValue": {
         "message": "Jelenlegi munkamenet mentése"
     },
+    "saveCurrentWindowOnlyLabel": {
+        "message": "Save current window only"
+    },
     "displayAllLabel": {
         "message": "Összes"
     },
