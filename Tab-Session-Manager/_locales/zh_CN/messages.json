@@ -11,6 +11,9 @@
     "initialNameValue": {
         "message": "保存当前会话"
     },
+    "saveCurrentWindowOnlyLabel": {
+        "message": "Save current window only"
+    },
     "displayAllLabel": {
         "message": "全部"
     },
