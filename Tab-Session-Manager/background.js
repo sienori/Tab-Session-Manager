@@ -245,7 +245,7 @@ function loadCurrentSesssion(name, tag, property) {
         switch (property) {
             case "default":
                 break;
-            case "saveCurrentWindowOnly":
+            case "saveOnlyCurrentWindow":
                 queryInfo.currentWindow = true;
         }
         browser.tabs.query(queryInfo).then(function (tabs) {

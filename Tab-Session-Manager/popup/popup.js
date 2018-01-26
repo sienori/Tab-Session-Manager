@@ -8,13 +8,13 @@ const setLabels = (labels) => {
         Labels[i] = browser.i18n.getMessage(i);
     }
 }
-setLabels(['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveCurrentWindowOnlyLabel']);
+setLabels(['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel']);
 
 window.document.getElementById("saveName").placeholder = Labels.initialNameValue;
 window.document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
 window.document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
 window.document.getElementById("setting").title = Labels.settingsLabel;
-window.document.getElementsByClassName("saveCurrentWindowOnly")[0].innerText = Labels.saveCurrentWindowOnlyLabel;
+window.document.getElementsByClassName("saveOnlyCurrentWindow")[0].innerText = Labels.saveOnlyCurrentWindowLabel;
 
 
 let S = new settingsObj();
@@ -480,8 +480,8 @@ window.document.addEventListener('click', function (e) {
         case "addToCurrentWindow":
             sendOpenMessage(e, "addToCurrentWindow");
             break;
-        case "saveCurrentWindowOnly":
-            save("saveCurrentWindowOnly");
+        case "saveOnlyCurrentWindow":
+            save("saveOnlyCurrentWindow");
             break;
     }
 })
