@@ -29,7 +29,7 @@
     },
 
     "background": {
-        "scripts": ["Settings.js", "background/background.js", "background/save.js", "background/open.js", "background/autoSave.js", "background/replace.js", "background/import.js"]
+        "scripts": ["Settings.js", "background/save.js", "background/open.js", "background/autoSave.js", "background/replace.js", "background/import.js", "background/uuid.js", "background/background.js"]
     },
 
     "browser_action": {

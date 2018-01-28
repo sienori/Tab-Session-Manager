@@ -17,6 +17,7 @@ var sessionStartTime = Date.now();
 
 //起動時の設定
 initSettings().then(function () {
+    updateSessionId();
     updateAutoName();
     setStorage();
     setAutoSave();
@@ -63,6 +64,16 @@ function updateAutoName() {
 
         }
     }
+}
+
+//ver1.9.2以前のセッションにUUIDを追加
+function updateSessionId() {
+    for (let i of sessions) {
+        if (!i['id']) {
+            i['id'] = UUID.generate();
+        }
+    }
+    //console.log(sessions);
 }
 
 //popupからのリクエスト

@@ -41,6 +41,7 @@ function loadCurrentSesssion(name, tag, property) {
             session.date = new Date();
             session.tag = tag;
             session.sessionStartTime = sessionStartTime;
+            session.id = UUID.generate();
 
             //windouwsとtabのセット
             for (let tab of tabs) {
