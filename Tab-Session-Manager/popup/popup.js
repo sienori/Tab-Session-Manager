@@ -51,7 +51,7 @@ function changeSessions(changes, areaName) {
         });
 
         const tempOnly = (element) => {
-            return element.tag.split(' ').includes('temp');
+            return element.tag.includes('temp');
         }
 
         const isSessionsRemoved = () => {
@@ -226,7 +226,7 @@ function showSessions() {
         const info = {
             sessionName: sessions[i].name,
             sessionDate: date.format(S.get().dateFormat),
-            tag: sessions[i].tag,
+            tag: sessions[i].tag.join(' '),
             tabsNumber: sessions[i].tabsNumber,
             windowsNumber: Object.keys(sessions[i].windows).length
         }

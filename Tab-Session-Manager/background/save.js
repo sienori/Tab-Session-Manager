@@ -8,10 +8,10 @@ function saveSession(name, tag, property) {
     IsSavingSession = true;
     return new Promise(function (resolve, reject) {
         loadCurrentSesssion(name, tag, property).then(function (session) {
-            if (tag.indexOf("winClose") != -1) {
+            if (tag.includes("winClose")) {
                 showSessionWhenWindowClose(session);
                 sessions.push(session);
-            } else if (tag.indexOf("regular") != -1) {
+            } else if (tag.includes("regular")) {
                 if (ifChangedAutoSaveSession(session)) sessions.push(session);
             } else {
                 sessions.push(session);
@@ -74,7 +74,7 @@ function loadCurrentSesssion(name, tag, property) {
 function ifChangedAutoSaveSession(session) {
     let lastAutoNumber = -1;
     for (let i in sessions) {
-        if (sessions[i].tag.indexOf("regular") != -1) lastAutoNumber = i;
+        if (sessions[i].tag.includes('regular')) lastAutoNumber = i;
     }
     //自動保存が無ければtrue
     if (lastAutoNumber == -1) return true;
@@ -109,7 +109,7 @@ function ifChangedAutoSaveSession(session) {
 function showSessionWhenWindowClose(session) {
     //sessionsを新しいものから走査
     for (let i = sessions.length - 1; i >= 0; i--) {
-        if (sessions[i].tag.indexOf('temp') != -1) {
+        if (sessions[i].tag.includes('temp')) {
 
             let showFlag = false;
             let currentSession = Object.keys(session.windows);
@@ -128,7 +128,7 @@ function showSessionWhenWindowClose(session) {
 
             //保存が必要ならクラスからtempを削除し表示する
             if (showFlag) {
-                sessions[i].tag = "auto winClose";
+                sessions[i].tag = ['auto', 'winClose'];
                 break;
             }
             //不要ならtempの項目を更新

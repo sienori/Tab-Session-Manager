@@ -18,6 +18,7 @@ var sessionStartTime = Date.now();
 //起動時の設定
 initSettings().then(function () {
     updateSessionId();
+    updateTags();
     updateAutoName();
     setStorage();
     setAutoSave();
@@ -52,12 +53,12 @@ function initSettings(value) {
 //過去のバージョンのautosaveのセッション名を変更
 function updateAutoName() {
     for (let i in sessions) {
-        if (sessions[i].tag.indexOf("auto winClose") != -1) {
+        if (sessions[i].tag.includes('winClose')) {
 
             if (sessions[i].name === "Auto Saved - Window was closed")
                 sessions[i].name = browser.i18n.getMessage("winCloseSessionName");
 
-        } else if (sessions[i].tag.indexOf("auto regular") != -1) {
+        } else if (sessions[i].tag.includes('regular')) {
 
             if (sessions[i].name === "Auto Saved - Regularly")
                 sessions[i].name = browser.i18n.getMessage("regularSaveSessionName");
@@ -76,13 +77,23 @@ function updateSessionId() {
     //console.log(sessions);
 }
 
+//ver1.9.2以前のセッションのタグを配列に変更
+function updateTags() {
+    for (let i of sessions) {
+        if (!Array.isArray(i.tag)) {
+            i.tag = i.tag.split(' ');
+        }
+    }
+    console.log(sessions);
+}
+
 //popupからのリクエスト
 browser.runtime.onMessage.addListener(function (request) {
     switch (request.message) {
         case "save":
             const name = request.name;
             const property = request.property;
-            saveSession(name, "user", property);
+            saveSession(name, ["user"], property);
             break;
         case "open":
             openSession(sessions[request.number], request.property);

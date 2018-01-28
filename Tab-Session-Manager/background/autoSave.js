@@ -24,7 +24,7 @@ let autoSaveTimer;
 function startAutoSave() {
     autoSaveTimer = setInterval(function () {
         let name = browser.i18n.getMessage("regularSaveSessionName");
-        let tag = "auto regular";
+        let tag = ['auto', 'regular'];
         let property = "default";
         saveSession(name, tag, property).then(() => {
             removeOverLimit("regular");
@@ -54,7 +54,7 @@ function onUpdate(tabId, changeInfo, tab) {
 function autoSaveWhenClose() {
     return new Promise((resolve, reject) => {
         if (!IsOpeningSession && !IsSavingSession && (S.get().ifAutoSaveWhenClose || S.get().ifOpenLastSessionWhenStartUp)) {
-            saveSession(browser.i18n.getMessage("winCloseSessionName"), "auto winClose temp", "default").then(function () {
+            saveSession(browser.i18n.getMessage("winCloseSessionName"), ['auto', 'winClose','temp'], "default").then(function () {
                 removeOverLimit("winClose");
                 resolve();
             });
@@ -79,7 +79,7 @@ function removeOverLimit(tagState) {
     //定期保存を列挙
     let autoSavedArray = [];
     for (let i in sessions) {
-        if (sessions[i].tag.indexOf(tagState) != -1) {
+        if (sessions[i].tag.includes(tagState)) {
             autoSavedArray.push(i);
         }
     }
