@@ -66,6 +66,7 @@ function fileOpen(file) {
                 } else {
                     let jsonFile = JSON.parse(reader.result);
                     if (checkImportFile(jsonFile)) { //データの構造を判定
+                        jsonFile = parseSession(jsonFile);
                         resolve(jsonFile);
                     } else {
                         resolve(); //失敗
@@ -101,13 +102,31 @@ function isArray(o) {
 
 function checkImportFile(file) {
     if (!isArray(file)) return false;
-    let correctSession = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime"];
+
+    const correctKeys = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime"].toString();
+    const correctKeys2 = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime", "id"].toString();
+
     for (let session of file) {
-        if (Object.keys(session).toString() != correctSession.toString()) {
+        const sessionKeys = Object.keys(session).toString();
+        if ((sessionKeys != correctKeys) && (sessionKeys != correctKeys2)) {
             return false;
         }
     }
     return true;
+}
+
+function parseSession(file) {
+    for (let session of file) {
+        //ver1.9.2以前のセッションにUUIDを追加
+        if (!session['id']) {
+            session['id'] = UUID.generate();
+        }
+        //ver1.9.2以前のセッションのタグを配列に変更
+        if (!Array.isArray(session.tag)) {
+            session.tag = session.tag.split(' ');
+        }
+    }
+    return file;
 }
 
 function parseOldSession(file) {
@@ -118,8 +137,9 @@ function parseOldSession(file) {
     session.tabsNumber = 0;
     session.name = line[1].substr(5);
     session.date = moment(parseInt(line[2].substr(10))).toISOString();
-    session.tag = 'user';
+    session.tag = ['user'];
     session.sessionStartTime = parseInt(line[2].substr(10));
+    session.id = UUID.generate();
 
     if (!isJSON(line[4])) return;
 
