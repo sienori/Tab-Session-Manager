@@ -180,10 +180,19 @@ async function margeSessions(newSessions) {
         return 0;
     });
 
+    //UUIDを無視
+    let ignoreUuidSessions = [];
+    for (let i in sessions) {
+        ignoreUuidSessions[i] = {};
+        Object.assign(ignoreUuidSessions[i], sessions[i]);
+        delete ignoreUuidSessions[i].id;
+    }
+
     //重複を削除
     for (let i = 0; i < sessions.length; i++) {
-        if (JSON.stringify(sessions[i]) === JSON.stringify(sessions[i + 1])) {
+        if (JSON.stringify(ignoreUuidSessions[i]) === JSON.stringify(ignoreUuidSessions[i + 1])) {
             sessions.splice(i + 1, 1);
+            ignoreUuidSessions.splice(i + 1, 1);
             i--;
         }
     }
