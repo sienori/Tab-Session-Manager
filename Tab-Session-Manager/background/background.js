@@ -108,9 +108,22 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             clearAllSessions();
             break;
         case "getSessions":
-            sendResponse({
-                sessions: sessions
-            });
+            getSessions(request, sender, sendResponse);
             break;
     }
 });
+
+function getSessions(request, sender, sendResponse) {
+    let returnSessions;
+    if (request.id == null) {
+        returnSessions = sessions;
+    } else {
+        returnSessions = sessions.filter((element) => {
+            return element.id == request.id
+        });
+    }
+    sendResponse({
+        sessions: returnSessions
+    });
+
+}

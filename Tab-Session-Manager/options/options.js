@@ -181,29 +181,46 @@ function importSave() {
     clearImportFile();
 }
 
-async function exportSessions() {
-    let sessions = await getSessions();
-    let downloadUrl = URL.createObjectURL(
+async function exportSessions(id = null) {
+    const sessions = await getSessions(id);
+
+    const downloadUrl = URL.createObjectURL(
         new Blob([JSON.stringify(sessions, null, '    ')], {
             type: 'aplication/json'
         })
     );
 
-    let downloading = browser.downloads.download({
+    const fileName = returnFileName(sessions);
+
+    const downloading = browser.downloads.download({
         url: downloadUrl,
-        filename: 'sessions.json',
+        filename: `${fileName}.json`,
         conflictAction: 'uniquify',
         saveAs: true
     });
     downloading;
 }
 
-async function getSessions() {
+async function getSessions(id) {
     return new Promise(function (resolve, reject) {
         browser.runtime.sendMessage({
-            message: "getSessions"
+            message: "getSessions",
+            id: id
         }).then((response) => {
             resolve(response.sessions);
         });
     });
+}
+
+function returnFileName(sessions) {
+    let fileName;
+    if (sessions.length == 1) {
+        fileName = `${sessions[0].name} - ${moment(sessions[0].date).format(S.get().dateFormat)}`;
+    } else {
+        const sessionsLabel = browser.i18n.getMessage('sessionsLabel');
+        fileName = `${sessionsLabel} - ${moment().format(S.get().dateFormat)}`;
+    }
+    const pattern = /\\|\/|\:|\?|\.|"|<|>|\|/g;
+    fileName = fileName.replace(pattern, "-");
+    return fileName;
 }

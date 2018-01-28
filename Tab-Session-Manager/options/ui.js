@@ -17,8 +17,7 @@ tm.HashObserver.enable();
 document.addEventListener("changehash", readHash, false);
 
 function readHash(e) {
-    hash = e.hash.split('&')[0];
-
+    const hash = e.hash.split('?')[0];
     let selected = document.getElementsByClassName("selected");
     selected[0].classList.remove("selected");
 
@@ -44,6 +43,22 @@ function readHash(e) {
             document.getElementsByClassName("settingsLabel")[0].classList.add("selected");
             break;
     }
+
+    const params = getParams(e.hash);
+    switch (params.action) {
+        case 'export':
+            exportSessions(params.id);
+    }
+}
+
+function getParams(hash) {
+    let params = {};
+    if (hash.split('?')[1] == undefined) return params;
+    hash = hash.split('?')[1].split('&');
+    for (let i of hash) {
+        params[i.split('=')[0]] = i.split('=')[1];
+    }
+    return params;
 }
 
 

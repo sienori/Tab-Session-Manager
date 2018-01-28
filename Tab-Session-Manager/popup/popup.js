@@ -8,7 +8,7 @@ const setLabels = (labels) => {
         Labels[i] = browser.i18n.getMessage(i);
     }
 }
-setLabels(['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel']);
+setLabels(['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel']);
 
 window.document.getElementById("saveName").placeholder = Labels.initialNameValue;
 window.document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
@@ -187,6 +187,7 @@ function sessionsHTML(i, info) {
                 <div class="popupMenu hidden">
                     <ul>
                     <li class=renameButton>${Labels.renameLabel}</li>
+                    <li class=exportButton>${Labels.exportButtonLabel}</li>
                     <hr>
                     <li class=openInNewWindow>${Labels.openInNewWindowLabel}</li>
                     <li class=openInCurrentWindow>${Labels.openInCurrentWindowLabel}</li>
@@ -228,7 +229,8 @@ function showSessions() {
             sessionDate: date.format(S.get().dateFormat),
             tag: sessions[i].tag.join(' '),
             tabsNumber: sessions[i].tabsNumber,
-            windowsNumber: Object.keys(sessions[i].windows).length
+            windowsNumber: Object.keys(sessions[i].windows).length,
+            id: sessions[i].id
         }
         sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(i, info));
     }
@@ -482,6 +484,12 @@ window.document.addEventListener('click', function (e) {
             break;
         case "saveOnlyCurrentWindow":
             save("saveOnlyCurrentWindow");
+            break;
+        case "exportButton":
+            const sessionNo = getParentSessionNo(e.target);
+            browser.tabs.create({
+                url: `../options/options.html#sessions?action=export&id=${sessions[sessionNo].id}`
+            });
             break;
     }
 })
