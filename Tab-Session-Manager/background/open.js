@@ -87,32 +87,32 @@ function removeNowOpenTabs() {
 
 //現在のウィンドウにタブを生成
 function createTabs(session, win, currentWindow, isAddtoCurrentWindow = false) {
-    return new Promise(function (resolve, reject) {
+    return new Promise(async function (resolve, reject) {
         IsOpeningSession = true;
         let sortedTabs = [];
 
         for (let tab in session.windows[win]) {
-            sortedTabs[session.windows[win][tab].index] = session.windows[win][tab];
+            sortedTabs.push(session.windows[win][tab]);
         }
 
-        let firstTabId = currentWindow.tabs[0].id;
-        let tabNumber = 0;
-        let p = Promise.resolve();
+        sortedTabs.sort((a, b) => {
+            return a.index - b.index;
+        });
 
+        const firstTabId = currentWindow.tabs[0].id;
+        let tabNumber = 0;
         for (let tab of sortedTabs) {
-            p = p.then(function () {
-                tabNumber++;
-                return openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow);
-            }).then(function () {
-                if (tabNumber == 1 && !isAddtoCurrentWindow) {
-                    browser.tabs.remove(firstTabId);
-                }
-                if (tabNumber == Object.keys(session.windows[win]).length) {
-                    IsOpeningSession = false;
-                    replacePage();
-                    resolve();
-                }
-            });
+            await openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow);
+
+            tabNumber++;
+            if (tabNumber == 1 && !isAddtoCurrentWindow) {
+                browser.tabs.remove(firstTabId);
+            }
+            if (tabNumber == sortedTabs.length) {
+                IsOpeningSession = false;
+                replacePage();
+                resolve();
+            }
         }
     })
 }
