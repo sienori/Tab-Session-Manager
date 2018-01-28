@@ -28,6 +28,9 @@ function startAutoSave() {
         let property = "default";
         saveSession(name, tag, property).then(() => {
             removeOverLimit("regular");
+        }, () => {
+            //失敗時
+
         });
     }, S.get().autoSaveInterval * 60 * 1000);
 }
@@ -54,8 +57,11 @@ function onUpdate(tabId, changeInfo, tab) {
 function autoSaveWhenClose() {
     return new Promise((resolve, reject) => {
         if (!IsOpeningSession && !IsSavingSession && (S.get().ifAutoSaveWhenClose || S.get().ifOpenLastSessionWhenStartUp)) {
-            saveSession(browser.i18n.getMessage("winCloseSessionName"), ['auto', 'winClose','temp'], "default").then(function () {
+            saveSession(browser.i18n.getMessage("winCloseSessionName"), ['auto', 'winClose', 'temp'], "default").then(function () {
                 removeOverLimit("winClose");
+                resolve();
+            }, () => {
+                //失敗時
                 resolve();
             });
         }

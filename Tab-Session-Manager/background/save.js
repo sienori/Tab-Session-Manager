@@ -19,6 +19,10 @@ function saveSession(name, tag, property) {
             setStorage();
             IsSavingSession = false;
             resolve();
+        }, function () {
+            //失敗時
+            IsSavingSession = false;
+            reject();
         })
 
     })
@@ -43,12 +47,14 @@ function loadCurrentSesssion(name, tag, property) {
             session.sessionStartTime = sessionStartTime;
             session.id = UUID.generate();
 
-            //windouwsとtabのセット
             for (let tab of tabs) {
-                //プライベートタブを無視
 
+                //プライベートタブを無視
                 if (!S.get().ifSavePrivateWindow) {
-                    if (tab.incognito) continue;
+                    if (tab.incognito) {
+                        session.tabsNumber--;
+                        continue;
+                    }
                 }
 
                 if (session.windows[tab.windowId] == undefined) session.windows[tab.windowId] = {};
@@ -62,7 +68,7 @@ function loadCurrentSesssion(name, tag, property) {
                 session.tabsNumber++;
             }
 
-            if (tabs.length > 0) resolve(session);
+            if (session.tabsNumber > 0) resolve(session);
             else reject();
 
         })

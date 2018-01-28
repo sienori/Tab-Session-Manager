@@ -93,7 +93,7 @@ browser.runtime.onMessage.addListener(function (request) {
         case "save":
             const name = request.name;
             const property = request.property;
-            saveSession(name, ["user"], property);
+            saveSession(name, ["user"], property).catch(() => {});
             break;
         case "open":
             openSession(sessions[request.number], request.property);
