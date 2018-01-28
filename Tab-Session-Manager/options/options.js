@@ -149,8 +149,8 @@ function parseOldSession(file) {
         session.windows[win] = {};
         let index = 0;
         for (let tab of sessionData.windows[win].tabs) {
-            session.windows[win][tab.entries[0].ID] = {
-                id: tab.entries[0].ID,
+            session.windows[win][index] = {
+                id: index,
                 index: index,
                 windowId: parseInt(win),
                 lastAccessed: tab.lastAccessed,
