@@ -65,7 +65,6 @@ function returnFileListNode(fileName, sessions) {
 function clearImportFile() {
     document.getElementById("fileList").parentNode.style.display = "none";
     document.getElementById("fileList").innerHTML = "";
-    MargedSessions = {};
 }
 
 document.getElementsByClassName("amazonUrl")[0].href = browser.i18n.getMessage("amazonUrl");

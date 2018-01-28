@@ -20,6 +20,7 @@ document.addEventListener('click', function (e) {
             break;
         case "importClear":
             clearImportFile();
+            ImportSessions = [];
             break;
     }
 });
@@ -36,23 +37,24 @@ function save() {
 function removeSessions() {
     let res = confirm(browser.i18n.getMessage("warningRemoveAllMessage"));
     if (res == true) {
-        saveSessions([]);
+        browser.runtime.sendMessage({
+            message: "clearAllSessions"
+        });
     }
 }
 
 document.getElementById("import").addEventListener("change", importSessions, false);
 
+let ImportSessions = [];
 async function importSessions() {
-    let sessions = [];
     const files = document.getElementById("import").files;
     if (files == undefined) return;
 
     for (let file of files) {
         session = await fileOpen(file);
         showImportFile(file.name, session);
-        Array.prototype.push.apply(sessions, session);
+        Array.prototype.push.apply(ImportSessions, session);
     }
-    margeSessions(sessions);
 }
 
 function fileOpen(file) {
@@ -167,45 +169,16 @@ function parseOldSession(file) {
     return [session];
 }
 
-async function margeSessions(newSessions) {
-    let sessions = await getSessions();
-    Array.prototype.push.apply(sessions, MargedSessions);
-
-    Array.prototype.push.apply(sessions, newSessions);
-    sessions.sort(function (a, b) {
-        a = moment(a.date).valueOf();
-        b = moment(b.date).valueOf();
-        if (a < b) return -1;
-        if (a > b) return 1;
-        return 0;
-    });
-
-    //UUIDを無視
-    let ignoreUuidSessions = [];
-    for (let i in sessions) {
-        ignoreUuidSessions[i] = {};
-        Object.assign(ignoreUuidSessions[i], sessions[i]);
-        delete ignoreUuidSessions[i].id;
-    }
-
-    //重複を削除
-    for (let i = 0; i < sessions.length; i++) {
-        if (JSON.stringify(ignoreUuidSessions[i]) === JSON.stringify(ignoreUuidSessions[i + 1])) {
-            sessions.splice(i + 1, 1);
-            ignoreUuidSessions.splice(i + 1, 1);
-            i--;
-        }
-    }
-    MargedSessions = sessions;
-}
-
 function importSave() {
-    if (MargedSessions.length != undefined) {
-        saveSessions(MargedSessions);
+    if (ImportSessions.length != undefined) {
+        browser.runtime.sendMessage({
+            message: "import",
+            importSessions: ImportSessions
+        });
         alert(browser.i18n.getMessage("importMessage"));
-        clearImportFile();
     }
-    MargedSessions = {};
+    ImportSessions = [];
+    clearImportFile();
 }
 
 async function exportSessions() {
@@ -225,22 +198,12 @@ async function exportSessions() {
     downloading;
 }
 
-function getSessions() {
+async function getSessions() {
     return new Promise(function (resolve, reject) {
-        browser.storage.local.get(["sessions"], function (value) {
-            if (value.sessions != undefined) sessions = value.sessions;
-            else sessions = [];
-            resolve(sessions);
-        });
-    })
-}
-
-function saveSessions(sessions) {
-    browser.storage.local.set({
-        'sessions': sessions
-    }).then(() => {
         browser.runtime.sendMessage({
-            message: "import"
+            message: "getSessions"
+        }).then((response) => {
+            resolve(response.sessions);
         });
-    })
+    });
 }

@@ -85,8 +85,7 @@ function updateTags() {
     }
 }
 
-//popupからのリクエスト
-browser.runtime.onMessage.addListener(function (request) {
+browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     switch (request.message) {
         case "save":
             const name = request.name;
@@ -103,7 +102,15 @@ browser.runtime.onMessage.addListener(function (request) {
             renameSession(request.sessionNo, request.name);
             break;
         case "import":
-            loadSessions();
+            importSessions(request.importSessions);
+            break;
+        case "clearAllSessions":
+            clearAllSessions();
+            break;
+        case "getSessions":
+            sendResponse({
+                sessions: sessions
+            });
             break;
     }
 });

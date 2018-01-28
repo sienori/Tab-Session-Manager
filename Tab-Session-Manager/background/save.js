@@ -155,6 +155,11 @@ function renameSession(sessionNo, name) {
     setStorage();
 }
 
+function clearAllSessions() {
+    sessions = [];
+    setStorage();
+}
+
 //セッションを保存
 function setStorage() {
     browser.storage.local.set({
