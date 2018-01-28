@@ -149,13 +149,14 @@ function parseOldSession(file) {
         session.windows[win] = {};
         let index = 0;
         for (let tab of sessionData.windows[win].tabs) {
+            const entryIndex = tab.index - 1;
             session.windows[win][index] = {
                 id: index,
                 index: index,
                 windowId: parseInt(win),
                 lastAccessed: tab.lastAccessed,
-                url: tab.entries[0].url,
-                title: tab.entries[0].title,
+                url: tab.entries[entryIndex].url,
+                title: tab.entries[entryIndex].title,
                 favIconUrl: tab.image
             };
 
