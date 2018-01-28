@@ -162,6 +162,11 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
                 "&favIconUrl=" + encodeURIComponent(property.favIconUrl);
         }
 
+        //about:newtabを置き換え
+        if (property.url == 'about:newtab') {
+            createOption.url = null;
+        }
+
         setTimeout(function () {
             browser.tabs.create(createOption).then(function (newTab) {
                 tabList[property.id] = newTab.id;
