@@ -3,19 +3,32 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 const Labels = {};
-const setLabels = (labels) => {
+const setLabels = async() => {
+    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel'];
+
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
     }
+
+    window.document.getElementById("saveName").placeholder = Labels.initialNameValue;
+    window.document.getElementById("saveName").value = await getCurrentTabName();
+    window.document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
+    window.document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
+    window.document.getElementById("setting").title = Labels.settingsLabel;
+    window.document.getElementsByClassName("saveOnlyCurrentWindow")[0].innerText = Labels.saveOnlyCurrentWindowLabel;
 }
-setLabels(['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel']);
+setLabels();
 
-window.document.getElementById("saveName").placeholder = Labels.initialNameValue;
-window.document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
-window.document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
-window.document.getElementById("setting").title = Labels.settingsLabel;
-window.document.getElementsByClassName("saveOnlyCurrentWindow")[0].innerText = Labels.saveOnlyCurrentWindowLabel;
-
+function getCurrentTabName() {
+    return new Promise((resolve, reject) => {
+        browser.tabs.query({
+            active: true,
+            currentWindow: true
+        }).then((tabs) => {
+            resolve(tabs[0].title);
+        })
+    });
+}
 
 let S = new settingsObj();
 
@@ -344,13 +357,13 @@ function renameSend(e) {
 
 }
 
-function clickSaveInput() {
-    saveInput = window.document.getElementById("saveName");
-    if (saveInput.value == browser.i18n.getMessage("initialNameValue")) {
-        saveInput.value = "";
-        saveInput.style.color = "#333";
-    } else {
+let firstClick = true;
 
+function clickSaveInput() {
+    if (firstClick) {
+        const textarea = window.document.getElementById("saveName");
+        textarea.select();
+        firstClick = false;
     }
 }
 
