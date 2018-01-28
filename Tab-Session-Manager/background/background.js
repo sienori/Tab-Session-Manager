@@ -74,7 +74,6 @@ function updateSessionId() {
             i['id'] = UUID.generate();
         }
     }
-    //console.log(sessions);
 }
 
 //ver1.9.2以前のセッションのタグを配列に変更
@@ -84,7 +83,6 @@ function updateTags() {
             i.tag = i.tag.split(' ');
         }
     }
-    console.log(sessions);
 }
 
 //popupからのリクエスト
