@@ -159,7 +159,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
                 "?state=redirect" +
                 "&title=" + encodeURIComponent(property.title) +
                 "&url=" + ((property.url.substr(0, 17) == 'about:reader?url=')?
-                                decodeURIComponent(property.url.substr(17)):
+                                property.url.substr(17):
                                 encodeURIComponent(property.url)) +
                 "&favIconUrl=" + encodeURIComponent(property.favIconUrl);
         }
