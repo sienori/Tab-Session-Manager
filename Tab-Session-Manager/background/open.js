@@ -155,14 +155,12 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
 
         //Lazy loading
         if (S.get().ifLazyLoading) {
-            if (property.url.substr(0, 17) == 'about:reader?url=') {
-                property.url = property.url.substr(17);
-                //createOption.openInReaderMode = true;
-            }
             createOption.url = "replaced/replaced.html" +
                 "?state=redirect" +
                 "&title=" + encodeURIComponent(property.title) +
-                "&url=" + encodeURIComponent(property.url) +
+                "&url=" + ((property.url.substr(0, 17) == 'about:reader?url=')?
+                                decodeURIComponent(property.url.substr(17)):
+                                encodeURIComponent(property.url)) +
                 "&favIconUrl=" + encodeURIComponent(property.favIconUrl);
         }
 
