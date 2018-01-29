@@ -158,7 +158,9 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
             createOption.url = "replaced/replaced.html" +
                 "?state=redirect" +
                 "&title=" + encodeURIComponent(property.title) +
-                "&url=" + encodeURIComponent(property.url) +
+                "&url=" + ((property.url.substr(0, 17) == 'about:reader?url=')?
+                                property.url.substr(17):
+                                encodeURIComponent(property.url)) +
                 "&favIconUrl=" + encodeURIComponent(property.favIconUrl);
         }
 
