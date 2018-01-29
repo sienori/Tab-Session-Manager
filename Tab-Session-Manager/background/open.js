@@ -155,8 +155,8 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
 
         //Lazy loading
         if (S.get().ifLazyLoading) {
-            if (createOption.url.substr(0, 17) == 'about:reader?url=') {
-                createOption.url = createOption.url.substr(17);
+            if (property.url.substr(0, 17) == 'about:reader?url=') {
+                property.url = property.url.substr(17);
                 createOption.openInReaderMode = true;
             }
             createOption.url = "replaced/replaced.html" +
