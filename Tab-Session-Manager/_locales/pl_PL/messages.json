@@ -117,31 +117,31 @@
         "message": "Odstęp czasowy (w minutach)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Wartość minimalna 0.1"
+        "message": "Wartość minimalna: 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maksymalna ilość zapisanych"
+        "message": "Maksymalna liczba zapisanych"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maksymalna ilość zapisanych sesji (w ten sposób)."
+        "message": "Maksymalna liczba zapisanych sesji (w ten sposób)."
     },
     "ifAutoSaveWhenCloseLabel": {
         "message": "Zapisuj sesję, kiedy okno zostało zamknięte"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Zapisuj sesję podczas zamykania okna lub przy zamykaniu przeglądarki Firefox."
+        "message": "Zapisuj sesję zamknąwszy okna lub przy zamykaniu przeglądarki Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maksymalna ilość zapisanych"
+        "message": "Maksymalna liczba zapisanych"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maksymalna ilość zapisanych sesji (w ten sposób)."
+        "message": "Maksymalna liczba zapisanych sesji (w ten sposób)."
     },
     "dateFormatLabel": {
         "message": "Format daty"
     },
     "dateFormatCaptionLabel": {
-        "message": "Przykład: YYYY.MM.DD HH:mm:ss"
+        "message": "Przykład: RRRR.MM.DD GG:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "Zapisuj okno prywatne"
