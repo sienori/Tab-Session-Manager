@@ -49,15 +49,14 @@ function replacePage() {
             }
             let paramater = returnReplaceParamater(info[0].url);
             if (paramater.isReplaced && paramater.state == "redirect") {
-                browser.tabs.update({
+                browser.tabs.update(info[0].id, {
                     url: paramater.url
                 }).then(() => {
                     if (paramater.openInReaderMode == "true") {
                         toggleReaderMode(info[0].id);
                     }
                 }).catch(function () {
-                    //失敗時
-                    browser.tabs.update({
+                    browser.tabs.update(info[0].id, {
                         url: returnReplaceURL('open_faild', paramater.title, paramater.url, paramater.favIconUrl)
                     })
                 })
