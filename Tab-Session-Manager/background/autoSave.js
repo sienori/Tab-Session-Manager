@@ -22,10 +22,11 @@ function isChangeAutoSaveSettings() {
 let autoSaveTimer;
 
 function startAutoSave() {
-    autoSaveTimer = setInterval(function () {
+    autoSaveTimer = setInterval(async function () {
         let name = browser.i18n.getMessage("regularSaveSessionName");
-        let tag = ['auto', 'regular'];
-        let property = "default";
+        if (S.get().useTabTitleforAutoSave) name = await getCurrentTabName();
+        const tag = ['auto', 'regular'];
+        const property = "default";
         saveSession(name, tag, property).then(() => {
             removeOverLimit("regular");
         }, () => {
@@ -55,9 +56,13 @@ function onUpdate(tabId, changeInfo, tab) {
 }
 
 function autoSaveWhenClose() {
-    return new Promise((resolve, reject) => {
+    return new Promise(async(resolve, reject) => {
         if (!IsOpeningSession && !IsSavingSession && (S.get().ifAutoSaveWhenClose || S.get().ifOpenLastSessionWhenStartUp)) {
-            saveSession(browser.i18n.getMessage("winCloseSessionName"), ['auto', 'winClose', 'temp'], "default").then(function () {
+            let name = browser.i18n.getMessage("winCloseSessionName");
+            if (S.get().useTabTitleforAutoSave) name = await getCurrentTabName();
+            const tag = ['auto', 'winClose', 'temp'];
+            const property = "default";
+            saveSession(name, tag, property).then(function () {
                 removeOverLimit("winClose");
                 resolve();
             }, () => {
@@ -98,4 +103,15 @@ function removeOverLimit(tagState) {
             removeSession(i);
         }
     }
+}
+
+function getCurrentTabName() {
+    return new Promise((resolve, reject) => {
+        browser.tabs.query({
+            active: true,
+            currentWindow: true
+        }).then((tabs) => {
+            resolve(tabs[0].title);
+        })
+    });
 }
