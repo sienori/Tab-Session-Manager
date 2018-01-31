@@ -155,11 +155,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
 
         //Lazy loading
         if (S.get().ifLazyLoading) {
-            createOption.url = "replaced/replaced.html" +
-                "?state=redirect" +
-                "&title=" + encodeURIComponent(property.title) +
-                "&url=" + encodeURIComponent(property.url) +
-                "&favIconUrl=" + encodeURIComponent(property.favIconUrl);
+            createOption.url = returnReplaceURL('redirect', property.title, property.url, property.favIconUrl);
         }
 
         //about:newtabを置き換え
@@ -172,11 +168,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
                 tabList[property.id] = newTab.id;
                 resolve();
             }, function () { //タブオープン失敗時
-                createOption.url = "replaced/replaced.html" +
-                    "?state=open_faild" +
-                    "&title=" + encodeURIComponent(property.title) +
-                    "&url=" + encodeURIComponent(property.url) +
-                    "&favIconUrl=" + encodeURIComponent(property.favIconUrl)
+                createOption.url = returnReplaceURL('open_faild', propety.title, property.url, property.favIconUrl);
                 browser.tabs.create(createOption).then(function (newTab) {
                     tabList[property.id] = newTab.id;
                     resolve();

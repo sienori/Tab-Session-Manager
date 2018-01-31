@@ -17,6 +17,17 @@ function returnReplaceParamater(url) {
     return paramater;
 }
 
+function returnReplaceURL(state, title, url, favIconUrl) {
+
+    let retUrl = "replaced/replaced.html" +
+        "?state=" + encodeURIComponent(state) +
+        "&title=" + encodeURIComponent(title) +
+        "&url=" + encodeURIComponent(url) +
+        "&favIconUrl=" + encodeURIComponent(favIconUrl);
+
+    return retUrl;
+}
+
 function replacePage() {
     if (!IsOpeningSession) {
         browser.tabs.query({
@@ -33,11 +44,7 @@ function replacePage() {
                 }).catch(function () {
                     //失敗時
                     browser.tabs.update({
-                        url: "replaced/replaced.html" +
-                            "?state=open_faild" +
-                            "&title=" + encodeURIComponent(paramater.title) +
-                            "&url=" + encodeURIComponent(paramater.url) +
-                            "&favIconUrl=" + encodeURIComponent(paramater.favIconUrl)
+                        url: returnReplaceURL('open_faild', paramater.title, paramater.url, paramater.favIconUrl)
                     })
                 })
             }
