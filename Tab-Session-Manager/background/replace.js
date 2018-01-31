@@ -39,32 +39,32 @@ function returnReplaceURL(state, title, url, favIconUrl) {
 }
 
 function replacePage() {
-    if (!IsOpeningSession) {
-        browser.tabs.query({
-            active: true,
-            currentWindow: true
-        }).then(function (info) {
-            if (info[0].status != "complete") {
-                setTimeout(replacePage, 500);
-            }
-            let paramater = returnReplaceParamater(info[0].url);
-            if (paramater.isReplaced && paramater.state == "redirect") {
+    if (IsOpeningSession) return;
+
+    browser.tabs.query({
+        active: true,
+        currentWindow: true
+    }).then(function (info) {
+        if (info[0].status != "complete") {
+            setTimeout(replacePage, 500);
+            return;
+        }
+
+        const paramater = returnReplaceParamater(info[0].url);
+        if (paramater.isReplaced && paramater.state == "redirect") {
+            browser.tabs.update(info[0].id, {
+                url: paramater.url
+            }).then(() => {
+                if (paramater.openInReaderMode == "true") {
+                    toggleReaderMode(info[0].id);
+                }
+            }).catch(() => {
                 browser.tabs.update(info[0].id, {
-                    url: paramater.url
-                }).then(() => {
-                    if (paramater.openInReaderMode == "true") {
-                        toggleReaderMode(info[0].id);
-                    }
-                }).catch(function () {
-                    browser.tabs.update(info[0].id, {
-                        url: returnReplaceURL('open_faild', paramater.title, paramater.url, paramater.favIconUrl)
-                    })
+                    url: returnReplaceURL('open_faild', paramater.title, paramater.url, paramater.favIconUrl)
                 })
-            }
-
-        })
-    }
-
+            })
+        }
+    })
 }
 
 function toggleReaderMode(id) {

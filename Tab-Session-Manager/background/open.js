@@ -120,9 +120,8 @@ function createTabs(session, win, currentWindow, isAddtoCurrentWindow = false) {
 tabList = {};
 //実際にタブを開く
 function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
-    //console.log("open", session.windows[win][tab]);
     return new Promise(async function (resolve, reject) {
-        let property = session.windows[win][tab];
+        const property = session.windows[win][tab];
         let createOption = {
             active: property.active,
             cookieStoreId: property.cookieStoreId,
@@ -148,12 +147,11 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
             createOption.index = await getLastIndex;
         }
 
-        //supported FF57++
+        //Tree Style Tab
+        let openDelay = 0;
         if (S.get().ifSupportTst) {
             createOption.openerTabId = tabList[property.openerTabId];
             openDelay = 150;
-        } else {
-            openDelay = 0;
         }
 
         //Lazy loading
@@ -173,18 +171,20 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
         }
 
         setTimeout(function () {
-            browser.tabs.create(createOption).then(function (newTab) {
-                tabList[property.id] = newTab.id;
-                resolve();
-            }, function () { //タブオープン失敗時
-                createOption.url = returnReplaceURL('open_faild', propety.title, property.url, property.favIconUrl);
-                browser.tabs.create(createOption).then(function (newTab) {
+            browser.tabs.create(createOption)
+                .then((newTab) => {
                     tabList[property.id] = newTab.id;
                     resolve();
-                }, function () { //失敗時(多分起こらないけど念のため)
-                    resolve();
-                })
-            });
+                }).catch(() => {
+                    createOption.url = returnReplaceURL('open_faild', property.title, property.url, property.favIconUrl);
+                    browser.tabs.create(createOption)
+                        .then((newTab) => {
+                            tabList[property.id] = newTab.id;
+                            resolve();
+                        }).catch(() => {
+                            resolve();
+                        })
+                });
         }, openDelay) //ツリー型タブの処理を待つ
     })
 }
