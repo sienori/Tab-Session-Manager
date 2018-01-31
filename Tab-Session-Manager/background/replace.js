@@ -25,6 +25,16 @@ function returnReplaceURL(state, title, url, favIconUrl) {
         "&url=" + encodeURIComponent(url) +
         "&favIconUrl=" + encodeURIComponent(favIconUrl);
 
+    //Reader mode
+    if (url.substr(0, 17) == 'about:reader?url=') {
+        retUrl = "replaced/replaced.html" +
+            "?state=" + encodeURIComponent(state) +
+            "&title=" + encodeURIComponent(title) +
+            "&url=" + url.substr(17) +
+            "&favIconUrl=" + encodeURIComponent(favIconUrl) +
+            "&openInReaderMode=true";
+    }
+
     return retUrl;
 }
 
@@ -41,6 +51,10 @@ function replacePage() {
             if (paramater.isReplaced && paramater.state == "redirect") {
                 browser.tabs.update({
                     url: paramater.url
+                }).then(() => {
+                    if (paramater.openInReaderMode == "true") {
+                        toggleReaderMode(info[0].id);
+                    }
                 }).catch(function () {
                     //失敗時
                     browser.tabs.update({
@@ -51,4 +65,17 @@ function replacePage() {
 
         })
     }
+
+}
+
+function toggleReaderMode(id) {
+    browser.tabs.get(id).then((info) => {
+        if (info.status != 'complete') {
+            setTimeout(() => {
+                toggleReaderMode(id);
+            }, 500);
+            return;
+        }
+        if (info.isArticle) browser.tabs.toggleReaderMode(id);
+    })
 }

@@ -158,6 +158,12 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
             createOption.url = returnReplaceURL('redirect', property.title, property.url, property.favIconUrl);
         }
 
+        //Reader mode
+        if (!S.get().ifLazyLoading && (property.url.substr(0, 17) == 'about:reader?url=')) {
+            createOption.openInReaderMode = true;
+            createOption.url = decodeURIComponent(property.url.substr(17));
+        }
+
         //about:newtabを置き換え
         if (property.url == 'about:newtab') {
             createOption.url = null;
