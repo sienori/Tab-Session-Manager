@@ -131,7 +131,10 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
             url: property.url,
             windowId: currentWindow.id
         }
-        if (property.cookieStoreId == "firefox-private") delete property.cookieStoreId;
+
+        //現在のウィンドウと開かれるタブのプライベート情報に不整合があるときはウィンドウに従う
+        if (currentWindow.incognito) delete createOption.cookieStoreId;
+        if (!currentWindow.incognito && property.cookieStoreId == "firefox-private") delete createOption.cookieStoreId;
 
         //タブをindexの最後に開く
         if (isOpenToLastIndex) {
