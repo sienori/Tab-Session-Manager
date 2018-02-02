@@ -95,6 +95,18 @@
     "informationLabel": {
         "message": "Informaţii"
     },
+    "generalLabel": {
+        "message": "General"
+    },
+    "autoSaveLabel": {
+        "message": "Auto save"
+    },
+    "startUpLabel": {
+        "message": "Startup"
+    },
+    "styleLabel": {
+        "message": "Style"
+    },
     "ifOpenNewWindowLabel": {
         "message": "Deschide sesiunea într-o fereastră nouă"
     },
@@ -166,6 +178,24 @@
     },
     "ifSupportTstCaptionLabel": {
         "message": "Restaurare stare tree a Tree Style Tab. <br>Vă rugăm să o opriți pentru versiunile Firefox mai vechi decât Firefox 57 (Quantum)."
+    },
+    "truncateTitleLabel": {
+        "message": "Display session name within one line"
+    },
+    "truncateTitleCaptionLabel": {
+        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    },
+    "toolBarPopupLabel": {
+        "message": "Toolbar popup"
+    },
+    "toolBarPopupCaptionLabel": {
+        "message": "Specify the style of the toolbar popup."
+    },
+    "widthLabel": {
+        "message": "Width"
+    },
+    "heightLabel": {
+        "message": "Height"
     },
     "importLabel": {
         "message": "Importă sesiuni"
