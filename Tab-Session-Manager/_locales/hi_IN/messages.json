@@ -95,6 +95,18 @@
     "informationLabel": {
         "message": "जानकारी"
     },
+    "generalLabel": {
+        "message": "General"
+    },
+    "autoSaveLabel": {
+        "message": "Auto save"
+    },
+    "startUpLabel": {
+        "message": "Startup"
+    },
+    "styleLabel": {
+        "message": "Style"
+    },
     "ifOpenNewWindowLabel": {
         "message": "नई विंडो में सत्र खोलें"
     },
@@ -166,6 +178,24 @@
     },
     "ifSupportTstCaptionLabel": {
         "message": "ट्री स्टाइल टैब के ट्री स्टेट को पुनर्स्थापित करें|<br>कृपया फ़ायरफ़ॉक्स 57 (क्वांटम) से पुराने संस्करणों के लिए इसे बंद करें।"
+    },
+    "truncateTitleLabel": {
+        "message": "Display session name within one line"
+    },
+    "truncateTitleCaptionLabel": {
+        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    },
+    "toolBarPopupLabel": {
+        "message": "Toolbar popup"
+    },
+    "toolBarPopupCaptionLabel": {
+        "message": "Specify the style of the toolbar popup."
+    },
+    "widthLabel": {
+        "message": "Width"
+    },
+    "heightLabel": {
+        "message": "Height"
     },
     "importLabel": {
         "message": "सत्रों को आयात करें"
