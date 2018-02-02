@@ -95,6 +95,18 @@
     "informationLabel": {
         "message": "Információ"
     },
+    "generalLabel": {
+        "message": "General"
+    },
+    "autoSaveLabel": {
+        "message": "Auto save"
+    },
+    "startUpLabel": {
+        "message": "Startup"
+    },
+    "styleLabel": {
+        "message": "Style"
+    },
     "ifOpenNewWindowLabel": {
         "message": "Munkamenetek megnyitása új ablakban"
     },
@@ -166,6 +178,24 @@
     },
     "ifSupportTstCaptionLabel": {
         "message": "Fa struktúrájú fülek visszaállítása.<br>Firefox 57 (Quantum) -nál régebbi verzió esetén ki kell kapcsolni."
+    },
+    "truncateTitleLabel": {
+        "message": "Display session name within one line"
+    },
+    "truncateTitleCaptionLabel": {
+        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    },
+    "toolBarPopupLabel": {
+        "message": "Toolbar popup"
+    },
+    "toolBarPopupCaptionLabel": {
+        "message": "Specify the style of the toolbar popup."
+    },
+    "widthLabel": {
+        "message": "Width"
+    },
+    "heightLabel": {
+        "message": "Height"
     },
     "importLabel": {
         "message": "Munkamenetek importálása"
