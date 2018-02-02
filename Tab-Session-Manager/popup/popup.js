@@ -34,6 +34,8 @@ let S = new settingsObj();
 
 S.init().then(function () {
     S.labelSet();
+    document.body.style.width = S.get().popupWidth + "px";
+    document.body.style.height = S.get().popupHeight + "px";
     if (S.get().filter != undefined) document.getElementById('filter').value = S.get().filter;
     if (S.get().sort != undefined) document.getElementById('sort').value = S.get().sort;
 });
