@@ -119,13 +119,18 @@ function checkImportFile(file) {
 
 function parseSession(file) {
     for (let session of file) {
-        //ver1.9.2以前のセッションにUUIDを追加
-        if (!session['id']) {
-            session['id'] = UUID.generate();
-        }
         //ver1.9.2以前のセッションのタグを配列に変更
         if (!Array.isArray(session.tag)) {
             session.tag = session.tag.split(' ');
+        }
+
+        //ver1.9.2以前のセッションにUUIDを追加 タグからauto, userを削除
+        if (!session['id']) {
+            session['id'] = UUID.generate();
+
+            session.tag = session.tag.filter((element) => {
+                return !(element == 'user' || element == 'auto');
+            });
         }
     }
     return file;
@@ -139,7 +144,7 @@ function parseOldSession(file) {
     session.tabsNumber = 0;
     session.name = line[1].substr(5);
     session.date = moment(parseInt(line[2].substr(10))).toISOString();
-    session.tag = ['user'];
+    session.tag = [];
     session.sessionStartTime = parseInt(line[2].substr(10));
     session.id = UUID.generate();
 

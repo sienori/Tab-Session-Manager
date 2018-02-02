@@ -25,7 +25,7 @@ function startAutoSave() {
     autoSaveTimer = setInterval(async function () {
         let name = browser.i18n.getMessage("regularSaveSessionName");
         if (S.get().useTabTitleforAutoSave) name = await getCurrentTabName();
-        const tag = ['auto', 'regular'];
+        const tag = ['regular'];
         const property = "default";
         saveSession(name, tag, property).then(() => {
             removeOverLimit("regular");
@@ -60,7 +60,7 @@ function autoSaveWhenClose() {
         if (!IsOpeningSession && !IsSavingSession && (S.get().ifAutoSaveWhenClose || S.get().ifOpenLastSessionWhenStartUp)) {
             let name = browser.i18n.getMessage("winCloseSessionName");
             if (S.get().useTabTitleforAutoSave) name = await getCurrentTabName();
-            const tag = ['auto', 'winClose', 'temp'];
+            const tag = ['winClose', 'temp'];
             const property = "default";
             saveSession(name, tag, property).then(function () {
                 removeOverLimit("winClose");

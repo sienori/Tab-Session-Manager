@@ -17,8 +17,8 @@ var sessionStartTime = Date.now();
 
 //起動時の設定
 initSettings().then(function () {
-    updateSessionId();
     updateTags();
+    updateSessionId();
     updateAutoName();
     setStorage();
     setAutoSave();
@@ -67,15 +67,6 @@ function updateAutoName() {
     }
 }
 
-//ver1.9.2以前のセッションにUUIDを追加
-function updateSessionId() {
-    for (let i of sessions) {
-        if (!i['id']) {
-            i['id'] = UUID.generate();
-        }
-    }
-}
-
 //ver1.9.2以前のセッションのタグを配列に変更
 function updateTags() {
     for (let i of sessions) {
@@ -85,12 +76,25 @@ function updateTags() {
     }
 }
 
+//ver1.9.2以前のセッションにUUIDを追加 タグからauto,userを削除
+function updateSessionId() {
+    for (let i of sessions) {
+        if (!i['id']) {
+            i['id'] = UUID.generate();
+
+            i.tag = i.tag.filter((element) => {
+                return !(element == 'user' || element == 'auto');
+            });
+        }
+    }
+}
+
 browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     switch (request.message) {
         case "save":
             const name = request.name;
             const property = request.property;
-            saveSession(name, ["user"], property).catch(() => {});
+            saveSession(name, [], property).catch(() => {});
             break;
         case "open":
             openSession(sessions[request.number], request.property);
