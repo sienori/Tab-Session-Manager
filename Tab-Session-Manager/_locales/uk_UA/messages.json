@@ -47,6 +47,12 @@
     "cancelLabel": {
         "message": "Відміна"
     },
+    "addTagLabel": {
+        "message": "Add tag"
+    },
+    "removeTagLabel": {
+        "message": "Remove tag"
+    },
     "windowLabel": {
         "message": "Вікно"
     },
@@ -136,6 +142,12 @@
     },
     "autoSaveWhenCloseCaptionLabel": {
         "message": "Максимальна кількість сесій збережених таким чином."
+    },
+    "useTabTitleforAutoSaveLabel": {
+        "message": "Use page title for auto save session name"
+    },
+    "useTabTitleforAutoSaveCaptionLabel": {
+        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
     "dateFormatLabel": {
         "message": "Формат дати"
