@@ -36,6 +36,13 @@ S.init().then(function () {
     S.labelSet();
     document.body.style.width = S.get().popupWidth + "px";
     document.body.style.height = S.get().popupHeight + "px";
+
+    //セッション名の省略
+    if (S.get().truncateTitle) {
+        const stylesheet = document.styleSheets.item(0);
+        stylesheet.insertRule(".sessionName span { white-space:nowrap; }", stylesheet.cssRules.length);
+    }
+
     if (S.get().filter != undefined) document.getElementById('filter').value = S.get().filter;
     if (S.get().sort != undefined) document.getElementById('sort').value = S.get().sort;
 });
@@ -314,7 +321,9 @@ function sessionsHTML(i, info) {
                         <input class=renameSend type="button">
                     </div>
                 </div>
-                <div class="sessionName">${sanitaize.encode(info.sessionName)}</div>
+                <div class="sessionName">
+                    <span>${sanitaize.encode(info.sessionName)}</span>
+                </div>
             </div>
             <div class=menuContainer>
                 <div class=menuIcon>

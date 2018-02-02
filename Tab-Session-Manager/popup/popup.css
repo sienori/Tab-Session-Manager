@@ -216,17 +216,26 @@ option {
 .nameContainer {
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .sessionName {
     min-height: 20px;
-    word-break: break-all;
+    width: 100%;
+}
+
+.sessionName span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
 }
 
 /* menu */
 
 .menuContainer {
     position: relative;
+    flex-shrink: 0;
 }
 
 .menuIcon {

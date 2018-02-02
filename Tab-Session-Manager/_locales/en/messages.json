@@ -186,6 +186,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
     },
+    "truncateTitleLabel": {
+        "message": "Display session name within one line"
+    },
+    "truncateTitleCaptionLabel": {
+        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    },
     "toolBarPopupLabel": {
         "message": "Toolbar popup"
     },
