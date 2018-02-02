@@ -47,6 +47,12 @@
     "cancelLabel": {
         "message": "Cancelar"
     },
+    "addTagLabel": {
+        "message": "Add tag"
+    },
+    "removeTagLabel": {
+        "message": "Remove tag"
+    },
     "windowLabel": {
         "message": "Ventana"
     },
@@ -136,6 +142,12 @@
     },
     "autoSaveWhenCloseCaptionLabel": {
         "message": "Número máximo de sesiones guardadas de esta forma."
+    },
+    "useTabTitleforAutoSaveLabel": {
+        "message": "Use page title for auto save session name"
+    },
+    "useTabTitleforAutoSaveCaptionLabel": {
+        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
     "dateFormatLabel": {
         "message": "Formato de fecha"
