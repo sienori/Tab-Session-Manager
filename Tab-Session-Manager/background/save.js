@@ -134,7 +134,9 @@ function showSessionWhenWindowClose(session) {
 
             //保存が必要ならクラスからtempを削除し表示する
             if (showFlag) {
-                sessions[i].tag = ['auto', 'winClose'];
+                sessions[i].tag = sessions[i].tag.filter((element) => {
+                    return !(element == 'temp');
+                });;
                 break;
             }
             //不要ならtempの項目を更新

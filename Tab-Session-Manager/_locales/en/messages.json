@@ -49,6 +49,12 @@
     "cancelLabel": {
         "message": "Cancel"
     },
+    "addTagLabel": {
+        "message": "Add tag"
+    },
+    "removeTagLabel": {
+        "message": "Remove tag"
+    },
     "windowLabel": {
         "message": "Window"
     },

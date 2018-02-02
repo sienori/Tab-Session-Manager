@@ -4,7 +4,7 @@
 
 const Labels = {};
 const setLabels = async() => {
-    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel'];
+    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel'];
 
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
@@ -175,11 +175,44 @@ function sortChange() {
     }
 }
 
+const sanitaize = {
+    encode: (str) => {
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    },
+    decode: (str) => {
+        return str.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, '\'').replace(/&amp;/g, '&');
+    }
+};
 
 function sessionsHTML(i, info) {
     const detail = `${info.windowsNumber} ${(info.windowsNumber==1)?Labels.windowLabel:Labels.windowsLabel} - ${info.tabsNumber} ${(info.tabsNumber==1)?Labels.tabLabel:Labels.tabsLabel}`;
 
-    return `<div id=${String(i)} class="session" data-tag="${info.tag}">
+    const dataTag = `'["${info.tag.map(sanitaize.encode).join('","')}"]'`;
+
+    let tags = '';
+    for (let tag of info.tag) {
+        let tagText = tag;
+        switch (tag) {
+            case 'user':
+            case 'auto':
+                continue;
+                break;
+            case 'winClose':
+                tagText = Labels.winCloseSessionName;
+                break;
+            case 'regular':
+                tagText = Labels.regularSaveSessionName;
+                break;
+        }
+        tags += `<div class=tag data-tag='${sanitaize.encode(tag)}'>
+                    <span>${sanitaize.encode(tagText)}</span>
+                    <div class=removeTagButton title="${Labels.removeTagLabel}">
+                        <svg><use xlink:href="#plusSvg"></use></svg>
+                    </div>
+                </div>`
+    }
+
+    return `<div id=${String(i)} class="session" data-tag=${dataTag} data-id="${info.id}">
         <div class=topContainer>
             <div class=nameContainer>
                 <div class="renameButton"></div>
@@ -210,7 +243,23 @@ function sessionsHTML(i, info) {
             </div>
         </div>
         <div class=dateContainer>
-            <span class="sessionDate">${info.sessionDate}</span>
+            <div class=tagsContainer>
+                <div class="tag addTagButton" title="${Labels.addTagLabel}">
+                    <svg>
+                        <use xlink:href="#plusSvg"></use>
+                    </svg>
+                    <div class="addTagContainer">
+                        <input class=addTagInput type=text placeholder="${Labels.addTagLabel}">
+                        <div class=addTagSend>
+                            <svg>
+                                <use xlink:href="#checkSvg"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                ${tags}
+            </div>
+            <span class="sessionDate">${sanitaize.encode(info.sessionDate)}</span>
         </div>
         <div class=buttonContainer>
             <span class="detail">${detail}</span>
@@ -240,7 +289,7 @@ function showSessions() {
         const info = {
             sessionName: sessions[i].name,
             sessionDate: date.format(S.get().dateFormat),
-            tag: sessions[i].tag.join(' '),
+            tag: sessions[i].tag,
             tabsNumber: sessions[i].tabsNumber,
             windowsNumber: Object.keys(sessions[i].windows).length,
             id: sessions[i].id
@@ -357,6 +406,48 @@ function renameSend(e) {
 
 }
 
+function showAddTagArea(e) {
+    const sessionNo = getParentSessionNo(e.target);
+    const tagsContainer = document.getElementById(sessionNo).getElementsByClassName('tagsContainer')[0];
+    const addTagButton = document.getElementById(sessionNo).getElementsByClassName('addTagButton')[0];
+    const addTagInput = document.getElementById(sessionNo).getElementsByClassName('addTagInput')[0];
+
+    if (addTagButton.classList.contains('showInput')) {
+        addTagButton.classList.remove('showInput');
+    } else {
+        addTagButton.classList.add('showInput');
+        setTimeout(() => {
+            addTagInput.focus();
+        }, 200);
+    }
+}
+
+function addTagSend(e) {
+    const sessionId = getParentSessionId(e.target);
+    const sessionNo = getParentSessionNo(e.target);
+    const tagInput = document.getElementById(sessionNo).getElementsByClassName('addTagInput')[0];
+
+    showAddTagArea(e);
+    browser.runtime.sendMessage({
+        message: "addTag",
+        id: sessionId,
+        tag: tagInput.value
+    });
+
+    tagInput.value = '';
+}
+
+function removeTagSend(e) {
+    const sessionId = getParentSessionId(e.target);
+    const tag = e.target.parentElement.dataset.tag;
+
+    browser.runtime.sendMessage({
+        message: "removeTag",
+        id: sessionId,
+        tag: tag
+    });
+}
+
 let firstClick = true;
 
 function clickSaveInput() {
@@ -401,7 +492,6 @@ function showPopupMenu(e) {
 
 function showSaveOptionPopup(e) {
     const popupMenu = document.getElementById("saveArea").getElementsByClassName("popupMenu")[0];
-    //const popupMenu = document.getElementsByClassName("popupMenuContainer")[0].getElementsByClassName("popupMenu")[0];
 
     if (popupMenu.classList.contains("hidden")) {
         popupMenu.classList.remove("hidden");
@@ -440,6 +530,16 @@ function getParentSessionNo(element) {
         if (element.id != "") {
             let sessionNo = element.id;
             return sessionNo;
+        }
+    }
+}
+
+function getParentSessionId(element) {
+    while (true) {
+        element = element.parentElement;
+        if (element.id != "") {
+            let sessionId = element.dataset.id;
+            return sessionId;
         }
     }
 }
@@ -504,7 +604,14 @@ window.document.addEventListener('click', function (e) {
                 url: `../options/options.html#sessions?action=export&id=${sessions[sessionNo].id}`
             });
             break;
+        case "addTagSend":
+            addTagSend(e);
+            break;
+        case "removeTagButton":
+            removeTagSend(e);
+            break;
     }
+    if (e.target.classList.contains('addTagButton')) showAddTagArea(e);
 })
 
 window.document.addEventListener('keypress', (e) => {
@@ -513,6 +620,8 @@ window.document.addEventListener('keypress', (e) => {
             save();
         } else if (e.target.className == 'renameInput') {
             renameSend(e);
+        } else if (e.target.className == 'addTagInput') {
+            addTagSend(e);
         }
     }
 })

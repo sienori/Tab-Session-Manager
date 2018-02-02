@@ -114,8 +114,21 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         case "getSessions":
             getSessions(request, sender, sendResponse);
             break;
+        case "addTag":
+            addTag(request.id, request.tag);
+            break;
+        case "removeTag":
+            removeTag(request.id, request.tag);
+            break;
     }
 });
+
+function getSessionNo(id) {
+    const sessionNo = sessions.findIndex((element) => {
+        return element.id == id
+    });
+    return sessionNo
+}
 
 function getSessions(request, sender, sendResponse) {
     let returnSessions;

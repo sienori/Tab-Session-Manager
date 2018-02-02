@@ -299,12 +299,208 @@ option {
 
 /* date */
 
+.dateContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .sessionDate {
+    flex-shrink: 0;
     color: var(--sub-text);
     overflow: hidden;
     word-break: break-all;
     display: inline-block;
 }
+
+
+/* tags */
+
+.tagsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    transition: height 200ms;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 30px;
+    font-size: 11px;
+    height: 13px;
+    color: var(--sub-text);
+    background-color: var(--line);
+    border-radius: 2px;
+    padding: 3px 5px;
+    margin-top: 2px;
+    margin-right: 2px;
+    overflow: hidden;
+    transition: all 200ms;
+}
+
+.tag span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    transition: all 200ms;
+}
+
+.tag:hover span {
+    width: calc(100% - 15px);
+}
+
+.removeTagButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: var(--line) 1px solid;
+    height: 15px;
+    width: 15px;
+    margin-right: -15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.removeTagButton svg {
+    height: 9px;
+    width: 9px;
+    transform: rotate(45deg);
+    fill: var(--sub-text);
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+.tag:hover .removeTagButton svg {
+    opacity: 1;
+}
+
+.tag:hover .removeTagButton {
+    width: 15px;
+    margin-right: 0px;
+    margin-left: -15px;
+    opacity: 1;
+}
+
+.removeTagButton:hover {
+    border: var(--confirm) 1px solid;
+    border-radius: 2px;
+}
+
+.removeTagButton:hover svg {
+    fill: var(--confirm);
+    margin: 0px;
+}
+
+.addTagButton {
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0px;
+    height: 19px;
+    width: 19px;
+    min-width: 0px;
+    background-color: var(--main-bg);
+    border: var(--button) 1px solid;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.addTagButton > svg {
+    height: 9px;
+    width: 17px;
+    flex-shrink: 0;
+    fill: var(--sub-text);
+    transition: all 200ms;
+}
+
+.addTagButton:hover {
+    border-color: var(--highlight);
+    color: var(--highlight);
+}
+
+.addTagButton:hover > svg {
+    fill: var(--highlight);
+}
+
+.addTagButton.showInput {
+    background-color: var(--main-bg);
+    border-color: var(--highlight);
+    width: 100%;
+}
+
+.addTagButton.showInput > svg {
+    transform: rotate(45deg);
+}
+
+.addTagContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 1;
+    width: 0px;
+    opacity: 0;
+    transition: width 0ms ease 200ms, opacity 200ms;
+}
+
+.showInput .addTagContainer {
+    width: 100%;
+    opacity: 1;
+    transition: width 0ms, opacity 200ms;
+}
+
+.addTagInput {
+    flex-grow: 1;
+    width: 100%;
+    height: 19px;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 0px;
+    padding-left: 3px;
+    margin: 0px;
+    border: none;
+    border-left: 1px var(--highlight) solid;
+    opacity: 1;
+    background-color: var(--main-bg);
+    vertical-align: middle;
+    -moz-user-select: text;
+}
+
+.addTagSend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--main-bg);
+    border-left: 1px var(--highlight) solid;
+    overflow: visible;
+    height: 19px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.addTagSend svg {
+    width: 12px;
+    height: 12px;
+    padding-top: 1px;
+    fill: var(--sub-text);
+    transition: all 200ms;
+}
+
+.addTagSend:hover svg {
+    fill: var(--highlight);
+}
+
 
 /* button*/
 
