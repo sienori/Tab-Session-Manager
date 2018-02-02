@@ -312,7 +312,7 @@ function sessionsHTML(i, info) {
                         <input class=renameSend type="button">
                     </div>
                 </div>
-                <div class="sessionName">${info.sessionName}</div>
+                <div class="sessionName">${sanitaize.encode(info.sessionName)}</div>
             </div>
             <div class=menuContainer>
                 <div class=menuIcon>
