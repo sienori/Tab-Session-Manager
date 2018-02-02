@@ -48,10 +48,10 @@
         "message": "取消"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "新增標籤"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "移除標籤"
     },
     "windowLabel": {
         "message": "視窗"
@@ -144,10 +144,10 @@
         "message": "使用這個方法儲存的瀏覽階段數量。"
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "使用頁面標題幫自動儲存的瀏覽階段命名"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "當自動儲存瀏覽階段之時，使用開啟頁面的標題作為瀏覽階段的名稱。"
     },
     "dateFormatLabel": {
         "message": "日期格式"
