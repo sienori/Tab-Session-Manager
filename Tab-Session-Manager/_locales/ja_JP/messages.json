@@ -48,10 +48,10 @@
         "message": "キャンセル"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "タグを追加"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "タグを削除"
     },
     "windowLabel": {
         "message": "ウィンドウ"
@@ -144,10 +144,10 @@
         "message": "この方法で保存できるセッションの上限"
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "自動保存のセッション名にページのタイトルを使用する"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "セッションを自動保存する際，開かれているページのタイトルをセッションの名前として使用します。"
     },
     "dateFormatLabel": {
         "message": "日付のフォーマット"
