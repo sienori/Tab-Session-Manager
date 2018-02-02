@@ -117,6 +117,17 @@ hr {
     border-left: solid 10px var(--line);
 }
 
+.categoryElements {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.categoryTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--sub-text);
+}
+
 .optionContainer {
     display: flex;
     flex-direction: row;

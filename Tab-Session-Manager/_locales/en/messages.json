@@ -102,6 +102,18 @@
     "informationLabel": {
         "message": "Information"
     },
+    "generalLabel": {
+        "message": "General"
+    },
+    "autoSaveLabel": {
+        "message": "Auto save"
+    },
+    "startUpLabel": {
+        "message": "Startup"
+    },
+    "styleLabel": {
+        "message": "Style"
+    },
     "ifOpenNewWindowLabel": {
         "message": "Open session in new window"
     },

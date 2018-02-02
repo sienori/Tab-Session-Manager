@@ -41,74 +41,100 @@
             <p class="contentTitle settingsLabel">設定</p>
             <hr>
             <ul>
-                <li>
-                    <div class=optionContainer>
-                        <div class=optionText>
-                            <p class=ifOpenNewWindowLabel>セッションを新しいウィンドウで開く</p>
-                            <p class="caption ifOpenNewWindowCaptionLabel">チェックをオフにすると，セッションは現在のウィンドウを上書きします。</p>
-                        </div>
-                        <div class="optionForm">
-                            <label>
-                            <input type="checkbox" id="ifOpenNewWindow" class=saveByChange checked=true>
-                            <span class=checkbox></span>
-                            </label>
-                        </div>
+                <li class=categoryContainer>
+
+                    <div class=categoryTitle>
+                        <p class=generalLabel>全般</p>
                     </div>
+
+                    <ul class=categoryElements>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifOpenNewWindowLabel>セッションを新しいウィンドウで開く</p>
+                                <p class="caption ifOpenNewWindowCaptionLabel">チェックをオフにすると，セッションは現在のウィンドウを上書きします。</p>
+                            </div>
+                            <div class="optionForm">
+                                <label>
+                                        <input type="checkbox" id="ifOpenNewWindow" class=saveByChange checked=true>
+                                        <span class=checkbox></span>
+                                    </label>
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifLazyLoadingLabel>タブを遅延読み込み</p>
+                                <p class="caption ifLazyLoadingCaptionLabel">推奨 セッションを開いたとき，タブを選択するまでページの内容を読み込みません</p>
+                            </div>
+                            <div class="optionForm">
+                                <label>
+                                        <input type="checkbox" id="ifLazyLoading" class=saveByChange checked=true>
+                                        <span class=checkbox></span>
+                                    </label>
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifSavePrivateWindowLabel>プライベートウィンドウを保存する</p>
+                                <p class="caption ifSavePrivateWindowCaptionLabel">チェックをオフにすると，セッションの保存時にプライベートウィンドウを無視します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                        <input type="checkbox" id="ifSavePrivateWindow" class=saveByChange>
+                                        <span class=checkbox></span>
+                                    </label>
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifSupportTstLabel>ツリー型タブに対応</p>
+                                <p class="caption ifSupportTstCaptionLabel">ツリー型タブのツリーの状態を復元します。<br>fireFox57未満ではオフにしてください。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                        <input type="checkbox" id="ifSupportTst" class=saveByChange>
+                                        <span class=checkbox></span>
+                                    </label>
+                            </div>
+                        </li>
+
+                    </ul>
                 </li>
 
                 <hr>
 
-                <li>
-                    <div class=optionContainer>
-                        <div class=optionText>
-                            <p class=ifLazyLoadingLabel>タブを遅延読み込み</p>
-                            <p class="caption ifLazyLoadingCaptionLabel">推奨 セッションを開いたとき，タブを選択するまでページの内容を読み込みません</p>
-                        </div>
-                        <div class="optionForm">
-                            <label>
-                                <input type="checkbox" id="ifLazyLoading" class=saveByChange checked=true>
-                            <span class=checkbox></span>
-                            </label>
-                        </div>
-                    </div>
-                </li>
+                <li class=categoryContainer>
 
-                <hr>
-
-                <li>
-                    <div class=optionContainer>
-                        <div class=optionText>
-                            <p class=ifOpenLastSessionWhenStartUpLabel>起動時に前回のセッションを復元</p>
-                            <p class="caption ifOpenLastSessionWhenStartUpCaptionLabel">Firefox起動時に前回終了時のセッションを開きます。</p>
-                        </div>
-                        <div class="optionForm">
-                            <label>
-                                <input type="checkbox" id="ifOpenLastSessionWhenStartUp" class=saveByChange>
-                                <span class=checkbox></span>
-                            </label>
-                        </div>
-                    </div>
-                </li>
-
-                <hr>
-
-                <li>
-                    <div class=optionContainer>
-                        <div class=optionText>
-                            <p class=ifAutoSaveLabel>定期的にセッションを保存する</p>
-                            <p class="caption ifAutoSaveCaptionLabel">設定した時間ごとにセッションを保存します。</p>
-                        </div>
-                        <div class=optionForm>
-                            <label>
-                            <input type="checkbox" id="ifAutoSave" class=saveByChange checked=true>
-                            <span class=checkbox></span>
-                            </label>
-                        </div>
+                    <div class=categoryTitle>
+                        <p class=autoSaveLabel>自動保存</p>
                     </div>
 
-                    <ul class=childElement>
-                        <li>
-                            <div class=optionContainer>
+                    <ul class=categoryElements>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifAutoSaveLabel>定期的にセッションを保存する</p>
+                                <p class="caption ifAutoSaveCaptionLabel">設定した時間ごとにセッションを保存します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                        <input type="checkbox" id="ifAutoSave" class=saveByChange checked=true>
+                                        <span class=checkbox></span>
+                                    </label>
+                            </div>
+                        </li>
+
+                        <ul class=childElement>
+                            <li class=optionContainer>
                                 <div class=optionText>
                                     <p class="autoSaveIntervalLabel">保存間隔(分)</p>
                                     <p class="caption autoSaveIntervalCaptionLabel">最小値 0.1</p>
@@ -116,10 +142,8 @@
                                 <div class=optionForm>
                                     <input id="autoSaveInterval" class=saveByChange type="number" value="15" min="0.1" step="0.1">
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class=optionContainer>
+                            </li>
+                            <li class=optionContainer>
                                 <div class=optionText>
                                     <p id="autoSaveLimitLabel">上限保存数</p>
                                     <p class="caption autoSaveLimitCaptionLabel">この方法で保存できる最大数</p>
@@ -127,30 +151,26 @@
                                 <div class=optionForm>
                                     <input id="autoSaveLimit" class=saveByChange type="number" value="10" min="1">
                                 </div>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifAutoSaveWhenCloseLabel>ウィンドウを閉じたときにセッションを保存する</p>
+                                <p class="caption ifAutoSaveWhenCloseCaptionLabel">ウィンドウを閉じたときやfirefoxの終了時にセッションを自動保存します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                        <input type="checkbox" id="ifAutoSaveWhenClose" class=saveByChange checked=true>
+                                        <span class=checkbox></span>
+                                    </label>
                             </div>
                         </li>
-                    </ul>
-                </li>
 
-                <hr>
-
-                <li>
-                    <div class=optionContainer>
-                        <div class=optionText>
-                            <p class=ifAutoSaveWhenCloseLabel>ウィンドウを閉じたときにセッションを保存する</p>
-                            <p class="caption ifAutoSaveWhenCloseCaptionLabel">ウィンドウを閉じたときやfirefoxの終了時にセッションを自動保存します。</p>
-                        </div>
-                        <div class=optionForm>
-                            <label>
-                            <input type="checkbox" id="ifAutoSaveWhenClose" class=saveByChange checked=true>
-                            <span class=checkbox></span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <ul class=childElement>
-                        <li>
-                            <div class=optionContainer>
+                        <ul class=childElement>
+                            <li class=optionContainer>
                                 <div class=optionText>
                                     <span id="autoSaveWhenCloseLimitLabel">上限保存数</span>
                                     <p class="caption autoSaveWhenCloseCaptionLabel">この方法で保存できるセッションの上限</p>
@@ -158,75 +178,73 @@
                                 <div class=optionForm>
                                     <input id="autoSaveWhenCloseLimit" class=saveByChange type="number" value="10" min="1">
                                 </div>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <li class="optionContainer new">
+                            <div class=optionText>
+                                <p class=useTabTitleforAutoSaveLabel>自動保存のセッション名にページのタイトルを使用する</p>
+                                <p class="caption useTabTitleforAutoSaveCaptionLabel">セッションを自動保存する際，開かれているページのタイトルをセッションの名前として使用します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                        <input type="checkbox" id="useTabTitleforAutoSave" class=saveByChange checked=true>
+                                        <span class=checkbox></span>
+                                    </label>
                             </div>
                         </li>
+
                     </ul>
                 </li>
 
                 <hr>
 
-                <li>
-                    <div class="optionContainer new">
-                        <div class=optionText>
-                            <p class=useTabTitleforAutoSaveLabel>自動保存のセッション名にページのタイトルを使用する</p>
-                            <p class="caption useTabTitleforAutoSaveCaptionLabel">セッションを自動保存する際，開かれているページのタイトルをセッションの名前として使用します。</p>
-                        </div>
-                        <div class=optionForm>
-                            <label>
-                                <input type="checkbox" id="useTabTitleforAutoSave" class=saveByChange checked=true>
-                                <span class=checkbox></span>
-                            </label>
-                        </div>
+                <li class=categoryContainer>
+
+                    <div class=categoryTitle>
+                        <p class=startUpLabel>起動時</p>
                     </div>
+
+                    <ul class=categoryElements>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifOpenLastSessionWhenStartUpLabel>起動時に前回のセッションを復元</p>
+                                <p class="caption ifOpenLastSessionWhenStartUpCaptionLabel">Firefox起動時に前回終了時のセッションを開きます。</p>
+                            </div>
+                            <div class="optionForm">
+                                <label>
+                                            <input type="checkbox" id="ifOpenLastSessionWhenStartUp" class=saveByChange>
+                                            <span class=checkbox></span>
+                                        </label>
+                            </div>
+                        </li>
+
+                    </ul>
                 </li>
 
                 <hr>
 
-                <li>
-                    <div class=optionContainer>
-                        <div class=optionText>
-                            <p class=dateFormatLabel>日付のフォーマット</p>
-                            <p class="caption dateFormatCaptionLabel">例 YYYY.MM.DD HH:mm:ss</p>
-                        </div>
-                        <div class=optionForm>
-                            <input id="dateFormat" class=saveByChange type="text" value="YYYY.MM.DD HH:mm:ss">
-                        </div>
+                <li class=categoryContainer>
+
+                    <div class=categoryTitle>
+                        <p class=styleLabel>スタイル</p>
                     </div>
-                </li>
 
-                <hr>
+                    <ul class=categoryElements>
 
-                <li>
-                    <div class=optionContainer>
-                        <div class=optionText>
-                            <p class=ifSavePrivateWindowLabel>プライベートウィンドウを保存する</p>
-                            <p class="caption ifSavePrivateWindowCaptionLabel">チェックをオフにすると，セッションの保存時にプライベートウィンドウを無視します。</p>
-                        </div>
-                        <div class=optionForm>
-                            <label>
-                                <input type="checkbox" id="ifSavePrivateWindow" class=saveByChange>
-                            <span class=checkbox></span>
-                            </label>
-                        </div>
-                    </div>
-                </li>
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=dateFormatLabel>日付のフォーマット</p>
+                                <p class="caption dateFormatCaptionLabel">例 YYYY.MM.DD HH:mm:ss</p>
+                            </div>
+                            <div class=optionForm>
+                                <input id="dateFormat" class=saveByChange type="text" value="YYYY.MM.DD HH:mm:ss">
+                            </div>
+                        </li>
 
-                <hr>
-
-                <li>
-                    <div class=optionContainer>
-                        <div class=optionText>
-                            <p class=ifSupportTstLabel>ツリー型タブに対応</p>
-                            <p class="caption ifSupportTstCaptionLabel">ツリー型タブのツリーの状態を復元します。<br>fireFox57未満ではオフにしてください。</p>
-                        </div>
-                        <div class=optionForm>
-                            <label>
-                            <input type="checkbox" id="ifSupportTst" class=saveByChange>
-                            <span class=checkbox></span>
-                            </label>
-                        </div>
-                    </div>
-                </li>
 
             </ul>
         </div>
