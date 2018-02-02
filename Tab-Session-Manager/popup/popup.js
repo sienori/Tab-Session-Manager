@@ -78,40 +78,130 @@ function changeSessions(changes, areaName) {
     }
 }
 
+function getAllTags() {
+    const sessions = document.getElementsByClassName('session');
+    let count = {
+        all: 0,
+        user: 0,
+        auto: 0,
+        regular: 0,
+        winClose: 0,
+        tags: []
+    };
+
+    let tagsCount = {};
+    for (let session of sessions) {
+        let tags = session.dataset.tag.slice(2, -2);
+        tags = tags.split('","');
+
+        count.all++;
+        if (tags.includes('regular')) {
+            count.auto++;
+            count.regular++;
+        } else if (tags.includes('winClose')) {
+            count.auto++;
+            count.winClose++;
+        } else {
+            count.user++;
+        }
+
+        for (let tag of tags) {
+            if (tag == 'regular' || tag == 'winClose' || tag == '') continue;
+            if (tag == 'temp') {
+                count.all--;
+                count.auto--;
+                count.winClose--;
+                continue;
+            }
+
+            tagsCount[tag] = tagsCount[tag] || 0;
+            tagsCount[tag]++;
+        }
+    }
+
+    for (let tag in tagsCount) {
+        count.tags.push({
+            name: tag,
+            count: tagsCount[tag]
+        })
+    }
+
+    const alphabeticallySort = (a, b) => {
+        if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+        else if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+    }
+
+    count.tags.sort(alphabeticallySort);
+
+    return count;
+}
+
+function updateFilterItems() {
+    const filter = document.getElementById('filter');
+    const count = getAllTags();
+
+    let options = '';
+    options += `
+        <option value="displayAll">${Labels.displayAllLabel} [${count.all}]</option>
+        <option value="auto">${Labels.displayAutoLabel} [${count.auto}]</option>
+        <option value="winClose">${Labels.winCloseSessionName} [${count.winClose}]</option>
+        <option value="regular">${Labels.regularSaveSessionName} [${count.regular}]</option>
+        <option value="user">${Labels.displayUserLabel} [${count.user}]</option>`;
+
+    for (let tag of count.tags) {
+        options += `<option value="${sanitaize.encode(tag.name)}">${sanitaize.encode(tag.name)} [${tag.count}]</option>`;
+    }
+
+    filter.innerHTML = options;
+    filter.value = S.get().filter;
+}
+
 window.document.getElementById("filter").addEventListener("change", filterChange);
 
 function filterChange() {
-    const sessionsArea = window.document.getElementById("sessionsArea");
-    let filter = window.document.getElementById("filter").value;
+    const filter = window.document.getElementById("filter").value;
+
     if (S.get().filter != filter) {
         S.save({
             'filter': filter
         });
+        const sessionsArea = window.document.getElementById("sessionsArea");
         sessionsArea.scrollTo(0, 0);
     }
-    let sessionItems = document.getElementsByClassName("session");
-    let noSessionLabel = document.getElementsByClassName('noSessionLabel')[0];
+
     let showSessionsCount = 0;
+    const sessionItems = document.getElementsByClassName("session");
+
     for (let item of sessionItems) {
-        let tags = item.dataset.tag.split(' ');
+        const tags = item.dataset.tag.slice(2, -2).split('","');
 
-        if (tags.includes('temp')) {
-            item.classList.add('hidden');
-            continue;
+        let isShow = false;
+        switch (filter) {
+            case 'displayAll':
+                isShow = true;
+                break;
+            case 'user':
+                isShow = (!tags.includes('regular') && !tags.includes('winClose'));
+                break;
+            case 'auto':
+                isShow = (tags.includes('regular') || tags.includes('winClose'));
+                break;
+            default:
+                isShow = (tags.includes(filter));
+                break;
         }
+        if (tags.includes('temp')) isShow = false;
 
-        if (tags.includes(filter) || filter == "displayAll") {
+        if (isShow) {
             item.classList.remove('hidden');
             showSessionsCount++;
         } else {
             item.classList.add('hidden');
         }
     }
-    if (showSessionsCount == 0) {
-        noSessionLabel.classList.remove('hidden');
-    } else {
-        noSessionLabel.classList.add('hidden');
-    }
+    const noSessionLabel = document.getElementsByClassName('noSessionLabel')[0];
+    if (showSessionsCount == 0) noSessionLabel.classList.remove('hidden');
+    else noSessionLabel.classList.add('hidden');
 }
 
 window.document.getElementById("sort").addEventListener("change", sortChange);
@@ -296,6 +386,7 @@ function showSessions() {
         }
         sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(i, info));
     }
+    updateFilterItems();
     filterChange();
     sortChange();
 }
