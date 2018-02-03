@@ -11,6 +11,9 @@
     "initialNameValue": {
         "message": "Salva sessione corrente"
     },
+    "saveOnlyCurrentWindowLabel": {
+        "message": "Salva solo la finestra corrente"
+    },
     "displayAllLabel": {
         "message": "Tutto"
     },
@@ -44,6 +47,12 @@
     "cancelLabel": {
         "message": "Annulla"
     },
+    "addTagLabel": {
+        "message": "Add tag"
+    },
+    "removeTagLabel": {
+        "message": "Remove tag"
+    },
     "windowLabel": {
         "message": "Finestra"
     },
@@ -60,16 +69,16 @@
         "message": "Non è presente alcuna sessione"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Rinomina"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Apri in una nuova finestra"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Apri nella finestra corrente"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Aggiungi alla finestra corrente"
     },
     "winCloseSessionName": {
         "message": "Salvato automaticamente - La finestra è stata chiusa"
@@ -86,6 +95,18 @@
     "informationLabel": {
         "message": "Informazioni"
     },
+    "generalLabel": {
+        "message": "General"
+    },
+    "autoSaveLabel": {
+        "message": "Auto save"
+    },
+    "startUpLabel": {
+        "message": "Startup"
+    },
+    "styleLabel": {
+        "message": "Style"
+    },
     "ifOpenNewWindowLabel": {
         "message": "Apri sessione in una nuova finestra"
     },
@@ -99,10 +120,10 @@
         "message": "Quando viene aperta una sessione, il contenuto di ogni pagina non viene caricato finché selezioni la scheda.<br>Se disattivato, l'utilizzo della memoria aumenta notevolmente quando la sessione viene ripristinata."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Ripristina la sessione precedente all'avvio"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "All'avvio di Firefox, ripristina la sessione che era stata chiusa l'ultima volta."
     },
     "ifAutoSaveLabel": {
         "message": "Salva la sessione regolarmente"
@@ -134,6 +155,12 @@
     "autoSaveWhenCloseCaptionLabel": {
         "message": "Numero massimo di sessioni salvate (in questa modalità)."
     },
+    "useTabTitleforAutoSaveLabel": {
+        "message": "Use page title for auto save session name"
+    },
+    "useTabTitleforAutoSaveCaptionLabel": {
+        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    },
     "dateFormatLabel": {
         "message": "Formato data"
     },
@@ -141,16 +168,34 @@
         "message": "Esempio: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Salva finestra anonima"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Se deselezionato, ignora le finestre anonime durante il salvataggio della sessione."
     },
     "ifSupportTstLabel": {
         "message": "Supporta Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Ripristina la struttura ad albero di Tree Style Tab.<br>Disattiva questa funzionalità su versioni precedenti a Firefox 57 (Quantum)."
+    },
+    "truncateTitleLabel": {
+        "message": "Display session name within one line"
+    },
+    "truncateTitleCaptionLabel": {
+        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    },
+    "toolBarPopupLabel": {
+        "message": "Toolbar popup"
+    },
+    "toolBarPopupCaptionLabel": {
+        "message": "Specify the style of the toolbar popup."
+    },
+    "widthLabel": {
+        "message": "Width"
+    },
+    "heightLabel": {
+        "message": "Height"
     },
     "importLabel": {
         "message": "Importa sessioni"
