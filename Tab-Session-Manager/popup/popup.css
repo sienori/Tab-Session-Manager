@@ -174,18 +174,23 @@ option {
 
 .renameArea {
     display: none;
+    width: 100%;
 }
 
 .renameContainer {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .renameInput {
     font-family: inherit;
     font-size: inherit;
+    width: 100%;
     border: var(--button) solid 1px;
+    border-radius: 2px 0px 0px 2px;
     margin-right: -1px;
+    transition: all 200ms;
 }
 
 .renameInput:focus {
@@ -194,21 +199,33 @@ option {
 }
 
 .renameSend {
-    background-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
     background-color: var(--main-bg);
-    background-image: url("/icons/check.png");
-    background-repeat: no-repeat;
-    background-position: center;
     width: 22px;
+    height: 22px;
     border: var(--button) solid 1px;
+    border-radius: 0px 2px 2px 0px;
     cursor: pointer;
-    transition: all 100ms 0s ease;
+    transition: all 200ms;
+}
+
+.renameSend svg {
+    height: 13px;
+    width: 13px;
+    padding-top: 2px;
+    fill: var(--sub-text);
+    transition: all 200ms;
 }
 
 .renameSend:hover {
-    border: rgb(54, 178, 178) solid 1px;
-    background-image: url("/icons/check2.png");
-    transition: all 100ms 0s ease;
+    border: var(--highlight) solid 1px;
+}
+
+.renameSend:hover svg {
+    fill: var(--highlight)
 }
 
 /* name */
@@ -217,6 +234,7 @@ option {
     display: flex;
     align-items: center;
     overflow: hidden;
+    width: 100%;
 }
 
 .sessionName {

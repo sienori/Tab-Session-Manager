@@ -314,11 +314,14 @@ function sessionsHTML(i, info) {
     return `<div id=${String(i)} class="session" data-tag=${dataTag} data-id="${info.id}">
         <div class=topContainer>
             <div class=nameContainer>
-                <div class="renameButton"></div>
                 <div class="renameArea">
                     <div class=renameContainer>
                         <input class="renameInput" type="text">
-                        <input class=renameSend type="button">
+                        <div class=renameSend type="button">
+                            <svg>
+                                <use xlink:href="#checkSvg"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="sessionName">
@@ -472,14 +475,19 @@ function replaseImageUrl(url, sessionNo, win) {
 }
 
 function rename(e) {
-    sessionNo = getParentSessionNo(e.target);
-    sessionName = window.document.getElementById(sessionNo).getElementsByClassName("sessionName")[0];
-    renameArea = window.document.getElementById(sessionNo).getElementsByClassName("renameArea")[0];
+    const sessionNo = getParentSessionNo(e.target);
+    const sessionName = window.document.getElementById(sessionNo).getElementsByClassName("sessionName")[0];
+    const renameArea = window.document.getElementById(sessionNo).getElementsByClassName("renameArea")[0];
 
     renameArea.getElementsByClassName("renameInput")[0].value = sessionName.innerText;
     if (renameArea.style.display == "none" || renameArea.style.display == "") {
         renameArea.style.display = "block";
         sessionName.style.display = "none";
+
+        const renameInput = renameArea.getElementsByClassName('renameInput')[0];
+        renameInput.focus();
+        renameInput.select();
+
     } else {
         renameArea.style.display = "none";
         sessionName.style.display = "block";
