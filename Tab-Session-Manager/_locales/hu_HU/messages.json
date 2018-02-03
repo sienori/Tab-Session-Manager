@@ -189,13 +189,13 @@
         "message": "Toolbar popup"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Eszköztár előugró ablak beállítása."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Szélesség"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Magasság"
     },
     "importLabel": {
         "message": "Munkamenetek importálása"
