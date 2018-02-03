@@ -48,10 +48,10 @@
         "message": "Mégse"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Címke hozzáadása"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Címke eltávolítása"
     },
     "windowLabel": {
         "message": "Ablak"
@@ -96,16 +96,16 @@
         "message": "Információ"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Általános"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Automatikus mentés"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Indulás"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Stílus"
     },
     "ifOpenNewWindowLabel": {
         "message": "Munkamenetek megnyitása új ablakban"
@@ -156,10 +156,10 @@
         "message": "Az ilyen módon elmentett munkamenetek maximális száma."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Oldal cím használata munkamenet automatikus mentésekor"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "Munkamenet automatikus mentésekor, a nyitott oldal címének használata a munkamenet neveként."
     },
     "dateFormatLabel": {
         "message": "Dátum formátum"
@@ -180,13 +180,13 @@
         "message": "Fa struktúrájú fülek visszaállítása.<br>Firefox 57 (Quantum) -nál régebbi verzió esetén ki kell kapcsolni."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Munkamenet nevének egy soros kijelzése"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Munkamenet név méretre vágása a munkamenet listában, ha kilógna a sorából."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Eszköztár előugró ablak"
     },
     "toolBarPopupCaptionLabel": {
         "message": "Eszköztár előugró ablak beállítása."
