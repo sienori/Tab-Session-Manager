@@ -96,16 +96,16 @@
         "message": "情報"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "全般"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "自動保存"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "起動時"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "スタイル"
     },
     "ifOpenNewWindowLabel": {
         "message": "セッションを新しいウィンドウで開く"
@@ -180,13 +180,13 @@
         "message": "ツリー型タブのツリーの状態を復元します。<br>FireFox57 (Quantum) 未満ではオフにしてください。"
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "セッションの名前を1行で表示する"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "セッションリストのセッション名が複数行に渡る場合，1行に切り詰めて表示します。"
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "ツールバーポップアップ"
     },
     "toolBarPopupCaptionLabel": {
         "message": "Specify the style of the toolbar popup."
