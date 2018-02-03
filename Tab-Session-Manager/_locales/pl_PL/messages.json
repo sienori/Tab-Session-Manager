@@ -48,10 +48,10 @@
         "message": "Anuluj"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Dodaj tag"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Usuń tag"
     },
     "windowLabel": {
         "message": "Okno"
@@ -96,16 +96,16 @@
         "message": "Informacje"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Główne"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Automatyczne zapisywanie"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Uruchamianie"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Styl"
     },
     "ifOpenNewWindowLabel": {
         "message": "Odtwórz sesję w nowym oknie"
@@ -156,10 +156,10 @@
         "message": "Maksymalna liczba zapisanych sesji (w ten sposób)."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Użyj tytułu strony dla nazwy sesji automatycznego zapisywania"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "Kiedy zapisujesz sesję automatycznie, użyj tytułu otwartej strony jako nazwy sesji."
     },
     "dateFormatLabel": {
         "message": "Format daty"
@@ -180,22 +180,22 @@
         "message": "Przywraca stan kart drzewiastych rozszerzenia Tree Style Tab.<br>Proszę wyłączyć tę opcję dla Firefoksa w wersji starszej niż 57 (Quantum)."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Pokaż nazwę sesji w jednej lini"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Jeśli nazwa sesji liście sesji jest dłuższa niż jedna linia, jest kadłubowy na jednwj lini i pokazany."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Pojawienie się narzędzia paskowego"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Opisz styl pojawienia się narzędzia paskowego."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Szerokość"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Wysokość"
     },
     "importLabel": {
         "message": "Importuj sesje"
