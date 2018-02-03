@@ -192,10 +192,10 @@
         "message": "Specify the style of the toolbar popup."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Breite"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Höhe"
     },
     "importLabel": {
         "message": "Sitzungen importieren"
