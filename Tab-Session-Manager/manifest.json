@@ -20,12 +20,8 @@
     },
 
     "icons": {
-        "512": "icons/512.png",
-        "256": "icons/256.png",
-        "128": "icons/128.png",
-        "64": "icons/64.png",
-        "32": "icons/32.png",
-        "16": "icons/16.png"
+        "16": "icons/icon_min.svg",
+        "64": "icons/icon.svg"
     },
 
     "background": {
@@ -34,12 +30,8 @@
 
     "browser_action": {
         "default_icon": {
-            "512": "icons/512.png",
-            "256": "icons/256.png",
-            "128": "icons/128.png",
-            "64": "icons/64.png",
-            "32": "icons/32.png",
-            "16": "icons/16.png"
+            "16": "icons/icon_min.svg",
+            "64": "icons/icon.svg"
         },
         "default_popup": "popup/popup.html"
     }

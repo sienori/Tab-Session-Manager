@@ -59,6 +59,7 @@ hr {
 .logo {
     height: 64px;
     width: 64px;
+    margin-right: 5px;
 }
 
 .logotitle {

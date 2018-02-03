@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.933333 16.933334">
+  <g id="layer1" transform="translate(0,-280.06664)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       width="12.700001"
+       height="12.699994"
+       x="2.1166668"
+       y="282.18332"
+       ry="1.2111329e-005" />
+    <path
+       style="fill:#36b2b2;fill-opacity:1;stroke-width:1"
+       d="M 0 0 L 0 64 L 64 64 L 64 15 L 64 12 L 52 0 L 0 0 z M 8 8 L 16 8 L 16 24 L 48 24 L 48 8 L 49 8 L 56 15 L 56 56 L 8 56 L 8 8 z M 36 8 L 40 8 L 40 20 L 36 20 L 36 8 z "
+       transform="matrix(0.26458334,0,0,0.26458334,0,280.06664)" />
+  </g>
+</svg>
