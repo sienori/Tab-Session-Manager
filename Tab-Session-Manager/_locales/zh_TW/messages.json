@@ -96,16 +96,16 @@
         "message": "附加元件資訊"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "一般設定"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "自動儲存"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "啟動"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "樣式"
     },
     "ifOpenNewWindowLabel": {
         "message": "於新視窗中開啟瀏覽階段"
@@ -180,22 +180,22 @@
         "message": "還原 Tree Style Tab 的樹狀分頁<br>如果使用的 Firefox 版本低於 57 時，請關閉此功能。"
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "單行顯示瀏覽階段名稱"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "如果瀏覽階段名稱長度超過單行範圍，截斷顯示為單行。"
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "工具列彈出式選單"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "指定工具列彈出式選單的樣式。"
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "寬度"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "高度"
     },
     "importLabel": {
         "message": "匯入瀏覽階段"
