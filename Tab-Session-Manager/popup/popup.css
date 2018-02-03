@@ -334,8 +334,6 @@ option {
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
-    height: 100%;
-    transition: height 200ms;
 }
 
 .tag {
@@ -352,7 +350,7 @@ option {
     margin-top: 2px;
     margin-right: 2px;
     overflow: hidden;
-    transition: all 200ms;
+    transition: all 100ms;
 }
 
 .tag span {
@@ -361,11 +359,12 @@ option {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    transition: all 200ms;
+    transition: all 100ms ease 300ms;
 }
 
 .tag:hover span {
     width: calc(100% - 15px);
+    transition: all 100ms ease 0ms;
 }
 
 .removeTagButton {
@@ -379,7 +378,7 @@ option {
     margin-right: -15px;
     opacity: 0;
     cursor: pointer;
-    transition: all 200ms;
+    transition: all 100ms ease 300ms;
 }
 
 .removeTagButton svg {
@@ -388,11 +387,12 @@ option {
     transform: rotate(45deg);
     fill: var(--sub-text);
     opacity: 0;
-    transition: opacity 200ms;
+    transition: opacity 100ms ease 300ms;
 }
 
 .tag:hover .removeTagButton svg {
     opacity: 1;
+    transition: opacity 100ms ease 0ms;
 }
 
 .tag:hover .removeTagButton {
@@ -400,6 +400,7 @@ option {
     margin-right: 0px;
     margin-left: -15px;
     opacity: 1;
+    transition: all 100ms ease 0ms;
 }
 
 .removeTagButton:hover {
