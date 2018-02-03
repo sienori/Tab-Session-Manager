@@ -52,7 +52,6 @@ function loadCurrentSesssion(name, tag, property) {
                 //プライベートタブを無視
                 if (!S.get().ifSavePrivateWindow) {
                     if (tab.incognito) {
-                        session.tabsNumber--;
                         continue;
                     }
                 }
