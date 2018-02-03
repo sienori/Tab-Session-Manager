@@ -96,10 +96,10 @@
         "message": "Informationen"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Allgemein"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Automatisches Speichern"
     },
     "startUpLabel": {
         "message": "Startup"
