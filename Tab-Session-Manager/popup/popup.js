@@ -11,7 +11,6 @@ const setLabels = async() => {
     }
 
     window.document.getElementById("saveName").placeholder = Labels.initialNameValue;
-    window.document.getElementById("saveName").value = await getCurrentTabName();
     window.document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
     window.document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
     window.document.getElementById("setting").title = Labels.settingsLabel;
@@ -19,20 +18,32 @@ const setLabels = async() => {
 }
 setLabels();
 
-function getCurrentTabName() {
-    return new Promise((resolve, reject) => {
-        browser.tabs.query({
-            active: true,
-            currentWindow: true
-        }).then((tabs) => {
-            resolve(tabs[0].title);
-        })
+async function getCurrentTabName() {
+    let tabs = await browser.tabs.query({
+        active: true,
+        currentWindow: true
     });
+
+    if (!S.get().ifSavePrivateWindow && tabs[0].incognito) {
+        tabs = await browser.tabs.query({
+            active: true,
+        });
+
+        tabs = tabs.filter((element) => {
+            return !element.incognito;
+        });
+
+        const tabTitle = (tabs[0] != undefined) ? tabs[0].title : '';
+        return await tabTitle;
+
+    } else {
+        return await tabs[0].title;
+    }
 }
 
 let S = new settingsObj();
 
-S.init().then(function () {
+S.init().then(async() => {
     S.labelSet();
     document.body.style.width = S.get().popupWidth + "px";
     document.body.style.height = S.get().popupHeight + "px";
@@ -45,6 +56,9 @@ S.init().then(function () {
 
     if (S.get().filter != undefined) document.getElementById('filter').value = S.get().filter;
     if (S.get().sort != undefined) document.getElementById('sort').value = S.get().sort;
+
+    //タブタイトルを表示
+    window.document.getElementById("saveName").value = await getCurrentTabName();
 });
 
 

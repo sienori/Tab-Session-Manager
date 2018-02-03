@@ -105,13 +105,24 @@ function removeOverLimit(tagState) {
     }
 }
 
-function getCurrentTabName() {
-    return new Promise((resolve, reject) => {
-        browser.tabs.query({
-            active: true,
-            currentWindow: true
-        }).then((tabs) => {
-            resolve(tabs[0].title);
-        })
+async function getCurrentTabName() {
+    let tabs = await browser.tabs.query({
+        active: true,
+        currentWindow: true
     });
+
+    if (!S.get().ifSavePrivateWindow && tabs[0].incognito) {
+        tabs = await browser.tabs.query({
+            active: true,
+        });
+        tabs = tabs.filter((element) => {
+            return !element.incognito;
+        });
+
+        const tabTitle = (tabs[0] != undefined) ? tabs[0].title : '';
+        return await tabTitle;
+
+    } else {
+        return await tabs[0].title;
+    }
 }
