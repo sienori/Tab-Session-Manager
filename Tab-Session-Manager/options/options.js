@@ -132,8 +132,6 @@ function parseSession(file) {
                 return !(element == 'user' || element == 'auto');
             });
         }
-
-        session.tag.push(browser.i18n.getMessage('importSaveButtonLabel'));
     }
     return file;
 }
@@ -146,7 +144,7 @@ function parseOldSession(file) {
     session.tabsNumber = 0;
     session.name = line[1].substr(5);
     session.date = moment(parseInt(line[2].substr(10))).toISOString();
-    session.tag = [browser.i18n.getMessage('importSaveButtonLabel')];
+    session.tag = [];
     session.sessionStartTime = parseInt(line[2].substr(10));
     session.id = UUID.generate();
 
