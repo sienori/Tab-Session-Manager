@@ -515,13 +515,42 @@ function showAddTagArea(e) {
     const addTagInput = document.getElementById(sessionNo).getElementsByClassName('addTagInput')[0];
 
     if (addTagButton.classList.contains('showInput')) {
+        tagsContainer.style.height = tagsContainer.clientHeight + "px";
+        tagsContainer.style.height = calcTagsHeight(tagsContainer, true) + "px";
         addTagButton.classList.remove('showInput');
     } else {
+        tagsContainer.style.height = tagsContainer.clientHeight + "px";
+        tagsContainer.style.height = calcTagsHeight(tagsContainer, false) + "px";
         addTagButton.classList.add('showInput');
+
+        //アニメーション中にフォーカスすると一瞬レイアウトが崩れる
         setTimeout(() => {
             addTagInput.focus();
-        }, 200);
+        }, 300);
     }
+}
+
+function calcTagsHeight(tagsContainer, reverse) {
+    const tags = tagsContainer.getElementsByClassName('tag');
+    const width = tagsContainer.offsetWidth;
+    const height = tags[0].offsetHeight + 2; //+margin
+
+    let sumWidth;
+    if (reverse) sumWidth = 0;
+    else sumWidth = width;
+
+    let sumHeight = height;
+
+    for (let tag of tags) {
+        if (tag.classList.contains('addTagButton')) continue;
+        sumWidth += tag.offsetWidth;
+
+        if (sumWidth > width) {
+            sumWidth = tag.offsetWidth;
+            sumHeight += height;
+        }
+    }
+    return sumHeight;
 }
 
 function addTagSend(e) {
