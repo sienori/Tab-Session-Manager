@@ -165,11 +165,11 @@ function updateFilterItems() {
 
     let options = '';
     options += `
-        <option value="displayAll">${Labels.displayAllLabel} [${count.all}]</option>
-        <option value="auto">${Labels.displayAutoLabel} [${count.auto}]</option>
+        <option value="_displayAll">${Labels.displayAllLabel} [${count.all}]</option>
+        <option value="_auto">${Labels.displayAutoLabel} [${count.auto}]</option>
         <option value="winClose">${Labels.winCloseSessionName} [${count.winClose}]</option>
         <option value="regular">${Labels.regularSaveSessionName} [${count.regular}]</option>
-        <option value="user">${Labels.displayUserLabel} [${count.user}]</option>`;
+        <option value="_user">${Labels.displayUserLabel} [${count.user}]</option>`;
 
     for (let tag of count.tags) {
         options += `<option value="${sanitaize.encode(tag.name)}">${sanitaize.encode(tag.name)} [${tag.count}]</option>`;
@@ -200,13 +200,13 @@ function filterChange() {
 
         let isShow = false;
         switch (filter) {
-            case 'displayAll':
+            case '_displayAll':
                 isShow = true;
                 break;
-            case 'user':
+            case '_user':
                 isShow = (!tags.includes('regular') && !tags.includes('winClose'));
                 break;
-            case 'auto':
+            case '_auto':
                 isShow = (tags.includes('regular') || tags.includes('winClose'));
                 break;
             default:
@@ -306,10 +306,6 @@ function sessionsHTML(i, info) {
     for (let tag of info.tag) {
         let tagText = tag;
         switch (tag) {
-            case 'user':
-            case 'auto':
-                continue;
-                break;
             case 'winClose':
                 tagText = Labels.winCloseSessionName;
                 break;

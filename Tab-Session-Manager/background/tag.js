@@ -14,7 +14,7 @@ function addTag(id, tag) {
     const isNotEqual = (value) => {
         return value != tag
     }
-    const reservedTag = ['regular', 'winClose', 'temp', 'displayAll', browser.i18n.getMessage('regularSaveSessionName'), browser.i18n.getMessage('winCloseSessionName')];
+    const reservedTag = ['regular', 'winClose', 'temp', '_displayAll', '_user', '_auto', browser.i18n.getMessage('regularSaveSessionName'), browser.i18n.getMessage('winCloseSessionName')];
     const currentTags = sessions[sessionNo].tag;
     if (!reservedTag.every(isNotEqual)) return;
     if (!currentTags.every(isNotEqual)) return;
