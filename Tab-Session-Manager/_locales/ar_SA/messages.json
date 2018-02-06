@@ -165,7 +165,7 @@
         "message": "صيغة التاريخ"
     },
     "dateFormatCaptionLabel": {
-        "message": "مثال: اليوم.الشهر.السنة ثانية:دقيقة:ساعة"
+        "message": "مثال YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "احفظ النافذة الخاصة"
