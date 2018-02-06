@@ -177,7 +177,7 @@
         "message": "Поддръжка на дървовиден стил за раздели"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Възстановяване на дървовидното състояние. <br>Моля, изключете го на версии по-стари от Firefox 57 (Quantum)."
     },
     "truncateTitleLabel": {
         "message": "Показване името на сесията на един ред"
