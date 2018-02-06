@@ -54,16 +54,16 @@
         "message": "Supprimer une étiquette"
     },
     "windowLabel": {
-        "message": "Fenêtre"
+        "message": "fenêtre"
     },
     "windowsLabel": {
-        "message": "Fenêtres"
+        "message": "fenêtres"
     },
     "tabLabel": {
-        "message": "Onglet"
+        "message": "onglet"
     },
     "tabsLabel": {
-        "message": "Onglets"
+        "message": "onglets"
     },
     "noSessionLabel": {
         "message": "Il n’y a pas de session"
@@ -156,10 +156,10 @@
         "message": "Nombre maximal de sessions enregistrées de cette façon."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Utiliser le titre de la page comme nom pour les sessions enregistrées automatiquement"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "Lorsqu'une session est enregistrée automatiquement, utiliser le titre de la page active comme nom de session."
     },
     "dateFormatLabel": {
         "message": "Format de date"
@@ -180,22 +180,22 @@
         "message": "Restaurer l'état du panneau des onglets de Tree Style Tab.<br>Veuillez désactiver pour les versions antérieures à Firefox 57 (Quantum)."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Afficher le nom de session sur une seule ligne"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Si le nom d'une session dans la liste de sessions s’étend sur plusieurs lignes, il sera tronqué pour être affiché sur une seule ligne."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Fenêtre popup de la barre d'outils"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Permet de modifier le style de la fenêtre popup de la barre d'outils."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Largeur"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Hauteur"
     },
     "importLabel": {
         "message": "Importer des sessions"
