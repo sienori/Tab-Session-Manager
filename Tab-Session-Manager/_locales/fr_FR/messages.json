@@ -165,7 +165,7 @@
         "message": "Format de date"
     },
     "dateFormatCaptionLabel": {
-        "message": "Ex AAAA.MM.JJ HH:m:ss"
+        "message": "Ex YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "Enregistrer les fenêtres privées"
