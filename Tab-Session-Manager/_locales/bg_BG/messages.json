@@ -81,10 +81,10 @@
         "message": "Добавяне в текущият прозорец"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Авто запазени - при затваряне на прозорец"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Авто запазени - редовно"
     },
     "settingsLabel": {
         "message": "Настройки"
@@ -126,34 +126,34 @@
         "message": "When Firefox starts up, restore the session that was closed the last time."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Редовно запазване на сесията"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "Запазване на сесията на всеки X минути."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Интервал (минути)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Минимална стойност 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Максимален брой запазени"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Максимален брой на запазените сесии (по този начин)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Запазване на сесията при затваряне на прозорец"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "Запазване на сесията при затваряне на прозореца или при изход от Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Максимален брой запазени"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Максимален брой на запазените сесии (по този начин)."
     },
     "useTabTitleforAutoSaveLabel": {
         "message": "Use page title for auto save session name"
