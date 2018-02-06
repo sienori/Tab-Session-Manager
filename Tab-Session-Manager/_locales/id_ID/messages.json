@@ -165,7 +165,7 @@
         "message": "Format tanggal"
     },
     "dateFormatCaptionLabel": {
-        "message": "Contoh: TTTT.BB.HH JJ:mm:dd"
+        "message": "Contoh: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "Save private window"
