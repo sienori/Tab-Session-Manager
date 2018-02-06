@@ -165,7 +165,7 @@
         "message": "Datumformaat"
     },
     "dateFormatCaptionLabel": {
-        "message": "Voorbeeld: jjjj. MM. DD uu"
+        "message": "Voorbeeld: YYYY. MM. DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "Save private window"
