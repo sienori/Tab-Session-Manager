@@ -123,7 +123,7 @@
         "message": "Възстановяване на предишна сесия при стартиране"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "Възстановяване на последно затворената сесия, при стартиране на Firefox."
     },
     "ifAutoSaveLabel": {
         "message": "Редовно запазване на сесията"
