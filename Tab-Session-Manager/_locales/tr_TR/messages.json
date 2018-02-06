@@ -165,7 +165,7 @@
         "message": "Tarih formatı"
     },
     "dateFormatCaptionLabel": {
-        "message": "Örn YYYY.AA.GG SS:dd:ss"
+        "message": "Örn YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "Save private window"
