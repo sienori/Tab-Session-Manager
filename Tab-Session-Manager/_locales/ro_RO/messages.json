@@ -165,7 +165,7 @@
         "message": "Format dată"
     },
     "dateFormatCaptionLabel": {
-        "message": "Exemplu: aaaa. MM. DD HH:mm:ss"
+        "message": "Exemplu: YYYY. MM. DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "Save private window"
