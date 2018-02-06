@@ -12,73 +12,73 @@
         "message": "Запазване на текущата сесия"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Запазване само на текущият прозорец"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Всички"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Потребителски"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Автоматично запазени"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Най-нови"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Най-стари"
     },
     "aToZLabel": {
-        "message": "A-Z"
+        "message": "А-Я"
     },
     "zToALabel": {
-        "message": "Z-A"
+        "message": "Я-А"
     },
     "open": {
-        "message": "Open"
+        "message": "Отваряне"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Изтриване"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Изтриване на тази сесия?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Отказ"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Добавяне на етикет"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Премахване на етикета"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Прозорец"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Прозорци"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Раздел"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Раздели"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Тук няма сесии"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Преименуване"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Отваряне в нов прозорец"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Отваряне в текущият прозорец"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Добавяне в текущият прозорец"
     },
     "winCloseSessionName": {
         "message": "Auto Saved - Window was closed"
