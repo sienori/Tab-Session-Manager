@@ -159,7 +159,7 @@
         "message": "Използване заглавието на страница за име на автоматично запазена сесия"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "Заглавието на отворената страница ще се използва за име на автоматично запазената сесия."
     },
     "dateFormatLabel": {
         "message": "Формат на дата"
@@ -180,7 +180,7 @@
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Показване името на сесията на един ред"
     },
     "truncateTitleCaptionLabel": {
         "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
@@ -237,7 +237,7 @@
         "message": "Моля, направете дарение"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "Благодаря Ви, че използвате Tab Session Manager.<br>Вашата подкрепа би значила много за мен, докато продължавам да разработвам добавката.<br>Ако харесвате Tab Session Manager, бих се радвал да помислите за дарение."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
