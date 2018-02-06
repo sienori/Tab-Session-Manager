@@ -6,10 +6,10 @@
         "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Запазване"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Запазване на текущата сесия"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Save only current window"
@@ -186,55 +186,55 @@
         "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Меню от лентата с инструменти"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Задаване стила на менюто от лентата с инструменти."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Ширина"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Височина"
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Внасяне на сесии"
     },
     "importCaptionLabel": {
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Преглед..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Внасяне"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Изчистване"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Изнасяне на сесии"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Запазване на текущата сесия в компютъра."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Изнасяне"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Изтриване на сесии"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Изтриване на всички текущи сесии."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Изтриване"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Лиценз"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Моля, направете дарение"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
