@@ -171,7 +171,7 @@
         "message": "Запазване на поверителен прозорец"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Ако не е отметнато, поверителният прозорец ще бъде игнориран при запазване на сесията."
     },
     "ifSupportTstLabel": {
         "message": "Поддръжка на дървовиден стил за раздели"
