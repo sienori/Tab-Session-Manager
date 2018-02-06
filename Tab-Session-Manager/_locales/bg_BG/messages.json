@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Запазване и възстановяване състоянието на прозорци и раздели. Също така, се поддържа и автоматично запазване."
+        "message": "Запазване и възстановяване състоянието на прозорци и раздели. Също така се поддържа и автоматично запазване."
     },
     "saveLabel": {
         "message": "Запазване"
@@ -183,7 +183,7 @@
         "message": "Показване името на сесията на един ред"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Ако името на сесия в списъка е на повече редове, то ще бъде съкратено и показано на един."
     },
     "toolBarPopupLabel": {
         "message": "Меню от лентата с инструменти"
@@ -201,7 +201,7 @@
         "message": "Внасяне на сесии"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Зареждане и добавяне на сесии в списъка.<br>Също така, се поддържат и сесийни файлове (.session) от SessionManager."
     },
     "importButtonLabel": {
         "message": "Преглед..."
