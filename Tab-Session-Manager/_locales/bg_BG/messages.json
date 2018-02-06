@@ -249,13 +249,13 @@
         "message": "Sessions imported."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Неуспешно прочитане"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Изтриване на всички сесии. Сигурни ли сте?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Сесия"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -264,6 +264,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Тази страница не може да бъде отворена от Tab Session Manager."
     }
 }
