@@ -156,25 +156,25 @@
         "message": "Максимален брой на запазените сесии (по този начин)."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Използване заглавието на страница за име на автоматично запазена сесия"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Формат на дата"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "Пример: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Запазване на поверителен прозорец"
     },
     "ifSavePrivateWindowCaptionLabel": {
         "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Поддръжка на дървовиден стил за раздели"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
