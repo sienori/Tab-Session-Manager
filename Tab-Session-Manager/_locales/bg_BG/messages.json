@@ -111,13 +111,13 @@
         "message": "Отваряне на сесия в нов прозорец"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "Ако не е отметнато, сесията ще замени текущият прозорец."
     },
     "ifLazyLoadingLabel": {
         "message": "Ръчно зареждане на раздели"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "При отваряне на сесия, съдържанието на всяка страница ще бъде заредено, когато изберете раздела.<br>Ако не е отметнато, възстановяването на сесия ще увеличи използваната памет."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Възстановяване на предишна сесия при стартиране"
