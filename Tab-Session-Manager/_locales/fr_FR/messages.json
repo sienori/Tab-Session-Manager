@@ -12,7 +12,7 @@
         "message": "Enregistrer la session actuelle"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Enregistrer uniquement la fenêtre active"
     },
     "displayAllLabel": {
         "message": "Toutes"
@@ -48,10 +48,10 @@
         "message": "Annuler"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Ajouter une étiquette"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Supprimer une étiquette"
     },
     "windowLabel": {
         "message": "Fenêtre"
@@ -96,13 +96,13 @@
         "message": "Informations"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Général"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Enregistrement automatique"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Démarrage"
     },
     "styleLabel": {
         "message": "Style"
