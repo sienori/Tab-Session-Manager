@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Запазване и възстановяване състоянието на прозорци и раздели. Също така, се поддържа и автоматично запазване."
     },
     "saveLabel": {
         "message": "Запазване"
@@ -243,10 +243,10 @@
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "страница на добавката"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Сесиите са внесени."
     },
     "readFailedMessage": {
         "message": "Неуспешно прочитане"
