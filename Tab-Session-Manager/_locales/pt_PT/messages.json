@@ -165,7 +165,7 @@
         "message": "Formato da data"
     },
     "dateFormatCaptionLabel": {
-        "message": "Exemplo: AAAA. MM. DD HH:mm:ss"
+        "message": "Exemplo: YYYY. MM. DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "Save private window"
