@@ -159,7 +159,7 @@
         "message": "Usar el título de la página como nombre para la sesión guardada automáticamente"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "Al guardar la seión automáticamente, usar el título de la página abierta como nombre de la sesión."
     },
     "dateFormatLabel": {
         "message": "Formato de fecha"
