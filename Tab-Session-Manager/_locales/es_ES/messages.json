@@ -102,7 +102,7 @@
         "message": "Guardar automáticamente"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Inicio"
     },
     "styleLabel": {
         "message": "Estilo"
@@ -183,19 +183,19 @@
         "message": "Mostrar el nombre de la sesión en una línea"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Si el nombre de la sesión en la lista de sesiones se extiende a más de una línea, se trunca en una línea y se muestra."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Ventana emergente de la barra de herramientas"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Especifique el estilo de la ventana emergente de la barra de herramientas."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Ancho"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Alto"
     },
     "importLabel": {
         "message": "Importar sesiones"
