@@ -180,7 +180,7 @@
         "message": "Restaurar el estado de pestañas estilo árbol <br>Desactivar si la versión de FireFox es menor a 57."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Mostrar el nombre de la sesión en una línea"
     },
     "truncateTitleCaptionLabel": {
         "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
