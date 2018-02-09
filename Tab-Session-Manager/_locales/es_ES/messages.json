@@ -48,10 +48,10 @@
         "message": "Cancelar"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Añadir etiqueta"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Quitar etiqueta"
     },
     "windowLabel": {
         "message": "Ventana"
@@ -99,7 +99,7 @@
         "message": "General"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Guardar automáticamente"
     },
     "startUpLabel": {
         "message": "Startup"
@@ -129,7 +129,7 @@
         "message": "Guardar la sesión regularmente"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Guardar la sesión cada tiempo definido."
+        "message": "Guardar la sesión cada X minutos."
     },
     "autoSaveIntervalLabel": {
         "message": "Intervalo en minutos"
