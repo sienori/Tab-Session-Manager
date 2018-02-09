@@ -105,7 +105,7 @@
         "message": "Startup"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Estilo"
     },
     "ifOpenNewWindowLabel": {
         "message": "Abrir sesión en una nueva ventana"
@@ -156,7 +156,7 @@
         "message": "Número máximo de sesiones guardadas de esta forma."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Usar el título de la página como nombre para la sesión guardada automáticamente"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
