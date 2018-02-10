@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Salvar e restaurar o estado de janelas e abas. Ele também suporta o salvamento automático."
     },
     "saveLabel": {
         "message": "Salvar"
@@ -165,7 +165,7 @@
         "message": "Salvar Backup"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Quando o Firefox é iniciado, criar um arquivo de backup de sessões e salvar na pasta de download."
     },
     "backupFilesLimitLabel": {
         "message": "Quantidade máxima de backups salvos"
@@ -183,91 +183,91 @@
         "message": "Salvar janela privada"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Se estiver desmarcada, ignora a janela privada ao salvar a sessão."
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Suporta Estilo de Tree Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Restaure estado do tree na tab Tree Style.<br> Por favor, desligue-o para versões do Firefox anteriores ao Firefox 57 (Quantum)."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Exibir o nome da sessão em uma linha"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Se o nome da sessão na lista sessão se estende por mais de uma linha, é truncado para exibição em uma linha."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Barra de ferramentas"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Especifique o estilo de pop-up da barra de ferramentas."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Largura"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Altura"
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Importar sessões"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Carregar sessões gravadas no computador e adicioná-las à lista de sessão.<br> Ele também suporta o arquivo de sessão do Session Manager (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Explorar..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importar"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Limpar"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Exportar sessões"
     },
     "exportCaptionLabel": {
-        "message": "Save the current session to the computer."
+        "message": "Salvar a sessão atual no computador."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Exportar"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Apagar sessões"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all current sessions."
+        "message": "Excluir todas as sessões atuais."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Excluir"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licença"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Por favor, faça uma doaçao"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "Obrigado por usar Tab Session Manager.<br>Seu apoio será um grande incentivo, como eu continuar a desenvolver o complemento. <br> Se você gosta do Tab Session Manager, ficaria satisfeito se você poderia considerar fazer uma doação."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
+        "message": "amazon.co.jp Cartões presentes"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "Página do add-on"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Sessões importadas."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Falha de leitura"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Apagar todas as sessões. Tem certeza?"
     },
     "sessionLabel": {
-        "message": "Session"
+        "message": "Sessão"
     },
     "amazonUrl": {
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
@@ -276,6 +276,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Esta página não pode ser aberta pelo Tab Session Manager."
     }
 }
