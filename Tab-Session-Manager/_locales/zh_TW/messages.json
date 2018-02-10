@@ -159,7 +159,7 @@
         "message": "使用頁面標題幫自動儲存的瀏覽階段命名"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "當自動儲存瀏覽階段之時，使用開啟頁面的標題作為瀏覽階段的名稱。"
+        "message": "當自動儲存瀏覽階段之時，使用開啟頁面的標題作為瀏覽階段名稱。"
     },
     "ifBackupLabel": {
         "message": "儲存備份"
@@ -171,7 +171,7 @@
         "message": "最大儲存備份數量"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "當備份檔超過這個值的時候，將刪除舊的備份。"
+        "message": "當備份檔超過這個數量的時候，將刪除舊的備份檔。"
     },
     "dateFormatLabel": {
         "message": "日期格式"
@@ -195,7 +195,7 @@
         "message": "單行顯示瀏覽階段名稱"
     },
     "truncateTitleCaptionLabel": {
-        "message": "如果瀏覽階段名稱長度超過單行範圍，截斷顯示為單行。"
+        "message": "如果瀏覽階段名稱長度超過單行範圍，截斷為單行顯示。"
     },
     "toolBarPopupLabel": {
         "message": "工具列彈出式選單"
