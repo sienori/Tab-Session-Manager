@@ -165,13 +165,13 @@
         "message": "Резервно копие"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Създаване на резервно копие на сесии при стартиране на Firefox и запазване в папката за изтегляния."
     },
     "backupFilesLimitLabel": {
         "message": "Максимален брой резервни копия"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "Когато броят на резервните копия надвиши тази стойност, те се изтриват във възходящ ред, започвайки от най-старите."
+        "message": "Изтриване във възходящ ред на най-старите резервни копия при надвишаване броя на тази стойност."
     },
     "dateFormatLabel": {
         "message": "Формат на дата"
