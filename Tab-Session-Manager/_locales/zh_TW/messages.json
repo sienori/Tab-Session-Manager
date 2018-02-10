@@ -165,7 +165,7 @@
         "message": "儲存備份"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "當 Firefox 啟動時，建立瀏覽階段的備份檔並儲存於下載資料夾中。"
     },
     "backupFilesLimitLabel": {
         "message": "最大儲存備份數量"
