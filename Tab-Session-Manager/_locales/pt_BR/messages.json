@@ -6,28 +6,28 @@
         "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Salvar"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Salvar sessão atual"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Salvar somente a janela atual"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Todos"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Usuário salvo"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Salvo automaticamente"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Mais recente"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Mais antigo"
     },
     "aToZLabel": {
         "message": "A-Z"
@@ -36,43 +36,43 @@
         "message": "Z-A"
     },
     "open": {
-        "message": "Open"
+        "message": "Abrir"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Excluir"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Excluir esta sessão?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Cancelar"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Adicionar tag"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Remover tag"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Janela"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Janelas"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Aba"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Abas"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Não há nenhuma sessão"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Renomear"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Abrir em uma nova janela"
     },
     "openInCurrentWindowLabel": {
         "message": "Open in current window"
