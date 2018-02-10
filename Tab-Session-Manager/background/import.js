@@ -32,3 +32,53 @@ async function importSessions(newSessions) {
     }
     setStorage();
 }
+
+async function backupSessions() {
+    if (!S.get().ifBackup) return;
+
+    const downloadUrl = URL.createObjectURL(
+        new Blob([JSON.stringify(sessions, null, '    ')], {
+            type: 'aplication/json'
+        })
+    );
+
+    const fileName = returnFileName();
+
+    await browser.downloads.download({
+        url: downloadUrl,
+        filename: `TabSessionManager - Backup/${fileName}.json`,
+        conflictAction: 'uniquify',
+        saveAs: false
+    });
+
+    removeBackupFile();
+}
+
+function returnFileName() {
+    const sessionsLabel = browser.i18n.getMessage('sessionsLabel');
+    let fileName = `${sessions.length}${sessionsLabel} - ${moment().format(S.get().dateFormat)}`;
+
+    const pattern = /\\|\/|\:|\?|\.|"|<|>|\|/g;
+    fileName = fileName.replace(pattern, "-");
+    return fileName;
+}
+
+async function removeBackupFile() {
+    const backupItems = await browser.downloads.search({
+        query: ['TabSessionManager - Backup'],
+        orderBy: ['-startTime'],
+        exists: true
+    });
+
+    const limit = S.get().backupFilesLimit;
+    let count = 0;
+
+    for (let i of backupItems) {
+        count++;
+        if (count < limit) continue;
+        await browser.downloads.removeFile(i.id);
+        await browser.downloads.erase({
+            id: i.id
+        });
+    }
+}

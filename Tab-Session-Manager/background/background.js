@@ -33,6 +33,8 @@ initSettings().then(function () {
     browser.tabs.onCreated.addListener(autoSaveWhenClose);
     browser.tabs.onRemoved.addListener(autoSaveWhenClose);
     browser.windows.onCreated.addListener(autoSaveWhenClose);
+
+    backupSessions();
 });
 
 //設定の初期化

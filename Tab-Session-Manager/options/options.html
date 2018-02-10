@@ -221,6 +221,32 @@
                             </div>
                         </li>
 
+                        <hr>
+
+                        <li class="optionContainer new">
+                            <div class=optionText>
+                                <p class=ifBackupLabel>バックアップを保存する</p>
+                                <p class="caption ifBackupCaptionLabel">Firefoxの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。</p>
+                            </div>
+                            <div class="optionForm">
+                                <label>
+                                    <input type="checkbox" id="ifBackup" class=saveByChange>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+                        <ul class=childElement>
+                            <li class=optionContainer>
+                                <div class=optionText>
+                                    <span id="backupFilesLimitLabel">バックアップの上限保存数</span>
+                                    <p class="caption backupFilesLimitCaptionLabel">バックアップファイルの個数がこの値を超えた場合，古いものから順に削除されます。</p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="backupFilesLimit" class=saveByChange type="number" value="10" min="2">
+                                </div>
+                            </li>
+                        </ul>
+
                     </ul>
                 </li>
 
