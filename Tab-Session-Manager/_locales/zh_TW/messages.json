@@ -171,7 +171,7 @@
         "message": "最大儲存備份數量"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "當備份檔超過這個值的時候，將刪除舊的備份。"
     },
     "dateFormatLabel": {
         "message": "日期格式"
