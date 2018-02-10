@@ -31,7 +31,19 @@ for (let item of saveByChangeItems) {
 }
 
 function save() {
+    const inputs = ['autoSaveInterval', 'autoSaveLimit', 'autoSaveWhenCloseLimit', 'popupWidth', 'popupHeight'];
+    for (let i of inputs) replaceInvalidValue(i);
+
     S.saveOptionsPage();
+}
+
+function replaceInvalidValue(elementId) {
+    const element = document.getElementById(elementId);
+
+    if (element.validity.rangeOverflow) element.value = element.max;
+    else if (element.validity.rangeUnderflow) element.value = element.min;
+
+    if (element.validity.badInput || element.value == '' || !element.validity.valid) element.value = element.defaultValue;
 }
 
 function removeSessions() {
