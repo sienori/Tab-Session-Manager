@@ -228,7 +228,7 @@
         "message": "Изнасяне на сесии"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Запазване на всички сесии в компютъра."
     },
     "exportButtonLabel": {
         "message": "Изнасяне"
@@ -237,7 +237,7 @@
         "message": "Изтриване на сесии"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "Изтриване на всички сесии."
     },
     "removeSessionsButtonLabel": {
         "message": "Изтриване"
