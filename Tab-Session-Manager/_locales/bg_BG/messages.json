@@ -174,7 +174,7 @@
         "message": "Изтриване на най-старите резервни копия във възходящ ред при надвишаване броя на тази стойност."
     },
     "dateFormatLabel": {
-        "message": "Формат на дата"
+        "message": "Формат за дата"
     },
     "dateFormatCaptionLabel": {
         "message": "Пример: YYYY.MM.DD HH:mm:ss"
