@@ -228,7 +228,7 @@
         "message": "Munkamenetek exportálása"
     },
     "exportCaptionLabel": {
-        "message": "Jelenlegi munkamenet mentése a számítógépre."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Exportálás"
@@ -237,7 +237,7 @@
         "message": "Munkamenetek törlése"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Összes jelenlegi munkamenet törlése."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Töröl"
