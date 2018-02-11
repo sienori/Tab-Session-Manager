@@ -156,22 +156,22 @@
         "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Verwende den Seitentitel für den Sitzungsname beim Automatische Speicherung"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "Wenn eine Sitzung automatisch gespeichert wird, verwende den Titel der geöffneten Seite als der Name der Sitzung."
     },
     "ifBackupLabel": {
         "message": "Sicherungskopie speichern"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Wenn Firefox startet, erstelle eine Sicherungsdatei der Sitzungen und speicher sie im Ordner \"Download\"."
     },
     "backupFilesLimitLabel": {
         "message": "Maximale Anzahl von gespeicherten Sicherungen"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Wenn die Anzahl der backup-Dateien diesen Wert überschreitet, werden sie in aufsteigender Reihenfolge der älteste gelöscht."
     },
     "dateFormatLabel": {
         "message": "Datumformat"
@@ -192,7 +192,7 @@
         "message": "Status des Tree Style Tab wiederherstellen.<br>Bitte deaktivieren, wenn die verwendete Version von Firefox älter als Firefox 57 ist."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Sitzungsname innerhalb einer Zeile anzeigen"
     },
     "truncateTitleCaptionLabel": {
         "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
