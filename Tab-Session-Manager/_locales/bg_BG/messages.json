@@ -144,7 +144,7 @@
         "message": "Максимален брой запазени сесии (по този начин)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Запазване на сесията при затваряне на прозорец"
+        "message": "Запазване на сесията при затваряне на прозореца"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
         "message": "Запазване на сесията при затваряне на прозореца или при изход от Firefox."
@@ -213,7 +213,7 @@
         "message": "Внасяне на сесии"
     },
     "importCaptionLabel": {
-        "message": "Зареждане и добавяне на сесии в списъка.<br>Също така, се поддържат и сесийни файлове (.session) от SessionManager."
+        "message": "Зареждане и добавяне на сесии в списъка.<br>Поддържат се и сесийни файлове (.session) от SessionManager."
     },
     "importButtonLabel": {
         "message": "Преглед..."
