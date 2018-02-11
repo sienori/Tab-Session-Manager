@@ -162,16 +162,16 @@
         "message": "Munkamenet automatikus mentésekor, a nyitott oldal címének használata a munkamenet neveként."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Biztonsági másolat mentése"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Amikor a Firefox indul, biztonsági másolat készítése az elmentett munkamenetekről és a Letöltések mappába mentése."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Elmentett biztonsági másolatok maximális száma"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Amikor a biztonsági másolatok száma túllépi ezt az értéket, a leg régebbi törlődik."
     },
     "dateFormatLabel": {
         "message": "Dátum formátum"
@@ -228,7 +228,7 @@
         "message": "Munkamenetek exportálása"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Minden munkamenet lementése a számítógépre."
     },
     "exportButtonLabel": {
         "message": "Exportálás"
@@ -237,7 +237,7 @@
         "message": "Munkamenetek törlése"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "Minden munkamenet törölése."
     },
     "removeSessionsButtonLabel": {
         "message": "Töröl"
