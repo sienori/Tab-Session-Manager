@@ -161,11 +161,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
+    "ifBackupLabel": {
+        "message": "Save backup"
+    },
+    "ifBackupCaptionLabel": {
+        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+    },
+    "backupFilesLimitLabel": {
+        "message": "Maximum number of saved backups"
+    },
+    "backupFilesLimitCaptionLabel": {
+        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    },
     "dateFormatLabel": {
         "message": "Datumformaat"
     },
     "dateFormatCaptionLabel": {
-        "message": "Voorbeeld: jjjj. MM. DD uu"
+        "message": "Voorbeeld: YYYY. MM. DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "Save private window"
