@@ -228,7 +228,7 @@
         "message": "सत्रों को निर्यात करें"
     },
     "exportCaptionLabel": {
-        "message": "वर्तमान सत्र को कंप्यूटर पर सहेजें|"
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "निर्यात करें"
@@ -237,7 +237,7 @@
         "message": "सत्र हटाएं"
     },
     "removeSessionsCaptionLabel": {
-        "message": "सभी वर्तमान सत्र हटाएं"
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "हटाएँ"
