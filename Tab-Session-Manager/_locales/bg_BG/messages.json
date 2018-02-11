@@ -1,0 +1,281 @@
+{
+    "extName": {
+        "message": "Tab Session Manager"
+    },
+    "extDescription": {
+        "message": "Запазване и възстановяване състоянието на прозорци и раздели. Също така се поддържа и автоматично запазване."
+    },
+    "saveLabel": {
+        "message": "Запазване"
+    },
+    "initialNameValue": {
+        "message": "Запазване на текущата сесия"
+    },
+    "saveOnlyCurrentWindowLabel": {
+        "message": "Запазване само на текущият прозорец"
+    },
+    "displayAllLabel": {
+        "message": "Всички"
+    },
+    "displayUserLabel": {
+        "message": "Потребителски"
+    },
+    "displayAutoLabel": {
+        "message": "Автоматично запазени"
+    },
+    "newestLabel": {
+        "message": "Най-нови"
+    },
+    "oldestLabel": {
+        "message": "Най-стари"
+    },
+    "aToZLabel": {
+        "message": "А-Я"
+    },
+    "zToALabel": {
+        "message": "Я-А"
+    },
+    "open": {
+        "message": "Отваряне"
+    },
+    "remove": {
+        "message": "Изтриване"
+    },
+    "removeConfirmLabel": {
+        "message": "Изтриване на тази сесия?"
+    },
+    "cancelLabel": {
+        "message": "Отказ"
+    },
+    "addTagLabel": {
+        "message": "Добавяне на етикет"
+    },
+    "removeTagLabel": {
+        "message": "Премахване на етикета"
+    },
+    "windowLabel": {
+        "message": "Прозорец"
+    },
+    "windowsLabel": {
+        "message": "Прозорци"
+    },
+    "tabLabel": {
+        "message": "Раздел"
+    },
+    "tabsLabel": {
+        "message": "Раздели"
+    },
+    "noSessionLabel": {
+        "message": "Тук няма сесии"
+    },
+    "renameLabel": {
+        "message": "Преименуване"
+    },
+    "openInNewWindowLabel": {
+        "message": "Отваряне в нов прозорец"
+    },
+    "openInCurrentWindowLabel": {
+        "message": "Отваряне в текущият прозорец"
+    },
+    "addToCurrentWindowLabel": {
+        "message": "Добавяне в текущият прозорец"
+    },
+    "winCloseSessionName": {
+        "message": "Авто запазени - при затваряне на прозорец"
+    },
+    "regularSaveSessionName": {
+        "message": "Авто запазени - редовно"
+    },
+    "settingsLabel": {
+        "message": "Настройки"
+    },
+    "sessionsLabel": {
+        "message": "Сесии"
+    },
+    "informationLabel": {
+        "message": "Информация"
+    },
+    "generalLabel": {
+        "message": "Основни"
+    },
+    "autoSaveLabel": {
+        "message": "Автоматично запазване"
+    },
+    "startUpLabel": {
+        "message": "Стартиране"
+    },
+    "styleLabel": {
+        "message": "Стил"
+    },
+    "ifOpenNewWindowLabel": {
+        "message": "Отваряне на сесия в нов прозорец"
+    },
+    "ifOpenNewWindowCaptionLabel": {
+        "message": "Ако не е отметнато, сесията ще замени текущият прозорец."
+    },
+    "ifLazyLoadingLabel": {
+        "message": "Ръчно зареждане на раздели"
+    },
+    "ifLazyLoadingCaptionLabel": {
+        "message": "При отваряне на сесия, съдържанието на всяка страница ще бъде заредено, когато изберете раздела.<br>Ако не е отметнато, възстановяването на сесия ще увеличи използваната памет."
+    },
+    "ifOpenLastSessionWhenStartUpLabel": {
+        "message": "Възстановяване на предишна сесия при стартиране"
+    },
+    "ifOpenLastSessionWhenStartUpCaptionLabel": {
+        "message": "Възстановяване на последно затворената сесия, при стартиране на Firefox."
+    },
+    "ifAutoSaveLabel": {
+        "message": "Редовно запазване на сесията"
+    },
+    "ifAutoSaveCaptionLabel": {
+        "message": "Запазване на сесията на всеки X минути."
+    },
+    "autoSaveIntervalLabel": {
+        "message": "Интервал (минути)"
+    },
+    "autoSaveIntervalCaptionLabel": {
+        "message": "Минимална стойност 0.1"
+    },
+    "autoSaveLimitLabel": {
+        "message": "Максимален брой запазени"
+    },
+    "autoSaveLimitCaptionLabel": {
+        "message": "Максимален брой на запазените сесии (по този начин)."
+    },
+    "ifAutoSaveWhenCloseLabel": {
+        "message": "Запазване на сесията при затваряне на прозорец"
+    },
+    "ifAutoSaveWhenCloseCaptionLabel": {
+        "message": "Запазване на сесията при затваряне на прозореца или при изход от Firefox."
+    },
+    "autoSaveWhenCloseLimitLabel": {
+        "message": "Максимален брой запазени"
+    },
+    "autoSaveWhenCloseCaptionLabel": {
+        "message": "Максимален брой на запазените сесии (по този начин)."
+    },
+    "useTabTitleforAutoSaveLabel": {
+        "message": "Използване заглавието на страница за име на автоматично запазена сесия"
+    },
+    "useTabTitleforAutoSaveCaptionLabel": {
+        "message": "Заглавието на отворената страница ще се използва за име на автоматично запазената сесия."
+    },
+    "ifBackupLabel": {
+        "message": "Резервно копие"
+    },
+    "ifBackupCaptionLabel": {
+        "message": "Създаване на резервно копие на сесии при стартиране на Firefox и запазване в папката за изтегляния."
+    },
+    "backupFilesLimitLabel": {
+        "message": "Максимален брой резервни копия"
+    },
+    "backupFilesLimitCaptionLabel": {
+        "message": "Изтриване във възходящ ред на най-старите резервни копия при надвишаване броя на тази стойност."
+    },
+    "dateFormatLabel": {
+        "message": "Формат на дата"
+    },
+    "dateFormatCaptionLabel": {
+        "message": "Пример: YYYY.MM.DD HH:mm:ss"
+    },
+    "ifSavePrivateWindowLabel": {
+        "message": "Запазване на поверителен прозорец"
+    },
+    "ifSavePrivateWindowCaptionLabel": {
+        "message": "Ако не е отметнато, поверителният прозорец ще бъде игнориран при запазване на сесията."
+    },
+    "ifSupportTstLabel": {
+        "message": "Поддръжка на дървовиден стил за раздели"
+    },
+    "ifSupportTstCaptionLabel": {
+        "message": "Възстановяване на дървовидното състояние. <br>Моля, изключете го на версии по-стари от Firefox 57 (Quantum)."
+    },
+    "truncateTitleLabel": {
+        "message": "Показване името на сесията на един ред"
+    },
+    "truncateTitleCaptionLabel": {
+        "message": "Ако името на сесия в списъка е на повече редове, то ще бъде съкратено и показано на един."
+    },
+    "toolBarPopupLabel": {
+        "message": "Меню от лентата с инструменти"
+    },
+    "toolBarPopupCaptionLabel": {
+        "message": "Задаване стила на менюто от лентата с инструменти."
+    },
+    "widthLabel": {
+        "message": "Ширина"
+    },
+    "heightLabel": {
+        "message": "Височина"
+    },
+    "importLabel": {
+        "message": "Внасяне на сесии"
+    },
+    "importCaptionLabel": {
+        "message": "Зареждане и добавяне на сесии в списъка.<br>Също така, се поддържат и сесийни файлове (.session) от SessionManager."
+    },
+    "importButtonLabel": {
+        "message": "Преглед..."
+    },
+    "importSaveButtonLabel": {
+        "message": "Внасяне"
+    },
+    "importClearButtonLabel": {
+        "message": "Изчистване"
+    },
+    "exportLabel": {
+        "message": "Изнасяне на сесии"
+    },
+    "exportCaptionLabel": {
+        "message": "Запазване на текущата сесия в компютъра."
+    },
+    "exportButtonLabel": {
+        "message": "Изнасяне"
+    },
+    "removeSessionsLabel": {
+        "message": "Изтриване на сесии"
+    },
+    "removeSessionsCaptionLabel": {
+        "message": "Изтриване на всички текущи сесии."
+    },
+    "removeSessionsButtonLabel": {
+        "message": "Изтриване"
+    },
+    "LicenseLabel": {
+        "message": "Лиценз"
+    },
+    "donationLabel": {
+        "message": "Моля, направете дарение"
+    },
+    "donationCaptionLabel": {
+        "message": "Благодаря Ви, че използвате Tab Session Manager.<br>Вашата подкрепа би значила много за мен, докато продължавам да разработвам добавката.<br>Ако харесвате Tab Session Manager, бих се радвал да помислите за дарение."
+    },
+    "amazonTitleLabel": {
+        "message": "amazon.co.jp eGift Cards"
+    },
+    "addonPageLabel": {
+        "message": "страница на добавката"
+    },
+    "importMessage": {
+        "message": "Сесиите са внесени."
+    },
+    "readFailedMessage": {
+        "message": "Неуспешно прочитане"
+    },
+    "warningRemoveAllMessage": {
+        "message": "Изтриване на всички сесии. Сигурни ли сте?"
+    },
+    "sessionLabel": {
+        "message": "Сесия"
+    },
+    "amazonUrl": {
+        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    },
+    "addonUrl": {
+        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    },
+    "replacedPageMessage": {
+        "message": "Тази страница не може да бъде отворена от Tab Session Manager."
+    }
+}
