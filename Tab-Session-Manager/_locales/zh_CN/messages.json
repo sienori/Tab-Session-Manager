@@ -228,7 +228,7 @@
         "message": "导出会话"
     },
     "exportCaptionLabel": {
-        "message": "将当前会话保存到本地。"
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "导出"
@@ -237,7 +237,7 @@
         "message": "删除会话"
     },
     "removeSessionsCaptionLabel": {
-        "message": "删除当前所有会话。"
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "删除"
