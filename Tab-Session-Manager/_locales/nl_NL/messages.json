@@ -228,7 +228,7 @@
         "message": "Sessies exporteren"
     },
     "exportCaptionLabel": {
-        "message": "Sla de huidige sessie op de computer."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Exporteren"
@@ -237,7 +237,7 @@
         "message": "Sessies verwijderen"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Verwijder alle huidige sessies."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Verwijder"
