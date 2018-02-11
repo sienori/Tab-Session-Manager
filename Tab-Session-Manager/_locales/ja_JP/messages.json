@@ -228,7 +228,7 @@
         "message": "セッションをエクスポート"
     },
     "exportCaptionLabel": {
-        "message": "現在のセッションをコンピュータに保存します。"
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "エクスポート"
@@ -237,7 +237,7 @@
         "message": "セッションを削除"
     },
     "removeSessionsCaptionLabel": {
-        "message": "現在のセッションを全て削除します。"
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "削除"
