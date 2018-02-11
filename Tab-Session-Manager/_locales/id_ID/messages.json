@@ -228,7 +228,7 @@
         "message": "Ekspor Sesi"
     },
     "exportCaptionLabel": {
-        "message": "Simpan sesi saat ini di komputer."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Ekspor"
@@ -237,7 +237,7 @@
         "message": "Hapus sesi"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Hapus semua sesi saat ini."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Hapus"
