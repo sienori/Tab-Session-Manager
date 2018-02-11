@@ -228,7 +228,7 @@
         "message": "Sitzungen exportieren"
     },
     "exportCaptionLabel": {
-        "message": "Aktuelle Sitzung lokal auf dem PC speichern."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Exportieren"
@@ -237,7 +237,7 @@
         "message": "Sitzungen löschen"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Alle aktuellen Sitzungen löschen."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Löschen"
