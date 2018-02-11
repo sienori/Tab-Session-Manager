@@ -165,7 +165,7 @@
         "message": "Резервно копие"
     },
     "ifBackupCaptionLabel": {
-        "message": "Създаване резервно копие на сесии при стартиране на Firefox и запазване в папката за изтегляния."
+        "message": "Създаване и запазване на резервно копие на сесии в папката за изтегляния при стартиране на Firefox."
     },
     "backupFilesLimitLabel": {
         "message": "Максимален брой резервни копия"
@@ -276,6 +276,6 @@
         "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "Тази страница не може да бъде отворена от Tab Session Manager."
+        "message": "Страницата не може да бъде отворена от Tab Session Manager."
     }
 }
