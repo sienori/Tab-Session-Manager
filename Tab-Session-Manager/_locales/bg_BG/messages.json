@@ -93,7 +93,7 @@
         "message": "Сесии"
     },
     "informationLabel": {
-        "message": "Информация"
+        "message": "Относно"
     },
     "generalLabel": {
         "message": "Основни"
@@ -228,7 +228,7 @@
         "message": "Изнасяне на сесии"
     },
     "exportCaptionLabel": {
-        "message": "Запазване на сесиите в компютъра."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Изнасяне"
@@ -237,7 +237,7 @@
         "message": "Изтриване на сесии"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Изтриване на всички сесии."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Изтриване"
