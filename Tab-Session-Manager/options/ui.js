@@ -68,10 +68,12 @@ function showImportFile(fileName, sessions) {
 }
 
 function returnFileListNode(fileName, sessions) {
+    const sessionLabel = browser.i18n.getMessage("sessionLabel").toLowerCase();
+    const sessionsLabel = browser.i18n.getMessage("sessionsLabel").toLowerCase();
     let sessionsState
     if (sessions == undefined) sessionsState = browser.i18n.getMessage("readFailedMessage");
-    else if (sessions.length <= 1) sessionsState = sessions.length + browser.i18n.getMessage("sessionLabel");
-    else sessionsState = sessions.length + browser.i18n.getMessage("sessionsLabel");
+    else if (sessions.length <= 1) sessionsState = `${sessions.length} ${sessionLabel}`;
+    else sessionsState = `${sessions.length} ${sessionsLabel}`;
 
     return "<li><div class=optionContainer><div class=optionText><p>" +
         fileName + "</p><p class=caption>" + sessionsState + "</p></div></div></li>";
