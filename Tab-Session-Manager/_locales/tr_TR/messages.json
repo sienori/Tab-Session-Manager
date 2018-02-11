@@ -228,7 +228,7 @@
         "message": "Oturumları dışa aktar"
     },
     "exportCaptionLabel": {
-        "message": "Geçerli oturumları bilgisayara kaydet."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Dışa Aktar"
@@ -237,7 +237,7 @@
         "message": "Oturumları sil"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Tüm geçerli oturumları sil."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Sil"
