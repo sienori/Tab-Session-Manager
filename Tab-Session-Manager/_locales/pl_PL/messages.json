@@ -228,7 +228,7 @@
         "message": "Eksportuj sesje"
     },
     "exportCaptionLabel": {
-        "message": "Zapisz bieżącą sesję na komputerze."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Eksport"
@@ -237,7 +237,7 @@
         "message": "Usuń sesje"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Usuń wszystkie bieżące sesje."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Usuń"
