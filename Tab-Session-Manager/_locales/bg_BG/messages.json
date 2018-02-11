@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Запазване и възстановяване състоянието на прозорци и раздели. Също така се поддържа и автоматично запазване."
+        "message": "Запазване и възстановяване състоянието на прозорци и раздели. Също така, се поддържа и автоматично запазване."
     },
     "saveLabel": {
         "message": "Запазване"
@@ -60,10 +60,10 @@
         "message": "Прозорци"
     },
     "tabLabel": {
-        "message": "Раздел"
+        "message": "раздел"
     },
     "tabsLabel": {
-        "message": "Раздели"
+        "message": "раздела"
     },
     "noSessionLabel": {
         "message": "Тук няма сесии"
@@ -90,7 +90,7 @@
         "message": "Настройки"
     },
     "sessionsLabel": {
-        "message": "Сесии"
+        "message": " сесии"
     },
     "informationLabel": {
         "message": "Информация"
