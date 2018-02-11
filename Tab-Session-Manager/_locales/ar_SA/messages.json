@@ -228,7 +228,7 @@
         "message": "أصدر الجلسات"
     },
     "exportCaptionLabel": {
-        "message": "احفظ الجلسة الحالية على جهاز الكمبيوتر."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "أصدر"
@@ -237,7 +237,7 @@
         "message": "احذف الجلسات"
     },
     "removeSessionsCaptionLabel": {
-        "message": "احذف كل الجلسات الحالية."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "احذف"
