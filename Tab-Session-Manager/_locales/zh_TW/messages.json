@@ -228,7 +228,7 @@
         "message": "匯出瀏覽階段"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "將所有的瀏覽階段儲存至電腦中。"
     },
     "exportButtonLabel": {
         "message": "匯出"
@@ -237,7 +237,7 @@
         "message": "刪除瀏覽階段"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "刪除所有瀏覽階段。"
     },
     "removeSessionsButtonLabel": {
         "message": "刪除"
