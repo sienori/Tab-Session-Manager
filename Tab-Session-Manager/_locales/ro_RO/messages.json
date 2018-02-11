@@ -228,7 +228,7 @@
         "message": "Exportă sesiuni"
     },
     "exportCaptionLabel": {
-        "message": "Salvează sesiunea curentă în computer."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Exportă"
@@ -237,7 +237,7 @@
         "message": "Ștergere sesiuni"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Şterge toate sesiunile curente."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Șterge"
