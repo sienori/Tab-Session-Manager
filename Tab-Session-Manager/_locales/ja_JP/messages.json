@@ -161,6 +161,18 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "セッションを自動保存する際，開かれているページのタイトルをセッションの名前として使用します。"
     },
+    "ifBackupLabel": {
+        "message": "バックアップを保存する"
+    },
+    "ifBackupCaptionLabel": {
+        "message": "Firefoxの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。"
+    },
+    "backupFilesLimitLabel": {
+        "message": "バックアップの上限保存数"
+    },
+    "backupFilesLimitCaptionLabel": {
+        "message": "バックアップファイルの個数がこの値を超えた場合，古いものから順に削除されます。"
+    },
     "dateFormatLabel": {
         "message": "日付のフォーマット"
     },
