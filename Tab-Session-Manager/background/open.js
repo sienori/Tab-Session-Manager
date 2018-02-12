@@ -61,28 +61,21 @@ async function openSession(session, property = "default") {
 let IsOpeningSession = false;
 //ウィンドウとタブを閉じてcurrentWindowを返す
 function removeNowOpenTabs() {
-    return new Promise(function (resolve, reject) {
-        browser.windows.getAll({}).then(function (windows) {
-            for (let win in windows) {
-                if (windows[win].focused == false) { //非アクティブのウィンドウを閉じる
-                    browser.windows.remove(windows[win].id);
-                } else {
-                    browser.tabs.query({
-                        currentWindow: true
-                    }).then(function (tabs) {
-                        for (let tab of tabs) {
-                            if (tab.index != 0) browser.tabs.remove(tab.id); //アクティブウィンドウのタブを閉じる
-                        }
-                    })
-                }
-            }
-            browser.windows.getAll({
-                populate: true
-            }).then(function (currentWindow) {
-                resolve(currentWindow[0]);
-            });
+    return new Promise(async function (resolve, reject) {
+        const windows = await browser.windows.getAll({
+            populate: true
         });
-    })
+        for (let win in windows) {
+            if (windows[win].focused == false) { //非アクティブのウィンドウを閉じる
+                browser.windows.remove(windows[win].id);
+            } else {
+                for (let tab of windows[win].tabs) {
+                    if (tab.index != 0) browser.tabs.remove(tab.id); //アクティブウィンドウのタブを閉じる
+                }
+                resolve(windows[win]);
+            }
+        }
+    });
 }
 
 //現在のウィンドウにタブを生成
