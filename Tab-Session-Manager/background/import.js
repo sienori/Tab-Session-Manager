@@ -35,6 +35,7 @@ async function importSessions(newSessions) {
 
 async function backupSessions() {
     if (!S.get().ifBackup) return;
+    if (sessions.length == 0) return;
 
     const downloadUrl = URL.createObjectURL(
         new Blob([JSON.stringify(sessions, null, '    ')], {
