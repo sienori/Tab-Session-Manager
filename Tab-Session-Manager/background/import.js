@@ -56,8 +56,10 @@ async function backupSessions() {
 }
 
 function returnFileName() {
-    const sessionsLabel = browser.i18n.getMessage('sessionsLabel');
-    let fileName = `${sessions.length}${sessionsLabel} - ${moment().format(S.get().dateFormat)}`;
+    const sessionLabel = browser.i18n.getMessage('sessionLabel').toLowerCase();
+    const sessionsLabel = browser.i18n.getMessage('sessionsLabel').toLowerCase();
+
+    let fileName = `${moment().format(S.get().dateFormat)} (${sessions.length} ${(sessions.length==1)?sessionLabel : sessionsLabel})`;
 
     const pattern = /\\|\/|\:|\?|\.|"|<|>|\|/g;
     fileName = fileName.replace(pattern, "-");
