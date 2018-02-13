@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "ट्री स्टाइल टैब के ट्री स्टेट को पुनर्स्थापित करें|<br>कृपया फ़ायरफ़ॉक्स 57 (क्वांटम) से पुराने संस्करणों के लिए इसे बंद करें।"
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Display session name within one line"
     },
