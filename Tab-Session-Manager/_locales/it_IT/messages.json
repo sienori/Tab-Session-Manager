@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "Ripristina la struttura ad albero di Tree Style Tab.<br>Disattiva questa funzionalità su versioni precedenti a Firefox 57 (Quantum)."
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Visualizza il nome della sessione in una riga"
     },
