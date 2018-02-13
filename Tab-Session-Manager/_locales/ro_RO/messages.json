@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "Restaurare stare tree a Tree Style Tab. <br>Vă rugăm să o opriți pentru versiunile Firefox mai vechi decât Firefox 57 (Quantum)."
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Display session name within one line"
     },
