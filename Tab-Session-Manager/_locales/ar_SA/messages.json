@@ -12,7 +12,7 @@
         "message": "احفظ الجلسة الحالية"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "حفظ فقط النافذة الحالية"
     },
     "displayAllLabel": {
         "message": "الكل"
@@ -48,10 +48,10 @@
         "message": "إلغاء"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "اضف كلمة مفتاحية"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "حذف كلمة مفتاحية"
     },
     "windowLabel": {
         "message": "النافذة"
@@ -96,16 +96,16 @@
         "message": "معلومة"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "عام"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "حفظ تلقائي"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "بدء التشغيل"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "نمط"
     },
     "ifOpenNewWindowLabel": {
         "message": "افتح جلسة في نافذة جديدة"
@@ -156,22 +156,22 @@
         "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "استخدم عنوان الصفحة للحفظ التلقائي لإسم الجلسة"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "عند حفظ الجلسة تلقائياً، استخدم عنوان الصفحة المفتوحة كـ إسم للجلسة."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "حفظ نسخة احتياطية"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "عند بدء تشغيل فايرفوكس، قم بإنشاء ملف النسخ احتياطي لجلسة وحفظه في مجلد التحميل."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "الحد الأقصى لعدد النسخ الاحتياطية المحفوظة"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "عندما يتجاوز عدد ملفات النسخ الاحتياطي هذه القيمة، يتم الحذف تصاعدياً بدء من الأقدم."
     },
     "dateFormatLabel": {
         "message": "صيغة التاريخ"
@@ -192,28 +192,28 @@
         "message": "استعد حالة شكل التبويب لنمط التبويب المعمول على شكل شجرة.<br> الرجاء أقف تشغيل نسخة الفايرفوكس الأقدم من 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration"
+        "message": "تأخير عند شجرة الاستعادة"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "لاستعادة وضع الشجرة، وقت الانتظار غلزامي لفتح التبويب، رفع هذه القيمة إذا كانت لم يتم استعادة الشجرة بنجاح."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "عرض اسم جلسة العمل ضمن سطر واحد"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "إذا كان اسم الدورة في قائمة جلسات العمل التي تكون أكثر من سطر واحد، يتم اقتطاع سطر واحد وعرضه."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "شريط أدوات منبثق"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "حدد نمط شريط الأدوات المنبثق."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "العرض"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "الطول"
     },
     "importLabel": {
         "message": "استرد جلسات"
@@ -234,7 +234,7 @@
         "message": "أصدر الجلسات"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "احفظ كل الجلسات على جهاز الكمبيوتر."
     },
     "exportButtonLabel": {
         "message": "أصدر"
@@ -243,7 +243,7 @@
         "message": "احذف الجلسات"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "احذف كافة الجلسات."
     },
     "removeSessionsButtonLabel": {
         "message": "احذف"
