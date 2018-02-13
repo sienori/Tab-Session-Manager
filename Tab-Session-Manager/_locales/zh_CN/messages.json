@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "还原 Tree Style Tab 的标签树状态。<br>如果你的 Firefox 版本低于 57 (即 Firefox Quantum)，请取消勾选。"
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Display session name within one line"
     },
