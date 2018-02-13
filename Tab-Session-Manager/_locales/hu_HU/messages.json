@@ -192,10 +192,10 @@
         "message": "Fa struktúrájú fülek visszaállítása.<br>Firefox 57 (Quantum) -nál régebbi verzió esetén ki kell kapcsolni."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration"
+        "message": "Fa struktúra visszaállításánál késleltetés"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "A fa struktúra visszaállításához, idő szükséges a fül megnyitásánál. Növeld ezt az értéket, ha nem áll vissza rendesen a fa struktúra."
     },
     "truncateTitleLabel": {
         "message": "Munkamenet nevének egy soros kijelzése"
