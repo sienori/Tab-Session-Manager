@@ -31,7 +31,7 @@ for (let item of saveByChangeItems) {
 }
 
 function save() {
-    const inputs = ['autoSaveInterval', 'autoSaveLimit', 'autoSaveWhenCloseLimit', 'backupFilesLimit', 'popupWidth', 'popupHeight'];
+    const inputs = ['tstDelay', 'autoSaveInterval', 'autoSaveLimit', 'autoSaveWhenCloseLimit', 'backupFilesLimit', 'popupWidth', 'popupHeight'];
     for (let i of inputs) replaceInvalidValue(i);
 
     S.saveOptionsPage();

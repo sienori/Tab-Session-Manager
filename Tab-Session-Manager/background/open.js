@@ -144,7 +144,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
         let openDelay = 0;
         if (S.get().ifSupportTst) {
             createOption.openerTabId = tabList[property.openerTabId];
-            openDelay = 150;
+            openDelay = S.get().tstDelay;
         }
 
         //Lazy loading
