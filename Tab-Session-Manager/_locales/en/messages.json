@@ -199,7 +199,7 @@
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration"
+        "message": "Delay when tree restoration (millisecond)"
     },
     "tstDelayCaptionLabel": {
         "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
