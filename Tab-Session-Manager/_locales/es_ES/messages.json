@@ -192,7 +192,7 @@
         "message": "Restaurar el estado de pestañas estilo árbol <br>Desactivar si la versión de FireFox es menor a 57."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration"
+        "message": "Delay when tree restoration (millisecond)"
     },
     "tstDelayCaptionLabel": {
         "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
