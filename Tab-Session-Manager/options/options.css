@@ -260,7 +260,7 @@ a:visited {
 }
 
 .pageLink {
-    color: var(--highlight);
+    color: var(--highlight) !important;
     display: inline-block;
     margin-right: 10px;
 }
