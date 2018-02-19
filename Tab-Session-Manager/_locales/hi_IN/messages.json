@@ -230,6 +230,12 @@
     "importClearButtonLabel": {
         "message": "साफ करें"
     },
+    "urlImportLabel": {
+        "message": "Import URL list"
+    },
+    "urlImportCaptionLabel": {
+        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    },
     "exportLabel": {
         "message": "सत्रों को निर्यात करें"
     },
