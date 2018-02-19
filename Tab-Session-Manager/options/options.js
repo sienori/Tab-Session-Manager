@@ -303,6 +303,6 @@ function returnFileName(sessions) {
         fileName = `${sessionsLabel} - ${moment().format(S.get().dateFormat)}`;
     }
     const pattern = /\\|\/|\:|\?|\.|"|<|>|\|/g;
-    fileName = fileName.replace(pattern, "-");
+    fileName = fileName.replace(pattern, "-").replace(/^( )+/, '');
     return fileName;
 }
