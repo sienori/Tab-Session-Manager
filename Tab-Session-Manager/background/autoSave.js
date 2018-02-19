@@ -2,23 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-let BeforeSettings = {};
-//ifAutoSaveとautoSaveIntervalに変更があったらtrue
-function isChangeAutoSaveSettings() {
-    return new Promise(function (resolve, reject) {
-        browser.storage.local.get(["Settings"], function (value) {
-            if (JSON.stringify(BeforeSettings) != JSON.stringify(value.Settings)) {
-                if (BeforeSettings.ifAutoSave != value.Settings.ifAutoSave || BeforeSettings.autoSaveInterval != value.Settings.autoSaveInterval) {
-
-                    resolve(true);
-                }
-            }
-            BeforeSettings = value.Settings;
-            resolve(false);
-        });
-    })
-}
-
 let autoSaveTimer;
 
 function startAutoSave() {
@@ -40,13 +23,22 @@ function stopAutoSave() {
     clearInterval(autoSaveTimer);
 }
 
-async function setAutoSave() {
-    if (await isChangeAutoSaveSettings()) {
+function setAutoSave(changes, areaName) {
+    if (isChangeAutoSaveSettings(changes, areaName)) {
         stopAutoSave();
         if (S.get().ifAutoSave) {
             startAutoSave();
         }
     }
+}
+
+function isChangeAutoSaveSettings(changes, areaName) {
+    if (changes == undefined) return true; //最初の一回
+    if (changes.Settings == undefined) return false;
+
+    const oldValue = changes.Settings.oldValue;
+    const newValue = changes.Settings.newValue;
+    return (oldValue.ifAutoSave != newValue.ifAutoSave) || (oldValue.autoSaveInterval != newValue.autoSaveInterval)
 }
 
 function onUpdate(tabId, changeInfo, tab) {
