@@ -22,6 +22,9 @@ document.addEventListener('click', function (e) {
             clearImportFile();
             ImportSessions = [];
             break;
+        case "urlImportSave":
+            urlImport();
+            break;
     }
 });
 
@@ -196,6 +199,68 @@ function importSave() {
     }
     ImportSessions = [];
     clearImportFile();
+}
+
+function urlImport() {
+    let session = {
+        windows: {
+            1: {}
+        },
+        tabsNumber: 0,
+        name: '',
+        date: new Date(),
+        tag: [],
+        sessionStartTime: Date.now(),
+        id: UUID.generate()
+    };
+
+    const urlList = document.getElementById('urlImportList').value.split(/\r\n|\r|\n/);
+    let tabId = 0;
+    for (let urlLine of urlList) {
+        const tab = createTabByUrl(urlLine, tabId);
+        if (!tab) continue;
+
+        session.windows[1][tabId] = tab;
+        session.tabsNumber++;
+        tabId++;
+    }
+
+    if (session.tabsNumber == 0) return;
+
+    session.name = session.windows[1][0].title;
+    ImportSessions = [];
+    ImportSessions[0] = session;
+    importSave();
+    document.getElementById('urlImportList').value = '';
+}
+
+function createTabByUrl(urlLine, tabId) {
+    //タブをスペースに変換し，行頭と行末のスペースを削除
+    urlLine = urlLine.replace(/\t/g, ' ').replace(/^( )+|( )+$/g, '');
+    const spaceIndex = urlLine.indexOf(' ');
+
+    const url = (spaceIndex == -1) ? urlLine : urlLine.slice(0, spaceIndex);
+    const title = (spaceIndex == -1) ? urlLine : urlLine.slice(spaceIndex + 1);
+
+    if (url == '') return;
+    if (!url.match(/^(http:|https:|file:|ftp:|about:|moz-extension:)/)) return;
+
+    return {
+        active: (tabId == 0) ? true : false,
+        highlighted: false,
+        id: tabId,
+        incognito: false,
+        index: tabId,
+        isArticle: false,
+        isInReaderMode: false,
+        lastAccessed: Date.now(),
+        pinned: false,
+        selected: false,
+        title: title,
+        url: url,
+        windowId: 1,
+        favIconUrl: `http://www.google.com/s2/favicons?domain=${encodeURIComponent(url)}`
+    }
 }
 
 async function exportSessions(id = null) {

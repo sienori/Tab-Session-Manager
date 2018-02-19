@@ -177,9 +177,22 @@ hr {
 
 /*----forms----*/
 
-input {
+input,
+textarea {
     font-family: inherit;
     font-size: 14px;
+}
+
+textarea {
+    -moz-appearance: textfield;
+    border: 1px var(--button) solid;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding: 5px;
+    width: calc(100% - 12px) !important;
+    height: 50px;
+    min-height: 50px;
 }
 
 input[type="number"],
@@ -194,7 +207,9 @@ input[type="text"] {
 }
 
 input[type="number"]:hover,
-input[type="text"]:hover {
+input[type="text"]:hover,
+textarea:hover,
+textarea:focus {
     border-color: var(--highlight);
 }
 
