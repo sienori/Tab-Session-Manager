@@ -48,10 +48,10 @@
         "message": "Відміна"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Додати тег"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Видалити тег"
     },
     "windowLabel": {
         "message": "Вікно"
@@ -96,16 +96,16 @@
         "message": "Інформація"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Загальні"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Автоматичне збереження"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Запуск"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Стиль"
     },
     "ifOpenNewWindowLabel": {
         "message": "Відкрити сесію у новому вікні"
@@ -162,7 +162,7 @@
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Зберігати резервну копію"
     },
     "ifBackupCaptionLabel": {
         "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "Відновлення структури дерева Tree Style Tab. <br>Будь ласка вимкніть цю опцію на версіях Firefox до 57."
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration (millisecond)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Display session name within one line"
     },
@@ -204,10 +210,10 @@
         "message": "Specify the style of the toolbar popup."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Ширина"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Висота"
     },
     "importLabel": {
         "message": "Імпорт сесій"
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "Очистити"
     },
+    "urlImportLabel": {
+        "message": "Import URL list"
+    },
+    "urlImportCaptionLabel": {
+        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    },
     "exportLabel": {
         "message": "Експорт сесій"
     },
     "exportCaptionLabel": {
-        "message": "Зберегти поточну сесію в файл."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Експорт"
@@ -237,7 +249,7 @@
         "message": "Видалити сесії"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Видалити всі поточні сесії."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Видалити"
