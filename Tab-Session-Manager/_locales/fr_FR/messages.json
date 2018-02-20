@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "Restaurer l'état du panneau des onglets de Tree Style Tab.<br>Veuillez désactiver pour les versions antérieures à Firefox 57 (Quantum)."
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration (millisecond)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Afficher le nom de session sur une seule ligne"
     },
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "Nettoyer"
     },
+    "urlImportLabel": {
+        "message": "Import URL list"
+    },
+    "urlImportCaptionLabel": {
+        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    },
     "exportLabel": {
         "message": "Exporter les sessions"
     },
     "exportCaptionLabel": {
-        "message": "Enregistrer les sessions sur l’ordinateur."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Exporter"
@@ -237,7 +249,7 @@
         "message": "Supprimer les sessions"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Supprimer toutes les sessions."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Supprimer"

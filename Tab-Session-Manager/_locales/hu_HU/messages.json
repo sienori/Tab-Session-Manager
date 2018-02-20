@@ -162,16 +162,16 @@
         "message": "Munkamenet automatikus mentésekor, a nyitott oldal címének használata a munkamenet neveként."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Biztonsági másolat mentése"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Amikor a Firefox indul, biztonsági másolat készítése az elmentett munkamenetekről és a Letöltések mappába mentése."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Elmentett biztonsági másolatok maximális száma"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Amikor a biztonsági másolatok száma túllépi ezt az értéket, a leg régebbi törlődik."
     },
     "dateFormatLabel": {
         "message": "Dátum formátum"
@@ -190,6 +190,12 @@
     },
     "ifSupportTstCaptionLabel": {
         "message": "Fa struktúrájú fülek visszaállítása.<br>Firefox 57 (Quantum) -nál régebbi verzió esetén ki kell kapcsolni."
+    },
+    "tstDelayLabel": {
+        "message": "Késleltetés fa helyreállításnál (ezredmásodperc)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "A fa struktúra visszaállításához, idő szükséges a fül megnyitásánál. Növeld ezt az értéket, ha nem áll vissza rendesen a fa struktúra."
     },
     "truncateTitleLabel": {
         "message": "Munkamenet nevének egy soros kijelzése"
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "Töröl"
     },
+    "urlImportLabel": {
+        "message": "Import URL list"
+    },
+    "urlImportCaptionLabel": {
+        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    },
     "exportLabel": {
         "message": "Munkamenetek exportálása"
     },
     "exportCaptionLabel": {
-        "message": "Jelenlegi munkamenet mentése a számítógépre."
+        "message": "Minden munkamenet lementése a számítógépre."
     },
     "exportButtonLabel": {
         "message": "Exportálás"
@@ -237,7 +249,7 @@
         "message": "Munkamenetek törlése"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Összes jelenlegi munkamenet törlése."
+        "message": "Minden munkamenet törölése."
     },
     "removeSessionsButtonLabel": {
         "message": "Töröl"

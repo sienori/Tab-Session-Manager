@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "還原 Tree Style Tab 的樹狀分頁<br>如果使用的 Firefox 版本低於 57 時，請關閉此功能。"
     },
+    "tstDelayLabel": {
+        "message": "Tree 還原時的延長時間(毫秒)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "要還原 Tree 狀態的話，需要等待一段時間才能開啟分頁，如果 Tree 無法正確還原，請增加此值。"
+    },
     "truncateTitleLabel": {
         "message": "單行顯示瀏覽階段名稱"
     },
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "清除"
     },
+    "urlImportLabel": {
+        "message": "匯入 URL 清單"
+    },
+    "urlImportCaptionLabel": {
+        "message": "從 URL 清單中建立瀏覽階段並將它新增至瀏覽階段清單中。<br>格式: &lt;URL&gt; &lt;頁面標題 (選用)&gt;"
+    },
     "exportLabel": {
         "message": "匯出瀏覽階段"
     },
     "exportCaptionLabel": {
-        "message": "將目前的瀏覽階段儲存至電腦中"
+        "message": "將所有的瀏覽階段儲存至電腦中。"
     },
     "exportButtonLabel": {
         "message": "匯出"
@@ -237,7 +249,7 @@
         "message": "刪除瀏覽階段"
     },
     "removeSessionsCaptionLabel": {
-        "message": "刪除所有已儲存的瀏覽階段"
+        "message": "刪除所有瀏覽階段。"
     },
     "removeSessionsButtonLabel": {
         "message": "刪除"
