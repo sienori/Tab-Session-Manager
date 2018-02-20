@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "Restaurar el estado de pestañas estilo árbol <br>Desactivar si la versión de FireFox es menor a 57."
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration (millisecond)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Mostrar el nombre de la sesión en una línea"
     },
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "Limpiar"
     },
+    "urlImportLabel": {
+        "message": "Import URL list"
+    },
+    "urlImportCaptionLabel": {
+        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    },
     "exportLabel": {
         "message": "Exportar sesiones"
     },
     "exportCaptionLabel": {
-        "message": "Guardar la sesión actual en el equipo."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Exportar"
@@ -237,7 +249,7 @@
         "message": "Eliminar sesiones"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Eliminar todas las sesiones actuales."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Eliminar"
