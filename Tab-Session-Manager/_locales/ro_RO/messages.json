@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "Restaurare stare tree a Tree Style Tab. <br>Vă rugăm să o opriți pentru versiunile Firefox mai vechi decât Firefox 57 (Quantum)."
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration (millisecond)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Display session name within one line"
     },
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "Golește"
     },
+    "urlImportLabel": {
+        "message": "Import URL list"
+    },
+    "urlImportCaptionLabel": {
+        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    },
     "exportLabel": {
         "message": "Exportă sesiuni"
     },
     "exportCaptionLabel": {
-        "message": "Salvează sesiunea curentă în computer."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Exportă"
@@ -237,7 +249,7 @@
         "message": "Ștergere sesiuni"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Şterge toate sesiunile curente."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Șterge"

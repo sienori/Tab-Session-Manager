@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "ट्री स्टाइल टैब के ट्री स्टेट को पुनर्स्थापित करें|<br>कृपया फ़ायरफ़ॉक्स 57 (क्वांटम) से पुराने संस्करणों के लिए इसे बंद करें।"
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration (millisecond)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Display session name within one line"
     },
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "साफ करें"
     },
+    "urlImportLabel": {
+        "message": "Import URL list"
+    },
+    "urlImportCaptionLabel": {
+        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    },
     "exportLabel": {
         "message": "सत्रों को निर्यात करें"
     },
     "exportCaptionLabel": {
-        "message": "वर्तमान सत्र को कंप्यूटर पर सहेजें|"
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "निर्यात करें"
@@ -237,7 +249,7 @@
         "message": "सत्र हटाएं"
     },
     "removeSessionsCaptionLabel": {
-        "message": "सभी वर्तमान सत्र हटाएं"
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "हटाएँ"

@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "还原 Tree Style Tab 的标签树状态。<br>如果你的 Firefox 版本低于 57 (即 Firefox Quantum)，请取消勾选。"
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration (millisecond)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Display session name within one line"
     },
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "清除"
     },
+    "urlImportLabel": {
+        "message": "Import URL list"
+    },
+    "urlImportCaptionLabel": {
+        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    },
     "exportLabel": {
         "message": "导出会话"
     },
     "exportCaptionLabel": {
-        "message": "将当前会话保存到本地。"
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "导出"
@@ -237,7 +249,7 @@
         "message": "删除会话"
     },
     "removeSessionsCaptionLabel": {
-        "message": "删除当前所有会话。"
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "删除"

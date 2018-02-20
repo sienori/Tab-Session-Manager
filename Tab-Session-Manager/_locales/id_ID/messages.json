@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "Kembali ke status pohon Tree Style Tab.<br>Silakan menonaktifkannya jika Anda menggunakan di bawah Firefox 57 (Quantum)."
     },
+    "tstDelayLabel": {
+        "message": "Delay when tree restoration (millisecond)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    },
     "truncateTitleLabel": {
         "message": "Display session name within one line"
     },
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "Bersihkan"
     },
+    "urlImportLabel": {
+        "message": "Import URL list"
+    },
+    "urlImportCaptionLabel": {
+        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    },
     "exportLabel": {
         "message": "Ekspor Sesi"
     },
     "exportCaptionLabel": {
-        "message": "Simpan sesi saat ini di komputer."
+        "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
         "message": "Ekspor"
@@ -237,7 +249,7 @@
         "message": "Hapus sesi"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Hapus semua sesi saat ini."
+        "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
         "message": "Hapus"

@@ -191,6 +191,12 @@
     "ifSupportTstCaptionLabel": {
         "message": "ツリー型タブのツリーの状態を復元します。<br>FireFox57 (Quantum) 未満ではオフにしてください。"
     },
+    "tstDelayLabel": {
+        "message": "ツリー復元時のディレイ(ミリ秒)"
+    },
+    "tstDelayCaptionLabel": {
+        "message": "ツリーの状態を復元するにはタブを開く際に待ち時間が必要です。ツリーが正しく復元されない場合にはこの値を大きくしてください。"
+    },
     "truncateTitleLabel": {
         "message": "セッションの名前を1行で表示する"
     },
@@ -224,11 +230,17 @@
     "importClearButtonLabel": {
         "message": "クリア"
     },
+    "urlImportLabel": {
+        "message": "URLリストをインポート"
+    },
+    "urlImportCaptionLabel": {
+        "message": "URLのリストからセッションを作成し，セッションリストに追加します。<br>フォーマット: &lt;URL&gt; &lt;ページタイトル (任意)&gt;"
+    },
     "exportLabel": {
         "message": "セッションをエクスポート"
     },
     "exportCaptionLabel": {
-        "message": "現在のセッションをコンピュータに保存します。"
+        "message": "全てのセッションをコンピュータに保存します。"
     },
     "exportButtonLabel": {
         "message": "エクスポート"
@@ -237,7 +249,7 @@
         "message": "セッションを削除"
     },
     "removeSessionsCaptionLabel": {
-        "message": "現在のセッションを全て削除します。"
+        "message": "全てのセッションを削除します。"
     },
     "removeSessionsButtonLabel": {
         "message": "削除"
