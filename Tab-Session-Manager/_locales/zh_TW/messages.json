@@ -234,7 +234,7 @@
         "message": "匯入 URL 清單"
     },
     "urlImportCaptionLabel": {
-        "message": "從 URL 清單中建立瀏覽階段並將它加入瀏覽階段清單中。<br>格式: &lt;URL&gt; &lt;頁面標題 (選用)&gt;"
+        "message": "從 URL 清單中建立瀏覽階段並將它新增至瀏覽階段清單中。<br>格式: &lt;URL&gt; &lt;頁面標題 (選用)&gt;"
     },
     "exportLabel": {
         "message": "匯出瀏覽階段"
