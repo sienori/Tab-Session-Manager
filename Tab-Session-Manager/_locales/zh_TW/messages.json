@@ -192,7 +192,7 @@
         "message": "還原 Tree Style Tab 的樹狀分頁<br>如果使用的 Firefox 版本低於 57 時，請關閉此功能。"
     },
     "tstDelayLabel": {
-        "message": "Tree 還原時的延長時間(毫秒)"
+        "message": "Tree 還原時的延遲時間(毫秒)"
     },
     "tstDelayCaptionLabel": {
         "message": "要還原 Tree 狀態的話，需要等待一段時間才能開啟分頁，如果 Tree 無法正確還原，請增加此值。"
