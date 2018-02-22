@@ -59,9 +59,9 @@ function loadCurrentSesssion(name, tag, property) {
                 if (session.windows[tab.windowId] == undefined) session.windows[tab.windowId] = {};
 
                 //replacedPageなら元のページを保存
-                let paramater = returnReplaceParamater(tab.url)
-                if (paramater.isReplaced) {
-                    tab.url = paramater.url;
+                let parameter = returnReplaceParameter(tab.url)
+                if (parameter.isReplaced) {
+                    tab.url = parameter.url;
                 }
                 session.windows[tab.windowId][tab.id] = tab;
                 session.tabsNumber++;

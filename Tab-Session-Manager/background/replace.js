@@ -2,19 +2,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-function returnReplaceParamater(url) {
-    let paramater = {};
+function returnReplaceParameter(url) {
+    let parameter = {};
     if (url.indexOf(browser.runtime.getURL("replaced/replaced.html")) === 0) {
-        paramater.isReplaced = true;
+        parameter.isReplaced = true;
         let paras = url.split('?')[1].split('&');
         for (let p of paras) {
-            paramater[p.split('=')[0]] = decodeURIComponent(p.split('=')[1]);
+            parameter[p.split('=')[0]] = decodeURIComponent(p.split('=')[1]);
         }
     } else {
-        paramater.isReplaced = false;
+        parameter.isReplaced = false;
     }
 
-    return paramater;
+    return parameter;
 }
 
 function returnReplaceURL(state, title, url, favIconUrl) {
@@ -50,17 +50,17 @@ function replacePage() {
             return;
         }
 
-        const paramater = returnReplaceParamater(info[0].url);
-        if (paramater.isReplaced && paramater.state == "redirect") {
+        const parameter = returnReplaceParameter(info[0].url);
+        if (parameter.isReplaced && parameter.state == "redirect") {
             browser.tabs.update(info[0].id, {
-                url: paramater.url
+                url: parameter.url
             }).then(() => {
-                if (paramater.openInReaderMode == "true") {
+                if (parameter.openInReaderMode == "true") {
                     toggleReaderMode(info[0].id);
                 }
             }).catch(() => {
                 browser.tabs.update(info[0].id, {
-                    url: returnReplaceURL('open_faild', paramater.title, paramater.url, paramater.favIconUrl)
+                    url: returnReplaceURL('open_faild', parameter.title, parameter.url, parameter.favIconUrl)
                 })
             })
         }
