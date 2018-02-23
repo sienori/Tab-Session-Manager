@@ -165,13 +165,13 @@
         "message": "Yedeklemeyi kaydet"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Firefox başlatıldığında, oturumların yedeklemeleri için bir dosya oluştur ve indirilenler dosyasına kaydet."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "En fazla kayıtlı yedekleme sayısı"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Yedeklemelerin sayısı bu değeri aştığında, en eskiden başlayıp yukarı doğru silinirler."
     },
     "dateFormatLabel": {
         "message": "Tarih formatı"
@@ -180,10 +180,10 @@
         "message": "Örn YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Gizli pencereyi kaydet"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Eğer işaretli değilse, oturumu kaydederken gizli pencereyi yok sayar."
     },
     "ifSupportTstLabel": {
         "message": "Ağaç Stili Sekmeyi Destekler"
@@ -198,22 +198,22 @@
         "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Oturum adını tek satırda görüntüle"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Oturum listesindeki oturum adı tek bir satırdan uzunsa, tek satır üzerinde kısaltılır ve görüntülenir."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Araç çubuğu açılır penceresi"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Araç çubuğu açılır penceresinin biçimini belirleyin."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Genişlik"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Yükseklik"
     },
     "importLabel": {
         "message": "Oturumları al"
@@ -231,7 +231,7 @@
         "message": "Temizle"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "URL listesini içe aktar"
     },
     "urlImportCaptionLabel": {
         "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
