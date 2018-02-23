@@ -165,13 +165,13 @@
         "message": "Zapisz kopię zapasową"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Po uruchomieniu programu Firefox, utwórz plik kopii zapasowej wszystkich sesji i zapisz go w folderze pobierania."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Maksymalna liczba zapisanych kopii zapasowych"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Gdy liczba plików kopii zapasowej przekracza tę wartość, są one usuwane w kolejności od najstarszych."
     },
     "dateFormatLabel": {
         "message": "Format daty"
@@ -189,13 +189,13 @@
         "message": "Obsługa Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Przywraca stan kart drzewiastych rozszerzenia Tree Style Tab.<br>Proszę wyłączyć tę opcję dla Firefoksa w wersji starszej niż 57 (Quantum)."
+        "message": "Przywraca stan drzewa kart rozszerzenia Tree Style Tab.<br>Proszę wyłączyć tę opcję dla Firefoksa w wersji starszej niż 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
+        "message": "Opóźnienie przywracania drzewa (milisekundy)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "Aby przywrócić stan drzewa, wymagany jest czas oczekiwania na otwarcie karty. Zwiększ tą wartość, jeśli drzewo nie jest przywracane prawidłowo."
     },
     "truncateTitleLabel": {
         "message": "Pokaż nazwę sesji w jednej lini"
