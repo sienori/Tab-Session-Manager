@@ -12,7 +12,7 @@
         "message": "Geçerli oturumu kaydet"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Yalnızca mevcut pencereyi kaydet"
     },
     "displayAllLabel": {
         "message": "Tümü"
@@ -42,16 +42,16 @@
         "message": "Sil"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Bu oturum silinsin mi?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Vazgeç"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Etiket ekle"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Etiketi kaldır"
     },
     "windowLabel": {
         "message": "Pencere"
@@ -69,16 +69,16 @@
         "message": "Oturum yok"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Yeniden adlandır"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Yeni pencerede aç"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Mevcut pencerede aç"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Mevcut pencereye ekle"
     },
     "winCloseSessionName": {
         "message": "Otomatik kaydedildi - Pencere kapatıldı"
@@ -96,16 +96,16 @@
         "message": "Bilgi"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Genel"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Otomatik kaydet"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Başlangıç"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Biçim"
     },
     "ifOpenNewWindowLabel": {
         "message": "Yeni penceredeki açık oturumlar"
@@ -120,10 +120,10 @@
         "message": "Bir oturum açtığında, her sayfanın içeriği siz sekme seçene kadar her sayfanın içeriği yüklenmez.<br>Kontrol işareti konulursa, oturum onarıldığında bellek kullanımı artar."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Başlangıçta son oturumu yeniden yükle"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "Firefox başlatıldığında, son kapatılan oturumu yeniden yükle."
     },
     "ifAutoSaveLabel": {
         "message": "Oturumu düzenli olarak kaydet"
@@ -156,13 +156,13 @@
         "message": "Bu şekilde kaydedilen maksimum sayı."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Otomatik kaydedilen oturum adı için sayfa başlığını kullan"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "Bir oturumu otomatik olarak kaydederken, oturum adı olarak açılan sayfanın başlığını kullan."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Yedeklemeyi kaydet"
     },
     "ifBackupCaptionLabel": {
         "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
