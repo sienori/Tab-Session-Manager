@@ -162,7 +162,7 @@
         "message": "Kiedy zapisujesz sesję automatycznie, użyj tytułu otwartej strony jako nazwy sesji."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Zapisz kopię zapasową"
     },
     "ifBackupCaptionLabel": {
         "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
@@ -231,7 +231,7 @@
         "message": "Wyczyść"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "Importuj listę adresów URL"
     },
     "urlImportCaptionLabel": {
         "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
