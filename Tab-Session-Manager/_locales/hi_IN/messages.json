@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "विंडो और टैब की स्थिति को सहेजें और पुनर्स्थापित करें| यह स्वचालित बचत का भी समर्थन करता है।"
+        "message": "विंडो और टैब की स्थिति को सहेजें और फिर से चालू करें| यह स्वचालित बचत का भी समर्थन करता है।"
     },
     "saveLabel": {
         "message": "सहेजें"
@@ -69,7 +69,7 @@
         "message": "कोई सत्र नहीं है"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "नाम बदलिए"
     },
     "openInNewWindowLabel": {
         "message": "Open in new window"
@@ -120,7 +120,7 @@
         "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "स्टार्टअप पर पिछला सत्र फिर से चालू करें"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
         "message": "When Firefox starts up, restore the session that was closed the last time."
@@ -210,10 +210,10 @@
         "message": "Specify the style of the toolbar popup."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "चौड़ाई"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "लंबाई"
     },
     "importLabel": {
         "message": "सत्रों को आयात करें"
