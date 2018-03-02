@@ -123,7 +123,7 @@
         "message": "स्टार्टअप पर पिछला सत्र फिर से चालू करें"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "जब Firefox शुरू होता है, जो पिछली बार बंद कर दिया गया था सत्र उन्हें फिर से चालू करना करें ।"
     },
     "ifAutoSaveLabel": {
         "message": "सत्र को नियमित रूप से सहेजें"
