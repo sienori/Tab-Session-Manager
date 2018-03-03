@@ -42,16 +42,16 @@
         "message": "Verwijder"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Deze sessie verwijderen?"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Annuleren"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Voeg tag toe"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Tag verwijderen"
     },
     "windowLabel": {
         "message": "Venster"
@@ -69,16 +69,16 @@
         "message": "Er is geen sessie"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Hernoemen"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "In nieuw venster openen"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Open in bestaand venster"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Toevoegen aan huidige venster"
     },
     "winCloseSessionName": {
         "message": "Automatisch opgeslagen - venster was gesloten"
