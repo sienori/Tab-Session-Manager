@@ -176,7 +176,14 @@ function updateFilterItems() {
     }
 
     filter.innerHTML = options;
-    filter.value = S.get().filter;
+
+    let filterValues = [];
+    for (let option of filter.getElementsByTagName('option')) {
+        filterValues.push(option.value);
+    }
+
+    const currentFilterValue = S.get().filter;
+    filter.value = (filterValues.includes(currentFilterValue)) ? currentFilterValue : '_displayAll';
 }
 
 window.document.getElementById("filter").addEventListener("change", filterChange);
