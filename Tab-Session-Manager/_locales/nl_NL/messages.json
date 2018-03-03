@@ -96,16 +96,16 @@
         "message": "Informatie"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Algemeen"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Automatisch opslaan"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Starten"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Stijl"
     },
     "ifOpenNewWindowLabel": {
         "message": "Open sessie in een nieuw venster"
@@ -249,7 +249,7 @@
         "message": "Sessies verwijderen"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "Alle sessies verwijderen."
     },
     "removeSessionsButtonLabel": {
         "message": "Verwijder"
