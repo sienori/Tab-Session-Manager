@@ -195,7 +195,7 @@
         "message": "Ağaç restorasyonunda gecikme (milisaniye)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "Ağacın durumunu geri yüklemek için sekmeyi açmak için bekleme süresi gerekiyor. Ağaç düzgün şekilde geri yüklenmezse bu değeri artırın."
     },
     "truncateTitleLabel": {
         "message": "Oturum adını tek satırda görüntüle"
@@ -234,13 +234,13 @@
         "message": "URL listesini içe aktar"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "URL listesinden bir oturum oluşturun ve oturum listesine ekleyin.<br>Format: &lt;URL&gt; &lt;sayfa başlığı (isteğe bağlı)&gt;"
     },
     "exportLabel": {
         "message": "Oturumları dışa aktar"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Tüm oturumları bilgisayara kaydet."
     },
     "exportButtonLabel": {
         "message": "Dışa Aktar"
@@ -249,7 +249,7 @@
         "message": "Oturumları sil"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "Tüm oturumları sil."
     },
     "removeSessionsButtonLabel": {
         "message": "Sil"
