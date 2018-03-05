@@ -231,10 +231,10 @@
         "message": "Töröl"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "URL-lista importálása"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Munkamenet létrehozása URL listából.<br>Formátum: &lt;URL&gt; &lt;oldal cím (nem kötelező)&gt;"
     },
     "exportLabel": {
         "message": "Munkamenetek exportálása"
