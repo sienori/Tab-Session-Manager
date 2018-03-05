@@ -5,8 +5,6 @@
 let S = new settingsObj;
 S.initOptionsPage();
 
-let MargedSessions = {};
-
 document.addEventListener('click', function (e) {
     switch (e.target.id) {
         case "export":
