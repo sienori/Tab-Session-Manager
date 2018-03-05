@@ -18,10 +18,10 @@
         "message": "Wszystkie"
     },
     "displayUserLabel": {
-        "message": "Użytkownik zapisany"
+        "message": "Zapisane przez użytkownika"
     },
     "displayAutoLabel": {
-        "message": "Automatycznie zapisano"
+        "message": "Zapisane automatycznie"
     },
     "newestLabel": {
         "message": "Najnowsze"
@@ -81,10 +81,10 @@
         "message": "Dodaj do bieżącego okna"
     },
     "winCloseSessionName": {
-        "message": "Zapisano automatycznie - okno zostało zamknięte"
+        "message": "Zapisane automatycznie - okno zostało zamknięte"
     },
     "regularSaveSessionName": {
-        "message": "Zapisano automatycznie - regularnie"
+        "message": "Zapisane automatycznie - regularnie"
     },
     "settingsLabel": {
         "message": "Ustawienia"
@@ -147,13 +147,13 @@
         "message": "Zapisuj sesję, kiedy okno zostało zamknięte"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Zapisuj sesję zamknąwszy okna lub przy zamykaniu przeglądarki Firefox."
+        "message": "Zapisuj sesję podczas zamykania okna lub przy zamykaniu przeglądarki Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Maksymalna liczba zapisanych"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maksymalna liczba zapisanych sesji (w ten sposób)."
+        "message": "Maksymalna liczba zapisanych (w ten sposób) sesji."
     },
     "useTabTitleforAutoSaveLabel": {
         "message": "Użyj tytułu strony dla nazwy sesji automatycznego zapisywania"
@@ -162,16 +162,16 @@
         "message": "Kiedy zapisujesz sesję automatycznie, użyj tytułu otwartej strony jako nazwy sesji."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Zapisz kopię zapasową"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Po uruchomieniu programu Firefox, utwórz plik kopii zapasowej wszystkich sesji i zapisz go w folderze pobierania."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Maksymalna liczba zapisanych kopii zapasowych"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Gdy liczba plików kopii zapasowej przekracza tę wartość, są one usuwane w kolejności od najstarszych."
     },
     "dateFormatLabel": {
         "message": "Format daty"
@@ -189,19 +189,19 @@
         "message": "Obsługa Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Przywraca stan kart drzewiastych rozszerzenia Tree Style Tab.<br>Proszę wyłączyć tę opcję dla Firefoksa w wersji starszej niż 57 (Quantum)."
+        "message": "Przywraca stan drzewa kart rozszerzenia Tree Style Tab.<br>Proszę wyłączyć tę opcję dla Firefoksa w wersji starszej niż 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
+        "message": "Opóźnienie przywracania drzewa (milisekundy)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "Aby przywrócić stan drzewa, wymagany jest czas oczekiwania na otwarcie karty. Zwiększ tą wartość, jeśli drzewo nie jest przywracane prawidłowo."
     },
     "truncateTitleLabel": {
         "message": "Pokaż nazwę sesji w jednej lini"
     },
     "truncateTitleCaptionLabel": {
-        "message": "Jeśli nazwa sesji liście sesji jest dłuższa niż jedna linia, jest kadłubowy na jednwj lini i pokazany."
+        "message": "Jeśli nazwa sesji na liście sesji jest dłuższa niż jedna linia, jest ona obcinana do jednej inii i wyświetlana."
     },
     "toolBarPopupLabel": {
         "message": "Pojawienie się narzędzia paskowego"
@@ -231,16 +231,16 @@
         "message": "Wyczyść"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "Importuj listę adresów URL"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Utwórz sesję z listy adresów URL i dodaj ją do listy sesji.<br>Format: &lt;URL&gt; &lt;tytuł strony (opcjonalnie)&gt;"
     },
     "exportLabel": {
         "message": "Eksportuj sesje"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Zapisz wszystkie sesje na komputer."
     },
     "exportButtonLabel": {
         "message": "Eksport"
@@ -249,7 +249,7 @@
         "message": "Usuń sesje"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "Usuń wszystkie sesje."
     },
     "removeSessionsButtonLabel": {
         "message": "Usuń"
@@ -264,10 +264,10 @@
         "message": "Dziękuję za korzystanie z Tab Session Managera.<br>Twoje wsparcie będzie wielką zachętą do dalszego rozwijania dodatku.<br>Jeśli podoba ci się Tab Session Manager, byłbym bardzo wdzięczny za wszelkie datki."
     },
     "amazonTitleLabel": {
-        "message": "amazon.co.jp Karty podarunkowe"
+        "message": "eKarty podarunkowe amazon.co.jp"
     },
     "addonPageLabel": {
-        "message": "strona dodatków"
+        "message": "strona dodatku"
     },
     "importMessage": {
         "message": "Sesje zaimportowane."
