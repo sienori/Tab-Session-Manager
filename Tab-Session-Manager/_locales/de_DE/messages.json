@@ -123,7 +123,7 @@
         "message": "Vorherige Sitzung beim Start wiederherstellen"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "Wenn Firefox startet, wiederherstellt die Sitzung, die beim letzte mal geschlossen wurde."
+        "message": "Wenn Firefox startet, die Sitzung wiederherstellen, die beim letzte Mal geschlossen wurde."
     },
     "ifAutoSaveLabel": {
         "message": "Sitzung regelmäßig sichern"
@@ -132,7 +132,7 @@
         "message": "Speichert die Sitzung im einstellten Zeitabstand."
     },
     "autoSaveIntervalLabel": {
-        "message": "Intervall(Minuten)"
+        "message": "Intervall (Minuten)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Minimaler Wert 0.1"
@@ -156,25 +156,25 @@
         "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Verwende den Seitentitel für den Sitzungsname beim Automatische Speicherung"
+        "message": "Verwende den Seitentitel für den Sitzungsnamen beim automatischen Speichern"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "Wenn eine Sitzung automatisch gespeichert wird, verwende den Titel der geöffneten Seite als der Name der Sitzung."
+        "message": "Wenn eine Sitzung automatisch gespeichert wird, wird der Titel der geöffneten Seite für den Namen der Sitzung verwendet."
     },
     "ifBackupLabel": {
-        "message": "Sicherungskopie speichern"
+        "message": "Sicherungskopie erstellen"
     },
     "ifBackupCaptionLabel": {
-        "message": "Wenn Firefox startet, erstelle eine Sicherungsdatei der Sitzungen und speicher sie im Ordner \"Download\"."
+        "message": "Wenn Firefox startet wird eine Sicherungsdatei der Sitzungen erstellt und im Ordner \"Downloads\" abgelegt."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximale Anzahl von gespeicherten Sicherungen"
+        "message": "Maximale Anzahl von erstellten Sicherungen"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "Wenn die Anzahl der backup-Dateien diesen Wert überschreitet, werden sie in aufsteigender Reihenfolge der älteste gelöscht."
+        "message": "Wenn die Anzahl der Sicherungsdateien diesen Wert überschreitet, werden der Reihe nach die ältesten Sicherungen gelöscht."
     },
     "dateFormatLabel": {
-        "message": "Datumformat"
+        "message": "Datumsformat"
     },
     "dateFormatCaptionLabel": {
         "message": "Beispiel: DD.MM.YYYY ss:mm:HH"
@@ -183,7 +183,7 @@
         "message": "Private Fenster speichern"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "Ignoriert privaten Fenster beim Speicherung der Sitzung, wenn Haken entfernt wird."
+        "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
     },
     "ifSupportTstLabel": {
         "message": "Unterstützung von baumstrukturierte Tabs"
