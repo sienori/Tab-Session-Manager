@@ -240,7 +240,7 @@
         "message": "Sitzungen exportieren"
     },
     "exportCaptionLabel": {
-        "message": "Alle Sitzungen auf dem Computer Speichern."
+        "message": "Alle Sitzungen auf dem Computer speichern."
     },
     "exportButtonLabel": {
         "message": "Exportieren"
@@ -258,7 +258,7 @@
         "message": "Lizenz"
     },
     "donationLabel": {
-        "message": "Bitte spenden Sie uns."
+        "message": "Bitte spende etwas"
     },
     "donationCaptionLabel": {
         "message": "Danke, dass Sie Tab Session Manager nutzen.<br>Ihre Unterstützung ist ein großer Ansporn bei der Weiterentwicklung dieses Add-ons.<br>Wenn Ihnen Tab Session Manager gefällt, erwägen Sie bitte eine Spende."
@@ -267,7 +267,7 @@
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "Webseite des Add-ons"
+        "message": "Add-on-Seite"
     },
     "importMessage": {
         "message": "Sitzungen importiert."
