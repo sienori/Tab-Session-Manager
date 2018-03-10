@@ -12,7 +12,7 @@
         "message": "Aktuelle Sitzung speichern"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Nur aktuelle Fenster speichern"
+        "message": "Nur aktuelles Fenster speichern"
     },
     "displayAllLabel": {
         "message": "Alle"
@@ -42,16 +42,16 @@
         "message": "Löschen"
     },
     "removeConfirmLabel": {
-        "message": "Sitzung löschen?"
+        "message": "Diese Sitzung löschen?"
     },
     "cancelLabel": {
         "message": "Abbrechen"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Schlagwort hinzufügen"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Schlagwort entfernen"
     },
     "windowLabel": {
         "message": "Fenster"
@@ -72,7 +72,7 @@
         "message": "Umbenennen"
     },
     "openInNewWindowLabel": {
-        "message": "Im neuen Fenster öffnen"
+        "message": "In neuem Fenster öffnen"
     },
     "openInCurrentWindowLabel": {
         "message": "Im aktuellen Fenster öffnen"
@@ -102,10 +102,10 @@
         "message": "Automatisches Speichern"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Startverhalten"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Erscheinungsbild"
     },
     "ifOpenNewWindowLabel": {
         "message": "Sitzung im neuen Fenster öffnen"
@@ -204,7 +204,7 @@
         "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Werkzeugleistenfenster"
     },
     "toolBarPopupCaptionLabel": {
         "message": "Specify the style of the toolbar popup."
@@ -231,7 +231,7 @@
         "message": "Löschen"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "URL-Liste importieren"
     },
     "urlImportCaptionLabel": {
         "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
