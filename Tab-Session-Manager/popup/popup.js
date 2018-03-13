@@ -453,8 +453,8 @@ function showDetail(e) {
 
                 let tabHtml =
                     `<li class="tabContainer hidden">
-                        <div class=fav style="background-image:url(${tabFavIconUrl})"></div>
-                        <div class=tabTitle><a href=${tabUrl}></a></div>
+                        <div class=fav style="background-image:url(${sanitaize.encode(tabFavIconUrl)})"></div>
+                        <div class=tabTitle><a href=${sanitaize.encode(tabUrl)}></a></div>
                     </li>`;
 
                 detail.getElementsByClassName("windowContainer")[i - 1].insertAdjacentHTML('beforeend', tabHtml);

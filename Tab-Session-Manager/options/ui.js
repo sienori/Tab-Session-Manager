@@ -61,6 +61,14 @@ function getParams(hash) {
     return params;
 }
 
+const sanitaize = {
+    encode: (str) => {
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    },
+    decode: (str) => {
+        return str.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, '\'').replace(/&amp;/g, '&');
+    }
+}
 
 function showImportFile(fileName, sessions) {
     document.getElementById("fileList").parentNode.style.display = "block";
@@ -70,13 +78,15 @@ function showImportFile(fileName, sessions) {
 function returnFileListNode(fileName, sessions) {
     const sessionLabel = browser.i18n.getMessage("sessionLabel").toLowerCase();
     const sessionsLabel = browser.i18n.getMessage("sessionsLabel").toLowerCase();
-    let sessionsState
+    let sessionsState;
     if (sessions == undefined) sessionsState = browser.i18n.getMessage("readFailedMessage");
     else if (sessions.length <= 1) sessionsState = `${sessions.length} ${sessionLabel}`;
     else sessionsState = `${sessions.length} ${sessionsLabel}`;
 
-    return "<li><div class=optionContainer><div class=optionText><p>" +
-        fileName + "</p><p class=caption>" + sessionsState + "</p></div></div></li>";
+    return `<li><div class=optionContainer><div class=optionText>
+                <p>${sanitaize.encode(fileName)}</p>
+                <p class=caption>${sessionsState}</p>
+            </div></div></li>`;
 }
 
 function clearImportFile() {
