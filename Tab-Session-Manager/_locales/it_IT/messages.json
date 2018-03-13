@@ -195,13 +195,13 @@
         "message": "Ritarda il ripristino ad albero (in millisecondi)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "Per ripristinare lo stato dell'alberatura, è necessario un tempo d'attesa per aprire la scheda. Aumenta questo valore se l'alberatura non viene ripristinata correttamente."
     },
     "truncateTitleLabel": {
         "message": "Visualizza il nome della sessione in una riga"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Se il nome della sessione nella lista delle sessioni si estende su più righe, viene troncato in un'unica riga."
     },
     "toolBarPopupLabel": {
         "message": "Toolbar popup"
@@ -234,13 +234,13 @@
         "message": "Importa lista URL"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Crea una sessione da una lista di URL e la aggiunge alla lista delle sessioni.<br>Formato: &lt;URL&gt; &lt;Nome pagina (opzionale)&gt;"
     },
     "exportLabel": {
         "message": "Esporta sessioni"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Salva tutte le sessioni sul computer."
     },
     "exportButtonLabel": {
         "message": "Esporta"
