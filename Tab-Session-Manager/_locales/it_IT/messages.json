@@ -192,7 +192,7 @@
         "message": "Ripristina la struttura ad albero di Tree Style Tab.<br>Disattiva questa funzionalità su versioni precedenti a Firefox 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Ritarda il ripristino ad albero (in millisecondi)"
+        "message": "Ritardo del ripristino ad albero (millisecondi)"
     },
     "tstDelayCaptionLabel": {
         "message": "Per ripristinare lo stato dell'alberatura, è necessario un tempo d'attesa per aprire la scheda. Aumenta questo valore se l'alberatura non viene ripristinata correttamente."
