@@ -162,16 +162,16 @@
         "message": "Quando viene automaticamente salvata una sessione, usa il titolo della pagina corrente come nome della sessione."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Salva backup"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "All'avvio di Firefox, crea un file di backup delle sessioni e salvalo nella cartella dei download."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Numero massimo di backup salvati"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Quando il numero dei file di backup supera questo valore, verranno eliminati a partire dal più vecchio."
     },
     "dateFormatLabel": {
         "message": "Formato data"
@@ -192,7 +192,7 @@
         "message": "Ripristina la struttura ad albero di Tree Style Tab.<br>Disattiva questa funzionalità su versioni precedenti a Firefox 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
+        "message": "Ritarda il ripristino ad albero (in millisecondi)"
     },
     "tstDelayCaptionLabel": {
         "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
@@ -231,7 +231,7 @@
         "message": "Ripulisci"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "Importa lista URL"
     },
     "urlImportCaptionLabel": {
         "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
@@ -249,7 +249,7 @@
         "message": "Elimina sessioni"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "Elimina tutte le sessioni."
     },
     "removeSessionsButtonLabel": {
         "message": "Elimina"
