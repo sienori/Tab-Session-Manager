@@ -48,10 +48,10 @@
         "message": "Отмена"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Добавить метку"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Убрать метку"
     },
     "windowLabel": {
         "message": "Окно"
@@ -96,16 +96,16 @@
         "message": "Информация"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Общие"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Автосохранение"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "При запуске"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Стиль"
     },
     "ifOpenNewWindowLabel": {
         "message": "Открыть сессию в новом окне"
@@ -162,7 +162,7 @@
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Сохранить резервную копию"
     },
     "ifBackupCaptionLabel": {
         "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
@@ -210,10 +210,10 @@
         "message": "Specify the style of the toolbar popup."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Ширина"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Высота"
     },
     "importLabel": {
         "message": "Импорт сессий"
@@ -231,7 +231,7 @@
         "message": "Очистить"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "Импорт списка URL-адресов"
     },
     "urlImportCaptionLabel": {
         "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
@@ -249,7 +249,7 @@
         "message": "Удалить сессии"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "Удалить все сессии."
     },
     "removeSessionsButtonLabel": {
         "message": "Удалить"
