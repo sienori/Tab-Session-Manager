@@ -12,7 +12,7 @@
         "message": "Сохранить текущий сеанс"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Сохранить только текущее окно"
     },
     "displayAllLabel": {
         "message": "Все"
@@ -156,7 +156,7 @@
         "message": "Максимальное число сессий хранимых данным способом."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Использовать заголовок страницы для автоматического сохранения имени сессии"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
@@ -168,7 +168,7 @@
         "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Максимальное количество сохранённых резервных копий"
     },
     "backupFilesLimitCaptionLabel": {
         "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
@@ -192,22 +192,22 @@
         "message": "Восстанавливать строение дерева Tree Style Tab.<br>Следует отключить на версиях Firefox до 57."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
+        "message": "Задержка при восстановлении дерева (миллисекунды)"
     },
     "tstDelayCaptionLabel": {
         "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Отображать имя сессии в одной строке"
     },
     "truncateTitleCaptionLabel": {
         "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Всплывающее окно на панели инструментов"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Укажите стиль всплывающего окна на панели инструментов."
     },
     "widthLabel": {
         "message": "Ширина"
@@ -234,13 +234,13 @@
         "message": "Импорт списка URL-адресов"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Создать сессию из списка URL-адресов и добавить её в список сессий. <br>Формат: &lt;URL&gt; &lt;заголовок страницы (необязательно)&gt;"
     },
     "exportLabel": {
         "message": "Экспорт сессий"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Сохранить все сессии на этот компьютер."
     },
     "exportButtonLabel": {
         "message": "Экспорт"
