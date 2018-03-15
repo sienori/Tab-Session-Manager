@@ -159,19 +159,19 @@
         "message": "Использовать заголовок страницы для автоматического сохранения имени сессии"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "При автоматическом сохранении сессии, использовать заголовок открытой страницы в качестве имени сессии."
     },
     "ifBackupLabel": {
         "message": "Сохранить резервную копию"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "При запуске Firefox, создать файл резервной копии сессий и сохранить его в папке загрузки."
     },
     "backupFilesLimitLabel": {
         "message": "Максимальное количество сохранённых резервных копий"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Когда число файлов резервных копий превышает это значение, они удаляются, начиная со самых старых."
     },
     "dateFormatLabel": {
         "message": "Формат времени"
@@ -195,13 +195,13 @@
         "message": "Задержка при восстановлении дерева (миллисекунды)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "Для восстановления состояние дерева и открытия вкладки требуется некоторое время. Увеличьте это значение, если дерево не восстанавливается корректно."
     },
     "truncateTitleLabel": {
         "message": "Отображать имя сессии в одной строке"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Если имя сессии в списке занимает более одной строки, оно усекается на одну строку."
     },
     "toolBarPopupLabel": {
         "message": "Всплывающее окно на панели инструментов"
