@@ -51,7 +51,7 @@ function removeSessions() {
     let res = confirm(browser.i18n.getMessage("warningRemoveAllMessage"));
     if (res == true) {
         browser.runtime.sendMessage({
-            message: "clearAllSessions"
+            message: "deleteAllSessions"
         });
     }
 }
@@ -64,7 +64,7 @@ async function importSessions() {
     if (files == undefined) return;
 
     for (let file of files) {
-        session = await fileOpen(file);
+        const session = await fileOpen(file);
         showImportFile(file.name, session);
         Array.prototype.push.apply(ImportSessions, session);
     }
@@ -262,7 +262,9 @@ function createTabByUrl(urlLine, tabId) {
 }
 
 async function exportSessions(id = null) {
-    const sessions = await getSessions(id);
+    let sessions = await getSessions(id);
+    if (sessions == undefined) return;
+    if (!Array.isArray(sessions)) sessions = [sessions];
 
     const downloadUrl = URL.createObjectURL(
         new Blob([JSON.stringify(sessions, null, '    ')], {
@@ -272,23 +274,21 @@ async function exportSessions(id = null) {
 
     const fileName = returnFileName(sessions);
 
-    const downloading = browser.downloads.download({
+    await browser.downloads.download({
         url: downloadUrl,
         filename: `${fileName}.json`,
         conflictAction: 'uniquify',
         saveAs: true
-    });
-    downloading;
+    }).catch(() => {});
 }
 
 async function getSessions(id) {
-    return new Promise(function (resolve, reject) {
-        browser.runtime.sendMessage({
+    return new Promise(async resolve => {
+        const sessions = await browser.runtime.sendMessage({
             message: "getSessions",
             id: id
-        }).then((response) => {
-            resolve(response.sessions);
         });
+        resolve(sessions);
     });
 }
 

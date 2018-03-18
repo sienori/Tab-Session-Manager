@@ -4,27 +4,38 @@
 
 IsSavingSession = false;
 
-function saveSession(name, tag, property) {
+function saveCurrentSession(name, tag, property) {
     IsSavingSession = true;
-    return new Promise(function (resolve, reject) {
-        loadCurrentSesssion(name, tag, property).then(function (session) {
-            if (tag.includes("winClose")) {
-                showSessionWhenWindowClose(session);
-                sessions.push(session);
-            } else if (tag.includes("regular")) {
-                if (ifChangedAutoSaveSession(session)) sessions.push(session);
-            } else {
-                sessions.push(session);
-            }
-            setStorage();
-            IsSavingSession = false;
-            resolve();
-        }, function () {
-            //失敗時
+
+    return new Promise(async(resolve, reject) => {
+        const exit = () => {
             IsSavingSession = false;
             reject();
-        })
+            return;
+        };
 
+        try {
+            const session = await loadCurrentSesssion(name, tag, property);
+
+            //定期保存のセッションが変更されていなければ終了
+            if (tag.includes("regular")) {
+                const isChanged = await isChangedAutoSaveSession(session);
+                if (!isChanged) {
+                    return exit();
+                }
+            }
+
+            if (tag.includes("winClose")) {
+                showSessionWhenWindowClose(session);
+            }
+
+            await Sessions.put(session);
+            if (!tag.includes('temp')) sendMessage('saveSession', session.id);
+            IsSavingSession = false;
+            resolve();
+        } catch (e) {
+            exit();
+        }
     })
 }
 
@@ -44,7 +55,7 @@ function loadCurrentSesssion(name, tag, property) {
             session.name = name;
             session.date = new Date();
             session.tag = tag;
-            session.sessionStartTime = sessionStartTime;
+            session.sessionStartTime = SessionStartTime;
             session.id = UUID.generate();
 
             for (let tab of tabs) {
@@ -69,101 +80,109 @@ function loadCurrentSesssion(name, tag, property) {
 
             if (session.tabsNumber > 0) resolve(session);
             else reject();
-
         })
     })
 }
 
 //前回の自動保存からタブが変わっているか判定
 //自動保存する必要があればtrue
-function ifChangedAutoSaveSession(session) {
-    let lastAutoNumber = -1;
-    for (let i in sessions) {
-        if (sessions[i].tag.includes('regular')) lastAutoNumber = i;
-    }
-    //自動保存が無ければtrue
-    if (lastAutoNumber == -1) return true;
+async function isChangedAutoSaveSession(session) {
+    const regularSessions = await getSessionsByTag('regular', ['id', 'tag', 'date', 'windows']);
+    if (regularSessions.length == 0) return true;
 
-    //前回保存時のセッション
-    let lastItems = [];
-    for (let win in sessions[lastAutoNumber].windows) {
-        lastItems.push(win);
-        for (let tab in sessions[lastAutoNumber].windows[win]) {
-            id = sessions[lastAutoNumber].windows[win][tab].id;
-            url = sessions[lastAutoNumber].windows[win][tab].url;
-            lastItems.push(id, url);
+    const tabsToString = session => {
+        let retArray = [];
+        for (let windowNo in session.windows) {
+            retArray.push(windowNo);
+            for (let tabNo in session.windows[windowNo]) {
+                const tab = session.windows[windowNo][tabNo];
+                retArray.push(tab.id, tab.url);
+            }
         }
-    }
-    //現在のセッション
-    let newItems = []
-    for (let win in session.windows) {
-        newItems.push(win);
-        for (let tab in session.windows[win]) {
-            id = session.windows[win][tab].id;
-            url = session.windows[win][tab].url;
-            newItems.push(id, url);
-        }
+        return retArray.toString();
     }
 
     //前回保存時とタブが異なればtrue
-    return lastItems.toString() != newItems.toString();
+    return tabsToString(regularSessions[0]) != tabsToString(session);
 }
 
 //ウィンドウを閉じたときの自動保存が有効になっている時，セッションは常に非表示の状態で一時保存される
 //一時保存されたセッションを現在のセッションと比較してウィンドウの削除かFirefoxの再起動を確認したら表示する
-function showSessionWhenWindowClose(session) {
-    //sessionsを新しいものから走査
-    for (let i = sessions.length - 1; i >= 0; i--) {
-        if (sessions[i].tag.includes('temp')) {
+async function showSessionWhenWindowClose(session) {
+    const tempSessions = await getSessionsByTag('temp', ['id', 'tag', 'date', 'windows', 'sessionStartTime']);
+    if (tempSessions.length == 0) return;
 
-            let showFlag = false;
-            let currentSession = Object.keys(session.windows);
-            let oldSession = Object.keys(sessions[i].windows);
+    let showFlag = false;
+    const currentWindows = Object.keys(session.windows);
+    const oldWindows = Object.keys(tempSessions[0].windows);
 
-            //oldSessionに現在存在しないウィンドウがあれば(保存が必要なら)showFlag=true
-            for (let os of oldSession) {
-                for (let cs of currentSession) {
-                    if (os == cs) break;
-                    if (cs == currentSession[currentSession.length - 1]) showFlag = true;
-                }
-            }
-
-            //sessionStartTimeが異なればFirefoxの再起動されたと見なしshowFlag=true
-            if (sessions[i].sessionStartTime != session.sessionStartTime) showFlag = true;
-
-            //保存が必要ならクラスからtempを削除し表示する
-            if (showFlag) {
-                sessions[i].tag = sessions[i].tag.filter((element) => {
-                    return !(element == 'temp');
-                });;
-                break;
-            }
-            //不要ならtempの項目を更新
-            else {
-                sessions.splice(i, 1);
-            }
+    //oldSessionに現在存在しないウィンドウがあれば(保存が必要なら)showFlag=true
+    for (let ow of oldWindows) {
+        for (let cw of currentWindows) {
+            if (ow == cw) break;
+            if (cw == currentWindows[currentWindows.length - 1]) showFlag = true;
         }
+    }
+
+    //sessionStartTimeが異なればFirefoxの再起動されたと見なしshowFlag=true
+    if (tempSessions[0].sessionStartTime != session.sessionStartTime) showFlag = true;
+
+    if (showFlag) {
+        removeTag(tempSessions[0].id, 'temp');
+    } else {
+        removeSession(tempSessions[0].id, true);
+    }
+
+    //tempが複数ある場合は過去のものを削除
+    let isFirst = true;
+    for (let session of tempSessions) {
+        if (isFirst) {
+            isFirst = false;
+            continue;
+        }
+
+        removeSession(session.id, true);
     }
 }
 
-function removeSession(number) {
-    sessions.splice(number, 1);
-    setStorage();
+async function sendMessage(message, id = null) {
+    await browser.runtime.sendMessage({
+        message: message,
+        id: id
+    }).catch(() => {});
 }
 
-function renameSession(sessionNo, name) {
-    sessions[sessionNo].name = name;
-    setStorage();
+async function saveSession(session) {
+    try {
+        await Sessions.put(session);
+        sendMessage('saveSession', session.id);
+    } catch (e) {}
 }
 
-function clearAllSessions() {
-    sessions = [];
-    setStorage();
+async function removeSession(id, isTemp = false) {
+    try {
+        await Sessions.delete(id);
+        if (!isTemp) sendMessage('deleteSession', id);
+    } catch (e) {}
 }
 
-//セッションを保存
-function setStorage() {
-    browser.storage.local.set({
-        'sessions': sessions
-    });
+async function updateSession(session) {
+    try {
+        await Sessions.put(session);
+        sendMessage('updateSession', session.id);
+    } catch (e) {}
+}
+
+async function renameSession(id, name) {
+    let session = await Sessions.get(id).catch(() => {});
+    if (session == undefined) return;
+    session.name = name;
+    updateSession(session);
+}
+
+async function deleteAllSessions() {
+    try {
+        await Sessions.deleteAll();
+        sendMessage('deleteAll');
+    } catch (e) {}
 }

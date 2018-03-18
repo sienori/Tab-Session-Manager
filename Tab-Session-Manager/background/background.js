@@ -2,119 +2,157 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-//初回起動時にオプションページを表示して設定を初期化
-browser.runtime.onInstalled.addListener(function () {
-    browser.tabs.create({
-        url: "options/options.html#information",
-        active: false
-    });
-});
+const S = new settingsObj()
+const SessionStartTime = Date.now();
 
-let S = new settingsObj()
+let IsInit = false;
+async function init() {
+    await S.init();
+    await Sessions.init();
+    IsInit = true;
 
-var sessions = [];
-var sessionStartTime = Date.now();
-
-//起動時の設定
-initSettings().then(function () {
-    updateTags();
-    updateSessionId();
-    updateAutoName();
-    setStorage();
-    setAutoSave();
-    autoSaveWhenClose()
-        .then(openLastSession);
-    browser.storage.onChanged.addListener(setAutoSave);
     browser.tabs.onActivated.addListener(replacePage);
     browser.windows.onFocusChanged.addListener(replacePage);
 
-    //ウィンドウを閉じたときに保存
+    setAutoSave();
+    autoSaveWhenClose().then(openLastSession);
+
+    browser.storage.onChanged.addListener(setAutoSave);
     browser.tabs.onUpdated.addListener(onUpdate);
     browser.tabs.onCreated.addListener(autoSaveWhenClose);
     browser.tabs.onRemoved.addListener(autoSaveWhenClose);
     browser.windows.onCreated.addListener(autoSaveWhenClose);
 
     backupSessions();
-});
+}
+init();
+browser.runtime.onInstalled.addListener(onInstalledListener);
+browser.runtime.onMessage.addListener(onMessageListener);
 
-//設定の初期化
-function initSettings(value) {
-    return new Promise(function (resolve, reject) {
-        browser.storage.local.get(["sessions"], function (value) {
-            //sessions初期化
-            if (value.sessions != undefined) sessions = value.sessions;
-            else sessions = [];
-            S.init()
-                .then(() => {
-                    resolve();
-                });
-        });
-    })
+async function onInstalledListener(details) {
+    if (details.reason != 'install' && details.reason != 'update') return;
+
+    if (details.reason == 'update') updateOldSessions(details);
+
+    //初回起動時にオプションページを表示して設定を初期化
+    browser.tabs.create({
+        url: "options/options.html#information",
+        active: false
+    });
 }
 
-//過去のバージョンのautosaveのセッション名を変更
-function updateAutoName() {
-    for (let i in sessions) {
-        if (sessions[i].tag.includes('winClose')) {
+async function updateOldSessions(details) {
+    //初期化が終わるまで待つ
+    if (!IsInit) {
+        setTimeout(() => {
+            updateOldSessions(details);
+        }, 10);
+        return;
+    }
+    const version = details.previousVersion.split('.').map(value => {
+        return parseInt(value);
+    });
 
-            if (sessions[i].name === "Auto Saved - Window was closed")
-                sessions[i].name = browser.i18n.getMessage("winCloseSessionName");
+    if (version[0] <= 2) await migrateSessionsFromStorage(version);
 
-        } else if (sessions[i].tag.includes('regular')) {
+    //addNewValues();
 
-            if (sessions[i].name === "Auto Saved - Regularly")
-                sessions[i].name = browser.i18n.getMessage("regularSaveSessionName");
+    //DBの更新が必要な場合
+    //Sessions.DBUpdate();
+}
 
-        }
+async function addNewValues() {
+    const sessions = await Sessions.getAll().catch(() => {});
+    for (let session of sessions) {
+
+        updateSession(session);
     }
 }
 
-//ver1.9.2以前のセッションのタグを配列に変更
-function updateTags() {
-    for (let i of sessions) {
-        if (!Array.isArray(i.tag)) {
-            i.tag = i.tag.split(' ');
-        }
-    }
-}
-
-//ver1.9.2以前のセッションにUUIDを追加 タグからauto,userを削除
-function updateSessionId() {
-    for (let i of sessions) {
-        if (!i['id']) {
-            i['id'] = UUID.generate();
-
-            i.tag = i.tag.filter((element) => {
-                return !(element == 'user' || element == 'auto');
+async function migrateSessionsFromStorage(version) {
+    const getSessionsByStorage = () => {
+        return new Promise(resolve => {
+            browser.storage.local.get('sessions', value => {
+                resolve(value.sessions || []);
             });
-        }
+        })
     }
+    let sessions = await getSessionsByStorage();
+    if (sessions.length == 0) return;
+
+    //ver1.9.2以前
+    if (version[0] <= 1) {
+        //タグを配列に変更
+        const updateTags = () => {
+            for (let i of sessions) {
+                if (!Array.isArray(i.tag)) {
+                    i.tag = i.tag.split(' ');
+                }
+            }
+        }
+        //UUIDを追加 タグからauto,userを削除
+        const updateSessionId = () => {
+            for (let i of sessions) {
+                if (!i['id']) {
+                    i['id'] = UUID.generate();
+
+                    i.tag = i.tag.filter((element) => {
+                        return !(element == 'user' || element == 'auto');
+                    });
+                }
+            }
+        }
+        //autosaveのセッション名を変更
+        const updateAutoName = () => {
+            for (let i in sessions) {
+                if (sessions[i].tag.includes('winClose')) {
+                    if (sessions[i].name === 'Auto Saved - Window was closed')
+                        sessions[i].name = browser.i18n.getMessage('winCloseSessionName');
+                } else if (sessions[i].tag.includes('regular')) {
+                    if (sessions[i].name === 'Auto Saved - Regularly')
+                        sessions[i].name = browser.i18n.getMessage('regularSaveSessionName');
+                }
+            }
+        }
+        updateTags();
+        updateSessionId();
+        updateAutoName();
+    }
+
+    for (let session of sessions) {
+        saveSession(session);
+        await Sessions.put(session).catch(() => {});
+    }
+
+    browser.storage.local.remove('sessions');
+    return Promise.resolve;
 }
 
-browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+
+function onMessageListener(request, sender, sendResponse) {
     switch (request.message) {
         case "save":
             const name = request.name;
             const property = request.property;
-            saveSession(name, [], property).catch(() => {});
+            saveCurrentSession(name, [], property).catch(() => {});
             break;
         case "open":
-            openSession(sessions[request.number], request.property);
+            openSession(request.session, request.property);
             break;
         case "remove":
-            removeSession(request.number);
+            removeSession(request.id);
             break;
         case "rename":
-            renameSession(request.sessionNo, request.name);
+            renameSession(request.id, request.name);
             break;
         case "import":
             importSessions(request.importSessions);
             break;
-        case "clearAllSessions":
-            clearAllSessions();
+        case "deleteAllSessions":
+            deleteAllSessions();
             break;
         case "getSessions":
-            getSessions(request, sender, sendResponse);
+            return getSessions(request, sender, sendResponse);
             break;
         case "addTag":
             addTag(request.id, request.tag);
@@ -123,26 +161,17 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             removeTag(request.id, request.tag);
             break;
     }
-});
-
-function getSessionNo(id) {
-    const sessionNo = sessions.findIndex((element) => {
-        return element.id == id
-    });
-    return sessionNo
 }
 
-function getSessions(request, sender, sendResponse) {
-    let returnSessions;
+async function getSessions(request, sender, sendResponse) {
+    let sessions;
     if (request.id == null) {
-        returnSessions = sessions;
+        sessions = await Sessions.getAll(request.needKeys).catch([]);
     } else {
-        returnSessions = sessions.filter((element) => {
-            return element.id == request.id
-        });
+        sessions = await Sessions.get(request.id).catch(() => {});
     }
-    sendResponse({
-        sessions: returnSessions
-    });
 
+    return sessions;
+    //該当するセッションが存在しない時
+    //idを指定:undefined, 非指定:[] を返す
 }

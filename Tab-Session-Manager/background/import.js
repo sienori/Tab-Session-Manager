@@ -2,38 +2,37 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-async function importSessions(newSessions) {
-    Array.prototype.push.apply(sessions, newSessions);
-
-    Array.prototype.push.apply(sessions, newSessions);
-    sessions.sort(function (a, b) {
-        a = moment(a.date).valueOf();
-        b = moment(b.date).valueOf();
-        if (a < b) return -1;
-        if (a > b) return 1;
-        return 0;
-    });
-
-    //UUIDを無視
-    let ignoreUuidSessions = [];
-    for (let i in sessions) {
-        ignoreUuidSessions[i] = {};
-        Object.assign(ignoreUuidSessions[i], sessions[i]);
-        delete ignoreUuidSessions[i].id;
+async function importSessions(importedSessions) {
+    //idを無視して文字列に変換
+    const toString = (session) => {
+        let retSession = {};
+        Object.assign(retSession, session);
+        delete retSession.id;
+        return JSON.stringify(retSession);
     }
 
-    //重複を削除
-    for (let i = 0; i < sessions.length; i++) {
-        if (JSON.stringify(ignoreUuidSessions[i]) === JSON.stringify(ignoreUuidSessions[i + 1])) {
-            sessions.splice(i + 1, 1);
-            ignoreUuidSessions.splice(i + 1, 1);
-            i--;
+    //同一のセッションが存在するか判定
+    const isExistSameSession = (session, currentSessions) => {
+        for (let currentSession of currentSessions) {
+            if (toString(session) === toString(currentSession)) return true;
         }
+        return false;
     }
-    setStorage();
+
+    //同一セッションが存在しなければインポートする
+    for (let importedSession of importedSessions) {
+        const currentSessions = await Sessions.search('date', importedSession.date);
+
+        if (isExistSameSession(importedSession, currentSessions)) continue;
+
+        importedSession.id = UUID.generate();
+        saveSession(importedSession);
+    }
 }
 
 async function backupSessions() {
+    const sessions = await Sessions.getAll().catch([]);
+
     if (!S.get().ifBackup) return;
     if (sessions.length == 0) return;
 
@@ -43,7 +42,7 @@ async function backupSessions() {
         })
     );
 
-    const fileName = returnFileName();
+    const fileName = returnFileName(sessions);
 
     await browser.downloads.download({
         url: downloadUrl,
@@ -55,7 +54,7 @@ async function backupSessions() {
     removeBackupFile();
 }
 
-function returnFileName() {
+function returnFileName(sessions) {
     const sessionLabel = browser.i18n.getMessage('sessionLabel').toLowerCase();
     const sessionsLabel = browser.i18n.getMessage('sessionsLabel').toLowerCase();
 
