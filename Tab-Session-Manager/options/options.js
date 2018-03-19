@@ -118,16 +118,17 @@ function isArray(o) {
 function checkImportFile(file) {
     if (!isArray(file)) return false;
 
-    const correctKeys = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime"].toString();
-    const correctKeys2 = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime", "id"].toString();
-    const correctKeys3 = ["windows", "windowsNumber", "tabsNumber", "name", "date", "tag", "sessionStartTime", "id"].toString();
+    const correctKeys = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime"];
 
     for (let session of file) {
-        const sessionKeys = Object.keys(session).toString();
-        if (!(sessionKeys == correctKeys || sessionKeys == correctKeys2 || sessionKeys == correctKeys3)) {
-            return false;
-        }
+        const sessionKeys = Object.keys(session);
+        const isIncludes = (value => {
+            return sessionKeys.includes(value);
+        })
+
+        if (!correctKeys.every(isIncludes)) return false;
     }
+
     return true;
 }
 
