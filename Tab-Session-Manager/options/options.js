@@ -120,10 +120,11 @@ function checkImportFile(file) {
 
     const correctKeys = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime"].toString();
     const correctKeys2 = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime", "id"].toString();
+    const correctKeys3 = ["windows", "windowsNumber", "tabsNumber", "name", "date", "tag", "sessionStartTime", "id"].toString();
 
     for (let session of file) {
         const sessionKeys = Object.keys(session).toString();
-        if ((sessionKeys != correctKeys) && (sessionKeys != correctKeys2)) {
+        if (!(sessionKeys == correctKeys || sessionKeys == correctKeys2 || sessionKeys == correctKeys3)) {
             return false;
         }
     }
@@ -204,6 +205,7 @@ function urlImport() {
         windows: {
             1: {}
         },
+        windowsNumber: 1,
         tabsNumber: 0,
         name: '',
         date: new Date(),

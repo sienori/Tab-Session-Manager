@@ -51,6 +51,7 @@ function loadCurrentSesssion(name, tag, property) {
         }
         browser.tabs.query(queryInfo).then(function (tabs) {
             session.windows = {};
+            session.windowsNumber = 0;
             session.tabsNumber = 0;
             session.name = name;
             session.date = new Date();
@@ -77,6 +78,8 @@ function loadCurrentSesssion(name, tag, property) {
                 session.windows[tab.windowId][tab.id] = tab;
                 session.tabsNumber++;
             }
+
+            session.windowsNumber = Object.keys(session.windows).length;
 
             if (session.tabsNumber > 0) resolve(session);
             else reject();

@@ -55,15 +55,19 @@ async function updateOldSessions(details) {
 
     if (version[0] <= 2) await migrateSessionsFromStorage(version);
 
-    //addNewValues();
-
     //DBの更新が必要な場合
-    //Sessions.DBUpdate();
+    //await Sessions.DBUpdate();
+
+    addNewValues();
 }
 
 async function addNewValues() {
     const sessions = await Sessions.getAll().catch(() => {});
     for (let session of sessions) {
+
+        if (session.windowsNumber === undefined) {
+            session.windowsNumber = Object.keys(session.windows).length;
+        }
 
         updateSession(session);
     }

@@ -20,7 +20,8 @@ const Sessions = (function () {
             store.createIndex('date', 'date');
             store.createIndex('tag', 'tag');
             store.createIndex('tabsNumber', 'tabsNumber');
-            store.createIndex('sessionStartTime', 'sessionStartTime'); //TODO:WindowsNumberのデータを追加
+            store.createIndex('windowsNumber', 'windowsNumber');
+            store.createIndex('sessionStartTime', 'sessionStartTime');
         }
 
         return new Promise(resolve => {
