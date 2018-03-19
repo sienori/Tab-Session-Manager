@@ -23,8 +23,10 @@ S.init().then(async() => {
     //タブタイトルを表示
     window.document.getElementById("saveName").value = await getCurrentTabName();
 
-    const sessions = await getSessions();
+    const keys = ['id', 'name', 'date', 'tag', 'tabsNumber', 'windowsNumber'];
+    const sessions = await getSessions(null, keys);
     showSessions(sessions);
+
     browser.runtime.onMessage.addListener(changeSessions);
     window.document.getElementById("filter").addEventListener("change", filterChange);
     window.document.getElementById("sort").addEventListener("change", sortChange);
@@ -100,7 +102,8 @@ async function changeSessions(request, sender, sendResponse) {
             updateFilterItems();
             break;
         case 'deleteAll':
-            sessions = await getSessions().catch(() => {});
+            const keys = ['id', 'name', 'date', 'tag', 'tabsNumber', 'windowsNumber'];
+            sessions = await getSessions(null, keys);
             showSessions(sessions);
             break;
     }
@@ -427,7 +430,7 @@ function showSessions(sessions, isInit = true) {
             date: date.valueOf(),
             tag: session.tag,
             tabsNumber: session.tabsNumber,
-            windowsNumber: Object.keys(session.windows).length, //TODO:WindowsNumberのデータを追加
+            windowsNumber: session.windowsNumber,
             id: session.id
         }
         sessionsArea.insertAdjacentHTML('afterbegin', sessionsHTML(info));
