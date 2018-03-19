@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Salvar e restaurar o estado de janelas e abas. Ele também suporta o salvamento automático."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Salvar"
     },
