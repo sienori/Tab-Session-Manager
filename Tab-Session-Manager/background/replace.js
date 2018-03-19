@@ -39,33 +39,35 @@ function returnReplaceURL(state, title, url, favIconUrl) {
     return retUrl;
 }
 
-function replacePage() {
+async function replacePage() {
     if (IsOpeningSession) return;
 
-    browser.tabs.query({
+    const info = await browser.tabs.query({
         active: true,
         currentWindow: true
-    }).then(function (info) {
-        if (info[0].status != "complete") {
-            setTimeout(replacePage, 500);
-            return;
-        }
+    });
+    if (info[0].status != "complete") {
+        setTimeout(replacePage, 500);
+        return;
+    }
 
-        const parameter = returnReplaceParameter(info[0].url);
-        if (parameter.isReplaced && parameter.state == "redirect") {
-            browser.tabs.update(info[0].id, {
-                url: parameter.url
-            }).then(() => {
-                if (parameter.openInReaderMode == "true") {
-                    toggleReaderMode(info[0].id);
-                }
-            }).catch(() => {
-                browser.tabs.update(info[0].id, {
-                    url: returnReplaceURL('open_faild', parameter.title, parameter.url, parameter.favIconUrl)
-                })
-            })
-        }
-    })
+    const parameter = returnReplaceParameter(info[0].url);
+
+    if (parameter.isReplaced && parameter.state == "redirect") {
+        let updateProperties = {};
+        updateProperties.url = parameter.url;
+        if (BrowserVersion >= 57) updateProperties.loadReplace = true;
+
+        browser.tabs.update(info[0].id, updateProperties).then(() => {
+            if (parameter.openInReaderMode == "true") {
+                toggleReaderMode(info[0].id);
+            }
+        }).catch(() => {
+            updateProperties.url = returnReplaceURL('open_faild', parameter.title, parameter.url, parameter.favIconUrl);
+            browser.tabs.update(info[0].id, updateProperties);
+        })
+    }
+    //})
 }
 
 function toggleReaderMode(id) {
