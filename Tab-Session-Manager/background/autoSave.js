@@ -42,11 +42,20 @@ function isChangeAutoSaveSettings(changes, areaName) {
     return (oldValue.ifAutoSave != newValue.ifAutoSave) || (oldValue.autoSaveInterval != newValue.autoSaveInterval)
 }
 
-//TODO:一度に大量に来た場合は無視
+
+let LastUpdateTime = 0;
+
 function onUpdate(tabId, changeInfo, tab) {
-    if (changeInfo.status == "complete") {
-        autoSaveWhenClose();
+    if (changeInfo.status != "complete") return;
+
+    const currentUpdateTime = Date.now();
+    if (currentUpdateTime - LastUpdateTime < 1500) {
+        LastUpdateTime = currentUpdateTime;
+        return;
     }
+    LastUpdateTime = currentUpdateTime;
+
+    autoSaveWhenClose();
 }
 
 function autoSaveWhenClose() {
