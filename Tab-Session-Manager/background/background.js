@@ -4,6 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 const S = new settingsObj()
+let BrowserVersion;
 const SessionStartTime = Date.now();
 
 let IsInit = false;
@@ -14,6 +15,9 @@ async function init() {
 
     browser.tabs.onActivated.addListener(replacePage);
     browser.windows.onFocusChanged.addListener(replacePage);
+
+    const gettingInfo = await browser.runtime.getBrowserInfo();
+    BrowserVersion = gettingInfo.version.split('.')[0];
 
     setAutoSave();
     autoSaveWhenClose().then(openLastSession);
