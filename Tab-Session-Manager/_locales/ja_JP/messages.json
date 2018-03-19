@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "開いているタブやウィンドウを保存し，復元することができます。自動保存にも対応しています。"
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "保存"
     },
