@@ -49,6 +49,10 @@ function readHash(e) {
     switch (params.action) {
         case 'export':
             exportSessions(params.id);
+            break;
+        case 'updated':
+            showUpdated();
+            break;
     }
 }
 
@@ -95,6 +99,11 @@ function returnFileListNode(fileName, sessions) {
 function clearImportFile() {
     document.getElementById("fileList").parentNode.style.display = "none";
     document.getElementById("fileList").innerHTML = "";
+}
+
+function showUpdated() {
+    const version = document.getElementsByClassName('addonVersion')[0];
+    version.classList.add('updated');
 }
 
 document.getElementsByClassName("amazonUrl")[0].href = browser.i18n.getMessage("amazonUrl");

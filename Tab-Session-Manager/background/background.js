@@ -37,7 +37,7 @@ async function onInstalledListener(details) {
 
     //初回起動時にオプションページを表示して設定を初期化
     browser.tabs.create({
-        url: "options/options.html#information",
+        url: "options/options.html#information?action=updated",
         active: false
     });
 }

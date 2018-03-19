@@ -154,6 +154,16 @@ hr {
     margin-left: 5px;
 }
 
+.updated p:nth-child(1)::after {
+    content: "Updated";
+    color: var(--new);
+    font-size: 14px;
+    border: 1px solid var(--new);
+    border-radius: 2px;
+    padding: 0px 5px;
+    margin-left: 5px;
+}
+
 .optionForm {
     flex-basis: 150px;
     display: flex;
