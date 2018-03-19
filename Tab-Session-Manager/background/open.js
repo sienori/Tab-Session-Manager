@@ -144,7 +144,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
         //Tree Style Tab
         let openDelay = 0;
         if (S.get().ifSupportTst) {
-            createOption.openerTabId = tabList[property.openerTabId];
+            if (BrowserVersion >= 57) createOption.openerTabId = tabList[property.openerTabId];
             openDelay = S.get().tstDelay;
         }
 
