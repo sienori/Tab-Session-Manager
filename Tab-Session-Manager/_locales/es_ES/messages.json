@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Guardar y restaurar el estado de las ventanas y pestañas. También permite guardado automático."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Guardar"
     },
