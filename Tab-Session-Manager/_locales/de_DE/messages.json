@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Speichern und Wiederherstellen aller Fenster und Tabs. Unterstützt automatisches Speicherung."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Speichern"
     },
