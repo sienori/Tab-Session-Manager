@@ -124,8 +124,7 @@ async function migrateSessionsFromStorage(version) {
     }
 
     for (let session of sessions) {
-        saveSession(session);
-        await Sessions.put(session).catch(() => {});
+        await saveSession(session);
     }
 
     browser.storage.local.remove('sessions');
