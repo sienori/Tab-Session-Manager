@@ -108,3 +108,4 @@ function showUpdated() {
 
 document.getElementsByClassName("amazonUrl")[0].href = browser.i18n.getMessage("amazonUrl");
 document.getElementsByClassName("addonUrl")[0].href = browser.i18n.getMessage("addonUrl");
+document.getElementsByClassName('addonVersion')[0].getElementsByClassName('caption')[0].getElementsByTagName('a')[0].innerText = `Version ${browser.runtime.getManifest().version}`;
