@@ -146,6 +146,11 @@ function parseSession(file) {
                 return !(element == 'user' || element == 'auto');
             });
         }
+
+        //windowsNumberを追加
+        if (session.windowsNumber === undefined) {
+            session.windowsNumber = Object.keys(session.windows).length;
+        }
     }
     return file;
 }
@@ -155,6 +160,7 @@ function parseOldSession(file) {
     line = file.split(/\r\n|\r|\n/);
 
     session.windows = {};
+    session.windowsNumber = 0;
     session.tabsNumber = 0;
     session.name = line[1].substr(5);
     session.date = moment(parseInt(line[2].substr(10))).toISOString();
@@ -185,6 +191,8 @@ function parseOldSession(file) {
         }
         session.tabsNumber += index;
     }
+    session.windowsNumber = Object.keys(session.windows).length;
+
     return [session];
 }
 
