@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Salva e ripristina lo stato di finestre e schede. Supporta anche il salvataggio automatico."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Salva"
     },
