@@ -22,15 +22,15 @@ S.init().then(async() => {
     if (S.get().sort != undefined) document.getElementById('sort').value = S.get().sort;
 
     //タブタイトルを表示
-    window.document.getElementById("saveName").value = await getCurrentTabName();
+    document.getElementById("saveName").value = await getCurrentTabName();
 
     const keys = ['id', 'name', 'date', 'tag', 'tabsNumber', 'windowsNumber'];
     const sessions = await getSessions(null, keys);
     showSessions(sessions);
 
     browser.runtime.onMessage.addListener(changeSessions);
-    window.document.getElementById("filter").addEventListener("change", filterChange);
-    window.document.getElementById("sort").addEventListener("change", sortChange);
+    document.getElementById("filter").addEventListener("change", filterChange);
+    document.getElementById("sort").addEventListener("change", sortChange);
 });
 
 async function setLabels() {
@@ -40,12 +40,12 @@ async function setLabels() {
         Labels[i] = browser.i18n.getMessage(i);
     }
 
-    window.document.getElementById("saveName").placeholder = Labels.initialNameValue;
-    window.document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
-    window.document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
-    window.document.getElementById("setting").title = Labels.settingsLabel;
-    window.document.getElementsByClassName("saveOnlyCurrentWindow")[0].innerText = Labels.saveOnlyCurrentWindowLabel;
     document.getElementById('donate').title = Labels.donateWithPaypalLabel;
+    document.getElementById("saveName").placeholder = Labels.initialNameValue;
+    document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
+    document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
+    document.getElementById("setting").title = Labels.settingsLabel;
+    document.getElementsByClassName("saveOnlyCurrentWindow")[0].innerText = Labels.saveOnlyCurrentWindowLabel;
 }
 
 async function getCurrentTabName() {
@@ -197,13 +197,13 @@ function updateFilterItems() {
 }
 
 function filterChange() {
-    const filter = window.document.getElementById("filter").value;
+    const filter = document.getElementById("filter").value;
 
     if (S.get().filter != filter) {
         S.save({
             'filter': filter
         });
-        const sessionsArea = window.document.getElementById("sessionsArea");
+        const sessionsArea = document.getElementById("sessionsArea");
         sessionsArea.scrollTo(0, 0);
     }
 
@@ -418,7 +418,7 @@ function sessionsHTML(info) {
 
 function showSessions(sessions, isInit = true) {
     if (sessions == undefined) return;
-    const sessionsArea = window.document.getElementById("sessionsArea");
+    const sessionsArea = document.getElementById("sessionsArea");
     if (isInit) {
         sessionsArea.innerHTML = "";
         sessionsArea.insertAdjacentHTML('afterbegin', `<div class="noSessionLabel hidden">${Labels.noSessionLabel}</div>`);
@@ -444,7 +444,7 @@ function showSessions(sessions, isInit = true) {
 
 async function showDetail(e) {
     const sessionId = getParentSessionId(e.target);
-    const detail = window.document.getElementById(sessionId).getElementsByClassName("detailItems")[0];
+    const detail = document.getElementById(sessionId).getElementsByClassName("detailItems")[0];
     const session = await getSessions(sessionId);
     if (session == undefined) return;
 
@@ -515,8 +515,8 @@ function replaseImageUrl(url, sessionId, win) {
 
 function rename(e) {
     const sessionId = getParentSessionId(e.target);
-    const sessionName = window.document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
-    const renameArea = window.document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
+    const sessionName = document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
+    const renameArea = document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
 
     renameArea.getElementsByClassName("renameInput")[0].value = sessionName.innerText;
     if (renameArea.style.display == "none" || renameArea.style.display == "") {
@@ -535,8 +535,8 @@ function rename(e) {
 
 function renameSend(e) {
     sessionId = getParentSessionId(e.target);
-    sessionName = window.document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
-    renameArea = window.document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
+    sessionName = document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
+    renameArea = document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
     renameInput = renameArea.getElementsByClassName("renameInput")[0].value;
 
     sessionName.innerText = renameInput;
@@ -626,7 +626,7 @@ let firstClick = true;
 
 function clickSaveInput() {
     if (firstClick) {
-        const textarea = window.document.getElementById("saveName");
+        const textarea = document.getElementById("saveName");
         textarea.select();
         firstClick = false;
     }
@@ -718,7 +718,7 @@ function openUrl(url, title = '') {
     });
 }
 
-window.document.addEventListener('click', async function (e) {
+document.addEventListener('click', async function (e) {
     hideAllPopupMenu(e);
     switch (e.target.id) {
         case "setting":
@@ -794,7 +794,7 @@ window.document.addEventListener('click', async function (e) {
     if (e.target.classList.contains('addTagButton')) showAddTagArea(e);
 })
 
-window.document.addEventListener('keypress', (e) => {
+document.addEventListener('keypress', (e) => {
     if (e.key == 'Enter') {
         if (e.target.id == 'saveName') {
             save();
@@ -819,12 +819,12 @@ async function sendOpenMessage(e, property) {
 }
 
 function save(property = "default") {
-    const name = window.document.getElementById("saveName").value;
+    const name = document.getElementById("saveName").value;
 
     browser.runtime.sendMessage({
         message: "save",
         name: name,
         property: property
     });
-    window.document.getElementById("saveName").value = "";
+    document.getElementById("saveName").value = "";
 }
