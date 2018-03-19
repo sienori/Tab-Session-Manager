@@ -50,6 +50,33 @@ svg {
     font-weight: 400;
     color: #666;
     cursor: default;
+    flex-shrink: 0;
+}
+
+#header .rightButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+#donate {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#donate svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--sub-text);
+    transition: all 100ms;
+}
+
+#donate:hover svg {
+    fill: var(--confirm);
 }
 
 #setting {

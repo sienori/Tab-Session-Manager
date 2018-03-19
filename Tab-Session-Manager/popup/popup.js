@@ -34,7 +34,7 @@ S.init().then(async() => {
 });
 
 async function setLabels() {
-    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel'];
+    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel'];
 
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
@@ -45,6 +45,7 @@ async function setLabels() {
     window.document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
     window.document.getElementById("setting").title = Labels.settingsLabel;
     window.document.getElementsByClassName("saveOnlyCurrentWindow")[0].innerText = Labels.saveOnlyCurrentWindowLabel;
+    document.getElementById('donate').title = Labels.donateWithPaypalLabel;
 }
 
 async function getCurrentTabName() {
@@ -707,6 +708,16 @@ function getParentSessionId(element) {
     }
 }
 
+function openUrl(url, title = '') {
+    browser.tabs.create({
+        url: url
+    }).catch(() => {
+        browser.tabs.create({
+            url: `../replaced/replaced.html?state=open_faild&title=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`
+        }).catch(() => {});
+    });
+}
+
 window.document.addEventListener('click', async function (e) {
     hideAllPopupMenu(e);
     switch (e.target.id) {
@@ -721,6 +732,10 @@ window.document.addEventListener('click', async function (e) {
             break;
         case "saveOptionButton":
             showSaveOptionPopup(e);
+            break;
+        case "donate":
+            const url = 'https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager - Donation'
+            openUrl(url);
             break;
     }
     switch (e.target.className) {
