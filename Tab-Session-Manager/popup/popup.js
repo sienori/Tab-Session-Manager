@@ -478,9 +478,9 @@ async function showDetail(e) {
                 const tabHtml =
                     `<li class="tabContainer hidden">
                         <div class=fav style="background-image:url(${sanitaize.encode(tabFavIconUrl)})"></div>
-                        <div class=tabTitle><a href=${sanitaize.encode(tabUrl)}>
+                        <div class=tabTitle data-url="${sanitaize.encode(tabUrl)}" title="${sanitaize.encode(tabTitle)}&#10;${sanitaize.encode(tabUrl)}">
                             ${sanitaize.encode(tabTitle)}
-                        </a></div>
+                        </div>
                     </li>`;
 
                 windowContainer.insertAdjacentHTML('beforeend', tabHtml);
@@ -754,6 +754,11 @@ document.addEventListener('click', async function (e) {
             break;
         case "detail":
             showDetail(e);
+            break;
+        case "tabTitle":
+            const url = e.target.dataset.url;
+            const title = e.target.innerText;
+            openUrl(url, title);
             break;
         case "renameButton":
             rename(e);
