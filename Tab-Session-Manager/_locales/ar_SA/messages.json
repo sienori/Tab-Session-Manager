@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "احفظ و استعد حالة النوافذ و التبويبات. كما أنها تدعم الحفظ التلقائي."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "احفظ"
     },

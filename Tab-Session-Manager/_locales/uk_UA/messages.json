@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Менеджер сесій дозволяє зберігати та відновлювати стан вікон та вкладок. Підтримує автоматичні збереження."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Зберегти"
     },

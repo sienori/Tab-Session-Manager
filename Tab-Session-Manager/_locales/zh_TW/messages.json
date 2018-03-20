@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "儲存與還原視窗跟分頁的瀏覽狀態。也支援自動儲存功能。"
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "儲存"
     },

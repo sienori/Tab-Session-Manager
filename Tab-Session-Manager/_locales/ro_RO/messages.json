@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Salvează și restabiliește starea ferestrelor și a filelor. De asemenea, susține salvarea automată."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Salvaţi"
     },

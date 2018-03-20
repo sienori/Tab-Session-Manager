@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Запазване и възстановяване състоянието на прозорци и раздели. Поддържа се и автоматично запазване."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Запазване"
     },
