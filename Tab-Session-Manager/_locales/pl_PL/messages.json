@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Zapisz i przywróć stan okien i kart. Obsługuje także automatyczne zapisywanie."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Zapisz"
     },
@@ -183,7 +186,7 @@
         "message": "Zapisuj okno prywatne"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "Jeżeli odznaczone, ignoruje okna prywatne podczas zapisywania sesji."
+        "message": "Jeżeli odznaczone, podczas zapisywania sesji ignoruje okna prywatne."
     },
     "ifSupportTstLabel": {
         "message": "Obsługa Tree Style Tab"
