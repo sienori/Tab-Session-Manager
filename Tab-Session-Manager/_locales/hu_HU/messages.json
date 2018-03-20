@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Ablakok és fülek állapotának mentése és visszaállítása. Automatikus állapot mentés is támogatva van."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Mentés"
     },
