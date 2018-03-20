@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Anda bisa menyimpan dan mengembalikan tab dan jendela yang terbuka. Juga mendukung penghematan otomatis."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Simpan"
     },
