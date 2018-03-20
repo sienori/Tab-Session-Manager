@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Enregistrer et restaurer l’état des fenêtres et onglets. Prend également en charge la sauvegarde automatique."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Enregistrer"
     },
