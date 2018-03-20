@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "保存、还原窗口及标签页的状态，支持自动保存。"
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "保存"
     },
