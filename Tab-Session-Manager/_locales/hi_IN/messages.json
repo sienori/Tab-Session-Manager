@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "विंडो और टैब की स्थिति को सहेजें और फिर से चालू करें| यह स्वचालित बचत का भी समर्थन करता है।"
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "सहेजें"
     },
