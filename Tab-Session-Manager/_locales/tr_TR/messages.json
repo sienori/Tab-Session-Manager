@@ -5,6 +5,9 @@
     "extDescription": {
         "message": "Kaydedin ve pencerelerin ve sekmelerin durumunu onarın. Bu otomatik kaydetmeyi de destekler."
     },
+    "donateWithPaypalLabel": {
+        "message": "Donate with PayPal"
+    },
     "saveLabel": {
         "message": "Kaydet"
     },
