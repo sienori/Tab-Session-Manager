@@ -114,19 +114,19 @@
         "message": "Open sessie in een nieuw venster"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "Indien uitgevinkt, overschrijft de sessie het huidige venster."
     },
     "ifLazyLoadingLabel": {
         "message": "Tab lui laden"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "Bij het openen van een sessie wordt de inhoud van elke pagina niet geladen totdat u het tabblad selecteert. <br> Indien uitgevikt neemt het geheugengebruik sterk toe wanneer de sessie wordt hersteld."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Vorige sessie herstellen bij opstarten"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "Wanneer Firefox start, herstelt de sessie die actief was bij het afsluiten."
     },
     "ifAutoSaveLabel": {
         "message": "Sla de sessie regelmatig op"
@@ -159,13 +159,13 @@
         "message": "Maximumaantal opgeslagen sessies (op deze manier)."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Gebruik de paginatitel als sessienaam bij automatisch opslaan"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "Wanneer een sessie automatisch wordt opgeslagen, gebruik dan de titel van de geopende pagina als sessienaam."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Reservekopie opslaan"
     },
     "ifBackupCaptionLabel": {
         "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
