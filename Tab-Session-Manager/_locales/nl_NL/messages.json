@@ -225,7 +225,7 @@
         "message": "Laad sessies die op de computer zijn opgeslagen en voeg ze toe aan de sessielijst.<br>Het ondersteunt ook het sessiebestand van SessionManager (.session)."
     },
     "importButtonLabel": {
-        "message": "Blader..."
+        "message": "Bladeren..."
     },
     "importSaveButtonLabel": {
         "message": "Importeer"
@@ -243,7 +243,7 @@
         "message": "Sessies exporteren"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Sla alle sessies naar de computer op."
     },
     "exportButtonLabel": {
         "message": "Exporteren"
