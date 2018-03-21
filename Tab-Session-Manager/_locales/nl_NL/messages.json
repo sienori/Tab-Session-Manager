@@ -168,13 +168,13 @@
         "message": "Reservekopie opslaan"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Wanneer Firefox start, maak dan een reservekopie en sla deze op in de downloadmap."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Maximum aantal opgeslagen reservekopieën"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Wanneer het aantal reservekopieën groter is dan deze waarde, worden oudere kopieën verwijderd in oplopende volgorde (oudste eerst)."
     },
     "dateFormatLabel": {
         "message": "Datumformaat"
@@ -183,10 +183,10 @@
         "message": "Voorbeeld: YYYY. MM. DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Privé venster opslaan"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Indien uitgevinkt wordt het privé venster genegeerd bij het opslaan van een sessie."
     },
     "ifSupportTstLabel": {
         "message": "Ondersteunt Tree Style Tab"
@@ -195,16 +195,16 @@
         "message": "Boomstatus herstellen van de Tree Style tabblad. <br> Schakel dit uit voor Firefox-versies ouder dan Firefox 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
+        "message": "Vertraging bij terugzetten van een boomstructuur (milliseconden)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "Om de staat van een boomstructuur te herstellen, is een wachttijd vereist voor het openen van de tab. Verhoog deze waarde indien de boomstructuur niet correct wordt teruggezet."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Sessienaam binnen één lijn weergeven"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Indien de sessienaam in de sessielijst slanger is dan één regel, wordt het ingekort weergegeven op één regel."
     },
     "toolBarPopupLabel": {
         "message": "Werkbalk popup"
@@ -237,7 +237,7 @@
         "message": "Importeer URL lijst"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Maak een sessie aan van een lijst met URL's en voeg deze aan de sessielijst toe.<br>indeling: &lt;URL&gt; &lt;paginatitel (optioneel)&gt;"
     },
     "exportLabel": {
         "message": "Sessies exporteren"
