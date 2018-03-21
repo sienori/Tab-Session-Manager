@@ -6,7 +6,7 @@
         "message": "Sla de status van vensters en tabbladen op en herstel ze. Het ondersteunt ook automatisch opslaan."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Doneren via PayPal"
     },
     "saveLabel": {
         "message": "Opslaan"
@@ -15,7 +15,7 @@
         "message": "Huidige sessie opslaan"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Enkel huidige venster opslaan"
     },
     "displayAllLabel": {
         "message": "Alle"
