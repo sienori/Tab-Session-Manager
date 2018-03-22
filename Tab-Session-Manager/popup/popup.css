@@ -569,6 +569,7 @@ option {
 }
 
 .open,
+.update,
 .remove {
     color: var(--highlight);
     text-decoration: none;

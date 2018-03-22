@@ -34,7 +34,7 @@ S.init().then(async() => {
 });
 
 async function setLabels() {
-    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel'];
+    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'update', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel'];
 
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
@@ -403,6 +403,7 @@ function sessionsHTML(info) {
             <div class=removeOpenButton>
                 <span class="open">${Labels.open}</span>
                 <span class="remove">${Labels.remove}</span>
+                <span class="update">${Labels.update}</span>
             </div>
         </div>
         <div class="removeConfirm hidden">
@@ -742,6 +743,9 @@ document.addEventListener('click', async function (e) {
         case "open":
             sendOpenMessage(e, "default");
             break;
+        case "update":
+            update(e);
+            break;
         case "remove":
         case "cancel":
             showRemoveConfirm(e);
@@ -832,4 +836,25 @@ function save(property = "default") {
         property: property
     });
     document.getElementById("saveName").value = "";
+}
+
+function getParentName(element) {
+    while (true) {
+        element = element.parentElement;
+        if (element.id != "") {
+            return element.getAttribute("data-name");
+        }
+    }
+}
+
+function update(e, property = "default") {
+    const id = getParentSessionId(e.target);
+    const name = getParentName(e.target);
+
+    browser.runtime.sendMessage({
+        message: "update",
+        id: id,
+        name: name,
+        property: property
+    });
 }
