@@ -144,6 +144,10 @@ function onMessageListener(request, sender, sendResponse) {
             const property = request.property;
             saveCurrentSession(name, [], property).catch(() => {});
             break;
+        case "update":
+            removeSession(request.id);
+            saveCurrentSession(request.name, [], request.property).catch(() => {});
+            break;
         case "open":
             openSession(request.session, request.property);
             break;

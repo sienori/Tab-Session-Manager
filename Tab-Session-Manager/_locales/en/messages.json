@@ -43,6 +43,9 @@
     "open": {
         "message": "Open"
     },
+    "update": {
+        "message": "Update"
+    },
     "remove": {
         "message": "Delete"
     },
