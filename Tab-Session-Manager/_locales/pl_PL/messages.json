@@ -83,6 +83,15 @@
     "addToCurrentWindowLabel": {
         "message": "Dodaj do bieżącego okna"
     },
+    "errorLabel": {
+        "message": "Error"
+    },
+    "indexedDBErrorLabel": {
+        "message": "IndexedDB is not available in your browser."
+    },
+    "howToSolveLabel": {
+        "message": "How to solve this problem"
+    },
     "winCloseSessionName": {
         "message": "Zapisane automatycznie - okno zostało zamknięte"
     },
