@@ -83,6 +83,15 @@
     "addToCurrentWindowLabel": {
         "message": "添加到当前窗口"
     },
+    "errorLabel": {
+        "message": "Error"
+    },
+    "indexedDBErrorLabel": {
+        "message": "IndexedDB is not available in your browser."
+    },
+    "howToSolveLabel": {
+        "message": "How to solve this problem"
+    },
     "winCloseSessionName": {
         "message": "自动保存 - 浏览器关闭时"
     },
