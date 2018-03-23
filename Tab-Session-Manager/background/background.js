@@ -153,6 +153,9 @@ function onMessageListener(request, sender, sendResponse) {
         case "removeTag":
             removeTag(request.id, request.tag);
             break;
+        case "getInitState":
+            sendResponse(IsInit);
+            break;
     }
 }
 

@@ -839,6 +839,10 @@ a:hover {
     bottom: 35px;
 }
 
+.error a {
+    color: var(--highlight);
+}
+
 *::-moz-selection {
     background: var(--line);
 }

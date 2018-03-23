@@ -24,6 +24,8 @@ S.init().then(async() => {
     //タブタイトルを表示
     document.getElementById("saveName").value = await getCurrentTabName();
 
+    showIndexedDBError();
+
     const keys = ['id', 'name', 'date', 'tag', 'tabsNumber', 'windowsNumber'];
     const sessions = await getSessions(null, keys);
     showSessions(sessions);
@@ -34,7 +36,7 @@ S.init().then(async() => {
 });
 
 async function setLabels() {
-    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel'];
+    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
 
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
@@ -68,6 +70,23 @@ async function getCurrentTabName() {
 
     } else {
         return await tabs[0].title;
+    }
+}
+
+async function showIndexedDBError() {
+    const isInit = await browser.runtime.sendMessage({
+        message: "getInitState"
+    });
+    if (!isInit) {
+        const sessionsArea = document.getElementById("sessionsArea");
+        const errorElement = `
+            <div class="error">
+            <b>${Labels.errorLabel}</b><br>
+            ${Labels.indexedDBErrorLabel}<br>
+            <a href="https://github.com/sienori/Tab-Session-Manager/wiki/IndexedDB-Error">
+            ${Labels.howToSolveLabel}</a></div>`
+
+        sessionsArea.insertAdjacentHTML('afterbegin', errorElement);
     }
 }
 
