@@ -12,6 +12,7 @@ async function init() {
     await S.init();
     await Sessions.init();
     IsInit = true;
+    await updateOldSessions();
 
     browser.tabs.onActivated.addListener(replacePage);
     browser.windows.onFocusChanged.addListener(replacePage);
@@ -37,8 +38,6 @@ browser.runtime.onMessage.addListener(onMessageListener);
 async function onInstalledListener(details) {
     if (details.reason != 'install' && details.reason != 'update') return;
 
-    if (details.reason == 'update') updateOldSessions(details);
-
     //初回起動時にオプションページを表示して設定を初期化
     browser.tabs.create({
         url: "options/options.html#information?action=updated",
@@ -46,19 +45,8 @@ async function onInstalledListener(details) {
     });
 }
 
-async function updateOldSessions(details) {
-    //初期化が終わるまで待つ
-    if (!IsInit) {
-        setTimeout(() => {
-            updateOldSessions(details);
-        }, 10);
-        return;
-    }
-    const version = details.previousVersion.split('.').map(value => {
-        return parseInt(value);
-    });
-
-    if (version[0] <= 2) await migrateSessionsFromStorage(version);
+async function updateOldSessions() {
+    await migrateSessionsFromStorage();
 
     //DBの更新が必要な場合
     //await Sessions.DBUpdate();
@@ -69,16 +57,15 @@ async function updateOldSessions(details) {
 async function addNewValues() {
     const sessions = await Sessions.getAll().catch(() => {});
     for (let session of sessions) {
-
         if (session.windowsNumber === undefined) {
             session.windowsNumber = Object.keys(session.windows).length;
-        }
 
-        updateSession(session);
+            updateSession(session);
+        }
     }
 }
 
-async function migrateSessionsFromStorage(version) {
+async function migrateSessionsFromStorage() {
     const getSessionsByStorage = () => {
         return new Promise(resolve => {
             browser.storage.local.get('sessions', value => {
@@ -89,44 +76,42 @@ async function migrateSessionsFromStorage(version) {
     let sessions = await getSessionsByStorage();
     if (sessions.length == 0) return;
 
-    //ver1.9.2以前
-    if (version[0] <= 1) {
-        //タグを配列に変更
-        const updateTags = () => {
-            for (let i of sessions) {
-                if (!Array.isArray(i.tag)) {
-                    i.tag = i.tag.split(' ');
-                }
+    //タグを配列に変更
+    const updateTags = () => {
+        for (let i of sessions) {
+            if (!Array.isArray(i.tag)) {
+                i.tag = i.tag.split(' ');
             }
         }
-        //UUIDを追加 タグからauto,userを削除
-        const updateSessionId = () => {
-            for (let i of sessions) {
-                if (!i['id']) {
-                    i['id'] = UUID.generate();
-
-                    i.tag = i.tag.filter((element) => {
-                        return !(element == 'user' || element == 'auto');
-                    });
-                }
-            }
-        }
-        //autosaveのセッション名を変更
-        const updateAutoName = () => {
-            for (let i in sessions) {
-                if (sessions[i].tag.includes('winClose')) {
-                    if (sessions[i].name === 'Auto Saved - Window was closed')
-                        sessions[i].name = browser.i18n.getMessage('winCloseSessionName');
-                } else if (sessions[i].tag.includes('regular')) {
-                    if (sessions[i].name === 'Auto Saved - Regularly')
-                        sessions[i].name = browser.i18n.getMessage('regularSaveSessionName');
-                }
-            }
-        }
-        updateTags();
-        updateSessionId();
-        updateAutoName();
     }
+    //UUIDを追加 タグからauto,userを削除
+    const updateSessionId = () => {
+        for (let i of sessions) {
+            if (!i['id']) {
+                i['id'] = UUID.generate();
+
+                i.tag = i.tag.filter((element) => {
+                    return !(element == 'user' || element == 'auto');
+                });
+            }
+        }
+    }
+    //autosaveのセッション名を変更
+    const updateAutoName = () => {
+        for (let i in sessions) {
+            if (sessions[i].tag.includes('winClose')) {
+                if (sessions[i].name === 'Auto Saved - Window was closed')
+                    sessions[i].name = browser.i18n.getMessage('winCloseSessionName');
+            } else if (sessions[i].tag.includes('regular')) {
+                if (sessions[i].name === 'Auto Saved - Regularly')
+                    sessions[i].name = browser.i18n.getMessage('regularSaveSessionName');
+            }
+        }
+    }
+    updateTags();
+    updateSessionId();
+    updateAutoName();
+
 
     for (let session of sessions) {
         await saveSession(session);
