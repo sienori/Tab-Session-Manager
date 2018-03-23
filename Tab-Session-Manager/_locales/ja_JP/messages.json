@@ -84,13 +84,13 @@
         "message": "現在のウィンドウに追加する"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "エラー"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "お使いのブラウザではIndexedDBが利用できません。"
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "この問題を解決するには"
     },
     "winCloseSessionName": {
         "message": "自動保存 - ウィンドウ終了"
