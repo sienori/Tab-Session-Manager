@@ -84,10 +84,10 @@
         "message": "Zur aktuellen Fenster hinzufügen"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Fehler"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB ist in Ihrem Browser nicht verfügbar."
     },
     "howToSolveLabel": {
         "message": "How to solve this problem"
@@ -219,7 +219,7 @@
         "message": "Werkzeugleistenfenster"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Geben Sie den Stil der Toolbar Popup."
     },
     "widthLabel": {
         "message": "Breite"
