@@ -6,7 +6,7 @@
         "message": "Speichern und Wiederherstellen aller Fenster und Tabs. Unterstützt automatisches Speicherung."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Schenken mit PayPal"
     },
     "saveLabel": {
         "message": "Speichern"
@@ -90,7 +90,7 @@
         "message": "IndexedDB ist in Ihrem Browser nicht verfügbar."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Wie dieses Problem gelöst sein kann"
     },
     "winCloseSessionName": {
         "message": "Auto - Fenster wurde geschlossen"
