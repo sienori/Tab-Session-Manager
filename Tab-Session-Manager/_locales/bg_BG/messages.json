@@ -6,7 +6,7 @@
         "message": "Запазване и възстановяване състоянието на прозорци и раздели. Поддържа се и автоматично запазване."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Дарете чрез PayPal"
     },
     "saveLabel": {
         "message": "Запазване"
@@ -82,6 +82,15 @@
     },
     "addToCurrentWindowLabel": {
         "message": "Добавяне в текущият прозорец"
+    },
+    "errorLabel": {
+        "message": "Error"
+    },
+    "indexedDBErrorLabel": {
+        "message": "IndexedDB is not available in your browser."
+    },
+    "howToSolveLabel": {
+        "message": "How to solve this problem"
     },
     "winCloseSessionName": {
         "message": "Авто запазени - при затваряне на прозорец"

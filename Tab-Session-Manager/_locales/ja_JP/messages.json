@@ -83,6 +83,15 @@
     "addToCurrentWindowLabel": {
         "message": "現在のウィンドウに追加する"
     },
+    "errorLabel": {
+        "message": "エラー"
+    },
+    "indexedDBErrorLabel": {
+        "message": "お使いのブラウザではIndexedDBが利用できません。"
+    },
+    "howToSolveLabel": {
+        "message": "この問題を解決するには"
+    },
     "winCloseSessionName": {
         "message": "自動保存 - ウィンドウ終了"
     },

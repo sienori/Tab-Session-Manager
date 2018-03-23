@@ -6,7 +6,7 @@
         "message": "儲存與還原視窗跟分頁的瀏覽狀態。也支援自動儲存功能。"
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "透過 PayPal 進行贊助"
     },
     "saveLabel": {
         "message": "儲存"
@@ -82,6 +82,15 @@
     },
     "addToCurrentWindowLabel": {
         "message": "新增至目前視窗"
+    },
+    "errorLabel": {
+        "message": "Error"
+    },
+    "indexedDBErrorLabel": {
+        "message": "IndexedDB is not available in your browser."
+    },
+    "howToSolveLabel": {
+        "message": "How to solve this problem"
     },
     "winCloseSessionName": {
         "message": "自動儲存 - 視窗關閉"

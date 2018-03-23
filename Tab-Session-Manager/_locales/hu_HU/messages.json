@@ -6,7 +6,7 @@
         "message": "Ablakok és fülek állapotának mentése és visszaállítása. Automatikus állapot mentés is támogatva van."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Adományozz a PayPal -al"
     },
     "saveLabel": {
         "message": "Mentés"
@@ -82,6 +82,15 @@
     },
     "addToCurrentWindowLabel": {
         "message": "Jelenlegi ablakhoz hozzáadás"
+    },
+    "errorLabel": {
+        "message": "Error"
+    },
+    "indexedDBErrorLabel": {
+        "message": "IndexedDB is not available in your browser."
+    },
+    "howToSolveLabel": {
+        "message": "How to solve this problem"
     },
     "winCloseSessionName": {
         "message": "Automatikusan mentett - Ablak be lett zárva"

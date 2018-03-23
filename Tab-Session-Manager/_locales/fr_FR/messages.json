@@ -83,6 +83,15 @@
     "addToCurrentWindowLabel": {
         "message": "Ajouter à la fenêtre en cours"
     },
+    "errorLabel": {
+        "message": "Error"
+    },
+    "indexedDBErrorLabel": {
+        "message": "IndexedDB is not available in your browser."
+    },
+    "howToSolveLabel": {
+        "message": "How to solve this problem"
+    },
     "winCloseSessionName": {
         "message": "Auto - À la fermeture d'une fenêtre"
     },
