@@ -6,7 +6,7 @@
         "message": "Sla de status van vensters en tabbladen op en herstel ze. Het ondersteunt ook automatisch opslaan."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Doneren via PayPal"
     },
     "saveLabel": {
         "message": "Opslaan"
@@ -15,7 +15,7 @@
         "message": "Huidige sessie opslaan"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Enkel huidige venster opslaan"
     },
     "displayAllLabel": {
         "message": "Alle"
@@ -114,19 +114,19 @@
         "message": "Open sessie in een nieuw venster"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "Indien uitgevinkt, overschrijft de sessie het huidige venster."
     },
     "ifLazyLoadingLabel": {
         "message": "Tab lui laden"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "Bij het openen van een sessie wordt de inhoud van elke pagina niet geladen totdat u het tabblad selecteert. <br> Indien uitgevikt neemt het geheugengebruik sterk toe wanneer de sessie wordt hersteld."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Vorige sessie herstellen bij opstarten"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "Wanneer Firefox start, herstelt de sessie die actief was bij het afsluiten."
     },
     "ifAutoSaveLabel": {
         "message": "Sla de sessie regelmatig op"
@@ -159,22 +159,22 @@
         "message": "Maximumaantal opgeslagen sessies (op deze manier)."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Gebruik de paginatitel als sessienaam bij automatisch opslaan"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "Wanneer een sessie automatisch wordt opgeslagen, gebruik dan de titel van de geopende pagina als sessienaam."
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Reservekopie opslaan"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Wanneer Firefox start, maak dan een reservekopie en sla deze op in de downloadmap."
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Maximum aantal opgeslagen reservekopieën"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Wanneer het aantal reservekopieën groter is dan deze waarde, worden oudere kopieën verwijderd in oplopende volgorde (oudste eerst)."
     },
     "dateFormatLabel": {
         "message": "Datumformaat"
@@ -183,10 +183,10 @@
         "message": "Voorbeeld: YYYY. MM. DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Privé venster opslaan"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Indien uitgevinkt wordt het privé venster genegeerd bij het opslaan van een sessie."
     },
     "ifSupportTstLabel": {
         "message": "Ondersteunt Tree Style Tab"
@@ -195,28 +195,28 @@
         "message": "Boomstatus herstellen van de Tree Style tabblad. <br> Schakel dit uit voor Firefox-versies ouder dan Firefox 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
+        "message": "Vertraging bij terugzetten van een boomstructuur (milliseconden)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "Om de staat van een boomstructuur te herstellen, is een wachttijd vereist voor het openen van de tab. Verhoog deze waarde indien de boomstructuur niet correct wordt teruggezet."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Sessienaam binnen één lijn weergeven"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Indien de sessienaam in de sessielijst slanger is dan één regel, wordt het ingekort weergegeven op één regel."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Werkbalk popup"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Geef de stijl op van de werkbalk popup."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Breedte"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Hoogte"
     },
     "importLabel": {
         "message": "Sessies importeren"
@@ -225,7 +225,7 @@
         "message": "Laad sessies die op de computer zijn opgeslagen en voeg ze toe aan de sessielijst.<br>Het ondersteunt ook het sessiebestand van SessionManager (.session)."
     },
     "importButtonLabel": {
-        "message": "Blader..."
+        "message": "Bladeren..."
     },
     "importSaveButtonLabel": {
         "message": "Importeer"
@@ -234,16 +234,16 @@
         "message": "Wissen"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "Importeer URL lijst"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Maak een sessie aan van een lijst met URL's en voeg deze aan de sessielijst toe.<br>indeling: &lt;URL&gt; &lt;paginatitel (optioneel)&gt;"
     },
     "exportLabel": {
         "message": "Sessies exporteren"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Sla alle sessies naar de computer op."
     },
     "exportButtonLabel": {
         "message": "Exporteren"
