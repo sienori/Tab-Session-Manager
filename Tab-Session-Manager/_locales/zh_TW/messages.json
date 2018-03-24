@@ -84,13 +84,13 @@
         "message": "新增至目前視窗"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "錯誤"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "在您的瀏覽器中 IndexedDB 無法使用。"
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "如何解決這個問題"
     },
     "winCloseSessionName": {
         "message": "自動儲存 - 視窗關閉"
