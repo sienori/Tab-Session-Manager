@@ -174,7 +174,7 @@
         "message": "セッションを自動保存する際，開かれているページのタイトルをセッションの名前として使用します。"
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "バックアップ"
     },
     "ifBackupLabel": {
         "message": "バックアップを保存する"
@@ -183,13 +183,13 @@
         "message": "Firefoxの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。"
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "保存場所"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "バックアップファイルを保存するフォルダを指定します。保存場所はFirefoxのダウンロードフォルダ以下に限定されます。"
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "ダウンロードフォルダ"
     },
     "backupFilesLimitLabel": {
         "message": "バックアップの上限保存数"
