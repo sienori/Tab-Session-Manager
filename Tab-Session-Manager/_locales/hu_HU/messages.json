@@ -173,11 +173,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "Munkamenet automatikus mentésekor, a nyitott oldal címének használata a munkamenet neveként."
     },
+    "backupLabel": {
+        "message": "Backup"
+    },
     "ifBackupLabel": {
         "message": "Biztonsági másolat mentése"
     },
     "ifBackupCaptionLabel": {
         "message": "Amikor a Firefox indul, biztonsági másolat készítése az elmentett munkamenetekről és a Letöltések mappába mentése."
+    },
+    "backupFolderLabel": {
+        "message": "Save location"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    },
+    "downloadFolderLabel": {
+        "message": "Download folder"
     },
     "backupFilesLimitLabel": {
         "message": "Elmentett biztonsági másolatok maximális száma"
