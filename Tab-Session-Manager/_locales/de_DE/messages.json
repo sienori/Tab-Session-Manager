@@ -173,11 +173,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "Wenn eine Sitzung automatisch gespeichert wird, wird der Titel der geöffneten Seite für den Namen der Sitzung verwendet."
     },
+    "backupLabel": {
+        "message": "Backup"
+    },
     "ifBackupLabel": {
         "message": "Sicherungskopie erstellen"
     },
     "ifBackupCaptionLabel": {
         "message": "Wenn Firefox startet wird eine Sicherungsdatei der Sitzungen erstellt und im Ordner \"Downloads\" abgelegt."
+    },
+    "backupFolderLabel": {
+        "message": "Save location"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    },
+    "downloadFolderLabel": {
+        "message": "Download folder"
     },
     "backupFilesLimitLabel": {
         "message": "Maximale Anzahl von erstellten Sicherungen"
