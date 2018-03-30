@@ -173,11 +173,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "Wanneer een sessie automatisch wordt opgeslagen, gebruik dan de titel van de geopende pagina als sessienaam."
     },
+    "backupLabel": {
+        "message": "Backup"
+    },
     "ifBackupLabel": {
         "message": "Reservekopie opslaan"
     },
     "ifBackupCaptionLabel": {
         "message": "Wanneer Firefox start, maak dan een reservekopie en sla deze op in de downloadmap."
+    },
+    "backupFolderLabel": {
+        "message": "Save location"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    },
+    "downloadFolderLabel": {
+        "message": "Download folder"
     },
     "backupFilesLimitLabel": {
         "message": "Maximum aantal opgeslagen reservekopieën"
