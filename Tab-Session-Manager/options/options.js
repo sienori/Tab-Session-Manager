@@ -24,6 +24,9 @@ document.addEventListener('click', function (e) {
         case "urlImportSave":
             urlImport();
             break;
+        case "openDownloadFolder":
+            openDownloadFolder();
+            break;
     }
 });
 
@@ -35,6 +38,8 @@ for (let item of saveByChangeItems) {
 function save() {
     const inputs = ['tstDelay', 'autoSaveInterval', 'autoSaveLimit', 'autoSaveWhenCloseLimit', 'backupFilesLimit', 'popupWidth', 'popupHeight'];
     for (let i of inputs) replaceInvalidValue(i);
+
+    replaceBackupFolderName();
 
     S.saveOptionsPage();
 }

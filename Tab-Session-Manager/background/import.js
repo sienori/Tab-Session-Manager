@@ -43,11 +43,12 @@ async function backupSessions() {
         })
     );
 
+    const backupFolder = S.get().backupFolder;
     const fileName = returnFileName(sessions);
 
     await browser.downloads.download({
         url: downloadUrl,
-        filename: `TabSessionManager - Backup/${fileName}.json`,
+        filename: `${backupFolder}${backupFolder==''? '':'/'}${fileName}.json`,
         conflictAction: 'uniquify',
         saveAs: false
     });
@@ -68,7 +69,7 @@ function returnFileName(sessions) {
 
 async function removeBackupFile() {
     const backupItems = await browser.downloads.search({
-        query: ['TabSessionManager - Backup'],
+        urlRegex: `^blob.${browser.runtime.getURL('')}.*$`,
         orderBy: ['-startTime'],
         exists: true
     });
@@ -79,9 +80,9 @@ async function removeBackupFile() {
     for (let i of backupItems) {
         count++;
         if (count < limit) continue;
-        await browser.downloads.removeFile(i.id);
+        await browser.downloads.removeFile(i.id).catch(() => {});
         await browser.downloads.erase({
             id: i.id
-        });
+        }).catch(() => {});
     }
 }

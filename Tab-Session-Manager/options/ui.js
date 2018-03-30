@@ -106,6 +106,36 @@ function showUpdated() {
     version.classList.add('updated');
 }
 
+function replaceBackupFolderName() {
+    const backupFolder = document.getElementById('backupFolder');
+
+    const specialChars = /\:|\?|\.|"|<|>|\|/g; //使用できない特殊文字
+    const slash = /\//g; //単一のスラッシュ
+    const spaces = /\s\s+/g; //連続したスペース
+    const backSlashs = /\\\\+/g; //連続したバックスラッシュ
+    const sandwich = /(\s\\|\\\s)+(\s|\\)?/g; //バックスラッシュとスペースが交互に出てくるパターン
+    const beginningEnd = /^(\s|\\)+|(\s|\\)+$/g; //先頭と末尾のスペース,バックスラッシュ
+
+    const folderName = backupFolder.value
+        .replace(specialChars, '-')
+        .replace(slash, '\\')
+        .replace(spaces, ' ')
+        .replace(backSlashs, '\\')
+        .replace(sandwich, '\\')
+        .replace(beginningEnd, '');
+
+    backupFolder.value = folderName;
+
+    const showArea = document.getElementById('showBackupFolder');
+    showArea.innerText = `${(folderName=='')? '' : '\\'}${folderName}`;
+}
+
+function openDownloadFolder() {
+    browser.downloads.showDefaultFolder();
+}
+
+replaceBackupFolderName();
+document.getElementById('openDownloadFolder').innerText = `[${browser.i18n.getMessage("downloadFolderLabel")}]`;
 document.getElementsByClassName("amazonUrl")[0].href = browser.i18n.getMessage("amazonUrl");
 document.getElementsByClassName("addonUrl")[0].href = browser.i18n.getMessage("addonUrl");
 document.getElementsByClassName('addonVersion')[0].getElementsByClassName('caption')[0].getElementsByTagName('a')[0].innerText = `Version ${browser.runtime.getManifest().version}`;

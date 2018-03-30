@@ -258,6 +258,20 @@
                             </div>
                         </li>
                         <ul class=childElement>
+                            <li class="optionContainer new">
+                                <div class=optionText>
+                                    <p id="backupFolderLabel">保存場所</p>
+                                    <p class="caption backupFolderCaptionLabel">バックアップファイルを保存するフォルダを指定します。保存場所はFirefoxのダウンロードフォルダ以下に限定されます。</p>
+                                    <p class=caption>
+                                        <span id=openDownloadFolder>[ダウンロードフォルダ]</span>
+                                        <span id=showBackupFolder>/TabSessionManager - Backup</span>
+                                    </p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="backupFolder" class=saveByChange type="text" value="TabSessionManager - Backup" placeholder="TabSessionManager - Backup">
+                                </div>
+                            </li>
+
                             <li class=optionContainer>
                                 <div class=optionText>
                                     <p id="backupFilesLimitLabel">バックアップの上限保存数</p>

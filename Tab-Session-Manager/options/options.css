@@ -184,6 +184,15 @@ hr {
     float: left;
 }
 
+#openDownloadFolder {
+    color: var(--highlight);
+    cursor: pointer;
+}
+
+#openDownloadFolder:hover {
+    text-decoration: underline;
+}
+
 
 /*----forms----*/
 
