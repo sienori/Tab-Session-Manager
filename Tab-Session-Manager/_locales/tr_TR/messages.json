@@ -173,11 +173,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "Bir oturumu otomatik olarak kaydederken, oturum adı olarak açılan sayfanın başlığını kullan."
     },
+    "backupLabel": {
+        "message": "Backup"
+    },
     "ifBackupLabel": {
         "message": "Yedeklemeyi kaydet"
     },
     "ifBackupCaptionLabel": {
         "message": "Firefox başlatıldığında, oturumların yedeklemeleri için bir dosya oluştur ve indirilenler dosyasına kaydet."
+    },
+    "backupFolderLabel": {
+        "message": "Save location"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    },
+    "downloadFolderLabel": {
+        "message": "Download folder"
     },
     "backupFilesLimitLabel": {
         "message": "En fazla kayıtlı yedekleme sayısı"
