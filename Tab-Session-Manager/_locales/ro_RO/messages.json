@@ -131,6 +131,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "La deschiderea unei sesiuni, conținutul fiecărei pagini nu este încărcat până când se selectează fila. <br>Dacă este deazctivat, utilizarea memoriei crește foarte mult când sesiunea este restabilită."
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restore previous session at startup"
     },
