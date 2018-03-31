@@ -131,6 +131,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "Bij het openen van een sessie wordt de inhoud van elke pagina niet geladen totdat u het tabblad selecteert. <br> Indien uitgevikt neemt het geheugengebruik sterk toe wanneer de sessie wordt hersteld."
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Vorige sessie herstellen bij opstarten"
     },
