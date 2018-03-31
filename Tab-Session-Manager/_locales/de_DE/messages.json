@@ -174,7 +174,7 @@
         "message": "Wenn eine Sitzung automatisch gespeichert wird, wird der Titel der geöffneten Seite für den Namen der Sitzung verwendet."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "Datensicherung"
     },
     "ifBackupLabel": {
         "message": "Sicherungskopie erstellen"
@@ -183,7 +183,7 @@
         "message": "Wenn Firefox startet wird eine Sicherungsdatei der Sitzungen erstellt und im Ordner \"Downloads\" abgelegt."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Gespeichert unter"
     },
     "backupFolderCaptionLabel": {
         "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
