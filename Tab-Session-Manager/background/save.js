@@ -40,51 +40,52 @@ function saveCurrentSession(name, tag, property) {
     })
 }
 
-function loadCurrentSesssion(name, tag, property) {
-    return new Promise(function (resolve, reject) {
-        let session = {};
-        const queryInfo = {};
-        switch (property) {
-            case "default":
-                break;
-            case "saveOnlyCurrentWindow":
-                queryInfo.currentWindow = true;
-        }
-        browser.tabs.query(queryInfo).then(function (tabs) {
-            session.windows = {};
-            session.windowsNumber = 0;
-            session.tabsNumber = 0;
-            session.name = name;
-            session.date = new Date();
-            session.tag = tag;
-            session.sessionStartTime = SessionStartTime;
-            session.id = UUID.generate();
+async function loadCurrentSesssion(name, tag, property) {
+    let session = {
+        windows: {},
+        windowsNumber: 0,
+        tabsNumber: 0,
+        name: name,
+        date: new Date(),
+        tag: tag,
+        sessionStartTime: SessionStartTime,
+        id: UUID.generate()
+    };
 
-            for (let tab of tabs) {
+    let queryInfo = {};
+    switch (property) {
+        case "default":
+            break;
+        case "saveOnlyCurrentWindow":
+            queryInfo.currentWindow = true;
+    }
 
-                //プライベートタブを無視
-                if (!S.get().ifSavePrivateWindow) {
-                    if (tab.incognito) {
-                        continue;
-                    }
-                }
-
-                if (session.windows[tab.windowId] == undefined) session.windows[tab.windowId] = {};
-
-                //replacedPageなら元のページを保存
-                let parameter = returnReplaceParameter(tab.url)
-                if (parameter.isReplaced) {
-                    tab.url = parameter.url;
-                }
-                session.windows[tab.windowId][tab.id] = tab;
-                session.tabsNumber++;
+    const tabs = await browser.tabs.query(queryInfo);
+    for (let tab of tabs) {
+        //プライベートタブを無視
+        if (!S.get().ifSavePrivateWindow) {
+            if (tab.incognito) {
+                continue;
             }
+        }
 
-            session.windowsNumber = Object.keys(session.windows).length;
+        if (session.windows[tab.windowId] == undefined) session.windows[tab.windowId] = {};
 
-            if (session.tabsNumber > 0) resolve(session);
-            else reject();
-        })
+        //replacedPageなら元のページを保存
+        const parameter = returnReplaceParameter(tab.url);
+        if (parameter.isReplaced) {
+            tab.url = parameter.url;
+        }
+
+        session.windows[tab.windowId][tab.id] = tab;
+        session.tabsNumber++;
+    }
+
+    session.windowsNumber = Object.keys(session.windows).length;
+
+    return new Promise((resolve, reject) => {
+        if (session.tabsNumber > 0) resolve(session);
+        else reject();
     })
 }
 
