@@ -131,6 +131,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "Quando viene aperta una sessione, il contenuto di ogni pagina non viene caricato finché selezioni la scheda.<br>Se disattivato, l'utilizzo della memoria aumenta notevolmente quando la sessione viene ripristinata."
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Ripristina la sessione precedente all'avvio"
     },
