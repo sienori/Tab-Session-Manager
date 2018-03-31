@@ -46,6 +46,8 @@ async function replacePage() {
         active: true,
         currentWindow: true
     });
+    if (info[0] == undefined) return;
+
     if (info[0].status != "complete") {
         setTimeout(replacePage, 500);
         return;
@@ -67,7 +69,6 @@ async function replacePage() {
             browser.tabs.update(info[0].id, updateProperties);
         })
     }
-    //})
 }
 
 function toggleReaderMode(id) {

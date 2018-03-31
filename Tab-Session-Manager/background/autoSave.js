@@ -105,6 +105,8 @@ async function getCurrentTabName() {
         currentWindow: true
     });
 
+    if (tabs[0] == undefined) return '';
+
     if (!S.get().ifSavePrivateWindow && tabs[0].incognito) {
         tabs = await browser.tabs.query({
             active: true,
