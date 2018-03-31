@@ -131,6 +131,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba. <br> Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restore previous session at startup"
     },
