@@ -174,7 +174,7 @@
         "message": "當自動儲存瀏覽階段之時，使用開啟頁面的標題作為瀏覽階段名稱。"
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "備份"
     },
     "ifBackupLabel": {
         "message": "儲存備份"
@@ -183,13 +183,13 @@
         "message": "當 Firefox 啟動時，建立瀏覽階段的備份檔並儲存於下載資料夾中。"
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "儲存位置"
     },
     "backupFolderCaptionLabel": {
         "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "下載資料夾"
     },
     "backupFilesLimitLabel": {
         "message": "最大儲存備份數量"
