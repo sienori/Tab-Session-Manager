@@ -174,7 +174,7 @@
         "message": "Munkamenet automatikus mentésekor, a nyitott oldal címének használata a munkamenet neveként."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "Biztonsági mentés"
     },
     "ifBackupLabel": {
         "message": "Biztonsági másolat mentése"
@@ -183,13 +183,13 @@
         "message": "Amikor a Firefox indul, biztonsági másolat készítése az elmentett munkamenetekről és a Letöltések mappába mentése."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Mentés helye"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Adja meg a mappát, ahova a biztonsági mentés fájlja kerüljön. A Mentés helye korlátozott a Firefox letöltési mappára és annak almappáiba."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "Letöltési könyvtár"
     },
     "backupFilesLimitLabel": {
         "message": "Elmentett biztonsági másolatok maximális száma"
