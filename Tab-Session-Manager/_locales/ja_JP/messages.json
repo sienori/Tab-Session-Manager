@@ -132,10 +132,10 @@
         "message": "セッションを開いたとき，タブを選択するまで各ページの内容を読み込みません。<br>チェックをオフにすると，セッション復元時のメモリ使用量が増大します。"
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "ウィンドウの位置を復元する"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "セッションを開いたときにウィンドウの位置とサイズを復元します。"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "起動時に前回のセッションを復元"
