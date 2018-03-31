@@ -186,7 +186,7 @@
         "message": "儲存位置"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "指定儲存備份檔的位置。儲存位置僅限於 Firefox 下載資料夾中。"
     },
     "downloadFolderLabel": {
         "message": "下載資料夾"
