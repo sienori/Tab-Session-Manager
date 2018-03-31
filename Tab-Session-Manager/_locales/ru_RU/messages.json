@@ -131,6 +131,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет активирована вручную.<br>При отключении возрастёт расход памяти после восстановления сессии."
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Восстанавливать предыдущую сессию при запуске"
     },
