@@ -44,6 +44,7 @@ async function loadCurrentSesssion(name, tag, property) {
     let session = {
         windows: {},
         windowsNumber: 0,
+        windowsInfo: {},
         tabsNumber: 0,
         name: name,
         date: new Date(),
@@ -82,6 +83,11 @@ async function loadCurrentSesssion(name, tag, property) {
     }
 
     session.windowsNumber = Object.keys(session.windows).length;
+
+    for (let i in session.windows) {
+        const window = await browser.windows.get(parseInt(i));
+        session.windowsInfo[i] = window;
+    }
 
     return new Promise((resolve, reject) => {
         if (session.tabsNumber > 0) resolve(session);

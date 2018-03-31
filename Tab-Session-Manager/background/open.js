@@ -13,15 +13,50 @@ async function openSession(session, property = "default") {
                 return createTabs(session, win, currentWindow);
             });
         };
-        const openInNewWindow = () => {
+        const openInNewWindow = async() => {
+            let createData = {};
             const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
-            const createData = {
-                incognito: firstTab.incognito
-            };
+            createData.incognito = firstTab.incognito
 
-            return browser.windows.create(createData).then((currentWindow) => {
-                return createTabs(session, win, currentWindow);
-            });
+            const isSetPosition = S.get().isRestoreWindowPosition && session.windowsInfo != undefined;
+
+            if (isSetPosition) {
+                const info = session.windowsInfo[win];
+                switch (info.state) {
+                    case 'minimized':
+                        createData.state = info.state;
+                        break;
+                    case 'normal':
+                        createData.height = info.height;
+                        createData.width = info.width;
+                    case 'maximized': //最大化前のサイズを維持するためheightとwidthを含めない
+                        createData.left = info.left;
+                        createData.top = info.top;
+                        break;
+                }
+            }
+
+            const currentWindow = await browser.windows.create(createData);
+
+            if (isSetPosition) {
+                switch (session.windowsInfo[win].state) {
+                    case 'normal': //黒帯が表示される現象を回避する
+                        browser.windows.update(currentWindow.id, {
+                            height: createData.height + 1
+                        });
+                        browser.windows.update(currentWindow.id, {
+                            height: createData.height
+                        });
+                        break;
+                    case 'maximized':
+                        browser.windows.update(currentWindow.id, {
+                            state: 'maximized'
+                        });
+                        break;
+                }
+            }
+
+            return createTabs(session, win, currentWindow);
         };
         const addToCurrentWindow = () => {
             return browser.windows.getCurrent({

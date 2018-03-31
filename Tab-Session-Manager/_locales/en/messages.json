@@ -138,6 +138,13 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
+
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restore previous session at startup"
     },
