@@ -69,7 +69,8 @@ function returnFileName(sessions) {
 
 async function removeBackupFile() {
     const backupItems = await browser.downloads.search({
-        urlRegex: `^blob.${browser.runtime.getURL('')}.*$`,
+        filenameRegex: `^.*${S.get().backupFolder}.*$`,
+        urlRegex: `^blob\.${browser.runtime.getURL('')}.*$`,
         orderBy: ['-startTime'],
         exists: true
     });
