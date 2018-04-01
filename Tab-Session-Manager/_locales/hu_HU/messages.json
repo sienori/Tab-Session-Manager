@@ -83,6 +83,9 @@
     "addToCurrentWindowLabel": {
         "message": "Jelenlegi ablakhoz hozzáadás"
     },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
     "errorLabel": {
         "message": "Hiba"
     },
