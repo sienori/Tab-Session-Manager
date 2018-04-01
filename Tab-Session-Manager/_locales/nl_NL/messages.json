@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Huidige sessie opslaan"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Enkel huidige venster opslaan"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Alle"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Tag verwijderen"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "Venster"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Er is geen sessie"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Hernoemen"
