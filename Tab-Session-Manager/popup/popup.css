@@ -590,6 +590,25 @@ option {
 
 /* detail */
 
+.detailContainer {
+    display: flex;
+    align-items: center;
+}
+
+.detailContainer svg {
+    margin-right: 2px;
+    width: 12px;
+    height: 12px;
+    fill: none;
+    stroke: var(--highlight);
+    stroke-width: 1px;
+    transition: all 300ms;
+}
+
+.detailContainer.isOpen svg {
+    transform: rotate(90deg);
+}
+
 .detail {
     color: var(--highlight);
     cursor: pointer;

@@ -425,7 +425,12 @@ function sessionsHTML(info) {
             <span class="sessionDate">${sanitaize.encode(info.formatedDate)}</span>
         </div>
         <div class=buttonContainer>
-            <span class="detail" title="${Labels.detailLabel}">${detail}</span>
+            <div class=detailContainer>
+                <svg>
+                    <use xlink:href="#triangleSvg"></use>
+                </svg>
+                <span class="detail" title="${Labels.detailLabel}">${detail}</span>
+            </div>
             <div class=removeOpenButton>
                 <span class="open">${Labels.open}</span>
                 <span class="remove">${Labels.remove}</span>
@@ -470,6 +475,7 @@ function showSessions(sessions, isInit = true) {
 
 async function showDetail(e, overwrite = false) {
     const sessionId = getParentSessionId(e.target);
+    const detailContainer = document.getElementById(sessionId).getElementsByClassName("detailContainer")[0];
     const detail = document.getElementById(sessionId).getElementsByClassName("detailItems")[0];
     const session = await getSessions(sessionId);
     if (session == undefined) return;
@@ -524,6 +530,7 @@ async function showDetail(e, overwrite = false) {
                 replaseImageUrl(tabFavIconUrl, sessionId, i);
             }
         }
+        detailContainer.classList.add('isOpen');
         //クラスを付け替えてアニメーションさせるために必要なディレイ
         setTimeout(() => {
             detail.classList.remove("hidden");
@@ -532,6 +539,7 @@ async function showDetail(e, overwrite = false) {
             }
         }, 10);
     } else {
+        detailContainer.classList.remove('isOpen');
         for (let li of detail.getElementsByTagName("li")) {
             li.classList.add("hidden");
         }
