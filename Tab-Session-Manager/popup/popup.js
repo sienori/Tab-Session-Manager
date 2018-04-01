@@ -678,15 +678,24 @@ class DeleteSessions {
     async delete(id) {
         const session = await getSessions(id);
         this.deletedSessions.push(session);
+
+        const sessionItem = document.getElementById(id);
+        sessionItem.classList.add('isDeleted');
+        const removeConfirm = sessionItem.getElementsByClassName('removeConfirm')[0];
+        removeConfirm.classList.remove('hidden');
+
+        const isShowAddTag = sessionItem.getElementsByClassName('addTagButton')[0].classList.contains('showInput');
+        const isShowRename = sessionItem.getElementsByClassName('renameArea')[0].style.display == "block";
+        const isShowDetail = !sessionItem.getElementsByClassName('detailItems')[0].classList.contains('hidden');
+        if (isShowAddTag) showAddTagArea(id);
+        if (isShowRename) rename(id);
+        if (isShowDetail) showDetail(id);
+
         browser.runtime.sendMessage({
             message: "remove",
             id: id,
             isSendResponce: false
         });
-        const sessionItem = document.getElementById(id);
-        const removeConfirm = sessionItem.getElementsByClassName('removeConfirm')[0];
-        sessionItem.classList.add('isDeleted');
-        removeConfirm.classList.remove('hidden');
     }
 
     restore(id) {
