@@ -157,7 +157,7 @@ async function onMessageListener(request, sender, sendResponse) {
             removeTag(request.id, request.tag);
             break;
         case "getInitState":
-            sendResponse(IsInit);
+            return IsInit;
             break;
         case "getCurrentSession":
             const currentSession = await loadCurrentSesssion('', [], request.property).catch(() => {});
