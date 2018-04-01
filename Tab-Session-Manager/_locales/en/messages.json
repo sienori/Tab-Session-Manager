@@ -103,6 +103,9 @@
     "replaceCurrentSessionLabel": {
         "message": "Replace with current session"
     },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
+    },
     "errorLabel": {
         "message": "Error"
     },

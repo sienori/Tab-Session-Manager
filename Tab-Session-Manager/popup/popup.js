@@ -36,7 +36,7 @@ S.init().then(async() => {
 });
 
 async function setLabels() {
-    labels = ['initialNameValue', 'inputSessionNameLabel', 'winCloseSessionName', 'regularSaveSessionName', 'categoryFilterLabel', 'sortLabel', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'detailLabel', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'menuLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'replaceCurrentSessionLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
+    labels = ['initialNameValue', 'inputSessionNameLabel', 'winCloseSessionName', 'regularSaveSessionName', 'categoryFilterLabel', 'sortLabel', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'detailLabel', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'menuLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'replaceCurrentSessionLabel', 'makeCopySessionLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
 
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
@@ -401,6 +401,7 @@ function sessionsHTML(info) {
                     <li class=addToCurrentWindow>${Labels.addToCurrentWindowLabel}</li>
                     <hr>
                     <li class=replaceCurrentSession>${Labels.replaceCurrentSessionLabel}</li>
+                    <li class=makeCopySession>${Labels.makeCopySessionLabel}</li>
                     </ul>
                 </div>
             </div>
@@ -835,6 +836,18 @@ async function replaceCurrentSession(e) {
     });
 }
 
+async function makeCopySession(e) {
+    const id = getParentSessionId(e.target);
+    let session = await getSessions(id);
+
+    session.id = UUID.generate();
+
+    browser.runtime.sendMessage({
+        message: 'save',
+        session: session
+    });
+}
+
 document.addEventListener('click', async function (e) {
     hideAllPopupMenu(e);
     switch (e.target.id) {
@@ -908,6 +921,9 @@ document.addEventListener('click', async function (e) {
         case "replaceCurrentSession":
             replaceCurrentSession(e);
             break;
+        case "makeCopySession":
+            makeCopySession(e);
+            break;
         case "saveOnlyCurrentWindow":
             save("saveOnlyCurrentWindow");
             break;
@@ -963,7 +979,7 @@ function save(property = "default") {
     const name = document.getElementById("saveName").value;
 
     browser.runtime.sendMessage({
-        message: "save",
+        message: "saveCurrentSession",
         name: name,
         property: property
     });

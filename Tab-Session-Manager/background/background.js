@@ -125,6 +125,9 @@ async function migrateSessionsFromStorage() {
 async function onMessageListener(request, sender, sendResponse) {
     switch (request.message) {
         case "save":
+            saveSession(request.session);
+            break;
+        case "saveCurrentSession":
             const name = request.name;
             const property = request.property;
             saveCurrentSession(name, [], property).catch(() => {});
