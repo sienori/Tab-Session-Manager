@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Enregistrer la session actuelle"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Enregistrer uniquement la fenêtre active"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Toutes"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Supprimer une étiquette"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "fenêtre"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Il n’y a pas de session"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Renommer"
