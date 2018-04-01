@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Salvează sesiunea curentă"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Save only current window"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Tot"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Remove tag"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "Fereastră"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Nu există nici o sesiune"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Rename"
