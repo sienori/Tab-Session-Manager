@@ -27,6 +27,9 @@ document.addEventListener('click', function (e) {
         case "openDownloadFolder":
             openDownloadFolder();
             break;
+        case "resetSettings":
+            resetSettings();
+            break;
     }
 });
 
@@ -60,6 +63,11 @@ function removeSessions() {
             message: "deleteAllSessions"
         });
     }
+}
+
+async function resetSettings() {
+    await S.clearAll();
+    location.reload(true);
 }
 
 document.getElementById("import").addEventListener("change", importSessions, false);
