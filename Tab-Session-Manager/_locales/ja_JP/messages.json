@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "現在のセッションを保存"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "現在のウィンドウのみを保存"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "全て"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "タグを削除"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "ウィンドウ"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "セッションはありません"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "リネーム"
