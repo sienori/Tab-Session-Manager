@@ -473,8 +473,7 @@ function showSessions(sessions, isInit = true) {
     sortChange();
 }
 
-async function showDetail(e, overwrite = false) {
-    const sessionId = getParentSessionId(e.target);
+async function showDetail(sessionId, overwrite = false) {
     const detailContainer = document.getElementById(sessionId).getElementsByClassName("detailContainer")[0];
     const detail = document.getElementById(sessionId).getElementsByClassName("detailItems")[0];
     const session = await getSessions(sessionId);
@@ -557,8 +556,7 @@ function replaseImageUrl(url, sessionId, win) {
     }
 }
 
-function rename(e) {
-    const sessionId = getParentSessionId(e.target);
+function rename(sessionId) {
     const sessionName = document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
     const renameArea = document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
 
@@ -577,8 +575,7 @@ function rename(e) {
     }
 }
 
-function renameSend(e) {
-    sessionId = getParentSessionId(e.target);
+function renameSend(sessionId) {
     sessionName = document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
     renameArea = document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
     renameInput = renameArea.getElementsByClassName("renameInput")[0].value;
@@ -596,8 +593,7 @@ function renameSend(e) {
 
 }
 
-function showAddTagArea(e) {
-    const sessionId = getParentSessionId(e.target);
+function showAddTagArea(sessionId) {
     const tagsContainer = document.getElementById(sessionId).getElementsByClassName('tagsContainer')[0];
     const addTagButton = document.getElementById(sessionId).getElementsByClassName('addTagButton')[0];
     const addTagInput = document.getElementById(sessionId).getElementsByClassName('addTagInput')[0];
@@ -641,11 +637,10 @@ function calcTagsHeight(tagsContainer, reverse) {
     return sumHeight;
 }
 
-function addTagSend(e) {
-    const sessionId = getParentSessionId(e.target);
+function addTagSend(sessionId) {
     const tagInput = document.getElementById(sessionId).getElementsByClassName('addTagInput')[0];
 
-    showAddTagArea(e);
+    showAddTagArea(sessionId);
     browser.runtime.sendMessage({
         message: "addTag",
         id: sessionId,
@@ -707,8 +702,7 @@ class DeleteSessions {
 }
 const deleteSessions = new DeleteSessions();
 
-function showPopupMenu(e) {
-    const sessionId = getParentSessionId(e.target);
+function showPopupMenu(sessionId) {
     const popupMenu = document.getElementById(sessionId).getElementsByClassName("popupMenu")[0];
     if (popupMenu.classList.contains("hidden")) {
         popupMenu.classList.remove("hidden");
@@ -726,7 +720,7 @@ function showPopupMenu(e) {
     }
 }
 
-function showSaveOptionPopup(e) {
+function showSaveOptionPopup() {
     const popupMenu = document.getElementById("saveArea").getElementsByClassName("popupMenu")[0];
 
     if (popupMenu.classList.contains("hidden")) {
@@ -763,6 +757,8 @@ function hideAllPopupMenu(e) {
 function getParentSessionId(element) {
     while (true) {
         element = element.parentElement;
+        if (element == null) return;
+
         if (element.id != "") {
             let sessionId = element.id;
             return sessionId;
@@ -829,19 +825,17 @@ async function deleteWindowTab(e, target) {
     const detail = document.getElementById(id).getElementsByClassName('detail')[0];
     const detailText = `${session.windowsNumber} ${(session.windowsNumber==1)?Labels.windowLabel:Labels.windowsLabel} - ${session.tabsNumber} ${(session.tabsNumber==1)?Labels.tabLabel:Labels.tabsLabel}`;
     detail.innerText = detailText;
-    showDetail(e, true);
+    showDetail(id, true);
 }
 
-async function replaceCurrentSession(e) {
+async function replaceCurrentSession(id) {
     let currentSession = await browser.runtime.sendMessage({
         message: 'getCurrentSession',
         property: 'default'
     });
     if (currentSession == undefined) return;
 
-    const id = getParentSessionId(e.target);
     const session = await getSessions(id);
-
     currentSession.id = session.id;
     currentSession.name = session.name;
     currentSession.tag = session.tag;
@@ -853,8 +847,7 @@ async function replaceCurrentSession(e) {
     });
 }
 
-async function makeCopySession(e) {
-    const id = getParentSessionId(e.target);
+async function makeCopySession(id) {
     let session = await getSessions(id);
 
     session.id = UUID.generate();
@@ -866,6 +859,7 @@ async function makeCopySession(e) {
 }
 
 document.addEventListener('click', async function (e) {
+    const id = getParentSessionId(e.target);
     hideAllPopupMenu(e);
     switch (e.target.id) {
         case "setting":
@@ -878,7 +872,7 @@ document.addEventListener('click', async function (e) {
             save();
             break;
         case "saveOptionButton":
-            showSaveOptionPopup(e);
+            showSaveOptionPopup();
             break;
         case "donate":
             const url = 'https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager - Donation'
@@ -887,22 +881,20 @@ document.addEventListener('click', async function (e) {
     }
     switch (e.target.className) {
         case "open":
-            sendOpenMessage(e, "default");
+            sendOpenMessage(id, "default");
             break;
         case "remove":
-            const deleteId = getParentSessionId(e.target);
-            deleteSessions.delete(deleteId);
+            deleteSessions.delete(id);
             break;
         case "restoreSession":
-            const restoreId = getParentSessionId(e.target);
-            deleteSessions.restore(restoreId);
+            deleteSessions.restore(id);
             break;
         case "detail":
-            showDetail(e);
+            showDetail(id);
             break;
         case "windowTitle":
             const windowId = e.target.dataset.windowid;
-            sendOpenMessage(e, "openInNewWindow", windowId);
+            sendOpenMessage(id, "openInNewWindow", windowId);
             break;
         case "windowDeleteButton":
             deleteWindowTab(e, 'window');
@@ -916,28 +908,28 @@ document.addEventListener('click', async function (e) {
             openUrl(url, title);
             break;
         case "renameButton":
-            rename(e);
+            rename(id);
             break;
         case "renameSend":
-            renameSend(e);
+            renameSend(id);
             break;
         case "menuIcon":
-            showPopupMenu(e);
+            showPopupMenu(id);
             break;
         case "openInCurrentWindow":
-            sendOpenMessage(e, "openInCurrentWindow");
+            sendOpenMessage(id, "openInCurrentWindow");
             break;
         case "openInNewWindow":
-            sendOpenMessage(e, "openInNewWindow");
+            sendOpenMessage(id, "openInNewWindow");
             break;
         case "addToCurrentWindow":
-            sendOpenMessage(e, "addToCurrentWindow");
+            sendOpenMessage(id, "addToCurrentWindow");
             break;
         case "replaceCurrentSession":
-            replaceCurrentSession(e);
+            replaceCurrentSession(id);
             break;
         case "makeCopySession":
-            makeCopySession(e);
+            makeCopySession(id);
             break;
         case "saveOnlyCurrentWindow":
             save("saveOnlyCurrentWindow");
@@ -951,29 +943,31 @@ document.addEventListener('click', async function (e) {
             window.close();
             break;
         case "addTagSend":
-            addTagSend(e);
+            addTagSend(id);
             break;
         case "removeTagButton":
             removeTagSend(e);
             break;
     }
-    if (e.target.classList.contains('addTagButton')) showAddTagArea(e);
+    if (e.target.classList.contains('addTagButton')) showAddTagArea(id);
 })
 
 document.addEventListener('keypress', (e) => {
     if (e.key == 'Enter') {
+        let id;
         if (e.target.id == 'saveName') {
             save();
         } else if (e.target.className == 'renameInput') {
-            renameSend(e);
+            id = getParentSessionId(e.target);
+            renameSend(id);
         } else if (e.target.className == 'addTagInput') {
-            addTagSend(e);
+            id = getParentSessionId(e.target);
+            addTagSend(id);
         }
     }
 })
 
-async function sendOpenMessage(e, property, windowId = null) {
-    const id = getParentSessionId(e.target);
+async function sendOpenMessage(id, property, windowId = null) {
     let openSession = await getSessions(id);
     if (openSession == undefined) return;
 
