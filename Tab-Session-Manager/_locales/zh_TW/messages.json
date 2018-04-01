@@ -56,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "確定要刪除此瀏覽階段？"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "取消"
     },
@@ -100,6 +106,9 @@
     },
     "replaceCurrentSessionLabel": {
         "message": "Replace with current session"
+    },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
     },
     "errorLabel": {
         "message": "錯誤"
