@@ -15,16 +15,16 @@
         "message": "現在のセッションを保存"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "セッション名を入力"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "現在のウィンドウのみを保存"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "カテゴリフィルタ"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "ソート"
     },
     "displayAllLabel": {
         "message": "全て"
@@ -57,10 +57,10 @@
         "message": "このセッションを削除しますか？"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "このセッションは削除されました。"
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "元に戻す"
     },
     "cancelLabel": {
         "message": "キャンセル"
@@ -72,7 +72,7 @@
         "message": "タグを削除"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "詳細"
     },
     "windowLabel": {
         "message": "ウィンドウ"
@@ -90,7 +90,7 @@
         "message": "セッションはありません"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "メニュー"
     },
     "renameLabel": {
         "message": "リネーム"
@@ -105,10 +105,10 @@
         "message": "現在のウィンドウに追加する"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "現在のセッションに置き換え"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "セッションのコピーを作成"
     },
     "errorLabel": {
         "message": "エラー"
