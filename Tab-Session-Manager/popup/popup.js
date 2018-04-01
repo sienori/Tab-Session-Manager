@@ -36,7 +36,7 @@ S.init().then(async() => {
 });
 
 async function setLabels() {
-    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
+    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'replaceCurrentSessionLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
 
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
@@ -394,6 +394,8 @@ function sessionsHTML(info) {
                     <li class=openInNewWindow>${Labels.openInNewWindowLabel}</li>
                     <li class=openInCurrentWindow>${Labels.openInCurrentWindowLabel}</li>
                     <li class=addToCurrentWindow>${Labels.addToCurrentWindowLabel}</li>
+                    <hr>
+                    <li class=replaceCurrentSession>${Labels.replaceCurrentSessionLabel}</li>
                     </ul>
                 </div>
             </div>
@@ -789,13 +791,35 @@ async function deleteWindowTab(e, target) {
 
     browser.runtime.sendMessage({
         message: 'update',
-        session: session
+        session: session,
+        isSendResponce: false
     });
 
     const detail = document.getElementById(id).getElementsByClassName('detail')[0];
     const detailText = `${session.windowsNumber} ${(session.windowsNumber==1)?Labels.windowLabel:Labels.windowsLabel} - ${session.tabsNumber} ${(session.tabsNumber==1)?Labels.tabLabel:Labels.tabsLabel}`;
     detail.innerText = detailText;
     showDetail(e, true);
+}
+
+async function replaceCurrentSession(e) {
+    let currentSession = await browser.runtime.sendMessage({
+        message: 'getCurrentSession',
+        property: 'default'
+    });
+    if (currentSession == undefined) return;
+
+    const id = getParentSessionId(e.target);
+    const session = await getSessions(id);
+
+    currentSession.id = session.id;
+    currentSession.name = session.name;
+    currentSession.tag = session.tag;
+
+    browser.runtime.sendMessage({
+        message: 'update',
+        session: currentSession,
+        isSendResponce: true
+    });
 }
 
 document.addEventListener('click', async function (e) {
@@ -867,6 +891,9 @@ document.addEventListener('click', async function (e) {
             break;
         case "addToCurrentWindow":
             sendOpenMessage(e, "addToCurrentWindow");
+            break;
+        case "replaceCurrentSession":
+            replaceCurrentSession(e);
             break;
         case "saveOnlyCurrentWindow":
             save("saveOnlyCurrentWindow");

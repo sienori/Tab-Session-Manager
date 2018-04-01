@@ -122,7 +122,7 @@ async function migrateSessionsFromStorage() {
 }
 
 
-function onMessageListener(request, sender, sendResponse) {
+async function onMessageListener(request, sender, sendResponse) {
     switch (request.message) {
         case "save":
             const name = request.name;
@@ -139,7 +139,7 @@ function onMessageListener(request, sender, sendResponse) {
             renameSession(request.id, request.name);
             break;
         case "update":
-            updateSession(request.session, false);
+            updateSession(request.session, request.isSendResponce);
             break;
         case "import":
             importSessions(request.importSessions);
@@ -159,6 +159,9 @@ function onMessageListener(request, sender, sendResponse) {
         case "getInitState":
             sendResponse(IsInit);
             break;
+        case "getCurrentSession":
+            const currentSession = await loadCurrentSesssion('', [], request.property).catch(() => {});
+            return currentSession;
     }
 }
 
