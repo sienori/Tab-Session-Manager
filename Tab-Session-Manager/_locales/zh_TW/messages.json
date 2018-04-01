@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "儲存目前的瀏覽階段"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "僅儲存目前視窗"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "全部"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "移除標籤"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "視窗"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "沒有已儲存的瀏覽階段"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "重新命名"
