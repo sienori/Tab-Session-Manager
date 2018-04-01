@@ -245,6 +245,18 @@
     "heightLabel": {
         "message": "Височина"
     },
+    "otherLabel": {
+        "message": "Other"
+    },
+    "resetSettingsLabel": {
+        "message": "Reset settings"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "Restore all settings to default."
+    },
+    "resetSettingsButtonLabel": {
+        "message": "Reset"
+    },
     "importLabel": {
         "message": "Внасяне на сесии"
     },
