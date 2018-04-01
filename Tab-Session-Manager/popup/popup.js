@@ -476,7 +476,7 @@ async function showDetail(e) {
                 `<ul class="windowContainer">
                     <li class="windowTitleContainer hidden">
                         <div class="windowIcon"></div>
-                        <span class=windowTitle>${Labels.windowLabel} ${i}</span>
+                        <span class=windowTitle data-windowid="${win}" title="${Labels.open}">${Labels.windowLabel} ${i}</span>
                     </li>
                 </ul>`);
 
@@ -774,6 +774,10 @@ document.addEventListener('click', async function (e) {
         case "detail":
             showDetail(e);
             break;
+        case "windowTitle":
+            const windowId = e.target.dataset.windowid;
+            sendOpenMessage(e, "openInNewWindow", windowId);
+            break;
         case "tabTitle":
             const url = e.target.dataset.url;
             const title = e.target.innerText;
@@ -830,10 +834,16 @@ document.addEventListener('keypress', (e) => {
     }
 })
 
-async function sendOpenMessage(e, property) {
+async function sendOpenMessage(e, property, windowId = null) {
     const id = getParentSessionId(e.target);
     let openSession = await getSessions(id);
     if (openSession == undefined) return;
+
+    if (windowId != null) {
+        for (let win in openSession.windows) {
+            if (win != windowId) delete openSession.windows[win];
+        }
+    }
 
     browser.runtime.sendMessage({
         message: "open",

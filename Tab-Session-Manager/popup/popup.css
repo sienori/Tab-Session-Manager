@@ -641,6 +641,11 @@ option {
 
 .windowTitle {
     padding-left: 8px;
+    cursor: pointer
+}
+
+.windowTitle:hover {
+    text-decoration: underline;
 }
 
 .tabContainer {
