@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Запазване на текущата сесия"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Запазване само на текущият прозорец"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Всички"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Премахване на етикета"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "прозорец"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Тук няма сесии"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Преименуване"
