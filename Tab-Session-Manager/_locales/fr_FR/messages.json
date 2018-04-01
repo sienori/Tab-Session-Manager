@@ -245,6 +245,18 @@
     "heightLabel": {
         "message": "Hauteur"
     },
+    "otherLabel": {
+        "message": "Other"
+    },
+    "resetSettingsLabel": {
+        "message": "Reset settings"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "Restore all settings to default."
+    },
+    "resetSettingsButtonLabel": {
+        "message": "Reset"
+    },
     "importLabel": {
         "message": "Importer des sessions"
     },
