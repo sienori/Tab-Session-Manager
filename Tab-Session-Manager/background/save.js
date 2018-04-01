@@ -177,10 +177,10 @@ async function removeSession(id, isTemp = false) {
     } catch (e) {}
 }
 
-async function updateSession(session) {
+async function updateSession(session, isSend = true) {
     try {
         await Sessions.put(session);
-        sendMessage('updateSession', session.id);
+        if (isSend) sendMessage('updateSession', session.id);
     } catch (e) {}
 }
 

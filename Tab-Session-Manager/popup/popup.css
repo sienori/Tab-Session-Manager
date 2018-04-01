@@ -641,11 +641,45 @@ option {
 
 .windowTitle {
     padding-left: 8px;
-    cursor: pointer
+    cursor: pointer;
+    flex-grow: 1;
 }
 
 .windowTitle:hover {
     text-decoration: underline;
+}
+
+.windowDeleteButton,
+.tabDeleteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 100ms;
+}
+
+.windowTitleContainer:hover .windowDeleteButton,
+.tabContainer:hover .tabDeleteButton {
+    visibility: visible;
+    opacity: 1;
+}
+
+.windowDeleteButton svg,
+.tabDeleteButton svg {
+    width: 12px;
+    height: 12px;
+    fill: var(--sub-text);
+    transform: rotate(45deg);
+    transition: all 200ms;
+}
+
+.windowDeleteButton:hover svg,
+.tabDeleteButton:hover svg {
+    fill: var(--confirm);
 }
 
 .tabContainer {
@@ -682,6 +716,7 @@ option {
 
 .tabTitle {
     padding-left: 8px;
+    flex-grow: 1;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

@@ -138,6 +138,9 @@ function onMessageListener(request, sender, sendResponse) {
         case "rename":
             renameSession(request.id, request.name);
             break;
+        case "update":
+            updateSession(request.session, false);
+            break;
         case "import":
             importSessions(request.importSessions);
             break;

@@ -461,22 +461,27 @@ function showSessions(sessions, isInit = true) {
     sortChange();
 }
 
-async function showDetail(e) {
+async function showDetail(e, overwrite = false) {
     const sessionId = getParentSessionId(e.target);
     const detail = document.getElementById(sessionId).getElementsByClassName("detailItems")[0];
     const session = await getSessions(sessionId);
     if (session == undefined) return;
 
-    if (detail.classList.contains("hidden")) {
+    if (detail.classList.contains("hidden") || overwrite) {
         detail.innerHTML = "";
         let i = 0;
         for (let win in session.windows) {
             i++;
             detail.insertAdjacentHTML('beforeend',
                 `<ul class="windowContainer">
-                    <li class="windowTitleContainer hidden">
+                    <li class="windowTitleContainer ${overwrite? '':'hidden'}">
                         <div class="windowIcon"></div>
                         <span class=windowTitle data-windowid="${win}" title="${Labels.open}">${Labels.windowLabel} ${i}</span>
+                        <div class=windowDeleteButton data-windowid="${win}" title="${Labels.remove}">
+                            <svg>
+                                <use xlink:href="#plusSvg"></use>
+                            </svg>
+                        </div>
                     </li>
                 </ul>`);
 
@@ -495,10 +500,15 @@ async function showDetail(e) {
                 if (tabFavIconUrl == undefined || tabFavIconUrl.match(/^chrome:\/\//))
                     tabFavIconUrl = "/icons/favicon.png";
                 const tabHtml =
-                    `<li class="tabContainer hidden">
+                    `<li class="tabContainer ${overwrite? '':'hidden'}">
                         <div class=fav style="background-image:url(${sanitaize.encode(tabFavIconUrl)})"></div>
                         <div class=tabTitle data-url="${sanitaize.encode(tabUrl)}" title="${sanitaize.encode(tabTitle)}&#10;${sanitaize.encode(tabUrl)}">
                             ${sanitaize.encode(tabTitle)}
+                        </div>
+                        <div class=tabDeleteButton data-windowid="${win}" data-tabid="${tab}" title="${Labels.remove}">
+                            <svg>
+                                <use xlink:href="#plusSvg"></use>
+                            </svg>
                         </div>
                     </li>`;
 
@@ -737,6 +747,57 @@ function openUrl(url, title = '') {
     });
 }
 
+async function deleteWindowTab(e, target) {
+    const id = getParentSessionId(e.target);
+    let session = await getSessions(id);
+    const winId = e.target.dataset.windowid;
+
+    switch (target) {
+        case 'window':
+            const deletedWindow = session.windows[winId];
+            delete session.windows[winId];
+            if (session.windowsInfo != undefined) delete session.windowsInfo[winId];
+
+            session.windowsNumber--;
+            session.tabsNumber -= Object.keys(deletedWindow).length;
+            break;
+        case 'tab':
+            const tabId = e.target.dataset.tabid;
+            const deletedTab = session.windows[winId][tabId];
+            delete session.windows[winId][tabId];
+            if (session.windowsInfo != undefined) delete session.windowsInfo[winId][tabId];
+
+            if (Object.keys(session.windows[winId]).length == 0) {
+                deleteWindowTab(e, 'window');
+                return;
+            }
+
+            const window = session.windows[deletedTab.windowId];
+            for (let tab in window) {
+                //openerTabIdを削除
+                if (window[tab].openerTabId != undefined) {
+                    if (window[tab].openerTabId == deletedTab.id) delete window[tab].openerTabId;
+                }
+                //indexを変更
+                if (window[tab].index > deletedTab.index) window[tab].index--;
+            }
+            session.tabsNumber--;
+            break;
+    }
+
+    if (session.tabsNumber == 0) return;
+
+    browser.runtime.sendMessage({
+        message: 'update',
+        session: session
+    });
+
+    const detail = document.getElementById(id).getElementsByClassName('detail')[0];
+    const detailText = `${session.windowsNumber} ${(session.windowsNumber==1)?Labels.windowLabel:Labels.windowsLabel} - ${session.tabsNumber} ${(session.tabsNumber==1)?Labels.tabLabel:Labels.tabsLabel}`;
+    detail.innerText = detailText;
+    showDetail(e, true);
+}
+
 document.addEventListener('click', async function (e) {
     hideAllPopupMenu(e);
     switch (e.target.id) {
@@ -777,6 +838,12 @@ document.addEventListener('click', async function (e) {
         case "windowTitle":
             const windowId = e.target.dataset.windowid;
             sendOpenMessage(e, "openInNewWindow", windowId);
+            break;
+        case "windowDeleteButton":
+            deleteWindowTab(e, 'window');
+            break;
+        case 'tabDeleteButton':
+            deleteWindowTab(e, 'tab');
             break;
         case "tabTitle":
             const url = e.target.dataset.url;
