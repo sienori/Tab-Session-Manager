@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Geçerli oturumu kaydet"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Yalnızca mevcut pencereyi kaydet"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Tümü"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Etiketi kaldır"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "Pencere"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Oturum yok"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Yeniden adlandır"
