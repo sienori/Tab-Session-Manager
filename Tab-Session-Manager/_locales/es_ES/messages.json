@@ -56,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "¿Eliminar esta sesión?"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "Cancelar"
     },
@@ -100,6 +106,9 @@
     },
     "replaceCurrentSessionLabel": {
         "message": "Replace with current session"
+    },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
     },
     "errorLabel": {
         "message": "Error"
