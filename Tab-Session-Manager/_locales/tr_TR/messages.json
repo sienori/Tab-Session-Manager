@@ -83,6 +83,9 @@
     "addToCurrentWindowLabel": {
         "message": "Mevcut pencereye ekle"
     },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
     "errorLabel": {
         "message": "Error"
     },
