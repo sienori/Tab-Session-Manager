@@ -860,6 +860,7 @@ async function makeCopySession(id) {
     let session = await getSessions(id);
 
     session.id = UUID.generate();
+    session.date = moment(session.date).add(1, 'ms').toDate();
 
     browser.runtime.sendMessage({
         message: 'save',
