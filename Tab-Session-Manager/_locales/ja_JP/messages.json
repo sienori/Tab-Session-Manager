@@ -246,16 +246,16 @@
         "message": "高さ"
     },
     "otherLabel": {
-        "message": "Other"
+        "message": "その他"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "設定をリセット"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "全ての設定をデフォルトに戻します。"
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "リセット"
     },
     "importLabel": {
         "message": "セッションをインポート"
