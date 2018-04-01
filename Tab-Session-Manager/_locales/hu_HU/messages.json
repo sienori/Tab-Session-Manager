@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Jelenlegi munkamenet mentése"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Csak a jelenlegi ablak mentése"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Összes"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Címke eltávolítása"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "Ablak"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Nincs munkamenet"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Átnevez"
