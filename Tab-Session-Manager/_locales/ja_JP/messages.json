@@ -83,6 +83,9 @@
     "addToCurrentWindowLabel": {
         "message": "現在のウィンドウに追加する"
     },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
     "errorLabel": {
         "message": "エラー"
     },
