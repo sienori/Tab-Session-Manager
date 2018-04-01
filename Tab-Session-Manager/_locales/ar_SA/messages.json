@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "احفظ الجلسة الحالية"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "حفظ فقط النافذة الحالية"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "الكل"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "حذف كلمة مفتاحية"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "النافذة"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "لا توجد جلسة"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "أعد التسمية"
