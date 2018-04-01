@@ -83,6 +83,9 @@
     "addToCurrentWindowLabel": {
         "message": "Toevoegen aan huidige venster"
     },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
     "errorLabel": {
         "message": "Error"
     },
