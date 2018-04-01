@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "मौजूदा सत्र को बचाएं"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Save only current window"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "सभी"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Remove tag"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "विंडो"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "कोई सत्र नहीं है"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "नाम बदलिए"
