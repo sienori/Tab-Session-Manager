@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Зберегти поточну сесiю"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Save only current window"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Всі"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Видалити тег"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "Вікно"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Немає сесії"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Перейменувати"
