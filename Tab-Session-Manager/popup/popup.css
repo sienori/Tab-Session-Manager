@@ -188,6 +188,16 @@ option {
     display: none;
 }
 
+.session.isDeleted .menuContainer,
+.session.isDeleted .removeOpenButton {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: all 200ms;
+}
+
+.session.isDeleted :not(.removeConfirm):not(.buttonContainer):not(.restoreSession) {
+    pointer-events: none !important;
+}
 
 /* top */
 
@@ -784,8 +794,7 @@ a:hover {
     transition: width 300ms;
 }
 
-.cancel,
-.reallyRemove {
+.restoreSession {
     color: var(--main-bg);
     text-decoration: none;
     cursor: pointer;
@@ -793,8 +802,7 @@ a:hover {
     word-break: break-all;
 }
 
-.cancel:hover,
-.reallyRemove:hover {
+.restoreSession:hover {
     text-decoration: underline;
 }
 

@@ -136,7 +136,7 @@ async function onMessageListener(request, sender, sendResponse) {
             openSession(request.session, request.property);
             break;
         case "remove":
-            removeSession(request.id);
+            removeSession(request.id, request.isSendResponce);
             break;
         case "rename":
             renameSession(request.id, request.name);

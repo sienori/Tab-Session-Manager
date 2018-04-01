@@ -58,6 +58,12 @@
     "removeConfirmLabel": {
         "message": "Delete this session?"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "Cancel"
     },

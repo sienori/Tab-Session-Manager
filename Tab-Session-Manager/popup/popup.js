@@ -36,7 +36,7 @@ S.init().then(async() => {
 });
 
 async function setLabels() {
-    labels = ['initialNameValue', 'inputSessionNameLabel', 'winCloseSessionName', 'regularSaveSessionName', 'categoryFilterLabel', 'sortLabel', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'detailLabel', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'menuLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'replaceCurrentSessionLabel', 'makeCopySessionLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
+    labels = ['initialNameValue', 'inputSessionNameLabel', 'winCloseSessionName', 'regularSaveSessionName', 'categoryFilterLabel', 'sortLabel', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'detailLabel', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'sessionDeletedLabel', 'restoreSessionLabel', 'cancelLabel', 'menuLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'replaceCurrentSessionLabel', 'makeCopySessionLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
 
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
@@ -438,10 +438,9 @@ function sessionsHTML(info) {
             </div>
         </div>
         <div class="removeConfirm hidden">
-            <span>${Labels.removeConfirmLabel}</span>
+            <span>${Labels.sessionDeletedLabel}</span>
             <div class=buttonContainer>
-                <span class="reallyRemove">${Labels.remove}</span>
-                <span class="cancel">${Labels.cancelLabel}</span>
+<span class="restoreSession">${Labels.restoreSessionLabel}</span>
             </div>
         </div>
         <div class="detailItems hidden"></div>
@@ -677,18 +676,36 @@ function clickSaveInput() {
     }
 }
 
-function showRemoveConfirm(e) {
-    let sessionId = getParentSessionId(e.target);
-    let confirmElement = document.getElementById(sessionId).getElementsByClassName("removeConfirm")[0];
-    let removeElement = document.getElementById(sessionId).getElementsByClassName("remove")[0];
-    if (confirmElement.classList.contains("hidden")) {
-        confirmElement.classList.remove("hidden");
-        removeElement.innerText = Labels.cancelLabel;
-    } else {
-        confirmElement.classList.add("hidden");
-        removeElement.innerText = Labels.remove;
+class DeleteSessions {
+    constructor() {
+        this.deletedSessions = [];
+    }
+    async delete(id) {
+        const session = await getSessions(id);
+        this.deletedSessions.push(session);
+        browser.runtime.sendMessage({
+            message: "remove",
+            id: id,
+            isSendResponce: false
+        });
+        const sessionItem = document.getElementById(id);
+        const removeConfirm = sessionItem.getElementsByClassName('removeConfirm')[0];
+        sessionItem.classList.add('isDeleted');
+        removeConfirm.classList.remove('hidden');
+    }
+
+    restore(id) {
+        const session = this.deletedSessions.find((element, index, array) => {
+            return element.id == id;
+        })
+        browser.runtime.sendMessage({
+            message: "update",
+            session: session,
+            isSendResponce: true
+        });
     }
 }
+const deleteSessions = new DeleteSessions();
 
 function showPopupMenu(e) {
     const sessionId = getParentSessionId(e.target);
@@ -873,14 +890,12 @@ document.addEventListener('click', async function (e) {
             sendOpenMessage(e, "default");
             break;
         case "remove":
-        case "cancel":
-            showRemoveConfirm(e);
+            const deleteId = getParentSessionId(e.target);
+            deleteSessions.delete(deleteId);
             break;
-        case "reallyRemove":
-            browser.runtime.sendMessage({
-                message: "remove",
-                id: getParentSessionId(e.target)
-            });
+        case "restoreSession":
+            const restoreId = getParentSessionId(e.target);
+            deleteSessions.restore(restoreId);
             break;
         case "detail":
             showDetail(e);

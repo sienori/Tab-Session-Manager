@@ -141,7 +141,7 @@ async function showSessionWhenWindowClose(session) {
     if (showFlag) {
         removeTag(tempSessions[0].id, 'temp');
     } else {
-        removeSession(tempSessions[0].id, true);
+        removeSession(tempSessions[0].id, false);
     }
 
     //tempが複数ある場合は過去のものを削除
@@ -152,7 +152,7 @@ async function showSessionWhenWindowClose(session) {
             continue;
         }
 
-        removeSession(session.id, true);
+        removeSession(session.id, false);
     }
 }
 
@@ -170,10 +170,10 @@ async function saveSession(session) {
     } catch (e) {}
 }
 
-async function removeSession(id, isTemp = false) {
+async function removeSession(id, isSendResponce = true) {
     try {
         await Sessions.delete(id);
-        if (!isTemp) sendMessage('deleteSession', id);
+        if (isSendResponce) sendMessage('deleteSession', id);
     } catch (e) {}
 }
 
