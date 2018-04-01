@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Сохранить текущий сеанс"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Сохранить только текущее окно"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Все"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Убрать метку"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "Окно"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Пусто"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Переименовать"
