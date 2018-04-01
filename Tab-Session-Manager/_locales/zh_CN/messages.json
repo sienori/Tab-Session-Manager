@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "保存当前会话"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Save only current window"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "全部"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Remove tag"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "窗口"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "没有会话"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "重命名"
