@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Simpan sesi saat ini"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Save only current window"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Semua"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Remove tag"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "Jendela"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Tidak ada sesi"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Rename"
