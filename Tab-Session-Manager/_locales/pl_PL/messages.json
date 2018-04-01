@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Zapisz bieżącą sesję"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Zapisz jedynie otwarte okno"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Wszystkie"
@@ -56,6 +65,9 @@
     "removeTagLabel": {
         "message": "Usuń tag"
     },
+    "detailLabel": {
+        "message": "Detail"
+    },
     "windowLabel": {
         "message": "Okno"
     },
@@ -70,6 +82,9 @@
     },
     "noSessionLabel": {
         "message": "Nie ma żadnej sesji"
+    },
+    "menuLabel": {
+        "message": "Menu"
     },
     "renameLabel": {
         "message": "Zmień nazwę"
