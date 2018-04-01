@@ -36,7 +36,7 @@ S.init().then(async() => {
 });
 
 async function setLabels() {
-    labels = ['initialNameValue', 'winCloseSessionName', 'regularSaveSessionName', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'replaceCurrentSessionLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
+    labels = ['initialNameValue', 'inputSessionNameLabel', 'winCloseSessionName', 'regularSaveSessionName', 'categoryFilterLabel', 'sortLabel', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'detailLabel', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'removeConfirmLabel', 'cancelLabel', 'menuLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'replaceCurrentSessionLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
 
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
@@ -44,9 +44,14 @@ async function setLabels() {
 
     document.getElementById('donate').title = Labels.donateWithPaypalLabel;
     document.getElementById("saveName").placeholder = Labels.initialNameValue;
+    document.getElementById("saveName").title = Labels.inputSessionNameLabel;
+    document.getElementById("saveButton").title = Labels.initialNameValue;
     document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
     document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
     document.getElementById("setting").title = Labels.settingsLabel;
+    document.getElementById("filter").title = Labels.categoryFilterLabel;
+    document.getElementById("sort").title = Labels.sortLabel;
+    document.getElementById("saveOptionButton").title = Labels.menuLabel;
     document.getElementsByClassName("saveOnlyCurrentWindow")[0].innerText = Labels.saveOnlyCurrentWindowLabel;
 }
 
@@ -381,7 +386,7 @@ function sessionsHTML(info) {
                 </div>
             </div>
             <div class=menuContainer>
-                <div class=menuIcon>
+                <div class=menuIcon title="${Labels.menuLabel}">
                     <svg>
                         <use xlink:href="#menuSvg"></use>
                     </svg>
@@ -420,7 +425,7 @@ function sessionsHTML(info) {
             <span class="sessionDate">${sanitaize.encode(info.formatedDate)}</span>
         </div>
         <div class=buttonContainer>
-            <span class="detail">${detail}</span>
+            <span class="detail" title="${Labels.detailLabel}">${detail}</span>
             <div class=removeOpenButton>
                 <span class="open">${Labels.open}</span>
                 <span class="remove">${Labels.remove}</span>
