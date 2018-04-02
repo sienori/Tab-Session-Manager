@@ -15,16 +15,16 @@
         "message": "Aktuelle Sitzung speichern"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Sitzungsname"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Nur aktuelles Fenster speichern"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Kategorie-filter"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Sortieren"
     },
     "displayAllLabel": {
         "message": "Alle"
@@ -57,10 +57,10 @@
         "message": "Diese Sitzung löschen?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Diese Sitzung wurde gelöscht."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Wiederherstellen"
     },
     "cancelLabel": {
         "message": "Abbrechen"
@@ -72,7 +72,7 @@
         "message": "Schlagwort entfernen"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Details"
     },
     "windowLabel": {
         "message": "Fenster"
@@ -90,7 +90,7 @@
         "message": "Keine Sitzung vorhanden"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Menü"
     },
     "renameLabel": {
         "message": "Umbenennen"
@@ -105,7 +105,7 @@
         "message": "Zur aktuellen Fenster hinzufügen"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Mit aktueller Sitzung ersetzen"
     },
     "makeCopySessionLabel": {
         "message": "Make a copy of the session"
