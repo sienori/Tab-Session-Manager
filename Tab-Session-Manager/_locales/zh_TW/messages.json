@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "儲存目前的瀏覽階段"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "僅儲存目前視窗"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "全部"
@@ -47,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "確定要刪除此瀏覽階段？"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "取消"
     },
@@ -55,6 +70,9 @@
     },
     "removeTagLabel": {
         "message": "移除標籤"
+    },
+    "detailLabel": {
+        "message": "Detail"
     },
     "windowLabel": {
         "message": "視窗"
@@ -71,6 +89,9 @@
     "noSessionLabel": {
         "message": "沒有已儲存的瀏覽階段"
     },
+    "menuLabel": {
+        "message": "Menu"
+    },
     "renameLabel": {
         "message": "重新命名"
     },
@@ -83,14 +104,20 @@
     "addToCurrentWindowLabel": {
         "message": "新增至目前視窗"
     },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
+    },
     "errorLabel": {
-        "message": "Error"
+        "message": "錯誤"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "在您的瀏覽器中 IndexedDB 無法使用。"
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "如何解決這個問題"
     },
     "winCloseSessionName": {
         "message": "自動儲存 - 視窗關閉"
@@ -130,6 +157,12 @@
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>如果關閉此選項，還原瀏覽階段時的記憶體使用量將會增加。"
+    },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "啟動時還原上次開啟的瀏覽階段"
@@ -173,11 +206,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "當自動儲存瀏覽階段之時，使用開啟頁面的標題作為瀏覽階段名稱。"
     },
+    "backupLabel": {
+        "message": "備份"
+    },
     "ifBackupLabel": {
         "message": "儲存備份"
     },
     "ifBackupCaptionLabel": {
         "message": "當 Firefox 啟動時，建立瀏覽階段的備份檔並儲存於下載資料夾中。"
+    },
+    "backupFolderLabel": {
+        "message": "儲存位置"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "指定儲存備份檔的位置。儲存位置僅限於 Firefox 下載資料夾中。"
+    },
+    "downloadFolderLabel": {
+        "message": "下載資料夾"
     },
     "backupFilesLimitLabel": {
         "message": "最大儲存備份數量"
@@ -226,6 +271,18 @@
     },
     "heightLabel": {
         "message": "高度"
+    },
+    "otherLabel": {
+        "message": "Other"
+    },
+    "resetSettingsLabel": {
+        "message": "Reset settings"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "Restore all settings to default."
+    },
+    "resetSettingsButtonLabel": {
+        "message": "Reset"
     },
     "importLabel": {
         "message": "匯入瀏覽階段"
