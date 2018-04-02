@@ -162,7 +162,7 @@
         "message": "還原視窗位置"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "開啟瀏覽階段時還原視窗的位置與大小。"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "啟動時還原上次開啟的瀏覽階段"
