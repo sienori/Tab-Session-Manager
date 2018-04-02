@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "現在のセッションを保存"
     },
+    "inputSessionNameLabel": {
+        "message": "セッション名を入力"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "現在のウィンドウのみを保存"
+    },
+    "categoryFilterLabel": {
+        "message": "カテゴリフィルタ"
+    },
+    "sortLabel": {
+        "message": "ソート"
     },
     "displayAllLabel": {
         "message": "全て"
@@ -47,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "このセッションを削除しますか？"
     },
+    "sessionDeletedLabel": {
+        "message": "このセッションは削除されました。"
+    },
+    "restoreSessionLabel": {
+        "message": "元に戻す"
+    },
     "cancelLabel": {
         "message": "キャンセル"
     },
@@ -55,6 +70,9 @@
     },
     "removeTagLabel": {
         "message": "タグを削除"
+    },
+    "detailLabel": {
+        "message": "詳細"
     },
     "windowLabel": {
         "message": "ウィンドウ"
@@ -71,6 +89,9 @@
     "noSessionLabel": {
         "message": "セッションはありません"
     },
+    "menuLabel": {
+        "message": "メニュー"
+    },
     "renameLabel": {
         "message": "リネーム"
     },
@@ -82,6 +103,12 @@
     },
     "addToCurrentWindowLabel": {
         "message": "現在のウィンドウに追加する"
+    },
+    "replaceCurrentSessionLabel": {
+        "message": "現在のセッションに置き換え"
+    },
+    "makeCopySessionLabel": {
+        "message": "セッションのコピーを作成"
     },
     "errorLabel": {
         "message": "エラー"
@@ -131,6 +158,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "セッションを開いたとき，タブを選択するまで各ページの内容を読み込みません。<br>チェックをオフにすると，セッション復元時のメモリ使用量が増大します。"
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "ウィンドウの位置を復元する"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "セッションを開いたときにウィンドウの位置とサイズを復元します。"
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "起動時に前回のセッションを復元"
     },
@@ -173,11 +206,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "セッションを自動保存する際，開かれているページのタイトルをセッションの名前として使用します。"
     },
+    "backupLabel": {
+        "message": "バックアップ"
+    },
     "ifBackupLabel": {
         "message": "バックアップを保存する"
     },
     "ifBackupCaptionLabel": {
         "message": "Firefoxの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。"
+    },
+    "backupFolderLabel": {
+        "message": "保存場所"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "バックアップファイルを保存するフォルダを指定します。保存場所はFirefoxのダウンロードフォルダ以下に限定されます。"
+    },
+    "downloadFolderLabel": {
+        "message": "ダウンロードフォルダ"
     },
     "backupFilesLimitLabel": {
         "message": "バックアップの上限保存数"
@@ -226,6 +271,18 @@
     },
     "heightLabel": {
         "message": "高さ"
+    },
+    "otherLabel": {
+        "message": "その他"
+    },
+    "resetSettingsLabel": {
+        "message": "設定をリセット"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "全ての設定をデフォルトに戻します。"
+    },
+    "resetSettingsButtonLabel": {
+        "message": "リセット"
     },
     "importLabel": {
         "message": "セッションをインポート"

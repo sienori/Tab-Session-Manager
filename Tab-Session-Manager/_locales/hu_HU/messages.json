@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Jelenlegi munkamenet mentése"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Csak a jelenlegi ablak mentése"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Összes"
@@ -47,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "Törli ezt a munkamenetet?"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "Mégse"
     },
@@ -55,6 +70,9 @@
     },
     "removeTagLabel": {
         "message": "Címke eltávolítása"
+    },
+    "detailLabel": {
+        "message": "Detail"
     },
     "windowLabel": {
         "message": "Ablak"
@@ -71,6 +89,9 @@
     "noSessionLabel": {
         "message": "Nincs munkamenet"
     },
+    "menuLabel": {
+        "message": "Menu"
+    },
     "renameLabel": {
         "message": "Átnevez"
     },
@@ -83,14 +104,20 @@
     "addToCurrentWindowLabel": {
         "message": "Jelenlegi ablakhoz hozzáadás"
     },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
+    },
     "errorLabel": {
-        "message": "Error"
+        "message": "Hiba"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB nem áll rendelkezésre a böngészőben."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Hogyan lehet megoldani ezt a problémát"
     },
     "winCloseSessionName": {
         "message": "Automatikusan mentett - Ablak be lett zárva"
@@ -130,6 +157,12 @@
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "A munkamenet megnyitásakor az egyes oldalak tartalma nem töltődik be, amíg ki nem választódik a fül.<br>Ha nincs bejelölve, a memória használat nagy mértékben megnövekszik amikor a munkamenet visszaállítódik."
+    },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Előző munkamenet visszaállítása induláskor"
@@ -173,11 +206,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "Munkamenet automatikus mentésekor, a nyitott oldal címének használata a munkamenet neveként."
     },
+    "backupLabel": {
+        "message": "Biztonsági mentés"
+    },
     "ifBackupLabel": {
         "message": "Biztonsági másolat mentése"
     },
     "ifBackupCaptionLabel": {
         "message": "Amikor a Firefox indul, biztonsági másolat készítése az elmentett munkamenetekről és a Letöltések mappába mentése."
+    },
+    "backupFolderLabel": {
+        "message": "Mentés helye"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Adja meg a mappát, ahova a biztonsági mentés fájlja kerüljön. A Mentés helye korlátozott a Firefox letöltési mappára és annak almappáiba."
+    },
+    "downloadFolderLabel": {
+        "message": "Letöltési könyvtár"
     },
     "backupFilesLimitLabel": {
         "message": "Elmentett biztonsági másolatok maximális száma"
@@ -226,6 +271,18 @@
     },
     "heightLabel": {
         "message": "Magasság"
+    },
+    "otherLabel": {
+        "message": "Other"
+    },
+    "resetSettingsLabel": {
+        "message": "Reset settings"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "Restore all settings to default."
+    },
+    "resetSettingsButtonLabel": {
+        "message": "Reset"
     },
     "importLabel": {
         "message": "Munkamenetek importálása"

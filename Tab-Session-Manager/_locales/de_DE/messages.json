@@ -6,7 +6,7 @@
         "message": "Speichern und Wiederherstellen aller Fenster und Tabs. Unterstützt automatisches Speicherung."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Schenken mit PayPal"
     },
     "saveLabel": {
         "message": "Speichern"
@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Aktuelle Sitzung speichern"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Nur aktuelles Fenster speichern"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Alle"
@@ -47,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "Diese Sitzung löschen?"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "Abbrechen"
     },
@@ -55,6 +70,9 @@
     },
     "removeTagLabel": {
         "message": "Schlagwort entfernen"
+    },
+    "detailLabel": {
+        "message": "Detail"
     },
     "windowLabel": {
         "message": "Fenster"
@@ -71,6 +89,9 @@
     "noSessionLabel": {
         "message": "Keine Sitzung vorhanden"
     },
+    "menuLabel": {
+        "message": "Menu"
+    },
     "renameLabel": {
         "message": "Umbenennen"
     },
@@ -83,14 +104,20 @@
     "addToCurrentWindowLabel": {
         "message": "Zur aktuellen Fenster hinzufügen"
     },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
+    },
     "errorLabel": {
-        "message": "Error"
+        "message": "Fehler"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB ist in Ihrem Browser nicht verfügbar."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Wie dieses Problem gelöst sein kann"
     },
     "winCloseSessionName": {
         "message": "Auto - Fenster wurde geschlossen"
@@ -130,6 +157,12 @@
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "Wenn eine Sitzung geöffnet wird, lädt der Inhalt eines Tabs erst nach Anwählen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
+    },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Vorherige Sitzung beim Start wiederherstellen"
@@ -173,11 +206,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "Wenn eine Sitzung automatisch gespeichert wird, wird der Titel der geöffneten Seite für den Namen der Sitzung verwendet."
     },
+    "backupLabel": {
+        "message": "Datensicherung"
+    },
     "ifBackupLabel": {
         "message": "Sicherungskopie erstellen"
     },
     "ifBackupCaptionLabel": {
         "message": "Wenn Firefox startet wird eine Sicherungsdatei der Sitzungen erstellt und im Ordner \"Downloads\" abgelegt."
+    },
+    "backupFolderLabel": {
+        "message": "Gespeichert unter"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    },
+    "downloadFolderLabel": {
+        "message": "Download folder"
     },
     "backupFilesLimitLabel": {
         "message": "Maximale Anzahl von erstellten Sicherungen"
@@ -219,13 +264,25 @@
         "message": "Werkzeugleistenfenster"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Geben Sie den Stil der Toolbar Popup."
     },
     "widthLabel": {
         "message": "Breite"
     },
     "heightLabel": {
         "message": "Höhe"
+    },
+    "otherLabel": {
+        "message": "Other"
+    },
+    "resetSettingsLabel": {
+        "message": "Reset settings"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "Restore all settings to default."
+    },
+    "resetSettingsButtonLabel": {
+        "message": "Reset"
     },
     "importLabel": {
         "message": "Sitzungen importieren"
