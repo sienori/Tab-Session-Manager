@@ -6,13 +6,13 @@
         "message": "Менеджер сессий позволяет сохранять и восстанавливать состояние окон и вкладок. Поддерживает автоматические сохранения."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Сделать пожертвование через PayPal"
     },
     "saveLabel": {
         "message": "Сохранить"
     },
     "initialNameValue": {
-        "message": "Сохранить текущий сеанс"
+        "message": "Сохранить текущую сессию"
     },
     "inputSessionNameLabel": {
         "message": "Input session name"
@@ -21,10 +21,10 @@
         "message": "Сохранить только текущее окно"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Фильтр категории"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Упорядочить"
     },
     "displayAllLabel": {
         "message": "Все"
@@ -60,7 +60,7 @@
         "message": "This session has been deleted."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Восстановить"
     },
     "cancelLabel": {
         "message": "Отмена"
@@ -72,7 +72,7 @@
         "message": "Убрать метку"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Подробности"
     },
     "windowLabel": {
         "message": "Окно"
@@ -90,7 +90,7 @@
         "message": "Пусто"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Меню"
     },
     "renameLabel": {
         "message": "Переименовать"
@@ -111,13 +111,13 @@
         "message": "Make a copy of the session"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Ошибка"
     },
     "indexedDBErrorLabel": {
         "message": "IndexedDB is not available in your browser."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Как решить эту проблему"
     },
     "winCloseSessionName": {
         "message": "Автосохранение - закрыто окно"
@@ -207,7 +207,7 @@
         "message": "При автоматическом сохранении сессии, использовать заголовок открытой страницы в качестве имени сессии."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "Резервное копирование"
     },
     "ifBackupLabel": {
         "message": "Сохранить резервную копию"
@@ -216,13 +216,13 @@
         "message": "При запуске Firefox, создать файл резервной копии сессий и сохранить его в папке загрузки."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Расположение"
     },
     "backupFolderCaptionLabel": {
         "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "Папка для загрузок"
     },
     "backupFilesLimitLabel": {
         "message": "Максимальное количество сохранённых резервных копий"
@@ -273,16 +273,16 @@
         "message": "Высота"
     },
     "otherLabel": {
-        "message": "Other"
+        "message": "Другое"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "Сброс настроек"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "Восстановить все настройки по умолчанию."
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "Сброс"
     },
     "importLabel": {
         "message": "Импорт сессий"
