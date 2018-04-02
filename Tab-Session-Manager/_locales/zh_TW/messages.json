@@ -24,7 +24,7 @@
         "message": "Category filter"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "排序"
     },
     "displayAllLabel": {
         "message": "全部"
@@ -60,7 +60,7 @@
         "message": "This session has been deleted."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "還原"
     },
     "cancelLabel": {
         "message": "取消"
@@ -72,7 +72,7 @@
         "message": "移除標籤"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "詳細資訊"
     },
     "windowLabel": {
         "message": "視窗"
@@ -90,7 +90,7 @@
         "message": "沒有已儲存的瀏覽階段"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "選單"
     },
     "renameLabel": {
         "message": "重新命名"
@@ -276,13 +276,13 @@
         "message": "Other"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "重設設定"
     },
     "resetSettingsCaptionLabel": {
         "message": "Restore all settings to default."
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "重設"
     },
     "importLabel": {
         "message": "匯入瀏覽階段"
