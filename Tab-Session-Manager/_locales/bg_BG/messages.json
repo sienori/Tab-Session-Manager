@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Запазване на текущата сесия"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Запазване само на текущият прозорец"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Всички"
@@ -47,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "Изтриване на тази сесия?"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "Отказ"
     },
@@ -55,6 +70,9 @@
     },
     "removeTagLabel": {
         "message": "Премахване на етикета"
+    },
+    "detailLabel": {
+        "message": "Detail"
     },
     "windowLabel": {
         "message": "прозорец"
@@ -71,6 +89,9 @@
     "noSessionLabel": {
         "message": "Тук няма сесии"
     },
+    "menuLabel": {
+        "message": "Menu"
+    },
     "renameLabel": {
         "message": "Преименуване"
     },
@@ -82,6 +103,12 @@
     },
     "addToCurrentWindowLabel": {
         "message": "Добавяне в текущият прозорец"
+    },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
     },
     "errorLabel": {
         "message": "Error"
@@ -131,6 +158,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "При отваряне на сесия, съдържанието на всяка страница се зарежда, когато се избере раздела.<br>Ако не е отметнато, възстановяването на сесията увеличава използваната памет."
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Възстановяване на предишна сесия при стартиране"
     },
@@ -173,11 +206,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "Заглавието на отворената страница ще се използва за име на автоматично запазената сесия."
     },
+    "backupLabel": {
+        "message": "Backup"
+    },
     "ifBackupLabel": {
         "message": "Резервно копие"
     },
     "ifBackupCaptionLabel": {
         "message": "Създаване резервно копие на сесиите и запазване в папката за изтегляния при стартиране на Firefox."
+    },
+    "backupFolderLabel": {
+        "message": "Save location"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    },
+    "downloadFolderLabel": {
+        "message": "Download folder"
     },
     "backupFilesLimitLabel": {
         "message": "Максимален брой резервни копия"
@@ -226,6 +271,18 @@
     },
     "heightLabel": {
         "message": "Височина"
+    },
+    "otherLabel": {
+        "message": "Other"
+    },
+    "resetSettingsLabel": {
+        "message": "Reset settings"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "Restore all settings to default."
+    },
+    "resetSettingsButtonLabel": {
+        "message": "Reset"
     },
     "importLabel": {
         "message": "Внасяне на сесии"
