@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "Salvar sessão atual"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Salvar somente a janela atual"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "Todos"
@@ -47,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "Excluir esta sessão?"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "Cancelar"
     },
@@ -55,6 +70,9 @@
     },
     "removeTagLabel": {
         "message": "Remover tag"
+    },
+    "detailLabel": {
+        "message": "Detail"
     },
     "windowLabel": {
         "message": "Janela"
@@ -71,6 +89,9 @@
     "noSessionLabel": {
         "message": "Não há nenhuma sessão"
     },
+    "menuLabel": {
+        "message": "Menu"
+    },
     "renameLabel": {
         "message": "Renomear"
     },
@@ -82,6 +103,12 @@
     },
     "addToCurrentWindowLabel": {
         "message": "Adicionar na janela atual"
+    },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
     },
     "errorLabel": {
         "message": "Error"
@@ -131,6 +158,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até que você selecionar na aba.<br>Se não for selecionada, uso de memória será maior quando a sessão é restaurada."
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restaurar sessão anterior na inicialização"
     },
@@ -173,11 +206,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "Ao salvar uma sessão automaticamente, use o título da página aberta como o nome da sessão."
     },
+    "backupLabel": {
+        "message": "Backup"
+    },
     "ifBackupLabel": {
         "message": "Salvar Backup"
     },
     "ifBackupCaptionLabel": {
         "message": "Quando o Firefox é iniciado, criar um arquivo de backup de sessões e salvar na pasta de download."
+    },
+    "backupFolderLabel": {
+        "message": "Save location"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    },
+    "downloadFolderLabel": {
+        "message": "Download folder"
     },
     "backupFilesLimitLabel": {
         "message": "Quantidade máxima de backups salvos"
@@ -226,6 +271,18 @@
     },
     "heightLabel": {
         "message": "Altura"
+    },
+    "otherLabel": {
+        "message": "Other"
+    },
+    "resetSettingsLabel": {
+        "message": "Reset settings"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "Restore all settings to default."
+    },
+    "resetSettingsButtonLabel": {
+        "message": "Reset"
     },
     "importLabel": {
         "message": "Importar sessões"
