@@ -105,13 +105,13 @@
         "message": "添加到当前窗口"
     },
     "replaceCurrentSessionLabel": {
-        "message": "替换为当前会话"
+        "message": "使用当前会话替换此会话"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "复制此会话"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "错误"
     },
     "indexedDBErrorLabel": {
         "message": "IndexedDB is not available in your browser."
