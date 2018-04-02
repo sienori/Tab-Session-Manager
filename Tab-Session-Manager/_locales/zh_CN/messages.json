@@ -6,7 +6,7 @@
         "message": "保存、还原窗口及标签页的状态，支持自动保存。"
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "使用 Paypal 捐赠"
     },
     "saveLabel": {
         "message": "保存"
@@ -15,7 +15,7 @@
         "message": "保存当前会话"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "输入会话名称"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Save only current window"
