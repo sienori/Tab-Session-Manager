@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "احفظ الجلسة الحالية"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "حفظ فقط النافذة الحالية"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "الكل"
@@ -47,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "هل تريد حذف هذا الجلسة؟"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "إلغاء"
     },
@@ -55,6 +70,9 @@
     },
     "removeTagLabel": {
         "message": "حذف كلمة مفتاحية"
+    },
+    "detailLabel": {
+        "message": "Detail"
     },
     "windowLabel": {
         "message": "النافذة"
@@ -71,6 +89,9 @@
     "noSessionLabel": {
         "message": "لا توجد جلسة"
     },
+    "menuLabel": {
+        "message": "Menu"
+    },
     "renameLabel": {
         "message": "أعد التسمية"
     },
@@ -82,6 +103,12 @@
     },
     "addToCurrentWindowLabel": {
         "message": "أضف للنافذة الحالية"
+    },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
     },
     "errorLabel": {
         "message": "Error"
@@ -131,6 +158,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "عند فتح جلسة، لن يتم تحميل محتوى كل صفحة حتى يتم تحديد التبويب.<br>إذا لم يتم تحديدها، فسيزيد استخدام الذاكرة بشكل كبير عند استعادة الجلسة."
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "استعد الجلسة السابقة عند بدء التشغيل"
     },
@@ -173,11 +206,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "عند حفظ الجلسة تلقائياً، استخدم عنوان الصفحة المفتوحة كـ إسم للجلسة."
     },
+    "backupLabel": {
+        "message": "Backup"
+    },
     "ifBackupLabel": {
         "message": "حفظ نسخة احتياطية"
     },
     "ifBackupCaptionLabel": {
         "message": "عند بدء تشغيل فايرفوكس، قم بإنشاء ملف النسخ احتياطي لجلسة وحفظه في مجلد التحميل."
+    },
+    "backupFolderLabel": {
+        "message": "Save location"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    },
+    "downloadFolderLabel": {
+        "message": "Download folder"
     },
     "backupFilesLimitLabel": {
         "message": "الحد الأقصى لعدد النسخ الاحتياطية المحفوظة"
@@ -226,6 +271,18 @@
     },
     "heightLabel": {
         "message": "الطول"
+    },
+    "otherLabel": {
+        "message": "Other"
+    },
+    "resetSettingsLabel": {
+        "message": "Reset settings"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "Restore all settings to default."
+    },
+    "resetSettingsButtonLabel": {
+        "message": "Reset"
     },
     "importLabel": {
         "message": "استرد جلسات"
