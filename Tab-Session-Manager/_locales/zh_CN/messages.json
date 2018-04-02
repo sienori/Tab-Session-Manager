@@ -14,8 +14,17 @@
     "initialNameValue": {
         "message": "保存当前会话"
     },
+    "inputSessionNameLabel": {
+        "message": "Input session name"
+    },
     "saveOnlyCurrentWindowLabel": {
         "message": "Save only current window"
+    },
+    "categoryFilterLabel": {
+        "message": "Category filter"
+    },
+    "sortLabel": {
+        "message": "Sort"
     },
     "displayAllLabel": {
         "message": "全部"
@@ -47,6 +56,12 @@
     "removeConfirmLabel": {
         "message": "是否删除此会话？"
     },
+    "sessionDeletedLabel": {
+        "message": "This session has been deleted."
+    },
+    "restoreSessionLabel": {
+        "message": "Restore"
+    },
     "cancelLabel": {
         "message": "取消"
     },
@@ -55,6 +70,9 @@
     },
     "removeTagLabel": {
         "message": "Remove tag"
+    },
+    "detailLabel": {
+        "message": "Detail"
     },
     "windowLabel": {
         "message": "窗口"
@@ -71,6 +89,9 @@
     "noSessionLabel": {
         "message": "没有会话"
     },
+    "menuLabel": {
+        "message": "Menu"
+    },
     "renameLabel": {
         "message": "重命名"
     },
@@ -82,6 +103,12 @@
     },
     "addToCurrentWindowLabel": {
         "message": "添加到当前窗口"
+    },
+    "replaceCurrentSessionLabel": {
+        "message": "Replace with current session"
+    },
+    "makeCopySessionLabel": {
+        "message": "Make a copy of the session"
     },
     "errorLabel": {
         "message": "Error"
@@ -131,6 +158,12 @@
     "ifLazyLoadingCaptionLabel": {
         "message": "还原会话后，选中相应标签页才会开始加载网页。 <br> 如果未勾选, 那么在还原会话时，内存的使用量将会大大增加。"
     },
+    "isRestoreWindowPositionLabel": {
+        "message": "Restore windows position"
+    },
+    "isRestoreWindowPositionCaptionLabel": {
+        "message": "Restore windows position and size when opening session."
+    },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "在启动时恢复上次的会话"
     },
@@ -173,11 +206,23 @@
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
+    "backupLabel": {
+        "message": "Backup"
+    },
     "ifBackupLabel": {
         "message": "Save backup"
     },
     "ifBackupCaptionLabel": {
         "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+    },
+    "backupFolderLabel": {
+        "message": "Save location"
+    },
+    "backupFolderCaptionLabel": {
+        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    },
+    "downloadFolderLabel": {
+        "message": "Download folder"
     },
     "backupFilesLimitLabel": {
         "message": "Maximum number of saved backups"
@@ -226,6 +271,18 @@
     },
     "heightLabel": {
         "message": "Height"
+    },
+    "otherLabel": {
+        "message": "Other"
+    },
+    "resetSettingsLabel": {
+        "message": "Reset settings"
+    },
+    "resetSettingsCaptionLabel": {
+        "message": "Restore all settings to default."
+    },
+    "resetSettingsButtonLabel": {
+        "message": "Reset"
     },
     "importLabel": {
         "message": "导入会话"
