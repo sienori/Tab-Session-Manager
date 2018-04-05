@@ -21,7 +21,7 @@
         "message": "Salva solo la finestra corrente"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Filtro categorie"
     },
     "sortLabel": {
         "message": "Ordina"
@@ -219,7 +219,7 @@
         "message": "Salva posizione"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Definisci la cartella dove salvare il file di backup. Il percorso deve essere all'interno della cartella dei Download di Firefox."
     },
     "downloadFolderLabel": {
         "message": "Cartella di download"
