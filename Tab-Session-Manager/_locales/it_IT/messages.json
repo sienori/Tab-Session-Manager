@@ -216,7 +216,7 @@
         "message": "All'avvio di Firefox, crea un file di backup delle sessioni e salvalo nella cartella dei download."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Salva posizione"
     },
     "backupFolderCaptionLabel": {
         "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
@@ -261,10 +261,10 @@
         "message": "Se il nome della sessione nella lista delle sessioni si estende su più righe, viene troncato in un'unica riga."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Popup finestra"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Definisce lo stile della finestra popup."
     },
     "widthLabel": {
         "message": "Larghezza"
