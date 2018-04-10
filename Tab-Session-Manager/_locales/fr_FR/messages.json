@@ -6,7 +6,7 @@
         "message": "Enregistrer et restaurer l’état des fenêtres et onglets. Prend également en charge la sauvegarde automatique."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Faire un don avec PayPal"
     },
     "saveLabel": {
         "message": "Enregistrer"
@@ -15,16 +15,16 @@
         "message": "Enregistrer la session actuelle"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Renseignez le nom de session"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Enregistrer uniquement la fenêtre active"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Filtre de catégorie"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Trier"
     },
     "displayAllLabel": {
         "message": "Toutes"
@@ -57,10 +57,10 @@
         "message": "Supprimer cette session ?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "La session a été supprimée."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Restaurer"
     },
     "cancelLabel": {
         "message": "Annuler"
@@ -72,7 +72,7 @@
         "message": "Supprimer une étiquette"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Détail"
     },
     "windowLabel": {
         "message": "fenêtre"
@@ -105,19 +105,19 @@
         "message": "Ajouter à la fenêtre en cours"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Remplacez par la session en cours"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "Faites une copie de la session"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Erreur"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB n’est pas disponible dans votre navigateur."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Comment faire pour résoudre ce problème"
     },
     "winCloseSessionName": {
         "message": "Auto - À la fermeture d'une fenêtre"
@@ -159,10 +159,10 @@
         "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet.<br>Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsqu'une session est restaurée."
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "Rétablir la position de la fenêtre"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "Rétablir la position et la taille de la fenêtre à l'ouverture de la session."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Restaurer la dernière session au démarrage"
@@ -207,16 +207,16 @@
         "message": "Lorsqu'une session est enregistrée automatiquement, utiliser le titre de la page active comme nom de session."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "Sauvegarde"
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Enregistrer la sauvegarde"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Lorsque Firefox démarre, créer un fichier de sauvegarde des sessions et l'enregistre dans le dossier de téléchargement."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Enregistrer l'emplacement"
     },
     "backupFolderCaptionLabel": {
         "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
