@@ -15,7 +15,7 @@
         "message": "Сохранить текущую сессию"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Введите имя сессии"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Сохранить только текущее окно"
@@ -57,7 +57,7 @@
         "message": "Удалить эту сессию?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Эта сессия была удалена."
     },
     "restoreSessionLabel": {
         "message": "Восстановить"
@@ -105,16 +105,16 @@
         "message": "Добавить в текущее окно"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Заменить текущей сессией"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "Создать копию сессии"
     },
     "errorLabel": {
         "message": "Ошибка"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB не доступен в вашем браузере."
     },
     "howToSolveLabel": {
         "message": "Как решить эту проблему"
@@ -159,10 +159,10 @@
         "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет активирована вручную.<br>При отключении возрастёт расход памяти после восстановления сессии."
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "Восстановить расположение окна"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "Восстановить размер и положение окна при открытии сессии."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Восстанавливать предыдущую сессию при запуске"
