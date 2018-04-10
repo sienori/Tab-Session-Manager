@@ -24,7 +24,7 @@
         "message": "Фильтр категории"
     },
     "sortLabel": {
-        "message": "Упорядочить"
+        "message": "Сортировать"
     },
     "displayAllLabel": {
         "message": "Все"
@@ -33,7 +33,7 @@
         "message": "Пользовательские"
     },
     "displayAutoLabel": {
-        "message": "Автоматические"
+        "message": "Автосохранение"
     },
     "newestLabel": {
         "message": "Новые"
@@ -69,7 +69,7 @@
         "message": "Добавить метку"
     },
     "removeTagLabel": {
-        "message": "Убрать метку"
+        "message": "Удалить метку"
     },
     "detailLabel": {
         "message": "Подробности"
@@ -87,7 +87,7 @@
         "message": "Вкладки"
     },
     "noSessionLabel": {
-        "message": "Пусто"
+        "message": "Нет сессии"
     },
     "menuLabel": {
         "message": "Меню"
@@ -120,7 +120,7 @@
         "message": "Как решить эту проблему"
     },
     "winCloseSessionName": {
-        "message": "Автосохранение - закрыто окно"
+        "message": "Auto Saved - окно было закрыто"
     },
     "regularSaveSessionName": {
         "message": "Автосохранение - периодическое"
@@ -219,7 +219,7 @@
         "message": "Расположение"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Укажите папку для сохранения файла резервной копии. Место для сохранения ограничено папкой Загрузки в Firefox."
     },
     "downloadFolderLabel": {
         "message": "Папка для загрузок"
