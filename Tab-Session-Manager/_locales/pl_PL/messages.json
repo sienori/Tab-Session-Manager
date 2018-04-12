@@ -105,19 +105,19 @@
         "message": "Dodaj do bieżącego okna"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Zastąp bieżącą sesję"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "Utwórz kopię sesji"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Błąd"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB nie jest dostępne w twojej przeglądarce."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Jak rozwiązać ten problem"
     },
     "winCloseSessionName": {
         "message": "Zapisane automatycznie - okno zostało zamknięte"
@@ -159,10 +159,10 @@
         "message": "Przy otwieraniu sesji zawartość każdej strony nie jest ładowana, dopóki nie wybierzesz danej karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "Przywracanie pozycji okien"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "Przywracanie położenia i rozmiaru okien podczas odtwarzania sesji."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Przywróć poprzednią sesję podczas uruchamiania"
@@ -207,7 +207,7 @@
         "message": "Kiedy zapisujesz sesję automatycznie, użyj tytułu otwartej strony jako nazwy sesji."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "Kopia zapasowa"
     },
     "ifBackupLabel": {
         "message": "Zapisz kopię zapasową"
@@ -216,13 +216,13 @@
         "message": "Po uruchomieniu programu Firefox, utwórz plik kopii zapasowej wszystkich sesji i zapisz go w folderze pobierania."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Lokalizacja zapisu"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Określ miejsce zapisu plików kopii zapasowej. Możliwość zapisu jest ograniczona do podfolderów katalogu pobierania Firefoksa."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "Katalog pobierania"
     },
     "backupFilesLimitLabel": {
         "message": "Maksymalna liczba zapisanych kopii zapasowych"
@@ -273,16 +273,16 @@
         "message": "Wysokość"
     },
     "otherLabel": {
-        "message": "Other"
+        "message": "Inne"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "Resetowanie ustawień"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "Przywracanie wartości domyślnych wszystkich ustawień."
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "Resetuj"
     },
     "importLabel": {
         "message": "Importuj sesje"
