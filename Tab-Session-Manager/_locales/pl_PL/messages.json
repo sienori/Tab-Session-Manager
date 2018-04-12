@@ -6,7 +6,7 @@
         "message": "Zapisz i przywróć stan okien i kart. Obsługuje także automatyczne zapisywanie."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Wesprzyj przez PayPala"
     },
     "saveLabel": {
         "message": "Zapisz"
@@ -15,16 +15,16 @@
         "message": "Zapisz bieżącą sesję"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Wprowadź nazwę sesji"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Zapisz jedynie otwarte okno"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Filtr kategorii"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Sortowanie"
     },
     "displayAllLabel": {
         "message": "Wszystkie"
@@ -57,10 +57,10 @@
         "message": "Usunąć tę sesję?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Ta sesja została usunięta."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Przywróć"
     },
     "cancelLabel": {
         "message": "Anuluj"
@@ -72,7 +72,7 @@
         "message": "Usuń tag"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Szczegóły"
     },
     "windowLabel": {
         "message": "Okno"
