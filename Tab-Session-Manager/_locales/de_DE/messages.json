@@ -288,7 +288,7 @@
         "message": "Sitzungen importieren"
     },
     "importCaptionLabel": {
-        "message": "Lokal gespeicherte Sitzungen laden und zu der aktuellen Liste der Sitzungen hin fügen.<br>Session-Dateien von SessionManager (.session) sind auch unterstützt."
+        "message": "Lokal gespeicherte Sitzungen laden und zu der aktuellen Liste der Sitzungen hinzufügen.<br>Session-Dateien von SessionManager (.session) sind auch unterstützt."
     },
     "importButtonLabel": {
         "message": "Auswählen..."
@@ -303,7 +303,7 @@
         "message": "URL-Liste importieren"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Erstelle eine Sitzung anhand einer Liste von URLs und füge diese zur Liste der Sitzungen hinzu.<br>Format: &lt;URL&gt; &lt;Seitentitel (optional)&gt;"
     },
     "exportLabel": {
         "message": "Sitzungen exportieren"
