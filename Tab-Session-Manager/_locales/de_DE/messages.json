@@ -162,7 +162,7 @@
         "message": "Fensterpositionen wiederherstellen"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "Stelle Fensterposition und -größe wieder her beim Öffnen einer Sitzung."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Vorherige Sitzung beim Start wiederherstellen"
@@ -276,13 +276,13 @@
         "message": "Anders"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "Einstellungen zurücksetzen"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "Zurücksetzen auf Standardeinstellungen."
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "Zurücksetzen"
     },
     "importLabel": {
         "message": "Sitzungen importieren"
