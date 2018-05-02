@@ -6,7 +6,7 @@
 const Labels = {};
 let S = new settingsObj();
 
-S.init().then(async() => {
+S.init().then(async () => {
     setLabels();
     S.labelSet();
     document.body.style.width = S.get().popupWidth + "px";

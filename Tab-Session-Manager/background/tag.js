@@ -53,7 +53,7 @@ async function getSessionsByTag(tag, needKeys = null) {
         return element.tag.includes(tag);
     }
 
-    let sessions = await Sessions.getAll(needKeys).catch([]);
+    let sessions = await Sessions.getAll(needKeys).catch(() => {});
     sessions = sessions.filter(isIncludesTag);
     sessions.sort(newestSort);
 

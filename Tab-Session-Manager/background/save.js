@@ -8,7 +8,7 @@ IsSavingSession = false;
 function saveCurrentSession(name, tag, property) {
     IsSavingSession = true;
 
-    return new Promise(async(resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
         const exit = () => {
             IsSavingSession = false;
             reject();
@@ -16,7 +16,7 @@ function saveCurrentSession(name, tag, property) {
         };
 
         try {
-            const session = await loadCurrentSesssion(name, tag, property);
+            let session = await loadCurrentSesssion(name, tag, property);
 
             //定期保存のセッションが変更されていなければ終了
             if (tag.includes("regular")) {
