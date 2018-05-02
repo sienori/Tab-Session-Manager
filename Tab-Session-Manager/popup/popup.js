@@ -152,7 +152,9 @@ function getAllTags() {
         tags = tags.split('","');
 
         count.all++;
-        if (tags.includes('regular')) {
+        if (tags.includes('temp')) {
+            count.all--;
+        } else if (tags.includes('regular')) {
             count.auto++;
             count.regular++;
         } else if (tags.includes('winClose')) {
@@ -163,14 +165,8 @@ function getAllTags() {
         }
 
         for (let tag of tags) {
-            if (tag == 'regular' || tag == 'winClose' || tag == '') continue;
-            if (tag == 'temp') {
-                count.all--;
-                count.auto--;
-                count.winClose--;
-                continue;
-            }
-
+            if (tag == 'regular' || tag == 'winClose' || tag=='temp' || tag == '') continue;
+            
             tagsCount[tag] = tagsCount[tag] || 0;
             tagsCount[tag]++;
         }

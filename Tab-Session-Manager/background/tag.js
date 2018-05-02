@@ -44,7 +44,7 @@ async function removeTag(id, tag) {
     updateSession(session);
 }
 
-//指定されたタグを含むセッションを新しい順に取得
+//指定されたタグを含むセッションを新しい順に取得 needKeysにはtag, dateが必須
 async function getSessionsByTag(tag, needKeys = null) {
     const newestSort = (a, b) => {
         return moment(b.date).unix() - moment(a.date).unix();

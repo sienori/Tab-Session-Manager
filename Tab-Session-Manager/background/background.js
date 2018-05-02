@@ -3,7 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-const S = new settingsObj()
+const S = new settingsObj();
+const autoSaveWhenClose = new AutoSaveWhenClose;
+
 let BrowserVersion;
 const SessionStartTime = Date.now();
 
@@ -20,14 +22,29 @@ async function init() {
     const gettingInfo = await browser.runtime.getBrowserInfo();
     BrowserVersion = gettingInfo.version.split('.')[0];
 
-    setAutoSave();
-    autoSaveWhenClose().then(openLastSession);
+    autoSaveWhenClose.saveWinClose().then(() => {
+        autoSaveWhenClose.openLastSession();
+        autoSaveWhenClose.removeDuplicateTemp();
+    })
 
+    setAutoSave();
     browser.storage.onChanged.addListener(setAutoSave);
-    browser.tabs.onUpdated.addListener(onUpdate);
-    browser.tabs.onCreated.addListener(autoSaveWhenClose);
-    browser.tabs.onRemoved.addListener(autoSaveWhenClose);
-    browser.windows.onCreated.addListener(autoSaveWhenClose);
+
+    browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+        autoSaveWhenClose.handleTabUpdate(tabId, changeInfo, tab);
+    });
+    browser.tabs.onRemoved.addListener((tabId, removeInfo) => {
+        autoSaveWhenClose.handleTabRemoved(tabId, removeInfo);
+    });
+    browser.tabs.onCreated.addListener(() => {
+        autoSaveWhenClose.updateTemp();
+    });
+    browser.windows.onCreated.addListener(() => {
+        autoSaveWhenClose.updateTemp();
+    });
+    browser.windows.onRemoved.addListener(() => {
+        autoSaveWhenClose.saveWinClose();
+    });
 
     backupSessions();
 }

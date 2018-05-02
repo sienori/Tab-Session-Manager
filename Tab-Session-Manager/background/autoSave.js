@@ -42,51 +42,84 @@ function isChangeAutoSaveSettings(changes, areaName) {
     return (oldValue.ifAutoSave != newValue.ifAutoSave) || (oldValue.autoSaveInterval != newValue.autoSaveInterval)
 }
 
-
-let LastUpdateTime = 0;
-
-function onUpdate(tabId, changeInfo, tab) {
-    if (changeInfo.status != "complete") return;
-
-    const currentUpdateTime = Date.now();
-    if (currentUpdateTime - LastUpdateTime < 1500) {
-        LastUpdateTime = currentUpdateTime;
-        return;
+class AutoSaveWhenClose {
+    constructor() {
+        this.LastUpdateTime = 0;
     }
-    LastUpdateTime = currentUpdateTime;
 
-    autoSaveWhenClose();
-}
+    //タブが1500ms以内に再度更新された場合は無視
+    handleTabUpdate(tabId, changeInfo, tab) {
+        if (changeInfo.status != "complete") return;
 
-function autoSaveWhenClose() {
-    return new Promise(async(resolve, reject) => {
-        if (!IsOpeningSession && !IsSavingSession && (S.get().ifAutoSaveWhenClose || S.get().ifOpenLastSessionWhenStartUp)) {
-            let name = browser.i18n.getMessage("winCloseSessionName");
-            if (S.get().useTabTitleforAutoSave) name = await getCurrentTabName();
-            const tag = ['winClose', 'temp'];
-            const property = "default";
-            saveCurrentSession(name, tag, property).then(function () {
-                removeOverLimit("winClose");
-                resolve();
-            }, () => {
-                //失敗時
-                resolve();
-            });
+        const currentUpdateTime = Date.now();
+        if (currentUpdateTime - this.LastUpdateTime < 1500) {
+            this.LastUpdateTime = currentUpdateTime;
+            return;
         }
-    })
-};
+        this.LastUpdateTime = currentUpdateTime;
+        this.updateTemp();
+    }
 
-async function openLastSession() {
-    if (!S.get().ifOpenLastSessionWhenStartUp) return;
+    //ウィンドウが閉じられた時に発生するTabs.onRemovedを無視
+    handleTabRemoved(tabId, removeInfo) {
+        if (!removeInfo.isWindowClosing) this.updateTemp();
+    }
 
-    const winCloseSessions = await getSessionsByTag('temp');
-    openSession(winCloseSessions[winCloseSessions.length - 1], 'openInCurrentWindow');
+    async updateTemp() {
+        if (IsOpeningSession || (!S.get().ifAutoSaveWhenClose && !S.get().ifOpenLastSessionWhenStartUp)) return;
+
+        let name = browser.i18n.getMessage("winCloseSessionName");
+        if (S.get().useTabTitleforAutoSave) name = await getCurrentTabName();
+        
+        let session = await loadCurrentSesssion(name, ['temp'], 'default');
+        let tempSessions = await getSessionsByTag('temp');
+
+        //現在のセッションをtempとして保存
+        if (tempSessions[0]) session.id = tempSessions[0].id;
+        await saveSession(session, false);
+    }
+
+    async saveWinClose() {
+        if (IsOpeningSession || (!S.get().ifAutoSaveWhenClose && !S.get().ifOpenLastSessionWhenStartUp)) return;
+        
+        let tempSessions = await getSessionsByTag('temp');
+        if (!tempSessions[0]) return;
+        
+        //tempをwinCloseとして保存
+        tempSessions[0].tag = ['winClose'];
+        tempSessions[0].id = UUID.generate();
+        await saveSession(tempSessions[0]);
+
+        removeOverLimit("winClose");
+        
+        this.updateTemp();
+    }
+    
+    async openLastSession(){
+        if (!S.get().ifOpenLastSessionWhenStartUp) return;
+
+        const winCloseSessions = await getSessionsByTag('winClose');
+        openSession(winCloseSessions[0], 'openInCurrentWindow');
+    }
+    
+    async removeDuplicateTemp() {
+        const tempSessions = await getSessionsByTag('temp');
+
+        let isFirst = true;
+        for (let tempSession of tempSessions) {
+            if (isFirst) {
+                isFirst = false;
+                continue;
+            }
+            removeSession(tempSession.id, false);
+        }
+    }
 }
 
 async function removeOverLimit(tagState) {
     let limit;
     if (tagState == "regular") limit = S.get().autoSaveLimit;
-    else if (tagState == "winClose") limit = parseInt(S.get().autoSaveWhenCloseLimit) + 1; //temp分
+    else if (tagState == "winClose") limit = parseInt(S.get().autoSaveWhenCloseLimit);
 
     const autoSavedArray = await getSessionsByTag(tagState, ['id', 'tag', 'date']);
 
