@@ -15,16 +15,16 @@
         "message": "Aktuelle Sitzung speichern"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Sitzungsname"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Nur aktuelles Fenster speichern"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Kategorie-filter"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Sortieren"
     },
     "displayAllLabel": {
         "message": "Alle"
@@ -57,10 +57,10 @@
         "message": "Diese Sitzung löschen?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Diese Sitzung wurde gelöscht."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Wiederherstellen"
     },
     "cancelLabel": {
         "message": "Abbrechen"
@@ -72,7 +72,7 @@
         "message": "Schlagwort entfernen"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Details"
     },
     "windowLabel": {
         "message": "Fenster"
@@ -90,7 +90,7 @@
         "message": "Keine Sitzung vorhanden"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Menü"
     },
     "renameLabel": {
         "message": "Umbenennen"
@@ -102,13 +102,13 @@
         "message": "Im aktuellen Fenster öffnen"
     },
     "addToCurrentWindowLabel": {
-        "message": "Zur aktuellen Fenster hinzufügen"
+        "message": "Zum aktuellen Fenster hinzufügen"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Mit aktueller Sitzung ersetzen"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "Sitzung Kopieren"
     },
     "errorLabel": {
         "message": "Fehler"
@@ -159,10 +159,10 @@
         "message": "Wenn eine Sitzung geöffnet wird, lädt der Inhalt eines Tabs erst nach Anwählen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "Fensterpositionen wiederherstellen"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "Stelle Fensterposition und -größe wieder her beim Öffnen einer Sitzung."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Vorherige Sitzung beim Start wiederherstellen"
@@ -273,22 +273,22 @@
         "message": "Höhe"
     },
     "otherLabel": {
-        "message": "Other"
+        "message": "Anders"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "Einstellungen zurücksetzen"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "Zurücksetzen auf Standardeinstellungen."
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "Zurücksetzen"
     },
     "importLabel": {
         "message": "Sitzungen importieren"
     },
     "importCaptionLabel": {
-        "message": "Lokal gespeicherte Sitzungen laden und zu der aktuellen Liste der Sitzungen hin fügen.<br>Session-Dateien von SessionManager (.session) sind auch unterstützt."
+        "message": "Lokal gespeicherte Sitzungen laden und zu der aktuellen Liste der Sitzungen hinzufügen.<br>Session-Dateien von SessionManager (.session) sind auch unterstützt."
     },
     "importButtonLabel": {
         "message": "Auswählen..."
@@ -303,7 +303,7 @@
         "message": "URL-Liste importieren"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Erstelle eine Sitzung anhand einer Liste von URLs und füge diese zur Liste der Sitzungen hinzu.<br>Format: &lt;URL&gt; &lt;Seitentitel (optional)&gt;"
     },
     "exportLabel": {
         "message": "Sitzungen exportieren"

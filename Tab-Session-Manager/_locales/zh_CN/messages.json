@@ -6,7 +6,7 @@
         "message": "保存、还原窗口及标签页的状态，支持自动保存。"
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "使用 Paypal 捐赠"
     },
     "saveLabel": {
         "message": "保存"
@@ -15,16 +15,16 @@
         "message": "保存当前会话"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "输入会话名称"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "只保存当前窗口的标签"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "类别过滤器"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "分类"
     },
     "displayAllLabel": {
         "message": "全部"
@@ -57,22 +57,22 @@
         "message": "是否删除此会话？"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "此会话已被删除。"
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "还原"
     },
     "cancelLabel": {
         "message": "取消"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "添加标签"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "移除标签"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "详细信息"
     },
     "windowLabel": {
         "message": "窗口"
@@ -90,7 +90,7 @@
         "message": "没有会话"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "菜单"
     },
     "renameLabel": {
         "message": "重命名"
@@ -105,13 +105,13 @@
         "message": "添加到当前窗口"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "使用当前会话替换此会话"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "复制此会话"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "错误"
     },
     "indexedDBErrorLabel": {
         "message": "IndexedDB is not available in your browser."

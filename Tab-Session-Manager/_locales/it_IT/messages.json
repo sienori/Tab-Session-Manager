@@ -6,7 +6,7 @@
         "message": "Salva e ripristina lo stato di finestre e schede. Supporta anche il salvataggio automatico."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Dona con PayPal"
     },
     "saveLabel": {
         "message": "Salva"
@@ -15,16 +15,16 @@
         "message": "Salva sessione corrente"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Inserisci un nome per la sessione"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Salva solo la finestra corrente"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Filtro categorie"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Ordina"
     },
     "displayAllLabel": {
         "message": "Tutto"
@@ -57,10 +57,10 @@
         "message": "Vuoi eliminare questa sessione?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Questa sessione è stata eliminata."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Ripristina"
     },
     "cancelLabel": {
         "message": "Annulla"
@@ -72,7 +72,7 @@
         "message": "Rimuovi tag"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Dettagli"
     },
     "windowLabel": {
         "message": "Finestra"
@@ -90,7 +90,7 @@
         "message": "Non è presente alcuna sessione"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Menù"
     },
     "renameLabel": {
         "message": "Rinomina"
@@ -105,19 +105,19 @@
         "message": "Aggiungi alla finestra corrente"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Sostituisci con la sessione corrente"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "Fai una copia della sessione"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Errore"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB non è disponibile nel tuo browser."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Come risolvere questo problema"
     },
     "winCloseSessionName": {
         "message": "Salvato automaticamente - La finestra è stata chiusa"
@@ -159,10 +159,10 @@
         "message": "Quando viene aperta una sessione, il contenuto di ogni pagina non viene caricato finché selezioni la scheda.<br>Se disattivato, l'utilizzo della memoria aumenta notevolmente quando la sessione viene ripristinata."
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "Ripristina posizione delle finestre"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "Ripristina la posizione e la dimensione delle finestre durante l'apertura di una sessione."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Ripristina la sessione precedente all'avvio"
@@ -216,13 +216,13 @@
         "message": "All'avvio di Firefox, crea un file di backup delle sessioni e salvalo nella cartella dei download."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Salva posizione"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Definisci la cartella dove salvare il file di backup. Il percorso deve essere all'interno della cartella dei Download di Firefox."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "Cartella di download"
     },
     "backupFilesLimitLabel": {
         "message": "Numero massimo di backup salvati"
@@ -261,10 +261,10 @@
         "message": "Se il nome della sessione nella lista delle sessioni si estende su più righe, viene troncato in un'unica riga."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Popup finestra"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Definisce lo stile della finestra popup."
     },
     "widthLabel": {
         "message": "Larghezza"
@@ -273,16 +273,16 @@
         "message": "Altezza"
     },
     "otherLabel": {
-        "message": "Other"
+        "message": "Altro"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "Ripristina impostazioni"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "Ripristina tutte le impostazioni."
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "Ripristina"
     },
     "importLabel": {
         "message": "Importa sessioni"
