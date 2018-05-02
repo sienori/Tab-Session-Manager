@@ -25,6 +25,10 @@ body {
     flex-direction: column;
 }
 
+input, select{
+    background-color: var(--main-bg);
+}
+
 .hidden {
     display: none;
 }
