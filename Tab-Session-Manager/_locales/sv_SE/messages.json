@@ -243,7 +243,7 @@
         "message": "If unchecked, ignores the private window when saving the session."
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Stöder Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
