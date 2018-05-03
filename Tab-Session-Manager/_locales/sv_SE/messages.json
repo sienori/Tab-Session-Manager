@@ -222,7 +222,7 @@
         "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
     },
     "downloadFolderLabel": {
-        "message": "Nerladdningsmapp"
+        "message": "Filhämtningsmapp"
     },
     "backupFilesLimitLabel": {
         "message": "Maximum number of saved backups"
