@@ -120,16 +120,16 @@
         "message": "Så här löser du detta problem"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Sparad automatisk - Fönster stängdes"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Sparad automatiskt - Regelbundet"
     },
     "settingsLabel": {
         "message": "Inställningar"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Sessioner"
     },
     "informationLabel": {
         "message": "Information"
@@ -147,7 +147,7 @@
         "message": "Stil"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Öppna session i ett nytt fönster"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "If unchecked, the session overwrites the current window."
