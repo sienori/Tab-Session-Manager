@@ -93,7 +93,7 @@
         "message": "Meny"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Byt namn"
     },
     "openInNewWindowLabel": {
         "message": "Öppna i nytt fönster"
@@ -102,19 +102,19 @@
         "message": "Öppna i aktuellt fönster"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Lägg till aktuellt fönster"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Ersätt med den aktuella sessionen"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "Gör en kopia av sessionen"
     },
     "errorLabel": {
         "message": "Fel"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB är inte tillgänglig i din webbläsare."
     },
     "howToSolveLabel": {
         "message": "Så här löser du detta problem"
