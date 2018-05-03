@@ -3,7 +3,7 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Sparar och återställer fönster- och fliklägen. Den kan även spara automatiskt."
     },
     "donateWithPaypalLabel": {
         "message": "Donera via PayPal"
@@ -237,7 +237,7 @@
         "message": "Exempel: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Spara privata fönster"
     },
     "ifSavePrivateWindowCaptionLabel": {
         "message": "If unchecked, ignores the private window when saving the session."
