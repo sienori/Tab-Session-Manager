@@ -228,7 +228,7 @@
         "message": "Maximalt antal sparade säkerhetskopior"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "När antalet säkerhetskopior uppnår inställt värde, kommer de att tas bort i stigande ordning från den äldste först."
     },
     "dateFormatLabel": {
         "message": "Datumformat"
@@ -240,16 +240,16 @@
         "message": "Spara privata fönster"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."
     },
     "ifSupportTstLabel": {
         "message": "Stöder Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Återställ trädstrukturen av Tree Style Tab.<br>Stäng av för äldre versioner än Firefox 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
+        "message": "Fördröj trädåterställningen (millisekunder)"
     },
     "tstDelayCaptionLabel": {
         "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
