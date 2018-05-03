@@ -111,7 +111,7 @@
         "message": "Make a copy of the session"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Fel"
     },
     "indexedDBErrorLabel": {
         "message": "IndexedDB is not available in your browser."
@@ -135,16 +135,16 @@
         "message": "Information"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Allmänt"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Spara automatiskt"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Uppstart"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Stil"
     },
     "ifOpenNewWindowLabel": {
         "message": "Open session in new window"
