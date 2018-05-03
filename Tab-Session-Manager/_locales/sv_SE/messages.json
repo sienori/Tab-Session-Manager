@@ -252,10 +252,10 @@
         "message": "Fördröj trädåterställningen (millisekunder)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "För att återställa trädet krävs det väntetid innan fliken öppnas. Höj värdet om trädet inte återställs korrekt."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Visa namnet på sessionen på en rad"
     },
     "truncateTitleCaptionLabel": {
         "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
