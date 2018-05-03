@@ -12,16 +12,16 @@
         "message": "Spara"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Spara aktuell session"
     },
     "inputSessionNameLabel": {
         "message": "Input session name"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Spara endast aktuellt fönster"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Kategorifiltret"
     },
     "sortLabel": {
         "message": "Sortera"
@@ -54,10 +54,10 @@
         "message": "Ta bort"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Ta bort sessionen?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Denna sessionen har tagits bort."
     },
     "restoreSessionLabel": {
         "message": "Återställ"
@@ -66,13 +66,13 @@
         "message": "Avbryt"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Lägg till tagg"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Ta bort tagg"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Detaljer"
     },
     "windowLabel": {
         "message": "Fönster"
@@ -87,7 +87,7 @@
         "message": "Flikar"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Det finns ingen session"
     },
     "menuLabel": {
         "message": "Meny"
