@@ -33,7 +33,7 @@
         "message": "User Saved"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Spara automatiskt"
     },
     "newestLabel": {
         "message": "Nyaste"
@@ -78,7 +78,7 @@
         "message": "Fönster"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Fönster"
     },
     "tabLabel": {
         "message": "Flik"
@@ -96,10 +96,10 @@
         "message": "Rename"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Öppna i nytt fönster"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Öppna i aktuellt fönster"
     },
     "addToCurrentWindowLabel": {
         "message": "Add to current window"
@@ -117,7 +117,7 @@
         "message": "IndexedDB is not available in your browser."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Så här löser du detta problem"
     },
     "winCloseSessionName": {
         "message": "Auto Saved - Window was closed"
@@ -126,7 +126,7 @@
         "message": "Auto Saved - Regularly"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Inställningar"
     },
     "sessionsLabel": {
         "message": "Sessions"
@@ -177,10 +177,10 @@
         "message": "Save the session every X minutes."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Intervall (minuter)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Minsta värde 0.1"
     },
     "autoSaveLimitLabel": {
         "message": "Maximum number Saved"
@@ -207,22 +207,22 @@
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "Säkerhetskopia"
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Spara säkerhetskopia"
     },
     "ifBackupCaptionLabel": {
         "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Spara plats"
     },
     "backupFolderCaptionLabel": {
         "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "Nerladdningsmapp"
     },
     "backupFilesLimitLabel": {
         "message": "Maximum number of saved backups"
@@ -231,10 +231,10 @@
         "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Datumformat"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "Exempel: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
         "message": "Save private window"
@@ -267,22 +267,22 @@
         "message": "Specify the style of the toolbar popup."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Bredd"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Höjd"
     },
     "otherLabel": {
-        "message": "Other"
+        "message": "Annat"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "Återställ inställningarna"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "Återställa alla inställningar till standard."
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "Återställ"
     },
     "importLabel": {
         "message": "Import sessions"
@@ -291,13 +291,13 @@
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Bläddra..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importera"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Rensa"
     },
     "urlImportLabel": {
         "message": "Import URL list"
@@ -312,7 +312,7 @@
         "message": "Save all sessions to the computer."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Exportera"
     },
     "removeSessionsLabel": {
         "message": "Delete sessions"
@@ -321,13 +321,13 @@
         "message": "Delete all sessions."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Ta bort"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licens"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Donera gärna en slant"
     },
     "donationCaptionLabel": {
         "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
@@ -336,7 +336,7 @@
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "tilläggssida"
     },
     "importMessage": {
         "message": "Sessions imported."
@@ -354,9 +354,9 @@
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/sv-SE\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Denna sidan kan inte öppnas av Tab Session Manager."
     }
 }
