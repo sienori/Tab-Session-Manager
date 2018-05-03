@@ -6,10 +6,10 @@
         "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Donera via PayPal"
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Spara"
     },
     "initialNameValue": {
         "message": "Save current session"
@@ -24,10 +24,10 @@
         "message": "Category filter"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Sortera"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Alla"
     },
     "displayUserLabel": {
         "message": "User Saved"
@@ -36,22 +36,22 @@
         "message": "Auto Saved"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Nyaste"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Äldsta"
     },
     "aToZLabel": {
-        "message": "A-Z"
+        "message": "A-Ö"
     },
     "zToALabel": {
-        "message": "Z-A"
+        "message": "Ö-A"
     },
     "open": {
-        "message": "Open"
+        "message": "Öppna"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Ta bort"
     },
     "removeConfirmLabel": {
         "message": "Delete this session?"
@@ -60,10 +60,10 @@
         "message": "This session has been deleted."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Återställ"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Avbryt"
     },
     "addTagLabel": {
         "message": "Add tag"
@@ -75,22 +75,22 @@
         "message": "Detail"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Fönster"
     },
     "windowsLabel": {
         "message": "Windows"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Flik"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Flikar"
     },
     "noSessionLabel": {
         "message": "There is no session"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Meny"
     },
     "renameLabel": {
         "message": "Rename"
