@@ -213,19 +213,19 @@
         "message": "Spara säkerhetskopia"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Skapa en säkerhetskopia av sessionen och spara den i filhanteringsmappen när Firefox startas upp."
     },
     "backupFolderLabel": {
         "message": "Spara plats"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Ange mappen du vill säkerhetskopian ska sparas i. Du är begränsad till att spara den i en mapp under Firefoxs filhämtningsmapp."
     },
     "downloadFolderLabel": {
         "message": "Filhämtningsmapp"
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Maximalt antal sparade säkerhetskopior"
     },
     "backupFilesLimitCaptionLabel": {
         "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
