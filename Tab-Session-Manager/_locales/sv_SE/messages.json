@@ -150,13 +150,13 @@
         "message": "Öppna session i ett nytt fönster"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "Om denna är omarkerad, kommer sessionen att skriva över aktuellt fönster."
     },
     "ifLazyLoadingLabel": {
         "message": "Tab lazy loading"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "När en session öppnas, kommer sidinnehållet inte att laddas in förrän du väljer den fliken.<br>Om den är omarkerad, kommer minnesanvändningen att öka väsentligt när sessionen återställs."
     },
     "isRestoreWindowPositionLabel": {
         "message": "Restore windows position"
