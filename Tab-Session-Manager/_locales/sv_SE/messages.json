@@ -159,22 +159,22 @@
         "message": "När en session öppnas, kommer sidinnehållet inte att laddas in förrän du väljer den fliken.<br>Om den är omarkerad, kommer minnesanvändningen att öka väsentligt när sessionen återställs."
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "Återställ fönsterplaceringar"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "Återställ fönsterplaceringar och storleken när en session öppnas."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Återställ föregående session vid uppstart"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "När Firefox startas upp, ladda den sessionen som stängdes ner sist."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Spara sessionen regelbundet"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "Spara sessionen varje X minuter."
     },
     "autoSaveIntervalLabel": {
         "message": "Intervall (minuter)"
@@ -183,7 +183,7 @@
         "message": "Minsta värde 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Maximalt antal sparade"
     },
     "autoSaveLimitCaptionLabel": {
         "message": "Maximum number of saved sessions (in this way)."
