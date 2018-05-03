@@ -204,7 +204,7 @@
         "message": "Namnge sidan efter titelnamnet när en session sparas automatiskt"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "När en session automatiskt sparas, använd då den aktuella sidans titelnamn som namn på den sparade sessionen."
     },
     "backupLabel": {
         "message": "Säkerhetskopia"
