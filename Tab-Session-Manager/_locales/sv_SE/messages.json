@@ -15,7 +15,7 @@
         "message": "Spara aktuell session"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Namnge sessionen"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Spara endast aktuellt fönster"
@@ -285,7 +285,7 @@
         "message": "Återställ"
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Importera sessioner"
     },
     "importCaptionLabel": {
         "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
@@ -306,19 +306,19 @@
         "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Exportera sessioner"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Spara alla sessioner till datorn."
     },
     "exportButtonLabel": {
         "message": "Exportera"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Ta bort sessioner"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "Ta bort alla sessioner."
     },
     "removeSessionsButtonLabel": {
         "message": "Ta bort"
