@@ -153,7 +153,7 @@
         "message": "Om denna är omarkerad, kommer sessionen att skriva över aktuellt fönster."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Ladda flikar efterhand"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "När en session öppnas, kommer sidinnehållet inte att laddas in förrän du väljer den fliken.<br>Om den är omarkerad, kommer minnesanvändningen att öka väsentligt när sessionen återställs."
