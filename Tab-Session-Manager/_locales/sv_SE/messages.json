@@ -261,10 +261,10 @@
         "message": "Om namnet på sessionen överskrids i sessionslistan kommer det att kortas ner och visas på en rad."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Verktygsfältsfönster"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Ange storleken på verktygsfältets fönster."
     },
     "widthLabel": {
         "message": "Bredd"
@@ -288,7 +288,7 @@
         "message": "Importera sessioner"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Ladda sparade sessioner från datorn och lägg till dem i sessionslistan.<br>Den stöder även SessionManager's sessionsfiler (.session)."
     },
     "importButtonLabel": {
         "message": "Bläddra..."
@@ -303,7 +303,7 @@
         "message": "Importera URL-lista"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Skapa en session från en lista med URL:er och lägg till dem i sessionslistan.<br>Format: &lt;URL&gt; &lt;sidnamn (valfritt)&gt;"
     },
     "exportLabel": {
         "message": "Exportera sessioner"
