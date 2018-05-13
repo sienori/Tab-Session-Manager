@@ -15,7 +15,7 @@
         "message": "Запазване на текущата сесия"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Име на сесията"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Запазване само на текущият прозорец"
