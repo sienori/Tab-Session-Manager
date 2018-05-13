@@ -219,7 +219,7 @@
         "message": "Местоположение за запис"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Задаване на папка за запазване на резервните копия. Местоположението е ограничено до папката за изтегляния, зададена в настройките на Firefox."
     },
     "downloadFolderLabel": {
         "message": "Папка за изтегляния"
