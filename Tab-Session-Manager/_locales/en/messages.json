@@ -109,6 +109,9 @@
     "replaceCurrentSessionLabel": {
         "message": "Replace with current session"
     },
+    "replaceCurrentWindowLabel": {
+        "message": "Replace with current window"
+    },
     "makeCopySessionLabel": {
         "message": "Make a copy of the session"
     },

@@ -36,7 +36,7 @@ S.init().then(async () => {
 });
 
 async function setLabels() {
-    labels = ['initialNameValue', 'inputSessionNameLabel', 'winCloseSessionName', 'regularSaveSessionName', 'categoryFilterLabel', 'sortLabel', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'detailLabel', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'sessionDeletedLabel', 'restoreSessionLabel', 'cancelLabel', 'menuLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'replaceCurrentSessionLabel', 'makeCopySessionLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
+    labels = ['initialNameValue', 'inputSessionNameLabel', 'winCloseSessionName', 'regularSaveSessionName', 'categoryFilterLabel', 'sortLabel', 'displayAllLabel', 'displayUserLabel', 'displayAutoLabel', 'settingsLabel', 'open', 'remove', 'detailLabel', 'windowLabel', 'windowsLabel', 'tabLabel', 'tabsLabel', 'noSessionLabel', 'sessionDeletedLabel', 'restoreSessionLabel', 'cancelLabel', 'menuLabel', 'renameLabel', 'exportButtonLabel', 'openInNewWindowLabel', 'openInCurrentWindowLabel', 'addToCurrentWindowLabel', 'replaceCurrentSessionLabel', 'replaceCurrentWindowLabel', 'makeCopySessionLabel', 'saveOnlyCurrentWindowLabel', 'addTagLabel', 'removeTagLabel', 'donateWithPaypalLabel', "errorLabel", "indexedDBErrorLabel", "howToSolveLabel"];
 
     for (let i of labels) {
         Labels[i] = browser.i18n.getMessage(i);
@@ -397,6 +397,7 @@ function sessionsHTML(info) {
                     <li class=addToCurrentWindow>${Labels.addToCurrentWindowLabel}</li>
                     <hr>
                     <li class=replaceCurrentSession>${Labels.replaceCurrentSessionLabel}</li>
+                    <li class=replaceCurrentWindow>${Labels.replaceCurrentWindowLabel}</li>
                     <li class=makeCopySession>${Labels.makeCopySessionLabel}</li>
                     </ul>
                 </div>
@@ -833,10 +834,10 @@ async function deleteWindowTab(e, target) {
     showDetail(id, true);
 }
 
-async function replaceCurrentSession(id) {
+async function replaceCurrentSession(id, property = 'default') {
     let currentSession = await browser.runtime.sendMessage({
         message: 'getCurrentSession',
-        property: 'default'
+        property: property
     });
     if (currentSession == undefined) return;
 
@@ -933,6 +934,9 @@ document.addEventListener('click', async function (e) {
             break;
         case "replaceCurrentSession":
             replaceCurrentSession(id);
+            break;
+        case "replaceCurrentWindow":
+            replaceCurrentSession(id, "saveOnlyCurrentWindow");
             break;
         case "makeCopySession":
             makeCopySession(id);
