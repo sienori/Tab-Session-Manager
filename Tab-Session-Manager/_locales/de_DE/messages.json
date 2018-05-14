@@ -219,10 +219,10 @@
         "message": "Gespeichert unter"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Geben Sie den Ordner an, in der die Sicherungsdatei gespeichert werden soll. Dieser Ordner muss sich im Firefox Download-Ordner befinden."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "Download-Ordner"
     },
     "backupFilesLimitLabel": {
         "message": "Maximale Anzahl von erstellten Sicherungen"

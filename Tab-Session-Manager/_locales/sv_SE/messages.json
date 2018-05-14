@@ -3,349 +3,349 @@
         "message": "Tab Session Manager"
     },
     "extDescription": {
-        "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+        "message": "Sparar och återställer fönster- och fliklägen. Den kan även spara automatiskt."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Donera via PayPal"
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Spara"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Spara aktuell session"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Namnge sessionen"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Spara endast aktuellt fönster"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Kategorifiltret"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Sortera"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Alla"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Sparade av användaren"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Spara automatiskt"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Nyaste"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Äldsta"
     },
     "aToZLabel": {
-        "message": "A-Z"
+        "message": "A-Ö"
     },
     "zToALabel": {
-        "message": "Z-A"
+        "message": "Ö-A"
     },
     "open": {
-        "message": "Open"
+        "message": "Öppna"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Ta bort"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Ta bort sessionen?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Denna sessionen har tagits bort."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Återställ"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Avbryt"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Lägg till tagg"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Ta bort tagg"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Detaljer"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Fönster"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Fönster"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Flik"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Flikar"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Det finns ingen session"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Meny"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Byt namn"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Öppna i nytt fönster"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Öppna i aktuellt fönster"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Lägg till aktuellt fönster"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Ersätt med den aktuella sessionen"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "Gör en kopia av sessionen"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Fel"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB är inte tillgänglig i din webbläsare."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Så här löser du detta problem"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - Window was closed"
+        "message": "Sparad automatisk - Fönster stängdes"
     },
     "regularSaveSessionName": {
-        "message": "Auto Saved - Regularly"
+        "message": "Sparad automatiskt - Regelbundet"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Inställningar"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Sessioner"
     },
     "informationLabel": {
         "message": "Information"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "Allmänt"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "Spara automatiskt"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "Uppstart"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "Stil"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Open session in new window"
+        "message": "Öppna session i ett nytt fönster"
     },
     "ifOpenNewWindowCaptionLabel": {
-        "message": "If unchecked, the session overwrites the current window."
+        "message": "Om denna är omarkerad, kommer sessionen att skriva över aktuellt fönster."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Ladda flikar efterhand"
     },
     "ifLazyLoadingCaptionLabel": {
-        "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+        "message": "När en session öppnas, kommer sidinnehållet inte att laddas in förrän du väljer den fliken.<br>Om den är omarkerad, kommer minnesanvändningen att öka väsentligt när sessionen återställs."
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "Återställ fönsterplaceringar"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "Återställ fönsterplaceringar och storleken när en session öppnas."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
+        "message": "Återställ föregående session vid uppstart"
     },
     "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
+        "message": "När Firefox startas upp, ladda den sessionen som stängdes ner sist."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Spara sessionen regelbundet"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "Spara sessionen varje X minuter."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Intervall (minuter)"
     },
     "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum value 0.1"
+        "message": "Minsta värde 0.1"
     },
     "autoSaveLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Maximalt antal sparade"
     },
     "autoSaveLimitCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Maximalt antal sparade sessioner (på det här sättet)."
     },
     "ifAutoSaveWhenCloseLabel": {
-        "message": "Save the session when window was closed"
+        "message": "Spara sessionen när fönstret stängs"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Save the session when closing the window or when exiting Firefox."
+        "message": "Spara sessionen när fönstret stängs eller när Firefox avslutas."
     },
     "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximum number Saved"
+        "message": "Maximalt antal sparade"
     },
     "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximum number of saved sessions (in this way)."
+        "message": "Maximalt antal sparade sessioner (på det här sättet)."
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "Namnge sidan efter titelnamnet när en session sparas automatiskt"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "När en session automatiskt sparas, använd då den aktuella sidans titelnamn som namn på den sparade sessionen."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "Säkerhetskopia"
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "Spara säkerhetskopia"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Skapa en säkerhetskopia av sessionen och spara den i filhanteringsmappen när Firefox startas upp."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Spara plats"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Ange mappen du vill säkerhetskopian ska sparas i. Du är begränsad till att spara den i en mapp under Firefoxs filhämtningsmapp."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "Filhämtningsmapp"
     },
     "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
+        "message": "Maximalt antal sparade säkerhetskopior"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "När antalet säkerhetskopior uppnår inställt värde, kommer de att tas bort i stigande ordning från den äldste först."
     },
     "dateFormatLabel": {
-        "message": "Date format"
+        "message": "Datumformat"
     },
     "dateFormatCaptionLabel": {
-        "message": "Example: YYYY.MM.DD HH:mm:ss"
+        "message": "Exempel: YYYY.MM.DD HH:mm:ss"
     },
     "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
+        "message": "Spara privata fönster"
     },
     "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
+        "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."
     },
     "ifSupportTstLabel": {
-        "message": "Supports Tree Style Tab"
+        "message": "Stöder Tree Style Tab"
     },
     "ifSupportTstCaptionLabel": {
-        "message": "Restore tree state of Tree Style Tab.<br>Please turn it off for Firefox versions older than Firefox 57 (Quantum)."
+        "message": "Återställ trädstrukturen av Tree Style Tab.<br>Stäng av för äldre versioner än Firefox 57 (Quantum)."
     },
     "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
+        "message": "Fördröj trädåterställningen (millisekunder)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "För att återställa trädet krävs det väntetid innan fliken öppnas. Höj värdet om trädet inte återställs korrekt."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Visa namnet på sessionen på en rad"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Om namnet på sessionen överskrids i sessionslistan kommer det att kortas ner och visas på en rad."
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "Verktygsfältsfönster"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Ange storleken på verktygsfältets fönster."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "Bredd"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "Höjd"
     },
     "otherLabel": {
-        "message": "Other"
+        "message": "Annat"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "Återställ inställningarna"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "Återställa alla inställningar till standard."
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "Återställ"
     },
     "importLabel": {
-        "message": "Import sessions"
+        "message": "Importera sessioner"
     },
     "importCaptionLabel": {
-        "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+        "message": "Ladda sparade sessioner från datorn och lägg till dem i sessionslistan.<br>Den stöder även SessionManager's sessionsfiler (.session)."
     },
     "importButtonLabel": {
-        "message": "Browse..."
+        "message": "Bläddra..."
     },
     "importSaveButtonLabel": {
-        "message": "Import"
+        "message": "Importera"
     },
     "importClearButtonLabel": {
-        "message": "Clear"
+        "message": "Rensa"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "Importera URL-lista"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Skapa en session från en lista med URL:er och lägg till dem i sessionslistan.<br>Format: &lt;URL&gt; &lt;sidnamn (valfritt)&gt;"
     },
     "exportLabel": {
-        "message": "Export Sessions"
+        "message": "Exportera sessioner"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "Spara alla sessioner till datorn."
     },
     "exportButtonLabel": {
-        "message": "Export"
+        "message": "Exportera"
     },
     "removeSessionsLabel": {
-        "message": "Delete sessions"
+        "message": "Ta bort sessioner"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "Ta bort alla sessioner."
     },
     "removeSessionsButtonLabel": {
-        "message": "Delete"
+        "message": "Ta bort"
     },
     "LicenseLabel": {
-        "message": "License"
+        "message": "Licens"
     },
     "donationLabel": {
-        "message": "Please make a donation"
+        "message": "Donera gärna en slant"
     },
     "donationCaptionLabel": {
-        "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+        "message": "Tack för att du använder Tab Session Manager.<br>Ditt stöd kommer att göra mig väldigt glad, eftersom jag kan fortsätta att utveckla tillägget.<br>Om du gillar Tab Session Manager, skulle jag verkligen uppskatta en donation från dig."
     },
     "amazonTitleLabel": {
         "message": "amazon.co.jp eGift Cards"
     },
     "addonPageLabel": {
-        "message": "add-on page"
+        "message": "tilläggssida"
     },
     "importMessage": {
-        "message": "Sessions imported."
+        "message": "Sessioner importerade."
     },
     "readFailedMessage": {
-        "message": "Read failed"
+        "message": "Läsfel"
     },
     "warningRemoveAllMessage": {
-        "message": "Delete all sessions. Are you sure?"
+        "message": "Ta bort alla sessioner. Är du säker?"
     },
     "sessionLabel": {
         "message": "Session"
@@ -354,9 +354,9 @@
         "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
     },
     "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+        "message": "https:\/\/addons.mozilla.org\/sv-SE\/firefox\/addon\/tab-session-manager\/?src=optionpage"
     },
     "replacedPageMessage": {
-        "message": "This page can not be opened by Tab Session Manager."
+        "message": "Denna sidan kan inte öppnas av Tab Session Manager."
     }
 }
