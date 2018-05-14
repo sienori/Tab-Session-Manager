@@ -107,6 +107,9 @@
     "replaceCurrentSessionLabel": {
         "message": "現在のセッションに置き換え"
     },
+    "replaceCurrentWindowLabel": {
+        "message": "Replace with current window"
+    },
     "makeCopySessionLabel": {
         "message": "セッションのコピーを作成"
     },
