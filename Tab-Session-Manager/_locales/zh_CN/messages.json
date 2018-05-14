@@ -107,6 +107,9 @@
     "replaceCurrentSessionLabel": {
         "message": "使用当前会话替换此会话"
     },
+    "replaceCurrentWindowLabel": {
+        "message": "Replace with current window"
+    },
     "makeCopySessionLabel": {
         "message": "复制此会话"
     },
