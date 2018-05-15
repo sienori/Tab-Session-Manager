@@ -108,7 +108,7 @@
         "message": "使用目前瀏覽階段取代此瀏覽階段"
     },
     "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
+        "message": "使用目前視窗取代"
     },
     "makeCopySessionLabel": {
         "message": "複製此瀏覽階段"
