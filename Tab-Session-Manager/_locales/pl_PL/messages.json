@@ -105,10 +105,10 @@
         "message": "Dodaj do bieżącego okna"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Zastąp bieżącą sesję"
+        "message": "Zastąp bieżącą sesją"
     },
     "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
+        "message": "Zastąp bieżącym oknem"
     },
     "makeCopySessionLabel": {
         "message": "Utwórz kopię sesji"
