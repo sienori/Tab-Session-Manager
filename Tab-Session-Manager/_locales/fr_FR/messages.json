@@ -219,7 +219,7 @@
         "message": "Lorsque Firefox démarre, créer un fichier de sauvegarde des sessions et l'enregistre dans le dossier de téléchargement."
     },
     "backupFolderLabel": {
-        "message": "Enregistrer l'emplacement"
+        "message": "Emplacement de la sauvegarde"
     },
     "backupFolderCaptionLabel": {
         "message": "Renseignez le dossier de sauvegarde. L'emplacement choisi est restreint aux sous-dossiers du dossier de téléchargement de Firefox."
