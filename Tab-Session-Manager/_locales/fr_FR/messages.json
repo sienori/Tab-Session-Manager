@@ -108,7 +108,7 @@
         "message": "Remplacez par la session en cours"
     },
     "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
+        "message": "Remplacer par la fenêtre actuelle"
     },
     "makeCopySessionLabel": {
         "message": "Faites une copie de la session"
@@ -330,7 +330,7 @@
         "message": "Licence"
     },
     "donationLabel": {
-        "message": "Veuillez faire un don"
+        "message": "Faites un don"
     },
     "donationCaptionLabel": {
         "message": "Merci d’utiliser Tab Session Manager. <br>Votre soutien sera un grand encouragement, car je continue de développer l’extension. <br> Si vous aimez Session Manager, je serais heureux si vous pouviez envisager de faire un don."
