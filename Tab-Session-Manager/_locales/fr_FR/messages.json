@@ -255,7 +255,7 @@
         "message": "Délais de rétablissement de l'arborescence (millisecondes)"
     },
     "tstDelayCaptionLabel": {
-        "message": "Pour restaurer l’état de l’arborescence, temps d’attente nécessaire pour ouvrir l’onglet. Augmentez cette valeur si l’’arborescence n'est pas restaurée correctement."
+        "message": "Pour restaurer l’état de l’arborescence, un temps d’attente est nécessaire pour ouvrir l’onglet. Augmentez cette valeur si l’arborescence n’est pas restaurée correctement."
     },
     "truncateTitleLabel": {
         "message": "Afficher le nom de session sur une seule ligne"
