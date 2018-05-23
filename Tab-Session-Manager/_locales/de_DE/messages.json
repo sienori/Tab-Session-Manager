@@ -21,7 +21,7 @@
         "message": "Nur aktuelles Fenster speichern"
     },
     "categoryFilterLabel": {
-        "message": "Kategorie-filter"
+        "message": "Filtern nach Kategorie"
     },
     "sortLabel": {
         "message": "Sortieren"
@@ -261,7 +261,7 @@
         "message": "Sitzungsname innerhalb einer Zeile anzeigen"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Wenn der Sitzungsname in der Sitzungsliste länger als eine Zeile ist, wird dieser am Ende abgeschnitten."
     },
     "toolBarPopupLabel": {
         "message": "Werkzeugleistenfenster"
