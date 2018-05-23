@@ -105,13 +105,13 @@
         "message": "Ajouter à la fenêtre en cours"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Remplacez par la session en cours"
+        "message": "Remplacer par la session en cours"
     },
     "replaceCurrentWindowLabel": {
         "message": "Remplacer par la fenêtre actuelle"
     },
     "makeCopySessionLabel": {
-        "message": "Faites une copie de la session"
+        "message": "Faire une copie de la session"
     },
     "errorLabel": {
         "message": "Erreur"
