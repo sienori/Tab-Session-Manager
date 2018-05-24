@@ -108,7 +108,7 @@
         "message": "Замяна с текущата сесия"
     },
     "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
+        "message": "Замяна с текущият прозорец"
     },
     "makeCopySessionLabel": {
         "message": "Създаване копие на сесията"
