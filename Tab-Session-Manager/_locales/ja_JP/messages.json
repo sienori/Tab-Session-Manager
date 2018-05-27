@@ -105,7 +105,10 @@
         "message": "現在のウィンドウに追加する"
     },
     "replaceCurrentSessionLabel": {
-        "message": "現在のセッションに置き換え"
+        "message": "現在のセッションで置き換え"
+    },
+    "replaceCurrentWindowLabel": {
+        "message": "現在のウィンドウで置き換え"
     },
     "makeCopySessionLabel": {
         "message": "セッションのコピーを作成"
