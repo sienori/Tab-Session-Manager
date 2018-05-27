@@ -222,7 +222,7 @@
         "message": "Розташування"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Вкажіть каталог для збереження файлу резервної копії. Місце для збереження обмежено каталогом Завантаження у Firefox."
     },
     "downloadFolderLabel": {
         "message": "Каталог завантажень"
@@ -231,7 +231,7 @@
         "message": "Максимальна кількість збережених резервних копій"
     },
     "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+        "message": "Якщо кількість файлів резервних копій перевищить це значення, вони видаляються, починаючи з найстаріших."
     },
     "dateFormatLabel": {
         "message": "Формат дати"
@@ -255,19 +255,19 @@
         "message": "Затримка під час відновленні дерева (мілісекунди)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "Для відновлення стану дерева та відкриття вкладки потрібен певний час. Збільште це значення, якщо дерево не відновлюється коректно."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "Показувати назву сесії в одному рядку"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Якщо назва сесії в списку займає більше одного рядка, вона буде скорочуватися до одного рядку."
     },
     "toolBarPopupLabel": {
         "message": "Спливаюче вікно на панелі інструментів"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "Вкажіть стиль спливаючого вікна на панелі інструментів."
     },
     "widthLabel": {
         "message": "Ширина"
@@ -306,7 +306,7 @@
         "message": "Імпорт списку URL-адрес"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "Створити сесію зі списку URL-адрес і додати її у список сесій. <br>Формат: &lt;URL&gt; &lt;заголовок сторінки (необов'язково)&gt;"
     },
     "exportLabel": {
         "message": "Експорт сесій"
