@@ -15,16 +15,16 @@
         "message": "Запазване на текущата сесия"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Име на сесията"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Запазване само на текущият прозорец"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Категории с филтри"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Подреждане"
     },
     "displayAllLabel": {
         "message": "Всички"
@@ -57,10 +57,10 @@
         "message": "Изтриване на тази сесия?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Сесията е изтрита."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Възстановяване"
     },
     "cancelLabel": {
         "message": "Отказ"
@@ -72,7 +72,7 @@
         "message": "Премахване на етикета"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Подробности"
     },
     "windowLabel": {
         "message": "прозорец"
@@ -90,7 +90,7 @@
         "message": "Тук няма сесии"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Меню"
     },
     "renameLabel": {
         "message": "Преименуване"
@@ -105,19 +105,22 @@
         "message": "Добавяне в текущият прозорец"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Замяна с текущата сесия"
+    },
+    "replaceCurrentWindowLabel": {
+        "message": "Замяна с текущият прозорец"
     },
     "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
+        "message": "Създаване копие на сесията"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Грешка"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB не е налична във вашият браузър."
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "Разрешаване на проблема"
     },
     "winCloseSessionName": {
         "message": "Авто запазени - при затваряне на прозорец"
@@ -159,10 +162,10 @@
         "message": "При отваряне на сесия, съдържанието на всяка страница се зарежда, когато се избере раздела.<br>Ако не е отметнато, възстановяването на сесията увеличава използваната памет."
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "Възстановяване позицията на прозорците"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "Възстановяване позицията и размера на прозорците при отваряне на сесия."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Възстановяване на предишна сесия при стартиране"
@@ -207,7 +210,7 @@
         "message": "Заглавието на отворената страница ще се използва за име на автоматично запазената сесия."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "Резервно копие"
     },
     "ifBackupLabel": {
         "message": "Резервно копие"
@@ -216,13 +219,13 @@
         "message": "Създаване резервно копие на сесиите и запазване в папката за изтегляния при стартиране на Firefox."
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "Местоположение за запис"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Задаване на папка за запазване на резервните копия. Местоположението е ограничено до папката за изтегляния, зададена в настройките на Firefox."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "Папка за изтегляния"
     },
     "backupFilesLimitLabel": {
         "message": "Максимален брой резервни копия"
@@ -273,16 +276,16 @@
         "message": "Височина"
     },
     "otherLabel": {
-        "message": "Other"
+        "message": "Други"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "Възстановяване на настройки"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "Възстановяване на първоначалните настройки."
     },
     "resetSettingsButtonLabel": {
-        "message": "Reset"
+        "message": "Възстановяване"
     },
     "importLabel": {
         "message": "Внасяне на сесии"

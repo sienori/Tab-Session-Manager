@@ -105,10 +105,13 @@
         "message": "Ajouter à la fenêtre en cours"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Remplacez par la session en cours"
+        "message": "Remplacer par la session en cours"
+    },
+    "replaceCurrentWindowLabel": {
+        "message": "Remplacer par la fenêtre actuelle"
     },
     "makeCopySessionLabel": {
-        "message": "Faites une copie de la session"
+        "message": "Faire une copie de la session"
     },
     "errorLabel": {
         "message": "Erreur"
@@ -216,7 +219,7 @@
         "message": "Lorsque Firefox démarre, créer un fichier de sauvegarde des sessions et l'enregistre dans le dossier de téléchargement."
     },
     "backupFolderLabel": {
-        "message": "Enregistrer l'emplacement"
+        "message": "Emplacement de la sauvegarde"
     },
     "backupFolderCaptionLabel": {
         "message": "Renseignez le dossier de sauvegarde. L'emplacement choisi est restreint aux sous-dossiers du dossier de téléchargement de Firefox."
@@ -252,7 +255,7 @@
         "message": "Délais de rétablissement de l'arborescence (millisecondes)"
     },
     "tstDelayCaptionLabel": {
-        "message": "Pour restaurer l’état de l’arborescence, temps d’attente nécessaire pour ouvrir l’onglet. Augmentez cette valeur si l’’arborescence n'est pas restaurée correctement."
+        "message": "Pour restaurer l’état de l’arborescence, un temps d’attente est nécessaire pour ouvrir l’onglet. Augmentez cette valeur si l’arborescence n’est pas restaurée correctement."
     },
     "truncateTitleLabel": {
         "message": "Afficher le nom de session sur une seule ligne"
@@ -327,7 +330,7 @@
         "message": "Licence"
     },
     "donationLabel": {
-        "message": "Veuillez faire un don"
+        "message": "Faites un don"
     },
     "donationCaptionLabel": {
         "message": "Merci d’utiliser Tab Session Manager. <br>Votre soutien sera un grand encouragement, car je continue de développer l’extension. <br> Si vous aimez Session Manager, je serais heureux si vous pouviez envisager de faire un don."

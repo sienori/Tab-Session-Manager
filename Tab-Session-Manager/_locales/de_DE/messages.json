@@ -6,7 +6,7 @@
         "message": "Speichern und Wiederherstellen aller Fenster und Tabs. Unterstützt automatisches Speicherung."
     },
     "donateWithPaypalLabel": {
-        "message": "Schenken mit PayPal"
+        "message": "Spenden via PayPal"
     },
     "saveLabel": {
         "message": "Speichern"
@@ -15,13 +15,13 @@
         "message": "Aktuelle Sitzung speichern"
     },
     "inputSessionNameLabel": {
-        "message": "Sitzungsname"
+        "message": "Sitzungsname eingeben"
     },
     "saveOnlyCurrentWindowLabel": {
         "message": "Nur aktuelles Fenster speichern"
     },
     "categoryFilterLabel": {
-        "message": "Kategorie-filter"
+        "message": "Filtern nach Kategorie"
     },
     "sortLabel": {
         "message": "Sortieren"
@@ -107,6 +107,9 @@
     "replaceCurrentSessionLabel": {
         "message": "Mit aktueller Sitzung ersetzen"
     },
+    "replaceCurrentWindowLabel": {
+        "message": "Mit aktueller Sitzung ersetzen"
+    },
     "makeCopySessionLabel": {
         "message": "Sitzung Kopieren"
     },
@@ -147,13 +150,13 @@
         "message": "Erscheinungsbild"
     },
     "ifOpenNewWindowLabel": {
-        "message": "Sitzung im neuen Fenster öffnen"
+        "message": "Sitzung in neuem Fenster öffnen"
     },
     "ifOpenNewWindowCaptionLabel": {
         "message": "Sitzung überschreibt aktuelles Fenster, falls Haken entfernt wird."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab - verzögertes Laden"
+        "message": "Tabs verzögert laden"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "Wenn eine Sitzung geöffnet wird, lädt der Inhalt eines Tabs erst nach Anwählen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
@@ -219,10 +222,10 @@
         "message": "Gespeichert unter"
     },
     "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+        "message": "Geben Sie den Ordner an, in der die Sicherungsdatei gespeichert werden soll. Dieser Ordner muss sich im Firefox Download-Ordner befinden."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "Download-Ordner"
     },
     "backupFilesLimitLabel": {
         "message": "Maximale Anzahl von erstellten Sicherungen"
@@ -243,22 +246,22 @@
         "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
     },
     "ifSupportTstLabel": {
-        "message": "Unterstützung von baumstrukturierte Tabs"
+        "message": "Tree Style Tab unterstützen"
     },
     "ifSupportTstCaptionLabel": {
         "message": "Status des Tree Style Tab wiederherstellen.<br>Bitte deaktivieren, wenn die verwendete Version von Firefox älter als Firefox 57 ist."
     },
     "tstDelayLabel": {
-        "message": "Verzögerung beim Baum-Restaurierung (Millisekunden)"
+        "message": "Verzögerung bei der Wiederherstellung der Baumstruktur (Millisekunden)"
     },
     "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+        "message": "Um den Zustand der Baumstruktur wiederherzustellen, ist eine gewisse Verzögerung notwendig. Falls die Baumstruktur nicht korrekt wiederhergestellt wird, kann der Wert erhöht werden."
     },
     "truncateTitleLabel": {
         "message": "Sitzungsname innerhalb einer Zeile anzeigen"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "Wenn der Sitzungsname in der Sitzungsliste länger als eine Zeile ist, wird dieser am Ende abgeschnitten."
     },
     "toolBarPopupLabel": {
         "message": "Werkzeugleistenfenster"
