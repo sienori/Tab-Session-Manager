@@ -207,7 +207,7 @@
         "message": "Використовувати заголовок сторінки для автоматичного збереження назви сесії"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+        "message": "При автоматичному збереженні сесії, використовувати заголовок відкритої сторінки у якості назви сесії."
     },
     "backupLabel": {
         "message": "Резервне копіювання"
@@ -216,7 +216,7 @@
         "message": "Зберігати резервну копію"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "Під час запуску Firefox, створити файл резервної копії сесій та зберегти його у каталозі для завантажень."
     },
     "backupFolderLabel": {
         "message": "Розташування"
