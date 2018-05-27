@@ -6,7 +6,7 @@
         "message": "Менеджер сесій дозволяє зберігати та відновлювати стан вікон та вкладок. Підтримує автоматичні збереження."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Зробити пожертву через PayPal"
     },
     "saveLabel": {
         "message": "Зберегти"
@@ -15,16 +15,16 @@
         "message": "Зберегти поточну сесiю"
     },
     "inputSessionNameLabel": {
-        "message": "Input session name"
+        "message": "Введіть назву сесії"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Зберегти лише поточне вікно"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Фільтр категорії"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Сортування"
     },
     "displayAllLabel": {
         "message": "Всі"
@@ -57,10 +57,10 @@
         "message": "Видалити цю сесію?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Ця сесія була видалена."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Відновити"
     },
     "cancelLabel": {
         "message": "Відміна"
@@ -72,7 +72,7 @@
         "message": "Видалити тег"
     },
     "detailLabel": {
-        "message": "Detail"
+        "message": "Подробиці"
     },
     "windowLabel": {
         "message": "Вікно"
@@ -90,7 +90,7 @@
         "message": "Немає сесії"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Меню"
     },
     "renameLabel": {
         "message": "Перейменувати"
@@ -105,16 +105,16 @@
         "message": "Додати до поточного вікна"
     },
     "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
+        "message": "Замінити поточної сесією"
     },
     "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
+        "message": "Замінити поточним вікном"
     },
     "makeCopySessionLabel": {
         "message": "Make a copy of the session"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Помилка"
     },
     "indexedDBErrorLabel": {
         "message": "IndexedDB is not available in your browser."
@@ -210,7 +210,7 @@
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "Резервне копіювання"
     },
     "ifBackupLabel": {
         "message": "Зберігати резервну копію"
