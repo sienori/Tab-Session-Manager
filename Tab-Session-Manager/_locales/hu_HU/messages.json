@@ -107,6 +107,9 @@
     "replaceCurrentSessionLabel": {
         "message": "Aktuális munkamenettel lecserél"
     },
+    "replaceCurrentWindowLabel": {
+        "message": "Replace with current window"
+    },
     "makeCopySessionLabel": {
         "message": "Másolatot készítése a munkamenetről"
     },
