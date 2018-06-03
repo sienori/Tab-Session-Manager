@@ -24,22 +24,22 @@
         "message": "Filtr kategorií"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Seřadit"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Všechny"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Uložené uživatelem"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Automaticky uloženo"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Nejnovější"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Nejstarší"
     },
     "aToZLabel": {
         "message": "A-Z"
@@ -48,61 +48,61 @@
         "message": "Z-A"
     },
     "open": {
-        "message": "Open"
+        "message": "Otevřít"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Odstranit"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Odstranit tuto relaci?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Relace smazána."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Obnovit"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Zrušit"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Přidat štítek"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Odstranit štítek"
     },
     "detailLabel": {
         "message": "Detail"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Okno"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Okna"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Panel"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Panely"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Žádná uložená relace"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Nabídka"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Přejmenovat"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Otevřít v novém okně"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Otevřít v aktuálním okně"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Přidat do aktuálního okna"
     },
     "replaceCurrentSessionLabel": {
         "message": "Replace with current session"
@@ -132,7 +132,7 @@
         "message": "Settings"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Relace"
     },
     "informationLabel": {
         "message": "Information"
