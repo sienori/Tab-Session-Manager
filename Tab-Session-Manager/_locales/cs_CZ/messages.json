@@ -6,22 +6,22 @@
         "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Podpořit přes PayPal"
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Uložit"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Uložit aktuální relaci"
     },
     "inputSessionNameLabel": {
         "message": "Input session name"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Uložit pouze aktuální okno"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Filtr kategorií"
     },
     "sortLabel": {
         "message": "Sort"
