@@ -258,16 +258,16 @@
         "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
     },
     "truncateTitleLabel": {
-        "message": "Display session name within one line"
+        "message": "以单行显示会话名称"
     },
     "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+        "message": "如果会话名称长于一行，则不现实溢出的部分。"
     },
     "toolBarPopupLabel": {
-        "message": "Toolbar popup"
+        "message": "工具栏窗口"
     },
     "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
+        "message": "设置工具栏窗口样式。"
     },
     "widthLabel": {
         "message": "宽度"
