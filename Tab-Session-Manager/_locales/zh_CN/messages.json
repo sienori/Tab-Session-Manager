@@ -108,7 +108,7 @@
         "message": "使用当前会话替换此会话"
     },
     "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
+        "message": "使用当前窗口替换此会话"
     },
     "makeCopySessionLabel": {
         "message": "复制此会话"
@@ -117,10 +117,10 @@
         "message": "错误"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "你的浏览器不支持 Indexed DB"
     },
     "howToSolveLabel": {
-        "message": "How to solve this problem"
+        "message": "解决方案"
     },
     "winCloseSessionName": {
         "message": "自动保存 - 浏览器关闭时"
@@ -141,7 +141,7 @@
         "message": "General"
     },
     "autoSaveLabel": {
-        "message": "Auto save"
+        "message": "自动保存"
     },
     "startUpLabel": {
         "message": "Startup"
@@ -162,10 +162,10 @@
         "message": "还原会话后，选中相应标签页才会开始加载网页。 <br> 如果未勾选, 那么在还原会话时，内存的使用量将会大大增加。"
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
+        "message": "恢复窗口位置"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
+        "message": "在恢复会话同时恢复窗口的位置与大小"
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "在启动时恢复上次的会话"
