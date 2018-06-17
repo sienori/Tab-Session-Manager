@@ -138,16 +138,16 @@
         "message": "信息"
     },
     "generalLabel": {
-        "message": "General"
+        "message": "一般设置"
     },
     "autoSaveLabel": {
         "message": "自动保存"
     },
     "startUpLabel": {
-        "message": "Startup"
+        "message": "启动"
     },
     "styleLabel": {
-        "message": "Style"
+        "message": "样式"
     },
     "ifOpenNewWindowLabel": {
         "message": "在新窗口中打开会话"
@@ -204,28 +204,28 @@
         "message": "（以此种方式）自动保存的会话的最大数量。"
     },
     "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
+        "message": "使用页面标题作为自动保存会话的名称"
     },
     "useTabTitleforAutoSaveCaptionLabel": {
         "message": "When saving a session automatically, use the title of the opened page as the name of the session."
     },
     "backupLabel": {
-        "message": "Backup"
+        "message": "备份"
     },
     "ifBackupLabel": {
-        "message": "Save backup"
+        "message": "保存备份"
     },
     "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+        "message": "当 Firefox 启动时，在 下载 中保存所有会话的备份。"
     },
     "backupFolderLabel": {
-        "message": "Save location"
+        "message": "保存位置"
     },
     "backupFolderCaptionLabel": {
         "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
     },
     "downloadFolderLabel": {
-        "message": "Download folder"
+        "message": "下载文件夹"
     },
     "backupFilesLimitLabel": {
         "message": "Maximum number of saved backups"
@@ -270,19 +270,19 @@
         "message": "Specify the style of the toolbar popup."
     },
     "widthLabel": {
-        "message": "Width"
+        "message": "宽度"
     },
     "heightLabel": {
-        "message": "Height"
+        "message": "高度"
     },
     "otherLabel": {
-        "message": "Other"
+        "message": "其它"
     },
     "resetSettingsLabel": {
-        "message": "Reset settings"
+        "message": "恢复默认设置"
     },
     "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
+        "message": "恢复所有设置为默认值"
     },
     "resetSettingsButtonLabel": {
         "message": "Reset"
@@ -303,16 +303,16 @@
         "message": "清除"
     },
     "urlImportLabel": {
-        "message": "Import URL list"
+        "message": "导入 URL 列表"
     },
     "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+        "message": "手动输入 URL 并保存为会话。<br>格式: &lt;URL&gt; &lt;标题 (可选)&gt;"
     },
     "exportLabel": {
         "message": "导出会话"
     },
     "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
+        "message": "将会话保存到本地。"
     },
     "exportButtonLabel": {
         "message": "导出"
@@ -321,7 +321,7 @@
         "message": "删除会话"
     },
     "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
+        "message": "删除所有会话。"
     },
     "removeSessionsButtonLabel": {
         "message": "删除"
