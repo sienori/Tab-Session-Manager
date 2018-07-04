@@ -6,40 +6,40 @@
         "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
     },
     "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
+        "message": "Podpořit přes PayPal"
     },
     "saveLabel": {
-        "message": "Save"
+        "message": "Uložit"
     },
     "initialNameValue": {
-        "message": "Save current session"
+        "message": "Uložit aktuální relaci"
     },
     "inputSessionNameLabel": {
         "message": "Input session name"
     },
     "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
+        "message": "Uložit pouze aktuální okno"
     },
     "categoryFilterLabel": {
-        "message": "Category filter"
+        "message": "Filtr kategorií"
     },
     "sortLabel": {
-        "message": "Sort"
+        "message": "Seřadit"
     },
     "displayAllLabel": {
-        "message": "All"
+        "message": "Všechny"
     },
     "displayUserLabel": {
-        "message": "User Saved"
+        "message": "Uložené uživatelem"
     },
     "displayAutoLabel": {
-        "message": "Auto Saved"
+        "message": "Automaticky uloženo"
     },
     "newestLabel": {
-        "message": "Newest"
+        "message": "Nejnovější"
     },
     "oldestLabel": {
-        "message": "Oldest"
+        "message": "Nejstarší"
     },
     "aToZLabel": {
         "message": "A-Z"
@@ -48,61 +48,61 @@
         "message": "Z-A"
     },
     "open": {
-        "message": "Open"
+        "message": "Otevřít"
     },
     "remove": {
-        "message": "Delete"
+        "message": "Odstranit"
     },
     "removeConfirmLabel": {
-        "message": "Delete this session?"
+        "message": "Odstranit tuto relaci?"
     },
     "sessionDeletedLabel": {
-        "message": "This session has been deleted."
+        "message": "Relace smazána."
     },
     "restoreSessionLabel": {
-        "message": "Restore"
+        "message": "Obnovit"
     },
     "cancelLabel": {
-        "message": "Cancel"
+        "message": "Zrušit"
     },
     "addTagLabel": {
-        "message": "Add tag"
+        "message": "Přidat štítek"
     },
     "removeTagLabel": {
-        "message": "Remove tag"
+        "message": "Odstranit štítek"
     },
     "detailLabel": {
         "message": "Detail"
     },
     "windowLabel": {
-        "message": "Window"
+        "message": "Okno"
     },
     "windowsLabel": {
-        "message": "Windows"
+        "message": "Okna"
     },
     "tabLabel": {
-        "message": "Tab"
+        "message": "Panel"
     },
     "tabsLabel": {
-        "message": "Tabs"
+        "message": "Panely"
     },
     "noSessionLabel": {
-        "message": "There is no session"
+        "message": "Žádná uložená relace"
     },
     "menuLabel": {
-        "message": "Menu"
+        "message": "Nabídka"
     },
     "renameLabel": {
-        "message": "Rename"
+        "message": "Přejmenovat"
     },
     "openInNewWindowLabel": {
-        "message": "Open in new window"
+        "message": "Otevřít v novém okně"
     },
     "openInCurrentWindowLabel": {
-        "message": "Open in current window"
+        "message": "Otevřít v aktuálním okně"
     },
     "addToCurrentWindowLabel": {
-        "message": "Add to current window"
+        "message": "Přidat do aktuálního okna"
     },
     "replaceCurrentSessionLabel": {
         "message": "Replace with current session"
@@ -114,10 +114,10 @@
         "message": "Make a copy of the session"
     },
     "errorLabel": {
-        "message": "Error"
+        "message": "Chyba"
     },
     "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
+        "message": "IndexedDB není k dispozici."
     },
     "howToSolveLabel": {
         "message": "How to solve this problem"
@@ -129,13 +129,13 @@
         "message": "Auto Saved - Regularly"
     },
     "settingsLabel": {
-        "message": "Settings"
+        "message": "Nastavení"
     },
     "sessionsLabel": {
-        "message": "Sessions"
+        "message": "Relace"
     },
     "informationLabel": {
-        "message": "Information"
+        "message": "Informace"
     },
     "generalLabel": {
         "message": "General"
@@ -156,7 +156,7 @@
         "message": "If unchecked, the session overwrites the current window."
     },
     "ifLazyLoadingLabel": {
-        "message": "Tab lazy loading"
+        "message": "Líné načítání panelů"
     },
     "ifLazyLoadingCaptionLabel": {
         "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
@@ -174,13 +174,13 @@
         "message": "When Firefox starts up, restore the session that was closed the last time."
     },
     "ifAutoSaveLabel": {
-        "message": "Save the session regularly"
+        "message": "Ukládat relaci pravidelně"
     },
     "ifAutoSaveCaptionLabel": {
-        "message": "Save the session every X minutes."
+        "message": "Ukládat relaci každých X minut."
     },
     "autoSaveIntervalLabel": {
-        "message": "Interval (minutes)"
+        "message": "Interval (minuty)"
     },
     "autoSaveIntervalCaptionLabel": {
         "message": "Minimum value 0.1"
