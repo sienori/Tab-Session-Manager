@@ -108,7 +108,7 @@
         "message": "Заменить текущей сессией"
     },
     "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
+        "message": "Заменить текущим окном"
     },
     "makeCopySessionLabel": {
         "message": "Создать копию сессии"
@@ -123,7 +123,7 @@
         "message": "Как решить эту проблему"
     },
     "winCloseSessionName": {
-        "message": "Auto Saved - окно было закрыто"
+        "message": "Автосохранение - окно было закрыто"
     },
     "regularSaveSessionName": {
         "message": "Автосохранение - периодическое"
@@ -162,10 +162,10 @@
         "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет активирована вручную.<br>При отключении возрастёт расход памяти после восстановления сессии."
     },
     "isRestoreWindowPositionLabel": {
-        "message": "Восстановить расположение окна"
+        "message": "Восстановить расположение окон"
     },
     "isRestoreWindowPositionCaptionLabel": {
-        "message": "Восстановить размер и положение окна при открытии сессии."
+        "message": "Восстановить размеры и расположение окон при открытии сессии."
     },
     "ifOpenLastSessionWhenStartUpLabel": {
         "message": "Восстанавливать предыдущую сессию при запуске"
@@ -195,7 +195,7 @@
         "message": "Сохранять сессию при закрытии окна"
     },
     "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Сохранять сеанс при закрытии отдельного окна либо при выходе из Firefox"
+        "message": "Сохранять сессию при закрытии отдельного окна либо при выходе из Firefox."
     },
     "autoSaveWhenCloseLimitLabel": {
         "message": "Максимальное число сохранений"
