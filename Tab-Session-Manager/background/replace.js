@@ -48,12 +48,12 @@ function returnReplaceURL(state, title, url, favIconUrl) {
   return retUrl;
 }
 
-async function replacePage() {
+async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) {
   if (IsOpeningSession) return;
 
   const info = await browser.tabs.query({
     active: true,
-    currentWindow: true
+    windowId: windowId
   });
   if (info[0] == undefined) return;
 

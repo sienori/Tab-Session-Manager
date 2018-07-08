@@ -16,8 +16,10 @@ async function init() {
   IsInit = true;
   await updateOldSessions();
 
-  browser.tabs.onActivated.addListener(replacePage);
-  browser.windows.onFocusChanged.addListener(replacePage);
+  const handleReplace = () => replacePage();
+
+  browser.tabs.onActivated.addListener(handleReplace);
+  browser.windows.onFocusChanged.addListener(handleReplace);
 
   const gettingInfo = await browser.runtime.getBrowserInfo();
   BrowserVersion = gettingInfo.version.split(".")[0];

@@ -134,7 +134,7 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
     }
     if (tabNumber == sortedTabs.length) {
       IsOpeningSession = false;
-      replacePage();
+      replacePage(currentWindow.id);
     }
   }
 }
