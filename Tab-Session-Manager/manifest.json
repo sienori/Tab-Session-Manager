@@ -12,13 +12,7 @@
     }
   },
 
-  "permissions": [
-    "storage",
-    "unlimitedStorage",
-    "tabs",
-    "cookies",
-    "downloads"
-  ],
+  "permissions": ["storage", "unlimitedStorage", "tabs", "cookies", "downloads"],
 
   "options_ui": {
     "page": "options/options.html",
