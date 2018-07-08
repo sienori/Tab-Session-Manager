@@ -15,12 +15,14 @@
             <li>
                 <div class=titleContainer>
                     <img src="../icons/icon.svg" class=logo>
-                    <span class=logotitle>Tab<br>Session<br>Manager</span>
+                    <span class=logotitle>Tab
+                        <br>Session
+                        <br>Manager</span>
                 </div>
             </li>
             <li>
                 <a href="#settings">
-                <span class="settingsLabel selected sidebarItem">設定</span>
+                    <span class="settingsLabel selected sidebarItem">設定</span>
                 </a>
             </li>
             <li>
@@ -30,7 +32,7 @@
             </li>
             <li>
                 <a href="#information">
-                <span class="informationLabel sidebarItem">情報</span>
+                    <span class="informationLabel sidebarItem">情報</span>
                 </a>
             </li>
         </ul>
@@ -55,9 +57,9 @@
                             </div>
                             <div class="optionForm">
                                 <label>
-                                        <input type="checkbox" id="ifOpenNewWindow" class=saveByChange checked=true>
-                                        <span class=checkbox></span>
-                                    </label>
+                                    <input type="checkbox" id="ifOpenNewWindow" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
                             </div>
                         </li>
 
@@ -70,9 +72,9 @@
                             </div>
                             <div class="optionForm">
                                 <label>
-                                        <input type="checkbox" id="ifLazyLoading" class=saveByChange checked=true>
-                                        <span class=checkbox></span>
-                                    </label>
+                                    <input type="checkbox" id="ifLazyLoading" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
                             </div>
                         </li>
 
@@ -85,9 +87,9 @@
                             </div>
                             <div class=optionForm>
                                 <label>
-                                        <input type="checkbox" id="ifSavePrivateWindow" class=saveByChange>
-                                        <span class=checkbox></span>
-                                    </label>
+                                    <input type="checkbox" id="ifSavePrivateWindow" class=saveByChange>
+                                    <span class=checkbox></span>
+                                </label>
                             </div>
                         </li>
 
@@ -111,13 +113,14 @@
                         <li class=optionContainer>
                             <div class=optionText>
                                 <p class=ifSupportTstLabel>ツリー型タブに対応</p>
-                                <p class="caption ifSupportTstCaptionLabel">ツリー型タブのツリーの状態を復元します。<br>fireFox57未満ではオフにしてください。</p>
+                                <p class="caption ifSupportTstCaptionLabel">ツリー型タブのツリーの状態を復元します。
+                                    <br>fireFox57未満ではオフにしてください。</p>
                             </div>
                             <div class=optionForm>
                                 <label>
-                                        <input type="checkbox" id="ifSupportTst" class=saveByChange>
-                                        <span class=checkbox></span>
-                                    </label>
+                                    <input type="checkbox" id="ifSupportTst" class=saveByChange>
+                                    <span class=checkbox></span>
+                                </label>
                             </div>
                         </li>
 
@@ -153,9 +156,9 @@
                             </div>
                             <div class=optionForm>
                                 <label>
-                                        <input type="checkbox" id="ifAutoSave" class=saveByChange checked=true>
-                                        <span class=checkbox></span>
-                                    </label>
+                                    <input type="checkbox" id="ifAutoSave" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
                             </div>
                         </li>
 
@@ -189,9 +192,9 @@
                             </div>
                             <div class=optionForm>
                                 <label>
-                                        <input type="checkbox" id="ifAutoSaveWhenClose" class=saveByChange checked=true>
-                                        <span class=checkbox></span>
-                                    </label>
+                                    <input type="checkbox" id="ifAutoSaveWhenClose" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
                             </div>
                         </li>
 
@@ -216,9 +219,9 @@
                             </div>
                             <div class=optionForm>
                                 <label>
-                                        <input type="checkbox" id="useTabTitleforAutoSave" class=saveByChange checked=true>
-                                        <span class=checkbox></span>
-                                    </label>
+                                    <input type="checkbox" id="useTabTitleforAutoSave" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
                             </div>
                         </li>
 
@@ -398,12 +401,13 @@
                     <div class=optionContainer>
                         <div class=optionText>
                             <p class=importLabel>セッションをインポート</p>
-                            <p class="caption importCaptionLabel">コンピュータに保存されたセッションを読み込んで現在のセッションに追加します。<br>SessionManagerのセッションファイル(.session)にも対応しています。</p>
+                            <p class="caption importCaptionLabel">コンピュータに保存されたセッションを読み込んで現在のセッションに追加します。
+                                <br>SessionManagerのセッションファイル(.session)にも対応しています。</p>
                         </div>
                         <div class=optionForm>
                             <label class="button includeSpan" for=import>
-                            <span class=importButtonLabel>参照...</span>
-                            <input id=import type="file" accept=".json, .session" multiple onchange="importSessions(event)" hidden>
+                                <span class=importButtonLabel>参照...</span>
+                                <input id=import type="file" accept=".json, .session" multiple onchange="importSessions(event)" hidden>
                             </label>
                         </div>
                     </div>
@@ -429,7 +433,8 @@
                     <div class=optionText>
                         <p class=urlImportLabel>URLリストをインポート</p>
                         <p class="caption urlImportCaptionLabel">
-                            URLのリストからセッションを作成し，セッションリストに追加します。<br>フォーマット: &lt;URL&gt; &lt;ページタイトル (任意)&gt;
+                            URLのリストからセッションを作成し，セッションリストに追加します。
+                            <br>フォーマット: &lt;URL&gt; &lt;ページタイトル (任意)&gt;
                         </p>
                         <textarea id=urlImportList class=noSetting spellcheck=false placeholder="https://www.google.com/ Google                                                                                              https://github.com/"></textarea>
                     </div>
@@ -477,7 +482,9 @@
                     <div class="optionContainer addonVersion">
                         <div class=optionText>
                             <p>Tab Session Manager</p>
-                            <p class="caption"><a class=pageLink href="https://github.com/sienori/Tab-Session-Manager/releases" target="_blank">Version</a></p>
+                            <p class="caption">
+                                <a class=pageLink href="https://github.com/sienori/Tab-Session-Manager/releases" target="_blank">Version</a>
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -496,7 +503,9 @@
                     <div class=optionContainer>
                         <div class="optionText">
                             <p class=donationLabel>ご寄付のお願い</p>
-                            <p class="caption donationCaptionLabel">Tab Session Managerをご利用いただきありがとうございます。<br>アドオンの開発を続けていく上で，皆様のご支援が大きな励みになります。<br>もしあなたがTab Session Managerを気に入ってくれたなら，ご寄付をご検討いただけると幸いです。
+                            <p class="caption donationCaptionLabel">Tab Session Managerをご利用いただきありがとうございます。
+                                <br>アドオンの開発を続けていく上で，皆様のご支援が大きな励みになります。
+                                <br>もしあなたがTab Session Managerを気に入ってくれたなら，ご寄付をご検討いただけると幸いです。
                             </p>
                         </div>
                     </div>
@@ -505,7 +514,10 @@
                 <li>
                     <div class=optionContainer>
                         <div class=optionText>
-                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager - Donation" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate"></a>
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager - Donation"
+                                target="_blank">
+                                <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate">
+                            </a>
                         </div>
                     </div>
                 </li>

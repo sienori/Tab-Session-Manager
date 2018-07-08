@@ -1,48 +1,49 @@
 :root {
-    --main-text: #0c0c0d;
-    --sub-text: #737373;
-    --line: #ededf0;
-    --button: #d7d7db;
-    --highlight: #36b2b2;
-    --main-bg: #ffffff;
+  --main-text: #0c0c0d;
+  --sub-text: #737373;
+  --line: #ededf0;
+  --button: #d7d7db;
+  --highlight: #36b2b2;
+  --main-bg: #ffffff;
 }
 
 body {
-    font-family: 'Segoe UI', 'San Francisco', 'Ubuntu', 'Fira Sans', 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--main-text);
-    background-color: var(--main-bg);
-    line-height: 1.5;
-    display: flex;
-    flex-direction: row;
+  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto",
+    "Arial", "Helvetica", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--main-text);
+  background-color: var(--main-bg);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: row;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .title {
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--sub-text);
-    line-height: 2;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--sub-text);
+  line-height: 2;
 }
 
 .caption {
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--sub-text);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--sub-text);
 }
 
 hr {
-    width: 100%;
-    background-color: var(--line);
-    height: 1px;
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  width: 100%;
+  background-color: var(--line);
+  height: 1px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
