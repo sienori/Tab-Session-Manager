@@ -249,7 +249,7 @@
     "message": "Stöder Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Återställ trädläget för Tree Style Tab.<br>När det här alternativet är aktiverat tar det tid att återställa sessionen."
   },
   "tstDelayLabel": {
     "message": "Fördröj trädåterställningen (millisekunder)"
