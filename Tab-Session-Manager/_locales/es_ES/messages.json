@@ -1,365 +1,365 @@
 {
-    "extName": {
-        "message": "Tab Session Manager"
-    },
-    "extDescription": {
-        "message": "Guardar y restaurar el estado de las ventanas y pestañas. También permite guardado automático."
-    },
-    "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
-    },
-    "saveLabel": {
-        "message": "Guardar"
-    },
-    "initialNameValue": {
-        "message": "Guardar sesión actual"
-    },
-    "inputSessionNameLabel": {
-        "message": "Input session name"
-    },
-    "saveOnlyCurrentWindowLabel": {
-        "message": "Guardad sólo la ventana actual"
-    },
-    "categoryFilterLabel": {
-        "message": "Category filter"
-    },
-    "sortLabel": {
-        "message": "Sort"
-    },
-    "displayAllLabel": {
-        "message": "Todo"
-    },
-    "displayUserLabel": {
-        "message": "Usuario guardado"
-    },
-    "displayAutoLabel": {
-        "message": "Auto guardado"
-    },
-    "newestLabel": {
-        "message": "Más reciente"
-    },
-    "oldestLabel": {
-        "message": "Más antiguo"
-    },
-    "aToZLabel": {
-        "message": "A-Z"
-    },
-    "zToALabel": {
-        "message": "Z-A"
-    },
-    "open": {
-        "message": "Abrir"
-    },
-    "remove": {
-        "message": "Eliminar"
-    },
-    "removeConfirmLabel": {
-        "message": "¿Eliminar esta sesión?"
-    },
-    "sessionDeletedLabel": {
-        "message": "This session has been deleted."
-    },
-    "restoreSessionLabel": {
-        "message": "Restore"
-    },
-    "cancelLabel": {
-        "message": "Cancelar"
-    },
-    "addTagLabel": {
-        "message": "Añadir etiqueta"
-    },
-    "removeTagLabel": {
-        "message": "Quitar etiqueta"
-    },
-    "detailLabel": {
-        "message": "Detail"
-    },
-    "windowLabel": {
-        "message": "Ventana"
-    },
-    "windowsLabel": {
-        "message": "Ventanas"
-    },
-    "tabLabel": {
-        "message": "Pestaña"
-    },
-    "tabsLabel": {
-        "message": "Pestañas"
-    },
-    "noSessionLabel": {
-        "message": "No hay ninguna sesión"
-    },
-    "menuLabel": {
-        "message": "Menu"
-    },
-    "renameLabel": {
-        "message": "Renombrar"
-    },
-    "openInNewWindowLabel": {
-        "message": "Abrir en una ventana nueva"
-    },
-    "openInCurrentWindowLabel": {
-        "message": "Abrir en ventana actual"
-    },
-    "addToCurrentWindowLabel": {
-        "message": "Agregar a ventana actual"
-    },
-    "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
-    },
-    "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
-    },
-    "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
-    },
-    "errorLabel": {
-        "message": "Error"
-    },
-    "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
-    },
-    "howToSolveLabel": {
-        "message": "How to solve this problem"
-    },
-    "winCloseSessionName": {
-        "message": "Auto guardado - La ventana se cerró"
-    },
-    "regularSaveSessionName": {
-        "message": "Auto guardado - Regularmente"
-    },
-    "settingsLabel": {
-        "message": "Ajustes"
-    },
-    "sessionsLabel": {
-        "message": "Sesiones"
-    },
-    "informationLabel": {
-        "message": "Información"
-    },
-    "generalLabel": {
-        "message": "General"
-    },
-    "autoSaveLabel": {
-        "message": "Guardar automáticamente"
-    },
-    "startUpLabel": {
-        "message": "Inicio"
-    },
-    "styleLabel": {
-        "message": "Estilo"
-    },
-    "ifOpenNewWindowLabel": {
-        "message": "Abrir sesión en una nueva ventana"
-    },
-    "ifOpenNewWindowCaptionLabel": {
-        "message": "Si está desmarcada, la sesión sobrescribe la ventana actual."
-    },
-    "ifLazyLoadingLabel": {
-        "message": "Carga lenta de pestaña"
-    },
-    "ifLazyLoadingCaptionLabel": {
-        "message": "Al abrir una sesión, el contenido de cada página no se carga hasta que seleccione la pestaña. <br>Si está desmarcada, el uso de memoria aumenta cuando se restablece la sesión."
-    },
-    "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
-    },
-    "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
-    },
-    "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restaurar la sesión anterior al iniciar"
-    },
-    "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "Cuando Firefox se inicie, restaurar la útima sesión cerrada."
-    },
-    "ifAutoSaveLabel": {
-        "message": "Guardar la sesión regularmente"
-    },
-    "ifAutoSaveCaptionLabel": {
-        "message": "Guardar la sesión cada X minutos."
-    },
-    "autoSaveIntervalLabel": {
-        "message": "Intervalo en minutos"
-    },
-    "autoSaveIntervalCaptionLabel": {
-        "message": "Valor mínimo 0.1"
-    },
-    "autoSaveLimitLabel": {
-        "message": "Guardado número máximo"
-    },
-    "autoSaveLimitCaptionLabel": {
-        "message": "Número máximo de sesiones guardadas de esta forma."
-    },
-    "ifAutoSaveWhenCloseLabel": {
-        "message": "Guardar la sesión cuando se cierre la ventana"
-    },
-    "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Guardar la sesión cuando cierre la ventana o al salir de Firefox."
-    },
-    "autoSaveWhenCloseLimitLabel": {
-        "message": "Guardado número máximo"
-    },
-    "autoSaveWhenCloseCaptionLabel": {
-        "message": "Número máximo de sesiones guardadas de esta forma."
-    },
-    "useTabTitleforAutoSaveLabel": {
-        "message": "Usar el título de la página como nombre para la sesión guardada automáticamente"
-    },
-    "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "Al guardar la seión automáticamente, usar el título de la página abierta como nombre de la sesión."
-    },
-    "backupLabel": {
-        "message": "Backup"
-    },
-    "ifBackupLabel": {
-        "message": "Save backup"
-    },
-    "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
-    },
-    "backupFolderLabel": {
-        "message": "Save location"
-    },
-    "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
-    },
-    "downloadFolderLabel": {
-        "message": "Download folder"
-    },
-    "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
-    },
-    "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
-    },
-    "dateFormatLabel": {
-        "message": "Formato de fecha"
-    },
-    "dateFormatCaptionLabel": {
-        "message": "Ex YYYY.MM.DD HH:mm:ss"
-    },
-    "ifSavePrivateWindowLabel": {
-        "message": "Guardar ventana privada"
-    },
-    "ifSavePrivateWindowCaptionLabel": {
-        "message": "Si no está marcada, ignorar la ventana privada al guardar la sesión."
-    },
-    "ifSupportTstLabel": {
-        "message": "Soportar pestañas estilo árbol"
-    },
-    "ifSupportTstCaptionLabel": {
-        "message": "Restaurar el estado de pestañas estilo árbol <br>Desactivar si la versión de FireFox es menor a 57."
-    },
-    "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
-    },
-    "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
-    },
-    "truncateTitleLabel": {
-        "message": "Mostrar el nombre de la sesión en una línea"
-    },
-    "truncateTitleCaptionLabel": {
-        "message": "Si el nombre de la sesión en la lista de sesiones se extiende a más de una línea, se trunca en una línea y se muestra."
-    },
-    "toolBarPopupLabel": {
-        "message": "Ventana emergente de la barra de herramientas"
-    },
-    "toolBarPopupCaptionLabel": {
-        "message": "Especifique el estilo de la ventana emergente de la barra de herramientas."
-    },
-    "widthLabel": {
-        "message": "Ancho"
-    },
-    "heightLabel": {
-        "message": "Alto"
-    },
-    "otherLabel": {
-        "message": "Other"
-    },
-    "resetSettingsLabel": {
-        "message": "Reset settings"
-    },
-    "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
-    },
-    "resetSettingsButtonLabel": {
-        "message": "Reset"
-    },
-    "importLabel": {
-        "message": "Importar sesiones"
-    },
-    "importCaptionLabel": {
-        "message": "Cargar sesiones guardadas en el equipo y añadir a la lista de sesión. <br>También es compatible con los archivos de sesión de Session Manager (.session)."
-    },
-    "importButtonLabel": {
-        "message": "Examinar..."
-    },
-    "importSaveButtonLabel": {
-        "message": "Importar"
-    },
-    "importClearButtonLabel": {
-        "message": "Limpiar"
-    },
-    "urlImportLabel": {
-        "message": "Import URL list"
-    },
-    "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
-    },
-    "exportLabel": {
-        "message": "Exportar sesiones"
-    },
-    "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
-    },
-    "exportButtonLabel": {
-        "message": "Exportar"
-    },
-    "removeSessionsLabel": {
-        "message": "Eliminar sesiones"
-    },
-    "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
-    },
-    "removeSessionsButtonLabel": {
-        "message": "Eliminar"
-    },
-    "LicenseLabel": {
-        "message": "Licencia"
-    },
-    "donationLabel": {
-        "message": "Haga una donación"
-    },
-    "donationCaptionLabel": {
-        "message": "Gracias por usar Tab Session Manager. <br>Su apoyo será un gran estímulo al continuar el desarrollo del complemento. <br>Si le gusta Tab Session Manager, me alegraría si pudiera considerar una donación."
-    },
-    "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
-    },
-    "addonPageLabel": {
-        "message": "página de complemento"
-    },
-    "importMessage": {
-        "message": "Sesiones importadas."
-    },
-    "readFailedMessage": {
-        "message": "No se pudo leer"
-    },
-    "warningRemoveAllMessage": {
-        "message": "Eliminar todas las sesiones. ¿Seguro?"
-    },
-    "sessionLabel": {
-        "message": "Sesión"
-    },
-    "amazonUrl": {
-        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
-    },
-    "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
-    },
-    "replacedPageMessage": {
-        "message": "Esta página no puede ser abierta por Tab Session Manager."
-    }
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "Guardar y restaurar el estado de las ventanas y pestañas. También permite guardado automático."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Donate with PayPal"
+  },
+  "saveLabel": {
+    "message": "Guardar"
+  },
+  "initialNameValue": {
+    "message": "Guardar sesión actual"
+  },
+  "inputSessionNameLabel": {
+    "message": "Input session name"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "Guardad sólo la ventana actual"
+  },
+  "categoryFilterLabel": {
+    "message": "Category filter"
+  },
+  "sortLabel": {
+    "message": "Sort"
+  },
+  "displayAllLabel": {
+    "message": "Todo"
+  },
+  "displayUserLabel": {
+    "message": "Usuario guardado"
+  },
+  "displayAutoLabel": {
+    "message": "Auto guardado"
+  },
+  "newestLabel": {
+    "message": "Más reciente"
+  },
+  "oldestLabel": {
+    "message": "Más antiguo"
+  },
+  "aToZLabel": {
+    "message": "A-Z"
+  },
+  "zToALabel": {
+    "message": "Z-A"
+  },
+  "open": {
+    "message": "Abrir"
+  },
+  "remove": {
+    "message": "Eliminar"
+  },
+  "removeConfirmLabel": {
+    "message": "¿Eliminar esta sesión?"
+  },
+  "sessionDeletedLabel": {
+    "message": "This session has been deleted."
+  },
+  "restoreSessionLabel": {
+    "message": "Restore"
+  },
+  "cancelLabel": {
+    "message": "Cancelar"
+  },
+  "addTagLabel": {
+    "message": "Añadir etiqueta"
+  },
+  "removeTagLabel": {
+    "message": "Quitar etiqueta"
+  },
+  "detailLabel": {
+    "message": "Detail"
+  },
+  "windowLabel": {
+    "message": "Ventana"
+  },
+  "windowsLabel": {
+    "message": "Ventanas"
+  },
+  "tabLabel": {
+    "message": "Pestaña"
+  },
+  "tabsLabel": {
+    "message": "Pestañas"
+  },
+  "noSessionLabel": {
+    "message": "No hay ninguna sesión"
+  },
+  "menuLabel": {
+    "message": "Menu"
+  },
+  "renameLabel": {
+    "message": "Renombrar"
+  },
+  "openInNewWindowLabel": {
+    "message": "Abrir en una ventana nueva"
+  },
+  "openInCurrentWindowLabel": {
+    "message": "Abrir en ventana actual"
+  },
+  "addToCurrentWindowLabel": {
+    "message": "Agregar a ventana actual"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "Replace with current session"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "Replace with current window"
+  },
+  "makeCopySessionLabel": {
+    "message": "Make a copy of the session"
+  },
+  "errorLabel": {
+    "message": "Error"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB is not available in your browser."
+  },
+  "howToSolveLabel": {
+    "message": "How to solve this problem"
+  },
+  "winCloseSessionName": {
+    "message": "Auto guardado - La ventana se cerró"
+  },
+  "regularSaveSessionName": {
+    "message": "Auto guardado - Regularmente"
+  },
+  "settingsLabel": {
+    "message": "Ajustes"
+  },
+  "sessionsLabel": {
+    "message": "Sesiones"
+  },
+  "informationLabel": {
+    "message": "Información"
+  },
+  "generalLabel": {
+    "message": "General"
+  },
+  "autoSaveLabel": {
+    "message": "Guardar automáticamente"
+  },
+  "startUpLabel": {
+    "message": "Inicio"
+  },
+  "styleLabel": {
+    "message": "Estilo"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "Abrir sesión en una nueva ventana"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "Si está desmarcada, la sesión sobrescribe la ventana actual."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "Carga lenta de pestaña"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "Al abrir una sesión, el contenido de cada página no se carga hasta que seleccione la pestaña. <br>Si está desmarcada, el uso de memoria aumenta cuando se restablece la sesión."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Restore windows position"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Restore windows position and size when opening session."
+  },
+  "ifOpenLastSessionWhenStartUpLabel": {
+    "message": "Restaurar la sesión anterior al iniciar"
+  },
+  "ifOpenLastSessionWhenStartUpCaptionLabel": {
+    "message": "Cuando Firefox se inicie, restaurar la útima sesión cerrada."
+  },
+  "ifAutoSaveLabel": {
+    "message": "Guardar la sesión regularmente"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "Guardar la sesión cada X minutos."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "Intervalo en minutos"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "Valor mínimo 0.1"
+  },
+  "autoSaveLimitLabel": {
+    "message": "Guardado número máximo"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "Número máximo de sesiones guardadas de esta forma."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "Guardar la sesión cuando se cierre la ventana"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "Guardar la sesión cuando cierre la ventana o al salir de Firefox."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "Guardado número máximo"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "Número máximo de sesiones guardadas de esta forma."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "Usar el título de la página como nombre para la sesión guardada automáticamente"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "Al guardar la seión automáticamente, usar el título de la página abierta como nombre de la sesión."
+  },
+  "backupLabel": {
+    "message": "Backup"
+  },
+  "ifBackupLabel": {
+    "message": "Save backup"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+  },
+  "backupFolderLabel": {
+    "message": "Save location"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+  },
+  "downloadFolderLabel": {
+    "message": "Download folder"
+  },
+  "backupFilesLimitLabel": {
+    "message": "Maximum number of saved backups"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+  },
+  "dateFormatLabel": {
+    "message": "Formato de fecha"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "Ex YYYY.MM.DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "Guardar ventana privada"
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "Si no está marcada, ignorar la ventana privada al guardar la sesión."
+  },
+  "ifSupportTstLabel": {
+    "message": "Soportar pestañas estilo árbol"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+  },
+  "tstDelayLabel": {
+    "message": "Delay when tree restoration (millisecond)"
+  },
+  "tstDelayCaptionLabel": {
+    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+  },
+  "truncateTitleLabel": {
+    "message": "Mostrar el nombre de la sesión en una línea"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "Si el nombre de la sesión en la lista de sesiones se extiende a más de una línea, se trunca en una línea y se muestra."
+  },
+  "toolBarPopupLabel": {
+    "message": "Ventana emergente de la barra de herramientas"
+  },
+  "toolBarPopupCaptionLabel": {
+    "message": "Especifique el estilo de la ventana emergente de la barra de herramientas."
+  },
+  "widthLabel": {
+    "message": "Ancho"
+  },
+  "heightLabel": {
+    "message": "Alto"
+  },
+  "otherLabel": {
+    "message": "Other"
+  },
+  "resetSettingsLabel": {
+    "message": "Reset settings"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "Restore all settings to default."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "Reset"
+  },
+  "importLabel": {
+    "message": "Importar sesiones"
+  },
+  "importCaptionLabel": {
+    "message": "Cargar sesiones guardadas en el equipo y añadir a la lista de sesión. <br>También es compatible con los archivos de sesión de Session Manager (.session)."
+  },
+  "importButtonLabel": {
+    "message": "Examinar..."
+  },
+  "importSaveButtonLabel": {
+    "message": "Importar"
+  },
+  "importClearButtonLabel": {
+    "message": "Limpiar"
+  },
+  "urlImportLabel": {
+    "message": "Import URL list"
+  },
+  "urlImportCaptionLabel": {
+    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+  },
+  "exportLabel": {
+    "message": "Exportar sesiones"
+  },
+  "exportCaptionLabel": {
+    "message": "Save all sessions to the computer."
+  },
+  "exportButtonLabel": {
+    "message": "Exportar"
+  },
+  "removeSessionsLabel": {
+    "message": "Eliminar sesiones"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "Delete all sessions."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "Eliminar"
+  },
+  "LicenseLabel": {
+    "message": "Licencia"
+  },
+  "donationLabel": {
+    "message": "Haga una donación"
+  },
+  "donationCaptionLabel": {
+    "message": "Gracias por usar Tab Session Manager. <br>Su apoyo será un gran estímulo al continuar el desarrollo del complemento. <br>Si le gusta Tab Session Manager, me alegraría si pudiera considerar una donación."
+  },
+  "amazonTitleLabel": {
+    "message": "amazon.co.jp eGift Cards"
+  },
+  "addonPageLabel": {
+    "message": "página de complemento"
+  },
+  "importMessage": {
+    "message": "Sesiones importadas."
+  },
+  "readFailedMessage": {
+    "message": "No se pudo leer"
+  },
+  "warningRemoveAllMessage": {
+    "message": "Eliminar todas las sesiones. ¿Seguro?"
+  },
+  "sessionLabel": {
+    "message": "Sesión"
+  },
+  "amazonUrl": {
+    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "Esta página no puede ser abierta por Tab Session Manager."
+  }
 }
