@@ -249,7 +249,7 @@
     "message": "ツリー型タブに対応"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "ツリー型タブのツリーの状態を復元します。<br>このオプションを有効にすると，セッションの復元に時間がかかります。"
   },
   "tstDelayLabel": {
     "message": "ツリー復元時のディレイ(ミリ秒)"
