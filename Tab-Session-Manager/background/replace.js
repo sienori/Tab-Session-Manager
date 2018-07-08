@@ -58,7 +58,7 @@ async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) {
   if (info[0] == undefined) return;
 
   if (info[0].status != "complete") {
-    setTimeout(replacePage, 500);
+    setTimeout(() => replacePage(windowId), 500);
     return;
   }
 

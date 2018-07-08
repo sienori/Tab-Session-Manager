@@ -126,13 +126,16 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   const firstTabId = currentWindow.tabs[0].id;
   let tabNumber = 0;
   for (let tab of sortedTabs) {
-    await openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow);
+    const openedTab = openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow);
+    if (S.get().ifSupportTst) await openedTab;
 
     tabNumber++;
     if (tabNumber == 1 && !isAddtoCurrentWindow) {
+      await openedTab;
       browser.tabs.remove(firstTabId);
     }
     if (tabNumber == sortedTabs.length) {
+      await openedTab;
       IsOpeningSession = false;
       replacePage(currentWindow.id);
     }
