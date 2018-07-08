@@ -1,365 +1,365 @@
 {
-    "extName": {
-        "message": "Tab Session Manager"
-    },
-    "extDescription": {
-        "message": "Sla de status van vensters en tabbladen op en herstel ze. Het ondersteunt ook automatisch opslaan."
-    },
-    "donateWithPaypalLabel": {
-        "message": "Doneren via PayPal"
-    },
-    "saveLabel": {
-        "message": "Opslaan"
-    },
-    "initialNameValue": {
-        "message": "Huidige sessie opslaan"
-    },
-    "inputSessionNameLabel": {
-        "message": "Input session name"
-    },
-    "saveOnlyCurrentWindowLabel": {
-        "message": "Enkel huidige venster opslaan"
-    },
-    "categoryFilterLabel": {
-        "message": "Category filter"
-    },
-    "sortLabel": {
-        "message": "Sort"
-    },
-    "displayAllLabel": {
-        "message": "Alle"
-    },
-    "displayUserLabel": {
-        "message": "Gebruiker opgeslagen"
-    },
-    "displayAutoLabel": {
-        "message": "Automatisch opgeslagen"
-    },
-    "newestLabel": {
-        "message": "Nieuwste"
-    },
-    "oldestLabel": {
-        "message": "Oudste"
-    },
-    "aToZLabel": {
-        "message": "A-Z"
-    },
-    "zToALabel": {
-        "message": "Z-A"
-    },
-    "open": {
-        "message": "Openen"
-    },
-    "remove": {
-        "message": "Verwijder"
-    },
-    "removeConfirmLabel": {
-        "message": "Deze sessie verwijderen?"
-    },
-    "sessionDeletedLabel": {
-        "message": "This session has been deleted."
-    },
-    "restoreSessionLabel": {
-        "message": "Restore"
-    },
-    "cancelLabel": {
-        "message": "Annuleren"
-    },
-    "addTagLabel": {
-        "message": "Voeg tag toe"
-    },
-    "removeTagLabel": {
-        "message": "Tag verwijderen"
-    },
-    "detailLabel": {
-        "message": "Detail"
-    },
-    "windowLabel": {
-        "message": "Venster"
-    },
-    "windowsLabel": {
-        "message": "Vensters"
-    },
-    "tabLabel": {
-        "message": "Tabblad"
-    },
-    "tabsLabel": {
-        "message": "Tabbladen"
-    },
-    "noSessionLabel": {
-        "message": "Er is geen sessie"
-    },
-    "menuLabel": {
-        "message": "Menu"
-    },
-    "renameLabel": {
-        "message": "Hernoemen"
-    },
-    "openInNewWindowLabel": {
-        "message": "In nieuw venster openen"
-    },
-    "openInCurrentWindowLabel": {
-        "message": "Open in bestaand venster"
-    },
-    "addToCurrentWindowLabel": {
-        "message": "Toevoegen aan huidige venster"
-    },
-    "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
-    },
-    "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
-    },
-    "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
-    },
-    "errorLabel": {
-        "message": "Error"
-    },
-    "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
-    },
-    "howToSolveLabel": {
-        "message": "How to solve this problem"
-    },
-    "winCloseSessionName": {
-        "message": "Automatisch opgeslagen - venster was gesloten"
-    },
-    "regularSaveSessionName": {
-        "message": "Automatisch opgeslagen - Regelmatig"
-    },
-    "settingsLabel": {
-        "message": "Instellingen"
-    },
-    "sessionsLabel": {
-        "message": "Sessies"
-    },
-    "informationLabel": {
-        "message": "Informatie"
-    },
-    "generalLabel": {
-        "message": "Algemeen"
-    },
-    "autoSaveLabel": {
-        "message": "Automatisch opslaan"
-    },
-    "startUpLabel": {
-        "message": "Starten"
-    },
-    "styleLabel": {
-        "message": "Stijl"
-    },
-    "ifOpenNewWindowLabel": {
-        "message": "Open sessie in een nieuw venster"
-    },
-    "ifOpenNewWindowCaptionLabel": {
-        "message": "Indien uitgevinkt, overschrijft de sessie het huidige venster."
-    },
-    "ifLazyLoadingLabel": {
-        "message": "Tab lui laden"
-    },
-    "ifLazyLoadingCaptionLabel": {
-        "message": "Bij het openen van een sessie wordt de inhoud van elke pagina niet geladen totdat u het tabblad selecteert. <br> Indien uitgevikt neemt het geheugengebruik sterk toe wanneer de sessie wordt hersteld."
-    },
-    "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
-    },
-    "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
-    },
-    "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Vorige sessie herstellen bij opstarten"
-    },
-    "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "Wanneer Firefox start, herstelt de sessie die actief was bij het afsluiten."
-    },
-    "ifAutoSaveLabel": {
-        "message": "Sla de sessie regelmatig op"
-    },
-    "ifAutoSaveCaptionLabel": {
-        "message": "Sla de sessie om de X minuten op."
-    },
-    "autoSaveIntervalLabel": {
-        "message": "Interval (minuten)"
-    },
-    "autoSaveIntervalCaptionLabel": {
-        "message": "Minimum-waarde 0.1"
-    },
-    "autoSaveLimitLabel": {
-        "message": "Maximale aantal opgeslagen"
-    },
-    "autoSaveLimitCaptionLabel": {
-        "message": "Maximumaantal opgeslagen sessies (op deze manier)."
-    },
-    "ifAutoSaveWhenCloseLabel": {
-        "message": "Sla de sessie op wanneer het venster werd gesloten"
-    },
-    "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Sla de sessie op bij het sluiten van het venster of bij het afsluiten van Firefox."
-    },
-    "autoSaveWhenCloseLimitLabel": {
-        "message": "Maximale aantal opgeslagen"
-    },
-    "autoSaveWhenCloseCaptionLabel": {
-        "message": "Maximumaantal opgeslagen sessies (op deze manier)."
-    },
-    "useTabTitleforAutoSaveLabel": {
-        "message": "Gebruik de paginatitel als sessienaam bij automatisch opslaan"
-    },
-    "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "Wanneer een sessie automatisch wordt opgeslagen, gebruik dan de titel van de geopende pagina als sessienaam."
-    },
-    "backupLabel": {
-        "message": "Backup"
-    },
-    "ifBackupLabel": {
-        "message": "Reservekopie opslaan"
-    },
-    "ifBackupCaptionLabel": {
-        "message": "Wanneer Firefox start, maak dan een reservekopie en sla deze op in de downloadmap."
-    },
-    "backupFolderLabel": {
-        "message": "Save location"
-    },
-    "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
-    },
-    "downloadFolderLabel": {
-        "message": "Download folder"
-    },
-    "backupFilesLimitLabel": {
-        "message": "Maximum aantal opgeslagen reservekopieën"
-    },
-    "backupFilesLimitCaptionLabel": {
-        "message": "Wanneer het aantal reservekopieën groter is dan deze waarde, worden oudere kopieën verwijderd in oplopende volgorde (oudste eerst)."
-    },
-    "dateFormatLabel": {
-        "message": "Datumformaat"
-    },
-    "dateFormatCaptionLabel": {
-        "message": "Voorbeeld: YYYY. MM. DD HH:mm:ss"
-    },
-    "ifSavePrivateWindowLabel": {
-        "message": "Privé venster opslaan"
-    },
-    "ifSavePrivateWindowCaptionLabel": {
-        "message": "Indien uitgevinkt wordt het privé venster genegeerd bij het opslaan van een sessie."
-    },
-    "ifSupportTstLabel": {
-        "message": "Ondersteunt Tree Style Tab"
-    },
-    "ifSupportTstCaptionLabel": {
-        "message": "Boomstatus herstellen van de Tree Style tabblad. <br> Schakel dit uit voor Firefox-versies ouder dan Firefox 57 (Quantum)."
-    },
-    "tstDelayLabel": {
-        "message": "Vertraging bij terugzetten van een boomstructuur (milliseconden)"
-    },
-    "tstDelayCaptionLabel": {
-        "message": "Om de staat van een boomstructuur te herstellen, is een wachttijd vereist voor het openen van de tab. Verhoog deze waarde indien de boomstructuur niet correct wordt teruggezet."
-    },
-    "truncateTitleLabel": {
-        "message": "Sessienaam binnen één lijn weergeven"
-    },
-    "truncateTitleCaptionLabel": {
-        "message": "Indien de sessienaam in de sessielijst slanger is dan één regel, wordt het ingekort weergegeven op één regel."
-    },
-    "toolBarPopupLabel": {
-        "message": "Werkbalk popup"
-    },
-    "toolBarPopupCaptionLabel": {
-        "message": "Geef de stijl op van de werkbalk popup."
-    },
-    "widthLabel": {
-        "message": "Breedte"
-    },
-    "heightLabel": {
-        "message": "Hoogte"
-    },
-    "otherLabel": {
-        "message": "Other"
-    },
-    "resetSettingsLabel": {
-        "message": "Reset settings"
-    },
-    "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
-    },
-    "resetSettingsButtonLabel": {
-        "message": "Reset"
-    },
-    "importLabel": {
-        "message": "Sessies importeren"
-    },
-    "importCaptionLabel": {
-        "message": "Laad sessies die op de computer zijn opgeslagen en voeg ze toe aan de sessielijst.<br>Het ondersteunt ook het sessiebestand van SessionManager (.session)."
-    },
-    "importButtonLabel": {
-        "message": "Bladeren..."
-    },
-    "importSaveButtonLabel": {
-        "message": "Importeer"
-    },
-    "importClearButtonLabel": {
-        "message": "Wissen"
-    },
-    "urlImportLabel": {
-        "message": "Importeer URL lijst"
-    },
-    "urlImportCaptionLabel": {
-        "message": "Maak een sessie aan van een lijst met URL's en voeg deze aan de sessielijst toe.<br>indeling: &lt;URL&gt; &lt;paginatitel (optioneel)&gt;"
-    },
-    "exportLabel": {
-        "message": "Sessies exporteren"
-    },
-    "exportCaptionLabel": {
-        "message": "Sla alle sessies naar de computer op."
-    },
-    "exportButtonLabel": {
-        "message": "Exporteren"
-    },
-    "removeSessionsLabel": {
-        "message": "Sessies verwijderen"
-    },
-    "removeSessionsCaptionLabel": {
-        "message": "Alle sessies verwijderen."
-    },
-    "removeSessionsButtonLabel": {
-        "message": "Verwijder"
-    },
-    "LicenseLabel": {
-        "message": "Licentie"
-    },
-    "donationLabel": {
-        "message": "Doe alstublieft een donatie"
-    },
-    "donationCaptionLabel": {
-        "message": "Bedankt voor het gebruik van Tab Session Manager.<br>Uw steun zal een grote aanmoediging zijn, terwijl ik de add-on verder ontwikkel.<br>Als u van Tab Session Manager houdt, zou ik blij zijn als u zou kunnen overwegen om te doneren."
-    },
-    "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Kaarten"
-    },
-    "addonPageLabel": {
-        "message": "add-on-pagina"
-    },
-    "importMessage": {
-        "message": "Sessies geïmporteerd."
-    },
-    "readFailedMessage": {
-        "message": "Lezen is mislukt"
-    },
-    "warningRemoveAllMessage": {
-        "message": "Verwijder alle sessies. Weet je het zeker?"
-    },
-    "sessionLabel": {
-        "message": "Sessie"
-    },
-    "amazonUrl": {
-        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
-    },
-    "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
-    },
-    "replacedPageMessage": {
-        "message": "Deze pagina kan niet worden geopend door Tab Session Manager."
-    }
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "Sla de status van vensters en tabbladen op en herstel ze. Het ondersteunt ook automatisch opslaan."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Doneren via PayPal"
+  },
+  "saveLabel": {
+    "message": "Opslaan"
+  },
+  "initialNameValue": {
+    "message": "Huidige sessie opslaan"
+  },
+  "inputSessionNameLabel": {
+    "message": "Input session name"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "Enkel huidige venster opslaan"
+  },
+  "categoryFilterLabel": {
+    "message": "Category filter"
+  },
+  "sortLabel": {
+    "message": "Sort"
+  },
+  "displayAllLabel": {
+    "message": "Alle"
+  },
+  "displayUserLabel": {
+    "message": "Gebruiker opgeslagen"
+  },
+  "displayAutoLabel": {
+    "message": "Automatisch opgeslagen"
+  },
+  "newestLabel": {
+    "message": "Nieuwste"
+  },
+  "oldestLabel": {
+    "message": "Oudste"
+  },
+  "aToZLabel": {
+    "message": "A-Z"
+  },
+  "zToALabel": {
+    "message": "Z-A"
+  },
+  "open": {
+    "message": "Openen"
+  },
+  "remove": {
+    "message": "Verwijder"
+  },
+  "removeConfirmLabel": {
+    "message": "Deze sessie verwijderen?"
+  },
+  "sessionDeletedLabel": {
+    "message": "This session has been deleted."
+  },
+  "restoreSessionLabel": {
+    "message": "Restore"
+  },
+  "cancelLabel": {
+    "message": "Annuleren"
+  },
+  "addTagLabel": {
+    "message": "Voeg tag toe"
+  },
+  "removeTagLabel": {
+    "message": "Tag verwijderen"
+  },
+  "detailLabel": {
+    "message": "Detail"
+  },
+  "windowLabel": {
+    "message": "Venster"
+  },
+  "windowsLabel": {
+    "message": "Vensters"
+  },
+  "tabLabel": {
+    "message": "Tabblad"
+  },
+  "tabsLabel": {
+    "message": "Tabbladen"
+  },
+  "noSessionLabel": {
+    "message": "Er is geen sessie"
+  },
+  "menuLabel": {
+    "message": "Menu"
+  },
+  "renameLabel": {
+    "message": "Hernoemen"
+  },
+  "openInNewWindowLabel": {
+    "message": "In nieuw venster openen"
+  },
+  "openInCurrentWindowLabel": {
+    "message": "Open in bestaand venster"
+  },
+  "addToCurrentWindowLabel": {
+    "message": "Toevoegen aan huidige venster"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "Replace with current session"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "Replace with current window"
+  },
+  "makeCopySessionLabel": {
+    "message": "Make a copy of the session"
+  },
+  "errorLabel": {
+    "message": "Error"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB is not available in your browser."
+  },
+  "howToSolveLabel": {
+    "message": "How to solve this problem"
+  },
+  "winCloseSessionName": {
+    "message": "Automatisch opgeslagen - venster was gesloten"
+  },
+  "regularSaveSessionName": {
+    "message": "Automatisch opgeslagen - Regelmatig"
+  },
+  "settingsLabel": {
+    "message": "Instellingen"
+  },
+  "sessionsLabel": {
+    "message": "Sessies"
+  },
+  "informationLabel": {
+    "message": "Informatie"
+  },
+  "generalLabel": {
+    "message": "Algemeen"
+  },
+  "autoSaveLabel": {
+    "message": "Automatisch opslaan"
+  },
+  "startUpLabel": {
+    "message": "Starten"
+  },
+  "styleLabel": {
+    "message": "Stijl"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "Open sessie in een nieuw venster"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "Indien uitgevinkt, overschrijft de sessie het huidige venster."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "Tab lui laden"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "Bij het openen van een sessie wordt de inhoud van elke pagina niet geladen totdat u het tabblad selecteert. <br> Indien uitgevikt neemt het geheugengebruik sterk toe wanneer de sessie wordt hersteld."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Restore windows position"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Restore windows position and size when opening session."
+  },
+  "ifOpenLastSessionWhenStartUpLabel": {
+    "message": "Vorige sessie herstellen bij opstarten"
+  },
+  "ifOpenLastSessionWhenStartUpCaptionLabel": {
+    "message": "Wanneer Firefox start, herstelt de sessie die actief was bij het afsluiten."
+  },
+  "ifAutoSaveLabel": {
+    "message": "Sla de sessie regelmatig op"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "Sla de sessie om de X minuten op."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "Interval (minuten)"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "Minimum-waarde 0.1"
+  },
+  "autoSaveLimitLabel": {
+    "message": "Maximale aantal opgeslagen"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "Maximumaantal opgeslagen sessies (op deze manier)."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "Sla de sessie op wanneer het venster werd gesloten"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "Sla de sessie op bij het sluiten van het venster of bij het afsluiten van Firefox."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "Maximale aantal opgeslagen"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "Maximumaantal opgeslagen sessies (op deze manier)."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "Gebruik de paginatitel als sessienaam bij automatisch opslaan"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "Wanneer een sessie automatisch wordt opgeslagen, gebruik dan de titel van de geopende pagina als sessienaam."
+  },
+  "backupLabel": {
+    "message": "Backup"
+  },
+  "ifBackupLabel": {
+    "message": "Reservekopie opslaan"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "Wanneer Firefox start, maak dan een reservekopie en sla deze op in de downloadmap."
+  },
+  "backupFolderLabel": {
+    "message": "Save location"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+  },
+  "downloadFolderLabel": {
+    "message": "Download folder"
+  },
+  "backupFilesLimitLabel": {
+    "message": "Maximum aantal opgeslagen reservekopieën"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "Wanneer het aantal reservekopieën groter is dan deze waarde, worden oudere kopieën verwijderd in oplopende volgorde (oudste eerst)."
+  },
+  "dateFormatLabel": {
+    "message": "Datumformaat"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "Voorbeeld: YYYY. MM. DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "Privé venster opslaan"
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "Indien uitgevinkt wordt het privé venster genegeerd bij het opslaan van een sessie."
+  },
+  "ifSupportTstLabel": {
+    "message": "Ondersteunt Tree Style Tab"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+  },
+  "tstDelayLabel": {
+    "message": "Vertraging bij terugzetten van een boomstructuur (milliseconden)"
+  },
+  "tstDelayCaptionLabel": {
+    "message": "Om de staat van een boomstructuur te herstellen, is een wachttijd vereist voor het openen van de tab. Verhoog deze waarde indien de boomstructuur niet correct wordt teruggezet."
+  },
+  "truncateTitleLabel": {
+    "message": "Sessienaam binnen één lijn weergeven"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "Indien de sessienaam in de sessielijst slanger is dan één regel, wordt het ingekort weergegeven op één regel."
+  },
+  "toolBarPopupLabel": {
+    "message": "Werkbalk popup"
+  },
+  "toolBarPopupCaptionLabel": {
+    "message": "Geef de stijl op van de werkbalk popup."
+  },
+  "widthLabel": {
+    "message": "Breedte"
+  },
+  "heightLabel": {
+    "message": "Hoogte"
+  },
+  "otherLabel": {
+    "message": "Other"
+  },
+  "resetSettingsLabel": {
+    "message": "Reset settings"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "Restore all settings to default."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "Reset"
+  },
+  "importLabel": {
+    "message": "Sessies importeren"
+  },
+  "importCaptionLabel": {
+    "message": "Laad sessies die op de computer zijn opgeslagen en voeg ze toe aan de sessielijst.<br>Het ondersteunt ook het sessiebestand van SessionManager (.session)."
+  },
+  "importButtonLabel": {
+    "message": "Bladeren..."
+  },
+  "importSaveButtonLabel": {
+    "message": "Importeer"
+  },
+  "importClearButtonLabel": {
+    "message": "Wissen"
+  },
+  "urlImportLabel": {
+    "message": "Importeer URL lijst"
+  },
+  "urlImportCaptionLabel": {
+    "message": "Maak een sessie aan van een lijst met URL's en voeg deze aan de sessielijst toe.<br>indeling: &lt;URL&gt; &lt;paginatitel (optioneel)&gt;"
+  },
+  "exportLabel": {
+    "message": "Sessies exporteren"
+  },
+  "exportCaptionLabel": {
+    "message": "Sla alle sessies naar de computer op."
+  },
+  "exportButtonLabel": {
+    "message": "Exporteren"
+  },
+  "removeSessionsLabel": {
+    "message": "Sessies verwijderen"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "Alle sessies verwijderen."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "Verwijder"
+  },
+  "LicenseLabel": {
+    "message": "Licentie"
+  },
+  "donationLabel": {
+    "message": "Doe alstublieft een donatie"
+  },
+  "donationCaptionLabel": {
+    "message": "Bedankt voor het gebruik van Tab Session Manager.<br>Uw steun zal een grote aanmoediging zijn, terwijl ik de add-on verder ontwikkel.<br>Als u van Tab Session Manager houdt, zou ik blij zijn als u zou kunnen overwegen om te doneren."
+  },
+  "amazonTitleLabel": {
+    "message": "amazon.co.jp eGift Kaarten"
+  },
+  "addonPageLabel": {
+    "message": "add-on-pagina"
+  },
+  "importMessage": {
+    "message": "Sessies geïmporteerd."
+  },
+  "readFailedMessage": {
+    "message": "Lezen is mislukt"
+  },
+  "warningRemoveAllMessage": {
+    "message": "Verwijder alle sessies. Weet je het zeker?"
+  },
+  "sessionLabel": {
+    "message": "Sessie"
+  },
+  "amazonUrl": {
+    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "Deze pagina kan niet worden geopend door Tab Session Manager."
+  }
 }
