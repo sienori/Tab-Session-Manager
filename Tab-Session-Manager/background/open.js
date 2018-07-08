@@ -7,19 +7,16 @@ async function openSession(session, property = "default") {
   let isFirstWindowFlag = true;
   tabList = {};
   for (let win in session.windows) {
-    const openInCurrentWindow = () => {
-      return removeNowOpenTabs().then(currentWindow => {
-        return createTabs(session, win, currentWindow);
-      });
+    const openInCurrentWindow = async () => {
+      const currentWindow = await removeNowOpenTabs();
+      createTabs(session, win, currentWindow);
     };
     const openInNewWindow = async () => {
       let createData = {};
-      const firstTab =
-        session.windows[win][Object.keys(session.windows[win])[0]];
+      const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
       createData.incognito = firstTab.incognito;
 
-      const isSetPosition =
-        S.get().isRestoreWindowPosition && session.windowsInfo != undefined;
+      const isSetPosition = S.get().isRestoreWindowPosition && session.windowsInfo != undefined;
 
       if (isSetPosition) {
         const info = session.windowsInfo[win];
@@ -57,7 +54,7 @@ async function openSession(session, property = "default") {
         }
       }
 
-      return createTabs(session, win, currentWindow);
+      createTabs(session, win, currentWindow);
     };
     const addToCurrentWindow = () => {
       return browser.windows
@@ -65,34 +62,30 @@ async function openSession(session, property = "default") {
           populate: true
         })
         .then(currentWindow => {
-          return createTabs(session, win, currentWindow, true);
+          createTabs(session, win, currentWindow, true);
         });
     };
 
-    const open = () => {
-      if (isFirstWindowFlag) {
-        isFirstWindowFlag = false;
-        switch (property) {
-          case "default":
-            if (S.get().ifOpenNewWindow) return openInNewWindow();
-            else return openInCurrentWindow();
-            break;
-          case "openInCurrentWindow":
-            return openInCurrentWindow();
-            break;
-          case "openInNewWindow":
-            return openInNewWindow();
-            break;
-          case "addToCurrentWindow":
-            return addToCurrentWindow();
-            break;
-        }
-      } else {
-        return openInNewWindow();
+    if (isFirstWindowFlag) {
+      isFirstWindowFlag = false;
+      switch (property) {
+        case "default":
+          if (S.get().ifOpenNewWindow) openInNewWindow();
+          else openInCurrentWindow();
+          break;
+        case "openInCurrentWindow":
+          openInCurrentWindow();
+          break;
+        case "openInNewWindow":
+          openInNewWindow();
+          break;
+        case "addToCurrentWindow":
+          addToCurrentWindow();
+          break;
       }
-    };
-
-    await open();
+    } else {
+      openInNewWindow();
+    }
   }
 }
 
@@ -118,35 +111,32 @@ function removeNowOpenTabs() {
 }
 
 //現在のウィンドウにタブを生成
-function createTabs(session, win, currentWindow, isAddtoCurrentWindow = false) {
-  return new Promise(async function(resolve, reject) {
-    IsOpeningSession = true;
-    let sortedTabs = [];
+async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = false) {
+  IsOpeningSession = true;
+  let sortedTabs = [];
 
-    for (let tab in session.windows[win]) {
-      sortedTabs.push(session.windows[win][tab]);
-    }
+  for (let tab in session.windows[win]) {
+    sortedTabs.push(session.windows[win][tab]);
+  }
 
-    sortedTabs.sort((a, b) => {
-      return a.index - b.index;
-    });
-
-    const firstTabId = currentWindow.tabs[0].id;
-    let tabNumber = 0;
-    for (let tab of sortedTabs) {
-      await openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow);
-
-      tabNumber++;
-      if (tabNumber == 1 && !isAddtoCurrentWindow) {
-        browser.tabs.remove(firstTabId);
-      }
-      if (tabNumber == sortedTabs.length) {
-        IsOpeningSession = false;
-        replacePage();
-        resolve();
-      }
-    }
+  sortedTabs.sort((a, b) => {
+    return a.index - b.index;
   });
+
+  const firstTabId = currentWindow.tabs[0].id;
+  let tabNumber = 0;
+  for (let tab of sortedTabs) {
+    await openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow);
+
+    tabNumber++;
+    if (tabNumber == 1 && !isAddtoCurrentWindow) {
+      browser.tabs.remove(firstTabId);
+    }
+    if (tabNumber == sortedTabs.length) {
+      IsOpeningSession = false;
+      replacePage();
+    }
+  }
 }
 
 tabList = {};
@@ -185,8 +175,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     //Tree Style Tab
     let openDelay = 0;
     if (S.get().ifSupportTst) {
-      if (BrowserVersion >= 57)
-        createOption.openerTabId = tabList[property.openerTabId];
+      if (BrowserVersion >= 57) createOption.openerTabId = tabList[property.openerTabId];
       openDelay = S.get().tstDelay;
     }
 
@@ -201,10 +190,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     }
 
     //Reader mode
-    if (
-      !S.get().ifLazyLoading &&
-      property.url.substr(0, 17) == "about:reader?url="
-    ) {
+    if (!S.get().ifLazyLoading && property.url.substr(0, 17) == "about:reader?url=") {
       createOption.openInReaderMode = true;
       createOption.url = decodeURIComponent(property.url.substr(17));
     }
