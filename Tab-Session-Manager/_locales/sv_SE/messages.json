@@ -33,7 +33,7 @@
     "message": "Sparade av användaren"
   },
   "displayAutoLabel": {
-    "message": "Spara automatiskt"
+    "message": "Sparad automatisk"
   },
   "newestLabel": {
     "message": "Nyaste"
@@ -42,10 +42,10 @@
     "message": "Äldsta"
   },
   "aToZLabel": {
-    "message": "A-Ö"
+    "message": "A-Z"
   },
   "zToALabel": {
-    "message": "Ö-A"
+    "message": "Z-A"
   },
   "open": {
     "message": "Öppna"
