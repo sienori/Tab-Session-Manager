@@ -9,8 +9,8 @@
 }
 
 html {
-  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto",
-    "Arial", "Helvetica", sans-serif;
+  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica",
+    sans-serif;
   font-size: 13px;
   overflow: hidden;
   background-color: var(--main-bg);
@@ -163,8 +163,8 @@ select:hover {
 }
 
 option {
-  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto",
-    "Arial", "Helvetica", sans-serif;
+  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica",
+    sans-serif;
 }
 
 /* session */
@@ -199,8 +199,7 @@ option {
   transition: all 200ms;
 }
 
-.session.isDeleted
-  :not(.removeConfirm):not(.buttonContainer):not(.restoreSession) {
+.session.isDeleted :not(.removeConfirm):not(.buttonContainer):not(.restoreSession) {
   pointer-events: none !important;
 }
 
@@ -723,8 +722,7 @@ option {
 
 .detailItems li {
   max-height: 2em;
-  transition: visibility 300ms, opacity 200ms ease 150ms, padding 300ms,
-    max-height 300ms;
+  transition: visibility 300ms, opacity 200ms ease 150ms, padding 300ms, max-height 300ms;
 }
 
 .detailItems li.hidden {
@@ -733,8 +731,7 @@ option {
   max-height: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
-  transition: visibility 300ms, opacity 200ms ease 0ms, padding 300ms,
-    max-height 300ms;
+  transition: visibility 300ms, opacity 200ms ease 0ms, padding 300ms, max-height 300ms;
 }
 
 .fav {

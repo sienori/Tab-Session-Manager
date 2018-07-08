@@ -29,27 +29,19 @@ function readHash(e) {
   switch (hash) {
     case "#settings":
       document.getElementById("settings").style.display = "block";
-      document
-        .getElementsByClassName("settingsLabel")[0]
-        .classList.add("selected");
+      document.getElementsByClassName("settingsLabel")[0].classList.add("selected");
       break;
     case "#sessions":
       document.getElementById("sessions").style.display = "block";
-      document
-        .getElementsByClassName("sessionsLabel")[0]
-        .classList.add("selected");
+      document.getElementsByClassName("sessionsLabel")[0].classList.add("selected");
       break;
     case "#information":
       document.getElementById("information").style.display = "block";
-      document
-        .getElementsByClassName("informationLabel")[0]
-        .classList.add("selected");
+      document.getElementsByClassName("informationLabel")[0].classList.add("selected");
       break;
     default:
       document.getElementById("settings").style.display = "block";
-      document
-        .getElementsByClassName("settingsLabel")[0]
-        .classList.add("selected");
+      document.getElementsByClassName("settingsLabel")[0].classList.add("selected");
       break;
   }
 
@@ -106,10 +98,8 @@ function returnFileListNode(fileName, sessions) {
   const sessionLabel = browser.i18n.getMessage("sessionLabel").toLowerCase();
   const sessionsLabel = browser.i18n.getMessage("sessionsLabel").toLowerCase();
   let sessionsState;
-  if (sessions == undefined)
-    sessionsState = browser.i18n.getMessage("readFailedMessage");
-  else if (sessions.length <= 1)
-    sessionsState = `${sessions.length} ${sessionLabel}`;
+  if (sessions == undefined) sessionsState = browser.i18n.getMessage("readFailedMessage");
+  else if (sessions.length <= 1) sessionsState = `${sessions.length} ${sessionLabel}`;
   else sessionsState = `${sessions.length} ${sessionsLabel}`;
 
   return `<li><div class=optionContainer><div class=optionText>
@@ -157,18 +147,12 @@ function openDownloadFolder() {
 }
 
 replaceBackupFolderName();
-document.getElementById(
-  "openDownloadFolder"
-).innerText = `[${browser.i18n.getMessage("downloadFolderLabel")}]`;
-document.getElementsByClassName("amazonUrl")[0].href = browser.i18n.getMessage(
-  "amazonUrl"
-);
-document.getElementsByClassName("addonUrl")[0].href = browser.i18n.getMessage(
-  "addonUrl"
-);
+document.getElementById("openDownloadFolder").innerText = `[${browser.i18n.getMessage(
+  "downloadFolderLabel"
+)}]`;
+document.getElementsByClassName("amazonUrl")[0].href = browser.i18n.getMessage("amazonUrl");
+document.getElementsByClassName("addonUrl")[0].href = browser.i18n.getMessage("addonUrl");
 document
   .getElementsByClassName("addonVersion")[0]
   .getElementsByClassName("caption")[0]
-  .getElementsByTagName("a")[0].innerText = `Version ${
-  browser.runtime.getManifest().version
-}`;
+  .getElementsByTagName("a")[0].innerText = `Version ${browser.runtime.getManifest().version}`;

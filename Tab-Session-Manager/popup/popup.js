@@ -15,16 +15,11 @@ S.init().then(async () => {
   //セッション名の省略
   if (S.get().truncateTitle) {
     const stylesheet = document.styleSheets.item(0);
-    stylesheet.insertRule(
-      ".sessionName span { white-space:nowrap; }",
-      stylesheet.cssRules.length
-    );
+    stylesheet.insertRule(".sessionName span { white-space:nowrap; }", stylesheet.cssRules.length);
   }
 
-  if (S.get().filter != undefined)
-    document.getElementById("filter").value = S.get().filter;
-  if (S.get().sort != undefined)
-    document.getElementById("sort").value = S.get().sort;
+  if (S.get().filter != undefined) document.getElementById("filter").value = S.get().filter;
+  if (S.get().sort != undefined) document.getElementById("sort").value = S.get().sort;
 
   //タブタイトルを表示
   document.getElementById("saveName").value = await getCurrentTabName();
@@ -89,10 +84,8 @@ async function setLabels() {
   document.getElementById("saveName").placeholder = Labels.initialNameValue;
   document.getElementById("saveName").title = Labels.inputSessionNameLabel;
   document.getElementById("saveButton").title = Labels.initialNameValue;
-  document.getElementById("winCloseSessionName").innerText =
-    Labels.winCloseSessionName;
-  document.getElementById("regularSaveSessionName").innerText =
-    Labels.regularSaveSessionName;
+  document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
+  document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
   document.getElementById("setting").title = Labels.settingsLabel;
   document.getElementById("filter").title = Labels.categoryFilterLabel;
   document.getElementById("sort").title = Labels.sortLabel;
@@ -210,8 +203,7 @@ function getAllTags() {
     }
 
     for (let tag of tags) {
-      if (tag == "regular" || tag == "winClose" || tag == "temp" || tag == "")
-        continue;
+      if (tag == "regular" || tag == "winClose" || tag == "temp" || tag == "") continue;
 
       tagsCount[tag] = tagsCount[tag] || 0;
       tagsCount[tag]++;
@@ -241,26 +233,16 @@ function updateFilterItems() {
 
   let options = "";
   options += `
-        <option value="_displayAll">${Labels.displayAllLabel} [${
-    count.all
-  }]</option>
-        <option value="_auto">${Labels.displayAutoLabel} [${
-    count.auto
-  }]</option>
-        <option value="winClose">${Labels.winCloseSessionName} [${
-    count.winClose
-  }]</option>
-        <option value="regular">${Labels.regularSaveSessionName} [${
-    count.regular
-  }]</option>
-        <option value="_user">${Labels.displayUserLabel} [${
-    count.user
-  }]</option>`;
+        <option value="_displayAll">${Labels.displayAllLabel} [${count.all}]</option>
+        <option value="_auto">${Labels.displayAutoLabel} [${count.auto}]</option>
+        <option value="winClose">${Labels.winCloseSessionName} [${count.winClose}]</option>
+        <option value="regular">${Labels.regularSaveSessionName} [${count.regular}]</option>
+        <option value="_user">${Labels.displayUserLabel} [${count.user}]</option>`;
 
   for (let tag of count.tags) {
-    options += `<option value="${sanitaize.encode(
-      tag.name
-    )}">${sanitaize.encode(tag.name)} [${tag.count}]</option>`;
+    options += `<option value="${sanitaize.encode(tag.name)}">${sanitaize.encode(tag.name)} [${
+      tag.count
+    }]</option>`;
   }
 
   filter.innerHTML = options;
@@ -271,9 +253,7 @@ function updateFilterItems() {
   }
 
   const currentFilterValue = S.get().filter;
-  filter.value = filterValues.includes(currentFilterValue)
-    ? currentFilterValue
-    : "_displayAll";
+  filter.value = filterValues.includes(currentFilterValue) ? currentFilterValue : "_displayAll";
 }
 
 function filterChange() {
@@ -414,9 +394,7 @@ const sanitaize = {
 function sessionsHTML(info) {
   const detail = `${info.windowsNumber} ${
     info.windowsNumber == 1 ? Labels.windowLabel : Labels.windowsLabel
-  } - ${info.tabsNumber} ${
-    info.tabsNumber == 1 ? Labels.tabLabel : Labels.tabsLabel
-  }`;
+  } - ${info.tabsNumber} ${info.tabsNumber == 1 ? Labels.tabLabel : Labels.tabsLabel}`;
   const dataTag = `'["${info.tag.map(sanitaize.encode).join('","')}"]'`;
   let tags = "";
 
@@ -468,25 +446,13 @@ function sessionsHTML(info) {
                     <li class=renameButton>${Labels.renameLabel}</li>
                     <li class=exportButton>${Labels.exportButtonLabel}</li>
                     <hr>
-                    <li class=openInNewWindow>${
-                      Labels.openInNewWindowLabel
-                    }</li>
-                    <li class=openInCurrentWindow>${
-                      Labels.openInCurrentWindowLabel
-                    }</li>
-                    <li class=addToCurrentWindow>${
-                      Labels.addToCurrentWindowLabel
-                    }</li>
+                    <li class=openInNewWindow>${Labels.openInNewWindowLabel}</li>
+                    <li class=openInCurrentWindow>${Labels.openInCurrentWindowLabel}</li>
+                    <li class=addToCurrentWindow>${Labels.addToCurrentWindowLabel}</li>
                     <hr>
-                    <li class=replaceCurrentSession>${
-                      Labels.replaceCurrentSessionLabel
-                    }</li>
-                    <li class=replaceCurrentWindow>${
-                      Labels.replaceCurrentWindowLabel
-                    }</li>
-                    <li class=makeCopySession>${
-                      Labels.makeCopySessionLabel
-                    }</li>
+                    <li class=replaceCurrentSession>${Labels.replaceCurrentSessionLabel}</li>
+                    <li class=replaceCurrentWindow>${Labels.replaceCurrentWindowLabel}</li>
+                    <li class=makeCopySession>${Labels.makeCopySessionLabel}</li>
                     </ul>
                 </div>
             </div>
@@ -498,9 +464,7 @@ function sessionsHTML(info) {
                         <use xlink:href="#plusSvg"></use>
                     </svg>
                     <div class="addTagContainer">
-                        <input class=addTagInput type=text placeholder="${
-                          Labels.addTagLabel
-                        }">
+                        <input class=addTagInput type=text placeholder="${Labels.addTagLabel}">
                         <div class=addTagSend>
                             <svg>
                                 <use xlink:href="#checkSvg"></use>
@@ -510,18 +474,14 @@ function sessionsHTML(info) {
                 </div>
                 ${tags}
             </div>
-            <span class="sessionDate">${sanitaize.encode(
-              info.formatedDate
-            )}</span>
+            <span class="sessionDate">${sanitaize.encode(info.formatedDate)}</span>
         </div>
         <div class=buttonContainer>
             <div class=detailContainer>
                 <svg>
                     <use xlink:href="#triangleSvg"></use>
                 </svg>
-                <span class="detail" title="${
-                  Labels.detailLabel
-                }">${detail}</span>
+                <span class="detail" title="${Labels.detailLabel}">${detail}</span>
             </div>
             <div class=removeOpenButton>
                 <span class="open">${Labels.open}</span>
@@ -571,9 +531,7 @@ async function showDetail(sessionId, overwrite = false) {
   const detailContainer = document
     .getElementById(sessionId)
     .getElementsByClassName("detailContainer")[0];
-  const detail = document
-    .getElementById(sessionId)
-    .getElementsByClassName("detailItems")[0];
+  const detail = document.getElementById(sessionId).getElementsByClassName("detailItems")[0];
   const session = await getSessions(sessionId);
   if (session == undefined) return;
 
@@ -585,13 +543,11 @@ async function showDetail(sessionId, overwrite = false) {
       detail.insertAdjacentHTML(
         "beforeend",
         `<ul class="windowContainer">
-                    <li class="windowTitleContainer ${
-                      overwrite ? "" : "hidden"
-                    }">
+                    <li class="windowTitleContainer ${overwrite ? "" : "hidden"}">
                         <div class="windowIcon"></div>
-                        <span class=windowTitle data-windowid="${win}" title="${
-          Labels.open
-        }">${Labels.windowLabel} ${i}</span>
+                        <span class=windowTitle data-windowid="${win}" title="${Labels.open}">${
+          Labels.windowLabel
+        } ${i}</span>
                         <div class=windowDeleteButton data-windowid="${win}" title="${
           Labels.remove
         }">
@@ -603,14 +559,11 @@ async function showDetail(sessionId, overwrite = false) {
                 </ul>`
       );
 
-      const windowContainer = detail.getElementsByClassName("windowContainer")[
-        i - 1
-      ];
+      const windowContainer = detail.getElementsByClassName("windowContainer")[i - 1];
 
       let sortedTabs = [];
       for (let tab in session.windows[win]) {
-        sortedTabs[session.windows[win][tab].index] =
-          session.windows[win][tab].id;
+        sortedTabs[session.windows[win][tab].index] = session.windows[win][tab].id;
       }
 
       for (let tab of sortedTabs) {
@@ -626,9 +579,7 @@ async function showDetail(sessionId, overwrite = false) {
                         )})"></div>
                         <div class=tabTitle data-url="${sanitaize.encode(
                           tabUrl
-                        )}" title="${sanitaize.encode(
-          tabTitle
-        )}&#10;${sanitaize.encode(tabUrl)}">
+                        )}" title="${sanitaize.encode(tabTitle)}&#10;${sanitaize.encode(tabUrl)}">
                             ${sanitaize.encode(tabTitle)}
                         </div>
                         <div class=tabDeleteButton data-windowid="${win}" data-tabid="${tab}" title="${
@@ -676,15 +627,10 @@ function replaseImageUrl(url, sessionId, win) {
 }
 
 function rename(sessionId) {
-  const sessionName = document
-    .getElementById(sessionId)
-    .getElementsByClassName("sessionName")[0];
-  const renameArea = document
-    .getElementById(sessionId)
-    .getElementsByClassName("renameArea")[0];
+  const sessionName = document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
+  const renameArea = document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
 
-  renameArea.getElementsByClassName("renameInput")[0].value =
-    sessionName.innerText;
+  renameArea.getElementsByClassName("renameInput")[0].value = sessionName.innerText;
   if (renameArea.style.display == "none" || renameArea.style.display == "") {
     renameArea.style.display = "block";
     sessionName.style.display = "none";
@@ -699,12 +645,8 @@ function rename(sessionId) {
 }
 
 function renameSend(sessionId) {
-  sessionName = document
-    .getElementById(sessionId)
-    .getElementsByClassName("sessionName")[0];
-  renameArea = document
-    .getElementById(sessionId)
-    .getElementsByClassName("renameArea")[0];
+  sessionName = document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
+  renameArea = document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
   renameInput = renameArea.getElementsByClassName("renameInput")[0].value;
 
   sessionName.innerText = renameInput;
@@ -723,12 +665,8 @@ function showAddTagArea(sessionId) {
   const tagsContainer = document
     .getElementById(sessionId)
     .getElementsByClassName("tagsContainer")[0];
-  const addTagButton = document
-    .getElementById(sessionId)
-    .getElementsByClassName("addTagButton")[0];
-  const addTagInput = document
-    .getElementById(sessionId)
-    .getElementsByClassName("addTagInput")[0];
+  const addTagButton = document.getElementById(sessionId).getElementsByClassName("addTagButton")[0];
+  const addTagInput = document.getElementById(sessionId).getElementsByClassName("addTagInput")[0];
 
   if (addTagButton.classList.contains("showInput")) {
     tagsContainer.style.height = tagsContainer.clientHeight + "px";
@@ -770,9 +708,7 @@ function calcTagsHeight(tagsContainer, reverse) {
 }
 
 function addTagSend(sessionId) {
-  const tagInput = document
-    .getElementById(sessionId)
-    .getElementsByClassName("addTagInput")[0];
+  const tagInput = document.getElementById(sessionId).getElementsByClassName("addTagInput")[0];
 
   showAddTagArea(sessionId);
   browser.runtime.sendMessage({
@@ -815,17 +751,14 @@ class DeleteSessions {
 
     const sessionItem = document.getElementById(id);
     sessionItem.classList.add("isDeleted");
-    const removeConfirm = sessionItem.getElementsByClassName(
-      "removeConfirm"
-    )[0];
+    const removeConfirm = sessionItem.getElementsByClassName("removeConfirm")[0];
     removeConfirm.classList.remove("hidden");
 
     const isShowAddTag = sessionItem
       .getElementsByClassName("addTagButton")[0]
       .classList.contains("showInput");
     const isShowRename =
-      sessionItem.getElementsByClassName("renameArea")[0].style.display ==
-      "block";
+      sessionItem.getElementsByClassName("renameArea")[0].style.display == "block";
     const isShowDetail = !sessionItem
       .getElementsByClassName("detailItems")[0]
       .classList.contains("hidden");
@@ -854,9 +787,7 @@ class DeleteSessions {
 const deleteSessions = new DeleteSessions();
 
 function showPopupMenu(sessionId) {
-  const popupMenu = document
-    .getElementById(sessionId)
-    .getElementsByClassName("popupMenu")[0];
+  const popupMenu = document.getElementById(sessionId).getElementsByClassName("popupMenu")[0];
   if (popupMenu.classList.contains("hidden")) {
     popupMenu.classList.remove("hidden");
 
@@ -873,9 +804,7 @@ function showPopupMenu(sessionId) {
 }
 
 function showSaveOptionPopup() {
-  const popupMenu = document
-    .getElementById("saveArea")
-    .getElementsByClassName("popupMenu")[0];
+  const popupMenu = document.getElementById("saveArea").getElementsByClassName("popupMenu")[0];
 
   if (popupMenu.classList.contains("hidden")) {
     popupMenu.classList.remove("hidden");
@@ -898,10 +827,7 @@ function hideAllPopupMenu(e) {
     }
   };
 
-  if (
-    !e.target.classList.contains("menuIcon") &&
-    !(e.target.id == "saveOptionButton")
-  ) {
+  if (!e.target.classList.contains("menuIcon") && !(e.target.id == "saveOptionButton")) {
     const popupMenus = document.getElementsByClassName("popupMenu");
     for (let i of popupMenus) {
       i.classList.add("hidden");
@@ -955,8 +881,7 @@ async function deleteWindowTab(e, target) {
       const tabId = e.target.dataset.tabid;
       const deletedTab = session.windows[winId][tabId];
       delete session.windows[winId][tabId];
-      if (session.windowsInfo != undefined)
-        delete session.windowsInfo[winId][tabId];
+      if (session.windowsInfo != undefined) delete session.windowsInfo[winId][tabId];
 
       if (Object.keys(session.windows[winId]).length == 0) {
         deleteWindowTab(e, "window");
@@ -967,8 +892,7 @@ async function deleteWindowTab(e, target) {
       for (let tab in window) {
         //openerTabIdを削除
         if (window[tab].openerTabId != undefined) {
-          if (window[tab].openerTabId == deletedTab.id)
-            delete window[tab].openerTabId;
+          if (window[tab].openerTabId == deletedTab.id) delete window[tab].openerTabId;
         }
         //indexを変更
         if (window[tab].index > deletedTab.index) window[tab].index--;
@@ -985,14 +909,10 @@ async function deleteWindowTab(e, target) {
     isSendResponce: false
   });
 
-  const detail = document
-    .getElementById(id)
-    .getElementsByClassName("detail")[0];
+  const detail = document.getElementById(id).getElementsByClassName("detail")[0];
   const detailText = `${session.windowsNumber} ${
     session.windowsNumber == 1 ? Labels.windowLabel : Labels.windowsLabel
-  } - ${session.tabsNumber} ${
-    session.tabsNumber == 1 ? Labels.tabLabel : Labels.tabsLabel
-  }`;
+  } - ${session.tabsNumber} ${session.tabsNumber == 1 ? Labels.tabLabel : Labels.tabsLabel}`;
   detail.innerText = detailText;
   showDetail(id, true);
 }

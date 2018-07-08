@@ -9,8 +9,8 @@
 }
 
 body {
-  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto",
-    "Arial", "Helvetica", sans-serif;
+  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica",
+    sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: var(--main-text);

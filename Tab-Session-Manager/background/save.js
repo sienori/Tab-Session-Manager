@@ -59,8 +59,7 @@ async function loadCurrentSesssion(name, tag, property) {
       }
     }
 
-    if (session.windows[tab.windowId] == undefined)
-      session.windows[tab.windowId] = {};
+    if (session.windows[tab.windowId] == undefined) session.windows[tab.windowId] = {};
 
     //replacedPageなら元のページを保存
     const parameter = returnReplaceParameter(tab.url);
@@ -88,12 +87,7 @@ async function loadCurrentSesssion(name, tag, property) {
 //前回の自動保存からタブが変わっているか判定
 //自動保存する必要があればtrue
 async function isChangedAutoSaveSession(session) {
-  const regularSessions = await getSessionsByTag("regular", [
-    "id",
-    "tag",
-    "date",
-    "windows"
-  ]);
+  const regularSessions = await getSessionsByTag("regular", ["id", "tag", "date", "windows"]);
   if (regularSessions.length == 0) return true;
 
   const tabsToString = session => {

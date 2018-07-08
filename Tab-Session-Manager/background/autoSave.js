@@ -69,10 +69,7 @@ class AutoSaveWhenClose {
   }
 
   async updateTemp() {
-    if (
-      IsOpeningSession ||
-      (!S.get().ifAutoSaveWhenClose && !S.get().ifOpenLastSessionWhenStartUp)
-    )
+    if (IsOpeningSession || (!S.get().ifAutoSaveWhenClose && !S.get().ifOpenLastSessionWhenStartUp))
       return;
 
     let name = browser.i18n.getMessage("winCloseSessionName");
@@ -87,10 +84,7 @@ class AutoSaveWhenClose {
   }
 
   async saveWinClose() {
-    if (
-      IsOpeningSession ||
-      (!S.get().ifAutoSaveWhenClose && !S.get().ifOpenLastSessionWhenStartUp)
-    )
+    if (IsOpeningSession || (!S.get().ifAutoSaveWhenClose && !S.get().ifOpenLastSessionWhenStartUp))
       return;
 
     let tempSessions = await getSessionsByTag("temp");
@@ -130,14 +124,9 @@ class AutoSaveWhenClose {
 async function removeOverLimit(tagState) {
   let limit;
   if (tagState == "regular") limit = S.get().autoSaveLimit;
-  else if (tagState == "winClose")
-    limit = parseInt(S.get().autoSaveWhenCloseLimit);
+  else if (tagState == "winClose") limit = parseInt(S.get().autoSaveWhenCloseLimit);
 
-  const autoSavedArray = await getSessionsByTag(tagState, [
-    "id",
-    "tag",
-    "date"
-  ]);
+  const autoSavedArray = await getSessionsByTag(tagState, ["id", "tag", "date"]);
 
   //上限を超えている場合は削除
   if (autoSavedArray.length > limit) {

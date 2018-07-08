@@ -61,11 +61,7 @@ function replaceInvalidValue(elementId) {
   if (element.validity.rangeOverflow) element.value = element.max;
   else if (element.validity.rangeUnderflow) element.value = element.min;
 
-  if (
-    element.validity.badInput ||
-    element.value == "" ||
-    !element.validity.valid
-  )
+  if (element.validity.badInput || element.value == "" || !element.validity.valid)
     element.value = element.defaultValue;
 }
 
@@ -83,9 +79,7 @@ async function resetSettings() {
   location.reload(true);
 }
 
-document
-  .getElementById("import")
-  .addEventListener("change", importSessions, false);
+document.getElementById("import").addEventListener("change", importSessions, false);
 
 let ImportSessions = [];
 async function importSessions() {
@@ -147,14 +141,7 @@ function isArray(o) {
 function checkImportFile(file) {
   if (!isArray(file)) return false;
 
-  const correctKeys = [
-    "windows",
-    "tabsNumber",
-    "name",
-    "date",
-    "tag",
-    "sessionStartTime"
-  ];
+  const correctKeys = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime"];
 
   for (let session of file) {
     const sessionKeys = Object.keys(session);
@@ -259,9 +246,7 @@ function urlImport() {
     id: UUID.generate()
   };
 
-  const urlList = document
-    .getElementById("urlImportList")
-    .value.split(/\r\n|\r|\n/);
+  const urlList = document.getElementById("urlImportList").value.split(/\r\n|\r|\n/);
   let tabId = 0;
   for (let urlLine of urlList) {
     const tab = createTabByUrl(urlLine, tabId);
@@ -306,9 +291,7 @@ function createTabByUrl(urlLine, tabId) {
     title: title,
     url: url,
     windowId: 1,
-    favIconUrl: `http://www.google.com/s2/favicons?domain=${encodeURIComponent(
-      url
-    )}`
+    favIconUrl: `http://www.google.com/s2/favicons?domain=${encodeURIComponent(url)}`
   };
 }
 
@@ -348,9 +331,7 @@ async function getSessions(id) {
 function returnFileName(sessions) {
   let fileName;
   if (sessions.length == 1) {
-    fileName = `${sessions[0].name} - ${moment(sessions[0].date).format(
-      S.get().dateFormat
-    )}`;
+    fileName = `${sessions[0].name} - ${moment(sessions[0].date).format(S.get().dateFormat)}`;
   } else {
     const sessionsLabel = browser.i18n.getMessage("sessionsLabel");
     fileName = `${sessionsLabel} - ${moment().format(S.get().dateFormat)}`;

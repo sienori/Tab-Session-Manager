@@ -180,11 +180,7 @@ async function onMessageListener(request, sender, sendResponse) {
       return IsInit;
       break;
     case "getCurrentSession":
-      const currentSession = await loadCurrentSesssion(
-        "",
-        [],
-        request.property
-      ).catch(() => {});
+      const currentSession = await loadCurrentSesssion("", [], request.property).catch(() => {});
       return currentSession;
   }
 }

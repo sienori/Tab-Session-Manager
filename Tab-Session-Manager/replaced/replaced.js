@@ -35,9 +35,9 @@ document.head.insertAdjacentHTML(
 );
 
 if (parameter.state == "open_faild") {
-  document.getElementsByClassName(
+  document.getElementsByClassName("replacedPageMessage")[0].innerText = browser.i18n.getMessage(
     "replacedPageMessage"
-  )[0].innerText = browser.i18n.getMessage("replacedPageMessage");
+  );
 }
 
 function returnReplaceParameter(url) {
