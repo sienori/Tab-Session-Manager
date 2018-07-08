@@ -1,365 +1,365 @@
 {
-    "extName": {
-        "message": "Tab Session Manager"
-    },
-    "extDescription": {
-        "message": "احفظ و استعد حالة النوافذ و التبويبات. كما أنها تدعم الحفظ التلقائي."
-    },
-    "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
-    },
-    "saveLabel": {
-        "message": "احفظ"
-    },
-    "initialNameValue": {
-        "message": "احفظ الجلسة الحالية"
-    },
-    "inputSessionNameLabel": {
-        "message": "Input session name"
-    },
-    "saveOnlyCurrentWindowLabel": {
-        "message": "حفظ فقط النافذة الحالية"
-    },
-    "categoryFilterLabel": {
-        "message": "Category filter"
-    },
-    "sortLabel": {
-        "message": "Sort"
-    },
-    "displayAllLabel": {
-        "message": "الكل"
-    },
-    "displayUserLabel": {
-        "message": "المستخدم حفظ"
-    },
-    "displayAutoLabel": {
-        "message": "حفظ تلقائياً"
-    },
-    "newestLabel": {
-        "message": "الأحدث"
-    },
-    "oldestLabel": {
-        "message": "الأقدم"
-    },
-    "aToZLabel": {
-        "message": "أ-ي"
-    },
-    "zToALabel": {
-        "message": "ي-أ"
-    },
-    "open": {
-        "message": "افتح"
-    },
-    "remove": {
-        "message": "احذف"
-    },
-    "removeConfirmLabel": {
-        "message": "هل تريد حذف هذا الجلسة؟"
-    },
-    "sessionDeletedLabel": {
-        "message": "This session has been deleted."
-    },
-    "restoreSessionLabel": {
-        "message": "Restore"
-    },
-    "cancelLabel": {
-        "message": "إلغاء"
-    },
-    "addTagLabel": {
-        "message": "اضف كلمة مفتاحية"
-    },
-    "removeTagLabel": {
-        "message": "حذف كلمة مفتاحية"
-    },
-    "detailLabel": {
-        "message": "Detail"
-    },
-    "windowLabel": {
-        "message": "النافذة"
-    },
-    "windowsLabel": {
-        "message": "النوافذ"
-    },
-    "tabLabel": {
-        "message": "التبويب"
-    },
-    "tabsLabel": {
-        "message": "التبويبات"
-    },
-    "noSessionLabel": {
-        "message": "لا توجد جلسة"
-    },
-    "menuLabel": {
-        "message": "Menu"
-    },
-    "renameLabel": {
-        "message": "أعد التسمية"
-    },
-    "openInNewWindowLabel": {
-        "message": "افتح في نافذة جديدة"
-    },
-    "openInCurrentWindowLabel": {
-        "message": "افتح في النافذة الحالية"
-    },
-    "addToCurrentWindowLabel": {
-        "message": "أضف للنافذة الحالية"
-    },
-    "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
-    },
-    "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
-    },
-    "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
-    },
-    "errorLabel": {
-        "message": "Error"
-    },
-    "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
-    },
-    "howToSolveLabel": {
-        "message": "How to solve this problem"
-    },
-    "winCloseSessionName": {
-        "message": "تم الحفظ تلقائياً- النافذة مغلقة"
-    },
-    "regularSaveSessionName": {
-        "message": "الحفظ تلقائياً - بانتظام"
-    },
-    "settingsLabel": {
-        "message": "الإعدادات"
-    },
-    "sessionsLabel": {
-        "message": "الجلسات"
-    },
-    "informationLabel": {
-        "message": "معلومة"
-    },
-    "generalLabel": {
-        "message": "عام"
-    },
-    "autoSaveLabel": {
-        "message": "حفظ تلقائي"
-    },
-    "startUpLabel": {
-        "message": "بدء التشغيل"
-    },
-    "styleLabel": {
-        "message": "نمط"
-    },
-    "ifOpenNewWindowLabel": {
-        "message": "افتح جلسة في نافذة جديدة"
-    },
-    "ifOpenNewWindowCaptionLabel": {
-        "message": "إذا لم يتم تحديد النافذة، الجلسة تكتب فوق النافذة الحالية."
-    },
-    "ifLazyLoadingLabel": {
-        "message": "تحميل التبويب ببطء"
-    },
-    "ifLazyLoadingCaptionLabel": {
-        "message": "عند فتح جلسة، لن يتم تحميل محتوى كل صفحة حتى يتم تحديد التبويب.<br>إذا لم يتم تحديدها، فسيزيد استخدام الذاكرة بشكل كبير عند استعادة الجلسة."
-    },
-    "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
-    },
-    "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
-    },
-    "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "استعد الجلسة السابقة عند بدء التشغيل"
-    },
-    "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "عند بدء تشغيل فايرفوكس، استعد الجلسة التي تم الإغلاق عندها المرة الأخيرة."
-    },
-    "ifAutoSaveLabel": {
-        "message": "احفظ الجلسة بإنتظام"
-    },
-    "ifAutoSaveCaptionLabel": {
-        "message": "احفظ الجلسة كل X دقائق."
-    },
-    "autoSaveIntervalLabel": {
-        "message": "الفترة الزمنية (دقائق)"
-    },
-    "autoSaveIntervalCaptionLabel": {
-        "message": "قيمة الحد الأدنى 0,1"
-    },
-    "autoSaveLimitLabel": {
-        "message": "الحد الأقصى محفوظ"
-    },
-    "autoSaveLimitCaptionLabel": {
-        "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
-    },
-    "ifAutoSaveWhenCloseLabel": {
-        "message": "احفظ الجلسة عند إغلاق النافذة"
-    },
-    "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "احفظ اجلسة عند غلق النافذة أو عند إغلاق فايرفوكس."
-    },
-    "autoSaveWhenCloseLimitLabel": {
-        "message": "الحد الأقصى محفوظ"
-    },
-    "autoSaveWhenCloseCaptionLabel": {
-        "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
-    },
-    "useTabTitleforAutoSaveLabel": {
-        "message": "استخدم عنوان الصفحة للحفظ التلقائي لإسم الجلسة"
-    },
-    "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "عند حفظ الجلسة تلقائياً، استخدم عنوان الصفحة المفتوحة كـ إسم للجلسة."
-    },
-    "backupLabel": {
-        "message": "Backup"
-    },
-    "ifBackupLabel": {
-        "message": "حفظ نسخة احتياطية"
-    },
-    "ifBackupCaptionLabel": {
-        "message": "عند بدء تشغيل فايرفوكس، قم بإنشاء ملف النسخ احتياطي لجلسة وحفظه في مجلد التحميل."
-    },
-    "backupFolderLabel": {
-        "message": "Save location"
-    },
-    "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
-    },
-    "downloadFolderLabel": {
-        "message": "Download folder"
-    },
-    "backupFilesLimitLabel": {
-        "message": "الحد الأقصى لعدد النسخ الاحتياطية المحفوظة"
-    },
-    "backupFilesLimitCaptionLabel": {
-        "message": "عندما يتجاوز عدد ملفات النسخ الاحتياطي هذه القيمة، يتم الحذف تصاعدياً بدء من الأقدم."
-    },
-    "dateFormatLabel": {
-        "message": "صيغة التاريخ"
-    },
-    "dateFormatCaptionLabel": {
-        "message": "مثال YYYY.MM.DD HH:mm:ss"
-    },
-    "ifSavePrivateWindowLabel": {
-        "message": "احفظ النافذة الخاصة"
-    },
-    "ifSavePrivateWindowCaptionLabel": {
-        "message": "إذا لم يتم التحديد، يتجاهل النافذة الخاصة عند حفظ الجلسة."
-    },
-    "ifSupportTstLabel": {
-        "message": "يدعم نمط التبويب على شكل شجرة"
-    },
-    "ifSupportTstCaptionLabel": {
-        "message": "استعد حالة شكل التبويب لنمط التبويب المعمول على شكل شجرة.<br> الرجاء أقف تشغيل نسخة الفايرفوكس الأقدم من 57 (Quantum)."
-    },
-    "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
-    },
-    "tstDelayCaptionLabel": {
-        "message": "لاستعادة وضع الشجرة، وقت الانتظار غلزامي لفتح التبويب، رفع هذه القيمة إذا كانت لم يتم استعادة الشجرة بنجاح."
-    },
-    "truncateTitleLabel": {
-        "message": "عرض اسم جلسة العمل ضمن سطر واحد"
-    },
-    "truncateTitleCaptionLabel": {
-        "message": "إذا كان اسم الدورة في قائمة جلسات العمل التي تكون أكثر من سطر واحد، يتم اقتطاع سطر واحد وعرضه."
-    },
-    "toolBarPopupLabel": {
-        "message": "شريط أدوات منبثق"
-    },
-    "toolBarPopupCaptionLabel": {
-        "message": "حدد نمط شريط الأدوات المنبثق."
-    },
-    "widthLabel": {
-        "message": "العرض"
-    },
-    "heightLabel": {
-        "message": "الطول"
-    },
-    "otherLabel": {
-        "message": "Other"
-    },
-    "resetSettingsLabel": {
-        "message": "Reset settings"
-    },
-    "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
-    },
-    "resetSettingsButtonLabel": {
-        "message": "Reset"
-    },
-    "importLabel": {
-        "message": "استرد جلسات"
-    },
-    "importCaptionLabel": {
-        "message": "حمل الجلسات المحفوظة على الكمبيوتر و أضفهم إلى قائمة الجلسة.<br> كما انها يدعم ملف جلسة مسير الجلسة (. الجلسة)."
-    },
-    "importButtonLabel": {
-        "message": "تصفح..."
-    },
-    "importSaveButtonLabel": {
-        "message": "استرد"
-    },
-    "importClearButtonLabel": {
-        "message": "امسح"
-    },
-    "urlImportLabel": {
-        "message": "Import URL list"
-    },
-    "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
-    },
-    "exportLabel": {
-        "message": "أصدر الجلسات"
-    },
-    "exportCaptionLabel": {
-        "message": "احفظ كل الجلسات على جهاز الكمبيوتر."
-    },
-    "exportButtonLabel": {
-        "message": "أصدر"
-    },
-    "removeSessionsLabel": {
-        "message": "احذف الجلسات"
-    },
-    "removeSessionsCaptionLabel": {
-        "message": "احذف كافة الجلسات."
-    },
-    "removeSessionsButtonLabel": {
-        "message": "احذف"
-    },
-    "LicenseLabel": {
-        "message": "الترخيص"
-    },
-    "donationLabel": {
-        "message": "الرجاء قدم تبرع"
-    },
-    "donationCaptionLabel": {
-        "message": "شكرا لك لاستخدام Tab Session Manager.<br> دعمك سوف يكون تشجيع كبير،كما أني اواصل تطوير الوظائف الإضافية.<br>إذا أعجبك Tab Session Manager، سوف أكون مسرورا إذا قدمت تبرعات."
-    },
-    "amazonTitleLabel": {
-        "message": "بطاقات هدايا amazon.co.jp"
-    },
-    "addonPageLabel": {
-        "message": "قائمة اللواحق"
-    },
-    "importMessage": {
-        "message": "الجلسات مستوردة."
-    },
-    "readFailedMessage": {
-        "message": "فشلت عملية القراءة"
-    },
-    "warningRemoveAllMessage": {
-        "message": "حذف كل الجلسات، هل أنت متأكد؟"
-    },
-    "sessionLabel": {
-        "message": "الجلسة"
-    },
-    "amazonUrl": {
-        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=ar_DZ"
-    },
-    "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/ar-DZ\/firefox\/addon\/tab-session-manager\/?src=optionpage"
-    },
-    "replacedPageMessage": {
-        "message": "لا يمكن فتح هذه الصفحة بواسطة Tab Session Manager."
-    }
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "احفظ و استعد حالة النوافذ و التبويبات. كما أنها تدعم الحفظ التلقائي."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Donate with PayPal"
+  },
+  "saveLabel": {
+    "message": "احفظ"
+  },
+  "initialNameValue": {
+    "message": "احفظ الجلسة الحالية"
+  },
+  "inputSessionNameLabel": {
+    "message": "Input session name"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "حفظ فقط النافذة الحالية"
+  },
+  "categoryFilterLabel": {
+    "message": "Category filter"
+  },
+  "sortLabel": {
+    "message": "Sort"
+  },
+  "displayAllLabel": {
+    "message": "الكل"
+  },
+  "displayUserLabel": {
+    "message": "المستخدم حفظ"
+  },
+  "displayAutoLabel": {
+    "message": "حفظ تلقائياً"
+  },
+  "newestLabel": {
+    "message": "الأحدث"
+  },
+  "oldestLabel": {
+    "message": "الأقدم"
+  },
+  "aToZLabel": {
+    "message": "أ-ي"
+  },
+  "zToALabel": {
+    "message": "ي-أ"
+  },
+  "open": {
+    "message": "افتح"
+  },
+  "remove": {
+    "message": "احذف"
+  },
+  "removeConfirmLabel": {
+    "message": "هل تريد حذف هذا الجلسة؟"
+  },
+  "sessionDeletedLabel": {
+    "message": "This session has been deleted."
+  },
+  "restoreSessionLabel": {
+    "message": "Restore"
+  },
+  "cancelLabel": {
+    "message": "إلغاء"
+  },
+  "addTagLabel": {
+    "message": "اضف كلمة مفتاحية"
+  },
+  "removeTagLabel": {
+    "message": "حذف كلمة مفتاحية"
+  },
+  "detailLabel": {
+    "message": "Detail"
+  },
+  "windowLabel": {
+    "message": "النافذة"
+  },
+  "windowsLabel": {
+    "message": "النوافذ"
+  },
+  "tabLabel": {
+    "message": "التبويب"
+  },
+  "tabsLabel": {
+    "message": "التبويبات"
+  },
+  "noSessionLabel": {
+    "message": "لا توجد جلسة"
+  },
+  "menuLabel": {
+    "message": "Menu"
+  },
+  "renameLabel": {
+    "message": "أعد التسمية"
+  },
+  "openInNewWindowLabel": {
+    "message": "افتح في نافذة جديدة"
+  },
+  "openInCurrentWindowLabel": {
+    "message": "افتح في النافذة الحالية"
+  },
+  "addToCurrentWindowLabel": {
+    "message": "أضف للنافذة الحالية"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "Replace with current session"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "Replace with current window"
+  },
+  "makeCopySessionLabel": {
+    "message": "Make a copy of the session"
+  },
+  "errorLabel": {
+    "message": "Error"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB is not available in your browser."
+  },
+  "howToSolveLabel": {
+    "message": "How to solve this problem"
+  },
+  "winCloseSessionName": {
+    "message": "تم الحفظ تلقائياً- النافذة مغلقة"
+  },
+  "regularSaveSessionName": {
+    "message": "الحفظ تلقائياً - بانتظام"
+  },
+  "settingsLabel": {
+    "message": "الإعدادات"
+  },
+  "sessionsLabel": {
+    "message": "الجلسات"
+  },
+  "informationLabel": {
+    "message": "معلومة"
+  },
+  "generalLabel": {
+    "message": "عام"
+  },
+  "autoSaveLabel": {
+    "message": "حفظ تلقائي"
+  },
+  "startUpLabel": {
+    "message": "بدء التشغيل"
+  },
+  "styleLabel": {
+    "message": "نمط"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "افتح جلسة في نافذة جديدة"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "إذا لم يتم تحديد النافذة، الجلسة تكتب فوق النافذة الحالية."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "تحميل التبويب ببطء"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "عند فتح جلسة، لن يتم تحميل محتوى كل صفحة حتى يتم تحديد التبويب.<br>إذا لم يتم تحديدها، فسيزيد استخدام الذاكرة بشكل كبير عند استعادة الجلسة."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Restore windows position"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Restore windows position and size when opening session."
+  },
+  "ifOpenLastSessionWhenStartUpLabel": {
+    "message": "استعد الجلسة السابقة عند بدء التشغيل"
+  },
+  "ifOpenLastSessionWhenStartUpCaptionLabel": {
+    "message": "عند بدء تشغيل فايرفوكس، استعد الجلسة التي تم الإغلاق عندها المرة الأخيرة."
+  },
+  "ifAutoSaveLabel": {
+    "message": "احفظ الجلسة بإنتظام"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "احفظ الجلسة كل X دقائق."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "الفترة الزمنية (دقائق)"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "قيمة الحد الأدنى 0,1"
+  },
+  "autoSaveLimitLabel": {
+    "message": "الحد الأقصى محفوظ"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "احفظ الجلسة عند إغلاق النافذة"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "احفظ اجلسة عند غلق النافذة أو عند إغلاق فايرفوكس."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "الحد الأقصى محفوظ"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "استخدم عنوان الصفحة للحفظ التلقائي لإسم الجلسة"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "عند حفظ الجلسة تلقائياً، استخدم عنوان الصفحة المفتوحة كـ إسم للجلسة."
+  },
+  "backupLabel": {
+    "message": "Backup"
+  },
+  "ifBackupLabel": {
+    "message": "حفظ نسخة احتياطية"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "عند بدء تشغيل فايرفوكس، قم بإنشاء ملف النسخ احتياطي لجلسة وحفظه في مجلد التحميل."
+  },
+  "backupFolderLabel": {
+    "message": "Save location"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+  },
+  "downloadFolderLabel": {
+    "message": "Download folder"
+  },
+  "backupFilesLimitLabel": {
+    "message": "الحد الأقصى لعدد النسخ الاحتياطية المحفوظة"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "عندما يتجاوز عدد ملفات النسخ الاحتياطي هذه القيمة، يتم الحذف تصاعدياً بدء من الأقدم."
+  },
+  "dateFormatLabel": {
+    "message": "صيغة التاريخ"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "مثال YYYY.MM.DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "احفظ النافذة الخاصة"
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "إذا لم يتم التحديد، يتجاهل النافذة الخاصة عند حفظ الجلسة."
+  },
+  "ifSupportTstLabel": {
+    "message": "يدعم نمط التبويب على شكل شجرة"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+  },
+  "tstDelayLabel": {
+    "message": "Delay when tree restoration (millisecond)"
+  },
+  "tstDelayCaptionLabel": {
+    "message": "لاستعادة وضع الشجرة، وقت الانتظار غلزامي لفتح التبويب، رفع هذه القيمة إذا كانت لم يتم استعادة الشجرة بنجاح."
+  },
+  "truncateTitleLabel": {
+    "message": "عرض اسم جلسة العمل ضمن سطر واحد"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "إذا كان اسم الدورة في قائمة جلسات العمل التي تكون أكثر من سطر واحد، يتم اقتطاع سطر واحد وعرضه."
+  },
+  "toolBarPopupLabel": {
+    "message": "شريط أدوات منبثق"
+  },
+  "toolBarPopupCaptionLabel": {
+    "message": "حدد نمط شريط الأدوات المنبثق."
+  },
+  "widthLabel": {
+    "message": "العرض"
+  },
+  "heightLabel": {
+    "message": "الطول"
+  },
+  "otherLabel": {
+    "message": "Other"
+  },
+  "resetSettingsLabel": {
+    "message": "Reset settings"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "Restore all settings to default."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "Reset"
+  },
+  "importLabel": {
+    "message": "استرد جلسات"
+  },
+  "importCaptionLabel": {
+    "message": "حمل الجلسات المحفوظة على الكمبيوتر و أضفهم إلى قائمة الجلسة.<br> كما انها يدعم ملف جلسة مسير الجلسة (. الجلسة)."
+  },
+  "importButtonLabel": {
+    "message": "تصفح..."
+  },
+  "importSaveButtonLabel": {
+    "message": "استرد"
+  },
+  "importClearButtonLabel": {
+    "message": "امسح"
+  },
+  "urlImportLabel": {
+    "message": "Import URL list"
+  },
+  "urlImportCaptionLabel": {
+    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+  },
+  "exportLabel": {
+    "message": "أصدر الجلسات"
+  },
+  "exportCaptionLabel": {
+    "message": "احفظ كل الجلسات على جهاز الكمبيوتر."
+  },
+  "exportButtonLabel": {
+    "message": "أصدر"
+  },
+  "removeSessionsLabel": {
+    "message": "احذف الجلسات"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "احذف كافة الجلسات."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "احذف"
+  },
+  "LicenseLabel": {
+    "message": "الترخيص"
+  },
+  "donationLabel": {
+    "message": "الرجاء قدم تبرع"
+  },
+  "donationCaptionLabel": {
+    "message": "شكرا لك لاستخدام Tab Session Manager.<br> دعمك سوف يكون تشجيع كبير،كما أني اواصل تطوير الوظائف الإضافية.<br>إذا أعجبك Tab Session Manager، سوف أكون مسرورا إذا قدمت تبرعات."
+  },
+  "amazonTitleLabel": {
+    "message": "بطاقات هدايا amazon.co.jp"
+  },
+  "addonPageLabel": {
+    "message": "قائمة اللواحق"
+  },
+  "importMessage": {
+    "message": "الجلسات مستوردة."
+  },
+  "readFailedMessage": {
+    "message": "فشلت عملية القراءة"
+  },
+  "warningRemoveAllMessage": {
+    "message": "حذف كل الجلسات، هل أنت متأكد؟"
+  },
+  "sessionLabel": {
+    "message": "الجلسة"
+  },
+  "amazonUrl": {
+    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=ar_DZ"
+  },
+  "addonUrl": {
+    "message": "https:\/\/addons.mozilla.org\/ar-DZ\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "لا يمكن فتح هذه الصفحة بواسطة Tab Session Manager."
+  }
 }

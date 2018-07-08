@@ -1,365 +1,365 @@
 {
-    "extName": {
-        "message": "Tab Session Manager"
-    },
-    "extDescription": {
-        "message": "Salvează și restabiliește starea ferestrelor și a filelor. De asemenea, susține salvarea automată."
-    },
-    "donateWithPaypalLabel": {
-        "message": "Donate with PayPal"
-    },
-    "saveLabel": {
-        "message": "Salvaţi"
-    },
-    "initialNameValue": {
-        "message": "Salvează sesiunea curentă"
-    },
-    "inputSessionNameLabel": {
-        "message": "Input session name"
-    },
-    "saveOnlyCurrentWindowLabel": {
-        "message": "Save only current window"
-    },
-    "categoryFilterLabel": {
-        "message": "Category filter"
-    },
-    "sortLabel": {
-        "message": "Sort"
-    },
-    "displayAllLabel": {
-        "message": "Tot"
-    },
-    "displayUserLabel": {
-        "message": "Utilizator salvat"
-    },
-    "displayAutoLabel": {
-        "message": "Salvare automată"
-    },
-    "newestLabel": {
-        "message": "Cel mai nou"
-    },
-    "oldestLabel": {
-        "message": "Cel mai vechi"
-    },
-    "aToZLabel": {
-        "message": "A-Z"
-    },
-    "zToALabel": {
-        "message": "Z-A"
-    },
-    "open": {
-        "message": "Deschide"
-    },
-    "remove": {
-        "message": "Șterge"
-    },
-    "removeConfirmLabel": {
-        "message": "Ştergeţi această sesiune?"
-    },
-    "sessionDeletedLabel": {
-        "message": "This session has been deleted."
-    },
-    "restoreSessionLabel": {
-        "message": "Restore"
-    },
-    "cancelLabel": {
-        "message": "Anulare"
-    },
-    "addTagLabel": {
-        "message": "Add tag"
-    },
-    "removeTagLabel": {
-        "message": "Remove tag"
-    },
-    "detailLabel": {
-        "message": "Detail"
-    },
-    "windowLabel": {
-        "message": "Fereastră"
-    },
-    "windowsLabel": {
-        "message": "Ferestre"
-    },
-    "tabLabel": {
-        "message": "Filă"
-    },
-    "tabsLabel": {
-        "message": "File"
-    },
-    "noSessionLabel": {
-        "message": "Nu există nici o sesiune"
-    },
-    "menuLabel": {
-        "message": "Menu"
-    },
-    "renameLabel": {
-        "message": "Rename"
-    },
-    "openInNewWindowLabel": {
-        "message": "Open in new window"
-    },
-    "openInCurrentWindowLabel": {
-        "message": "Open in current window"
-    },
-    "addToCurrentWindowLabel": {
-        "message": "Add to current window"
-    },
-    "replaceCurrentSessionLabel": {
-        "message": "Replace with current session"
-    },
-    "replaceCurrentWindowLabel": {
-        "message": "Replace with current window"
-    },
-    "makeCopySessionLabel": {
-        "message": "Make a copy of the session"
-    },
-    "errorLabel": {
-        "message": "Error"
-    },
-    "indexedDBErrorLabel": {
-        "message": "IndexedDB is not available in your browser."
-    },
-    "howToSolveLabel": {
-        "message": "How to solve this problem"
-    },
-    "winCloseSessionName": {
-        "message": "Salvare automată - Fereastra a fost închisă"
-    },
-    "regularSaveSessionName": {
-        "message": "Salvare automată - În mod regulat"
-    },
-    "settingsLabel": {
-        "message": "Setări"
-    },
-    "sessionsLabel": {
-        "message": "Sesiuni"
-    },
-    "informationLabel": {
-        "message": "Informaţii"
-    },
-    "generalLabel": {
-        "message": "General"
-    },
-    "autoSaveLabel": {
-        "message": "Auto save"
-    },
-    "startUpLabel": {
-        "message": "Startup"
-    },
-    "styleLabel": {
-        "message": "Style"
-    },
-    "ifOpenNewWindowLabel": {
-        "message": "Deschide sesiunea într-o fereastră nouă"
-    },
-    "ifOpenNewWindowCaptionLabel": {
-        "message": "Dacă este bifată, sesiunea suprascrie fereastra curentă."
-    },
-    "ifLazyLoadingLabel": {
-        "message": "Fila se încarcă greu"
-    },
-    "ifLazyLoadingCaptionLabel": {
-        "message": "La deschiderea unei sesiuni, conținutul fiecărei pagini nu este încărcat până când se selectează fila. <br>Dacă este deazctivat, utilizarea memoriei crește foarte mult când sesiunea este restabilită."
-    },
-    "isRestoreWindowPositionLabel": {
-        "message": "Restore windows position"
-    },
-    "isRestoreWindowPositionCaptionLabel": {
-        "message": "Restore windows position and size when opening session."
-    },
-    "ifOpenLastSessionWhenStartUpLabel": {
-        "message": "Restore previous session at startup"
-    },
-    "ifOpenLastSessionWhenStartUpCaptionLabel": {
-        "message": "When Firefox starts up, restore the session that was closed the last time."
-    },
-    "ifAutoSaveLabel": {
-        "message": "Salvează sesiunea în mod regulat"
-    },
-    "ifAutoSaveCaptionLabel": {
-        "message": "Salvează sesiunea la fiecare X minute."
-    },
-    "autoSaveIntervalLabel": {
-        "message": "Interval (minute)"
-    },
-    "autoSaveIntervalCaptionLabel": {
-        "message": "Valoarea minimă 0.1"
-    },
-    "autoSaveLimitLabel": {
-        "message": "Numărul maxim salvate"
-    },
-    "autoSaveLimitCaptionLabel": {
-        "message": "Numărul maxim de sesiuni salvate (în acest fel)."
-    },
-    "ifAutoSaveWhenCloseLabel": {
-        "message": "Salvează sesiunea când fereastra a fost închisă"
-    },
-    "ifAutoSaveWhenCloseCaptionLabel": {
-        "message": "Salvează sesiunea la închiderea ferestrei sau la ieşirea din Firefox."
-    },
-    "autoSaveWhenCloseLimitLabel": {
-        "message": "Numărul maxim salvate"
-    },
-    "autoSaveWhenCloseCaptionLabel": {
-        "message": "Numărul maxim de sesiuni salvate (în acest fel)."
-    },
-    "useTabTitleforAutoSaveLabel": {
-        "message": "Use page title for auto save session name"
-    },
-    "useTabTitleforAutoSaveCaptionLabel": {
-        "message": "When saving a session automatically, use the title of the opened page as the name of the session."
-    },
-    "backupLabel": {
-        "message": "Backup"
-    },
-    "ifBackupLabel": {
-        "message": "Save backup"
-    },
-    "ifBackupCaptionLabel": {
-        "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
-    },
-    "backupFolderLabel": {
-        "message": "Save location"
-    },
-    "backupFolderCaptionLabel": {
-        "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
-    },
-    "downloadFolderLabel": {
-        "message": "Download folder"
-    },
-    "backupFilesLimitLabel": {
-        "message": "Maximum number of saved backups"
-    },
-    "backupFilesLimitCaptionLabel": {
-        "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
-    },
-    "dateFormatLabel": {
-        "message": "Format dată"
-    },
-    "dateFormatCaptionLabel": {
-        "message": "Exemplu: YYYY. MM. DD HH:mm:ss"
-    },
-    "ifSavePrivateWindowLabel": {
-        "message": "Save private window"
-    },
-    "ifSavePrivateWindowCaptionLabel": {
-        "message": "If unchecked, ignores the private window when saving the session."
-    },
-    "ifSupportTstLabel": {
-        "message": "Suportă Tree Style Tab"
-    },
-    "ifSupportTstCaptionLabel": {
-        "message": "Restaurare stare tree a Tree Style Tab. <br>Vă rugăm să o opriți pentru versiunile Firefox mai vechi decât Firefox 57 (Quantum)."
-    },
-    "tstDelayLabel": {
-        "message": "Delay when tree restoration (millisecond)"
-    },
-    "tstDelayCaptionLabel": {
-        "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
-    },
-    "truncateTitleLabel": {
-        "message": "Display session name within one line"
-    },
-    "truncateTitleCaptionLabel": {
-        "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
-    },
-    "toolBarPopupLabel": {
-        "message": "Toolbar popup"
-    },
-    "toolBarPopupCaptionLabel": {
-        "message": "Specify the style of the toolbar popup."
-    },
-    "widthLabel": {
-        "message": "Width"
-    },
-    "heightLabel": {
-        "message": "Height"
-    },
-    "otherLabel": {
-        "message": "Other"
-    },
-    "resetSettingsLabel": {
-        "message": "Reset settings"
-    },
-    "resetSettingsCaptionLabel": {
-        "message": "Restore all settings to default."
-    },
-    "resetSettingsButtonLabel": {
-        "message": "Reset"
-    },
-    "importLabel": {
-        "message": "Importă sesiuni"
-    },
-    "importCaptionLabel": {
-        "message": "Încarcă sesiunile valvate pe computer și adauga-le la lista de sesiuni. <br>De asemnea, acceptă fișierul sesiunii SessionManager (.session)."
-    },
-    "importButtonLabel": {
-        "message": "Caută..."
-    },
-    "importSaveButtonLabel": {
-        "message": "Importă"
-    },
-    "importClearButtonLabel": {
-        "message": "Golește"
-    },
-    "urlImportLabel": {
-        "message": "Import URL list"
-    },
-    "urlImportCaptionLabel": {
-        "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
-    },
-    "exportLabel": {
-        "message": "Exportă sesiuni"
-    },
-    "exportCaptionLabel": {
-        "message": "Save all sessions to the computer."
-    },
-    "exportButtonLabel": {
-        "message": "Exportă"
-    },
-    "removeSessionsLabel": {
-        "message": "Ștergere sesiuni"
-    },
-    "removeSessionsCaptionLabel": {
-        "message": "Delete all sessions."
-    },
-    "removeSessionsButtonLabel": {
-        "message": "Șterge"
-    },
-    "LicenseLabel": {
-        "message": "Licenţă"
-    },
-    "donationLabel": {
-        "message": "Vă rugăm să faceți o donație"
-    },
-    "donationCaptionLabel": {
-        "message": "Vă mulţumim că utilizaţi Tab Session Manager. <br>Sprijinul dumneavoastră ar însemna foarte mult, deoarce ne-ar ajuta să continuam dezvoltarea extensie. <br>Dacă vă place Tab Session Manager, orice donație este binevenită."
-    },
-    "amazonTitleLabel": {
-        "message": "amazon.co.jp eGift Cards"
-    },
-    "addonPageLabel": {
-        "message": "pagină add-on"
-    },
-    "importMessage": {
-        "message": "Sesiuni importate."
-    },
-    "readFailedMessage": {
-        "message": "Citirea a eșuat"
-    },
-    "warningRemoveAllMessage": {
-        "message": "Şterge toate sesiunile. Eşti sigur?"
-    },
-    "sessionLabel": {
-        "message": "Sesiune"
-    },
-    "amazonUrl": {
-        "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
-    },
-    "addonUrl": {
-        "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
-    },
-    "replacedPageMessage": {
-        "message": "Această pagină nu poate fi deschisă de Tab Session Manager."
-    }
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "Salvează și restabiliește starea ferestrelor și a filelor. De asemenea, susține salvarea automată."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Donate with PayPal"
+  },
+  "saveLabel": {
+    "message": "Salvaţi"
+  },
+  "initialNameValue": {
+    "message": "Salvează sesiunea curentă"
+  },
+  "inputSessionNameLabel": {
+    "message": "Input session name"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "Save only current window"
+  },
+  "categoryFilterLabel": {
+    "message": "Category filter"
+  },
+  "sortLabel": {
+    "message": "Sort"
+  },
+  "displayAllLabel": {
+    "message": "Tot"
+  },
+  "displayUserLabel": {
+    "message": "Utilizator salvat"
+  },
+  "displayAutoLabel": {
+    "message": "Salvare automată"
+  },
+  "newestLabel": {
+    "message": "Cel mai nou"
+  },
+  "oldestLabel": {
+    "message": "Cel mai vechi"
+  },
+  "aToZLabel": {
+    "message": "A-Z"
+  },
+  "zToALabel": {
+    "message": "Z-A"
+  },
+  "open": {
+    "message": "Deschide"
+  },
+  "remove": {
+    "message": "Șterge"
+  },
+  "removeConfirmLabel": {
+    "message": "Ştergeţi această sesiune?"
+  },
+  "sessionDeletedLabel": {
+    "message": "This session has been deleted."
+  },
+  "restoreSessionLabel": {
+    "message": "Restore"
+  },
+  "cancelLabel": {
+    "message": "Anulare"
+  },
+  "addTagLabel": {
+    "message": "Add tag"
+  },
+  "removeTagLabel": {
+    "message": "Remove tag"
+  },
+  "detailLabel": {
+    "message": "Detail"
+  },
+  "windowLabel": {
+    "message": "Fereastră"
+  },
+  "windowsLabel": {
+    "message": "Ferestre"
+  },
+  "tabLabel": {
+    "message": "Filă"
+  },
+  "tabsLabel": {
+    "message": "File"
+  },
+  "noSessionLabel": {
+    "message": "Nu există nici o sesiune"
+  },
+  "menuLabel": {
+    "message": "Menu"
+  },
+  "renameLabel": {
+    "message": "Rename"
+  },
+  "openInNewWindowLabel": {
+    "message": "Open in new window"
+  },
+  "openInCurrentWindowLabel": {
+    "message": "Open in current window"
+  },
+  "addToCurrentWindowLabel": {
+    "message": "Add to current window"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "Replace with current session"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "Replace with current window"
+  },
+  "makeCopySessionLabel": {
+    "message": "Make a copy of the session"
+  },
+  "errorLabel": {
+    "message": "Error"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB is not available in your browser."
+  },
+  "howToSolveLabel": {
+    "message": "How to solve this problem"
+  },
+  "winCloseSessionName": {
+    "message": "Salvare automată - Fereastra a fost închisă"
+  },
+  "regularSaveSessionName": {
+    "message": "Salvare automată - În mod regulat"
+  },
+  "settingsLabel": {
+    "message": "Setări"
+  },
+  "sessionsLabel": {
+    "message": "Sesiuni"
+  },
+  "informationLabel": {
+    "message": "Informaţii"
+  },
+  "generalLabel": {
+    "message": "General"
+  },
+  "autoSaveLabel": {
+    "message": "Auto save"
+  },
+  "startUpLabel": {
+    "message": "Startup"
+  },
+  "styleLabel": {
+    "message": "Style"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "Deschide sesiunea într-o fereastră nouă"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "Dacă este bifată, sesiunea suprascrie fereastra curentă."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "Fila se încarcă greu"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "La deschiderea unei sesiuni, conținutul fiecărei pagini nu este încărcat până când se selectează fila. <br>Dacă este deazctivat, utilizarea memoriei crește foarte mult când sesiunea este restabilită."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Restore windows position"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Restore windows position and size when opening session."
+  },
+  "ifOpenLastSessionWhenStartUpLabel": {
+    "message": "Restore previous session at startup"
+  },
+  "ifOpenLastSessionWhenStartUpCaptionLabel": {
+    "message": "When Firefox starts up, restore the session that was closed the last time."
+  },
+  "ifAutoSaveLabel": {
+    "message": "Salvează sesiunea în mod regulat"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "Salvează sesiunea la fiecare X minute."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "Interval (minute)"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "Valoarea minimă 0.1"
+  },
+  "autoSaveLimitLabel": {
+    "message": "Numărul maxim salvate"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "Numărul maxim de sesiuni salvate (în acest fel)."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "Salvează sesiunea când fereastra a fost închisă"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "Salvează sesiunea la închiderea ferestrei sau la ieşirea din Firefox."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "Numărul maxim salvate"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "Numărul maxim de sesiuni salvate (în acest fel)."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "Use page title for auto save session name"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+  },
+  "backupLabel": {
+    "message": "Backup"
+  },
+  "ifBackupLabel": {
+    "message": "Save backup"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+  },
+  "backupFolderLabel": {
+    "message": "Save location"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+  },
+  "downloadFolderLabel": {
+    "message": "Download folder"
+  },
+  "backupFilesLimitLabel": {
+    "message": "Maximum number of saved backups"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+  },
+  "dateFormatLabel": {
+    "message": "Format dată"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "Exemplu: YYYY. MM. DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "Save private window"
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "If unchecked, ignores the private window when saving the session."
+  },
+  "ifSupportTstLabel": {
+    "message": "Suportă Tree Style Tab"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+  },
+  "tstDelayLabel": {
+    "message": "Delay when tree restoration (millisecond)"
+  },
+  "tstDelayCaptionLabel": {
+    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+  },
+  "truncateTitleLabel": {
+    "message": "Display session name within one line"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+  },
+  "toolBarPopupLabel": {
+    "message": "Toolbar popup"
+  },
+  "toolBarPopupCaptionLabel": {
+    "message": "Specify the style of the toolbar popup."
+  },
+  "widthLabel": {
+    "message": "Width"
+  },
+  "heightLabel": {
+    "message": "Height"
+  },
+  "otherLabel": {
+    "message": "Other"
+  },
+  "resetSettingsLabel": {
+    "message": "Reset settings"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "Restore all settings to default."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "Reset"
+  },
+  "importLabel": {
+    "message": "Importă sesiuni"
+  },
+  "importCaptionLabel": {
+    "message": "Încarcă sesiunile valvate pe computer și adauga-le la lista de sesiuni. <br>De asemnea, acceptă fișierul sesiunii SessionManager (.session)."
+  },
+  "importButtonLabel": {
+    "message": "Caută..."
+  },
+  "importSaveButtonLabel": {
+    "message": "Importă"
+  },
+  "importClearButtonLabel": {
+    "message": "Golește"
+  },
+  "urlImportLabel": {
+    "message": "Import URL list"
+  },
+  "urlImportCaptionLabel": {
+    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+  },
+  "exportLabel": {
+    "message": "Exportă sesiuni"
+  },
+  "exportCaptionLabel": {
+    "message": "Save all sessions to the computer."
+  },
+  "exportButtonLabel": {
+    "message": "Exportă"
+  },
+  "removeSessionsLabel": {
+    "message": "Ștergere sesiuni"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "Delete all sessions."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "Șterge"
+  },
+  "LicenseLabel": {
+    "message": "Licenţă"
+  },
+  "donationLabel": {
+    "message": "Vă rugăm să faceți o donație"
+  },
+  "donationCaptionLabel": {
+    "message": "Vă mulţumim că utilizaţi Tab Session Manager. <br>Sprijinul dumneavoastră ar însemna foarte mult, deoarce ne-ar ajuta să continuam dezvoltarea extensie. <br>Dacă vă place Tab Session Manager, orice donație este binevenită."
+  },
+  "amazonTitleLabel": {
+    "message": "amazon.co.jp eGift Cards"
+  },
+  "addonPageLabel": {
+    "message": "pagină add-on"
+  },
+  "importMessage": {
+    "message": "Sesiuni importate."
+  },
+  "readFailedMessage": {
+    "message": "Citirea a eșuat"
+  },
+  "warningRemoveAllMessage": {
+    "message": "Şterge toate sesiunile. Eşti sigur?"
+  },
+  "sessionLabel": {
+    "message": "Sesiune"
+  },
+  "amazonUrl": {
+    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "Această pagină nu poate fi deschisă de Tab Session Manager."
+  }
 }
