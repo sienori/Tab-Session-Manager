@@ -6,7 +6,7 @@
     "message": "Guardar y restaurar el estado de las ventanas y pestañas. También permite guardado automático."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Donar con PayPal"
   },
   "saveLabel": {
     "message": "Guardar"
@@ -24,7 +24,7 @@
     "message": "Category filter"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Ordenar"
   },
   "displayAllLabel": {
     "message": "Todo"
@@ -60,7 +60,7 @@
     "message": "This session has been deleted."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Restaurar"
   },
   "cancelLabel": {
     "message": "Cancelar"
@@ -90,7 +90,7 @@
     "message": "No hay ninguna sesión"
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Menú"
   },
   "renameLabel": {
     "message": "Renombrar"
@@ -210,16 +210,16 @@
     "message": "Al guardar la seión automáticamente, usar el título de la página abierta como nombre de la sesión."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Copia de seguridad"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Guardar copia de seguridad"
   },
   "ifBackupCaptionLabel": {
     "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Guardar ubicación"
   },
   "backupFolderCaptionLabel": {
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
@@ -252,7 +252,7 @@
     "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Retrasar al árbol de restauración (milisegundos)"
   },
   "tstDelayCaptionLabel": {
     "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
@@ -279,13 +279,13 @@
     "message": "Other"
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Restablecer ajustes"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Restablecer toda la configuración por defecto."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Restablecer"
   },
   "importLabel": {
     "message": "Importar sesiones"
@@ -303,7 +303,7 @@
     "message": "Limpiar"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Importar lista de URL"
   },
   "urlImportCaptionLabel": {
     "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
@@ -312,7 +312,7 @@
     "message": "Exportar sesiones"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Guardar todas las sesiones en el equipo."
   },
   "exportButtonLabel": {
     "message": "Exportar"
@@ -321,7 +321,7 @@
     "message": "Eliminar sesiones"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Eliminar todas las sesiones."
   },
   "removeSessionsButtonLabel": {
     "message": "Eliminar"
