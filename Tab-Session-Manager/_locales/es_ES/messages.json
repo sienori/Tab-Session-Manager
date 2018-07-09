@@ -249,7 +249,7 @@
     "message": "Soportar pestañas estilo árbol"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Restaurar estado de árbol de Tree Style Tab<br>Cuando esta opción está activada, se necesita tiempo para restaurar la sesión."
   },
   "tstDelayLabel": {
     "message": "Retrasar al árbol de restauración (milisegundos)"
