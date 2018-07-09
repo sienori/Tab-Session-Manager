@@ -108,7 +108,7 @@
     "message": "Mit aktueller Sitzung ersetzen"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Mit aktueller Sitzung ersetzen"
+    "message": "Mit aktuellem Fenster ersetzen"
   },
   "makeCopySessionLabel": {
     "message": "Sitzung Kopieren"
