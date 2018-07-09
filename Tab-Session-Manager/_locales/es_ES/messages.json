@@ -105,22 +105,22 @@
     "message": "Agregar a ventana actual"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Reemplazar con la sesión actual"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Reemplazar con la ventana actual"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Hacer una copia de la sesión"
   },
   "errorLabel": {
     "message": "Error"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB no está disponible en su navegador."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Cómo resolver este problema"
   },
   "winCloseSessionName": {
     "message": "Auto guardado - La ventana se cerró"
@@ -222,7 +222,7 @@
     "message": "Guardar ubicación"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    "message": "Especifique la carpeta para guardar el archivo de la copia de seguridad. La ubicación de guardado esta limitada a la carpeta dentro de la carpeta de descargas de Firefox."
   },
   "downloadFolderLabel": {
     "message": "Carpeta de descargas"
@@ -231,7 +231,7 @@
     "message": "Número máximo de copias de seguridad guardadas"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Cuando el número de copias de seguridad supera este valor, se eliminan en orden ascendente desde el más antiguo."
   },
   "dateFormatLabel": {
     "message": "Formato de fecha"
@@ -255,7 +255,7 @@
     "message": "Retrasar al árbol de restauración (milisegundos)"
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Para restaurar el estado del árbol, es requerido un tiempo de espera para abrir la pestaña. Incremente este valor si el árbol no se restaura correctamente."
   },
   "truncateTitleLabel": {
     "message": "Mostrar el nombre de la sesión en una línea"
@@ -276,7 +276,7 @@
     "message": "Alto"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Otros"
   },
   "resetSettingsLabel": {
     "message": "Restablecer ajustes"
