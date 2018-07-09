@@ -3,13 +3,13 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "참과 탭의 상태를 저장하고 복원합니다. 자동 저장도 지원합니다."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "페이팔로 기부하기"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "저장"
   },
   "initialNameValue": {
     "message": "Save current session"
