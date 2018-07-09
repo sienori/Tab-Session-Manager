@@ -306,7 +306,7 @@
     "message": "Importar lista de URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Crear una sesión desde una lista de direcciones URL y la añade a la lista de sesiones.<br>Formato: &lt;URL&gt; &lt;título de la página (opcional)&gt;"
   },
   "exportLabel": {
     "message": "Exportar sesiones"
