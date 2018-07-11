@@ -207,7 +207,7 @@
     "message": "使用页面标题作为自动保存会话的名称"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "自动保存会话时，使用已打开页面的标题作为会话的名称。"
   },
   "backupLabel": {
     "message": "备份"
