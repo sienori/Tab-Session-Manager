@@ -153,22 +153,22 @@
     "message": "在新窗口中打开会话"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "如果取消选中，该会话将会覆盖当前窗口的所有标签页。"
+    "message": "若未启用，会话将会覆盖当前的窗口（与标签页）。"
   },
   "ifLazyLoadingLabel": {
     "message": "延迟加载标签"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "还原会话后，选中相应标签页才会开始加载网页。 <br> 如果未勾选, 那么在还原会话时，内存的使用量将会大大增加。"
+    "message": "打开会话后，选中标签页才会加载其内容。<br>若未启用，还原会话时内存的使用量将大大增高。"
   },
   "isRestoreWindowPositionLabel": {
-    "message": "恢复窗口位置"
+    "message": "还原窗口位置大小"
   },
   "isRestoreWindowPositionCaptionLabel": {
     "message": "还原会话时，同时还原窗口的位置与大小。"
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "启动时还原最新会话"
+    "message": "启动时还原上次的会话"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
     "message": "当 Firefox 启动时，还原上次关闭的会话。"
@@ -282,16 +282,16 @@
     "message": "恢复默认设置"
   },
   "resetSettingsCaptionLabel": {
-    "message": "将所有设置重置为默认值"
+    "message": "将所有设置恢复为默认值"
   },
   "resetSettingsButtonLabel": {
-    "message": "重置"
+    "message": "恢复"
   },
   "importLabel": {
     "message": "导入会话"
   },
   "importCaptionLabel": {
-    "message": "导入保存在本地的会话备份文件，并将其中的会话加入会话列表中。<br>支持 SessionManager 的会话备份文件 (.session)。"
+    "message": "导入保存在本地的会话备份文件，并将其中的会话添加至会话列表中。<br>同时支持 SessionManager 的会话备份文件（.session 文件）。"
   },
   "importButtonLabel": {
     "message": "浏览..."
@@ -306,7 +306,7 @@
     "message": "导入 URL 列表"
   },
   "urlImportCaptionLabel": {
-    "message": "手动输入 URL 并保存为会话。<br>格式: &lt;URL&gt; &lt;标题 (可选)&gt;"
+    "message": "通过输入 URL 列表创建会话，并将其添加至会话列表中。<br>格式: &lt;URL&gt; &lt;标题 (可选)&gt;"
   },
   "exportLabel": {
     "message": "导出会话"
