@@ -249,7 +249,7 @@
     "message": "支援 Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "還原 Tree Style Tab 的標籤頁樹狀結構。 <br>若啟用此選項，還原會話時便需要額外的時間。"
   },
   "tstDelayLabel": {
     "message": "Tree Style Tab 還原時的延遲載入時間(毫秒)"
