@@ -165,10 +165,10 @@
     "message": "恢复窗口位置"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "在恢复会话同时恢复窗口的位置与大小"
+    "message": "还原会话时，同时还原窗口的位置与大小。"
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "在启动时恢复上次的会话"
+    "message": "启动时还原最新会话"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
     "message": "在 Firefox 启动时恢复上一次关闭的会话。"
@@ -180,7 +180,7 @@
     "message": "在每 X 分钟保存一次会话。"
   },
   "autoSaveIntervalLabel": {
-    "message": "间隔(分钟)"
+    "message": "间隔（分钟）"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "最小值为 0.1"
