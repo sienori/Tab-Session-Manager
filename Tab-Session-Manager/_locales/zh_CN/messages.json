@@ -21,7 +21,7 @@
     "message": "只保存当前窗口的标签"
   },
   "categoryFilterLabel": {
-    "message": "类别过滤器"
+    "message": "类型筛选"
   },
   "sortLabel": {
     "message": "排序方式"
@@ -36,10 +36,10 @@
     "message": "自动保存"
   },
   "newestLabel": {
-    "message": "最新"
+    "message": "从新到旧"
   },
   "oldestLabel": {
-    "message": "最旧"
+    "message": "从旧到新"
   },
   "aToZLabel": {
     "message": "字母顺序"
@@ -87,7 +87,7 @@
     "message": "标签页"
   },
   "noSessionLabel": {
-    "message": "没有会话"
+    "message": "没有已保存的会话"
   },
   "menuLabel": {
     "message": "菜单"
@@ -111,7 +111,7 @@
     "message": "使用当前窗口替换此会话"
   },
   "makeCopySessionLabel": {
-    "message": "复制此会话"
+    "message": "创建会话副本"
   },
   "errorLabel": {
     "message": "错误"
@@ -123,7 +123,7 @@
     "message": "解决方案"
   },
   "winCloseSessionName": {
-    "message": "自动保存 - 浏览器关闭时"
+    "message": "自动保存 - 窗口关闭时"
   },
   "regularSaveSessionName": {
     "message": "自动保存 - 定期"
@@ -138,7 +138,7 @@
     "message": "信息"
   },
   "generalLabel": {
-    "message": "一般设置"
+    "message": "通用设置"
   },
   "autoSaveLabel": {
     "message": "自动保存"
