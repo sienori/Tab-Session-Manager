@@ -3,10 +3,10 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "保存、还原窗口及标签页的状态，支持自动保存。"
+    "message": "保存、还原窗口与标签页的状态，支持自动保存。"
   },
   "donateWithPaypalLabel": {
-    "message": "使用 Paypal 捐赠"
+    "message": "通过 Paypal 捐赠"
   },
   "saveLabel": {
     "message": "保存"
@@ -222,16 +222,16 @@
     "message": "保存位置"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    "message": "指定保存备份文件的文件夹。仅限于 Firefox 设置中的下载目录下。"
   },
   "downloadFolderLabel": {
     "message": "下载文件夹"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "最大备份数量"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "当备份文件的数量超过此值时，将以从旧到新的顺序删除备份文件。"
   },
   "dateFormatLabel": {
     "message": "日期格式"
@@ -255,7 +255,7 @@
     "message": "Delay when tree restoration (millisecond)"
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "为还原标签的树状结构，需要等待一段时间才能打开标签页。若标签树未能正确还原，则增高此值。"
   },
   "truncateTitleLabel": {
     "message": "以单行显示会话名称"
@@ -285,7 +285,7 @@
     "message": "恢复所有设置为默认值"
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "重置"
   },
   "importLabel": {
     "message": "导入会话"
