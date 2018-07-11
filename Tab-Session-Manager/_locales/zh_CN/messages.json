@@ -171,13 +171,13 @@
     "message": "启动时还原最新会话"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "在 Firefox 启动时恢复上一次关闭的会话。"
+    "message": "当 Firefox 启动时，还原上次关闭的会话。"
   },
   "ifAutoSaveLabel": {
-    "message": "定期保存已打开标签页为会话"
+    "message": "定期保存会话"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "在每 X 分钟保存一次会话。"
+    "message": "每隔 X 分钟将当前会话保存为新的会话。"
   },
   "autoSaveIntervalLabel": {
     "message": "间隔（分钟）"
@@ -282,7 +282,7 @@
     "message": "恢复默认设置"
   },
   "resetSettingsCaptionLabel": {
-    "message": "恢复所有设置为默认值"
+    "message": "将所有设置重置为默认值"
   },
   "resetSettingsButtonLabel": {
     "message": "重置"
@@ -312,25 +312,25 @@
     "message": "导出会话"
   },
   "exportCaptionLabel": {
-    "message": "将会话保存到本地。"
+    "message": "将会话保存至本地。"
   },
   "exportButtonLabel": {
     "message": "导出"
   },
   "removeSessionsLabel": {
-    "message": "删除会话"
+    "message": "清空会话"
   },
   "removeSessionsCaptionLabel": {
     "message": "删除所有会话。"
   },
   "removeSessionsButtonLabel": {
-    "message": "删除"
+    "message": "清空"
   },
   "LicenseLabel": {
     "message": "许可证书"
   },
   "donationLabel": {
-    "message": "请捐一波款吧～"
+    "message": "欢迎捐款"
   },
   "donationCaptionLabel": {
     "message": "感谢您使用 Tab Session Manager.<br>你的支持将会成为我继续开发此附加组件的巨大鼓励。 <br>如果您喜欢 Tab Session Manager，希望您可以考虑捐助，我将为此感到欣慰。"
@@ -348,10 +348,10 @@
     "message": "读取失败"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Is it OK?"
+    "message": "这将删除所有已保存的会话。是否继续？"
   },
   "sessionLabel": {
-    "message": "会话(Session)"
+    "message": "会话（Session）"
   },
   "amazonUrl": {
     "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
