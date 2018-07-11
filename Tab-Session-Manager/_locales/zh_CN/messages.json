@@ -24,7 +24,7 @@
     "message": "类别过滤器"
   },
   "sortLabel": {
-    "message": "分类"
+    "message": "排序方式"
   },
   "displayAllLabel": {
     "message": "全部"
@@ -117,7 +117,7 @@
     "message": "错误"
   },
   "indexedDBErrorLabel": {
-    "message": "你的浏览器不支持 Indexed DB"
+    "message": "您的浏览器不支持 IndexedDB"
   },
   "howToSolveLabel": {
     "message": "解决方案"
@@ -249,10 +249,10 @@
     "message": "支持 Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "还原 Tree Style Tab 的树状标签。<br>若启用此选项，还原会话时便需要额外的时间。"
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "标签树恢复延迟（毫秒）"
   },
   "tstDelayCaptionLabel": {
     "message": "为还原标签的树状结构，需要等待一段时间才能打开标签页。若标签树未能正确还原，则增高此值。"
