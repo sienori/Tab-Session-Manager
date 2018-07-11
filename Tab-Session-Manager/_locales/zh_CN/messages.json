@@ -204,7 +204,7 @@
     "message": "（以此种方式）自动保存的会话的最大数量。"
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "使用页面标题作为自动保存会话的名称"
+    "message": "使用网页标题作为自动保存的会话的名称"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
     "message": "自动保存会话时，使用已打开页面的标题作为会话的名称。"
@@ -216,7 +216,7 @@
     "message": "保存备份"
   },
   "ifBackupCaptionLabel": {
-    "message": "当 Firefox 启动时，在 下载 中保存所有会话的备份。"
+    "message": "每当 Firefox 启动时，在 下载 文件夹中保存一份所有会话的备份文件。"
   },
   "backupFolderLabel": {
     "message": "保存位置"
@@ -225,13 +225,13 @@
     "message": "指定保存备份文件的文件夹。仅限于 Firefox 设置中的下载目录下。"
   },
   "downloadFolderLabel": {
-    "message": "下载文件夹"
+    "message": "下载文件夹路径"
   },
   "backupFilesLimitLabel": {
-    "message": "最大备份数量"
+    "message": "最大数量"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "当备份文件的数量超过此值时，将以从旧到新的顺序删除备份文件。"
+    "message": "当备份文件的数量超过此值时，将按照从旧到新的顺序删除多出的备份文件。"
   },
   "dateFormatLabel": {
     "message": "日期格式"
