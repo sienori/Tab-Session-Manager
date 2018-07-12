@@ -6,7 +6,7 @@
     "message": "儲存與還原視窗跟分頁的瀏覽狀態。也支援自動儲存功能。"
   },
   "donateWithPaypalLabel": {
-    "message": "透過 PayPal 進行贊助"
+    "message": "透過 PayPal 來贊助我"
   },
   "saveLabel": {
     "message": "儲存"
@@ -21,7 +21,7 @@
     "message": "僅儲存目前視窗"
   },
   "categoryFilterLabel": {
-    "message": "分類篩選"
+    "message": "標籤篩選"
   },
   "sortLabel": {
     "message": "排序"
@@ -249,13 +249,13 @@
     "message": "支援 Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "還原 Tree Style Tab 的標籤頁樹狀結構。 <br>若啟用此選項，還原會話時便需要額外的時間。"
+    "message": "還原 Tree Style Tab 的分頁樹狀結構。 <br>若啟用此選項，還原瀏覽階段時便需要額外的時間。"
   },
   "tstDelayLabel": {
     "message": "Tree Style Tab 還原時的延遲載入時間(毫秒)"
   },
   "tstDelayCaptionLabel": {
-    "message": "若要還原 Tree 狀態，需要等待一段時間才能開啟分頁，無法正確還原 Tree 之時，請增加此值。"
+    "message": "若要還原分頁為樹狀結構狀態，需要等待一段時間才能開啟分頁，無法正確還原為樹狀結構之時，請增加此值。"
   },
   "truncateTitleLabel": {
     "message": "單行顯示瀏覽階段名稱"
