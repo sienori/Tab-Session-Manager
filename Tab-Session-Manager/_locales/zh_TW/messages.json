@@ -255,7 +255,7 @@
     "message": "Tree Style Tab 還原時的延遲載入時間(毫秒)"
   },
   "tstDelayCaptionLabel": {
-    "message": "若要還原分頁為樹狀結構狀態，需要等待一段時間才能開啟分頁，無法正確還原為樹狀結構之時，請增加此值。"
+    "message": "若要還原分頁為樹狀結構狀態，需要等待一段時間才能開啟分頁，若無法正確還原為樹狀結構之時，請增加此值。"
   },
   "truncateTitleLabel": {
     "message": "單行顯示瀏覽階段名稱"
