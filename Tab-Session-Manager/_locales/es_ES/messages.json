@@ -171,7 +171,7 @@
     "message": "Restaurar la sesión anterior al iniciar"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Cuando Firefox se inicie, restaurar la útima sesión cerrada."
+    "message": "Cuando Firefox se inicie, restaurar la última sesión cerrada."
   },
   "ifAutoSaveLabel": {
     "message": "Guardar la sesión regularmente"
@@ -180,7 +180,7 @@
     "message": "Guardar la sesión cada X minutos."
   },
   "autoSaveIntervalLabel": {
-    "message": "Intervalo en minutos"
+    "message": "Intervalo (minutos)"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "Valor mínimo 0.1"
