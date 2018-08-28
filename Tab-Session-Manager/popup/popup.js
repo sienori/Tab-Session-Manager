@@ -955,8 +955,9 @@ document.addEventListener("click", async function(e) {
   hideAllPopupMenu(e);
   switch (e.target.id) {
     case "panel":
-      var createData = { type: "detached_panel", url: "panel.html", width: 550, height: 500};
+      var createData = { type: "detached_panel", url: "../popup/panel.html", width: 650, height: 650};
       var creating = browser.windows.create(createData);
+      break;
     case "setting":
       browser.runtime.openOptionsPage();
       break;
