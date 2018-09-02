@@ -22,7 +22,7 @@ S.init().then(async () => {
   if (S.get().sort != undefined) document.getElementById("sort").value = S.get().sort;
 
   //タブタイトルを表示
-  document.getElementById("saveName").value = await getCurrentTabName();
+  //document.getElementById("saveName").value = await getCurrentTabName();
 
   showIndexedDBError();
 
@@ -81,17 +81,11 @@ async function setLabels() {
   }
 
   document.getElementById("donate").title = Labels.donateWithPaypalLabel;
-  document.getElementById("saveName").placeholder = Labels.initialNameValue;
-  document.getElementById("saveName").title = Labels.inputSessionNameLabel;
-  document.getElementById("saveButton").title = Labels.initialNameValue;
   document.getElementById("winCloseSessionName").innerText = Labels.winCloseSessionName;
   document.getElementById("regularSaveSessionName").innerText = Labels.regularSaveSessionName;
   document.getElementById("setting").title = Labels.settingsLabel;
   document.getElementById("filter").title = Labels.categoryFilterLabel;
   document.getElementById("sort").title = Labels.sortLabel;
-  document.getElementById("saveOptionButton").title = Labels.menuLabel;
-  document.getElementsByClassName("saveOnlyCurrentWindow")[0].innerText =
-    Labels.saveOnlyCurrentWindowLabel;
 }
 
 async function getCurrentTabName() {
@@ -955,7 +949,7 @@ document.addEventListener("click", async function(e) {
   hideAllPopupMenu(e);
   switch (e.target.id) {
     case "panel":
-      var createData = { type: "detached_panel", url: "../panel/panel.html", width: 650, height: 650};
+      var createData = { type: "detached_panel", url: "../popup/panel.html", width: 650, height: 650};
       var creating = browser.windows.create(createData);
       break;
     case "setting":

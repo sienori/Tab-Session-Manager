@@ -17,8 +17,8 @@ html {
 }
 
 body {
-  width: 350px;
-  height: 500px;
+  width: 650px;
+  height: 650px;
   padding: 0px;
   margin: 0px;
   display: flex;
@@ -63,23 +63,6 @@ svg {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-}
-
-#panel {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-#panel svg {
-  height: 24px;
-  width: 24px;
-  fill: var(--sub-text);
-  transition: all 100ms;
-}
-
-#panel:hover svg {
-  fill: var(--highlight);
 }
 
 #donate {
@@ -825,102 +808,7 @@ a:hover {
 }
 
 /* saveArea */
-
-#saveArea {
-  height: 30px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#saveName {
-  padding: 0px 3px;
-  margin-right: -1px;
-  font-family: inherit;
-  flex-grow: 1;
-  flex-shrink: 1;
-  min-width: 10px;
-  border: var(--button) solid 1px;
-  border-radius: 2px 0px 0px 2px;
-  color: var(--main-text);
-  transition: all 100ms;
-}
-
-#saveName:focus,
-#saveName:hover {
-  border: var(--highlight) solid 1px;
-  z-index: 1;
-}
-
-#saveButton {
-  width: auto;
-  padding: 5px 10px;
-  border-radius: 0px 2px 2px 0px;
-  padding-right: 15px;
-  margin-right: -15px;
-  border: var(--button) solid 1px;
-  background-color: var(--main-bg);
-  cursor: pointer;
-  transition: border 100ms, color 100ms;
-}
-
-#saveButton:hover {
-  border: var(--highlight) solid 1px;
-  color: var(--highlight);
-}
-
-#saveButton:hover + #saveOptionButton {
-  border: var(--highlight) solid 1px;
-  border-left: var(--main-bg) solid 0px;
-}
-
-#saveOptionButton {
-  width: 15px;
-  padding: 5px 5px;
-  background-color: var(--main-bg);
-  border: var(--button) solid 1px;
-  border-left: var(--main-bg) solid 0px;
-  border-radius: 0px 2px 2px 0px;
-  cursor: pointer;
-  transition: border-width 0ms ease 100ms, border-color 100ms;
-}
-
-#saveOptionButton:hover {
-  border: var(--highlight) solid 1px;
-  transition: border-width 0ms ease 0ms;
-}
-
-#saveOptionButton:hover + .triangle:after {
-  border-top-color: var(--highlight);
-}
-
-.triangle {
-  position: relative;
-  width: 0px;
-  z-index: 1;
-}
-
-.triangle:after {
-  pointer-events: none;
-  content: "";
-  display: block;
-  position: relative;
-  top: 13px;
-  left: -12px;
-  border: 4px solid transparent;
-  border-top: 6px solid #ccc;
-  transition: all 100ms;
-}
-
-#saveArea .popupMenuContainer {
-  position: relative;
-  display: block;
-}
-
-#saveArea .popupMenu {
-  bottom: 35px;
-}
+// panel don't save sessions
 
 .error a {
   color: var(--highlight);
