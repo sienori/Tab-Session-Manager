@@ -33,7 +33,7 @@
     "message": "Sparade av användaren"
   },
   "displayAutoLabel": {
-    "message": "Spara automatiskt"
+    "message": "Sparad automatisk"
   },
   "newestLabel": {
     "message": "Nyaste"
@@ -42,10 +42,10 @@
     "message": "Äldsta"
   },
   "aToZLabel": {
-    "message": "A-Ö"
+    "message": "A-Z"
   },
   "zToALabel": {
-    "message": "Ö-A"
+    "message": "Z-A"
   },
   "open": {
     "message": "Öppna"
@@ -108,7 +108,7 @@
     "message": "Ersätt med den aktuella sessionen"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Ersätt med det aktuella fönstret"
   },
   "makeCopySessionLabel": {
     "message": "Gör en kopia av sessionen"
@@ -249,7 +249,7 @@
     "message": "Stöder Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Återställ trädläget för Tree Style Tab.<br>När det här alternativet är aktiverat tar det tid att återställa sessionen."
   },
   "tstDelayLabel": {
     "message": "Fördröj trädåterställningen (millisekunder)"
