@@ -6,7 +6,7 @@
     "message": "Guardar y restaurar el estado de las ventanas y pestañas. También permite guardado automático."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Donar con PayPal"
   },
   "saveLabel": {
     "message": "Guardar"
@@ -15,16 +15,16 @@
     "message": "Guardar sesión actual"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Establecer el nombre de la sesión"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Guardad sólo la ventana actual"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Filtro de categorías"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Ordenar"
   },
   "displayAllLabel": {
     "message": "Todo"
@@ -57,10 +57,10 @@
     "message": "¿Eliminar esta sesión?"
   },
   "sessionDeletedLabel": {
-    "message": "This session has been deleted."
+    "message": "Esta sesión ha sido eliminada."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Restaurar"
   },
   "cancelLabel": {
     "message": "Cancelar"
@@ -72,7 +72,7 @@
     "message": "Quitar etiqueta"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Detalles"
   },
   "windowLabel": {
     "message": "Ventana"
@@ -90,7 +90,7 @@
     "message": "No hay ninguna sesión"
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Menú"
   },
   "renameLabel": {
     "message": "Renombrar"
@@ -105,22 +105,22 @@
     "message": "Agregar a ventana actual"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Reemplazar con la sesión actual"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Reemplazar con la ventana actual"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Hacer una copia de la sesión"
   },
   "errorLabel": {
     "message": "Error"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB no está disponible en su navegador."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Cómo resolver este problema"
   },
   "winCloseSessionName": {
     "message": "Auto guardado - La ventana se cerró"
@@ -162,16 +162,16 @@
     "message": "Al abrir una sesión, el contenido de cada página no se carga hasta que seleccione la pestaña. <br>Si está desmarcada, el uso de memoria aumenta cuando se restablece la sesión."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Restaurar posición de la ventana"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Restaura la posición de la ventana y tamaño al abrir la sesión."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
     "message": "Restaurar la sesión anterior al iniciar"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Cuando Firefox se inicie, restaurar la útima sesión cerrada."
+    "message": "Cuando Firefox se inicie, restaurar la última sesión cerrada."
   },
   "ifAutoSaveLabel": {
     "message": "Guardar la sesión regularmente"
@@ -180,7 +180,7 @@
     "message": "Guardar la sesión cada X minutos."
   },
   "autoSaveIntervalLabel": {
-    "message": "Intervalo en minutos"
+    "message": "Intervalo (minutos)"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "Valor mínimo 0.1"
@@ -207,31 +207,31 @@
     "message": "Usar el título de la página como nombre para la sesión guardada automáticamente"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "Al guardar la seión automáticamente, usar el título de la página abierta como nombre de la sesión."
+    "message": "Al guardar la sesión automáticamente, usar el título de la página abierta como nombre de la sesión."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Copia de seguridad"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Guardar copia de seguridad"
   },
   "ifBackupCaptionLabel": {
-    "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Cuando Firefox se inicie, crear una copia de seguridad de las sesiones y se puede guardar en la carpeta de descarga."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Guardar ubicación"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    "message": "Especifique la carpeta para guardar el archivo de la copia de seguridad. La ubicación de guardado esta limitada a la carpeta dentro de la carpeta de descargas de Firefox."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Carpeta de descargas"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Número máximo de copias de seguridad guardadas"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Cuando el número de copias de seguridad supera este valor, se eliminan en orden ascendente desde el más antiguo."
   },
   "dateFormatLabel": {
     "message": "Formato de fecha"
@@ -249,13 +249,13 @@
     "message": "Soportar pestañas estilo árbol"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Restaurar estado de árbol de Tree Style Tab<br>Cuando esta opción está activada, se necesita tiempo para restaurar la sesión."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Retrasar al árbol de restauración (milisegundos)"
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Para restaurar el estado del árbol, es requerido un tiempo de espera para abrir la pestaña. Incremente este valor si el árbol no se restaura correctamente."
   },
   "truncateTitleLabel": {
     "message": "Mostrar el nombre de la sesión en una línea"
@@ -276,16 +276,16 @@
     "message": "Alto"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Otros"
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Restablecer ajustes"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Restablecer toda la configuración por defecto."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Restablecer"
   },
   "importLabel": {
     "message": "Importar sesiones"
@@ -303,16 +303,16 @@
     "message": "Limpiar"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Importar lista de URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Crear una sesión desde una lista de direcciones URL y la añade a la lista de sesiones.<br>Formato: &lt;URL&gt; &lt;título de la página (opcional)&gt;"
   },
   "exportLabel": {
     "message": "Exportar sesiones"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Guardar todas las sesiones en el equipo."
   },
   "exportButtonLabel": {
     "message": "Exportar"
@@ -321,7 +321,7 @@
     "message": "Eliminar sesiones"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Eliminar todas las sesiones."
   },
   "removeSessionsButtonLabel": {
     "message": "Eliminar"
