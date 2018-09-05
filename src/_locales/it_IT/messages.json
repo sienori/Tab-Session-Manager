@@ -249,7 +249,7 @@
     "message": "Supporta Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Ripristina lo stato dell'alberatura di Tree Style Tab.<br>Se questa opzione viene abilitata, ci vorrà più tempo per ripristinare la sessione."
   },
   "tstDelayLabel": {
     "message": "Ritardo del ripristino ad albero (millisecondi)"
