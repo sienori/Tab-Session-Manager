@@ -108,7 +108,7 @@
     "message": "Mit aktueller Sitzung ersetzen"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Mit aktueller Sitzung ersetzen"
+    "message": "Mit aktuellem Fenster ersetzen"
   },
   "makeCopySessionLabel": {
     "message": "Sitzung Kopieren"
@@ -249,7 +249,7 @@
     "message": "Tree Style Tab unterstützen"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Zustand der Baumstruktur von Tree Style Tab wiederherstellen.<br>Wenn diese Option aktiviert ist, wird mehr Zeit zum Wiederherstellen der Sitzung benötigt."
   },
   "tstDelayLabel": {
     "message": "Verzögerung bei der Wiederherstellung der Baumstruktur (Millisekunden)"
