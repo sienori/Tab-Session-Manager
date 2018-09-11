@@ -3,7 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-function saveCurrentSession(name, tag, property) {
+import browser from "webextension-polyfill";
+import uuidv4 from "uuid/v4";
+import { SessionStartTime } from "./background.js";
+import Sessions from "./sessions.js";
+import settingsObj from "../options/settings.js";
+const S = new settingsObj();
+import { returnReplaceParameter } from "./replace.js";
+import { getSessionsByTag } from "./tag.js";
+
+export function saveCurrentSession(name, tag, property) {
   return new Promise(async (resolve, reject) => {
     const exit = () => {
       reject();
@@ -11,7 +20,7 @@ function saveCurrentSession(name, tag, property) {
     };
 
     try {
-      let session = await loadCurrentSesssion(name, tag, property);
+      let session = await loadCurrentSession(name, tag, property);
 
       //定期保存のセッションが変更されていなければ終了
       if (tag.includes("regular")) {
@@ -29,7 +38,7 @@ function saveCurrentSession(name, tag, property) {
   });
 }
 
-async function loadCurrentSesssion(name, tag, property) {
+export async function loadCurrentSession(name, tag, property) {
   let session = {
     windows: {},
     windowsNumber: 0,
@@ -39,7 +48,7 @@ async function loadCurrentSesssion(name, tag, property) {
     date: new Date(),
     tag: tag,
     sessionStartTime: SessionStartTime,
-    id: UUID.generate()
+    id: uuidv4()
   };
 
   let queryInfo = {};
@@ -115,35 +124,35 @@ async function sendMessage(message, id = null) {
     .catch(() => {});
 }
 
-async function saveSession(session, isSendResponce = true) {
+export async function saveSession(session, isSendResponce = true) {
   try {
     await Sessions.put(session);
     if (isSendResponce) sendMessage("saveSession", session.id);
   } catch (e) {}
 }
 
-async function removeSession(id, isSendResponce = true) {
+export async function removeSession(id, isSendResponce = true) {
   try {
     await Sessions.delete(id);
     if (isSendResponce) sendMessage("deleteSession", id);
   } catch (e) {}
 }
 
-async function updateSession(session, isSendResponce = true) {
+export async function updateSession(session, isSendResponce = true) {
   try {
     await Sessions.put(session);
     if (isSendResponce) sendMessage("updateSession", session.id);
   } catch (e) {}
 }
 
-async function renameSession(id, name) {
+export async function renameSession(id, name) {
   let session = await Sessions.get(id).catch(() => {});
   if (session == undefined) return;
   session.name = name;
   updateSession(session);
 }
 
-async function deleteAllSessions() {
+export async function deleteAllSessions() {
   try {
     await Sessions.deleteAll();
     sendMessage("deleteAll");

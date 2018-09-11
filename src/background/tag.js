@@ -3,7 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-async function addTag(id, tag) {
+import browser from "webextension-polyfill";
+import moment from "moment";
+import Sessions from "./sessions.js";
+import { updateSession } from "./save.js";
+
+export async function addTag(id, tag) {
   let session = await Sessions.get(id).catch(() => {});
   if (session == undefined) return;
 
@@ -36,7 +41,7 @@ async function addTag(id, tag) {
   updateSession(session);
 }
 
-async function removeTag(id, tag) {
+export async function removeTag(id, tag) {
   let session = await Sessions.get(id).catch(() => {});
   if (session == undefined) return;
 
@@ -54,7 +59,7 @@ async function removeTag(id, tag) {
 }
 
 //指定されたタグを含むセッションを新しい順に取得 needKeysにはtag, dateが必須
-async function getSessionsByTag(tag, needKeys = null) {
+export async function getSessionsByTag(tag, needKeys = null) {
   const newestSort = (a, b) => {
     return moment(b.date).unix() - moment(a.date).unix();
   };

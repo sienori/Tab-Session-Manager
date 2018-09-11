@@ -10,7 +10,10 @@ browser.runtime.onInstalled.addListener(function(){
     browser.runtime.openOptionsPage();
 });
 */
-function settingsObj() {}
+
+import browser from "webextension-polyfill";
+
+export default function settingsObj() {}
 (function() {
   //オプションページを書き換え，設定の初期化
   //Rewrite option page, initialize setting
@@ -104,11 +107,9 @@ function settingsObj() {}
         if (i.id != undefined && i.id.includes("Label")) {
           label = browser.i18n.getMessage(i.id);
         } else if (i.className != undefined && i.className.includes("Label")) {
-          const labelList = i.className
-            .split(" ")
-            .filter((element, index, array) => {
-              return element.includes("Label");
-            });
+          const labelList = i.className.split(" ").filter((element, index, array) => {
+            return element.includes("Label");
+          });
           label = browser.i18n.getMessage(labelList[0]);
         } else {
           continue;
@@ -157,10 +158,7 @@ function settingsObj() {}
     let inputs = document.getElementsByTagName("input");
     for (let i in inputs) {
       if (inputs[i].id == undefined) continue;
-      if (
-        inputs[i].className != undefined &&
-        inputs[i].className.indexOf("noSetting") != -1
-      )
+      if (inputs[i].className != undefined && inputs[i].className.indexOf("noSetting") != -1)
         continue;
 
       switch (inputs[i].type) {
@@ -193,10 +191,7 @@ function settingsObj() {}
     let textareas = document.getElementsByTagName("textarea");
     for (let i in textareas) {
       if (textareas[i].id == undefined) continue;
-      if (
-        textareas[i].className != undefined &&
-        textareas[i].className.indexOf("noSetting") != -1
-      )
+      if (textareas[i].className != undefined && textareas[i].className.indexOf("noSetting") != -1)
         continue;
       textareas[i].value = Settings[textareas[i].id];
     }
@@ -204,10 +199,7 @@ function settingsObj() {}
     let selects = document.getElementsByTagName("select");
     for (let i in selects) {
       if (selects[i].id == undefined) continue;
-      if (
-        selects[i].className != undefined &&
-        inputs[i].className.indexOf("noSetting") != -1
-      )
+      if (selects[i].className != undefined && inputs[i].className.indexOf("noSetting") != -1)
         continue;
 
       selects[i].value = Settings[selects[i].id];
@@ -221,10 +213,7 @@ function settingsObj() {}
 
     for (let i in inputs) {
       if (inputs[i].id == undefined) continue;
-      if (
-        inputs[i].className != undefined &&
-        inputs[i].className.indexOf("noSetting") != -1
-      )
+      if (inputs[i].className != undefined && inputs[i].className.indexOf("noSetting") != -1)
         continue;
 
       switch (inputs[i].type) {
@@ -258,10 +247,7 @@ function settingsObj() {}
     let textareas = document.getElementsByTagName("textarea");
     for (let i in textareas) {
       if (textareas[i].id == undefined) continue;
-      if (
-        textareas[i].className != undefined &&
-        textareas[i].className.indexOf("noSetting") != -1
-      )
+      if (textareas[i].className != undefined && textareas[i].className.indexOf("noSetting") != -1)
         continue;
       Settings[textareas[i].id] = textareas[i].value;
     }
@@ -269,10 +255,7 @@ function settingsObj() {}
     let selects = document.getElementsByTagName("select");
     for (let i in selects) {
       if (selects[i].id == undefined) continue;
-      if (
-        selects[i].className != undefined &&
-        selects[i].className.indexOf("noSetting") != -1
-      )
+      if (selects[i].className != undefined && selects[i].className.indexOf("noSetting") != -1)
         continue;
 
       Settings[selects[i].id] = selects[i].value;
@@ -289,11 +272,10 @@ function settingsObj() {}
   }
 
   function getSettings() {
-    return new Promise(function(resolve, reject) {
-      browser.storage.local.get("Settings", function(value) {
-        Settings = value.Settings;
-        resolve(Settings);
-      });
+    return new Promise(async function(resolve, reject) {
+      const value = await browser.storage.local.get("Settings");
+      Settings = value.Settings;
+      resolve(Settings);
     });
   }
 

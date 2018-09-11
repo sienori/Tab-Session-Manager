@@ -1,0 +1,9 @@
+{
+  "chromePath": "src",
+  "operaPath": "src",
+  "firefoxPath": "src",
+  "devDirectory": "dev",
+  "distDirectory": "dist",
+  "tempDirectory": "temp",
+  "extName": "tab_session_manager"
+}

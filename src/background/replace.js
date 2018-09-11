@@ -3,9 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-function returnReplaceParameter(url) {
+import browser from "webextension-polyfill";
+import browserInfo from "browser-info";
+import { IsOpeningSession } from "./open.js";
+
+export function returnReplaceParameter(url) {
   let parameter = {};
-  if (url.indexOf(browser.runtime.getURL("replaced/replaced.html")) === 0) {
+  if (url.indexOf(browser.runtime.getURL("replaced/index.html")) === 0) {
     parameter.isReplaced = true;
     let paras = url.split("?")[1].split("&");
     for (let p of paras) {
@@ -18,9 +22,9 @@ function returnReplaceParameter(url) {
   return parameter;
 }
 
-function returnReplaceURL(state, title, url, favIconUrl) {
+export function returnReplaceURL(state, title, url, favIconUrl) {
   let retUrl =
-    "replaced/replaced.html" +
+    "replaced/index.html" +
     "?state=" +
     encodeURIComponent(state) +
     "&title=" +
@@ -33,7 +37,7 @@ function returnReplaceURL(state, title, url, favIconUrl) {
   //Reader mode
   if (url.substr(0, 17) == "about:reader?url=") {
     retUrl =
-      "replaced/replaced.html" +
+      "replaced/index.html" +
       "?state=" +
       encodeURIComponent(state) +
       "&title=" +
@@ -48,7 +52,7 @@ function returnReplaceURL(state, title, url, favIconUrl) {
   return retUrl;
 }
 
-async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) {
+export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) {
   if (IsOpeningSession) return;
 
   const info = await browser.tabs.query({
@@ -67,7 +71,10 @@ async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) {
   if (parameter.isReplaced && parameter.state == "redirect") {
     let updateProperties = {};
     updateProperties.url = parameter.url;
-    if (BrowserVersion >= 57) updateProperties.loadReplace = true;
+
+    const bInfo = browserInfo();
+    const isEnabledLoadReplace = bInfo.name == "Firefox" && bInfo.version >= "57";
+    if (isEnabledLoadReplace) updateProperties.loadReplace = true;
 
     browser.tabs
       .update(info[0].id, updateProperties)

@@ -6,45 +6,27 @@
   "description": "__MSG_extDescription__",
   "default_locale": "en",
 
-  "applications": {
-    "gecko": {
-      "id": "Tab-Session-Manager@sienori"
-    }
-  },
-
   "permissions": ["storage", "unlimitedStorage", "tabs", "cookies", "downloads"],
 
   "options_ui": {
-    "page": "options/options.html",
+    "page": "options/index.html",
     "open_in_tab": true
   },
 
   "icons": {
-    "16": "icons/icon_min.svg",
-    "64": "icons/icon.svg"
+    "16": "icons/icon_min.png",
+    "64": "icons/icon.png"
   },
 
   "background": {
-    "scripts": [
-      "background/uuid.js",
-      "popup/moment.js",
-      "Settings.js",
-      "background/Sessions.js",
-      "background/save.js",
-      "background/open.js",
-      "background/replace.js",
-      "background/import.js",
-      "background/tag.js",
-      "background/autoSave.js",
-      "background/background.js"
-    ]
+    "scripts": ["background/background.js"]
   },
 
   "browser_action": {
     "default_icon": {
-      "16": "icons/icon_min.svg",
-      "64": "icons/icon.svg"
+      "16": "icons/icon_min.png",
+      "64": "icons/icon.png"
     },
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup/index.html"
   }
 }

@@ -3,7 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-async function importSessions(importedSessions) {
+import browser from "webextension-polyfill";
+import uuidv4 from "uuid/v4";
+import moment from "moment";
+import Sessions from "./sessions.js";
+import settingsObj from "../options/settings.js";
+const S = new settingsObj();
+import { saveSession } from "./save.js";
+
+export async function importSessions(importedSessions) {
   //idを無視して文字列に変換
   const toString = session => {
     let retSession = {};
@@ -26,12 +34,12 @@ async function importSessions(importedSessions) {
 
     if (isExistSameSession(importedSession, currentSessions)) continue;
 
-    importedSession.id = UUID.generate();
+    importedSession.id = uuidv4();
     saveSession(importedSession);
   }
 }
 
-async function backupSessions() {
+export async function backupSessions() {
   const sessions = await Sessions.getAll().catch([]);
 
   if (!S.get().ifBackup) return;

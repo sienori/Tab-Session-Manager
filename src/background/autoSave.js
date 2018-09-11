@@ -3,6 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+import browser from "webextension-polyfill";
+import uuidv4 from "uuid/v4";
+import { IsOpeningSession, openSession } from "./open.js";
+import settingsObj from "../options/settings.js";
+const S = new settingsObj();
+import { getSessionsByTag } from "./tag.js";
+import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
+
 let autoSaveTimer;
 
 function startAutoSave() {
@@ -24,7 +32,7 @@ function stopAutoSave() {
 }
 
 //定期保存の設定が変更されたときにセット
-function setAutoSave(changes, areaName) {
+export function setAutoSave(changes, areaName) {
   if (isChangeAutoSaveSettings(changes, areaName)) {
     stopAutoSave();
     if (S.get().ifAutoSave) {
@@ -45,7 +53,7 @@ function isChangeAutoSaveSettings(changes, areaName) {
   );
 }
 
-class AutoSaveWhenClose {
+export class AutoSaveWhenClose {
   constructor() {
     this.LastUpdateTime = 0;
   }
@@ -75,7 +83,7 @@ class AutoSaveWhenClose {
     let name = browser.i18n.getMessage("winCloseSessionName");
     if (S.get().useTabTitleforAutoSave) name = await getCurrentTabName();
 
-    let session = await loadCurrentSesssion(name, ["temp"], "default");
+    let session = await loadCurrentSession(name, ["temp"], "default");
     let tempSessions = await getSessionsByTag("temp");
 
     //現在のセッションをtempとして保存
@@ -92,7 +100,7 @@ class AutoSaveWhenClose {
 
     //tempをwinCloseとして保存
     tempSessions[0].tag = ["winClose"];
-    tempSessions[0].id = UUID.generate();
+    tempSessions[0].id = uuidv4();
     await saveSession(tempSessions[0]);
 
     removeOverLimit("winClose");

@@ -3,7 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-let S = new settingsObj();
+import browser from "webextension-polyfill";
+import uuidv4 from "uuid/v4";
+import moment from "moment";
+import {
+  replaceBackupFolderName,
+  openDownloadFolder,
+  showImportFile,
+  clearImportFile
+} from "./ui.js";
+import settingsObj from "./settings.js";
+const S = new settingsObj();
 S.initOptionsPage();
 
 document.addEventListener("click", function(e) {
@@ -164,7 +174,7 @@ function parseSession(file) {
 
     //ver1.9.2以前のセッションにUUIDを追加 タグからauto, userを削除
     if (!session["id"]) {
-      session["id"] = UUID.generate();
+      session["id"] = uuidv4();
 
       session.tag = session.tag.filter(element => {
         return !(element == "user" || element == "auto");
@@ -190,7 +200,7 @@ function parseOldSession(file) {
   session.date = moment(parseInt(line[2].substr(10))).toISOString();
   session.tag = [];
   session.sessionStartTime = parseInt(line[2].substr(10));
-  session.id = UUID.generate();
+  session.id = uuidv4();
 
   if (!isJSON(line[4])) return;
 
@@ -243,7 +253,7 @@ function urlImport() {
     date: new Date(),
     tag: [],
     sessionStartTime: Date.now(),
-    id: UUID.generate()
+    id: uuidv4()
   };
 
   const urlList = document.getElementById("urlImportList").value.split(/\r\n|\r|\n/);
@@ -295,7 +305,7 @@ function createTabByUrl(urlLine, tabId) {
   };
 }
 
-async function exportSessions(id = null) {
+export async function exportSessions(id = null) {
   let sessions = await getSessions(id);
   if (sessions == undefined) return;
   if (!Array.isArray(sessions)) sessions = [sessions];

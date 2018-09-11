@@ -3,8 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+import browser from "webextension-polyfill";
+import moment from "moment";
+import uuidv4 from "uuid/v4";
+import settingsObj from "../options/settings.js";
+const S = new settingsObj();
 const Labels = {};
-let S = new settingsObj();
 
 S.init().then(async () => {
   setLabels();
@@ -36,7 +40,7 @@ S.init().then(async () => {
 });
 
 async function setLabels() {
-  labels = [
+  const labels = [
     "initialNameValue",
     "inputSessionNameLabel",
     "winCloseSessionName",
@@ -645,9 +649,9 @@ function rename(sessionId) {
 }
 
 function renameSend(sessionId) {
-  sessionName = document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
-  renameArea = document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
-  renameInput = renameArea.getElementsByClassName("renameInput")[0].value;
+  const sessionName = document.getElementById(sessionId).getElementsByClassName("sessionName")[0];
+  const renameArea = document.getElementById(sessionId).getElementsByClassName("renameArea")[0];
+  const renameInput = renameArea.getElementsByClassName("renameInput")[0].value;
 
   sessionName.innerText = renameInput;
 
@@ -855,7 +859,7 @@ function openUrl(url, title = "") {
     .catch(() => {
       browser.tabs
         .create({
-          url: `../replaced/replaced.html?state=open_faild&title=${encodeURIComponent(
+          url: `../replaced/index.html?state=open_faild&title=${encodeURIComponent(
             title
           )}&url=${encodeURIComponent(url)}`
         })
@@ -939,7 +943,7 @@ async function replaceCurrentSession(id, property = "default") {
 async function makeCopySession(id) {
   let session = await getSessions(id);
 
-  session.id = UUID.generate();
+  session.id = uuidv4();
   session.date = moment(session.date)
     .add(1, "ms")
     .toDate();
@@ -1034,7 +1038,7 @@ document.addEventListener("click", async function(e) {
       browser.runtime.onMessage.removeListener(changeSessions);
       const sessionId = getParentSessionId(e.target);
       browser.tabs.create({
-        url: `../options/options.html#sessions?action=export&id=${sessionId}`
+        url: `../options/index.html#sessions?action=export&id=${sessionId}`
       });
       window.close();
       break;

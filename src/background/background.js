@@ -3,15 +3,32 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+import browser from "webextension-polyfill";
+import uuidv4 from "uuid/v4";
+import settingsObj from "../options/settings.js";
 const S = new settingsObj();
+import { AutoSaveWhenClose, setAutoSave } from "./autoSave.js";
 const autoSaveWhenClose = new AutoSaveWhenClose();
+import Sessions from "./sessions.js";
+import { replacePage } from "./replace.js";
+import { backupSessions, importSessions } from "./import.js";
+import {
+  loadCurrentSession,
+  saveCurrentSession,
+  saveSession,
+  removeSession,
+  deleteAllSessions,
+  updateSession,
+  renameSession
+} from "./save.js";
+import { openSession } from "./open.js";
+import { addTag, removeTag } from "./tag.js";
 
-let BrowserVersion;
-const SessionStartTime = Date.now();
+export const SessionStartTime = Date.now();
 
 let IsInit = false;
 async function init() {
-  await S.init();
+  await S.init(); //TODO: settings.jsを書き換え;
   await Sessions.init();
   IsInit = true;
   await updateOldSessions();
@@ -20,9 +37,6 @@ async function init() {
 
   browser.tabs.onActivated.addListener(handleReplace);
   browser.windows.onFocusChanged.addListener(handleReplace);
-
-  const gettingInfo = await browser.runtime.getBrowserInfo();
-  BrowserVersion = gettingInfo.version.split(".")[0];
 
   autoSaveWhenClose.saveWinClose().then(() => {
     autoSaveWhenClose.openLastSession();
@@ -59,7 +73,7 @@ async function onInstalledListener(details) {
 
   //初回起動時にオプションページを表示して設定を初期化
   browser.tabs.create({
-    url: "options/options.html#information?action=updated",
+    url: "options/index.html#information?action=updated",
     active: false
   });
 }
@@ -85,11 +99,11 @@ async function addNewValues() {
 }
 
 async function migrateSessionsFromStorage() {
+  // TODO:chrome無効
   const getSessionsByStorage = () => {
-    return new Promise(resolve => {
-      browser.storage.local.get("sessions", value => {
-        resolve(value.sessions || []);
-      });
+    return new Promise(async resolve => {
+      const value = await browser.storage.local.get("sessions");
+      resolve(value.sessions || []);
     });
   };
   let sessions = await getSessionsByStorage();
@@ -107,7 +121,7 @@ async function migrateSessionsFromStorage() {
   const updateSessionId = () => {
     for (let i of sessions) {
       if (!i["id"]) {
-        i["id"] = UUID.generate();
+        i["id"] = uuidv4();
 
         i.tag = i.tag.filter(element => {
           return !(element == "user" || element == "auto");
@@ -168,8 +182,7 @@ async function onMessageListener(request, sender, sendResponse) {
       deleteAllSessions();
       break;
     case "getSessions":
-      return getSessions(request, sender, sendResponse);
-      break;
+      return getSessions(request);
     case "addTag":
       addTag(request.id, request.tag);
       break;
@@ -178,9 +191,8 @@ async function onMessageListener(request, sender, sendResponse) {
       break;
     case "getInitState":
       return IsInit;
-      break;
     case "getCurrentSession":
-      const currentSession = await loadCurrentSesssion("", [], request.property).catch(() => {});
+      const currentSession = await loadCurrentSession("", [], request.property).catch(() => {});
       return currentSession;
   }
 }
@@ -188,7 +200,7 @@ async function onMessageListener(request, sender, sendResponse) {
 async function getSessions(request, sender, sendResponse) {
   let sessions;
   if (request.id == null) {
-    sessions = await Sessions.getAll(request.needKeys).catch([]);
+    sessions = await Sessions.getAll(request.needKeys).catch(() => {});
   } else {
     sessions = await Sessions.get(request.id).catch(() => {});
   }

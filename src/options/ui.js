@@ -3,6 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+import browser from "webextension-polyfill";
+import { tm } from "./tm.hash-observer.js";
+import { exportSessions } from "./options.js";
+
 let e = {};
 e.hash = location.href;
 
@@ -87,7 +91,7 @@ const sanitaize = {
   }
 };
 
-function showImportFile(fileName, sessions) {
+export function showImportFile(fileName, sessions) {
   document.getElementById("fileList").parentNode.style.display = "block";
   document
     .getElementById("fileList")
@@ -108,7 +112,7 @@ function returnFileListNode(fileName, sessions) {
             </div></div></li>`;
 }
 
-function clearImportFile() {
+export function clearImportFile() {
   document.getElementById("fileList").parentNode.style.display = "none";
   document.getElementById("fileList").innerHTML = "";
 }
@@ -118,7 +122,7 @@ function showUpdated() {
   version.classList.add("updated");
 }
 
-function replaceBackupFolderName() {
+export function replaceBackupFolderName() {
   const backupFolder = document.getElementById("backupFolder");
 
   const specialChars = /\:|\?|\.|"|<|>|\|/g; //使用できない特殊文字
@@ -142,7 +146,7 @@ function replaceBackupFolderName() {
   showArea.innerText = `${folderName == "" ? "" : "\\"}${folderName}`;
 }
 
-function openDownloadFolder() {
+export function openDownloadFolder() {
   browser.downloads.showDefaultFolder();
 }
 

@@ -3,7 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-async function openSession(session, property = "default") {
+import browser from "webextension-polyfill";
+import browserInfo from "browser-info";
+import settingsObj from "../options/settings.js";
+const S = new settingsObj();
+import { returnReplaceURL, replacePage } from "./replace.js";
+
+export async function openSession(session, property = "default") {
   let isFirstWindowFlag = true;
   tabList = {};
   for (let win in session.windows) {
@@ -89,7 +95,7 @@ async function openSession(session, property = "default") {
   }
 }
 
-let IsOpeningSession = false;
+export let IsOpeningSession = false;
 //ウィンドウとタブを閉じてcurrentWindowを返す
 function removeNowOpenTabs() {
   return new Promise(async function(resolve, reject) {
@@ -142,7 +148,7 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   }
 }
 
-tabList = {};
+let tabList = {};
 //実際にタブを開く
 function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
   return new Promise(async function(resolve, reject) {
@@ -178,7 +184,11 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     //Tree Style Tab
     let openDelay = 0;
     if (S.get().ifSupportTst) {
-      if (BrowserVersion >= 57) createOption.openerTabId = tabList[property.openerTabId];
+      const bInfo = browserInfo();
+      const isEnabledOpenerTabId =
+        (bInfo.name == "Firefox" && bInfo.version >= 57) ||
+        (bInfo.name == "Chrome" && bInfo.version >= 18);
+      if (isEnabledOpenerTabId) createOption.openerTabId = tabList[property.openerTabId];
       openDelay = S.get().tstDelay;
     }
 
