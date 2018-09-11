@@ -9,7 +9,7 @@ You can contribute by translating Tab Session Manager on [Crowdin](https://crowd
 ## Developing
 1. Clone the repository `git clone https://github.com/sienori/Tab-Session-Manager`
 2. Run `npm install`
-3. Run `npm watch-dev`
+3. Run `npm run watch-dev`
 ### Load the extension in Chrome
 1. Open Chrome browser and navigate to `chrome://extensions`
 2. Select "Developer Mode" and then click "Load unpacked extension..."
