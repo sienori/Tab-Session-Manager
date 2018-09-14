@@ -171,7 +171,7 @@
     "message": "Återställ föregående session vid uppstart"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "När Firefox startas upp, ladda den sessionen som stängdes ner sist."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Spara sessionen regelbundet"
@@ -195,7 +195,7 @@
     "message": "Spara sessionen när fönstret stängs"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Spara sessionen när fönstret stängs eller när Firefox avslutas."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximalt antal sparade"
@@ -216,13 +216,13 @@
     "message": "Spara säkerhetskopia"
   },
   "ifBackupCaptionLabel": {
-    "message": "Skapa en säkerhetskopia av sessionen och spara den i filhanteringsmappen när Firefox startas upp."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Spara plats"
   },
   "backupFolderCaptionLabel": {
-    "message": "Ange mappen du vill säkerhetskopian ska sparas i. Du är begränsad till att spara den i en mapp under Firefoxs filhämtningsmapp."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Filhämtningsmapp"
