@@ -171,7 +171,7 @@
     "message": "استعد الجلسة السابقة عند بدء التشغيل"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "عند بدء تشغيل فايرفوكس، استعد الجلسة التي تم الإغلاق عندها المرة الأخيرة."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "احفظ الجلسة بإنتظام"
@@ -195,7 +195,7 @@
     "message": "احفظ الجلسة عند إغلاق النافذة"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "احفظ اجلسة عند غلق النافذة أو عند إغلاق فايرفوكس."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "الحد الأقصى محفوظ"
@@ -216,13 +216,13 @@
     "message": "حفظ نسخة احتياطية"
   },
   "ifBackupCaptionLabel": {
-    "message": "عند بدء تشغيل فايرفوكس، قم بإنشاء ملف النسخ احتياطي لجلسة وحفظه في مجلد التحميل."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Save location"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Download folder"
