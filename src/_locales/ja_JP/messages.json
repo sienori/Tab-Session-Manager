@@ -171,7 +171,7 @@
     "message": "起動時に前回のセッションを復元"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Firefox起動時に，最後に開いていたセッションを開きます。"
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "定期的にセッションを保存する"
@@ -195,7 +195,7 @@
     "message": "ウィンドウを閉じたときにセッションを保存する"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "ウィンドウを閉じたときやfirefoxの終了時にセッションを保存します。"
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "上限保存数"
@@ -216,13 +216,13 @@
     "message": "バックアップを保存する"
   },
   "ifBackupCaptionLabel": {
-    "message": "Firefoxの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。"
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "保存場所"
   },
   "backupFolderCaptionLabel": {
-    "message": "バックアップファイルを保存するフォルダを指定します。保存場所はFirefoxのダウンロードフォルダ以下に限定されます。"
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "ダウンロードフォルダ"
