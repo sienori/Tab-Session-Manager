@@ -171,7 +171,7 @@
     "message": "启动时还原上次的会话"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "当 Firefox 启动时，还原上次关闭的会话。"
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "定期保存会话"
@@ -195,7 +195,7 @@
     "message": "关闭窗口时自动保存会话"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "在关闭窗口或退出 Firefox 时自动保存会话。"
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "最大数量"
@@ -216,13 +216,13 @@
     "message": "保存备份"
   },
   "ifBackupCaptionLabel": {
-    "message": "每当 Firefox 启动时，在 下载 文件夹中保存一份所有会话的备份文件。"
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "保存位置"
   },
   "backupFolderCaptionLabel": {
-    "message": "指定保存备份文件的文件夹。仅限于 Firefox 设置中的下载目录下。"
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "下载文件夹路径"
