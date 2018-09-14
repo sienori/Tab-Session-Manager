@@ -6,7 +6,7 @@ import "./SideBar.scss";
 const SideBar = props => (
   <div className="sideBar">
     <div className="titleContainer">
-      <img src="../../../icons/icon.svg" className="logo" />
+      <img src="/icons/icon.svg" className="logo" />
       <span className="logoTitle">
         Tab
         <br />
