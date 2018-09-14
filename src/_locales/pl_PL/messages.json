@@ -171,7 +171,7 @@
     "message": "Przywróć poprzednią sesję podczas uruchamiania"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Po uruchomieniu przeglądarki Firefox, przywróć sesję, która została zamknięta ostatnim razem."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Zapisuj sesję regularnie"
@@ -195,7 +195,7 @@
     "message": "Zapisuj sesję, kiedy okno zostało zamknięte"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Zapisuj sesję podczas zamykania okna lub przy zamykaniu przeglądarki Firefox."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maksymalna liczba zapisanych"
@@ -216,13 +216,13 @@
     "message": "Zapisz kopię zapasową"
   },
   "ifBackupCaptionLabel": {
-    "message": "Po uruchomieniu programu Firefox, utwórz plik kopii zapasowej wszystkich sesji i zapisz go w folderze pobierania."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Lokalizacja zapisu"
   },
   "backupFolderCaptionLabel": {
-    "message": "Określ miejsce zapisu plików kopii zapasowej. Możliwość zapisu jest ograniczona do podfolderów katalogu pobierania Firefoksa."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Katalog pobierania"
