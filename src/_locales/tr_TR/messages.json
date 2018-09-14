@@ -171,7 +171,7 @@
     "message": "Başlangıçta son oturumu yeniden yükle"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Firefox başlatıldığında, son kapatılan oturumu yeniden yükle."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Oturumu düzenli olarak kaydet"
@@ -195,7 +195,7 @@
     "message": "Pencere kapandığında oturumu kaydet"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Pencere kapanırken veya firefoxtan çıkarken oturumu kaydet."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Kaydedilen maksimum sayı"
@@ -216,13 +216,13 @@
     "message": "Yedeklemeyi kaydet"
   },
   "ifBackupCaptionLabel": {
-    "message": "Firefox başlatıldığında, oturumların yedeklemeleri için bir dosya oluştur ve indirilenler dosyasına kaydet."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Save location"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Download folder"
