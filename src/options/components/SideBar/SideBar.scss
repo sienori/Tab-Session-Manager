@@ -1,0 +1,51 @@
+.sideBar {
+  font-size: 17px;
+  font-weight: 400;
+  text-align: right;
+  -moz-user-select: none;
+  flex-shrink: 0;
+
+  .titleContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    align-items: center;
+
+    .logo {
+      height: 64px;
+      width: 64px;
+      margin-right: 5px;
+    }
+    .logoTitle {
+      text-align: left;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--highlight);
+      margin: auto;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    .sideBarItem {
+      list-style-type: none;
+      padding: 10px 15px;
+
+      :hover {
+        text-decoration-line: underline;
+        color: var(--highlight);
+      }
+
+      a {
+        color: var(--sub-text);
+        text-decoration-line: none;
+      }
+
+      &.selected a {
+        color: var(--highlight);
+      }
+    }
+  }
+}

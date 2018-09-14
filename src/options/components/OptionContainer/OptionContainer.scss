@@ -1,0 +1,264 @@
+.optionContainer {
+  list-style-type: none;
+
+  .optionElement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+
+    .optionText {
+      flex: 1;
+      p {
+        margin: 0px;
+      }
+      .caption {
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--sub-text);
+        white-space: pre-wrap;
+      }
+      a {
+        color: var(--highlight);
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .optionForm {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: 10px;
+    }
+    &.buttonsContainer {
+      justify-content: flex-start;
+    }
+  }
+  .childElements {
+    padding-left: 20px;
+    margin-bottom: 30px;
+    border-left: solid 10px var(--line);
+  }
+}
+
+/*new, updated*/
+.new p:nth-child(1)::after,
+.updated p:nth-child(1)::after {
+  color: var(--new);
+  font-size: 14px;
+  border: 1px solid var(--new);
+  border-radius: 2px;
+  padding: 0px 5px;
+  margin-left: 5px;
+}
+.updated p:nth-child(1)::after {
+  content: "Updated";
+}
+.new p:nth-child(1)::after {
+  content: "New";
+}
+
+/*forms*/
+input,
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+textarea {
+  -moz-appearance: textfield;
+  border: 1px var(--button) solid;
+  border-radius: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding: 5px;
+  width: calc(100% - 12px) !important;
+  height: 50px;
+  min-height: 50px;
+  &:hover,
+  &:focus {
+    border-color: var(--highlight);
+  }
+}
+
+input[type="number"],
+input[type="text"],
+input[type="color"] {
+  -moz-appearance: textfield;
+  width: 50px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid var(--button);
+  border-radius: 2px;
+
+  &:hover {
+    border-color: var(--highlight);
+  }
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+/*checkbox*/
+
+input[type="checkbox"] {
+  display: none;
+  &:checked + .checkbox {
+    color: var(--highlight);
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 1px;
+      left: 4px;
+      width: 6px;
+      height: 14px;
+      transform: rotate(40deg);
+      border-bottom: 3px solid var(--highlight);
+      border-right: 3px solid var(--highlight);
+    }
+  }
+}
+
+.checkbox {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--button);
+    border-radius: 2px;
+  }
+  &:hover::before {
+    border-color: var(--highlight);
+  }
+}
+
+/*radio*/
+
+input[type="radio"] {
+  display: none;
+  &:checked + .radio {
+    color: var(--highlight);
+  }
+  &:checked + .radio::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--highlight);
+  }
+}
+
+.radio {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--button);
+    border-radius: 50%;
+  }
+  &:hover::before {
+    border-color: var(--highlight);
+  }
+}
+
+/*color*/
+
+input[type="color"] {
+  background-color: var(--main-bg);
+  padding: 5px;
+}
+
+/*select*/
+
+select {
+  -moz-appearance: none;
+  text-overflow: ellipsis;
+  border: var(--button) solid 1px;
+  border-radius: 2px;
+  padding: 3px 5px;
+  padding-right: 20px;
+  width: 100%;
+  &:hover {
+    border: var(--highlight) solid 1px;
+  }
+}
+
+.selectWrap {
+  position: relative;
+  &:before {
+    pointer-events: none;
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    right: 7px;
+    width: 5px;
+    height: 5px;
+
+    transform: rotate(45deg);
+    border-bottom: 2px solid var(--sub-text);
+    border-right: 2px solid var(--sub-text);
+  }
+  &:hover::before {
+    border-bottom: 2px solid var(--highlight);
+    border-right: 2px solid var(--highlight);
+  }
+}
+
+option {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/*button*/
+
+input[type="button"],
+.button {
+  min-width: 100px;
+  text-align: center;
+  padding: 5px;
+  height: 30px;
+  font-size: 13px;
+  color: var(--main-text);
+  border: 1px solid var(--button);
+  border-radius: 2px;
+  background-color: #fbfbfb;
+  cursor: pointer;
+  white-space: nowrap;
+  &:hover {
+    background: #f5f5f5;
+    border-color: var(--highlight);
+  }
+  &.includeSpan {
+    padding: 0px;
+    height: 28px;
+  }
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -5,8 +5,6 @@
 
 import browser from "webextension-polyfill";
 import uuidv4 from "uuid/v4";
-import settingsObj from "../options/settings.js";
-const S = new settingsObj();
 import { AutoSaveWhenClose, setAutoSave } from "./autoSave.js";
 const autoSaveWhenClose = new AutoSaveWhenClose();
 import Sessions from "./sessions.js";
@@ -23,12 +21,14 @@ import {
 } from "./save.js";
 import { openSession } from "./open.js";
 import { addTag, removeTag } from "./tag.js";
+import { initSettings, handleSettingsChange } from "src/settings/settings";
+import exportSessions from "./export";
 
 export const SessionStartTime = Date.now();
 
 let IsInit = false;
 async function init() {
-  await S.init(); //TODO: settings.jsを書き換え;
+  await initSettings();
   await Sessions.init();
   IsInit = true;
   await updateOldSessions();
@@ -44,7 +44,10 @@ async function init() {
   });
 
   setAutoSave();
-  browser.storage.onChanged.addListener(setAutoSave);
+  browser.storage.onChanged.addListener((changes, areaName) => {
+    handleSettingsChange(changes, areaName);
+    setAutoSave(changes, areaName);
+  });
 
   browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     autoSaveWhenClose.handleTabUpdate(tabId, changeInfo, tab);
@@ -178,11 +181,15 @@ async function onMessageListener(request, sender, sendResponse) {
     case "import":
       importSessions(request.importSessions);
       break;
+    case "exportSessions":
+      exportSessions(request.id);
+      break;
     case "deleteAllSessions":
       deleteAllSessions();
       break;
     case "getSessions":
-      return getSessions(request);
+      const sessions = await getSessions(request.id, request.needKeys);
+      return sessions;
     case "addTag":
       addTag(request.id, request.tag);
       break;
@@ -197,12 +204,12 @@ async function onMessageListener(request, sender, sendResponse) {
   }
 }
 
-async function getSessions(request, sender, sendResponse) {
+export async function getSessions(id = null, needKeys = null) {
   let sessions;
-  if (request.id == null) {
-    sessions = await Sessions.getAll(request.needKeys).catch(() => {});
+  if (id == null) {
+    sessions = await Sessions.getAll(needKeys).catch(() => {});
   } else {
-    sessions = await Sessions.get(request.id).catch(() => {});
+    sessions = await Sessions.get(id).catch(() => {});
   }
 
   return sessions;

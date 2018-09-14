@@ -5,8 +5,7 @@
 
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
-import settingsObj from "../options/settings.js";
-const S = new settingsObj();
+import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 
 export async function openSession(session, property = "default") {
@@ -22,7 +21,8 @@ export async function openSession(session, property = "default") {
       const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
       createData.incognito = firstTab.incognito;
 
-      const isSetPosition = S.get().isRestoreWindowPosition && session.windowsInfo != undefined;
+      const isSetPosition =
+        getSettings("isRestoreWindowPosition") && session.windowsInfo != undefined;
 
       if (isSetPosition) {
         const info = session.windowsInfo[win];
@@ -76,7 +76,7 @@ export async function openSession(session, property = "default") {
       isFirstWindowFlag = false;
       switch (property) {
         case "default":
-          if (S.get().ifOpenNewWindow) openInNewWindow();
+          if (getSettings("ifOpenNewWindow")) openInNewWindow();
           else openInCurrentWindow();
           break;
         case "openInCurrentWindow":
@@ -133,7 +133,7 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   let tabNumber = 0;
   for (let tab of sortedTabs) {
     const openedTab = openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow);
-    if (S.get().ifSupportTst) await openedTab;
+    if (getSettings("ifSupportTst")) await openedTab;
 
     tabNumber++;
     if (tabNumber == 1 && !isAddtoCurrentWindow) {
@@ -183,17 +183,17 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
 
     //Tree Style Tab
     let openDelay = 0;
-    if (S.get().ifSupportTst) {
+    if (getSettings("ifSupportTst")) {
       const bInfo = browserInfo();
       const isEnabledOpenerTabId =
         (bInfo.name == "Firefox" && bInfo.version >= 57) ||
         (bInfo.name == "Chrome" && bInfo.version >= 18);
       if (isEnabledOpenerTabId) createOption.openerTabId = tabList[property.openerTabId];
-      openDelay = S.get().tstDelay;
+      openDelay = getSettings("tstDelay");
     }
 
     //Lazy loading
-    if (S.get().ifLazyLoading) {
+    if (getSettings("ifLazyLoading")) {
       createOption.url = returnReplaceURL(
         "redirect",
         property.title,
@@ -203,7 +203,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     }
 
     //Reader mode
-    if (!S.get().ifLazyLoading && property.url.substr(0, 17) == "about:reader?url=") {
+    if (!getSettings("ifLazyLoading") && property.url.substr(0, 17) == "about:reader?url=") {
       createOption.openInReaderMode = true;
       createOption.url = decodeURIComponent(property.url.substr(17));
     }

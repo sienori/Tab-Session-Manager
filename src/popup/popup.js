@@ -6,7 +6,7 @@
 import browser from "webextension-polyfill";
 import moment from "moment";
 import uuidv4 from "uuid/v4";
-import settingsObj from "../options/settings.js";
+import settingsObj from "../oldOptions/settings.js";
 const S = new settingsObj();
 const Labels = {};
 

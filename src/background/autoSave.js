@@ -6,17 +6,16 @@
 import browser from "webextension-polyfill";
 import uuidv4 from "uuid/v4";
 import { IsOpeningSession, openSession } from "./open.js";
-import settingsObj from "../options/settings.js";
-const S = new settingsObj();
 import { getSessionsByTag } from "./tag.js";
 import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
+import { getSettings } from "src/settings/settings";
 
 let autoSaveTimer;
 
 function startAutoSave() {
   autoSaveTimer = setInterval(async function() {
     let name = browser.i18n.getMessage("regularSaveSessionName");
-    if (S.get().useTabTitleforAutoSave) name = await getCurrentTabName();
+    if (getSettings("useTabTitleforAutoSave")) name = await getCurrentTabName();
     const tag = ["regular"];
     const property = "default";
     saveCurrentSession(name, tag, property)
@@ -24,7 +23,7 @@ function startAutoSave() {
         removeOverLimit("regular");
       })
       .catch(() => {});
-  }, S.get().autoSaveInterval * 60 * 1000);
+  }, getSettings("autoSaveInterval") * 60 * 1000);
 }
 
 function stopAutoSave() {
@@ -35,9 +34,8 @@ function stopAutoSave() {
 export function setAutoSave(changes, areaName) {
   if (isChangeAutoSaveSettings(changes, areaName)) {
     stopAutoSave();
-    if (S.get().ifAutoSave) {
-      startAutoSave();
-    }
+    if (!getSettings("ifAutoSave")) return;
+    startAutoSave();
   }
 }
 
@@ -77,11 +75,14 @@ export class AutoSaveWhenClose {
   }
 
   async updateTemp() {
-    if (IsOpeningSession || (!S.get().ifAutoSaveWhenClose && !S.get().ifOpenLastSessionWhenStartUp))
+    if (
+      IsOpeningSession ||
+      (!getSettings("ifAutoSaveWhenClose") && !getSettings("ifOpenLastSessionWhenStartUp"))
+    )
       return;
 
     let name = browser.i18n.getMessage("winCloseSessionName");
-    if (S.get().useTabTitleforAutoSave) name = await getCurrentTabName();
+    if (getSettings("useTabTitleforAutoSave")) name = await getCurrentTabName();
 
     let session = await loadCurrentSession(name, ["temp"], "default");
     let tempSessions = await getSessionsByTag("temp");
@@ -92,7 +93,10 @@ export class AutoSaveWhenClose {
   }
 
   async saveWinClose() {
-    if (IsOpeningSession || (!S.get().ifAutoSaveWhenClose && !S.get().ifOpenLastSessionWhenStartUp))
+    if (
+      IsOpeningSession ||
+      (!getSettings("ifAutoSaveWhenClose") && !getSettings("ifOpenLastSessionWhenStartUp"))
+    )
       return;
 
     let tempSessions = await getSessionsByTag("temp");
@@ -109,7 +113,7 @@ export class AutoSaveWhenClose {
   }
 
   async openLastSession() {
-    if (!S.get().ifOpenLastSessionWhenStartUp) return;
+    if (!getSettings("ifOpenLastSessionWhenStartUp")) return;
 
     const winCloseSessions = await getSessionsByTag("winClose");
     openSession(winCloseSessions[0], "openInCurrentWindow");
@@ -131,8 +135,8 @@ export class AutoSaveWhenClose {
 
 async function removeOverLimit(tagState) {
   let limit;
-  if (tagState == "regular") limit = S.get().autoSaveLimit;
-  else if (tagState == "winClose") limit = parseInt(S.get().autoSaveWhenCloseLimit);
+  if (tagState == "regular") limit = getSettings("autoSaveLimit");
+  else if (tagState == "winClose") limit = parseInt(getSettings("autoSaveWhenCloseLimit"));
 
   const autoSavedArray = await getSessionsByTag(tagState, ["id", "tag", "date"]);
 
@@ -153,7 +157,7 @@ async function getCurrentTabName() {
 
   if (tabs[0] == undefined) return "";
 
-  if (!S.get().ifSavePrivateWindow && tabs[0].incognito) {
+  if (!getSettings("ifSavePrivateWindow") && tabs[0].incognito) {
     tabs = await browser.tabs.query({
       active: true
     });

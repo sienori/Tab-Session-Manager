@@ -9,11 +9,17 @@ const {
   getFirefoxCopyPlugins,
   getEntry
 } = require("./webpack.utils");
+const path = require("path");
 const config = require("./config.json");
 
 const generalConfig = {
   mode: "development",
   devtool: "source-map",
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, "src/")
+    }
+  },
   module: {
     rules: [
       {

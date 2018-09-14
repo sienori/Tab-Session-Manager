@@ -39,8 +39,7 @@ const getOutput = (browserDir, outputDir = "dev") => {
 const getEntry = (sourceDir = "src") => {
   return {
     popup: path.resolve(__dirname, `${sourceDir}/popup/popup.js`),
-    options: path.resolve(__dirname, `${sourceDir}/options/options.js`),
-    ui: path.resolve(__dirname, `${sourceDir}/options/ui.js`),
+    options: path.resolve(__dirname, `${sourceDir}/options/index.js`),
     replaced: path.resolve(__dirname, `${sourceDir}/replaced/replaced.js`),
     background: path.resolve(__dirname, `${sourceDir}/background/background.js`)
   };
@@ -67,10 +66,6 @@ const getCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src") => [
     {
       from: `${sourceDir}/replaced/replaced.css`,
       to: path.resolve(__dirname, `${outputDir}/${browserDir}/replaced/replaced.css`)
-    },
-    {
-      from: `${sourceDir}/options/options.css`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/options/options.css`)
     }
   ])
 ];
@@ -96,10 +91,6 @@ const getFirefoxCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src")
     {
       from: `${sourceDir}/replaced/replaced.css`,
       to: path.resolve(__dirname, `${outputDir}/${browserDir}/replaced/replaced.css`)
-    },
-    {
-      from: `${sourceDir}/options/options.css`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/options/options.css`)
     }
   ])
 ];

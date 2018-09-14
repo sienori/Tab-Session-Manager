@@ -7,8 +7,7 @@ import browser from "webextension-polyfill";
 import uuidv4 from "uuid/v4";
 import { SessionStartTime } from "./background.js";
 import Sessions from "./sessions.js";
-import settingsObj from "../options/settings.js";
-const S = new settingsObj();
+import { getSettings } from "src/settings/settings";
 import { returnReplaceParameter } from "./replace.js";
 import { getSessionsByTag } from "./tag.js";
 
@@ -62,7 +61,7 @@ export async function loadCurrentSession(name, tag, property) {
   const tabs = await browser.tabs.query(queryInfo);
   for (let tab of tabs) {
     //プライベートタブを無視
-    if (!S.get().ifSavePrivateWindow) {
+    if (!getSettings("ifSavePrivateWindow")) {
       if (tab.incognito) {
         continue;
       }

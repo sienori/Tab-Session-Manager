@@ -1,0 +1,25 @@
+.contentsArea {
+  margin-left: 20px;
+  width: 650px;
+
+  .contentTitle {
+    font-size: 33px;
+    font-weight: 200;
+    color: var(--sub-text);
+    line-height: 2;
+    margin: 0;
+  }
+
+  hr {
+    width: 100%;
+    background-color: var(--line);
+    height: 1px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+}

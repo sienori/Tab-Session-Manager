@@ -12,6 +12,7 @@ const {
   getFirefoxCopyPlugins,
   getEntry
 } = require("./webpack.utils");
+const path = require("path");
 const config = require("./config.json");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
@@ -20,6 +21,11 @@ const ffExtVersion = require("./src/manifest-ff.json").version;
 
 const generalConfig = {
   mode: "production",
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, "src/")
+    }
+  },
   module: {
     rules: [
       {

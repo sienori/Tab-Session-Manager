@@ -1,0 +1,26 @@
+:root {
+  --main-text: #0c0c0d;
+  --sub-text: #737373;
+  --line: #ededf0;
+  --button: #d7d7db;
+  --highlight: #36b2b2;
+  --main-bg: #ffffff;
+  --new: #ff4f4f;
+}
+
+.optionsPage {
+  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica",
+    sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--main-text);
+  background-color: var(--main-bg);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 40px;
+}
+
+::-moz-selection {
+  background: var(--line);
+}

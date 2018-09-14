@@ -1,0 +1,15 @@
+.categoryContainer {
+  list-style-type: none;
+
+  .categoryTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--sub-text);
+    margin: 0;
+  }
+
+  .categoryElements {
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+}

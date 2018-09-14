@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="options.css">
+    <title>Tab Session Manager</title>
+    <link rel="icon" type="image/png" href="../icons/icon_min.svg" sizes="16x16">
+    <link rel="icon" type="image/png" href="../icons/icon.svg" sizes="64x64">
+</head>
+
+<body>
+    <div id=sidebar>
+        <ul>
+            <li>
+                <div class=titleContainer>
+                    <img src="../icons/icon.svg" class=logo>
+                    <span class=logotitle>Tab
+                        <br>Session
+                        <br>Manager</span>
+                </div>
+            </li>
+            <li>
+                <a href="#settings">
+                    <span class="settingsLabel selected sidebarItem">設定</span>
+                </a>
+            </li>
+            <li>
+                <a href="#sessions">
+                    <span class="sessionsLabel sidebarItem">セッション</span>
+                </a>
+            </li>
+            <li>
+                <a href="#information">
+                    <span class="informationLabel sidebarItem">情報</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id=contents>
+        <div id=settings style="display:none">
+            <p class="contentTitle settingsLabel">設定</p>
+            <hr>
+            <ul>
+                <li class=categoryContainer>
+
+                    <div class=categoryTitle>
+                        <p class=generalLabel>全般</p>
+                    </div>
+
+                    <ul class=categoryElements>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifOpenNewWindowLabel>セッションを新しいウィンドウで開く</p>
+                                <p class="caption ifOpenNewWindowCaptionLabel">チェックをオフにすると，セッションは現在のウィンドウを上書きします。</p>
+                            </div>
+                            <div class="optionForm">
+                                <label>
+                                    <input type="checkbox" id="ifOpenNewWindow" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifLazyLoadingLabel>タブを遅延読み込み</p>
+                                <p class="caption ifLazyLoadingCaptionLabel">推奨 セッションを開いたとき，タブを選択するまでページの内容を読み込みません</p>
+                            </div>
+                            <div class="optionForm">
+                                <label>
+                                    <input type="checkbox" id="ifLazyLoading" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifSavePrivateWindowLabel>プライベートウィンドウを保存する</p>
+                                <p class="caption ifSavePrivateWindowCaptionLabel">チェックをオフにすると，セッションの保存時にプライベートウィンドウを無視します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                    <input type="checkbox" id="ifSavePrivateWindow" class=saveByChange>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li class="optionContainer">
+                            <div class=optionText>
+                                <p class=isRestoreWindowPositionLabel>ウィンドウの位置を復元する</p>
+                                <p class="caption isRestoreWindowPositionCaptionLabel">セッションを開いたときにウィンドウの位置とサイズを復元します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                    <input type="checkbox" id="isRestoreWindowPosition" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li class="optionContainer new">
+                            <div class=optionText>
+                                <p class=ifSupportTstLabel>ツリー型タブに対応</p>
+                                <p class="caption ifSupportTstCaptionLabel">ツリー型タブのツリーの状態を復元します。
+                                    <br>このオプションを有効にすると，セッションの復元に時間がかかります。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                    <input type="checkbox" id="ifSupportTst" class=saveByChange>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <ul class=childElement>
+                            <li class="optionContainer">
+                                <div class=optionText>
+                                    <p id="tstDelayLabel">ツリー復元時のディレイ(ミリ秒)</p>
+                                    <p class="caption tstDelayCaptionLabel">ツリーの状態を復元するにはタブを開く際に待ち時間が必要です。ツリーが正しく復元されない場合にはこの値を大きくしてください。</p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="tstDelay" class=saveByChange type="number" value="150" min="0">
+                                </div>
+                            </li>
+                        </ul>
+
+                    </ul>
+                </li>
+
+                <hr>
+
+                <li class=categoryContainer>
+
+                    <div class=categoryTitle>
+                        <p class=autoSaveLabel>自動保存</p>
+                    </div>
+
+                    <ul class=categoryElements>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifAutoSaveLabel>定期的にセッションを保存する</p>
+                                <p class="caption ifAutoSaveCaptionLabel">設定した時間ごとにセッションを保存します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                    <input type="checkbox" id="ifAutoSave" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <ul class=childElement>
+                            <li class=optionContainer>
+                                <div class=optionText>
+                                    <p class="autoSaveIntervalLabel">保存間隔(分)</p>
+                                    <p class="caption autoSaveIntervalCaptionLabel">最小値 0.1</p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="autoSaveInterval" class=saveByChange type="number" value="15" min="0.1" step="0.1">
+                                </div>
+                            </li>
+                            <li class=optionContainer>
+                                <div class=optionText>
+                                    <p id="autoSaveLimitLabel">上限保存数</p>
+                                    <p class="caption autoSaveLimitCaptionLabel">この方法で保存できる最大数</p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="autoSaveLimit" class=saveByChange type="number" value="10" min="1">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifAutoSaveWhenCloseLabel>ウィンドウを閉じたときにセッションを保存する</p>
+                                <p class="caption ifAutoSaveWhenCloseCaptionLabel">ウィンドウを閉じたときやfirefoxの終了時にセッションを自動保存します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                    <input type="checkbox" id="ifAutoSaveWhenClose" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <ul class=childElement>
+                            <li class=optionContainer>
+                                <div class=optionText>
+                                    <p id="autoSaveWhenCloseLimitLabel">上限保存数</p>
+                                    <p class="caption autoSaveWhenCloseCaptionLabel">この方法で保存できるセッションの上限</p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="autoSaveWhenCloseLimit" class=saveByChange type="number" value="10" min="1">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=useTabTitleforAutoSaveLabel>自動保存のセッション名にページのタイトルを使用する</p>
+                                <p class="caption useTabTitleforAutoSaveCaptionLabel">セッションを自動保存する際，開かれているページのタイトルをセッションの名前として使用します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                    <input type="checkbox" id="useTabTitleforAutoSave" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <hr>
+
+                <li class=categoryContainer>
+
+                    <div class=categoryTitle>
+                        <p class=startUpLabel>起動時</p>
+                    </div>
+
+                    <ul class=categoryElements>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=ifOpenLastSessionWhenStartUpLabel>起動時に前回のセッションを復元</p>
+                                <p class="caption ifOpenLastSessionWhenStartUpCaptionLabel">Firefox起動時に前回終了時のセッションを開きます。</p>
+                            </div>
+                            <div class="optionForm">
+                                <label>
+                                    <input type="checkbox" id="ifOpenLastSessionWhenStartUp" class=saveByChange>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <hr>
+
+                <li class=categoryContainer>
+
+                    <div class=categoryTitle>
+                        <p class=backupLabel>バックアップ</p>
+                    </div>
+
+                    <ul class=categoryElements>
+
+                        <li class="optionContainer">
+                            <div class=optionText>
+                                <p class=ifBackupLabel>バックアップを保存する</p>
+                                <p class="caption ifBackupCaptionLabel">Firefoxの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。</p>
+                            </div>
+                            <div class="optionForm">
+                                <label>
+                                    <input type="checkbox" id="ifBackup" class=saveByChange>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+                        <ul class=childElement>
+                            <li class="optionContainer">
+                                <div class=optionText>
+                                    <p id="backupFolderLabel">保存場所</p>
+                                    <p class="caption backupFolderCaptionLabel">バックアップファイルを保存するフォルダを指定します。保存場所はFirefoxのダウンロードフォルダ以下に限定されます。</p>
+                                    <p class=caption>
+                                        <span id=openDownloadFolder>[ダウンロードフォルダ]</span>
+                                        <span id=showBackupFolder>/TabSessionManager - Backup</span>
+                                    </p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="backupFolder" class=saveByChange type="text" value="TabSessionManager - Backup" placeholder="TabSessionManager - Backup">
+                                </div>
+                            </li>
+
+                            <li class=optionContainer>
+                                <div class=optionText>
+                                    <p id="backupFilesLimitLabel">バックアップの上限保存数</p>
+                                    <p class="caption backupFilesLimitCaptionLabel">バックアップファイルの個数がこの値を超えた場合，古いものから順に削除されます。</p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="backupFilesLimit" class=saveByChange type="number" value="10" min="2">
+                                </div>
+                            </li>
+                        </ul>
+
+                    </ul>
+                </li>
+
+                <hr>
+
+                <li class=categoryContainer>
+
+                    <div class=categoryTitle>
+                        <p class=styleLabel>スタイル</p>
+                    </div>
+
+                    <ul class=categoryElements>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=dateFormatLabel>日付のフォーマット</p>
+                                <p class="caption dateFormatCaptionLabel">例 YYYY.MM.DD HH:mm:ss</p>
+                            </div>
+                            <div class=optionForm>
+                                <input id="dateFormat" class=saveByChange type="text" value="YYYY.MM.DD HH:mm:ss">
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=truncateTitleLabel>セッションの名前を1行で表示する</p>
+                                <p class="caption truncateTitleCaptionLabel">セッションリストのセッション名が複数行に渡る場合は1行に切り詰めて表示します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <label>
+                                    <input type="checkbox" id="truncateTitle" class=saveByChange checked=true>
+                                    <span class=checkbox></span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <hr>
+
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=toolBarPopupLabel>ツールバーポップアップ</p>
+                                <p class="caption toolBarPopupCaptionLabel">ツールバーポップアップのスタイルを指定します。</p>
+                            </div>
+                        </li>
+
+                        <ul class=childElement>
+                            <li class=optionContainer>
+                                <div class=optionText>
+                                    <p id="widthLabel">幅</p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="popupWidth" class=saveByChange type="number" value="350" min="200" max="800">
+                                </div>
+                            </li>
+                            <li class=optionContainer>
+                                <div class=optionText>
+                                    <p id="heightLabel">高さ</p>
+                                </div>
+                                <div class=optionForm>
+                                    <input id="popupHeight" class=saveByChange type="number" value="500" min="200" max="600">
+                                </div>
+                            </li>
+                        </ul>
+
+                    </ul>
+                </li>
+
+                <hr>
+
+                <li class=categoryContainer>
+                    <div class=categoryTitle>
+                        <p class=otherLabel>その他</p>
+                    </div>
+
+                    <ul class=categoryElements>
+                        <li class=optionContainer>
+                            <div class=optionText>
+                                <p class=resetSettingsLabel>設定をリセット</p>
+                                <p class="caption resetSettingsCaptionLabel">全ての設定をデフォルトに戻します。</p>
+                            </div>
+                            <div class=optionForm>
+                                <input id="resetSettings" type="button" class="button resetSettingsButtonLabel" value="リセット">
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id=sessions style="display:none">
+            <p class="contentTitle sessionsLabel">セッション</p>
+            <hr>
+            <ul>
+                <li>
+                    <div class=optionContainer>
+                        <div class=optionText>
+                            <p class=importLabel>セッションをインポート</p>
+                            <p class="caption importCaptionLabel">コンピュータに保存されたセッションを読み込んで現在のセッションに追加します。
+                                <br>SessionManagerのセッションファイル(.session)にも対応しています。</p>
+                        </div>
+                        <div class=optionForm>
+                            <label class="button includeSpan" for=import>
+                                <span class=importButtonLabel>参照...</span>
+                                <input id=import type="file" accept=".json, .session" multiple onchange="importSessions(event)" hidden>
+                            </label>
+                        </div>
+                    </div>
+                    <ul class=childElement style="display:none">
+                        <div id=fileList>
+                        </div>
+                        <li>
+                            <div class="optionContainer buttonsContainer">
+                                <div class=optionForm>
+                                    <input id="importSave" type="button" class="button importSaveButtonLabel" value="インポート">
+                                </div>
+                                <div class=optionForm>
+                                    <input id="importClear" type="button" class="button cancelLabel" value="キャンセル">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <hr>
+
+                <li class="optionContainer">
+                    <div class=optionText>
+                        <p class=urlImportLabel>URLリストをインポート</p>
+                        <p class="caption urlImportCaptionLabel">
+                            URLのリストからセッションを作成し，セッションリストに追加します。
+                            <br>フォーマット: &lt;URL&gt; &lt;ページタイトル (任意)&gt;
+                        </p>
+                        <textarea id=urlImportList class=noSetting spellcheck=false placeholder="https://www.google.com/ Google                                                                                              https://github.com/"></textarea>
+                    </div>
+                    <div class=optionForm>
+                        <input id="urlImportSave" type="button" class="button importSaveButtonLabel" value="インポート">
+                    </div>
+                </li>
+
+                <hr>
+
+                <li>
+                    <div class=optionContainer>
+                        <div class=optionText>
+                            <p class=exportLabel>セッションをエクスポート</p>
+                            <p class="caption exportCaptionLabel">現在のセッションをコンピュータに保存します。</p>
+                        </div>
+                        <div class=optionForm>
+                            <input id="export" type="button" class="button exportButtonLabel" value="エクスポート">
+                        </div>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li>
+                    <div class=optionContainer>
+                        <div class=optionText>
+                            <p class=removeSessionsLabel>セッションを削除</p>
+                            <p class="caption removeSessionsCaptionLabel">現在のセッションを全て削除します。</p>
+                        </div>
+                        <div class=optionForm>
+                            <input id="removeSessions" type="button" class="button removeSessionsButtonLabel" value="削除">
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id=information style="display:none">
+            <p class="contentTitle informationLabel">情報</p>
+            <hr>
+            <ul>
+                <li>
+                    <div class="optionContainer addonVersion">
+                        <div class=optionText>
+                            <p>Tab Session Manager</p>
+                            <p class="caption">
+                                <a class=pageLink href="https://github.com/sienori/Tab-Session-Manager/releases" target="_blank">Version</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class=optionContainer>
+                        <div class=optionText>
+                            <p class=LicenseLabel>ライセンス</p>
+                            <p class="caption">Mozilla Public License, Version. 2.0</p>
+                        </div>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li>
+                    <div class=optionContainer>
+                        <div class="optionText">
+                            <p class=donationLabel>ご寄付のお願い</p>
+                            <p class="caption donationCaptionLabel">Tab Session Managerをご利用いただきありがとうございます。
+                                <br>アドオンの開発を続けていく上で，皆様のご支援が大きな励みになります。
+                                <br>もしあなたがTab Session Managerを気に入ってくれたなら，ご寄付をご検討いただけると幸いです。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class=optionContainer>
+                        <div class=optionText>
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager - Donation"
+                                target="_blank">
+                                <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class=optionContainer>
+                        <div class="optionText">
+                            <a class=amazonUrl href="https://www.amazon.co.jp/dp/B004N3APGO?language=ja_JP" target="_blank">
+                                <span class="amazonTitleLabel pageLink caption">amazonギフト券 Eメールタイプ</span>
+                            </a>
+                            <p class=caption>email: sienori.firefox+tsm@gmail.com</p>
+                        </div>
+                    </div>
+                </li>
+
+                <hr>
+
+                <li>
+                    <div class=optionContainer>
+                        <div class="optionText">
+                            <a class="pageLink addonUrl" href="https://addons.mozilla.org/firefox/addon/tab-session-manager/?src=optionpage" target="_blank">
+                                <span class="addonPageLabel pageLink">アドオンページ</span>
+                            </a>
+                            <a class=pageLink href="https://github.com/sienori/Tab-Session-Manager" target="_blank">
+                                <span class=pageLink>github</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../ui/ui.js"></script>
+
+</body>
+
+</html>
