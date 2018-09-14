@@ -171,7 +171,7 @@
     "message": "Restaurar la sesión anterior al iniciar"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Cuando Firefox se inicie, restaurar la última sesión cerrada."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Guardar la sesión regularmente"
@@ -195,7 +195,7 @@
     "message": "Guardar la sesión cuando se cierre la ventana"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Guardar la sesión cuando cierre la ventana o al salir de Firefox."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Guardado número máximo"
@@ -216,13 +216,13 @@
     "message": "Guardar copia de seguridad"
   },
   "ifBackupCaptionLabel": {
-    "message": "Cuando Firefox se inicie, crear una copia de seguridad de las sesiones y se puede guardar en la carpeta de descarga."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Guardar ubicación"
   },
   "backupFolderCaptionLabel": {
-    "message": "Especifique la carpeta para guardar el archivo de la copia de seguridad. La ubicación de guardado esta limitada a la carpeta dentro de la carpeta de descargas de Firefox."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Carpeta de descargas"
