@@ -171,7 +171,7 @@
     "message": "起動時に前回のセッションを復元"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "ブラウザ起動時に，最後に開いていたセッションを開きます。"
   },
   "ifAutoSaveLabel": {
     "message": "定期的にセッションを保存する"
@@ -195,7 +195,7 @@
     "message": "ウィンドウを閉じたときにセッションを保存する"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "ウィンドウを閉じたときやブラウザの終了時にセッションを保存します。"
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "上限保存数"
@@ -216,13 +216,13 @@
     "message": "バックアップを保存する"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "ブラウザの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。"
   },
   "backupFolderLabel": {
     "message": "保存場所"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "バックアップファイルを保存するフォルダを指定します。保存場所はブラウザのダウンロードフォルダ以下に限定されます。"
   },
   "downloadFolderLabel": {
     "message": "ダウンロードフォルダ"
