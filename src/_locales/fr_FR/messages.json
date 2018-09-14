@@ -171,7 +171,7 @@
     "message": "Restaurer la dernière session au démarrage"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Au démarrage de Firefox, restaurer la session qui était en cours lors de sa fermeture."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Enregistrer régulièrement la session"
@@ -195,7 +195,7 @@
     "message": "Enregistrer la session à la fermeture d'une fenêtre"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Enregistrer la session lors de la fermeture de la fenêtre ou lorsque vous quittez Firefox."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Nombre maximum enregistrées"
@@ -216,13 +216,13 @@
     "message": "Enregistrer la sauvegarde"
   },
   "ifBackupCaptionLabel": {
-    "message": "Lorsque Firefox démarre, créer un fichier de sauvegarde des sessions et l'enregistre dans le dossier de téléchargement."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Emplacement de la sauvegarde"
   },
   "backupFolderCaptionLabel": {
-    "message": "Renseignez le dossier de sauvegarde. L'emplacement choisi est restreint aux sous-dossiers du dossier de téléchargement de Firefox."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Dossier de téléchargement"
