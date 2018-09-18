@@ -2,8 +2,8 @@ import React from "react";
 import browser from "webextension-polyfill";
 import openUrl from "../actions/openUrl";
 import { sendOpenMessage, deleteWindow, deleteTab } from "../actions/controlSessions";
-import "../styles/DetailsContainer.scss";
 import PlusIcon from "../icons/plus.svg";
+import "../styles/DetailsContainer.scss";
 
 export default props => {
   const { session, isOpenedDetails } = props;

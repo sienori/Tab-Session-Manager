@@ -1,10 +1,10 @@
-import browser from "webextension-polyfill";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import browser from "webextension-polyfill";
 import { getSettings } from "src/settings/settings";
 import { sendSessionSaveMessage } from "../actions/controlSessions";
-import TriangleIcon from "../icons/triangle.svg";
 import SaveMenuItems from "./SaveMenuItems";
+import TriangleIcon from "../icons/triangle.svg";
 import "../styles/SaveArea.scss";
 import "../styles/InputForm.scss";
 

@@ -7,8 +7,8 @@ import NameContainer from "./NameContainer";
 import SessionMenuItems from "./SessionMenuItems";
 import TagsContainer from "./TagsContainer";
 import DetailsContainer from "./DetailsContainer";
-import "../styles/Session.scss";
 import MenuIcon from "../icons/menu.svg";
+import "../styles/Session.scss";
 
 export default class Session extends Component {
   constructor(props) {

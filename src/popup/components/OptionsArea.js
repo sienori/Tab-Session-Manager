@@ -1,5 +1,5 @@
-import browser from "webextension-polyfill";
 import React, { Component } from "react";
+import browser from "webextension-polyfill";
 import "../styles/OptionsArea.scss";
 
 const alphabeticallySort = (a, b) => {

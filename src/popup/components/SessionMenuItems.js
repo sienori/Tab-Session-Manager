@@ -1,5 +1,5 @@
-import browser from "webextension-polyfill";
 import React from "react";
+import browser from "webextension-polyfill";
 import {
   sendOpenMessage,
   replaceCurrentSession,

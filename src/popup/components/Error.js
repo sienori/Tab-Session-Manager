@@ -1,6 +1,6 @@
+import React from "react";
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
-import React from "react";
 import openUrl from "../actions/openUrl";
 import "../styles/Error.scss";
 

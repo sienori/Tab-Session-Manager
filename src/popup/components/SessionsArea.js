@@ -1,6 +1,6 @@
-import browser from "webextension-polyfill";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import browser from "webextension-polyfill";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Session from "./Session";
 import "../styles/sessionsArea.scss";

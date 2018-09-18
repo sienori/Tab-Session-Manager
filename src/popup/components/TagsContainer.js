@@ -1,9 +1,9 @@
-import browser from "webextension-polyfill";
 import React, { Component } from "react";
+import browser from "webextension-polyfill";
 import { sendTagRemoveMessage, sendTagAddMessage } from "../actions/controlSessions";
-import "../styles/TagsContainer.scss";
-import PlusIcon from "../icons/plus.svg";
 import InputForm from "./InputForm";
+import PlusIcon from "../icons/plus.svg";
+import "../styles/TagsContainer.scss";
 
 export default class TagsContainer extends Component {
   constructor(props) {

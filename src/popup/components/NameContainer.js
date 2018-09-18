@@ -1,9 +1,9 @@
-import browser from "webextension-polyfill";
 import React, { Component } from "react";
-import { getSettings } from "src/settings/settings";
-import "../styles/nameContainer.scss";
-import InputForm from "./InputForm";
+import browser from "webextension-polyfill";
 import { sendSesssionRenameMessage } from "../actions/controlSessions";
+import { getSettings } from "src/settings/settings";
+import InputForm from "./InputForm";
+import "../styles/nameContainer.scss";
 
 export default class NameContainer extends Component {
   constructor(props) {

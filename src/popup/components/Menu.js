@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { CSSTransition } from "react-transition-group";
 import { getSettings } from "src/settings/settings";
+import { CSSTransition } from "react-transition-group";
 import "../styles/Menu.scss";
 import "../styles/fade.scss";
 

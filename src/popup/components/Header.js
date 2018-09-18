@@ -1,5 +1,5 @@
-import browser from "webextension-polyfill";
 import React from "react";
+import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import openUrl from "../actions/openUrl";
 import HeartIcon from "../icons/heart.svg";
