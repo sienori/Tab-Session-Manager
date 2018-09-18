@@ -57,7 +57,7 @@
     "message": "이 세션을 삭제할까요?"
   },
   "sessionDeletedLabel": {
-    "message": "세션이 삭제되었습니다."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "복원"
@@ -87,7 +87,10 @@
     "message": "여러 탭"
   },
   "noSessionLabel": {
-    "message": "세션이 없습니다"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "메뉴"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "문제 해결하기"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "자동 저장됨 - 창이 닫혔습니다"
