@@ -57,7 +57,7 @@
     "message": "このセッションを削除しますか？"
   },
   "sessionDeletedLabel": {
-    "message": "このセッションは削除されました。"
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "元に戻す"
@@ -87,7 +87,10 @@
     "message": "タブ"
   },
   "noSessionLabel": {
-    "message": "セッションはありません"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "メニュー"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "この問題を解決するには"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "自動保存 - ウィンドウ終了"
