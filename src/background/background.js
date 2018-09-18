@@ -4,7 +4,8 @@ import { AutoSaveWhenClose, setAutoSave } from "./autoSave";
 const autoSaveWhenClose = new AutoSaveWhenClose();
 import Sessions from "./sessions";
 import { replacePage } from "./replace";
-import { backupSessions, importSessions } from "./import";
+import importSessions from "./import";
+import backupSessions from "./backup";
 import {
   loadCurrentSession,
   saveCurrentSession,
