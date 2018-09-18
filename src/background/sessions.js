@@ -1,9 +1,6 @@
-export default (function() {
-  let self = {};
-
-  let DB;
-
-  self.init = () => {
+let DB;
+export default {
+  init: () => {
     const request = window.indexedDB.open("sessions", 1);
 
     request.onupgradeneeded = e => {
@@ -29,9 +26,9 @@ export default (function() {
         console.log(e);
       };
     });
-  };
+  },
 
-  self.DBUpdate = async () => {
+  DBUpdate: async () => {
     let sessions;
     try {
       sessions = await self.getAll();
@@ -43,9 +40,9 @@ export default (function() {
     for (let session of sessions) {
       await self.put(session).catch(() => {});
     }
-  };
+  },
 
-  self.put = session => {
+  put: session => {
     const db = DB;
     const transaction = db.transaction("sessions", "readwrite");
     const store = transaction.objectStore("sessions");
@@ -60,9 +57,9 @@ export default (function() {
         reject();
       };
     });
-  };
+  },
 
-  self.delete = id => {
+  delete: id => {
     const db = DB;
     const transaction = db.transaction("sessions", "readwrite");
     const store = transaction.objectStore("sessions");
@@ -77,9 +74,9 @@ export default (function() {
         reject();
       };
     });
-  };
+  },
 
-  self.deleteAll = () => {
+  deleteAll: () => {
     DB.close("sessions");
 
     const request = window.indexedDB.deleteDatabase("sessions");
@@ -93,9 +90,9 @@ export default (function() {
         reject();
       };
     });
-  };
+  },
 
-  self.get = id => {
+  get: id => {
     const db = DB;
     const transaction = db.transaction("sessions", "readonly");
     const store = transaction.objectStore("sessions");
@@ -111,9 +108,9 @@ export default (function() {
         reject();
       };
     });
-  };
+  },
 
-  self.getAll = (needKeys = null) => {
+  getAll: (needKeys = null) => {
     const db = DB;
     const transaction = db.transaction("sessions", "readonly");
     const store = transaction.objectStore("sessions");
@@ -144,9 +141,9 @@ export default (function() {
         reject();
       };
     });
-  };
+  },
 
-  self.search = (index, key) => {
+  search: (index, key) => {
     const db = DB;
     const transaction = db.transaction("sessions", "readonly");
     const store = transaction.objectStore("sessions");
@@ -168,7 +165,5 @@ export default (function() {
         resolve();
       };
     });
-  };
-
-  return self;
-})();
+  }
+};
