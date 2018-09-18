@@ -137,15 +137,6 @@ export default [
             type: "text",
             placeholder: "TabSessionManager - Backup",
             default: "TabSessionManager - Backup"
-          },
-          {
-            id: "backupFilesLimit",
-            title: "backupFilesLimitLabel",
-            captions: ["backupFilesLimitCaptionLabel"],
-            type: "number",
-            min: 2,
-            placeholder: 10,
-            default: 10
           }
         ]
       }

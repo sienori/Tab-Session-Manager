@@ -24,8 +24,6 @@ export default async function backupSessions() {
     conflictAction: "uniquify",
     saveAs: false
   });
-
-  removeBackupFile();
 }
 
 function replaceBackupFolderName(folderName) {
@@ -58,27 +56,4 @@ function returnFileName(sessions) {
   const pattern = /\\|\/|\:|\?|\.|"|<|>|\|/g;
   fileName = fileName.replace(pattern, "-");
   return fileName;
-}
-
-async function removeBackupFile() {
-  const backupItems = await browser.downloads.search({
-    filenameRegex: `^.*${getSettings("backupFolder")}.*$`,
-    urlRegex: `^blob\.${browser.runtime.getURL("")}.*$`,
-    orderBy: ["-startTime"],
-    exists: true
-  });
-
-  const limit = getSettings("backupFilesLimit");
-  let count = 0;
-
-  for (let i of backupItems) {
-    count++;
-    if (count < limit) continue;
-    await browser.downloads.removeFile(i.id).catch(() => {});
-    await browser.downloads
-      .erase({
-        id: i.id
-      })
-      .catch(() => {});
-  }
 }
