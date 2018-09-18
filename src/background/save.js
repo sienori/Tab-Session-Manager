@@ -1,8 +1,3 @@
-/* Copyright (c) 2017-2018 Sienori All rights reserved.
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
 import browser from "webextension-polyfill";
 import uuidv4 from "uuid/v4";
 import { SessionStartTime } from "./background.js";
