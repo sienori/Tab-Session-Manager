@@ -1,3 +1,5 @@
+import Sessions from "./sessions";
+
 let DB;
 export default {
   init: () => {
@@ -31,14 +33,14 @@ export default {
   DBUpdate: async () => {
     let sessions;
     try {
-      sessions = await self.getAll();
-      await self.deleteAll();
+      sessions = await Session.getAll();
+      await Session.deleteAll();
     } catch (e) {
       return;
     }
 
     for (let session of sessions) {
-      await self.put(session).catch(() => {});
+      await Session.put(session).catch(() => {});
     }
   },
 
@@ -83,7 +85,7 @@ export default {
 
     return new Promise(resolve => {
       request.onsuccess = () => {
-        resolve(self.init());
+        resolve(Sessions.init());
       };
       request.onerror = e => {
         console.log(e);
