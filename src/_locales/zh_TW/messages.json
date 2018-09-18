@@ -57,7 +57,7 @@
     "message": "確定要刪除此瀏覽階段？"
   },
   "sessionDeletedLabel": {
-    "message": "此瀏覽階段已被刪除。"
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "還原"
@@ -87,7 +87,10 @@
     "message": "分頁"
   },
   "noSessionLabel": {
-    "message": "沒有已儲存的瀏覽階段"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "選單"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "如何解決這個問題"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "自動儲存 - 視窗關閉"
