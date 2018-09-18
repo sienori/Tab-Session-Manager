@@ -14,6 +14,7 @@ import {
   updateSession,
   renameSession
 } from "./save.js";
+import getSessions from "./getSessions";
 import { openSession } from "./open.js";
 import { addTag, removeTag } from "./tag.js";
 import { initSettings, handleSettingsChange } from "src/settings/settings";
@@ -122,17 +123,4 @@ async function onMessageListener(request, sender, sendResponse) {
       const currentSession = await loadCurrentSession("", [], request.property).catch(() => {});
       return currentSession;
   }
-}
-
-export async function getSessions(id = null, needKeys = null) {
-  let sessions;
-  if (id == null) {
-    sessions = await Sessions.getAll(needKeys).catch(() => {});
-  } else {
-    sessions = await Sessions.get(id).catch(() => {});
-  }
-
-  return sessions;
-  //該当するセッションが存在しない時
-  //idを指定:undefined, 非指定:[] を返す
 }

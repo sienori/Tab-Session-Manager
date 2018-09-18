@@ -1,6 +1,6 @@
 import browser from "webextension-polyfill";
 import moment from "moment";
-import { getSessions } from "./background";
+import getSessions from "./getSessions";
 import { getSettings } from "../settings/settings";
 
 export default async function exportSessions(id = null) {
