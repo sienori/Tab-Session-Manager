@@ -1,7 +1,7 @@
 import React from "react";
 import browser from "webextension-polyfill";
 import { Link, withRouter } from "react-router-dom";
-import "./SideBar.scss";
+import "../styles/SideBar.scss";
 
 const SideBar = props => (
   <div className="sideBar">

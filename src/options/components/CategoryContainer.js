@@ -1,7 +1,7 @@
 import React from "react";
 import browser from "webextension-polyfill";
-import OptionContainer from "../OptionContainer/OptionContainer";
-import "./categoryContainer.scss";
+import OptionContainer from "./OptionContainer";
+import "../styles/categoryContainer.scss";
 
 export default props => {
   const { category, elements } = props;

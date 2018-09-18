@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
-import CategoryContainer from "../CategoryContainer/CategoryContainer";
-import defaultSettings from "src/settings/defaultSettings.js";
 import { initSettings, resetAllSettings } from "src/settings/settings";
+import defaultSettings from "src/settings/defaultSettings";
+import CategoryContainer from "./CategoryContainer";
 
 export default class SettingsPage extends Component {
   constructor(props) {

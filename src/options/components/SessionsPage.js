@@ -1,6 +1,6 @@
 import React from "react";
 import browser from "webextension-polyfill";
-import OptionContainer from "../OptionContainer/OptionContainer";
+import OptionContainer from "./OptionContainer";
 import ImportSessionsComponent from "./ImportSessionsComponent";
 import ImportUrlListComponent from "./ImportUrlListComponent";
 

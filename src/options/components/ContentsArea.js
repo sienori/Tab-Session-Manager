@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import SettingsPage from "../SettingsPage/SettingsPage";
-import SessionsPage from "../SessionsPage/SessionsPage";
-import InformationPage from "../InformationPage/InformationPage";
-import "./ContentsArea.scss";
+import SettingsPage from "./SettingsPage";
+import SessionsPage from "./SessionsPage";
+import InformationPage from "./InformationPage";
+import "../styles/ContentsArea.scss";
 
 export default () => (
   <div className="contentsArea">

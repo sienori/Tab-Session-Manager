@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import moment from "moment";
 import uuidv4 from "uuid/v4";
-import OptionContainer from "../OptionContainer/OptionContainer";
+import OptionContainer from "./OptionContainer";
 
 const fileOpen = file => {
   return new Promise(function(resolve, reject) {

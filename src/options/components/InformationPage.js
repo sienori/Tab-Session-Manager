@@ -1,8 +1,8 @@
 import React from "react";
 import browser from "webextension-polyfill";
-import OptionsContainer from "../OptionContainer/OptionContainer";
 import browserInfo from "browser-info";
 import queryString from "query-string";
+import OptionsContainer from "./OptionContainer";
 import manifest from "src/manifest.json";
 
 export default props => {
