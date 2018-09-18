@@ -21,7 +21,7 @@
     "message": "現在のウィンドウのみを保存"
   },
   "categoryFilterLabel": {
-    "message": "カテゴリフィルタ"
+    "message": "カテゴリーフィルター"
   },
   "sortLabel": {
     "message": "ソート"
@@ -57,7 +57,7 @@
     "message": "このセッションを削除しますか？"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "セッションが削除されました。"
   },
   "restoreSessionLabel": {
     "message": "元に戻す"
@@ -87,10 +87,10 @@
     "message": "タブ"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "セッションはありません。"
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "右下のボタンをクリックしてセッションを保存しましょう。"
   },
   "menuLabel": {
     "message": "メニュー"
@@ -126,7 +126,7 @@
     "message": "この問題を解決するには"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "複数のポップアップを同時に開くことはできません。"
   },
   "winCloseSessionName": {
     "message": "自動保存 - ウィンドウ終了"
