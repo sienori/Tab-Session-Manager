@@ -57,7 +57,7 @@
     "message": "Изтриване на тази сесия?"
   },
   "sessionDeletedLabel": {
-    "message": "Сесията е изтрита."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Възстановяване"
@@ -87,7 +87,10 @@
     "message": "раздела"
   },
   "noSessionLabel": {
-    "message": "Тук няма сесии"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Меню"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "Разрешаване на проблема"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Авто запазени - при затваряне на прозорец"
