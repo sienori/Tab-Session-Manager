@@ -39,7 +39,7 @@ export async function loadCurrentSession(name, tag, property) {
     windowsInfo: {},
     tabsNumber: 0,
     name: name,
-    date: new Date(),
+    date: Date.now(),
     tag: tag,
     sessionStartTime: SessionStartTime,
     id: uuidv4()

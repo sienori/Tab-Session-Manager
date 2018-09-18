@@ -79,6 +79,10 @@ const parseSession = file => {
     if (session.windowsNumber === undefined) {
       session.windowsNumber = Object.keys(session.windows).length;
     }
+    //ver4.0.0以前のdateをunix msに変更
+    if (typeof session.date !== "number") {
+      session.date = moment(session.date).valueOf();
+    }
   }
   return file;
 };
@@ -91,7 +95,7 @@ const parseOldSession = file => {
   session.windowsNumber = 0;
   session.tabsNumber = 0;
   session.name = line[1].substr(5);
-  session.date = moment(parseInt(line[2].substr(10))).toISOString();
+  session.date = moment(parseInt(line[2].substr(10))).valueOf();
   session.tag = [];
   session.sessionStartTime = parseInt(line[2].substr(10));
   session.id = uuidv4();

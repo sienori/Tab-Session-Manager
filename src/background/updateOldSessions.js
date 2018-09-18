@@ -1,5 +1,6 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
+import moment from "moment";
 import uuidv4 from "uuid/v4";
 import Sessions from "./sessions";
 import { updateSession, saveSession } from "./save";
@@ -19,7 +20,10 @@ const addNewValues = async () => {
   for (let session of sessions) {
     if (session.windowsNumber === undefined) {
       session.windowsNumber = Object.keys(session.windows).length;
-
+      updateSession(session);
+    }
+    if (typeof session.date !== "number") {
+      session.date = moment(session.date).valueOf();
       updateSession(session);
     }
   }
