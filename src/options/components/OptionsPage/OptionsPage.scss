@@ -22,5 +22,8 @@
 }
 
 ::-moz-selection {
-  background: var(--line);
+  background-color: var(--line);
+}
+::selection {
+  background-color: var(--line);
 }
