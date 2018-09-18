@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Session from "./Session";
 import "../styles/sessionsArea.scss";
 
@@ -97,30 +96,27 @@ export default class SessionsArea extends Component {
       !error.isError;
 
     return (
-      <TransitionGroup id="sessionsArea" ref="sessionsArea">
+      <div id="sessionsArea" ref="sessionsArea">
         {sessions.map(
           session =>
             shouldShowSession(session.tag, filterValue) && (
-              <CSSTransition classNames="fade" timeout={150} key={session.id}>
-                <Session
-                  session={session}
-                  order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
-                  removeSession={removeSession}
-                  getSessionDetail={getSessionDetail}
-                  openMenu={openMenu}
-                />
-              </CSSTransition>
+              <Session
+                session={session}
+                order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
+                removeSession={removeSession}
+                getSessionDetail={getSessionDetail}
+                openMenu={openMenu}
+                key={session.id}
+              />
             )
         )}
         {shouldShowNoSessionMessage && (
-          <CSSTransition classNames="fade" timeout={150}>
-            <div className="noSession">
-              <p>{browser.i18n.getMessage("noSessionLabel")}</p>
-              <p>{browser.i18n.getMessage("letsSaveLabel")}</p>
-            </div>
-          </CSSTransition>
+          <div className="noSession">
+            <p>{browser.i18n.getMessage("noSessionLabel")}</p>
+            <p>{browser.i18n.getMessage("letsSaveLabel")}</p>
+          </div>
         )}
-      </TransitionGroup>
+      </div>
     );
   }
 }
