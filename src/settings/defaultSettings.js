@@ -189,47 +189,4 @@ export default [
       }
     ]
   }
-  /*{
-    category: "otherLabel",
-    elements: [
-      {
-        id: "color",
-        title: "",
-        captions: [""],
-        type: "color"
-      },
-      {
-        id: "radio",
-        title: "",
-        captions: [""],
-        type: "radio",
-        value: "r1"
-      },
-      {
-        id: "radio",
-        title: "",
-        captions: [""],
-        type: "radio",
-        value: "r2"
-      },
-      {
-        id: "radio",
-        title: "",
-        captions: [""],
-        type: "radio",
-        value: "r3"
-      },
-      {
-        id: "select",
-        title: "",
-        captions: [""],
-        type: "select",
-        options: [
-          { name: "s1", value: "s1" },
-          { name: "s2", value: "s2" },
-          { name: "s3", value: "s3" }
-        ]
-      }
-    ]
-  }*/
 ];
