@@ -57,7 +57,7 @@
     "message": "Видалити цю сесію?"
   },
   "sessionDeletedLabel": {
-    "message": "Ця сесія була видалена."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Відновити"
@@ -87,7 +87,10 @@
     "message": "Вкладки"
   },
   "noSessionLabel": {
-    "message": "Немає сесії"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Меню"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "Як вирішити цю проблему"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Автозбереження - закриття вікна"
