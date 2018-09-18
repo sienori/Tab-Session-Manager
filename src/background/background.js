@@ -1,10 +1,10 @@
 import browser from "webextension-polyfill";
 import updateOldSessions from "./updateOldSessions";
-import { AutoSaveWhenClose, setAutoSave } from "./autoSave.js";
+import { AutoSaveWhenClose, setAutoSave } from "./autoSave";
 const autoSaveWhenClose = new AutoSaveWhenClose();
-import Sessions from "./sessions.js";
-import { replacePage } from "./replace.js";
-import { backupSessions, importSessions } from "./import.js";
+import Sessions from "./sessions";
+import { replacePage } from "./replace";
+import { backupSessions, importSessions } from "./import";
 import {
   loadCurrentSession,
   saveCurrentSession,
@@ -13,26 +13,42 @@ import {
   deleteAllSessions,
   updateSession,
   renameSession
-} from "./save.js";
+} from "./save";
 import getSessions from "./getSessions";
-import { openSession } from "./open.js";
-import { addTag, removeTag } from "./tag.js";
+import { openSession } from "./open";
+import { addTag, removeTag } from "./tag";
 import { initSettings, handleSettingsChange } from "src/settings/settings";
 import exportSessions from "./export";
 
 export const SessionStartTime = Date.now();
 
+const addListeners = () => {
+  const handleReplace = () => replacePage();
+  browser.tabs.onActivated.addListener(handleReplace);
+  browser.windows.onFocusChanged.addListener(handleReplace);
+
+  browser.storage.onChanged.addListener((changes, areaName) => {
+    handleSettingsChange(changes, areaName);
+    setAutoSave(changes, areaName);
+  });
+
+  browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) =>
+    autoSaveWhenClose.handleTabUpdate(tabId, changeInfo, tab)
+  );
+  browser.tabs.onRemoved.addListener((tabId, removeInfo) =>
+    autoSaveWhenClose.handleTabRemoved(tabId, removeInfo)
+  );
+  browser.tabs.onCreated.addListener(() => autoSaveWhenClose.updateTemp());
+  browser.windows.onCreated.addListener(() => autoSaveWhenClose.updateTemp());
+  browser.windows.onRemoved.addListener(() => autoSaveWhenClose.saveWinClose());
+};
+
 let IsInit = false;
-async function init() {
+const init = async () => {
   await initSettings();
   await Sessions.init();
   IsInit = true;
   await updateOldSessions();
-
-  const handleReplace = () => replacePage();
-
-  browser.tabs.onActivated.addListener(handleReplace);
-  browser.windows.onFocusChanged.addListener(handleReplace);
 
   autoSaveWhenClose.saveWinClose().then(() => {
     autoSaveWhenClose.openLastSession();
@@ -40,34 +56,12 @@ async function init() {
   });
 
   setAutoSave();
-  browser.storage.onChanged.addListener((changes, areaName) => {
-    handleSettingsChange(changes, areaName);
-    setAutoSave(changes, areaName);
-  });
-
-  browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    autoSaveWhenClose.handleTabUpdate(tabId, changeInfo, tab);
-  });
-  browser.tabs.onRemoved.addListener((tabId, removeInfo) => {
-    autoSaveWhenClose.handleTabRemoved(tabId, removeInfo);
-  });
-  browser.tabs.onCreated.addListener(() => {
-    autoSaveWhenClose.updateTemp();
-  });
-  browser.windows.onCreated.addListener(() => {
-    autoSaveWhenClose.updateTemp();
-  });
-  browser.windows.onRemoved.addListener(() => {
-    autoSaveWhenClose.saveWinClose();
-  });
-
   backupSessions();
-}
+  addListeners();
+};
 init();
-browser.runtime.onInstalled.addListener(onInstalledListener);
-browser.runtime.onMessage.addListener(onMessageListener);
 
-async function onInstalledListener(details) {
+const onInstalledListener = details => {
   if (details.reason != "install" && details.reason != "update") return;
 
   //初回起動時にオプションページを表示して設定を初期化
@@ -75,9 +69,9 @@ async function onInstalledListener(details) {
     url: "options/index.html#information?action=updated",
     active: false
   });
-}
+};
 
-async function onMessageListener(request, sender, sendResponse) {
+const onMessageListener = async (request, sender, sendResponse) => {
   switch (request.message) {
     case "save":
       saveSession(request.session);
@@ -123,4 +117,7 @@ async function onMessageListener(request, sender, sendResponse) {
       const currentSession = await loadCurrentSession("", [], request.property).catch(() => {});
       return currentSession;
   }
-}
+};
+
+browser.runtime.onInstalled.addListener(onInstalledListener);
+browser.runtime.onMessage.addListener(onMessageListener);
