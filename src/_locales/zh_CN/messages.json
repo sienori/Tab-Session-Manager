@@ -57,7 +57,7 @@
     "message": "是否删除此会话？"
   },
   "sessionDeletedLabel": {
-    "message": "此会话已被删除。"
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "还原"
@@ -87,7 +87,10 @@
     "message": "标签页"
   },
   "noSessionLabel": {
-    "message": "没有已保存的会话"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "菜单"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "解决方案"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "自动保存 - 窗口关闭时"
