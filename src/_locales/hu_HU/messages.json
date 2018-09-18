@@ -57,7 +57,7 @@
     "message": "Törli ezt a munkamenetet?"
   },
   "sessionDeletedLabel": {
-    "message": "Munkamenet törölve."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Visszaállítás"
@@ -87,7 +87,10 @@
     "message": "Fül"
   },
   "noSessionLabel": {
-    "message": "Nincs munkamenet"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Menü"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "Hogyan lehet megoldani ezt a problémát"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Automatikusan mentett - Ablak be lett zárva"
