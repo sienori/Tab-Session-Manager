@@ -1,0 +1,12 @@
+#popupPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  ::-moz-selection {
+    background-color: var(--line);
+  }
+  ::selection {
+    background-color: var(--line);
+  }
+}

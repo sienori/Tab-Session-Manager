@@ -1,0 +1,10 @@
+.error {
+  padding: 10px;
+  a {
+    color: var(--highlight);
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

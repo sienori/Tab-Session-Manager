@@ -1,0 +1,54 @@
+$transition: 150ms ease;
+.inputForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  height: 20px;
+  width: 100%;
+  max-width: inherit;
+  input {
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    max-width: inherit;
+    height: calc(100% - 4px);
+    border: var(--button) solid 1px;
+    border-radius: 2px 0px 0px 2px;
+    margin-right: -1px;
+    outline: none;
+    transition: border-color $transition;
+  }
+  input:focus {
+    border-color: var(--highlight);
+    z-index: 1;
+  }
+
+  .submitButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--main-bg);
+    border: var(--button) solid 1px;
+    border-radius: 0px 2px 2px 0px;
+    height: 100%;
+    width: 20px;
+    max-width: inherit;
+    padding: 0px;
+    cursor: pointer;
+    transition: border-color $transition;
+    svg {
+      width: 8px;
+      height: 8px;
+      transition: fill $transition;
+    }
+
+    &:hover {
+      border-color: var(--highlight);
+      svg {
+        fill: var(--highlight);
+      }
+    }
+  }
+}

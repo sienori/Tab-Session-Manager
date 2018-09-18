@@ -4,7 +4,7 @@ import { getSessions } from "./background";
 import { getSettings } from "../settings/settings";
 
 export default async function exportSessions(id = null) {
-  const sessions = await getSessions(id);
+  let sessions = await getSessions(id);
   if (sessions == undefined) return;
   if (!Array.isArray(sessions)) sessions = [sessions];
 

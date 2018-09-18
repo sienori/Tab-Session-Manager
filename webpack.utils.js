@@ -38,7 +38,7 @@ const getOutput = (browserDir, outputDir = "dev") => {
 
 const getEntry = (sourceDir = "src") => {
   return {
-    popup: path.resolve(__dirname, `${sourceDir}/popup/popup.js`),
+    popup: path.resolve(__dirname, `${sourceDir}/popup/index.js`),
     options: path.resolve(__dirname, `${sourceDir}/options/index.js`),
     replaced: path.resolve(__dirname, `${sourceDir}/replaced/replaced.js`),
     background: path.resolve(__dirname, `${sourceDir}/background/background.js`)
@@ -58,10 +58,6 @@ const getCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src") => [
     {
       from: `${sourceDir}/manifest.json`,
       to: path.resolve(__dirname, `${outputDir}/${browserDir}/manifest.json`)
-    },
-    {
-      from: `${sourceDir}/popup/popup.css`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/popup/popup.css`)
     },
     {
       from: `${sourceDir}/replaced/replaced.css`,

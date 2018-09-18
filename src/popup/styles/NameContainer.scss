@@ -1,0 +1,19 @@
+.nameContainer {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  min-height: 20px;
+  width: 100%;
+  button {
+    width: 100%;
+  }
+  span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+  &.isTruncate span {
+    white-space: nowrap;
+  }
+}

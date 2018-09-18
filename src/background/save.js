@@ -147,7 +147,7 @@ export async function updateSession(session, isSendResponce = true) {
 export async function renameSession(id, name) {
   let session = await Sessions.get(id).catch(() => {});
   if (session == undefined) return;
-  session.name = name;
+  session.name = name.trim();
   updateSession(session);
 }
 

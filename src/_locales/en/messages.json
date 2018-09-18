@@ -58,7 +58,7 @@
     "message": "Delete this session?"
   },
   "sessionDeletedLabel": {
-    "message": "This session has been deleted."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Restore"
@@ -88,7 +88,10 @@
     "message": "Tabs"
   },
   "noSessionLabel": {
-    "message": "There is no session"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Menu"
@@ -122,6 +125,9 @@
   },
   "howToSolveLabel": {
     "message": "How to solve this problem"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
 
   "winCloseSessionName": {

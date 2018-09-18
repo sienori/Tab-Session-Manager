@@ -1,0 +1,54 @@
+#optionsArea {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  .filter {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  .sort {
+    flex-shrink: 0;
+  }
+
+  .selectWrap {
+    position: relative;
+    select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      text-overflow: ellipsis;
+      border: var(--button) solid 1px;
+      border-radius: 2px;
+      padding: 3px 20px 3px 5px;
+      width: 100%;
+      height: 30px;
+      outline: none;
+      transition: border-color 100ms;
+
+      &:hover {
+        border-color: var(--highlight);
+      }
+    }
+
+    &::before {
+      pointer-events: none;
+      content: "";
+      z-index: 1;
+      position: absolute;
+      top: 40%;
+      right: 7px;
+      width: 5px;
+      height: 5px;
+      transform: rotate(45deg);
+      border-bottom: 2px solid var(--sub-text);
+      border-right: 2px solid var(--sub-text);
+    }
+    &:hover::before {
+      border-bottom: 2px solid var(--highlight);
+      border-right: 2px solid var(--highlight);
+    }
+  }
+}

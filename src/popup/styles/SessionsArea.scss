@@ -1,0 +1,16 @@
+#sessionsArea {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+
+  .noSession {
+    p {
+      color: var(--sub-text);
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.session {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 5px;
+  margin: 5px 0px;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  animation: fadein 200ms ease;
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dateContainer {
+    flex-shrink: 0;
+    color: var(--sub-text);
+    overflow: hidden;
+    word-break: break-all;
+    display: inline-block;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+
+    button {
+      color: var(--highlight);
+      word-break: break-all;
+      transition: all 100ms;
+    }
+
+    .remove {
+      margin-left: 8px;
+      &:hover {
+        color: var(--confirm);
+      }
+    }
+  }
+
+  .menuButton {
+    flex-shrink: 0;
+    padding-left: 11px;
+    opacity: 0;
+    transition: opacity 200ms;
+    svg {
+      width: 5px;
+      height: 16px;
+      fill: var(--sub-text);
+      transition: fill 100ms;
+    }
+    &:hover svg {
+      fill: var(--highlight);
+    }
+  }
+
+  &:hover {
+    .menuButton {
+      opacity: 1;
+    }
+  }
+
+  button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    text-align: left;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

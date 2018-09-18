@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica",
+    sans-serif;
+  font-size: 13px;
+  overflow: hidden;
+  background-color: var(--main-bg);
+  #root {
+    height: 100%;
+  }
+}
+
+:root {
+  --main-text: #0c0c0d;
+  --sub-text: #737373;
+  --line: #ededf0;
+  --button: #d7d7db;
+  --highlight: #36b2b2;
+  --main-bg: #ffffff;
+  --confirm: #ff4f4f;
+}

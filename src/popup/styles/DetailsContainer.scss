@@ -1,0 +1,109 @@
+.detailsContainer {
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+  }
+  .windowList {
+    padding-left: 10px;
+  }
+
+  .window,
+  .tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .itemTitleButton {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: calc(100% - 15px);
+      span {
+        font-size: 12px;
+        flex-grow: 1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      img {
+        width: 16px;
+        height: 16px;
+        padding-right: 8px;
+        flex-shrink: 0;
+      }
+    }
+
+    .deleteWindowButton,
+    .deleteTabButton {
+      width: 15px;
+      height: 15px;
+      opacity: 0;
+      transition: opacity 100ms;
+      svg {
+        width: 12px;
+        height: 12px;
+        fill: var(--sub-text);
+        transform: rotate(45deg);
+      }
+      &:hover svg {
+        fill: var(--confirm);
+      }
+    }
+
+    &:hover {
+      .deleteWindowButton,
+      .deleteTabButton {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/*transition*/
+$duration: 300ms;
+.detailsContainer {
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: $duration;
+  transition-delay: $duration / 3;
+  > ul {
+    margin: 10px 0px;
+    transition-property: margin;
+    transition-duration: $duration;
+    .tab,
+    .window {
+      max-height: 3em;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      transition-property: max-height, padding;
+      transition-duration: $duration;
+    }
+  }
+
+  &.isClose {
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: $duration * 0.8;
+    transition-delay: 0ms;
+    > ul {
+      margin: 0px;
+      .tab,
+      .window {
+        max-height: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }
+  }
+}
