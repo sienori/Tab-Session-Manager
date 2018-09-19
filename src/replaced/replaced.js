@@ -26,7 +26,9 @@ let parameter = returnReplaceParameter(location.href);
 document.title = parameter.title;
 document.getElementsByClassName("title")[0].innerText = parameter.title;
 document.getElementsByClassName("replacedUrl")[0].innerText = parameter.url;
-if (parameter.favIconUrl === "") parameter.favIconUrl = "undefined";
+if (parameter.favIconUrl === "" || parameter.favIconUrl === "undefined") {
+  parameter.favIconUrl = "../icons/nofavicon.png";
+}
 document.head.insertAdjacentHTML(
   "beforeend",
   `<link rel="shortcut icon" href="${sanitaize.encode(parameter.favIconUrl)}">`
