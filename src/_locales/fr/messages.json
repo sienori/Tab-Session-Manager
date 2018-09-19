@@ -345,7 +345,10 @@
     "message": "Cartes Cadeaux (amazon.co.jp)"
   },
   "addonPageLabel": {
-    "message": "Page de l'extension"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "Sessions importées."
