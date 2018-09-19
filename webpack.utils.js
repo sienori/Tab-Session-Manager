@@ -81,10 +81,6 @@ const getFirefoxCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src")
       to: path.resolve(__dirname, `${outputDir}/${browserDir}/manifest.json`)
     },
     {
-      from: `${sourceDir}/popup/popup.css`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/popup/popup.css`)
-    },
-    {
       from: `${sourceDir}/replaced/replaced.css`,
       to: path.resolve(__dirname, `${outputDir}/${browserDir}/replaced/replaced.css`)
     }
