@@ -345,7 +345,10 @@
     "message": "amazon.co.jp Kartu eGift"
   },
   "addonPageLabel": {
-    "message": "halaman pengaya"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "Sesi diimpor."
