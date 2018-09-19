@@ -75,10 +75,16 @@ export default props => {
           <div>
             <p>
               <a
-                href="https://addons.mozilla.org/firefox/addon/tab-session-manager/?src=optionpage"
+                href={
+                  browserInfo().name === "Firefox"
+                    ? "https://addons.mozilla.org/firefox/addon/tab-session-manager/?src=optionpage"
+                    : "https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae"
+                }
                 target="_blank"
               >
-                {browser.i18n.getMessage("addonPageLabel")}
+                {browserInfo().name === "Firefox"
+                  ? browser.i18n.getMessage("addonPageLabel")
+                  : browser.i18n.getMessage("extensionPageLabel")}
               </a>
               <span>　</span>
               <a href="https://github.com/sienori/Tab-Session-Manager" target="_blank">
