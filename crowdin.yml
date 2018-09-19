@@ -1,3 +1,7 @@
 files:
   - source: /src/_locales/en/messages.json
-    translation: /src/_locales/%locale_with_underscore%/messages.json
+    translation: /src/_locales/%two_letters_code%/messages.json
+    languages_mapping:
+      two_letters_code:
+        zh-CN: zh-CN
+        zh-TW: zh-TW
