@@ -345,7 +345,10 @@
     "message": "Buoni Regalo amazon.co.jp"
   },
   "addonPageLabel": {
-    "message": "Pagina del componente aggiuntivo"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "Sessioni importate."
