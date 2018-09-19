@@ -345,7 +345,10 @@
     "message": "amazon.co.jp eGift कार्ड"
   },
   "addonPageLabel": {
-    "message": "ऐड-ऑन पृष्ठ"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "सत्र आयात किए गए|"
