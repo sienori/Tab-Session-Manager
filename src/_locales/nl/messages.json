@@ -345,7 +345,10 @@
     "message": "amazon.co.jp eGift Kaarten"
   },
   "addonPageLabel": {
-    "message": "add-on-pagina"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "Sessies geïmporteerd."
