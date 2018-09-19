@@ -33,7 +33,7 @@
     "message": "Sparade av användaren"
   },
   "displayAutoLabel": {
-    "message": "Spara automatiskt"
+    "message": "Sparad automatisk"
   },
   "newestLabel": {
     "message": "Nyaste"
@@ -42,10 +42,10 @@
     "message": "Äldsta"
   },
   "aToZLabel": {
-    "message": "A-Ö"
+    "message": "A-Z"
   },
   "zToALabel": {
-    "message": "Ö-A"
+    "message": "Z-A"
   },
   "open": {
     "message": "Öppna"
@@ -57,7 +57,7 @@
     "message": "Ta bort sessionen?"
   },
   "sessionDeletedLabel": {
-    "message": "Denna sessionen har tagits bort."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Återställ"
@@ -87,7 +87,10 @@
     "message": "Flikar"
   },
   "noSessionLabel": {
-    "message": "Det finns ingen session"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Meny"
@@ -108,7 +111,7 @@
     "message": "Ersätt med den aktuella sessionen"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Ersätt med det aktuella fönstret"
   },
   "makeCopySessionLabel": {
     "message": "Gör en kopia av sessionen"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "Så här löser du detta problem"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Sparad automatisk - Fönster stängdes"
@@ -171,7 +177,7 @@
     "message": "Återställ föregående session vid uppstart"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "När Firefox startas upp, ladda den sessionen som stängdes ner sist."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Spara sessionen regelbundet"
@@ -195,7 +201,7 @@
     "message": "Spara sessionen när fönstret stängs"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Spara sessionen när fönstret stängs eller när Firefox avslutas."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximalt antal sparade"
@@ -216,13 +222,13 @@
     "message": "Spara säkerhetskopia"
   },
   "ifBackupCaptionLabel": {
-    "message": "Skapa en säkerhetskopia av sessionen och spara den i filhanteringsmappen när Firefox startas upp."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Spara plats"
   },
   "backupFolderCaptionLabel": {
-    "message": "Ange mappen du vill säkerhetskopian ska sparas i. Du är begränsad till att spara den i en mapp under Firefoxs filhämtningsmapp."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Filhämtningsmapp"
@@ -249,7 +255,7 @@
     "message": "Stöder Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Återställ trädläget för Tree Style Tab.<br>När det här alternativet är aktiverat tar det tid att återställa sessionen."
   },
   "tstDelayLabel": {
     "message": "Fördröj trädåterställningen (millisekunder)"

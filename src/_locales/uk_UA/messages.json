@@ -57,7 +57,7 @@
     "message": "Видалити цю сесію?"
   },
   "sessionDeletedLabel": {
-    "message": "Ця сесія була видалена."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Відновити"
@@ -87,7 +87,10 @@
     "message": "Вкладки"
   },
   "noSessionLabel": {
-    "message": "Немає сесії"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Меню"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "Як вирішити цю проблему"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Автозбереження - закриття вікна"
@@ -171,7 +177,7 @@
     "message": "Відновлювати попередню сесію при запуску"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Під час запуску Firefox, відновити сеанс, який був закритий в останній раз."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Періодично зберігати сесію"
@@ -195,7 +201,7 @@
     "message": "Зберігати сесію під час закриття вікна"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Зберігати сесію під час закриття вікна або при виході з Firefox."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимальна кількість збережень"
@@ -216,13 +222,13 @@
     "message": "Зберігати резервну копію"
   },
   "ifBackupCaptionLabel": {
-    "message": "Під час запуску Firefox, створити файл резервної копії сесій та зберегти його у каталозі для завантажень."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Розташування"
   },
   "backupFolderCaptionLabel": {
-    "message": "Вкажіть каталог для збереження файлу резервної копії. Місце для збереження обмежено каталогом Завантаження у Firefox."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Каталог завантажень"

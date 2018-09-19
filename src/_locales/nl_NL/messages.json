@@ -57,7 +57,7 @@
     "message": "Deze sessie verwijderen?"
   },
   "sessionDeletedLabel": {
-    "message": "This session has been deleted."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Restore"
@@ -87,7 +87,10 @@
     "message": "Tabbladen"
   },
   "noSessionLabel": {
-    "message": "Er is geen sessie"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Menu"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "How to solve this problem"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Automatisch opgeslagen - venster was gesloten"
@@ -171,7 +177,7 @@
     "message": "Vorige sessie herstellen bij opstarten"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Wanneer Firefox start, herstelt de sessie die actief was bij het afsluiten."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Sla de sessie regelmatig op"
@@ -195,7 +201,7 @@
     "message": "Sla de sessie op wanneer het venster werd gesloten"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Sla de sessie op bij het sluiten van het venster of bij het afsluiten van Firefox."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximale aantal opgeslagen"
@@ -216,13 +222,13 @@
     "message": "Reservekopie opslaan"
   },
   "ifBackupCaptionLabel": {
-    "message": "Wanneer Firefox start, maak dan een reservekopie en sla deze op in de downloadmap."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Save location"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Download folder"
