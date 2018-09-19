@@ -345,7 +345,10 @@
     "message": "amazon.co.jp 电子礼品卡"
   },
   "addonPageLabel": {
-    "message": "附加组件页面"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "导入会话"
