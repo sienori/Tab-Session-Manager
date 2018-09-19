@@ -1,0 +1,371 @@
+{
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "Zapisz i przywróć stan okien i kart. Obsługuje także automatyczne zapisywanie."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Wesprzyj przez PayPala"
+  },
+  "saveLabel": {
+    "message": "Zapisz"
+  },
+  "initialNameValue": {
+    "message": "Zapisz bieżącą sesję"
+  },
+  "inputSessionNameLabel": {
+    "message": "Wprowadź nazwę sesji"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "Zapisz jedynie otwarte okno"
+  },
+  "categoryFilterLabel": {
+    "message": "Filtr kategorii"
+  },
+  "sortLabel": {
+    "message": "Sortowanie"
+  },
+  "displayAllLabel": {
+    "message": "Wszystkie"
+  },
+  "displayUserLabel": {
+    "message": "Zapisane przez użytkownika"
+  },
+  "displayAutoLabel": {
+    "message": "Zapisane automatycznie"
+  },
+  "newestLabel": {
+    "message": "Najnowsze"
+  },
+  "oldestLabel": {
+    "message": "Najstarsze"
+  },
+  "aToZLabel": {
+    "message": "A-Z"
+  },
+  "zToALabel": {
+    "message": "Z-A"
+  },
+  "open": {
+    "message": "Otwórz"
+  },
+  "remove": {
+    "message": "Usuń"
+  },
+  "removeConfirmLabel": {
+    "message": "Usunąć tę sesję?"
+  },
+  "sessionDeletedLabel": {
+    "message": "The session has been deleted."
+  },
+  "restoreSessionLabel": {
+    "message": "Przywróć"
+  },
+  "cancelLabel": {
+    "message": "Anuluj"
+  },
+  "addTagLabel": {
+    "message": "Dodaj tag"
+  },
+  "removeTagLabel": {
+    "message": "Usuń tag"
+  },
+  "detailLabel": {
+    "message": "Szczegóły"
+  },
+  "windowLabel": {
+    "message": "Okno"
+  },
+  "windowsLabel": {
+    "message": "Okna"
+  },
+  "tabLabel": {
+    "message": "Karta"
+  },
+  "tabsLabel": {
+    "message": "Karty"
+  },
+  "noSessionLabel": {
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
+  },
+  "menuLabel": {
+    "message": "Menu"
+  },
+  "renameLabel": {
+    "message": "Zmień nazwę"
+  },
+  "openInNewWindowLabel": {
+    "message": "Otwórz w nowym oknie"
+  },
+  "openInCurrentWindowLabel": {
+    "message": "Otwórz w bieżącym oknie"
+  },
+  "addToCurrentWindowLabel": {
+    "message": "Dodaj do bieżącego okna"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "Zastąp bieżącą sesją"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "Zastąp bieżącym oknem"
+  },
+  "makeCopySessionLabel": {
+    "message": "Utwórz kopię sesji"
+  },
+  "errorLabel": {
+    "message": "Błąd"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB nie jest dostępne w twojej przeglądarce."
+  },
+  "howToSolveLabel": {
+    "message": "Jak rozwiązać ten problem"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
+  },
+  "winCloseSessionName": {
+    "message": "Zapisane automatycznie - okno zostało zamknięte"
+  },
+  "regularSaveSessionName": {
+    "message": "Zapisane automatycznie - regularnie"
+  },
+  "settingsLabel": {
+    "message": "Ustawienia"
+  },
+  "sessionsLabel": {
+    "message": "Sesje"
+  },
+  "informationLabel": {
+    "message": "Informacje"
+  },
+  "generalLabel": {
+    "message": "Główne"
+  },
+  "autoSaveLabel": {
+    "message": "Automatyczne zapisywanie"
+  },
+  "startUpLabel": {
+    "message": "Uruchamianie"
+  },
+  "styleLabel": {
+    "message": "Styl"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "Odtwórz sesję w nowym oknie"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "Jeżeli odznaczone, sesja zastępuje bieżące otwarte okno."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "Opóźnione ładowanie kart"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "Przy otwieraniu sesji zawartość każdej strony nie jest ładowana, dopóki nie wybierzesz danej karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Przywracanie pozycji okien"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Przywracanie położenia i rozmiaru okien podczas odtwarzania sesji."
+  },
+  "ifOpenLastSessionWhenStartUpLabel": {
+    "message": "Przywróć poprzednią sesję podczas uruchamiania"
+  },
+  "ifOpenLastSessionWhenStartUpCaptionLabel": {
+    "message": "When browser starts up, restore the session that was closed the last time."
+  },
+  "ifAutoSaveLabel": {
+    "message": "Zapisuj sesję regularnie"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "Zapisuj sesję co X minut."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "Odstęp czasowy (w minutach)"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "Wartość minimalna: 0.1"
+  },
+  "autoSaveLimitLabel": {
+    "message": "Maksymalna liczba zapisanych"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "Maksymalna liczba zapisanych sesji (w ten sposób)."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "Zapisuj sesję, kiedy okno zostało zamknięte"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "Save the session when closing the window or when exiting browser."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "Maksymalna liczba zapisanych"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "Maksymalna liczba zapisanych (w ten sposób) sesji."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "Użyj tytułu strony dla nazwy sesji automatycznego zapisywania"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "Kiedy zapisujesz sesję automatycznie, użyj tytułu otwartej strony jako nazwy sesji."
+  },
+  "backupLabel": {
+    "message": "Kopia zapasowa"
+  },
+  "ifBackupLabel": {
+    "message": "Zapisz kopię zapasową"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+  },
+  "backupFolderLabel": {
+    "message": "Lokalizacja zapisu"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+  },
+  "downloadFolderLabel": {
+    "message": "Katalog pobierania"
+  },
+  "backupFilesLimitLabel": {
+    "message": "Maksymalna liczba zapisanych kopii zapasowych"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "Gdy liczba plików kopii zapasowej przekracza tę wartość, są one usuwane w kolejności od najstarszych."
+  },
+  "dateFormatLabel": {
+    "message": "Format daty"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "Przykład: YYYY.MM.DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "Zapisuj okno prywatne"
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "Jeżeli odznaczone, podczas zapisywania sesji ignoruje okna prywatne."
+  },
+  "ifSupportTstLabel": {
+    "message": "Obsługa Tree Style Tab"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+  },
+  "tstDelayLabel": {
+    "message": "Opóźnienie przywracania drzewa (milisekundy)"
+  },
+  "tstDelayCaptionLabel": {
+    "message": "Aby przywrócić stan drzewa, wymagany jest czas oczekiwania na otwarcie karty. Zwiększ tą wartość, jeśli drzewo nie jest przywracane prawidłowo."
+  },
+  "truncateTitleLabel": {
+    "message": "Pokaż nazwę sesji w jednej lini"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "Jeśli nazwa sesji na liście sesji jest dłuższa niż jedna linia, jest ona obcinana do jednej inii i wyświetlana."
+  },
+  "toolBarPopupLabel": {
+    "message": "Pojawienie się narzędzia paskowego"
+  },
+  "toolBarPopupCaptionLabel": {
+    "message": "Opisz styl pojawienia się narzędzia paskowego."
+  },
+  "widthLabel": {
+    "message": "Szerokość"
+  },
+  "heightLabel": {
+    "message": "Wysokość"
+  },
+  "otherLabel": {
+    "message": "Inne"
+  },
+  "resetSettingsLabel": {
+    "message": "Resetowanie ustawień"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "Przywracanie wartości domyślnych wszystkich ustawień."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "Resetuj"
+  },
+  "importLabel": {
+    "message": "Importuj sesje"
+  },
+  "importCaptionLabel": {
+    "message": "Załaduj sesje zapisane na komputerze i dodaj je do listy sesji.<br>Obsługuje również pliki sesji SessionManagera (.session)."
+  },
+  "importButtonLabel": {
+    "message": "Przeglądaj..."
+  },
+  "importSaveButtonLabel": {
+    "message": "Importuj"
+  },
+  "importClearButtonLabel": {
+    "message": "Wyczyść"
+  },
+  "urlImportLabel": {
+    "message": "Importuj listę adresów URL"
+  },
+  "urlImportCaptionLabel": {
+    "message": "Utwórz sesję z listy adresów URL i dodaj ją do listy sesji.<br>Format: &lt;URL&gt; &lt;tytuł strony (opcjonalnie)&gt;"
+  },
+  "exportLabel": {
+    "message": "Eksportuj sesje"
+  },
+  "exportCaptionLabel": {
+    "message": "Zapisz wszystkie sesje na komputer."
+  },
+  "exportButtonLabel": {
+    "message": "Eksport"
+  },
+  "removeSessionsLabel": {
+    "message": "Usuń sesje"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "Usuń wszystkie sesje."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "Usuń"
+  },
+  "LicenseLabel": {
+    "message": "Licencja"
+  },
+  "donationLabel": {
+    "message": "Proszę o dotację"
+  },
+  "donationCaptionLabel": {
+    "message": "Dziękuję za korzystanie z Tab Session Managera.<br>Twoje wsparcie będzie wielką zachętą do dalszego rozwijania dodatku.<br>Jeśli podoba ci się Tab Session Manager, byłbym bardzo wdzięczny za wszelkie datki."
+  },
+  "amazonTitleLabel": {
+    "message": "eKarty podarunkowe amazon.co.jp"
+  },
+  "addonPageLabel": {
+    "message": "strona dodatku"
+  },
+  "importMessage": {
+    "message": "Sesje zaimportowane."
+  },
+  "readFailedMessage": {
+    "message": "Błąd odczytu"
+  },
+  "warningRemoveAllMessage": {
+    "message": "Czy na pewno chcesz usunąć wszystkie sesje?"
+  },
+  "sessionLabel": {
+    "message": "Sesja"
+  },
+  "amazonUrl": {
+    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=pl_PL"
+  },
+  "addonUrl": {
+    "message": "https:\/\/addons.mozilla.org\/pl\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "Ta strona nie może zostać otwarta przez Tab Session Managera."
+  }
+}
