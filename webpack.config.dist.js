@@ -4,6 +4,7 @@
  * see https://opensource.org/licenses/MIT */
 
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const {
   getHTMLPlugins,
   getOutput,
@@ -118,6 +119,57 @@ module.exports = [
       ...getHTMLPlugins("firefox", config.tempDirectory, config.firefoxPath),
       ...getFirefoxCopyPlugins("firefox", config.tempDirectory, config.firefoxPath),
       getZipPlugin(`${config.extName}-for-firefox-${ffExtVersion}`, config.distDirectory)
+    ]
+  },
+  {
+    mode: "production",
+    resolve: {
+      alias: {
+        src: path.resolve(__dirname, "src/")
+      }
+    },
+    entry: { other: path.resolve(__dirname, `src/replaced/replaced.js`) },
+    output: getOutput("copiedSource", config.tempDirectory),
+    plugins: [
+      new CopyWebpackPlugin([
+        {
+          from: `src`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/src/`)
+        },
+        {
+          from: `config.json`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/config.json`)
+        },
+        {
+          from: `LICENSE`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/LICENSE`)
+        },
+        {
+          from: `package-lock.json`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package-lock.json`)
+        },
+        {
+          from: `package.json`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package.json`)
+        },
+        {
+          from: `README.md`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/README.md`)
+        },
+        {
+          from: `webpack.config.dev.js`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.config.dev.js`)
+        },
+        {
+          from: `webpack.config.dist.js`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.config.dist.js`)
+        },
+        {
+          from: `webpack.utils.js`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.utils.js`)
+        }
+      ]),
+      getZipPlugin(`copiedSource-${config.extName}-${ffExtVersion}`, config.distDirectory)
     ]
   }
 ];
