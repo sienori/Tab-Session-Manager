@@ -1,0 +1,371 @@
+{
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Podpořit přes PayPal"
+  },
+  "saveLabel": {
+    "message": "Uložit"
+  },
+  "initialNameValue": {
+    "message": "Uložit aktuální relaci"
+  },
+  "inputSessionNameLabel": {
+    "message": "Input session name"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "Uložit pouze aktuální okno"
+  },
+  "categoryFilterLabel": {
+    "message": "Filtr kategorií"
+  },
+  "sortLabel": {
+    "message": "Seřadit"
+  },
+  "displayAllLabel": {
+    "message": "Všechny"
+  },
+  "displayUserLabel": {
+    "message": "Uložené uživatelem"
+  },
+  "displayAutoLabel": {
+    "message": "Automaticky uloženo"
+  },
+  "newestLabel": {
+    "message": "Nejnovější"
+  },
+  "oldestLabel": {
+    "message": "Nejstarší"
+  },
+  "aToZLabel": {
+    "message": "A-Z"
+  },
+  "zToALabel": {
+    "message": "Z-A"
+  },
+  "open": {
+    "message": "Otevřít"
+  },
+  "remove": {
+    "message": "Odstranit"
+  },
+  "removeConfirmLabel": {
+    "message": "Odstranit tuto relaci?"
+  },
+  "sessionDeletedLabel": {
+    "message": "The session has been deleted."
+  },
+  "restoreSessionLabel": {
+    "message": "Obnovit"
+  },
+  "cancelLabel": {
+    "message": "Zrušit"
+  },
+  "addTagLabel": {
+    "message": "Přidat štítek"
+  },
+  "removeTagLabel": {
+    "message": "Odstranit štítek"
+  },
+  "detailLabel": {
+    "message": "Detail"
+  },
+  "windowLabel": {
+    "message": "Okno"
+  },
+  "windowsLabel": {
+    "message": "Okna"
+  },
+  "tabLabel": {
+    "message": "Panel"
+  },
+  "tabsLabel": {
+    "message": "Panely"
+  },
+  "noSessionLabel": {
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
+  },
+  "menuLabel": {
+    "message": "Nabídka"
+  },
+  "renameLabel": {
+    "message": "Přejmenovat"
+  },
+  "openInNewWindowLabel": {
+    "message": "Otevřít v novém okně"
+  },
+  "openInCurrentWindowLabel": {
+    "message": "Otevřít v aktuálním okně"
+  },
+  "addToCurrentWindowLabel": {
+    "message": "Přidat do aktuálního okna"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "Replace with current session"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "Replace with current window"
+  },
+  "makeCopySessionLabel": {
+    "message": "Make a copy of the session"
+  },
+  "errorLabel": {
+    "message": "Chyba"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB není k dispozici."
+  },
+  "howToSolveLabel": {
+    "message": "How to solve this problem"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
+  },
+  "winCloseSessionName": {
+    "message": "Auto Saved - Window was closed"
+  },
+  "regularSaveSessionName": {
+    "message": "Auto Saved - Regularly"
+  },
+  "settingsLabel": {
+    "message": "Nastavení"
+  },
+  "sessionsLabel": {
+    "message": "Relace"
+  },
+  "informationLabel": {
+    "message": "Informace"
+  },
+  "generalLabel": {
+    "message": "General"
+  },
+  "autoSaveLabel": {
+    "message": "Auto save"
+  },
+  "startUpLabel": {
+    "message": "Startup"
+  },
+  "styleLabel": {
+    "message": "Style"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "Open session in new window"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "If unchecked, the session overwrites the current window."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "Líné načítání panelů"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Restore windows position"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Restore windows position and size when opening session."
+  },
+  "ifOpenLastSessionWhenStartUpLabel": {
+    "message": "Restore previous session at startup"
+  },
+  "ifOpenLastSessionWhenStartUpCaptionLabel": {
+    "message": "When browser starts up, restore the session that was closed the last time."
+  },
+  "ifAutoSaveLabel": {
+    "message": "Ukládat relaci pravidelně"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "Ukládat relaci každých X minut."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "Interval (minuty)"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "Minimum value 0.1"
+  },
+  "autoSaveLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "Save the session when window was closed"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "Save the session when closing the window or when exiting browser."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "Use page title for auto save session name"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+  },
+  "backupLabel": {
+    "message": "Backup"
+  },
+  "ifBackupLabel": {
+    "message": "Save backup"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+  },
+  "backupFolderLabel": {
+    "message": "Save location"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+  },
+  "downloadFolderLabel": {
+    "message": "Download folder"
+  },
+  "backupFilesLimitLabel": {
+    "message": "Maximum number of saved backups"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+  },
+  "dateFormatLabel": {
+    "message": "Date format"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "Example: YYYY.MM.DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "Save private window"
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "If unchecked, ignores the private window when saving the session."
+  },
+  "ifSupportTstLabel": {
+    "message": "Supports Tree Style Tab"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+  },
+  "tstDelayLabel": {
+    "message": "Delay when tree restoration (millisecond)"
+  },
+  "tstDelayCaptionLabel": {
+    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+  },
+  "truncateTitleLabel": {
+    "message": "Display session name within one line"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+  },
+  "toolBarPopupLabel": {
+    "message": "Toolbar popup"
+  },
+  "toolBarPopupCaptionLabel": {
+    "message": "Specify the style of the toolbar popup."
+  },
+  "widthLabel": {
+    "message": "Width"
+  },
+  "heightLabel": {
+    "message": "Height"
+  },
+  "otherLabel": {
+    "message": "Other"
+  },
+  "resetSettingsLabel": {
+    "message": "Reset settings"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "Restore all settings to default."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "Reset"
+  },
+  "importLabel": {
+    "message": "Import sessions"
+  },
+  "importCaptionLabel": {
+    "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+  },
+  "importButtonLabel": {
+    "message": "Browse..."
+  },
+  "importSaveButtonLabel": {
+    "message": "Import"
+  },
+  "importClearButtonLabel": {
+    "message": "Clear"
+  },
+  "urlImportLabel": {
+    "message": "Import URL list"
+  },
+  "urlImportCaptionLabel": {
+    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+  },
+  "exportLabel": {
+    "message": "Export Sessions"
+  },
+  "exportCaptionLabel": {
+    "message": "Save all sessions to the computer."
+  },
+  "exportButtonLabel": {
+    "message": "Export"
+  },
+  "removeSessionsLabel": {
+    "message": "Delete sessions"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "Delete all sessions."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "Delete"
+  },
+  "LicenseLabel": {
+    "message": "License"
+  },
+  "donationLabel": {
+    "message": "Please make a donation"
+  },
+  "donationCaptionLabel": {
+    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+  },
+  "amazonTitleLabel": {
+    "message": "amazon.co.jp eGift Cards"
+  },
+  "addonPageLabel": {
+    "message": "add-on page"
+  },
+  "importMessage": {
+    "message": "Sessions imported."
+  },
+  "readFailedMessage": {
+    "message": "Read failed"
+  },
+  "warningRemoveAllMessage": {
+    "message": "Delete all sessions. Are you sure?"
+  },
+  "sessionLabel": {
+    "message": "Session"
+  },
+  "amazonUrl": {
+    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "This page can not be opened by Tab Session Manager."
+  }
+}
