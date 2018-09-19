@@ -57,7 +57,7 @@
     "message": "इस सत्र को हटाएं?"
   },
   "sessionDeletedLabel": {
-    "message": "This session has been deleted."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Restore"
@@ -87,7 +87,10 @@
     "message": "टैब्स"
   },
   "noSessionLabel": {
-    "message": "कोई सत्र नहीं है"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Menu"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "How to solve this problem"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "स्वतः सहेजा गया - विंडो बंद थी"
@@ -171,7 +177,7 @@
     "message": "स्टार्टअप पर पिछला सत्र फिर से चालू करें"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "जब Firefox शुरू होता है, जो पिछली बार बंद कर दिया गया था सत्र उन्हें फिर से चालू करना करें ।"
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "सत्र को नियमित रूप से सहेजें"
@@ -195,7 +201,7 @@
     "message": "सत्र को बचाओ जब विंडो बंद हो गई थी"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "विंडो को बंद करने पर या फ़ायरफ़ॉक्स से बाहर निकलने पर सत्र को सहेजें।"
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "अधिकतम संख्या सहेजा गया"
@@ -216,13 +222,13 @@
     "message": "Save backup"
   },
   "ifBackupCaptionLabel": {
-    "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Save location"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Download folder"

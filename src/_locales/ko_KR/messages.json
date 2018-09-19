@@ -3,154 +3,160 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "참과 탭의 상태를 저장하고 복원합니다. 자동 저장도 지원합니다."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "페이팔로 기부하기"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "저장"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "현재 세션을 저장"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "세션 이름 입력"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "현재 창만 저장"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "범주 필터"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "정렬"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "전체"
   },
   "displayUserLabel": {
-    "message": "User Saved"
+    "message": "유저 저장됨"
   },
   "displayAutoLabel": {
-    "message": "Auto Saved"
+    "message": "자동 저장됨"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "최신순"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "오래된 순"
   },
   "aToZLabel": {
-    "message": "A-Z"
+    "message": "오름차순"
   },
   "zToALabel": {
-    "message": "Z-A"
+    "message": "내림차순"
   },
   "open": {
-    "message": "Open"
+    "message": "열기"
   },
   "remove": {
-    "message": "Delete"
+    "message": "삭제"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "이 세션을 삭제할까요?"
   },
   "sessionDeletedLabel": {
-    "message": "This session has been deleted."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "복원"
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "취소"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "태그 추가"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "태그 제거"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "세부 정보"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "창"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "여러 창"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "탭"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "여러 탭"
   },
   "noSessionLabel": {
-    "message": "There is no session"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "메뉴"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "이름 변경"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "새 창에서 열기"
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "현재 창에서 열기"
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "현재 창에 추가"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "현재 세션으로 바꾸기"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "현재 창으로 바꾸기"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "세션의 복사본 만들기"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "오류"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB는 이 브라우저에서 지원되지 않습니다."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "문제 해결하기"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "Auto Saved - Window was closed"
+    "message": "자동 저장됨 - 창이 닫혔습니다"
   },
   "regularSaveSessionName": {
-    "message": "Auto Saved - Regularly"
+    "message": "자동 저장됨 - 정기적"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "설정"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "세션"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "정보"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "일반"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "자동 저장"
   },
   "startUpLabel": {
-    "message": "Startup"
+    "message": "시작"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "스타일"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "새 창에서 세션 열기"
   },
   "ifOpenNewWindowCaptionLabel": {
     "message": "If unchecked, the session overwrites the current window."
@@ -171,7 +177,7 @@
     "message": "Restore previous session at startup"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When Firefox starts up, restore the session that was closed the last time."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Save the session regularly"
@@ -195,7 +201,7 @@
     "message": "Save the session when window was closed"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting Firefox."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximum number Saved"
@@ -216,13 +222,13 @@
     "message": "Save backup"
   },
   "ifBackupCaptionLabel": {
-    "message": "When Firefox starts up, create a backup file of sessions and save it in the download folder."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Save location"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under Firefox download folder."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Download folder"
@@ -303,7 +309,7 @@
     "message": "Clear"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "URL 목옥 가져오기"
   },
   "urlImportCaptionLabel": {
     "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
@@ -360,6 +366,6 @@
     "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "이 페이지는 Tab Session Manager로 열릴 수 없습니다."
   }
 }

@@ -21,7 +21,7 @@
     "message": "現在のウィンドウのみを保存"
   },
   "categoryFilterLabel": {
-    "message": "カテゴリフィルタ"
+    "message": "カテゴリーフィルター"
   },
   "sortLabel": {
     "message": "ソート"
@@ -57,7 +57,7 @@
     "message": "このセッションを削除しますか？"
   },
   "sessionDeletedLabel": {
-    "message": "このセッションは削除されました。"
+    "message": "セッションが削除されました。"
   },
   "restoreSessionLabel": {
     "message": "元に戻す"
@@ -87,7 +87,10 @@
     "message": "タブ"
   },
   "noSessionLabel": {
-    "message": "セッションはありません"
+    "message": "セッションはありません。"
+  },
+  "letsSaveLabel": {
+    "message": "右下のボタンをクリックしてセッションを保存しましょう。"
   },
   "menuLabel": {
     "message": "メニュー"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "この問題を解決するには"
+  },
+  "noConnectionErrorLabel": {
+    "message": "複数のポップアップを同時に開くことはできません。"
   },
   "winCloseSessionName": {
     "message": "自動保存 - ウィンドウ終了"
@@ -171,7 +177,7 @@
     "message": "起動時に前回のセッションを復元"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Firefox起動時に，最後に開いていたセッションを開きます。"
+    "message": "ブラウザ起動時に，最後に開いていたセッションを開きます。"
   },
   "ifAutoSaveLabel": {
     "message": "定期的にセッションを保存する"
@@ -195,7 +201,7 @@
     "message": "ウィンドウを閉じたときにセッションを保存する"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "ウィンドウを閉じたときやfirefoxの終了時にセッションを保存します。"
+    "message": "ウィンドウを閉じたときやブラウザの終了時にセッションを保存します。"
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "上限保存数"
@@ -216,13 +222,13 @@
     "message": "バックアップを保存する"
   },
   "ifBackupCaptionLabel": {
-    "message": "Firefoxの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。"
+    "message": "ブラウザの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。"
   },
   "backupFolderLabel": {
     "message": "保存場所"
   },
   "backupFolderCaptionLabel": {
-    "message": "バックアップファイルを保存するフォルダを指定します。保存場所はFirefoxのダウンロードフォルダ以下に限定されます。"
+    "message": "バックアップファイルを保存するフォルダを指定します。保存場所はブラウザのダウンロードフォルダ以下に限定されます。"
   },
   "downloadFolderLabel": {
     "message": "ダウンロードフォルダ"

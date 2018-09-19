@@ -57,7 +57,7 @@
     "message": "Törli ezt a munkamenetet?"
   },
   "sessionDeletedLabel": {
-    "message": "Munkamenet törölve."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Visszaállítás"
@@ -87,7 +87,10 @@
     "message": "Fül"
   },
   "noSessionLabel": {
-    "message": "Nincs munkamenet"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Menü"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "Hogyan lehet megoldani ezt a problémát"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Automatikusan mentett - Ablak be lett zárva"
@@ -171,7 +177,7 @@
     "message": "Előző munkamenet visszaállítása induláskor"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Firefox indulásakor, visszaállítódik a leg utóbbi bezáráskor elmentődött munkamenet."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Munkamenet rendszeres mentése"
@@ -195,7 +201,7 @@
     "message": "Munkamenet mentése ha az ablakot bezárták"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Munkamenet elmentése ha az ablak bezáródik, vagy ha a Firefox kilép."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Elmentettek maximális száma"
@@ -216,13 +222,13 @@
     "message": "Biztonsági másolat mentése"
   },
   "ifBackupCaptionLabel": {
-    "message": "Amikor a Firefox indul, biztonsági másolat készítése az elmentett munkamenetekről és a Letöltések mappába mentése."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Mentés helye"
   },
   "backupFolderCaptionLabel": {
-    "message": "Adja meg a mappát, ahova a biztonsági mentés fájlja kerüljön. A Mentés helye korlátozott a Firefox letöltési mappára és annak almappáiba."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Letöltési könyvtár"

@@ -57,7 +57,7 @@
     "message": "Изтриване на тази сесия?"
   },
   "sessionDeletedLabel": {
-    "message": "Сесията е изтрита."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Възстановяване"
@@ -87,7 +87,10 @@
     "message": "раздела"
   },
   "noSessionLabel": {
-    "message": "Тук няма сесии"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Меню"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "Разрешаване на проблема"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Авто запазени - при затваряне на прозорец"
@@ -171,7 +177,7 @@
     "message": "Възстановяване на предишна сесия при стартиране"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Възстановяване на последно затворената сесия при стартиране на Firefox."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Редовно запазване на сесията"
@@ -195,7 +201,7 @@
     "message": "Запазване на сесията при затваряне на прозореца"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Запазване на сесията при затваряне на прозореца или при изход от Firefox."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимален брой запазени"
@@ -216,13 +222,13 @@
     "message": "Резервно копие"
   },
   "ifBackupCaptionLabel": {
-    "message": "Създаване резервно копие на сесиите и запазване в папката за изтегляния при стартиране на Firefox."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Местоположение за запис"
   },
   "backupFolderCaptionLabel": {
-    "message": "Задаване на папка за запазване на резервните копия. Местоположението е ограничено до папката за изтегляния, зададена в настройките на Firefox."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Папка за изтегляния"
@@ -249,7 +255,7 @@
     "message": "Поддръжка на Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Възстановява дървовидното състояние на Tree Style Tab.<br>Отнема време за възстановяване на сесията когато тази опция е активирана."
   },
   "tstDelayLabel": {
     "message": "Забавяне при възстановяване на дървото (милисекунди)"

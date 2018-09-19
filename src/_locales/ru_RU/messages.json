@@ -57,7 +57,7 @@
     "message": "Удалить эту сессию?"
   },
   "sessionDeletedLabel": {
-    "message": "Эта сессия была удалена."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Восстановить"
@@ -87,7 +87,10 @@
     "message": "Вкладки"
   },
   "noSessionLabel": {
-    "message": "Нет сессии"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Меню"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "Как решить эту проблему"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Автосохранение - окно было закрыто"
@@ -171,7 +177,7 @@
     "message": "Восстанавливать предыдущую сессию при запуске"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "При запуске Firefox, восстановить сессию, закрытую в последний раз."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Периодически сохранять сессию"
@@ -195,7 +201,7 @@
     "message": "Сохранять сессию при закрытии окна"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Сохранять сессию при закрытии отдельного окна либо при выходе из Firefox."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимальное число сохранений"
@@ -216,13 +222,13 @@
     "message": "Сохранить резервную копию"
   },
   "ifBackupCaptionLabel": {
-    "message": "При запуске Firefox, создать файл резервной копии сессий и сохранить его в папке загрузки."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Расположение"
   },
   "backupFolderCaptionLabel": {
-    "message": "Укажите папку для сохранения файла резервной копии. Место для сохранения ограничено папкой Загрузки в Firefox."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Папка для загрузок"

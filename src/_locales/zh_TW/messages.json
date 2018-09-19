@@ -6,7 +6,7 @@
     "message": "儲存與還原視窗跟分頁的瀏覽狀態。也支援自動儲存功能。"
   },
   "donateWithPaypalLabel": {
-    "message": "透過 PayPal 進行贊助"
+    "message": "透過 PayPal 來贊助我"
   },
   "saveLabel": {
     "message": "儲存"
@@ -21,7 +21,7 @@
     "message": "僅儲存目前視窗"
   },
   "categoryFilterLabel": {
-    "message": "分類篩選"
+    "message": "標籤篩選"
   },
   "sortLabel": {
     "message": "排序"
@@ -57,7 +57,7 @@
     "message": "確定要刪除此瀏覽階段？"
   },
   "sessionDeletedLabel": {
-    "message": "此瀏覽階段已被刪除。"
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "還原"
@@ -87,7 +87,10 @@
     "message": "分頁"
   },
   "noSessionLabel": {
-    "message": "沒有已儲存的瀏覽階段"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "選單"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "如何解決這個問題"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "自動儲存 - 視窗關閉"
@@ -171,7 +177,7 @@
     "message": "啟動時還原上次開啟的瀏覽階段"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "當 Firefox 啟動時，還原上次開啟的瀏覽階段。"
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
@@ -195,7 +201,7 @@
     "message": "關閉視窗時儲存瀏覽階段"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "在關閉視窗或是結束瀏覽器時儲存瀏覽階段"
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "最大儲存數量"
@@ -216,13 +222,13 @@
     "message": "儲存備份"
   },
   "ifBackupCaptionLabel": {
-    "message": "當 Firefox 啟動時，建立瀏覽階段的備份檔並儲存於下載資料夾中。"
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "儲存位置"
   },
   "backupFolderCaptionLabel": {
-    "message": "指定儲存備份檔的位置。儲存位置僅限於 Firefox 下載資料夾中。"
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "下載資料夾"
@@ -249,13 +255,13 @@
     "message": "支援 Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "還原 Tree Style Tab 的分頁樹狀結構。 <br>若啟用此選項，還原瀏覽階段時便需要額外的時間。"
   },
   "tstDelayLabel": {
     "message": "Tree Style Tab 還原時的延遲載入時間(毫秒)"
   },
   "tstDelayCaptionLabel": {
-    "message": "若要還原 Tree 狀態，需要等待一段時間才能開啟分頁，無法正確還原 Tree 之時，請增加此值。"
+    "message": "若要還原分頁為樹狀結構狀態，需要等待一段時間才能開啟分頁，若無法正確還原為樹狀結構之時，請增加此值。"
   },
   "truncateTitleLabel": {
     "message": "單行顯示瀏覽階段名稱"
