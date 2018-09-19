@@ -13,8 +13,10 @@ export async function openSession(session, property = "default") {
     };
     const openInNewWindow = async () => {
       let createData = {};
-      const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
-      createData.incognito = firstTab.incognito;
+      if (browserInfo().name === "Firefox") {
+        const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
+        createData.incognito = firstTab.incognito;
+      }
 
       const isSetPosition =
         getSettings("isRestoreWindowPosition") && session.windowsInfo != undefined;
@@ -57,14 +59,11 @@ export async function openSession(session, property = "default") {
 
       createTabs(session, win, currentWindow);
     };
-    const addToCurrentWindow = () => {
-      return browser.windows
-        .getCurrent({
-          populate: true
-        })
-        .then(currentWindow => {
-          createTabs(session, win, currentWindow, true);
-        });
+    const addToCurrentWindow = async () => {
+      const currentTabs = await browser.tabs.query({ currentWindow: true });
+      const currentWinId = currentTabs[0].windowId;
+      const currentWindow = await browser.windows.get(currentWinId, { populate: true });
+      createTabs(session, win, currentWindow, true);
     };
 
     if (isFirstWindowFlag) {
@@ -72,10 +71,10 @@ export async function openSession(session, property = "default") {
       switch (property) {
         case "default":
           if (getSettings("ifOpenNewWindow")) openInNewWindow();
-          else openInCurrentWindow();
+          else await openInCurrentWindow();
           break;
         case "openInCurrentWindow":
-          openInCurrentWindow();
+          await openInCurrentWindow();
           break;
         case "openInNewWindow":
           openInNewWindow();
@@ -92,23 +91,22 @@ export async function openSession(session, property = "default") {
 
 export let IsOpeningSession = false;
 //ウィンドウとタブを閉じてcurrentWindowを返す
-function removeNowOpenTabs() {
-  return new Promise(async function(resolve, reject) {
-    const windows = await browser.windows.getAll({
-      populate: true
-    });
-    for (let win in windows) {
-      if (windows[win].focused == false) {
-        //非アクティブのウィンドウを閉じる
-        browser.windows.remove(windows[win].id);
-      } else {
-        for (let tab of windows[win].tabs) {
-          if (tab.index != 0) browser.tabs.remove(tab.id); //アクティブウィンドウのタブを閉じる
-        }
-        resolve(windows[win]);
+async function removeNowOpenTabs() {
+  const currentTabs = await browser.tabs.query({ currentWindow: true });
+  const currentWinId = currentTabs[0].windowId;
+  const allWindows = await browser.windows.getAll({ populate: true });
+  for (const window of allWindows) {
+    if (window.id === currentWinId) {
+      //アクティブウィンドウのタブを閉じる
+      for (const tab of window.tabs) {
+        if (tab.index != 0) browser.tabs.remove(tab.id);
       }
+    } else {
+      //非アクティブウィンドウを閉じる
+      await browser.windows.remove(window.id);
     }
-  });
+  }
+  return await browser.windows.get(currentWinId, { populate: true });
 }
 
 //現在のウィンドウにタブを生成
@@ -150,17 +148,21 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     const property = session.windows[win][tab];
     let createOption = {
       active: property.active,
-      cookieStoreId: property.cookieStoreId,
       index: property.index,
       pinned: property.pinned,
       url: property.url,
       windowId: currentWindow.id
     };
 
-    //現在のウィンドウと開かれるタブのプライベート情報に不整合があるときはウィンドウに従う
-    if (currentWindow.incognito) delete createOption.cookieStoreId;
-    if (!currentWindow.incognito && property.cookieStoreId == "firefox-private")
-      delete createOption.cookieStoreId;
+    //cookieStoreId
+    if (browserInfo().name == "Firefox") {
+      createOption.cookieStoreId = property.cookieStoreId;
+
+      //現在のウィンドウと開かれるタブのプライベート情報に不整合があるときはウィンドウに従う
+      if (currentWindow.incognito) delete createOption.cookieStoreId;
+      if (!currentWindow.incognito && property.cookieStoreId == "firefox-private")
+        delete createOption.cookieStoreId;
+    }
 
     //タブをindexの最後に開く
     if (isOpenToLastIndex) {
@@ -208,30 +210,21 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
       createOption.url = null;
     }
 
-    setTimeout(function() {
-      browser.tabs
-        .create(createOption)
-        .then(newTab => {
-          tabList[property.id] = newTab.id;
-          resolve();
-        })
-        .catch(() => {
-          createOption.url = returnReplaceURL(
-            "open_faild",
-            property.title,
-            property.url,
-            property.favIconUrl
-          );
-          browser.tabs
-            .create(createOption)
-            .then(newTab => {
-              tabList[property.id] = newTab.id;
-              resolve();
-            })
-            .catch(() => {
-              resolve();
-            });
-        });
+    setTimeout(async () => {
+      try {
+        const newTab = await browser.tabs.create(createOption);
+        tabList[property.id] = newTab.id;
+        resolve();
+      } catch (e) {
+        createOption.url = returnReplaceURL(
+          "open_faild",
+          property.title,
+          property.url,
+          property.favIconUrl
+        );
+        await browser.tabs.create(createOption).catch(() => resolve());
+        resolve();
+      }
     }, openDelay); //ツリー型タブの処理を待つ
   });
 }

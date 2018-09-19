@@ -28,5 +28,7 @@
       "64": "icons/icon.png"
     },
     "default_popup": "popup/index.html"
-  }
+  },
+
+  "incognito": "spanning"
 }

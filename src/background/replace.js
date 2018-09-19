@@ -91,6 +91,8 @@ export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) 
 }
 
 function toggleReaderMode(id) {
+  if (browserInfo().name === "Chrome") return;
+  browser.tabs.toggleReaderMode(id);
   browser.tabs.get(id).then(info => {
     if (info.status != "complete") {
       setTimeout(() => {
