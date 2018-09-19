@@ -57,7 +57,7 @@
     "message": "Diese Sitzung löschen?"
   },
   "sessionDeletedLabel": {
-    "message": "Diese Sitzung wurde gelöscht."
+    "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
     "message": "Wiederherstellen"
@@ -87,7 +87,10 @@
     "message": "Tabs"
   },
   "noSessionLabel": {
-    "message": "Keine Sitzung vorhanden"
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
   },
   "menuLabel": {
     "message": "Menü"
@@ -108,7 +111,7 @@
     "message": "Mit aktueller Sitzung ersetzen"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Mit aktueller Sitzung ersetzen"
+    "message": "Mit aktuellem Fenster ersetzen"
   },
   "makeCopySessionLabel": {
     "message": "Sitzung Kopieren"
@@ -121,6 +124,9 @@
   },
   "howToSolveLabel": {
     "message": "Wie dieses Problem gelöst sein kann"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Auto - Fenster wurde geschlossen"
@@ -171,7 +177,7 @@
     "message": "Vorherige Sitzung beim Start wiederherstellen"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Wenn Firefox startet, die Sitzung wiederherstellen, die beim letzte Mal geschlossen wurde."
+    "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
     "message": "Sitzung regelmäßig sichern"
@@ -195,7 +201,7 @@
     "message": "Sitzung speichern, falls Fenster geschlossen wird"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Speichert die Sitzung, wenn Fenster oder Firefox geschlossen werden."
+    "message": "Save the session when closing the window or when exiting browser."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximal gespeicherte Anzahl"
@@ -216,13 +222,13 @@
     "message": "Sicherungskopie erstellen"
   },
   "ifBackupCaptionLabel": {
-    "message": "Wenn Firefox startet wird eine Sicherungsdatei der Sitzungen erstellt und im Ordner \"Downloads\" abgelegt."
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
     "message": "Gespeichert unter"
   },
   "backupFolderCaptionLabel": {
-    "message": "Geben Sie den Ordner an, in der die Sicherungsdatei gespeichert werden soll. Dieser Ordner muss sich im Firefox Download-Ordner befinden."
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
     "message": "Download-Ordner"
@@ -249,7 +255,7 @@
     "message": "Tree Style Tab unterstützen"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Zustand der Baumstruktur von Tree Style Tab wiederherstellen.<br>Wenn diese Option aktiviert ist, wird mehr Zeit zum Wiederherstellen der Sitzung benötigt."
   },
   "tstDelayLabel": {
     "message": "Verzögerung bei der Wiederherstellung der Baumstruktur (Millisekunden)"
