@@ -1,0 +1,371 @@
+{
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "Ablakok és fülek állapotának mentése és visszaállítása. Automatikus állapot mentés is támogatva van."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Adományozz a PayPal -al"
+  },
+  "saveLabel": {
+    "message": "Mentés"
+  },
+  "initialNameValue": {
+    "message": "Jelenlegi munkamenet mentése"
+  },
+  "inputSessionNameLabel": {
+    "message": "Munkamenet neve"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "Csak a jelenlegi ablak mentése"
+  },
+  "categoryFilterLabel": {
+    "message": "Kategória szűrés"
+  },
+  "sortLabel": {
+    "message": "Rendezés"
+  },
+  "displayAllLabel": {
+    "message": "Összes"
+  },
+  "displayUserLabel": {
+    "message": "Manuálisan mentett"
+  },
+  "displayAutoLabel": {
+    "message": "Automatikusan mentett"
+  },
+  "newestLabel": {
+    "message": "Legújabb"
+  },
+  "oldestLabel": {
+    "message": "Legrégebbi"
+  },
+  "aToZLabel": {
+    "message": "A-Z"
+  },
+  "zToALabel": {
+    "message": "Z-A"
+  },
+  "open": {
+    "message": "Megnyit"
+  },
+  "remove": {
+    "message": "Töröl"
+  },
+  "removeConfirmLabel": {
+    "message": "Törli ezt a munkamenetet?"
+  },
+  "sessionDeletedLabel": {
+    "message": "The session has been deleted."
+  },
+  "restoreSessionLabel": {
+    "message": "Visszaállítás"
+  },
+  "cancelLabel": {
+    "message": "Mégse"
+  },
+  "addTagLabel": {
+    "message": "Címke hozzáadása"
+  },
+  "removeTagLabel": {
+    "message": "Címke eltávolítása"
+  },
+  "detailLabel": {
+    "message": "Részletek"
+  },
+  "windowLabel": {
+    "message": "Ablak"
+  },
+  "windowsLabel": {
+    "message": "Ablakok"
+  },
+  "tabLabel": {
+    "message": "Fül"
+  },
+  "tabsLabel": {
+    "message": "Fül"
+  },
+  "noSessionLabel": {
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
+  },
+  "menuLabel": {
+    "message": "Menü"
+  },
+  "renameLabel": {
+    "message": "Átnevez"
+  },
+  "openInNewWindowLabel": {
+    "message": "Megnyitás új ablakban"
+  },
+  "openInCurrentWindowLabel": {
+    "message": "Megnyitás jelenlegi ablakban"
+  },
+  "addToCurrentWindowLabel": {
+    "message": "Jelenlegi ablakhoz hozzáadás"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "Aktuális munkamenettel lecserél"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "Replace with current window"
+  },
+  "makeCopySessionLabel": {
+    "message": "Másolatot készítése a munkamenetről"
+  },
+  "errorLabel": {
+    "message": "Hiba"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB nem áll rendelkezésre a böngészőben."
+  },
+  "howToSolveLabel": {
+    "message": "Hogyan lehet megoldani ezt a problémát"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
+  },
+  "winCloseSessionName": {
+    "message": "Automatikusan mentett - Ablak be lett zárva"
+  },
+  "regularSaveSessionName": {
+    "message": "Automatikusan mentett - Rendszeres"
+  },
+  "settingsLabel": {
+    "message": "Beállítások"
+  },
+  "sessionsLabel": {
+    "message": "Munkamenetek"
+  },
+  "informationLabel": {
+    "message": "Információ"
+  },
+  "generalLabel": {
+    "message": "Általános"
+  },
+  "autoSaveLabel": {
+    "message": "Automatikus mentés"
+  },
+  "startUpLabel": {
+    "message": "Indulás"
+  },
+  "styleLabel": {
+    "message": "Stílus"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "Munkamenetek megnyitása új ablakban"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "Ha nincs bejelölve, a munkamenet felülírja a jelenlegi ablakot."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "Fülek lusta betöltése"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "A munkamenet megnyitásakor az egyes oldalak tartalma nem töltődik be, amíg ki nem választódik a fül.<br>Ha nincs bejelölve, a memória használat nagy mértékben megnövekszik amikor a munkamenet visszaállítódik."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Ablakok pozícióinak visszaállítása"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Ablakok pozícióinak és méreteinek visszaállítása munkamenet megnyitáskor."
+  },
+  "ifOpenLastSessionWhenStartUpLabel": {
+    "message": "Előző munkamenet visszaállítása induláskor"
+  },
+  "ifOpenLastSessionWhenStartUpCaptionLabel": {
+    "message": "When browser starts up, restore the session that was closed the last time."
+  },
+  "ifAutoSaveLabel": {
+    "message": "Munkamenet rendszeres mentése"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "Munkamenet mentése megadott időközönként."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "Időköz (percben)"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "Minimum érték 0.1"
+  },
+  "autoSaveLimitLabel": {
+    "message": "Elmentettek maximális száma"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "Az ilyen módon elmentett munkamenetek maximális száma."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "Munkamenet mentése ha az ablakot bezárták"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "Save the session when closing the window or when exiting browser."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "Elmentettek maximális száma"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "Az ilyen módon elmentett munkamenetek maximális száma."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "Oldal cím használata munkamenet automatikus mentésekor"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "Munkamenet automatikus mentésekor, a nyitott oldal címének használata a munkamenet neveként."
+  },
+  "backupLabel": {
+    "message": "Biztonsági mentés"
+  },
+  "ifBackupLabel": {
+    "message": "Biztonsági másolat mentése"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+  },
+  "backupFolderLabel": {
+    "message": "Mentés helye"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+  },
+  "downloadFolderLabel": {
+    "message": "Letöltési könyvtár"
+  },
+  "backupFilesLimitLabel": {
+    "message": "Elmentett biztonsági másolatok maximális száma"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "Amikor a biztonsági másolatok száma túllépi ezt az értéket, a leg régebbi törlődik."
+  },
+  "dateFormatLabel": {
+    "message": "Dátum formátum"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "Pl.: YYYY.MM.DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "Privát ablak elmentése"
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "Ha nincs bejelölve, nem menti a privát ablak tartalmát a munkamenet mentésekor."
+  },
+  "ifSupportTstLabel": {
+    "message": "Fa struktúrájú fülek (Tree Style Tab) támogatása"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+  },
+  "tstDelayLabel": {
+    "message": "Késleltetés fa helyreállításnál (ezredmásodperc)"
+  },
+  "tstDelayCaptionLabel": {
+    "message": "A fa struktúra visszaállításához, idő szükséges a fül megnyitásánál. Növeld ezt az értéket, ha nem áll vissza rendesen a fa struktúra."
+  },
+  "truncateTitleLabel": {
+    "message": "Munkamenet nevének egy soros kijelzése"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "Munkamenet név méretre vágása a munkamenet listában, ha kilógna a sorából."
+  },
+  "toolBarPopupLabel": {
+    "message": "Eszköztár előugró ablak"
+  },
+  "toolBarPopupCaptionLabel": {
+    "message": "Eszköztár előugró ablak beállítása."
+  },
+  "widthLabel": {
+    "message": "Szélesség"
+  },
+  "heightLabel": {
+    "message": "Magasság"
+  },
+  "otherLabel": {
+    "message": "Egyéb"
+  },
+  "resetSettingsLabel": {
+    "message": "Alapbeállítások használata"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "Minden beállítás visszaállítása alapértelmezettre."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "Visszaállítás"
+  },
+  "importLabel": {
+    "message": "Munkamenetek importálása"
+  },
+  "importCaptionLabel": {
+    "message": "Munkamenetek betöltése a számítógépről és hozzáadása a munkamenet listához.<br>A SessionManager munkamenet fájlja (.session) is támogatva van."
+  },
+  "importButtonLabel": {
+    "message": "Tallózás..."
+  },
+  "importSaveButtonLabel": {
+    "message": "Importálás"
+  },
+  "importClearButtonLabel": {
+    "message": "Töröl"
+  },
+  "urlImportLabel": {
+    "message": "URL-lista importálása"
+  },
+  "urlImportCaptionLabel": {
+    "message": "Munkamenet létrehozása URL listából.<br>Formátum: &lt;URL&gt; &lt;oldal cím (nem kötelező)&gt;"
+  },
+  "exportLabel": {
+    "message": "Munkamenetek exportálása"
+  },
+  "exportCaptionLabel": {
+    "message": "Minden munkamenet lementése a számítógépre."
+  },
+  "exportButtonLabel": {
+    "message": "Exportálás"
+  },
+  "removeSessionsLabel": {
+    "message": "Munkamenetek törlése"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "Minden munkamenet törölése."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "Töröl"
+  },
+  "LicenseLabel": {
+    "message": "Licensz"
+  },
+  "donationLabel": {
+    "message": "Kérjük adakozzon"
+  },
+  "donationCaptionLabel": {
+    "message": "Köszönöm hogy a Tab Session Manager -t használod!<br>A támogatásod nagy ösztönzést jelent számomra, hogy folytassam ennek a kiegészítőnek a fejlesztését.<br>Ha tetszik a Tab Session Manager, örülnék ha megfontolnád az adakozást."
+  },
+  "amazonTitleLabel": {
+    "message": "amazon.co.jp elektronikus ajándék kártya"
+  },
+  "addonPageLabel": {
+    "message": "A kiegészítő oldala"
+  },
+  "importMessage": {
+    "message": "Munkamenetek importálva."
+  },
+  "readFailedMessage": {
+    "message": "Beolvasás nem sikerült"
+  },
+  "warningRemoveAllMessage": {
+    "message": "Minden munkamenet törlése. Biztos vagy benne?"
+  },
+  "sessionLabel": {
+    "message": "Munkamenet"
+  },
+  "amazonUrl": {
+    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=hu_HU"
+  },
+  "addonUrl": {
+    "message": "https:\/\/addons.mozilla.org\/hu\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "Ez az oldal nem nyitható meg a Tab Session Manager által."
+  }
+}
