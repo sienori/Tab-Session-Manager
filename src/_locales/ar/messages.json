@@ -345,7 +345,10 @@
     "message": "بطاقات هدايا amazon.co.jp"
   },
   "addonPageLabel": {
-    "message": "قائمة اللواحق"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "الجلسات مستوردة."

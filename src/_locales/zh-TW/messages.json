@@ -345,7 +345,10 @@
     "message": "贊助我 amazon 電子禮品卡"
   },
   "addonPageLabel": {
-    "message": "AMO 附加元件頁面"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "已匯入瀏覽階段。"

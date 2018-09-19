@@ -345,7 +345,10 @@
     "message": "eKarty podarunkowe amazon.co.jp"
   },
   "addonPageLabel": {
-    "message": "strona dodatku"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "Sesje zaimportowane."

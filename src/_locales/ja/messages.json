@@ -347,6 +347,9 @@
   "addonPageLabel": {
     "message": "アドオンページ"
   },
+  "extensionPageLabel": {
+    "message": "拡張機能ページ"
+  },
   "importMessage": {
     "message": "セッションをインポートしました。"
   },

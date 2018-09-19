@@ -345,7 +345,10 @@
     "message": "amazon.co.jp Gift Cards"
   },
   "addonPageLabel": {
-    "message": "página do complemento"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "Sessões de importados."
