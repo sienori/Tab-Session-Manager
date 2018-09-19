@@ -179,6 +179,8 @@ export default class PopupPage extends Component {
   componentDidUpdate() {
     if (this.state.error.isError) return;
     if (this.state.sessions === undefined || this.state.sessions === null) {
+      browser.runtime.onMessage.removeListener(this.changeSessions);
+      window.close();
       this.setState({ error: { isError: true, type: "noConnection" } });
     }
   }
