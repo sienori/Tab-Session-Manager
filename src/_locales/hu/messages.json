@@ -345,7 +345,10 @@
     "message": "amazon.co.jp elektronikus ajándék kártya"
   },
   "addonPageLabel": {
-    "message": "A kiegészítő oldala"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "Munkamenetek importálva."
