@@ -345,7 +345,10 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "страница на добавката"
+    "message": "Add-on page"
+  },
+  "extensionPageLabel": {
+    "message": "Extension page"
   },
   "importMessage": {
     "message": "Сесиите са внесени."
