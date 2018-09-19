@@ -1,0 +1,371 @@
+{
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "Менеджер сесій дозволяє зберігати та відновлювати стан вікон та вкладок. Підтримує автоматичні збереження."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Зробити пожертву через PayPal"
+  },
+  "saveLabel": {
+    "message": "Зберегти"
+  },
+  "initialNameValue": {
+    "message": "Зберегти поточну сесiю"
+  },
+  "inputSessionNameLabel": {
+    "message": "Введіть назву сесії"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "Зберегти лише поточне вікно"
+  },
+  "categoryFilterLabel": {
+    "message": "Фільтр категорії"
+  },
+  "sortLabel": {
+    "message": "Сортування"
+  },
+  "displayAllLabel": {
+    "message": "Всі"
+  },
+  "displayUserLabel": {
+    "message": "Користувацькі"
+  },
+  "displayAutoLabel": {
+    "message": "Автозбереження"
+  },
+  "newestLabel": {
+    "message": "Найновіші"
+  },
+  "oldestLabel": {
+    "message": "Найстаріші"
+  },
+  "aToZLabel": {
+    "message": "А-Я"
+  },
+  "zToALabel": {
+    "message": "Я-А"
+  },
+  "open": {
+    "message": "Відкрити"
+  },
+  "remove": {
+    "message": "Видалити"
+  },
+  "removeConfirmLabel": {
+    "message": "Видалити цю сесію?"
+  },
+  "sessionDeletedLabel": {
+    "message": "The session has been deleted."
+  },
+  "restoreSessionLabel": {
+    "message": "Відновити"
+  },
+  "cancelLabel": {
+    "message": "Відміна"
+  },
+  "addTagLabel": {
+    "message": "Додати тег"
+  },
+  "removeTagLabel": {
+    "message": "Видалити тег"
+  },
+  "detailLabel": {
+    "message": "Подробиці"
+  },
+  "windowLabel": {
+    "message": "Вікно"
+  },
+  "windowsLabel": {
+    "message": "Вікна"
+  },
+  "tabLabel": {
+    "message": "Вкладка"
+  },
+  "tabsLabel": {
+    "message": "Вкладки"
+  },
+  "noSessionLabel": {
+    "message": "There is no session."
+  },
+  "letsSaveLabel": {
+    "message": "Let's save the session by clicking the lower right button."
+  },
+  "menuLabel": {
+    "message": "Меню"
+  },
+  "renameLabel": {
+    "message": "Перейменувати"
+  },
+  "openInNewWindowLabel": {
+    "message": "Відкрити у новому вікні"
+  },
+  "openInCurrentWindowLabel": {
+    "message": "Відкрити у поточному вікні"
+  },
+  "addToCurrentWindowLabel": {
+    "message": "Додати до поточного вікна"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "Замінити поточної сесією"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "Замінити поточним вікном"
+  },
+  "makeCopySessionLabel": {
+    "message": "Створити копію сесії"
+  },
+  "errorLabel": {
+    "message": "Помилка"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB не доступна у вашому браузері."
+  },
+  "howToSolveLabel": {
+    "message": "Як вирішити цю проблему"
+  },
+  "noConnectionErrorLabel": {
+    "message": "Multiple popups can not be opened at the same time."
+  },
+  "winCloseSessionName": {
+    "message": "Автозбереження - закриття вікна"
+  },
+  "regularSaveSessionName": {
+    "message": "Автозбереження - регулярне"
+  },
+  "settingsLabel": {
+    "message": "Налаштування"
+  },
+  "sessionsLabel": {
+    "message": "Сесії"
+  },
+  "informationLabel": {
+    "message": "Інформація"
+  },
+  "generalLabel": {
+    "message": "Загальні"
+  },
+  "autoSaveLabel": {
+    "message": "Автоматичне збереження"
+  },
+  "startUpLabel": {
+    "message": "Запуск"
+  },
+  "styleLabel": {
+    "message": "Стиль"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "Відкрити сесію у новому вікні"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "Якщо вимкнено, сесія перезапише поточне вікно."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "Відкладене завантаження вкладок"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "Під час відкриття сесії вміст вкладок не завантажується, поки вкладка не буде активована вручну. <br>При відключенні зросте витрата пам'яті після відновлення сесії."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Відновити розташування вікон"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Відновити розмір і положення вікон під час відкриття сесії."
+  },
+  "ifOpenLastSessionWhenStartUpLabel": {
+    "message": "Відновлювати попередню сесію при запуску"
+  },
+  "ifOpenLastSessionWhenStartUpCaptionLabel": {
+    "message": "When browser starts up, restore the session that was closed the last time."
+  },
+  "ifAutoSaveLabel": {
+    "message": "Періодично зберігати сесію"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "Зберігати сесію через обрані відрізки часу."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "Інтервал (хвилини)"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "Мінімальне значення 0.1"
+  },
+  "autoSaveLimitLabel": {
+    "message": "Максимальна кількість збережень"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "Максимальна кількість сесій збережених таким чином."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "Зберігати сесію під час закриття вікна"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "Save the session when closing the window or when exiting browser."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "Максимальна кількість збережень"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "Максимальна кількість сесій збережених таким чином."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "Використовувати заголовок сторінки для автоматичного збереження назви сесії"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "При автоматичному збереженні сесії, використовувати заголовок відкритої сторінки у якості назви сесії."
+  },
+  "backupLabel": {
+    "message": "Резервне копіювання"
+  },
+  "ifBackupLabel": {
+    "message": "Зберігати резервну копію"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+  },
+  "backupFolderLabel": {
+    "message": "Розташування"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+  },
+  "downloadFolderLabel": {
+    "message": "Каталог завантажень"
+  },
+  "backupFilesLimitLabel": {
+    "message": "Максимальна кількість збережених резервних копій"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "Якщо кількість файлів резервних копій перевищить це значення, вони видаляються, починаючи з найстаріших."
+  },
+  "dateFormatLabel": {
+    "message": "Формат дати"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "Наприклад: YYYY.MM.DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "Зберігати приватне вікно"
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
+  },
+  "ifSupportTstLabel": {
+    "message": "Підтримка Tree Style Tab"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+  },
+  "tstDelayLabel": {
+    "message": "Затримка під час відновленні дерева (мілісекунди)"
+  },
+  "tstDelayCaptionLabel": {
+    "message": "Для відновлення стану дерева та відкриття вкладки потрібен певний час. Збільште це значення, якщо дерево не відновлюється коректно."
+  },
+  "truncateTitleLabel": {
+    "message": "Показувати назву сесії в одному рядку"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "Якщо назва сесії в списку займає більше одного рядка, вона буде скорочуватися до одного рядку."
+  },
+  "toolBarPopupLabel": {
+    "message": "Спливаюче вікно на панелі інструментів"
+  },
+  "toolBarPopupCaptionLabel": {
+    "message": "Вкажіть стиль спливаючого вікна на панелі інструментів."
+  },
+  "widthLabel": {
+    "message": "Ширина"
+  },
+  "heightLabel": {
+    "message": "Висота"
+  },
+  "otherLabel": {
+    "message": "Інше"
+  },
+  "resetSettingsLabel": {
+    "message": "Скидання налаштувань"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "Відновити всі налаштування за замовчуванням."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "Скинути"
+  },
+  "importLabel": {
+    "message": "Імпорт сесій"
+  },
+  "importCaptionLabel": {
+    "message": "Завантажити збережені раніше сесії. <br>Файли SessionManager (.session) також підтримуються."
+  },
+  "importButtonLabel": {
+    "message": "Перегляд..."
+  },
+  "importSaveButtonLabel": {
+    "message": "Імпорт"
+  },
+  "importClearButtonLabel": {
+    "message": "Очистити"
+  },
+  "urlImportLabel": {
+    "message": "Імпорт списку URL-адрес"
+  },
+  "urlImportCaptionLabel": {
+    "message": "Створити сесію зі списку URL-адрес і додати її у список сесій. <br>Формат: &lt;URL&gt; &lt;заголовок сторінки (необов'язково)&gt;"
+  },
+  "exportLabel": {
+    "message": "Експорт сесій"
+  },
+  "exportCaptionLabel": {
+    "message": "Зберегти всі сесії на цей комп'ютер."
+  },
+  "exportButtonLabel": {
+    "message": "Експорт"
+  },
+  "removeSessionsLabel": {
+    "message": "Видалити сесії"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "Видалити усі сесії."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "Видалити"
+  },
+  "LicenseLabel": {
+    "message": "Ліцензія"
+  },
+  "donationLabel": {
+    "message": "Будь ласка подякуйте автору"
+  },
+  "donationCaptionLabel": {
+    "message": "Дякую, що використовуєте Tab Session Manager. <br> Ваша підтримка буде чудовим стимулом до продовження розробки цього доповнення. <br>Якщо вам сподобався Tab Session Manager, я буду дуже вдячний вашим пожертвуванням."
+  },
+  "amazonTitleLabel": {
+    "message": "amazon.co.jp eGift Cards"
+  },
+  "addonPageLabel": {
+    "message": "Сторінка доповнення"
+  },
+  "importMessage": {
+    "message": "Сесія імпортована."
+  },
+  "readFailedMessage": {
+    "message": "Помилка читання"
+  },
+  "warningRemoveAllMessage": {
+    "message": "Будуть видалені ВСІ збережені сесії. Бажаєте продовжити?"
+  },
+  "sessionLabel": {
+    "message": "Сесія"
+  },
+  "amazonUrl": {
+    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "Цю сторінку не можна відкрити в Tab Session Manager."
+  }
+}
