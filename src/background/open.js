@@ -89,6 +89,10 @@ export async function openSession(session, property = "default") {
   }
 }
 
+const isEnabledOpenerTabId =
+  (browserInfo().name == "Firefox" && browserInfo().version >= 57) ||
+  (browserInfo().name == "Chrome" && browserInfo().version >= 18);
+
 export let IsOpeningSession = false;
 //ウィンドウとタブを閉じてcurrentWindowを返す
 async function removeNowOpenTabs() {
@@ -180,12 +184,8 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
 
     //Tree Style Tab
     let openDelay = 0;
-    if (getSettings("ifSupportTst")) {
-      const bInfo = browserInfo();
-      const isEnabledOpenerTabId =
-        (bInfo.name == "Firefox" && bInfo.version >= 57) ||
-        (bInfo.name == "Chrome" && bInfo.version >= 18);
-      if (isEnabledOpenerTabId) createOption.openerTabId = tabList[property.openerTabId];
+    if (getSettings("ifSupportTst") && isEnabledOpenerTabId) {
+      createOption.openerTabId = tabList[property.openerTabId];
       openDelay = getSettings("tstDelay");
     }
 
@@ -210,7 +210,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
       createOption.url = null;
     }
 
-    setTimeout(async () => {
+    const tryOpen = async () => {
       try {
         const newTab = await browser.tabs.create(createOption);
         tabList[property.id] = newTab.id;
@@ -225,6 +225,10 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
         await browser.tabs.create(createOption).catch(() => resolve());
         resolve();
       }
-    }, openDelay); //ツリー型タブの処理を待つ
+    };
+
+    //Tree Style Tabに対応ならdelay
+    if (getSettings("ifSupportTst") && isEnabledOpenerTabId) setTimeout(tryOpen, openDelay);
+    else tryOpen();
   });
 }
