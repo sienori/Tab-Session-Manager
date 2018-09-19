@@ -2,11 +2,11 @@
 
 #### Save and restore the state of windows and tabs. It also supports automatic saving.
 
-## Install your browser
-#### **[Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/tab-session-manager/)**  
-#### **[Chrome Web Store](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae)**
-
-***
+## Install on your browser
+### For Firefox
+https://addons.mozilla.org/firefox/addon/tab-session-manager/
+### For Chrome 
+https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/
 ## Translation
 You can contribute by translating Tab Session Manager on **[Crowdin](https://crowdin.com/project/tab-session-manager)**.
 
