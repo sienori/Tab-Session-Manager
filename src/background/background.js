@@ -33,15 +33,18 @@ const addListeners = () => {
     setAutoSave(changes, areaName);
   });
 
-  browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) =>
-    autoSaveWhenClose.handleTabUpdate(tabId, changeInfo, tab)
-  );
-  browser.tabs.onRemoved.addListener((tabId, removeInfo) =>
-    autoSaveWhenClose.handleTabRemoved(tabId, removeInfo)
-  );
-  browser.tabs.onCreated.addListener(() => autoSaveWhenClose.updateTemp());
-  browser.windows.onCreated.addListener(() => autoSaveWhenClose.updateTemp());
-  browser.windows.onRemoved.addListener(() => autoSaveWhenClose.saveWinClose());
+  setTimeout(() => {
+    browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) =>
+      autoSaveWhenClose.handleTabUpdate(tabId, changeInfo, tab)
+    );
+    browser.tabs.onRemoved.addListener((tabId, removeInfo) =>
+      autoSaveWhenClose.handleTabRemoved(tabId, removeInfo)
+    );
+    browser.tabs.onCreated.addListener(() => autoSaveWhenClose.updateTemp());
+    browser.windows.onCreated.addListener(() => autoSaveWhenClose.updateTemp());
+
+    browser.windows.onRemoved.addListener(() => autoSaveWhenClose.saveWinClose());
+  }, 10000);
 };
 
 let IsInit = false;

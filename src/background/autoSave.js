@@ -110,8 +110,13 @@ export class AutoSaveWhenClose {
   async openLastSession() {
     if (!getSettings("ifOpenLastSessionWhenStartUp")) return;
 
+    const currentWindows = await browser.windows.getAll();
     const winCloseSessions = await getSessionsByTag("winClose");
-    openSession(winCloseSessions[0], "openInCurrentWindow");
+    await openSession(winCloseSessions[0], "openInNewWindow");
+
+    for (const window of currentWindows) {
+      await browser.windows.remove(window.id);
+    }
   }
 
   async removeDuplicateTemp() {
