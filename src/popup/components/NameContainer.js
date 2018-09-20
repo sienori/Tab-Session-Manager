@@ -3,7 +3,7 @@ import browser from "webextension-polyfill";
 import { sendSesssionRenameMessage } from "../actions/controlSessions";
 import { getSettings } from "src/settings/settings";
 import InputForm from "./InputForm";
-import "../styles/nameContainer.scss";
+import "../styles/NameContainer.scss";
 
 export default class NameContainer extends Component {
   constructor(props) {

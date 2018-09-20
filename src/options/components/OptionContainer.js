@@ -1,7 +1,7 @@
 import React from "react";
 import browser from "webextension-polyfill";
 import { setSettings, getSettings } from "src/settings/settings";
-import "../styles/optionContainer.scss";
+import "../styles/OptionContainer.scss";
 
 export default props => {
   const { title, captions, type, id, children } = props;

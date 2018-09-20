@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
 import Session from "./Session";
-import "../styles/sessionsArea.scss";
+import "../styles/SessionsArea.scss";
 
 const shouldShowSession = (tags, filterValue) => {
   if (tags.includes("temp")) return false;
