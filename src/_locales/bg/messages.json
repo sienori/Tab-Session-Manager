@@ -57,7 +57,7 @@
     "message": "Изтриване на тази сесия?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Сесията е изтрита."
   },
   "restoreSessionLabel": {
     "message": "Възстановяване"
@@ -87,10 +87,10 @@
     "message": "раздела"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Тук няма сесии."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Запазване на сесията чрез щракване върху долният десен бутон."
   },
   "menuLabel": {
     "message": "Меню"
@@ -177,7 +177,7 @@
     "message": "Възстановяване на предишна сесия при стартиране"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Възстановяване на последно затворената сесия при стартиране на браузъра."
   },
   "ifAutoSaveLabel": {
     "message": "Редовно запазване на сесията"
@@ -201,7 +201,7 @@
     "message": "Запазване на сесията при затваряне на прозореца"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Запазване на сесията при затваряне на прозореца или при изход от браузъра."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимален брой запазени"
@@ -222,13 +222,13 @@
     "message": "Резервно копие"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Създаване резервно копие на сесиите и запазване в папката за изтегляния при стартиране на браузъра."
   },
   "backupFolderLabel": {
     "message": "Местоположение за запис"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Задаване на папка за запазване на резервните копия. Местоположението е ограничено до папката за изтегляния, зададена в настройките на браузъра."
   },
   "downloadFolderLabel": {
     "message": "Папка за изтегляния"
