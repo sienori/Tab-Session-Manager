@@ -90,7 +90,7 @@
     "message": "Non è presente alcuna sessione."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Salviamo la sessione cliccando il pulsante in basso a destra."
   },
   "menuLabel": {
     "message": "Menù"
@@ -177,7 +177,7 @@
     "message": "Ripristina la sessione precedente all'avvio"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "All'avvio del browser, ripristina la sessione chiusa l'ultima volta."
   },
   "ifAutoSaveLabel": {
     "message": "Salva la sessione regolarmente"
