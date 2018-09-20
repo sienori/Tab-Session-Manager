@@ -126,7 +126,7 @@
     "message": "Разрешаване на проблема"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Множество изскачащи прозорци не могат да бъдат отворяни в същото време."
   },
   "winCloseSessionName": {
     "message": "Авто запазени - при затваряне на прозорец"
