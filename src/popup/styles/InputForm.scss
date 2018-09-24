@@ -12,6 +12,7 @@ $transition: 150ms ease;
     font-size: inherit;
     width: 100%;
     max-width: inherit;
+    min-width: 10px;
     height: calc(100% - 4px);
     border: var(--button) solid 1px;
     border-radius: 2px 0px 0px 2px;

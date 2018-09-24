@@ -108,11 +108,11 @@
     }
 
     &.isOpen {
+      width: 100%;
       .addTagInput {
-        max-width: 100%;
+        width: 100%;
         visibility: visible;
-        opacity: 1;
-        transition: max-width visibility, opacity 0ms;
+        margin-right: 1px;
       }
       .showInputButton svg {
         transform: rotate(45deg);
@@ -121,11 +121,8 @@
     }
     &.isClose {
       .addTagInput .inputForm {
-        max-width: 0px;
         padding: 0px;
         visibility: hidden;
-        opacity: 0;
-        transition: max-width visibility, opacity 0ms;
       }
       .showInputButton svg {
         transition: transform 50ms;
