@@ -57,7 +57,7 @@
     "message": "Vuoi eliminare questa sessione?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "La sessione è stata eliminata."
   },
   "restoreSessionLabel": {
     "message": "Ripristina"
@@ -87,10 +87,10 @@
     "message": "Schede"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Non è presente alcuna sessione."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Salviamo la sessione cliccando il pulsante in basso a destra."
   },
   "menuLabel": {
     "message": "Menù"
@@ -126,7 +126,7 @@
     "message": "Come risolvere questo problema"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Popup multipli non possono essere aperti contemporaneamente."
   },
   "winCloseSessionName": {
     "message": "Salvato automaticamente - La finestra è stata chiusa"
@@ -177,7 +177,7 @@
     "message": "Ripristina la sessione precedente all'avvio"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "All'avvio del browser, ripristina la sessione chiusa l'ultima volta."
   },
   "ifAutoSaveLabel": {
     "message": "Salva la sessione regolarmente"
@@ -201,7 +201,7 @@
     "message": "Salva la sessione quando la finestra viene chiusa"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Salva la sessione quando la finestra o il browser vengono chiusi."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Numero massimo salvato"
@@ -222,13 +222,13 @@
     "message": "Salva backup"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "All'avvio del browser, crea un file di backup delle sessioni e salvalo nella cartella dei download."
   },
   "backupFolderLabel": {
     "message": "Salva posizione"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Specifica la cartella dove salvare il file di backup. Il percorso deve essere all'interno della cartella di download del browser."
   },
   "downloadFolderLabel": {
     "message": "Cartella di download"
@@ -345,10 +345,10 @@
     "message": "Buoni Regalo amazon.co.jp"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Pagina del componente aggiuntivo"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Pagina dell'estensione"
   },
   "importMessage": {
     "message": "Sessioni importate."
