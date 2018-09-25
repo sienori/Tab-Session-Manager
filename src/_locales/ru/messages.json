@@ -57,7 +57,7 @@
     "message": "Удалить эту сессию?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Эта сессия была удалена."
   },
   "restoreSessionLabel": {
     "message": "Восстановить"
@@ -87,7 +87,7 @@
     "message": "Вкладки"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Нет сессии."
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
@@ -345,10 +345,10 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Страница дополнения"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Страница расширения"
   },
   "importMessage": {
     "message": "Сессия импортирована."
