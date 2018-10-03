@@ -57,7 +57,7 @@
     "message": "確定要刪除此瀏覽階段？"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "此瀏覽階段已被刪除。"
   },
   "restoreSessionLabel": {
     "message": "還原"
@@ -87,10 +87,10 @@
     "message": "分頁"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "沒有已儲存的瀏覽階段。"
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "點選右下角按鈕以儲存瀏覽階段。"
   },
   "menuLabel": {
     "message": "選單"
@@ -126,7 +126,7 @@
     "message": "如何解決這個問題"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "無法同時開啟多個彈出式視窗。"
   },
   "winCloseSessionName": {
     "message": "自動儲存 - 視窗關閉"
@@ -177,7 +177,7 @@
     "message": "啟動時還原上次開啟的瀏覽階段"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "當瀏覽器啟動時，還原上次開啟的瀏覽階段。"
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
@@ -201,7 +201,7 @@
     "message": "關閉視窗時儲存瀏覽階段"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "在關閉視窗或是結束瀏覽器時儲存瀏覽階段。"
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "最大儲存數量"
@@ -222,13 +222,13 @@
     "message": "儲存備份"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "當瀏覽器啟動時，建立瀏覽階段的備份檔並儲存於下載資料夾中。"
   },
   "backupFolderLabel": {
     "message": "儲存位置"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "指定儲存備份檔的位置。儲存位置僅限於瀏覽器下載資料夾中。"
   },
   "downloadFolderLabel": {
     "message": "下載資料夾"
@@ -348,7 +348,7 @@
     "message": "附加元件說明頁面"
   },
   "extensionPageLabel": {
-    "message": "擴充功能說明頁面"
+    "message": "Chrome 應用程式商店頁面"
   },
   "importMessage": {
     "message": "已匯入瀏覽階段。"
