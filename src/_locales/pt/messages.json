@@ -17,8 +17,11 @@
   "inputSessionNameLabel": {
     "message": "Input session name"
   },
+  "saveAllWindowsLabel": {
+    "message": "Save all windows"
+  },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Salvar somente a janela atual"
   },
   "categoryFilterLabel": {
     "message": "Category filter"
@@ -47,6 +50,15 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "searchBarPlaceholder": {
+    "message": "Search by session name"
+  },
+  "search": {
+    "message": "Search"
+  },
+  "clearSearch": {
+    "message": "Clear search"
+  },
   "open": {
     "message": "Abrir"
   },
@@ -54,7 +66,7 @@
     "message": "Excluir"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Excluir esta sessão?"
   },
   "sessionDeletedLabel": {
     "message": "The session has been deleted."
@@ -63,13 +75,13 @@
     "message": "Restore"
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Cancelar"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Adicionar tag"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Remover tag"
   },
   "detailLabel": {
     "message": "Detail"
@@ -92,20 +104,32 @@
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
   },
+  "noResultLabel": {
+    "message": "No matching results."
+  },
   "menuLabel": {
     "message": "Menu"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Renomear"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Abrir em uma nova janela"
+  },
+  "openInNewWindowCaptionLabel": {
+    "message": "Open the session in the new window."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Abrir na janela atual"
+  },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Adicionar na janela atual"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -144,16 +168,16 @@
     "message": "Informações"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Geral"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Salvar automaticamente"
   },
   "startUpLabel": {
-    "message": "Startup"
+    "message": "Iniciar"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Estilo"
   },
   "ifOpenNewWindowLabel": {
     "message": "Sessão aberta em nova janela"
@@ -174,7 +198,7 @@
     "message": "Restore windows position and size when opening session."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Restore previous session at startup"
+    "message": "Restaurar sessão anterior na inicialização"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
     "message": "When browser starts up, restore the session that was closed the last time."
@@ -210,16 +234,16 @@
     "message": "Número máximo de sessões salvas (desta forma)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Usar título da página como nome para salvar a sessão automaticamente"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Ao salvar uma sessão automaticamente, use o título da página aberta como o nome da sessão."
   },
   "backupLabel": {
     "message": "Backup"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Salvar Backup"
   },
   "ifBackupCaptionLabel": {
     "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
@@ -234,10 +258,10 @@
     "message": "Download folder"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Quantidade máxima de backups salvos"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Quando o número de arquivos de backup excede esse valor, os mais antigos são excluídos."
   },
   "dateFormatLabel": {
     "message": "Formato da data"
@@ -246,10 +270,10 @@
     "message": "Exemplo: YYYY. MM. DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Salvar janela privada"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Se estiver desmarcada, ignora a janela privada ao salvar a sessão."
   },
   "ifSupportTstLabel": {
     "message": "Suporta Tree Style Tab"
@@ -264,22 +288,43 @@
     "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Exibir o nome da sessão em uma linha"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Se o nome da sessão na lista sessão se estende por mais de uma linha, é truncado para exibição em uma linha."
   },
-  "toolBarPopupLabel": {
-    "message": "Toolbar popup"
+  "popupLabel": {
+    "message": "Popup"
   },
-  "toolBarPopupCaptionLabel": {
-    "message": "Specify the style of the toolbar popup."
+  "openButtonBehaviorLabel": {
+    "message": "Open button behavior"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "Save button behavior"
+  },
+  "saveButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "isShowSearchBarLabel": {
+    "message": "Display the search bar"
+  },
+  "isShowSearchBarCaptionLabel": {
+    "message": "Add a function to search by session name."
+  },
+  "sizeLabel": {
+    "message": "Size"
+  },
+  "popupSizeCaptionLabel": {
+    "message": "Specify the size of the popup."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Largura"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Altura"
   },
   "otherLabel": {
     "message": "Other"
