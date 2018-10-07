@@ -20,6 +20,8 @@
       select {
         -moz-appearance: none;
         -webkit-appearance: none;
+        background-color: var(--main-bg);
+        color: var(--main-text);
         text-overflow: ellipsis;
         border: var(--button) solid 1px;
         border-radius: 2px;

@@ -10,6 +10,8 @@ $transition: 150ms ease;
   input {
     font-family: inherit;
     font-size: inherit;
+    background-color: var(--main-bg);
+    color: var(--main-text);
     width: 100%;
     max-width: inherit;
     min-width: 10px;
@@ -31,6 +33,7 @@ $transition: 150ms ease;
     justify-content: center;
     flex-shrink: 0;
     background-color: var(--main-bg);
+    color: var(--main-text);
     border: var(--button) solid 1px;
     border-radius: 0px 2px 2px 0px;
     height: 100%;
