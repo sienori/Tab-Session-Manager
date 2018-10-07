@@ -154,6 +154,37 @@ export default [
     category: "popupLabel",
     elements: [
       {
+        id: "openButtonBehavior",
+        title: "openButtonBehaviorLabel",
+        captions: ["openButtonBehaviorCaptionLabel"],
+        type: "none",
+        default: "openInNewWindow",
+        new: true,
+        childElements: [
+          {
+            id: "openButtonBehavior",
+            title: "openInNewWindowLabel",
+            captions: ["openInNewWindowCaptionLabel"],
+            type: "radio",
+            value: "openInNewWindow"
+          },
+          {
+            id: "openButtonBehavior",
+            title: "openInCurrentWindowLabel",
+            captions: ["openInCurrentWindowCaptionLabel"],
+            type: "radio",
+            value: "openInCurrentWindow"
+          },
+          {
+            id: "openButtonBehavior",
+            title: "addToCurrentWindowLabel",
+            captions: ["addToCurrentWindowCaptionLabel"],
+            type: "radio",
+            value: "addToCurrentWindow"
+          }
+        ]
+      },
+      {
         id: "isShowSearchBar",
         title: "isShowSearchBarLabel",
         captions: ["isShowSearchBarCaptionLabel"],

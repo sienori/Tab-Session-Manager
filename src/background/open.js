@@ -3,7 +3,7 @@ import browserInfo from "browser-info";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 
-export async function openSession(session, property = "default") {
+export async function openSession(session, property = "openInNewWindow") {
   let isFirstWindowFlag = true;
   tabList = {};
   for (let win in session.windows) {
@@ -69,10 +69,6 @@ export async function openSession(session, property = "default") {
     if (isFirstWindowFlag) {
       isFirstWindowFlag = false;
       switch (property) {
-        case "default":
-          if (getSettings("ifOpenNewWindow")) openInNewWindow();
-          else await openInCurrentWindow();
-          break;
         case "openInCurrentWindow":
           await openInCurrentWindow();
           break;

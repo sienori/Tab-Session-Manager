@@ -32,6 +32,25 @@ export default class Session extends Component {
     this.props.openMenu(e.pageX, e.pageY, <SessionMenuItems session={this.props.session} />);
   };
 
+  handleOpenClick = () => {
+    const defaultBehavior = getSettings("openButtonBehavior");
+    sendOpenMessage(this.props.session.id, defaultBehavior);
+  };
+
+  getOpenButtonTitle = () => {
+    const defaultBehavior = getSettings("openButtonBehavior");
+    switch (defaultBehavior) {
+      case "openInNewWindow":
+        return browser.i18n.getMessage("openInNewWindowLabel");
+      case "openInCurrentWindow":
+        return browser.i18n.getMessage("openInCurrentWindowLabel");
+      case "addToCurrentWindow":
+        return browser.i18n.getMessage("addToCurrentWindowLabel");
+      default:
+        return "";
+    }
+  };
+
   render() {
     const { session, removeSession, order, searchWord } = this.props;
     const windowLabel = browser.i18n.getMessage("windowLabel");
@@ -73,9 +92,8 @@ export default class Session extends Component {
           <div className="buttonsContainer">
             <button
               className="open"
-              onClick={() => {
-                sendOpenMessage(session.id, "default");
-              }}
+              onClick={this.handleOpenClick}
+              title={this.getOpenButtonTitle()}
             >
               <span>{browser.i18n.getMessage("open")}</span>
             </button>

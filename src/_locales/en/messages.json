@@ -114,11 +114,20 @@
   "openInNewWindowLabel": {
     "message": "Open in new window"
   },
+  "openInNewWindowCaptionLabel": {
+    "message": "Open the session in the new window."
+  },
   "openInCurrentWindowLabel": {
     "message": "Open in current window"
   },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+  },
   "addToCurrentWindowLabel": {
     "message": "Add to current window"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -287,6 +296,12 @@
   },
   "popupLabel": {
     "message": "Popup"
+  },
+  "openButtonBehaviorLabel": {
+    "message": "Open button behavior"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
   },
   "isShowSearchBarLabel": {
     "message": "Display the search bar"
