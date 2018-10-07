@@ -7,13 +7,13 @@
   button {
     width: 100%;
   }
-  span {
+  .sessionName {
     display: block;
     text-overflow: ellipsis;
     white-space: normal;
     overflow: hidden;
   }
-  &.isTruncate span {
+  &.isTruncate .sessionName {
     white-space: nowrap;
   }
 }

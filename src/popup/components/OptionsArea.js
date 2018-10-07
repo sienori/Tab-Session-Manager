@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import "../styles/OptionsArea.scss";
+import SearchBar from "./SearchBar";
 
 const alphabeticallySort = (a, b) => {
   if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
@@ -90,55 +91,58 @@ export default class OptionsArea extends Component {
     const tagsCount = countAllTags(this.props.sessions);
     return (
       <div id="optionsArea">
-        <div className="selectWrap filter">
-          <select
-            onChange={this.handleFilterChange}
-            value={this.props.filterValue}
-            title={browser.i18n.getMessage("categoryFilterLabel")}
-          >
-            <option value="_displayAll">
-              {browser.i18n.getMessage("displayAllLabel")} [{tagsCount.all}]
-            </option>
-            {tagsCount.auto > 0 &&
-              tagsCount.winClose > 0 &&
-              tagsCount.regular > 0 && (
-                <option value="_auto">
-                  {browser.i18n.getMessage("displayAutoLabel")} [{tagsCount.auto}]
+        <SearchBar changeSearchWord={this.props.changeSearchWord} />
+        <div className="line">
+          <div className="selectWrap filter">
+            <select
+              onChange={this.handleFilterChange}
+              value={this.props.filterValue}
+              title={browser.i18n.getMessage("categoryFilterLabel")}
+            >
+              <option value="_displayAll">
+                {browser.i18n.getMessage("displayAllLabel")} [{tagsCount.all}]
+              </option>
+              {tagsCount.auto > 0 &&
+                tagsCount.winClose > 0 &&
+                tagsCount.regular > 0 && (
+                  <option value="_auto">
+                    {browser.i18n.getMessage("displayAutoLabel")} [{tagsCount.auto}]
+                  </option>
+                )}
+              {tagsCount.winClose > 0 && (
+                <option value="winClose">
+                  {browser.i18n.getMessage("winCloseSessionName")} [{tagsCount.winClose}]
                 </option>
               )}
-            {tagsCount.winClose > 0 && (
-              <option value="winClose">
-                {browser.i18n.getMessage("winCloseSessionName")} [{tagsCount.winClose}]
-              </option>
-            )}
-            {tagsCount.regular > 0 && (
-              <option value="regular">
-                {browser.i18n.getMessage("regularSaveSessionName")} [{tagsCount.regular}]
-              </option>
-            )}
-            {tagsCount.user > 0 && (
-              <option value="_user">
-                {browser.i18n.getMessage("displayUserLabel")} [{tagsCount.user}]
-              </option>
-            )}
-            {tagsCount.tags.map((tag, index) => (
-              <option value={tag.name} key={index}>
-                {tag.name} [{tag.count}]
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="selectWrap sort">
-          <select
-            onChange={this.handleSortChange}
-            value={this.props.sortValue}
-            title={browser.i18n.getMessage("sortLabel")}
-          >
-            <option value="newest">{browser.i18n.getMessage("newestLabel")}</option>
-            <option value="oldest">{browser.i18n.getMessage("oldestLabel")}</option>
-            <option value="aToZ">{browser.i18n.getMessage("aToZLabel")}</option>
-            <option value="zToA">{browser.i18n.getMessage("zToALabel")}</option>
-          </select>
+              {tagsCount.regular > 0 && (
+                <option value="regular">
+                  {browser.i18n.getMessage("regularSaveSessionName")} [{tagsCount.regular}]
+                </option>
+              )}
+              {tagsCount.user > 0 && (
+                <option value="_user">
+                  {browser.i18n.getMessage("displayUserLabel")} [{tagsCount.user}]
+                </option>
+              )}
+              {tagsCount.tags.map((tag, index) => (
+                <option value={tag.name} key={index}>
+                  {tag.name} [{tag.count}]
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="selectWrap sort">
+            <select
+              onChange={this.handleSortChange}
+              value={this.props.sortValue}
+              title={browser.i18n.getMessage("sortLabel")}
+            >
+              <option value="newest">{browser.i18n.getMessage("newestLabel")}</option>
+              <option value="oldest">{browser.i18n.getMessage("oldestLabel")}</option>
+              <option value="aToZ">{browser.i18n.getMessage("aToZLabel")}</option>
+              <option value="zToA">{browser.i18n.getMessage("zToALabel")}</option>
+            </select>
+          </div>
         </div>
       </div>
     );

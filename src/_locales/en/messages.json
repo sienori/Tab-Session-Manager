@@ -48,6 +48,15 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "searchBarPlaceholder": {
+    "message": "Search by session name"
+  },
+  "search": {
+    "message": "Search"
+  },
+  "clearSearch": {
+    "message": "Clear search"
+  },
   "open": {
     "message": "Open"
   },
@@ -92,6 +101,9 @@
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
+  },
+  "noResultLabel": {
+    "message": "No matching results."
   },
   "menuLabel": {
     "message": "Menu"

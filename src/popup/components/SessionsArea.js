@@ -4,7 +4,7 @@ import browser from "webextension-polyfill";
 import Session from "./Session";
 import "../styles/SessionsArea.scss";
 
-const shouldShowSession = (tags, filterValue) => {
+const matchesFilter = (tags, filterValue) => {
   if (tags.includes("temp")) return false;
   switch (filterValue) {
     case "_displayAll":
@@ -16,6 +16,13 @@ const shouldShowSession = (tags, filterValue) => {
     default:
       return tags.includes(filterValue);
   }
+};
+
+const matchesSearch = (sessionName, searchWord) => {
+  if (searchWord === "") return true;
+  sessionName = sessionName.toLowerCase();
+  searchWord = searchWord.toLowerCase();
+  return sessionName.includes(searchWord);
 };
 
 const newestSort = (a, b) => b.date - a.date;
@@ -30,14 +37,16 @@ const namelessSort = (a, b) => {
   else if (a.name == b.name) return newestSort(a, b);
 };
 
-const getSortedSessions = (sessions, sortValue, filterValue) => {
+const getSortedSessions = (sessions, sortValue, filterValue, searchWord) => {
   let sortedSessions = sessions.map(session => ({
     id: session.id,
     date: session.date,
     name: session.name,
     tag: session.tag
   }));
-  sortedSessions = sortedSessions.filter(session => shouldShowSession(session.tag, filterValue));
+  sortedSessions = sortedSessions.filter(
+    session => matchesFilter(session.tag, filterValue) && matchesSearch(session.name, searchWord)
+  );
 
   switch (sortValue) {
     case "newest":
@@ -81,6 +90,7 @@ export default class SessionsArea extends Component {
       sessions,
       filterValue,
       sortValue,
+      searchWord,
       removeSession,
       getSessionDetail,
       openMenu,
@@ -88,21 +98,27 @@ export default class SessionsArea extends Component {
       error
     } = this.props;
 
-    const sortedSessions = getSortedSessions(sessions, sortValue, filterValue);
+    const sortedSessions = getSortedSessions(sessions, sortValue, filterValue, searchWord);
+
     const shouldShowNoSessionMessage =
       isInitSessions &&
       sortedSessions.length === 0 &&
       filterValue == "_displayAll" &&
+      searchWord === "" &&
       !error.isError;
+    const shouldShowNoResultMessage =
+      isInitSessions && sortedSessions.length === 0 && searchWord !== "" && !error.isError;
 
     return (
       <div id="sessionsArea" ref="sessionsArea">
         {sessions.map(
           session =>
-            shouldShowSession(session.tag, filterValue) && (
+            matchesFilter(session.tag, filterValue) &&
+            matchesSearch(session.name, searchWord) && (
               <Session
                 session={session}
                 order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
+                searchWord={searchWord}
                 removeSession={removeSession}
                 getSessionDetail={getSessionDetail}
                 openMenu={openMenu}
@@ -114,6 +130,11 @@ export default class SessionsArea extends Component {
           <div className="noSession">
             <p>{browser.i18n.getMessage("noSessionLabel")}</p>
             <p>{browser.i18n.getMessage("letsSaveLabel")}</p>
+          </div>
+        )}
+        {shouldShowNoResultMessage && (
+          <div className="noSession">
+            <p>{browser.i18n.getMessage("noResultLabel")}</p>
           </div>
         )}
       </div>

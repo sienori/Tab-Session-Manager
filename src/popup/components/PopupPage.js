@@ -8,6 +8,7 @@ import {
 } from "../actions/controlSessions";
 import Header from "./Header";
 import OptionsArea from "./OptionsArea";
+import SearchBar from "./SearchBar";
 import SessionsArea from "./SessionsArea";
 import Notification from "./Notification";
 import SaveArea from "./SaveArea";
@@ -24,6 +25,7 @@ export default class PopupPage extends Component {
       removedSession: {},
       filterValue: "_displayAll",
       sortValue: "newest",
+      searchWord: "",
       notification: {
         isOpen: false,
         message: "",
@@ -99,6 +101,10 @@ export default class PopupPage extends Component {
   changeSortValue = value => {
     this.setState({ sortValue: value });
     setSettings("sortValue", value);
+  };
+
+  changeSearchWord = searchWord => {
+    this.setState({ searchWord: searchWord.trim() });
   };
 
   getSessionDetail = async id => {
@@ -193,6 +199,7 @@ export default class PopupPage extends Component {
           sessions={this.state.sessions || []}
           filterValue={this.state.filterValue}
           sortValue={this.state.sortValue}
+          changeSearchWord={this.changeSearchWord}
           changeFilter={this.changeFilterValue}
           changeSort={this.changeSortValue}
         />
@@ -201,6 +208,7 @@ export default class PopupPage extends Component {
           sessions={this.state.sessions || []}
           filterValue={this.state.filterValue}
           sortValue={this.state.sortValue}
+          searchWord={this.state.searchWord}
           removeSession={this.removeSession}
           getSessionDetail={this.getSessionDetail}
           openMenu={this.openMenu}

@@ -33,7 +33,7 @@ export default class Session extends Component {
   };
 
   render() {
-    const { session, removeSession, order } = this.props;
+    const { session, removeSession, order, searchWord } = this.props;
     const windowLabel = browser.i18n.getMessage("windowLabel");
     const windowsLabel = browser.i18n.getMessage("windowsLabel");
     const tabLabel = browser.i18n.getMessage("tabLabel");
@@ -46,7 +46,7 @@ export default class Session extends Component {
     return (
       <div className="session" style={{ order: order }}>
         <div className="line">
-          <NameContainer session={session} />
+          <NameContainer session={session} searchWord={searchWord} />
           <button
             className="menuButton"
             onClick={this.handleMenuClick}

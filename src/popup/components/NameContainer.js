@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
+import Highlight from "react-highlighter";
 import { sendSesssionRenameMessage } from "../actions/controlSessions";
 import { getSettings } from "src/settings/settings";
 import InputForm from "./InputForm";
@@ -25,7 +26,7 @@ export default class NameContainer extends Component {
   };
 
   render() {
-    const { session } = this.props;
+    const { session, searchWord } = this.props;
     return (
       <div className={`nameContainer ${getSettings("truncateTitle") ? "isTruncate" : ""}`}>
         {this.state.isOpenedInput ? (
@@ -36,7 +37,9 @@ export default class NameContainer extends Component {
           />
         ) : (
           <button onClick={this.toggleNameInput} title={browser.i18n.getMessage("renameLabel")}>
-            <span>{session.name.trim() === "" ? "_" : session.name}</span>
+            <Highlight search={searchWord} className="sessionName">
+              {session.name.trim() === "" ? "_" : session.name}
+            </Highlight>
           </button>
         )}
       </div>
