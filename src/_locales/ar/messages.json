@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Input session name"
   },
+  "saveAllWindowsLabel": {
+    "message": "Save all windows"
+  },
   "saveOnlyCurrentWindowLabel": {
     "message": "حفظ فقط النافذة الحالية"
   },
@@ -46,6 +49,15 @@
   },
   "zToALabel": {
     "message": "ي-أ"
+  },
+  "searchBarPlaceholder": {
+    "message": "Search by session name"
+  },
+  "search": {
+    "message": "Search"
+  },
+  "clearSearch": {
+    "message": "Clear search"
   },
   "open": {
     "message": "افتح"
@@ -92,6 +104,9 @@
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
   },
+  "noResultLabel": {
+    "message": "No matching results."
+  },
   "menuLabel": {
     "message": "Menu"
   },
@@ -101,11 +116,20 @@
   "openInNewWindowLabel": {
     "message": "افتح في نافذة جديدة"
   },
+  "openInNewWindowCaptionLabel": {
+    "message": "Open the session in the new window."
+  },
   "openInCurrentWindowLabel": {
     "message": "افتح في النافذة الحالية"
   },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+  },
   "addToCurrentWindowLabel": {
     "message": "أضف للنافذة الحالية"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -269,11 +293,32 @@
   "truncateTitleCaptionLabel": {
     "message": "إذا كان اسم الدورة في قائمة جلسات العمل التي تكون أكثر من سطر واحد، يتم اقتطاع سطر واحد وعرضه."
   },
-  "toolBarPopupLabel": {
-    "message": "شريط أدوات منبثق"
+  "popupLabel": {
+    "message": "Popup"
   },
-  "toolBarPopupCaptionLabel": {
-    "message": "حدد نمط شريط الأدوات المنبثق."
+  "openButtonBehaviorLabel": {
+    "message": "Open button behavior"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "Save button behavior"
+  },
+  "saveButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "isShowSearchBarLabel": {
+    "message": "Display the search bar"
+  },
+  "isShowSearchBarCaptionLabel": {
+    "message": "Add a function to search by session name."
+  },
+  "sizeLabel": {
+    "message": "Size"
+  },
+  "popupSizeCaptionLabel": {
+    "message": "Specify the size of the popup."
   },
   "widthLabel": {
     "message": "العرض"
