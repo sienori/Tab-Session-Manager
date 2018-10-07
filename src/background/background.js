@@ -18,8 +18,9 @@ import {
 import getSessions from "./getSessions";
 import { openSession } from "./open";
 import { addTag, removeTag } from "./tag";
-import { initSettings, handleSettingsChange, getSettings } from "src/settings/settings";
+import { initSettings, handleSettingsChange } from "src/settings/settings";
 import exportSessions from "./export";
+import onInstalledListener from "./onInstalledListener";
 
 export const SessionStartTime = Date.now();
 
@@ -64,18 +65,6 @@ const init = async () => {
   addListeners();
 };
 init();
-
-const onInstalledListener = async details => {
-  if (details.reason != "install" && details.reason != "update") return;
-  await initSettings();
-  const isShowOptionsPage = getSettings("isShowOptionsPageWhenUpdated");
-  if (isShowOptionsPage) {
-    browser.tabs.create({
-      url: "options/index.html#information?action=updated",
-      active: false
-    });
-  }
-};
 
 const onMessageListener = async (request, sender, sendResponse) => {
   switch (request.message) {
