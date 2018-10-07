@@ -35,7 +35,8 @@ export default class SaveArea extends Component {
 
   saveSession = () => {
     const name = ReactDOM.findDOMNode(this.refs.input).value;
-    sendSessionSaveMessage(name);
+    const defaultBehavior = getSettings("saveButtonBehavior");
+    sendSessionSaveMessage(name, defaultBehavior);
   };
 
   openMenu = e => {
@@ -52,6 +53,18 @@ export default class SaveArea extends Component {
     const tabName = await this.getCurrentTabName();
     const input = ReactDOM.findDOMNode(this.refs.input);
     input.value = tabName;
+  };
+
+  getSaveButtonTitle = () => {
+    const defaultBehavior = getSettings("saveButtonBehavior");
+    switch (defaultBehavior) {
+      case "saveAllWindows":
+        return browser.i18n.getMessage("saveAllWindowsLabel");
+      case "saveOnlyCurrentWindow":
+        return browser.i18n.getMessage("saveOnlyCurrentWindowLabel");
+      default:
+        return "";
+    }
   };
 
   componentDidMount() {
@@ -73,7 +86,7 @@ export default class SaveArea extends Component {
           <button
             className="submitButton saveButton"
             onClick={this.saveSession}
-            title={browser.i18n.getMessage("initialNameValue")}
+            title={this.getSaveButtonTitle()}
           >
             {browser.i18n.getMessage("saveLabel")}
           </button>

@@ -18,6 +18,9 @@
   "inputSessionNameLabel": {
     "message": "Input session name"
   },
+  "saveAllWindowsLabel": {
+    "message": "Save all windows"
+  },
   "saveOnlyCurrentWindowLabel": {
     "message": "Save only current window"
   },
@@ -301,6 +304,12 @@
     "message": "Open button behavior"
   },
   "openButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "Save button behavior"
+  },
+  "saveButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
   },
   "isShowSearchBarLabel": {

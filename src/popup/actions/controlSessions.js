@@ -37,7 +37,7 @@ export const sendSessionRemoveMessage = id => {
   });
 };
 
-export const sendSessionSaveMessage = (name, property = "default") => {
+export const sendSessionSaveMessage = (name, property = "saveAllWindows") => {
   browser.runtime.sendMessage({
     message: "saveCurrentSession",
     name: name,

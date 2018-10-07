@@ -178,6 +178,30 @@ export default [
         ]
       },
       {
+        id: "saveButtonBehavior",
+        title: "saveButtonBehaviorLabel",
+        captions: ["saveButtonBehaviorCaptionLabel"],
+        type: "none",
+        default: "saveAllWindows",
+        new: true,
+        childElements: [
+          {
+            id: "saveButtonBehavior",
+            title: "saveAllWindowsLabel",
+            captions: [""],
+            type: "radio",
+            value: "saveAllWindows"
+          },
+          {
+            id: "saveButtonBehavior",
+            title: "saveOnlyCurrentWindowLabel",
+            captions: [""],
+            type: "radio",
+            value: "saveOnlyCurrentWindow"
+          }
+        ]
+      },
+      {
         id: "isShowSearchBar",
         title: "isShowSearchBarLabel",
         captions: ["isShowSearchBarCaptionLabel"],

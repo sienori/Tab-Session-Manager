@@ -47,7 +47,7 @@ export async function loadCurrentSession(name, tag, property) {
 
   let queryInfo = {};
   switch (property) {
-    case "default":
+    case "saveAllWindows":
       break;
     case "saveOnlyCurrentWindow":
       queryInfo.currentWindow = true;

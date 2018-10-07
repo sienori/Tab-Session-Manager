@@ -12,7 +12,7 @@ function startAutoSave() {
     let name = browser.i18n.getMessage("regularSaveSessionName");
     if (getSettings("useTabTitleforAutoSave")) name = await getCurrentTabName();
     const tag = ["regular"];
-    const property = "default";
+    const property = "saveAllWindows";
     saveCurrentSession(name, tag, property)
       .then(() => {
         removeOverLimit("regular");
