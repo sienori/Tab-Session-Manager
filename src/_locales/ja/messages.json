@@ -312,13 +312,13 @@
     "message": "検索バーを表示"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "セッション名で検索する機能を追加します。"
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "サイズ"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "ポップアップのサイズを指定します。"
   },
   "widthLabel": {
     "message": "幅"
