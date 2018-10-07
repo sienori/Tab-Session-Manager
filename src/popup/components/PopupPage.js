@@ -8,7 +8,6 @@ import {
 } from "../actions/controlSessions";
 import Header from "./Header";
 import OptionsArea from "./OptionsArea";
-import SearchBar from "./SearchBar";
 import SessionsArea from "./SessionsArea";
 import Notification from "./Notification";
 import SaveArea from "./SaveArea";
@@ -25,6 +24,7 @@ export default class PopupPage extends Component {
       removedSession: {},
       filterValue: "_displayAll",
       sortValue: "newest",
+      isShowSearchBar: false,
       searchWord: "",
       notification: {
         isOpen: false,
@@ -51,6 +51,11 @@ export default class PopupPage extends Component {
     await initSettings();
     document.body.style.width = `${getSettings("popupWidth")}px`;
     document.body.style.height = `${getSettings("popupHeight")}px`;
+    this.setState({
+      filterValue: getSettings("filterValue") || "_displayAll",
+      sortValue: getSettings("sortValue") || "newest",
+      isShowSearchBar: getSettings("isShowSearchBar")
+    });
 
     const isInit = await browser.runtime.sendMessage({ message: "getInitState" });
     if (!isInit) this.setState({ error: { isError: true, type: "indexedDB" } });
@@ -59,8 +64,6 @@ export default class PopupPage extends Component {
     const sessions = await getSessions(null, keys);
     this.setState({
       sessions: sessions,
-      filterValue: getSettings("filterValue") || "_displayAll",
-      sortValue: getSettings("sortValue") || "newest",
       isInitSessions: true
     });
     browser.runtime.onMessage.addListener(this.changeSessions);
@@ -199,6 +202,7 @@ export default class PopupPage extends Component {
           sessions={this.state.sessions || []}
           filterValue={this.state.filterValue}
           sortValue={this.state.sortValue}
+          isShowSearchBar={this.state.isShowSearchBar}
           changeSearchWord={this.changeSearchWord}
           changeFilter={this.changeFilterValue}
           changeSort={this.changeSortValue}

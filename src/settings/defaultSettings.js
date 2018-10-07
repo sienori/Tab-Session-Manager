@@ -154,6 +154,14 @@ export default [
     category: "popupLabel",
     elements: [
       {
+        id: "isShowSearchBar",
+        title: "isShowSearchBarLabel",
+        captions: ["isShowSearchBarCaptionLabel"],
+        type: "checkbox",
+        default: true,
+        new: true
+      },
+      {
         id: "truncateTitle",
         title: "truncateTitleLabel",
         captions: ["truncateTitleCaptionLabel"],

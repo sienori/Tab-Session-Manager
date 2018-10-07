@@ -91,7 +91,7 @@ export default class OptionsArea extends Component {
     const tagsCount = countAllTags(this.props.sessions);
     return (
       <div id="optionsArea">
-        <SearchBar changeSearchWord={this.props.changeSearchWord} />
+        {this.props.isShowSearchBar && <SearchBar changeSearchWord={this.props.changeSearchWord} />}
         <div className="line">
           <div className="selectWrap filter">
             <select

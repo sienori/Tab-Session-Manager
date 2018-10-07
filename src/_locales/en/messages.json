@@ -288,6 +288,12 @@
   "popupLabel": {
     "message": "Popup"
   },
+  "isShowSearchBarLabel": {
+    "message": "Display the search bar"
+  },
+  "isShowSearchBarCaptionLabel": {
+    "message": "Add a function to search by session name."
+  },
   "sizeLabel": {
     "message": "Size"
   },
