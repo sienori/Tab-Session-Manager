@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "セッション名を入力"
   },
+  "saveAllWindowsLabel": {
+    "message": "全てのウィンドウを保存"
+  },
   "saveOnlyCurrentWindowLabel": {
     "message": "現在のウィンドウのみを保存"
   },
@@ -46,6 +49,15 @@
   },
   "zToALabel": {
     "message": "Z-A"
+  },
+  "searchBarPlaceholder": {
+    "message": "セッション名で検索"
+  },
+  "search": {
+    "message": "検索"
+  },
+  "clearSearch": {
+    "message": "検索をクリア"
   },
   "open": {
     "message": "開く"
@@ -92,6 +104,9 @@
   "letsSaveLabel": {
     "message": "右下のボタンをクリックしてセッションを保存しましょう。"
   },
+  "noResultLabel": {
+    "message": "一致する結果はありません。"
+  },
   "menuLabel": {
     "message": "メニュー"
   },
@@ -101,11 +116,20 @@
   "openInNewWindowLabel": {
     "message": "新しいウィンドウで開く"
   },
+  "openInNewWindowCaptionLabel": {
+    "message": "新しいウィンドウでセッションを開きます。"
+  },
   "openInCurrentWindowLabel": {
     "message": "現在のウィンドウで開く"
   },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "現在のウィンドウでセッションを開きます。非アクティブのウィンドウと全てのタブは閉じられます。"
+  },
   "addToCurrentWindowLabel": {
     "message": "現在のウィンドウに追加する"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "現在のウィンドウにタブを追加します。セッションに複数のウィンドウが含まれる場合は，新しいウィンドウで開きます。"
   },
   "replaceCurrentSessionLabel": {
     "message": "現在のセッションで置き換え"
@@ -269,11 +293,32 @@
   "truncateTitleCaptionLabel": {
     "message": "セッションリストのセッション名が複数行に渡る場合，1行に切り詰めて表示します。"
   },
-  "toolBarPopupLabel": {
-    "message": "ツールバーポップアップ"
+  "popupLabel": {
+    "message": "ポップアップ"
   },
-  "toolBarPopupCaptionLabel": {
-    "message": "ツールバーポップアップのスタイルを指定します。"
+  "openButtonBehaviorLabel": {
+    "message": "開くボタンの動作"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "開くボタンの既定の動作を選択します。"
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "保存ボタンの動作"
+  },
+  "saveButtonBehaviorCaptionLabel": {
+    "message": "保存ボタンの既定の動作を選択します。"
+  },
+  "isShowSearchBarLabel": {
+    "message": "検索バーを表示"
+  },
+  "isShowSearchBarCaptionLabel": {
+    "message": "Add a function to search by session name."
+  },
+  "sizeLabel": {
+    "message": "Size"
+  },
+  "popupSizeCaptionLabel": {
+    "message": "Specify the size of the popup."
   },
   "widthLabel": {
     "message": "幅"
