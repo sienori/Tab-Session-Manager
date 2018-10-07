@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Wprowadź nazwę sesji"
   },
+  "saveAllWindowsLabel": {
+    "message": "Save all windows"
+  },
   "saveOnlyCurrentWindowLabel": {
     "message": "Zapisz jedynie otwarte okno"
   },
@@ -46,6 +49,15 @@
   },
   "zToALabel": {
     "message": "Z-A"
+  },
+  "searchBarPlaceholder": {
+    "message": "Search by session name"
+  },
+  "search": {
+    "message": "Search"
+  },
+  "clearSearch": {
+    "message": "Clear search"
   },
   "open": {
     "message": "Otwórz"
@@ -92,6 +104,9 @@
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
   },
+  "noResultLabel": {
+    "message": "No matching results."
+  },
   "menuLabel": {
     "message": "Menu"
   },
@@ -101,11 +116,20 @@
   "openInNewWindowLabel": {
     "message": "Otwórz w nowym oknie"
   },
+  "openInNewWindowCaptionLabel": {
+    "message": "Open the session in the new window."
+  },
   "openInCurrentWindowLabel": {
     "message": "Otwórz w bieżącym oknie"
   },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+  },
   "addToCurrentWindowLabel": {
     "message": "Dodaj do bieżącego okna"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "replaceCurrentSessionLabel": {
     "message": "Zastąp bieżącą sesją"
@@ -269,11 +293,32 @@
   "truncateTitleCaptionLabel": {
     "message": "Jeśli nazwa sesji na liście sesji jest dłuższa niż jedna linia, jest ona obcinana do jednej inii i wyświetlana."
   },
-  "toolBarPopupLabel": {
-    "message": "Pojawienie się narzędzia paskowego"
+  "popupLabel": {
+    "message": "Popup"
   },
-  "toolBarPopupCaptionLabel": {
-    "message": "Opisz styl pojawienia się narzędzia paskowego."
+  "openButtonBehaviorLabel": {
+    "message": "Open button behavior"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "Save button behavior"
+  },
+  "saveButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "isShowSearchBarLabel": {
+    "message": "Display the search bar"
+  },
+  "isShowSearchBarCaptionLabel": {
+    "message": "Add a function to search by session name."
+  },
+  "sizeLabel": {
+    "message": "Size"
+  },
+  "popupSizeCaptionLabel": {
+    "message": "Specify the size of the popup."
   },
   "widthLabel": {
     "message": "Szerokość"
@@ -283,6 +328,18 @@
   },
   "otherLabel": {
     "message": "Inne"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "Display option page when updating"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+  },
+  "NotificationOnUpdateLabel": {
+    "message": "Tab Session Manager has been updated!"
+  },
+  "NotificationOnUpdateCaptionLabel": {
+    "message": "Click to view update information."
   },
   "resetSettingsLabel": {
     "message": "Resetowanie ustawień"
