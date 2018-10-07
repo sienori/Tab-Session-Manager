@@ -329,6 +329,18 @@
   "otherLabel": {
     "message": "Altro"
   },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "Display option page when updating"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+  },
+  "NotificationOnUpdateLabel": {
+    "message": "Tab Session Manager has been updated!"
+  },
+  "NotificationOnUpdateCaptionLabel": {
+    "message": "Click to view update information."
+  },
   "resetSettingsLabel": {
     "message": "Ripristina impostazioni"
   },
