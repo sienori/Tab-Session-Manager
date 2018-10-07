@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "输入会话名称"
   },
+  "saveAllWindowsLabel": {
+    "message": "Save all windows"
+  },
   "saveOnlyCurrentWindowLabel": {
     "message": "仅保存此窗口"
   },
@@ -46,6 +49,15 @@
   },
   "zToALabel": {
     "message": "字母倒序"
+  },
+  "searchBarPlaceholder": {
+    "message": "Search by session name"
+  },
+  "search": {
+    "message": "Search"
+  },
+  "clearSearch": {
+    "message": "Clear search"
   },
   "open": {
     "message": "打开"
@@ -92,6 +104,9 @@
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
   },
+  "noResultLabel": {
+    "message": "No matching results."
+  },
   "menuLabel": {
     "message": "菜单"
   },
@@ -101,11 +116,20 @@
   "openInNewWindowLabel": {
     "message": "在新窗口中打开"
   },
+  "openInNewWindowCaptionLabel": {
+    "message": "Open the session in the new window."
+  },
   "openInCurrentWindowLabel": {
     "message": "在当前窗口中打开"
   },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+  },
   "addToCurrentWindowLabel": {
     "message": "添加到当前窗口"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "replaceCurrentSessionLabel": {
     "message": "使用当前会话替换此会话"
@@ -269,11 +293,32 @@
   "truncateTitleCaptionLabel": {
     "message": "如果会话名称长度超过一行，则不显示超出的部分。"
   },
-  "toolBarPopupLabel": {
-    "message": "工具栏窗口"
+  "popupLabel": {
+    "message": "Popup"
   },
-  "toolBarPopupCaptionLabel": {
-    "message": "设置工具栏窗口样式。"
+  "openButtonBehaviorLabel": {
+    "message": "Open button behavior"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "Save button behavior"
+  },
+  "saveButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "isShowSearchBarLabel": {
+    "message": "Display the search bar"
+  },
+  "isShowSearchBarCaptionLabel": {
+    "message": "Add a function to search by session name."
+  },
+  "sizeLabel": {
+    "message": "Size"
+  },
+  "popupSizeCaptionLabel": {
+    "message": "Specify the size of the popup."
   },
   "widthLabel": {
     "message": "宽度"
@@ -283,6 +328,18 @@
   },
   "otherLabel": {
     "message": "其它"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "Display option page when updating"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+  },
+  "NotificationOnUpdateLabel": {
+    "message": "Tab Session Manager has been updated!"
+  },
+  "NotificationOnUpdateCaptionLabel": {
+    "message": "Click to view update information."
   },
   "resetSettingsLabel": {
     "message": "恢复默认设置"
