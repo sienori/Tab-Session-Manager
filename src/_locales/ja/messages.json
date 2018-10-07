@@ -198,7 +198,7 @@
     "message": "セッションを開いたときにウィンドウの位置とサイズを復元します。"
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "起動時に前回のセッションを復元"
+    "message": "起動時に前回のセッションを復元する"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
     "message": "ブラウザ起動時に，最後に開いていたセッションを開きます。"
@@ -309,7 +309,7 @@
     "message": "保存ボタンの既定の動作を選択します。"
   },
   "isShowSearchBarLabel": {
-    "message": "検索バーを表示"
+    "message": "検索バーを表示する"
   },
   "isShowSearchBarCaptionLabel": {
     "message": "セッション名で検索する機能を追加します。"
@@ -328,6 +328,18 @@
   },
   "otherLabel": {
     "message": "その他"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "更新時にオプションページを表示する"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Tab Session Managerが更新されたときにオプションページを表示します。更新内容をすぐに知ることができます。"
+  },
+  "NotificationOnUpdateLabel": {
+    "message": "Tab Session Managerが更新されました！"
+  },
+  "NotificationOnUpdateCaptionLabel": {
+    "message": "クリックすると更新情報を表示します。"
   },
   "resetSettingsLabel": {
     "message": "設定をリセット"
