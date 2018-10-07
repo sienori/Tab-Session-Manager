@@ -44,8 +44,8 @@
 }
 
 /*new, updated*/
-.new p:nth-child(1)::after,
-.updated p:nth-child(1)::after {
+.new > .optionElement p:nth-child(1)::after,
+.updated > .optionElement p:nth-child(1)::after {
   color: var(--new);
   font-size: 14px;
   border: 1px solid var(--new);
@@ -53,10 +53,10 @@
   padding: 0px 5px;
   margin-left: 5px;
 }
-.updated p:nth-child(1)::after {
+.updated > .optionElement p:nth-child(1)::after {
   content: "Updated";
 }
-.new p:nth-child(1)::after {
+.new > .optionElement p:nth-child(1)::after {
   content: "New";
 }
 
