@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "セッション名を入力"
   },
+  "saveAllWindowsLabel": {
+    "message": "全てのウィンドウを保存"
+  },
   "saveOnlyCurrentWindowLabel": {
     "message": "現在のウィンドウのみを保存"
   },
@@ -46,6 +49,15 @@
   },
   "zToALabel": {
     "message": "Z-A"
+  },
+  "searchBarPlaceholder": {
+    "message": "セッション名で検索"
+  },
+  "search": {
+    "message": "検索"
+  },
+  "clearSearch": {
+    "message": "検索をクリア"
   },
   "open": {
     "message": "開く"
@@ -92,6 +104,9 @@
   "letsSaveLabel": {
     "message": "右下のボタンをクリックしてセッションを保存しましょう。"
   },
+  "noResultLabel": {
+    "message": "一致する結果はありません。"
+  },
   "menuLabel": {
     "message": "メニュー"
   },
@@ -101,11 +116,20 @@
   "openInNewWindowLabel": {
     "message": "新しいウィンドウで開く"
   },
+  "openInNewWindowCaptionLabel": {
+    "message": "新しいウィンドウでセッションを開きます。"
+  },
   "openInCurrentWindowLabel": {
     "message": "現在のウィンドウで開く"
   },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "現在のウィンドウでセッションを開きます。非アクティブのウィンドウと全てのタブは閉じられます。"
+  },
   "addToCurrentWindowLabel": {
     "message": "現在のウィンドウに追加する"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "現在のウィンドウにタブを追加します。セッションに複数のウィンドウが含まれる場合は，新しいウィンドウで開きます。"
   },
   "replaceCurrentSessionLabel": {
     "message": "現在のセッションで置き換え"
@@ -174,7 +198,7 @@
     "message": "セッションを開いたときにウィンドウの位置とサイズを復元します。"
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "起動時に前回のセッションを復元"
+    "message": "起動時に前回のセッションを復元する"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
     "message": "ブラウザ起動時に，最後に開いていたセッションを開きます。"
@@ -269,11 +293,32 @@
   "truncateTitleCaptionLabel": {
     "message": "セッションリストのセッション名が複数行に渡る場合，1行に切り詰めて表示します。"
   },
-  "toolBarPopupLabel": {
-    "message": "ツールバーポップアップ"
+  "popupLabel": {
+    "message": "ポップアップ"
   },
-  "toolBarPopupCaptionLabel": {
-    "message": "ツールバーポップアップのスタイルを指定します。"
+  "openButtonBehaviorLabel": {
+    "message": "開くボタンの動作"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "開くボタンの既定の動作を選択します。"
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "保存ボタンの動作"
+  },
+  "saveButtonBehaviorCaptionLabel": {
+    "message": "保存ボタンの既定の動作を選択します。"
+  },
+  "isShowSearchBarLabel": {
+    "message": "検索バーを表示する"
+  },
+  "isShowSearchBarCaptionLabel": {
+    "message": "セッション名で検索する機能を追加します。"
+  },
+  "sizeLabel": {
+    "message": "サイズ"
+  },
+  "popupSizeCaptionLabel": {
+    "message": "ポップアップのサイズを指定します。"
   },
   "widthLabel": {
     "message": "幅"
@@ -283,6 +328,18 @@
   },
   "otherLabel": {
     "message": "その他"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "更新時にオプションページを表示する"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Tab Session Managerが更新されたときにオプションページを表示します。更新内容をすぐに知ることができます。"
+  },
+  "NotificationOnUpdateLabel": {
+    "message": "Tab Session Managerが更新されました！"
+  },
+  "NotificationOnUpdateCaptionLabel": {
+    "message": "クリックすると更新情報を表示します。"
   },
   "resetSettingsLabel": {
     "message": "設定をリセット"

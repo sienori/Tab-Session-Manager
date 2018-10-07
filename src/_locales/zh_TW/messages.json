@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "輸入瀏覽階段名稱"
   },
+  "saveAllWindowsLabel": {
+    "message": "Save all windows"
+  },
   "saveOnlyCurrentWindowLabel": {
     "message": "僅儲存目前視窗"
   },
@@ -47,6 +50,15 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "searchBarPlaceholder": {
+    "message": "Search by session name"
+  },
+  "search": {
+    "message": "Search"
+  },
+  "clearSearch": {
+    "message": "Clear search"
+  },
   "open": {
     "message": "開啟"
   },
@@ -57,7 +69,7 @@
     "message": "確定要刪除此瀏覽階段？"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "此瀏覽階段已被刪除。"
   },
   "restoreSessionLabel": {
     "message": "還原"
@@ -87,10 +99,13 @@
     "message": "分頁"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "沒有已儲存的瀏覽階段。"
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "點選右下角按鈕以儲存瀏覽階段。"
+  },
+  "noResultLabel": {
+    "message": "No matching results."
   },
   "menuLabel": {
     "message": "選單"
@@ -101,11 +116,20 @@
   "openInNewWindowLabel": {
     "message": "在新視窗中開啟"
   },
+  "openInNewWindowCaptionLabel": {
+    "message": "Open the session in the new window."
+  },
   "openInCurrentWindowLabel": {
     "message": "在目前視窗中開啟"
   },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+  },
   "addToCurrentWindowLabel": {
     "message": "新增至目前視窗"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "replaceCurrentSessionLabel": {
     "message": "使用目前瀏覽階段取代此瀏覽階段"
@@ -126,7 +150,7 @@
     "message": "如何解決這個問題"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "無法同時開啟多個彈出式視窗。"
   },
   "winCloseSessionName": {
     "message": "自動儲存 - 視窗關閉"
@@ -177,7 +201,7 @@
     "message": "啟動時還原上次開啟的瀏覽階段"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "當瀏覽器啟動時，還原上次開啟的瀏覽階段。"
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
@@ -201,7 +225,7 @@
     "message": "關閉視窗時儲存瀏覽階段"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "在關閉視窗或是結束瀏覽器時儲存瀏覽階段。"
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "最大儲存數量"
@@ -222,13 +246,13 @@
     "message": "儲存備份"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "當瀏覽器啟動時，建立瀏覽階段的備份檔並儲存於下載資料夾中。"
   },
   "backupFolderLabel": {
     "message": "儲存位置"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "指定儲存備份檔的位置。儲存位置僅限於瀏覽器下載資料夾中。"
   },
   "downloadFolderLabel": {
     "message": "下載資料夾"
@@ -269,11 +293,32 @@
   "truncateTitleCaptionLabel": {
     "message": "如果瀏覽階段名稱長度超過單行範圍，截斷為單行顯示。"
   },
-  "toolBarPopupLabel": {
-    "message": "工具列彈出式選單"
+  "popupLabel": {
+    "message": "Popup"
   },
-  "toolBarPopupCaptionLabel": {
-    "message": "指定工具列彈出式選單的樣式。"
+  "openButtonBehaviorLabel": {
+    "message": "Open button behavior"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "Save button behavior"
+  },
+  "saveButtonBehaviorCaptionLabel": {
+    "message": "Select the default behavior of the open button."
+  },
+  "isShowSearchBarLabel": {
+    "message": "Display the search bar"
+  },
+  "isShowSearchBarCaptionLabel": {
+    "message": "Add a function to search by session name."
+  },
+  "sizeLabel": {
+    "message": "Size"
+  },
+  "popupSizeCaptionLabel": {
+    "message": "Specify the size of the popup."
   },
   "widthLabel": {
     "message": "寬度"
@@ -283,6 +328,18 @@
   },
   "otherLabel": {
     "message": "其他"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "Display option page when updating"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+  },
+  "NotificationOnUpdateLabel": {
+    "message": "Tab Session Manager has been updated!"
+  },
+  "NotificationOnUpdateCaptionLabel": {
+    "message": "Click to view update information."
   },
   "resetSettingsLabel": {
     "message": "重設設定"
@@ -345,10 +402,10 @@
     "message": "贊助我 amazon 電子禮品卡"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "附加元件說明頁面"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Chrome 應用程式商店頁面"
   },
   "importMessage": {
     "message": "已匯入瀏覽階段。"
