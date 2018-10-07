@@ -47,6 +47,14 @@ export default [
             default: 150
           }
         ]
+      },
+      {
+        id: "dateFormat",
+        title: "dateFormatLabel",
+        captions: ["dateFormatCaptionLabel"],
+        type: "text",
+        placeholder: "YYYY.MM.DD HH:mm:ss",
+        default: "YYYY.MM.DD HH:mm:ss"
       }
     ]
   },
@@ -145,14 +153,6 @@ export default [
   {
     category: "popupLabel",
     elements: [
-      {
-        id: "dateFormat",
-        title: "dateFormatLabel",
-        captions: ["dateFormatCaptionLabel"],
-        type: "text",
-        placeholder: "YYYY.MM.DD HH:mm:ss",
-        default: "YYYY.MM.DD HH:mm:ss"
-      },
       {
         id: "truncateTitle",
         title: "truncateTitleLabel",
