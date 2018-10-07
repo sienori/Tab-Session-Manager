@@ -71,7 +71,7 @@ export default props => {
             name={id}
             value={props.value}
             onChange={handleValueChange}
-            defaultValue={getSettings(id)}
+            defaultChecked={props.value === getSettings(id) ? "checked" : ""}
           />
           <span className="radio" />
         </label>
