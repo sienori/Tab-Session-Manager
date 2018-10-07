@@ -4,16 +4,16 @@ import { IsOpeningSession } from "./open.js";
 
 export function returnReplaceParameter(url) {
   let parameter = {};
-  if (url.indexOf(browser.runtime.getURL("replaced/index.html")) === 0) {
-    parameter.isReplaced = true;
+  parameter.isReplaced =
+    url.includes(browser.runtime.getURL("replaced/index.html")) ||
+    url.includes(browser.runtime.getURL("replaced/replaced.html"));
+
+  if (parameter.isReplaced) {
     let paras = url.split("?")[1].split("&");
     for (let p of paras) {
       parameter[p.split("=")[0]] = decodeURIComponent(p.split("=")[1]);
     }
-  } else {
-    parameter.isReplaced = false;
   }
-
   return parameter;
 }
 

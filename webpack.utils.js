@@ -26,6 +26,12 @@ const getHTMLPlugins = (browserDir, outputDir = "dev", sourceDir = "src") => [
     filename: path.resolve(__dirname, `${outputDir}/${browserDir}/replaced/index.html`),
     template: `${sourceDir}/replaced/index.html`,
     chunks: ["replaced"]
+  }),
+  new HtmlWebpackPlugin({
+    title: "Replaced",
+    filename: path.resolve(__dirname, `${outputDir}/${browserDir}/replaced/replaced.html`),
+    template: `${sourceDir}/replaced/index.html`,
+    chunks: ["replaced"]
   })
 ];
 
