@@ -3,6 +3,7 @@ import browser from "webextension-polyfill";
 import { initSettings, resetAllSettings } from "src/settings/settings";
 import defaultSettings from "src/settings/defaultSettings";
 import CategoryContainer from "./CategoryContainer";
+import OptionContainer from "./OptionContainer";
 
 export default class SettingsPage extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ export default class SettingsPage extends Component {
         {defaultSettings.map((category, index) => (
           <CategoryContainer {...category} key={index} />
         ))}
-        <CategoryContainer {...otherCategory} />
+        <CategoryContainer {...additionalCategory} />
       </ul>
     );
 
@@ -38,8 +39,8 @@ export default class SettingsPage extends Component {
   }
 }
 
-const otherCategory = {
-  category: "otherLabel",
+const additionalCategory = {
+  category: "",
   elements: [
     {
       id: "resetSettings",

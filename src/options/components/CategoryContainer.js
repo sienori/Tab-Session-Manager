@@ -7,7 +7,7 @@ export default props => {
   const { category, elements } = props;
   return (
     <li className="categoryContainer">
-      <p className="categoryTitle">{browser.i18n.getMessage(category)}</p>
+      <p className="categoryTitle">{category !== "" ? browser.i18n.getMessage(category) : ""}</p>
       <ul className="categoryElements">
         {elements.map((option, index) => (
           <div key={index}>

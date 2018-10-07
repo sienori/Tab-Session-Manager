@@ -18,7 +18,7 @@ import {
 import getSessions from "./getSessions";
 import { openSession } from "./open";
 import { addTag, removeTag } from "./tag";
-import { initSettings, handleSettingsChange } from "src/settings/settings";
+import { initSettings, handleSettingsChange, getSettings } from "src/settings/settings";
 import exportSessions from "./export";
 
 export const SessionStartTime = Date.now();
@@ -65,14 +65,16 @@ const init = async () => {
 };
 init();
 
-const onInstalledListener = details => {
+const onInstalledListener = async details => {
   if (details.reason != "install" && details.reason != "update") return;
-
-  //初回起動時にオプションページを表示して設定を初期化
-  browser.tabs.create({
-    url: "options/index.html#information?action=updated",
-    active: false
-  });
+  await initSettings();
+  const isShowOptionsPage = getSettings("isShowOptionsPageWhenUpdated");
+  if (isShowOptionsPage) {
+    browser.tabs.create({
+      url: "options/index.html#information?action=updated",
+      active: false
+    });
+  }
 };
 
 const onMessageListener = async (request, sender, sendResponse) => {

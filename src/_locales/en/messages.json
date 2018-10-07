@@ -333,6 +333,12 @@
   "otherLabel": {
     "message": "Other"
   },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "Display option page when updating"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+  },
   "resetSettingsLabel": {
     "message": "Reset settings"
   },

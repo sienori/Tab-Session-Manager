@@ -244,5 +244,18 @@ export default [
         ]
       }
     ]
+  },
+  {
+    category: "otherLabel",
+    elements: [
+      {
+        id: "isShowOptionsPageWhenUpdated",
+        title: "isShowOptionsPageWhenUpdatedLabel",
+        captions: ["isShowOptionsPageWhenUpdatedCaptionLabel"],
+        type: "checkbox",
+        default: true,
+        new: true
+      }
+    ]
   }
 ];
