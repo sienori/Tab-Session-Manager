@@ -143,7 +143,7 @@ export default [
     ]
   },
   {
-    category: "styleLabel",
+    category: "popupLabel",
     elements: [
       {
         id: "dateFormat",
@@ -161,8 +161,8 @@ export default [
         default: true
       },
       {
-        title: "toolBarPopupLabel",
-        captions: ["toolBarPopupCaptionLabel"],
+        title: "sizeLabel",
+        captions: ["popupSizeCaptionLabel"],
         type: "none",
         childElements: [
           {
