@@ -3,13 +3,6 @@ export default [
     category: "generalLabel",
     elements: [
       {
-        id: "ifOpenNewWindow",
-        title: "ifOpenNewWindowLabel",
-        captions: ["ifOpenNewWindowCaptionLabel"],
-        type: "checkbox",
-        default: true
-      },
-      {
         id: "ifLazyLoading",
         title: "ifLazyLoadingLabel",
         captions: ["ifLazyLoadingCaptionLabel"],
