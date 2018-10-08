@@ -123,13 +123,13 @@
     "message": "在目前視窗中開啟"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "在目前視窗中開啟瀏覽階段。非使用中視窗和所有分頁都已關閉。"
   },
   "addToCurrentWindowLabel": {
     "message": "新增至目前視窗"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "將分頁新增至目前視窗。 如果瀏覽階段包含多個視窗，請在新視窗中將其開啟。"
   },
   "replaceCurrentSessionLabel": {
     "message": "使用目前瀏覽階段取代此瀏覽階段"
@@ -297,28 +297,28 @@
     "message": "彈出式視窗"
   },
   "openButtonBehaviorLabel": {
-    "message": "開啟按鈕行為"
+    "message": "開啟按鈕動作"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "選擇開啟按鈕的預設動作。"
   },
   "saveButtonBehaviorLabel": {
-    "message": "儲存按鈕行為"
+    "message": "儲存按鈕動作"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "選擇開啟按鈕的預設動作。"
   },
   "isShowSearchBarLabel": {
     "message": "顯示搜尋列"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "新增搜尋瀏覽階段功能。"
   },
   "sizeLabel": {
     "message": "大小"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "指定彈出式選單的大小。"
   },
   "widthLabel": {
     "message": "寬度"
@@ -330,10 +330,10 @@
     "message": "其他"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "更新時顯示選項頁面"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "更新 Tab Session Manager 時顯示選項頁面。讓您可以快速瞭解更新內容。"
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager 已更新！"
