@@ -18,7 +18,7 @@
     "message": "输入会话名称"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "保存所有窗口"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "仅保存此窗口"
@@ -51,13 +51,13 @@
     "message": "字母倒序"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "按会话名称搜索"
   },
   "search": {
-    "message": "Search"
+    "message": "搜索"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "清除搜索"
   },
   "open": {
     "message": "打开"
@@ -69,7 +69,7 @@
     "message": "是否删除此会话？"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "会话已被删除"
   },
   "restoreSessionLabel": {
     "message": "还原"
@@ -117,7 +117,7 @@
     "message": "在新窗口中打开"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "在新窗口中打开会话"
   },
   "openInCurrentWindowLabel": {
     "message": "在当前窗口中打开"
@@ -297,13 +297,13 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "打开按钮行为"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "选择打开按钮的默认行为"
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "保存按钮行为"
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
@@ -336,10 +336,10 @@
     "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager 已更新！"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "点击查看更新信息"
   },
   "resetSettingsLabel": {
     "message": "恢复默认设置"
@@ -402,10 +402,10 @@
     "message": "amazon.co.jp 电子礼品卡"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "附加组件页面"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "扩展页面"
   },
   "importMessage": {
     "message": "导入会话"
