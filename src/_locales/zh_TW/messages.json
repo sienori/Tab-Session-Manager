@@ -18,7 +18,7 @@
     "message": "輸入瀏覽階段名稱"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "儲存所有視窗"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "僅儲存目前視窗"
@@ -54,10 +54,10 @@
     "message": "Search by session name"
   },
   "search": {
-    "message": "Search"
+    "message": "搜尋"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "清除搜尋"
   },
   "open": {
     "message": "開啟"
@@ -315,7 +315,7 @@
     "message": "Add a function to search by session name."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "大小"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
