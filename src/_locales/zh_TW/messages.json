@@ -303,7 +303,7 @@
     "message": "Select the default behavior of the open button."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "儲存按鈕行為"
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
@@ -336,10 +336,10 @@
     "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager 已更新！"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "點選檢視更新資訊"
   },
   "resetSettingsLabel": {
     "message": "重設設定"
