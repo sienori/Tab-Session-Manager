@@ -51,7 +51,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "搜尋瀏覽階段名稱"
   },
   "search": {
     "message": "搜尋"
@@ -105,7 +105,7 @@
     "message": "點選右下角按鈕以儲存瀏覽階段。"
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "沒有符合的結果。"
   },
   "menuLabel": {
     "message": "選單"
@@ -117,7 +117,7 @@
     "message": "在新視窗中開啟"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "於新視窗中開啟瀏覽階段。"
   },
   "openInCurrentWindowLabel": {
     "message": "在目前視窗中開啟"
@@ -294,10 +294,10 @@
     "message": "如果瀏覽階段名稱長度超過單行範圍，截斷為單行顯示。"
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "彈出式視窗"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "開啟按鈕行為"
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
@@ -309,7 +309,7 @@
     "message": "Select the default behavior of the open button."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "顯示搜尋列"
   },
   "isShowSearchBarCaptionLabel": {
     "message": "Add a function to search by session name."
