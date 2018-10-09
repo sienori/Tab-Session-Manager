@@ -306,7 +306,7 @@
     "message": "Поведение на бутона за запазване"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Избор на поведение по подразбиране за бутона за запазване."
+    "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
     "message": "Показване на лентата за търсене"
@@ -339,7 +339,7 @@
     "message": "Tab Session Manager беше обновен!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Щракнете, за да видите информация по обновяване."
+    "message": "Щракнете, за да видите информацията по обновяването."
   },
   "resetSettingsLabel": {
     "message": "Възстановяване на настройки"
