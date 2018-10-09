@@ -9,7 +9,7 @@ about: Create a report to help me improve
 
 ## Steps to reproduce
 <!-- Detailed steps to reproduce the problem. -->
-1. Start Firefox with clean profile
+1. Start browser with clean profile
 2. Install Tab Session Manager
 3. 
 4. 
@@ -22,7 +22,7 @@ about: Create a report to help me improve
 
 ## Platform information
 * Platform (OS): 
-* Version of Firefox: 
+* Version of browser: 
 * Version of Tab Session Manager: 
 
 ## Additional context
