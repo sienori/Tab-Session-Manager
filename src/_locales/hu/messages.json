@@ -300,25 +300,25 @@
     "message": "Megnyitás gomb viselkedése"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Megnyitás gomb alapértelmezett viselkedésének kiválasztása."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Megnyitás gomb viselkedése"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Megnyitás gomb alapértelmezett viselkedésének kiválasztása."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Keresősáv megjelenítése"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Munkamenet neve lapján való keresés funkció hozzáadása."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Méret"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Felugró ablak méretének megadása."
   },
   "widthLabel": {
     "message": "Szélesség"
@@ -330,16 +330,16 @@
     "message": "Egyéb"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Beállítás oldal megjelenítése frissítéskor"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Beállítások oldal megjelenítése amikor Tab Session Manager frissült. Így gyorsan áttekinthető a frissítés tartalma."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager frissítve!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Kattintás a frissítés információ megtekintéséhez."
   },
   "resetSettingsLabel": {
     "message": "Alapbeállítások használata"
@@ -402,10 +402,10 @@
     "message": "amazon.co.jp elektronikus ajándék kártya"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Kiegészítő oldala"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Kiegészítő oldala"
   },
   "importMessage": {
     "message": "Munkamenetek importálva."
