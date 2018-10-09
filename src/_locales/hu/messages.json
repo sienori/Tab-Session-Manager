@@ -306,7 +306,7 @@
     "message": "Megnyitás gomb viselkedése"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Megnyitás gomb alapértelmezett viselkedésének kiválasztása."
+    "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
     "message": "Keresősáv megjelenítése"
