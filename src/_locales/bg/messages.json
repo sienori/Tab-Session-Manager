@@ -330,16 +330,16 @@
     "message": "Други"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Показване на страницата с настройки при обновяване"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Показване на страницата с настройки, когато Tab Session Manager е обновен. Можете бързо да научите за новите неща."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager беше обновен!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Щракнете, за да видите информация по обновяване."
   },
   "resetSettingsLabel": {
     "message": "Възстановяване на настройки"
