@@ -129,7 +129,7 @@
     "message": "Добавяне в текущият прозорец"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Добавяне на раздели към текущият прозорец. Ако сесията съдържа множество прозорци, те ще се отворят в новият прозорец."
   },
   "replaceCurrentSessionLabel": {
     "message": "Замяна с текущата сесия"
@@ -294,31 +294,31 @@
     "message": "Ако името на сесия в списъка е на повече редове, то ще бъде съкратено и показано на един ред."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Изскачащо меню"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Поведение на бутона за отваряне"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Избор на поведение по подразбиране за бутона за отваряне."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Поведение на бутона за запазване"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Избор на поведение по подразбиране за бутона за запазване."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Показване на лентата за търсене"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Добавяне на функция за търсене по име на сесия."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Размер"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Задаване на размери за изскачащото меню."
   },
   "widthLabel": {
     "message": "Ширина"
