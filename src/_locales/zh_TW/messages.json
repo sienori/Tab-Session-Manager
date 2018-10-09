@@ -306,7 +306,7 @@
     "message": "儲存按鈕動作"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "選擇開啟按鈕的預設動作。"
+    "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
     "message": "顯示搜尋列"
