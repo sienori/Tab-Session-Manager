@@ -18,7 +18,7 @@
     "message": "Име на сесията"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Запазване на всички прозорци"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Запазване само на текущият прозорец"
@@ -51,13 +51,13 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Търсене по име на сесия"
   },
   "search": {
-    "message": "Search"
+    "message": "Търсене"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Изчистване на търсенето"
   },
   "open": {
     "message": "Отваряне"
@@ -105,7 +105,7 @@
     "message": "Запазване на сесията чрез щракване върху долният десен бутон."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Няма съвпадащи резултати."
   },
   "menuLabel": {
     "message": "Меню"
@@ -117,13 +117,13 @@
     "message": "Отваряне в нов прозорец"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Отваряне на сесията в нов прозорец."
   },
   "openInCurrentWindowLabel": {
     "message": "Отваряне в текущият прозорец"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Отваряне на сесията в текущият прозорец. Неактивните прозорци и всички раздели се затварят."
   },
   "addToCurrentWindowLabel": {
     "message": "Добавяне в текущият прозорец"
