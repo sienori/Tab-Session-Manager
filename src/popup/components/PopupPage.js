@@ -52,7 +52,6 @@ export default class PopupPage extends Component {
     document.body.style.width = `${getSettings("popupWidth")}px`;
     document.body.style.height = `${getSettings("popupHeight")}px`;
     this.setState({
-      filterValue: getSettings("filterValue") || "_displayAll",
       sortValue: getSettings("sortValue") || "newest",
       isShowSearchBar: getSettings("isShowSearchBar")
     });
@@ -64,7 +63,8 @@ export default class PopupPage extends Component {
     const sessions = await getSessions(null, keys);
     this.setState({
       sessions: sessions,
-      isInitSessions: true
+      isInitSessions: true,
+      filterValue: getSettings("filterValue") || "_displayAll"
     });
     browser.runtime.onMessage.addListener(this.changeSessions);
   };
