@@ -145,24 +145,13 @@ let tabList = {};
 //実際にタブを開く
 function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
   return new Promise(async function(resolve, reject) {
-    const property = session.windows[win][tab];
-    let createOption = {
-      active: property.active,
-      index: property.index,
-      pinned: property.pinned,
-      url: property.url,
-      windowId: currentWindow.id
-    };
+	// Create a shallow copy. This will take all properties into account and should also be ready for all upcomming properties.
+    let createOption = session.windows[win][tab].slice();
+	createOption.windowId = currentWindow.id;
 
+	// As we have a copy with all properties we do not need to do all browser specific checks
     //cookieStoreId
-    if (browserInfo().name == "Firefox") {
-      createOption.cookieStoreId = property.cookieStoreId;
-
-      //現在のウィンドウと開かれるタブのプライベート情報に不整合があるときはウィンドウに従う
-      if (currentWindow.incognito) delete createOption.cookieStoreId;
-      if (!currentWindow.incognito && property.cookieStoreId == "firefox-private")
-        delete createOption.cookieStoreId;
-    }
+    if (currentWindow.incognito || createOption.cookieStoreId == "firefox-private") delete createOption.cookieStoreId;
 
     //タブをindexの最後に開く
     if (isOpenToLastIndex) {
@@ -181,7 +170,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     //Tree Style Tab
     let openDelay = 0;
     if (getSettings("ifSupportTst") && isEnabledOpenerTabId) {
-      createOption.openerTabId = tabList[property.openerTabId];
+      createOption.openerTabId = tabList[createOption.openerTabId];
       openDelay = getSettings("tstDelay");
     }
 
@@ -189,34 +178,34 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     if (getSettings("ifLazyLoading")) {
       createOption.url = returnReplaceURL(
         "redirect",
-        property.title,
-        property.url,
-        property.favIconUrl
+        createOption.title,
+        createOption.url,
+        createOption.favIconUrl
       );
     }
 
     //Reader mode
-    if (!getSettings("ifLazyLoading") && property.url.substr(0, 17) == "about:reader?url=") {
+    if (!getSettings("ifLazyLoading") && createOption.url.substr(0, 17) == "about:reader?url=") {
       createOption.openInReaderMode = true;
-      createOption.url = decodeURIComponent(property.url.substr(17));
+      createOption.url = decodeURIComponent(createOption.url.substr(17));
     }
 
     //about:newtabを置き換え
-    if (property.url == "about:newtab") {
+    if (createOption.url == "about:newtab") {
       createOption.url = null;
     }
 
     const tryOpen = async () => {
       try {
         const newTab = await browser.tabs.create(createOption);
-        tabList[property.id] = newTab.id;
+        tabList[createOption.id] = newTab.id;
         resolve();
       } catch (e) {
         createOption.url = returnReplaceURL(
           "open_faild",
-          property.title,
-          property.url,
-          property.favIconUrl
+          createOption.title,
+          createOption.url,
+          createOption.favIconUrl
         );
         await browser.tabs.create(createOption).catch(() => resolve());
         resolve();
