@@ -105,7 +105,7 @@
     "message": "Let's save the session by clicking the lower right button."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "没有符合条件的结果。"
   },
   "menuLabel": {
     "message": "菜单"
@@ -294,7 +294,7 @@
     "message": "如果会话名称长度超过一行，则不显示超出的部分。"
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "弹出面板"
   },
   "openButtonBehaviorLabel": {
     "message": "打开按钮行为"
@@ -306,19 +306,19 @@
     "message": "保存按钮行为"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "选择保存按钮的默认行为。"
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "显示搜索栏"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "开启按会话名搜索的功能。"
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "大小"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "设置弹出面板大小。"
   },
   "widthLabel": {
     "message": "宽度"
@@ -330,10 +330,10 @@
     "message": "其它"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "更新时显示选项页面"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Tab Session Manager 更新后显示选项页面从而快速了解更新内容。"
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager 已更新！"
