@@ -300,13 +300,13 @@
     "message": "開啟按鈕動作"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "選擇開啟按鈕的預設動作。"
+    "message": "選擇「開啟」按鈕的預設動作。"
   },
   "saveButtonBehaviorLabel": {
     "message": "儲存按鈕動作"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "選擇「儲存」按鈕的預設動作。"
   },
   "isShowSearchBarLabel": {
     "message": "顯示搜尋列"
