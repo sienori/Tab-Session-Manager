@@ -105,7 +105,7 @@
     "message": "Let's save the session by clicking the lower right button."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Aucun résultat."
   },
   "menuLabel": {
     "message": "Menu"
@@ -117,13 +117,13 @@
     "message": "Ouvrir dans une nouvelle fenêtre"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Ouvrir la session dans une nouvelle fenêtre."
   },
   "openInCurrentWindowLabel": {
     "message": "Ouvrir dans la fenêtre actuelle"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Ouvrir la session dans la fenêtre actuelle."
   },
   "addToCurrentWindowLabel": {
     "message": "Ajouter à la fenêtre en cours"
@@ -225,7 +225,7 @@
     "message": "Enregistrer la session à la fermeture d'une fenêtre"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Enregistrer la session lors de la fermeture de la fenêtre ou lorsque vous fermez le navigateur."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Nombre maximum enregistrées"
@@ -294,7 +294,7 @@
     "message": "Si le nom d'une session dans la liste de sessions s’étend sur plusieurs lignes, il sera tronqué pour être affiché sur une seule ligne."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Pop-up"
   },
   "openButtonBehaviorLabel": {
     "message": "Comportement du bouton Ouvrir"
@@ -318,7 +318,7 @@
     "message": "Dimensions"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Spécifier la taille de la fenêtre pop-up."
   },
   "widthLabel": {
     "message": "Largeur"
@@ -330,7 +330,7 @@
     "message": "Autre"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Afficher la page options après une mise à jour"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
     "message": "Afficher la page options après une mise à jour de Tab Session Manager. Vous êtes ainsi tenu au courant du contenu de la mise à jour."
@@ -339,7 +339,7 @@
     "message": "Tab Session Manager a été mise à jour !"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Cliquez ici pour afficher des informations sur la mise à jour."
   },
   "resetSettingsLabel": {
     "message": "Réinitialiser les paramètres"
@@ -396,16 +396,16 @@
     "message": "Faites un don"
   },
   "donationCaptionLabel": {
-    "message": "Merci d’utiliser Tab Session Manager. <br>Votre soutien sera un grand encouragement, car je continue de développer l’extension. <br> Si vous aimez Session Manager, je serais heureux si vous pouviez envisager de faire un don."
+    "message": "Merci d’utiliser Tab Session Manager.<br>Votre soutien sera un grand encouragement, car je continue de développer l’extension. <br>Si vous aimez Session Manager, je serais heureux si vous pouviez envisager de faire un don."
   },
   "amazonTitleLabel": {
     "message": "Cartes Cadeaux (amazon.co.jp)"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Page de l'extension"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Page de l'extension"
   },
   "importMessage": {
     "message": "Sessions importées."
