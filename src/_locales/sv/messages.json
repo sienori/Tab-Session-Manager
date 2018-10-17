@@ -18,7 +18,7 @@
     "message": "Namnge sessionen"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Spara alla fönster"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Spara endast aktuellt fönster"
@@ -51,13 +51,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Sök efter sessionsnamn"
   },
   "search": {
-    "message": "Search"
+    "message": "Sök"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Rensa sök"
   },
   "open": {
     "message": "Öppna"
@@ -69,7 +69,7 @@
     "message": "Ta bort sessionen?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Sessionen har tagits bort."
   },
   "restoreSessionLabel": {
     "message": "Återställ"
@@ -99,10 +99,10 @@
     "message": "Flikar"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Det finns ingen session."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Spara sessionen genom att trycka på den nedre högra knappen."
   },
   "noResultLabel": {
     "message": "No matching results."
@@ -117,7 +117,7 @@
     "message": "Öppna i nytt fönster"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Öppna sessionen i ett nytt fönster."
   },
   "openInCurrentWindowLabel": {
     "message": "Öppna i aktuellt fönster"
@@ -300,7 +300,7 @@
     "message": "Open button behavior"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Välj standardbeteendet på öppnaknappen."
   },
   "saveButtonBehaviorLabel": {
     "message": "Save button behavior"
@@ -315,7 +315,7 @@
     "message": "Add a function to search by session name."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Storlek"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
@@ -402,7 +402,7 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Tilläggssida"
   },
   "extensionPageLabel": {
     "message": "Extension page"
