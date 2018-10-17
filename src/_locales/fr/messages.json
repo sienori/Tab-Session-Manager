@@ -102,7 +102,7 @@
     "message": "Il n’y a pas de session."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Enregistrez la session en cliquant sur le bouton en bas à droite."
   },
   "noResultLabel": {
     "message": "Aucun résultat."
@@ -246,7 +246,7 @@
     "message": "Enregistrer la sauvegarde"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Lorsque le navigateur démarre, créer un fichier de sauvegarde des sessions et l'enregistrer dans le dossier des téléchargements."
   },
   "backupFolderLabel": {
     "message": "Emplacement de la sauvegarde"
