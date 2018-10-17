@@ -18,7 +18,7 @@
     "message": "Munkamenet neve"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Minden ablak mentése"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Csak a jelenlegi ablak mentése"
@@ -51,13 +51,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Munkamenet név alapján keresés"
   },
   "search": {
-    "message": "Search"
+    "message": "Keresés"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Keresés törlése"
   },
   "open": {
     "message": "Megnyit"
@@ -69,7 +69,7 @@
     "message": "Törli ezt a munkamenetet?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Munkamenet törölve."
   },
   "restoreSessionLabel": {
     "message": "Visszaállítás"
@@ -99,13 +99,13 @@
     "message": "Fül"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Nincs munkamenet."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Mentsük el a munkamenetet a jobb alsó gombra kattintva."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Nincs találat."
   },
   "menuLabel": {
     "message": "Menü"
@@ -117,25 +117,25 @@
     "message": "Megnyitás új ablakban"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "A munkamenet megnyitása új ablakban."
   },
   "openInCurrentWindowLabel": {
     "message": "Megnyitás jelenlegi ablakban"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Munkamenet megnyitása jelenlegi ablakban. Inaktív ablakok és minden fül bezáródik."
   },
   "addToCurrentWindowLabel": {
     "message": "Jelenlegi ablakhoz hozzáadás"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Fülek a jelenlegi ablakhoz adása. Ha a munkamenetben több ablak is van, új ablakban nyílnak meg."
   },
   "replaceCurrentSessionLabel": {
     "message": "Aktuális munkamenettel lecserél"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Jelenlegi ablakkal való lecserélés"
   },
   "makeCopySessionLabel": {
     "message": "Másolatot készítése a munkamenetről"
@@ -150,7 +150,7 @@
     "message": "Hogyan lehet megoldani ezt a problémát"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Egyszerre csak egy felugró ablak nyitható meg."
   },
   "winCloseSessionName": {
     "message": "Automatikusan mentett - Ablak be lett zárva"
@@ -201,7 +201,7 @@
     "message": "Előző munkamenet visszaállítása induláskor"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Amikor a böngésző indul, az előző munkamenet visszaállítása."
   },
   "ifAutoSaveLabel": {
     "message": "Munkamenet rendszeres mentése"
@@ -225,7 +225,7 @@
     "message": "Munkamenet mentése ha az ablakot bezárták"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Munkamenet mentése ablak bezárásakor és böngészőből való kilépéskor."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Elmentettek maximális száma"
@@ -246,13 +246,13 @@
     "message": "Biztonsági másolat mentése"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Amikor a böngésző indul, munkamenetekről biztonsági mentés létrehozása és a Letöltések mappába mentése."
   },
   "backupFolderLabel": {
     "message": "Mentés helye"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "A letöltési mappa megadása. A letöltési mappa a böngésző letöltési mappájának almappája kell hogy legyen."
   },
   "downloadFolderLabel": {
     "message": "Letöltési könyvtár"
@@ -279,7 +279,7 @@
     "message": "Fa struktúrájú fülek (Tree Style Tab) támogatása"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "A Tree Style Tab fa állapotának visszaállítása.<br>Amikor ez a beállítás engedélyezett, több időbe telhet a munkamenet visszaállítása."
   },
   "tstDelayLabel": {
     "message": "Késleltetés fa helyreállításnál (ezredmásodperc)"
@@ -294,31 +294,31 @@
     "message": "Munkamenet név méretre vágása a munkamenet listában, ha kilógna a sorából."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Felugró ablak"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Megnyitás gomb viselkedése"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Megnyitás gomb alapértelmezett viselkedésének kiválasztása."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Megnyitás gomb viselkedése"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Keresősáv megjelenítése"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Munkamenet neve lapján való keresés funkció hozzáadása."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Méret"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Felugró ablak méretének megadása."
   },
   "widthLabel": {
     "message": "Szélesség"
@@ -330,16 +330,16 @@
     "message": "Egyéb"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Beállítás oldal megjelenítése frissítéskor"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Beállítások oldal megjelenítése amikor Tab Session Manager frissült. Így gyorsan áttekinthető a frissítés tartalma."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager frissítve!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Kattintás a frissítés információ megtekintéséhez."
   },
   "resetSettingsLabel": {
     "message": "Alapbeállítások használata"
@@ -402,10 +402,10 @@
     "message": "amazon.co.jp elektronikus ajándék kártya"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Kiegészítő oldala"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Kiegészítő oldala"
   },
   "importMessage": {
     "message": "Munkamenetek importálva."
