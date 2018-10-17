@@ -6,7 +6,7 @@
   "description": "__MSG_extDescription__",
   "default_locale": "en",
 
-  "permissions": ["storage", "tabs", "cookies", "downloads", "notifications"],
+  "permissions": ["storage", "tabs", "cookies", "downloads"],
 
   "options_ui": {
     "page": "options/index.html",
