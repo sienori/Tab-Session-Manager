@@ -279,7 +279,7 @@
     "message": "Prendre en charge Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Restaurer l’état de l’arborescence de Tree Style Tab<br>Lorsque cette option est activée, il faut plus de temps pour rétablir la session."
   },
   "tstDelayLabel": {
     "message": "Délais de rétablissement de l'arborescence (millisecondes)"
@@ -297,25 +297,25 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Comportement du bouton Ouvrir"
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Comportement du bouton Enregistrer"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Sélectionnez le comportement par défaut du bouton Enregistrer."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Afficher la barre de recherche"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Ajoute une fonction de recherche par nom de session."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Dimensions"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
@@ -333,10 +333,10 @@
     "message": "Display option page when updating"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Afficher la page options après une mise à jour de Tab Session Manager. Vous êtes ainsi tenu au courant du contenu de la mise à jour."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager a été mise à jour !"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Click to view update information."
