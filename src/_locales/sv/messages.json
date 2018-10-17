@@ -297,19 +297,19 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Öppna knappbeteende"
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Välj standardbeteendet på öppnaknappen."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Spara knappbeteende"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Välj standardbeteendet på sparaknappen."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Visa sökfältet"
   },
   "isShowSearchBarCaptionLabel": {
     "message": "Add a function to search by session name."
@@ -339,7 +339,7 @@
     "message": "Tab Session Manager has been updated!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Tryck för att visa uppdateringsinformationen."
   },
   "resetSettingsLabel": {
     "message": "Återställ inställningarna"
