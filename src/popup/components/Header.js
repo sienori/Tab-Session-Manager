@@ -1,6 +1,7 @@
 import React from "react";
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
+import { getSettings, setSettings } from "src/settings/settings";
 import openUrl from "../actions/openUrl";
 import HeartIcon from "../icons/heart.svg";
 import SettingsIcon from "../icons/settings.svg";
@@ -14,7 +15,13 @@ const openPayPal = () => {
   openUrl(url);
 };
 const openSettings = () => {
-  browser.runtime.openOptionsPage();
+  let url = "../options/index.html#settings";
+
+  if (getSettings("isShowUpdated")) {
+    url = "../options/index.html#information?action=updated";
+    setSettings("isShowUpdated", false);
+  }
+  openUrl(url);
 };
 
 export default () => (
@@ -29,7 +36,7 @@ export default () => (
         <HeartIcon />
       </button>
       <button
-        className="settingsButton"
+        className={`settingsButton ${getSettings("isShowUpdated") ? "showUpdated" : ""}`}
         onClick={openSettings}
         title={browser.i18n.getMessage("settingsLabel")}
       >
