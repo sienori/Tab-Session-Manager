@@ -105,7 +105,7 @@
     "message": "Spara sessionen genom att trycka på den nedre högra knappen."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Inga matchande resultat."
   },
   "menuLabel": {
     "message": "Meny"
@@ -123,13 +123,13 @@
     "message": "Öppna i aktuellt fönster"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Öppna sessionen i aktuellt fönster. Inaktiva fönster och alla flikar är stängda."
   },
   "addToCurrentWindowLabel": {
     "message": "Lägg till aktuellt fönster"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Lägg till flikar i aktuellt fönster. Om sessionen innehåller flera fönster, öppna det i ett nytt fönster."
   },
   "replaceCurrentSessionLabel": {
     "message": "Ersätt med den aktuella sessionen"
@@ -252,7 +252,7 @@
     "message": "Spara plats"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Ange mappen där säkerhetskopieringsfilen ska sparas."
   },
   "downloadFolderLabel": {
     "message": "Filhämtningsmapp"
