@@ -201,7 +201,7 @@
     "message": "Återställ föregående session vid uppstart"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "När webbläsaren startas, återställ sessionen som stängdes förra gången."
   },
   "ifAutoSaveLabel": {
     "message": "Spara sessionen regelbundet"
@@ -225,7 +225,7 @@
     "message": "Spara sessionen när fönstret stängs"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Spara sessionen när fönstret stängs eller när webbläsaren avslutas."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximalt antal sparade"
@@ -246,13 +246,13 @@
     "message": "Spara säkerhetskopia"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "När webbläsaren startas, skapa en säkerhetskopia av sessionen i nerladdningsmappen."
   },
   "backupFolderLabel": {
     "message": "Spara plats"
   },
   "backupFolderCaptionLabel": {
-    "message": "Ange mappen där säkerhetskopieringsfilen ska sparas."
+    "message": "Ange mappen där säkerhetskopian ska sparas."
   },
   "downloadFolderLabel": {
     "message": "Filhämtningsmapp"
@@ -336,7 +336,7 @@
     "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager har uppdaterats!"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Tryck för att visa uppdateringsinformationen."
