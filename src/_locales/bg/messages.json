@@ -18,7 +18,7 @@
     "message": "Име на сесията"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Запазване на всички прозорци"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Запазване само на текущият прозорец"
@@ -51,13 +51,13 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Търсене по име на сесия"
   },
   "search": {
-    "message": "Search"
+    "message": "Търсене"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Изчистване на търсенето"
   },
   "open": {
     "message": "Отваряне"
@@ -105,7 +105,7 @@
     "message": "Запазване на сесията чрез щракване върху долният десен бутон."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Няма съвпадащи резултати."
   },
   "menuLabel": {
     "message": "Меню"
@@ -117,19 +117,19 @@
     "message": "Отваряне в нов прозорец"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Отваряне на сесията в нов прозорец."
   },
   "openInCurrentWindowLabel": {
     "message": "Отваряне в текущият прозорец"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Отваряне на сесията в текущият прозорец. Неактивните прозорци и всички раздели се затварят."
   },
   "addToCurrentWindowLabel": {
     "message": "Добавяне в текущият прозорец"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Добавяне на раздели към текущият прозорец. Ако сесията съдържа множество прозорци, те ще се отворят в новият прозорец."
   },
   "replaceCurrentSessionLabel": {
     "message": "Замяна с текущата сесия"
@@ -294,31 +294,31 @@
     "message": "Ако името на сесия в списъка е на повече редове, то ще бъде съкратено и показано на един ред."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Изскачащо меню"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Поведение на бутона за отваряне"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Избор на поведение по подразбиране за бутона за отваряне."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Поведение на бутона за запазване"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Избор на поведение по подразбиране за бутона за запазване."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Показване на лентата за търсене"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Добавяне на функция за търсене по име на сесия."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Размер"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Задаване на размери за изскачащото меню."
   },
   "widthLabel": {
     "message": "Ширина"
@@ -330,16 +330,16 @@
     "message": "Други"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Показване на страницата с настройки при обновяване"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Показване на страницата с настройки, когато Tab Session Manager е обновен. Можете бързо да научите за новите неща."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager беше обновен!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Щракнете, за да видите информацията по обновяването."
   },
   "resetSettingsLabel": {
     "message": "Възстановяване на настройки"
