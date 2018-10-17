@@ -306,7 +306,7 @@
     "message": "Save button behavior"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
     "message": "Display the search bar"

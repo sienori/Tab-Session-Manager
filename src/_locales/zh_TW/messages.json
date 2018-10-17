@@ -18,7 +18,7 @@
     "message": "輸入瀏覽階段名稱"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "儲存所有視窗"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "僅儲存目前視窗"
@@ -51,13 +51,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "搜尋瀏覽階段名稱"
   },
   "search": {
-    "message": "Search"
+    "message": "搜尋"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "清除搜尋"
   },
   "open": {
     "message": "開啟"
@@ -105,7 +105,7 @@
     "message": "點選右下角按鈕以儲存瀏覽階段。"
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "沒有符合的結果。"
   },
   "menuLabel": {
     "message": "選單"
@@ -117,19 +117,19 @@
     "message": "在新視窗中開啟"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "於新視窗中開啟瀏覽階段。"
   },
   "openInCurrentWindowLabel": {
     "message": "在目前視窗中開啟"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "在目前視窗中開啟瀏覽階段。非使用中視窗和所有分頁都已關閉。"
   },
   "addToCurrentWindowLabel": {
     "message": "新增至目前視窗"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "將分頁新增至目前視窗。 如果瀏覽階段包含多個視窗，請在新視窗中將其開啟。"
   },
   "replaceCurrentSessionLabel": {
     "message": "使用目前瀏覽階段取代此瀏覽階段"
@@ -294,31 +294,31 @@
     "message": "如果瀏覽階段名稱長度超過單行範圍，截斷為單行顯示。"
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "彈出式視窗"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "開啟按鈕動作"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "選擇「開啟」按鈕的預設動作。"
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "儲存按鈕動作"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "選擇「儲存」按鈕的預設動作。"
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "顯示搜尋列"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "新增搜尋瀏覽階段功能。"
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "大小"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "指定彈出式選單的大小。"
   },
   "widthLabel": {
     "message": "寬度"
@@ -330,16 +330,16 @@
     "message": "其他"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "更新時顯示選項頁面"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "更新 Tab Session Manager 時顯示選項頁面。讓您可以快速瞭解更新內容。"
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager 已更新！"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "點選檢視更新資訊"
   },
   "resetSettingsLabel": {
     "message": "重設設定"
