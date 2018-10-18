@@ -225,7 +225,7 @@
     "message": "Sitzung speichern, falls Fenster geschlossen wird"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Sitzung speichern, wenn der Browser oder das Fenster geschlossen wird."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximal gespeicherte Anzahl"
@@ -309,7 +309,7 @@
     "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Suchleiste anzeigen"
   },
   "isShowSearchBarCaptionLabel": {
     "message": "Add a function to search by session name."
@@ -318,7 +318,7 @@
     "message": "Größe"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Geben Sie die Größe des Popups an."
   },
   "widthLabel": {
     "message": "Breite"
@@ -336,10 +336,10 @@
     "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager wurde aktualisiert!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Update-Informationen anzeigen."
   },
   "resetSettingsLabel": {
     "message": "Einstellungen zurücksetzen"
