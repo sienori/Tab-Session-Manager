@@ -330,10 +330,10 @@
     "message": "Annat"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Visa alternativsidan efter uppdatering"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Visa alternativsidan när Tab Session Manager är uppdaterad. Du ser vad som är nytt mycket snabbare."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager har uppdaterats!"
