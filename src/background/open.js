@@ -166,16 +166,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
 
     //タブをindexの最後に開く
     if (isOpenToLastIndex) {
-      const getLastIndex = new Promise((resolve, reject) => {
-        browser.tabs
-          .query({
-            currentWindow: true
-          })
-          .then(tabs => {
-            resolve(tabs.length);
-          });
-      });
-      createOption.index = await getLastIndex;
+      createOption.index += currentWindow.tabs.length;
     }
 
     //Tree Style Tab
