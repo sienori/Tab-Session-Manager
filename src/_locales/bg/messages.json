@@ -33,10 +33,10 @@
     "message": "Всички"
   },
   "displayUserLabel": {
-    "message": "Потребителски"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Автоматично запазени"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "Най-нови"
@@ -153,10 +153,13 @@
     "message": "Множество изскачащи прозорци не могат да бъдат отворяни в същото време."
   },
   "winCloseSessionName": {
-    "message": "Авто запазени - при затваряне на прозорец"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Авто запазени - редовно"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
     "message": "Настройки"
@@ -190,6 +193,15 @@
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "При отваряне на сесия, съдържанието на всяка страница се зарежда, когато се избере раздела.<br>Ако не е отметнато, възстановяването на сесията увеличава използваната памет."
+  },
+  "isUseDiscardedLabel": {
+    "message": "Use the \"discarded\" property for lazy loading"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Enabling this option will improve performance when opening tabs."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Възстановяване позицията на прозорците"
@@ -225,13 +237,25 @@
     "message": "Запазване на сесията при затваряне на прозореца"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Запазване на сесията при затваряне на прозореца или при изход от браузъра."
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимален брой запазени"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Максимален брой запазени сесии (по този начин)."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Използване заглавието на страница за име на автоматично запазена сесия"
