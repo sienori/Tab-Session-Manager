@@ -24,10 +24,21 @@ export default class TagsContainer extends Component {
     this.setState({ isOpenedInput: isOpenedInput });
   };
 
+  getTagLabel = tag => {
+    switch (tag) {
+      case "regular":
+        return browser.i18n.getMessage("regularSaveSessionName");
+      case "winClose":
+        return browser.i18n.getMessage("winCloseSessionName");
+      case "browserExit":
+        return browser.i18n.getMessage("browserExitSessionName");
+      default:
+        return tag;
+    }
+  };
+
   render() {
     const { session } = this.props;
-    const regularLabel = browser.i18n.getMessage("regularSaveSessionName");
-    const winCloseLabel = browser.i18n.getMessage("winCloseSessionName");
     return (
       <div className="tagsContainer">
         <div
@@ -49,9 +60,7 @@ export default class TagsContainer extends Component {
         </div>
         {session.tag.map((tag, index) => (
           <div className="tag" key={index}>
-            <span>
-              {tag === "regular" ? regularLabel : tag === "winClose" ? winCloseLabel : tag}
-            </span>
+            <span>{this.getTagLabel(tag)}</span>
             <button
               className="removeTagButton"
               onClick={() => {

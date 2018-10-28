@@ -5,6 +5,7 @@ import {
   handleTabUpdated,
   handleTabRemoved,
   autoSaveWhenWindowClose,
+  autoSaveWhenExitBrowser,
   setUpdateTempTimer,
   openLastSession,
   removeDuplicateTemp
@@ -56,9 +57,9 @@ const init = async () => {
   IsInit = true;
   await updateOldSessions();
 
-  autoSaveWhenClose.saveWinClose().then(() => {
-    autoSaveWhenClose.openLastSession();
-    autoSaveWhenClose.removeDuplicateTemp();
+  autoSaveWhenExitBrowser().then(() => {
+    openLastSession();
+    removeDuplicateTemp();
   });
 
   setAutoSave();

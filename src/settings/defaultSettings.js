@@ -114,6 +114,25 @@ export default [
         ]
       },
       {
+        id: "ifAutoSaveWhenExitBrowser",
+        title: "ifAutoSaveWhenExitBrowserLabel",
+        captions: ["ifAutoSaveWhenExitBrowserCaptionLabel"],
+        type: "checkbox",
+        default: true,
+        new: true,
+        childElements: [
+          {
+            id: "autoSaveWhenExitBrowserLimit",
+            title: "autoSaveWhenExitBrowserLimitLabel",
+            captions: ["autoSaveWhenExitBrowserCaptionLabel"],
+            type: "number",
+            min: 1,
+            placeholder: 10,
+            default: 10
+          }
+        ]
+      },
+      {
         id: "useTabTitleforAutoSave",
         title: "useTabTitleforAutoSaveLabel",
         captions: ["useTabTitleforAutoSaveCaptionLabel"],

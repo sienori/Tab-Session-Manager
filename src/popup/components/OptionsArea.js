@@ -15,6 +15,7 @@ const countAllTags = sessions => {
     auto: 0,
     regular: 0,
     winClose: 0,
+    browserExit: 0,
     tags: []
   };
 
@@ -32,12 +33,15 @@ const countAllTags = sessions => {
     } else if (tags.includes("winClose")) {
       count.auto++;
       count.winClose++;
+    } else if (tags.includes("browserExit")) {
+      count.auto++;
+      count.browserExit++;
     } else {
       count.user++;
     }
 
     for (const tag of tags) {
-      if (tag == "regular" || tag == "winClose" || tag == "") continue;
+      if (tag == "regular" || tag == "winClose" || tag == "browserExit" || tag == "") continue;
       tagsCount[tag] = tagsCount[tag] || 0;
       tagsCount[tag]++;
     }
@@ -63,6 +67,7 @@ const isHitFilter = (filterValue, tagsCount) => {
     case "_user":
       return tagsCount.user > 0;
     case "winClose":
+    case "browserExit":
     case "regular":
       return tagsCount[filterValue] > 0;
     default:
@@ -104,6 +109,7 @@ export default class OptionsArea extends Component {
               </option>
               {tagsCount.auto > 0 &&
                 tagsCount.winClose > 0 &&
+                tagsCount.browserExit > 0 &&
                 tagsCount.regular > 0 && (
                   <option value="_auto">
                     {browser.i18n.getMessage("displayAutoLabel")} [{tagsCount.auto}]
@@ -112,6 +118,11 @@ export default class OptionsArea extends Component {
               {tagsCount.winClose > 0 && (
                 <option value="winClose">
                   {browser.i18n.getMessage("winCloseSessionName")} [{tagsCount.winClose}]
+                </option>
+              )}
+              {tagsCount.browserExit > 0 && (
+                <option value="browserExit">
+                  {browser.i18n.getMessage("browserExitSessionName")} [{tagsCount.browserExit}]
                 </option>
               )}
               {tagsCount.regular > 0 && (

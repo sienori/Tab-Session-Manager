@@ -103,9 +103,20 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
   removeOverLimit("winClose");
 };
 
+export const autoSaveWhenExitBrowser = async () => {
+  if (!getSettings("ifAutoSaveWhenExitBrowser")) return;
 
+  const tempSessions = await getSessionsByTag("temp");
+  if (!tempSessions[0]) return;
 
+  let session = tempSessions[0];
+  session.tag = ["browserExit"];
+  session.id = uuidv4();
 
+  await saveSession(session);
+  removeOverLimit("browserExit");
+  setUpdateTempTimer();
+};
 
 export const openLastSession = async () => {
   if (!getSettings("ifOpenLastSessionWhenStartUp")) return;
@@ -134,8 +145,17 @@ export const removeDuplicateTemp = async () => {
 
 async function removeOverLimit(tagState) {
   let limit;
-  if (tagState == "regular") limit = getSettings("autoSaveLimit");
-  else if (tagState == "winClose") limit = parseInt(getSettings("autoSaveWhenCloseLimit"));
+  switch (tagState) {
+    case "regular":
+      limit = getSettings("autoSaveLimit");
+      break;
+    case "winClose":
+      limit = getSettings("autoSaveWhenCloseLimit");
+      break;
+    case "browserExit":
+      limit = getSettings("autoSaveWhenExitBrowserLimit");
+      break;
+  }
 
   const autoSavedArray = await getSessionsByTag(tagState, ["id", "tag", "date"]);
 

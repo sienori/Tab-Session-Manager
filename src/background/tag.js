@@ -18,12 +18,14 @@ export async function addTag(id, tag) {
   const reservedTag = [
     "regular",
     "winClose",
+    "browserExit",
     "temp",
     "_displayAll",
     "_user",
     "_auto",
     browser.i18n.getMessage("regularSaveSessionName"),
-    browser.i18n.getMessage("winCloseSessionName")
+    browser.i18n.getMessage("winCloseSessionName"),
+    browser.i18n.getMessage("browserExitSessionName")
   ];
   const currentTags = session.tag;
   if (!reservedTag.every(isNotEqual)) return;

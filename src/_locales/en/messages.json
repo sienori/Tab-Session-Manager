@@ -34,10 +34,10 @@
     "message": "All"
   },
   "displayUserLabel": {
-    "message": "User Saved"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Saved"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "Newest"
@@ -155,10 +155,13 @@
   },
 
   "winCloseSessionName": {
-    "message": "Auto Saved - Window was closed"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Auto Saved - Regularly"
+    "message": "Auto Save - Regularly"
   },
 
   "settingsLabel": {
@@ -238,12 +241,24 @@
     "message": "Save the session when window was closed"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximum number Saved"
   },
   "autoSaveWhenCloseCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
     "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
