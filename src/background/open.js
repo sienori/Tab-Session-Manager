@@ -91,7 +91,6 @@ const isEnabledOpenerTabId =
 const isEnabledDiscarded = browserInfo().name == "Firefox" && browserInfo().version >= 63;
 const isEnabledOpenInReaderMode = browserInfo().name == "Firefox" && browserInfo().version >= 58;
 
-export let IsOpeningSession = false;
 //ウィンドウとタブを閉じてcurrentWindowを返す
 async function removeNowOpenTabs() {
   const currentTabs = await browser.tabs.query({ currentWindow: true });
@@ -113,7 +112,6 @@ async function removeNowOpenTabs() {
 
 //現在のウィンドウにタブを生成
 async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = false) {
-  IsOpeningSession = true;
   let sortedTabs = [];
 
   for (let tab in session.windows[win]) {
@@ -137,7 +135,6 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
     }
     if (tabNumber == sortedTabs.length) {
       await openedTab;
-      IsOpeningSession = false;
       replacePage(currentWindow.id);
     }
   }

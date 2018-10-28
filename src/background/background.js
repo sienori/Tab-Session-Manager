@@ -1,7 +1,14 @@
 import browser from "webextension-polyfill";
 import updateOldSessions from "./updateOldSessions";
-import { AutoSaveWhenClose, setAutoSave } from "./autoSave";
-const autoSaveWhenClose = new AutoSaveWhenClose();
+import {
+  setAutoSave,
+  handleTabUpdated,
+  handleTabRemoved,
+  autoSaveWhenWindowClose,
+  setUpdateTempTimer,
+  openLastSession,
+  removeDuplicateTemp
+} from "./autoSave";
 import Sessions from "./sessions";
 import { replacePage } from "./replace";
 import importSessions from "./import";
@@ -34,18 +41,12 @@ const addListeners = () => {
     setAutoSave(changes, areaName);
   });
 
-  setTimeout(() => {
-    browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) =>
-      autoSaveWhenClose.handleTabUpdate(tabId, changeInfo, tab)
-    );
-    browser.tabs.onRemoved.addListener((tabId, removeInfo) =>
-      autoSaveWhenClose.handleTabRemoved(tabId, removeInfo)
-    );
-    browser.tabs.onCreated.addListener(() => autoSaveWhenClose.updateTemp());
-    browser.windows.onCreated.addListener(() => autoSaveWhenClose.updateTemp());
+  browser.tabs.onUpdated.addListener(handleTabUpdated);
+  browser.tabs.onRemoved.addListener(handleTabRemoved);
+  browser.tabs.onCreated.addListener(setUpdateTempTimer);
+  browser.windows.onCreated.addListener(setUpdateTempTimer);
 
-    browser.windows.onRemoved.addListener(() => autoSaveWhenClose.saveWinClose());
-  }, 10000);
+  browser.windows.onRemoved.addListener(autoSaveWhenWindowClose);
 };
 
 let IsInit = false;

@@ -1,6 +1,6 @@
 import browser from "webextension-polyfill";
 import uuidv4 from "uuid/v4";
-import { IsOpeningSession, openSession } from "./open.js";
+import { openSession } from "./open.js";
 import { getSessionsByTag } from "./tag.js";
 import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
@@ -46,92 +46,91 @@ function isChangeAutoSaveSettings(changes, areaName) {
   );
 }
 
-export class AutoSaveWhenClose {
-  constructor() {
-    this.LastUpdateTime = 0;
-  }
+const updateTemp = async () => {
+  let name = browser.i18n.getMessage("winCloseSessionName");
+  if (getSettings("useTabTitleforAutoSave")) name = await getCurrentTabName();
 
-  //タブが1500ms以内に再度更新された場合は無視
-  handleTabUpdate(tabId, changeInfo, tab) {
-    if (changeInfo.status != "complete") return;
+  let session = await loadCurrentSession(name, ["temp"], "default");
+  let tempSessions = await getSessionsByTag("temp");
 
-    const currentUpdateTime = Date.now();
-    if (currentUpdateTime - this.LastUpdateTime < 1500) {
-      this.LastUpdateTime = currentUpdateTime;
-      return;
-    }
-    this.LastUpdateTime = currentUpdateTime;
-    this.updateTemp();
-  }
+  //現在のセッションをtempとして保存
+  if (tempSessions[0]) session.id = tempSessions[0].id;
+  await saveSession(session, false);
+};
 
-  //ウィンドウが閉じられた時に発生するTabs.onRemovedを無視
-  handleTabRemoved(tabId, removeInfo) {
-    if (!removeInfo.isWindowClosing) this.updateTemp();
-  }
+let updateTempTimer;
+export const setUpdateTempTimer = () => {
+  if (
+    !getSettings("ifAutoSaveWhenClose") &&
+    !getSettings("ifAutoSaveWhenExitBrowser") &&
+    !getSettings("ifOpenLastSessionWhenStartUp")
+  )
+    return;
 
-  async updateTemp() {
-    if (
-      IsOpeningSession ||
-      (!getSettings("ifAutoSaveWhenClose") && !getSettings("ifOpenLastSessionWhenStartUp"))
-    )
-      return;
+  clearTimeout(updateTempTimer);
+  updateTempTimer = setTimeout(updateTemp, 1500);
+};
 
-    let name = browser.i18n.getMessage("winCloseSessionName");
-    if (getSettings("useTabTitleforAutoSave")) name = await getCurrentTabName();
+export const handleTabUpdated = (tabId, changeInfo, tab) => {
+  if (changeInfo.status != "complete") return;
+  setUpdateTempTimer();
+};
 
-    let session = await loadCurrentSession(name, ["temp"], "default");
-    let tempSessions = await getSessionsByTag("temp");
+export const handleTabRemoved = (tabId, removeInfo) => {
+  if (removeInfo.isWindowClosing) return;
+  setUpdateTempTimer();
+};
 
-    //現在のセッションをtempとして保存
-    if (tempSessions[0]) session.id = tempSessions[0].id;
-    await saveSession(session, false);
-  }
+export const autoSaveWhenWindowClose = async removedWindowId => {
+  if (!getSettings("ifAutoSaveWhenClose")) return;
 
-  async saveWinClose() {
-    if (
-      IsOpeningSession ||
-      (!getSettings("ifAutoSaveWhenClose") && !getSettings("ifOpenLastSessionWhenStartUp"))
-    )
-      return;
+  const tempSessions = await getSessionsByTag("temp");
+  if (!tempSessions[0]) return;
 
-    let tempSessions = await getSessionsByTag("temp");
-    if (!tempSessions[0]) return;
-
-    //tempをwinCloseとして保存
-    tempSessions[0].tag = ["winClose"];
-    tempSessions[0].id = uuidv4();
-    await saveSession(tempSessions[0]);
-
-    removeOverLimit("winClose");
-
-    this.updateTemp();
-  }
-
-  async openLastSession() {
-    if (!getSettings("ifOpenLastSessionWhenStartUp")) return;
-
-    const currentWindows = await browser.windows.getAll();
-    const winCloseSessions = await getSessionsByTag("winClose");
-    await openSession(winCloseSessions[0], "openInNewWindow");
-
-    for (const window of currentWindows) {
-      await browser.windows.remove(window.id);
+  let session = tempSessions[0];
+  for (const windowId in session.windows) {
+    if (windowId != removedWindowId) {
+      delete session.windows[windowId];
+      delete session.windowsInfo[windowId];
     }
   }
+  session.tag = ["winClose"];
+  session.id = uuidv4();
+  session.windowsNumber = 1;
+  session.tabsNumber = Object.keys(session.windows[removedWindowId]).length;
 
-  async removeDuplicateTemp() {
-    const tempSessions = await getSessionsByTag("temp");
+  await saveSession(session);
+  removeOverLimit("winClose");
+};
 
-    let isFirst = true;
-    for (let tempSession of tempSessions) {
-      if (isFirst) {
-        isFirst = false;
-        continue;
-      }
-      removeSession(tempSession.id, false);
-    }
+
+
+
+
+export const openLastSession = async () => {
+  if (!getSettings("ifOpenLastSessionWhenStartUp")) return;
+
+  const currentWindows = await browser.windows.getAll();
+  const winCloseSessions = await getSessionsByTag("browserExit");
+  await openSession(winCloseSessions[0], "openInNewWindow");
+
+  for (const window of currentWindows) {
+    await browser.windows.remove(window.id);
   }
-}
+};
+
+export const removeDuplicateTemp = async () => {
+  const tempSessions = await getSessionsByTag("temp");
+
+  let isFirst = true;
+  for (let tempSession of tempSessions) {
+    if (isFirst) {
+      isFirst = false;
+      continue;
+    }
+    removeSession(tempSession.id, false);
+  }
+};
 
 async function removeOverLimit(tagState) {
   let limit;
