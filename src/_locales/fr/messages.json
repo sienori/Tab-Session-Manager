@@ -18,7 +18,7 @@
     "message": "Renseignez le nom de session"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Enregistrer toutes les fenêtres"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Enregistrer uniquement la fenêtre active"
@@ -33,10 +33,10 @@
     "message": "Toutes"
   },
   "displayUserLabel": {
-    "message": "Enregistrées par l'utilisateur"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Enregistrées automatiquement"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "Plus récentes"
@@ -51,13 +51,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Rechercher par nom de session"
   },
   "search": {
-    "message": "Search"
+    "message": "Rechercher"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Effacer la recherche"
   },
   "open": {
     "message": "Ouvrir"
@@ -69,7 +69,7 @@
     "message": "Supprimer cette session ?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "La session a été supprimée."
   },
   "restoreSessionLabel": {
     "message": "Restaurer"
@@ -99,13 +99,13 @@
     "message": "onglets"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Il n’y a pas de session."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Enregistrez la session en cliquant sur le bouton en bas à droite."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Aucun résultat."
   },
   "menuLabel": {
     "message": "Menu"
@@ -117,13 +117,13 @@
     "message": "Ouvrir dans une nouvelle fenêtre"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Ouvrir la session dans une nouvelle fenêtre."
   },
   "openInCurrentWindowLabel": {
     "message": "Ouvrir dans la fenêtre actuelle"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Ouvrir la session dans la fenêtre actuelle."
   },
   "addToCurrentWindowLabel": {
     "message": "Ajouter à la fenêtre en cours"
@@ -153,10 +153,13 @@
     "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "Auto - À la fermeture d'une fenêtre"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Auto - Sauvegardes régulières"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
     "message": "Paramètres"
@@ -190,6 +193,15 @@
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet.<br>Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsqu'une session est restaurée."
+  },
+  "isUseDiscardedLabel": {
+    "message": "Use the \"discarded\" property for lazy loading"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Enabling this option will improve performance when opening tabs."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Rétablir la position de la fenêtre"
@@ -225,13 +237,25 @@
     "message": "Enregistrer la session à la fermeture d'une fenêtre"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Nombre maximum enregistrées"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Nombre maximal de sessions enregistrées de cette façon."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Utiliser le titre de la page comme nom pour les sessions enregistrées automatiquement"
@@ -246,7 +270,7 @@
     "message": "Enregistrer la sauvegarde"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Lorsque le navigateur démarre, créer un fichier de sauvegarde des sessions et l'enregistrer dans le dossier des téléchargements."
   },
   "backupFolderLabel": {
     "message": "Emplacement de la sauvegarde"
@@ -279,7 +303,7 @@
     "message": "Prendre en charge Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Restaurer l’état de l’arborescence de Tree Style Tab<br>Lorsque cette option est activée, il faut plus de temps pour rétablir la session."
   },
   "tstDelayLabel": {
     "message": "Délais de rétablissement de l'arborescence (millisecondes)"
@@ -294,31 +318,31 @@
     "message": "Si le nom d'une session dans la liste de sessions s’étend sur plusieurs lignes, il sera tronqué pour être affiché sur une seule ligne."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Pop-up"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Comportement du bouton Ouvrir"
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Comportement du bouton Enregistrer"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Sélectionnez le comportement par défaut du bouton Enregistrer."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Afficher la barre de recherche"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Ajoute une fonction de recherche par nom de session."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Dimensions"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Spécifier la taille de la fenêtre pop-up."
   },
   "widthLabel": {
     "message": "Largeur"
@@ -330,16 +354,16 @@
     "message": "Autre"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Afficher la page options après une mise à jour"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Afficher la page options après une mise à jour de Tab Session Manager. Vous êtes ainsi tenu au courant du contenu de la mise à jour."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager a été mise à jour !"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Cliquez ici pour afficher des informations sur la mise à jour."
   },
   "resetSettingsLabel": {
     "message": "Réinitialiser les paramètres"
@@ -396,16 +420,16 @@
     "message": "Faites un don"
   },
   "donationCaptionLabel": {
-    "message": "Merci d’utiliser Tab Session Manager. <br>Votre soutien sera un grand encouragement, car je continue de développer l’extension. <br> Si vous aimez Session Manager, je serais heureux si vous pouviez envisager de faire un don."
+    "message": "Merci d’utiliser Tab Session Manager.<br>Votre soutien sera un grand encouragement, car je continue de développer l’extension. <br>Si vous aimez Session Manager, je serais heureux si vous pouviez envisager de faire un don."
   },
   "amazonTitleLabel": {
     "message": "Cartes Cadeaux (amazon.co.jp)"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Page de l'extension"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Page de l'extension"
   },
   "importMessage": {
     "message": "Sessions importées."

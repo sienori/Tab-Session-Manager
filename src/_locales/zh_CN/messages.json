@@ -33,10 +33,10 @@
     "message": "全部"
   },
   "displayUserLabel": {
-    "message": "手动保存"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "自动保存"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "从新到旧"
@@ -153,10 +153,13 @@
     "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "自动保存 - 窗口关闭时"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "自动保存 - 定期"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
     "message": "设置"
@@ -190,6 +193,15 @@
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "打开会话后，选中标签页才会加载其内容。<br>若未启用，还原会话时内存的使用量将大大增高。"
+  },
+  "isUseDiscardedLabel": {
+    "message": "Use the \"discarded\" property for lazy loading"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Enabling this option will improve performance when opening tabs."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
     "message": "还原窗口位置大小"
@@ -225,13 +237,25 @@
     "message": "关闭窗口时自动保存会话"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "最大数量"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "（以此种方式）自动保存的会话的最大数量。"
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "使用网页标题作为自动保存的会话的名称"

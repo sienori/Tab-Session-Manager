@@ -33,7 +33,7 @@
     "message": "全て"
   },
   "displayUserLabel": {
-    "message": "ユーザ保存"
+    "message": "ユーザー保存"
   },
   "displayAutoLabel": {
     "message": "自動保存"
@@ -155,6 +155,9 @@
   "winCloseSessionName": {
     "message": "自動保存 - ウィンドウ終了"
   },
+  "browserExitSessionName": {
+    "message": "自動保存 - ブラウザ終了"
+  },
   "regularSaveSessionName": {
     "message": "自動保存 - 定期実行"
   },
@@ -191,6 +194,15 @@
   "ifLazyLoadingCaptionLabel": {
     "message": "セッションを開いたとき，タブを選択するまで各ページの内容を読み込みません。<br>チェックをオフにすると，セッション復元時のメモリ使用量が増大します。"
   },
+  "isUseDiscardedLabel": {
+    "message": "遅延読み込みに\"discarded\"プロパティを利用する"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "このオプションを有効にするとタブを開くときのパフォーマンスが向上します。"
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "遅延読み込みタブのファビコンは表示されません。"
+  },
   "isRestoreWindowPositionLabel": {
     "message": "ウィンドウの位置を復元する"
   },
@@ -225,12 +237,24 @@
     "message": "ウィンドウを閉じたときにセッションを保存する"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "ウィンドウを閉じたときやブラウザの終了時にセッションを保存します。"
+    "message": "閉じられた一つのウィンドウのみを含むセッションを保存します。"
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "上限保存数"
   },
   "autoSaveWhenCloseCaptionLabel": {
+    "message": "この方法で保存できるセッションの上限"
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "ブラウザ終了時にセッションを保存する"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "連続して閉じられた複数のウィンドウを含むセッションを保存します。"
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "上限保存数"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
     "message": "この方法で保存できるセッションの上限"
   },
   "useTabTitleforAutoSaveLabel": {

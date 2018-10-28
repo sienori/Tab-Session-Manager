@@ -18,7 +18,7 @@
     "message": "Namnge sessionen"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Spara alla fönster"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Spara endast aktuellt fönster"
@@ -33,10 +33,10 @@
     "message": "Alla"
   },
   "displayUserLabel": {
-    "message": "Sparade av användaren"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Sparad automatisk"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "Nyaste"
@@ -51,13 +51,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Sök efter sessionsnamn"
   },
   "search": {
-    "message": "Search"
+    "message": "Sök"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Rensa sök"
   },
   "open": {
     "message": "Öppna"
@@ -69,7 +69,7 @@
     "message": "Ta bort sessionen?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Sessionen har tagits bort."
   },
   "restoreSessionLabel": {
     "message": "Återställ"
@@ -99,13 +99,13 @@
     "message": "Flikar"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Det finns ingen session."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Spara sessionen genom att trycka på den nedre högra knappen."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Inga matchande resultat."
   },
   "menuLabel": {
     "message": "Meny"
@@ -117,19 +117,19 @@
     "message": "Öppna i nytt fönster"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Öppna sessionen i ett nytt fönster."
   },
   "openInCurrentWindowLabel": {
     "message": "Öppna i aktuellt fönster"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Öppna sessionen i aktuellt fönster. Inaktiva fönster och alla flikar är stängda."
   },
   "addToCurrentWindowLabel": {
     "message": "Lägg till aktuellt fönster"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Lägg till flikar i aktuellt fönster. Om sessionen innehåller flera fönster, öppna det i ett nytt fönster."
   },
   "replaceCurrentSessionLabel": {
     "message": "Ersätt med den aktuella sessionen"
@@ -153,10 +153,13 @@
     "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "Sparad automatisk - Fönster stängdes"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Sparad automatiskt - Regelbundet"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
     "message": "Inställningar"
@@ -191,6 +194,15 @@
   "ifLazyLoadingCaptionLabel": {
     "message": "När en session öppnas, kommer sidinnehållet inte att laddas in förrän du väljer den fliken.<br>Om den är omarkerad, kommer minnesanvändningen att öka väsentligt när sessionen återställs."
   },
+  "isUseDiscardedLabel": {
+    "message": "Use the \"discarded\" property for lazy loading"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Enabling this option will improve performance when opening tabs."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "The favicon of the lazy loading tab is not displayed."
+  },
   "isRestoreWindowPositionLabel": {
     "message": "Återställ fönsterplaceringar"
   },
@@ -201,7 +213,7 @@
     "message": "Återställ föregående session vid uppstart"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "När webbläsaren startas, återställ sessionen som stängdes förra gången."
   },
   "ifAutoSaveLabel": {
     "message": "Spara sessionen regelbundet"
@@ -225,13 +237,25 @@
     "message": "Spara sessionen när fönstret stängs"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximalt antal sparade"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Maximalt antal sparade sessioner (på det här sättet)."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Namnge sidan efter titelnamnet när en session sparas automatiskt"
@@ -246,13 +270,13 @@
     "message": "Spara säkerhetskopia"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "När webbläsaren startas, skapa en säkerhetskopia av sessionen i nerladdningsmappen."
   },
   "backupFolderLabel": {
     "message": "Spara plats"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Ange mappen där säkerhetskopian ska sparas."
   },
   "downloadFolderLabel": {
     "message": "Filhämtningsmapp"
@@ -297,25 +321,25 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Öppna knappbeteende"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Välj standardbeteendet på öppnaknappen."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Spara knappbeteende"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Välj standardbeteendet på sparaknappen."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Visa sökfältet"
   },
   "isShowSearchBarCaptionLabel": {
     "message": "Add a function to search by session name."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Storlek"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
@@ -330,16 +354,16 @@
     "message": "Annat"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Visa alternativsidan efter uppdatering"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Visa alternativsidan när Tab Session Manager är uppdaterad. Du ser vad som är nytt mycket snabbare."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager har uppdaterats!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Tryck för att visa uppdateringsinformationen."
   },
   "resetSettingsLabel": {
     "message": "Återställ inställningarna"
@@ -402,10 +426,10 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Tilläggssida"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Utökningssida"
   },
   "importMessage": {
     "message": "Sessioner importerade."

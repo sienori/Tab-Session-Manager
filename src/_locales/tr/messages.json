@@ -33,10 +33,10 @@
     "message": "Tümü"
   },
   "displayUserLabel": {
-    "message": "Kullanıcı kaydedildi"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Otomatik kaydedildi"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "En yeni"
@@ -153,10 +153,13 @@
     "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "Otomatik kaydedildi - Pencere kapatıldı"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Otomatik kaydedildi - Düzenli olarak"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
     "message": "Ayarlar"
@@ -190,6 +193,15 @@
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "Bir oturum açtığında, her sayfanın içeriği siz sekme seçene kadar her sayfanın içeriği yüklenmez.<br>Kontrol işareti konulursa, oturum onarıldığında bellek kullanımı artar."
+  },
+  "isUseDiscardedLabel": {
+    "message": "Use the \"discarded\" property for lazy loading"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Enabling this option will improve performance when opening tabs."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Restore windows position"
@@ -225,13 +237,25 @@
     "message": "Pencere kapandığında oturumu kaydet"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Kaydedilen maksimum sayı"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Bu şekilde kaydedilen maksimum sayı."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Otomatik kaydedilen oturum adı için sayfa başlığını kullan"

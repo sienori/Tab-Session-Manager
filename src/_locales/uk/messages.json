@@ -33,10 +33,10 @@
     "message": "Всі"
   },
   "displayUserLabel": {
-    "message": "Користувацькі"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Автозбереження"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "Найновіші"
@@ -153,10 +153,13 @@
     "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "Автозбереження - закриття вікна"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Автозбереження - регулярне"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
     "message": "Налаштування"
@@ -190,6 +193,15 @@
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "Під час відкриття сесії вміст вкладок не завантажується, поки вкладка не буде активована вручну. <br>При відключенні зросте витрата пам'яті після відновлення сесії."
+  },
+  "isUseDiscardedLabel": {
+    "message": "Use the \"discarded\" property for lazy loading"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Enabling this option will improve performance when opening tabs."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Відновити розташування вікон"
@@ -225,13 +237,25 @@
     "message": "Зберігати сесію під час закриття вікна"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session when closing the window or when exiting browser."
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимальна кількість збережень"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Максимальна кількість сесій збережених таким чином."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Використовувати заголовок сторінки для автоматичного збереження назви сесії"
