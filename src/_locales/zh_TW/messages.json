@@ -33,10 +33,10 @@
     "message": "全部"
   },
   "displayUserLabel": {
-    "message": "手動儲存的"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "自動儲存的"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "依最新排序"
@@ -153,10 +153,13 @@
     "message": "無法同時開啟多個彈出式視窗。"
   },
   "winCloseSessionName": {
-    "message": "自動儲存 - 視窗關閉"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "自動儲存 - 定期執行"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
     "message": "設定"
@@ -190,6 +193,15 @@
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>如果關閉此選項，還原瀏覽階段時的記憶體使用量將會增加。"
+  },
+  "isUseDiscardedLabel": {
+    "message": "Use the \"discarded\" property for lazy loading"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Enabling this option will improve performance when opening tabs."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
     "message": "還原視窗位置"
@@ -225,13 +237,25 @@
     "message": "關閉視窗時儲存瀏覽階段"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "在關閉視窗或是結束瀏覽器時儲存瀏覽階段。"
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "最大儲存數量"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "使用這個方法儲存的瀏覽階段數量。"
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "使用頁面標題幫自動儲存的瀏覽階段命名"
