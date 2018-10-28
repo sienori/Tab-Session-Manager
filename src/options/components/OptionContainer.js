@@ -122,25 +122,29 @@ export default props => {
       break;
   }
 
+  const shouldShow = props.shouldShow == undefined || props.shouldShow;
+
   return (
-    <li className={`optionContainer ${props.updated ? "updated" : ""} ${props.new ? "new" : ""}`}>
-      <div className="optionElement">
-        <div className="optionText">
-          <p>{title ? (props.useRawTitle ? title : browser.i18n.getMessage(title)) : ""}</p>
-          {captions.map((caption, index) => (
-            <p className="caption" key={index}>
-              {caption
-                ? props.useRawCaptions
-                  ? caption
-                  : browser.i18n.getMessage(caption).replace(/<br>/g, "\n")
-                : ""}
-            </p>
-          ))}
-          {props.extraCaption ? props.extraCaption : ""}
+    shouldShow && (
+      <li className={`optionContainer ${props.updated ? "updated" : ""} ${props.new ? "new" : ""}`}>
+        <div className="optionElement">
+          <div className="optionText">
+            <p>{title ? (props.useRawTitle ? title : browser.i18n.getMessage(title)) : ""}</p>
+            {captions.map((caption, index) => (
+              <p className="caption" key={index}>
+                {caption
+                  ? props.useRawCaptions
+                    ? caption
+                    : browser.i18n.getMessage(caption).replace(/<br>/g, "\n")
+                  : ""}
+              </p>
+            ))}
+            {props.extraCaption ? props.extraCaption : ""}
+          </div>
+          <div className="optionForm">{optionForm}</div>
         </div>
-        <div className="optionForm">{optionForm}</div>
-      </div>
-      {children}
-    </li>
+        {children}
+      </li>
+    )
   );
 };
