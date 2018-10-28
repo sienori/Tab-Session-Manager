@@ -33,10 +33,10 @@
     "message": "Alle"
   },
   "displayUserLabel": {
-    "message": "Manuell gespeichert"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Automatisch gespeichert"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "Neueste"
@@ -153,10 +153,13 @@
     "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "Auto - Fenster wurde geschlossen"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Auto - Intervall Regel"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
     "message": "Einstellungen"
@@ -190,6 +193,15 @@
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "Wenn eine Sitzung geöffnet wird, lädt der Inhalt eines Tabs erst nach Anwählen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
+  },
+  "isUseDiscardedLabel": {
+    "message": "Use the \"discarded\" property for lazy loading"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Enabling this option will improve performance when opening tabs."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Fensterpositionen wiederherstellen"
@@ -225,13 +237,25 @@
     "message": "Sitzung speichern, falls Fenster geschlossen wird"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Sitzung speichern, wenn der Browser oder das Fenster geschlossen wird."
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximal gespeicherte Anzahl"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Verwende den Seitentitel für den Sitzungsnamen beim automatischen Speichern"
