@@ -89,6 +89,7 @@ const isEnabledOpenerTabId =
   (browserInfo().name == "Firefox" && browserInfo().version >= 57) ||
   (browserInfo().name == "Chrome" && browserInfo().version >= 18);
 const isEnabledDiscarded = browserInfo().name == "Firefox" && browserInfo().version >= 63;
+const isEnabledOpenInReaderMode = browserInfo().name == "Firefox" && browserInfo().version >= 58;
 
 export let IsOpeningSession = false;
 //ウィンドウとタブを閉じてcurrentWindowを返す
@@ -195,9 +196,18 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     }
 
     //Reader mode
-    if (!getSettings("ifLazyLoading") && property.url.substr(0, 17) == "about:reader?url=") {
-      createOption.openInReaderMode = true;
-      createOption.url = decodeURIComponent(property.url.substr(17));
+    if (property.url.substr(0, 17) == "about:reader?url=") {
+      if (getSettings("ifLazyLoading")) {
+        createOption.url = returnReplaceURL(
+          "redirect",
+          property.title,
+          property.url,
+          property.favIconUrl
+        );
+      } else {
+        if (isEnabledOpenInReaderMode) createOption.openInReaderMode = true;
+        createOption.url = decodeURIComponent(property.url.substr(17));
+      }
     }
 
     //about:newtabを置き換え
