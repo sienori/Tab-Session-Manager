@@ -152,7 +152,6 @@ export default [
         captions: ["openButtonBehaviorCaptionLabel"],
         type: "none",
         default: "openInNewWindow",
-        new: true,
         childElements: [
           {
             id: "openButtonBehavior",
@@ -183,7 +182,6 @@ export default [
         captions: ["saveButtonBehaviorCaptionLabel"],
         type: "none",
         default: "saveAllWindows",
-        new: true,
         childElements: [
           {
             id: "saveButtonBehavior",
@@ -206,8 +204,7 @@ export default [
         title: "isShowSearchBarLabel",
         captions: ["isShowSearchBarCaptionLabel"],
         type: "checkbox",
-        default: true,
-        new: true
+        default: true
       },
       {
         id: "truncateTitle",
@@ -253,8 +250,7 @@ export default [
         title: "isShowOptionsPageWhenUpdatedLabel",
         captions: ["isShowOptionsPageWhenUpdatedCaptionLabel"],
         type: "checkbox",
-        default: true,
-        new: true
+        default: true
       }
     ]
   }
