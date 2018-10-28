@@ -18,7 +18,7 @@
     "message": "Establecer el nombre de la sesión"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Guardar todas las ventanas"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Guardad sólo la ventana actual"
@@ -33,10 +33,10 @@
     "message": "Todo"
   },
   "displayUserLabel": {
-    "message": "Usuario guardado"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto guardado"
+    "message": "Auto Save"
   },
   "newestLabel": {
     "message": "Más reciente"
@@ -51,13 +51,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Búsqueda por nombre de la sesión"
   },
   "search": {
-    "message": "Search"
+    "message": "Buscar"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Limpiar búsqueda"
   },
   "open": {
     "message": "Abrir"
@@ -105,7 +105,7 @@
     "message": "Vamos a guardar la sesión haciendo clic en el botón inferior derecho."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "No se encontraron resultados."
   },
   "menuLabel": {
     "message": "Menú"
@@ -117,19 +117,19 @@
     "message": "Abrir en una ventana nueva"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Abrir la sesión en la nueva ventana."
   },
   "openInCurrentWindowLabel": {
     "message": "Abrir en ventana actual"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Abrir la sesión en la ventana actual. Se cierran todas las pestañas y ventanas inactivas."
   },
   "addToCurrentWindowLabel": {
     "message": "Agregar a ventana actual"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Añadir pestañas a la ventana actual. Si la sesión contiene múltiples ventanas, abrir en nueva ventana."
   },
   "replaceCurrentSessionLabel": {
     "message": "Reemplazar con la sesión actual"
@@ -153,10 +153,13 @@
     "message": "No se pueden abrir múltiples ventanas emergentes al mismo tiempo."
   },
   "winCloseSessionName": {
-    "message": "Auto guardado - La ventana se cerró"
+    "message": "Auto Save - Window closed"
+  },
+  "browserExitSessionName": {
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Auto guardado - Regularmente"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
     "message": "Ajustes"
@@ -190,6 +193,15 @@
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "Al abrir una sesión, el contenido de cada página no se carga hasta que seleccione la pestaña. <br>Si está desmarcada, el uso de memoria aumenta cuando se restablece la sesión."
+  },
+  "isUseDiscardedLabel": {
+    "message": "Use the \"discarded\" property for lazy loading"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Enabling this option will improve performance when opening tabs."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Restaurar posición de la ventana"
@@ -225,13 +237,25 @@
     "message": "Guardar la sesión cuando se cierre la ventana"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Guardar la sesión cuando cierre la ventana o al salir de navegador."
+    "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Guardado número máximo"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Número máximo de sesiones guardadas de esta forma."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Save the session when exiting browser"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Save the session that includes multiple windows that was closed in a row."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximum number Saved"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Usar el título de la página como nombre para la sesión guardada automáticamente"
@@ -309,16 +333,16 @@
     "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Mostrar la barra de búsqueda"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Agregar una función para buscar por nombre de la sesión."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Tamaño"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Especificar el tamaño de la ventana emergente."
   },
   "widthLabel": {
     "message": "Ancho"
@@ -336,10 +360,10 @@
     "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "¡Tab Session Manager se ha actualizado!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Haga clic para ver la información de actualización."
   },
   "resetSettingsLabel": {
     "message": "Restablecer ajustes"
