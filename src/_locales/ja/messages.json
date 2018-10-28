@@ -252,10 +252,10 @@
     "message": "連続して閉じられた複数のウィンドウを含むセッションを保存します。"
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "上限保存数"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "この方法で保存できるセッションの上限"
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "自動保存のセッション名にページのタイトルを使用する"
