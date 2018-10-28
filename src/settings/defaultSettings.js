@@ -1,3 +1,5 @@
+import browserInfo from "browser-info";
+
 export default [
   {
     category: "generalLabel",
@@ -7,7 +9,18 @@ export default [
         title: "ifLazyLoadingLabel",
         captions: ["ifLazyLoadingCaptionLabel"],
         type: "checkbox",
-        default: true
+        default: true,
+        childElements: [
+          {
+            id: "isUseDiscarded",
+            title: "isUseDiscardedLabel",
+            captions: ["isUseDiscardedCaptionLabel", "isUseDiscardedCaption2Label"],
+            type: "checkbox",
+            default: true,
+            shouldShow: browserInfo().name == "Firefox" && browserInfo().version >= 63,
+            new: true
+          }
+        ]
       },
       {
         id: "ifSavePrivateWindow",

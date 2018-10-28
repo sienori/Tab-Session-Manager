@@ -88,6 +88,7 @@ export async function openSession(session, property = "openInNewWindow") {
 const isEnabledOpenerTabId =
   (browserInfo().name == "Firefox" && browserInfo().version >= 57) ||
   (browserInfo().name == "Chrome" && browserInfo().version >= 18);
+const isEnabledDiscarded = browserInfo().name == "Firefox" && browserInfo().version >= 63;
 
 export let IsOpeningSession = false;
 //ウィンドウとタブを閉じてcurrentWindowを返す
@@ -178,12 +179,19 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
 
     //Lazy loading
     if (getSettings("ifLazyLoading")) {
-      createOption.url = returnReplaceURL(
-        "redirect",
-        property.title,
-        property.url,
-        property.favIconUrl
-      );
+      if (getSettings("isUseDiscarded") && isEnabledDiscarded) {
+        if (!createOption.active) {
+          createOption.discarded = true;
+          createOption.title = property.title;
+        }
+      } else {
+        createOption.url = returnReplaceURL(
+          "redirect",
+          property.title,
+          property.url,
+          property.favIconUrl
+        );
+      }
     }
 
     //Reader mode
