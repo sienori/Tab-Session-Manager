@@ -18,7 +18,7 @@
     "message": "Inserisci un nome per la sessione"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Salva tutte le finestre"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Salva solo la finestra corrente"
@@ -33,10 +33,10 @@
     "message": "Tutto"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Salvato dall'utente"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Salvataggio automatico"
   },
   "newestLabel": {
     "message": "Più recente"
@@ -51,13 +51,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Cerca per nome della sessione"
   },
   "search": {
-    "message": "Search"
+    "message": "Cerca"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Cancella ricerca"
   },
   "open": {
     "message": "Apri"
@@ -105,7 +105,7 @@
     "message": "Salviamo la sessione cliccando il pulsante in basso a destra."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Nessun risultato corrispondente."
   },
   "menuLabel": {
     "message": "Menù"
@@ -117,19 +117,19 @@
     "message": "Apri in una nuova finestra"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Apre la sessione in una nuova finestra."
   },
   "openInCurrentWindowLabel": {
     "message": "Apri nella finestra corrente"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Apre la sessione nella finestra corrente. Le finestre inattive e tutte le schede verranno chiuse."
   },
   "addToCurrentWindowLabel": {
     "message": "Aggiungi alla finestra corrente"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Aggiunge schede alla finestra corrente. Se la sessione ha più finestre, apre una nuova finestra."
   },
   "replaceCurrentSessionLabel": {
     "message": "Sostituisci con la sessione corrente"
@@ -153,13 +153,13 @@
     "message": "Popup multipli non possono essere aperti contemporaneamente."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Salvataggio automatico - Finestra chiusa"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Salvataggio automatico - Uscito dal browser"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Salvataggio automatico - Progammato"
   },
   "settingsLabel": {
     "message": "Impostazioni"
@@ -339,7 +339,7 @@
     "message": "Add a function to search by session name."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Dimensioni"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
