@@ -201,7 +201,7 @@
     "message": "A beállítás engedélyezése javítja a teljesítményt lapok megnyitásakor."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Lusta betöltésű lap faviconjának megjelenítésének mellőzése."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Ablakok pozícióinak visszaállítása"
@@ -246,16 +246,16 @@
     "message": "Az ilyen módon elmentett munkamenetek maximális száma."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "A munkamenet mentése böngészőből való kilépéskor"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Elmentettek maximális száma"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Az ilyen módon elmentett munkamenetek maximális száma."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Oldal cím használata munkamenet automatikus mentésekor"
@@ -330,7 +330,7 @@
     "message": "Megnyitás gomb viselkedése"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Válassza ki a Mentés gomb alapértelmezett viselkedését."
   },
   "isShowSearchBarLabel": {
     "message": "Keresősáv megjelenítése"
