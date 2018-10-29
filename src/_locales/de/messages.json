@@ -51,7 +51,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Suchen beim Sitzungsname"
+    "message": "Suchen nach Sitzungsnamen"
   },
   "search": {
     "message": "Suchen"
@@ -201,7 +201,7 @@
     "message": "Das Aktivieren dieser Option wird die Geschwindigkeit verbessern bei öffnen von Tabs."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "Das Favicon vom verzögert ladenenen Tab wird nicht angezeigt."
+    "message": "Das Favicon vom verzögert ladenden Tab wird nicht angezeigt."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Fensterpositionen wiederherstellen"
