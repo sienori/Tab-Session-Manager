@@ -249,7 +249,7 @@
     "message": "Sitzung speichern, falls der Browser geschlossen wird"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Speichert die Sitzung, die aus mehreren Fenstern besteht, welche nacheinander geschlossen wurden."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Maximal gespeicherte Anzahl"
