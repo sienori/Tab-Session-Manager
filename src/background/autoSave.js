@@ -47,9 +47,7 @@ function isChangeAutoSaveSettings(changes, areaName) {
 }
 
 const updateTemp = async () => {
-  let name = browser.i18n.getMessage("winCloseSessionName");
-  if (getSettings("useTabTitleforAutoSave")) name = await getCurrentTabName();
-
+  const name = await getCurrentTabName();
   let session = await loadCurrentSession(name, ["temp"], "default");
   let tempSessions = await getSessionsByTag("temp");
 
@@ -94,6 +92,8 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
       delete session.windowsInfo[windowId];
     }
   }
+  if (!getSettings("useTabTitleforAutoSave"))
+    session.name = browser.i18n.getMessage("winCloseSessionName");
   session.tag = ["winClose"];
   session.id = uuidv4();
   session.windowsNumber = 1;
@@ -110,6 +110,8 @@ export const autoSaveWhenExitBrowser = async () => {
   if (!tempSessions[0]) return;
 
   let session = tempSessions[0];
+  if (!getSettings("useTabTitleforAutoSave"))
+    session.name = browser.i18n.getMessage("browserExitSessionName");
   session.tag = ["browserExit"];
   session.id = uuidv4();
 
