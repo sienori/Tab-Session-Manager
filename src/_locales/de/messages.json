@@ -195,7 +195,7 @@
     "message": "Wenn eine Sitzung geöffnet wird, lädt der Inhalt eines Tabs erst nach Anwählen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Benutze die \"verwerfen\" Eigenschaft für das verzögerte Laden"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Das Aktivieren dieser Option wird die Geschwindigkeit verbessern bei öffnen von Tabs."
