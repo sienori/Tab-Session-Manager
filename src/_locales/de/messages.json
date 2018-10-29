@@ -33,7 +33,7 @@
     "message": "Alle"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Manuell Speichern"
   },
   "displayAutoLabel": {
     "message": "Automatisches Speichern"
@@ -102,7 +102,7 @@
     "message": "Keine Sitzung gefunden."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Speichern Sie die Sitzung, indem Sie auf den Button rechts unten klicken."
   },
   "noResultLabel": {
     "message": "Keine Treffer."
@@ -201,7 +201,7 @@
     "message": "Das Aktivieren dieser Option wird die Geschwindigkeit verbessern bei öffnen von Tabs."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Das Favicon vom verzögert ladenenen Tab wird nicht angezeigt."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Fensterpositionen wiederherstellen"
@@ -237,7 +237,7 @@
     "message": "Sitzung speichern, falls Fenster geschlossen wird"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Speichert die Sitzung, die nur ein geschlossenes Fenster enthält."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximal gespeicherte Anzahl"
