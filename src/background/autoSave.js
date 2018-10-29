@@ -107,8 +107,6 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
 };
 
 export const autoSaveWhenExitBrowser = async () => {
-  if (!getSettings("ifAutoSaveWhenExitBrowser")) return;
-
   const tempSessions = await getSessionsByTag("temp");
   if (!tempSessions[0]) return;
 
@@ -116,11 +114,13 @@ export const autoSaveWhenExitBrowser = async () => {
   if (!getSettings("useTabTitleforAutoSave"))
     session.name = browser.i18n.getMessage("browserExitSessionName");
   session.tag = ["browserExit"];
+  if (!getSettings("ifAutoSaveWhenExitBrowser")) session.tag.push("temp");
   session.id = uuidv4();
 
   await saveSession(session);
 
   let limit = getSettings("autoSaveWhenExitBrowserLimit");
+  if (!getSettings("ifAutoSaveWhenExitBrowser")) limit++;
   removeOverLimit("browserExit", limit);
   removeOverLimit("temp", 1);
   setUpdateTempTimer();
