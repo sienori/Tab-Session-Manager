@@ -357,7 +357,7 @@
     "message": "Öffne die Einstellungen bei Aktualisierungen"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Zeigt die Einstellugen an, wenn der Tab Session Manager aktualisiert wurde. Dadurch können die neuen Aktiualisierungsinhalte schnell betrachtet werden."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager wurde aktualisiert!"
