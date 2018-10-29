@@ -291,10 +291,10 @@
     "message": "Datumsformat"
   },
   "dateFormatCaptionLabel": {
-    "message": "Beispiel: DD.MM.YYYY ss:mm:HH"
+    "message": "Beispiel: DD.MM.YYYY HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Private Fenster speichern"
+    "message": "Speichere Private Fenster"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
