@@ -7,8 +7,7 @@ import {
   autoSaveWhenWindowClose,
   autoSaveWhenExitBrowser,
   setUpdateTempTimer,
-  openLastSession,
-  removeDuplicateTemp
+  openLastSession
 } from "./autoSave";
 import Sessions from "./sessions";
 import { replacePage } from "./replace";
@@ -59,7 +58,6 @@ const init = async () => {
 
   autoSaveWhenExitBrowser().then(() => {
     openLastSession();
-    removeDuplicateTemp();
   });
 
   setAutoSave();

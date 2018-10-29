@@ -15,7 +15,8 @@ function startAutoSave() {
     const property = "saveAllWindows";
     saveCurrentSession(name, tag, property)
       .then(() => {
-        removeOverLimit("regular");
+        const limit = getSettings("autoSaveLimit");
+        removeOverLimit("regular", limit);
       })
       .catch(() => {});
   }, getSettings("autoSaveInterval") * 60 * 1000);
@@ -100,7 +101,9 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
   session.tabsNumber = Object.keys(session.windows[removedWindowId]).length;
 
   await saveSession(session);
-  removeOverLimit("winClose");
+
+  const limit = getSettings("autoSaveWhenCloseLimit");
+  removeOverLimit("winClose", limit);
 };
 
 export const autoSaveWhenExitBrowser = async () => {
@@ -116,7 +119,10 @@ export const autoSaveWhenExitBrowser = async () => {
   session.id = uuidv4();
 
   await saveSession(session);
-  removeOverLimit("browserExit");
+
+  let limit = getSettings("autoSaveWhenExitBrowserLimit");
+  removeOverLimit("browserExit", limit);
+  removeOverLimit("temp", 1);
   setUpdateTempTimer();
 };
 
@@ -132,38 +138,11 @@ export const openLastSession = async () => {
   }
 };
 
-export const removeDuplicateTemp = async () => {
-  const tempSessions = await getSessionsByTag("temp");
+async function removeOverLimit(tag, limit) {
+  const taggedSessions = await getSessionsByTag(tag, ["id", "tag", "date"]);
 
-  let isFirst = true;
-  for (let tempSession of tempSessions) {
-    if (isFirst) {
-      isFirst = false;
-      continue;
-    }
-    removeSession(tempSession.id, false);
-  }
-};
-
-async function removeOverLimit(tagState) {
-  let limit;
-  switch (tagState) {
-    case "regular":
-      limit = getSettings("autoSaveLimit");
-      break;
-    case "winClose":
-      limit = getSettings("autoSaveWhenCloseLimit");
-      break;
-    case "browserExit":
-      limit = getSettings("autoSaveWhenExitBrowserLimit");
-      break;
-  }
-
-  const autoSavedArray = await getSessionsByTag(tagState, ["id", "tag", "date"]);
-
-  //上限を超えている場合は削除
-  if (autoSavedArray.length > limit) {
-    const removeSessions = autoSavedArray.slice(limit);
+  if (taggedSessions.length > limit) {
+    const removeSessions = taggedSessions.slice(limit);
     for (let session of removeSessions) {
       removeSession(session.id);
     }
