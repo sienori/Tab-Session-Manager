@@ -174,7 +174,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     //Lazy loading
     if (getSettings("ifLazyLoading")) {
       if (getSettings("isUseDiscarded") && isEnabledDiscarded) {
-        if (!createOption.active) {
+        if (!createOption.active && !createOption.pinned) {
           createOption.discarded = true;
           createOption.title = property.title;
         }
