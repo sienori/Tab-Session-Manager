@@ -10,9 +10,11 @@ const matchesFilter = (tags, filterValue) => {
     case "_displayAll":
       return true;
     case "_user":
-      return !tags.includes("regular") && !tags.includes("winClose");
+      return (
+        !tags.includes("regular") && !tags.includes("winClose") && !tags.includes("browserExit")
+      );
     case "_auto":
-      return tags.includes("regular") || tags.includes("winClose");
+      return tags.includes("regular") || tags.includes("winClose") || tags.includes("browserExit");
     default:
       return tags.includes(filterValue);
   }
