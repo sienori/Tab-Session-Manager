@@ -36,7 +36,7 @@
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Guardar automáticamente"
   },
   "newestLabel": {
     "message": "Más reciente"
@@ -159,7 +159,7 @@
     "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Auto guardado - Regularmente"
   },
   "settingsLabel": {
     "message": "Ajustes"
@@ -246,7 +246,7 @@
     "message": "Número máximo de sesiones guardadas de esta forma."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Guardar la sesión al salir del navegador"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
@@ -321,16 +321,16 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Comportamiento del botón abrir"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Seleccione el comportamiento predeterminado del botón Abrir."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Comportamiento de botón de guardar"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Seleccione el comportamiento predeterminado del botón Guardar."
   },
   "isShowSearchBarLabel": {
     "message": "Mostrar la barra de búsqueda"
@@ -357,7 +357,7 @@
     "message": "Display option page when updating"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Mostrar la página de opciones cuando se actualiza Tab Session Manager. Puede saber el contenido de la actualización rápidamente."
   },
   "NotificationOnUpdateLabel": {
     "message": "¡Tab Session Manager se ha actualizado!"
