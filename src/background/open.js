@@ -125,18 +125,14 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   const firstTabId = currentWindow.tabs[0].id;
   let tabNumber = 0;
   for (let tab of sortedTabs) {
-    const openedTab = openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow);
+    const openedTab = openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow)
+      .then(() => {
+        tabNumber++;
+        if (tabNumber == 1 && !isAddtoCurrentWindow) browser.tabs.remove(firstTabId);
+        if (tabNumber == sortedTabs.length) replacePage(currentWindow.id);
+      })
+      .catch(() => {});
     if (getSettings("ifSupportTst")) await openedTab;
-
-    tabNumber++;
-    if (tabNumber == 1 && !isAddtoCurrentWindow) {
-      await openedTab;
-      browser.tabs.remove(firstTabId);
-    }
-    if (tabNumber == sortedTabs.length) {
-      await openedTab;
-      replacePage(currentWindow.id);
-    }
   }
 }
 
@@ -224,7 +220,7 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
           property.url,
           property.favIconUrl
         );
-        await browser.tabs.create(createOption).catch(() => resolve());
+        await browser.tabs.create(createOption).catch(() => reject()); //タブを開けなかった場合はreject
         resolve();
       }
     };
