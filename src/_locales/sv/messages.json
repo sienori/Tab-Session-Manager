@@ -33,10 +33,10 @@
     "message": "Alla"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Spara manuellt"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Spara automatiskt"
   },
   "newestLabel": {
     "message": "Nyaste"
@@ -150,16 +150,16 @@
     "message": "Så här löser du detta problem"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Flera poppupper kan inte öppnas samtidigt."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Spara automatiskt - Fönstret stängs"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Spara automatiskt - Webbläsaren avslutas"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Spara automatiskt - Regelbundet"
   },
   "settingsLabel": {
     "message": "Inställningar"
@@ -195,13 +195,13 @@
     "message": "När en session öppnas, kommer sidinnehållet inte att laddas in förrän du väljer den fliken.<br>Om den är omarkerad, kommer minnesanvändningen att öka väsentligt när sessionen återställs."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Använd egenskapen \"förkastad\" för laddning efterhand"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Aktiveras detta alternativ förbättras prestanda när flikar öppnas."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Favoritikonen i fliken som laddar efterhand visas inte."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Återställ fönsterplaceringar"
@@ -237,7 +237,7 @@
     "message": "Spara sessionen när fönstret stängs"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Spara sessionen som endast innehåller ett stängt fönster."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximalt antal sparade"
@@ -246,16 +246,16 @@
     "message": "Maximalt antal sparade sessioner (på det här sättet)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Spara sessionen när webbläsaren avslutas"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Spara sessionen som innehåller flera fönster som stängdes efter varandra."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maximalt antal sparade"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maximalt antal sparade sessioner (på det här sättet)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Namnge sidan efter titelnamnet när en session sparas automatiskt"
@@ -318,7 +318,7 @@
     "message": "Om namnet på sessionen överskrids i sessionslistan kommer det att kortas ner och visas på en rad."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Poppupp"
   },
   "openButtonBehaviorLabel": {
     "message": "Öppna knappbeteende"
@@ -336,13 +336,13 @@
     "message": "Visa sökfältet"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Lägga till en funktion för att söka efter sessionsnamn."
   },
   "sizeLabel": {
     "message": "Storlek"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Ange storleken på poppuppen."
   },
   "widthLabel": {
     "message": "Bredd"
