@@ -321,16 +321,16 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Öffnen Button Verhalten"
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Speichern Button Verhalten"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Wähle das Standardverhalten des Speichern Buttons aus."
   },
   "isShowSearchBarLabel": {
     "message": "Suchleiste anzeigen"
