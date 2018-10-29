@@ -33,10 +33,10 @@
     "message": "Összes"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Manuálisan ment"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Automatikus mentés"
   },
   "newestLabel": {
     "message": "Legújabb"
@@ -153,13 +153,13 @@
     "message": "Egyszerre csak egy felugró ablak nyitható meg."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Automatikus mentés - Ablak be lett zárva"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Automatikus mentés - Böngésző kilépett"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Automatikus mentés - Rendszeresen"
   },
   "settingsLabel": {
     "message": "Beállítások"
@@ -198,7 +198,7 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "A beállítás engedélyezése javítja a teljesítményt lapok megnyitásakor."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
