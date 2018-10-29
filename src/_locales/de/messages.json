@@ -213,7 +213,7 @@
     "message": "Vorherige Sitzung beim Start wiederherstellen"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Wenn der Browser startet, stelle die vorherige Sitzung wieder her."
   },
   "ifAutoSaveLabel": {
     "message": "Sitzung regelmäßig sichern"
@@ -246,16 +246,16 @@
     "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Sitzung speichern, falls der Browser geschlossen wird"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maximal gespeicherte Anzahl"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Verwende den Seitentitel für den Sitzungsnamen beim automatischen Speichern"
@@ -336,7 +336,7 @@
     "message": "Suchleiste anzeigen"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Fügt die Funktion zum Suchen von Sitzungsnamen hinzu."
   },
   "sizeLabel": {
     "message": "Größe"
@@ -354,7 +354,7 @@
     "message": "Anders"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Öffne die Einstellungen bei Aktualisierungen"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
     "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
