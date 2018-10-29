@@ -33,10 +33,10 @@
     "message": "Alle"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Manuell Speichern"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Automatisches Speichern"
   },
   "newestLabel": {
     "message": "Neueste"
@@ -51,7 +51,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Suchen beim Sitzungsname"
+    "message": "Suchen nach Sitzungsnamen"
   },
   "search": {
     "message": "Suchen"
@@ -102,7 +102,7 @@
     "message": "Keine Sitzung gefunden."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Speichern Sie die Sitzung, indem Sie auf den Button rechts unten klicken."
   },
   "noResultLabel": {
     "message": "Keine Treffer."
@@ -123,13 +123,13 @@
     "message": "Im aktuellen Fenster öffnen"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Öffnet die Sitzung in einem neuen Fenster. Inaktive Fenster und alle Tabs werden geschlossen."
   },
   "addToCurrentWindowLabel": {
     "message": "Zum aktuellen Fenster hinzufügen"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Fügt Tabs zur aktuellen Fenster hinzu. Wenn die Sitzung mehrere Fenster beinhaltet, wird es in einem neuen Fenster geöffnet."
   },
   "replaceCurrentSessionLabel": {
     "message": "Mit aktueller Sitzung ersetzen"
@@ -150,16 +150,16 @@
     "message": "Wie dieses Problem gelöst sein kann"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Es können nicht mehrere Pop-ups zur gleichen Zeit geöffnet werden."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Sitzung speichern, falls Fenster geschlossen wird"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Sitzung speichern, falls Browser beendet wird"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Sitzung regelmäßig sichern"
   },
   "settingsLabel": {
     "message": "Einstellungen"
@@ -195,13 +195,13 @@
     "message": "Wenn eine Sitzung geöffnet wird, lädt der Inhalt eines Tabs erst nach Anwählen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Benutze die \"verwerfen\" Eigenschaft für das verzögerte Laden"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Das Aktivieren dieser Option wird die Geschwindigkeit verbessern bei öffnen von Tabs."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Das Favicon vom verzögert ladenden Tab wird nicht angezeigt."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Fensterpositionen wiederherstellen"
@@ -213,7 +213,7 @@
     "message": "Vorherige Sitzung beim Start wiederherstellen"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Wenn der Browser startet, stelle die vorherige Sitzung wieder her."
   },
   "ifAutoSaveLabel": {
     "message": "Sitzung regelmäßig sichern"
@@ -237,7 +237,7 @@
     "message": "Sitzung speichern, falls Fenster geschlossen wird"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Speichert die Sitzung, die nur ein geschlossenes Fenster enthält."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Maximal gespeicherte Anzahl"
@@ -246,16 +246,16 @@
     "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Sitzung speichern, falls der Browser geschlossen wird"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Speichert die Sitzung, die aus mehreren Fenstern besteht, welche nacheinander geschlossen wurden."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maximal gespeicherte Anzahl"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Verwende den Seitentitel für den Sitzungsnamen beim automatischen Speichern"
@@ -270,13 +270,13 @@
     "message": "Sicherungskopie erstellen"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Wenn der Browser startet, wird eine Sicherungskopiedatei von allen Sitzungen erstellt und im Download Ordner gespeichert."
   },
   "backupFolderLabel": {
     "message": "Gespeichert unter"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Gebe an, wo das Backup gespeichert werden soll. Der Speicherort ist auf den vom Browser eingestellten Download Ordner limitiert."
   },
   "downloadFolderLabel": {
     "message": "Download-Ordner"
@@ -291,10 +291,10 @@
     "message": "Datumsformat"
   },
   "dateFormatCaptionLabel": {
-    "message": "Beispiel: DD.MM.YYYY ss:mm:HH"
+    "message": "Beispiel: DD.MM.YYYY HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Private Fenster speichern"
+    "message": "Speichere Private Fenster"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
@@ -321,22 +321,22 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Öffnen Button Verhalten"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Wähle das Standardverhalten des Öffnen Buttons aus."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Speichern Button Verhalten"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Wähle das Standardverhalten des Speichern Buttons aus."
   },
   "isShowSearchBarLabel": {
     "message": "Suchleiste anzeigen"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Fügt die Funktion zum Suchen von Sitzungsnamen hinzu."
   },
   "sizeLabel": {
     "message": "Größe"
@@ -354,10 +354,10 @@
     "message": "Anders"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Öffne die Einstellungen bei Aktualisierungen"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Zeigt die Einstellugen an, wenn der Tab Session Manager aktualisiert wurde. Dadurch können die neuen Aktiualisierungsinhalte schnell betrachtet werden."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager wurde aktualisiert!"
@@ -426,10 +426,10 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Add-on Seite"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Erweiterungs Seite"
   },
   "importMessage": {
     "message": "Sitzungen importiert."
