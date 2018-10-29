@@ -33,10 +33,10 @@
     "message": "全部"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "使用者儲存"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "自動儲存"
   },
   "newestLabel": {
     "message": "依最新排序"
@@ -159,7 +159,7 @@
     "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "自動儲存 - 定期執行"
   },
   "settingsLabel": {
     "message": "設定"
