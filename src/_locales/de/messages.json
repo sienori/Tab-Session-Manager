@@ -276,7 +276,7 @@
     "message": "Gespeichert unter"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Gebe an, wo das Backup gespeichert werden soll. Der Speicherort ist auf den vom Browser eingestellten Download Ordner limitiert."
   },
   "downloadFolderLabel": {
     "message": "Download-Ordner"
@@ -324,7 +324,7 @@
     "message": "Öffnen Button Verhalten"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Wähle das Standardverhalten des Öffnen Buttons aus."
   },
   "saveButtonBehaviorLabel": {
     "message": "Speichern Button Verhalten"
@@ -426,10 +426,10 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Add-on Seite"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Erweiterungs Seite"
   },
   "importMessage": {
     "message": "Sitzungen importiert."
