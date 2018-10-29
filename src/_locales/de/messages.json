@@ -36,7 +36,7 @@
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Automatisches Speichern"
   },
   "newestLabel": {
     "message": "Neueste"
@@ -123,13 +123,13 @@
     "message": "Im aktuellen Fenster öffnen"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Öffnet die Sitzung in einem neuen Fenster. Inaktive Fenster und alle Tabs werden geschlossen."
   },
   "addToCurrentWindowLabel": {
     "message": "Zum aktuellen Fenster hinzufügen"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Fügt Tabs zur aktuellen Fenster hinzu. Wenn die Sitzung mehrere Fenster beinhaltet, wird es in einem neuen Fenster geöffnet."
   },
   "replaceCurrentSessionLabel": {
     "message": "Mit aktueller Sitzung ersetzen"
@@ -150,16 +150,16 @@
     "message": "Wie dieses Problem gelöst sein kann"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Es können nicht mehrere Pop-ups zur gleichen Zeit geöffnet werden."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Sitzung speichern, falls Fenster geschlossen wird"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Sitzung speichern, falls Browser beendet wird"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Sitzung regelmäßig sichern"
   },
   "settingsLabel": {
     "message": "Einstellungen"
@@ -198,7 +198,7 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Das Aktivieren dieser Option wird die Geschwindigkeit verbessern bei öffnen von Tabs."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
@@ -270,7 +270,7 @@
     "message": "Sicherungskopie erstellen"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Wenn der Browser startet, wird eine Sicherungskopiedatei von allen Sitzungen erstellt und im Download Ordner gespeichert."
   },
   "backupFolderLabel": {
     "message": "Gespeichert unter"
