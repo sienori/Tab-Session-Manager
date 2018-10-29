@@ -130,8 +130,10 @@ export const openLastSession = async () => {
   if (!getSettings("ifOpenLastSessionWhenStartUp")) return;
 
   const currentWindows = await browser.windows.getAll();
-  const winCloseSessions = await getSessionsByTag("browserExit");
-  await openSession(winCloseSessions[0], "openInNewWindow");
+  const browserExitSessions = await getSessionsByTag("browserExit");
+  if (!browserExitSessions[0]) return;
+
+  await openSession(browserExitSessions[0], "openInNewWindow");
 
   for (const window of currentWindows) {
     await browser.windows.remove(window.id);
