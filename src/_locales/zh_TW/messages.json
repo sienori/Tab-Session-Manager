@@ -153,10 +153,10 @@
     "message": "無法同時開啟多個彈出式視窗。"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "自動儲存 - 視窗關閉時"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "自動儲存 - 瀏覽器結束時"
   },
   "regularSaveSessionName": {
     "message": "自動儲存 - 定期執行"
