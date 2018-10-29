@@ -18,7 +18,7 @@
     "message": "Input session name"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Uložit všechna okna"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Uložit pouze aktuální okno"
@@ -51,13 +51,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Hledat dle názvu relace"
   },
   "search": {
-    "message": "Search"
+    "message": "Hledat"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Vymazat vyhledávání"
   },
   "open": {
     "message": "Otevřít"
@@ -69,7 +69,7 @@
     "message": "Odstranit tuto relaci?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Relace smazána."
   },
   "restoreSessionLabel": {
     "message": "Obnovit"
@@ -84,7 +84,7 @@
     "message": "Odstranit štítek"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Podrobnosti"
   },
   "windowLabel": {
     "message": "Okno"
@@ -99,13 +99,13 @@
     "message": "Panely"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Žádná uložená relace."
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Žádné výsledky."
   },
   "menuLabel": {
     "message": "Nabídka"
@@ -117,28 +117,28 @@
     "message": "Otevřít v novém okně"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Otevřít relaci v novém okně."
   },
   "openInCurrentWindowLabel": {
     "message": "Otevřít v aktuálním okně"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Otevřít relaci v aktuální okně. Neaktivní okna a panely zavřít."
   },
   "addToCurrentWindowLabel": {
     "message": "Přidat do aktuálního okna"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Přidat panely do aktuálního okna. Pokud relace obsahuje více oken, otevříť v novém okně."
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Nahradit stávající relací"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Nahradit stávajícím oknem"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Vytvořit kopii relace"
   },
   "errorLabel": {
     "message": "Chyba"
@@ -294,7 +294,7 @@
     "message": "Example: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Uložit anonymní okno"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "If unchecked, ignores the private window when saving the session."
