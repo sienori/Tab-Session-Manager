@@ -195,13 +195,13 @@
     "message": "Quando viene aperta una sessione, il contenuto di ogni pagina non viene caricato finché selezioni la scheda.<br>Se disattivato, l'utilizzo della memoria aumenta notevolmente quando la sessione viene ripristinata."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Usa la funzione \"scartato\" per il caricamento posticipato"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Abilitando questa funzione verrà migliorata la velocità di apertura delle schede."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "L'icona delle schede con caricamento posticipato non verrà mostrata."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Ripristina posizione delle finestre"
@@ -237,7 +237,7 @@
     "message": "Salva la sessione quando la finestra viene chiusa"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Salva la sessione che include solo la finestra chiusa."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Numero massimo salvato"
@@ -246,16 +246,16 @@
     "message": "Numero massimo di sessioni salvate (in questa modalità)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Salva la sessione all'uscita del browser"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Salva la sessione che include più finestre chiuse di fila."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Numero massimo salvato"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Numero massimo di sessioni salvate (in questa modalità)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Usa il titolo della pagina per salvare automaticamente il nome della sessione"
@@ -321,28 +321,28 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Comportamento pulsante Apri"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Definisci il comportamento predefinito del pulsante Apri."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Comportamento pulsante Salva"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Definisci il comportamento predefinito del pulsante Salva."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Mostra barra di ricerca"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Aggiunge la funzione per cercare una sessione per nome."
   },
   "sizeLabel": {
     "message": "Dimensioni"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Definisce la dimensione della finestra popup."
   },
   "widthLabel": {
     "message": "Larghezza"
@@ -354,16 +354,16 @@
     "message": "Altro"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Mostra pagina impostazioni durante l'aggiornamento"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Mostra la pagina delle impostazioni quando Tab Session Manager viene aggiornato. Ti permette di conoscere rapidamente le novità dell'aggiornamento."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager è stato aggiornato!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Clicca qui per ulteriori informazioni riguardo l'aggiornamento."
   },
   "resetSettingsLabel": {
     "message": "Ripristina impostazioni"
