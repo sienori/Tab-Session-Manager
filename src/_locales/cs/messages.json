@@ -204,16 +204,16 @@
     "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Obnovit pozici oken"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Obnovit pozici a velikost oken při otevírání relace."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Restore previous session at startup"
+    "message": "Obnovit poslední relaci při startu"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Při otevření prohlížeče, obnovit poslední zavřenou relaci."
   },
   "ifAutoSaveLabel": {
     "message": "Ukládat relaci pravidelně"
@@ -297,7 +297,7 @@
     "message": "Uložit anonymní okno"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Při nevybrání této volby, ignoruje anonymní okno při ukládání relace."
   },
   "ifSupportTstLabel": {
     "message": "Supports Tree Style Tab"
@@ -306,7 +306,7 @@
     "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Zpoždění při obnovování stromů (milisekundy)"
   },
   "tstDelayCaptionLabel": {
     "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
@@ -369,7 +369,7 @@
     "message": "Reset settings"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Obnovit všechna nastavenína výchozí hodnotu."
   },
   "resetSettingsButtonLabel": {
     "message": "Reset"
