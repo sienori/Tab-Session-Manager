@@ -33,10 +33,10 @@
     "message": "Toutes"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Sauvegarde de l’utilisateur"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Sauvegarde automatique"
   },
   "newestLabel": {
     "message": "Plus récentes"
@@ -129,7 +129,7 @@
     "message": "Ajouter à la fenêtre en cours"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Ajouter les onglets à la fenêtre actuelle. Si la session contient plusieurs fenêtres, l’ouvrir dans une nouvelle fenêtre."
   },
   "replaceCurrentSessionLabel": {
     "message": "Remplacer par la session en cours"
@@ -150,16 +150,16 @@
     "message": "Comment faire pour résoudre ce problème"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Il est impossible d’ouvrir plusieurs fenêtres surgissantes simultanément."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Sauvegarde automatique – Fenêtre fermée"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Sauvegarde automatique – Navigateur quitté"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Sauvegarde automatique – Périodique"
   },
   "settingsLabel": {
     "message": "Paramètres"
