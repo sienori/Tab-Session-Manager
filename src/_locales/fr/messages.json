@@ -249,13 +249,13 @@
     "message": "Sauvegarder la session lors de la fermeture du navigateur"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Sauvegarder la session qui inclut toutes les fenêtres fermées consécutivement."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Nombre maximal sauvegardé"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Nombre maximal de sessions sauvegardées (de cette façon)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Utiliser le titre de la page comme nom pour les sessions enregistrées automatiquement"
@@ -276,7 +276,7 @@
     "message": "Emplacement de la sauvegarde"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Renseignez le dossier où placer le fichier de sauvegarde. L’emplacement est restreint aux sous-dossiers du dossier de téléchargement du navigateur."
   },
   "downloadFolderLabel": {
     "message": "Dossier de téléchargement"
