@@ -195,10 +195,10 @@
     "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet.<br>Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsqu'une session est restaurée."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Charger les onglets comme étant désactivés pour leur chargement différé"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Activer cette option améliorera les performances lors de l’ouverture des onglets."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
