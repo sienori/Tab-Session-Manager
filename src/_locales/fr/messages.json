@@ -123,7 +123,7 @@
     "message": "Ouvrir dans la fenêtre actuelle"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Ouvrir la session dans la fenêtre actuelle."
+    "message": "Ouvrir la session dans la fenêtre actuelle. Les autres fenêtres et tous les onglets seront fermés."
   },
   "addToCurrentWindowLabel": {
     "message": "Ajouter à la fenêtre en cours"
@@ -324,7 +324,7 @@
     "message": "Comportement du bouton Ouvrir"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Sélectionnez le comportement par défaut du bouton Ouvrir."
   },
   "saveButtonBehaviorLabel": {
     "message": "Comportement du bouton Enregistrer"
