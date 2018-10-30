@@ -201,7 +201,7 @@
     "message": "Activer cette option améliorera les performances lors de l’ouverture des onglets."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "La favoricône de l’onglet chargé de manière différée n’est pas affichée."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Rétablir la position de la fenêtre"
@@ -213,7 +213,7 @@
     "message": "Restaurer la dernière session au démarrage"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Lorsque le navigateur démarre, restaurer la session qui a été fermée la dernière fois."
   },
   "ifAutoSaveLabel": {
     "message": "Enregistrer régulièrement la session"
@@ -237,7 +237,7 @@
     "message": "Enregistrer la session à la fermeture d'une fenêtre"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Sauvegarder la session qui inclut une seule fenêtre fermée."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Nombre maximum enregistrées"
@@ -246,7 +246,7 @@
     "message": "Nombre maximal de sessions enregistrées de cette façon."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Sauvegarder la session lors de la fermeture du navigateur"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
