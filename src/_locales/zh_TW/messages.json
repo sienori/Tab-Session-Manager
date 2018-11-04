@@ -195,13 +195,13 @@
     "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>如果關閉此選項，還原瀏覽階段時的記憶體使用量將會增加。"
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "使用\"discarded\"屬性進行延遲載入"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Enabling this option will improve performance when opening tabs."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "不顯示延遲載入分頁的圖示。"
   },
   "isRestoreWindowPositionLabel": {
     "message": "還原視窗位置"
@@ -246,7 +246,7 @@
     "message": "使用這個方法儲存的瀏覽階段數量。"
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "結束瀏覽器時儲存瀏覽階段"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
