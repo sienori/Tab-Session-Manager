@@ -252,10 +252,10 @@
     "message": "Save the session that includes multiple windows that was closed in a row."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "最大儲存數量"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "透過這種方式儲存的瀏覽階段數量。"
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "使用頁面標題幫自動儲存的瀏覽階段命名"
