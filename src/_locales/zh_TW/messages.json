@@ -198,7 +198,7 @@
     "message": "使用\"discarded\"屬性進行延遲載入"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "啟用此選項將提升開啟分頁時的效能。"
   },
   "isUseDiscardedCaption2Label": {
     "message": "不顯示延遲載入分頁的圖示。"
