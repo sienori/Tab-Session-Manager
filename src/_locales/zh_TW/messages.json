@@ -237,7 +237,7 @@
     "message": "關閉視窗時儲存瀏覽階段"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "儲存僅包含一個已關閉視窗的瀏覽階段。"
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "最大儲存數量"
@@ -249,7 +249,7 @@
     "message": "結束瀏覽器時儲存瀏覽階段"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "儲存瀏覽階段，此瀏覽階段由幾個連續關閉的視窗組成。\n"
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "最大儲存數量"
