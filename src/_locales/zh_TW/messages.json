@@ -231,7 +231,7 @@
     "message": "最大儲存數量"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "使用這個方法儲存的瀏覽階段數量"
+    "message": "透過這種方式儲存的瀏覽階段數量。"
   },
   "ifAutoSaveWhenCloseLabel": {
     "message": "關閉視窗時儲存瀏覽階段"
@@ -243,7 +243,7 @@
     "message": "最大儲存數量"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "使用這個方法儲存的瀏覽階段數量。"
+    "message": "透過這種方式儲存的瀏覽階段數量。"
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "結束瀏覽器時儲存瀏覽階段"
