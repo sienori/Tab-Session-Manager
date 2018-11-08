@@ -27,7 +27,7 @@ import { openSession } from "./open";
 import { addTag, removeTag } from "./tag";
 import { initSettings, handleSettingsChange } from "src/settings/settings";
 import exportSessions from "./export";
-import onInstalledListener from "./onInstalledListener";
+import onInstalledListener, { isUpdated } from "./onInstalledListener";
 
 export const SessionStartTime = Date.now();
 
@@ -56,9 +56,11 @@ const init = async () => {
   IsInit = true;
   await updateOldSessions();
 
-  autoSaveWhenExitBrowser().then(() => {
-    openLastSession();
-  });
+  if (!isUpdated) {
+    autoSaveWhenExitBrowser().then(() => {
+      openLastSession();
+    });
+  }
 
   setAutoSave();
   backupSessions();

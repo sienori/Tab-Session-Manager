@@ -8,8 +8,11 @@ const openOptionsPage = active => {
   });
 };
 
+export let isUpdated = false;
+
 export default async details => {
   if (details.reason != "install" && details.reason != "update") return;
+  isUpdated = true;
   await initSettings();
   const isShowOptionsPage = getSettings("isShowOptionsPageWhenUpdated");
 
