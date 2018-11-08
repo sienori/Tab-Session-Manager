@@ -1,6 +1,5 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
-import { IsOpeningSession } from "./open.js";
 
 export function returnReplaceParameter(url) {
   let parameter = {};
@@ -48,8 +47,6 @@ export function returnReplaceURL(state, title, url, favIconUrl) {
 }
 
 export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) {
-  if (IsOpeningSession) return;
-
   const info = await browser.tabs.query({
     active: true,
     windowId: windowId
