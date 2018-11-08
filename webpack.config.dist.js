@@ -145,10 +145,6 @@ module.exports = [
           to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/LICENSE`)
         },
         {
-          from: `package-lock.json`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package-lock.json`)
-        },
-        {
           from: `package.json`,
           to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package.json`)
         },
