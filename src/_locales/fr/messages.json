@@ -33,10 +33,10 @@
     "message": "Toutes"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Sauvegarde de l’utilisateur"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Sauvegarde automatique"
   },
   "newestLabel": {
     "message": "Plus récentes"
@@ -123,13 +123,13 @@
     "message": "Ouvrir dans la fenêtre actuelle"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Ouvrir la session dans la fenêtre actuelle."
+    "message": "Ouvrir la session dans la fenêtre actuelle. Les autres fenêtres et tous les onglets seront fermés."
   },
   "addToCurrentWindowLabel": {
     "message": "Ajouter à la fenêtre en cours"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Ajouter les onglets à la fenêtre actuelle. Si la session contient plusieurs fenêtres, l’ouvrir dans une nouvelle fenêtre."
   },
   "replaceCurrentSessionLabel": {
     "message": "Remplacer par la session en cours"
@@ -150,16 +150,16 @@
     "message": "Comment faire pour résoudre ce problème"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Il est impossible d’ouvrir plusieurs fenêtres surgissantes simultanément."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Sauvegarde automatique – Fenêtre fermée"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Sauvegarde automatique – Navigateur quitté"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Sauvegarde automatique – Périodique"
   },
   "settingsLabel": {
     "message": "Paramètres"
@@ -195,13 +195,13 @@
     "message": "Lors de l'ouverture d'une session, le contenu de chaque page n'est pas chargé tant que vous n'avez pas sélectionné l'onglet.<br>Si cette case est décochée, l'utilisation de la mémoire augmente fortement lorsqu'une session est restaurée."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Charger les onglets comme étant désactivés pour leur chargement différé"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Activer cette option améliorera les performances lors de l’ouverture des onglets."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "La favoricône de l’onglet chargé de manière différée n’est pas affichée."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Rétablir la position de la fenêtre"
@@ -213,7 +213,7 @@
     "message": "Restaurer la dernière session au démarrage"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Lorsque le navigateur démarre, restaurer la session qui a été fermée la dernière fois."
   },
   "ifAutoSaveLabel": {
     "message": "Enregistrer régulièrement la session"
@@ -237,7 +237,7 @@
     "message": "Enregistrer la session à la fermeture d'une fenêtre"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Sauvegarder la session qui inclut une seule fenêtre fermée."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Nombre maximum enregistrées"
@@ -246,16 +246,16 @@
     "message": "Nombre maximal de sessions enregistrées de cette façon."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Sauvegarder la session lors de la fermeture du navigateur"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Sauvegarder la session qui inclut toutes les fenêtres fermées consécutivement."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Nombre maximal sauvegardé"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Nombre maximal de sessions sauvegardées (de cette façon)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Utiliser le titre de la page comme nom pour les sessions enregistrées automatiquement"
@@ -276,7 +276,7 @@
     "message": "Emplacement de la sauvegarde"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Renseignez le dossier où placer le fichier de sauvegarde. L’emplacement est restreint aux sous-dossiers du dossier de téléchargement du navigateur."
   },
   "downloadFolderLabel": {
     "message": "Dossier de téléchargement"
@@ -324,7 +324,7 @@
     "message": "Comportement du bouton Ouvrir"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Sélectionnez le comportement par défaut du bouton Ouvrir."
   },
   "saveButtonBehaviorLabel": {
     "message": "Comportement du bouton Enregistrer"
