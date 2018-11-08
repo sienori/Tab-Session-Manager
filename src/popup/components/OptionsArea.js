@@ -76,6 +76,12 @@ const isHitFilter = (filterValue, tagsCount) => {
   }
 };
 
+const isShowAutoOption = tagsCount => {
+  const autoSaveCounts = [tagsCount.winClose, tagsCount.browserExit, tagsCount.regular];
+  const existsMultiItems = autoSaveCounts.filter(count => count > 0).length >= 2;
+  return existsMultiItems;
+};
+
 export default class OptionsArea extends Component {
   handleFilterChange = e => {
     const filterValue = e.target.value;
@@ -107,14 +113,11 @@ export default class OptionsArea extends Component {
               <option value="_displayAll">
                 {browser.i18n.getMessage("displayAllLabel")} [{tagsCount.all}]
               </option>
-              {tagsCount.auto > 0 &&
-                tagsCount.winClose > 0 &&
-                tagsCount.browserExit > 0 &&
-                tagsCount.regular > 0 && (
-                  <option value="_auto">
-                    {browser.i18n.getMessage("displayAutoLabel")} [{tagsCount.auto}]
-                  </option>
-                )}
+              {isShowAutoOption(tagsCount) && (
+                <option value="_auto">
+                  {browser.i18n.getMessage("displayAutoLabel")} [{tagsCount.auto}]
+                </option>
+              )}
               {tagsCount.winClose > 0 && (
                 <option value="winClose">
                   {browser.i18n.getMessage("winCloseSessionName")} [{tagsCount.winClose}]
