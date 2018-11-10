@@ -195,13 +195,13 @@
     "message": "Під час відкриття сесії вміст вкладок не завантажується, поки вкладка не буде активована вручну. <br>При відключенні зросте витрата пам'яті після відновлення сесії."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Використовувати властивість \"відхилено\" для відкладеного завантаження"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Включення цієї опції покращить продуктивність при відкритті вкладок."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Значок відкладеного завантаження вкладки не відображається."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Відновити розташування вікон"
@@ -273,7 +273,7 @@
     "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
-    "message": "Розташування"
+    "message": "Зберегти розташування"
   },
   "backupFolderCaptionLabel": {
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
@@ -291,10 +291,10 @@
     "message": "Формат дати"
   },
   "dateFormatCaptionLabel": {
-    "message": "Наприклад: YYYY.MM.DD HH:mm:ss"
+    "message": "Наприклад: РРРР.ММ.ДД ГГ:хх:сс"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Зберігати приватне вікно"
+    "message": "Зберегти приватне вікно"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
