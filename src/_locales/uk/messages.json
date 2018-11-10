@@ -303,7 +303,7 @@
     "message": "Підтримка Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Відновити стан дерева Tree Style Tab.<br> Якщо цей параметр увімкнено, потрібен час, щоб відновити сеанс."
   },
   "tstDelayLabel": {
     "message": "Затримка під час відновленні дерева (мілісекунди)"
