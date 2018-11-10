@@ -378,7 +378,7 @@
     "message": "Імпорт сесій"
   },
   "importCaptionLabel": {
-    "message": "Завантажити збережені раніше сесії. <br>Файли SessionManager (.session) також підтримуються."
+    "message": "Завантажити збережені раніше сесії. <br>Також підтримуються файли SessionManager (.session)."
   },
   "importButtonLabel": {
     "message": "Перегляд..."
