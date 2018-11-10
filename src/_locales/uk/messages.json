@@ -123,7 +123,7 @@
     "message": "Відкрити у поточному вікні"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Відкрити сесію у поточному вікні. Неактивні вікна та всі вкладки закриті."
   },
   "addToCurrentWindowLabel": {
     "message": "Додати до поточного вікна"
@@ -153,13 +153,13 @@
     "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Автозбереження - Закриття вікна"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Автозбереження - Вихід з браузера"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Автозбереження - Регулярно"
   },
   "settingsLabel": {
     "message": "Налаштування"
@@ -252,10 +252,10 @@
     "message": "Save the session that includes multiple windows that was closed in a row."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Максимальна кількість збережень"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Максимальна кількість збережень сесій (у цьому випадку)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Використовувати заголовок сторінки для автоматичного збереження назви сесії"
@@ -333,10 +333,10 @@
     "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Відобразити панель пошуку"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Додати функцію пошуку за назвою сесії."
   },
   "sizeLabel": {
     "message": "Розмір"
@@ -426,10 +426,10 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Сторінка доповнення"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Сторінка розширення"
   },
   "importMessage": {
     "message": "Сесія імпортована."
