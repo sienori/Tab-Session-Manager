@@ -303,7 +303,7 @@
     "message": "Підтримка Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Відновити стан дерева Tree Style Tab.<br> Якщо цей параметр увімкнено, потрібен час, щоб відновити сеанс."
+    "message": "Відновлюється стан дерева Tree Style Tab.<br> Якщо параметр увімкнено, потрібен певний час, щоб відновити сеанс."
   },
   "tstDelayLabel": {
     "message": "Затримка під час відновленні дерева (мілісекунди)"
@@ -324,13 +324,13 @@
     "message": "Поведінка кнопки \"Відкрити\""
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Обрати типову поведінку для кнопки \"Відкрити\"."
+    "message": "Обирається типова поведінка для кнопки \"Відкрити\"."
   },
   "saveButtonBehaviorLabel": {
     "message": "Поведінка кнопки \"Зберегти\""
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Обрати типову поведінку для клавіші \"Зберегти\"."
+    "message": "Обирається типова поведінка для кнопки \"Зберегти\"."
   },
   "isShowSearchBarLabel": {
     "message": "Відобразити панель пошуку"
@@ -354,19 +354,19 @@
     "message": "Інше"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Показувати вікно налаштувань якщо оновився"
+    "message": "Показувати сторінку \"Інформація\" якщо оновився"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Показувати сторінку параметрів якщо оновився Tab Session Manager. Ви маєте можливість швидко дізнатися про зміст оновлення."
+    "message": "Показувати сторінку \"Інформація\" якщо оновився Tab Session Manager. Ви маєте можливість швидко дізнатися про зміст оновлення."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager було оновлено!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Натисніть, щоб отримати більше інформації."
+    "message": "Натисніть, щоб переглянути інформацію про оновлення."
   },
   "resetSettingsLabel": {
-    "message": "Скидання налаштувань"
+    "message": "Скинути налаштувань"
   },
   "resetSettingsCaptionLabel": {
     "message": "Відновити всі налаштування за замовчуванням."
@@ -384,7 +384,7 @@
     "message": "Перегляд..."
   },
   "importSaveButtonLabel": {
-    "message": "Імпорт"
+    "message": "Імпортувати"
   },
   "importClearButtonLabel": {
     "message": "Очистити"
@@ -402,7 +402,7 @@
     "message": "Зберегти всі сесії на цей комп'ютер."
   },
   "exportButtonLabel": {
-    "message": "Експорт"
+    "message": "Експортувати"
   },
   "removeSessionsLabel": {
     "message": "Видалити сесії"
