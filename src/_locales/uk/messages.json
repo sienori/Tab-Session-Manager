@@ -18,7 +18,7 @@
     "message": "Введіть назву сесії"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Зберегти всі вікна"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Зберегти лише поточне вікно"
@@ -33,10 +33,10 @@
     "message": "Всі"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Збережено куристувачем"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Збережено автоматично"
   },
   "newestLabel": {
     "message": "Найновіші"
@@ -51,13 +51,13 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Пошук за назвою сесії"
   },
   "search": {
-    "message": "Search"
+    "message": "Пошук"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Очистити пошук"
   },
   "open": {
     "message": "Відкрити"
@@ -69,7 +69,7 @@
     "message": "Видалити цю сесію?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Сесію було видалено."
   },
   "restoreSessionLabel": {
     "message": "Відновити"
@@ -99,13 +99,13 @@
     "message": "Вкладки"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Сесії немає."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Давайте збережемо сесію, натиснувши кнопку внизу справа."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Немає відповідних результатів."
   },
   "menuLabel": {
     "message": "Меню"
@@ -117,7 +117,7 @@
     "message": "Відкрити у новому вікні"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Відкрити сесію у новому вікні."
   },
   "openInCurrentWindowLabel": {
     "message": "Відкрити у поточному вікні"
@@ -318,16 +318,16 @@
     "message": "Якщо назва сесії в списку займає більше одного рядка, вона буде скорочуватися до одного рядку."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Спливаюче вікно"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Поведінка кнопки \"Відкрити\""
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Поведінка кнопки \"Зберегти\""
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the save button."
@@ -339,7 +339,7 @@
     "message": "Add a function to search by session name."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Розмір"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
