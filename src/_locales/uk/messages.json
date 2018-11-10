@@ -213,7 +213,7 @@
     "message": "Відновлювати попередню сесію при запуску"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Під час відкриття браузера, відновити сеанс, який було закрито в останній раз."
   },
   "ifAutoSaveLabel": {
     "message": "Періодично зберігати сесію"
@@ -237,7 +237,7 @@
     "message": "Зберігати сесію під час закриття вікна"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Зберегти сеанс, який містить лише одне закрите вікно."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимальна кількість збережень"
@@ -246,10 +246,10 @@
     "message": "Максимальна кількість сесій збережених таким чином."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Зберегти сеанс при виході з браузера"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Зберегти сеанс, який містить кілька вікон, які були закриті поспіль."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Максимальна кількість збережень"
@@ -270,13 +270,13 @@
     "message": "Зберігати резервну копію"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Коли веб-переглядач запускається, створити файл резервної копії сесій та зберегти його у теці завантаження."
   },
   "backupFolderLabel": {
     "message": "Зберегти розташування"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Вкажіть теку для збереження файлу резервної копії. Місце збереження обмежується текою у теці завантаження браузера."
   },
   "downloadFolderLabel": {
     "message": "Каталог завантажень"
