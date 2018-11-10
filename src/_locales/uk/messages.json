@@ -123,13 +123,13 @@
     "message": "Відкрити у поточному вікні"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Відкрити сесію у поточному вікні. Неактивні вікна та всі вкладки закриті."
+    "message": "Відкрити сесію у поточному вікні. Неактивні вікна та всі вкладки закрити."
   },
   "addToCurrentWindowLabel": {
     "message": "Додати до поточного вікна"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікно - відкрити її в новому вікні."
   },
   "replaceCurrentSessionLabel": {
     "message": "Замінити поточної сесією"
@@ -150,7 +150,7 @@
     "message": "Як вирішити цю проблему"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Одночасно не можуть бути відкриті кілька спливаючих вікон."
   },
   "winCloseSessionName": {
     "message": "Автозбереження - Закриття вікна"
@@ -324,13 +324,13 @@
     "message": "Поведінка кнопки \"Відкрити\""
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Обрати типову поведінку для кнопки \"Відкрити\"."
   },
   "saveButtonBehaviorLabel": {
     "message": "Поведінка кнопки \"Зберегти\""
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Обрати типову поведінку для клавіші \"Зберегти\"."
   },
   "isShowSearchBarLabel": {
     "message": "Відобразити панель пошуку"
@@ -342,7 +342,7 @@
     "message": "Розмір"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Вказати розмір спливаючого вікна."
   },
   "widthLabel": {
     "message": "Ширина"
@@ -354,16 +354,16 @@
     "message": "Інше"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Показувати вікно налаштувань якщо оновився"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Показувати сторінку параметрів якщо оновився Tab Session Manager. Ви маєте можливість швидко дізнатися про зміст оновлення."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager було оновлено!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Натисніть, щоб отримати більше інформації."
   },
   "resetSettingsLabel": {
     "message": "Скидання налаштувань"
