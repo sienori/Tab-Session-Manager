@@ -17,8 +17,7 @@ export default [
             captions: ["isUseDiscardedCaptionLabel", "isUseDiscardedCaption2Label"],
             type: "checkbox",
             default: true,
-            shouldShow: browserInfo().name == "Firefox" && browserInfo().version >= 63,
-            new: true
+            shouldShow: browserInfo().name == "Firefox" && browserInfo().version >= 63
           }
         ]
       },
@@ -119,7 +118,6 @@ export default [
         captions: ["ifAutoSaveWhenExitBrowserCaptionLabel"],
         type: "checkbox",
         default: true,
-        new: true,
         childElements: [
           {
             id: "autoSaveWhenExitBrowserLimit",
