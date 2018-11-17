@@ -1,6 +1,7 @@
 ---
 name: Bug report
 about: Create a report to help me improve
+labels: 
 
 ---
 
@@ -19,6 +20,8 @@ about: Create a report to help me improve
 
 ## Actual result
 <!-- If you have any screenshot or screencast, it will help me more. -->
+<!-- Also, please enable the debug mode and show the error log. -->
+
 
 ## Platform information
 * Platform (OS): 
