@@ -365,6 +365,12 @@
   "NotificationOnUpdateCaptionLabel": {
     "message": "クリックすると更新情報を表示します。"
   },
+  "isDebugModeLabel": {
+    "message": "デバッグモードを有効にする"
+  },
+  "isDebugModeCaptionLabel": {
+    "message": "デバッグモードを有効にすると，デバッガにログが出力されます。"
+  },
   "resetSettingsLabel": {
     "message": "設定をリセット"
   },
