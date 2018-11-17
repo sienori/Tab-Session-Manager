@@ -18,7 +18,7 @@
     "message": "Введіть назву сесії"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Зберегти всі вікна"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Зберегти лише поточне вікно"
@@ -33,10 +33,10 @@
     "message": "Всі"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Збережено куристувачем"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Збережено автоматично"
   },
   "newestLabel": {
     "message": "Найновіші"
@@ -51,13 +51,13 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Пошук за назвою сесії"
   },
   "search": {
-    "message": "Search"
+    "message": "Пошук"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Очистити пошук"
   },
   "open": {
     "message": "Відкрити"
@@ -69,13 +69,13 @@
     "message": "Видалити цю сесію?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Сесію було видалено."
   },
   "restoreSessionLabel": {
     "message": "Відновити"
   },
   "cancelLabel": {
-    "message": "Відміна"
+    "message": "Скасувати"
   },
   "addTagLabel": {
     "message": "Додати тег"
@@ -99,13 +99,13 @@
     "message": "Вкладки"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Сесії немає."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Давайте збережемо сесію, натиснувши кнопку внизу справа."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Немає відповідних результатів."
   },
   "menuLabel": {
     "message": "Меню"
@@ -117,19 +117,19 @@
     "message": "Відкрити у новому вікні"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Відкрити сесію у новому вікні."
   },
   "openInCurrentWindowLabel": {
     "message": "Відкрити у поточному вікні"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Відкрити сесію у поточному вікні. Неактивні вікна та всі вкладки закрити."
   },
   "addToCurrentWindowLabel": {
     "message": "Додати до поточного вікна"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікно - відкрити її в новому вікні."
   },
   "replaceCurrentSessionLabel": {
     "message": "Замінити поточної сесією"
@@ -150,16 +150,16 @@
     "message": "Як вирішити цю проблему"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Одночасно не можуть бути відкриті кілька спливаючих вікон."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Автозбереження - Закриття вікна"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Автозбереження - Вихід з браузера"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Автозбереження - Регулярно"
   },
   "settingsLabel": {
     "message": "Налаштування"
@@ -195,13 +195,13 @@
     "message": "Під час відкриття сесії вміст вкладок не завантажується, поки вкладка не буде активована вручну. <br>При відключенні зросте витрата пам'яті після відновлення сесії."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Використовувати властивість \"відхилено\" для відкладеного завантаження"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Включення цієї опції покращить продуктивність при відкритті вкладок."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Значок відкладеного завантаження вкладки не відображається."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Відновити розташування вікон"
@@ -213,7 +213,7 @@
     "message": "Відновлювати попередню сесію при запуску"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Під час відкриття браузера, відновити сеанс, який було закрито в останній раз."
   },
   "ifAutoSaveLabel": {
     "message": "Періодично зберігати сесію"
@@ -237,7 +237,7 @@
     "message": "Зберігати сесію під час закриття вікна"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Зберегти сеанс, який містить лише одне закрите вікно."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимальна кількість збережень"
@@ -246,16 +246,16 @@
     "message": "Максимальна кількість сесій збережених таким чином."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Зберегти сеанс при виході з браузера"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Зберегти сеанс, який містить кілька вікон, які були закриті поспіль."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Максимальна кількість збережень"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Максимальна кількість збережень сесій (у цьому випадку)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Використовувати заголовок сторінки для автоматичного збереження назви сесії"
@@ -270,13 +270,13 @@
     "message": "Зберігати резервну копію"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Коли веб-переглядач запускається, створити файл резервної копії сесій та зберегти його у теці завантаження."
   },
   "backupFolderLabel": {
-    "message": "Розташування"
+    "message": "Зберегти розташування"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Вкажіть теку для збереження файлу резервної копії. Місце збереження обмежується текою у теці завантаження браузера."
   },
   "downloadFolderLabel": {
     "message": "Каталог завантажень"
@@ -291,10 +291,10 @@
     "message": "Формат дати"
   },
   "dateFormatCaptionLabel": {
-    "message": "Наприклад: YYYY.MM.DD HH:mm:ss"
+    "message": "Наприклад: РРРР.ММ.ДД ГГ:хх:сс"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Зберігати приватне вікно"
+    "message": "Зберегти приватне вікно"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
@@ -303,7 +303,7 @@
     "message": "Підтримка Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Відновлюється стан дерева Tree Style Tab.<br> Якщо параметр увімкнено, потрібен певний час, щоб відновити сеанс."
   },
   "tstDelayLabel": {
     "message": "Затримка під час відновленні дерева (мілісекунди)"
@@ -318,31 +318,31 @@
     "message": "Якщо назва сесії в списку займає більше одного рядка, вона буде скорочуватися до одного рядку."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Спливаюче вікно"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Поведінка кнопки \"Відкрити\""
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Обирається типова поведінка для кнопки \"Відкрити\"."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Поведінка кнопки \"Зберегти\""
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Обирається типова поведінка для кнопки \"Зберегти\"."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Відобразити панель пошуку"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Додати функцію пошуку за назвою сесії."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Розмір"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Вказати розмір спливаючого вікна."
   },
   "widthLabel": {
     "message": "Ширина"
@@ -354,19 +354,25 @@
     "message": "Інше"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Показувати сторінку \"Інформація\" якщо оновився"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Показувати сторінку \"Інформація\" якщо оновився Tab Session Manager. Ви маєте можливість швидко дізнатися про зміст оновлення."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager було оновлено!"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Натисніть, щоб переглянути інформацію про оновлення."
+  },
+  "isDebugModeLabel": {
+    "message": "Enable debug mode"
+  },
+  "isDebugModeCaptionLabel": {
+    "message": "When debug mode is enabled, the log is output to the debugger."
   },
   "resetSettingsLabel": {
-    "message": "Скидання налаштувань"
+    "message": "Скинути налаштувань"
   },
   "resetSettingsCaptionLabel": {
     "message": "Відновити всі налаштування за замовчуванням."
@@ -378,13 +384,13 @@
     "message": "Імпорт сесій"
   },
   "importCaptionLabel": {
-    "message": "Завантажити збережені раніше сесії. <br>Файли SessionManager (.session) також підтримуються."
+    "message": "Завантажити збережені раніше сесії. <br>Також підтримуються файли SessionManager (.session)."
   },
   "importButtonLabel": {
     "message": "Перегляд..."
   },
   "importSaveButtonLabel": {
-    "message": "Імпорт"
+    "message": "Імпортувати"
   },
   "importClearButtonLabel": {
     "message": "Очистити"
@@ -402,7 +408,7 @@
     "message": "Зберегти всі сесії на цей комп'ютер."
   },
   "exportButtonLabel": {
-    "message": "Експорт"
+    "message": "Експортувати"
   },
   "removeSessionsLabel": {
     "message": "Видалити сесії"
@@ -426,10 +432,10 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Сторінка доповнення"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Сторінка розширення"
   },
   "importMessage": {
     "message": "Сесія імпортована."
