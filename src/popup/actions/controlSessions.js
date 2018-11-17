@@ -2,8 +2,12 @@ import browser from "webextension-polyfill";
 import clone from "clone";
 import uuidv4 from "uuid/v4";
 import moment from "moment";
+import log from "loglevel";
+
+const logDir = "popup/actions/controlSessions";
 
 export const getSessions = async (id = null, needKeys = null) => {
+  log.log(logDir, "getSessions()", id, needKeys);
   const sessions = await browser.runtime.sendMessage({
     message: "getSessions",
     id: id,
@@ -13,6 +17,7 @@ export const getSessions = async (id = null, needKeys = null) => {
 };
 
 export const sendOpenMessage = async (id, property, windowId = null) => {
+  log.info(logDir, "sendOpenMessage()", id, property, windowId);
   let openSession = await getSessions(id);
   if (openSession === undefined) return;
 
@@ -30,6 +35,7 @@ export const sendOpenMessage = async (id, property, windowId = null) => {
 };
 
 export const sendSessionRemoveMessage = id => {
+  log.info(logDir, "sendSessionRemoveMessage()", id);
   browser.runtime.sendMessage({
     message: "remove",
     id: id,
@@ -38,6 +44,7 @@ export const sendSessionRemoveMessage = id => {
 };
 
 export const sendSessionSaveMessage = (name, property = "saveAllWindows") => {
+  log.info(logDir, "sendSessionSaveMessage()", name, property);
   browser.runtime.sendMessage({
     message: "saveCurrentSession",
     name: name,
@@ -46,6 +53,7 @@ export const sendSessionSaveMessage = (name, property = "saveAllWindows") => {
 };
 
 export const sendSessionUpdateMessage = session => {
+  log.log(logDir, "sendSessionUpdateMessage()", session);
   browser.runtime.sendMessage({
     message: "update",
     session: session,
@@ -54,6 +62,7 @@ export const sendSessionUpdateMessage = session => {
 };
 
 export const sendSesssionRenameMessage = (sessionId, sessionName) => {
+  log.info(logDir, "sendSessionRenameMessage()", sessionId, sessionName);
   browser.runtime.sendMessage({
     message: "rename",
     id: sessionId,
@@ -62,6 +71,7 @@ export const sendSesssionRenameMessage = (sessionId, sessionName) => {
 };
 
 export const sendTagRemoveMessage = (sessionId, tagName) => {
+  log.info(logDir, "sendTagRemoveMessage()", sessionId, tagName);
   browser.runtime.sendMessage({
     message: "removeTag",
     id: sessionId,
@@ -70,6 +80,7 @@ export const sendTagRemoveMessage = (sessionId, tagName) => {
 };
 
 export const sendTagAddMessage = (sessionId, tagName) => {
+  log.info(logDir, "sendTagAddMessage()", sessionId, tagName);
   browser.runtime.sendMessage({
     message: "addTag",
     id: sessionId,
@@ -78,6 +89,7 @@ export const sendTagAddMessage = (sessionId, tagName) => {
 };
 
 export const deleteWindow = (session, winId) => {
+  log.info(logDir, "deleteWindow()", session, winId);
   session = clone(session);
   session.windowsNumber--;
   session.tabsNumber -= Object.keys(session.windows[winId]).length;
@@ -90,6 +102,7 @@ export const deleteWindow = (session, winId) => {
 };
 
 export const deleteTab = (session, winId, tabId) => {
+  log.info(logDir, "deleteTab()", session, winId, tabId);
   session = clone(session);
   session.tabsNumber--;
   if (session.tabsNumber <= 0) return;
@@ -116,6 +129,7 @@ export const deleteTab = (session, winId, tabId) => {
 };
 
 export const replaceCurrentSession = async (id, property = "default") => {
+  log.info(logDir, "replaceCurrentSession()", id, property);
   let currentSession = await browser.runtime.sendMessage({
     message: "getCurrentSession",
     property: property
@@ -130,6 +144,7 @@ export const replaceCurrentSession = async (id, property = "default") => {
 };
 
 export const makeCopySession = async id => {
+  log.info(logDir, "makeCopySession()", id);
   let session = await getSessions(id);
 
   session.id = uuidv4();
@@ -143,6 +158,7 @@ export const makeCopySession = async id => {
 };
 
 export const sendExportSessionMessage = (id = null) => {
+  log.info(logDir, "sendExportSessionMessage()", id);
   browser.runtime.sendMessage({
     message: "exportSessions",
     id: id

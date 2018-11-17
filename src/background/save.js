@@ -1,14 +1,19 @@
 import browser from "webextension-polyfill";
 import uuidv4 from "uuid/v4";
+import log from "loglevel";
 import { SessionStartTime } from "./background.js";
 import Sessions from "./sessions.js";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceParameter } from "./replace.js";
 import { getSessionsByTag } from "./tag.js";
 
+const logDir = "background/save";
+
 export function saveCurrentSession(name, tag, property) {
+  log.log(logDir, "saveCurrentSession()", name, tag, property);
   return new Promise(async (resolve, reject) => {
     const exit = () => {
+      log.log(logDir, "saveCurrentSession() exit()");
       reject();
       return;
     };
@@ -27,12 +32,14 @@ export function saveCurrentSession(name, tag, property) {
       await saveSession(session);
       resolve();
     } catch (e) {
+      log.error(logDir, "saveCurrentSession()", e);
       exit();
     }
   });
 }
 
 export async function loadCurrentSession(name, tag, property) {
+  log.log(logDir, "loadCurrentSession()", name, tag, property);
   let session = {
     windows: {},
     windowsNumber: 0,
@@ -90,6 +97,7 @@ export async function loadCurrentSession(name, tag, property) {
 //前回の自動保存からタブが変わっているか判定
 //自動保存する必要があればtrue
 async function isChangedAutoSaveSession(session) {
+  log.log(logDir, "isChangedAutoSaveSession()");
   const regularSessions = await getSessionsByTag("regular", ["id", "tag", "date", "windows"]);
   if (regularSessions.length == 0) return true;
 
@@ -119,6 +127,7 @@ async function sendMessage(message, id = null) {
 }
 
 export async function saveSession(session, isSendResponce = true) {
+  log.log(logDir, "saveSession()", session, isSendResponce);
   try {
     await Sessions.put(session);
     if (isSendResponce) sendMessage("saveSession", session.id);
@@ -126,6 +135,7 @@ export async function saveSession(session, isSendResponce = true) {
 }
 
 export async function removeSession(id, isSendResponce = true) {
+  log.log(logDir, "removeSession()", id, isSendResponce);
   try {
     await Sessions.delete(id);
     if (isSendResponce) sendMessage("deleteSession", id);
@@ -133,6 +143,7 @@ export async function removeSession(id, isSendResponce = true) {
 }
 
 export async function updateSession(session, isSendResponce = true) {
+  log.log(logDir, "updateSession()", session, isSendResponce);
   try {
     await Sessions.put(session);
     if (isSendResponce) sendMessage("updateSession", session.id);
@@ -140,6 +151,7 @@ export async function updateSession(session, isSendResponce = true) {
 }
 
 export async function renameSession(id, name) {
+  log.log(logDir, "renameSession()", id, name);
   let session = await Sessions.get(id).catch(() => {});
   if (session == undefined) return;
   session.name = name.trim();
@@ -147,6 +159,7 @@ export async function renameSession(id, name) {
 }
 
 export async function deleteAllSessions() {
+  log.log(logDir, "deleteAllSessions()");
   try {
     await Sessions.deleteAll();
     sendMessage("deleteAll");

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
+import { updateLogLevel, overWriteLogLevel } from "src/common/log";
 import { initSettings, resetAllSettings } from "src/settings/settings";
 import defaultSettings from "src/settings/defaultSettings";
 import CategoryContainer from "./CategoryContainer";
@@ -16,6 +17,8 @@ export default class SettingsPage extends Component {
 
   async init() {
     await initSettings();
+    overWriteLogLevel();
+    updateLogLevel();
     this.setState({ isInit: true });
   }
 

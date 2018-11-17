@@ -281,6 +281,14 @@ export default [
         captions: ["isShowOptionsPageWhenUpdatedCaptionLabel"],
         type: "checkbox",
         default: true
+      },
+      {
+        id: "isDebugMode",
+        title: "isDebugModeLabel",
+        captions: ["isDebugModeCaptionLabel"],
+        type: "checkbox",
+        default: false,
+        new: true
       }
     ]
   }

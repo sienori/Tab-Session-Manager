@@ -1,5 +1,8 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
+import log from "loglevel";
+
+const logDir = "background/replace";
 
 export function returnReplaceParameter(url) {
   let parameter = {};
@@ -61,6 +64,7 @@ export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) 
   const parameter = returnReplaceParameter(info[0].url);
 
   if (parameter.isReplaced && parameter.state == "redirect") {
+    log.info(logDir, "replacePage()", windowId);
     let updateProperties = {};
     updateProperties.url = parameter.url;
 
@@ -89,6 +93,7 @@ export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) 
 
 function toggleReaderMode(id) {
   if (browserInfo().name === "Chrome") return;
+  log.log(logDir, "toggleReaderMode()", id);
   browser.tabs.toggleReaderMode(id);
   browser.tabs.get(id).then(info => {
     if (info.status != "complete") {

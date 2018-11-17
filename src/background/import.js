@@ -1,8 +1,12 @@
 import uuidv4 from "uuid/v4";
+import log from "loglevel";
 import Sessions from "./sessions.js";
 import { saveSession } from "./save.js";
 
+const logDir = "background/import";
+
 export default async function importSessions(importedSessions) {
+  log.log(logDir, "import()", importedSessions);
   //idを無視して文字列に変換
   const toString = session => {
     let retSession = {};

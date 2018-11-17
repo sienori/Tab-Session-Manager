@@ -1,9 +1,13 @@
 import browser from "webextension-polyfill";
 import moment from "moment";
+import log from "loglevel";
 import Sessions from "./sessions.js";
 import { updateSession } from "./save.js";
 
+const logDir = "background/tag";
+
 export async function addTag(id, tag) {
+  log.log(logDir, "addTag()", id, tag);
   let session = await Sessions.get(id).catch(() => {});
   if (session == undefined) return;
 
@@ -39,6 +43,7 @@ export async function addTag(id, tag) {
 }
 
 export async function removeTag(id, tag) {
+  log.log(logDir, "removeTag()", id, tag);
   let session = await Sessions.get(id).catch(() => {});
   if (session == undefined) return;
 
@@ -57,6 +62,7 @@ export async function removeTag(id, tag) {
 
 //指定されたタグを含むセッションを新しい順に取得 needKeysにはtag, dateが必須
 export async function getSessionsByTag(tag, needKeys = null) {
+  log.log(logDir, "getSessionsByTag()", tag, needKeys);
   const newestSort = (a, b) => {
     return moment(b.date).unix() - moment(a.date).unix();
   };

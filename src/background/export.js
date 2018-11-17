@@ -1,9 +1,13 @@
 import browser from "webextension-polyfill";
 import moment from "moment";
+import log from "loglevel";
 import getSessions from "./getSessions";
 import { getSettings } from "../settings/settings";
 
+const logDir = "background/export";
+
 export default async function exportSessions(id = null) {
+  log.log(logDir, "exportSessions()", id);
   let sessions = await getSessions(id);
   if (sessions == undefined) return;
   if (!Array.isArray(sessions)) sessions = [sessions];
@@ -23,10 +27,13 @@ export default async function exportSessions(id = null) {
       conflictAction: "uniquify",
       saveAs: true
     })
-    .catch(() => {});
+    .catch(e => {
+      log.warn(logDir, "exportSessions()", e);
+    });
 }
 
 function generateFileName(sessions) {
+  log.log(logDir, "generateFileName", sessions);
   let fileName;
   if (sessions.length == 1) {
     fileName = `${sessions[0].name} - ${moment(sessions[0].date).format(

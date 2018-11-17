@@ -2,11 +2,15 @@ import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import moment from "moment";
 import uuidv4 from "uuid/v4";
+import log from "loglevel";
 import Sessions from "./sessions";
 import { updateSession, saveSession } from "./save";
 
+const logDir = "background/updateOldSessions";
+
 export default async () => {
   if (browserInfo().name === "Chrome") return;
+  log.info(logDir, "updateOldSessions()");
   await migrateSessionsFromStorage();
 
   //DBの更新が必要な場合
@@ -16,6 +20,7 @@ export default async () => {
 };
 
 const addNewValues = async () => {
+  log.log(logDir, "addNewValues()");
   const sessions = await Sessions.getAll().catch(() => {});
   for (let session of sessions) {
     if (session.windowsNumber === undefined) {
@@ -30,6 +35,7 @@ const addNewValues = async () => {
 };
 
 const migrateSessionsFromStorage = async () => {
+  log.log(logDir, "migrateSessionsFromStorage()");
   const getSessionsByStorage = () => {
     return new Promise(async resolve => {
       const value = await browser.storage.local.get("sessions");

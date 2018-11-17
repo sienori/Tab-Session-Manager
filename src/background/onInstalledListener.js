@@ -1,5 +1,8 @@
 import browser from "webextension-polyfill";
+import log from "loglevel";
 import { initSettings, getSettings, setSettings } from "src/settings/settings";
+
+const logDir = "background/onInstalledListener";
 
 const openOptionsPage = active => {
   browser.tabs.create({
@@ -12,6 +15,7 @@ export let isUpdated = false;
 
 export default async details => {
   if (details.reason != "install" && details.reason != "update") return;
+  log.info(logDir, "onInstalledListener()", details);
   isUpdated = true;
   await initSettings();
   const isShowOptionsPage = getSettings("isShowOptionsPageWhenUpdated");

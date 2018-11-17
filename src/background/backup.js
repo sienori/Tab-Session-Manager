@@ -1,13 +1,17 @@
 import browser from "webextension-polyfill";
 import moment from "moment";
+import log from "loglevel";
 import Sessions from "./sessions.js";
 import { getSettings } from "src/settings/settings";
+
+const logDir = "background/backup";
 
 export default async function backupSessions() {
   const sessions = await Sessions.getAll().catch([]);
 
   if (!getSettings("ifBackup")) return;
   if (sessions.length == 0) return;
+  log.log(logDir, "backupSessions()");
 
   const downloadUrl = URL.createObjectURL(
     new Blob([JSON.stringify(sessions, null, "    ")], {
@@ -27,6 +31,7 @@ export default async function backupSessions() {
 }
 
 function replaceBackupFolderName(folderName) {
+  log.log(logDir, "replaceBackupFolderName()", folderName);
   const specialChars = /\:|\?|\.|"|<|>|\|/g; //使用できない特殊文字
   const slash = /\//g; //単一のスラッシュ
   const spaces = /\s\s+/g; //連続したスペース
@@ -46,6 +51,7 @@ function replaceBackupFolderName(folderName) {
 }
 
 function returnFileName(sessions) {
+  log.log(logDir, "returnFileName()", sessions);
   const sessionLabel = browser.i18n.getMessage("sessionLabel").toLowerCase();
   const sessionsLabel = browser.i18n.getMessage("sessionsLabel").toLowerCase();
 

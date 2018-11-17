@@ -1,8 +1,12 @@
 import Sessions from "./sessions";
+import log from "loglevel";
+
+const logDir = "background/sessions";
 
 let DB;
 export default {
   init: () => {
+    log.log(logDir, "init()");
     const request = window.indexedDB.open("sessions", 1);
 
     request.onupgradeneeded = e => {
@@ -25,17 +29,19 @@ export default {
         resolve(e);
       };
       request.onerror = e => {
-        console.log(e);
+        log.error(logDir, "init()", e);
       };
     });
   },
 
   DBUpdate: async () => {
+    log.log(logDir, "DBUpdate()");
     let sessions;
     try {
       sessions = await Session.getAll();
       await Session.deleteAll();
     } catch (e) {
+      log.error(logDir, "DBUpdate()", e);
       return;
     }
 
@@ -45,6 +51,7 @@ export default {
   },
 
   put: session => {
+    log.log(logDir, "put()", session);
     const db = DB;
     const transaction = db.transaction("sessions", "readwrite");
     const store = transaction.objectStore("sessions");
@@ -55,13 +62,14 @@ export default {
         resolve();
       };
       request.onerror = e => {
-        console.log(e);
+        log.error(logDir, "put()", e);
         reject();
       };
     });
   },
 
   delete: id => {
+    log.log(logDir, "delete()", id);
     const db = DB;
     const transaction = db.transaction("sessions", "readwrite");
     const store = transaction.objectStore("sessions");
@@ -72,13 +80,14 @@ export default {
         resolve();
       };
       transaction.onerror = e => {
-        console.log(e);
+        log.error(logDir, "delete()", e);
         reject();
       };
     });
   },
 
   deleteAll: () => {
+    log.log(logDir, "deleteAll()");
     DB.close("sessions");
 
     const request = window.indexedDB.deleteDatabase("sessions");
@@ -88,13 +97,14 @@ export default {
         resolve(Sessions.init());
       };
       request.onerror = e => {
-        console.log(e);
+        log.error(logDir, "deleteAll()", e);
         reject();
       };
     });
   },
 
   get: id => {
+    log.log(logDir, "get()", id);
     const db = DB;
     const transaction = db.transaction("sessions", "readonly");
     const store = transaction.objectStore("sessions");
@@ -106,13 +116,14 @@ export default {
         else reject();
       };
       request.onerror = e => {
-        console.log(e);
+        log.error(logDir, "get()", e);
         reject();
       };
     });
   },
 
   getAll: (needKeys = null) => {
+    log.log(logDir, "getAll()", needKeys);
     const db = DB;
     const transaction = db.transaction("sessions", "readonly");
     const store = transaction.objectStore("sessions");
@@ -139,13 +150,14 @@ export default {
         }
       };
       request.onerror = e => {
-        console.log(e);
+        log.error(logDir, "getAll()", e);
         reject();
       };
     });
   },
 
   search: (index, key) => {
+    log.log(logDir, "search()", index, key);
     const db = DB;
     const transaction = db.transaction("sessions", "readonly");
     const store = transaction.objectStore("sessions");
@@ -163,7 +175,7 @@ export default {
         }
       };
       request.onerror = e => {
-        console.log(e);
+        log.error(logDir, "search()", e);
         resolve();
       };
     });

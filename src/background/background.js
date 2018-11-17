@@ -1,4 +1,5 @@
 import browser from "webextension-polyfill";
+import log from "loglevel";
 import updateOldSessions from "./updateOldSessions";
 import {
   setAutoSave,
@@ -28,7 +29,9 @@ import { addTag, removeTag } from "./tag";
 import { initSettings, handleSettingsChange } from "src/settings/settings";
 import exportSessions from "./export";
 import onInstalledListener, { isUpdated } from "./onInstalledListener";
+import { updateLogLevel, overWriteLogLevel } from "../common/log";
 
+const logDir = "background/background";
 export const SessionStartTime = Date.now();
 
 const addListeners = () => {
@@ -39,6 +42,7 @@ const addListeners = () => {
   browser.storage.onChanged.addListener((changes, areaName) => {
     handleSettingsChange(changes, areaName);
     setAutoSave(changes, areaName);
+    updateLogLevel();
   });
 
   browser.tabs.onUpdated.addListener(handleTabUpdated);
@@ -52,6 +56,9 @@ const addListeners = () => {
 let IsInit = false;
 const init = async () => {
   await initSettings();
+  overWriteLogLevel();
+  updateLogLevel();
+  log.info(logDir, "init()");
   await Sessions.init();
   IsInit = true;
   await updateOldSessions();
@@ -69,6 +76,7 @@ const init = async () => {
 init();
 
 const onMessageListener = async (request, sender, sendResponse) => {
+  log.info(logDir, "onMessageListener()", request);
   switch (request.message) {
     case "save":
       saveSession(request.session);

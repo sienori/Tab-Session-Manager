@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
+import log from "loglevel";
 import { initSettings, getSettings, setSettings } from "src/settings/settings";
+import { updateLogLevel, overWriteLogLevel } from "src/common/log";
 import {
   getSessions,
   sendSessionRemoveMessage,
@@ -14,6 +16,8 @@ import SaveArea from "./SaveArea";
 import Menu from "./Menu";
 import Error from "./Error";
 import "../styles/PopupPage.scss";
+
+const logDir = "popup/components/PopupPage";
 
 export default class PopupPage extends Component {
   constructor(props) {
@@ -49,6 +53,9 @@ export default class PopupPage extends Component {
 
   init = async () => {
     await initSettings();
+    overWriteLogLevel();
+    updateLogLevel();
+    log.info(logDir, "init()");
     document.body.style.width = `${getSettings("popupWidth")}px`;
     document.body.style.height = `${getSettings("popupHeight")}px`;
     this.setState({
@@ -70,6 +77,7 @@ export default class PopupPage extends Component {
   };
 
   changeSessions = async request => {
+    log.info(logDir, "changeSessions()", request);
     let sessions, newSession, index;
     switch (request.message) {
       case "saveSession":
@@ -97,20 +105,24 @@ export default class PopupPage extends Component {
   };
 
   changeFilterValue = value => {
+    log.info(logDir, "changeFilterValue()", value);
     this.setState({ filterValue: value });
     setSettings("filterValue", value);
   };
 
   changeSortValue = value => {
+    log.info(logDir, "changeSortValue()", value);
     this.setState({ sortValue: value });
     setSettings("sortValue", value);
   };
 
   changeSearchWord = searchWord => {
+    log.info(logDir, "changeSearchValue()", searchWord);
     this.setState({ searchWord: searchWord.trim() });
   };
 
   getSessionDetail = async id => {
+    log.info(logDir, "getSessionDetail()", id);
     const session = await getSessions(id);
     const sessions = this.state.sessions;
     const index = sessions.findIndex(session => session.id === id);
@@ -119,6 +131,7 @@ export default class PopupPage extends Component {
   };
 
   removeSession = async id => {
+    log.info(logDir, "removeSession()", id);
     const removedSession = await getSessions(id);
     this.setState({
       removedSession: removedSession
@@ -132,6 +145,7 @@ export default class PopupPage extends Component {
   };
 
   restoreSession = () => {
+    log.info(logDir, "restoreSession()");
     const removedSession = this.state.removedSession;
     if (removedSession.id == null) return;
     sendSessionUpdateMessage(removedSession);
@@ -141,6 +155,7 @@ export default class PopupPage extends Component {
   };
 
   openNotification = (message, buttonLabel, onClick) => {
+    log.info(logDir, "openNotification()", message, buttonLabel);
     this.setState({
       notification: {
         isOpen: true,
@@ -164,6 +179,7 @@ export default class PopupPage extends Component {
   };
 
   openMenu = (x, y, itemsComponent) => {
+    log.info(logDir, "openMenu()", itemsComponent);
     this.setState({
       menu: {
         isOpen: true,

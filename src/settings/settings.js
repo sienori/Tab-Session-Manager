@@ -1,6 +1,8 @@
 import browser from "webextension-polyfill";
+import log from "loglevel";
 import defaultSettings from "./defaultSettings";
 
+const logDir = "settings/settings";
 let currentSettings = {};
 
 export const initSettings = async () => {
@@ -34,6 +36,7 @@ export const initSettings = async () => {
 };
 
 export const setSettings = async (id, value) => {
+  log.info(logDir, "setSettings()", id, value);
   currentSettings[id] = value;
   await browser.storage.local.set({ Settings: currentSettings });
 };
@@ -43,6 +46,7 @@ export const getSettings = id => {
 };
 
 export const resetAllSettings = async () => {
+  log.info(logDir, "resetAllSettings()");
   currentSettings = {};
   await browser.storage.local.set({ Settings: currentSettings });
   await initSettings();

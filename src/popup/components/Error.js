@@ -1,8 +1,11 @@
 import React from "react";
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
+import log from "loglevel";
 import openUrl from "../actions/openUrl";
 import "../styles/Error.scss";
+
+const logDir = "popup/components/Error";
 
 const openIndexedDBWiki = () => {
   const url =
@@ -33,5 +36,6 @@ const errorContent = {
 
 export default props => {
   if (!props.error.isError) return null;
+  log.error(logDir, "Error()", props.error);
   return <div className="error">{errorContent[props.error.type]}</div>;
 };

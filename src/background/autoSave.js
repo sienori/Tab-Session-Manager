@@ -1,14 +1,18 @@
 import browser from "webextension-polyfill";
 import uuidv4 from "uuid/v4";
+import log from "loglevel";
 import { openSession } from "./open.js";
 import { getSessionsByTag } from "./tag.js";
 import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
 
+const logDir = "background/autoSave";
 let autoSaveTimer;
 
 function startAutoSave() {
+  log.log(logDir, "startAutoSave()");
   autoSaveTimer = setInterval(async function() {
+    log.info(logDir, "startAutoSave() autoSaveTimer");
     let name = browser.i18n.getMessage("regularSaveSessionName");
     if (getSettings("useTabTitleforAutoSave")) name = await getCurrentTabName();
     const tag = ["regular"];
@@ -29,6 +33,7 @@ function stopAutoSave() {
 //定期保存の設定が変更されたときにセット
 export function setAutoSave(changes, areaName) {
   if (isChangeAutoSaveSettings(changes, areaName)) {
+    log.info(logDir, "setAutoSave()", changes, areaName);
     stopAutoSave();
     if (!getSettings("ifAutoSave")) return;
     startAutoSave();
@@ -48,6 +53,7 @@ function isChangeAutoSaveSettings(changes, areaName) {
 }
 
 const updateTemp = async () => {
+  log.log(logDir, "updateTemp()");
   const name = await getCurrentTabName();
   let session = await loadCurrentSession(name, ["temp"], "default");
   let tempSessions = await getSessionsByTag("temp");
@@ -65,6 +71,7 @@ export const setUpdateTempTimer = () => {
     !getSettings("ifOpenLastSessionWhenStartUp")
   )
     return;
+  log.info(logDir, "setUpdateTempTimer()");
 
   clearTimeout(updateTempTimer);
   updateTempTimer = setTimeout(updateTemp, 1500);
@@ -72,16 +79,19 @@ export const setUpdateTempTimer = () => {
 
 export const handleTabUpdated = (tabId, changeInfo, tab) => {
   if (changeInfo.status != "complete") return;
+  log.info(logDir, "handleTabUpdated()");
   setUpdateTempTimer();
 };
 
 export const handleTabRemoved = (tabId, removeInfo) => {
   if (removeInfo.isWindowClosing) return;
+  log.info(logDir, "handleTabRemoved()");
   setUpdateTempTimer();
 };
 
 export const autoSaveWhenWindowClose = async removedWindowId => {
   if (!getSettings("ifAutoSaveWhenClose")) return;
+  log.info(logDir, "autoSaveWhenWindowClose()", removedWindowId);
 
   const tempSessions = await getSessionsByTag("temp");
   if (!tempSessions[0]) return;
@@ -109,6 +119,7 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
 export const autoSaveWhenExitBrowser = async () => {
   const tempSessions = await getSessionsByTag("temp");
   if (!tempSessions[0]) return;
+  log.info(logDir, "autoSaveWhenExitBrowser()");
 
   let session = tempSessions[0];
   if (!getSettings("useTabTitleforAutoSave"))
@@ -128,6 +139,7 @@ export const autoSaveWhenExitBrowser = async () => {
 
 export const openLastSession = async () => {
   if (!getSettings("ifOpenLastSessionWhenStartUp")) return;
+  log.info(logDir, "openLastSession()");
 
   const currentWindows = await browser.windows.getAll();
   const browserExitSessions = await getSessionsByTag("browserExit");
@@ -141,6 +153,7 @@ export const openLastSession = async () => {
 };
 
 async function removeOverLimit(tag, limit) {
+  log.log(logDir, "removeOverLimit()", tag, limit);
   const taggedSessions = await getSessionsByTag(tag, ["id", "tag", "date"]);
 
   if (taggedSessions.length > limit) {

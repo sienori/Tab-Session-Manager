@@ -1,17 +1,23 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
+import log from "loglevel";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 
+const logDir = "background/open";
+
 export async function openSession(session, property = "openInNewWindow") {
+  log.log(logDir, "openSession()", session, property);
   let isFirstWindowFlag = true;
   tabList = {};
   for (let win in session.windows) {
     const openInCurrentWindow = async () => {
+      log.log(logDir, "openSession() openInCurrentWindow()");
       const currentWindow = await removeNowOpenTabs();
       createTabs(session, win, currentWindow);
     };
     const openInNewWindow = async () => {
+      log.log(logDir, "openSession() openInNewWindow()");
       let createData = {};
       if (browserInfo().name === "Firefox") {
         const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
@@ -60,6 +66,7 @@ export async function openSession(session, property = "openInNewWindow") {
       createTabs(session, win, currentWindow);
     };
     const addToCurrentWindow = async () => {
+      log.log(logDir, "openSession() addToCurrentWindow()");
       const currentTabs = await browser.tabs.query({ currentWindow: true });
       const currentWinId = currentTabs[0].windowId;
       const currentWindow = await browser.windows.get(currentWinId, { populate: true });
@@ -93,6 +100,7 @@ const isEnabledOpenInReaderMode = browserInfo().name == "Firefox" && browserInfo
 
 //ウィンドウとタブを閉じてcurrentWindowを返す
 async function removeNowOpenTabs() {
+  log.log(logDir, "removeNowOpenTabs()");
   const currentTabs = await browser.tabs.query({ currentWindow: true });
   const currentWinId = currentTabs[0].windowId;
   const allWindows = await browser.windows.getAll({ populate: true });
@@ -112,6 +120,7 @@ async function removeNowOpenTabs() {
 
 //現在のウィンドウにタブを生成
 async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = false) {
+  log.log(logDir, "createTabs()", session, win, currentWindow, isAddtoCurrentWindow);
   let sortedTabs = [];
 
   for (let tab in session.windows[win]) {
@@ -139,6 +148,7 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
 let tabList = {};
 //実際にタブを開く
 function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
+  log.log(logDir, "openTab()", session, win, currentWindow, tab, isOpenToLastIndex);
   return new Promise(async function(resolve, reject) {
     const property = session.windows[win][tab];
     let createOption = {
@@ -209,18 +219,23 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
     }
 
     const tryOpen = async () => {
+      log.log(logDir, "openTab() tryOpen()");
       try {
         const newTab = await browser.tabs.create(createOption);
         tabList[property.id] = newTab.id;
         resolve();
       } catch (e) {
+        log.warn(logDir, "openTab() tryOpen() replace", e);
         createOption.url = returnReplaceURL(
           "open_faild",
           property.title,
           property.url,
           property.favIconUrl
         );
-        await browser.tabs.create(createOption).catch(() => reject()); //タブを開けなかった場合はreject
+        await browser.tabs.create(createOption).catch(e => {
+          log.error(logDir, "openTab() tryOpen() create", e);
+          reject();
+        }); //タブを開けなかった場合はreject
         resolve();
       }
     };
