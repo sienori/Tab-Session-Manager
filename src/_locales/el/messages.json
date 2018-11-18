@@ -36,10 +36,10 @@
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Αυτόματη αποθήκευση"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Νεότερα"
   },
   "oldestLabel": {
     "message": "Παλιότερα"
@@ -66,10 +66,10 @@
     "message": "Διαγραφή"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Διαγραφή της συνεδρίας;"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Η συνεδρία έχει διαγραφεί."
   },
   "restoreSessionLabel": {
     "message": "Επαναφορά"
@@ -165,7 +165,7 @@
     "message": "Settings"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "Συνεδρίες"
   },
   "informationLabel": {
     "message": "Πληροφορίες"
@@ -174,7 +174,7 @@
     "message": "Γενικά"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Αυτόματη αποθήκευση"
   },
   "startUpLabel": {
     "message": "Startup"
