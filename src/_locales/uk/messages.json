@@ -366,10 +366,10 @@
     "message": "Натисніть, щоб переглянути інформацію про оновлення."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Увімкнути режим налагодження"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Коли увімкнено режим налагодження, журнал виводиться до налагоджувача."
   },
   "resetSettingsLabel": {
     "message": "Скинути налаштувань"
