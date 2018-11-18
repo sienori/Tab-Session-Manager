@@ -42,28 +42,28 @@
     "message": "Newest"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Παλιότερα"
   },
   "aToZLabel": {
-    "message": "A-Z"
+    "message": "Α-Ω"
   },
   "zToALabel": {
-    "message": "Z-A"
+    "message": "Ω-Α"
   },
   "searchBarPlaceholder": {
     "message": "Search by session name"
   },
   "search": {
-    "message": "Search"
+    "message": "Αναζήτηση"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Καθαρισμός αναζήτησης"
   },
   "open": {
-    "message": "Open"
+    "message": "Άνοιγμα"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Διαγραφή"
   },
   "removeConfirmLabel": {
     "message": "Delete this session?"
@@ -72,31 +72,31 @@
     "message": "The session has been deleted."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Επαναφορά"
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Άκυρο"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Προσθήκη ετικέτας"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Κατάργηση ετικέτας"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Λεπτομέρεια"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "Παράθυρο"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "Παράθυρα"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "Καρτέλα"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "Καρτέλες"
   },
   "noSessionLabel": {
     "message": "There is no session."
@@ -108,13 +108,13 @@
     "message": "No matching results."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Μενού"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Μετονομασία"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Άνοιγμα σε νέο παράθυρο"
   },
   "openInNewWindowCaptionLabel": {
     "message": "Open the session in the new window."
@@ -168,10 +168,10 @@
     "message": "Sessions"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "Πληροφορίες"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Γενικά"
   },
   "autoSaveLabel": {
     "message": "Auto save"
