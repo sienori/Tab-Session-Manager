@@ -6,127 +6,127 @@
     "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Δωρεά μέσω PayPal"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "Αποθήκευση"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "Αποθήκευση τρέχουσας συνεδρίας"
   },
   "inputSessionNameLabel": {
     "message": "Input session name"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Αποθήκευση όλων των παραθύρων"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Αποθήκευση αυτού του παράθυρου"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Φίλτρα Κατηγορίας"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Ταξινόμηση"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Όλα"
   },
   "displayUserLabel": {
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Αυτόματη αποθήκευση"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Νεότερα"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Παλιότερα"
   },
   "aToZLabel": {
-    "message": "A-Z"
+    "message": "Α-Ω"
   },
   "zToALabel": {
-    "message": "Z-A"
+    "message": "Ω-Α"
   },
   "searchBarPlaceholder": {
     "message": "Search by session name"
   },
   "search": {
-    "message": "Search"
+    "message": "Αναζήτηση"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Καθαρισμός αναζήτησης"
   },
   "open": {
-    "message": "Open"
+    "message": "Άνοιγμα"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Διαγραφή"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Διαγραφή της συνεδρίας;"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Η συνεδρία έχει διαγραφεί."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Επαναφορά"
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Άκυρο"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Προσθήκη ετικέτας"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Κατάργηση ετικέτας"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Λεπτομέρεια"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "Παράθυρο"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "Παράθυρα"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "Καρτέλα"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "Καρτέλες"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Δεν υπάρχει συνεδρία."
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Κανένα αποτέλεσμα."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Μενού"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Μετονομασία"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Άνοιγμα σε νέο παράθυρο"
   },
   "openInNewWindowCaptionLabel": {
     "message": "Open the session in the new window."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Άνοιγμα στο τρέχον παράθυρο"
   },
   "openInCurrentWindowCaptionLabel": {
     "message": "Open the session in the current window. Inactive windows and all tabs are closed."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Προσθήκη στο τρέχον παράθυρο"
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
@@ -141,7 +141,7 @@
     "message": "Make a copy of the session"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Σφάλμα"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
@@ -153,34 +153,34 @@
     "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Αυτόματη αποθήκευση όταν κλείσει το παράθυρο"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Αυτόματη αποθήκευση όταν κλείσει ο πλοηγός"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Αυτόματη αποθήκευση τακτικά"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "Ρυθμίσεις"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "Συνεδρίες"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "Πληροφορίες"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Γενικά"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Αυτόματη αποθήκευση"
   },
   "startUpLabel": {
-    "message": "Startup"
+    "message": "Εκκίνηση"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Στυλ"
   },
   "ifOpenNewWindowLabel": {
     "message": "Open session in new window"
@@ -225,7 +225,7 @@
     "message": "Interval (minutes)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Ελάχιστη τιμή 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Maximum number Saved"
@@ -264,16 +264,16 @@
     "message": "When saving a session automatically, use the title of the opened page as the name of the session."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Αντίγραφο Ασφαλείας"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Αποθήευση Αντιγράφου Ασφαλείας"
   },
   "ifBackupCaptionLabel": {
     "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Τοποθεσία Αποθήκευσης"
   },
   "backupFolderCaptionLabel": {
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
@@ -288,7 +288,7 @@
     "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Μορφή ημερομηνίας"
   },
   "dateFormatCaptionLabel": {
     "message": "Example: YYYY.MM.DD HH:mm:ss"
@@ -339,19 +339,19 @@
     "message": "Add a function to search by session name."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Μέγεθος"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Πλάτος"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Ύψος"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Άλλο"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
     "message": "Display option page when updating"
@@ -378,7 +378,7 @@
     "message": "Restore all settings to default."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Επαναφορά"
   },
   "importLabel": {
     "message": "Import sessions"
@@ -390,7 +390,7 @@
     "message": "Browse..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Εισαγωγή"
   },
   "importClearButtonLabel": {
     "message": "Clear"
@@ -408,7 +408,7 @@
     "message": "Save all sessions to the computer."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "Εξαγωγή"
   },
   "removeSessionsLabel": {
     "message": "Delete sessions"
@@ -417,13 +417,13 @@
     "message": "Delete all sessions."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "Διαγραφή"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "Άδεια"
   },
   "donationLabel": {
-    "message": "Please make a donation"
+    "message": "Παρακαλούμε κάντε μας μια δωρεά"
   },
   "donationCaptionLabel": {
     "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
