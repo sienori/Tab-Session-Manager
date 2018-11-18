@@ -6,31 +6,31 @@
     "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Δωρεά μέσω PayPal"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "Αποθήκευση"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "Αποθήκευση τρέχουσας συνεδρίας"
   },
   "inputSessionNameLabel": {
     "message": "Input session name"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Αποθήκευση όλων των παραθύρων"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Αποθήκευση αυτού του παράθυρου"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Φίλτρα Κατηγορίας"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Ταξινόμηση"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Όλα"
   },
   "displayUserLabel": {
     "message": "User Save"
