@@ -123,7 +123,9 @@ async function sendMessage(message, id = null) {
       message: message,
       id: id
     })
-    .catch(() => {});
+    .catch(e => {
+      log.warn(logDir, "sendMessage()", message, id, e);
+    });
 }
 
 export async function saveSession(session, isSendResponce = true) {
@@ -131,7 +133,9 @@ export async function saveSession(session, isSendResponce = true) {
   try {
     await Sessions.put(session);
     if (isSendResponce) sendMessage("saveSession", session.id);
-  } catch (e) {}
+  } catch (e) {
+    log.error(logDir, "saveSession()", e);
+  }
 }
 
 export async function removeSession(id, isSendResponce = true) {
@@ -139,7 +143,9 @@ export async function removeSession(id, isSendResponce = true) {
   try {
     await Sessions.delete(id);
     if (isSendResponce) sendMessage("deleteSession", id);
-  } catch (e) {}
+  } catch (e) {
+    log.error(logDir, "removeSession()", e);
+  }
 }
 
 export async function updateSession(session, isSendResponce = true) {
@@ -147,7 +153,9 @@ export async function updateSession(session, isSendResponce = true) {
   try {
     await Sessions.put(session);
     if (isSendResponce) sendMessage("updateSession", session.id);
-  } catch (e) {}
+  } catch (e) {
+    log.error(logDir, "updateSession()", e);
+  }
 }
 
 export async function renameSession(id, name) {
@@ -163,5 +171,7 @@ export async function deleteAllSessions() {
   try {
     await Sessions.deleteAll();
     sendMessage("deleteAll");
-  } catch (e) {}
+  } catch (e) {
+    log.error(logDir, "deleteAllSessions()", e);
+  }
 }

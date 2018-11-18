@@ -7,7 +7,7 @@ import { getSettings } from "src/settings/settings";
 const logDir = "background/backup";
 
 export default async function backupSessions() {
-  const sessions = await Sessions.getAll().catch([]);
+  const sessions = await Sessions.getAll().catch(() => {});
 
   if (!getSettings("ifBackup")) return;
   if (sessions.length == 0) return;

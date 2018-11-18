@@ -44,6 +44,7 @@ const migrateSessionsFromStorage = async () => {
   };
   let sessions = await getSessionsByStorage();
   if (sessions.length == 0) return;
+  log.log(logDir, "=>migrateSessionsFromStorage() sessions", session);
 
   //タグを配列に変更
   const updateTags = () => {

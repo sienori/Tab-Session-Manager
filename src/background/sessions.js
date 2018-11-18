@@ -26,6 +26,7 @@ export default {
     return new Promise(resolve => {
       request.onsuccess = e => {
         DB = request.result;
+        log.log(logDir, "=>init()", e);
         resolve(e);
       };
       request.onerror = e => {
@@ -46,7 +47,9 @@ export default {
     }
 
     for (let session of sessions) {
-      await Session.put(session).catch(() => {});
+      await Session.put(session).catch(e => {
+        log.error(logDir, "DBUpdate()", e);
+      });
     }
   },
 
@@ -59,11 +62,12 @@ export default {
 
     return new Promise((resolve, reject) => {
       request.onsuccess = () => {
+        log.log(logDir, "=>put()", "success");
         resolve();
       };
       request.onerror = e => {
         log.error(logDir, "put()", e);
-        reject();
+        reject(e);
       };
     });
   },
@@ -77,11 +81,12 @@ export default {
 
     return new Promise((resolve, reject) => {
       transaction.oncomplete = () => {
+        log.log(logDir, "=>delete()", "complete");
         resolve();
       };
       transaction.onerror = e => {
         log.error(logDir, "delete()", e);
-        reject();
+        reject(e);
       };
     });
   },
@@ -94,11 +99,12 @@ export default {
 
     return new Promise(resolve => {
       request.onsuccess = () => {
+        log.log(logDir, "=>deleteAll()", "success");
         resolve(Sessions.init());
       };
       request.onerror = e => {
         log.error(logDir, "deleteAll()", e);
-        reject();
+        reject(e);
       };
     });
   },
@@ -112,12 +118,14 @@ export default {
 
     return new Promise((resolve, reject) => {
       request.onsuccess = () => {
-        if (request.result) resolve(request.result);
-        else reject();
+        if (request.result) {
+          log.log(logDir, "=>get()", request.result);
+          resolve(request.result);
+        } else reject(request);
       };
       request.onerror = e => {
         log.error(logDir, "get()", e);
-        reject();
+        reject(request);
       };
     });
   },
@@ -146,12 +154,13 @@ export default {
           sessions.push(session);
           cursor.continue();
         } else {
+          log.log(logDir, "=>getAll()", sessions);
           resolve(sessions);
         }
       };
       request.onerror = e => {
         log.error(logDir, "getAll()", e);
-        reject();
+        reject(request);
       };
     });
   },
@@ -171,6 +180,7 @@ export default {
           sessions.push(cursor.value);
           cursor.continue();
         } else {
+          log.log(logDir, "=>search()", sessions);
           resolve(sessions);
         }
       };
