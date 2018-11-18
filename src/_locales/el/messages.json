@@ -189,7 +189,7 @@
     "message": "If unchecked, the session overwrites the current window."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Φόρτωση καρτέλας αργότερα"
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
@@ -204,25 +204,25 @@
     "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Επαναφορά θέσης παραθύρου"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Επαναφορά θέσης και μεγέθους παραθύρων κατά το άνοιγμα περιόδου συνεδρίας."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Restore previous session at startup"
+    "message": "Επαναφορά συνεδρίας κατά την εκκίνηση"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
     "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "Τακτική αποθήκευση συνεδρίας"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "Αποθήκευση συνεδρίας κάθε X λεπτά."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "Διάστημα (σε λεπτά)"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "Ελάχιστη τιμή 0.1"
@@ -279,7 +279,7 @@
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Φάκελος λήψεων"
   },
   "backupFilesLimitLabel": {
     "message": "Maximum number of saved backups"
@@ -366,16 +366,16 @@
     "message": "Click to view update information."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Ενεργοποίηση εντοπισμού σφαλμάτων"
   },
   "isDebugModeCaptionLabel": {
     "message": "When debug mode is enabled, the log is output to the debugger."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Επαναφορά ρυθμίσεων"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Επαναφορά εργοστασιακών ρυθμίσεων."
   },
   "resetSettingsButtonLabel": {
     "message": "Επαναφορά"
@@ -447,7 +447,7 @@
     "message": "Delete all sessions. Are you sure?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Συνεδρία"
   },
   "amazonUrl": {
     "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
