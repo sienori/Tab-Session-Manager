@@ -123,9 +123,7 @@ async function sendMessage(message, id = null) {
       message: message,
       id: id
     })
-    .catch(e => {
-      log.warn(logDir, "sendMessage()", message, id, e);
-    });
+    .catch(() => {});
 }
 
 export async function saveSession(session, isSendResponce = true) {
