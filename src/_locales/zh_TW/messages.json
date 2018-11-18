@@ -369,7 +369,7 @@
     "message": "啟用偵錯模式"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "啟用偵錯模式後, 記錄檔將輸出至偵錯工具。"
   },
   "resetSettingsLabel": {
     "message": "重設設定"
