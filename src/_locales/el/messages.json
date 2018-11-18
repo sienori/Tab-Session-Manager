@@ -99,13 +99,13 @@
     "message": "Καρτέλες"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Δεν υπάρχει συνεδρία."
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Κανένα αποτέλεσμα."
   },
   "menuLabel": {
     "message": "Μενού"
@@ -141,7 +141,7 @@
     "message": "Make a copy of the session"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Σφάλμα"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
@@ -162,7 +162,7 @@
     "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "Ρυθμίσεις"
   },
   "sessionsLabel": {
     "message": "Συνεδρίες"
@@ -177,10 +177,10 @@
     "message": "Αυτόματη αποθήκευση"
   },
   "startUpLabel": {
-    "message": "Startup"
+    "message": "Εκκίνηση"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Στυλ"
   },
   "ifOpenNewWindowLabel": {
     "message": "Open session in new window"
@@ -225,7 +225,7 @@
     "message": "Interval (minutes)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Ελάχιστη τιμή 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Maximum number Saved"
