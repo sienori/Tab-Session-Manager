@@ -120,13 +120,13 @@
     "message": "Open the session in the new window."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Άνοιγμα στο τρέχον παράθυρο"
   },
   "openInCurrentWindowCaptionLabel": {
     "message": "Open the session in the current window. Inactive windows and all tabs are closed."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Προσθήκη στο τρέχον παράθυρο"
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
@@ -153,13 +153,13 @@
     "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Αυτόματη αποθήκευση όταν κλείσει το παράθυρο"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Αυτόματη αποθήκευση όταν κλείσει ο πλοηγός"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Αυτόματη αποθήκευση τακτικά"
   },
   "settingsLabel": {
     "message": "Ρυθμίσεις"
@@ -264,16 +264,16 @@
     "message": "When saving a session automatically, use the title of the opened page as the name of the session."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Αντίγραφο Ασφαλείας"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Αποθήευση Αντιγράφου Ασφαλείας"
   },
   "ifBackupCaptionLabel": {
     "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Τοποθεσία Αποθήκευσης"
   },
   "backupFolderCaptionLabel": {
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
@@ -288,7 +288,7 @@
     "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Μορφή ημερομηνίας"
   },
   "dateFormatCaptionLabel": {
     "message": "Example: YYYY.MM.DD HH:mm:ss"
@@ -339,19 +339,19 @@
     "message": "Add a function to search by session name."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Μέγεθος"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Πλάτος"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Ύψος"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Άλλο"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
     "message": "Display option page when updating"
@@ -378,7 +378,7 @@
     "message": "Restore all settings to default."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Επαναφορά"
   },
   "importLabel": {
     "message": "Import sessions"
@@ -390,7 +390,7 @@
     "message": "Browse..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Εισαγωγή"
   },
   "importClearButtonLabel": {
     "message": "Clear"
@@ -408,7 +408,7 @@
     "message": "Save all sessions to the computer."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "Εξαγωγή"
   },
   "removeSessionsLabel": {
     "message": "Delete sessions"
@@ -417,13 +417,13 @@
     "message": "Delete all sessions."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "Διαγραφή"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "Άδεια"
   },
   "donationLabel": {
-    "message": "Please make a donation"
+    "message": "Παρακαλούμε κάντε μας μια δωρεά"
   },
   "donationCaptionLabel": {
     "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
