@@ -9,21 +9,30 @@ import { getSettings } from "src/settings/settings";
 const logDir = "background/autoSave";
 let autoSaveTimer;
 
-function startAutoSave() {
-  log.log(logDir, "startAutoSave()");
-  autoSaveTimer = setInterval(async function() {
-    log.info(logDir, "startAutoSave() autoSaveTimer");
-    let name = browser.i18n.getMessage("regularSaveSessionName");
-    if (getSettings("useTabTitleforAutoSave")) name = await getCurrentTabName();
+const autoSaveRegular = async () => {
+  log.info(logDir, "autoSaveRegular()");
+  try {
+    const name = getSettings("useTabTitleforAutoSave")
+      ? await getCurrentTabName()
+      : browser.i18n.getMessage("regularSaveSessionName");
     const tag = ["regular"];
     const property = "saveAllWindows";
-    saveCurrentSession(name, tag, property)
-      .then(() => {
-        const limit = getSettings("autoSaveLimit");
-        removeOverLimit("regular", limit);
-      })
-      .catch(() => {});
-  }, getSettings("autoSaveInterval") * 60 * 1000);
+    const session = await loadCurrentSession(name, tag, property);
+
+    const isChanged = await isChangedAutoSaveSession(session);
+    if (!isChanged) return;
+
+    await saveSession(session);
+    const limit = getSettings("autoSaveLimit");
+    removeOverLimit("regular", limit);
+  } catch (e) {
+    log.error(logDir, "autoSaveRegular()", e);
+  }
+};
+
+function startAutoSave() {
+  log.log(logDir, "startAutoSave()");
+  autoSaveTimer = setInterval(autoSaveRegular, getSettings("autoSaveInterval") * 60 * 1000);
 }
 
 function stopAutoSave() {
@@ -185,4 +194,26 @@ async function getCurrentTabName() {
   } else {
     return await tabs[0].title;
   }
+}
+
+//前回の自動保存からタブが変わっているか判定
+async function isChangedAutoSaveSession(session) {
+  log.log(logDir, "isChangedAutoSaveSession()");
+  const regularSessions = await getSessionsByTag("regular", ["id", "tag", "date", "windows"]);
+  if (regularSessions.length == 0) return true;
+
+  const tabsToString = session => {
+    let retArray = [];
+    for (let windowNo in session.windows) {
+      retArray.push(windowNo);
+      for (let tabNo in session.windows[windowNo]) {
+        const tab = session.windows[windowNo][tabNo];
+        retArray.push(tab.id, tab.url);
+      }
+    }
+    return retArray.toString();
+  };
+
+  //前回保存時とタブが異なればtrue
+  return tabsToString(regularSessions[0]) != tabsToString(session);
 }

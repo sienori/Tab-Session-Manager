@@ -9,33 +9,12 @@ import { getSessionsByTag } from "./tag.js";
 
 const logDir = "background/save";
 
-export function saveCurrentSession(name, tag, property) {
+export async function saveCurrentSession(name, tag, property) {
   log.log(logDir, "saveCurrentSession()", name, tag, property);
-  return new Promise(async (resolve, reject) => {
-    const exit = () => {
-      log.log(logDir, "saveCurrentSession() exit()");
-      reject();
-      return;
-    };
-
-    try {
-      let session = await loadCurrentSession(name, tag, property);
-
-      //定期保存のセッションが変更されていなければ終了
-      if (tag.includes("regular")) {
-        const isChanged = await isChangedAutoSaveSession(session);
-        if (!isChanged) {
-          return exit();
-        }
-      }
-
-      await saveSession(session);
-      resolve();
-    } catch (e) {
-      log.error(logDir, "saveCurrentSession()", e);
-      exit();
-    }
+  const session = await loadCurrentSession(name, tag, property).catch(() => {
+    return Promise.reject();
   });
+  return await saveSession(session);
 }
 
 export async function loadCurrentSession(name, tag, property) {
@@ -92,29 +71,6 @@ export async function loadCurrentSession(name, tag, property) {
     if (session.tabsNumber > 0) resolve(session);
     else reject();
   });
-}
-
-//前回の自動保存からタブが変わっているか判定
-//自動保存する必要があればtrue
-async function isChangedAutoSaveSession(session) {
-  log.log(logDir, "isChangedAutoSaveSession()");
-  const regularSessions = await getSessionsByTag("regular", ["id", "tag", "date", "windows"]);
-  if (regularSessions.length == 0) return true;
-
-  const tabsToString = session => {
-    let retArray = [];
-    for (let windowNo in session.windows) {
-      retArray.push(windowNo);
-      for (let tabNo in session.windows[windowNo]) {
-        const tab = session.windows[windowNo][tabNo];
-        retArray.push(tab.id, tab.url);
-      }
-    }
-    return retArray.toString();
-  };
-
-  //前回保存時とタブが異なればtrue
-  return tabsToString(regularSessions[0]) != tabsToString(session);
 }
 
 async function sendMessage(message, id = null) {
