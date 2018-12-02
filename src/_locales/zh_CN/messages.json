@@ -69,10 +69,19 @@
     "message": "是否删除此会话？"
   },
   "sessionDeletedLabel": {
-    "message": "会话已被删除"
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "还原"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "取消"
