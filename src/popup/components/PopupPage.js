@@ -81,13 +81,13 @@ export default class PopupPage extends Component {
     let sessions, newSession, index;
     switch (request.message) {
       case "saveSession":
-        newSession = await getSessions(request.id);
+        newSession = request.session;
         sessions = this.state.sessions.concat(newSession);
         break;
       case "updateSession":
-        newSession = await getSessions(request.id);
+        newSession = request.session;
         sessions = this.state.sessions;
-        index = sessions.findIndex(session => session.id === request.id);
+        index = sessions.findIndex(session => session.id === newSession.id);
         if (index === -1) sessions = this.state.sessions.concat(newSession);
         else sessions.splice(index, 1, newSession);
         break;

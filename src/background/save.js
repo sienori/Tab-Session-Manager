@@ -73,11 +73,11 @@ export async function loadCurrentSession(name, tag, property) {
   });
 }
 
-async function sendMessage(message, id = null) {
+async function sendMessage(message, options = {}) {
   await browser.runtime
     .sendMessage({
       message: message,
-      id: id
+      ...options
     })
     .catch(() => {});
 }
@@ -86,7 +86,7 @@ export async function saveSession(session, isSendResponce = true) {
   log.log(logDir, "saveSession()", session, isSendResponce);
   try {
     await Sessions.put(session);
-    if (isSendResponce) sendMessage("saveSession", session.id);
+    if (isSendResponce) sendMessage("saveSession", { session: session });
   } catch (e) {
     log.error(logDir, "saveSession()", e);
   }
@@ -96,7 +96,7 @@ export async function removeSession(id, isSendResponce = true) {
   log.log(logDir, "removeSession()", id, isSendResponce);
   try {
     await Sessions.delete(id);
-    if (isSendResponce) sendMessage("deleteSession", id);
+    if (isSendResponce) sendMessage("deleteSession", { id: id });
   } catch (e) {
     log.error(logDir, "removeSession()", e);
   }
@@ -106,7 +106,7 @@ export async function updateSession(session, isSendResponce = true) {
   log.log(logDir, "updateSession()", session, isSendResponce);
   try {
     await Sessions.put(session);
-    if (isSendResponce) sendMessage("updateSession", session.id);
+    if (isSendResponce) sendMessage("updateSession", { session: session });
   } catch (e) {
     log.error(logDir, "updateSession()", e);
   }
