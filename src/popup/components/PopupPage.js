@@ -96,6 +96,7 @@ export default class PopupPage extends Component {
       case "deleteSession":
         sessions = this.state.sessions;
         index = sessions.findIndex(session => session.id === request.id);
+        if (index === -1) return;
         sessions.splice(index, 1);
         break;
       case "deleteAll":
