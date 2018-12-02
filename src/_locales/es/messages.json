@@ -69,10 +69,19 @@
     "message": "¿Eliminar esta sesión?"
   },
   "sessionDeletedLabel": {
-    "message": "Esta sesión ha sido eliminada."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Restaurar"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Cancelar"
@@ -153,10 +162,10 @@
     "message": "No se pueden abrir múltiples ventanas emergentes al mismo tiempo."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Auto guardado - Ventana Cerrada"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Auto Save - Navegador cerrado"
   },
   "regularSaveSessionName": {
     "message": "Auto guardado - Regularmente"
@@ -252,10 +261,10 @@
     "message": "Save the session that includes multiple windows that was closed in a row."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Número máximo de guardado"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Número máximo de sesiones guardadas de esta forma."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Usar el título de la página como nombre para la sesión guardada automáticamente"
@@ -354,7 +363,7 @@
     "message": "Otros"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Mostrar página de configuracion cuando se actualize"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
     "message": "Mostrar la página de opciones cuando se actualiza Tab Session Manager. Puede saber el contenido de la actualización rápidamente."
@@ -362,14 +371,17 @@
   "NotificationOnUpdateLabel": {
     "message": "¡Tab Session Manager se ha actualizado!"
   },
+  "seeMoreLabel": {
+    "message": "See more"
+  },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Haga clic para ver la información de actualización."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Activar modo de depuración"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Cuando está habilitado el modo de depuración, el registro es salida al depurador."
   },
   "resetSettingsLabel": {
     "message": "Restablecer ajustes"
