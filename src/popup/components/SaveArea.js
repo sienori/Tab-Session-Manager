@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
-import { getSettings } from "src/settings/settings";
+import { getSettings, initSettings } from "src/settings/settings";
 import SaveMenuItems from "./SaveMenuItems";
 import TriangleIcon from "../icons/triangle.svg";
 import "../styles/SaveArea.scss";
@@ -53,6 +53,7 @@ export default class SaveArea extends Component {
   }
 
   setTabName = async () => {
+    await initSettings();
     const tabName = await this.getCurrentTabName();
     const input = ReactDOM.findDOMNode(this.refs.input);
     input.value = tabName;
