@@ -69,10 +69,19 @@
     "message": "確定要刪除此瀏覽階段？"
   },
   "sessionDeletedLabel": {
-    "message": "此瀏覽階段已被刪除。"
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "還原"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "取消"
@@ -361,6 +370,9 @@
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager 已更新！"
+  },
+  "seeMoreLabel": {
+    "message": "See more"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "點選檢視更新資訊"
