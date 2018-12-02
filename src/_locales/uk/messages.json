@@ -81,7 +81,7 @@
     "message": "Сесію збережено."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Не вдалося зберегти сесію."
   },
   "cancelLabel": {
     "message": "Скасувати"
