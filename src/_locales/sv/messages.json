@@ -69,10 +69,19 @@
     "message": "Ta bort sessionen?"
   },
   "sessionDeletedLabel": {
-    "message": "Sessionen har tagits bort."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Återställ"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Avbryt"
