@@ -69,19 +69,19 @@
     "message": "Ta bort sessionen?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessionen borttagen."
   },
   "restoreSessionLabel": {
     "message": "Återställ"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Det gick inte att ta bort session."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessionen sparad."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Det gick inte att spara sessionen."
   },
   "cancelLabel": {
     "message": "Avbryt"
@@ -372,7 +372,7 @@
     "message": "Tab Session Manager har uppdaterats!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Se mer"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Tryck för att visa uppdateringsinformationen."
