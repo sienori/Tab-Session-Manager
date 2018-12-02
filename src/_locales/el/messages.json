@@ -15,7 +15,7 @@
     "message": "Αποθήκευση τρέχουσας συνεδρίας"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Δώσε όνομα συνεδρίας"
   },
   "saveAllWindowsLabel": {
     "message": "Αποθήκευση όλων των παραθύρων"
@@ -33,7 +33,7 @@
     "message": "Όλα"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Του χρήστη"
   },
   "displayAutoLabel": {
     "message": "Αυτόματη αποθήκευση"
@@ -51,7 +51,7 @@
     "message": "Ω-Α"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Αναζήτηση με όνομα συνεδρίας"
   },
   "search": {
     "message": "Αναζήτηση"
@@ -69,19 +69,19 @@
     "message": "Διαγραφή της συνεδρίας;"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Συνεδρία διαγρέφτηκε."
   },
   "restoreSessionLabel": {
     "message": "Επαναφορά"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Δεν έσβησα τη συνεδρία."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Συνεδρία σώθηκε."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Δεν έσωσα τη συνεδρία."
   },
   "cancelLabel": {
     "message": "Άκυρο"
@@ -111,7 +111,7 @@
     "message": "Δεν υπάρχει συνεδρία."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Σώσε τη συνεδρία κλικάροντας το πλήκτρο κάτω δεξιά."
   },
   "noResultLabel": {
     "message": "Κανένα αποτέλεσμα."
@@ -126,13 +126,13 @@
     "message": "Άνοιγμα σε νέο παράθυρο"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Άνοιγμα συνεδρίας σε νέο παράθυρο."
   },
   "openInCurrentWindowLabel": {
     "message": "Άνοιγμα στο τρέχον παράθυρο"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Άνοιγμα συνεδρίας σ' αυτό το παράθυρο. Όλε οι καρτέλες και τα ανενεργά παράθυρα θα κλείσουν."
   },
   "addToCurrentWindowLabel": {
     "message": "Προσθήκη στο τρέχον παράθυρο"
@@ -141,13 +141,13 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Αντικατάσταση με τρέχουσα συνεδρία"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Αντικατάσταση με τρέχον παράθυρο"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Αντίγραψε τη συνεδρία"
   },
   "errorLabel": {
     "message": "Σφάλμα"
@@ -156,7 +156,7 @@
     "message": "IndexedDB is not available in your browser."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Πώς να λυθεί το πρόβλημα"
   },
   "noConnectionErrorLabel": {
     "message": "Multiple popups can not be opened at the same time."
@@ -192,7 +192,7 @@
     "message": "Στυλ"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Άνοιγμα συνεδρίας σε νέο παράθυρο"
   },
   "ifOpenNewWindowCaptionLabel": {
     "message": "If unchecked, the session overwrites the current window."
@@ -327,7 +327,7 @@
     "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Αναδυόμενο παράθυρο"
   },
   "openButtonBehaviorLabel": {
     "message": "Open button behavior"
