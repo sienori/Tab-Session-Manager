@@ -112,8 +112,12 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
       delete session.windowsInfo[windowId];
     }
   }
-  if (!getSettings("useTabTitleforAutoSave"))
+  if (getSettings("useTabTitleforAutoSave")) {
+    const activeTab = Object.values(session.windows[removedWindowId]).find(tab => tab.active);
+    session.name = activeTab.title;
+  } else {
     session.name = browser.i18n.getMessage("winCloseSessionName");
+  }
   session.tag = ["winClose"];
   session.id = uuidv4();
   session.windowsNumber = 1;
