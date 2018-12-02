@@ -33,7 +33,6 @@ export default class PopupPage extends Component {
       isShowSearchBar: false,
       searchWord: "",
       notification: {
-        isOpen: false,
         message: "",
         type: "info",
         buttonLabel: "",
@@ -196,31 +195,10 @@ export default class PopupPage extends Component {
 
   openNotification = notification => {
     log.info(logDir, "openNotification()", notification);
-    const setState = () =>
-      this.setState({
-        notification: {
-          isOpen: true,
-          ...notification
-        }
-      });
-
-    if (this.state.notification.isOpen) {
-      this.closeNotification();
-      setTimeout(() => setState(), 200);
-    } else {
-      setState();
-    }
-  };
-
-  closeNotification = () => {
-    const notification = this.state.notification;
     this.setState({
       notification: {
-        isOpen: false,
-        message: notification.message,
-        type: notification.type,
-        buttonLabel: notification.buttonLabel,
-        onClick: notification.onClick
+        key: Date.now(),
+        ...notification
       }
     });
   };
@@ -282,7 +260,7 @@ export default class PopupPage extends Component {
           isInitSessions={this.state.isInitSessions}
           error={this.state.error}
         />
-        <Notification notification={this.state.notification} handleClose={this.closeNotification} />
+        <Notification notification={this.state.notification} />
         <SaveArea openMenu={this.openMenu} saveSession={this.saveSession} />
         <Menu menu={this.state.menu} />
       </div>
