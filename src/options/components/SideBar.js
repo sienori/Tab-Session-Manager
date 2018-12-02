@@ -16,7 +16,13 @@ const SideBar = props => (
       </span>
     </div>
     <ul>
-      <li className={`sideBarItem ${props.location.pathname == "/settings" ? "selected" : ""}`}>
+      <li
+        className={`sideBarItem ${
+          ["/sessions", "/information"].every(path => path != props.location.pathname)
+            ? "selected"
+            : ""
+        }`}
+      >
         <Link to="/settings">{browser.i18n.getMessage("settingsLabel")}</Link>
       </li>
       <li className={`sideBarItem ${props.location.pathname == "/sessions" ? "selected" : ""}`}>
