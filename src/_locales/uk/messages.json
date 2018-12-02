@@ -69,10 +69,19 @@
     "message": "Видалити цю сесію?"
   },
   "sessionDeletedLabel": {
-    "message": "Сесію було видалено."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Відновити"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Скасувати"
