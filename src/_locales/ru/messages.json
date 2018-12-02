@@ -69,10 +69,19 @@
     "message": "Удалить эту сессию?"
   },
   "sessionDeletedLabel": {
-    "message": "Эта сессия была удалена."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Восстановить"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Отмена"
@@ -361,6 +370,9 @@
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager has been updated!"
+  },
+  "seeMoreLabel": {
+    "message": "See more"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Click to view update information."
