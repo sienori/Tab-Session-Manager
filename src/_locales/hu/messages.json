@@ -69,10 +69,19 @@
     "message": "Törli ezt a munkamenetet?"
   },
   "sessionDeletedLabel": {
-    "message": "Munkamenet törölve."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Visszaállítás"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Mégse"
