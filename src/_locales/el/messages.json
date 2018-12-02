@@ -69,10 +69,19 @@
     "message": "Διαγραφή της συνεδρίας;"
   },
   "sessionDeletedLabel": {
-    "message": "Η συνεδρία έχει διαγραφεί."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Επαναφορά"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Άκυρο"
