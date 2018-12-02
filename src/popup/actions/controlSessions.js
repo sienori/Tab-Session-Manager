@@ -43,9 +43,9 @@ export const sendSessionRemoveMessage = async id => {
   });
 };
 
-export const sendSessionSaveMessage = (name, property = "saveAllWindows") => {
+export const sendSessionSaveMessage = async (name, property = "saveAllWindows") => {
   log.info(logDir, "sendSessionSaveMessage()", name, property);
-  browser.runtime.sendMessage({
+  return await browser.runtime.sendMessage({
     message: "saveCurrentSession",
     name: name,
     property: property

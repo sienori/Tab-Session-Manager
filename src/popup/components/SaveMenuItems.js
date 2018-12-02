@@ -1,13 +1,12 @@
 import React from "react";
 import browser from "webextension-polyfill";
-import { sendSessionSaveMessage } from "../actions/controlSessions";
 
 export default props => {
   const handlesaveAllWindows = () => {
-    sendSessionSaveMessage(props.name, "saveAllWindows");
+    props.saveSession(props.name, "saveAllWindows");
   };
   const handlesaveOnlyCurrentWindow = () => {
-    sendSessionSaveMessage(props.name, "saveOnlyCurrentWindow");
+    props.saveSession(props.name, "saveOnlyCurrentWindow");
   };
 
   return (

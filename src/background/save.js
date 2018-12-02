@@ -5,7 +5,6 @@ import { SessionStartTime } from "./background.js";
 import Sessions from "./sessions.js";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceParameter } from "./replace.js";
-import { getSessionsByTag } from "./tag.js";
 
 const logDir = "background/save";
 
@@ -89,6 +88,7 @@ export async function saveSession(session, isSendResponce = true) {
     if (isSendResponce) sendMessage("saveSession", { session: session });
   } catch (e) {
     log.error(logDir, "saveSession()", e);
+    return Promise.reject(e);
   }
 }
 

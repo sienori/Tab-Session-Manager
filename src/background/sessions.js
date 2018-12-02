@@ -66,8 +66,8 @@ export default {
         resolve();
       };
       request.onerror = e => {
-        log.error(logDir, "put()", e);
-        reject(e);
+        log.error(logDir, "put()", e.target);
+        reject(e.target);
       };
     });
   },

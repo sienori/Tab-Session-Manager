@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
 import { getSettings } from "src/settings/settings";
-import { sendSessionSaveMessage } from "../actions/controlSessions";
 import SaveMenuItems from "./SaveMenuItems";
 import TriangleIcon from "../icons/triangle.svg";
 import "../styles/SaveArea.scss";
@@ -36,12 +35,16 @@ export default class SaveArea extends Component {
   saveSession = () => {
     const name = ReactDOM.findDOMNode(this.refs.input).value;
     const defaultBehavior = getSettings("saveButtonBehavior");
-    sendSessionSaveMessage(name, defaultBehavior);
+    this.props.saveSession(name, defaultBehavior);
   };
 
   openMenu = e => {
     const name = ReactDOM.findDOMNode(this.refs.input).value;
-    this.props.openMenu(e.pageX, e.pageY, <SaveMenuItems name={name} />);
+    this.props.openMenu(
+      e.pageX,
+      e.pageY,
+      <SaveMenuItems name={name} saveSession={this.props.saveSession} />
+    );
   };
 
   focusInput() {

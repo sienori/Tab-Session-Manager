@@ -5,6 +5,7 @@ import { initSettings, getSettings, setSettings } from "src/settings/settings";
 import { updateLogLevel, overWriteLogLevel } from "src/common/log";
 import {
   getSessions,
+  sendSessionSaveMessage,
   sendSessionRemoveMessage,
   sendSessionUpdateMessage
 } from "../actions/controlSessions";
@@ -131,6 +132,23 @@ export default class PopupPage extends Component {
     this.setState({ sessions: sessions });
   };
 
+  saveSession = async (name, property) => {
+    log.info(logDir, "saveSession()", name, property);
+    try {
+      await sendSessionSaveMessage(name, property);
+      this.openNotification({
+        message: browser.i18n.getMessage("sessionSavedLabel"),
+        type: "success",
+        duration: 2000
+      });
+    } catch (e) {
+      this.openNotification({
+        message: browser.i18n.getMessage("failedSaveSessionLabel"),
+        type: "error"
+      });
+    }
+  };
+
   removeSession = async id => {
     log.info(logDir, "removeSession()", id);
     const removedSession = await getSessions(id);
@@ -252,7 +270,7 @@ export default class PopupPage extends Component {
           error={this.state.error}
         />
         <Notification notification={this.state.notification} handleClose={this.closeNotification} />
-        <SaveArea openMenu={this.openMenu} />
+        <SaveArea openMenu={this.openMenu} saveSession={this.saveSession} />
         <Menu menu={this.state.menu} />
       </div>
     );

@@ -78,6 +78,12 @@
   "failedDeleteSessionLabel": {
     "message": "Failed to delete session."
   },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
+  },
   "cancelLabel": {
     "message": "Cancel"
   },
