@@ -33,6 +33,7 @@ export default class PopupPage extends Component {
       notification: {
         isOpen: false,
         message: "",
+        type: "info",
         buttonLabel: "",
         onClick: () => {}
       },
@@ -154,16 +155,22 @@ export default class PopupPage extends Component {
     });
   };
 
-  openNotification = (message, buttonLabel, onClick) => {
-    log.info(logDir, "openNotification()", message, buttonLabel);
-    this.setState({
-      notification: {
-        isOpen: true,
-        message: message,
-        buttonLabel: buttonLabel,
-        onClick: onClick
-      }
-    });
+  openNotification = notification => {
+    log.info(logDir, "openNotification()", notification);
+    const setState = () =>
+      this.setState({
+        notification: {
+          isOpen: true,
+          ...notification
+        }
+      });
+
+    if (this.state.notification.isOpen) {
+      this.closeNotification();
+      setTimeout(() => setState(), 200);
+    } else {
+      setState();
+    }
   };
 
   closeNotification = () => {
@@ -172,6 +179,7 @@ export default class PopupPage extends Component {
       notification: {
         isOpen: false,
         message: notification.message,
+        type: notification.type,
         buttonLabel: notification.buttonLabel,
         onClick: notification.onClick
       }

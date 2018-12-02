@@ -1,51 +1,76 @@
-#notification {
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  justify-content: space-between;
-  background-color: var(--confirm);
-  color: #fff;
-  padding: 10px;
-  max-height: 60px;
-  transition-property: opacity, visibility, max-height, padding;
-  transition-duration: 300ms;
-
-  &.isClose {
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0px;
-    padding: 0px 10px;
-  }
-
-  .message {
-    flex-shrink: 1;
-  }
-  .buttons {
+#notificationArea {
+  position: relative;
+  #notification {
     display: flex;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
     flex-direction: row;
     flex-shrink: 0;
-    button {
-      display: block;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      padding: 0;
-      text-align: left;
-      color: #fff;
-      flex-shrink: 0;
-      &:hover {
-        text-decoration: underline;
-      }
-      svg {
-        width: 12px;
-        height: 12px;
-        fill: var(--main-bg);
-        transform: rotate(45deg);
-      }
+    justify-content: space-between;
+    background-color: var(--confirm);
+    color: #fff;
+    padding: 10px;
+    max-height: 90px;
+    overflow: hidden;
+    transition-property: transform, opacity;
+    transition-duration: 200ms;
+
+    &.isOpen {
+      transform-origin: bottom;
+      opacity: 1;
+      transform: scaleY(1);
     }
-    .closeButton {
-      margin-left: 10px;
+    &.isClose {
+      transform-origin: bottom;
+      opacity: 0;
+      transform: scaleY(0);
+    }
+
+    &[data-type="error"] {
+      background-color: var(--error);
+    }
+    &[data-type="warn"] {
+      background-color: var(--warn);
+    }
+    &[data-type="success"] {
+      background-color: var(--success);
+    }
+    &[data-type="info"] {
+      background-color: var(--info);
+    }
+
+    .message {
+      flex-shrink: 1;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 0;
+      button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        text-align: left;
+        color: #fff;
+        flex-shrink: 0;
+        &:hover {
+          text-decoration: underline;
+        }
+        svg {
+          width: 12px;
+          height: 12px;
+          fill: var(--main-bg);
+          transform: rotate(45deg);
+        }
+      }
+      .closeButton {
+        margin-left: 10px;
+      }
     }
   }
 }
