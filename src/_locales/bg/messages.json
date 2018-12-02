@@ -69,10 +69,19 @@
     "message": "Изтриване на тази сесия?"
   },
   "sessionDeletedLabel": {
-    "message": "Сесията е изтрита."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Възстановяване"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Отказ"
@@ -361,6 +370,9 @@
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager беше обновен!"
+  },
+  "seeMoreLabel": {
+    "message": "See more"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Щракнете, за да видите информацията по обновяването."
