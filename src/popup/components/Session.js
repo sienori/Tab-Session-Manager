@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import moment from "moment";
+import _ from "lodash";
 import { getSettings } from "src/settings/settings";
 import { sendOpenMessage } from "../actions/controlSessions";
 import NameContainer from "./NameContainer";
@@ -50,6 +51,12 @@ export default class Session extends Component {
         return "";
     }
   };
+
+  shouldComponentUpdate(nextProps, nextState) {
+    const propsDiff = _.isEqual(nextProps, this.props);
+    const stateDiff = _.isEqual(nextState, this.state);
+    return !(propsDiff && stateDiff);
+  }
 
   render() {
     const { session, removeSession, order, searchWord } = this.props;
