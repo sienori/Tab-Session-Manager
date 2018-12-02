@@ -207,7 +207,7 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Αν νεργοποιηθεί, οι καρτέλες θα ανοίγουν γρηγορότερα."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
@@ -222,7 +222,7 @@
     "message": "Επαναφορά συνεδρίας κατά την εκκίνηση"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Κατά το άνοιγμα του περιηγητή, να επανέλθει η συνεδρία που έκλεισε τελευταία."
   },
   "ifAutoSaveLabel": {
     "message": "Τακτική αποθήκευση συνεδρίας"
@@ -237,7 +237,7 @@
     "message": "Ελάχιστη τιμή 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Δεν μπορώ να αποθηκεύσω άλλα"
   },
   "autoSaveLimitCaptionLabel": {
     "message": "Maximum number of saved sessions (in this way)."
@@ -300,7 +300,7 @@
     "message": "Μορφή ημερομηνίας"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "Παράδειγμα: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
     "message": "Save private window"
@@ -369,10 +369,10 @@
     "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Ενημερώθηκε το Tab Session Manager!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Δείτε περισσότερα"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Click to view update information."
