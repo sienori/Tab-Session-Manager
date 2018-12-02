@@ -69,10 +69,19 @@
     "message": "Supprimer cette session ?"
   },
   "sessionDeletedLabel": {
-    "message": "La session a été supprimée."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Restaurer"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Annuler"
