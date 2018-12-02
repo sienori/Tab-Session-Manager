@@ -69,10 +69,19 @@
     "message": "Ştergeţi această sesiune?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Restore"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Anulare"
