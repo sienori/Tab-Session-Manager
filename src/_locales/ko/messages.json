@@ -69,10 +69,19 @@
     "message": "이 세션을 삭제할까요?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "복원"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "취소"
