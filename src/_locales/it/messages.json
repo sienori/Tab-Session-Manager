@@ -69,10 +69,19 @@
     "message": "Vuoi eliminare questa sessione?"
   },
   "sessionDeletedLabel": {
-    "message": "La sessione è stata eliminata."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Ripristina"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "Annulla"
@@ -361,6 +370,9 @@
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager è stato aggiornato!"
+  },
+  "seeMoreLabel": {
+    "message": "See more"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Clicca qui per ulteriori informazioni riguardo l'aggiornamento."

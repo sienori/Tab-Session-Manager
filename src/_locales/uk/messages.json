@@ -69,10 +69,19 @@
     "message": "Видалити цю сесію?"
   },
   "sessionDeletedLabel": {
-    "message": "Сесію було видалено."
+    "message": "Сесію видалено."
   },
   "restoreSessionLabel": {
     "message": "Відновити"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Не вдалося видалити сесію."
+  },
+  "sessionSavedLabel": {
+    "message": "Сесію збережено."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Не вдалося зберегти сесію."
   },
   "cancelLabel": {
     "message": "Скасувати"
@@ -361,6 +370,9 @@
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager було оновлено!"
+  },
+  "seeMoreLabel": {
+    "message": "See more"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Натисніть, щоб переглянути інформацію про оновлення."
