@@ -70,10 +70,13 @@
     "message": "Delete this session?"
   },
   "sessionDeletedLabel": {
-    "message": "The session has been deleted."
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "Restore"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
   },
   "cancelLabel": {
     "message": "Cancel"

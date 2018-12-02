@@ -99,6 +99,7 @@ export async function removeSession(id, isSendResponce = true) {
     if (isSendResponce) sendMessage("deleteSession", { id: id });
   } catch (e) {
     log.error(logDir, "removeSession()", e);
+    return Promise.reject(e);
   }
 }
 

@@ -85,8 +85,8 @@ export default {
         resolve();
       };
       transaction.onerror = e => {
-        log.error(logDir, "delete()", e);
-        reject(e);
+        log.error(logDir, "delete()", e.target);
+        reject(e.target);
       };
     });
   },

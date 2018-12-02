@@ -34,9 +34,9 @@ export const sendOpenMessage = async (id, property, windowId = null) => {
   });
 };
 
-export const sendSessionRemoveMessage = id => {
+export const sendSessionRemoveMessage = async id => {
   log.info(logDir, "sendSessionRemoveMessage()", id);
-  browser.runtime.sendMessage({
+  return await browser.runtime.sendMessage({
     message: "remove",
     id: id,
     isSendResponce: true

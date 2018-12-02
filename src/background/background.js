@@ -90,8 +90,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
       openSession(request.session, request.property);
       break;
     case "remove":
-      removeSession(request.id, request.isSendResponce);
-      break;
+      return await removeSession(request.id, request.isSendResponce);
     case "rename":
       renameSession(request.id, request.name);
       break;

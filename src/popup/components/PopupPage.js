@@ -137,12 +137,20 @@ export default class PopupPage extends Component {
     this.setState({
       removedSession: removedSession
     });
-    sendSessionRemoveMessage(id);
-    this.openNotification(
-      browser.i18n.getMessage("sessionDeletedLabel"),
-      browser.i18n.getMessage("restoreSessionLabel"),
-      this.restoreSession
-    );
+    try {
+      await sendSessionRemoveMessage(id);
+      this.openNotification({
+        message: browser.i18n.getMessage("sessionDeletedLabel"),
+        type: "warn",
+        buttonLabel: browser.i18n.getMessage("restoreSessionLabel"),
+        onClick: this.restoreSession
+      });
+    } catch (e) {
+      this.openNotification({
+        message: browser.i18n.getMessage("failedDeleteSessionLabel"),
+        type: "error"
+      });
+    }
   };
 
   restoreSession = () => {
