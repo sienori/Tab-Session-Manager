@@ -22,7 +22,6 @@ export default async details => {
 
   if (isShowOptionsPage) {
     openOptionsPage(false);
-  } else {
-    setSettings("isShowUpdated", true);
   }
+  setSettings("isShowUpdated", true);
 };

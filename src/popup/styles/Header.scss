@@ -49,32 +49,6 @@
         fill: var(--highlight);
         transform: rotate(90deg);
       }
-      &.showUpdated::after {
-        position: relative;
-        content: "●";
-        width: 0px;
-        font-size: 30px;
-        left: -10px;
-        top: -12px;
-        color: var(--confirm);
-        -webkit-text-stroke: 2px #fff;
-        animation: 1500ms ease infinite blink;
-
-        @keyframes blink {
-          0% {
-            opacity: 0;
-          }
-          80% {
-            opacity: 1;
-          }
-          85% {
-            opacity: 1;
-          }
-          100% {
-            opacity: 0;
-          }
-        }
-      }
     }
 
     svg {

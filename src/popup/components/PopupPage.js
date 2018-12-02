@@ -9,6 +9,7 @@ import {
   sendSessionRemoveMessage,
   sendSessionUpdateMessage
 } from "../actions/controlSessions";
+import openUrl from "../actions/openUrl";
 import Header from "./Header";
 import OptionsArea from "./OptionsArea";
 import SessionsArea from "./SessionsArea";
@@ -76,6 +77,17 @@ export default class PopupPage extends Component {
       filterValue: getSettings("filterValue") || "_displayAll"
     });
     browser.runtime.onMessage.addListener(this.changeSessions);
+
+    if (getSettings("isShowUpdated")) {
+      this.openNotification({
+        message: browser.i18n.getMessage("NotificationOnUpdateLabel"),
+        type: "info",
+        duration: 20000,
+        buttonLabel: browser.i18n.getMessage("seeMoreLabel"),
+        onClick: () => openUrl("../options/index.html#information?action=updated")
+      });
+      setSettings("isShowUpdated", false);
+    }
   };
 
   changeSessions = async request => {

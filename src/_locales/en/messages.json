@@ -375,6 +375,9 @@
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager has been updated!"
   },
+  "seeMoreLabel": {
+    "message": "See more"
+  },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Click to view update information."
   },

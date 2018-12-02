@@ -20,12 +20,7 @@ const openPayPal = () => {
 };
 const openSettings = () => {
   log.info(logDir, "openSettings()");
-  let url = "../options/index.html#settings";
-
-  if (getSettings("isShowUpdated")) {
-    url = "../options/index.html#information?action=updated";
-    setSettings("isShowUpdated", false);
-  }
+  const url = "../options/index.html#settings";
   openUrl(url);
 };
 
@@ -41,7 +36,7 @@ export default () => (
         <HeartIcon />
       </button>
       <button
-        className={`settingsButton ${getSettings("isShowUpdated") ? "showUpdated" : ""}`}
+        className={"settingsButton"}
         onClick={openSettings}
         title={browser.i18n.getMessage("settingsLabel")}
       >
