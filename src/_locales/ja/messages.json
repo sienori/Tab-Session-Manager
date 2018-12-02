@@ -69,10 +69,19 @@
     "message": "このセッションを削除しますか？"
   },
   "sessionDeletedLabel": {
-    "message": "セッションが削除されました。"
+    "message": "Session deleted."
   },
   "restoreSessionLabel": {
     "message": "元に戻す"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Failed to delete session."
+  },
+  "sessionSavedLabel": {
+    "message": "Session saved."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
   },
   "cancelLabel": {
     "message": "キャンセル"
