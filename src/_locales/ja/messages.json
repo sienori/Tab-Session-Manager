@@ -74,6 +74,15 @@
   "restoreSessionLabel": {
     "message": "元に戻す"
   },
+  "failedDeleteSessionLabel": {
+    "message": "セッションの削除に失敗しました。"
+  },
+  "sessionSavedLabel": {
+    "message": "セッションが保存されました。"
+  },
+  "failedSaveSessionLabel": {
+    "message": "Failed to save session."
+  },
   "cancelLabel": {
     "message": "キャンセル"
   },
@@ -361,6 +370,9 @@
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Managerが更新されました！"
+  },
+  "seeMoreLabel": {
+    "message": "See more"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "クリックすると更新情報を表示します。"
