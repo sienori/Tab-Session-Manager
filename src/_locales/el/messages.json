@@ -309,10 +309,10 @@
     "message": "If unchecked, ignores the private window when saving the session."
   },
   "ifSupportTstLabel": {
-    "message": "Supports Tree Style Tab"
+    "message": "Υποστήριξη Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Επαναφορά δέντρου από το Tree Style Tab.<br>Αν ενεργοποιηθεί προκαλεί, καθυστερεί η επαναφορά συνεδριών."
   },
   "tstDelayLabel": {
     "message": "Delay when tree restoration (millisecond)"
