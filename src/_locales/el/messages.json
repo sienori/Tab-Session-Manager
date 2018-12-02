@@ -15,7 +15,7 @@
     "message": "Αποθήκευση τρέχουσας συνεδρίας"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Δώσε όνομα συνεδρίας"
   },
   "saveAllWindowsLabel": {
     "message": "Αποθήκευση όλων των παραθύρων"
@@ -33,7 +33,7 @@
     "message": "Όλα"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Του χρήστη"
   },
   "displayAutoLabel": {
     "message": "Αυτόματη αποθήκευση"
@@ -51,7 +51,7 @@
     "message": "Ω-Α"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Αναζήτηση με όνομα συνεδρίας"
   },
   "search": {
     "message": "Αναζήτηση"
@@ -69,10 +69,19 @@
     "message": "Διαγραφή της συνεδρίας;"
   },
   "sessionDeletedLabel": {
-    "message": "Η συνεδρία έχει διαγραφεί."
+    "message": "Συνεδρία διαγρέφτηκε."
   },
   "restoreSessionLabel": {
     "message": "Επαναφορά"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Δεν έσβησα τη συνεδρία."
+  },
+  "sessionSavedLabel": {
+    "message": "Συνεδρία σώθηκε."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Δεν έσωσα τη συνεδρία."
   },
   "cancelLabel": {
     "message": "Άκυρο"
@@ -102,7 +111,7 @@
     "message": "Δεν υπάρχει συνεδρία."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Σώσε τη συνεδρία κλικάροντας το πλήκτρο κάτω δεξιά."
   },
   "noResultLabel": {
     "message": "Κανένα αποτέλεσμα."
@@ -117,13 +126,13 @@
     "message": "Άνοιγμα σε νέο παράθυρο"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Άνοιγμα συνεδρίας σε νέο παράθυρο."
   },
   "openInCurrentWindowLabel": {
     "message": "Άνοιγμα στο τρέχον παράθυρο"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Άνοιγμα συνεδρίας σ' αυτό το παράθυρο. Όλε οι καρτέλες και τα ανενεργά παράθυρα θα κλείσουν."
   },
   "addToCurrentWindowLabel": {
     "message": "Προσθήκη στο τρέχον παράθυρο"
@@ -132,13 +141,13 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Αντικατάσταση με τρέχουσα συνεδρία"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Αντικατάσταση με τρέχον παράθυρο"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Αντίγραψε τη συνεδρία"
   },
   "errorLabel": {
     "message": "Σφάλμα"
@@ -147,7 +156,7 @@
     "message": "IndexedDB is not available in your browser."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Πώς να λυθεί το πρόβλημα"
   },
   "noConnectionErrorLabel": {
     "message": "Multiple popups can not be opened at the same time."
@@ -183,13 +192,13 @@
     "message": "Στυλ"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Άνοιγμα συνεδρίας σε νέο παράθυρο"
   },
   "ifOpenNewWindowCaptionLabel": {
     "message": "If unchecked, the session overwrites the current window."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Φόρτωση καρτέλας αργότερα"
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
@@ -204,25 +213,25 @@
     "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Επαναφορά θέσης παραθύρου"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Επαναφορά θέσης και μεγέθους παραθύρων κατά το άνοιγμα περιόδου συνεδρίας."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Restore previous session at startup"
+    "message": "Επαναφορά συνεδρίας κατά την εκκίνηση"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
     "message": "When browser starts up, restore the session that was closed the last time."
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "Τακτική αποθήκευση συνεδρίας"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "Αποθήκευση συνεδρίας κάθε X λεπτά."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "Διάστημα (σε λεπτά)"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "Ελάχιστη τιμή 0.1"
@@ -279,7 +288,7 @@
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Φάκελος λήψεων"
   },
   "backupFilesLimitLabel": {
     "message": "Maximum number of saved backups"
@@ -318,7 +327,7 @@
     "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Αναδυόμενο παράθυρο"
   },
   "openButtonBehaviorLabel": {
     "message": "Open button behavior"
@@ -362,20 +371,23 @@
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager has been updated!"
   },
+  "seeMoreLabel": {
+    "message": "See more"
+  },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Click to view update information."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Ενεργοποίηση εντοπισμού σφαλμάτων"
   },
   "isDebugModeCaptionLabel": {
     "message": "When debug mode is enabled, the log is output to the debugger."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Επαναφορά ρυθμίσεων"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Επαναφορά εργοστασιακών ρυθμίσεων."
   },
   "resetSettingsButtonLabel": {
     "message": "Επαναφορά"
@@ -444,10 +456,10 @@
     "message": "Read failed"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Σίγουρα να διαγραφούν όλες οι συνεδρίες;"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Συνεδρία"
   },
   "amazonUrl": {
     "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
