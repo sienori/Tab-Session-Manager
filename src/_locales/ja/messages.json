@@ -81,7 +81,7 @@
     "message": "セッションが保存されました。"
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "セッションの保存に失敗しました。"
   },
   "cancelLabel": {
     "message": "キャンセル"
@@ -372,7 +372,7 @@
     "message": "Tab Session Managerが更新されました！"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "もっと見る"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "クリックすると更新情報を表示します。"
