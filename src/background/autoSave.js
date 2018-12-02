@@ -118,6 +118,7 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
   } else {
     session.name = browser.i18n.getMessage("winCloseSessionName");
   }
+  session.date = Date.now();
   session.tag = ["winClose"];
   session.id = uuidv4();
   session.windowsNumber = 1;
