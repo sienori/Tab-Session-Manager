@@ -276,7 +276,7 @@
     "message": "Sauvegarde"
   },
   "ifBackupLabel": {
-    "message": "Enregistrer la sauvegarde"
+    "message": "Conserver une copie de sauvegarde"
   },
   "ifBackupCaptionLabel": {
     "message": "Lorsque le navigateur démarre, créer un fichier de sauvegarde des sessions et l'enregistrer dans le dossier des téléchargements."
@@ -372,7 +372,7 @@
     "message": "Tab Session Manager a été mise à jour !"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Plus de détails"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Cliquez ici pour afficher des informations sur la mise à jour."
