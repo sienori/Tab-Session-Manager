@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Sparar och återställer fönster- och fliklägen. Den kan även spara automatiskt."
+    "message": "Sparar och återställer läget på fönster och flikar. Den kan även spara automatiskt."
   },
   "donateWithPaypalLabel": {
     "message": "Donera via PayPal"
