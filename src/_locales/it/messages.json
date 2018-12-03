@@ -69,19 +69,19 @@
     "message": "Vuoi eliminare questa sessione?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessione eliminata."
   },
   "restoreSessionLabel": {
     "message": "Ripristina"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Impossibile eliminare la sessione."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessione salvata."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Impossibile salvare la sessione."
   },
   "cancelLabel": {
     "message": "Annulla"
@@ -372,16 +372,16 @@
     "message": "Tab Session Manager è stato aggiornato!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Mostra altro"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Clicca qui per ulteriori informazioni riguardo l'aggiornamento."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Abilità modalità debug"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Quando la modalità di debug è abilitata, il log viene mostrato nel debugger."
   },
   "resetSettingsLabel": {
     "message": "Ripristina impostazioni"
