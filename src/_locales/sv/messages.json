@@ -159,7 +159,7 @@
     "message": "Så här löser du detta problem"
   },
   "noConnectionErrorLabel": {
-    "message": "Flera poppupper kan inte öppnas samtidigt."
+    "message": "Flera popups kan inte öppnas samtidigt."
   },
   "winCloseSessionName": {
     "message": "Spara automatiskt - Fönstret stängs"
