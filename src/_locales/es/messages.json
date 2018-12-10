@@ -69,19 +69,19 @@
     "message": "¿Eliminar esta sesión?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sesión eliminada."
   },
   "restoreSessionLabel": {
     "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Error al eliminar la sesión."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sesión guardada."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Error al guardar sesión."
   },
   "cancelLabel": {
     "message": "Cancelar"
@@ -372,7 +372,7 @@
     "message": "¡Tab Session Manager se ha actualizado!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Ver más"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Haga clic para ver la información de actualización."
