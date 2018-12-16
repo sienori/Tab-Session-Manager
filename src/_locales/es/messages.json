@@ -246,7 +246,7 @@
     "message": "Guardar la sesión cuando se cierre la ventana"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Guardar la sesión que incluye sólo una ventana cerrada."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Guardado número máximo"
@@ -258,7 +258,7 @@
     "message": "Guardar la sesión al salir del navegador"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Guardar la sesión que incluye múltiples ventanas que se cerró recientemente."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Número máximo de guardado"
