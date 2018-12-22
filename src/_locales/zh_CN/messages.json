@@ -69,19 +69,19 @@
     "message": "是否删除此会话？"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "会话已删除。"
   },
   "restoreSessionLabel": {
     "message": "还原"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "删除会话失败。"
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "会话已保存。"
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "保存会话失败。"
   },
   "cancelLabel": {
     "message": "取消"
@@ -204,7 +204,7 @@
     "message": "打开会话后，选中标签页才会加载其内容。<br>若未启用，还原会话时内存的使用量将大大增高。"
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "使用 \"丢弃\" 属性进行延迟加载"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "开启此选项后，会改善打开标签时的性能。"
@@ -258,7 +258,7 @@
     "message": "退出浏览器时保存会话"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "一次性关闭多个窗口时保存会话。"
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "最大保存数量"
@@ -372,7 +372,7 @@
     "message": "Tab Session Manager 已更新！"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "查看更多"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "点击查看更新信息"
