@@ -279,22 +279,22 @@
     "message": "Αποθήευση Αντιγράφου Ασφαλείας"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Όταν ξεκινάει ο πλοηγός. φτιάξε ένα αντίγραφο των συνεδριών και αποθήκευσέ το στις Λήψεις."
   },
   "backupFolderLabel": {
     "message": "Τοποθεσία Αποθήκευσης"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Καθόρισε το φάκελο του αντίγραφου. Υπάρχει περιορισμός: πρέπει να είναι κάτω από το φάκελο των Λήψεων."
   },
   "downloadFolderLabel": {
     "message": "Φάκελος λήψεων"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Μέγιστο πλήθος αντιγράφων"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Ότα το πλήθος των ανιγράφων ξεπεράσει το μέγιστο, τότε σβήνονται αυτόματα ξεκινώντας από το παλιότερο."
   },
   "dateFormatLabel": {
     "message": "Μορφή ημερομηνίας"
@@ -315,31 +315,31 @@
     "message": "Επαναφορά δέντρου από το Tree Style Tab.<br>Αν ενεργοποιηθεί προκαλεί, καθυστερεί η επαναφορά συνεδριών."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Αναμονή για την επναφορά (milliseconds)"
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Πόση ώρα θα περιμένουμε πριν γίνει η επαναφορά. Αν η επαναφορά δε γίενται σωστά τότε αύξησε αυτήν την τιμή."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Όνομα συνεδρίας σε μία γραμμή"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Αν το όνομα της συνεδρίας ξεπερνάει τη γραμμή τότε να αποκόπτεται κατά την εμφάνιση."
   },
   "popupLabel": {
     "message": "Αναδυόμενο παράθυρο"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Συμπεριφορά του πλήκτρου της μπάρας"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Επίλεξε τη συνηθισμένη ενέργεια του πλήκτρου της μπάρας."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Συμπεριφορά του πλήκτρου Αποθήκευση"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Επίλεξε τη συνηθισμένη ενέργεια του πλήκτρου Αποθήκευση."
   },
   "isShowSearchBarLabel": {
     "message": "Εμφάνιση μπάρας αναζήτησης"
@@ -351,7 +351,7 @@
     "message": "Μέγεθος"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Όρισε το μέγεθος του πλαισίου που εμφανίζεται."
   },
   "widthLabel": {
     "message": "Πλάτος"
