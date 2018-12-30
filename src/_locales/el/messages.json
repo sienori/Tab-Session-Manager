@@ -195,7 +195,7 @@
     "message": "Άνοιγμα συνεδρίας σε νέο παράθυρο"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "Αν μείνει ατσεκάριστο, η συνεδρία αντικαθιστά το τρέχον παράθυρο."
   },
   "ifLazyLoadingLabel": {
     "message": "Φόρτωση καρτέλας αργότερα"
@@ -306,7 +306,7 @@
     "message": "Αποθήκευση των ιδιωτικών παραθύρων"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Αν μείνει ατσεκάριστο, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση συνεδριών."
   },
   "ifSupportTstLabel": {
     "message": "Υποστήριξη Tree Style Tab"
