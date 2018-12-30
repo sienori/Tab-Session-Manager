@@ -153,7 +153,7 @@
     "message": "Σφάλμα"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "Αυτός ο πλοηγός δεν έχει δυνατότητα IndexedDB."
   },
   "howToSolveLabel": {
     "message": "Πώς να λυθεί το πρόβλημα"
@@ -222,7 +222,7 @@
     "message": "Επαναφορά συνεδρίας κατά την εκκίνηση"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Κατά το άνοιγμα του περιηγητή, να επανέλθει η συνεδρία που έκλεισε τελευταία."
+    "message": "Κατά το άνοιγμα του πλοηγού, να επανέλθει η συνεδρία που έκλεισε τελευταία."
   },
   "ifAutoSaveLabel": {
     "message": "Τακτική αποθήκευση συνεδρίας"
