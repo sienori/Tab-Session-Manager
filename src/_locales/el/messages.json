@@ -201,16 +201,16 @@
     "message": "Φόρτωση καρτέλας αργότερα"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "Όταν φορτώνεται μία συνεδρία, τα περιεχόμενα κάθε σελίδας δεν φορτώνονται μέχρι να πατηθεί η συγκεριμένη καρτέλα.<br>Αν είναι ξετσεκαρισμένο τότε αυξάνεται πάρα πολύ η χρήση της μνήμης κατά την επαναφορά συνεδριών."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Χρήση της ιδότητας \"discarded\" κατά την επaναφορά"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Αν νεργοποιηθεί, οι καρτέλες θα ανοίγουν γρηγορότερα."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Δεν εμφανίζεται το favicon της αποθήκευσης."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Επαναφορά θέσης παραθύρου"
@@ -246,7 +246,7 @@
     "message": "Αποθήκευση συνεδρίας όταν κλείσει το παράθυρο"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Αποθήκευση συνεδρίας όταν κλείνει ένα και μόνο παράθυρο."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Πόσες αποθηκεύονται"
@@ -258,7 +258,7 @@
     "message": "Αποθήκευση συνεδριών όταν κλείνει ο πλοηγός"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Αποθήκευση συνεδρίας η οποία περιέχει όλα τα παράθυρα που θα κλείσουν διαδοχικά."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Πόσες αποθηκεύονται"
@@ -270,7 +270,7 @@
     "message": "Χρήση του τίτλου καρτέλας ως όνομα συνεδρίας"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Στην αυτόματη αποθήκευση, το όνομα της συνεδρίας να είναι ο τίτλος της ανοιχτής σελίδας."
   },
   "backupLabel": {
     "message": "Αντίγραφο Ασφαλείας"
