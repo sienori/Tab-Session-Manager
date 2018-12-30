@@ -393,28 +393,28 @@
     "message": "Επαναφορά"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "Εισαγωγή συνεδριών"
   },
   "importCaptionLabel": {
     "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "Αναζήτηση..."
   },
   "importSaveButtonLabel": {
     "message": "Εισαγωγή"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "Καθαρισμός"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Εισαγωγή λίστας URL"
   },
   "urlImportCaptionLabel": {
     "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "Εξαγωγή συνεδριών"
   },
   "exportCaptionLabel": {
     "message": "Save all sessions to the computer."
@@ -423,10 +423,10 @@
     "message": "Εξαγωγή"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "Διαγραφή συνεδριών"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Διαγραφή όλων των συνεδριών."
   },
   "removeSessionsButtonLabel": {
     "message": "Διαγραφή"
@@ -450,10 +450,10 @@
     "message": "Extension page"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "Οι συνεδρίες εισάχθηκαν."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Σφάλμα στην ανάκτηση"
   },
   "warningRemoveAllMessage": {
     "message": "Σίγουρα να διαγραφούν όλες οι συνεδρίες;"
