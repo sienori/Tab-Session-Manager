@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Αποθηκεύει κι επαναφέρει παράθυρα και καρτέλες. Υποστηρίζει και αυτοματοποιημένη αποθήκευση."
   },
   "donateWithPaypalLabel": {
     "message": "Δωρεά μέσω PayPal"
@@ -138,7 +138,7 @@
     "message": "Προσθήκη στο τρέχον παράθυρο"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Πρόσθεσε καρτέλες στο τρέχον παράθυρο. Αν η συνεδρία περιέχει πολλαπλά παράθυρα τότε θα ανοίξει νέο παράθυρο."
   },
   "replaceCurrentSessionLabel": {
     "message": "Αντικατάσταση με τρέχουσα συνεδρία"
@@ -159,7 +159,7 @@
     "message": "Πώς να λυθεί το πρόβλημα"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Δεν μπορούν να εμφανιστούν πολλά popup ταυτόχρονα."
   },
   "winCloseSessionName": {
     "message": "Αυτόματη αποθήκευση όταν κλείσει το παράθυρο"
@@ -438,16 +438,16 @@
     "message": "Παρακαλούμε κάντε μας μια δωρεά"
   },
   "donationCaptionLabel": {
-    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+    "message": "Ευχαριστούμε που χρησιμοποιείτε το Tab Session Manager.<br>Η υποοστήριξή σας μου δίνει κουράγιο ώστε να συνεχίσω την ανάπτυξη αυτού του πρόσθετου.<br>Αν σας αρέσει το Tab Session Manager και μπορείτε και να συνεισφέρετε κάτι, θα σας ήμουν υπόχρεος."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Σελίδα πρόσθετου"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Σελίδα πρόσθετου"
   },
   "importMessage": {
     "message": "Οι συνεδρίες εισάχθηκαν."
@@ -468,6 +468,6 @@
     "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "Το Tab Session Manager δεν μπορεί να ανοίξει αυτή τη σελίδα."
   }
 }
