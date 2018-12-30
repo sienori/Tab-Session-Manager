@@ -378,10 +378,10 @@
     "message": "Κλικ για πληροφορίες ενημέρωσης."
   },
   "isDebugModeLabel": {
-    "message": "Ενεργοποίηση εντοπισμού σφαλμάτων"
+    "message": "Kατάσταση εντοπισμού σφαλμάτων"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Όταν έχει ενεργοποιηθεί η κατάσταση εντοπισμού σφαλμάτων, στέλνονται διάφορα καταγραφικά στοιχεία στο debugger."
   },
   "resetSettingsLabel": {
     "message": "Επαναφορά ρυθμίσεων"
@@ -396,7 +396,7 @@
     "message": "Εισαγωγή συνεδριών"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+    "message": "Φορτώνει συνεδρίες που έχουν αποθηκευτεί στον υπολογιστή και τις προσθέτει στη Λίστα συνεδριων.<br>Υποστηρίζει και αρχεία συνεδριών του SessionManager (αρχεία με κατάληξη .session)."
   },
   "importButtonLabel": {
     "message": "Αναζήτηση..."
@@ -411,13 +411,13 @@
     "message": "Εισαγωγή λίστας URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Παίρνει μία λίστα URL και δημιουργεί μία συνεδρία - τη συνεδρία την προσθέτει στη λίστα συνεδριών,<br>Μορφή λίστας: &lt;URL&gt; &lt;τίτλος σελίδας (προαιρετικό)&gt;"
   },
   "exportLabel": {
     "message": "Εξαγωγή συνεδριών"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Αποθηκεύει όλες τις συνεδρίες στον υπολογιστή."
   },
   "exportButtonLabel": {
     "message": "Εξαγωγή"
