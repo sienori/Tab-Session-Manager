@@ -255,7 +255,7 @@
     "message": "Πόσες συνεδρίες μπορύν να αποθηκευτούν με αυτόν τον τρόπο."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Αποθήκευση συνεδριών όταν κλείνει ο πλοηγός"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
@@ -303,7 +303,7 @@
     "message": "Παράδειγμα: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Αποθήκευση των ιδιωτικών παραθύρων"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "If unchecked, ignores the private window when saving the session."
@@ -342,10 +342,10 @@
     "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Εμφάνιση μπάρας αναζήτησης"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Δυνατότητα αναζήτηση βάση ονόματος συνεδρίας."
   },
   "sizeLabel": {
     "message": "Μέγεθος"
@@ -363,10 +363,10 @@
     "message": "Άλλο"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Εμφάνισηη επιλογών μετά από αναβάθμιση"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Να μεφανίζεται η σελίδα των επιλογών μετά από αναβάθμιση του Tab Session Manager. Έτσι βλέπεις γρήγορα το τι έχει αναβαθμιστεί."
   },
   "NotificationOnUpdateLabel": {
     "message": "Ενημερώθηκε το Tab Session Manager!"
