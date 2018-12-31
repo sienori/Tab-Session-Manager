@@ -285,7 +285,7 @@
     "message": "Vị trí lưu"
   },
   "backupFolderCaptionLabel": {
-    "message": "Chọn thư mục để lưu tệp tin sao lưu. Vị trí sao lưu được đặt theo vị trí của thư mục tải xuống trong trình duyệt."
+    "message": "Chọn thư mục để lưu tệp tin sao lưu. Vị trí lưu được đặt theo vị trí của thư mục tải xuống trong trình duyệt."
   },
   "downloadFolderLabel": {
     "message": "Thư mục tải xuống"
@@ -348,7 +348,7 @@
     "message": "Thêm chức năng tìm kiếm bằng tên phiên."
   },
   "sizeLabel": {
-    "message": "Kích cỡ"
+    "message": "Kích thước"
   },
   "popupSizeCaptionLabel": {
     "message": "Tùy chọn cỡ của popup."
@@ -381,7 +381,7 @@
     "message": "Bật chế độ gỡ lỗi"
   },
   "isDebugModeCaptionLabel": {
-    "message": "Khi chế độ gỡ lỗi được bật, bản ghi sẽ được đưa đến trình gỡ lỗi."
+    "message": "Khi chế độ gỡ lỗi được bật, bản ghi sẽ được xuất ra trình gỡ lỗi."
   },
   "resetSettingsLabel": {
     "message": "Đặt lại cài đặt"
@@ -396,7 +396,7 @@
     "message": "Nhập phiên làm việc"
   },
   "importCaptionLabel": {
-    "message": "Nhập phiên đã lưu trên máy tính và thêm chúng vào danh sách phiên.<br>Nó cũng hỗ trợ kiểu file session của SessionManager (.session)."
+    "message": "Nhập phiên đã lưu trên máy tính và thêm chúng vào danh sách phiên.<br>Nó cũng hỗ trợ tệp tin session của SessionManager (.session)."
   },
   "importButtonLabel": {
     "message": "Duyệt..."
@@ -411,7 +411,7 @@
     "message": "Nhập danh sách URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Tạo một phiên làm việc từ danh sách các URL và thêm nó vào danh sách phiên.<br>Định dạng: &lt;URL&gt; &lt;Tên URL (không bắt buộc)&gt;"
+    "message": "Tạo một phiên làm việc từ danh sách các URL và thêm nó vào danh sách phiên.<br>Định dạng: &lt;URL&gt; &lt;tên URL (không bắt buộc)&gt;"
   },
   "exportLabel": {
     "message": "Xuất phiên làm việc"
