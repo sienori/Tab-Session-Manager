@@ -204,40 +204,40 @@
     "message": "Khi mở một phiên làm việc, nội dung của từng trang sẽ không được tải đến khi bạn nhấp vào trang đó.<br>Nếu không được chọn, việc sử dùng bộ nhớ sẽ tăng đáng kể khi phiên được khôi phục."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Dùng thuộc tính \"tắt tab\" cho việc tải chậm tab"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Bật tùy chọn này sẽ tăng hiệu năng khi mở các tab."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Biểu tượng của tab được tải chậm sẽ không được hiển thị."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Khôi phục vị trí cửa sổ"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Khôi phục vị trí cửa sổ và kích thước khi mở phiên làm việc."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Restore previous session at startup"
+    "message": "Khôi phục phiên làm việc trước đó khi khởi động"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Khi trình duyệt khởi động, khôi phục phiên làm việc đã được đóng trước đó."
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "Lưu lại phiên làm việc thường xuyên"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "Lưu lại phiên mỗi X phút."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "Khoảng thời gian (phút)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Giá trị nhỏ nhất 0,1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Số lượng lưu lại lớn nhất"
   },
   "autoSaveLimitCaptionLabel": {
     "message": "Maximum number of saved sessions (in this way)."
