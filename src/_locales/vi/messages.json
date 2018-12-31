@@ -435,10 +435,10 @@
     "message": "Giấy phép"
   },
   "donationLabel": {
-    "message": "Hãy tài trợ"
+    "message": "Hãy tài trợ cho tôi"
   },
   "donationCaptionLabel": {
-    "message": "Cảm ơn bạn đã sử dụng Tab Session Manager.<br>Sự hỗ trợ của bạn sẽ là một sự khuyến khích lớn, khi tôi tiếp tục phát triển tiện ích này.<br>Nếu bạn thích Tab Session Manager, tôi rất vui lòng nếu bạn xem xét tài trợ."
+    "message": "Cảm ơn bạn đã sử dụng Tab Session Manager.<br>Sự hỗ trợ của bạn sẽ là một sự động viên lớn, khi tôi tiếp tục phát triển tiện ích này.<br>Nếu bạn thích Tab Session Manager, tôi rất vui lòng nếu bạn xem xét tài trợ."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
@@ -447,7 +447,7 @@
     "message": "Trang Tiện ích"
   },
   "extensionPageLabel": {
-    "message": "Trang Tiện ích mở rộng"
+    "message": "Trang Cửa hàng tiện ích"
   },
   "importMessage": {
     "message": "Phiên làm việc đã được nhập."
