@@ -318,25 +318,25 @@
     "message": "Trì hoãn khi phục hồi cây (mi-li-giây)"
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Để phục hồi trạng thái của cây, cần có thời gian chờ để mở tab. Tăng thời gian chờ nếu cây không được khôi phục một cách chính xác."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Hiển thị tên phiên trong một dòng"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Nếu tên phiên làm việc trong danh sách phiên dài hơn một dòng, nó sẽ được hiển thị trong một dòng bằng cách cắt ngắn."
   },
   "popupLabel": {
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Hành vi của nút mở"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Chọn chế độ mặc định của nút mở."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Hành vi của nút lưu"
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the save button."
