@@ -174,34 +174,34 @@
     "message": "Cài đặt"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "Phiên"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "Thông tin"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Tổng quan"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Lưu tự động"
   },
   "startUpLabel": {
-    "message": "Startup"
+    "message": "Khởi động"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Kiểu"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Mở phiên trong cửa sổ mới"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "Nếu không được chọn, phiên làm việc sẽ ghi đè cửa sổ hiện tại."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Tải chậm tab"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "Khi mở một phiên làm việc, nội dung của từng trang sẽ không được tải đến khi bạn nhấp vào trang đó.<br>Nếu không được chọn, việc sử dùng bộ nhớ sẽ tăng đáng kể khi phiên được khôi phục."
   },
   "isUseDiscardedLabel": {
     "message": "Use the \"discarded\" property for lazy loading"
