@@ -240,16 +240,16 @@
     "message": "Số lượng lưu lại lớn nhất"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Số lượng phiên được lưu lại lớn nhất (bằng cách này)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "Lưu lại phiên khi cửa sổ đã đóng"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Lưu lại phiên làm việc chứa một cửa sổ đã đóng."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Số lượng lưu lại lớn nhất"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Maximum number of saved sessions (in this way)."
