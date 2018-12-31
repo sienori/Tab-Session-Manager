@@ -132,7 +132,7 @@
     "message": "Mở trong cửa sổ hiện tại"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Mở phiên làm việc ở cửa sổ hiện tại. Các cửa sổ không hoạt động và toàn bộ tab sẽ được đóng."
+    "message": "Mở phiên làm việc trong cửa sổ hiện tại. Các cửa sổ không hoạt động và toàn bộ tab sẽ được đóng."
   },
   "addToCurrentWindowLabel": {
     "message": "Thêm vào cửa sổ hiện tại"
@@ -174,7 +174,7 @@
     "message": "Cài đặt"
   },
   "sessionsLabel": {
-    "message": "Phiên"
+    "message": "Phiên làm việc"
   },
   "informationLabel": {
     "message": "Thông tin"
@@ -201,13 +201,13 @@
     "message": "Tải chậm tab"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Khi mở một phiên làm việc, nội dung của từng trang sẽ không được tải đến khi bạn nhấp vào trang đó.<br>Nếu không được chọn, việc sử dùng bộ nhớ sẽ tăng đáng kể khi phiên được khôi phục."
+    "message": "Khi mở một phiên làm việc, nội dung của từng trang sẽ không được tải đến khi bạn nhấp vào trang đó.<br>Nếu không được chọn, việc sử dùng bộ nhớ sẽ tăng đáng kể khi khôi phục phiên."
   },
   "isUseDiscardedLabel": {
-    "message": "Dùng thuộc tính \"tắt tab\" cho việc tải chậm tab"
+    "message": "Dùng thuộc tính \"discarded\" cho việc tải chậm tab"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Bật tùy chọn này sẽ tăng hiệu năng khi mở các tab."
+    "message": "Bật tùy chọn này sẽ cải thiện hiệu năng khi mở các tab."
   },
   "isUseDiscardedCaption2Label": {
     "message": "Biểu tượng của tab được tải chậm sẽ không được hiển thị."
@@ -216,7 +216,7 @@
     "message": "Khôi phục vị trí cửa sổ"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Khôi phục vị trí cửa sổ và kích thước khi mở phiên làm việc."
+    "message": "Khôi phục vị trí và kích thước cửa sổ khi mở phiên làm việc."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
     "message": "Khôi phục phiên làm việc trước đó khi khởi động"
