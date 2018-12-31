@@ -252,34 +252,34 @@
     "message": "Số lượng lưu lại lớn nhất"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Số lượng phiên được lưu lại lớn nhất (bằng cách này)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Lưu lại phiên khi thoát trình duyệt"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Lưu lại phiên làm việc chứa nhiều cửa sổ trong cùng một hàng."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Số lượng lưu lại lớn nhất"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Số lượng phiên được lưu lại lớn nhất (bằng cách này)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Dùng tiêu đề trang làm tên của phiên được lưu tự động"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Khi lưu phiên tự động, dùng tiêu đề của trang được mở làm tên của phiên."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Sao lưu"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Lưu bản sao dự phòng"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Khi trình duyệt khởi động, tạo một tệp tin sao lưu của các phiên và lưu nó ở thư mục tải về."
   },
   "backupFolderLabel": {
     "message": "Save location"
