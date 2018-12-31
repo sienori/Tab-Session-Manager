@@ -141,16 +141,16 @@
     "message": "Thêm tab vào cửa sổ hiện tại. Nếu phiên làm việc chứa nhiều cửa sổ, mở nó trong cửa sổ mới."
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Thay thế bằng phiên hiện tại"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Thay thế bằng cửa sổ hiện tại"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Tạo bản sao của phiên"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Lỗi"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
@@ -303,19 +303,19 @@
     "message": "Example: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Lưu cửa sổ riêng tư"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Nếu không được chọn, bỏ qua cửa sổ riêng tư khi lưu phiên làm việc."
   },
   "ifSupportTstLabel": {
-    "message": "Supports Tree Style Tab"
+    "message": "Hỗ trợ Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Khôi phục trạng thái cây của Tree Style Tab.<br>Khi tùy chọn này được bật, nó tốn thời gian để khôi phục phiên làm việc."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Trì hoãn khi phục hồi cây (mi-li-giây)"
   },
   "tstDelayCaptionLabel": {
     "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
