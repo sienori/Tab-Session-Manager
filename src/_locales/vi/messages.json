@@ -153,25 +153,25 @@
     "message": "Lỗi"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB không có sẵn trong trình duyệt của bạn."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Cách để giải quyết vấn đề này"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Nhiều popup không thể được mở cùng một lúc."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Lưu tự động - Cửa sổ đóng"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Lưu tự động - Thoát trình duyệt"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Lưu tự động - Thường xuyên"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "Cài đặt"
   },
   "sessionsLabel": {
     "message": "Sessions"
@@ -402,16 +402,16 @@
     "message": "Duyệt..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Nhập vào"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "Xóa"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Nhập danh sách URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Tạo một phiên làm việc từ danh sách các URL và thêm nó vào danh sách phiên.<br>Định dạng: &lt;URL&gt; &lt;Tên URL (không bắt buộc)&gt;"
   },
   "exportLabel": {
     "message": "Export Sessions"
