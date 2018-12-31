@@ -276,28 +276,28 @@
     "message": "Sao lưu"
   },
   "ifBackupLabel": {
-    "message": "Lưu bản sao dự phòng"
+    "message": "Lưu bản sao lưu"
   },
   "ifBackupCaptionLabel": {
-    "message": "Khi trình duyệt khởi động, tạo một tệp tin sao lưu của các phiên và lưu nó ở thư mục tải về."
+    "message": "Khi trình duyệt khởi động, tạo một tệp tin sao lưu của các phiên và lưu nó ở thư mục tải xuống."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Vị trí lưu"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Chọn thư mục để lưu tệp tin sao lưu. Vị trí sao lưu được đặt theo vị trí của thư mục tải xuống trong trình duyệt."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Thư mục tải xuống"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Số lượng bản sao lưu lớn nhất"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Khi số lượng bản sao lưu vượt quá giá trị này, chúng sẽ bị xóa theo thứ tự tăng dần cũ nhất."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Định dạng ngày tháng"
   },
   "dateFormatCaptionLabel": {
     "message": "Example: YYYY.MM.DD HH:mm:ss"
