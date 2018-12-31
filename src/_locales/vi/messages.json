@@ -24,25 +24,25 @@
     "message": "Lưu chỉ cửa sổ hiện tại"
   },
   "categoryFilterLabel": {
-    "message": "Bộ lọc danh mục"
+    "message": "Bộ lọc nhãn"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Sắp xếp"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Tất cả"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Được lưu bởi người dùng"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Tự động lưu"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Mới nhất"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Cũ nhất"
   },
   "aToZLabel": {
     "message": "A-Z"
@@ -51,94 +51,94 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Tìm theo tên phiên làm việc"
   },
   "search": {
-    "message": "Search"
+    "message": "Tìm kiếm"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Xóa tìm kiếm"
   },
   "open": {
-    "message": "Open"
+    "message": "Mở"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Xóa"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Xóa phiên làm việc này?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Phiên làm việc đã bị xóa."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Khôi phục"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Không thể xóa phiên làm việc."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Đã lưu phiên làm việc."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Không thể lưu phiên làm việc."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Hủy"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Thêm nhãn"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Xóa nhãn"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Chi tiết"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "cửa sổ"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "cửa sổ"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "tab"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "tab"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Không có phiên làm việc nào."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Hãy lưu phiên làm việc bằng cách nhấp vào nút ở dưới bên phải."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Không có kết quả phù hợp."
   },
   "menuLabel": {
     "message": "Menu"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Đổi tên"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Mở trong cửa sổ mới"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Mở phiên làm việc trong cửa sổ mới."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Mở trong cửa sổ hiện tại"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Mở phiên làm việc ở cửa sổ hiện tại. Các cửa sổ không hoạt động và toàn bộ tab sẽ được đóng."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Thêm vào cửa sổ hiện tại"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Thêm tab vào cửa sổ hiện tại. Nếu phiên làm việc chứa nhiều cửa sổ, mở nó trong cửa sổ mới."
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
