@@ -33,10 +33,10 @@
     "message": "Tất cả"
   },
   "displayUserLabel": {
-    "message": "Được lưu bởi người dùng"
+    "message": "Lưu bởi người dùng"
   },
   "displayAutoLabel": {
-    "message": "Tự động lưu"
+    "message": "Lưu tự động"
   },
   "newestLabel": {
     "message": "Mới nhất"
@@ -444,30 +444,30 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Trang Tiện ích"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Trang Tiện ích mở rộng"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "Phiên làm việc đã được nhập."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Đọc tệp thất bại"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Xóa toàn bộ phiên. Bạn có chắc không?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Phiên làm việc"
   },
   "amazonUrl": {
     "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https:\/\/addons.mozilla.org\/vi\/firefox\/addon\/tab-session-manager\/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "Trang này không thể mở được bởi Tab Session Manager."
   }
 }
