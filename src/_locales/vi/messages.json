@@ -300,7 +300,7 @@
     "message": "Định dạng ngày tháng"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "Ví dụ: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
     "message": "Lưu cửa sổ riêng tư"
@@ -414,31 +414,31 @@
     "message": "Tạo một phiên làm việc từ danh sách các URL và thêm nó vào danh sách phiên.<br>Định dạng: &lt;URL&gt; &lt;Tên URL (không bắt buộc)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "Xuất phiên làm việc"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Lưu tất cả phiên làm việc vào máy tính."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "Xuất ra"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "Xóa phiên"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Xóa toàn bộ phiên."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "Xóa"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "Giấy phép"
   },
   "donationLabel": {
-    "message": "Please make a donation"
+    "message": "Hãy tài trợ"
   },
   "donationCaptionLabel": {
-    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+    "message": "Cảm ơn bạn đã sử dụng Tab Session Manager.<br>Sự hỗ trợ của bạn sẽ là một sự khuyến khích lớn, khi tôi tiếp tục phát triển tiện ích này.<br>Nếu bạn thích Tab Session Manager, tôi rất vui lòng nếu bạn xem xét tài trợ."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
