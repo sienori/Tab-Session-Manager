@@ -339,67 +339,67 @@
     "message": "Hành vi của nút lưu"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Chọn chế độ mặc định của nút lưu."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Hiển thị thanh tìm kiếm"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Thêm chức năng tìm kiếm bằng tên phiên."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Kích cỡ"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Tùy chọn cỡ của popup."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Chiều rộng"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Chiều cao"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Khác"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Hiển thị trang tùy chọn khi cập nhật"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Hiển thị trang tùy chọn khi Tab Session Manager được cập nhật. Bạn có thể nhanh chóng biết được nội dung cập nhật."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager đã được cập nhật!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Xem thêm"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Nhấp để hiện thông tin cập nhật."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Bật chế độ gỡ lỗi"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Khi chế độ gỡ lỗi được bật, bản ghi sẽ được đưa đến trình gỡ lỗi."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Đặt lại cài đặt"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Khôi phục các thiết lập về mặc định."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Đặt lại"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "Nhập phiên làm việc"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+    "message": "Nhập phiên đã lưu trên máy tính và thêm chúng vào danh sách phiên.<br>Nó cũng hỗ trợ kiểu file session của SessionManager (.session)."
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "Duyệt..."
   },
   "importSaveButtonLabel": {
     "message": "Import"
