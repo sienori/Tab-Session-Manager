@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "使用目前視窗取代"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "複製此瀏覽階段"
   },
