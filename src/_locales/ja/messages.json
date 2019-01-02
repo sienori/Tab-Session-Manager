@@ -135,7 +135,7 @@
     "message": "現在のウィンドウでセッションを開きます。非アクティブのウィンドウと全てのタブは閉じられます。"
   },
   "addToCurrentWindowLabel": {
-    "message": "現在のウィンドウに追加する"
+    "message": "現在のウィンドウに追加"
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "現在のウィンドウにタブを追加します。セッションに複数のウィンドウが含まれる場合は，新しいウィンドウで開きます。"
@@ -145,6 +145,9 @@
   },
   "replaceCurrentWindowLabel": {
     "message": "現在のウィンドウで置き換え"
+  },
+  "addCurrentWindowLabel": {
+    "message": "現在のウィンドウを追加"
   },
   "makeCopySessionLabel": {
     "message": "セッションのコピーを作成"
