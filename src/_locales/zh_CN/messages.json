@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "使用当前窗口替换此会话"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "创建会话副本"
   },
