@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "Thay thế bằng cửa sổ hiện tại"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "Tạo bản sao của phiên"
   },
