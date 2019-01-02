@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "Ersätt med det aktuella fönstret"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "Gör en kopia av sessionen"
   },
