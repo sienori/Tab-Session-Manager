@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "Αντικατάσταση με τρέχον παράθυρο"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "Αντίγραψε τη συνεδρία"
   },
