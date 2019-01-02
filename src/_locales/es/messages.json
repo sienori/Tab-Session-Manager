@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "Reemplazar con la ventana actual"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "Hacer una copia de la sesión"
   },
