@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "Замяна с текущият прозорец"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "Създаване копие на сесията"
   },
