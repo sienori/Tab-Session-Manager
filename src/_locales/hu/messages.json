@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "Jelenlegi ablakkal való lecserélés"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "Másolatot készítése a munkamenetről"
   },
