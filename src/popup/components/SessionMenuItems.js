@@ -3,6 +3,7 @@ import browser from "webextension-polyfill";
 import {
   sendOpenMessage,
   replaceCurrentSession,
+  addCurrentWindow,
   makeCopySession,
   sendExportSessionMessage
 } from "../actions/controlSessions";
@@ -22,6 +23,9 @@ export default props => {
   };
   const handleReplaceCurrentWindow = () => {
     replaceCurrentSession(props.session.id, "saveOnlyCurrentWindow");
+  };
+  const handleAddCurrentWindow = () => {
+    addCurrentWindow(props.session.id);
   };
   const handleMakeCopySession = () => {
     makeCopySession(props.session.id);
@@ -46,6 +50,7 @@ export default props => {
       <li onClick={handleReplaceCurrentWindow}>
         {browser.i18n.getMessage("replaceCurrentWindowLabel")}
       </li>
+      <li onClick={handleAddCurrentWindow}>{browser.i18n.getMessage("addCurrentWindowLabel")}</li>
       <li onClick={handleMakeCopySession}>{browser.i18n.getMessage("makeCopySessionLabel")}</li>
       <hr />
       <li onClick={handleExportSession}>{browser.i18n.getMessage("exportButtonLabel")}</li>

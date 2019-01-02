@@ -1,8 +1,10 @@
 import browser from "webextension-polyfill";
+import _ from "lodash";
 import clone from "clone";
 import uuidv4 from "uuid/v4";
 import moment from "moment";
 import log from "loglevel";
+import { returnReplaceParameter } from "src/background/replace.js";
 
 const logDir = "popup/actions/controlSessions";
 
@@ -141,6 +143,58 @@ export const replaceCurrentSession = async (id, property = "default") => {
   currentSession.name = session.name;
   currentSession.tag = session.tag;
   sendSessionUpdateMessage(currentSession);
+};
+
+const generateUniqueId = (originalId, isIdDuplicate) => {
+  let id = originalId;
+  while (isIdDuplicate(id)) {
+    id = _.random(0, 65536);
+  }
+  return id;
+};
+
+export const addCurrentWindow = async id => {
+  log.info(logDir, "AddCurrentWindow()", id);
+  const session = await getSessions(id);
+  const currentWindow = await browser.windows.getCurrent({ populate: true });
+
+  //tabIdをユニークなIDに更新してマップに格納
+  let tabIdList = Object.values(session.windows).flatMap(window =>
+    Object.values(window).map(tab => tab.id)
+  );
+  let updatedTabIdMap = {};
+  for (const tab of currentWindow.tabs) {
+    const isTabIdDuplicate = id => tabIdList.some(tabId => tabId == id);
+    const newTabId = generateUniqueId(tab.id, isTabIdDuplicate);
+    updatedTabIdMap[tab.id] = newTabId;
+    tabIdList.push(newTabId);
+  }
+
+  const isWindowIdDuplicate = id => session.windows.hasOwnProperty(id);
+  const windowId = generateUniqueId(currentWindow.id, isWindowIdDuplicate);
+
+  //sessionを更新
+  session.windows[windowId] = {};
+  for (const tab of currentWindow.tabs) {
+    tab.windowId = windowId;
+    tab.id = updatedTabIdMap[tab.id];
+    if (tab.openerTabId) tab.openerTabId = updatedTabIdMap[tab.openerTabId];
+
+    //replasedページならURLを更新
+    const replacedParams = returnReplaceParameter(tab.url);
+    if (replacedParams.isReplaced) {
+      tab.url = replacedParams.url;
+    }
+
+    session.windows[windowId][tab.id] = tab;
+  }
+  session.tabsNumber += Object.keys(session.windows[windowId]).length;
+  session.windowsNumber += 1;
+
+  delete currentWindow.tabs;
+  session.windowsInfo[windowId] = currentWindow;
+
+  sendSessionUpdateMessage(session);
 };
 
 export const makeCopySession = async id => {
