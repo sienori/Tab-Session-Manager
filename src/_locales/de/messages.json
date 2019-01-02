@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "Mit aktuellem Fenster ersetzen"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "Sitzung Kopieren"
   },
