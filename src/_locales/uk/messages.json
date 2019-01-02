@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "Замінити поточним вікном"
   },
+  "addCurrentWindowLabel": {
+    "message": "Додати поточне вікно"
+  },
   "makeCopySessionLabel": {
     "message": "Створити копію сесії"
   },
