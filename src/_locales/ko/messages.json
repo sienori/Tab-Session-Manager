@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "현재 창으로 바꾸기"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "세션의 복사본 만들기"
   },
