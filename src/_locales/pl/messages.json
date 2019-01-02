@@ -146,6 +146,9 @@
   "replaceCurrentWindowLabel": {
     "message": "Zastąp bieżącym oknem"
   },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
+  },
   "makeCopySessionLabel": {
     "message": "Utwórz kopię sesji"
   },
