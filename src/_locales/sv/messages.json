@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Sparar och återställer fönster- och fliklägen. Den kan även spara automatiskt."
+    "message": "Sparar och återställer läget på fönster och flikar. Den kan även spara automatiskt."
   },
   "donateWithPaypalLabel": {
     "message": "Donera via PayPal"
@@ -69,19 +69,31 @@
     "message": "Ta bort sessionen?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessionen borttagen."
+  },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
   },
   "restoreSessionLabel": {
     "message": "Återställ"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Det gick inte att ta bort session."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessionen sparad."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Det gick inte att spara sessionen."
   },
   "cancelLabel": {
     "message": "Avbryt"
@@ -122,6 +134,9 @@
   "renameLabel": {
     "message": "Byt namn"
   },
+  "OpenSessionLabel": {
+    "message": "Öppna sessionen"
+  },
   "openInNewWindowLabel": {
     "message": "Öppna i nytt fönster"
   },
@@ -140,11 +155,17 @@
   "addToCurrentWindowCaptionLabel": {
     "message": "Lägg till flikar i aktuellt fönster. Om sessionen innehåller flera fönster, öppna det i ett nytt fönster."
   },
+  "EditSessionLabel": {
+    "message": "Redigera sessionen"
+  },
   "replaceCurrentSessionLabel": {
     "message": "Ersätt med den aktuella sessionen"
   },
   "replaceCurrentWindowLabel": {
     "message": "Ersätt med det aktuella fönstret"
+  },
+  "addCurrentWindowLabel": {
+    "message": "Lägg till aktuellt fönster"
   },
   "makeCopySessionLabel": {
     "message": "Gör en kopia av sessionen"
@@ -159,7 +180,7 @@
     "message": "Så här löser du detta problem"
   },
   "noConnectionErrorLabel": {
-    "message": "Flera poppupper kan inte öppnas samtidigt."
+    "message": "Flera popups kan inte öppnas samtidigt."
   },
   "winCloseSessionName": {
     "message": "Spara automatiskt - Fönstret stängs"
@@ -372,7 +393,7 @@
     "message": "Tab Session Manager har uppdaterats!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Se mer"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Tryck för att visa uppdateringsinformationen."
