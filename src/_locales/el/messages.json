@@ -122,6 +122,9 @@
   "renameLabel": {
     "message": "Μετονομασία"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Άνοιγμα σε νέο παράθυρο"
   },
@@ -139,6 +142,9 @@
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Πρόσθεσε καρτέλες στο τρέχον παράθυρο. Αν η συνεδρία περιέχει πολλαπλά παράθυρα τότε θα ανοίξει νέο παράθυρο."
+  },
+  "EditSessionLabel": {
+    "message": "Edit session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Αντικατάσταση με τρέχουσα συνεδρία"
