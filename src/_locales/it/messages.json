@@ -72,10 +72,10 @@
     "message": "Sessione eliminata."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Finestra della sessione eliminata."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Scheda della sessione eliminata."
   },
   "restoreSessionLabel": {
     "message": "Ripristina"
@@ -84,10 +84,10 @@
     "message": "Impossibile eliminare la sessione."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Impossibile eliminare la finestra della sessione."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Impossibile eliminare la scheda della sessione."
   },
   "sessionSavedLabel": {
     "message": "Sessione salvata."
@@ -135,7 +135,7 @@
     "message": "Rinomina"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Apri sessione"
   },
   "openInNewWindowLabel": {
     "message": "Apri in una nuova finestra"
@@ -156,7 +156,7 @@
     "message": "Aggiunge schede alla finestra corrente. Se la sessione ha più finestre, apre una nuova finestra."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Modifica sessione"
   },
   "replaceCurrentSessionLabel": {
     "message": "Sostituisci con la sessione corrente"
@@ -165,7 +165,7 @@
     "message": "Sostituisci con la pagina corrente"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Aggiungi finestra corrente"
   },
   "makeCopySessionLabel": {
     "message": "Fai una copia della sessione"
