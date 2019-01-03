@@ -72,10 +72,10 @@
     "message": "Sessionen borttagen."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Sessionsfönstret borttaget."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Sessionsfliken borttagen."
   },
   "restoreSessionLabel": {
     "message": "Återställ"
@@ -84,10 +84,10 @@
     "message": "Det gick inte att ta bort session."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Det gick inte att ta bort sessionsfönstret."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Det gick inte att ta bort sessionsfliken."
   },
   "sessionSavedLabel": {
     "message": "Sessionen sparad."
