@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "Sessionen borttagen."
   },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
+  },
   "restoreSessionLabel": {
     "message": "Återställ"
   },
   "failedDeleteSessionLabel": {
     "message": "Det gick inte att ta bort session."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
     "message": "Sessionen sparad."
@@ -123,7 +135,7 @@
     "message": "Byt namn"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Öppna sessionen"
   },
   "openInNewWindowLabel": {
     "message": "Öppna i nytt fönster"
@@ -144,7 +156,7 @@
     "message": "Lägg till flikar i aktuellt fönster. Om sessionen innehåller flera fönster, öppna det i ett nytt fönster."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Redigera sessionen"
   },
   "replaceCurrentSessionLabel": {
     "message": "Ersätt med den aktuella sessionen"
