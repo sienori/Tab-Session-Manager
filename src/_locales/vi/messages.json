@@ -3,46 +3,46 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Lưu và khôi phục lại trạng thái của cửa sổ và thẻ. Nó cũng hỗ trợ việc lưu tự động."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Đóng góp bằng PayPal"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "Lưu"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "Lưu phiên hiện tại"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Nhập tên phiên làm việc"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Lưu tất cả cửa sổ"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Lưu chỉ cửa sổ hiện tại"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Bộ lọc nhãn"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Sắp xếp"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Tất cả"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Lưu bởi người dùng"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Lưu tự động"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Mới nhất"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Cũ nhất"
   },
   "aToZLabel": {
     "message": "A-Z"
@@ -51,423 +51,444 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Tìm theo tên phiên làm việc"
   },
   "search": {
-    "message": "Search"
+    "message": "Tìm kiếm"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Xóa tìm kiếm"
   },
   "open": {
-    "message": "Open"
+    "message": "Mở"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Xóa"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Xóa phiên làm việc này?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Phiên làm việc đã bị xóa."
+  },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Khôi phục"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Không thể xóa phiên làm việc."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Đã lưu phiên làm việc."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Không thể lưu phiên làm việc."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Hủy"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Thêm nhãn"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Xóa nhãn"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Chi tiết"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "cửa sổ"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "cửa sổ"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "tab"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "tab"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Không có phiên làm việc nào."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Hãy lưu phiên làm việc bằng cách nhấp vào nút ở dưới bên phải."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Không có kết quả phù hợp."
   },
   "menuLabel": {
     "message": "Menu"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Đổi tên"
+  },
+  "OpenSessionLabel": {
+    "message": "Open session"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Mở trong cửa sổ mới"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Mở phiên làm việc trong cửa sổ mới."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Mở trong cửa sổ hiện tại"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Mở phiên làm việc trong cửa sổ hiện tại. Các cửa sổ không hoạt động và toàn bộ tab sẽ được đóng."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Thêm vào cửa sổ hiện tại"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Thêm tab vào cửa sổ hiện tại. Nếu phiên làm việc chứa nhiều cửa sổ, mở nó trong cửa sổ mới."
+  },
+  "EditSessionLabel": {
+    "message": "Edit session"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Thay thế bằng phiên hiện tại"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Thay thế bằng cửa sổ hiện tại"
+  },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Tạo bản sao của phiên"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Lỗi"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB không có sẵn trong trình duyệt của bạn."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Cách để giải quyết vấn đề này"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Nhiều popup không thể được mở cùng một lúc."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Lưu tự động - Cửa sổ đóng"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Lưu tự động - Thoát trình duyệt"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Lưu tự động - Thường xuyên"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "Cài đặt"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "Phiên làm việc"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "Thông tin"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Tổng quan"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Lưu tự động"
   },
   "startUpLabel": {
-    "message": "Startup"
+    "message": "Khởi động"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Kiểu"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Mở phiên trong cửa sổ mới"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "Nếu không được chọn, phiên làm việc sẽ ghi đè cửa sổ hiện tại."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Tải chậm tab"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "Khi mở một phiên làm việc, nội dung của từng trang sẽ không được tải đến khi bạn nhấp vào trang đó.<br>Nếu không được chọn, việc sử dùng bộ nhớ sẽ tăng đáng kể khi khôi phục phiên."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Dùng thuộc tính \"discarded\" cho việc tải chậm tab"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Bật tùy chọn này sẽ cải thiện hiệu năng khi mở các tab."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Biểu tượng của tab được tải chậm sẽ không được hiển thị."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Khôi phục vị trí cửa sổ"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Khôi phục vị trí và kích thước cửa sổ khi mở phiên làm việc."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Restore previous session at startup"
+    "message": "Khôi phục phiên làm việc trước đó khi khởi động"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Khi trình duyệt khởi động, khôi phục phiên làm việc đã được đóng trước đó."
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "Lưu lại phiên làm việc thường xuyên"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "Lưu lại phiên mỗi X phút."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "Khoảng thời gian (phút)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Giá trị nhỏ nhất 0,1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Số lượng lưu lại lớn nhất"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Số lượng phiên được lưu lại lớn nhất (bằng cách này)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "Lưu lại phiên khi cửa sổ đã đóng"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Lưu lại phiên làm việc chứa một cửa sổ đã đóng."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Số lượng lưu lại lớn nhất"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Số lượng phiên được lưu lại lớn nhất (bằng cách này)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Lưu lại phiên khi thoát trình duyệt"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Lưu lại phiên làm việc chứa nhiều cửa sổ trong cùng một hàng."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Số lượng lưu lại lớn nhất"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Số lượng phiên được lưu lại lớn nhất (bằng cách này)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Dùng tiêu đề trang làm tên của phiên được lưu tự động"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Khi lưu phiên tự động, dùng tiêu đề của trang được mở làm tên của phiên."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Sao lưu"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Lưu bản sao lưu"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Khi trình duyệt khởi động, tạo một tệp tin sao lưu của các phiên và lưu nó ở thư mục tải xuống."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Vị trí lưu"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Chọn thư mục để lưu tệp tin sao lưu. Vị trí lưu được đặt theo vị trí của thư mục tải xuống trong trình duyệt."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Thư mục tải xuống"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Số lượng bản sao lưu lớn nhất"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Khi số lượng bản sao lưu vượt quá giá trị này, chúng sẽ bị xóa theo thứ tự tăng dần cũ nhất."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Định dạng ngày tháng"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "Ví dụ: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Lưu cửa sổ riêng tư"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Nếu không được chọn, bỏ qua cửa sổ riêng tư khi lưu phiên làm việc."
   },
   "ifSupportTstLabel": {
-    "message": "Supports Tree Style Tab"
+    "message": "Hỗ trợ Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Khôi phục trạng thái cây của Tree Style Tab.<br>Khi tùy chọn này được bật, nó tốn thời gian để khôi phục phiên làm việc."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Trì hoãn khi phục hồi cây (mi-li-giây)"
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Để phục hồi trạng thái của cây, cần có thời gian chờ để mở tab. Tăng thời gian chờ nếu cây không được khôi phục một cách chính xác."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Hiển thị tên phiên trong một dòng"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Nếu tên phiên làm việc trong danh sách phiên dài hơn một dòng, nó sẽ được hiển thị trong một dòng bằng cách cắt ngắn."
   },
   "popupLabel": {
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Hành vi của nút mở"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Chọn chế độ mặc định của nút mở."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Hành vi của nút lưu"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Chọn chế độ mặc định của nút lưu."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Hiển thị thanh tìm kiếm"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Thêm chức năng tìm kiếm bằng tên phiên."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Kích thước"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Tùy chọn cỡ của popup."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Chiều rộng"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Chiều cao"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Khác"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Hiển thị trang tùy chọn khi cập nhật"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Hiển thị trang tùy chọn khi Tab Session Manager được cập nhật. Bạn có thể nhanh chóng biết được nội dung cập nhật."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager đã được cập nhật!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Xem thêm"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Nhấp để hiện thông tin cập nhật."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Bật chế độ gỡ lỗi"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Khi chế độ gỡ lỗi được bật, bản ghi sẽ được xuất ra trình gỡ lỗi."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Đặt lại cài đặt"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Khôi phục các thiết lập về mặc định."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Đặt lại"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "Nhập phiên làm việc"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+    "message": "Nhập phiên đã lưu trên máy tính và thêm chúng vào danh sách phiên.<br>Nó cũng hỗ trợ tệp tin session của SessionManager (.session)."
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "Duyệt..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Nhập vào"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "Xóa"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Nhập danh sách URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Tạo một phiên làm việc từ danh sách các URL và thêm nó vào danh sách phiên.<br>Định dạng: &lt;URL&gt; &lt;tên URL (không bắt buộc)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "Xuất phiên làm việc"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Lưu tất cả phiên làm việc vào máy tính."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "Xuất ra"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "Xóa phiên"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Xóa toàn bộ phiên."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "Xóa"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "Giấy phép"
   },
   "donationLabel": {
-    "message": "Please make a donation"
+    "message": "Hãy tài trợ cho tôi"
   },
   "donationCaptionLabel": {
-    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+    "message": "Cảm ơn bạn đã sử dụng Tab Session Manager.<br>Sự hỗ trợ của bạn sẽ là một sự động viên lớn, khi tôi tiếp tục phát triển tiện ích này.<br>Nếu bạn thích Tab Session Manager, tôi rất vui lòng nếu bạn xem xét tài trợ."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Trang Tiện ích"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Trang Cửa hàng tiện ích"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "Phiên làm việc đã được nhập."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Đọc tệp thất bại"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Xóa toàn bộ phiên. Bạn có chắc không?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Phiên làm việc"
   },
   "amazonUrl": {
     "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https:\/\/addons.mozilla.org\/vi\/firefox\/addon\/tab-session-manager\/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "Trang này không thể mở được bởi Tab Session Manager."
   }
 }
