@@ -159,7 +159,7 @@
     "message": "Редагувати сесію"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Замінити поточної сесією"
+    "message": "Замінити поточною сесією"
   },
   "replaceCurrentWindowLabel": {
     "message": "Замінити поточним вікном"
@@ -234,7 +234,7 @@
     "message": "Значок відкладеного завантаження вкладки не відображається."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Відновити розташування вікон"
+    "message": "Відновляти розташування вікон"
   },
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Відновити розмір та положення вікон під час відкриття сесії."
@@ -324,7 +324,7 @@
     "message": "Наприклад: РРРР.ММ.ДД ГГ:хх:сс"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Зберегти приватне вікно"
+    "message": "Зберігати приватне вікно"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
@@ -363,7 +363,7 @@
     "message": "Обирається типова поведінка для кнопки \"Зберегти\"."
   },
   "isShowSearchBarLabel": {
-    "message": "Відобразити панель пошуку"
+    "message": "Відображати панель пошуку"
   },
   "isShowSearchBarCaptionLabel": {
     "message": "Додати функцію пошуку за назвою сесії."
