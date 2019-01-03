@@ -122,6 +122,9 @@
   "renameLabel": {
     "message": "Преименуване"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Отваряне в нов прозорец"
   },
@@ -139,6 +142,9 @@
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Добавяне на раздели към текущият прозорец. Ако сесията съдържа множество прозорци, те ще се отворят в новият прозорец."
+  },
+  "EditSessionLabel": {
+    "message": "Edit session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Замяна с текущата сесия"
