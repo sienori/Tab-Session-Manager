@@ -135,7 +135,7 @@
     "message": "Перейменувати"
   },
   "OpenSessionLabel": {
-    "message": "Відкрити сесію"
+    "message": "Відкриття сесії"
   },
   "openInNewWindowLabel": {
     "message": "Відкрити у новому вікні"
@@ -156,7 +156,7 @@
     "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікно - відкрити її в новому вікні."
   },
   "EditSessionLabel": {
-    "message": "Редагувати сесію"
+    "message": "Редагування сесії"
   },
   "replaceCurrentSessionLabel": {
     "message": "Замінити поточною сесією"
