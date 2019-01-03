@@ -122,6 +122,9 @@
   "renameLabel": {
     "message": "リネーム"
   },
+  "OpenSessionLabel": {
+    "message": "セッションを開く"
+  },
   "openInNewWindowLabel": {
     "message": "新しいウィンドウで開く"
   },
@@ -139,6 +142,9 @@
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "現在のウィンドウにタブを追加します。セッションに複数のウィンドウが含まれる場合は，新しいウィンドウで開きます。"
+  },
+  "EditSessionLabel": {
+    "message": "セッションを編集"
   },
   "replaceCurrentSessionLabel": {
     "message": "現在のセッションで置き換え"
