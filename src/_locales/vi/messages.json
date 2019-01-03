@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "Phiên làm việc đã bị xóa."
   },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
+  },
   "restoreSessionLabel": {
     "message": "Khôi phục"
   },
   "failedDeleteSessionLabel": {
     "message": "Không thể xóa phiên làm việc."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
     "message": "Đã lưu phiên làm việc."
