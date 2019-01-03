@@ -69,19 +69,31 @@
     "message": "確定要刪除此瀏覽階段？"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "已刪除瀏覽階段。"
+  },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
   },
   "restoreSessionLabel": {
     "message": "還原"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "瀏覽階段刪除失敗。"
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "已儲存瀏覽階段。"
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "瀏覽階段儲存失敗。"
   },
   "cancelLabel": {
     "message": "取消"
@@ -122,6 +134,9 @@
   "renameLabel": {
     "message": "重新命名"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "在新視窗中開啟"
   },
@@ -140,11 +155,17 @@
   "addToCurrentWindowCaptionLabel": {
     "message": "將分頁新增至目前視窗。 如果瀏覽階段包含多個視窗，請在新視窗中將其開啟。"
   },
+  "EditSessionLabel": {
+    "message": "Edit session"
+  },
   "replaceCurrentSessionLabel": {
     "message": "使用目前瀏覽階段取代此瀏覽階段"
   },
   "replaceCurrentWindowLabel": {
     "message": "使用目前視窗取代"
+  },
+  "addCurrentWindowLabel": {
+    "message": "新增目前視窗"
   },
   "makeCopySessionLabel": {
     "message": "複製此瀏覽階段"
@@ -372,7 +393,7 @@
     "message": "Tab Session Manager 已更新！"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "顯示更多"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "點選檢視更新資訊"
