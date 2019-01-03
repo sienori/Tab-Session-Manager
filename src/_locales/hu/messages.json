@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "Session deleted."
   },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
+  },
   "restoreSessionLabel": {
     "message": "Visszaállítás"
   },
   "failedDeleteSessionLabel": {
     "message": "Failed to delete session."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
     "message": "Session saved."
@@ -122,6 +134,9 @@
   "renameLabel": {
     "message": "Átnevez"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Megnyitás új ablakban"
   },
@@ -140,11 +155,17 @@
   "addToCurrentWindowCaptionLabel": {
     "message": "Fülek a jelenlegi ablakhoz adása. Ha a munkamenetben több ablak is van, új ablakban nyílnak meg."
   },
+  "EditSessionLabel": {
+    "message": "Edit session"
+  },
   "replaceCurrentSessionLabel": {
     "message": "Aktuális munkamenettel lecserél"
   },
   "replaceCurrentWindowLabel": {
     "message": "Jelenlegi ablakkal való lecserélés"
+  },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
   },
   "makeCopySessionLabel": {
     "message": "Másolatot készítése a munkamenetről"
