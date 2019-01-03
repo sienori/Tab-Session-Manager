@@ -72,10 +72,10 @@
     "message": "Συνεδρία διαγρέφτηκε."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Το παράθυρο διαγράφηκε από τη συνεδρία."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Η καρτέλα διαγράφηκε από τη συνεδρία."
   },
   "restoreSessionLabel": {
     "message": "Επαναφορά"
@@ -84,10 +84,10 @@
     "message": "Δεν έσβησα τη συνεδρία."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Δεν διαγράφηκε το παράθυρο από τη συνεδρία."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Δεν διαγράφηκε η καρτέλα από τη συνεδρία."
   },
   "sessionSavedLabel": {
     "message": "Συνεδρία σώθηκε."
