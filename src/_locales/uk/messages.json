@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "Сесію видалено."
   },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
+  },
   "restoreSessionLabel": {
     "message": "Відновити"
   },
   "failedDeleteSessionLabel": {
     "message": "Не вдалося видалити сесію."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
     "message": "Сесію збережено."
@@ -122,6 +134,9 @@
   "renameLabel": {
     "message": "Перейменувати"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Відкрити у новому вікні"
   },
@@ -140,11 +155,17 @@
   "addToCurrentWindowCaptionLabel": {
     "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікно - відкрити її в новому вікні."
   },
+  "EditSessionLabel": {
+    "message": "Edit session"
+  },
   "replaceCurrentSessionLabel": {
     "message": "Замінити поточної сесією"
   },
   "replaceCurrentWindowLabel": {
     "message": "Замінити поточним вікном"
+  },
+  "addCurrentWindowLabel": {
+    "message": "Додати поточне вікно"
   },
   "makeCopySessionLabel": {
     "message": "Створити копію сесії"
@@ -372,7 +393,7 @@
     "message": "Tab Session Manager було оновлено!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Дивитися більше"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Натисніть, щоб переглянути інформацію про оновлення."
