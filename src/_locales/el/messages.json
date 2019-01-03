@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "Συνεδρία διαγρέφτηκε."
   },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
+  },
   "restoreSessionLabel": {
     "message": "Επαναφορά"
   },
   "failedDeleteSessionLabel": {
     "message": "Δεν έσβησα τη συνεδρία."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
     "message": "Συνεδρία σώθηκε."
