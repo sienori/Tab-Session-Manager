@@ -228,7 +228,7 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Разрешаването на тази опция ще подобри производителността при отваряне на раздели."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
@@ -267,7 +267,7 @@
     "message": "Запазване на сесията при затваряне на прозореца"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Запазване на сесията, съдържаща само един затворен прозорец."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимален брой запазени"
@@ -276,16 +276,16 @@
     "message": "Максимален брой запазени сесии (по този начин)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Запазване на сесията при изход от браузъра"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Запазване на сесията, включваща множество затворени в един ред прозорци."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Максимален брой запазени"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Максимален брой запазени сесии (по този начин)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Използване заглавието на страница за име на автоматично запазена сесия"
@@ -393,13 +393,13 @@
     "message": "Tab Session Manager беше обновен!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Вижте повече"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Щракнете, за да видите информацията по обновяването."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Режим за отстраняване на грешки"
   },
   "isDebugModeCaptionLabel": {
     "message": "When debug mode is enabled, the log is output to the debugger."
