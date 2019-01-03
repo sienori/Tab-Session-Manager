@@ -110,6 +110,7 @@ export async function updateSession(session, isSendResponce = true) {
     if (isSendResponce) sendMessage("updateSession", { session: session });
   } catch (e) {
     log.error(logDir, "updateSession()", e);
+    return Promise.reject(e);
   }
 }
 

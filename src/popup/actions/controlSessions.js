@@ -55,9 +55,9 @@ export const sendSessionSaveMessage = async (name, property = "saveAllWindows") 
   });
 };
 
-export const sendSessionUpdateMessage = session => {
+export const sendSessionUpdateMessage = async session => {
   log.log(logDir, "sendSessionUpdateMessage()", session);
-  browser.runtime.sendMessage({
+  return await browser.runtime.sendMessage({
     message: "update",
     session: session,
     isSendResponce: true
@@ -96,26 +96,25 @@ export const deleteWindow = (session, winId) => {
   session = clone(session);
   session.windowsNumber--;
   session.tabsNumber -= Object.keys(session.windows[winId]).length;
-  if (session.tabsNumber <= 0) return;
+  if (session.tabsNumber <= 0) return Promise.reject();
 
   delete session.windows[winId];
   if (session.windowsInfo !== undefined) delete session.windowsInfo[winId];
 
-  sendSessionUpdateMessage(session);
+  return sendSessionUpdateMessage(session);
 };
 
 export const deleteTab = (session, winId, tabId) => {
   log.info(logDir, "deleteTab()", session, winId, tabId);
   session = clone(session);
   session.tabsNumber--;
-  if (session.tabsNumber <= 0) return;
+  if (session.tabsNumber <= 0) return Promise.reject();
 
   delete session.windows[winId][tabId];
   if (session.windowsInfo !== undefined) delete session.windowsInfo[winId][tabId];
 
   if (Object.keys(session.windows[winId]).length === 0) {
-    deleteWindow(session, winId);
-    return;
+    return deleteWindow(session, winId);
   }
 
   const window = session.windows[winId];
@@ -128,7 +127,7 @@ export const deleteTab = (session, winId, tabId) => {
     if (window[tab].index > tabId) window[tab].index--;
   }
 
-  sendSessionUpdateMessage(session);
+  return sendSessionUpdateMessage(session);
 };
 
 export const replaceCurrentSession = async (id, property = "default") => {

@@ -7,7 +7,9 @@ import {
   getSessions,
   sendSessionSaveMessage,
   sendSessionRemoveMessage,
-  sendSessionUpdateMessage
+  sendSessionUpdateMessage,
+  deleteWindow,
+  deleteTab
 } from "../actions/controlSessions";
 import openUrl from "../actions/openUrl";
 import Header from "./Header";
@@ -164,16 +166,14 @@ export default class PopupPage extends Component {
   removeSession = async id => {
     log.info(logDir, "removeSession()", id);
     const removedSession = await getSessions(id);
-    this.setState({
-      removedSession: removedSession
-    });
+    this.saveRemovedSession(removedSession);
     try {
       await sendSessionRemoveMessage(id);
       this.openNotification({
         message: browser.i18n.getMessage("sessionDeletedLabel"),
         type: "warn",
         buttonLabel: browser.i18n.getMessage("restoreSessionLabel"),
-        onClick: this.restoreSession
+        onClick: this.restoreRemovedSession
       });
     } catch (e) {
       this.openNotification({
@@ -183,8 +183,51 @@ export default class PopupPage extends Component {
     }
   };
 
-  restoreSession = () => {
-    log.info(logDir, "restoreSession()");
+  removeWindow = async (session, winId) => {
+    this.saveRemovedSession(session);
+    try {
+      await deleteWindow(session, winId);
+      this.openNotification({
+        message: browser.i18n.getMessage("sessionWindowDeletedLabel"),
+        type: "warn",
+        buttonLabel: browser.i18n.getMessage("restoreSessionLabel"),
+        onClick: this.restoreRemovedSession
+      });
+    } catch (e) {
+      this.openNotification({
+        message: browser.i18n.getMessage("failedDeleteSessionWindowLabel"),
+        type: "error"
+      });
+    }
+  };
+
+  removeTab = async (session, winId, tabId) => {
+    this.saveRemovedSession(session);
+    try {
+      await deleteTab(session, winId, tabId);
+      this.openNotification({
+        message: browser.i18n.getMessage("sessionTabDeletedLabel"),
+        type: "warn",
+        buttonLabel: browser.i18n.getMessage("restoreSessionLabel"),
+        onClick: this.restoreRemovedSession
+      });
+    } catch (e) {
+      this.openNotification({
+        message: browser.i18n.getMessage("failedDeleteSessionTabLabel"),
+        type: "error"
+      });
+    }
+  };
+
+  saveRemovedSession = removedSession => {
+    log.info(logDir, "saveRemovedSession()");
+    this.setState({
+      removedSession: removedSession
+    });
+  };
+
+  restoreRemovedSession = () => {
+    log.info(logDir, "restoreRemovedSession()");
     const removedSession = this.state.removedSession;
     if (removedSession.id == null) return;
     sendSessionUpdateMessage(removedSession);
@@ -255,6 +298,8 @@ export default class PopupPage extends Component {
           sortValue={this.state.sortValue}
           searchWord={this.state.searchWord}
           removeSession={this.removeSession}
+          removeWindow={this.removeWindow}
+          removeTab={this.removeTab}
           getSessionDetail={this.getSessionDetail}
           openMenu={this.openMenu}
           isInitSessions={this.state.isInitSessions}

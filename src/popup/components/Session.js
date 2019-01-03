@@ -59,7 +59,7 @@ export default class Session extends Component {
   }
 
   render() {
-    const { session, removeSession, order, searchWord } = this.props;
+    const { session, removeSession, removeWindow, removeTab, order, searchWord } = this.props;
     const windowLabel = browser.i18n.getMessage("windowLabel");
     const windowsLabel = browser.i18n.getMessage("windowsLabel");
     const tabLabel = browser.i18n.getMessage("tabLabel");
@@ -114,7 +114,12 @@ export default class Session extends Component {
             </button>
           </div>
         </div>
-        <DetailsContainer isOpenedDetails={this.state.isOpenedDetails} session={session} />
+        <DetailsContainer
+          isOpenedDetails={this.state.isOpenedDetails}
+          session={session}
+          removeWindow={removeWindow}
+          removeTab={removeTab}
+        />
       </div>
     );
   }

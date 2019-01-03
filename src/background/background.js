@@ -94,8 +94,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
       renameSession(request.id, request.name);
       break;
     case "update":
-      updateSession(request.session, request.isSendResponce);
-      break;
+      return updateSession(request.session, request.isSendResponce);
     case "import":
       importSessions(request.importSessions);
       break;

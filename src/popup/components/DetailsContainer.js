@@ -1,12 +1,12 @@
 import React from "react";
 import browser from "webextension-polyfill";
 import openUrl from "../actions/openUrl";
-import { sendOpenMessage, deleteWindow, deleteTab } from "../actions/controlSessions";
+import { sendOpenMessage } from "../actions/controlSessions";
 import PlusIcon from "../icons/plus.svg";
 import "../styles/DetailsContainer.scss";
 
 export default props => {
-  const { session, isOpenedDetails } = props;
+  const { session, isOpenedDetails, removeWindow, removeTab } = props;
 
   let winNumber = 1;
   return (
@@ -26,15 +26,15 @@ export default props => {
                   <img src="/icons/window.png" />
                   <span>{`${browser.i18n.getMessage("windowLabel")} ${winNumber++}`}</span>
                 </button>
-                <button
-                  className="deleteWindowButton"
-                  onClick={() => {
-                    deleteWindow(session, windowId);
-                  }}
-                  title={browser.i18n.getMessage("remove")}
-                >
-                  <PlusIcon />
-                </button>
+                {session.windowsNumber > 1 && (
+                  <button
+                    className="deleteWindowButton"
+                    onClick={() => removeWindow(session, windowId)}
+                    title={browser.i18n.getMessage("remove")}
+                  >
+                    <PlusIcon />
+                  </button>
+                )}
               </div>
               <ul className="tabs">
                 {Object.keys(session.windows[windowId]).map(tabId => (
@@ -63,15 +63,15 @@ export default props => {
                       />
                       <span>{session.windows[windowId][tabId].title}</span>
                     </button>
-                    <button
-                      className="deleteTabButton"
-                      onClick={() => {
-                        deleteTab(session, windowId, tabId);
-                      }}
-                      title={browser.i18n.getMessage("remove")}
-                    >
-                      <PlusIcon />
-                    </button>
+                    {session.tabsNumber > 1 && (
+                      <button
+                        className="deleteTabButton"
+                        onClick={() => removeTab(session, windowId, tabId)}
+                        title={browser.i18n.getMessage("remove")}
+                      >
+                        <PlusIcon />
+                      </button>
+                    )}
                   </li>
                 ))}
               </ul>

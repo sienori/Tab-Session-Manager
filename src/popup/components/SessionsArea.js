@@ -94,6 +94,8 @@ export default class SessionsArea extends Component {
       sortValue,
       searchWord,
       removeSession,
+      removeWindow,
+      removeTab,
       getSessionDetail,
       openMenu,
       isInitSessions,
@@ -122,6 +124,8 @@ export default class SessionsArea extends Component {
                 order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
                 searchWord={searchWord}
                 removeSession={removeSession}
+                removeWindow={removeWindow}
+                removeTab={removeTab}
                 getSessionDetail={getSessionDetail}
                 openMenu={openMenu}
                 key={session.id}
