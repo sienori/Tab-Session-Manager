@@ -69,19 +69,31 @@
     "message": "Supprimer cette session ?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Session supprimée."
+  },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
   },
   "restoreSessionLabel": {
     "message": "Restaurer"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "La session n’a pas pu être supprimée."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Session enregistrée."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "La session n’a pas pu être enregistrée."
   },
   "cancelLabel": {
     "message": "Annuler"
@@ -122,6 +134,9 @@
   "renameLabel": {
     "message": "Renommer"
   },
+  "OpenSessionLabel": {
+    "message": "Ouvrir la session"
+  },
   "openInNewWindowLabel": {
     "message": "Ouvrir dans une nouvelle fenêtre"
   },
@@ -140,11 +155,17 @@
   "addToCurrentWindowCaptionLabel": {
     "message": "Ajouter les onglets à la fenêtre actuelle. Si la session contient plusieurs fenêtres, l’ouvrir dans une nouvelle fenêtre."
   },
+  "EditSessionLabel": {
+    "message": "Modifier la session"
+  },
   "replaceCurrentSessionLabel": {
     "message": "Remplacer par la session en cours"
   },
   "replaceCurrentWindowLabel": {
     "message": "Remplacer par la fenêtre actuelle"
+  },
+  "addCurrentWindowLabel": {
+    "message": "Ajouter la fenêtre actuelle"
   },
   "makeCopySessionLabel": {
     "message": "Faire une copie de la session"
@@ -276,7 +297,7 @@
     "message": "Sauvegarde"
   },
   "ifBackupLabel": {
-    "message": "Enregistrer la sauvegarde"
+    "message": "Conserver une copie de sauvegarde"
   },
   "ifBackupCaptionLabel": {
     "message": "Lorsque le navigateur démarre, créer un fichier de sauvegarde des sessions et l'enregistrer dans le dossier des téléchargements."
@@ -372,7 +393,7 @@
     "message": "Tab Session Manager a été mise à jour !"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Plus de détails"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Cliquez ici pour afficher des informations sur la mise à jour."

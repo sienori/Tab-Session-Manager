@@ -69,19 +69,31 @@
     "message": "Vuoi eliminare questa sessione?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessione eliminata."
+  },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
   },
   "restoreSessionLabel": {
     "message": "Ripristina"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Impossibile eliminare la sessione."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessione salvata."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Impossibile salvare la sessione."
   },
   "cancelLabel": {
     "message": "Annulla"
@@ -122,6 +134,9 @@
   "renameLabel": {
     "message": "Rinomina"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Apri in una nuova finestra"
   },
@@ -140,11 +155,17 @@
   "addToCurrentWindowCaptionLabel": {
     "message": "Aggiunge schede alla finestra corrente. Se la sessione ha più finestre, apre una nuova finestra."
   },
+  "EditSessionLabel": {
+    "message": "Edit session"
+  },
   "replaceCurrentSessionLabel": {
     "message": "Sostituisci con la sessione corrente"
   },
   "replaceCurrentWindowLabel": {
     "message": "Sostituisci con la pagina corrente"
+  },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
   },
   "makeCopySessionLabel": {
     "message": "Fai una copia della sessione"
@@ -372,16 +393,16 @@
     "message": "Tab Session Manager è stato aggiornato!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Mostra altro"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Clicca qui per ulteriori informazioni riguardo l'aggiornamento."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Abilità modalità debug"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Quando la modalità di debug è abilitata, il log viene mostrato nel debugger."
   },
   "resetSettingsLabel": {
     "message": "Ripristina impostazioni"
