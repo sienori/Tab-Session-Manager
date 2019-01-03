@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "会话已删除。"
   },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
+  },
   "restoreSessionLabel": {
     "message": "还原"
   },
   "failedDeleteSessionLabel": {
     "message": "删除会话失败。"
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
     "message": "会话已保存。"
