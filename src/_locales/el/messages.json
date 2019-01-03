@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Αποθηκεύει κι επαναφέρει παράθυρα και καρτέλες. Υποστηρίζει και αυτοματοποιημένη αποθήκευση."
   },
   "donateWithPaypalLabel": {
     "message": "Δωρεά μέσω PayPal"
@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "Συνεδρία διαγρέφτηκε."
   },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
+  },
   "restoreSessionLabel": {
     "message": "Επαναφορά"
   },
   "failedDeleteSessionLabel": {
     "message": "Δεν έσβησα τη συνεδρία."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
     "message": "Συνεδρία σώθηκε."
@@ -122,6 +134,9 @@
   "renameLabel": {
     "message": "Μετονομασία"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Άνοιγμα σε νέο παράθυρο"
   },
@@ -138,13 +153,19 @@
     "message": "Προσθήκη στο τρέχον παράθυρο"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Πρόσθεσε καρτέλες στο τρέχον παράθυρο. Αν η συνεδρία περιέχει πολλαπλά παράθυρα τότε θα ανοίξει νέο παράθυρο."
+  },
+  "EditSessionLabel": {
+    "message": "Edit session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Αντικατάσταση με τρέχουσα συνεδρία"
   },
   "replaceCurrentWindowLabel": {
     "message": "Αντικατάσταση με τρέχον παράθυρο"
+  },
+  "addCurrentWindowLabel": {
+    "message": "Προσθήκη αυτού του παράθυρου"
   },
   "makeCopySessionLabel": {
     "message": "Αντίγραψε τη συνεδρία"
@@ -153,13 +174,13 @@
     "message": "Σφάλμα"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "Αυτός ο πλοηγός δεν έχει δυνατότητα IndexedDB."
   },
   "howToSolveLabel": {
     "message": "Πώς να λυθεί το πρόβλημα"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Δεν μπορούν να εμφανιστούν πολλά popup ταυτόχρονα."
   },
   "winCloseSessionName": {
     "message": "Αυτόματη αποθήκευση όταν κλείσει το παράθυρο"
@@ -195,22 +216,22 @@
     "message": "Άνοιγμα συνεδρίας σε νέο παράθυρο"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "Αν μείνει ατσεκάριστο, η συνεδρία αντικαθιστά το τρέχον παράθυρο."
   },
   "ifLazyLoadingLabel": {
     "message": "Φόρτωση καρτέλας αργότερα"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "Όταν φορτώνεται μία συνεδρία, τα περιεχόμενα κάθε σελίδας δεν φορτώνονται μέχρι να πατηθεί η συγκεριμένη καρτέλα.<br>Αν είναι ξετσεκαρισμένο τότε αυξάνεται πάρα πολύ η χρήση της μνήμης κατά την επαναφορά συνεδριών."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Χρήση της ιδότητας \"discarded\" κατά την επaναφορά"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Αν νεργοποιηθεί, οι καρτέλες θα ανοίγουν γρηγορότερα."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Δεν εμφανίζεται το favicon της αποθήκευσης."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Επαναφορά θέσης παραθύρου"
@@ -222,7 +243,7 @@
     "message": "Επαναφορά συνεδρίας κατά την εκκίνηση"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Κατά το άνοιγμα του πλοηγού, να επανέλθει η συνεδρία που έκλεισε τελευταία."
   },
   "ifAutoSaveLabel": {
     "message": "Τακτική αποθήκευση συνεδρίας"
@@ -237,40 +258,40 @@
     "message": "Ελάχιστη τιμή 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Πόσες αποθηκεύονται"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Πόσες συνεδρίες μπορύν να αποθηλευτούν με αυτόν τον τρόπο."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "Αποθήκευση συνεδρίας όταν κλείσει το παράθυρο"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Αποθήκευση συνεδρίας όταν κλείνει ένα και μόνο παράθυρο."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Πόσες αποθηκεύονται"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Πόσες συνεδρίες μπορύν να αποθηκευτούν με αυτόν τον τρόπο."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Αποθήκευση συνεδριών όταν κλείνει ο πλοηγός"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Αποθήκευση συνεδρίας η οποία περιέχει όλα τα παράθυρα που θα κλείσουν διαδοχικά."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Πόσες αποθηκεύονται"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Πόσες συνεδρίες μπορύν να αποθηλευτούν με αυτόν τον τρόπο."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Χρήση του τίτλου καρτέλας ως όνομα συνεδρίας"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Στην αυτόματη αποθήκευση, το όνομα της συνεδρίας να είναι ο τίτλος της ανοιχτής σελίδας."
   },
   "backupLabel": {
     "message": "Αντίγραφο Ασφαλείας"
@@ -279,79 +300,79 @@
     "message": "Αποθήευση Αντιγράφου Ασφαλείας"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Όταν ξεκινάει ο πλοηγός. φτιάξε ένα αντίγραφο των συνεδριών και αποθήκευσέ το στις Λήψεις."
   },
   "backupFolderLabel": {
     "message": "Τοποθεσία Αποθήκευσης"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Καθόρισε το φάκελο του αντίγραφου. Υπάρχει περιορισμός: πρέπει να είναι κάτω από το φάκελο των Λήψεων."
   },
   "downloadFolderLabel": {
     "message": "Φάκελος λήψεων"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Μέγιστο πλήθος αντιγράφων"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Ότα το πλήθος των ανιγράφων ξεπεράσει το μέγιστο, τότε σβήνονται αυτόματα ξεκινώντας από το παλιότερο."
   },
   "dateFormatLabel": {
     "message": "Μορφή ημερομηνίας"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "Παράδειγμα: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Αποθήκευση των ιδιωτικών παραθύρων"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Αν μείνει ατσεκάριστο, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση συνεδριών."
   },
   "ifSupportTstLabel": {
-    "message": "Supports Tree Style Tab"
+    "message": "Υποστήριξη Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Επαναφορά δέντρου από το Tree Style Tab.<br>Αν ενεργοποιηθεί προκαλεί, καθυστερεί η επαναφορά συνεδριών."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Αναμονή για την επναφορά (milliseconds)"
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Πόση ώρα θα περιμένουμε πριν γίνει η επαναφορά. Αν η επαναφορά δε γίενται σωστά τότε αύξησε αυτήν την τιμή."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Όνομα συνεδρίας σε μία γραμμή"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Αν το όνομα της συνεδρίας ξεπερνάει τη γραμμή τότε να αποκόπτεται κατά την εμφάνιση."
   },
   "popupLabel": {
     "message": "Αναδυόμενο παράθυρο"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Συμπεριφορά του πλήκτρου της μπάρας"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Επίλεξε τη συνηθισμένη ενέργεια του πλήκτρου της μπάρας."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Συμπεριφορά του πλήκτρου Αποθήκευση"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Επίλεξε τη συνηθισμένη ενέργεια του πλήκτρου Αποθήκευση."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Εμφάνιση μπάρας αναζήτησης"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Δυνατότητα αναζήτηση βάση ονόματος συνεδρίας."
   },
   "sizeLabel": {
     "message": "Μέγεθος"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Όρισε το μέγεθος του πλαισίου που εμφανίζεται."
   },
   "widthLabel": {
     "message": "Πλάτος"
@@ -363,25 +384,25 @@
     "message": "Άλλο"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Εμφάνισηη επιλογών μετά από αναβάθμιση"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Να μεφανίζεται η σελίδα των επιλογών μετά από αναβάθμιση του Tab Session Manager. Έτσι βλέπεις γρήγορα το τι έχει αναβαθμιστεί."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Ενημερώθηκε το Tab Session Manager!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Δείτε περισσότερα"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Κλικ για πληροφορίες ενημέρωσης."
   },
   "isDebugModeLabel": {
-    "message": "Ενεργοποίηση εντοπισμού σφαλμάτων"
+    "message": "Kατάσταση εντοπισμού σφαλμάτων"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Όταν έχει ενεργοποιηθεί η κατάσταση εντοπισμού σφαλμάτων, στέλνονται διάφορα καταγραφικά στοιχεία στο debugger."
   },
   "resetSettingsLabel": {
     "message": "Επαναφορά ρυθμίσεων"
@@ -393,40 +414,40 @@
     "message": "Επαναφορά"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "Εισαγωγή συνεδριών"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+    "message": "Φορτώνει συνεδρίες που έχουν αποθηκευτεί στον υπολογιστή και τις προσθέτει στη Λίστα συνεδριων.<br>Υποστηρίζει και αρχεία συνεδριών του SessionManager (αρχεία με κατάληξη .session)."
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "Αναζήτηση..."
   },
   "importSaveButtonLabel": {
     "message": "Εισαγωγή"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "Καθαρισμός"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Εισαγωγή λίστας URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Παίρνει μία λίστα URL και δημιουργεί μία συνεδρία - τη συνεδρία την προσθέτει στη λίστα συνεδριών,<br>Μορφή λίστας: &lt;URL&gt; &lt;τίτλος σελίδας (προαιρετικό)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "Εξαγωγή συνεδριών"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Αποθηκεύει όλες τις συνεδρίες στον υπολογιστή."
   },
   "exportButtonLabel": {
     "message": "Εξαγωγή"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "Διαγραφή συνεδριών"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Διαγραφή όλων των συνεδριών."
   },
   "removeSessionsButtonLabel": {
     "message": "Διαγραφή"
@@ -438,22 +459,22 @@
     "message": "Παρακαλούμε κάντε μας μια δωρεά"
   },
   "donationCaptionLabel": {
-    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+    "message": "Ευχαριστούμε που χρησιμοποιείτε το Tab Session Manager.<br>Η υποοστήριξή σας μου δίνει κουράγιο ώστε να συνεχίσω την ανάπτυξη αυτού του πρόσθετου.<br>Αν σας αρέσει το Tab Session Manager και μπορείτε και να συνεισφέρετε κάτι, θα σας ήμουν υπόχρεος."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Σελίδα πρόσθετου"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Σελίδα πρόσθετου"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "Οι συνεδρίες εισάχθηκαν."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Σφάλμα στην ανάκτηση"
   },
   "warningRemoveAllMessage": {
     "message": "Σίγουρα να διαγραφούν όλες οι συνεδρίες;"
@@ -468,6 +489,6 @@
     "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "Το Tab Session Manager δεν μπορεί να ανοίξει αυτή τη σελίδα."
   }
 }
