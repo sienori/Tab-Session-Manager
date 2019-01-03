@@ -135,7 +135,7 @@
     "message": "Μετονομασία"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Άνοιγμα συνεδρίας"
   },
   "openInNewWindowLabel": {
     "message": "Άνοιγμα σε νέο παράθυρο"
@@ -156,7 +156,7 @@
     "message": "Πρόσθεσε καρτέλες στο τρέχον παράθυρο. Αν η συνεδρία περιέχει πολλαπλά παράθυρα τότε θα ανοίξει νέο παράθυρο."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Μεταβολή συνεδρίας"
   },
   "replaceCurrentSessionLabel": {
     "message": "Αντικατάσταση με τρέχουσα συνεδρία"
