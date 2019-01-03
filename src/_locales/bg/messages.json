@@ -33,10 +33,10 @@
     "message": "Всички"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Потребителски"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Автоматично запазени"
   },
   "newestLabel": {
     "message": "Най-нови"
@@ -69,19 +69,19 @@
     "message": "Изтриване на тази сесия?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Сесията е изтрита."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Прозорецът със сесия е изтрит."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Разделът със сесия е изтрит."
   },
   "restoreSessionLabel": {
     "message": "Възстановяване"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Неуспешно изтриване на сесия."
   },
   "failedDeleteSessionWindowLabel": {
     "message": "Failed to delete session window."
@@ -90,10 +90,10 @@
     "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Сесията е запазена."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Неуспешно запазване на сесия."
   },
   "cancelLabel": {
     "message": "Отказ"
@@ -135,7 +135,7 @@
     "message": "Преименуване"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Отваряне на сесия"
   },
   "openInNewWindowLabel": {
     "message": "Отваряне в нов прозорец"
@@ -156,7 +156,7 @@
     "message": "Добавяне на раздели към текущият прозорец. Ако сесията съдържа множество прозорци, те ще се отворят в новият прозорец."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Редактиране на сесия"
   },
   "replaceCurrentSessionLabel": {
     "message": "Замяна с текущата сесия"
@@ -165,7 +165,7 @@
     "message": "Замяна с текущият прозорец"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Добавяне на текущият прозорец"
   },
   "makeCopySessionLabel": {
     "message": "Създаване копие на сесията"
@@ -183,13 +183,13 @@
     "message": "Множество изскачащи прозорци не могат да бъдат отворяни в същото време."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Авто запазени - при затваряне на прозорец"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Авто запазени - при изход от браузъра"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Авто запазени - редовно"
   },
   "settingsLabel": {
     "message": "Настройки"
