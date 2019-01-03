@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "Session supprimée."
   },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
+  },
   "restoreSessionLabel": {
     "message": "Restaurer"
   },
   "failedDeleteSessionLabel": {
     "message": "La session n’a pas pu être supprimée."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
     "message": "Session enregistrée."
@@ -123,7 +135,7 @@
     "message": "Renommer"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Ouvrir la session"
   },
   "openInNewWindowLabel": {
     "message": "Ouvrir dans une nouvelle fenêtre"
@@ -144,7 +156,7 @@
     "message": "Ajouter les onglets à la fenêtre actuelle. Si la session contient plusieurs fenêtres, l’ouvrir dans une nouvelle fenêtre."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Modifier la session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Remplacer par la session en cours"
@@ -153,7 +165,7 @@
     "message": "Remplacer par la fenêtre actuelle"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Ajouter la fenêtre actuelle"
   },
   "makeCopySessionLabel": {
     "message": "Faire une copie de la session"
