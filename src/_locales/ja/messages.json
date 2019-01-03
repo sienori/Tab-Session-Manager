@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "セッションが削除されました。"
   },
+  "sessionWindowDeletedLabel": {
+    "message": "セッションのウィンドウが削除されました。"
+  },
+  "sessionTabDeletedLabel": {
+    "message": "セッションのタブが削除されました。"
+  },
   "restoreSessionLabel": {
     "message": "元に戻す"
   },
   "failedDeleteSessionLabel": {
     "message": "セッションの削除に失敗しました。"
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "セッションのウィンドウの削除に失敗しました。"
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "セッションのタブの削除に失敗しました。"
   },
   "sessionSavedLabel": {
     "message": "セッションが保存されました。"
