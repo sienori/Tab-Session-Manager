@@ -84,10 +84,10 @@
     "message": "Неуспешно изтриване на сесия."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Неуспешно изтриване на прозорец със сесия."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Неуспешно изтриване на раздел със сесия."
   },
   "sessionSavedLabel": {
     "message": "Сесията е запазена."
@@ -225,13 +225,13 @@
     "message": "При отваряне на сесия, съдържанието на всяка страница се зарежда, когато се избере раздела.<br>Ако не е отметнато, възстановяването на сесията увеличава използваната памет."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Използване на свойството за \"незаредени\" раздели при ръчно зареждане"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Разрешаването на тази опция ще подобри производителността при отваряне на раздели."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "При ръчно зареждане на раздели, иконката на сайта не се показва."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Възстановяване позицията на прозорците"
@@ -402,7 +402,7 @@
     "message": "Режим за отстраняване на грешки"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Когато режима за отстраняване на грешки е активиран, регистъра се извежда в дебъгера."
   },
   "resetSettingsLabel": {
     "message": "Възстановяване на настройки"
