@@ -33,9 +33,15 @@ export default props => {
   const handleExportSession = () => {
     sendExportSessionMessage(props.session.id);
   };
+  const handleClickSection = e => {
+    e.stopPropagation();
+  };
 
   return (
     <ul>
+      <li className="section" onClick={handleClickSection}>
+        {browser.i18n.getMessage("openSessionLabel")}
+      </li>
       <li onClick={handleOpenInNewWindow}>{browser.i18n.getMessage("openInNewWindowLabel")}</li>
       <li onClick={handleOpenInCurrentWindow}>
         {browser.i18n.getMessage("openInCurrentWindowLabel")}
@@ -44,6 +50,9 @@ export default props => {
         {browser.i18n.getMessage("addToCurrentWindowLabel")}
       </li>
       <hr />
+      <li className="section" onClick={handleClickSection}>
+        {browser.i18n.getMessage("editSessionLabel")}
+      </li>
       <li onClick={handleReplaceCurrentSession}>
         {browser.i18n.getMessage("replaceCurrentSessionLabel")}
       </li>

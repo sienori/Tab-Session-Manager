@@ -17,11 +17,20 @@
     padding: 0px;
     list-style: none;
     li {
-      padding: 5px 10px;
+      font-size: 13px;
+      padding: 2px 10px;
       cursor: pointer;
       transition: background-color 100ms;
       &:hover {
         background-color: var(--line);
+      }
+      &.section {
+        font-size: 12px;
+        color: var(--sub-text);
+        cursor: unset;
+        &:hover {
+          background-color: inherit;
+        }
       }
     }
   }
