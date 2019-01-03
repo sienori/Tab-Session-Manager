@@ -33,7 +33,7 @@
     "message": "Всі"
   },
   "displayUserLabel": {
-    "message": "Збережено куристувачем"
+    "message": "Збережено користувачем"
   },
   "displayAutoLabel": {
     "message": "Збережено автоматично"
@@ -72,10 +72,10 @@
     "message": "Сесію видалено."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Вікно сесії видалено."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Вкладку сесії видалено."
   },
   "restoreSessionLabel": {
     "message": "Відновити"
@@ -84,10 +84,10 @@
     "message": "Не вдалося видалити сесію."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Не вдалося видалити вікно сесії."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Не вдалося видалити вкладку сесії."
   },
   "sessionSavedLabel": {
     "message": "Сесію збережено."
@@ -237,7 +237,7 @@
     "message": "Відновити розташування вікон"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Відновити розмір і положення вікон під час відкриття сесії."
+    "message": "Відновити розмір та положення вікон під час відкриття сесії."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
     "message": "Відновлювати попередню сесію при запуску"
