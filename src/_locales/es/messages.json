@@ -122,6 +122,9 @@
   "renameLabel": {
     "message": "Renombrar"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Abrir en una ventana nueva"
   },
@@ -139,6 +142,9 @@
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Añadir pestañas a la ventana actual. Si la sesión contiene múltiples ventanas, abrir en nueva ventana."
+  },
+  "EditSessionLabel": {
+    "message": "Edit session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Reemplazar con la sesión actual"
