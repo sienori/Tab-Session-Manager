@@ -72,10 +72,10 @@
     "message": "Phiên làm việc đã bị xóa."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Đã xoá cửa sổ của phiên."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Đã xoá tab của phiên."
   },
   "restoreSessionLabel": {
     "message": "Khôi phục"
@@ -84,10 +84,10 @@
     "message": "Không thể xóa phiên làm việc."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Không thể xoá cửa sổ của phiên."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Thất bại trong việc xoá tab của phiên."
   },
   "sessionSavedLabel": {
     "message": "Đã lưu phiên làm việc."
@@ -135,7 +135,7 @@
     "message": "Đổi tên"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Mở phiên"
   },
   "openInNewWindowLabel": {
     "message": "Mở trong cửa sổ mới"
@@ -156,7 +156,7 @@
     "message": "Thêm tab vào cửa sổ hiện tại. Nếu phiên làm việc chứa nhiều cửa sổ, mở nó trong cửa sổ mới."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Chỉnh sửa phiên"
   },
   "replaceCurrentSessionLabel": {
     "message": "Thay thế bằng phiên hiện tại"
@@ -165,7 +165,7 @@
     "message": "Thay thế bằng cửa sổ hiện tại"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Thêm cửa sổ hiện tại"
   },
   "makeCopySessionLabel": {
     "message": "Tạo bản sao của phiên"
