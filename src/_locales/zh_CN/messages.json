@@ -122,6 +122,9 @@
   "renameLabel": {
     "message": "重命名"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "在新窗口中打开"
   },
@@ -139,6 +142,9 @@
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "添加标签到当前窗口。如会话包含多个窗口，则在新窗口内打开它。"
+  },
+  "EditSessionLabel": {
+    "message": "Edit session"
   },
   "replaceCurrentSessionLabel": {
     "message": "使用当前会话替换此会话"
