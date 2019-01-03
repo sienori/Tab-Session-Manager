@@ -72,10 +72,10 @@
     "message": "Session supprimée."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "La fenêtre de la session a été supprimée."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "L’onglet de la session a été supprimé."
   },
   "restoreSessionLabel": {
     "message": "Restaurer"
@@ -84,10 +84,10 @@
     "message": "La session n’a pas pu être supprimée."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "La fenêtre de la sessions n’a pas pu être supprimée."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "L’onglet de la session n’a pas pu être supprimé."
   },
   "sessionSavedLabel": {
     "message": "Session enregistrée."
