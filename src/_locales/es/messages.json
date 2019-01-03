@@ -69,19 +69,31 @@
     "message": "¿Eliminar esta sesión?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sesión eliminada."
+  },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
   },
   "restoreSessionLabel": {
     "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Error al eliminar la sesión."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sesión guardada."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Error al guardar sesión."
   },
   "cancelLabel": {
     "message": "Cancelar"
@@ -122,6 +134,9 @@
   "renameLabel": {
     "message": "Renombrar"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Abrir en una ventana nueva"
   },
@@ -140,11 +155,17 @@
   "addToCurrentWindowCaptionLabel": {
     "message": "Añadir pestañas a la ventana actual. Si la sesión contiene múltiples ventanas, abrir en nueva ventana."
   },
+  "EditSessionLabel": {
+    "message": "Edit session"
+  },
   "replaceCurrentSessionLabel": {
     "message": "Reemplazar con la sesión actual"
   },
   "replaceCurrentWindowLabel": {
     "message": "Reemplazar con la ventana actual"
+  },
+  "addCurrentWindowLabel": {
+    "message": "Add current window"
   },
   "makeCopySessionLabel": {
     "message": "Hacer una copia de la sesión"
@@ -246,7 +267,7 @@
     "message": "Guardar la sesión cuando se cierre la ventana"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Guardar la sesión que incluye sólo una ventana cerrada."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Guardado número máximo"
@@ -258,7 +279,7 @@
     "message": "Guardar la sesión al salir del navegador"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Guardar la sesión que incluye múltiples ventanas que se cerró recientemente."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Número máximo de guardado"
@@ -372,7 +393,7 @@
     "message": "¡Tab Session Manager se ha actualizado!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Ver más"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Haga clic para ver la información de actualización."
