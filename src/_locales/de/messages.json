@@ -122,6 +122,9 @@
   "renameLabel": {
     "message": "Umbenennen"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "In neuem Fenster öffnen"
   },
@@ -139,6 +142,9 @@
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Fügt Tabs zur aktuellen Fenster hinzu. Wenn die Sitzung mehrere Fenster beinhaltet, wird es in einem neuen Fenster geöffnet."
+  },
+  "EditSessionLabel": {
+    "message": "Edit session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Mit aktueller Sitzung ersetzen"
