@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "セッションが削除されました。"
   },
+  "sessionWindowDeletedLabel": {
+    "message": "セッションのウィンドウが削除されました。"
+  },
+  "sessionTabDeletedLabel": {
+    "message": "セッションのタブが削除されました。"
+  },
   "restoreSessionLabel": {
     "message": "元に戻す"
   },
   "failedDeleteSessionLabel": {
     "message": "セッションの削除に失敗しました。"
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "セッションのウィンドウの削除に失敗しました。"
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "セッションのタブの削除に失敗しました。"
   },
   "sessionSavedLabel": {
     "message": "セッションが保存されました。"
@@ -122,6 +134,9 @@
   "renameLabel": {
     "message": "リネーム"
   },
+  "OpenSessionLabel": {
+    "message": "セッションを開く"
+  },
   "openInNewWindowLabel": {
     "message": "新しいウィンドウで開く"
   },
@@ -135,16 +150,22 @@
     "message": "現在のウィンドウでセッションを開きます。非アクティブのウィンドウと全てのタブは閉じられます。"
   },
   "addToCurrentWindowLabel": {
-    "message": "現在のウィンドウに追加する"
+    "message": "現在のウィンドウに追加"
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "現在のウィンドウにタブを追加します。セッションに複数のウィンドウが含まれる場合は，新しいウィンドウで開きます。"
+  },
+  "EditSessionLabel": {
+    "message": "セッションを編集"
   },
   "replaceCurrentSessionLabel": {
     "message": "現在のセッションで置き換え"
   },
   "replaceCurrentWindowLabel": {
     "message": "現在のウィンドウで置き換え"
+  },
+  "addCurrentWindowLabel": {
+    "message": "現在のウィンドウを追加"
   },
   "makeCopySessionLabel": {
     "message": "セッションのコピーを作成"
