@@ -71,11 +71,23 @@
   "sessionDeletedLabel": {
     "message": "Sesión eliminada."
   },
+  "sessionWindowDeletedLabel": {
+    "message": "Session window deleted."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Session tab deleted."
+  },
   "restoreSessionLabel": {
     "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
     "message": "Error al eliminar la sesión."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Failed to delete session window."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
     "message": "Sesión guardada."
