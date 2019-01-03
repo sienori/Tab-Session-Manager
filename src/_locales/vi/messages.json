@@ -122,6 +122,9 @@
   "renameLabel": {
     "message": "Đổi tên"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Mở trong cửa sổ mới"
   },
@@ -139,6 +142,9 @@
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Thêm tab vào cửa sổ hiện tại. Nếu phiên làm việc chứa nhiều cửa sổ, mở nó trong cửa sổ mới."
+  },
+  "EditSessionLabel": {
+    "message": "Edit session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Thay thế bằng phiên hiện tại"
