@@ -87,7 +87,7 @@
     "message": "Không thể xoá cửa sổ của phiên."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Thất bại trong việc xoá tab của phiên."
+    "message": "Không thể xoá tab của phiên."
   },
   "sessionSavedLabel": {
     "message": "Đã lưu phiên làm việc."
