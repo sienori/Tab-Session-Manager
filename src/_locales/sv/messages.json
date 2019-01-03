@@ -122,6 +122,9 @@
   "renameLabel": {
     "message": "Byt namn"
   },
+  "OpenSessionLabel": {
+    "message": "Open session"
+  },
   "openInNewWindowLabel": {
     "message": "Öppna i nytt fönster"
   },
@@ -139,6 +142,9 @@
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Lägg till flikar i aktuellt fönster. Om sessionen innehåller flera fönster, öppna det i ett nytt fönster."
+  },
+  "EditSessionLabel": {
+    "message": "Edit session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Ersätt med den aktuella sessionen"
