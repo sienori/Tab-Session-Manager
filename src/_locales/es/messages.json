@@ -33,7 +33,7 @@
     "message": "Todo"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Guardado de usuario"
   },
   "displayAutoLabel": {
     "message": "Guardar automáticamente"
@@ -72,10 +72,10 @@
     "message": "Sesión eliminada."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Sesión de ventana eliminada."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Sesión de pestaña eliminada."
   },
   "restoreSessionLabel": {
     "message": "Restaurar"
@@ -84,10 +84,10 @@
     "message": "Error al eliminar la sesión."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Error al eliminar sesión de ventana."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Error al eliminar sesión de pesataña."
   },
   "sessionSavedLabel": {
     "message": "Sesión guardada."
@@ -135,7 +135,7 @@
     "message": "Renombrar"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Abrir sesion"
   },
   "openInNewWindowLabel": {
     "message": "Abrir en una ventana nueva"
@@ -156,7 +156,7 @@
     "message": "Añadir pestañas a la ventana actual. Si la sesión contiene múltiples ventanas, abrir en nueva ventana."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Editar sesión"
   },
   "replaceCurrentSessionLabel": {
     "message": "Reemplazar con la sesión actual"
@@ -165,7 +165,7 @@
     "message": "Reemplazar con la ventana actual"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Agregar ventana actual"
   },
   "makeCopySessionLabel": {
     "message": "Hacer una copia de la sesión"
@@ -225,13 +225,13 @@
     "message": "Al abrir una sesión, el contenido de cada página no se carga hasta que seleccione la pestaña. <br>Si está desmarcada, el uso de memoria aumenta cuando se restablece la sesión."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Utilice la propiedad \"descartada\" para la carga lenta"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Habilitar esta opción mejorará el rendimiento al abrir pestañas."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "No se muestra el favicon de la ficha de carga lenta."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Restaurar posición de la ventana"
