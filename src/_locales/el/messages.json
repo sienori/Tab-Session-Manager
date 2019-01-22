@@ -12,10 +12,10 @@
     "message": "Αποθήκευση"
   },
   "initialNameValue": {
-    "message": "Αποθήκευση τρέχουσας συνεδρίας"
+    "message": "Αποθήκευση τρέχουσας περιόδου λειτουργίας"
   },
   "inputSessionNameLabel": {
-    "message": "Δώστε όνομα συνεδρίας"
+    "message": "Εισάγετε όνομα για την περίοδο λειτουργίας"
   },
   "saveAllWindowsLabel": {
     "message": "Αποθήκευση όλων των παραθύρων"
@@ -51,7 +51,7 @@
     "message": "Ω-Α"
   },
   "searchBarPlaceholder": {
-    "message": "Αναζήτηση με όνομα συνεδρίας"
+    "message": "Αναζήτηση με βάση το όνομα της περιόδου λειτουργίας"
   },
   "search": {
     "message": "Αναζήτηση"
@@ -66,16 +66,16 @@
     "message": "Διαγραφή"
   },
   "removeConfirmLabel": {
-    "message": "Διαγραφή της συνεδρίας;"
+    "message": "Διαγραφή αυτής της περιόδου λειτουργίας;"
   },
   "sessionDeletedLabel": {
-    "message": "Η συνεδρία διαγράφηκε."
+    "message": "Η περίοδος λειτουργίας διαγράφηκε."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Το παράθυρο διαγράφηκε από τη συνεδρία."
+    "message": "Το παράθυρο διαγράφηκε από τη περίοδο λειτουργίας."
   },
   "sessionTabDeletedLabel": {
-    "message": "Η καρτέλα διαγράφηκε από τη συνεδρία."
+    "message": "Η καρτέλα διαγράφηκε από την περίοδο λειτουργίας."
   },
   "restoreSessionLabel": {
     "message": "Επαναφορά"
@@ -84,16 +84,16 @@
     "message": "Αποτυχία διαγραφής συνεδρίας."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Δεν διαγράφηκε το παράθυρο της συνεδρίας."
+    "message": "Αποτυχία διαγραφής παραθύρου περιόδου λειτουργίας."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Δεν διαγράφηκε η καρτέλα από τη συνεδρία."
+    "message": "Αποτυχία διαγραφής καρτέλας από την περίοδο λειτουργίας."
   },
   "sessionSavedLabel": {
-    "message": "Συνεδρία αποθηκεύτηκε."
+    "message": "Η περίοδος λειτουργίας αποθηκεύτηκε."
   },
   "failedSaveSessionLabel": {
-    "message": "Δεν έσωσα τη συνεδρία."
+    "message": "Αποτυχία αποθήκευσης της συνεδρίας."
   },
   "cancelLabel": {
     "message": "Άκυρο"
@@ -477,7 +477,7 @@
     "message": "Αποτυχία ανάγνωσης"
   },
   "warningRemoveAllMessage": {
-    "message": "Σίγουρα να διαγραφούν όλες οι συνεδρίες;"
+    "message": "Διαγραφή όλων των συνεδριών. Είστε σίγουροι;"
   },
   "sessionLabel": {
     "message": "Συνεδρία"
