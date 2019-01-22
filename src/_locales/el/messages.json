@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Αποθηκεύει κι επαναφέρει παράθυρα και καρτέλες. Υποστηρίζει και αυτοματοποιημένη αποθήκευση."
+    "message": "Αποθηκεύει και επαναφέρει παράθυρα και καρτέλες. Υποστηρίζει και αυτοματοποιημένη αποθήκευση."
   },
   "donateWithPaypalLabel": {
     "message": "Δωρεά μέσω PayPal"
@@ -15,7 +15,7 @@
     "message": "Αποθήκευση τρέχουσας συνεδρίας"
   },
   "inputSessionNameLabel": {
-    "message": "Δώσε όνομα συνεδρίας"
+    "message": "Δώστε όνομα συνεδρίας"
   },
   "saveAllWindowsLabel": {
     "message": "Αποθήκευση όλων των παραθύρων"
@@ -69,7 +69,7 @@
     "message": "Διαγραφή της συνεδρίας;"
   },
   "sessionDeletedLabel": {
-    "message": "Συνεδρία διαγρέφτηκε."
+    "message": "Η συνεδρία διαγράφηκε."
   },
   "sessionWindowDeletedLabel": {
     "message": "Το παράθυρο διαγράφηκε από τη συνεδρία."
@@ -81,16 +81,16 @@
     "message": "Επαναφορά"
   },
   "failedDeleteSessionLabel": {
-    "message": "Δεν έσβησα τη συνεδρία."
+    "message": "Αποτυχία διαγραφής συνεδρίας."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Δεν διαγράφηκε το παράθυρο από τη συνεδρία."
+    "message": "Δεν διαγράφηκε το παράθυρο της συνεδρίας."
   },
   "failedDeleteSessionTabLabel": {
     "message": "Δεν διαγράφηκε η καρτέλα από τη συνεδρία."
   },
   "sessionSavedLabel": {
-    "message": "Συνεδρία σώθηκε."
+    "message": "Συνεδρία αποθηκεύτηκε."
   },
   "failedSaveSessionLabel": {
     "message": "Δεν έσωσα τη συνεδρία."
@@ -123,10 +123,10 @@
     "message": "Δεν υπάρχει συνεδρία."
   },
   "letsSaveLabel": {
-    "message": "Σώσε τη συνεδρία κλικάροντας το πλήκτρο κάτω δεξιά."
+    "message": "Ας αποθηκεύσουμε τη συνεδρία κάνοντας κλικ στο κουμπί κάτω δεξιά."
   },
   "noResultLabel": {
-    "message": "Κανένα αποτέλεσμα."
+    "message": "Δεν βρέθηκαν αποτελέσματα."
   },
   "menuLabel": {
     "message": "Μενού"
