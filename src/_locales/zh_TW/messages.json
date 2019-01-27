@@ -72,10 +72,10 @@
     "message": "已刪除瀏覽階段。"
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "已刪除瀏覽階段視窗。"
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "已刪除瀏覽階段分頁。"
   },
   "restoreSessionLabel": {
     "message": "還原"
@@ -84,10 +84,10 @@
     "message": "瀏覽階段刪除失敗。"
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "瀏覽階段視窗刪除失敗。"
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "瀏覽階段分頁刪除失敗。"
   },
   "sessionSavedLabel": {
     "message": "已儲存瀏覽階段。"
