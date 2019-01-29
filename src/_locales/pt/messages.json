@@ -279,10 +279,10 @@
     "message": "Salvar a sessão ao sair do navegador"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Salvar a sessão quando várias janelas forem fechadas em sequência."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Número máximo guardado"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
     "message": "Maximum number of saved sessions (in this way)."
