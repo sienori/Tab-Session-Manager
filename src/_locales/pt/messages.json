@@ -69,31 +69,31 @@
     "message": "Excluir esta sessão?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessão apagada."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Janela da sessão apagada."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Aba da sessão apagada."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Falha ao apagar sessão."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Falha ao apagar janela da sessão."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Falha ao apagar aba da sessão."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessão salva."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Falha ao salvar sessão."
   },
   "cancelLabel": {
     "message": "Cancelar"
@@ -105,7 +105,7 @@
     "message": "Remover tag"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Detalhe"
   },
   "windowLabel": {
     "message": "Janela"
@@ -120,13 +120,13 @@
     "message": "Abas"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Não há sessão."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Vamos salvar a sessão ao clicar no botão no canto inferior direito."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Nenhum resultado correspondente."
   },
   "menuLabel": {
     "message": "Menu"
@@ -135,61 +135,61 @@
     "message": "Renomear"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Sessão aberta"
   },
   "openInNewWindowLabel": {
     "message": "Abrir em uma nova janela"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Abrir a sessão em uma nova janela."
   },
   "openInCurrentWindowLabel": {
     "message": "Abrir na janela atual"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Abrir a sessão na janela atual. Janelas inativas e todas as abas são fechadas."
   },
   "addToCurrentWindowLabel": {
     "message": "Adicionar na janela atual"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Adicionar abas à janela atual. Se a sessão contiver múltiplas janelas, será aberta em uma nova janela."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Editar sessão"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Substituir com sessão atual"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Substituir com janela atual"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Adicionar a janela atual"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Fazer uma cópia da sessão"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Erro"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB não está disponível em seu navegador."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Como resolver este problema"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Múltiplas popups não podem ser abertas ao mesmo tempo."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Salvamento Automático - Janela fechada"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Salvamento automático - Ao sair do navegador"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Salvamento automático - Regularmente"
   },
   "settingsLabel": {
     "message": "Configurações"
@@ -225,25 +225,25 @@
     "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba. <br> Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Use a propriedade \"descartado\" para carregamento lento"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Ativar esta opção irá melhorar o desempenho ao abrir abas."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "O favicon da guia em carregamento lento não é exibido."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Restaurar posição das janelas"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Restaurar as posições e tamanhos das janelas ao abrir a sessão."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
     "message": "Restaurar sessão anterior na inicialização"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Quando o navegador abrir, restaurar a sessão fechada pela última vez."
   },
   "ifAutoSaveLabel": {
     "message": "Salvar a sessão regularmente"
@@ -267,7 +267,7 @@
     "message": "Salvar a sessão quando a janela foi fechada"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Salve a sessão que inclui somente uma janela fechada."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Número máximo guardado"
@@ -276,7 +276,7 @@
     "message": "Número máximo de sessões salvas (desta forma)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Salvar a sessão ao sair do navegador"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
