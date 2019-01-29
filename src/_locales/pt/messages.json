@@ -6,7 +6,7 @@
     "message": "Salve e restaure o estado de janelas e abas. Também suporta salvamento automático."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Doe com PayPal"
   },
   "saveLabel": {
     "message": "Salvar"
@@ -15,28 +15,28 @@
     "message": "Salvar a sessão atual"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Inserir nome da sessão"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Salvar todas as janelas"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Salvar somente a janela atual"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Filtro de categorias"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Ordenar"
   },
   "displayAllLabel": {
     "message": "Todos"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Salvamento do usuário"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Salvamento automático"
   },
   "newestLabel": {
     "message": "O mais novo"
@@ -51,13 +51,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Buscar por nome da sessão"
   },
   "search": {
-    "message": "Search"
+    "message": "Buscar"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Limpar pesquisa"
   },
   "open": {
     "message": "Abrir"
