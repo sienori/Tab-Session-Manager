@@ -24,7 +24,7 @@
     "message": "Αποθήκευση αυτού του παράθυρου"
   },
   "categoryFilterLabel": {
-    "message": "Φίλτρο κατηγορίας"
+    "message": "Φίλτρο ετικέτας"
   },
   "sortLabel": {
     "message": "Ταξινόμηση"
@@ -42,7 +42,7 @@
     "message": "Νεότερα"
   },
   "oldestLabel": {
-    "message": "Παλιότερα"
+    "message": "Παλαιότερα"
   },
   "aToZLabel": {
     "message": "Α-Ω"
@@ -195,7 +195,7 @@
     "message": "Ρυθμίσεις"
   },
   "sessionsLabel": {
-    "message": "Συνεδρίες"
+    "message": "Περίοδοι λειτουργίας"
   },
   "informationLabel": {
     "message": "Πληροφορίες"
