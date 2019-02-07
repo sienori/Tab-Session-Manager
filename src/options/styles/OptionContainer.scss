@@ -43,6 +43,18 @@
   }
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.noDisplayLegend {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 /*new, updated*/
 .new > .optionElement p:nth-child(1)::after,
 .updated > .optionElement p:nth-child(1)::after {
@@ -94,7 +106,8 @@ input[type="color"] {
   border: 1px solid var(--button);
   border-radius: 2px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: var(--highlight);
   }
 }
@@ -102,11 +115,16 @@ input[type="color"] {
 input[type="text"] {
   width: 200px;
 }
+.noHover {
+  pointer-events: none;
+}
 
 /*checkbox*/
 
 input[type="checkbox"] {
-  display: none;
+  opacity: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   &:checked + .checkbox {
     color: var(--highlight);
     &::after {
@@ -121,6 +139,9 @@ input[type="checkbox"] {
       border-bottom: 3px solid var(--highlight);
       border-right: 3px solid var(--highlight);
     }
+  }
+  &:focus + .checkbox::before {
+    border-color: var(--highlight);
   }
 }
 
@@ -147,7 +168,9 @@ input[type="checkbox"] {
 /*radio*/
 
 input[type="radio"] {
-  display: none;
+  opacity: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   &:checked + .radio {
     color: var(--highlight);
   }
@@ -161,6 +184,9 @@ input[type="radio"] {
     height: 10px;
     border-radius: 50%;
     background-color: var(--highlight);
+  }
+  &:focus + .radio::before {
+    border-color: var(--highlight);
   }
 }
 
@@ -195,13 +221,15 @@ input[type="color"] {
 
 select {
   -moz-appearance: none;
+  -webkit-appearance: none;
   text-overflow: ellipsis;
   border: var(--button) solid 1px;
   border-radius: 2px;
   padding: 3px 5px;
   padding-right: 20px;
   width: 100%;
-  &:hover {
+  &:hover,
+  &:focus {
     border: var(--highlight) solid 1px;
   }
 }
@@ -248,17 +276,36 @@ input[type="button"],
   background-color: #fbfbfb;
   cursor: pointer;
   white-space: nowrap;
-  &:hover {
+  &:hover,
+  &:focus {
     background: #f5f5f5;
     border-color: var(--highlight);
   }
   &.includeSpan {
     padding: 0px;
-    height: 28px;
+    height: 30px;
+    box-sizing: border-box;
+    span {
+      width: fit-content;
+      padding: 0px 5px;
+    }
   }
 }
 .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  &:focus-within {
+    background: #f5f5f5;
+    border-color: var(--highlight);
+  }
+}
+
+input[type="file"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  width: 1px;
+  height: 0;
 }

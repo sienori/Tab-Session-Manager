@@ -23,14 +23,16 @@ export default props => {
     setSettings(id, e.target.checked);
   };
 
+  let formId;
   let optionForm;
   switch (type) {
     case "checkbox":
+      formId = id;
       optionForm = (
         <label>
           <input
             type="checkbox"
-            id={id}
+            id={formId}
             onChange={handleCheckedChange}
             defaultChecked={getSettings(id)}
           />
@@ -39,10 +41,11 @@ export default props => {
       );
       break;
     case "number":
+      formId = id;
       optionForm = (
         <input
           type="number"
-          id={id}
+          id={formId}
           min={props.min}
           max={props.max}
           step={props.step}
@@ -53,10 +56,11 @@ export default props => {
       );
       break;
     case "text":
+      formId = id;
       optionForm = (
         <input
           type="text"
-          id={id}
+          id={formId}
           placeholder={props.placeholder}
           onChange={handleValueChange}
           defaultValue={getSettings(id)}
@@ -64,10 +68,12 @@ export default props => {
       );
       break;
     case "radio":
+      formId = `${id}_${props.value}`;
       optionForm = (
         <label>
           <input
             type="radio"
+            id={formId}
             name={id}
             value={props.value}
             onChange={handleValueChange}
@@ -78,16 +84,23 @@ export default props => {
       );
       break;
     case "color":
+      formId = id;
       optionForm = (
         <label>
-          <input type="color" id={id} onChange={handleValueChange} defaultValue={getSettings(id)} />
+          <input
+            type="color"
+            id={formId}
+            onChange={handleValueChange}
+            defaultValue={getSettings(id)}
+          />
         </label>
       );
       break;
     case "select":
+      formId = id;
       optionForm = (
         <div className="selectWrap">
-          <select id={id} onChange={handleValueChange} defaultValue={getSettings(id)}>
+          <select id={formId} onChange={handleValueChange} defaultValue={getSettings(id)}>
             {props.options.map((option, index) => (
               <option value={option.value} key={index}>
                 {browser.i18n.getMessage(option.name)}
@@ -98,18 +111,19 @@ export default props => {
       );
       break;
     case "button":
+      formId = "";
       optionForm = (
         <input type="button" value={browser.i18n.getMessage(props.value)} onClick={props.onClick} />
       );
       break;
     case "file":
+      formId = "";
       optionForm = (
         <label className="button includeSpan" htmlFor={id}>
           <span>{browser.i18n.getMessage(props.value)}</span>
           <input
             type="file"
             id={id}
-            hidden={true}
             accept={props.accept}
             multiple={props.multiple}
             onChange={props.onChange}
@@ -118,6 +132,7 @@ export default props => {
       );
       break;
     case "none":
+      formId = "";
       optionForm = "";
       break;
   }
@@ -129,7 +144,9 @@ export default props => {
       <li className={`optionContainer ${props.updated ? "updated" : ""} ${props.new ? "new" : ""}`}>
         <div className="optionElement">
           <div className="optionText">
-            <p>{title ? (props.useRawTitle ? title : browser.i18n.getMessage(title)) : ""}</p>
+            <label className="noHover" htmlFor={formId}>
+              <p>{title ? (props.useRawTitle ? title : browser.i18n.getMessage(title)) : ""}</p>
+            </label>
             {captions.map((caption, index) => (
               <p className="caption" key={index}>
                 {caption
@@ -143,7 +160,14 @@ export default props => {
           </div>
           <div className="optionForm">{optionForm}</div>
         </div>
-        {children}
+        {children && (
+          <fieldset>
+            <legend className="noDisplayLegend">
+              {title ? (props.useRawTitle ? title : browser.i18n.getMessage(title)) : ""}
+            </legend>
+            {children}
+          </fieldset>
+        )}
       </li>
     )
   );
