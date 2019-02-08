@@ -198,7 +198,7 @@
     "message": "Сесии"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Бързи клавиши"
   },
   "informationLabel": {
     "message": "Относно"
@@ -489,13 +489,13 @@
     "message": "Save session (all windows)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Изнасяне на всички сесии"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Изчистване"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Нулиране"
   },
   "LicenseLabel": {
     "message": "Лиценз"
