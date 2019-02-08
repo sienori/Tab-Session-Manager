@@ -72,10 +72,10 @@
     "message": "已刪除瀏覽階段。"
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "已刪除瀏覽階段視窗。"
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "已刪除瀏覽階段分頁。"
   },
   "restoreSessionLabel": {
     "message": "還原"
@@ -84,10 +84,10 @@
     "message": "瀏覽階段刪除失敗。"
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "瀏覽階段視窗刪除失敗。"
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "瀏覽階段分頁刪除失敗。"
   },
   "sessionSavedLabel": {
     "message": "已儲存瀏覽階段。"
@@ -135,7 +135,7 @@
     "message": "重新命名"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "開啟瀏覽階段"
   },
   "openInNewWindowLabel": {
     "message": "在新視窗中開啟"
@@ -156,7 +156,7 @@
     "message": "將分頁新增至目前視窗。 如果瀏覽階段包含多個視窗，請在新視窗中將其開啟。"
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "編輯瀏覽階段"
   },
   "replaceCurrentSessionLabel": {
     "message": "使用目前瀏覽階段取代此瀏覽階段"
@@ -196,6 +196,9 @@
   },
   "sessionsLabel": {
     "message": "瀏覽階段"
+  },
+  "shortcutsLabel": {
+    "message": "Shortcuts"
   },
   "informationLabel": {
     "message": "附加元件資訊"
@@ -451,6 +454,48 @@
   },
   "removeSessionsButtonLabel": {
     "message": "刪除"
+  },
+  "keyboardShortcutsLabel": {
+    "message": "Keyboard shortcuts"
+  },
+  "setKeyboardShortCutsMessage": {
+    "message": "Set keyboard shortcuts."
+  },
+  "typeShortcutMessage": {
+    "message": "Type a shortcut"
+  },
+  "typeLetterMessage": {
+    "message": "Type a letter"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Include either Ctrl or Alt"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Include either Command, Ctrl or Alt"
+  },
+  "invalidLetterMessage": {
+    "message": "The letter can not be used"
+  },
+  "invalidShortcutMessage": {
+    "message": "The shortcut can not be used"
+  },
+  "openPopupDescription": {
+    "message": "Open toolbar popup"
+  },
+  "saveCurrentWindowDescription": {
+    "message": "Save session (only current window)"
+  },
+  "saveAllWindowDescription": {
+    "message": "Save session (all windows)"
+  },
+  "exportSessionsDescription": {
+    "message": "Export all sessions"
+  },
+  "clear": {
+    "message": "Clear"
+  },
+  "reset": {
+    "message": "Reset"
   },
   "LicenseLabel": {
     "message": "授權條款"

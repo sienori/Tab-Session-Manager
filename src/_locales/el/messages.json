@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Αποθηκεύει κι επαναφέρει παράθυρα και καρτέλες. Υποστηρίζει και αυτοματοποιημένη αποθήκευση."
+    "message": "Αποθηκεύει και επαναφέρει παράθυρα και καρτέλες. Υποστηρίζει και αυτοματοποιημένη αποθήκευση."
   },
   "donateWithPaypalLabel": {
     "message": "Δωρεά μέσω PayPal"
@@ -12,10 +12,10 @@
     "message": "Αποθήκευση"
   },
   "initialNameValue": {
-    "message": "Αποθήκευση τρέχουσας συνεδρίας"
+    "message": "Αποθήκευση τρέχουσας περιόδου λειτουργίας"
   },
   "inputSessionNameLabel": {
-    "message": "Δώσε όνομα συνεδρίας"
+    "message": "Εισάγετε όνομα για την περίοδο λειτουργίας"
   },
   "saveAllWindowsLabel": {
     "message": "Αποθήκευση όλων των παραθύρων"
@@ -24,16 +24,16 @@
     "message": "Αποθήκευση αυτού του παράθυρου"
   },
   "categoryFilterLabel": {
-    "message": "Φίλτρα Κατηγορίας"
+    "message": "Φίλτρο ετικέτας"
   },
   "sortLabel": {
     "message": "Ταξινόμηση"
   },
   "displayAllLabel": {
-    "message": "Όλα"
+    "message": "Όλες"
   },
   "displayUserLabel": {
-    "message": "Του χρήστη"
+    "message": "Από το χρήστη"
   },
   "displayAutoLabel": {
     "message": "Αυτόματη αποθήκευση"
@@ -42,7 +42,7 @@
     "message": "Νεότερα"
   },
   "oldestLabel": {
-    "message": "Παλιότερα"
+    "message": "Παλαιότερα"
   },
   "aToZLabel": {
     "message": "Α-Ω"
@@ -51,7 +51,7 @@
     "message": "Ω-Α"
   },
   "searchBarPlaceholder": {
-    "message": "Αναζήτηση με όνομα συνεδρίας"
+    "message": "Αναζήτηση με βάση το όνομα της περιόδου λειτουργίας"
   },
   "search": {
     "message": "Αναζήτηση"
@@ -66,34 +66,34 @@
     "message": "Διαγραφή"
   },
   "removeConfirmLabel": {
-    "message": "Διαγραφή της συνεδρίας;"
+    "message": "Διαγραφή αυτής της περιόδου λειτουργίας;"
   },
   "sessionDeletedLabel": {
-    "message": "Συνεδρία διαγρέφτηκε."
+    "message": "Η περίοδος λειτουργίας διαγράφηκε."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Το παράθυρο διαγράφηκε από τη περίοδο λειτουργίας."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Η καρτέλα διαγράφηκε από την περίοδο λειτουργίας."
   },
   "restoreSessionLabel": {
     "message": "Επαναφορά"
   },
   "failedDeleteSessionLabel": {
-    "message": "Δεν έσβησα τη συνεδρία."
+    "message": "Αποτυχία διαγραφής περιόδου λειτουργίας."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Αποτυχία διαγραφής παραθύρου περιόδου λειτουργίας."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Αποτυχία διαγραφής καρτέλας από την περίοδο λειτουργίας."
   },
   "sessionSavedLabel": {
-    "message": "Συνεδρία σώθηκε."
+    "message": "Η περίοδος λειτουργίας αποθηκεύτηκε."
   },
   "failedSaveSessionLabel": {
-    "message": "Δεν έσωσα τη συνεδρία."
+    "message": "Αποτυχία αποθήκευσης της περιόδου λειτουργίας."
   },
   "cancelLabel": {
     "message": "Άκυρο"
@@ -120,13 +120,13 @@
     "message": "Καρτέλες"
   },
   "noSessionLabel": {
-    "message": "Δεν υπάρχει συνεδρία."
+    "message": "Δεν υπάρχει καμία περίοδος λειτουργίας."
   },
   "letsSaveLabel": {
-    "message": "Σώσε τη συνεδρία κλικάροντας το πλήκτρο κάτω δεξιά."
+    "message": "Ας αποθηκεύσουμε την περίοδο λειτουργίας κάνοντας κλικ στο κουμπί κάτω δεξιά."
   },
   "noResultLabel": {
-    "message": "Κανένα αποτέλεσμα."
+    "message": "Δεν βρέθηκαν αποτελέσματα."
   },
   "menuLabel": {
     "message": "Μενού"
@@ -135,31 +135,31 @@
     "message": "Μετονομασία"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Άνοιγμα περιόδου λειτουργίας"
   },
   "openInNewWindowLabel": {
     "message": "Άνοιγμα σε νέο παράθυρο"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Άνοιγμα συνεδρίας σε νέο παράθυρο."
+    "message": "Άνοιγμα περιόδου λειτουργίας σε νέο παράθυρο."
   },
   "openInCurrentWindowLabel": {
     "message": "Άνοιγμα στο τρέχον παράθυρο"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Άνοιγμα συνεδρίας σ' αυτό το παράθυρο. Όλε οι καρτέλες και τα ανενεργά παράθυρα θα κλείσουν."
+    "message": "Άνοιγμα της περιόδου λειτουργίας στο τρέχον παράθυρο. Όλε οι καρτέλες και τα ανενεργά παράθυρα θα κλείσουν."
   },
   "addToCurrentWindowLabel": {
     "message": "Προσθήκη στο τρέχον παράθυρο"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Πρόσθεσε καρτέλες στο τρέχον παράθυρο. Αν η συνεδρία περιέχει πολλαπλά παράθυρα τότε θα ανοίξει νέο παράθυρο."
+    "message": "Προσθήκη καρτελών στο τρέχον παράθυρο. Αν η περίοδος λειτουργίας περιέχει πολλαπλά παράθυρα τότε θα ανοίξει νέο παράθυρο."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Επεξεργασία περιόδου λειτουργίας"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Αντικατάσταση με τρέχουσα συνεδρία"
+    "message": "Αντικατάσταση με την τρέχουσα περίοδο λειτουργίας"
   },
   "replaceCurrentWindowLabel": {
     "message": "Αντικατάσταση με τρέχον παράθυρο"
@@ -168,7 +168,7 @@
     "message": "Προσθήκη αυτού του παράθυρου"
   },
   "makeCopySessionLabel": {
-    "message": "Αντίγραψε τη συνεδρία"
+    "message": "Αντιγραφή της περιόδου λειτουργίας"
   },
   "errorLabel": {
     "message": "Σφάλμα"
@@ -177,7 +177,7 @@
     "message": "Αυτός ο πλοηγός δεν έχει δυνατότητα IndexedDB."
   },
   "howToSolveLabel": {
-    "message": "Πώς να λυθεί το πρόβλημα"
+    "message": "Πώς να λύσετε αυτό το πρόβλημα"
   },
   "noConnectionErrorLabel": {
     "message": "Δεν μπορούν να εμφανιστούν πολλά popup ταυτόχρονα."
@@ -186,7 +186,7 @@
     "message": "Αυτόματη αποθήκευση όταν κλείσει το παράθυρο"
   },
   "browserExitSessionName": {
-    "message": "Αυτόματη αποθήκευση όταν κλείσει ο πλοηγός"
+    "message": "Αυτόματη αποθήκευση όταν κλείσει το πρόγραμμα περιήγησης"
   },
   "regularSaveSessionName": {
     "message": "Αυτόματη αποθήκευση τακτικά"
@@ -195,7 +195,10 @@
     "message": "Ρυθμίσεις"
   },
   "sessionsLabel": {
-    "message": "Συνεδρίες"
+    "message": "Περίοδοι λειτουργίας"
+  },
+  "shortcutsLabel": {
+    "message": "Shortcuts"
   },
   "informationLabel": {
     "message": "Πληροφορίες"
@@ -213,43 +216,43 @@
     "message": "Στυλ"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Άνοιγμα συνεδρίας σε νέο παράθυρο"
+    "message": "Άνοιγμα περιόδου λειτουργίας σε νέο παράθυρο"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "Αν μείνει ατσεκάριστο, η συνεδρία αντικαθιστά το τρέχον παράθυρο."
+    "message": "Αν δεν επιλεγεί, η περίοδος λειτουργίας αντικαθιστά το τρέχον παράθυρο."
   },
   "ifLazyLoadingLabel": {
-    "message": "Φόρτωση καρτέλας αργότερα"
+    "message": "Αργή φόρτωση καρτέλας"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Όταν φορτώνεται μία συνεδρία, τα περιεχόμενα κάθε σελίδας δεν φορτώνονται μέχρι να πατηθεί η συγκεριμένη καρτέλα.<br>Αν είναι ξετσεκαρισμένο τότε αυξάνεται πάρα πολύ η χρήση της μνήμης κατά την επαναφορά συνεδριών."
+    "message": "Όταν φορτώνεται μία περίοδος λειτουργίας, τα περιεχόμενα κάθε σελίδας δεν φορτώνονται μέχρι να πατηθεί η συγκεκριμένη καρτέλα.<br>Αν δεν επιλεχθεί τότε αυξάνεται αρκετά η χρήση της μνήμης κατά την επαναφορά μιας περιόδου λειτουργίας."
   },
   "isUseDiscardedLabel": {
-    "message": "Χρήση της ιδότητας \"discarded\" κατά την επaναφορά"
+    "message": "Χρήση της ιδιότητας \"απόρριψης\" κατά την αργή φόρτωση"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Αν νεργοποιηθεί, οι καρτέλες θα ανοίγουν γρηγορότερα."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "Δεν εμφανίζεται το favicon της αποθήκευσης."
+    "message": "Δεν εμφανίζεται το favicon της αργής φόρτωσης."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Επαναφορά θέσης παραθύρου"
+    "message": "Επαναφορά θέσης παραθύρων"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Επαναφορά θέσης και μεγέθους παραθύρων κατά το άνοιγμα περιόδου συνεδρίας."
+    "message": "Επαναφορά θέσης και μεγέθους παραθύρων κατά το άνοιγμα της συνεδρίας."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Επαναφορά συνεδρίας κατά την εκκίνηση"
+    "message": "Επαναφορά περιόδου λειτουργίας κατά την εκκίνηση"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Κατά το άνοιγμα του πλοηγού, να επανέλθει η συνεδρία που έκλεισε τελευταία."
+    "message": "Κατά την εκκίνηση του πλοηγού, επαναφορά της τελευταίας περιόδου λειτουργίας."
   },
   "ifAutoSaveLabel": {
-    "message": "Τακτική αποθήκευση συνεδρίας"
+    "message": "Τακτική αποθήκευση περιόδου λειτουργίας"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Αποθήκευση συνεδρίας κάθε X λεπτά."
+    "message": "Αποθήκευση περιόδου λειτουργίας κάθε X λεπτά."
   },
   "autoSaveIntervalLabel": {
     "message": "Διάστημα (σε λεπτά)"
@@ -258,64 +261,64 @@
     "message": "Ελάχιστη τιμή 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Πόσες αποθηκεύονται"
+    "message": "Μέγιστος αριθμός Αποθηκευμένων"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Πόσες συνεδρίες μπορύν να αποθηλευτούν με αυτόν τον τρόπο."
+    "message": "Μέγιστος αριθμός περιόδων λειτουργίας μπορούν να αποθηκευτούν (με αυτόν τον τρόπο)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Αποθήκευση συνεδρίας όταν κλείσει το παράθυρο"
+    "message": "Αποθήκευση περιόδου λειτουργίας όταν κλείσει το παράθυρο"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Αποθήκευση συνεδρίας όταν κλείνει ένα και μόνο παράθυρο."
+    "message": "Αποθήκευση περιόδου λειτουργίας όταν κλείνει ένα και μόνο παράθυρο."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Πόσες αποθηκεύονται"
+    "message": "Μέγιστος αριθμός Αποθηκευμένων"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Πόσες συνεδρίες μπορύν να αποθηκευτούν με αυτόν τον τρόπο."
+    "message": "Μέγιστος αριθμός περιόδων λειτουργίας που μπορούν να αποθηκευτούν (με αυτόν τον τρόπο)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Αποθήκευση συνεδριών όταν κλείνει ο πλοηγός"
+    "message": "Αποθήκευση περιόδου λειτουργίας όταν κλείνει το πρόγραμμα περιήγησης"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Αποθήκευση συνεδρίας η οποία περιέχει όλα τα παράθυρα που θα κλείσουν διαδοχικά."
+    "message": "Αποθήκευση περιόδου λειτουργίας η οποία περιέχει πολλαπλά παράθυρα που έχουν κλείσει διαδοχικά."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Πόσες αποθηκεύονται"
+    "message": "Μέγιστος αριθμός Αποθηκευμένων"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Πόσες συνεδρίες μπορύν να αποθηλευτούν με αυτόν τον τρόπο."
+    "message": "Μέγιστος αριθμός περιόδων λειτουργίας που μπορούν να αποθηκευτούν (με αυτόν τον τρόπο)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Χρήση του τίτλου καρτέλας ως όνομα συνεδρίας"
+    "message": "Χρήση του τίτλου της σελίδας ως όνομα αποθήκευσης της περιόδου λειτουργίας"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "Στην αυτόματη αποθήκευση, το όνομα της συνεδρίας να είναι ο τίτλος της ανοιχτής σελίδας."
+    "message": "Στην αυτόματη αποθήκευση, χρήση του τίτλου της σελίδας ως το όνομα της περιόδου λειτουργίας."
   },
   "backupLabel": {
-    "message": "Αντίγραφο Ασφαλείας"
+    "message": "Αντίγραφο ασφαλείας"
   },
   "ifBackupLabel": {
-    "message": "Αποθήευση Αντιγράφου Ασφαλείας"
+    "message": "Αποθήκευση αντιγράφου ασφαλείας"
   },
   "ifBackupCaptionLabel": {
-    "message": "Όταν ξεκινάει ο πλοηγός. φτιάξε ένα αντίγραφο των συνεδριών και αποθήκευσέ το στις Λήψεις."
+    "message": "Κατά την εκκίνηση του προγράμματος περιήγησης, να γίνεται αντίγραφο ασφαλείας των περιόδων λειτουργίας και αποθήκευσή τους στο φάκελο λήψης."
   },
   "backupFolderLabel": {
-    "message": "Τοποθεσία Αποθήκευσης"
+    "message": "Αποθήκευση σε"
   },
   "backupFolderCaptionLabel": {
-    "message": "Καθόρισε το φάκελο του αντίγραφου. Υπάρχει περιορισμός: πρέπει να είναι κάτω από το φάκελο των Λήψεων."
+    "message": "Καθορίστε το φάκελο για να αποθηκεύσετε το αρχείο αντιγράφου ασφαλείας. Η τοποθεσία αποθήκευσης είναι περιορισμένη στο φάκελο κάτω από το φάκελο λήψης του προγράμματος περιήγησης."
   },
   "downloadFolderLabel": {
-    "message": "Φάκελος λήψεων"
+    "message": "Φάκελος λήψης"
   },
   "backupFilesLimitLabel": {
     "message": "Μέγιστο πλήθος αντιγράφων"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "Ότα το πλήθος των ανιγράφων ξεπεράσει το μέγιστο, τότε σβήνονται αυτόματα ξεκινώντας από το παλιότερο."
+    "message": "Όταν το πλήθος των αντιγράφων ασφαλείας ξεπεράσει το μέγιστο, τότε σβήνονται αυτόματα ξεκινώντας από το παλιότερο."
   },
   "dateFormatLabel": {
     "message": "Μορφή ημερομηνίας"
@@ -327,25 +330,25 @@
     "message": "Αποθήκευση των ιδιωτικών παραθύρων"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "Αν μείνει ατσεκάριστο, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση συνεδριών."
+    "message": "Αν δεν επιλεχθεί, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση των περιόδων λειτουργίας."
   },
   "ifSupportTstLabel": {
     "message": "Υποστήριξη Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Επαναφορά δέντρου από το Tree Style Tab.<br>Αν ενεργοποιηθεί προκαλεί, καθυστερεί η επαναφορά συνεδριών."
+    "message": "Επαναφορά δέντρου από το Tree Style Tab.<br>Αν ενεργοποιηθεί θα καθυστερήσει η επαναφορά συνεδριών."
   },
   "tstDelayLabel": {
-    "message": "Αναμονή για την επναφορά (milliseconds)"
+    "message": "Αναμονή για την επαναφορά (milliseconds)"
   },
   "tstDelayCaptionLabel": {
-    "message": "Πόση ώρα θα περιμένουμε πριν γίνει η επαναφορά. Αν η επαναφορά δε γίενται σωστά τότε αύξησε αυτήν την τιμή."
+    "message": "Κατά την επαναφορά του δέντρου, απαιτείται κάποιος χρόνος. Αυξήστε το χρόνο αυτό αν η διαδικασία δεν γίνεται σωστά."
   },
   "truncateTitleLabel": {
-    "message": "Όνομα συνεδρίας σε μία γραμμή"
+    "message": "Προβολή ονόματος περιόδου λειτουργίας σε μία γραμμή"
   },
   "truncateTitleCaptionLabel": {
-    "message": "Αν το όνομα της συνεδρίας ξεπερνάει τη γραμμή τότε να αποκόπτεται κατά την εμφάνιση."
+    "message": "Αν το όνομα της περιόδου λειτουργίας ξεπερνάει τη μία γραμμή, να αποκόπτεται κατά την εμφάνιση."
   },
   "popupLabel": {
     "message": "Αναδυόμενο παράθυρο"
@@ -354,25 +357,25 @@
     "message": "Συμπεριφορά του πλήκτρου της μπάρας"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Επίλεξε τη συνηθισμένη ενέργεια του πλήκτρου της μπάρας."
+    "message": "Επίλεξε την προεπιλεγμένη ενέργεια του πλήκτρου της μπάρας."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Συμπεριφορά του πλήκτρου Αποθήκευση"
+    "message": "Συμπεριφορά του πλήκτρου αποθήκευσης"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Επίλεξε τη συνηθισμένη ενέργεια του πλήκτρου Αποθήκευση."
+    "message": "Επίλεξε την προεπιλεγμένη ενέργεια του πλήκτρου αποθήκευσης."
   },
   "isShowSearchBarLabel": {
-    "message": "Εμφάνιση μπάρας αναζήτησης"
+    "message": "Εμφάνιση της μπάρας αναζήτησης"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Δυνατότητα αναζήτηση βάση ονόματος συνεδρίας."
+    "message": "Δυνατότητα αναζήτησης με βάση το όνομα της περιόδου λειτουργίας."
   },
   "sizeLabel": {
     "message": "Μέγεθος"
   },
   "popupSizeCaptionLabel": {
-    "message": "Όρισε το μέγεθος του πλαισίου που εμφανίζεται."
+    "message": "Ορίστε το μέγεθος του αναδυόμενου παραθύρου."
   },
   "widthLabel": {
     "message": "Πλάτος"
@@ -384,10 +387,10 @@
     "message": "Άλλο"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Εμφάνισηη επιλογών μετά από αναβάθμιση"
+    "message": "Εμφάνιση επιλογών μετά από ενημέρωση"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Να μεφανίζεται η σελίδα των επιλογών μετά από αναβάθμιση του Tab Session Manager. Έτσι βλέπεις γρήγορα το τι έχει αναβαθμιστεί."
+    "message": "Να εμφανίζεται η σελίδα των επιλογών μετά από ενημέρωση του Tab Session Manager. Μπορείτε έτσι να δείτε γρήγορα τι έχει ενημερωθεί."
   },
   "NotificationOnUpdateLabel": {
     "message": "Ενημερώθηκε το Tab Session Manager!"
@@ -399,25 +402,25 @@
     "message": "Κλικ για πληροφορίες ενημέρωσης."
   },
   "isDebugModeLabel": {
-    "message": "Kατάσταση εντοπισμού σφαλμάτων"
+    "message": "Ενεργοποίηση κατάστασης εντοπισμού σφαλμάτων"
   },
   "isDebugModeCaptionLabel": {
-    "message": "Όταν έχει ενεργοποιηθεί η κατάσταση εντοπισμού σφαλμάτων, στέλνονται διάφορα καταγραφικά στοιχεία στο debugger."
+    "message": "Όταν έχει ενεργοποιηθεί η κατάσταση εντοπισμού σφαλμάτων, αποστέλλονται αρχεία καταγραφής στον αποσφαλματωτή."
   },
   "resetSettingsLabel": {
     "message": "Επαναφορά ρυθμίσεων"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Επαναφορά εργοστασιακών ρυθμίσεων."
+    "message": "Επαναφορά στις προεπιλεγμένες ρυθμίσεις."
   },
   "resetSettingsButtonLabel": {
     "message": "Επαναφορά"
   },
   "importLabel": {
-    "message": "Εισαγωγή συνεδριών"
+    "message": "Εισαγωγή περιόδων λειτουργίας"
   },
   "importCaptionLabel": {
-    "message": "Φορτώνει συνεδρίες που έχουν αποθηκευτεί στον υπολογιστή και τις προσθέτει στη Λίστα συνεδριων.<br>Υποστηρίζει και αρχεία συνεδριών του SessionManager (αρχεία με κατάληξη .session)."
+    "message": "Φόρτωση των αποθηκευμένων στον υπολογιστή περιόδων λειτουργίας και προσθήκη τους στη λίστα Περίοδοι λειτουργίας.<br>Υποστηρίζονται και αρχεία του SessionManager (αρχεία με κατάληξη.session)."
   },
   "importButtonLabel": {
     "message": "Αναζήτηση..."
@@ -432,25 +435,67 @@
     "message": "Εισαγωγή λίστας URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Παίρνει μία λίστα URL και δημιουργεί μία συνεδρία - τη συνεδρία την προσθέτει στη λίστα συνεδριών,<br>Μορφή λίστας: &lt;URL&gt; &lt;τίτλος σελίδας (προαιρετικό)&gt;"
+    "message": "Δημιουργία περιόδου λειτουργίας από μια λίστα URL και προσθήκη της στη λίστα Περίοδοι λειτουργίας.<br>Μορφή λίστας: &lt;URL&gt; &lt;τίτλος σελίδας (προαιρετικό)&gt;"
   },
   "exportLabel": {
-    "message": "Εξαγωγή συνεδριών"
+    "message": "Εξαγωγή περιόδων λειτουργίας"
   },
   "exportCaptionLabel": {
-    "message": "Αποθηκεύει όλες τις συνεδρίες στον υπολογιστή."
+    "message": "Αποθηκεύει όλων των περιόδων λειτουργίας στον υπολογιστή."
   },
   "exportButtonLabel": {
     "message": "Εξαγωγή"
   },
   "removeSessionsLabel": {
-    "message": "Διαγραφή συνεδριών"
+    "message": "Διαγραφή των περιόδων λειτουργίας"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Διαγραφή όλων των συνεδριών."
+    "message": "Διαγραφή όλων των περιόδων λειτουργίας."
   },
   "removeSessionsButtonLabel": {
     "message": "Διαγραφή"
+  },
+  "keyboardShortcutsLabel": {
+    "message": "Keyboard shortcuts"
+  },
+  "setKeyboardShortCutsMessage": {
+    "message": "Set keyboard shortcuts."
+  },
+  "typeShortcutMessage": {
+    "message": "Type a shortcut"
+  },
+  "typeLetterMessage": {
+    "message": "Type a letter"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Include either Ctrl or Alt"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Include either Command, Ctrl or Alt"
+  },
+  "invalidLetterMessage": {
+    "message": "The letter can not be used"
+  },
+  "invalidShortcutMessage": {
+    "message": "The shortcut can not be used"
+  },
+  "openPopupDescription": {
+    "message": "Open toolbar popup"
+  },
+  "saveCurrentWindowDescription": {
+    "message": "Save session (only current window)"
+  },
+  "saveAllWindowDescription": {
+    "message": "Save session (all windows)"
+  },
+  "exportSessionsDescription": {
+    "message": "Export all sessions"
+  },
+  "clear": {
+    "message": "Clear"
+  },
+  "reset": {
+    "message": "Reset"
   },
   "LicenseLabel": {
     "message": "Άδεια"
@@ -471,16 +516,16 @@
     "message": "Σελίδα πρόσθετου"
   },
   "importMessage": {
-    "message": "Οι συνεδρίες εισάχθηκαν."
+    "message": "Έγινε εισαγωγή των περιόδων λειτουργίας."
   },
   "readFailedMessage": {
-    "message": "Σφάλμα στην ανάκτηση"
+    "message": "Αποτυχία ανάγνωσης"
   },
   "warningRemoveAllMessage": {
-    "message": "Σίγουρα να διαγραφούν όλες οι συνεδρίες;"
+    "message": "Διαγραφή όλων των περιόδων λειτουργίας. Είστε σίγουροι;"
   },
   "sessionLabel": {
-    "message": "Συνεδρία"
+    "message": "Περίοδος λειτουργίας"
   },
   "amazonUrl": {
     "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"

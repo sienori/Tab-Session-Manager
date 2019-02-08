@@ -72,10 +72,10 @@
     "message": "Session supprimée."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "La fenêtre de la session a été supprimée."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "L’onglet de la session a été supprimé."
   },
   "restoreSessionLabel": {
     "message": "Restaurer"
@@ -84,10 +84,10 @@
     "message": "La session n’a pas pu être supprimée."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "La fenêtre de la sessions n’a pas pu être supprimée."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "L’onglet de la session n’a pas pu être supprimé."
   },
   "sessionSavedLabel": {
     "message": "Session enregistrée."
@@ -196,6 +196,9 @@
   },
   "sessionsLabel": {
     "message": "Sessions"
+  },
+  "shortcutsLabel": {
+    "message": "Shortcuts"
   },
   "informationLabel": {
     "message": "Informations"
@@ -451,6 +454,48 @@
   },
   "removeSessionsButtonLabel": {
     "message": "Supprimer"
+  },
+  "keyboardShortcutsLabel": {
+    "message": "Keyboard shortcuts"
+  },
+  "setKeyboardShortCutsMessage": {
+    "message": "Set keyboard shortcuts."
+  },
+  "typeShortcutMessage": {
+    "message": "Type a shortcut"
+  },
+  "typeLetterMessage": {
+    "message": "Type a letter"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Include either Ctrl or Alt"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Include either Command, Ctrl or Alt"
+  },
+  "invalidLetterMessage": {
+    "message": "The letter can not be used"
+  },
+  "invalidShortcutMessage": {
+    "message": "The shortcut can not be used"
+  },
+  "openPopupDescription": {
+    "message": "Open toolbar popup"
+  },
+  "saveCurrentWindowDescription": {
+    "message": "Save session (only current window)"
+  },
+  "saveAllWindowDescription": {
+    "message": "Save session (all windows)"
+  },
+  "exportSessionsDescription": {
+    "message": "Export all sessions"
+  },
+  "clear": {
+    "message": "Clear"
+  },
+  "reset": {
+    "message": "Reset"
   },
   "LicenseLabel": {
     "message": "Licence"

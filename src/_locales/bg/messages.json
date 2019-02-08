@@ -33,10 +33,10 @@
     "message": "Всички"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Потребителски"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Автоматично запазени"
   },
   "newestLabel": {
     "message": "Най-нови"
@@ -69,31 +69,31 @@
     "message": "Изтриване на тази сесия?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Сесията е изтрита."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Прозорецът със сесия е изтрит."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Разделът със сесия е изтрит."
   },
   "restoreSessionLabel": {
     "message": "Възстановяване"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Неуспешно изтриване на сесия."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Неуспешно изтриване на прозорец със сесия."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Неуспешно изтриване на раздел със сесия."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Сесията е запазена."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Неуспешно запазване на сесия."
   },
   "cancelLabel": {
     "message": "Отказ"
@@ -135,7 +135,7 @@
     "message": "Преименуване"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Отваряне на сесия"
   },
   "openInNewWindowLabel": {
     "message": "Отваряне в нов прозорец"
@@ -156,7 +156,7 @@
     "message": "Добавяне на раздели към текущият прозорец. Ако сесията съдържа множество прозорци, те ще се отворят в новият прозорец."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Редактиране на сесия"
   },
   "replaceCurrentSessionLabel": {
     "message": "Замяна с текущата сесия"
@@ -165,7 +165,7 @@
     "message": "Замяна с текущият прозорец"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Добавяне на текущият прозорец"
   },
   "makeCopySessionLabel": {
     "message": "Създаване копие на сесията"
@@ -183,19 +183,22 @@
     "message": "Множество изскачащи прозорци не могат да бъдат отворяни в същото време."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Авто запазени - при затваряне на прозорец"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Авто запазени - при изход от браузъра"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Авто запазени - редовно"
   },
   "settingsLabel": {
     "message": "Настройки"
   },
   "sessionsLabel": {
     "message": "Сесии"
+  },
+  "shortcutsLabel": {
+    "message": "Бързи клавиши"
   },
   "informationLabel": {
     "message": "Относно"
@@ -225,13 +228,13 @@
     "message": "При отваряне на сесия, съдържанието на всяка страница се зарежда, когато се избере раздела.<br>Ако не е отметнато, възстановяването на сесията увеличава използваната памет."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Използване на свойството за \"незаредени\" раздели при ръчно зареждане"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Разрешаването на тази опция ще подобри производителността при отваряне на раздели."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "При ръчно зареждане на раздели, иконката на сайта не се показва."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Възстановяване позицията на прозорците"
@@ -267,7 +270,7 @@
     "message": "Запазване на сесията при затваряне на прозореца"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Запазване на сесията, съдържаща само един затворен прозорец."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимален брой запазени"
@@ -276,16 +279,16 @@
     "message": "Максимален брой запазени сесии (по този начин)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Запазване на сесията при изход от браузъра"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Запазване на сесията, включваща множество затворени в един ред прозорци."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Максимален брой запазени"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Максимален брой запазени сесии (по този начин)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Използване заглавието на страница за име на автоматично запазена сесия"
@@ -393,16 +396,16 @@
     "message": "Tab Session Manager беше обновен!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Вижте повече"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Щракнете, за да видите информацията по обновяването."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Режим за отстраняване на грешки"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Когато режима за отстраняване на грешки е активиран, регистъра се извежда в дебъгера."
   },
   "resetSettingsLabel": {
     "message": "Възстановяване на настройки"
@@ -451,6 +454,48 @@
   },
   "removeSessionsButtonLabel": {
     "message": "Изтриване"
+  },
+  "keyboardShortcutsLabel": {
+    "message": "Клавиатурни комбинации"
+  },
+  "setKeyboardShortCutsMessage": {
+    "message": "Задаване на клавиатурни комбинации."
+  },
+  "typeShortcutMessage": {
+    "message": "Въвеждане на бърз клавиш"
+  },
+  "typeLetterMessage": {
+    "message": "Въвеждане на буква"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Включване на Ctrl или Alt"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Включване на Command, Ctrl или Alt"
+  },
+  "invalidLetterMessage": {
+    "message": "Буквата не може да бъде използвана"
+  },
+  "invalidShortcutMessage": {
+    "message": "Бързият клавиш не може да бъде използван"
+  },
+  "openPopupDescription": {
+    "message": "Отваряне на изскачаща лента с инструменти"
+  },
+  "saveCurrentWindowDescription": {
+    "message": "Запазване на сесия (само текущият прозорец)"
+  },
+  "saveAllWindowDescription": {
+    "message": "Запазване на сесия (всички прозорци)"
+  },
+  "exportSessionsDescription": {
+    "message": "Изнасяне на всички сесии"
+  },
+  "clear": {
+    "message": "Изчистване"
+  },
+  "reset": {
+    "message": "Нулиране"
   },
   "LicenseLabel": {
     "message": "Лиценз"

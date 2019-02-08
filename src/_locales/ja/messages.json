@@ -197,6 +197,9 @@
   "sessionsLabel": {
     "message": "セッション"
   },
+  "shortcutsLabel": {
+    "message": "ショートカット"
+  },
   "informationLabel": {
     "message": "情報"
   },
@@ -451,6 +454,48 @@
   },
   "removeSessionsButtonLabel": {
     "message": "削除"
+  },
+  "keyboardShortcutsLabel": {
+    "message": "キーボードショートカット"
+  },
+  "setKeyboardShortCutsMessage": {
+    "message": "キーボードショートカットを設定します。"
+  },
+  "typeShortcutMessage": {
+    "message": "ショートカットを入力"
+  },
+  "typeLetterMessage": {
+    "message": "文字を入力してください"
+  },
+  "includeModifierKeysMessage": {
+    "message": "CtrlキーまたはAltキーが必要です"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Commandキー，CtrlキーまたはAltキーが必要です"
+  },
+  "invalidLetterMessage": {
+    "message": "この文字は使用できません"
+  },
+  "invalidShortcutMessage": {
+    "message": "このショートカットは使用できません"
+  },
+  "openPopupDescription": {
+    "message": "ツールバーポップアップを開く"
+  },
+  "saveCurrentWindowDescription": {
+    "message": "セッションを保存 (現在のウィンドウのみ)"
+  },
+  "saveAllWindowDescription": {
+    "message": "セッションを保存 (すべてのウィンドウ)"
+  },
+  "exportSessionsDescription": {
+    "message": "すべてのセッションをエクスポート"
+  },
+  "clear": {
+    "message": "クリア"
+  },
+  "reset": {
+    "message": "リセット"
   },
   "LicenseLabel": {
     "message": "ライセンス"

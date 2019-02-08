@@ -197,6 +197,9 @@
   "sessionsLabel": {
     "message": "Sesje"
   },
+  "shortcutsLabel": {
+    "message": "Shortcuts"
+  },
   "informationLabel": {
     "message": "Informacje"
   },
@@ -451,6 +454,48 @@
   },
   "removeSessionsButtonLabel": {
     "message": "Usuń"
+  },
+  "keyboardShortcutsLabel": {
+    "message": "Keyboard shortcuts"
+  },
+  "setKeyboardShortCutsMessage": {
+    "message": "Set keyboard shortcuts."
+  },
+  "typeShortcutMessage": {
+    "message": "Type a shortcut"
+  },
+  "typeLetterMessage": {
+    "message": "Type a letter"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Include either Ctrl or Alt"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Include either Command, Ctrl or Alt"
+  },
+  "invalidLetterMessage": {
+    "message": "The letter can not be used"
+  },
+  "invalidShortcutMessage": {
+    "message": "The shortcut can not be used"
+  },
+  "openPopupDescription": {
+    "message": "Open toolbar popup"
+  },
+  "saveCurrentWindowDescription": {
+    "message": "Save session (only current window)"
+  },
+  "saveAllWindowDescription": {
+    "message": "Save session (all windows)"
+  },
+  "exportSessionsDescription": {
+    "message": "Export all sessions"
+  },
+  "clear": {
+    "message": "Clear"
+  },
+  "reset": {
+    "message": "Reset"
   },
   "LicenseLabel": {
     "message": "Licencja"
