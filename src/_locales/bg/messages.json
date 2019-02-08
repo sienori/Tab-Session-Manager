@@ -456,37 +456,37 @@
     "message": "Изтриване"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Клавиатурни комбинации"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Задаване на клавиатурни комбинации."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Въвеждане на бърз клавиш"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Въвеждане на буква"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Включване на Ctrl или Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Включване на Command, Ctrl или Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Буквата не може да бъде използвана"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Бързият клавиш не може да бъде използван"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Отваряне на изскачаща лента с инструменти"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Запазване на сесия (само текущият прозорец)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Запазване на сесия (всички прозорци)"
   },
   "exportSessionsDescription": {
     "message": "Изнасяне на всички сесии"
