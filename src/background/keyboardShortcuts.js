@@ -63,9 +63,6 @@ export const onCommandListener = async command => {
       exportSessions();
       break;
     }
-    case "importSessions": {
-      break;
-    }
   }
   saveCurrentSession;
 };
