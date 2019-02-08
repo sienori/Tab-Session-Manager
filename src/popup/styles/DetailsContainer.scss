@@ -28,6 +28,7 @@
       width: calc(100% - 15px);
       span {
         font-size: 12px;
+        color: var(--main-text);
         flex-grow: 1;
         text-overflow: ellipsis;
         white-space: nowrap;
