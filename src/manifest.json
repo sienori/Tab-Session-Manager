@@ -30,5 +30,23 @@
     "default_popup": "popup/index.html"
   },
 
+  "commands": {
+    "_execute_browser_action": {
+      "description": "__MSG_openPopupDescription__",
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      }
+    },
+    "saveAllWindow": {
+      "description": "__MSG_saveAllWindowDescription__"
+    },
+    "saveCurrentWindow": {
+      "description": "__MSG_saveCurrentWindowDescription__"
+    },
+    "exportSessions": {
+      "description": "__MSG_exportSessionsDescription__"
+    }
+  },
+
   "incognito": "spanning"
 }

@@ -34,5 +34,20 @@
       "64": "icons/icon.svg"
     },
     "default_popup": "popup/index.html"
+  },
+
+  "commands": {
+    "_execute_browser_action": {
+      "description": "__MSG_openPopupDescription__"
+    },
+    "saveAllWindow": {
+      "description": "__MSG_saveAllWindowDescription__"
+    },
+    "saveCurrentWindow": {
+      "description": "__MSG_saveCurrentWindowDescription__"
+    },
+    "exportSessions": {
+      "description": "__MSG_exportSessionsDescription__"
+    }
   }
 }

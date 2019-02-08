@@ -29,6 +29,7 @@ import { addTag, removeTag } from "./tag";
 import { initSettings, handleSettingsChange } from "src/settings/settings";
 import exportSessions from "./export";
 import onInstalledListener, { isUpdated } from "./onInstalledListener";
+import { onCommandListener } from "./keyboardShortcuts";
 import { updateLogLevel, overWriteLogLevel } from "../common/log";
 
 const logDir = "background/background";
@@ -123,3 +124,4 @@ const onMessageListener = async (request, sender, sendResponse) => {
 
 browser.runtime.onInstalled.addListener(onInstalledListener);
 browser.runtime.onMessage.addListener(onMessageListener);
+browser.commands.onCommand.addListener(onCommandListener);

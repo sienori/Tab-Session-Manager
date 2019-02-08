@@ -1,7 +1,10 @@
 import React from "react";
 import browser from "webextension-polyfill";
 import { Link, withRouter } from "react-router-dom";
+import browserInfo from "browser-info";
 import "../styles/SideBar.scss";
+
+const isValidShortcuts = browserInfo().name == "Firefox" && browserInfo().version >= 60;
 
 const SideBar = props => (
   <div className="sideBar">
@@ -18,7 +21,7 @@ const SideBar = props => (
     <ul>
       <li
         className={`sideBarItem ${
-          ["/sessions", "/information"].every(path => path != props.location.pathname)
+          ["/sessions", "/shortcuts", "/information"].every(path => path != props.location.pathname)
             ? "selected"
             : ""
         }`}
@@ -28,6 +31,11 @@ const SideBar = props => (
       <li className={`sideBarItem ${props.location.pathname == "/sessions" ? "selected" : ""}`}>
         <Link to="/sessions">{browser.i18n.getMessage("sessionsLabel")}</Link>
       </li>
+      {isValidShortcuts && (
+        <li className={`sideBarItem ${props.location.pathname == "/shortcuts" ? "selected" : ""}`}>
+          <Link to="/shortcuts">{browser.i18n.getMessage("shortcutsLabel")}</Link>
+        </li>
+      )}
       <li className={`sideBarItem ${props.location.pathname == "/information" ? "selected" : ""}`}>
         <Link to="/information">{browser.i18n.getMessage("informationLabel")}</Link>
       </li>

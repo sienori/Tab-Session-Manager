@@ -38,7 +38,6 @@
   }
   .childElements {
     padding-left: 20px;
-    margin-bottom: 30px;
     border-left: solid 10px var(--line);
   }
 }
@@ -308,4 +307,77 @@ input[type="file"] {
   opacity: 0;
   width: 1px;
   height: 0;
+}
+
+.keyboardShortcut {
+  position: relative;
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  button {
+    position: absolute;
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 20px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &.clearButton {
+      right: 0px;
+      margin: 3px;
+      svg {
+        fill: var(--sub-text);
+      }
+      &:hover svg {
+        fill: var(--new);
+      }
+    }
+
+    &.resetButton {
+      right: -20px;
+      margin: -3px;
+      svg {
+        fill: var(--sub-text);
+        path {
+          stroke: var(--sub-text);
+        }
+      }
+      &:hover svg {
+        fill: var(--highlight);
+        path {
+          stroke: var(--highlight);
+        }
+      }
+    }
+  }
+
+  input {
+    &::placeholder {
+      color: #fff;
+    }
+    &:focus::placeholder {
+      color: var(--main-text);
+    }
+  }
+
+  &.isError input {
+    border-color: var(--new);
+  }
+
+  .error {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    font-size: 12px;
+    color: var(--new);
+    text-align: center;
+    white-space: nowrap;
+  }
 }

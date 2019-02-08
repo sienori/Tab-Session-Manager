@@ -1,6 +1,7 @@
 import browser from "webextension-polyfill";
 import log from "loglevel";
 import { initSettings, getSettings, setSettings } from "src/settings/settings";
+import { initShortcuts } from "./keyboardShortcuts";
 
 const logDir = "background/onInstalledListener";
 
@@ -18,6 +19,7 @@ export default async details => {
   log.info(logDir, "onInstalledListener()", details);
   isUpdated = true;
   await initSettings();
+  initShortcuts();
   const isShowOptionsPage = getSettings("isShowOptionsPageWhenUpdated");
 
   if (isShowOptionsPage) {
