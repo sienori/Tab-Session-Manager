@@ -287,8 +287,7 @@ export default [
         title: "isDebugModeLabel",
         captions: ["isDebugModeCaptionLabel"],
         type: "checkbox",
-        default: false,
-        new: true
+        default: false
       }
     ]
   }
