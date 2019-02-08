@@ -483,19 +483,19 @@
     "message": "Open toolbar popup"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Guardar sesión (sólo ventana actual)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Guardar sesión (todas las ventanas)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Exportar todas las sesiones"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Limpiar"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Restablecer"
   },
   "LicenseLabel": {
     "message": "Licencia"
