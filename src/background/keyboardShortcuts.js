@@ -5,9 +5,10 @@ import { getSettings, setSettings } from "src/settings/settings";
 import { saveCurrentSession } from "./save";
 import exportSessions from "./export";
 import getShortcut from "src/common/getShortcut";
+import { showDoneBadge } from "./setBadge";
 import manifest from "src/manifest.json";
 
-const logDir = "background/initShortcuts";
+const logDir = "background/keyboardShortcuts";
 
 export const initShortcuts = async () => {
   const isValidShortcuts = browserInfo().name == "Firefox" && browserInfo().version >= 60;
@@ -52,11 +53,13 @@ export const onCommandListener = async command => {
     case "saveAllWindow": {
       const name = await getCurrentTabName();
       saveCurrentSession(name, [], "saveAllWindows");
+      showDoneBadge();
       break;
     }
     case "saveCurrentWindow": {
       const name = await getCurrentTabName();
       saveCurrentSession(name, [], "saveOnlyCurrentWindow");
+      showDoneBadge();
       break;
     }
     case "exportSessions": {
