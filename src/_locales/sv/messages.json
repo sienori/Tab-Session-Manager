@@ -198,7 +198,7 @@
     "message": "Sessioner"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Genvägar"
   },
   "informationLabel": {
     "message": "Information"
@@ -456,28 +456,28 @@
     "message": "Ta bort"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Tangentbordsgenvägar"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Ställ in tangentbordsgenvägar."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Ange en genväg"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Ange en bokstav"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Inkludera antingen Ctrl eller Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Inkludera antingen Kommando, Ctrl eller Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Den bokstaven kan inte användas"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Genvägen kan inte användas"
   },
   "openPopupDescription": {
     "message": "Open toolbar popup"
