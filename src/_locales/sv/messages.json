@@ -480,22 +480,22 @@
     "message": "Genvägen kan inte användas"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Öppna verktygsfältet"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Spara session (endast aktuellt fönster)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Spara session (alla fönster)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Exportera alla sessioner"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Rensa"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Återställ"
   },
   "LicenseLabel": {
     "message": "Licens"
