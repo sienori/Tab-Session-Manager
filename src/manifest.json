@@ -34,7 +34,7 @@
     "_execute_browser_action": {
       "description": "__MSG_openPopupDescription__",
       "suggested_key": {
-        "default": "Ctrl+Shift+S"
+        "default": "Ctrl+Shift+L"
       }
     },
     "saveAllWindow": {
