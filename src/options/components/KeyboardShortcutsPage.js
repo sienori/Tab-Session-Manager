@@ -15,7 +15,15 @@ export default class KeyboardShortcutPage extends Component {
 
   async initCommands() {
     const commands = await browser.commands.getAll();
-    this.setState({ commands: commands, isInit: true });
+    const rawDescription = /^__MSG_(.*)__$/;
+    const convertedCommands = commands.map(command => {
+      const isRawDescription = rawDescription.test(command.description);
+      if (isRawDescription)
+        command.description = browser.i18n.getMessage(command.description.match(rawDescription)[1]);
+      return command;
+    });
+
+    this.setState({ commands: convertedCommands, isInit: true });
   }
 
   render() {
