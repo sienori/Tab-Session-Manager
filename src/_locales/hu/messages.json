@@ -69,13 +69,13 @@
     "message": "Törli ezt a munkamenetet?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Munkamenet törölve."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Munkamenet ablak törölve."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Munkamenet lap törölve."
   },
   "restoreSessionLabel": {
     "message": "Visszaállítás"
