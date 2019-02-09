@@ -84,16 +84,16 @@
     "message": "Sitzung konnte nicht gelöscht werden."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Sitzungsfenster konnte nicht gelöscht werden."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Sitzung Blatt konnte nicht gelöscht werden."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sitzung gespeichert."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Fehler beim Speicherung der Sitzung."
   },
   "cancelLabel": {
     "message": "Abbrechen"
@@ -135,7 +135,7 @@
     "message": "Umbenennen"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Sitzung öffnen"
   },
   "openInNewWindowLabel": {
     "message": "In neuem Fenster öffnen"
@@ -156,7 +156,7 @@
     "message": "Fügt Tabs zur aktuellen Fenster hinzu. Wenn die Sitzung mehrere Fenster beinhaltet, wird es in einem neuen Fenster geöffnet."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Sitzung bearbeiten"
   },
   "replaceCurrentSessionLabel": {
     "message": "Mit aktueller Sitzung ersetzen"
@@ -165,7 +165,7 @@
     "message": "Mit aktuellem Fenster ersetzen"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Aktuelles Fenster hinzufügen"
   },
   "makeCopySessionLabel": {
     "message": "Sitzung Kopieren"
@@ -198,7 +198,7 @@
     "message": "Sitzungen"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Schnellnavigation"
   },
   "informationLabel": {
     "message": "Informationen"
@@ -396,16 +396,16 @@
     "message": "Tab Session Manager wurde aktualisiert!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Mehr anzeigen"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Update-Informationen anzeigen."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Debug-Modus aktivieren"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Wenn der Debug-Modus aktiviert ist, wird das Log zum Debugger ausgegeben."
   },
   "resetSettingsLabel": {
     "message": "Einstellungen zurücksetzen"
@@ -456,7 +456,7 @@
     "message": "Löschen"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Tastenkombinationen"
   },
   "setKeyboardShortCutsMessage": {
     "message": "Set keyboard shortcuts."
