@@ -291,10 +291,10 @@
     "message": "透過這種方式儲存的瀏覽階段數量。"
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "使用頁面標題幫自動儲存的瀏覽階段命名"
+    "message": "使用網頁標題作為自動儲存的瀏覽階段名稱"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "當自動儲存瀏覽階段之時，使用開啟頁面的標題作為瀏覽階段名稱。"
+    "message": "當自動儲存瀏覽階段之時，使用已開啟頁面的標題作為瀏覽階段名稱。"
   },
   "backupLabel": {
     "message": "備份"
