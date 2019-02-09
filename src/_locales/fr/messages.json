@@ -480,22 +480,22 @@
     "message": "Ce raccourci ne peut pas être utilisé"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Ouvrir la barre d’outil surgissante"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Enregistrer la session (uniquement la fenêtre active)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Enregistrer la session (toutes les fenêtres)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Exporter toutes les sessions"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Effacer"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Réinitialiser"
   },
   "LicenseLabel": {
     "message": "Licence"
