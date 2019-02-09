@@ -69,19 +69,19 @@
     "message": "Diese Sitzung löschen?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sitzung gelöscht."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Sitzungsfenster gelöscht."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Sitzung Blatt gelöscht."
   },
   "restoreSessionLabel": {
     "message": "Wiederherstellen"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Sitzung konnte nicht gelöscht werden."
   },
   "failedDeleteSessionWindowLabel": {
     "message": "Failed to delete session window."
