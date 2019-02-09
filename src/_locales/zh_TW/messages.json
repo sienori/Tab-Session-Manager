@@ -465,7 +465,7 @@
     "message": "Type a shortcut"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "請輸入文字"
   },
   "includeModifierKeysMessage": {
     "message": "Include either Ctrl or Alt"
