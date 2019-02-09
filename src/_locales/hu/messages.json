@@ -270,7 +270,7 @@
     "message": "Munkamenet mentése ha az ablakot bezárták"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Munkamenet mentése ha csak egy ablak záródik be."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Elmentettek maximális száma"
@@ -282,7 +282,7 @@
     "message": "A munkamenet mentése böngészőből való kilépéskor"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Munkamenet mentése ha több ablak záródik be."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Elmentettek maximális száma"
@@ -480,7 +480,7 @@
     "message": "Ez a billentyűparancs nem használható"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Eszköztár felugró ablak megnyitása"
   },
   "saveCurrentWindowDescription": {
     "message": "Munkamenet mentése (csak jelenlegi ablak)"
@@ -492,7 +492,7 @@
     "message": "Minden munkamenet exportálása"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Tisztít"
   },
   "reset": {
     "message": "Alaphelyzet"
