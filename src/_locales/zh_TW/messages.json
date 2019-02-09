@@ -198,7 +198,7 @@
     "message": "瀏覽階段"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "快速鍵"
   },
   "informationLabel": {
     "message": "附加元件資訊"
@@ -456,10 +456,10 @@
     "message": "刪除"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "鍵盤快速鍵"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "設定鍵盤快速鍵。"
   },
   "typeShortcutMessage": {
     "message": "Type a shortcut"
