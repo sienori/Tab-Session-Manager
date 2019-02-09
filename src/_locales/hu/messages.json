@@ -405,7 +405,7 @@
     "message": "Hibakeresési mód engedélyezése"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Ha a hibakeresési mód engedélyezve, a napló a hibakeresőbe íródik."
   },
   "resetSettingsLabel": {
     "message": "Alapbeállítások használata"
@@ -456,46 +456,46 @@
     "message": "Töröl"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Gyorsbillentyűk"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Gyorsbillentyűk beállítása."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Gyorsbillentyű megadása"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Betű megadása"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Ctrl vagy Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Parancs, Ctrl vagy Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Ez a betű nem használható"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Ez a billentyűparancs nem használható"
   },
   "openPopupDescription": {
     "message": "Open toolbar popup"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Munkamenet mentése (csak jelenlegi ablak)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Munkamenet mentése (minden ablak)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Minden munkamenet exportálása"
   },
   "clear": {
     "message": "Clear"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Alaphelyzet"
   },
   "LicenseLabel": {
     "message": "Licensz"
