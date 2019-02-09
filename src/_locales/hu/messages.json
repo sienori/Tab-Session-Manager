@@ -81,19 +81,19 @@
     "message": "Visszaállítás"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Munkamenet törlése nem sikerült."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Munkamenet ablak törlése nem sikerült."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Munkamenet lap törlése nem sikerült."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Munkamenet elmentve."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Munkamenet mentése nem sikerült."
   },
   "cancelLabel": {
     "message": "Mégse"
@@ -135,7 +135,7 @@
     "message": "Átnevez"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Munkamenet megnyitása"
   },
   "openInNewWindowLabel": {
     "message": "Megnyitás új ablakban"
@@ -156,7 +156,7 @@
     "message": "Fülek a jelenlegi ablakhoz adása. Ha a munkamenetben több ablak is van, új ablakban nyílnak meg."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Munkamenet szerkesztése"
   },
   "replaceCurrentSessionLabel": {
     "message": "Aktuális munkamenettel lecserél"
@@ -165,7 +165,7 @@
     "message": "Jelenlegi ablakkal való lecserélés"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Jelenlegi ablak hozzáadása"
   },
   "makeCopySessionLabel": {
     "message": "Másolatot készítése a munkamenetről"
@@ -198,7 +198,7 @@
     "message": "Munkamenetek"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Gyorsbillentyűk"
   },
   "informationLabel": {
     "message": "Információ"
@@ -228,7 +228,7 @@
     "message": "A munkamenet megnyitásakor az egyes oldalak tartalma nem töltődik be, amíg ki nem választódik a fül.<br>Ha nincs bejelölve, a memória használat nagy mértékben megnövekszik amikor a munkamenet visszaállítódik."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "\"eldobott\" tulajdonság használata lusta betöltéshez"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "A beállítás engedélyezése javítja a teljesítményt lapok megnyitásakor."
@@ -396,13 +396,13 @@
     "message": "Tab Session Manager frissítve!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Bővebben"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Kattintás a frissítés információ megtekintéséhez."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Hibakeresési mód engedélyezése"
   },
   "isDebugModeCaptionLabel": {
     "message": "When debug mode is enabled, the log is output to the debugger."
