@@ -489,13 +489,13 @@
     "message": "Save session (all windows)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "匯出所有瀏覽階段"
   },
   "clear": {
-    "message": "Clear"
+    "message": "清除"
   },
   "reset": {
-    "message": "Reset"
+    "message": "重設"
   },
   "LicenseLabel": {
     "message": "授權條款"
