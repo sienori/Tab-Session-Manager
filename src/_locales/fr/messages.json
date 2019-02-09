@@ -198,7 +198,7 @@
     "message": "Sessions"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Raccourcis"
   },
   "informationLabel": {
     "message": "Informations"
@@ -456,10 +456,10 @@
     "message": "Supprimer"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Raccourcis clavier"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Définir des raccourcis clavier."
   },
   "typeShortcutMessage": {
     "message": "Type a shortcut"
