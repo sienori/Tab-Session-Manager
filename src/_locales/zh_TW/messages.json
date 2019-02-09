@@ -462,31 +462,31 @@
     "message": "設定鍵盤快速鍵。"
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "輸入快速鍵"
   },
   "typeLetterMessage": {
     "message": "請輸入文字"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "包括 Ctrl 鍵 或 Alt 鍵"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "包括 Command 鍵, Ctrl 鍵或 Alt 鍵"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "這個文字無法使用"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "這個快速鍵無法使用"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "開啟工具列彈出式視窗"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "儲存瀏覽階段(僅限目前視窗)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "儲存瀏覽階段(所以視窗)"
   },
   "exportSessionsDescription": {
     "message": "匯出所有瀏覽階段"
