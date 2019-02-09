@@ -462,22 +462,22 @@
     "message": "Définir des raccourcis clavier."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Tapez un raccourcis"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Tapez une lettre"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Il faut au moins utiliser Ctrl ou Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Il faut au moins utiliser Commond, Ctrl ou Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Cette lettre ne peut pas être utilisée"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Ce raccourci ne peut pas être utilisé"
   },
   "openPopupDescription": {
     "message": "Open toolbar popup"
