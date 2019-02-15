@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Namnge sessionen"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Spara alla fönster"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Meny"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Byt namn"
   },
   "OpenSessionLabel": {
-    "message": "Öppna sessionen"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Öppna i nytt fönster"
@@ -156,7 +162,7 @@
     "message": "Lägg till flikar i aktuellt fönster. Om sessionen innehåller flera fönster, öppna det i ett nytt fönster."
   },
   "EditSessionLabel": {
-    "message": "Redigera sessionen"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Ersätt med den aktuella sessionen"
