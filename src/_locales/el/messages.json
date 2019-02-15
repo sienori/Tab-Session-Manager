@@ -141,7 +141,7 @@
     "message": "Μετονομασία"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Άνοιγμα περιόδου λειτουργίας"
   },
   "openInNewWindowLabel": {
     "message": "Άνοιγμα σε νέο παράθυρο"
@@ -162,7 +162,7 @@
     "message": "Προσθήκη καρτελών στο τρέχον παράθυρο. Αν η περίοδος λειτουργίας περιέχει πολλαπλά παράθυρα τότε θα ανοίξει νέο παράθυρο."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Επεξεργασία περιόδου λειτουργίας"
   },
   "replaceCurrentSessionLabel": {
     "message": "Αντικατάσταση με την τρέχουσα περίοδο λειτουργίας"
