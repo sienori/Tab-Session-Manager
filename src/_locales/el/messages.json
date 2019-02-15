@@ -18,7 +18,7 @@
     "message": "Εισάγετε όνομα για την περίοδο λειτουργίας"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Αποθήκευση περιόδου λειτουργίας"
   },
   "saveAllWindowsLabel": {
     "message": "Αποθήκευση όλων των παραθύρων"
@@ -135,7 +135,7 @@
     "message": "Μενού"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Κλείσιμο μενού"
   },
   "renameLabel": {
     "message": "Μετονομασία"
