@@ -67,5 +67,4 @@ export const onCommandListener = async command => {
       break;
     }
   }
-  saveCurrentSession;
 };
