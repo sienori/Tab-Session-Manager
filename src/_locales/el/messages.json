@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Εισάγετε όνομα για την περίοδο λειτουργίας"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Αποθήκευση όλων των παραθύρων"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Μενού"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Μετονομασία"
   },
   "OpenSessionLabel": {
-    "message": "Άνοιγμα περιόδου λειτουργίας"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Άνοιγμα σε νέο παράθυρο"
@@ -156,7 +162,7 @@
     "message": "Προσθήκη καρτελών στο τρέχον παράθυρο. Αν η περίοδος λειτουργίας περιέχει πολλαπλά παράθυρα τότε θα ανοίξει νέο παράθυρο."
   },
   "EditSessionLabel": {
-    "message": "Επεξεργασία περιόδου λειτουργίας"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Αντικατάσταση με την τρέχουσα περίοδο λειτουργίας"
