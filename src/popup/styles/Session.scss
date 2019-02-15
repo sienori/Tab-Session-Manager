@@ -51,8 +51,14 @@
       fill: var(--sub-text);
       transition: fill 100ms;
     }
-    &:hover svg {
-      fill: var(--highlight);
+    &:hover {
+      opacity: 1;
+      svg {
+        fill: var(--highlight);
+      }
+    }
+    &:focus {
+      opacity: 1;
     }
   }
 

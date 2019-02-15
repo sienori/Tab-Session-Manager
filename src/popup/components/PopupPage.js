@@ -248,6 +248,7 @@ export default class PopupPage extends Component {
 
   openMenu = (x, y, itemsComponent) => {
     log.info(logDir, "openMenu()", itemsComponent);
+    this.lastFocusedElement = document.activeElement;
     this.setState({
       menu: {
         isOpen: true,
@@ -267,6 +268,7 @@ export default class PopupPage extends Component {
         items: this.state.menu.items
       }
     });
+    this.lastFocusedElement.focus();
   };
 
   componentDidUpdate() {

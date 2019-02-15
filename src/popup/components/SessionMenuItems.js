@@ -42,27 +42,51 @@ export default props => {
       <li className="section" onClick={handleClickSection}>
         {browser.i18n.getMessage("openSessionLabel")}
       </li>
-      <li onClick={handleOpenInNewWindow}>{browser.i18n.getMessage("openInNewWindowLabel")}</li>
-      <li onClick={handleOpenInCurrentWindow}>
-        {browser.i18n.getMessage("openInCurrentWindowLabel")}
+      <li>
+        <button onClick={handleOpenInNewWindow}>
+          {browser.i18n.getMessage("openInNewWindowLabel")}
+        </button>
       </li>
-      <li onClick={handleAddToCurrentWindow}>
-        {browser.i18n.getMessage("addToCurrentWindowLabel")}
+      <li>
+        <button onClick={handleOpenInCurrentWindow}>
+          {browser.i18n.getMessage("openInCurrentWindowLabel")}
+        </button>
+      </li>
+      <li>
+        <button onClick={handleAddToCurrentWindow}>
+          {browser.i18n.getMessage("addToCurrentWindowLabel")}
+        </button>
       </li>
       <hr />
       <li className="section" onClick={handleClickSection}>
         {browser.i18n.getMessage("editSessionLabel")}
       </li>
-      <li onClick={handleReplaceCurrentSession}>
-        {browser.i18n.getMessage("replaceCurrentSessionLabel")}
+      <li>
+        <button onClick={handleReplaceCurrentSession}>
+          {browser.i18n.getMessage("replaceCurrentSessionLabel")}
+        </button>
       </li>
-      <li onClick={handleReplaceCurrentWindow}>
-        {browser.i18n.getMessage("replaceCurrentWindowLabel")}
+      <li>
+        <button onClick={handleReplaceCurrentWindow}>
+          {browser.i18n.getMessage("replaceCurrentWindowLabel")}
+        </button>
       </li>
-      <li onClick={handleAddCurrentWindow}>{browser.i18n.getMessage("addCurrentWindowLabel")}</li>
-      <li onClick={handleMakeCopySession}>{browser.i18n.getMessage("makeCopySessionLabel")}</li>
+      <li>
+        <button onClick={handleAddCurrentWindow}>
+          {browser.i18n.getMessage("addCurrentWindowLabel")}
+        </button>
+      </li>
+      <li>
+        <button onClick={handleMakeCopySession}>
+          {browser.i18n.getMessage("makeCopySessionLabel")}
+        </button>
+      </li>
       <hr />
-      <li onClick={handleExportSession}>{browser.i18n.getMessage("exportButtonLabel")}</li>
+      <li>
+        <button onClick={handleExportSession}>
+          {browser.i18n.getMessage("exportButtonLabel")}
+        </button>
+      </li>
     </ul>
   );
 };

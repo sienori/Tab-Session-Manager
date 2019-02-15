@@ -18,6 +18,9 @@
   "inputSessionNameLabel": {
     "message": "Input session name"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Save all windows"
   },
@@ -132,11 +135,14 @@
   "menuLabel": {
     "message": "Menu"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Rename"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Open in new window"
@@ -157,7 +163,7 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
