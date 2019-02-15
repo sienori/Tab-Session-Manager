@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Введіть назву сесії"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Зберегти всі вікна"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Меню"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Перейменувати"
   },
   "OpenSessionLabel": {
-    "message": "Відкриття сесії"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Відкрити у новому вікні"
@@ -156,7 +162,7 @@
     "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікно - відкрити її в новому вікні."
   },
   "EditSessionLabel": {
-    "message": "Редагування сесії"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Замінити поточною сесією"
