@@ -18,7 +18,7 @@
     "message": "Име на сесията"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Запазване на сесия"
   },
   "saveAllWindowsLabel": {
     "message": "Запазване на всички прозорци"
@@ -135,13 +135,13 @@
     "message": "Меню"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Затваряне на менюто"
   },
   "renameLabel": {
     "message": "Преименуване"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Отваряне на сесия"
   },
   "openInNewWindowLabel": {
     "message": "Отваряне в нов прозорец"
@@ -162,7 +162,7 @@
     "message": "Добавяне на раздели към текущият прозорец. Ако сесията съдържа множество прозорци, те ще се отворят в новият прозорец."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Редактиране на сесия"
   },
   "replaceCurrentSessionLabel": {
     "message": "Замяна с текущата сесия"
