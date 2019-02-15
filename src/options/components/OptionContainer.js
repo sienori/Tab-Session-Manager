@@ -151,7 +151,7 @@ export default props => {
       <li className={`optionContainer ${props.updated ? "updated" : ""} ${props.new ? "new" : ""}`}>
         <div className="optionElement">
           <div className="optionText">
-            <label className="noHover" htmlFor={formId}>
+            <label className="noHover" htmlFor={formId ? formId : null}>
               <p>{title ? (props.useRawTitle ? title : browser.i18n.getMessage(title)) : ""}</p>
             </label>
             {captions.map((caption, index) => (
