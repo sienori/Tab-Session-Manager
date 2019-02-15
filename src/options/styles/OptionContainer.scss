@@ -122,8 +122,7 @@ input[type="text"] {
 
 input[type="checkbox"] {
   opacity: 0;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  position: absolute;
   &:checked + .checkbox {
     color: var(--highlight);
     &::after {
@@ -168,8 +167,7 @@ input[type="checkbox"] {
 
 input[type="radio"] {
   opacity: 0;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  position: absolute;
   &:checked + .radio {
     color: var(--highlight);
   }
