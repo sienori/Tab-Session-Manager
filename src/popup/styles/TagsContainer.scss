@@ -52,9 +52,11 @@
         transition: all 100ms ease 0ms;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         border: var(--confirm) 1px solid;
         border-radius: 2px;
+        opacity: 1;
 
         transition: all 100ms ease 0ms;
         svg {

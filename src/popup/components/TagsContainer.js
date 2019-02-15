@@ -45,7 +45,11 @@ export default class TagsContainer extends Component {
           className={`addTagInputContainer  ${this.state.isOpenedInput ? "isOpen" : "isClose"}`}
           title={browser.i18n.getMessage("addTagLabel")}
         >
-          <button className="showInputButton" onClick={this.toggleInput}>
+          <button
+            className="showInputButton"
+            onClick={this.toggleInput}
+            title={browser.i18n.getMessage("addTagLabel")}
+          >
             <PlusIcon />
           </button>
           {this.state.isOpenedInput && (

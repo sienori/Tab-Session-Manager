@@ -30,7 +30,11 @@ export default class InputForm extends Component {
           defaultValue={this.props.defaultValue || ""}
           placeholder={this.props.placeholder || ""}
         />
-        <button className="submitButton" type="submit">
+        <button
+          className="submitButton"
+          type="submit"
+          title={browser.i18n.getMessage("addTagLabel")}
+        >
           <CheckIcon />
         </button>
       </form>
