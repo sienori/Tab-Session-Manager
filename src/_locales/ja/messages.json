@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "セッション名を入力"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "全てのウィンドウを保存"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "メニュー"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "リネーム"
   },
   "OpenSessionLabel": {
-    "message": "セッションを開く"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "新しいウィンドウで開く"
@@ -156,7 +162,7 @@
     "message": "現在のウィンドウにタブを追加します。セッションに複数のウィンドウが含まれる場合は，新しいウィンドウで開きます。"
   },
   "EditSessionLabel": {
-    "message": "セッションを編集"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "現在のセッションで置き換え"
