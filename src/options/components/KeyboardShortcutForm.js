@@ -46,7 +46,7 @@ export default class KeyboardShortcutForm extends Component {
   }
 
   handleFocus(e) {
-    this.setState({ value: "" });
+    e.target.select();
     window.document.onkeydown = () => false;
     window.document.onkeypress = () => false;
   }
