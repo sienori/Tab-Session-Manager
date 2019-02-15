@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Munkamenet neve"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Minden ablak mentése"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Menü"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Átnevez"
   },
   "OpenSessionLabel": {
-    "message": "Munkamenet megnyitása"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Megnyitás új ablakban"
@@ -156,7 +162,7 @@
     "message": "Fülek a jelenlegi ablakhoz adása. Ha a munkamenetben több ablak is van, új ablakban nyílnak meg."
   },
   "EditSessionLabel": {
-    "message": "Munkamenet szerkesztése"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Aktuális munkamenettel lecserél"
