@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Име на сесията"
   },
+  "saveSessionLabel": {
+    "message": "Запазване на сесия"
+  },
   "saveAllWindowsLabel": {
     "message": "Запазване на всички прозорци"
   },
@@ -130,6 +133,9 @@
   },
   "menuLabel": {
     "message": "Меню"
+  },
+  "closeMenuLabel": {
+    "message": "Затваряне на менюто"
   },
   "renameLabel": {
     "message": "Преименуване"
