@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Εισάγετε όνομα για την περίοδο λειτουργίας"
   },
+  "saveSessionLabel": {
+    "message": "Αποθήκευση περιόδου λειτουργίας"
+  },
   "saveAllWindowsLabel": {
     "message": "Αποθήκευση όλων των παραθύρων"
   },
@@ -131,6 +134,9 @@
   "menuLabel": {
     "message": "Μενού"
   },
+  "closeMenuLabel": {
+    "message": "Κλείσιμο μενού"
+  },
   "renameLabel": {
     "message": "Μετονομασία"
   },
@@ -198,7 +204,7 @@
     "message": "Περίοδοι λειτουργίας"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Συντομεύσεις"
   },
   "informationLabel": {
     "message": "Πληροφορίες"
@@ -456,46 +462,46 @@
     "message": "Διαγραφή"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Συντομεύσεις πληκτρολογίου"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Ορισμός συντομεύσεων πληκτρολογίου."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Πληκτρολογήστε μία συντόμευση"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Πληκτρολογήστε ένα γράμμα"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Συμπεριλάβετε είτε το Ctrl είτε το Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Συμπεριλάβετε οποιαδήποτε εντολή, Ctrl ή Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Αυτό το γράμμα δεν μπορεί να χρησιμοποιηθεί"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Αυτή η συντόμευση δεν μπορεί να χρησιμοποιηθεί"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Άνοιγμα του αναδυόμενου παραθύρου της γραμμής εργαλείων"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Αποθήκευση περιόδου λειτουργίας (μόνο το τρέχον παράθυρο)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Αποθήκευση περιόδου λειτουργίας (όλα τα παράθυρα)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Εξαγωγή όλων των περιόδων λειτουργίας"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Καθαρισμός"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Επαναφορά"
   },
   "LicenseLabel": {
     "message": "Άδεια"
