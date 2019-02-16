@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Renseignez le nom de session"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Enregistrer toutes les fenêtres"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Menu"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Renommer"
   },
   "OpenSessionLabel": {
-    "message": "Ouvrir la session"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Ouvrir dans une nouvelle fenêtre"
@@ -156,7 +162,7 @@
     "message": "Ajouter les onglets à la fenêtre actuelle. Si la session contient plusieurs fenêtres, l’ouvrir dans une nouvelle fenêtre."
   },
   "EditSessionLabel": {
-    "message": "Modifier la session"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Remplacer par la session en cours"
@@ -198,7 +204,7 @@
     "message": "Sessions"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Raccourcis"
   },
   "informationLabel": {
     "message": "Informations"
@@ -375,7 +381,7 @@
     "message": "Dimensions"
   },
   "popupSizeCaptionLabel": {
-    "message": "Spécifier la taille de la fenêtre pop-up."
+    "message": "Spécifier la taille de la fenêtre surgissante."
   },
   "widthLabel": {
     "message": "Largeur"
@@ -456,46 +462,46 @@
     "message": "Supprimer"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Raccourcis clavier"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Définir des raccourcis clavier."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Tapez un raccourcis"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Tapez une lettre"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Il faut au moins utiliser Ctrl ou Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Il faut au moins utiliser Commond, Ctrl ou Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Cette lettre ne peut pas être utilisée"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Ce raccourci ne peut pas être utilisé"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Ouvrir la barre d’outil surgissante"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Enregistrer la session (uniquement la fenêtre active)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Enregistrer la session (toutes les fenêtres)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Exporter toutes les sessions"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Effacer"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Réinitialiser"
   },
   "LicenseLabel": {
     "message": "Licence"
