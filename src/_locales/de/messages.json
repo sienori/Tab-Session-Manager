@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Sitzungsname eingeben"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Alle Fenstern speichern"
   },
@@ -69,31 +72,31 @@
     "message": "Diese Sitzung löschen?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sitzung gelöscht."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Sitzungsfenster gelöscht."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Sitzung Blatt gelöscht."
   },
   "restoreSessionLabel": {
     "message": "Wiederherstellen"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Sitzung konnte nicht gelöscht werden."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Sitzungsfenster konnte nicht gelöscht werden."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Sitzung Blatt konnte nicht gelöscht werden."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sitzung gespeichert."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Fehler beim Speicherung der Sitzung."
   },
   "cancelLabel": {
     "message": "Abbrechen"
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Menü"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Umbenennen"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "In neuem Fenster öffnen"
@@ -156,7 +162,7 @@
     "message": "Fügt Tabs zur aktuellen Fenster hinzu. Wenn die Sitzung mehrere Fenster beinhaltet, wird es in einem neuen Fenster geöffnet."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Mit aktueller Sitzung ersetzen"
@@ -165,7 +171,7 @@
     "message": "Mit aktuellem Fenster ersetzen"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Aktuelles Fenster hinzufügen"
   },
   "makeCopySessionLabel": {
     "message": "Sitzung Kopieren"
@@ -198,7 +204,7 @@
     "message": "Sitzungen"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Schnellnavigation"
   },
   "informationLabel": {
     "message": "Informationen"
@@ -396,16 +402,16 @@
     "message": "Tab Session Manager wurde aktualisiert!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Mehr anzeigen"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Update-Informationen anzeigen."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Debug-Modus aktivieren"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Wenn der Debug-Modus aktiviert ist, wird das Log zum Debugger ausgegeben."
   },
   "resetSettingsLabel": {
     "message": "Einstellungen zurücksetzen"
@@ -456,46 +462,46 @@
     "message": "Löschen"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Tastenkombinationen"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Definiere Tastenkürzel."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Verknüpfung eingeben"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Geben Sie einen Buchstaben"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Füge entweder Ctrl oder Alt ein"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Füge entweder Befehl, Ctrl oder Alt ein"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Dieser Buchstabe kann nicht verwendet werden"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Dieser Verknüpfung kann nicht verwendet werden"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Toolbar-Popup öffnen"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Sitzung speichern (nur aktuelles Fenster)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Sitzung speichern (alle Fenster)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Alle Sitzungen exportieren"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Klären"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Zurücksetzen"
   },
   "LicenseLabel": {
     "message": "Lizenz"

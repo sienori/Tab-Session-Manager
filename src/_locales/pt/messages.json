@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Inserir nome da sessão"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Salvar todas as janelas"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Menu"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Renomear"
   },
   "OpenSessionLabel": {
-    "message": "Sessão aberta"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Abrir em uma nova janela"
@@ -156,7 +162,7 @@
     "message": "Adicionar abas à janela atual. Se a sessão contiver múltiplas janelas, será aberta em uma nova janela."
   },
   "EditSessionLabel": {
-    "message": "Editar sessão"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Substituir com sessão atual"

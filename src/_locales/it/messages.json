@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Inserisci un nome per la sessione"
   },
+  "saveSessionLabel": {
+    "message": "Salva una sessione"
+  },
   "saveAllWindowsLabel": {
     "message": "Salva tutte le finestre"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Menù"
   },
+  "closeMenuLabel": {
+    "message": "Chiudi menù"
+  },
   "renameLabel": {
     "message": "Rinomina"
   },
   "OpenSessionLabel": {
-    "message": "Apri sessione"
+    "message": "Apri una sessione"
   },
   "openInNewWindowLabel": {
     "message": "Apri in una nuova finestra"
@@ -156,7 +162,7 @@
     "message": "Aggiunge schede alla finestra corrente. Se la sessione ha più finestre, apre una nuova finestra."
   },
   "EditSessionLabel": {
-    "message": "Modifica sessione"
+    "message": "Modifica una sessione"
   },
   "replaceCurrentSessionLabel": {
     "message": "Sostituisci con la sessione corrente"
@@ -198,7 +204,7 @@
     "message": "Sessioni"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Scorciatoie"
   },
   "informationLabel": {
     "message": "Informazioni"
@@ -456,46 +462,46 @@
     "message": "Elimina"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Scorciatoie da tastiera"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Configura scorciatoie da tastiera."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Digita una scorciatoia"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Digita una lettera"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Includi Ctrl o Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Includi Command, Ctrl o Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "La lettera non può essere utilizzata"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "La scorciatoia non può essere utilizzata"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Apri popup barra degli strumenti"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Salva sessione (solo finestra corrente)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Salva sessione (tutte le finestre)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Esporta tutte le sessioni"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Cancella"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Ripristina"
   },
   "LicenseLabel": {
     "message": "Licenza"

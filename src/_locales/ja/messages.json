@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "セッション名を入力"
   },
+  "saveSessionLabel": {
+    "message": "セッションを保存"
+  },
   "saveAllWindowsLabel": {
     "message": "全てのウィンドウを保存"
   },
@@ -130,6 +133,9 @@
   },
   "menuLabel": {
     "message": "メニュー"
+  },
+  "closeMenuLabel": {
+    "message": "メニューを閉じる"
   },
   "renameLabel": {
     "message": "リネーム"

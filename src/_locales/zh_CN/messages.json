@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "输入会话名称"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "保存所有窗口"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "菜单"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "重命名"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "在新窗口中打开"
@@ -156,7 +162,7 @@
     "message": "添加标签到当前窗口。如会话包含多个窗口，则在新窗口内打开它。"
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "使用当前会话替换此会话"

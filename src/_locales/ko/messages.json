@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "세션 이름 입력"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Save all windows"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "메뉴"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "이름 변경"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "새 창에서 열기"
@@ -156,7 +162,7 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "현재 세션으로 바꾸기"

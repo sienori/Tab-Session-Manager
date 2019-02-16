@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "輸入瀏覽階段名稱"
   },
+  "saveSessionLabel": {
+    "message": "儲存瀏覽階段"
+  },
   "saveAllWindowsLabel": {
     "message": "儲存所有視窗"
   },
@@ -131,6 +134,9 @@
   "menuLabel": {
     "message": "選單"
   },
+  "closeMenuLabel": {
+    "message": "關閉選單"
+  },
   "renameLabel": {
     "message": "重新命名"
   },
@@ -198,7 +204,7 @@
     "message": "瀏覽階段"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "快速鍵"
   },
   "informationLabel": {
     "message": "附加元件資訊"
@@ -291,10 +297,10 @@
     "message": "透過這種方式儲存的瀏覽階段數量。"
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "使用頁面標題幫自動儲存的瀏覽階段命名"
+    "message": "使用網頁標題作為自動儲存的瀏覽階段名稱"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "當自動儲存瀏覽階段之時，使用開啟頁面的標題作為瀏覽階段名稱。"
+    "message": "當自動儲存瀏覽階段之時，使用已開啟頁面的標題作為瀏覽階段名稱。"
   },
   "backupLabel": {
     "message": "備份"
@@ -456,46 +462,46 @@
     "message": "刪除"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "鍵盤快速鍵"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "設定鍵盤快速鍵。"
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "輸入快速鍵"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "請輸入文字"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "包括 Ctrl 鍵 或 Alt 鍵"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "包括 Command 鍵, Ctrl 鍵或 Alt 鍵"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "這個文字無法使用"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "這個快速鍵無法使用"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "開啟工具列彈出式視窗"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "儲存瀏覽階段(僅限目前視窗)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "儲存瀏覽階段(所以視窗)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "匯出所有瀏覽階段"
   },
   "clear": {
-    "message": "Clear"
+    "message": "清除"
   },
   "reset": {
-    "message": "Reset"
+    "message": "重設"
   },
   "LicenseLabel": {
     "message": "授權條款"
