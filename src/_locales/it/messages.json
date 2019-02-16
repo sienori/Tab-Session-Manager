@@ -18,7 +18,7 @@
     "message": "Inserisci un nome per la sessione"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Salva una sessione"
   },
   "saveAllWindowsLabel": {
     "message": "Salva tutte le finestre"
@@ -135,13 +135,13 @@
     "message": "Menù"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Chiudi menù"
   },
   "renameLabel": {
     "message": "Rinomina"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Apri una sessione"
   },
   "openInNewWindowLabel": {
     "message": "Apri in una nuova finestra"
@@ -162,7 +162,7 @@
     "message": "Aggiunge schede alla finestra corrente. Se la sessione ha più finestre, apre una nuova finestra."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Modifica una sessione"
   },
   "replaceCurrentSessionLabel": {
     "message": "Sostituisci con la sessione corrente"
