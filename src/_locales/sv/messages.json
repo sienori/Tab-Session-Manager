@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Namnge sessionen"
   },
+  "saveSessionLabel": {
+    "message": "Spara session"
+  },
   "saveAllWindowsLabel": {
     "message": "Spara alla fönster"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Meny"
   },
+  "closeMenuLabel": {
+    "message": "Stäng menyn"
+  },
   "renameLabel": {
     "message": "Byt namn"
   },
   "OpenSessionLabel": {
-    "message": "Öppna sessionen"
+    "message": "Öppna session"
   },
   "openInNewWindowLabel": {
     "message": "Öppna i nytt fönster"
@@ -156,7 +162,7 @@
     "message": "Lägg till flikar i aktuellt fönster. Om sessionen innehåller flera fönster, öppna det i ett nytt fönster."
   },
   "EditSessionLabel": {
-    "message": "Redigera sessionen"
+    "message": "Redigera session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Ersätt med den aktuella sessionen"
@@ -198,7 +204,7 @@
     "message": "Sessioner"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Genvägar"
   },
   "informationLabel": {
     "message": "Information"
@@ -456,46 +462,46 @@
     "message": "Ta bort"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Tangentbordsgenvägar"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Ställ in tangentbordsgenvägar."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Ange en genväg"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Ange en bokstav"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Inkludera antingen Ctrl eller Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Inkludera antingen Kommando, Ctrl eller Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Den bokstaven kan inte användas"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Genvägen kan inte användas"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Öppna verktygsfältet"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Spara session (endast aktuellt fönster)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Spara session (alla fönster)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Exportera alla sessioner"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Rensa"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Återställ"
   },
   "LicenseLabel": {
     "message": "Licens"
