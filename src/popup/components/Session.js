@@ -30,7 +30,9 @@ export default class Session extends Component {
   };
 
   handleMenuClick = e => {
-    this.props.openMenu(e.pageX, e.pageY, <SessionMenuItems session={this.props.session} />);
+    const rect = e.target.getBoundingClientRect();
+    const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
+    this.props.openMenu(x, y, <SessionMenuItems session={this.props.session} />);
   };
 
   handleOpenClick = () => {

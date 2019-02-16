@@ -40,11 +40,9 @@ export default class SaveArea extends Component {
 
   openMenu = e => {
     const name = ReactDOM.findDOMNode(this.refs.input).value;
-    this.props.openMenu(
-      e.pageX,
-      e.pageY,
-      <SaveMenuItems name={name} saveSession={this.props.saveSession} />
-    );
+    const rect = e.target.getBoundingClientRect();
+    const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
+    this.props.openMenu(x, y, <SaveMenuItems name={name} saveSession={this.props.saveSession} />);
   };
 
   focusInput() {
