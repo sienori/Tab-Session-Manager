@@ -18,7 +18,7 @@
     "message": "輸入瀏覽階段名稱"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "儲存瀏覽階段"
   },
   "saveAllWindowsLabel": {
     "message": "儲存所有視窗"
@@ -141,7 +141,7 @@
     "message": "重新命名"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "開啟瀏覽階段"
   },
   "openInNewWindowLabel": {
     "message": "在新視窗中開啟"
@@ -162,7 +162,7 @@
     "message": "將分頁新增至目前視窗。 如果瀏覽階段包含多個視窗，請在新視窗中將其開啟。"
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "編輯瀏覽階段"
   },
   "replaceCurrentSessionLabel": {
     "message": "使用目前瀏覽階段取代此瀏覽階段"
