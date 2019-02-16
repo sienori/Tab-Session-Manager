@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Munkamenet neve"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Minden ablak mentése"
   },
@@ -69,31 +72,31 @@
     "message": "Törli ezt a munkamenetet?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Munkamenet törölve."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Munkamenet ablak törölve."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Munkamenet lap törölve."
   },
   "restoreSessionLabel": {
     "message": "Visszaállítás"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Munkamenet törlése nem sikerült."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Munkamenet ablak törlése nem sikerült."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Munkamenet lap törlése nem sikerült."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Munkamenet elmentve."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Munkamenet mentése nem sikerült."
   },
   "cancelLabel": {
     "message": "Mégse"
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Menü"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Átnevez"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Megnyitás új ablakban"
@@ -156,7 +162,7 @@
     "message": "Fülek a jelenlegi ablakhoz adása. Ha a munkamenetben több ablak is van, új ablakban nyílnak meg."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Aktuális munkamenettel lecserél"
@@ -165,7 +171,7 @@
     "message": "Jelenlegi ablakkal való lecserélés"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Jelenlegi ablak hozzáadása"
   },
   "makeCopySessionLabel": {
     "message": "Másolatot készítése a munkamenetről"
@@ -198,7 +204,7 @@
     "message": "Munkamenetek"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Gyorsbillentyűk"
   },
   "informationLabel": {
     "message": "Információ"
@@ -228,7 +234,7 @@
     "message": "A munkamenet megnyitásakor az egyes oldalak tartalma nem töltődik be, amíg ki nem választódik a fül.<br>Ha nincs bejelölve, a memória használat nagy mértékben megnövekszik amikor a munkamenet visszaállítódik."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "\"eldobott\" tulajdonság használata lusta betöltéshez"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "A beállítás engedélyezése javítja a teljesítményt lapok megnyitásakor."
@@ -270,7 +276,7 @@
     "message": "Munkamenet mentése ha az ablakot bezárták"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Munkamenet mentése ha csak egy ablak záródik be."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Elmentettek maximális száma"
@@ -282,7 +288,7 @@
     "message": "A munkamenet mentése böngészőből való kilépéskor"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Munkamenet mentése ha több ablak záródik be."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Elmentettek maximális száma"
@@ -396,16 +402,16 @@
     "message": "Tab Session Manager frissítve!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Bővebben"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Kattintás a frissítés információ megtekintéséhez."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Hibakeresési mód engedélyezése"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Ha a hibakeresési mód engedélyezve, a napló a hibakeresőbe íródik."
   },
   "resetSettingsLabel": {
     "message": "Alapbeállítások használata"
@@ -456,46 +462,46 @@
     "message": "Töröl"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Gyorsbillentyűk"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Gyorsbillentyűk beállítása."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Gyorsbillentyű megadása"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Betű megadása"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Ctrl vagy Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Parancs, Ctrl vagy Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Ez a betű nem használható"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Ez a billentyűparancs nem használható"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Eszköztár felugró ablak megnyitása"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Munkamenet mentése (csak jelenlegi ablak)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Munkamenet mentése (minden ablak)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Minden munkamenet exportálása"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Tisztít"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Alaphelyzet"
   },
   "LicenseLabel": {
     "message": "Licensz"
