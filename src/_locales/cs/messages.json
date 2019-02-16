@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Input session name"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Uložit všechna okna"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Nabídka"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Přejmenovat"
   },
   "OpenSessionLabel": {
-    "message": "Open session"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Otevřít v novém okně"
@@ -156,7 +162,7 @@
     "message": "Přidat panely do aktuálního okna. Pokud relace obsahuje více oken, otevříť v novém okně."
   },
   "EditSessionLabel": {
-    "message": "Edit session"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Nahradit stávající relací"
