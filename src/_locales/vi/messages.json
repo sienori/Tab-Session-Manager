@@ -17,6 +17,9 @@
   "inputSessionNameLabel": {
     "message": "Nhập tên phiên làm việc"
   },
+  "saveSessionLabel": {
+    "message": "Save a session"
+  },
   "saveAllWindowsLabel": {
     "message": "Lưu tất cả cửa sổ"
   },
@@ -131,11 +134,14 @@
   "menuLabel": {
     "message": "Menu"
   },
+  "closeMenuLabel": {
+    "message": "Close the menu"
+  },
   "renameLabel": {
     "message": "Đổi tên"
   },
   "OpenSessionLabel": {
-    "message": "Mở phiên"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
     "message": "Mở trong cửa sổ mới"
@@ -156,7 +162,7 @@
     "message": "Thêm tab vào cửa sổ hiện tại. Nếu phiên làm việc chứa nhiều cửa sổ, mở nó trong cửa sổ mới."
   },
   "EditSessionLabel": {
-    "message": "Chỉnh sửa phiên"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Thay thế bằng phiên hiện tại"
