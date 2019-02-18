@@ -18,7 +18,7 @@
     "message": "Renseignez le nom de session"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Sauvegarder une session"
   },
   "saveAllWindowsLabel": {
     "message": "Enregistrer toutes les fenêtres"
@@ -135,13 +135,13 @@
     "message": "Menu"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Fermer le menu"
   },
   "renameLabel": {
     "message": "Renommer"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Ouvrir une session"
   },
   "openInNewWindowLabel": {
     "message": "Ouvrir dans une nouvelle fenêtre"
@@ -162,7 +162,7 @@
     "message": "Ajouter les onglets à la fenêtre actuelle. Si la session contient plusieurs fenêtres, l’ouvrir dans une nouvelle fenêtre."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Modifier une session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Remplacer par la session en cours"
