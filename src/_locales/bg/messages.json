@@ -462,22 +462,22 @@
     "message": "Изтриване"
   },
   "keyboardShortcutsLabel": {
-    "message": "Клавиатурни комбинации"
+    "message": "Клавишни комбинации"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Задаване на клавиатурни комбинации."
+    "message": "Задаване на клавишни комбинации."
   },
   "typeShortcutMessage": {
-    "message": "Въвеждане на бърз клавиш"
+    "message": "Въведете бърз клавиш"
   },
   "typeLetterMessage": {
-    "message": "Въвеждане на буква"
+    "message": "Въведете буква"
   },
   "includeModifierKeysMessage": {
-    "message": "Включване на Ctrl или Alt"
+    "message": "Натиснете Ctrl или Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Включване на Command, Ctrl или Alt"
+    "message": "Натиснете Command, Ctrl или Alt"
   },
   "invalidLetterMessage": {
     "message": "Буквата не може да бъде използвана"
