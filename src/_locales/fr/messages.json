@@ -240,7 +240,7 @@
     "message": "Activer cette option améliorera les performances lors de l’ouverture des onglets."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "La favoricône de l’onglet chargé de manière différée n’est pas affichée."
+    "message": "La favicon de l’onglet chargé de manière différée n’est pas affichée."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Rétablir la position de la fenêtre"
