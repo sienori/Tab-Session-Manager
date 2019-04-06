@@ -49,6 +49,7 @@ const addListeners = () => {
   browser.tabs.onUpdated.addListener(handleTabUpdated);
   browser.tabs.onRemoved.addListener(handleTabRemoved);
   browser.tabs.onCreated.addListener(setUpdateTempTimer);
+  browser.tabs.onMoved.addListener(setUpdateTempTimer);
   browser.windows.onCreated.addListener(setUpdateTempTimer);
 
   browser.windows.onRemoved.addListener(autoSaveWhenWindowClose);
