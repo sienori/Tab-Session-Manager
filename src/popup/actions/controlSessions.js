@@ -109,6 +109,7 @@ export const deleteTab = (session, winId, tabId) => {
   session = clone(session);
   session.tabsNumber--;
   if (session.tabsNumber <= 0) return Promise.reject();
+  const deletedTabIndex = session.windows[winId][tabId].index;
 
   delete session.windows[winId][tabId];
   if (session.windowsInfo !== undefined) delete session.windowsInfo[winId][tabId];
@@ -124,7 +125,7 @@ export const deleteTab = (session, winId, tabId) => {
       if (window[tab].openerTabId == tabId) delete window[tab].openerTabId;
     }
     //indexを変更
-    if (window[tab].index > tabId) window[tab].index--;
+    if (window[tab].index > deletedTabIndex) window[tab].index--;
   }
 
   return sendSessionUpdateMessage(session);
