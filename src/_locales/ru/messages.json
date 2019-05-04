@@ -18,10 +18,10 @@
     "message": "Введите имя сессии"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Сохранить сессию"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Закрыть все окна"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Сохранить только текущее окно"
@@ -39,7 +39,7 @@
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Автоматическое сохранение"
   },
   "newestLabel": {
     "message": "Новые"
@@ -54,13 +54,13 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Поиск по названию сессии"
   },
   "search": {
-    "message": "Search"
+    "message": "Поиск"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Очистить поиск"
   },
   "open": {
     "message": "Открыть"
@@ -72,22 +72,22 @@
     "message": "Удалить эту сессию?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Сессия удалена."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Окно сессии удалено."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Вкладка сессии удалена."
   },
   "restoreSessionLabel": {
     "message": "Восстановить"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Не удалось удалить сессию."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Не удалось удалить окно сессии."
   },
   "failedDeleteSessionTabLabel": {
     "message": "Failed to delete session tab."
