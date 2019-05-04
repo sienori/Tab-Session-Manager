@@ -45,7 +45,7 @@
     "message": "Новые"
   },
   "oldestLabel": {
-    "message": "Старейшие"
+    "message": "Старые"
   },
   "aToZLabel": {
     "message": "А-Я"
@@ -90,13 +90,13 @@
     "message": "Не удалось удалить окно сессии."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Не удалось удалить вкладку сеанса."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Сессия сохранена."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Не удалось сохранить сессию."
   },
   "cancelLabel": {
     "message": "Отмена"
@@ -126,43 +126,43 @@
     "message": "Нет сессии."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Давайте сохраним сессию, нажав на нижнюю правую кнопку."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Нет результатов."
   },
   "menuLabel": {
     "message": "Меню"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Закрыть меню"
   },
   "renameLabel": {
     "message": "Переименовать"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Открыть сессию"
   },
   "openInNewWindowLabel": {
     "message": "Открыть в новом окне"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Открыть сессию в новом окне."
   },
   "openInCurrentWindowLabel": {
     "message": "Открыть в текущем окне"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Открыть сессию в текущем окне. Неактивные окна и все вкладки будут закрыты."
   },
   "addToCurrentWindowLabel": {
     "message": "Добавить в текущее окно"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Добавить вкладки в текущее окно. Если сессия содержит несколько окон, открыть её в новом окне."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Редактировать сессию"
   },
   "replaceCurrentSessionLabel": {
     "message": "Заменить текущей сессией"
@@ -186,16 +186,16 @@
     "message": "Как решить эту проблему"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Несколько всплывающих окон не могут быть открыты одновременно."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Автосохранение при закрытии окна"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Автосохранение при закрытии браузера"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Автосохранение - регулярное"
   },
   "settingsLabel": {
     "message": "Настройки"
@@ -204,7 +204,7 @@
     "message": "Сессии"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Горячие клавиши"
   },
   "informationLabel": {
     "message": "Информация"
@@ -234,13 +234,13 @@
     "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет активирована вручную.<br>При отключении возрастёт расход памяти после восстановления сессии."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Используйте свойство \"Неактивная вкладка\" для фоновой загрузки"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Включение этой опции улучшит производительность при открытии вкладок."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Иконка вкладки при фоновой загрузке не отображается."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Восстановить расположение окон"
@@ -252,7 +252,7 @@
     "message": "Восстанавливать предыдущую сессию при запуске"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Когда браузер запускается, восстановите сессию, которая была закрыта в последний раз."
   },
   "ifAutoSaveLabel": {
     "message": "Периодически сохранять сессию"
@@ -276,7 +276,7 @@
     "message": "Сохранять сессию при закрытии окна"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Сохраните сессию, которая включает только одно закрытое окно."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимальное число сохранений"
@@ -285,16 +285,16 @@
     "message": "Максимальное число сессий хранимых данным способом."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Сохранить сессию при выходе из браузера"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Сохраните сессию, которая включает несколько окон, которые были закрыты подряд."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Максимальное число сохранений"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Максимальное число хранимых сессий (данным способом)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Использовать заголовок страницы для автоматического сохранения имени сессии"
@@ -309,13 +309,13 @@
     "message": "Сохранить резервную копию"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "При запуске браузера, создать резервный файл сессий и сохранить его в папке \"Загрузки\"."
   },
   "backupFolderLabel": {
     "message": "Расположение"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Укажите папку для сохранения файла резервной копии. Место для сохранения ограничено папкой \"Загрузки\"."
   },
   "downloadFolderLabel": {
     "message": "Папка для загрузок"
@@ -342,7 +342,7 @@
     "message": "Поддержка Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Восстановить состояние дерева вкладок Tree Style Tab.<br>Когда эта опция включена, требуется несколько большее время для восстановления сессии."
   },
   "tstDelayLabel": {
     "message": "Задержка при восстановлении дерева (миллисекунды)"
@@ -360,7 +360,7 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Поведение кнопки открытия"
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
