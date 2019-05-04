@@ -21,7 +21,7 @@
     "message": "Сохранить сессию"
   },
   "saveAllWindowsLabel": {
-    "message": "Закрыть все окна"
+    "message": "Сохранить все окна"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Сохранить только текущее окно"
@@ -171,7 +171,7 @@
     "message": "Заменить текущим окном"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Добавить текущее окно"
   },
   "makeCopySessionLabel": {
     "message": "Создать копию сессии"
@@ -402,16 +402,16 @@
     "message": "Tab Session Manager был обновлен!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Подробнее"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Нажмите, чтобы просмотреть информацию о обновлении."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Включить режим отладки"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Если включен режим отладки, то журнал работы будет выводиться в отладчик."
   },
   "resetSettingsLabel": {
     "message": "Сброс настроек"
@@ -462,46 +462,46 @@
     "message": "Удалить"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Горячие клавиши"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Настройка сочетаний клавиш."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Введите сочетание клавиш"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Введите букву"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Нажмите клавишу Ctrl или Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Нажмите клавишу Command, Ctrl или Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Эта буква не может быть использована"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Это сочетание клавиш не может быть использовано"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Открыть всплывающее окно"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Сохранить сессию (только текущее окно)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Сохранить сессию (все окна)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Экспортировать все сессии"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Очистить"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Сброс"
   },
   "LicenseLabel": {
     "message": "Лицензия"
