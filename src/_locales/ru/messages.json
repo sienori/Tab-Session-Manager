@@ -360,28 +360,28 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Поведение кнопки открытия"
+    "message": "Поведение кнопки \"Открыть\""
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Выберите поведение кнопки \"Открыть\" по умолчанию."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Поведение кнопки \"Сохранить\""
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Выберите поведение кнопки \"Сохранить\" по умолчанию."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Показать панель поиска"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Добавить функцию для поиска по имени сессии."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Размер"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Укажите размер всплывающего окна на панели инструментов."
   },
   "widthLabel": {
     "message": "Ширина"
@@ -393,13 +393,13 @@
     "message": "Другое"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Показывать страницу опций при обновлении"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Отображать страницу параметров при обновлении Tab Session Manager. Вы можете быстро узнать историю изменений."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager был обновлен!"
   },
   "seeMoreLabel": {
     "message": "See more"
