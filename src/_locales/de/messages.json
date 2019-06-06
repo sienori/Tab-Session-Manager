@@ -18,7 +18,7 @@
     "message": "Sitzungsname eingeben"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Eine Sitzung speichern"
   },
   "saveAllWindowsLabel": {
     "message": "Alle Fenstern speichern"
@@ -135,13 +135,13 @@
     "message": "Menü"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Dieses Menü schließen"
   },
   "renameLabel": {
     "message": "Umbenennen"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Öffne eine Sitzung"
   },
   "openInNewWindowLabel": {
     "message": "In neuem Fenster öffnen"
@@ -162,7 +162,7 @@
     "message": "Fügt Tabs zur aktuellen Fenster hinzu. Wenn die Sitzung mehrere Fenster beinhaltet, wird es in einem neuen Fenster geöffnet."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Bearbeite eine Sitzung"
   },
   "replaceCurrentSessionLabel": {
     "message": "Mit aktueller Sitzung ersetzen"
