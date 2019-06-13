@@ -486,7 +486,7 @@
     "message": "El atajo no puede ser usado"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Abrir ventana emergente de toolbar"
   },
   "saveCurrentWindowDescription": {
     "message": "Guardar sesión (sólo ventana actual)"
