@@ -4,14 +4,11 @@
   overflow: hidden;
   min-height: 1.5em;
   width: 100%;
-  button {
-    width: 100%;
-  }
+
   .sessionName {
     color: #444;
     font-weight: bold;
     font-size: 16px;
-    display: block;
     text-overflow: ellipsis;
     white-space: normal;
     overflow: hidden;
@@ -22,7 +19,6 @@
   }
 
   button {
-    display: block;
     background-color: transparent;
     border: none;
     cursor: pointer;

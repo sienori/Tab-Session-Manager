@@ -144,6 +144,9 @@
   "renameLabel": {
     "message": "Rename"
   },
+  "renameSessionLabel": {
+    "message": "Rename session"
+  },
   "OpenSessionLabel": {
     "message": "Open a session"
   },

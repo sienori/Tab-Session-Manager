@@ -5,7 +5,7 @@
     width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     overflow: hidden;
     min-height: 22px;
 
@@ -24,6 +24,13 @@
       margin-right: 2px;
       overflow: hidden;
 
+      .tagIcon {
+        width: 11px;
+        margin-right: 3px;
+        fill: var(--sub-text);
+        flex-shrink: 0;
+      }
+
       span {
         display: block;
         text-overflow: ellipsis;
@@ -39,12 +46,12 @@
         justify-content: center;
         box-sizing: border-box;
         border: var(--line) 1px solid;
+        border-radius: 2px;
         height: 15px;
         width: 15px;
         padding: 0;
-        margin-right: -15px;
-        margin-left: 0px;
-        opacity: 0;
+        margin-left: 3px;
+        flex-shrink: 0;
         cursor: pointer;
         transition: all 100ms ease 0ms;
         svg {
@@ -58,9 +65,6 @@
         &:hover,
         &:focus {
           border: var(--confirm) 1px solid;
-          border-radius: 2px;
-          opacity: 1;
-
           transition: all 100ms ease 0ms;
           svg {
             fill: var(--confirm);
@@ -68,72 +72,23 @@
           }
         }
       }
-
-      &:hover {
-        span {
-          width: calc(100% - 15px);
-          transition: all 100ms ease 0ms;
-        }
-        .removeTagButton {
-          margin-right: 0px;
-          margin-left: -15px;
-          opacity: 1;
-          transition: all 100ms ease 0ms;
-        }
-      }
     }
 
-    .addTagInputContainer {
-      display: flex;
-      flex-direction: row;
-      .showInputButton {
-        width: 19px;
-        height: 19px;
-        padding: 0px;
-        margin-right: 1px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        background-color: var(--main-bg);
-        border: var(--button) solid 1px;
-        border-radius: 2px;
-        cursor: pointer;
-        transition: border-color 100ms;
-        svg {
-          fill: var(--sub-text);
-          height: 9px;
-          transition: fill 50ms;
-        }
-
-        &:hover {
-          border-color: var(--highlight);
-          svg {
-            fill: var(--highlight);
-          }
-        }
+    .addTagButton {
+      svg {
+        width: 11px;
+        margin-right: 3px;
+        fill: var(--highlight);
       }
+      color: var(--highlight);
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      word-break: break-all;
+      transition: all 100ms;
 
-      &.isOpen {
-        width: 100%;
-        .addTagInput {
-          width: 100%;
-          visibility: visible;
-          margin-right: 1px;
-        }
-        .showInputButton svg {
-          transform: rotate(45deg);
-          transition: transform 50ms;
-        }
-      }
-      &.isClose {
-        .addTagInput .inputForm {
-          padding: 0px;
-          visibility: hidden;
-        }
-        .showInputButton svg {
-          transition: transform 50ms;
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

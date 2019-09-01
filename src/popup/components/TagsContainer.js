@@ -2,27 +2,27 @@ import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import { sendTagRemoveMessage, sendTagAddMessage } from "../actions/controlSessions";
 import generateTagLabel from "../actions/generateTagLabel";
-import InputForm from "./InputForm";
+import TextInputModalContent from "./TextInputModalContent";
 import PlusIcon from "../icons/plus.svg";
+import TagIcon from "../icons/tag.svg";
 import "../styles/TagsContainer.scss";
 
 export default class TagsContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isOpenedInput: false
-    };
   }
 
   addTag = tagName => {
-    this.toggleInput();
     if (tagName.trim() === "") return;
     sendTagAddMessage(this.props.session.id, tagName);
   };
 
-  toggleInput = () => {
-    const isOpenedInput = !this.state.isOpenedInput;
-    this.setState({ isOpenedInput: isOpenedInput });
+  handleAddTagClick = () => {
+    const title = browser.i18n.getMessage("addTagLabel");
+    const content = (
+      <TextInputModalContent onSave={this.addTag} closeModal={this.props.closeModal} />
+    );
+    this.props.openModal(title, content);
   };
 
   componentWillReceiveProps(nextProps) {
@@ -33,29 +33,9 @@ export default class TagsContainer extends Component {
     const { session } = this.props;
     return (
       <div className="tagsContainer">
-        <div
-          className={`addTagInputContainer  ${this.state.isOpenedInput ? "isOpen" : "isClose"}`}
-          title={browser.i18n.getMessage("addTagLabel")}
-        >
-          <button
-            className="showInputButton"
-            onClick={this.toggleInput}
-            title={browser.i18n.getMessage("addTagLabel")}
-          >
-            <PlusIcon />
-          </button>
-          {this.state.isOpenedInput && (
-            <div className="addTagInput">
-              <InputForm
-                onSubmit={this.addTag}
-                isFocus={this.state.isOpenedInput}
-                placeholder={browser.i18n.getMessage("addTagLabel")}
-              />
-            </div>
-          )}
-        </div>
         {session.tag.map((tag, index) => (
           <div className="tag" key={index}>
+            <TagIcon className="tagIcon" />
             <span>{generateTagLabel(tag)}</span>
             <button
               className="removeTagButton"
@@ -68,6 +48,10 @@ export default class TagsContainer extends Component {
             </button>
           </div>
         ))}
+        <button className="addTagButton" onClick={this.handleAddTagClick}>
+          <TagIcon />
+          <span>{browser.i18n.getMessage("addTagLabel")}</span>
+        </button>
       </div>
     );
   }

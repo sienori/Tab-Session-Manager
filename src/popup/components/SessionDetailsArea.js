@@ -46,7 +46,7 @@ export default class SessionDetailsArea extends Component {
   };
 
   render() {
-    const { session, removeWindow, removeTab } = this.props;
+    const { session, removeWindow, removeTab, openModal, closeModal } = this.props;
 
     if (!session.id)
       return (
@@ -61,7 +61,7 @@ export default class SessionDetailsArea extends Component {
       <div id="sessionDetailArea">
         <div className="sessionHeader">
           <div className="lineContainer">
-            <NameContainer session={session} />
+            <NameContainer session={session} openModal={openModal} closeModal={closeModal} />
             <button
               className="menuButton"
               onClick={this.handleMenuClick}
@@ -71,7 +71,7 @@ export default class SessionDetailsArea extends Component {
             </button>
           </div>
           <div className="lineContainer">
-            <TagsContainer session={session} />
+            <TagsContainer session={session} openModal={openModal} closeModal={closeModal} />
             <span className="date">{moment(session.date).format(getSettings("dateFormat"))}</span>
           </div>
 

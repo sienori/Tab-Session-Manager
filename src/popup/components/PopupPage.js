@@ -24,6 +24,7 @@ import SessionDetailsArea from "./SessionDetailsArea";
 import Notification from "./Notification";
 import SaveArea from "./SaveArea";
 import Menu from "./Menu";
+import Modal from "./Modal";
 import Error from "./Error";
 import "../styles/PopupPage.scss";
 
@@ -52,6 +53,11 @@ export default class PopupPage extends Component {
         x: 0,
         y: 0,
         items: <div />
+      },
+      modal: {
+        isOpen: false,
+        title: "Title",
+        content: <div />
       },
       error: {
         isError: false,
@@ -293,6 +299,27 @@ export default class PopupPage extends Component {
     this.lastFocusedElement.focus();
   };
 
+  openModal = (title, contentComponent) => {
+    log.info(logDir, "openModal", title);
+    this.lastFocusedElement = document.activeElement;
+    this.setState({
+      modal: {
+        isOpen: true,
+        title: title,
+        content: contentComponent
+      }
+    });
+  };
+
+  closeModal = () => {
+    this.setState({
+      modal: {
+        isOpen: false
+      }
+    });
+    this.lastFocusedElement.focus();
+  };
+
   componentDidUpdate() {
     if (this.state.error.isError) return;
     if (this.state.sessions === undefined || this.state.sessions === null) {
@@ -339,10 +366,13 @@ export default class PopupPage extends Component {
               removeWindow={this.removeWindow}
               removeTab={this.removeTab}
               openMenu={this.openMenu}
+              openModal={this.openModal}
+              closeModal={this.closeModal}
             />
           </div>
         </div>
         <Menu menu={this.state.menu} />
+        <Modal modal={this.state.modal} closeModal={this.closeModal} />
       </div>
     );
   }

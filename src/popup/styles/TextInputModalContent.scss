@@ -1,0 +1,43 @@
+.textInputModalContent {
+  position: relative;
+  input {
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    border: var(--button) solid 1px;
+    border-radius: 2px;
+    outline: none;
+    transition: border-color 150ms ease;
+  }
+  input:focus {
+    border-color: var(--highlight);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: end;
+
+    button {
+      background-color: var(--main-bg);
+      color: var(--main-text);
+      border: var(--button) solid 1px;
+      border-radius: 2px;
+      padding: 5px;
+      margin-left: 10px;
+      transition: border-color 150ms ease;
+      cursor: pointer;
+
+      &:hover {
+        border-color: var(--highlight);
+      }
+    }
+    .saveButton {
+      background-color: var(--highlight);
+      color: var(--main-bg);
+      border-color: var(--highlight);
+    }
+  }
+}
