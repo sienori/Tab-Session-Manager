@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
 import moment from "moment";
 import { getSettings } from "src/settings/settings";
@@ -45,6 +46,18 @@ export default class SessionDetailsArea extends Component {
     this.props.removeSession(this.props.session.id);
   };
 
+  focus = () => {
+    const sessionDetailArea = ReactDOM.findDOMNode(this.refs.sessionDetailArea);
+    sessionDetailArea.querySelector("button").focus();
+  };
+
+  componentDidUpdate(prevProps) {
+    if (!this.props.session.id) return;
+    if (this.props.session.id !== prevProps.session.id) {
+      this.focus();
+    }
+  }
+
   render() {
     const { session, removeWindow, removeTab, openModal, closeModal } = this.props;
 
@@ -58,7 +71,7 @@ export default class SessionDetailsArea extends Component {
       );
 
     return (
-      <div id="sessionDetailArea">
+      <div id="sessionDetailArea" ref="sessionDetailArea">
         <div className="sessionHeader">
           <div className="lineContainer">
             <NameContainer session={session} openModal={openModal} closeModal={closeModal} />
