@@ -141,7 +141,7 @@ export default props => {
       {Object.keys(session.windows).map(windowId => (
         <WindowContainer
           tabs={session.windows[windowId]}
-          windowTitle={session.windowsInfo[windowId].title || windowLabel}
+          windowTitle={session.windowsInfo ? session.windowsInfo[windowId].title : windowLabel}
           windowId={windowId}
           sessionId={session.id}
           windowsNumber={session.windowsNumber}
