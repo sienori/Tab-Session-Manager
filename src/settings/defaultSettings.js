@@ -249,14 +249,14 @@ export default [
         type: "none",
         childElements: [
           {
-            id: "popupWidth",
+            id: "popupWidthV2",
             title: "widthLabel",
             captions: [""],
             type: "number",
-            min: 200,
+            min: 600,
             max: 800,
-            placeholder: 350,
-            default: 350
+            placeholder: 800,
+            default: 800
           },
           {
             id: "popupHeight",

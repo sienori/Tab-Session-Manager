@@ -73,7 +73,7 @@ export default class PopupPage extends Component {
     overWriteLogLevel();
     updateLogLevel();
     log.info(logDir, "init()");
-    document.body.style.width = `${getSettings("popupWidth")}px`;
+    document.body.style.width = `${getSettings("popupWidthV2")}px`;
     document.body.style.height = `${getSettings("popupHeight")}px`;
     this.setState({
       sortValue: getSettings("sortValue") || "newest",
