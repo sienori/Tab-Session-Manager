@@ -254,11 +254,12 @@ export default class PopupPage extends Component {
     });
   };
 
-  restoreRemovedSession = () => {
+  restoreRemovedSession = async () => {
     log.info(logDir, "restoreRemovedSession()");
     const removedSession = this.state.removedSession;
     if (removedSession.id == null) return;
-    sendSessionUpdateMessage(removedSession);
+    await sendSessionUpdateMessage(removedSession);
+    this.selectSession(removedSession.id);
     this.setState({
       removedSession: {}
     });
