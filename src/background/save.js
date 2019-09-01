@@ -86,6 +86,7 @@ export async function saveSession(session, isSendResponce = true) {
   try {
     await Sessions.put(session);
     if (isSendResponce) sendMessage("saveSession", { session: session });
+    return session;
   } catch (e) {
     log.error(logDir, "saveSession()", e);
     return Promise.reject(e);

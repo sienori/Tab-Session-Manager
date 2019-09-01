@@ -177,7 +177,8 @@ export default class PopupPage extends Component {
   saveSession = async (name, property) => {
     log.info(logDir, "saveSession()", name, property);
     try {
-      await sendSessionSaveMessage(name, property);
+      const savedSession = await sendSessionSaveMessage(name, property);
+      this.selectSession(savedSession.id);
       this.openNotification({
         message: browser.i18n.getMessage("sessionSavedLabel"),
         type: "success",
