@@ -19,7 +19,7 @@ export default class Notification extends Component {
   openNotification = notification => {
     this.setState({ isOpen: true, notification: notification });
 
-    const duration = notification.duration || 5000;
+    const duration = notification.duration || 10000;
     this.timer = setTimeout(() => {
       this.closeNotification();
     }, duration);
