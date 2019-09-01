@@ -1,6 +1,4 @@
 .sessionItem {
-  display: flex;
-  flex-direction: column;
   border: none;
   border-bottom: 1px solid var(--line);
   padding: 8px 5px;
@@ -9,6 +7,7 @@
   cursor: pointer;
 
   .name {
+    display: block;
     color: var(--main-text);
     overflow: hidden;
     text-overflow: ellipsis;
