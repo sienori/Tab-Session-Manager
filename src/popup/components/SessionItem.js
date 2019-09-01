@@ -16,7 +16,7 @@ export default class Session extends Component {
     const { session, isSelected, order, searchWord, handleSessionSelect } = this.props;
 
     return (
-      <button
+      <div
         className={`sessionItem ${isSelected ? "isSelected" : ""}`}
         onClick={() => handleSessionSelect(session.id)}
         style={{ order: order }}
@@ -40,7 +40,7 @@ export default class Session extends Component {
           </span>
           <span className="date">{moment(session.date).format(getSettings("dateFormat"))}</span>
         </div>
-      </button>
+      </div>
     );
   }
 }
