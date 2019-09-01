@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import log from "loglevel";
-import { initSettings, getSettings, setSettings } from "src/settings/settings";
+import {
+  initSettings,
+  getSettings,
+  setSettings,
+  handleSettingsChange
+} from "src/settings/settings";
 import { updateLogLevel, overWriteLogLevel } from "src/common/log";
 import {
   getSessions,
@@ -15,6 +20,7 @@ import openUrl from "../actions/openUrl";
 import Header from "./Header";
 import OptionsArea from "./OptionsArea";
 import SessionsArea from "./SessionsArea";
+import SessionDetailsArea from "./SessionDetailsArea";
 import Notification from "./Notification";
 import SaveArea from "./SaveArea";
 import Menu from "./Menu";
@@ -29,6 +35,7 @@ export default class PopupPage extends Component {
     this.state = {
       sessions: [],
       isInitSessions: false,
+      selectedSession: {},
       removedSession: {},
       filterValue: "_displayAll",
       sortValue: "newest",
@@ -77,7 +84,12 @@ export default class PopupPage extends Component {
       isInitSessions: true,
       filterValue: getSettings("filterValue") || "_displayAll"
     });
+
+    const selectedSessionId = getSettings("selectedSessionId");
+    if (selectedSessionId) this.selectSession(selectedSessionId);
+
     browser.runtime.onMessage.addListener(this.changeSessions);
+    browser.storage.onChanged.addListener(handleSettingsChange);
 
     if (getSettings("isShowUpdated")) {
       this.openNotification({
@@ -93,31 +105,43 @@ export default class PopupPage extends Component {
 
   changeSessions = async request => {
     log.info(logDir, "changeSessions()", request);
-    let sessions, newSession, index;
+    let sessions;
+    let selectedSession = this.state.selectedSession;
+
     switch (request.message) {
-      case "saveSession":
-        newSession = request.session;
+      case "saveSession": {
+        const newSession = request.session;
         sessions = this.state.sessions.concat(newSession);
         break;
-      case "updateSession":
-        newSession = request.session;
+      }
+      case "updateSession": {
+        const newSession = request.session;
+        if (newSession.id === selectedSession.id) selectedSession = newSession;
+
         sessions = this.state.sessions;
-        index = sessions.findIndex(session => session.id === newSession.id);
+        const index = sessions.findIndex(session => session.id === newSession.id);
         if (index === -1) sessions = this.state.sessions.concat(newSession);
         else sessions.splice(index, 1, newSession);
         break;
-      case "deleteSession":
+      }
+      case "deleteSession": {
+        const deletedSessionId = request.id;
+        if (deletedSessionId === selectedSession.id) selectedSession = {};
+
         sessions = this.state.sessions;
-        index = sessions.findIndex(session => session.id === request.id);
+        const index = sessions.findIndex(session => session.id === deletedSessionId);
         if (index === -1) return;
         sessions.splice(index, 1);
         break;
-      case "deleteAll":
+      }
+      case "deleteAll": {
         const keys = ["id", "name", "date", "tag", "tabsNumber", "windowsNumber"];
         sessions = await getSessions(null, keys);
+        selectedSession = {};
         break;
+      }
     }
-    this.setState({ sessions: sessions });
+    this.setState({ sessions: sessions, selectedSession: selectedSession });
   };
 
   changeFilterValue = value => {
@@ -137,13 +161,11 @@ export default class PopupPage extends Component {
     this.setState({ searchWord: searchWord.trim() });
   };
 
-  getSessionDetail = async id => {
-    log.info(logDir, "getSessionDetail()", id);
-    const session = await getSessions(id);
-    const sessions = this.state.sessions;
-    const index = sessions.findIndex(session => session.id === id);
-    sessions.splice(index, 1, session);
-    this.setState({ sessions: sessions });
+  selectSession = async id => {
+    log.info(logDir, "selectSession()", id);
+    const selectedSession = await getSessions(id);
+    this.setState({ selectedSession: selectedSession || {} });
+    setSettings("selectedSessionId", id);
   };
 
   saveSession = async (name, property) => {
@@ -283,32 +305,43 @@ export default class PopupPage extends Component {
   render() {
     return (
       <div id="popupPage" onClick={this.state.menu.isOpen ? this.closeMenu : null}>
-        <Header />
-        <OptionsArea
-          sessions={this.state.sessions || []}
-          filterValue={this.state.filterValue}
-          sortValue={this.state.sortValue}
-          isShowSearchBar={this.state.isShowSearchBar}
-          changeSearchWord={this.changeSearchWord}
-          changeFilter={this.changeFilterValue}
-          changeSort={this.changeSortValue}
-        />
-        <Error error={this.state.error} />
-        <SessionsArea
-          sessions={this.state.sessions || []}
-          filterValue={this.state.filterValue}
-          sortValue={this.state.sortValue}
-          searchWord={this.state.searchWord}
-          removeSession={this.removeSession}
-          removeWindow={this.removeWindow}
-          removeTab={this.removeTab}
-          getSessionDetail={this.getSessionDetail}
-          openMenu={this.openMenu}
-          isInitSessions={this.state.isInitSessions}
-          error={this.state.error}
-        />
         <Notification notification={this.state.notification} />
-        <SaveArea openMenu={this.openMenu} saveSession={this.saveSession} />
+        <Header />
+        <div id="contents">
+          <div className="column sidebar">
+            <OptionsArea
+              sessions={this.state.sessions || []}
+              filterValue={this.state.filterValue}
+              sortValue={this.state.sortValue}
+              isShowSearchBar={this.state.isShowSearchBar}
+              changeSearchWord={this.changeSearchWord}
+              changeFilter={this.changeFilterValue}
+              changeSort={this.changeSortValue}
+            />
+            <Error error={this.state.error} />
+            <SessionsArea
+              sessions={this.state.sessions || []}
+              selectedSessionId={this.state.selectedSession.id || ""}
+              filterValue={this.state.filterValue}
+              sortValue={this.state.sortValue}
+              searchWord={this.state.searchWord}
+              selectSession={this.selectSession}
+              openMenu={this.openMenu}
+              isInitSessions={this.state.isInitSessions}
+              error={this.state.error}
+            />
+            <SaveArea openMenu={this.openMenu} saveSession={this.saveSession} />
+          </div>
+          <div className="column">
+            <SessionDetailsArea
+              session={this.state.selectedSession}
+              removeSession={this.removeSession}
+              removeWindow={this.removeWindow}
+              removeTab={this.removeTab}
+              openMenu={this.openMenu}
+            />
+          </div>
+        </div>
         <Menu menu={this.state.menu} />
       </div>
     );

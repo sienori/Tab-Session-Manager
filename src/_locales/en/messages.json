@@ -132,6 +132,9 @@
   "noResultLabel": {
     "message": "No matching results."
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "Menu"
   },

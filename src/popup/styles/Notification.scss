@@ -1,11 +1,13 @@
 #notificationArea {
   position: relative;
+  width: 100%;
   #notification {
     display: flex;
     position: absolute;
+    width: 300px;
     right: 0;
     left: 0;
-    bottom: 0;
+    margin: auto;
     flex-direction: row;
     flex-shrink: 0;
     justify-content: space-between;
@@ -18,12 +20,12 @@
     transition-duration: 200ms;
 
     &.isOpen {
-      transform-origin: bottom;
+      transform-origin: top;
       opacity: 1;
       transform: scaleY(1);
     }
     &.isClose {
-      transform-origin: bottom;
+      transform-origin: top;
       opacity: 0;
       transform: scaleY(0);
     }

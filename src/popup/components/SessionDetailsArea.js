@@ -1,0 +1,97 @@
+import React, { Component } from "react";
+import browser from "webextension-polyfill";
+import moment from "moment";
+import { getSettings } from "src/settings/settings";
+import { sendOpenMessage } from "../actions/controlSessions";
+import generateWindowsInfo from "../actions/generateWindowsInfo";
+import NameContainer from "./NameContainer";
+import TagsContainer from "./TagsContainer";
+import DetailsContainer from "./DetailsContainer";
+import SessionMenuItems from "./SessionMenuItems";
+import MenuIcon from "../icons/menu.svg";
+import "../styles/sessionDetailsArea.scss";
+
+const getOpenButtonTitle = () => {
+  const defaultBehavior = getSettings("openButtonBehavior");
+  switch (defaultBehavior) {
+    case "openInNewWindow":
+      return browser.i18n.getMessage("openInNewWindowLabel");
+    case "openInCurrentWindow":
+      return browser.i18n.getMessage("openInCurrentWindowLabel");
+    case "addToCurrentWindow":
+      return browser.i18n.getMessage("addToCurrentWindowLabel");
+    default:
+      return "";
+  }
+};
+
+export default class SessionDetailsArea extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  handleMenuClick = e => {
+    const rect = e.target.getBoundingClientRect();
+    const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
+    this.props.openMenu(x, y, <SessionMenuItems session={this.props.session} />);
+  };
+
+  handleOpenClick = () => {
+    const defaultBehavior = getSettings("openButtonBehavior");
+    sendOpenMessage(this.props.session.id, defaultBehavior);
+  };
+
+  handleRemoveClick = () => {
+    this.props.removeSession(this.props.session.id);
+  };
+
+  render() {
+    const { session, removeWindow, removeTab } = this.props;
+
+    if (!session.id)
+      return (
+        <div id="sessionDetailArea">
+          <div className="noSession">
+            <p>{browser.i18n.getMessage("noSessionSelectedLabel")}</p>
+          </div>
+        </div>
+      );
+
+    return (
+      <div id="sessionDetailArea">
+        <div className="sessionHeader">
+          <div className="lineContainer">
+            <NameContainer session={session} />
+            <button
+              className="menuButton"
+              onClick={this.handleMenuClick}
+              title={browser.i18n.getMessage("menuLabel")}
+            >
+              <MenuIcon />
+            </button>
+          </div>
+          <div className="lineContainer">
+            <TagsContainer session={session} />
+            <span className="date">{moment(session.date).format(getSettings("dateFormat"))}</span>
+          </div>
+
+          <div className="lineContainer">
+            <span className="windowsInfo">
+              {generateWindowsInfo(session.windowsNumber, session.tabsNumber)}
+            </span>
+
+            <div className="buttonsContainer">
+              <button className="open" onClick={this.handleOpenClick} title={getOpenButtonTitle()}>
+                <span>{browser.i18n.getMessage("open")}</span>
+              </button>
+              <button className="remove" onClick={this.handleRemoveClick}>
+                <span>{browser.i18n.getMessage("remove")}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <DetailsContainer session={session} removeWindow={removeWindow} removeTab={removeTab} />
+      </div>
+    );
+  }
+}

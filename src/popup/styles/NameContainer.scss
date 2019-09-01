@@ -2,19 +2,35 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  min-height: 20px;
+  min-height: 1.5em;
   width: 100%;
   button {
     width: 100%;
   }
   .sessionName {
-    color: var(--main-text);
+    color: #444;
+    font-weight: bold;
+    font-size: 16px;
     display: block;
     text-overflow: ellipsis;
     white-space: normal;
     overflow: hidden;
   }
+
   &.isTruncate .sessionName {
     white-space: nowrap;
+  }
+
+  button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    text-align: left;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

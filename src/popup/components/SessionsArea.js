@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
-import Session from "./Session";
+import SessionItem from "./SessionItem";
+//import Session from "./Session";
 import "../styles/SessionsArea.scss";
 
 const matchesFilter = (tags, filterValue) => {
@@ -78,6 +79,11 @@ export default class SessionsArea extends Component {
     sessionsArea.scrollTo(0, 0);
   };
 
+  handleSessionSelect = id => {
+    //TODO フォーカス移動
+    this.props.selectSession(id);
+  };
+
   componentDidUpdate() {
     const { filterValue, sortValue } = this.props;
     const { prevFilterValue, prevSortValue } = this;
@@ -90,14 +96,10 @@ export default class SessionsArea extends Component {
   render() {
     const {
       sessions,
+      selectedSessionId,
       filterValue,
       sortValue,
       searchWord,
-      removeSession,
-      removeWindow,
-      removeTab,
-      getSessionDetail,
-      openMenu,
       isInitSessions,
       error
     } = this.props;
@@ -119,15 +121,12 @@ export default class SessionsArea extends Component {
           session =>
             matchesFilter(session.tag, filterValue) &&
             matchesSearch(session.name, searchWord) && (
-              <Session
+              <SessionItem
                 session={session}
+                isSelected={selectedSessionId === session.id}
                 order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
                 searchWord={searchWord}
-                removeSession={removeSession}
-                removeWindow={removeWindow}
-                removeTab={removeTab}
-                getSessionDetail={getSessionDetail}
-                openMenu={openMenu}
+                handleSessionSelect={this.handleSessionSelect}
                 key={session.id}
               />
             )

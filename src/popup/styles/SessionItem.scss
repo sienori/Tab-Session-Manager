@@ -1,0 +1,73 @@
+.sessionItem {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 5px;
+  text-align: left;
+  background-color: var(--main-bg);
+  cursor: pointer;
+
+  .name {
+    color: var(--main-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+
+    &.isTruncate {
+      white-space: nowrap;
+    }
+  }
+
+  .lineContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .windowsInfo,
+    .date {
+      color: var(--sub-text);
+      overflow: hidden;
+      word-break: break-all;
+    }
+    .windowsInfo {
+      flex-shrink: 0;
+    }
+  }
+
+  .tagsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    .tag {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 30px;
+      font-size: 11px;
+      height: 14px;
+      color: var(--sub-text);
+      background-color: var(--line);
+      border-radius: 2px;
+      padding: 3px 5px;
+      margin-bottom: 2px;
+      margin-right: 2px;
+      overflow: hidden;
+    }
+  }
+
+  &.isSelected {
+    background-color: var(--highlight-bg);
+  }
+
+  &:not(.isSelected):hover {
+    background-color: var(--line);
+  }
+}

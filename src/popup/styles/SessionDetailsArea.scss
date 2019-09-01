@@ -1,0 +1,86 @@
+#sessionDetailArea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+
+  .sessionHeader {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 5px;
+    .lineContainer {
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.5em;
+    }
+    .sessionName {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5em;
+    }
+
+    .menuButton {
+      flex-shrink: 0;
+      padding: 0;
+      padding-left: 10px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: opacity 200ms;
+      svg {
+        width: 5px;
+        height: 16px;
+        fill: var(--sub-text);
+        transition: fill 100ms;
+      }
+      &:hover svg {
+        fill: var(--highlight);
+      }
+    }
+
+    .date {
+      flex-shrink: 0;
+      color: var(--sub-text);
+      overflow: hidden;
+      word-break: break-all;
+      display: inline-block;
+    }
+
+    .windowsInfo {
+      color: var(--sub-text);
+    }
+
+    .buttonsContainer {
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+
+      button {
+        color: var(--highlight);
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        word-break: break-all;
+        transition: all 100ms;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .remove {
+        margin-left: 8px;
+        &:hover {
+          color: var(--confirm);
+        }
+      }
+    }
+  }
+
+  .noSession {
+    p {
+      color: var(--sub-text);
+      margin: 0;
+    }
+  }
+}
