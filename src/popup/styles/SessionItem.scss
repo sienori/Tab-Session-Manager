@@ -3,7 +3,7 @@
   flex-direction: column;
   border: none;
   border-bottom: 1px solid var(--line);
-  padding: 5px;
+  padding: 8px 5px;
   text-align: left;
   background-color: var(--main-bg);
   cursor: pointer;
@@ -25,6 +25,7 @@
 
     .windowsInfo,
     .date {
+      font-size: 11px;
       color: var(--sub-text);
       overflow: hidden;
       word-break: break-all;
@@ -47,6 +48,11 @@
     padding: 0;
     list-style-type: none;
     .tag {
+      svg {
+        width: 11px;
+        margin-right: 3px;
+        fill: var(--sub-text);
+      }
       display: flex;
       align-items: center;
       justify-content: space-between;
