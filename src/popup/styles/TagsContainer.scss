@@ -21,7 +21,7 @@
       border-radius: 2px;
       padding: 3px 5px;
       margin-bottom: 2px;
-      margin-right: 2px;
+      margin-right: 5px;
       overflow: hidden;
 
       .tagIcon {
@@ -81,6 +81,7 @@
         fill: var(--highlight);
       }
       color: var(--highlight);
+      padding: 0;
       border: none;
       background-color: transparent;
       cursor: pointer;
