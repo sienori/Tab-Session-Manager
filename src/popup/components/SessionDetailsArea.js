@@ -10,6 +10,8 @@ import TagsContainer from "./TagsContainer";
 import DetailsContainer from "./DetailsContainer";
 import SessionMenuItems from "./SessionMenuItems";
 import MenuIcon from "../icons/menu.svg";
+import NewWindowIcon from "../icons/newWindow.svg";
+import DeleteIcon from "../icons/delete.svg";
 import "../styles/sessionDetailsArea.scss";
 
 const getOpenButtonTitle = () => {
@@ -95,9 +97,11 @@ export default class SessionDetailsArea extends Component {
 
             <div className="buttonsContainer">
               <button className="open" onClick={this.handleOpenClick} title={getOpenButtonTitle()}>
+                <NewWindowIcon />
                 <span>{browser.i18n.getMessage("open")}</span>
               </button>
               <button className="remove" onClick={this.handleRemoveClick}>
+                <DeleteIcon />
                 <span>{browser.i18n.getMessage("remove")}</span>
               </button>
             </div>

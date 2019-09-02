@@ -58,22 +58,33 @@
       flex-shrink: 1;
 
       button {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-left: 15px;
         color: var(--highlight);
         border: none;
         background-color: transparent;
         cursor: pointer;
         word-break: break-all;
         transition: all 100ms;
+        svg {
+          width: 13px;
+          margin-right: 2px;
+          fill: var(--highlight);
+        }
 
         &:hover {
           text-decoration: underline;
         }
-      }
 
-      .remove {
-        margin-left: 8px;
-        &:hover {
-          color: var(--confirm);
+        &.remove {
+          &:hover {
+            color: var(--confirm);
+            svg {
+              fill: var(--confirm);
+            }
+          }
         }
       }
     }
