@@ -6,10 +6,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 
   #modal {
     position: absolute;
-    z-index: 1;
     background-color: var(--main-bg);
     color: var(--main-text);
     border: solid 1px var(--line);
