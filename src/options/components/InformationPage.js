@@ -13,6 +13,7 @@ export default props => {
   const paypalLink = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager ${
     isChrome ? "for Chrome " : ""
   }- Donation`;
+  const patreonLink = "https://www.patreon.com/sienori";
   const email = `sienori.firefox+tsm${isChrome ? "fc" : ""}@gmail.com`;
 
   return (
@@ -46,8 +47,24 @@ export default props => {
         captions={[""]}
         type={"none"}
         extraCaption={
+          <a href={patreonLink} target="_blank">
+            <img
+              src="https://c5.patreon.com/external/logo/become_a_patron_button.png"
+              alt="Patreon"
+            />
+          </a>
+        }
+      />
+      <OptionsContainer
+        title={""}
+        captions={[""]}
+        type={"none"}
+        extraCaption={
           <a href={paypalLink} target="_blank">
-            <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate" />
+            <img
+              src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png"
+              alt="Paypal"
+            />
           </a>
         }
       />
