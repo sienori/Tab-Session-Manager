@@ -9,6 +9,9 @@
   "donateWithPaypalLabel": {
     "message": "Donate with PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
   "saveLabel": {
     "message": "Save"
   },

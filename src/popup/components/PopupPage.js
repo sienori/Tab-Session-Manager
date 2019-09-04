@@ -337,7 +337,7 @@ export default class PopupPage extends Component {
     return (
       <div id="popupPage" onClick={this.state.menu.isOpen ? this.closeMenu : null}>
         <Notification notification={this.state.notification} />
-        <Header />
+        <Header openModal={this.openModal} />
         <div id="contents">
           <div className="column sidebar">
             <OptionsArea
