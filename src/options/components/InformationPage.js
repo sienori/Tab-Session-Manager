@@ -30,6 +30,13 @@ export default props => {
             <a href="https://github.com/sienori/Tab-Session-Manager/releases" target="_blank">
               Version {extensionVersion}
             </a>
+            <span>　</span>
+            <a
+              href="https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md"
+              target="_blank"
+            >
+              {browser.i18n.getMessage("backersLabel")}
+            </a>
           </p>
         }
       />

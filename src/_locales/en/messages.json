@@ -516,6 +516,9 @@
   "reset": {
     "message": "Reset"
   },
+  "backersLabel": {
+    "message": "Backers"
+  },
   "LicenseLabel": {
     "message": "License"
   },
