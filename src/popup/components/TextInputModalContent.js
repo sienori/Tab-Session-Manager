@@ -1,29 +1,34 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
 import "../styles/textInputModalContent.scss";
 
 export default class TextInputModalContent extends Component {
   constructor(props) {
     super(props);
-    this.inputText = "";
+    this.state = { inputText: "" };
   }
 
-  handleSubmit = () => {
-    this.props.onSave(this.inputText);
+  handleSubmit = e => {
+    this.props.onSave(this.state.inputText);
     this.props.closeModal();
+    e.preventDefault();
   };
 
   handleChange = e => {
-    this.inputText = e.target.value;
+    this.setState({ inputText: e.target.value });
   };
 
-  componentDidMount = () => {
-    setTimeout(() => {
-      const input = ReactDOM.findDOMNode(this.refs.input);
-      if (input) input.focus();
-    }, 100);
+  initInput = defaultText => {
+    this.setState({ inputText: defaultText || "" });
   };
+
+  componentDidMount() {
+    this.initInput(this.props.defaultText);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.initInput(nextProps.defaultText);
+  }
 
   render() {
     const { closeModal, placeholder, defaultText } = this.props;
@@ -33,7 +38,7 @@ export default class TextInputModalContent extends Component {
           <input
             type="text"
             placeholder={placeholder || ""}
-            defaultValue={defaultText || ""}
+            value={this.state.inputText}
             onChange={this.handleChange}
             ref="input"
           />

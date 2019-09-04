@@ -11,8 +11,15 @@ export default class Modal extends Component {
   }
 
   focusModal = () => {
-    const modal = ReactDOM.findDOMNode(this.refs.modal);
-    modal.querySelector("button").focus();
+    setTimeout(() => {
+      const modal = ReactDOM.findDOMNode(this.refs.modal);
+      const closeButton = modal.querySelector("button");
+      const focusElementInContent = modal
+        .querySelector(".modalContent")
+        .querySelector("input, button, a");
+      if (focusElementInContent) focusElementInContent.focus();
+      else closeButton.focus();
+    }, 100);
   };
 
   loopFocus = e => {
@@ -21,16 +28,16 @@ export default class Modal extends Component {
     if (!isNextFocus && !isPrevFocus) return;
 
     const modal = ReactDOM.findDOMNode(this.refs.modal);
-    const buttons = modal.querySelectorAll("button");
-    const firstButton = buttons[0];
-    const lastButton = buttons[buttons.length - 1];
+    const focusElements = modal.querySelectorAll("input, button, a");
+    const firstElement = focusElements[0];
+    const lastElement = focusElements[focusElements.length - 1];
 
-    if (isNextFocus && document.activeElement == lastButton) {
+    if (isNextFocus && document.activeElement == lastElement) {
       e.preventDefault();
-      firstButton.focus();
-    } else if (isPrevFocus && document.activeElement == firstButton) {
+      firstElement.focus();
+    } else if (isPrevFocus && document.activeElement == firstElement) {
       e.preventDefault();
-      lastButton.focus();
+      lastElement.focus();
     }
   };
 
@@ -50,30 +57,33 @@ export default class Modal extends Component {
   render() {
     const { modal, closeModal } = this.props;
     return (
-      modal.isOpen && (
-        <div id="modalBackground" onClick={closeModal}>
-          <div
-            id="modal"
-            ref="modal"
-            role="dialog"
-            onKeyDown={this.loopFocus}
-            onClick={this.stopPropagation}
-          >
-            <div className="modalHeader">
-              <div className="modalTitle">{modal.title}</div>
-              <button
-                className="closeModalButton"
-                title={browser.i18n.getMessage("closeLabel")}
-                onClick={closeModal}
-              >
-                <PlusIcon />
-              </button>
-            </div>
-            <hr />
-            {modal.content}
+      <div
+        id="modalBackground"
+        className={modal.isOpen ? "isOpen" : "isClose"}
+        onClick={closeModal}
+      >
+        <div
+          id="modal"
+          ref="modal"
+          role="dialog"
+          onKeyDown={this.loopFocus}
+          onClick={this.stopPropagation}
+        >
+          <div className="modalHeader">
+            <div className="modalTitle">{modal.title}</div>
+            <button
+              className="closeModalButton"
+              title={browser.i18n.getMessage("closeLabel")}
+              onClick={closeModal}
+              autoFocus
+            >
+              <PlusIcon />
+            </button>
           </div>
+          <hr />
+          <div className="modalContent">{modal.content}</div>
         </div>
-      )
+      </div>
     );
   }
 }

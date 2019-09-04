@@ -316,7 +316,9 @@ export default class PopupPage extends Component {
   closeModal = () => {
     this.setState({
       modal: {
-        isOpen: false
+        isOpen: false,
+        title: this.state.modal.title,
+        content: this.state.modal.content
       }
     });
     this.lastFocusedElement.focus();

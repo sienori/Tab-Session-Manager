@@ -7,6 +7,22 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
+  transition: 200ms;
+
+  &.isClose {
+    visibility: hidden;
+    opacity: 0;
+    #modal {
+      transform: translateY(-20px);
+    }
+  }
+  &.isOpen {
+    visibility: visible;
+    opacity: 1;
+    #modal {
+      transform: translateY(0);
+    }
+  }
 
   #modal {
     position: absolute;
@@ -17,8 +33,7 @@
     box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
     width: 400px;
     padding: 10px;
-
-    transition: opacity, visibility 200ms;
+    transition: 200ms;
     -moz-user-select: none;
     -webkit-user-select: none;
 
