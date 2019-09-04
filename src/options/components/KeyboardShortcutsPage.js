@@ -45,7 +45,6 @@ export default class KeyboardShortcutPage extends Component {
           title: "keyboardShortcutsLabel",
           captions: ["setKeyboardShortCutsMessage"],
           type: "none",
-          new: true,
           childElements: commandElements
         }
       ]
