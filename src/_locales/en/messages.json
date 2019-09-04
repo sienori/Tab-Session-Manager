@@ -147,6 +147,9 @@
   "closeMenuLabel": {
     "message": "Close the menu"
   },
+  "closeLabel": {
+    "message": "Close"
+  },
   "renameLabel": {
     "message": "Rename"
   },
