@@ -18,7 +18,6 @@ export default props => {
           <img
             src="https://c5.patreon.com/external/logo/become_a_patron_button.png"
             alt="Patreon"
-            width="200px"
           />
         </a>
         <a href={paypalUrl} target="_blank">
