@@ -13,10 +13,9 @@ import {
   getSessions,
   sendSessionSaveMessage,
   sendSessionRemoveMessage,
-  sendSessionUpdateMessage,
-  deleteWindow,
-  deleteTab
+  sendSessionUpdateMessage
 } from "../actions/controlSessions";
+import { deleteWindow, deleteTab } from "../../common/editSessions.js";
 import openUrl from "../actions/openUrl";
 import Header from "./Header";
 import OptionsArea from "./OptionsArea";
@@ -233,7 +232,8 @@ export default class PopupPage extends Component {
   removeWindow = async (session, winId) => {
     this.saveRemovedSession(session);
     try {
-      await deleteWindow(session, winId);
+      const editedSession = deleteWindow(session, winId);
+      await sendSessionUpdateMessage(editedSession);
       this.openNotification({
         message: browser.i18n.getMessage("sessionWindowDeletedLabel"),
         type: "warn",
@@ -251,7 +251,8 @@ export default class PopupPage extends Component {
   removeTab = async (session, winId, tabId) => {
     this.saveRemovedSession(session);
     try {
-      await deleteTab(session, winId, tabId);
+      const editedSession = deleteTab(session, winId, tabId);
+      await sendSessionUpdateMessage(editedSession);
       this.openNotification({
         message: browser.i18n.getMessage("sessionTabDeletedLabel"),
         type: "warn",
