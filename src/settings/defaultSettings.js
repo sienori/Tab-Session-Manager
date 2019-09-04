@@ -269,6 +269,14 @@ export default [
             default: 500
           }
         ]
+      },
+      {
+        id: "isSessionListOpenInTab",
+        title: "isSessionListOpenInTabLabel",
+        captions: ["isSessionListOpenInTabCaptionLabel"],
+        type: "checkbox",
+        default: false,
+        new: true
       }
     ]
   },

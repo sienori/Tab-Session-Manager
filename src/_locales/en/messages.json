@@ -405,6 +405,12 @@
   "heightLabel": {
     "message": "Height"
   },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
+  },
   "otherLabel": {
     "message": "Other"
   },

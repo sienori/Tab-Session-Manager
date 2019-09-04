@@ -81,6 +81,12 @@ export default class PopupPage extends Component {
     if (!isInTab) {
       document.body.style.width = `${getSettings("popupWidthV2")}px`;
       document.body.style.height = `${getSettings("popupHeight")}px`;
+      console.log(getSettings("isSessionListOpenInTab"));
+      if (getSettings("isSessionListOpenInTab")) {
+        const popupUrl = "../popup/index.html#inTab";
+        openUrl(popupUrl);
+        window.close();
+      }
     }
     this.setState({
       sortValue: getSettings("sortValue") || "newest",

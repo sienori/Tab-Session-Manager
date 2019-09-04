@@ -20,6 +20,7 @@ const openSessionListInTab = () => {
   log.info(logDir, "openSessionListInTab()");
   const url = "../popup/index.html#inTab";
   openUrl(url);
+  window.close();
 };
 
 export default props => {
