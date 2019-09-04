@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import log from "loglevel";
+import url from "url";
 import {
   initSettings,
   getSettings,
@@ -43,6 +44,7 @@ export default class PopupPage extends Component {
       sortValue: "newest",
       isShowSearchBar: false,
       searchWord: "",
+      isInTab: false,
       notification: {
         message: "",
         type: "info",
@@ -74,11 +76,16 @@ export default class PopupPage extends Component {
     overWriteLogLevel();
     updateLogLevel();
     log.info(logDir, "init()");
-    document.body.style.width = `${getSettings("popupWidthV2")}px`;
-    document.body.style.height = `${getSettings("popupHeight")}px`;
+
+    const isInTab = url.parse(location.href).hash == "#inTab";
+    if (!isInTab) {
+      document.body.style.width = `${getSettings("popupWidthV2")}px`;
+      document.body.style.height = `${getSettings("popupHeight")}px`;
+    }
     this.setState({
       sortValue: getSettings("sortValue") || "newest",
-      isShowSearchBar: getSettings("isShowSearchBar")
+      isShowSearchBar: getSettings("isShowSearchBar"),
+      isInTab: isInTab
     });
 
     const isInit = await browser.runtime.sendMessage({ message: "getInitState" });
@@ -340,7 +347,11 @@ export default class PopupPage extends Component {
 
   render() {
     return (
-      <div id="popupPage" onClick={this.state.menu.isOpen ? this.closeMenu : null}>
+      <div
+        id="popupPage"
+        className={this.state.isInTab ? "isInTab" : ""}
+        onClick={this.state.menu.isOpen ? this.closeMenu : null}
+      >
         <Notification notification={this.state.notification} />
         <Header openModal={this.openModal} />
         <div id="contents">

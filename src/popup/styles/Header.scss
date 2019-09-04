@@ -25,26 +25,34 @@
     height: 20px;
 
     button {
-      display: block;
+      display: flex;
+      align-items: center;
       background-color: transparent;
       border: none;
       cursor: pointer;
       outline: none;
       padding: 0;
+      margin-left: 10px;
     }
 
     .heartButton {
-      display: flex;
-      align-items: center;
-      margin-right: 10px;
       &:hover svg {
         fill: var(--confirm);
       }
     }
 
+    .openInTabButton {
+      svg {
+        fill: none;
+        stroke: var(--sub-text);
+        stroke-width: 3;
+      }
+      &:hover svg {
+        stroke: var(--highlight);
+      }
+    }
+
     .settingsButton {
-      display: flex;
-      align-items: center;
       &:hover svg {
         fill: var(--highlight);
         transform: rotate(90deg);
@@ -57,5 +65,11 @@
       fill: var(--sub-text);
       transition: fill 100ms, transform 300ms ease;
     }
+  }
+}
+
+#popupPage.isInTab {
+  .openInTabButton {
+    display: none;
   }
 }

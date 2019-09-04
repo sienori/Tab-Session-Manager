@@ -80,7 +80,6 @@ export default class SessionsArea extends Component {
   };
 
   handleSessionSelect = id => {
-    //TODO フォーカス移動
     this.props.selectSession(id);
   };
 

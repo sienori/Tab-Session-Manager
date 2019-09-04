@@ -12,6 +12,9 @@
   "donateLabel": {
     "message": "Donate"
   },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "Save"
   },
