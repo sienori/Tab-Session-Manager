@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "Donar con PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "Guardar"
   },
@@ -18,7 +24,7 @@
     "message": "Establecer el nombre de la sesión"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Guardar sesión"
   },
   "saveAllWindowsLabel": {
     "message": "Guardar todas las ventanas"
@@ -131,17 +137,26 @@
   "noResultLabel": {
     "message": "No se encontraron resultados."
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "Menú"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Cerrar menú"
+  },
+  "closeLabel": {
+    "message": "Close"
   },
   "renameLabel": {
     "message": "Renombrar"
   },
+  "renameSessionLabel": {
+    "message": "Rename session"
+  },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Abrir una sesión"
   },
   "openInNewWindowLabel": {
     "message": "Abrir en una ventana nueva"
@@ -162,7 +177,7 @@
     "message": "Añadir pestañas a la ventana actual. Si la sesión contiene múltiples ventanas, abrir en nueva ventana."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Editar sesión"
   },
   "replaceCurrentSessionLabel": {
     "message": "Reemplazar con la sesión actual"
@@ -204,7 +219,7 @@
     "message": "Sesiones"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Atajos"
   },
   "informationLabel": {
     "message": "Información"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "Guardar ventana privada"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si no está marcada, ignorar la ventana privada al guardar la sesión."
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "Alto"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "Otros"
@@ -462,31 +489,31 @@
     "message": "Eliminar"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Atajos de teclado"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Definir atajos del teclado."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Introduce un atajo"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Escriba una letra"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Incluir Ctrl o Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Incluir Command, Ctrl o Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "La letra no puede ser utilizada"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "El atajo no puede ser usado"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Abrir ventana emergente de toolbar"
   },
   "saveCurrentWindowDescription": {
     "message": "Guardar sesión (sólo ventana actual)"
@@ -502,6 +529,9 @@
   },
   "reset": {
     "message": "Restablecer"
+  },
+  "backersLabel": {
+    "message": "Backers"
   },
   "LicenseLabel": {
     "message": "Licencia"
@@ -534,10 +564,10 @@
     "message": "Sesión"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Esta página no puede ser abierta por Tab Session Manager."

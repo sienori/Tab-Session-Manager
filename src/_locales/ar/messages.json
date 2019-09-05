@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "Donate with PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "احفظ"
   },
@@ -131,14 +137,23 @@
   "noResultLabel": {
     "message": "No matching results."
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "Menu"
   },
   "closeMenuLabel": {
     "message": "Close the menu"
   },
+  "closeLabel": {
+    "message": "Close"
+  },
   "renameLabel": {
     "message": "أعد التسمية"
+  },
+  "renameSessionLabel": {
+    "message": "Rename session"
   },
   "OpenSessionLabel": {
     "message": "Open a session"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "احفظ النافذة الخاصة"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "إذا لم يتم التحديد، يتجاهل النافذة الخاصة عند حفظ الجلسة."
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "الطول"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "Other"
@@ -503,6 +530,9 @@
   "reset": {
     "message": "Reset"
   },
+  "backersLabel": {
+    "message": "Backers"
+  },
   "LicenseLabel": {
     "message": "الترخيص"
   },
@@ -534,10 +564,10 @@
     "message": "الجلسة"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=ar_DZ"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=ar_DZ"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/ar-DZ\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/ar-DZ/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "لا يمكن فتح هذه الصفحة بواسطة Tab Session Manager."

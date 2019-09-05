@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "Дарете чрез PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "Запазване"
   },
@@ -131,14 +137,23 @@
   "noResultLabel": {
     "message": "Няма съвпадащи резултати."
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "Меню"
   },
   "closeMenuLabel": {
     "message": "Затваряне на менюто"
   },
+  "closeLabel": {
+    "message": "Close"
+  },
   "renameLabel": {
     "message": "Преименуване"
+  },
+  "renameSessionLabel": {
+    "message": "Rename session"
   },
   "OpenSessionLabel": {
     "message": "Отваряне на сесия"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "Запазване на поверителен прозорец"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ако не е отметнато, поверителният прозорец ще бъде игнориран при запазване на сесията."
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "Височина"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "Други"
@@ -462,22 +489,22 @@
     "message": "Изтриване"
   },
   "keyboardShortcutsLabel": {
-    "message": "Клавиатурни комбинации"
+    "message": "Клавишни комбинации"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Задаване на клавиатурни комбинации."
+    "message": "Задаване на клавишни комбинации."
   },
   "typeShortcutMessage": {
-    "message": "Въвеждане на бърз клавиш"
+    "message": "Въведете бърз клавиш"
   },
   "typeLetterMessage": {
-    "message": "Въвеждане на буква"
+    "message": "Въведете буква"
   },
   "includeModifierKeysMessage": {
-    "message": "Включване на Ctrl или Alt"
+    "message": "Натиснете Ctrl или Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Включване на Command, Ctrl или Alt"
+    "message": "Натиснете Command, Ctrl или Alt"
   },
   "invalidLetterMessage": {
     "message": "Буквата не може да бъде използвана"
@@ -502,6 +529,9 @@
   },
   "reset": {
     "message": "Нулиране"
+  },
+  "backersLabel": {
+    "message": "Backers"
   },
   "LicenseLabel": {
     "message": "Лиценз"
@@ -534,10 +564,10 @@
     "message": "Сесия"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Страницата не може да бъде отворена от Tab Session Manager."

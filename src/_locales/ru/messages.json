@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "Сделать пожертвование через PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "Сохранить"
   },
@@ -18,10 +24,10 @@
     "message": "Введите имя сессии"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Сохранить сессию"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Сохранить все окна"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Сохранить только текущее окно"
@@ -39,13 +45,13 @@
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Автоматическое сохранение"
   },
   "newestLabel": {
     "message": "Новые"
   },
   "oldestLabel": {
-    "message": "Старейшие"
+    "message": "Старые"
   },
   "aToZLabel": {
     "message": "А-Я"
@@ -54,13 +60,13 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Поиск по названию сессии"
   },
   "search": {
-    "message": "Search"
+    "message": "Поиск"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Очистить поиск"
   },
   "open": {
     "message": "Открыть"
@@ -72,31 +78,31 @@
     "message": "Удалить эту сессию?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Сессия удалена."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Окно сессии удалено."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Вкладка сессии удалена."
   },
   "restoreSessionLabel": {
     "message": "Восстановить"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Не удалось удалить сессию."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Не удалось удалить окно сессии."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Не удалось удалить вкладку сеанса."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Сессия сохранена."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Не удалось сохранить сессию."
   },
   "cancelLabel": {
     "message": "Отмена"
@@ -126,43 +132,52 @@
     "message": "Нет сессии."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Давайте сохраним сессию, нажав на нижнюю правую кнопку."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Нет результатов."
+  },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
   },
   "menuLabel": {
     "message": "Меню"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Закрыть меню"
+  },
+  "closeLabel": {
+    "message": "Close"
   },
   "renameLabel": {
     "message": "Переименовать"
   },
+  "renameSessionLabel": {
+    "message": "Rename session"
+  },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Открыть сессию"
   },
   "openInNewWindowLabel": {
     "message": "Открыть в новом окне"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Открыть сессию в новом окне."
   },
   "openInCurrentWindowLabel": {
     "message": "Открыть в текущем окне"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Открыть сессию в текущем окне. Неактивные окна и все вкладки будут закрыты."
   },
   "addToCurrentWindowLabel": {
     "message": "Добавить в текущее окно"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Добавить вкладки в текущее окно. Если сессия содержит несколько окон, открыть её в новом окне."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Редактировать сессию"
   },
   "replaceCurrentSessionLabel": {
     "message": "Заменить текущей сессией"
@@ -171,7 +186,7 @@
     "message": "Заменить текущим окном"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Добавить текущее окно"
   },
   "makeCopySessionLabel": {
     "message": "Создать копию сессии"
@@ -186,16 +201,16 @@
     "message": "Как решить эту проблему"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Несколько всплывающих окон не могут быть открыты одновременно."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Автосохранение при закрытии окна"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Автосохранение при закрытии браузера"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Автосохранение - регулярное"
   },
   "settingsLabel": {
     "message": "Настройки"
@@ -204,7 +219,7 @@
     "message": "Сессии"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Горячие клавиши"
   },
   "informationLabel": {
     "message": "Информация"
@@ -234,13 +249,13 @@
     "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет активирована вручную.<br>При отключении возрастёт расход памяти после восстановления сессии."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Используйте свойство \"Неактивная вкладка\" для фоновой загрузки"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Включение этой опции улучшит производительность при открытии вкладок."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Иконка вкладки при фоновой загрузке не отображается."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Восстановить расположение окон"
@@ -252,7 +267,7 @@
     "message": "Восстанавливать предыдущую сессию при запуске"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Когда браузер запускается, восстановите сессию, которая была закрыта в последний раз."
   },
   "ifAutoSaveLabel": {
     "message": "Периодически сохранять сессию"
@@ -276,7 +291,7 @@
     "message": "Сохранять сессию при закрытии окна"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Сохраните сессию, которая включает только одно закрытое окно."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Максимальное число сохранений"
@@ -285,16 +300,16 @@
     "message": "Максимальное число сессий хранимых данным способом."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Сохранить сессию при выходе из браузера"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Сохраните сессию, которая включает несколько окон, которые были закрыты подряд."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Максимальное число сохранений"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Максимальное число хранимых сессий (данным способом)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Использовать заголовок страницы для автоматического сохранения имени сессии"
@@ -309,13 +324,13 @@
     "message": "Сохранить резервную копию"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "При запуске браузера, создать резервный файл сессий и сохранить его в папке \"Загрузки\"."
   },
   "backupFolderLabel": {
     "message": "Расположение"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Укажите папку для сохранения файла резервной копии. Место для сохранения ограничено папкой \"Загрузки\"."
   },
   "downloadFolderLabel": {
     "message": "Папка для загрузок"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "Сохранять секретное окно"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Если отключено, игнорирует приватное окно при сохранении сессии."
   },
@@ -342,7 +363,7 @@
     "message": "Поддержка Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Восстановить состояние дерева вкладок Tree Style Tab.<br>Когда эта опция включена, требуется несколько большее время для восстановления сессии."
   },
   "tstDelayLabel": {
     "message": "Задержка при восстановлении дерева (миллисекунды)"
@@ -357,31 +378,31 @@
     "message": "Если имя сессии в списке занимает более одной строки, оно усекается на одну строку."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Всплывающее окно"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Поведение кнопки \"Открыть\""
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Выберите поведение кнопки \"Открыть\" по умолчанию."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Поведение кнопки \"Сохранить\""
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Выберите поведение кнопки \"Сохранить\" по умолчанию."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Показать панель поиска"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Добавить функцию для поиска по имени сессии."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Размер"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Укажите размер всплывающего окна на панели инструментов."
   },
   "widthLabel": {
     "message": "Ширина"
@@ -389,29 +410,35 @@
   "heightLabel": {
     "message": "Высота"
   },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
+  },
   "otherLabel": {
     "message": "Другое"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Показывать страницу опций при обновлении"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Отображать страницу параметров при обновлении Tab Session Manager. Вы можете быстро узнать историю изменений."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager был обновлен!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Подробнее"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Нажмите, чтобы просмотреть информацию о обновлении."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Включить режим отладки"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Если включен режим отладки, то журнал работы будет выводиться в отладчик."
   },
   "resetSettingsLabel": {
     "message": "Сброс настроек"
@@ -462,46 +489,49 @@
     "message": "Удалить"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Горячие клавиши"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Настройка сочетаний клавиш."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Введите сочетание клавиш"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Введите букву"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Нажмите клавишу Ctrl или Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Нажмите клавишу Command, Ctrl или Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Эта буква не может быть использована"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Это сочетание клавиш не может быть использовано"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Открыть всплывающее окно"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Сохранить сессию (только текущее окно)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Сохранить сессию (все окна)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Экспортировать все сессии"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Очистить"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Сброс"
+  },
+  "backersLabel": {
+    "message": "Backers"
   },
   "LicenseLabel": {
     "message": "Лицензия"
@@ -534,10 +564,10 @@
     "message": "Сессия"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/ru\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/ru/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Эта страница не может быть открыта в Tab Session Manager."

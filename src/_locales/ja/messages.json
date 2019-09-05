@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "PayPalで寄付"
   },
+  "donateLabel": {
+    "message": "寄付する"
+  },
+  "openSessionListInTabLabel": {
+    "message": "セッションリストをタブで開く"
+  },
   "saveLabel": {
     "message": "保存"
   },
@@ -131,14 +137,23 @@
   "noResultLabel": {
     "message": "一致する結果はありません。"
   },
+  "noSessionSelectedLabel": {
+    "message": "セッションが選択されていません。"
+  },
   "menuLabel": {
     "message": "メニュー"
   },
   "closeMenuLabel": {
     "message": "メニューを閉じる"
   },
+  "closeLabel": {
+    "message": "閉じる"
+  },
   "renameLabel": {
     "message": "リネーム"
+  },
+  "renameSessionLabel": {
+    "message": "セッションをリネーム"
   },
   "OpenSessionLabel": {
     "message": "セッションを開く"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "プライベートウィンドウを保存する"
   },
+  "ignoreUrlListLabel": {
+    "message": "セッションの保存時に無視するURLリスト"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "タブのURLがリストに一致する場合，セッションに記録されません。リストにはワイルドカード \"*\" を使用できます。"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "チェックをオフにすると，セッションの保存時にプライベートウィンドウを無視します。"
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "高さ"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "セッションリストをタブで開く"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "ツールバー上のボタンがクリックされたときにセッションリストをタブで開きます。"
   },
   "otherLabel": {
     "message": "その他"
@@ -503,6 +530,9 @@
   "reset": {
     "message": "リセット"
   },
+  "backersLabel": {
+    "message": "支援者"
+  },
   "LicenseLabel": {
     "message": "ライセンス"
   },
@@ -534,10 +564,10 @@
     "message": "セッション"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=ja_JP"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=ja_JP"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/ja\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/ja/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "このページはTab Session Managerでは開けません。"

@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "Faire un don avec PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "Enregistrer"
   },
@@ -18,7 +24,7 @@
     "message": "Renseignez le nom de session"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Sauvegarder une session"
   },
   "saveAllWindowsLabel": {
     "message": "Enregistrer toutes les fenêtres"
@@ -131,17 +137,26 @@
   "noResultLabel": {
     "message": "Aucun résultat."
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "Menu"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Fermer le menu"
+  },
+  "closeLabel": {
+    "message": "Close"
   },
   "renameLabel": {
     "message": "Renommer"
   },
+  "renameSessionLabel": {
+    "message": "Rename session"
+  },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Ouvrir une session"
   },
   "openInNewWindowLabel": {
     "message": "Ouvrir dans une nouvelle fenêtre"
@@ -162,7 +177,7 @@
     "message": "Ajouter les onglets à la fenêtre actuelle. Si la session contient plusieurs fenêtres, l’ouvrir dans une nouvelle fenêtre."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Modifier une session"
   },
   "replaceCurrentSessionLabel": {
     "message": "Remplacer par la session en cours"
@@ -240,7 +255,7 @@
     "message": "Activer cette option améliorera les performances lors de l’ouverture des onglets."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "La favoricône de l’onglet chargé de manière différée n’est pas affichée."
+    "message": "La favicon de l’onglet chargé de manière différée n’est pas affichée."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Rétablir la position de la fenêtre"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "Enregistrer les fenêtres privées"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si cette case n'est pas cochée, les fenêtres privées ne seront pas enregistrées."
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "Hauteur"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "Autre"
@@ -503,6 +530,9 @@
   "reset": {
     "message": "Réinitialiser"
   },
+  "backersLabel": {
+    "message": "Backers"
+  },
   "LicenseLabel": {
     "message": "Licence"
   },
@@ -534,10 +564,10 @@
     "message": "Session"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/fr\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/fr/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Cette page ne peut pas être ouvert par Tab Session Manager."

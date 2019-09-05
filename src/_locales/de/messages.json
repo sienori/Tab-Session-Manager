@@ -3,10 +3,16 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Speichern und Wiederherstellen aller Fenster und Tabs. Unterstützt automatisches Speicherung."
+    "message": "Speichern und Wiederherstellen aller Fenster und Tabs. Unterstützt automatisches Speichern."
   },
   "donateWithPaypalLabel": {
     "message": "Spenden via PayPal"
+  },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
   },
   "saveLabel": {
     "message": "Speichern"
@@ -18,10 +24,10 @@
     "message": "Sitzungsname eingeben"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Eine Sitzung speichern"
   },
   "saveAllWindowsLabel": {
-    "message": "Alle Fenstern speichern"
+    "message": "Alle Fenster speichern"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Nur aktuelles Fenster speichern"
@@ -78,7 +84,7 @@
     "message": "Sitzungsfenster gelöscht."
   },
   "sessionTabDeletedLabel": {
-    "message": "Sitzung Blatt gelöscht."
+    "message": "Sitzungs Tab gelöscht."
   },
   "restoreSessionLabel": {
     "message": "Wiederherstellen"
@@ -90,13 +96,13 @@
     "message": "Sitzungsfenster konnte nicht gelöscht werden."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Sitzung Blatt konnte nicht gelöscht werden."
+    "message": "Sitzungs Tab konnte nicht gelöscht werden."
   },
   "sessionSavedLabel": {
     "message": "Sitzung gespeichert."
   },
   "failedSaveSessionLabel": {
-    "message": "Fehler beim Speicherung der Sitzung."
+    "message": "Fehler beim Speichern der Sitzung."
   },
   "cancelLabel": {
     "message": "Abbrechen"
@@ -126,22 +132,31 @@
     "message": "Keine Sitzung gefunden."
   },
   "letsSaveLabel": {
-    "message": "Speichern Sie die Sitzung, indem Sie auf den Button rechts unten klicken."
+    "message": "Speichere die Sitzung, indem du auf den Button rechts unten klickst."
   },
   "noResultLabel": {
     "message": "Keine Treffer."
+  },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
   },
   "menuLabel": {
     "message": "Menü"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Dieses Menü schließen"
+  },
+  "closeLabel": {
+    "message": "Close"
   },
   "renameLabel": {
     "message": "Umbenennen"
   },
+  "renameSessionLabel": {
+    "message": "Rename session"
+  },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Öffne eine Sitzung"
   },
   "openInNewWindowLabel": {
     "message": "In neuem Fenster öffnen"
@@ -159,10 +174,10 @@
     "message": "Zum aktuellen Fenster hinzufügen"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Fügt Tabs zur aktuellen Fenster hinzu. Wenn die Sitzung mehrere Fenster beinhaltet, wird es in einem neuen Fenster geöffnet."
+    "message": "Fügt Tabs zum aktuellen Fenster hinzu. Wenn die Sitzung mehrere Fenster beinhaltet, wird es in einem neuen Fenster geöffnet."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Bearbeite eine Sitzung"
   },
   "replaceCurrentSessionLabel": {
     "message": "Mit aktueller Sitzung ersetzen"
@@ -174,16 +189,16 @@
     "message": "Aktuelles Fenster hinzufügen"
   },
   "makeCopySessionLabel": {
-    "message": "Sitzung Kopieren"
+    "message": "Sitzung kopieren"
   },
   "errorLabel": {
     "message": "Fehler"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB ist in Ihrem Browser nicht verfügbar."
+    "message": "IndexedDB ist in deinem Browser nicht verfügbar."
   },
   "howToSolveLabel": {
-    "message": "Wie dieses Problem gelöst sein kann"
+    "message": "Wie dieses Problem gelöst werden kann"
   },
   "noConnectionErrorLabel": {
     "message": "Es können nicht mehrere Pop-ups zur gleichen Zeit geöffnet werden."
@@ -204,7 +219,7 @@
     "message": "Sitzungen"
   },
   "shortcutsLabel": {
-    "message": "Schnellnavigation"
+    "message": "Tastenkürzel"
   },
   "informationLabel": {
     "message": "Informationen"
@@ -231,13 +246,13 @@
     "message": "Tabs verzögert laden"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Wenn eine Sitzung geöffnet wird, lädt der Inhalt eines Tabs erst nach Anwählen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei Sitzungswiederherstellung."
+    "message": "Wenn eine Sitzung geöffnet wird, lädt der Inhalt eines Tabs erst nach Anwählen.<br>Nach Abwahl dieses Punkts steigt die Speichernutzung bei der Sitzungswiederherstellung."
   },
   "isUseDiscardedLabel": {
     "message": "Benutze die \"verwerfen\" Eigenschaft für das verzögerte Laden"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Das Aktivieren dieser Option wird die Geschwindigkeit verbessern bei öffnen von Tabs."
+    "message": "Das Aktivieren dieser Option wird die Geschwindigkeit verbessern beim Öffnen von Tabs."
   },
   "isUseDiscardedCaption2Label": {
     "message": "Das Favicon vom verzögert ladenden Tab wird nicht angezeigt."
@@ -258,7 +273,7 @@
     "message": "Sitzung regelmäßig sichern"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Speichert die Sitzung im einstellten Zeitabstand."
+    "message": "Speichert die Sitzung alle X Minuten."
   },
   "autoSaveIntervalLabel": {
     "message": "Intervall (Minuten)"
@@ -333,7 +348,13 @@
     "message": "Beispiel: DD.MM.YYYY HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Speichere Private Fenster"
+    "message": "Private Fenster speichern"
+  },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
@@ -360,7 +381,7 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Öffnen Button Verhalten"
+    "message": "Öffne Button Verhalten"
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Wähle das Standardverhalten des Öffnen Buttons aus."
@@ -389,6 +410,12 @@
   "heightLabel": {
     "message": "Höhe"
   },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
+  },
   "otherLabel": {
     "message": "Anders"
   },
@@ -411,7 +438,7 @@
     "message": "Debug-Modus aktivieren"
   },
   "isDebugModeCaptionLabel": {
-    "message": "Wenn der Debug-Modus aktiviert ist, wird das Log zum Debugger ausgegeben."
+    "message": "Wenn der Debug-Modus aktiviert ist, wird der Log zum Debugger ausgegeben."
   },
   "resetSettingsLabel": {
     "message": "Einstellungen zurücksetzen"
@@ -426,7 +453,7 @@
     "message": "Sitzungen importieren"
   },
   "importCaptionLabel": {
-    "message": "Lokal gespeicherte Sitzungen laden und zu der aktuellen Liste der Sitzungen hinzufügen.<br>Session-Dateien von SessionManager (.session) sind auch unterstützt."
+    "message": "Lokal gespeicherte Sitzungen laden und zu der aktuellen Liste der Sitzungen hinzufügen.<br>Session-Dateien von SessionManager (.session) werden auch unterstützt."
   },
   "importButtonLabel": {
     "message": "Auswählen..."
@@ -471,19 +498,19 @@
     "message": "Verknüpfung eingeben"
   },
   "typeLetterMessage": {
-    "message": "Geben Sie einen Buchstaben"
+    "message": "Gebe einen Buchstaben ein"
   },
   "includeModifierKeysMessage": {
     "message": "Füge entweder Ctrl oder Alt ein"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Füge entweder Befehl, Ctrl oder Alt ein"
+    "message": "Füge entweder Command, Ctrl oder Alt ein"
   },
   "invalidLetterMessage": {
     "message": "Dieser Buchstabe kann nicht verwendet werden"
   },
   "invalidShortcutMessage": {
-    "message": "Dieser Verknüpfung kann nicht verwendet werden"
+    "message": "Diese Verknüpfung kann nicht verwendet werden"
   },
   "openPopupDescription": {
     "message": "Toolbar-Popup öffnen"
@@ -498,10 +525,13 @@
     "message": "Alle Sitzungen exportieren"
   },
   "clear": {
-    "message": "Klären"
+    "message": "Löschen"
   },
   "reset": {
     "message": "Zurücksetzen"
+  },
+  "backersLabel": {
+    "message": "Backers"
   },
   "LicenseLabel": {
     "message": "Lizenz"
@@ -510,7 +540,7 @@
     "message": "Bitte spende etwas"
   },
   "donationCaptionLabel": {
-    "message": "Danke, dass Sie Tab Session Manager nutzen.<br>Ihre Unterstützung ist ein großer Ansporn bei der Weiterentwicklung dieses Add-ons.<br>Wenn Ihnen Tab Session Manager gefällt, erwägen Sie bitte eine Spende."
+    "message": "Danke, dass du Tab Session Manager nutzst.<br>Deine Unterstützung ist ein großer Ansporn bei der Weiterentwicklung dieses Add-ons.<br>Wenn dir Tab Session Manager gefällt, erwäge bitte eine Spende."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
@@ -528,16 +558,16 @@
     "message": "Fehler beim Einlesen"
   },
   "warningRemoveAllMessage": {
-    "message": "Wollen Sie wirklich alle Sitzungen löschen?"
+    "message": "Willst du wirklich alle Sitzungen löschen?"
   },
   "sessionLabel": {
     "message": "Sitzung"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/de\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/de/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Diese Seite kann von Tab Session Manager nicht geöffnet werden."

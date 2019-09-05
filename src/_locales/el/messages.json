@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "Δωρεά μέσω PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "Αποθήκευση"
   },
@@ -131,14 +137,23 @@
   "noResultLabel": {
     "message": "Δεν βρέθηκαν αποτελέσματα."
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "Μενού"
   },
   "closeMenuLabel": {
     "message": "Κλείσιμο μενού"
   },
+  "closeLabel": {
+    "message": "Close"
+  },
   "renameLabel": {
     "message": "Μετονομασία"
+  },
+  "renameSessionLabel": {
+    "message": "Rename session"
   },
   "OpenSessionLabel": {
     "message": "Άνοιγμα περιόδου λειτουργίας"
@@ -237,7 +252,7 @@
     "message": "Χρήση της ιδιότητας \"απόρριψης\" κατά την αργή φόρτωση"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Αν νεργοποιηθεί, οι καρτέλες θα ανοίγουν γρηγορότερα."
+    "message": "Αν ενεργοποιηθεί, οι καρτέλες θα ανοίγουν γρηγορότερα."
   },
   "isUseDiscardedCaption2Label": {
     "message": "Δεν εμφανίζεται το favicon της αργής φόρτωσης."
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "Αποθήκευση των ιδιωτικών παραθύρων"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Αν δεν επιλεχθεί, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση των περιόδων λειτουργίας."
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "Ύψος"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "Άλλο"
@@ -503,6 +530,9 @@
   "reset": {
     "message": "Επαναφορά"
   },
+  "backersLabel": {
+    "message": "Backers"
+  },
   "LicenseLabel": {
     "message": "Άδεια"
   },
@@ -534,10 +564,10 @@
     "message": "Περίοδος λειτουργίας"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Το Tab Session Manager δεν μπορεί να ανοίξει αυτή τη σελίδα."

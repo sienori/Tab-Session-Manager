@@ -6,7 +6,13 @@
     "message": "儲存與還原視窗跟分頁的瀏覽狀態。也支援自動儲存功能。"
   },
   "donateWithPaypalLabel": {
-    "message": "透過 PayPal 來贊助我"
+    "message": "透過 PayPal 贊助"
+  },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
   },
   "saveLabel": {
     "message": "儲存"
@@ -131,14 +137,23 @@
   "noResultLabel": {
     "message": "沒有符合的結果。"
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "選單"
   },
   "closeMenuLabel": {
     "message": "關閉選單"
   },
+  "closeLabel": {
+    "message": "Close"
+  },
   "renameLabel": {
     "message": "重新命名"
+  },
+  "renameSessionLabel": {
+    "message": "Rename session"
   },
   "OpenSessionLabel": {
     "message": "開啟瀏覽階段"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "儲存隱私視窗"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "如果取消勾選，儲存瀏覽階段時將會忽略隱私視窗。"
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "高度"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "其他"
@@ -503,6 +530,9 @@
   "reset": {
     "message": "重設"
   },
+  "backersLabel": {
+    "message": "Backers"
+  },
   "LicenseLabel": {
     "message": "授權條款"
   },
@@ -534,10 +564,10 @@
     "message": "瀏覽階段"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=zh_CN"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/zh-TW\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/zh-TW/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Tab Session Manager 無法開啟此頁面。"
