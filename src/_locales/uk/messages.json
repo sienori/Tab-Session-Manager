@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "Зробити пожертву через PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "Зберегти"
   },
@@ -131,14 +137,23 @@
   "noResultLabel": {
     "message": "Немає відповідних результатів."
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "Меню"
   },
   "closeMenuLabel": {
     "message": "Close the menu"
   },
+  "closeLabel": {
+    "message": "Close"
+  },
   "renameLabel": {
     "message": "Перейменувати"
+  },
+  "renameSessionLabel": {
+    "message": "Rename session"
   },
   "OpenSessionLabel": {
     "message": "Open a session"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "Зберігати приватне вікно"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "Висота"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "Інше"
@@ -503,6 +530,9 @@
   "reset": {
     "message": "Reset"
   },
+  "backersLabel": {
+    "message": "Backers"
+  },
   "LicenseLabel": {
     "message": "Ліцензія"
   },
@@ -534,10 +564,10 @@
     "message": "Сесія"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Цю сторінку не можна відкрити в Tab Session Manager."
