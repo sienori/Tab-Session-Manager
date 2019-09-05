@@ -7,6 +7,11 @@
 [<img src="https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png" alt="for Chrome">](
 https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
 
+## Backers
+Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md)** who supported Tab Session Manager!
+
+[<img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Became a Patreon">](https://www.patreon.com/sienori)
+
 ## Translation
 You can contribute by translating Tab Session Manager on **[Crowdin](https://crowdin.com/project/tab-session-manager)**.
 
