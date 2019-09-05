@@ -9,10 +9,10 @@
     "message": "Dona con PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Fai una donazione"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Apri lista sessioni in una scheda"
   },
   "saveLabel": {
     "message": "Salva"
@@ -138,7 +138,7 @@
     "message": "Nessun risultato corrispondente."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Nessuna sessione rilevata."
   },
   "menuLabel": {
     "message": "Menù"
@@ -147,13 +147,13 @@
     "message": "Chiudi menù"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Chiudi"
   },
   "renameLabel": {
     "message": "Rinomina"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Rinomina sessione"
   },
   "OpenSessionLabel": {
     "message": "Apri una sessione"
@@ -351,10 +351,10 @@
     "message": "Salva finestra anonima"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Lista URL da ignorare durante il salvataggio della sessione"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Se l'URL della scheda corrisponde alla lista, non verrà salvata nella sessione. La lista permette le wildcard \"*\"."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Se deselezionato, ignora le finestre anonime durante il salvataggio della sessione."
@@ -411,10 +411,10 @@
     "message": "Altezza"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Apri lista sessioni in una scheda"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Apre la lista delle sessioni in un una scheda quando viene cliccato il plusante sulla barra degli strumenti."
   },
   "otherLabel": {
     "message": "Altro"
@@ -531,7 +531,7 @@
     "message": "Ripristina"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Donatori"
   },
   "LicenseLabel": {
     "message": "Licenza"
