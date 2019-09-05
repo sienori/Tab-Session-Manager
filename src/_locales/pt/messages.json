@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "Doe com PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "Salvar"
   },
@@ -131,14 +137,23 @@
   "noResultLabel": {
     "message": "Nenhum resultado correspondente."
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "Menu"
   },
   "closeMenuLabel": {
     "message": "Close the menu"
   },
+  "closeLabel": {
+    "message": "Close"
+  },
   "renameLabel": {
     "message": "Renomear"
+  },
+  "renameSessionLabel": {
+    "message": "Rename session"
   },
   "OpenSessionLabel": {
     "message": "Open a session"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "Salvar janela privada"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Se estiver desmarcada, ignora a janela privada ao salvar a sessão."
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "Altura"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "Other"
@@ -503,6 +530,9 @@
   "reset": {
     "message": "Reset"
   },
+  "backersLabel": {
+    "message": "Backers"
+  },
   "LicenseLabel": {
     "message": "Licença"
   },
@@ -534,10 +564,10 @@
     "message": "Sessão"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Esta página não pode ser aberta pelo Tab Session Manager."
