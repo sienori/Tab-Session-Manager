@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "Donate with PayPal"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "Kaydet"
   },
@@ -131,14 +137,23 @@
   "noResultLabel": {
     "message": "No matching results."
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "Menu"
   },
   "closeMenuLabel": {
     "message": "Close the menu"
   },
+  "closeLabel": {
+    "message": "Close"
+  },
   "renameLabel": {
     "message": "Yeniden adlandır"
+  },
+  "renameSessionLabel": {
+    "message": "Rename session"
   },
   "OpenSessionLabel": {
     "message": "Open a session"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "Gizli pencereyi kaydet"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Eğer işaretli değilse, oturumu kaydederken gizli pencereyi yok sayar."
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "Yükseklik"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "Other"
@@ -503,6 +530,9 @@
   "reset": {
     "message": "Reset"
   },
+  "backersLabel": {
+    "message": "Backers"
+  },
   "LicenseLabel": {
     "message": "Lisans"
   },
@@ -534,10 +564,10 @@
     "message": "Oturum"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/en-US\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Bu sayfa Sekme Oturum Yöneticisi tarafından açılamaz."
