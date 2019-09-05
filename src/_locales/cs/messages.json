@@ -9,10 +9,10 @@
     "message": "Podpořit přes PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Darovat"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Otevřít seznam relací v záložce"
   },
   "saveLabel": {
     "message": "Uložit"
@@ -24,7 +24,7 @@
     "message": "Input session name"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Uložit relaci"
   },
   "saveAllWindowsLabel": {
     "message": "Uložit všechna okna"
@@ -42,10 +42,10 @@
     "message": "Všechny"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Uložené uživatelem"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Uložené automaticky"
   },
   "newestLabel": {
     "message": "Nejnovější"
@@ -78,7 +78,7 @@
     "message": "Odstranit tuto relaci?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Relace smazána."
   },
   "sessionWindowDeletedLabel": {
     "message": "Session window deleted."
@@ -90,7 +90,7 @@
     "message": "Obnovit"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Chyba odstranění relace."
   },
   "failedDeleteSessionWindowLabel": {
     "message": "Failed to delete session window."
@@ -99,7 +99,7 @@
     "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Relace uložena."
   },
   "failedSaveSessionLabel": {
     "message": "Failed to save session."
