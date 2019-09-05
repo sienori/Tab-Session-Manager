@@ -5,6 +5,7 @@ import { SessionStartTime } from "./background.js";
 import Sessions from "./sessions.js";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceParameter } from "./replace.js";
+import ignoreUrls from "./ignoreUrls";
 
 const logDir = "background/save";
 
@@ -13,7 +14,8 @@ export async function saveCurrentSession(name, tag, property) {
   const session = await loadCurrentSession(name, tag, property).catch(() => {
     return Promise.reject();
   });
-  return await saveSession(session);
+  const editedSession = ignoreUrls(session);
+  return await saveSession(editedSession);
 }
 
 export async function loadCurrentSession(name, tag, property) {
