@@ -11,7 +11,6 @@ const matchesPageUrl = (pageUrl, urlPattern) => {
     .trim()
     .replace(/[-[\]{}()*+?.,\\^$|#\s]/g, match => (match === "*" ? ".*" : "\\" + match));
   if (pattern === "") return false;
-  console.log(pageUrl, pattern, RegExp("^" + pattern + "$").test(pageUrl));
   return RegExp("^" + pattern + "$").test(pageUrl);
 };
 
