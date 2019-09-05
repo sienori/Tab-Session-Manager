@@ -147,7 +147,7 @@
     "message": "Close the menu"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Zavžít"
   },
   "renameLabel": {
     "message": "Přejmenovat"
@@ -156,7 +156,7 @@
     "message": "Rename session"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Otevřít relaci"
   },
   "openInNewWindowLabel": {
     "message": "Otevřít v novém okně"
@@ -177,7 +177,7 @@
     "message": "Přidat panely do aktuálního okna. Pokud relace obsahuje více oken, otevříť v novém okně."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Upravit relaci"
   },
   "replaceCurrentSessionLabel": {
     "message": "Nahradit stávající relací"
@@ -549,19 +549,19 @@
     "message": "Add-on page"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Stránka rozšíření"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "Relace importovány."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Čtení selhalo"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Smazat všechny relace. Jste si jistí?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Relace"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
