@@ -351,10 +351,10 @@
     "message": "Spara privata fönster"
   },
   "ignoreUrlListLabel": {
-    "message": "URL-lista att ignorera när sessionen sparas"
+    "message": "Webbadresslista att ignorera när sessionen sparas"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Om flikwebbadressen matchar listan, kommer den inte att spelas in i sessionen. Listan accepterar \"*\" jokertecken."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."
@@ -411,10 +411,10 @@
     "message": "Höjd"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Öppna sessionslistan i fliken"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Öppna sessionslistan i fliken när du klickar på knappen i verktygsfältet."
   },
   "otherLabel": {
     "message": "Annat"
@@ -465,7 +465,7 @@
     "message": "Rensa"
   },
   "urlImportLabel": {
-    "message": "Importera URL-lista"
+    "message": "Importera webbadresslista"
   },
   "urlImportCaptionLabel": {
     "message": "Skapa en session från en lista med URL:er och lägg till dem i sessionslistan.<br>Format: &lt;URL&gt; &lt;sidnamn (valfritt)&gt;"
