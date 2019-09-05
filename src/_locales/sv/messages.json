@@ -9,7 +9,7 @@
     "message": "Donera via PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Donera"
   },
   "openSessionListInTabLabel": {
     "message": "Open session list in tab"
@@ -147,13 +147,13 @@
     "message": "Stäng menyn"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Stäng"
   },
   "renameLabel": {
     "message": "Byt namn"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Byt namn på sessionen"
   },
   "OpenSessionLabel": {
     "message": "Öppna session"
