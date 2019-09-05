@@ -8,6 +8,12 @@
   "donateWithPaypalLabel": {
     "message": "通过 Paypal 捐赠"
   },
+  "donateLabel": {
+    "message": "Donate"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Open session list in tab"
+  },
   "saveLabel": {
     "message": "保存"
   },
@@ -18,7 +24,7 @@
     "message": "输入会话名称"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "保存会话"
   },
   "saveAllWindowsLabel": {
     "message": "保存所有窗口"
@@ -75,10 +81,10 @@
     "message": "会话已删除。"
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "会话窗口已删除。"
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "会话标签已删除。"
   },
   "restoreSessionLabel": {
     "message": "还原"
@@ -87,10 +93,10 @@
     "message": "删除会话失败。"
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "删除会话窗口失败。"
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "删除会话标签失败。"
   },
   "sessionSavedLabel": {
     "message": "会话已保存。"
@@ -131,17 +137,26 @@
   "noResultLabel": {
     "message": "没有符合条件的结果。"
   },
+  "noSessionSelectedLabel": {
+    "message": "No session selected."
+  },
   "menuLabel": {
     "message": "菜单"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "关闭菜单"
+  },
+  "closeLabel": {
+    "message": "Close"
   },
   "renameLabel": {
     "message": "重命名"
   },
+  "renameSessionLabel": {
+    "message": "Rename session"
+  },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "打开会话"
   },
   "openInNewWindowLabel": {
     "message": "在新窗口中打开"
@@ -162,7 +177,7 @@
     "message": "添加标签到当前窗口。如会话包含多个窗口，则在新窗口内打开它。"
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "编辑会话"
   },
   "replaceCurrentSessionLabel": {
     "message": "使用当前会话替换此会话"
@@ -171,7 +186,7 @@
     "message": "使用当前窗口替换此会话"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "添加当前窗口"
   },
   "makeCopySessionLabel": {
     "message": "创建会话副本"
@@ -204,7 +219,7 @@
     "message": "会话"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "快捷键"
   },
   "informationLabel": {
     "message": "信息"
@@ -335,6 +350,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "保存隐私窗口"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "若未启用，保存会话时将忽略隐私窗口。"
   },
@@ -388,6 +409,12 @@
   },
   "heightLabel": {
     "message": "高度"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Open session list in tab"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
     "message": "其它"
@@ -462,46 +489,49 @@
     "message": "清空"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "键盘快捷键"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "设置键盘快捷键。"
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "输入快捷键"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "输入字母"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "包含 Ctrl 或 Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "包括命令，Ctrl 或 Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "不能使用此字母"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "不能使用此快捷键"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "打开工具栏弹出窗口"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "保存会话 (仅当前窗口)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "保存会话 (所有窗口)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "导出所有会话"
   },
   "clear": {
-    "message": "Clear"
+    "message": "清除"
   },
   "reset": {
-    "message": "Reset"
+    "message": "重置"
+  },
+  "backersLabel": {
+    "message": "Backers"
   },
   "LicenseLabel": {
     "message": "许可证书"
@@ -534,10 +564,10 @@
     "message": "会话（Session）"
   },
   "amazonUrl": {
-    "message": "https:\/\/www.amazon.co.jp\/dp\/B004N3APGO?language=zh_CN"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=zh_CN"
   },
   "addonUrl": {
-    "message": "https:\/\/addons.mozilla.org\/zh-CN\/firefox\/addon\/tab-session-manager\/?src=optionpage"
+    "message": "https://addons.mozilla.org/zh-CN/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Tab Session Manager 无法打开此页面。"
