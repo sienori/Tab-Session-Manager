@@ -354,6 +354,12 @@
   "ifSavePrivateWindowLabel": {
     "message": "Save private window"
   },
+  "ignoreUrlListLabel": {
+    "message": "URL list to ignore when saving session"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "If unchecked, ignores the private window when saving the session."
   },

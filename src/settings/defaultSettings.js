@@ -29,6 +29,15 @@ export default [
         default: false
       },
       {
+        id: "ignoreUrlList",
+        title: "ignoreUrlListLabel",
+        captions: ["ignoreUrlListCaptionLabel"],
+        type: "textarea",
+        default: "",
+        placeholder: "https://example.com/*\nhttps://example.net/*",
+        new: true
+      },
+      {
         id: "isRestoreWindowPosition",
         title: "isRestoreWindowPositionLabel",
         captions: ["isRestoreWindowPositionCaptionLabel"],

@@ -7,6 +7,13 @@
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
 
+    &.showColumn {
+      flex-direction: column;
+      .optionForm {
+        margin: 0px;
+      }
+    }
+
     .optionText {
       flex: 1;
       p {
