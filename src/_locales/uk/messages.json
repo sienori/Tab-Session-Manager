@@ -9,7 +9,7 @@
     "message": "Зробити пожертву через PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Підтримати"
   },
   "openSessionListInTabLabel": {
     "message": "Open session list in tab"
@@ -219,7 +219,7 @@
     "message": "Сесії"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Гарячі клавіші"
   },
   "informationLabel": {
     "message": "Інформація"
@@ -489,10 +489,10 @@
     "message": "Видалити"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Гарячі клавіші"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Встановлення гарячих клавіш."
   },
   "typeShortcutMessage": {
     "message": "Type a shortcut"
@@ -522,13 +522,13 @@
     "message": "Save session (all windows)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Експортувати всі сесії"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Очистити"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Скинути"
   },
   "backersLabel": {
     "message": "Backers"
