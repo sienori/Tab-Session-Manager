@@ -9,10 +9,10 @@
     "message": "Δωρεά μέσω PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Δωρίστε"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Άνοιγμα της λίστας της περιόδου λειτουργίας στην καρτέλα"
   },
   "saveLabel": {
     "message": "Αποθήκευση"
@@ -138,7 +138,7 @@
     "message": "Δεν βρέθηκαν αποτελέσματα."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Δεν έχει επιλεγεί καμία περίοδος λειτουργίας."
   },
   "menuLabel": {
     "message": "Μενού"
@@ -147,13 +147,13 @@
     "message": "Κλείσιμο μενού"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Κλείσιμο"
   },
   "renameLabel": {
     "message": "Μετονομασία"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Μετονομασία περιόδου λειτουργίας"
   },
   "OpenSessionLabel": {
     "message": "Άνοιγμα περιόδου λειτουργίας"
@@ -351,10 +351,10 @@
     "message": "Αποθήκευση των ιδιωτικών παραθύρων"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Λίστα URL προς αγνόηση κατά την αποθήκευση"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Αν το URL της καρτέλας είναι το ίδιο με εκείνο στη λίστα, δεν θα καταγραφεί. Στη λίστα επιτρέπεται ο χαρακτήρας μπαλαντέρ \"*\"."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Αν δεν επιλεχθεί, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση των περιόδων λειτουργίας."
@@ -411,10 +411,10 @@
     "message": "Ύψος"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Άνοιγμα της λίστας της περιόδου λειτουργίας στην καρτέλα"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Άνοιγμα της λίστας της περιόδου λειτουργίας όταν πατηθεί το κουμπί στη γραμμή εργαλείων."
   },
   "otherLabel": {
     "message": "Άλλο"
@@ -531,7 +531,7 @@
     "message": "Επαναφορά"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Υποστηρικτές"
   },
   "LicenseLabel": {
     "message": "Άδεια"
