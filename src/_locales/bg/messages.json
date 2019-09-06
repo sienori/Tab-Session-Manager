@@ -9,10 +9,10 @@
     "message": "Дарете чрез PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Дарение"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Отваряне на списъка със сесии в раздел"
   },
   "saveLabel": {
     "message": "Запазване"
@@ -138,7 +138,7 @@
     "message": "Няма съвпадащи резултати."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Няма избрана сесия."
   },
   "menuLabel": {
     "message": "Меню"
@@ -147,13 +147,13 @@
     "message": "Затваряне на менюто"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Затваряне"
   },
   "renameLabel": {
     "message": "Преименуване"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Преименуване на сесия"
   },
   "OpenSessionLabel": {
     "message": "Отваряне на сесия"
