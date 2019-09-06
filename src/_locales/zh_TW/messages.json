@@ -12,7 +12,7 @@
     "message": "贊助"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "在新分頁顯示瀏覽階段清單"
   },
   "saveLabel": {
     "message": "儲存"
@@ -138,7 +138,7 @@
     "message": "沒有符合的結果。"
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "尚未選取瀏覽階段。"
   },
   "menuLabel": {
     "message": "選單"
@@ -162,7 +162,7 @@
     "message": "在新視窗中開啟"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "於新視窗中開啟瀏覽階段。"
+    "message": "在新視窗中開啟瀏覽階段。"
   },
   "openInCurrentWindowLabel": {
     "message": "在目前視窗中開啟"
@@ -237,7 +237,7 @@
     "message": "樣式"
   },
   "ifOpenNewWindowLabel": {
-    "message": "於新視窗中開啟瀏覽階段"
+    "message": "在新視窗中開啟瀏覽階段"
   },
   "ifOpenNewWindowCaptionLabel": {
     "message": "如果取消勾選，開啟瀏覽階段時將會覆寫目前視窗。"
