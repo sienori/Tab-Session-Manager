@@ -9,7 +9,7 @@
     "message": "透過 PayPal 贊助"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "贊助"
   },
   "openSessionListInTabLabel": {
     "message": "Open session list in tab"
@@ -147,13 +147,13 @@
     "message": "關閉選單"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "關閉"
   },
   "renameLabel": {
     "message": "重新命名"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "重新命名瀏覽階段"
   },
   "OpenSessionLabel": {
     "message": "開啟瀏覽階段"
@@ -531,7 +531,7 @@
     "message": "重設"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "贊助者清單"
   },
   "LicenseLabel": {
     "message": "授權條款"
