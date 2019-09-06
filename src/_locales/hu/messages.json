@@ -9,10 +9,10 @@
     "message": "Adományozz a PayPal -al"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Adományozz"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Munkamenet lista megnyitása a fülön"
   },
   "saveLabel": {
     "message": "Mentés"
@@ -138,7 +138,7 @@
     "message": "Nincs találat."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Nincs kiválasztott munkamenet."
   },
   "menuLabel": {
     "message": "Menü"
@@ -147,13 +147,13 @@
     "message": "Menü bezárása"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Bezár"
   },
   "renameLabel": {
     "message": "Átnevez"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Munkamenet átnevezése"
   },
   "OpenSessionLabel": {
     "message": "Munkamenet megnyitása"
@@ -351,7 +351,7 @@
     "message": "Privát ablak elmentése"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Munkamenet mentésekor kihagyandó URL -ek listája"
   },
   "ignoreUrlListCaptionLabel": {
     "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
@@ -411,10 +411,10 @@
     "message": "Magasság"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Munkamenet lista megnyitása a fülön"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Munkamenet lista megnyitása a fülön ha az eszköztáron szereplő gomb megnyomva."
   },
   "otherLabel": {
     "message": "Egyéb"
@@ -531,7 +531,7 @@
     "message": "Alaphelyzet"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Támogatók"
   },
   "LicenseLabel": {
     "message": "Licensz"
