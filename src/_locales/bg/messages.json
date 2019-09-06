@@ -414,7 +414,7 @@
     "message": "Отваряне на списъка със сесии в раздел"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "При щракване на бутона в лентата, сесиите се отварят в раздел."
   },
   "otherLabel": {
     "message": "Други"
@@ -531,7 +531,7 @@
     "message": "Нулиране"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Поддръжници"
   },
   "LicenseLabel": {
     "message": "Лиценз"
