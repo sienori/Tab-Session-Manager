@@ -351,10 +351,10 @@
     "message": "Запазване на поверителен прозорец"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Списък за игнориране на URL адреси при запазване на сесия"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Ако URL адресът на раздела съвпада със списъка, той няма да бъде записан в сесията. Списъка позволява използването на \"*\" заместващи символи."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ако не е отметнато, поверителният прозорец ще бъде игнориран при запазване на сесията."
@@ -411,7 +411,7 @@
     "message": "Височина"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Отваряне на списъка със сесии в раздел"
   },
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Open session list in tab when button on toolbar is clicked."
