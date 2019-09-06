@@ -7,3 +7,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 </a>
 
 ## Backers via Patreon
+- level1imp
+- alberto bursi
