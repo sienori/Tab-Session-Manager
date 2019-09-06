@@ -411,10 +411,10 @@
     "message": "高度"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "在新分頁顯示瀏覽階段清單"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "左鍵點選工具列圖示時，在新分頁中顯示瀏覽階段清單。"
   },
   "otherLabel": {
     "message": "其他"
@@ -537,10 +537,10 @@
     "message": "授權條款"
   },
   "donationLabel": {
-    "message": "請贊助我吧！"
+    "message": "希望您贊助我！"
   },
   "donationCaptionLabel": {
-    "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您可以贊助我。"
+    "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您能夠贊助我。"
   },
   "amazonTitleLabel": {
     "message": "贊助我 amazon 電子禮品卡"
