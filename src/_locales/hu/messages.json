@@ -6,7 +6,7 @@
     "message": "Ablakok és fülek állapotának mentése és visszaállítása. Automatikus állapot mentés is támogatva van."
   },
   "donateWithPaypalLabel": {
-    "message": "Adományozz a PayPal -al"
+    "message": "Adományozz a PayPal -el"
   },
   "donateLabel": {
     "message": "Adományozz"
@@ -285,7 +285,7 @@
     "message": "Elmentettek maximális száma"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Az ilyen módon elmentett munkamenetek maximális száma."
+    "message": "Az (ilyen módon) elmentett munkamenetek maximális száma."
   },
   "ifAutoSaveWhenCloseLabel": {
     "message": "Munkamenet mentése ha az ablakot bezárták"
@@ -297,7 +297,7 @@
     "message": "Elmentettek maximális száma"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Az ilyen módon elmentett munkamenetek maximális száma."
+    "message": "Az (ilyen módon) elmentett munkamenetek maximális száma."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "A munkamenet mentése böngészőből való kilépéskor"
@@ -309,7 +309,7 @@
     "message": "Elmentettek maximális száma"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Az ilyen módon elmentett munkamenetek maximális száma."
+    "message": "Az (ilyen módon) elmentett munkamenetek maximális száma."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Oldal cím használata munkamenet automatikus mentésekor"
@@ -354,7 +354,7 @@
     "message": "Munkamenet mentésekor kihagyandó URL -ek listája"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Ha a fül URL -je egyezik a listával, akkor nem lesz tárolva a munkamenetben. A lista engedélyezi a \"*\" helyettesítő karaktereket."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ha nincs bejelölve, nem menti a privát ablak tartalmát a munkamenet mentésekor."
@@ -534,7 +534,7 @@
     "message": "Támogatók"
   },
   "LicenseLabel": {
-    "message": "Licensz"
+    "message": "Licenc"
   },
   "donationLabel": {
     "message": "Kérjük adakozzon"
