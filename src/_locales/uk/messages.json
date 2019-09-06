@@ -351,10 +351,10 @@
     "message": "Зберігати приватне вікно"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Список URL-адрес, який ігнорується під час збереження сеансу"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Якщо URL-адреса вкладки відповідає списку, вона не буде записана в сеанс. У списку можливі \"*\" підстановки."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
@@ -531,7 +531,7 @@
     "message": "Скинути"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Підтримати"
   },
   "LicenseLabel": {
     "message": "Ліцензія"
