@@ -132,7 +132,7 @@
     "message": "Nie ma żadnej sesji."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Zapiszmy sesję, klikając prawy dolny przycisk."
   },
   "noResultLabel": {
     "message": "Brak pasujących wyników."
@@ -252,7 +252,7 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Włączenie tej opcji poprawi wydajność podczas otwierania kart."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
