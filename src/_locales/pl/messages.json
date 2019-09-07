@@ -351,10 +351,10 @@
     "message": "Zapisuj okno prywatne"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Lista URL do pominięcia podczas zapisywania sesji"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Jeśli URL karty pasuje do listy, nie zostanie ona zapisana w sesji. Na tej liście są dozwolone \"*\" symbole wieloznaczne."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Jeżeli odznaczone, podczas zapisywania sesji ignoruje okna prywatne."
@@ -384,13 +384,13 @@
     "message": "Działanie przycisku Otwórz"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Wybierz domyślne działanie przycisku otwórz."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Działanie przycisku Zapisz"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Wybierz domyślne działanie przycisku zapisz."
   },
   "isShowSearchBarLabel": {
     "message": "Wyświetl pasek wyszukiwania"
@@ -414,7 +414,7 @@
     "message": "Otwórz listę sesji w karcie"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Otwórz listę sesji w karcie po kliknięciu przycisku paska narzędzi."
   },
   "otherLabel": {
     "message": "Inne"
