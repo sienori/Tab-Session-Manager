@@ -393,13 +393,13 @@
     "message": "Select the default behavior of the save button."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Wyświetl pasek wyszukiwania"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Dodaj funkcję wyszukiwania sesji wg nazwy."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Rozmiar"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
@@ -411,7 +411,7 @@
     "message": "Wysokość"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Otwórz listę sesji w karcie"
   },
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Open session list in tab when button on toolbar is clicked."
@@ -420,19 +420,19 @@
     "message": "Inne"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Wyświetl kartę opcji po aktualizacji"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Wyświetl kartę opcji po aktualizacji Tab Session Manager. Możesz szybko poznać zawartość aktualizacji."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager został zaktualizowany!"
   },
   "seeMoreLabel": {
     "message": "Zobacz więcej"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Kliknij, aby uzyskać informacje o aktualizacji."
   },
   "isDebugModeLabel": {
     "message": "Enable debug mode"
@@ -498,7 +498,7 @@
     "message": "Wpisz skrót"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Wpisz literę"
   },
   "includeModifierKeysMessage": {
     "message": "Include either Ctrl or Alt"
@@ -507,10 +507,10 @@
     "message": "Include either Command, Ctrl or Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Ta litera nie może zostać użyta"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Ten skrót nie może zostać użyty"
   },
   "openPopupDescription": {
     "message": "Open toolbar popup"
@@ -519,7 +519,7 @@
     "message": "Zapisz sesję (tylko otwarte okno)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Zapisz sesję (wszystkie okna)"
   },
   "exportSessionsDescription": {
     "message": "Eksportuj wszystkie sesje"
