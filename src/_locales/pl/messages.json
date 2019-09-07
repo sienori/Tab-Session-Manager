@@ -267,7 +267,7 @@
     "message": "Przywróć poprzednią sesję podczas uruchamiania"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Po uruchomieniu przeglądarki, przywróć sesję, która została zamknięta ostatnim razem."
   },
   "ifAutoSaveLabel": {
     "message": "Zapisuj sesję regularnie"
@@ -285,7 +285,7 @@
     "message": "Maksymalna liczba zapisanych"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maksymalna liczba zapisanych sesji (w ten sposób)."
+    "message": "Maksymalna liczba zapisanych (w ten sposób) sesji."
   },
   "ifAutoSaveWhenCloseLabel": {
     "message": "Zapisuj sesję, kiedy okno zostało zamknięte"
@@ -303,7 +303,7 @@
     "message": "Zapisz sesję podczas zamykania przeglądarki"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Zapisz sesję zawierającą wiele okien zamkniętych pod rząd."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Maksymalna liczba zapisanych"
@@ -324,13 +324,13 @@
     "message": "Zapisz kopię zapasową"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Po uruchomieniu przeglądarki, utwórz plik kopii zapasowej wszystkich sesji i zapisz go w folderze pobierania."
   },
   "backupFolderLabel": {
     "message": "Lokalizacja zapisu"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Określ miejsce zapisu plików kopii zapasowej. Możliwość zapisu jest ograniczona do podfolderów katalogu pobierania przeglądarki."
   },
   "downloadFolderLabel": {
     "message": "Katalog pobierania"
@@ -429,7 +429,7 @@
     "message": "Tab Session Manager has been updated!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Zobacz więcej"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Click to view update information."
@@ -489,13 +489,13 @@
     "message": "Usuń"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Skróty klawiszowe"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Definiowanie skrótów klawiaturowych."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Wpisz skrót"
   },
   "typeLetterMessage": {
     "message": "Type a letter"
@@ -516,22 +516,22 @@
     "message": "Open toolbar popup"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Zapisz sesję (tylko otwarte okno)"
   },
   "saveAllWindowDescription": {
     "message": "Save session (all windows)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Eksportuj wszystkie sesje"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Wyczyść"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Resetuj"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Wspierający"
   },
   "LicenseLabel": {
     "message": "Licencja"
@@ -546,7 +546,7 @@
     "message": "eKarty podarunkowe amazon.co.jp"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Strona dodatku"
   },
   "extensionPageLabel": {
     "message": "Extension page"
