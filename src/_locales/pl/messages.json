@@ -378,10 +378,10 @@
     "message": "Jeśli nazwa sesji na liście sesji jest dłuższa niż jedna linia, jest ona obcinana do jednej inii i wyświetlana."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Wyskakujące okno"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Działanie przycisku Otwórz"
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the open button."
@@ -435,7 +435,7 @@
     "message": "Kliknij, aby uzyskać informacje o aktualizacji."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Włącz tryb debugowania"
   },
   "isDebugModeCaptionLabel": {
     "message": "When debug mode is enabled, the log is output to the debugger."
@@ -489,7 +489,7 @@
     "message": "Usuń"
   },
   "keyboardShortcutsLabel": {
-    "message": "Skróty klawiszowe"
+    "message": "Skróty klawiaturowe"
   },
   "setKeyboardShortCutsMessage": {
     "message": "Definiowanie skrótów klawiaturowych."
@@ -513,7 +513,7 @@
     "message": "Ten skrót nie może zostać użyty"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Otwórz okienko paska narzędzi"
   },
   "saveCurrentWindowDescription": {
     "message": "Zapisz sesję (tylko otwarte okno)"
