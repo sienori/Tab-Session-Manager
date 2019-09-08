@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
-import "../styles/textInputModalContent.scss";
+import "../styles/TextInputModalContent.scss";
 
 export default class TextInputModalContent extends Component {
   constructor(props) {

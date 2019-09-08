@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
 import PlusIcon from "../icons/plus.svg";
-import "../styles/modal.scss";
+import "../styles/Modal.scss";
 
 export default class Modal extends Component {
   constructor(props) {
