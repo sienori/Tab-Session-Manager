@@ -12,14 +12,17 @@ export default class Session extends Component {
   constructor(props) {
     super(props);
   }
+  
   render() {
-    const { session, isSelected, order, searchWord, handleSessionSelect } = this.props;
+    const { session, isSelected, order, searchWord, handleSessionSelect, handleKeyDown, previous, next } = this.props;
 
     return (
       <button
         className={`sessionItem ${isSelected ? "isSelected" : ""}`}
-        onClick={() => handleSessionSelect(session.id)}
+        onFocus={() => handleSessionSelect(session.id)}
+        onKeyDown={(event) => handleKeyDown(event, session, previous, next)}
         style={{ order: order }}
+        ref={(input) => { if (input && isSelected) input.focus(); }}
       >
         <span className={`name ${getSettings("truncateTitle") ? "isTruncate" : ""}`}>
           <Highlight search={searchWord}>

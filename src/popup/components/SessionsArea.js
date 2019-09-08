@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
 import SessionItem from "./SessionItem";
 //import Session from "./Session";
+import { getSettings } from "src/settings/settings";
+import { sendOpenMessage } from "../actions/controlSessions";
 import "../styles/SessionsArea.scss";
 
 const matchesFilter = (tags, filterValue) => {
@@ -83,6 +85,19 @@ export default class SessionsArea extends Component {
     this.props.selectSession(id);
   };
 
+  handleKeyDown = (event, current, prev, next) => {
+    if (event.which == 38) {
+      this.props.selectSession(prev.id);
+      event.preventDefault();
+    } else if (event.which == 40) {
+      this.props.selectSession(next.id);
+      event.preventDefault();
+    } else if (event.which == 13) {
+      const defaultBehavior = getSettings("openButtonBehavior");
+      sendOpenMessage(current.id, defaultBehavior);
+    }
+  };
+
   componentDidUpdate() {
     const { filterValue, sortValue } = this.props;
     const { prevFilterValue, prevSortValue } = this;
@@ -116,20 +131,25 @@ export default class SessionsArea extends Component {
 
     return (
       <div id="sessionsArea" ref="sessionsArea">
-        {sessions.map(
-          session =>
-            matchesFilter(session.tag, filterValue) &&
-            matchesSearch(session.name, searchWord) && (
-              <SessionItem
-                session={session}
-                isSelected={selectedSessionId === session.id}
-                order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
-                searchWord={searchWord}
-                handleSessionSelect={this.handleSessionSelect}
-                key={session.id}
-              />
-            )
-        )}
+        {sessions.map((session, idx) => {
+          const order = sortedSessions.findIndex(sortedSession => sortedSession.id === session.id);
+          const prev = sortedSessions[(order > 0) ? order-1 : 0];
+          const next = sortedSessions[(order < sortedSessions.length-1) ? order+1 : sortedSessions.length-1];
+          return matchesFilter(session.tag, filterValue) &&
+                 matchesSearch(session.name, searchWord) && (
+                   <SessionItem
+                     session={session}
+                     isSelected={selectedSessionId === session.id}
+                     order={order}
+                     searchWord={searchWord}
+                     handleSessionSelect={this.handleSessionSelect}
+                     handleKeyDown={this.handleKeyDown}
+                     key={session.id}
+                     previous={prev}
+                     next={next}
+                   />
+                 )
+        })}
         {shouldShowNoSessionMessage && (
           <div className="noSession">
             <p>{browser.i18n.getMessage("noSessionLabel")}</p>
