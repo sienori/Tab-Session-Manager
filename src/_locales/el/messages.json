@@ -270,7 +270,7 @@
     "message": "Κατά την εκκίνηση του πλοηγού, επαναφορά της τελευταίας περιόδου λειτουργίας."
   },
   "ifAutoSaveLabel": {
-    "message": "Τακτική αποθήκευση περιόδου λειτουργίας"
+    "message": "Συχνή αποθήκευση περιόδου λειτουργίας"
   },
   "ifAutoSaveCaptionLabel": {
     "message": "Αποθήκευση περιόδου λειτουργίας κάθε X λεπτά."
@@ -399,10 +399,10 @@
     "message": "Δυνατότητα αναζήτησης με βάση το όνομα της περιόδου λειτουργίας."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Προβολή των κουμπιών άνοιγμα/διαγραφή στη λίστα"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Προβολή των κουμπιών άνοιγμα/διαγραφή όταν το ποντίκι βρίσκεται πάνω από τη λίστα."
   },
   "sizeLabel": {
     "message": "Μέγεθος"
@@ -417,7 +417,7 @@
     "message": "Ύψος"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Πλάτος πλευρικής στήλης"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Άνοιγμα της λίστας της περιόδου λειτουργίας στην καρτέλα"
