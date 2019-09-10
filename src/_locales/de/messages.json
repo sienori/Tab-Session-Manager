@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Fügt die Funktion zum Suchen von Sitzungsnamen hinzu."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "Größe"
   },
@@ -409,6 +415,9 @@
   },
   "heightLabel": {
     "message": "Höhe"
+  },
+  "sidebarWidthLabel": {
+    "message": "Sidebar width"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Öffne die Sitzungsliste im Tab"
