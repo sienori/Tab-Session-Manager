@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Добавяне на функция за търсене по име на сесия."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "Размер"
   },
@@ -409,6 +415,9 @@
   },
   "heightLabel": {
     "message": "Височина"
+  },
+  "sidebarWidthLabel": {
+    "message": "Sidebar width"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Отваряне на списъка със сесии в раздел"
