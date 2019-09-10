@@ -49,6 +49,11 @@
         margin-right: 3px;
         fill: var(--sub-text);
       }
+      span {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
       display: flex;
       align-items: center;
       justify-content: space-between;

@@ -30,7 +30,7 @@ export default class Session extends Component {
           {session.tag.map((tag, index) => (
             <li className="tag" key={index}>
               <TagIcon />
-              {generateTagLabel(tag)}
+              <span>{generateTagLabel(tag)}</span>
             </li>
           ))}
         </ul>
