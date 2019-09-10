@@ -399,7 +399,7 @@
     "message": "Добавяне на функция за търсене по име на сесия."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Показване на бутони за отваряне / изтриване в списъка със сесии"
   },
   "isShowOpenButtonsCaptionLabel": {
     "message": "Display open / delete buttons when the cursor is over the session list."
