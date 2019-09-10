@@ -5,6 +5,7 @@ import { openSession } from "./open.js";
 import { getSessionsByTag } from "./tag.js";
 import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
+import ignoreUrls from "./ignoreUrls";
 
 const logDir = "background/autoSave";
 let autoSaveTimer;
@@ -18,11 +19,12 @@ const autoSaveRegular = async () => {
     const tag = ["regular"];
     const property = "saveAllWindows";
     const session = await loadCurrentSession(name, tag, property);
+    const editedSession = ignoreUrls(session);
 
-    const isChanged = await isChangedAutoSaveSession(session);
+    const isChanged = await isChangedAutoSaveSession(editedSession);
     if (!isChanged) return;
 
-    await saveSession(session);
+    await saveSession(editedSession);
     const limit = getSettings("autoSaveLimit");
     removeOverLimit("regular", limit);
   } catch (e) {
@@ -63,13 +65,18 @@ function isChangeAutoSaveSettings(changes, areaName) {
 
 const updateTemp = async () => {
   log.log(logDir, "updateTemp()");
-  const name = await getCurrentTabName();
-  let session = await loadCurrentSession(name, ["temp"], "default");
-  let tempSessions = await getSessionsByTag("temp");
+  try {
+    const name = await getCurrentTabName();
+    const session = await loadCurrentSession(name, ["temp"], "default");
+    let editedSession = ignoreUrls(session);
+    const tempSessions = await getSessionsByTag("temp");
 
-  //現在のセッションをtempとして保存
-  if (tempSessions[0]) session.id = tempSessions[0].id;
-  await saveSession(session, false);
+    //現在のセッションをtempとして保存
+    if (tempSessions[0]) editedSession.id = tempSessions[0].id;
+    await saveSession(editedSession, false);
+  } catch (e) {
+    log.error(logDir, "updateTemp()", e);
+  }
 };
 
 let updateTempTimer;
