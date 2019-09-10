@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Lägga till en funktion för att söka efter sessionsnamn."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "Storlek"
   },
@@ -409,6 +415,9 @@
   },
   "heightLabel": {
     "message": "Höjd"
+  },
+  "sidebarWidthLabel": {
+    "message": "Sidebar width"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Öppna sessionslistan i fliken"
