@@ -34,8 +34,7 @@ export default [
         captions: ["ignoreUrlListCaptionLabel"],
         type: "textarea",
         default: "",
-        placeholder: "https://example.com/*\nhttps://example.net/*",
-        new: true
+        placeholder: "https://example.com/*\nhttps://example.net/*"
       },
       {
         id: "isRestoreWindowPosition",
@@ -293,7 +292,8 @@ export default [
             min: 100,
             max: 800,
             placeholder: 300,
-            default: 300
+            default: 300,
+            new: true
           }
         ]
       },
@@ -302,8 +302,7 @@ export default [
         title: "isSessionListOpenInTabLabel",
         captions: ["isSessionListOpenInTabCaptionLabel"],
         type: "checkbox",
-        default: false,
-        new: true
+        default: false
       }
     ]
   },
