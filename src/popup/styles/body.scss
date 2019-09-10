@@ -1,5 +1,4 @@
 html {
-  height: 100%;
   body {
     margin: 0;
     font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica",
@@ -7,7 +6,6 @@ html {
     font-size: 13px;
     overflow: hidden;
     background-color: var(--main-bg);
-    height: 100%;
     #root {
       height: 100%;
     }

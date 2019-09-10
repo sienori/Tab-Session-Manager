@@ -85,6 +85,9 @@ export default class PopupPage extends Component {
         openUrl(popupUrl);
         window.close();
       }
+    } else {
+      document.documentElement.style.height = "100%";
+      document.body.style.height = "100%";
     }
     this.setState({
       sortValue: getSettings("sortValue") || "newest",
