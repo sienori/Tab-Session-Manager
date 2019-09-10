@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Δυνατότητα αναζήτησης με βάση το όνομα της περιόδου λειτουργίας."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "Μέγεθος"
   },
@@ -409,6 +415,9 @@
   },
   "heightLabel": {
     "message": "Ύψος"
+  },
+  "sidebarWidthLabel": {
+    "message": "Sidebar width"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Άνοιγμα της λίστας της περιόδου λειτουργίας στην καρτέλα"
