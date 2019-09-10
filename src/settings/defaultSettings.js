@@ -276,6 +276,16 @@ export default [
             max: 600,
             placeholder: 500,
             default: 500
+          },
+          {
+            id: "sidebarWidth",
+            title: "sidebarWidthLabel",
+            captions: [""],
+            type: "number",
+            min: 100,
+            max: 800,
+            placeholder: 300,
+            default: 300
           }
         ]
       },

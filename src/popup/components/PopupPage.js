@@ -44,6 +44,7 @@ export default class PopupPage extends Component {
       isShowSearchBar: false,
       searchWord: "",
       isInTab: false,
+      sidebarWidth: 300,
       notification: {
         message: "",
         type: "info",
@@ -92,7 +93,8 @@ export default class PopupPage extends Component {
     this.setState({
       sortValue: getSettings("sortValue") || "newest",
       isShowSearchBar: getSettings("isShowSearchBar"),
-      isInTab: isInTab
+      isInTab: isInTab,
+      sidebarWidth: getSettings("sidebarWidth")
     });
 
     const isInit = await browser.runtime.sendMessage({ message: "getInitState" });
@@ -364,7 +366,7 @@ export default class PopupPage extends Component {
         <Notification notification={this.state.notification} />
         <Header openModal={this.openModal} />
         <div id="contents">
-          <div className="column sidebar">
+          <div className="column sidebar" style={{ width: `${this.state.sidebarWidth}px` }}>
             <OptionsArea
               sessions={this.state.sessions || []}
               filterValue={this.state.filterValue}

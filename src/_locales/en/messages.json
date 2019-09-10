@@ -414,6 +414,9 @@
   "heightLabel": {
     "message": "Height"
   },
+  "sidebarWidthLabel": {
+    "message": "Sidebar width"
+  },
   "isSessionListOpenInTabLabel": {
     "message": "Open session list in tab"
   },
