@@ -262,10 +262,10 @@ export default [
             title: "widthLabel",
             captions: [""],
             type: "number",
-            min: 600,
+            min: 300,
             max: 800,
-            placeholder: 800,
-            default: 800
+            placeholder: 700,
+            default: 700
           },
           {
             id: "popupHeight",
