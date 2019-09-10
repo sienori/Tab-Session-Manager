@@ -399,10 +399,10 @@
     "message": "Додати функцію пошуку за назвою сесії."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Відображення кнопок відкрити / видалити у списку сесії"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Відображати кнопки відкрити/видалити коли курсор знаходиться над списком сесії."
   },
   "sizeLabel": {
     "message": "Розмір"
@@ -417,7 +417,7 @@
     "message": "Висота"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Ширина бокової панелі"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Відкрити список сесії у вкладці"
