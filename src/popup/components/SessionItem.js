@@ -54,22 +54,24 @@ export default class Session extends Component {
           </div>
         </button>
 
-        <div className="buttonsContainer">
-          <button
-            className="open"
-            onClick={this.handleOpenClick}
-            title={browser.i18n.getMessage("open")}
-          >
-            <NewWindowIcon />
-          </button>
-          <button
-            className="remove"
-            onClick={this.handleRemoveClick}
-            title={browser.i18n.getMessage("remove")}
-          >
-            <DeleteIcon />
-          </button>
-        </div>
+        {getSettings("isShowOpenButtons") && (
+          <div className="buttonsContainer">
+            <button
+              className="open"
+              onClick={this.handleOpenClick}
+              title={browser.i18n.getMessage("open")}
+            >
+              <NewWindowIcon />
+            </button>
+            <button
+              className="remove"
+              onClick={this.handleRemoveClick}
+              title={browser.i18n.getMessage("remove")}
+            >
+              <DeleteIcon />
+            </button>
+          </div>
+        )}
       </div>
     );
   }

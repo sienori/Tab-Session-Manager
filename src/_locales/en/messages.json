@@ -402,6 +402,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Add a function to search by session name."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "Size"
   },

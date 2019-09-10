@@ -253,6 +253,14 @@ export default [
         default: true
       },
       {
+        id: "isShowOpenButtons",
+        title: "isShowOpenButtonsLabel",
+        captions: ["isShowOpenButtonsCaptionLabel"],
+        type: "checkbox",
+        default: true,
+        new: true
+      },
+      {
         title: "sizeLabel",
         captions: ["popupSizeCaptionLabel"],
         type: "none",
