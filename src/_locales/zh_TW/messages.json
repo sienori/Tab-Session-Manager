@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "新增搜尋瀏覽階段功能。"
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "大小"
   },
@@ -409,6 +415,9 @@
   },
   "heightLabel": {
     "message": "高度"
+  },
+  "sidebarWidthLabel": {
+    "message": "Sidebar width"
   },
   "isSessionListOpenInTabLabel": {
     "message": "在新分頁顯示瀏覽階段清單"
