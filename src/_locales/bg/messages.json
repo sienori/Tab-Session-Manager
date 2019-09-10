@@ -399,10 +399,10 @@
     "message": "Добавяне на функция за търсене по име на сесия."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Показване на бутони за отваряне / изтриване в списъка със сесии"
+    "message": "Показване на бутони за отваряне / изтриване в списък със сесия"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Показване на бутони за отваряне / изтриване, когато курсора е върху списък със сесия."
   },
   "sizeLabel": {
     "message": "Размер"
@@ -417,7 +417,7 @@
     "message": "Височина"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Широчина на страничната лента"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Отваряне на списъка със сесии в раздел"
