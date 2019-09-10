@@ -11,7 +11,8 @@ const FavIcon = props => (
     className="favIcon"
     src={props.favIconUrl || "/icons/favicon.png"}
     onError={e => {
-      e.target.src = "/icons/favicon.png";
+      const target = e.target;
+      setTimeout(() => (target.src = "/icons/favicon.png"), 0);
     }}
   />
 );
