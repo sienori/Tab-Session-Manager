@@ -100,6 +100,7 @@ export default class SessionsArea extends Component {
       sortValue,
       searchWord,
       isInitSessions,
+      removeSession,
       error
     } = this.props;
 
@@ -125,6 +126,7 @@ export default class SessionsArea extends Component {
                 isSelected={selectedSessionId === session.id}
                 order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
                 searchWord={searchWord}
+                removeSession={removeSession}
                 handleSessionSelect={this.handleSessionSelect}
                 key={session.id}
               />

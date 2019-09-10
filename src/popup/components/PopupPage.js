@@ -386,6 +386,7 @@ export default class PopupPage extends Component {
               filterValue={this.state.filterValue}
               sortValue={this.state.sortValue}
               searchWord={this.state.searchWord}
+              removeSession={this.removeSession}
               selectSession={this.selectSession}
               openMenu={this.openMenu}
               isInitSessions={this.state.isInitSessions}

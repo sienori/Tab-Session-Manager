@@ -1,72 +1,78 @@
 .sessionItem {
-  border: none;
-  border-bottom: 1px solid var(--line);
-  padding: 8px 5px;
-  text-align: left;
+  position: relative;
   background-color: var(--main-bg);
-  cursor: pointer;
 
-  .name {
-    display: block;
-    color: var(--main-text);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-
-    &.isTruncate {
-      white-space: nowrap;
-    }
-  }
-
-  .lineContainer {
-    display: flex;
-    justify-content: space-between;
-
-    .windowsInfo,
-    .date {
-      font-size: 11px;
-      color: var(--sub-text);
-      overflow: hidden;
-      word-break: break-all;
-    }
-  }
-
-  .tagsContainer {
-    display: flex;
-    flex-direction: row;
+  .selectButton {
+    border: none;
+    border-bottom: 1px solid var(--line);
+    padding: 8px 5px;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    overflow: hidden;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    .tag {
-      svg {
-        width: 11px;
-        margin-right: 3px;
-        fill: var(--sub-text);
-      }
-      span {
-        text-overflow: ellipsis;
+    .name {
+      display: block;
+      color: var(--main-text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+
+      &.isTruncate {
         white-space: nowrap;
+      }
+    }
+
+    .lineContainer {
+      display: flex;
+      justify-content: space-between;
+
+      .windowsInfo,
+      .date {
+        font-size: 11px;
+        color: var(--sub-text);
+        overflow: hidden;
+        word-break: break-all;
+      }
+    }
+
+    .tagsContainer {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: hidden;
+
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      .tag {
+        svg {
+          width: 11px;
+          margin-right: 3px;
+          fill: var(--sub-text);
+        }
+        span {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 30px;
+        font-size: 11px;
+        height: 14px;
+        color: var(--sub-text);
+        background-color: var(--line);
+        border-radius: 2px;
+        padding: 3px 5px;
+        margin-bottom: 2px;
+        margin-right: 2px;
         overflow: hidden;
       }
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-width: 30px;
-      font-size: 11px;
-      height: 14px;
-      color: var(--sub-text);
-      background-color: var(--line);
-      border-radius: 2px;
-      padding: 3px 5px;
-      margin-bottom: 2px;
-      margin-right: 2px;
-      overflow: hidden;
     }
   }
 
@@ -76,5 +82,52 @@
 
   &:not(.isSelected):hover {
     background-color: var(--line);
+  }
+
+  .buttonsContainer {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(50px);
+    background-color: rgba(255, 255, 255, 0.8);
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    transition: all 300ms 0s;
+
+    button {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      margin: 5px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 200ms;
+
+      svg {
+        width: 13px;
+        fill: var(--highlight);
+      }
+
+      &:hover {
+        background-color: var(--button);
+      }
+
+      &.remove:hover {
+        svg {
+          fill: var(--confirm);
+        }
+      }
+    }
+  }
+
+  &:hover .buttonsContainer {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 300ms 200ms;
   }
 }
