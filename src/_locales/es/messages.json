@@ -399,10 +399,10 @@
     "message": "Agregar una función para buscar por nombre de la sesión."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Mostrar botones de abrir/cerrar en la lista de sesiones"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Mostrar botones de abrir/cerrar cuando el cursor esté encima de la lista de sesiones."
   },
   "sizeLabel": {
     "message": "Tamaño"
@@ -417,7 +417,7 @@
     "message": "Alto"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Ancho de barra lateral"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Abrir lista de sesiones en la pestaña"
