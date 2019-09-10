@@ -399,10 +399,10 @@
     "message": "Lägga till en funktion för att söka efter sessionsnamn."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Visa knapparna öppna / ta bort i sessionslisten"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Visa knapparna öppna / ta bort när markören är över sessionslisten."
   },
   "sizeLabel": {
     "message": "Storlek"
@@ -417,7 +417,7 @@
     "message": "Höjd"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Sidofältets bredd"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Öppna sessionslistan i fliken"
