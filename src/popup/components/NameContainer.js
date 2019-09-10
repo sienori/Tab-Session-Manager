@@ -11,9 +11,9 @@ export default class NameContainer extends Component {
   }
 
   renameSession = name => {
-    if (name === this.props.session.name) return;
+    if (name === this.props.sessionName) return;
     if (name.trim() === "") return;
-    sendSesssionRenameMessage(this.props.session.id, name);
+    sendSesssionRenameMessage(this.props.sessionId, name);
   };
 
   handleRenameClick = () => {
@@ -22,21 +22,21 @@ export default class NameContainer extends Component {
       <TextInputModalContent
         onSave={this.renameSession}
         closeModal={this.props.closeModal}
-        defaultText={this.props.session.name}
+        defaultText={this.props.sessionName}
       />
     );
     this.props.openModal(title, content);
   };
 
   render() {
-    const { session } = this.props;
+    const { sessionName } = this.props;
     return (
       <div className={`nameContainer ${getSettings("truncateTitle") ? "isTruncate" : ""}`}>
         <button
           onClick={this.handleRenameClick}
           title={browser.i18n.getMessage("renameSessionLabel")}
         >
-          <span className="sessionName">{session.name.trim() === "" ? "_" : session.name}</span>
+          <span className="sessionName">{sessionName.trim() === "" ? "_" : sessionName}</span>
         </button>
       </div>
     );

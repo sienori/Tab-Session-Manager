@@ -14,7 +14,7 @@ export default class TagsContainer extends Component {
 
   addTag = tagName => {
     if (tagName.trim() === "") return;
-    sendTagAddMessage(this.props.session.id, tagName);
+    sendTagAddMessage(this.props.sessionId, tagName);
   };
 
   handleAddTagClick = () => {
@@ -26,21 +26,21 @@ export default class TagsContainer extends Component {
   };
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.session.id !== this.props.session.id) this.setState({ isOpenedInput: false });
+    if (nextProps.sessionId !== this.props.sessionId) this.setState({ isOpenedInput: false });
   }
 
   render() {
-    const { session } = this.props;
+    const { sessionId, tags } = this.props;
     return (
       <div className="tagsContainer">
-        {session.tag.map((tag, index) => (
+        {tags.map((tag, index) => (
           <div className="tag" key={index}>
             <TagIcon className="tagIcon" />
             <span>{generateTagLabel(tag)}</span>
             <button
               className="removeTagButton"
               onClick={() => {
-                sendTagRemoveMessage(session.id, tag);
+                sendTagRemoveMessage(sessionId, tag);
               }}
               title={browser.i18n.getMessage("removeTagLabel")}
             >

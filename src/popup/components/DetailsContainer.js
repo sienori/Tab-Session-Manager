@@ -127,6 +127,8 @@ class WindowContainer extends Component {
 export default props => {
   const { session, removeWindow, removeTab } = props;
 
+  if (!session.windows) return null;
+
   const handleRemoveWindow = windowId => {
     removeWindow(session, windowId);
   };

@@ -76,7 +76,12 @@ export default class SessionDetailsArea extends Component {
       <div id="sessionDetailArea" ref="sessionDetailArea">
         <div className="sessionHeader">
           <div className="lineContainer">
-            <NameContainer session={session} openModal={openModal} closeModal={closeModal} />
+            <NameContainer
+              sessionId={session.id}
+              sessionName={session.name}
+              openModal={openModal}
+              closeModal={closeModal}
+            />
             <button
               className="menuButton"
               onClick={this.handleMenuClick}
@@ -86,7 +91,12 @@ export default class SessionDetailsArea extends Component {
             </button>
           </div>
           <div className="lineContainer">
-            <TagsContainer session={session} openModal={openModal} closeModal={closeModal} />
+            <TagsContainer
+              sessionId={session.id}
+              tags={session.tag}
+              openModal={openModal}
+              closeModal={closeModal}
+            />
             <span className="date">{moment(session.date).format(getSettings("dateFormat"))}</span>
           </div>
 
