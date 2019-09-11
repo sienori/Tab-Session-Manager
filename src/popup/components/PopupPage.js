@@ -189,12 +189,16 @@ export default class PopupPage extends Component {
   };
 
   selectSession = async id => {
+    if (id === this.state.selectedSession.id) return;
     log.info(logDir, "selectSession()", id);
+
     let selectedSession = this.state.sessions.find(session => session.id === id);
     this.setState({ selectedSession: selectedSession || {} });
     setSettings("selectedSessionId", id);
 
     selectedSession = await getSessions(id);
+    if (!selectedSession) return;
+    if (selectedSession.id !== this.state.selectedSession.id) return;
     this.setState({ selectedSession: selectedSession || {} });
   };
 
