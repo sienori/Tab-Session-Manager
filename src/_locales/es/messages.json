@@ -9,10 +9,10 @@
     "message": "Donar con PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Donar"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Abrir lista de sesiones en la pestaña"
   },
   "saveLabel": {
     "message": "Guardar"
@@ -138,7 +138,7 @@
     "message": "No se encontraron resultados."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "No ha seleccionado sesión."
   },
   "menuLabel": {
     "message": "Menú"
@@ -147,13 +147,13 @@
     "message": "Cerrar menú"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Cerrar"
   },
   "renameLabel": {
     "message": "Renombrar"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Renombrar sesión"
   },
   "OpenSessionLabel": {
     "message": "Abrir una sesión"
@@ -351,10 +351,10 @@
     "message": "Guardar ventana privada"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Lista de URLs a ignorar al guardar sesión"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Si la URL de la pestaña coincide con algún elemento de esta lista, la misma no será registrada en la sesión. La lista permite comodines \"*\"."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si no está marcada, ignorar la ventana privada al guardar la sesión."
@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Agregar una función para buscar por nombre de la sesión."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Mostrar botones de abrir/cerrar en la lista de sesiones"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Mostrar botones de abrir/cerrar cuando el cursor esté encima de la lista de sesiones."
+  },
   "sizeLabel": {
     "message": "Tamaño"
   },
@@ -410,11 +416,14 @@
   "heightLabel": {
     "message": "Alto"
   },
+  "sidebarWidthLabel": {
+    "message": "Ancho de barra lateral"
+  },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Abrir lista de sesiones en la pestaña"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Abrir la lista de sesiones en la pestaña cuando se presiona el botón de la barra de herramientas."
   },
   "otherLabel": {
     "message": "Otros"
@@ -531,7 +540,7 @@
     "message": "Restablecer"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Patrocinadores"
   },
   "LicenseLabel": {
     "message": "Licencia"
