@@ -9,10 +9,10 @@
     "message": "Podpořit přes PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Darovat"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Otevřít seznam relací v záložce"
   },
   "saveLabel": {
     "message": "Uložit"
@@ -24,7 +24,7 @@
     "message": "Input session name"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Uložit relaci"
   },
   "saveAllWindowsLabel": {
     "message": "Uložit všechna okna"
@@ -42,10 +42,10 @@
     "message": "Všechny"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Uložené uživatelem"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Uložené automaticky"
   },
   "newestLabel": {
     "message": "Nejnovější"
@@ -78,7 +78,7 @@
     "message": "Odstranit tuto relaci?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Relace smazána."
   },
   "sessionWindowDeletedLabel": {
     "message": "Session window deleted."
@@ -90,7 +90,7 @@
     "message": "Obnovit"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Chyba odstranění relace."
   },
   "failedDeleteSessionWindowLabel": {
     "message": "Failed to delete session window."
@@ -99,7 +99,7 @@
     "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Relace uložena."
   },
   "failedSaveSessionLabel": {
     "message": "Failed to save session."
@@ -147,7 +147,7 @@
     "message": "Close the menu"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Zavžít"
   },
   "renameLabel": {
     "message": "Přejmenovat"
@@ -156,7 +156,7 @@
     "message": "Rename session"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Otevřít relaci"
   },
   "openInNewWindowLabel": {
     "message": "Otevřít v novém okně"
@@ -177,7 +177,7 @@
     "message": "Přidat panely do aktuálního okna. Pokud relace obsahuje více oken, otevříť v novém okně."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Upravit relaci"
   },
   "replaceCurrentSessionLabel": {
     "message": "Nahradit stávající relací"
@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Add a function to search by session name."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "Size"
   },
@@ -409,6 +415,9 @@
   },
   "heightLabel": {
     "message": "Height"
+  },
+  "sidebarWidthLabel": {
+    "message": "Sidebar width"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Open session list in tab"
@@ -549,19 +558,19 @@
     "message": "Add-on page"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Stránka rozšíření"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "Relace importovány."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Čtení selhalo"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Smazat všechny relace. Jste si jistí?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Relace"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
