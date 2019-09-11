@@ -18,8 +18,8 @@ export default class Menu extends Component {
     const menuWidth = menu.offsetWidth;
     const menuHeight = menu.offsetHeight;
     const { x, y } = this.props.menu;
-    const popupWidth = parseInt(getSettings("popupWidth"));
-    const popupHeight = parseInt(getSettings("popupHeight"));
+    const popupWidth = document.body.offsetWidth;
+    const popupHeight = document.body.offsetHeight;
 
     let position = { x: x, y: y };
     const isRightOver = position.x + menuWidth > popupWidth;
