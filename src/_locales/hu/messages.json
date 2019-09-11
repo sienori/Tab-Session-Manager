@@ -399,10 +399,10 @@
     "message": "Munkamenet neve lapján való keresés funkció hozzáadása."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Megnyitás / Törlés gombok megjelenítése a munkamenet listában"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Megnyitás / Törlés gombok megjelenítése ha a kurzor a munkamenet lista fölött van."
   },
   "sizeLabel": {
     "message": "Méret"
@@ -417,7 +417,7 @@
     "message": "Magasság"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Oldalsáv szélesség"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Munkamenet lista megnyitása a fülön"
