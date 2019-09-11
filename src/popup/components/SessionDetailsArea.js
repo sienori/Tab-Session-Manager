@@ -48,18 +48,6 @@ export default class SessionDetailsArea extends Component {
     this.props.removeSession(this.props.session.id);
   };
 
-  focus = () => {
-    const sessionDetailArea = ReactDOM.findDOMNode(this.refs.sessionDetailArea);
-    sessionDetailArea.querySelector("button").focus();
-  };
-
-  componentDidUpdate(prevProps) {
-    if (!this.props.session.id) return;
-    if (this.props.session.id !== prevProps.session.id) {
-      this.focus();
-    }
-  }
-
   render() {
     const { session, removeWindow, removeTab, openModal, closeModal } = this.props;
 

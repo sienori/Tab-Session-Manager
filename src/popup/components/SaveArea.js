@@ -32,28 +32,32 @@ export default class SaveArea extends Component {
     if (e.key === "Enter") this.saveSession();
   };
 
+  handleKeyDown = e => {
+    if (e.key === "Tab" && e.shiftKey) {
+      this.props.sessionsAreaRef.focus();
+      e.preventDefault();
+    }
+  };
+
   saveSession = () => {
-    const name = ReactDOM.findDOMNode(this.refs.input).value;
+    const input = this.props.saveAreaRef.current;
+    const name = input.value;
     const defaultBehavior = getSettings("saveButtonBehavior");
     this.props.saveSession(name, defaultBehavior);
   };
 
   openMenu = e => {
-    const name = ReactDOM.findDOMNode(this.refs.input).value;
+    const input = this.props.saveAreaRef.current;
+    const name = input.value;
     const rect = e.target.getBoundingClientRect();
     const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
     this.props.openMenu(x, y, <SaveMenuItems name={name} saveSession={this.props.saveSession} />);
   };
 
-  focusInput() {
-    const input = ReactDOM.findDOMNode(this.refs.input);
-    input.focus();
-  }
-
   setTabName = async () => {
     await initSettings();
     const tabName = await this.getCurrentTabName();
-    const input = ReactDOM.findDOMNode(this.refs.input);
+    const input = this.props.saveAreaRef.current;
     input.value = tabName;
   };
 
@@ -70,7 +74,6 @@ export default class SaveArea extends Component {
   };
 
   componentDidMount() {
-    this.focusInput();
     this.setTabName();
   }
 
@@ -84,6 +87,8 @@ export default class SaveArea extends Component {
             spellCheck={false}
             placeholder={browser.i18n.getMessage("initialNameValue")}
             onKeyPress={this.handleKeyPress}
+            onKeyDown={this.handleKeyDown}
+            ref={this.props.saveAreaRef}
           />
           <button
             className="submitButton saveButton"

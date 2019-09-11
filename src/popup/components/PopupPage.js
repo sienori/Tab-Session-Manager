@@ -68,6 +68,10 @@ export default class PopupPage extends Component {
       }
     };
 
+    this.optionsAreaElement = React.createRef();
+    this.sessionsAreaElement = React.createRef();
+    this.saveAreaElement = React.createRef();
+
     this.init();
   }
 
@@ -382,6 +386,7 @@ export default class PopupPage extends Component {
               changeSearchWord={this.changeSearchWord}
               changeFilter={this.changeFilterValue}
               changeSort={this.changeSortValue}
+              optionsAreaRef={this.optionsAreaElement}
             />
             <Error error={this.state.error} />
             <SessionsArea
@@ -395,8 +400,16 @@ export default class PopupPage extends Component {
               openMenu={this.openMenu}
               isInitSessions={this.state.isInitSessions}
               error={this.state.error}
+              sessionsAreaRef={this.sessionsAreaElement}
+              optionsAreaRef={this.optionsAreaElement.current}
+              saveAreaRef={this.saveAreaElement.current}
             />
-            <SaveArea openMenu={this.openMenu} saveSession={this.saveSession} />
+            <SaveArea
+              openMenu={this.openMenu}
+              saveSession={this.saveSession}
+              saveAreaRef={this.saveAreaElement}
+              sessionsAreaRef={this.sessionsAreaElement.current}
+            />
           </div>
           <div className="column">
             <SessionDetailsArea

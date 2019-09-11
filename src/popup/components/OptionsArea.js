@@ -150,6 +150,7 @@ export default class OptionsArea extends Component {
               onChange={this.handleSortChange}
               value={this.props.sortValue}
               title={browser.i18n.getMessage("sortLabel")}
+              ref={this.props.optionsAreaRef}
             >
               <option value="newest">{browser.i18n.getMessage("newestLabel")}</option>
               <option value="oldest">{browser.i18n.getMessage("oldestLabel")}</option>

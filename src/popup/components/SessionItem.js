@@ -14,6 +14,7 @@ import "../styles/SessionItem.scss";
 export default class Session extends Component {
   constructor(props) {
     super(props);
+    this.sessionItemElement = React.createRef();
   }
 
   handleOpenClick = e => {
@@ -27,12 +28,21 @@ export default class Session extends Component {
     e.stopPropagation();
   };
 
+  componentDidUpdate(prevProps) {
+    const shouldFocus = this.props.isSelected && !prevProps.isSelected;
+    if (shouldFocus) this.sessionItemElement.current.focus();
+  }
+
   render() {
     const { session, isSelected, order, searchWord, handleSessionSelect } = this.props;
 
     return (
       <div className={`sessionItem ${isSelected ? "isSelected" : ""}`} style={{ order: order }}>
-        <button className="selectButton" onClick={() => handleSessionSelect(session.id)}>
+        <button
+          className="selectButton"
+          onClick={() => handleSessionSelect(session.id)}
+          ref={this.sessionItemElement}
+        >
           <span className={`name ${getSettings("truncateTitle") ? "isTruncate" : ""}`}>
             <Highlight search={searchWord}>
               {session.name.trim() === "" ? "_" : session.name}

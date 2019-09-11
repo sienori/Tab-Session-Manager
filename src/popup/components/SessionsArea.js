@@ -75,12 +75,30 @@ const getSortedSessions = (sessions, sortValue, filterValue, searchWord) => {
 
 export default class SessionsArea extends Component {
   scrollToTop = () => {
-    const sessionsArea = ReactDOM.findDOMNode(this.refs.sessionsArea);
+    const sessionsArea = this.props.sessionsAreaRef.current;
     sessionsArea.scrollTo(0, 0);
   };
 
   handleSessionSelect = id => {
     this.props.selectSession(id);
+  };
+
+  handleKeyDown = e => {
+    const { selectSession, optionsAreaRef, saveAreaRef } = this.props;
+
+    if (e.key === "ArrowUp") {
+      selectSession(this.prevSession.id);
+      e.preventDefault();
+    } else if (e.key === "ArrowDown") {
+      selectSession(this.nextSession.id);
+      e.preventDefault();
+    } else if (e.key === "Tab" && e.shiftKey) {
+      optionsAreaRef.focus();
+      e.preventDefault();
+    } else if (e.key === "Tab" && !e.shiftKey) {
+      saveAreaRef.focus();
+      e.preventDefault();
+    }
   };
 
   componentDidUpdate() {
@@ -101,10 +119,16 @@ export default class SessionsArea extends Component {
       searchWord,
       isInitSessions,
       removeSession,
-      error
+      error,
+      sessionsAreaRef
     } = this.props;
 
     const sortedSessions = getSortedSessions(sessions, sortValue, filterValue, searchWord);
+
+    const order = sortedSessions.findIndex(sortedSession => sortedSession.id === selectedSessionId);
+    const maxOrder = sortedSessions.length - 1;
+    this.nextSession = sortedSessions[order < maxOrder ? order + 1 : maxOrder];
+    this.prevSession = sortedSessions[order > 0 ? order - 1 : 0];
 
     const shouldShowNoSessionMessage =
       isInitSessions &&
@@ -116,7 +140,7 @@ export default class SessionsArea extends Component {
       isInitSessions && sortedSessions.length === 0 && searchWord !== "" && !error.isError;
 
     return (
-      <div id="sessionsArea" ref="sessionsArea">
+      <div id="sessionsArea" ref={sessionsAreaRef} role="toolbar" onKeyDown={this.handleKeyDown}>
         {sessions.map(
           session =>
             matchesFilter(session.tag, filterValue) &&
