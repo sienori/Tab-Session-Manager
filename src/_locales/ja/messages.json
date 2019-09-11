@@ -399,10 +399,10 @@
     "message": "セッション名で検索する機能を追加します。"
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "セッションリストに開く/削除ボタンを表示する"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "セッションリストにカーソルを重ねたときに開く/削除ボタンを表示します。"
   },
   "sizeLabel": {
     "message": "サイズ"
@@ -417,7 +417,7 @@
     "message": "高さ"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "サイドバーの幅"
   },
   "isSessionListOpenInTabLabel": {
     "message": "セッションリストをタブで開く"
