@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
+import { getSettings } from "src/settings/settings";
+import { sendOpenMessage } from "../actions/controlSessions";
 import SessionItem from "./SessionItem";
-//import Session from "./Session";
 import "../styles/SessionsArea.scss";
 
 const matchesFilter = (tags, filterValue) => {
@@ -84,7 +85,7 @@ export default class SessionsArea extends Component {
   };
 
   handleKeyDown = e => {
-    const { selectSession, optionsAreaRef, saveAreaRef } = this.props;
+    const { selectSession, optionsAreaRef, saveAreaRef, selectedSessionId } = this.props;
 
     if (e.key === "ArrowUp") {
       selectSession(this.prevSession.id);
@@ -98,6 +99,9 @@ export default class SessionsArea extends Component {
     } else if (e.key === "Tab" && !e.shiftKey) {
       saveAreaRef.focus();
       e.preventDefault();
+    } else if (e.key === "Enter" && e.shiftKey) {
+      const openBehavior = getSettings("openButtonBehavior");
+      sendOpenMessage(selectedSessionId, openBehavior);
     }
   };
 
