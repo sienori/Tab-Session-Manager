@@ -9,10 +9,10 @@
     "message": "透過 PayPal 贊助"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "贊助"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "在新分頁顯示瀏覽階段清單"
   },
   "saveLabel": {
     "message": "儲存"
@@ -138,7 +138,7 @@
     "message": "沒有符合的結果。"
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "尚未選取瀏覽階段。"
   },
   "menuLabel": {
     "message": "選單"
@@ -147,13 +147,13 @@
     "message": "關閉選單"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "關閉"
   },
   "renameLabel": {
     "message": "重新命名"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "重新命名瀏覽階段"
   },
   "OpenSessionLabel": {
     "message": "開啟瀏覽階段"
@@ -162,7 +162,7 @@
     "message": "在新視窗中開啟"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "於新視窗中開啟瀏覽階段。"
+    "message": "在新視窗中開啟瀏覽階段。"
   },
   "openInCurrentWindowLabel": {
     "message": "在目前視窗中開啟"
@@ -237,7 +237,7 @@
     "message": "樣式"
   },
   "ifOpenNewWindowLabel": {
-    "message": "於新視窗中開啟瀏覽階段"
+    "message": "在新視窗中開啟瀏覽階段"
   },
   "ifOpenNewWindowCaptionLabel": {
     "message": "如果取消勾選，開啟瀏覽階段時將會覆寫目前視窗。"
@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "新增搜尋瀏覽階段功能。"
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "大小"
   },
@@ -410,11 +416,14 @@
   "heightLabel": {
     "message": "高度"
   },
+  "sidebarWidthLabel": {
+    "message": "Sidebar width"
+  },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "在新分頁顯示瀏覽階段清單"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "左鍵點選工具列圖示時，在新分頁中顯示瀏覽階段清單。"
   },
   "otherLabel": {
     "message": "其他"
@@ -531,16 +540,16 @@
     "message": "重設"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "贊助者清單"
   },
   "LicenseLabel": {
     "message": "授權條款"
   },
   "donationLabel": {
-    "message": "請贊助我吧！"
+    "message": "希望您贊助我！"
   },
   "donationCaptionLabel": {
-    "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您可以贊助我。"
+    "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您能夠贊助我。"
   },
   "amazonTitleLabel": {
     "message": "贊助我 amazon 電子禮品卡"
