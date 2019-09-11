@@ -144,7 +144,13 @@ export default class SessionsArea extends Component {
       isInitSessions && sortedSessions.length === 0 && searchWord !== "" && !error.isError;
 
     return (
-      <div id="sessionsArea" ref={sessionsAreaRef} role="toolbar" onKeyDown={this.handleKeyDown}>
+      <div
+        id="sessionsArea"
+        ref={sessionsAreaRef}
+        role="toolbar"
+        tabIndex="0"
+        onKeyDown={this.handleKeyDown}
+      >
         {sessions.map(
           session =>
             matchesFilter(session.tag, filterValue) &&
