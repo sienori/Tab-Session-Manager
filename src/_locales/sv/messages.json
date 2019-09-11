@@ -9,10 +9,10 @@
     "message": "Donera via PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Donera"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Öppna sessionslistan i fliken"
   },
   "saveLabel": {
     "message": "Spara"
@@ -138,7 +138,7 @@
     "message": "Inga matchande resultat."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Ingen session är vald."
   },
   "menuLabel": {
     "message": "Meny"
@@ -147,13 +147,13 @@
     "message": "Stäng menyn"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Stäng"
   },
   "renameLabel": {
     "message": "Byt namn"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Byt namn på sessionen"
   },
   "OpenSessionLabel": {
     "message": "Öppna session"
@@ -351,10 +351,10 @@
     "message": "Spara privata fönster"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Webbadresslista att ignorera när sessionen sparas"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Om flikwebbadressen matchar listan, kommer den inte att spelas in i sessionen. Listan accepterar \"*\" jokertecken."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."
@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Lägga till en funktion för att söka efter sessionsnamn."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Visa knapparna öppna / ta bort i sessionslisten"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Visa knapparna öppna / ta bort när markören är över sessionslisten."
+  },
   "sizeLabel": {
     "message": "Storlek"
   },
@@ -410,11 +416,14 @@
   "heightLabel": {
     "message": "Höjd"
   },
+  "sidebarWidthLabel": {
+    "message": "Sidofältets bredd"
+  },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Öppna sessionslistan i fliken"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Öppna sessionslistan i fliken när du klickar på knappen i verktygsfältet."
   },
   "otherLabel": {
     "message": "Annat"
@@ -465,7 +474,7 @@
     "message": "Rensa"
   },
   "urlImportLabel": {
-    "message": "Importera URL-lista"
+    "message": "Importera webbadresslista"
   },
   "urlImportCaptionLabel": {
     "message": "Skapa en session från en lista med URL:er och lägg till dem i sessionslistan.<br>Format: &lt;URL&gt; &lt;sidnamn (valfritt)&gt;"

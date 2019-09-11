@@ -9,10 +9,10 @@
     "message": "Spenden via PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Spenden"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Öffne die Sitzungsliste im Tab"
   },
   "saveLabel": {
     "message": "Speichern"
@@ -138,7 +138,7 @@
     "message": "Keine Treffer."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Keine Sitzungen ausgewählt."
   },
   "menuLabel": {
     "message": "Menü"
@@ -147,13 +147,13 @@
     "message": "Dieses Menü schließen"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Schließen"
   },
   "renameLabel": {
     "message": "Umbenennen"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Sitzung umbenennen"
   },
   "OpenSessionLabel": {
     "message": "Öffne eine Sitzung"
@@ -351,10 +351,10 @@
     "message": "Private Fenster speichern"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Diese URL-Liste ignorieren, wenn die Sitzung gespeichert wird"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Wenn die Tab-URL mit der Liste übereinstimmt, wird sie in der Sitzung nicht aufgezeichnet. Die Liste erlaubt \"*\" Wildcards."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Fügt die Funktion zum Suchen von Sitzungsnamen hinzu."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "Größe"
   },
@@ -410,11 +416,14 @@
   "heightLabel": {
     "message": "Höhe"
   },
+  "sidebarWidthLabel": {
+    "message": "Seitenleiste Breite"
+  },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Öffne die Sitzungsliste im Tab"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Sitzungsliste im Tab öffnen, wenn die Schaltfläche in der Symbolleiste angeklickt wird."
   },
   "otherLabel": {
     "message": "Anders"
@@ -531,7 +540,7 @@
     "message": "Zurücksetzen"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Unterstützer/innen"
   },
   "LicenseLabel": {
     "message": "Lizenz"

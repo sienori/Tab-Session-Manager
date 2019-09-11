@@ -9,10 +9,10 @@
     "message": "Зробити пожертву через PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Підтримати"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Відкрити список сесії у вкладці"
   },
   "saveLabel": {
     "message": "Зберегти"
@@ -24,7 +24,7 @@
     "message": "Введіть назву сесії"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Зберегти сесію"
   },
   "saveAllWindowsLabel": {
     "message": "Зберегти всі вікна"
@@ -138,25 +138,25 @@
     "message": "Немає відповідних результатів."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Сесія не вибрана."
   },
   "menuLabel": {
     "message": "Меню"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Закрити це меню"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Закрити"
   },
   "renameLabel": {
     "message": "Перейменувати"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Перейменувати сесію"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Відкрити сесію"
   },
   "openInNewWindowLabel": {
     "message": "Відкрити у новому вікні"
@@ -177,7 +177,7 @@
     "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікно - відкрити її в новому вікні."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Редагувати сесію"
   },
   "replaceCurrentSessionLabel": {
     "message": "Замінити поточною сесією"
@@ -219,7 +219,7 @@
     "message": "Сесії"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Гарячі клавіші"
   },
   "informationLabel": {
     "message": "Інформація"
@@ -351,10 +351,10 @@
     "message": "Зберігати приватне вікно"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Список URL-адрес, який ігнорується під час збереження сеансу"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Якщо URL-адреса вкладки відповідає списку, вона не буде записана в сеанс. У списку можливі \"*\" підстановки."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Додати функцію пошуку за назвою сесії."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Відображення кнопок відкрити / видалити у списку сесії"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Відображати кнопки відкрити/видалити коли курсор знаходиться над списком сесії."
+  },
   "sizeLabel": {
     "message": "Розмір"
   },
@@ -410,11 +416,14 @@
   "heightLabel": {
     "message": "Висота"
   },
+  "sidebarWidthLabel": {
+    "message": "Ширина бокової панелі"
+  },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Відкрити список сесії у вкладці"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Відкрити список сесії у вкладці коли натиснута кнопка на панелі інструментів."
   },
   "otherLabel": {
     "message": "Інше"
@@ -489,49 +498,49 @@
     "message": "Видалити"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Гарячі клавіші"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Встановлення гарячих клавіш."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Уведіть гарячу клавішу"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Введіть букву"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Використовуйте Ctrl або Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Використовуйте Command, Ctrl або Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Ця буква не може бути використана"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Ця комбінація не може бути використана"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Відкрити випадаюче вікно"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Зберегти сесію (лише поточне вікно)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Зберегти сеанс (усі вікна)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Експортувати всі сесії"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Очистити"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Скинути"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Підтримати"
   },
   "LicenseLabel": {
     "message": "Ліцензія"

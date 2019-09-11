@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Thêm chức năng tìm kiếm bằng tên phiên."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Display open / delete buttons in session list"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Display open / delete buttons when the cursor is over the session list."
+  },
   "sizeLabel": {
     "message": "Kích thước"
   },
@@ -409,6 +415,9 @@
   },
   "heightLabel": {
     "message": "Chiều cao"
+  },
+  "sidebarWidthLabel": {
+    "message": "Sidebar width"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Open session list in tab"

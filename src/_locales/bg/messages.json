@@ -9,10 +9,10 @@
     "message": "Дарете чрез PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Дарение"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Отваряне на списъка със сесии в раздел"
   },
   "saveLabel": {
     "message": "Запазване"
@@ -138,7 +138,7 @@
     "message": "Няма съвпадащи резултати."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Няма избрана сесия."
   },
   "menuLabel": {
     "message": "Меню"
@@ -147,13 +147,13 @@
     "message": "Затваряне на менюто"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Затваряне"
   },
   "renameLabel": {
     "message": "Преименуване"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Преименуване на сесия"
   },
   "OpenSessionLabel": {
     "message": "Отваряне на сесия"
@@ -351,10 +351,10 @@
     "message": "Запазване на поверителен прозорец"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Списък за игнориране на URL адреси при запазване на сесия"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Ако URL адресът на раздела съвпада със списъка, той няма да бъде записан в сесията. Списъка позволява използването на \"*\" заместващи символи."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ако не е отметнато, поверителният прозорец ще бъде игнориран при запазване на сесията."
@@ -398,6 +398,12 @@
   "isShowSearchBarCaptionLabel": {
     "message": "Добавяне на функция за търсене по име на сесия."
   },
+  "isShowOpenButtonsLabel": {
+    "message": "Показване на бутони за отваряне / изтриване в списък със сесия"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Показване на бутони за отваряне / изтриване, когато курсора е върху списък със сесия."
+  },
   "sizeLabel": {
     "message": "Размер"
   },
@@ -410,11 +416,14 @@
   "heightLabel": {
     "message": "Височина"
   },
+  "sidebarWidthLabel": {
+    "message": "Широчина на страничната лента"
+  },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Отваряне на списъка със сесии в раздел"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "При щракване на бутона в лентата, сесиите се отварят в раздел."
   },
   "otherLabel": {
     "message": "Други"
@@ -531,7 +540,7 @@
     "message": "Нулиране"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Поддръжници"
   },
   "LicenseLabel": {
     "message": "Лиценз"
