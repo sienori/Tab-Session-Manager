@@ -300,10 +300,10 @@
     "message": "Максимальна кількість сесій збережених таким чином."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Зберегти сеанс при виході з браузера"
+    "message": "Зберігати сесію при виході з браузера"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Зберегти сеанс, який містить кілька вікон, які були закриті поспіль."
+    "message": "Зберігати сесію, що містить кілька вікон, які були закриті поспіль."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Максимальна кількість збережень"
@@ -528,7 +528,7 @@
     "message": "Зберегти сесію (лише поточне вікно)"
   },
   "saveAllWindowDescription": {
-    "message": "Зберегти сеанс (усі вікна)"
+    "message": "Зберегти сесію (усі вікна)"
   },
   "exportSessionsDescription": {
     "message": "Експортувати всі сесії"
