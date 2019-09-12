@@ -12,7 +12,7 @@
     "message": "Підтримати"
   },
   "openSessionListInTabLabel": {
-    "message": "Відкрити список сесії у вкладці"
+    "message": "Відкривати список сесії у вкладці"
   },
   "saveLabel": {
     "message": "Зберегти"
@@ -417,13 +417,13 @@
     "message": "Висота"
   },
   "sidebarWidthLabel": {
-    "message": "Ширина бокової панелі"
+    "message": "Ширина бічної панелі"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Відкрити список сесії у вкладці"
+    "message": "Відкривати список сесії у вкладці"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Відкрити список сесії у вкладці коли натиснута кнопка на панелі інструментів."
+    "message": "При натисканні на кнопку на панелі відкривати список сесії у вкладці (а не у спливаючому меню)."
   },
   "otherLabel": {
     "message": "Інше"
@@ -549,7 +549,7 @@
     "message": "Будь ласка, подякуйте автору"
   },
   "donationCaptionLabel": {
-    "message": "Дякую, що використовуєте Tab Session Manager. <br> Ваша підтримка буде чудовим стимулом до продовження розробки цього доповнення. <br>Якщо вам сподобався Tab Session Manager, я буду дуже вдячний вашим пожертвуванням."
+    "message": "Дякую, що використовуєте Tab Session Manager. <br> Ваша підтримка буде чудовим стимулом до продовження розробки цього доповнення. <br>Якщо вам сподобався Tab Session Manager, я буду дуже вдячний вашим пожертвам."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
