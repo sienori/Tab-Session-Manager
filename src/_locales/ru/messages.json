@@ -417,13 +417,13 @@
     "message": "Высота"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Ширина боковой панели"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Открыть список сессий в отдельной вкладке"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "При нажатии кнопки, во вкладке откроется список сессий."
   },
   "otherLabel": {
     "message": "Другое"
@@ -540,7 +540,7 @@
     "message": "Сброс"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "При поддержке"
   },
   "LicenseLabel": {
     "message": "Лицензия"
