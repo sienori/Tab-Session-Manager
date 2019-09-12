@@ -9,10 +9,10 @@
     "message": "Сделать пожертвование через PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Поддержать проект"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Открыть список сессий в отдельной вкладке"
   },
   "saveLabel": {
     "message": "Сохранить"
@@ -138,7 +138,7 @@
     "message": "Нет результатов."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Нет выбранных сессий."
   },
   "menuLabel": {
     "message": "Меню"
@@ -147,13 +147,13 @@
     "message": "Закрыть меню"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Закрыть"
   },
   "renameLabel": {
     "message": "Переименовать"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Переименовать сессию"
   },
   "OpenSessionLabel": {
     "message": "Открыть сессию"
@@ -354,7 +354,7 @@
     "message": "Игнорировать перечисленные URL при сохранении сессий"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Если URL вкладки соответствует записям в списке, он не будет сохранён в сессии. В записях можно использовать звёздочку \"*\"."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Если отключено, игнорирует приватное окно при сохранении сессии."
