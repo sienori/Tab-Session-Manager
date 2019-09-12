@@ -351,7 +351,7 @@
     "message": "Сохранять секретное окно"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Игнорировать перечисленные URL при сохранении сессий"
   },
   "ignoreUrlListCaptionLabel": {
     "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
@@ -399,10 +399,10 @@
     "message": "Добавить функцию для поиска по имени сессии."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Показать кнопки открыть/удалить в списке сессий"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Показать кнопки открыть/удалить, когда курсор наводится на список сессий."
   },
   "sizeLabel": {
     "message": "Размер"
