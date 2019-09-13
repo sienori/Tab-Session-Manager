@@ -399,7 +399,7 @@
     "message": "Fügt die Funktion zum Suchen von Sitzungsnamen hinzu."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "\"Öffnen / Löschen\" Schaltflächen in der Sitzungsliste anzeigen"
   },
   "isShowOpenButtonsCaptionLabel": {
     "message": "Display open / delete buttons when the cursor is over the session list."
