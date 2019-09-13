@@ -402,7 +402,7 @@
     "message": "\"Öffnen / Löschen\" Schaltflächen in der Sitzungsliste anzeigen"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "\"Öffnen / Löschen\" Schaltflächen anzeigen, wenn der Mauszeiger über der Sitzungsliste ist."
   },
   "sizeLabel": {
     "message": "Größe"
