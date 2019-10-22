@@ -12,7 +12,7 @@
     "message": "捐赠"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "在标签内打开会话列表"
   },
   "saveLabel": {
     "message": "保存"
@@ -147,13 +147,13 @@
     "message": "关闭菜单"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "关闭"
   },
   "renameLabel": {
     "message": "重命名"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "重命名会话"
   },
   "OpenSessionLabel": {
     "message": "打开会话"
@@ -351,10 +351,10 @@
     "message": "保存隐私窗口"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "保存会话时要忽略的 URL 列表"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "如标签 URL 匹配列表，则其不会保存到会话。此列表允许使用通配符 \"*\"。"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "若未启用，保存会话时将忽略隐私窗口。"
@@ -399,7 +399,7 @@
     "message": "开启按会话名搜索的功能。"
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "在会话列表内显示打开/删除按钮"
   },
   "isShowOpenButtonsCaptionLabel": {
     "message": "Display open / delete buttons when the cursor is over the session list."
@@ -417,13 +417,13 @@
     "message": "高度"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "侧边栏宽度"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "在标签内打开会话列表"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "点击工具栏上的按钮时在标签内打开会话列表。"
   },
   "otherLabel": {
     "message": "其它"
