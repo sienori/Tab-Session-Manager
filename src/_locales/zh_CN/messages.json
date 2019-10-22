@@ -9,7 +9,7 @@
     "message": "通过 Paypal 捐赠"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "捐赠"
   },
   "openSessionListInTabLabel": {
     "message": "Open session list in tab"
@@ -138,7 +138,7 @@
     "message": "没有符合条件的结果。"
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "未选定会话。"
   },
   "menuLabel": {
     "message": "菜单"
