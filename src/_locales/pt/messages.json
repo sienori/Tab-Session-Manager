@@ -6,7 +6,7 @@
     "message": "Salve e restaure o estado de janelas e abas. Também suporta salvamento automático."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Doe com PayPal"
   },
   "donateLabel": {
     "message": "Donate"
@@ -21,31 +21,31 @@
     "message": "Salvar a sessão atual"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Inserir nome da sessão"
   },
   "saveSessionLabel": {
     "message": "Save a session"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Salvar todas as janelas"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Salvar somente a janela atual"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Filtro de categorias"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Ordenar"
   },
   "displayAllLabel": {
     "message": "Todos"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Salvamento do usuário"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Salvamento automático"
   },
   "newestLabel": {
     "message": "O mais novo"
@@ -60,13 +60,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Buscar por nome da sessão"
   },
   "search": {
-    "message": "Search"
+    "message": "Buscar"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Limpar pesquisa"
   },
   "open": {
     "message": "Abrir"
@@ -75,46 +75,46 @@
     "message": "Excluir"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Excluir esta sessão?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessão apagada."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Janela da sessão apagada."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Aba da sessão apagada."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Falha ao apagar sessão."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Falha ao apagar janela da sessão."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Falha ao apagar aba da sessão."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessão salva."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Falha ao salvar sessão."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Cancelar"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Adicionar tag"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Remover tag"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Detalhe"
   },
   "windowLabel": {
     "message": "Janela"
@@ -129,13 +129,13 @@
     "message": "Abas"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Não há sessão."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Vamos salvar a sessão ao clicar no botão no canto inferior direito."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Nenhum resultado correspondente."
   },
   "noSessionSelectedLabel": {
     "message": "No session selected."
@@ -150,7 +150,7 @@
     "message": "Close"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Renomear"
   },
   "renameSessionLabel": {
     "message": "Rename session"
@@ -159,58 +159,58 @@
     "message": "Open a session"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Abrir em uma nova janela"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Abrir a sessão em uma nova janela."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Abrir na janela atual"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Abrir a sessão na janela atual. Janelas inativas e todas as abas são fechadas."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Adicionar na janela atual"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Adicionar abas à janela atual. Se a sessão contiver múltiplas janelas, será aberta em uma nova janela."
   },
   "EditSessionLabel": {
     "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Substituir com sessão atual"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Substituir com janela atual"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Adicionar a janela atual"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Fazer uma cópia da sessão"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Erro"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB não está disponível em seu navegador."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Como resolver este problema"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Múltiplas popups não podem ser abertas ao mesmo tempo."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Salvamento Automático - Janela fechada"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Salvamento automático - Ao sair do navegador"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Salvamento automático - Regularmente"
   },
   "settingsLabel": {
     "message": "Configurações"
@@ -225,16 +225,16 @@
     "message": "Informações"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Geral"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Salvar automaticamente"
   },
   "startUpLabel": {
-    "message": "Startup"
+    "message": "Iniciar"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Estilo"
   },
   "ifOpenNewWindowLabel": {
     "message": "Sessão aberta em nova janela"
@@ -249,25 +249,25 @@
     "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba. <br> Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Use a propriedade \"descartado\" para carregamento lento"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Ativar esta opção irá melhorar o desempenho ao abrir abas."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "O favicon da guia em carregamento lento não é exibido."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Restaurar posição das janelas"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Restaurar as posições e tamanhos das janelas ao abrir a sessão."
   },
   "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Restore previous session at startup"
+    "message": "Restaurar sessão anterior na inicialização"
   },
   "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+    "message": "Quando o navegador abrir, restaurar a sessão fechada pela última vez."
   },
   "ifAutoSaveLabel": {
     "message": "Salvar a sessão regularmente"
@@ -291,7 +291,7 @@
     "message": "Salvar a sessão quando a janela foi fechada"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Salve a sessão que inclui somente uma janela fechada."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Número máximo guardado"
@@ -300,28 +300,28 @@
     "message": "Número máximo de sessões salvas (desta forma)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Salvar a sessão ao sair do navegador"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Salvar a sessão quando várias janelas forem fechadas em sequência."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Número máximo guardado"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
     "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Usar título da página como nome para salvar a sessão automaticamente"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Ao salvar uma sessão automaticamente, use o título da página aberta como o nome da sessão."
   },
   "backupLabel": {
     "message": "Backup"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Salvar Backup"
   },
   "ifBackupCaptionLabel": {
     "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
@@ -336,10 +336,10 @@
     "message": "Download folder"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Quantidade máxima de backups salvos"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Quando o número de arquivos de backup excede esse valor, os mais antigos são excluídos."
   },
   "dateFormatLabel": {
     "message": "Formato da data"
@@ -348,7 +348,7 @@
     "message": "Exemplo: YYYY. MM. DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Salvar janela privada"
   },
   "ignoreUrlListLabel": {
     "message": "URL list to ignore when saving session"
@@ -357,7 +357,7 @@
     "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Se estiver desmarcada, ignora a janela privada ao salvar a sessão."
   },
   "ifSupportTstLabel": {
     "message": "Suporta Tree Style Tab"
@@ -372,10 +372,10 @@
     "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Exibir o nome da sessão em uma linha"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Se o nome da sessão na lista sessão se estende por mais de uma linha, é truncado para exibição em uma linha."
   },
   "popupLabel": {
     "message": "Popup"
@@ -411,10 +411,10 @@
     "message": "Specify the size of the popup."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Largura"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Altura"
   },
   "sidebarWidthLabel": {
     "message": "Sidebar width"
