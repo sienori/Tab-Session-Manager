@@ -393,7 +393,7 @@
     "message": "Избор на поведение по подразбиране за бутона за запазване."
   },
   "isShowSearchBarLabel": {
-    "message": "Показване на лентата за търсене"
+    "message": "Показване на лента за търсене"
   },
   "isShowSearchBarCaptionLabel": {
     "message": "Добавяне на функция за търсене по име на сесия."
@@ -411,13 +411,13 @@
     "message": "Задаване на размери за изскачащото меню."
   },
   "widthLabel": {
-    "message": "Ширина"
+    "message": "Обща широчина"
   },
   "heightLabel": {
     "message": "Височина"
   },
   "sidebarWidthLabel": {
-    "message": "Широчина на страничната лента"
+    "message": "Широчина на списъка със сесии"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Отваряне на списъка със сесии в раздел"
@@ -432,7 +432,7 @@
     "message": "Показване на страницата с настройки при обновяване"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Показване на страницата с настройки, когато Tab Session Manager е обновен. Можете бързо да научите за новите неща."
+    "message": "Показване на тази страница с настройки, когато Tab Session Manager бъде обновен. Можете бързо да научите за новите неща."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager беше обновен!"
@@ -522,7 +522,7 @@
     "message": "Бързият клавиш не може да бъде използван"
   },
   "openPopupDescription": {
-    "message": "Отваряне на изскачаща лента с инструменти"
+    "message": "Отваряне на панела със сесии"
   },
   "saveCurrentWindowDescription": {
     "message": "Запазване на сесия (само текущият прозорец)"

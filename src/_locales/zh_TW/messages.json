@@ -417,7 +417,7 @@
     "message": "高度"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "側邊欄寬度"
   },
   "isSessionListOpenInTabLabel": {
     "message": "在新分頁顯示瀏覽階段清單"
@@ -528,7 +528,7 @@
     "message": "儲存瀏覽階段(僅限目前視窗)"
   },
   "saveAllWindowDescription": {
-    "message": "儲存瀏覽階段(所以視窗)"
+    "message": "儲存瀏覽階段(所有視窗)"
   },
   "exportSessionsDescription": {
     "message": "匯出所有瀏覽階段"
