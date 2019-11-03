@@ -26,20 +26,6 @@ const generalConfig = {
         loader: "babel-loader",
         exclude: /node_modules/,
         test: /\.(js|jsx)$/,
-        query: {
-          presets: [
-            [
-              "@babel/preset-env",
-              {
-                targets: {
-                  firefox: 57
-                }
-              }
-            ],
-            "@babel/preset-react"
-          ],
-          plugins: ["transform-class-properties"]
-        },
         resolve: {
           extensions: [".js", ".jsx"]
         }
