@@ -167,14 +167,28 @@ export default class ImportSessionsComponent extends Component {
     }
   }
 
-  importSessions() {
-    if (this.state.importedSessions.length != undefined) {
-      browser.runtime.sendMessage({
-        message: "import",
-        importSessions: this.state.importedSessions
-      });
-      alert(browser.i18n.getMessage("importMessage"));
-    }
+  async importSessions() {
+    if (!this.state.importedSessions.length) return;
+
+    const sendImportMessage = async sessions => {
+      if (sessions.length == 0) return;
+      try {
+        await browser.runtime.sendMessage({
+          message: "import",
+          importSessions: sessions
+        });
+      } catch (e) {
+        //セッションが巨大だとsendMessageに失敗する
+        //その場合は2分割して送信する
+        const midIndex = Math.floor(sessions.length / 2);
+        await sendImportMessage(sessions.slice(0, midIndex));
+        await sendImportMessage(sessions.slice(midIndex, sessions.length + 1));
+      }
+    };
+
+    await sendImportMessage(this.state.importedSessions);
+
+    alert(browser.i18n.getMessage("importMessage"));
     this.clearSessions();
   }
 
