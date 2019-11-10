@@ -10,3 +10,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - level1imp
 - alberto bursi
 - Ronald Averyt
+- Attun
+- Millergram
