@@ -399,10 +399,10 @@
     "message": "新增搜尋瀏覽階段功能。"
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "在瀏覽階段清單上時顯示開啟/刪除按鈕"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "當滑鼠停留在瀏覽階段清單上時顯示開啟/刪除按鈕"
   },
   "sizeLabel": {
     "message": "大小"
