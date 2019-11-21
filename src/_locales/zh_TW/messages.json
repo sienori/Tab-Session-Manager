@@ -351,10 +351,10 @@
     "message": "儲存隱私視窗"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "儲存瀏覽階段時要忽略的 URL 清單"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "若 URL 與清單內相符，則不會將它儲存到瀏覽階段中，此清單允許使用 \"*\" 萬用字元。"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "如果取消勾選，儲存瀏覽階段時將會忽略隱私視窗。"
