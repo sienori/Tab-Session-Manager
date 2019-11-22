@@ -12,3 +12,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Ronald Averyt
 - Attun
 - Millergram
+Robert Brookshire
