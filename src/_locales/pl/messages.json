@@ -399,7 +399,7 @@
     "message": "Dodaj funkcję wyszukiwania sesji wg nazwy."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Wyświetl przyciski otwórz / usuń na liście sesji"
   },
   "isShowOpenButtonsCaptionLabel": {
     "message": "Display open / delete buttons when the cursor is over the session list."
