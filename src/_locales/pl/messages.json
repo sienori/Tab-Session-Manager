@@ -30,7 +30,7 @@
     "message": "Zapisz wszystkie okna"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Zapisz jedynie otwarte okno"
+    "message": "Zapisz tylko bieżące okno"
   },
   "categoryFilterLabel": {
     "message": "Filtr kategorii"
@@ -174,7 +174,7 @@
     "message": "Dodaj do bieżącego okna"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Dodaj karty do bieżącego okna. Jeśli sesja zawiera wiele okien, otwórz je w nowym oknie."
   },
   "EditSessionLabel": {
     "message": "Edytuj sesję"
@@ -240,7 +240,7 @@
     "message": "Odtwórz sesję w nowym oknie"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "Jeżeli odznaczone, sesja zastępuje bieżące otwarte okno."
+    "message": "Jeżeli odznaczone, sesja zastępuje bieżące okno."
   },
   "ifLazyLoadingLabel": {
     "message": "Opóźnione ładowanie kart"
@@ -525,7 +525,7 @@
     "message": "Otwórz okienko paska narzędzi"
   },
   "saveCurrentWindowDescription": {
-    "message": "Zapisz sesję (tylko otwarte okno)"
+    "message": "Zapisz sesję (tylko bieżące okno)"
   },
   "saveAllWindowDescription": {
     "message": "Zapisz sesję (wszystkie okna)"
