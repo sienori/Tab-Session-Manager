@@ -3,34 +3,34 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Guardar i restaurar l'estat de las finestres i pestanyes. També suporta guardat automàtic."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Donar per PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Donar"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Obrir la llista de sessions en la pestanya"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "Desa"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "Desar sessió actual"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Introduir nom de sessió"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Desar sessió"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Desar totes les finestres"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Desa nomes la finestra actual"
   },
   "categoryFilterLabel": {
     "message": "Category filter"
