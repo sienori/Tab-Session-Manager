@@ -102,55 +102,55 @@
     "message": "Sessió desada."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Error al desar la sessió."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Cancel·lar"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Afegir etiqueta"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Eliminar l'etiqueta"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Detalls"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "Finestra"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "Finestres"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "Pestanya"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "Pestanyes"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "No hi ha cap sessió."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Anem a desar la sessió fent clic al boto inferior dret."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "No hi ha cap resultat."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "No hi ha sessió seleccionada."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Menú"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Tancar menú"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Tancar"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Reanomenar"
   },
   "renameSessionLabel": {
     "message": "Rename session"
