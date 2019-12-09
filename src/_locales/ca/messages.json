@@ -33,25 +33,25 @@
     "message": "Desa nomes la finestra actual"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Filtre de categoria"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Ordenar"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Tots"
   },
   "displayUserLabel": {
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Desa automàticament"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Més recent"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Més antic"
   },
   "aToZLabel": {
     "message": "A-Z"
@@ -60,46 +60,46 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Cerca per nom de la sessió"
   },
   "search": {
-    "message": "Search"
+    "message": "Cercar"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Neteja la cerca"
   },
   "open": {
-    "message": "Open"
+    "message": "Obrir"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Eliminar"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Eliminar aquesta sessió?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessió eliminada."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Sessió de finestra eliminada."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Sessió de pestanya eliminada."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Error al eliminar la sessió."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Error al eliminar la sessió de finestra."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Error al eliminar la sessió de pestanya."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessió desada."
   },
   "failedSaveSessionLabel": {
     "message": "Failed to save session."
