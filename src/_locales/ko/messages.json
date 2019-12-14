@@ -3,13 +3,13 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "참과 탭의 상태를 저장하고 복원합니다. 자동 저장도 지원합니다."
+    "message": "창과 탭의 상태를 저장하고 복원합니다. 자동 저장도 지원합니다."
   },
   "donateWithPaypalLabel": {
     "message": "페이팔로 기부하기"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "기부하기"
   },
   "openSessionListInTabLabel": {
     "message": "Open session list in tab"
