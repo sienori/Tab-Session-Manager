@@ -12,7 +12,7 @@
     "message": "기부하기"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "새 탭에서 세션 목록 열기"
   },
   "saveLabel": {
     "message": "저장"
@@ -24,10 +24,10 @@
     "message": "세션 이름 입력"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "세션 저장"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "모든 창 저장"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "현재 창만 저장"
@@ -42,10 +42,10 @@
     "message": "전체"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "수동 저장"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "자동 저장"
   },
   "newestLabel": {
     "message": "최신순"
@@ -60,13 +60,13 @@
     "message": "내림차순"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "세션 이름으로 검색"
   },
   "search": {
-    "message": "Search"
+    "message": "검색"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "검색 초기화"
   },
   "open": {
     "message": "열기"
@@ -78,31 +78,31 @@
     "message": "이 세션을 삭제할까요?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "세션 삭제됨."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "세션 창 삭제됨."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "세션 탭 삭제됨."
   },
   "restoreSessionLabel": {
     "message": "복원"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "세션 삭제 실패."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "세션 창 삭제 실패."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "세션 탭 삭제 실패."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "세션 저장됨."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "세션 저장 실패."
   },
   "cancelLabel": {
     "message": "취소"
@@ -129,40 +129,40 @@
     "message": "여러 탭"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "세션이 없습니다."
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "일치하는 결과가 없습니다."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "선택된 세션이 없습니다."
   },
   "menuLabel": {
     "message": "메뉴"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "메뉴 닫기"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "닫기"
   },
   "renameLabel": {
     "message": "이름 변경"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "세션 이름 바꾸기"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "세션 열기"
   },
   "openInNewWindowLabel": {
     "message": "새 창에서 열기"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "새 창에서 세션 열기."
   },
   "openInCurrentWindowLabel": {
     "message": "현재 창에서 열기"
@@ -177,7 +177,7 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "세션 수정"
   },
   "replaceCurrentSessionLabel": {
     "message": "현재 세션으로 바꾸기"
@@ -186,7 +186,7 @@
     "message": "현재 창으로 바꾸기"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "현재 창 추가하기"
   },
   "makeCopySessionLabel": {
     "message": "세션의 복사본 만들기"
