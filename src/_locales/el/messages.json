@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Αντιγραφή της συνεδρίας"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Σφάλμα"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Αυτόματη αποθήκευση"
   },
-  "startUpLabel": {
-    "message": "Εκκίνηση"
-  },
   "styleLabel": {
     "message": "Στυλ"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Επαναφορά θέσης και μεγέθους παραθύρων κατά το άνοιγμα της συνεδρίας."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Επαναφορά συνεδρίας κατά την εκκίνηση"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Κατά την εκκίνηση του πλοηγού, επαναφορά της τελευταίας συνεδρίας."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Συχνή αποθήκευση συνεδρίας"
