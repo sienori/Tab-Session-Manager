@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Utwórz kopię sesji"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Błąd"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Automatyczny zapis"
   },
-  "startUpLabel": {
-    "message": "Uruchamianie"
-  },
   "styleLabel": {
     "message": "Styl"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Przywracanie położenia i rozmiaru okien podczas odtwarzania sesji."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Przywróć poprzednią sesję podczas uruchamiania"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Po uruchomieniu przeglądarki, przywróć sesję, która została zamknięta ostatnim razem."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Zapisuj sesję regularnie"
