@@ -212,12 +212,15 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
         resolve();
       } catch (e) {
         log.warn(logDir, "openTab() tryOpen() replace", e);
-        createOption.url = returnReplaceURL(
-          "open_faild",
-          property.title,
-          property.url,
-          property.favIconUrl
-        );
+        const isRemovedContainer = e.message.startsWith("No cookie store exists with ID");
+        if (isRemovedContainer) delete createOption.cookieStoreId;
+        else
+          createOption.url = returnReplaceURL(
+            "open_faild",
+            property.title,
+            property.url,
+            property.favIconUrl
+          );
         await browser.tabs.create(createOption).catch(e => {
           log.error(logDir, "openTab() tryOpen() create", e);
           reject();
