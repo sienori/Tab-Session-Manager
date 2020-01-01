@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Создать копию сессии"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Ошибка"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Автосохранение"
   },
-  "startUpLabel": {
-    "message": "При запуске"
-  },
   "styleLabel": {
     "message": "Стиль"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Восстановить размеры и расположение окон при открытии сессии."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Восстанавливать предыдущую сессию при запуске"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Когда браузер запускается, восстановите сессию, которая была закрыта в последний раз."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Периодически сохранять сессию"
