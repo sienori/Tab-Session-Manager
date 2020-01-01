@@ -192,10 +192,10 @@
     "message": "Faire une copie de la session"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Ajouter au démarrage"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Retirer du démarrage"
   },
   "errorLabel": {
     "message": "Erreur"
@@ -267,25 +267,25 @@
     "message": "Rétablir la position et la taille de la fenêtre à l'ouverture de la session."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Démarrage"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Comportement lors du démarrage du navigateur"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Ouvrir la session précédente"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Ouvre la session qui a été fermée la dernière fois."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Ouvrir la session de démarrage"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Ouvrir les sessions ajoutées au démarrage. Vous pouvez ajouter une session au démarrage depuis le menu dans la liste des sessions."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Ne rien faire"
   },
   "ifAutoSaveLabel": {
     "message": "Enregistrer régulièrement la session"
