@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Vytvořit kopii relace"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Chyba"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Auto save"
   },
-  "startUpLabel": {
-    "message": "Startup"
-  },
   "styleLabel": {
     "message": "Style"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Obnovit pozici a velikost oken při otevírání relace."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Obnovit poslední relaci při startu"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Při otevření prohlížeče, obnovit poslední zavřenou relaci."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Ukládat relaci pravidelně"
