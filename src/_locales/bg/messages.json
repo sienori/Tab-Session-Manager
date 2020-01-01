@@ -192,10 +192,10 @@
     "message": "Създаване копие на сесията"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Регистриране за стартиране"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Премахване от стартирането"
   },
   "errorLabel": {
     "message": "Грешка"
@@ -267,25 +267,25 @@
     "message": "Възстановяване позицията и размера на прозорците при отваряне на сесия."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Стартиране"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Поведение при стартиране на браузъра"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Отваряне на предишна сесия"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Отваряне на последно затворената сесия."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Отваряне на сесия при стартиране"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Отваряне на сесии, регистрирани за стартиране. Можете да ги регистрирате от менюто в списъка със сесии."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Да не се прави нищо"
   },
   "ifAutoSaveLabel": {
     "message": "Редовно запазване на сесията"
