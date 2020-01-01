@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "세션의 복사본 만들기"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "오류"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "자동 저장"
   },
-  "startUpLabel": {
-    "message": "시작"
-  },
   "styleLabel": {
     "message": "스타일"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Restore windows position and size when opening session."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Restore previous session at startup"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Save the session regularly"
