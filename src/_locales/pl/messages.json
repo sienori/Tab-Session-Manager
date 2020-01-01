@@ -30,7 +30,7 @@
     "message": "Zapisz wszystkie okna"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Zapisz jedynie otwarte okno"
+    "message": "Zapisz tylko bieżące okno"
   },
   "categoryFilterLabel": {
     "message": "Filtr kategorii"
@@ -174,7 +174,7 @@
     "message": "Dodaj do bieżącego okna"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Dodaj karty do bieżącego okna. Jeśli sesja zawiera wiele okien, otwórz je w nowym oknie."
   },
   "EditSessionLabel": {
     "message": "Edytuj sesję"
@@ -190,6 +190,12 @@
   },
   "makeCopySessionLabel": {
     "message": "Utwórz kopię sesji"
+  },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
   },
   "errorLabel": {
     "message": "Błąd"
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Automatyczny zapis"
   },
-  "startUpLabel": {
-    "message": "Uruchamianie"
-  },
   "styleLabel": {
     "message": "Styl"
   },
@@ -240,7 +243,7 @@
     "message": "Odtwórz sesję w nowym oknie"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "Jeżeli odznaczone, sesja zastępuje bieżące otwarte okno."
+    "message": "Jeżeli odznaczone, sesja zastępuje bieżące okno."
   },
   "ifLazyLoadingLabel": {
     "message": "Opóźnione ładowanie kart"
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Przywracanie położenia i rozmiaru okien podczas odtwarzania sesji."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Przywróć poprzednią sesję podczas uruchamiania"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Po uruchomieniu przeglądarki, przywróć sesję, która została zamknięta ostatnim razem."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Zapisuj sesję regularnie"
@@ -399,10 +417,10 @@
     "message": "Dodaj funkcję wyszukiwania sesji wg nazwy."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Wyświetl przyciski otwórz / usuń na liście sesji"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Wyświetl przyciski otwórz / usuń gdy kursor myszy jest nad listą sesji."
   },
   "sizeLabel": {
     "message": "Rozmiar"
@@ -525,7 +543,7 @@
     "message": "Otwórz okienko paska narzędzi"
   },
   "saveCurrentWindowDescription": {
-    "message": "Zapisz sesję (tylko otwarte okno)"
+    "message": "Zapisz sesję (tylko bieżące okno)"
   },
   "saveAllWindowDescription": {
     "message": "Zapisz sesję (wszystkie okna)"

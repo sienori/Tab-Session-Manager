@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Создать копию сессии"
   },
+  "registerStartupLabel": {
+    "message": "Открывать при запуске"
+  },
+  "removeStartupLabel": {
+    "message": "Не открывать при запуске"
+  },
   "errorLabel": {
     "message": "Ошибка"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Автосохранение"
   },
-  "startUpLabel": {
-    "message": "При запуске"
-  },
   "styleLabel": {
     "message": "Стиль"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Восстановить размеры и расположение окон при открытии сессии."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Восстанавливать предыдущую сессию при запуске"
+  "startupLabel": {
+    "message": "При запуске"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Когда браузер запускается, восстановите сессию, которая была закрыта в последний раз."
+  "startupBehaviorLabel": {
+    "message": "Поведение при запуске браузера"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Открыть предыдущую сессию"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Открыть сессию, которая была закрыта в последний раз."
+  },
+  "openStartupSessionLabel": {
+    "message": "Открыть сессии, как при запуске"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Открыть сессии, настроенные для старта при запуске. Вы можете настроить сессии для запуска из меню в списке сессий."
+  },
+  "DoNothingLabel": {
+    "message": "Ничего не делать"
   },
   "ifAutoSaveLabel": {
     "message": "Периодически сохранять сессию"

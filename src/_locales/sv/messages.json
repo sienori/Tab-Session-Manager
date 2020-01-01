@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Gör en kopia av sessionen"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Fel"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Spara automatiskt"
   },
-  "startUpLabel": {
-    "message": "Uppstart"
-  },
   "styleLabel": {
     "message": "Stil"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Återställ fönsterplaceringar och storleken när en session öppnas."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Återställ föregående session vid uppstart"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "När webbläsaren startas, återställ sessionen som stängdes förra gången."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Spara sessionen regelbundet"

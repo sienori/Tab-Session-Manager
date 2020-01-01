@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Másolatot készítése a munkamenetről"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Hiba"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Automatikus mentés"
   },
-  "startUpLabel": {
-    "message": "Indulás"
-  },
   "styleLabel": {
     "message": "Stílus"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Ablakok pozícióinak és méreteinek visszaállítása munkamenet megnyitáskor."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Előző munkamenet visszaállítása induláskor"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Amikor a böngésző indul, az előző munkamenet visszaállítása."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Munkamenet rendszeres mentése"

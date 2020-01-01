@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Створити копію сесії"
   },
+  "registerStartupLabel": {
+    "message": "Зареєструвати для запуску"
+  },
+  "removeStartupLabel": {
+    "message": "Видалити з запуску"
+  },
   "errorLabel": {
     "message": "Помилка"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Автоматичне збереження"
   },
-  "startUpLabel": {
-    "message": "Запуск"
-  },
   "styleLabel": {
     "message": "Стиль"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Відновити розмір та положення вікон під час відкриття сесії."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Відновлювати попередню сесію при запуску"
+  "startupLabel": {
+    "message": "Початкові дії"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Під час відкриття браузера, відновити сеанс, який було закрито в останній раз."
+  "startupBehaviorLabel": {
+    "message": "Поведінка при запуску браузера"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Відкрити попередню сесію"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Відкрити сесію, яка була закрита останнього разу."
+  },
+  "openStartupSessionLabel": {
+    "message": "Відкрити стартову сесію"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Відкрити сесію зареєстровану для запуску на старті. В можете зареєструвати її в меню в списку сесії."
+  },
+  "DoNothingLabel": {
+    "message": "Нічого не робити"
   },
   "ifAutoSaveLabel": {
     "message": "Періодично зберігати сесію"

@@ -3,55 +3,55 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Guardar i restaurar l'estat de las finestres i pestanyes. També suporta guardat automàtic."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Donar per PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Donar"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Obrir la llista de sessions en la pestanya"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "Desa"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "Desar sessió actual"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Introduir nom de sessió"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Desar sessió"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Desar totes les finestres"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Desa nomes la finestra actual"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Filtre de categoria"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Ordenar"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Tots"
   },
   "displayUserLabel": {
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Desa automàticament"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Més recent"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Més antic"
   },
   "aToZLabel": {
     "message": "A-Z"
@@ -60,97 +60,97 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Cerca per nom de la sessió"
   },
   "search": {
-    "message": "Search"
+    "message": "Cercar"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Neteja la cerca"
   },
   "open": {
-    "message": "Open"
+    "message": "Obrir"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Eliminar"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Eliminar aquesta sessió?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessió eliminada."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Sessió de finestra eliminada."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Sessió de pestanya eliminada."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Error al eliminar la sessió."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Error al eliminar la sessió de finestra."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Error al eliminar la sessió de pestanya."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessió desada."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Error al desar la sessió."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Cancel·lar"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Afegir etiqueta"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Eliminar l'etiqueta"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Detalls"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "Finestra"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "Finestres"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "Pestanya"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "Pestanyes"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "No hi ha cap sessió."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Anem a desar la sessió fent clic al boto inferior dret."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "No hi ha cap resultat."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "No hi ha sessió seleccionada."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Menú"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Tancar menú"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Tancar"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Reanomenar"
   },
   "renameSessionLabel": {
     "message": "Rename session"
@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Make a copy of the session"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Error"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Auto save"
   },
-  "startUpLabel": {
-    "message": "Startup"
-  },
   "styleLabel": {
     "message": "Style"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Restore windows position and size when opening session."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Restore previous session at startup"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Save the session regularly"
