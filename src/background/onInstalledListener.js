@@ -12,12 +12,9 @@ const openOptionsPage = active => {
   });
 };
 
-export let isUpdated = false;
-
 export default async details => {
   if (details.reason != "install" && details.reason != "update") return;
   log.info(logDir, "onInstalledListener()", details);
-  isUpdated = true;
   await initSettings();
   initShortcuts();
   const isShowOptionsPage = getSettings("isShowOptionsPageWhenUpdated");

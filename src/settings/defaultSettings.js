@@ -148,14 +148,38 @@ export default [
     ]
   },
   {
-    category: "startUpLabel",
+    category: "startupLabel",
     elements: [
       {
-        id: "ifOpenLastSessionWhenStartUp",
-        title: "ifOpenLastSessionWhenStartUpLabel",
-        captions: ["ifOpenLastSessionWhenStartUpCaptionLabel"],
-        type: "checkbox",
-        default: false
+        id: "startupBehavior",
+        title: "startupBehaviorLabel",
+        captions: [],
+        type: "none",
+        default: "none",
+        new: true,
+        childElements: [
+          {
+            id: "startupBehavior",
+            title: "openPreviousSessionLabel",
+            captions: ["openPreviousSessionCaptionLabel"],
+            type: "radio",
+            value: "previousSession"
+          },
+          {
+            id: "startupBehavior",
+            title: "openStartupSessionLabel",
+            captions: ["openStartupSessionCaptionLabel"],
+            type: "radio",
+            value: "startupSession"
+          },
+          {
+            id: "startupBehavior",
+            title: "DoNothingLabel",
+            captions: [""],
+            type: "radio",
+            value: "none"
+          }
+        ]
       }
     ]
   },

@@ -159,7 +159,6 @@ export const autoSaveWhenExitBrowser = async () => {
 };
 
 export const openLastSession = async () => {
-  if (!getSettings("ifOpenLastSessionWhenStartUp")) return;
   log.info(logDir, "openLastSession()");
 
   const currentWindows = await browser.windows.getAll();

@@ -29,7 +29,8 @@ export async function addTag(id, tag) {
     "_auto",
     browser.i18n.getMessage("regularSaveSessionName"),
     browser.i18n.getMessage("winCloseSessionName"),
-    browser.i18n.getMessage("browserExitSessionName")
+    browser.i18n.getMessage("browserExitSessionName"),
+    browser.i18n.getMessage("startupLabel")
   ];
   const currentTags = session.tag;
   if (!reservedTag.every(isNotEqual)) return;

@@ -2,6 +2,8 @@ import React from "react";
 import browser from "webextension-polyfill";
 import {
   sendOpenMessage,
+  sendTagAddMessage,
+  sendTagRemoveMessage,
   replaceCurrentSession,
   addCurrentWindow,
   makeCopySession,
@@ -30,12 +32,20 @@ export default props => {
   const handleMakeCopySession = () => {
     makeCopySession(props.session.id);
   };
+  const handleRegisterStartup = () => {
+    sendTagAddMessage(props.session.id, "_startup");
+  };
+  const handleRemoveStartup = () => {
+    sendTagRemoveMessage(props.session.id, "_startup");
+  };
   const handleExportSession = () => {
     sendExportSessionMessage(props.session.id);
   };
   const handleClickSection = e => {
     e.stopPropagation();
   };
+
+  const isStartup = () => props.session.tag.includes("_startup");
 
   return (
     <ul>
@@ -82,6 +92,11 @@ export default props => {
         </button>
       </li>
       <hr />
+      <li>
+        <button onClick={isStartup() ? handleRemoveStartup : handleRegisterStartup}>
+          {browser.i18n.getMessage(isStartup() ? "removeStartupLabel" : "registerStartupLabel")}
+        </button>
+      </li>
       <li>
         <button onClick={handleExportSession}>
           {browser.i18n.getMessage("exportButtonLabel")}

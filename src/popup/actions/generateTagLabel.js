@@ -8,6 +8,8 @@ export default tag => {
       return browser.i18n.getMessage("winCloseSessionName");
     case "browserExit":
       return browser.i18n.getMessage("browserExitSessionName");
+    case "_startup":
+      return browser.i18n.getMessage("startupLabel");
     default:
       return tag;
   }

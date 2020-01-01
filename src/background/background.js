@@ -26,10 +26,11 @@ import {
 import getSessions from "./getSessions";
 import { openSession } from "./open";
 import { addTag, removeTag } from "./tag";
-import { initSettings, handleSettingsChange } from "src/settings/settings";
+import { initSettings, handleSettingsChange, getSettings } from "src/settings/settings";
 import exportSessions from "./export";
-import onInstalledListener, { isUpdated } from "./onInstalledListener";
+import onInstalledListener from "./onInstalledListener";
 import { onCommandListener } from "./keyboardShortcuts";
+import { openStartupSessions } from "./startup";
 import { updateLogLevel, overWriteLogLevel } from "../common/log";
 
 const logDir = "background/background";
@@ -65,17 +66,19 @@ const init = async () => {
   IsInit = true;
   await updateOldSessions();
 
-  if (!isUpdated) {
-    autoSaveWhenExitBrowser().then(() => {
-      openLastSession();
-    });
-  }
-
   setAutoSave();
   backupSessions();
   addListeners();
 };
-init();
+
+const onStartupListener = async () => {
+  await init();
+  autoSaveWhenExitBrowser().then(() => {
+    const startupBehavior = getSettings("startupBehavior");
+    if (startupBehavior === "previousSession") openLastSession();
+    else if (startupBehavior === "startupSession") openStartupSessions();
+  });
+};
 
 const onMessageListener = async (request, sender, sendResponse) => {
   log.info(logDir, "onMessageListener()", request);
@@ -123,6 +126,8 @@ const onMessageListener = async (request, sender, sendResponse) => {
   }
 };
 
+browser.runtime.onStartup.addListener(onStartupListener);
+browser.runtime.onInstalled.addListener(init);
 browser.runtime.onInstalled.addListener(onInstalledListener);
 browser.runtime.onMessage.addListener(onMessageListener);
 browser.commands.onCommand.addListener(onCommandListener);

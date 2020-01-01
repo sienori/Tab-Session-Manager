@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import "../styles/OptionsArea.scss";
 import SearchBar from "./SearchBar";
+import generateTagLabel from "../actions/generateTagLabel";
 
 const alphabeticallySort = (a, b) => {
   if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
@@ -140,7 +141,7 @@ export default class OptionsArea extends Component {
               )}
               {tagsCount.tags.map((tag, index) => (
                 <option value={tag.name} key={index}>
-                  {tag.name} [{tag.count}]
+                  {generateTagLabel(tag.name)} [{tag.count}]
                 </option>
               ))}
             </select>
