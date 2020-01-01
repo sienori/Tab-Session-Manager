@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "複製此瀏覽階段"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "錯誤"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "自動儲存"
   },
-  "startUpLabel": {
-    "message": "啟動"
-  },
   "styleLabel": {
     "message": "樣式"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "開啟瀏覽階段時還原視窗的位置與大小。"
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "啟動時還原上次開啟的瀏覽階段"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "當瀏覽器啟動時，還原上次開啟的瀏覽階段。"
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
