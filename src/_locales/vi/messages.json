@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Tạo bản sao của phiên"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Lỗi"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Lưu tự động"
   },
-  "startUpLabel": {
-    "message": "Khởi động"
-  },
   "styleLabel": {
     "message": "Kiểu"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Khôi phục vị trí và kích thước cửa sổ khi mở phiên làm việc."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Khôi phục phiên làm việc trước đó khi khởi động"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Khi trình duyệt khởi động, khôi phục phiên làm việc đã được đóng trước đó."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Lưu lại phiên làm việc thường xuyên"
