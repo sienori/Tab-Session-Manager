@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "创建会话副本"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "错误"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "自动保存"
   },
-  "startUpLabel": {
-    "message": "启动"
-  },
   "styleLabel": {
     "message": "样式"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "还原会话时，同时还原窗口的位置与大小。"
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "启动时还原上次的会话"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "浏览器启动时，恢复最后关闭的会话。"
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "定期保存会话"
