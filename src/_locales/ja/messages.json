@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "セッションのコピーを作成"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "エラー"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "自動保存"
   },
-  "startUpLabel": {
-    "message": "起動時"
-  },
   "styleLabel": {
     "message": "スタイル"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "セッションを開いたときにウィンドウの位置とサイズを復元します。"
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "起動時に前回のセッションを復元する"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "ブラウザ起動時に，最後に開いていたセッションを開きます。"
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "定期的にセッションを保存する"
