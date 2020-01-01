@@ -192,10 +192,10 @@
     "message": "Создать копию сессии"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Открывать при запуске"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Не открывать при запуске"
   },
   "errorLabel": {
     "message": "Ошибка"
@@ -267,25 +267,25 @@
     "message": "Восстановить размеры и расположение окон при открытии сессии."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "При запуске"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Поведение при запуске браузера"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Открыть предыдущую сессию"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Открыть сессию, которая была закрыта в последний раз."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Открыть сессии, как при запуске"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Открыть сессии, настроенные для старта при запуске. Вы можете настроить сессии для запуска из меню в списке сессий."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Ничего не делать"
   },
   "ifAutoSaveLabel": {
     "message": "Периодически сохранять сессию"
