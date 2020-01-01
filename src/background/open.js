@@ -45,22 +45,8 @@ export async function openSession(session, property = "openInNewWindow") {
 
       const currentWindow = await browser.windows.create(createData);
 
-      if (isSetPosition) {
-        switch (session.windowsInfo[win].state) {
-          case "normal": //黒帯が表示される現象を回避する
-            browser.windows.update(currentWindow.id, {
-              height: createData.height + 1
-            });
-            browser.windows.update(currentWindow.id, {
-              height: createData.height
-            });
-            break;
-          case "maximized":
-            browser.windows.update(currentWindow.id, {
-              state: "maximized"
-            });
-            break;
-        }
+      if (isSetPosition && session.windowsInfo[win].state == "maximized") {
+        browser.windows.update(currentWindow.id, { state: "maximized" });
       }
 
       createTabs(session, win, currentWindow);
