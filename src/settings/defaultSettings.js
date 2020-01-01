@@ -256,8 +256,7 @@ export default [
         title: "isShowOpenButtonsLabel",
         captions: ["isShowOpenButtonsCaptionLabel"],
         type: "checkbox",
-        default: true,
-        new: true
+        default: true
       },
       {
         title: "sizeLabel",
@@ -292,8 +291,7 @@ export default [
             min: 100,
             max: 800,
             placeholder: 300,
-            default: 300,
-            new: true
+            default: 300
           }
         ]
       },
