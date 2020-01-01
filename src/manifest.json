@@ -1,27 +1,28 @@
 {
   "manifest_version": 2,
-
   "version": "5.1.1",
   "name": "__MSG_extName__",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
-
-  "permissions": ["storage", "tabs", "cookies", "downloads"],
-
+  "permissions": [
+    "storage",
+    "tabs",
+    "cookies",
+    "downloads"
+  ],
   "options_ui": {
     "page": "options/index.html",
     "open_in_tab": true
   },
-
   "icons": {
     "16": "icons/icon_min.png",
     "64": "icons/icon.png"
   },
-
   "background": {
-    "scripts": ["background/background.js"]
+    "scripts": [
+      "background/background.js"
+    ]
   },
-
   "browser_action": {
     "default_icon": {
       "16": "icons/icon_min.png",
@@ -29,7 +30,6 @@
     },
     "default_popup": "popup/index.html"
   },
-
   "commands": {
     "_execute_browser_action": {
       "description": "__MSG_openPopupDescription__",
@@ -47,6 +47,5 @@
       "description": "__MSG_exportSessionsDescription__"
     }
   },
-
   "incognito": "spanning"
 }

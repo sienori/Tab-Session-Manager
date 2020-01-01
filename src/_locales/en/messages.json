@@ -5,7 +5,6 @@
   "extDescription": {
     "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
   },
-
   "donateWithPaypalLabel": {
     "message": "Donate with PayPal"
   },
@@ -204,7 +203,6 @@
   "noConnectionErrorLabel": {
     "message": "Multiple popups can not be opened at the same time."
   },
-
   "winCloseSessionName": {
     "message": "Auto Save - Window closed"
   },
@@ -214,7 +212,6 @@
   "regularSaveSessionName": {
     "message": "Auto Save - Regularly"
   },
-
   "settingsLabel": {
     "message": "Settings"
   },
@@ -266,7 +263,6 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Restore windows position and size when opening session."
   },
-
   "ifOpenLastSessionWhenStartUpLabel": {
     "message": "Restore previous session at startup"
   },
@@ -564,7 +560,6 @@
   "extensionPageLabel": {
     "message": "Extension page"
   },
-
   "importMessage": {
     "message": "Sessions imported."
   },
@@ -583,7 +578,6 @@
   "addonUrl": {
     "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
-
   "replacedPageMessage": {
     "message": "This page can not be opened by Tab Session Manager."
   }
