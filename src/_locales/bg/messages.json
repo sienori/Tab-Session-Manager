@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Създаване копие на сесията"
   },
+  "registerStartupLabel": {
+    "message": "Регистриране за стартиране"
+  },
+  "removeStartupLabel": {
+    "message": "Премахване от стартирането"
+  },
   "errorLabel": {
     "message": "Грешка"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Автоматично запазване"
   },
-  "startUpLabel": {
-    "message": "Стартиране"
-  },
   "styleLabel": {
     "message": "Стил"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Възстановяване позицията и размера на прозорците при отваряне на сесия."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Възстановяване на предишна сесия при стартиране"
+  "startupLabel": {
+    "message": "Стартиране"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Възстановяване на последно затворената сесия при стартиране на браузъра."
+  "startupBehaviorLabel": {
+    "message": "Поведение при стартиране на браузъра"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Отваряне на предишна сесия"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Отваряне на последно затворената сесия."
+  },
+  "openStartupSessionLabel": {
+    "message": "Отваряне на сесия при стартиране"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Отваряне на сесии, регистрирани за стартиране. Можете да ги регистрирате от менюто в списъка със сесии."
+  },
+  "DoNothingLabel": {
+    "message": "Да не се прави нищо"
   },
   "ifAutoSaveLabel": {
     "message": "Редовно запазване на сесията"
