@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "複製此瀏覽階段"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "錯誤"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "自動儲存"
   },
-  "startUpLabel": {
-    "message": "啟動"
-  },
   "styleLabel": {
     "message": "樣式"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "開啟瀏覽階段時還原視窗的位置與大小。"
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "啟動時還原上次開啟的瀏覽階段"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "當瀏覽器啟動時，還原上次開啟的瀏覽階段。"
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
@@ -351,10 +369,10 @@
     "message": "儲存隱私視窗"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "儲存瀏覽階段時要忽略的 URL 清單"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "若 URL 與清單內相符，則不會將它儲存到瀏覽階段中，此清單允許使用 \"*\" 萬用字元。"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "如果取消勾選，儲存瀏覽階段時將會忽略隱私視窗。"
@@ -399,10 +417,10 @@
     "message": "新增搜尋瀏覽階段功能。"
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "在瀏覽階段清單上時顯示開啟/刪除按鈕"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "當滑鼠停留在瀏覽階段清單上時顯示開啟/刪除按鈕"
   },
   "sizeLabel": {
     "message": "大小"
