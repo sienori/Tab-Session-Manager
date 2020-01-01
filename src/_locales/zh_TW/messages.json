@@ -285,7 +285,7 @@
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "不執行任何動作"
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
