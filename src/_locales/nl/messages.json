@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Make a copy of the session"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Error"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Automatisch opslaan"
   },
-  "startUpLabel": {
-    "message": "Starten"
-  },
   "styleLabel": {
     "message": "Stijl"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Restore windows position and size when opening session."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Vorige sessie herstellen bij opstarten"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "When browser starts up, restore the session that was closed the last time."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Sla de sessie regelmatig op"
