@@ -191,6 +191,12 @@
   "makeCopySessionLabel": {
     "message": "Створити копію сесії"
   },
+  "registerStartupLabel": {
+    "message": "Register for startup"
+  },
+  "removeStartupLabel": {
+    "message": "Remove from startup"
+  },
   "errorLabel": {
     "message": "Помилка"
   },
@@ -230,9 +236,6 @@
   "autoSaveLabel": {
     "message": "Автоматичне збереження"
   },
-  "startUpLabel": {
-    "message": "Запуск"
-  },
   "styleLabel": {
     "message": "Стиль"
   },
@@ -263,11 +266,26 @@
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Відновити розмір та положення вікон під час відкриття сесії."
   },
-  "ifOpenLastSessionWhenStartUpLabel": {
-    "message": "Відновлювати попередню сесію при запуску"
+  "startupLabel": {
+    "message": "Startup"
   },
-  "ifOpenLastSessionWhenStartUpCaptionLabel": {
-    "message": "Під час відкриття браузера, відновити сеанс, який було закрито в останній раз."
+  "startupBehaviorLabel": {
+    "message": "Behavior when starting the browser"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Open previous session"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Open the session that was closed the last time."
+  },
+  "openStartupSessionLabel": {
+    "message": "Open startup session"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+  },
+  "DoNothingLabel": {
+    "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
     "message": "Періодично зберігати сесію"
