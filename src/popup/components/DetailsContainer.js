@@ -101,7 +101,7 @@ class WindowContainer extends Component {
               onClick={this.handleOpenClick}
               title={browser.i18n.getMessage("openInNewWindowLabel")}
             >
-              {windowTitle}
+              {windowTitle || browser.i18n.getMessage("windowLabel")}
             </button>
             <span className="tabsNumber">{this.getTabsNumberText()}</span>
           </div>
