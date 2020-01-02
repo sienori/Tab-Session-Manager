@@ -192,10 +192,10 @@
     "message": "Sitzung kopieren"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Zum Start registrieren"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Vom Start entfernen"
   },
   "errorLabel": {
     "message": "Fehler"
@@ -267,25 +267,25 @@
     "message": "Stelle Fensterposition und -größe wieder her beim Öffnen einer Sitzung."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Autostart"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Verhalten beim Browserstart"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Vorherige Sitzung öffnen"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Öffnen Sie die Sitzung, die das letzte Mal geschlossen wurde."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Öffne Autostart Sitzung"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Öffnen Sie die zum Start registrierten Sitzungen. Sie können sich über das Menü in der Sitzungsliste für den Start registrieren."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Mach nichts"
   },
   "ifAutoSaveLabel": {
     "message": "Sitzung regelmäßig sichern"
