@@ -192,10 +192,10 @@
     "message": "Gör en kopia av sessionen"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Starta vid uppstart"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Starta inte vid uppstart"
   },
   "errorLabel": {
     "message": "Fel"
@@ -270,7 +270,7 @@
     "message": "Uppstart"
   },
   "startupBehaviorLabel": {
-    "message": "Vad ska hända när du startar webbläsaren"
+    "message": "Vad händer när du startar webbläsaren"
   },
   "openPreviousSessionLabel": {
     "message": "Öppna föregående session"
@@ -282,7 +282,7 @@
     "message": "Öppna uppstartssessionen"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Öppna sessioner som markerats som uppstart. Du kan markera som uppstart från menyn i sessionslistan."
   },
   "DoNothingLabel": {
     "message": "Gör ingenting"
