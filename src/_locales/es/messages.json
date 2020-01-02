@@ -192,10 +192,10 @@
     "message": "Hacer una copia de la sesión"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Registrar en arranque"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Eliminar de arranque"
   },
   "errorLabel": {
     "message": "Error"
@@ -267,7 +267,7 @@
     "message": "Restaura la posición de la ventana y tamaño al abrir la sesión."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Arranque"
   },
   "startupBehaviorLabel": {
     "message": "Comportamiento al iniciar el navegador"
@@ -279,10 +279,10 @@
     "message": "Abrir la sesión que se cerró por última vez."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Abrir sesión de arranque"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Abra las sesiones registradas para el arranque. Puede registrar para el arranque desde el menú en la lista de sesiones."
   },
   "DoNothingLabel": {
     "message": "No hacer nada"
