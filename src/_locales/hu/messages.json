@@ -285,7 +285,7 @@
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Ne tegyen semmit"
   },
   "ifAutoSaveLabel": {
     "message": "Munkamenet rendszeres mentése"
