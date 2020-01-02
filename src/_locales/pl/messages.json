@@ -267,25 +267,25 @@
     "message": "Przywracanie położenia i rozmiaru okien podczas odtwarzania sesji."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Uruchamianie"
   },
   "startupBehaviorLabel": {
     "message": "Behavior when starting the browser"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Otwórz poprzednią sesję"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Otwórz ostatnio zamkniętą sesję."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Otwórz sesję startową"
   },
   "openStartupSessionCaptionLabel": {
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Nic nie rób"
   },
   "ifAutoSaveLabel": {
     "message": "Zapisuj sesję regularnie"
