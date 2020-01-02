@@ -267,25 +267,25 @@
     "message": "Återställ fönsterplaceringar och storleken när en session öppnas."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Uppstart"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Vad ska hända när du startar webbläsaren"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Öppna föregående session"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Öppna sessionen som avslutades förra gången."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Öppna uppstartssessionen"
   },
   "openStartupSessionCaptionLabel": {
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Gör ingenting"
   },
   "ifAutoSaveLabel": {
     "message": "Spara sessionen regelbundet"
