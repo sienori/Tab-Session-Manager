@@ -192,10 +192,10 @@
     "message": "Utwórz kopię sesji"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Zarejestruj na sesję startową"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Usuń z sesji startowej"
   },
   "errorLabel": {
     "message": "Błąd"
@@ -207,7 +207,7 @@
     "message": "Jak rozwiązać ten problem"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Nie można otworzyć wielu wyskakujących okienek w tym samym czasie."
   },
   "winCloseSessionName": {
     "message": "Automatyczny zapis - okno zamknięte"
@@ -267,10 +267,10 @@
     "message": "Przywracanie położenia i rozmiaru okien podczas odtwarzania sesji."
   },
   "startupLabel": {
-    "message": "Uruchamianie"
+    "message": "Start"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Zachowanie podczas startu przeglądarki"
   },
   "openPreviousSessionLabel": {
     "message": "Otwórz poprzednią sesję"
@@ -282,7 +282,7 @@
     "message": "Otwórz sesję startową"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Otwórz sesje zarejestrowane do sesji startowej. Możesz zarejestrować do sesji startowej z menu na liście sesji."
   },
   "DoNothingLabel": {
     "message": "Nic nie rób"
@@ -426,7 +426,7 @@
     "message": "Rozmiar"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Określ rozmiar wyskakującego okna."
   },
   "widthLabel": {
     "message": "Szerokość"
@@ -435,7 +435,7 @@
     "message": "Wysokość"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Szerokość paska bocznego"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Otwórz listę sesji w karcie"
@@ -576,7 +576,7 @@
     "message": "Strona dodatku"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Strona rozszerzenia"
   },
   "importMessage": {
     "message": "Sesje zaimportowane."
