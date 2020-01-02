@@ -270,13 +270,13 @@
     "message": "Startup"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Comportamiento al iniciar el navegador"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Abrir sesión anterior"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Abrir la sesión que se cerró por última vez."
   },
   "openStartupSessionLabel": {
     "message": "Open startup session"
@@ -285,7 +285,7 @@
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "No hacer nada"
   },
   "ifAutoSaveLabel": {
     "message": "Guardar la sesión regularmente"
