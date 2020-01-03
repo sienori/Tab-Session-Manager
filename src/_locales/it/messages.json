@@ -192,10 +192,10 @@
     "message": "Fai una copia della sessione"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Registra per l'avvio"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Rimuovi dall'avvio"
   },
   "errorLabel": {
     "message": "Errore"
@@ -267,25 +267,25 @@
     "message": "Ripristina la posizione e la dimensione delle finestre durante l'apertura di una sessione."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Avvio"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Comportamento all'avvio del browser"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Apri sessione precedente"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Apre la sessione aperta che è stata chiusa l'ultima volta."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Apri sessione di avvio"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Apre le sessioni registrate per l'avvio. Puoi registrarle nella lista delle sessioni."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Non fare nulla"
   },
   "ifAutoSaveLabel": {
     "message": "Salva la sessione regolarmente"
@@ -435,13 +435,13 @@
     "message": "Altezza"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Larghezza barra laterale"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Apri lista sessioni in una scheda"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Apre la lista delle sessioni in un una scheda quando viene cliccato il plusante sulla barra degli strumenti."
+    "message": "Apre la lista delle sessioni in un una scheda quando viene cliccato il pulsante sulla barra degli strumenti."
   },
   "otherLabel": {
     "message": "Altro"
