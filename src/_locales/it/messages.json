@@ -417,10 +417,10 @@
     "message": "Aggiunge la funzione per cercare una sessione per nome."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Visualizza i pulsanti apri/elimina nell'elenco delle sessioni"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Visualizza i pulsanti apri/elimina quando il cursore è sopra la lista delle sessioni."
   },
   "sizeLabel": {
     "message": "Dimensioni"
