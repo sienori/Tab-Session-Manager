@@ -42,7 +42,7 @@
     "message": "Toutes"
   },
   "displayUserLabel": {
-    "message": "Sauvegarde de l’utilisateur"
+    "message": "Sauvegardes utilisateur"
   },
   "displayAutoLabel": {
     "message": "Sauvegarde automatique"
@@ -138,7 +138,7 @@
     "message": "Aucun résultat."
   },
   "noSessionSelectedLabel": {
-    "message": "Aucune session n'est sélectionnée."
+    "message": "Aucune session sélectionnée."
   },
   "menuLabel": {
     "message": "Menu"
@@ -597,6 +597,6 @@
     "message": "https://addons.mozilla.org/fr/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "Cette page ne peut pas être ouvert par Tab Session Manager."
+    "message": "Cette page ne peut pas être ouverte par Tab Session Manager."
   }
 }
