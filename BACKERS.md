@@ -14,3 +14,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Millergram
 - Robert Brookshire
 - Gregory M Broyles
+- idea jon
