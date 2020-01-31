@@ -15,3 +15,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Robert Brookshire
 - Gregory M Broyles
 - idea jon
+- tPod
