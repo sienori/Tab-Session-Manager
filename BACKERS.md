@@ -17,3 +17,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - idea jon
 - tPod
 - Matthew Moles
+- José Lagunas
