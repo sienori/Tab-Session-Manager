@@ -10,6 +10,10 @@ export default class SignInButton extends Component {
   }
 
   handleSignInClick = async () => {
+    const permissions = { origins: ["https://www.googleapis.com/"] };
+    const isGranted = await browser.permissions.request(permissions);
+    if (!isGranted) return;
+
     const isSucceeded = await browser.runtime.sendMessage({
       message: "signInGoogle"
     });
