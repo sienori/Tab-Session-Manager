@@ -395,6 +395,21 @@
   "truncateTitleCaptionLabel": {
     "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
   },
+  "cloudBackupLabel": {
+    "message": "Cloud backup"
+  },
+  "enabledCloudBackupLabel": {
+    "message": "Enable cloud backup (Beta)"
+  },
+  "enabledCloudBackupCaptionLabel": {
+    "message": "Save session backups in Google Drive™."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
+  },
   "popupLabel": {
     "message": "Popup"
   },

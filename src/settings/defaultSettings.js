@@ -1,4 +1,5 @@
 import browserInfo from "browser-info";
+import SignInButton from "../options/components/SignInButton";
 
 export default [
   {
@@ -202,6 +203,19 @@ export default [
             default: "TabSessionManager - Backup"
           }
         ]
+      }
+    ]
+  },
+  {
+    category: "cloudBackupLabel",
+    elements: [
+      {
+        id: "enabledCloudBackup",
+        title: "enabledCloudBackupLabel",
+        captions: ["enabledCloudBackupCaptionLabel"],
+        type: "extra",
+        extraForm: SignInButton,
+        new: true
       }
     ]
   },

@@ -150,6 +150,10 @@ export default props => {
         <KeyboardShortcutForm id={id} shortcut={props.shortcut} defaultValue={props.defaultValue} />
       );
       break;
+    case "extra":
+      formId = "";
+      optionForm = <props.extraForm />;
+      break;
     case "none":
       formId = "";
       optionForm = "";
