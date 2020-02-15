@@ -166,6 +166,7 @@ export const makeCopySession = async id => {
   session.date = moment(session.date)
     .add(1, "ms")
     .valueOf();
+  session.lastEditedTime = Date.now();
   browser.runtime.sendMessage({
     message: "save",
     session: session

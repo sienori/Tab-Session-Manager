@@ -27,6 +27,7 @@ export async function loadCurrentSession(name, tag, property) {
     tabsNumber: 0,
     name: name,
     date: Date.now(),
+    lastEditedTime: Date.now(),
     tag: tag,
     sessionStartTime: SessionStartTime,
     id: uuidv4()
@@ -106,9 +107,10 @@ export async function removeSession(id, isSendResponce = true) {
   }
 }
 
-export async function updateSession(session, isSendResponce = true) {
-  log.log(logDir, "updateSession()", session, isSendResponce);
+export async function updateSession(session, isSendResponce = true, shouldUpdateEditedTime = true) {
+  log.log(logDir, "updateSession()", session, isSendResponce, shouldUpdateEditedTime);
   try {
+    if (shouldUpdateEditedTime) session.lastEditedTime = Date.now();
     await Sessions.put(session);
     if (isSendResponce) sendMessage("updateSession", { session: session });
   } catch (e) {

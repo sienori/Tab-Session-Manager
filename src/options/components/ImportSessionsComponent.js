@@ -83,6 +83,10 @@ const parseSession = file => {
     if (typeof session.date !== "number") {
       session.date = moment(session.date).valueOf();
     }
+    //ver6.0.0以前のセッションにlastEditedTimeを追加
+    if (session.lastEditedTime === undefined) {
+      session.lastEditedTime = session.date;
+    }
   }
   return file;
 };
@@ -96,6 +100,7 @@ const parseOldSession = file => {
   session.tabsNumber = 0;
   session.name = line[1].substr(5);
   session.date = moment(parseInt(line[2].substr(10))).valueOf();
+  session.lastEditedTime = Date.now();
   session.tag = [];
   session.sessionStartTime = parseInt(line[2].substr(10));
   session.id = uuidv4();

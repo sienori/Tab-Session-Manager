@@ -9,9 +9,8 @@ import { updateSession, saveSession } from "./save";
 const logDir = "background/updateOldSessions";
 
 export default async () => {
-  if (browserInfo().name === "Chrome") return;
   log.info(logDir, "updateOldSessions()");
-  await migrateSessionsFromStorage();
+  if (browserInfo().name != "Chrome") await migrateSessionsFromStorage();
 
   //DBの更新が必要な場合
   //await Sessions.DBUpdate();
@@ -23,14 +22,20 @@ const addNewValues = async () => {
   log.log(logDir, "addNewValues()");
   const sessions = await Sessions.getAll().catch(() => {});
   for (let session of sessions) {
+    let shouldUpdate = false;
     if (session.windowsNumber === undefined) {
       session.windowsNumber = Object.keys(session.windows).length;
-      updateSession(session);
+      shouldUpdate = true;
     }
     if (typeof session.date !== "number") {
       session.date = moment(session.date).valueOf();
-      updateSession(session);
+      shouldUpdate = true;
     }
+    if (!session.lastEditedTime) {
+      session.lastEditedTime = session.date;
+      shouldUpdate = true;
+    }
+    if (shouldUpdate) await updateSession(session, true, false);
   }
 };
 
