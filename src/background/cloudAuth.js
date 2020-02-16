@@ -4,7 +4,7 @@ import log from "loglevel";
 import { clientId, clientSecret, redirectUri } from "../credentials";
 import { getSettings, setSettings } from "../settings/settings";
 
-const logDir = "background/cloudSync";
+const logDir = "background/cloudAuth";
 
 export const signInGoogle = async () => {
   log.log(logDir, "signInGoogle()");
@@ -23,8 +23,8 @@ export const signInGoogle = async () => {
 export const signOutGoogle = async () => {
   log.log(logDir, "signOutGoogle()");
   try {
-    const accessToken = await refreshAccessToken();
-    revokeToken(accessToken);
+    const refreshToken = getSettings("refreshToken");
+    revokeToken(refreshToken);
     setSettings("accessToken", "");
     setSettings("refreshToken", "");
     return true;
@@ -82,6 +82,8 @@ const launchWebAuthFlow = async url => {
 
   return new Promise((resolve, reject) => {
     const handleRedirect = (tabId, changeInfo, tab) => {
+      if (tabId != authTab.id) return;
+      if (changeInfo.url && !changeInfo.url.startsWith(redirectUri)) return;
       removeListeners();
       browser.windows.remove(authWindow.id);
       resolve(changeInfo.url);
@@ -98,12 +100,7 @@ const launchWebAuthFlow = async url => {
       browser.tabs.onRemoved.removeListener(handleRemove);
     };
 
-    browser.tabs.onUpdated.addListener(handleRedirect, {
-      urls: [redirectUri + "*"],
-      properties: ["status"],
-      windowId: authWindow.id,
-      tabId: authTab.id
-    });
+    browser.tabs.onUpdated.addListener(handleRedirect);
     browser.tabs.onRemoved.addListener(handleRemove);
   });
 };
@@ -130,10 +127,10 @@ const getAccessTokenByRefreshToken = async refreshToken => {
   params.append("refresh_token", refreshToken);
   params.append("client_id", clientId);
   params.append("client_secret", clientSecret);
-  params.append("grant_type", "authorization_code");
+  params.append("grant_type", "refresh_token");
 
   const authResponse = await axios.post("https://oauth2.googleapis.com/token", params).catch(e => {
-    log.error(logDir, "getAccessTokenByRefreshToken()", e.response.data);
+    log.error(logDir, "getAccessTokenByRefreshToken()", e.response);
     throw new Error();
   });
 
