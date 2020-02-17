@@ -132,7 +132,7 @@
     "message": "세션이 없습니다."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "하단 우측 버튼을 눌러 세션을 저장해봐요."
   },
   "noResultLabel": {
     "message": "일치하는 결과가 없습니다."
@@ -150,7 +150,7 @@
     "message": "닫기"
   },
   "renameLabel": {
-    "message": "이름 변경"
+    "message": "이름 바꾸기"
   },
   "renameSessionLabel": {
     "message": "세션 이름 바꾸기"
@@ -168,13 +168,13 @@
     "message": "현재 창에서 열기"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "현재 창에서 세션을 엽니다. 비활성화된 여러 창과 모든 탭이 닫힙니다."
   },
   "addToCurrentWindowLabel": {
     "message": "현재 창에 추가"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "모든 탭을 현재 창에 추가 합니다. 만약 세션이 여러 창을 포함한다면, 새 창에서 열립니다."
   },
   "EditSessionLabel": {
     "message": "세션 수정"
@@ -207,16 +207,16 @@
     "message": "문제 해결하기"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "여러 팝업창은 동시에 열릴 수 없습니다."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "창 닫으면, 자동 저장"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "브라우저 끄면, 자동 저장"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "주기적으로 자동 저장"
   },
   "settingsLabel": {
     "message": "설정"
