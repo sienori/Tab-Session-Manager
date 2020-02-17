@@ -6,10 +6,10 @@
     "message": "창과 탭의 상태를 저장하고 복원합니다. 자동 저장도 지원합니다."
   },
   "donateWithPaypalLabel": {
-    "message": "페이팔로 기부하기"
+    "message": "페이팔로 후원하기"
   },
   "donateLabel": {
-    "message": "기부하기"
+    "message": "후원하기"
   },
   "openSessionListInTabLabel": {
     "message": "새 탭에서 세션 목록 열기"
