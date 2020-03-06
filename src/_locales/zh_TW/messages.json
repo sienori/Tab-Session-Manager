@@ -267,7 +267,7 @@
     "message": "開啟瀏覽階段時還原視窗的位置與大小。"
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "啟動"
   },
   "startupBehaviorLabel": {
     "message": "Behavior when starting the browser"
