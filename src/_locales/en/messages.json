@@ -395,14 +395,14 @@
   "truncateTitleCaptionLabel": {
     "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
   },
-  "cloudBackupLabel": {
-    "message": "Cloud backup"
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
   },
-  "enabledCloudBackupLabel": {
-    "message": "Enable cloud backup (Beta)"
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
   },
-  "enabledCloudBackupCaptionLabel": {
-    "message": "Save session backups in Google Drive™."
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
   },
   "signInLabel": {
     "message": "Sign in"

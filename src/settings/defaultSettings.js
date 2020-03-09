@@ -207,12 +207,12 @@ export default [
     ]
   },
   {
-    category: "cloudBackupLabel",
+    category: "cloudSyncLabel",
     elements: [
       {
-        id: "enabledCloudBackup",
-        title: "enabledCloudBackupLabel",
-        captions: ["enabledCloudBackupCaptionLabel"],
+        id: "enabledCloudSync",
+        title: "enabledCloudSyncLabel",
+        captions: ["enabledCloudSyncCaptionLabel"],
         type: "extra",
         extraForm: SignInButton,
         new: true
