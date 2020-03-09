@@ -13,7 +13,8 @@
     "storage",
     "tabs",
     "cookies",
-    "downloads"
+    "downloads",
+    "identity"
   ],
   "optional_permissions": [
     "https://www.googleapis.com/*"

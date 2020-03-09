@@ -9,11 +9,10 @@ const logDir = "background/cloudAuth";
 export const signInGoogle = async () => {
   log.log(logDir, "signInGoogle()");
   try {
-    const accessCode = await getAuthCode();
-    const { accessToken, expiresIn, refreshToken } = await getAuthTokensByCode(accessCode);
+    const { accessToken, expiresIn } = await getAuthTokens();
     setSettings("accessToken", accessToken);
     setTokenExpiration(expiresIn);
-    if (refreshToken) setSettings("refreshToken", refreshToken);
+    setSettings("lastSyncTime", 0);
     return true;
   } catch (e) {
     return false;
@@ -23,10 +22,10 @@ export const signInGoogle = async () => {
 export const signOutGoogle = async () => {
   log.log(logDir, "signOutGoogle()");
   try {
-    const refreshToken = getSettings("refreshToken");
-    revokeToken(refreshToken);
+    const accessToken = getSettings("accessToken");
+    revokeToken(accessToken);
     setSettings("accessToken", "");
-    setSettings("refreshToken", "");
+    setSettings("lastSyncTime", 0);
     return true;
   } catch {
     return false;
@@ -38,71 +37,26 @@ const getAuthCode = async () => {
   const authURL =
     "https://accounts.google.com/o/oauth2/v2/auth" +
     `?client_id=${clientId}` +
-    "&access_type=offline" +
-    "&response_type=code" +
+    "&response_type=token" +
     `&redirect_uri=${redirectUri}` +
     `&scope=${encodeURIComponent(scopes.join(" "))}`;
 
-  const redirectedURL = await launchWebAuthFlow(authURL);
-  const params = new URL(redirectedURL).searchParams;
+  const redirectedURL = await browser.identity.launchWebAuthFlow({
+    interactive: true,
+    url: authURL
+  });
+
+  const params = new URL(redirectedURL.replace("#", "?")).searchParams;
   if (params.has("error")) {
     log.error(logDir, "getAuthCode()", params.get("error"));
     throw new Error();
   }
-  return params.get("code");
-};
-
-const getAuthTokensByCode = async code => {
-  let params = new URLSearchParams();
-  params.append("code", code);
-  params.append("client_id", clientId);
-  params.append("client_secret", clientSecret);
-  params.append("redirect_uri", redirectUri);
-  params.append("grant_type", "authorization_code");
-
-  const authResponse = await axios.post("https://oauth2.googleapis.com/token", params).catch(e => {
-    log.error(logDir, "getAuthTokensByCode()", e.response.data);
-    throw new Error();
-  });
-
   return {
-    accessToken: authResponse.data.access_token,
-    expiresIn: authResponse.data.expires_in,
-    refreshToken: authResponse.data.refresh_token
+    accessToken: params.get("access_token"),
+    expiresIn: params.get("expires_in")
   };
 };
 
-const launchWebAuthFlow = async url => {
-  const authWindow = await browser.windows.create({
-    url: url,
-    width: 500,
-    height: 700
-  });
-  const authTab = authWindow.tabs[0];
-
-  return new Promise((resolve, reject) => {
-    const handleRedirect = (tabId, changeInfo, tab) => {
-      if (tabId != authTab.id) return;
-      if (changeInfo.url && !changeInfo.url.startsWith(redirectUri)) return;
-      removeListeners();
-      browser.windows.remove(authWindow.id);
-      resolve(changeInfo.url);
-    };
-
-    const handleRemove = (tabId, removeInfo) => {
-      if (tabId != authTab.id) return;
-      removeListeners();
-      reject();
-    };
-
-    const removeListeners = () => {
-      browser.tabs.onUpdated.removeListener(handleRedirect);
-      browser.tabs.onRemoved.removeListener(handleRemove);
-    };
-
-    browser.tabs.onUpdated.addListener(handleRedirect);
-    browser.tabs.onRemoved.addListener(handleRemove);
-  });
 };
 
 const setTokenExpiration = async expirationSec => {
@@ -120,24 +74,6 @@ export const refreshAccessToken = async () => {
   setSettings("accessToken", accessToken);
   setTokenExpiration(expiresIn);
   return accessToken;
-};
-
-const getAccessTokenByRefreshToken = async refreshToken => {
-  let params = new URLSearchParams();
-  params.append("refresh_token", refreshToken);
-  params.append("client_id", clientId);
-  params.append("client_secret", clientSecret);
-  params.append("grant_type", "refresh_token");
-
-  const authResponse = await axios.post("https://oauth2.googleapis.com/token", params).catch(e => {
-    log.error(logDir, "getAccessTokenByRefreshToken()", e.response);
-    throw new Error();
-  });
-
-  return {
-    accessToken: authResponse.data.access_token,
-    expiresIn: authResponse.data.expires_in
-  };
 };
 
 const revokeToken = async token => {
