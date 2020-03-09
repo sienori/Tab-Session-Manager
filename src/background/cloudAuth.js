@@ -10,6 +10,8 @@ export const signInGoogle = async () => {
   log.log(logDir, "signInGoogle()");
   try {
     const { accessToken, expiresIn } = await getAuthTokens();
+    const email = await getEmail(accessToken);
+    setSettings("signedInEmail", email);
     setSettings("accessToken", accessToken);
     setTokenExpiration(expiresIn);
     setSettings("lastSyncTime", 0);
@@ -24,6 +26,7 @@ export const signOutGoogle = async () => {
   try {
     const accessToken = getSettings("accessToken");
     revokeToken(accessToken);
+    setSettings("signedInEmail", "");
     setSettings("accessToken", "");
     setSettings("lastSyncTime", 0);
     return true;
@@ -32,14 +35,18 @@ export const signOutGoogle = async () => {
   }
 };
 
-const getAuthCode = async () => {
-  const scopes = ["https://www.googleapis.com/auth/drive.appfolder"];
+const getAuthTokens = async (email = "") => {
+  const scopes = [
+    "https://www.googleapis.com/auth/drive.appfolder",
+    "https://www.googleapis.com/auth/userinfo.email"
+  ];
   const authURL =
     "https://accounts.google.com/o/oauth2/v2/auth" +
     `?client_id=${clientId}` +
     "&response_type=token" +
     `&redirect_uri=${redirectUri}` +
-    `&scope=${encodeURIComponent(scopes.join(" "))}`;
+    `&scope=${encodeURIComponent(scopes.join(" "))}` +
+    `${email && `&login_hint=${email}`}`;
 
   const redirectedURL = await browser.identity.launchWebAuthFlow({
     interactive: true,
@@ -57,6 +64,10 @@ const getAuthCode = async () => {
   };
 };
 
+const getEmail = async accessToken => {
+  const url = "https://www.googleapis.com/oauth2/v1/userinfo" + `?access_token=${accessToken}`;
+  const response = await axios.get(url);
+  return response.data.email;
 };
 
 const setTokenExpiration = async expirationSec => {
@@ -69,8 +80,9 @@ export const refreshAccessToken = async () => {
   const tokenExpiration = getSettings("tokenExpiration");
   if (Date.now() < tokenExpiration) return currentAccessToken;
 
-  const refreshToken = getSettings("refreshToken");
-  const { accessToken, expiresIn } = await getAccessTokenByRefreshToken(refreshToken);
+  log.log(logDir, "refreshAccessToken()");
+  const email = getSettings("signedInEmail");
+  const { accessToken, expiresIn } = await getAuthTokens(email);
   setSettings("accessToken", accessToken);
   setTokenExpiration(expiresIn);
   return accessToken;

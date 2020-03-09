@@ -5,8 +5,8 @@ import { getSettings } from "src/settings/settings";
 export default class SignInButton extends Component {
   constructor(props) {
     super(props);
-    const accessToken = getSettings("accessToken");
-    this.state = { shouldSignIn: !accessToken };
+    const signdInEmail = getSettings("signedInEmail");
+    this.state = { shouldSignIn: !signdInEmail };
   }
 
   handleSignInClick = async () => {
