@@ -6,6 +6,7 @@ import Sessions from "./sessions.js";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceParameter } from "./replace.js";
 import ignoreUrls from "./ignoreUrls";
+import { pushRemovedQueue } from "./cloudSync.js";
 
 const logDir = "background/save";
 
@@ -100,6 +101,7 @@ export async function removeSession(id, isSendResponce = true) {
   log.log(logDir, "removeSession()", id, isSendResponce);
   try {
     await Sessions.delete(id);
+    pushRemovedQueue(id);
     if (isSendResponce) sendMessage("deleteSession", { id: id });
   } catch (e) {
     log.error(logDir, "removeSession()", e);

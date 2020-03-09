@@ -32,6 +32,7 @@ import onInstalledListener from "./onInstalledListener";
 import { onCommandListener } from "./keyboardShortcuts";
 import { openStartupSessions } from "./startup";
 import { signInGoogle, signOutGoogle } from "./cloudAuth";
+import { syncCloud } from "./cloudSync";
 import { updateLogLevel, overWriteLogLevel } from "../common/log";
 
 const logDir = "background/background";
@@ -128,9 +129,8 @@ const onMessageListener = async (request, sender, sendResponse) => {
       return await signInGoogle();
     case "signOutGoogle":
       return await signOutGoogle();
-    case "uploadCloud":
-      break;
     case "syncCloud":
+      syncCloud();
       break;
   }
 };

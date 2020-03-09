@@ -15,6 +15,7 @@ export const signInGoogle = async () => {
     setSettings("accessToken", accessToken);
     setTokenExpiration(expiresIn);
     setSettings("lastSyncTime", 0);
+    setSettings("removedQueue", []);
     return true;
   } catch (e) {
     return false;
@@ -29,6 +30,7 @@ export const signOutGoogle = async () => {
     setSettings("signedInEmail", "");
     setSettings("accessToken", "");
     setSettings("lastSyncTime", 0);
+    setSettings("removedQueue", []);
     return true;
   } catch {
     return false;
