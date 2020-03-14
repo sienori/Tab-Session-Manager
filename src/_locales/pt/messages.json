@@ -411,10 +411,10 @@
     "message": "Selecione o comportamento padrão do botão de salvar."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "Exibir a barra de pesquisa"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "Adicionar uma função para pesquisar pelo nome da sessão."
   },
   "isShowOpenButtonsLabel": {
     "message": "Display open / delete buttons in session list"
