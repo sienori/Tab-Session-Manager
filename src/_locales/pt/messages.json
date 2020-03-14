@@ -402,7 +402,7 @@
     "message": "Funcionamento do botão \"Abrir\""
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Selecione o comportamento padrão do botão de abertura."
+    "message": "Selecione o comportamento padrão do botão \"Abrir\"."
   },
   "saveButtonBehaviorLabel": {
     "message": "Comportamento do botão Salvar"
@@ -417,16 +417,16 @@
     "message": "Adicionar uma função para pesquisar pelo nome da sessão."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Mostrar botões \"Abrir\" ou \"Deletar\" na lista de sessões"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Mostrar botões \"Abrir\" ou \"Deletar\" quando o cursor estiver sobre a lista de sessão."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Tamanho"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Especifique o tamanho do pop-up."
   },
   "widthLabel": {
     "message": "Largura"
@@ -435,19 +435,19 @@
     "message": "Altura"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Largura da barra lateral"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Abrir lista de sessões na guia"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Abrir lista de sessão na guia quando o botão da barra de ferramentas é clicado."
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Outros"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Exibir página de opções ao atualizar"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
     "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
