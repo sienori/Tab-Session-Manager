@@ -180,10 +180,10 @@
     "message": "Editar uma sessão"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Substituir com sessão atual"
+    "message": "Substituir com a sessão atual"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Substituir com janela atual"
+    "message": "Substituir com a janela atual"
   },
   "addCurrentWindowLabel": {
     "message": "Adicionar a janela atual"
@@ -207,7 +207,7 @@
     "message": "Como resolver este problema"
   },
   "noConnectionErrorLabel": {
-    "message": "Múltiplas popups não podem ser abertas ao mesmo tempo."
+    "message": "Múltiplos pop-ups não podem ser abertos ao mesmo tempo."
   },
   "winCloseSessionName": {
     "message": "Salvamento Automático - Janela fechada"
