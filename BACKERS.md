@@ -18,3 +18,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - tPod
 - Matthew Moles
 - José Lagunas
+- William Leung
