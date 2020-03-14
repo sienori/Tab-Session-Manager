@@ -12,7 +12,7 @@
     "message": "Doar"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Abrir lista de sessões na aba"
   },
   "saveLabel": {
     "message": "Salvar"
@@ -24,7 +24,7 @@
     "message": "Inserir nome da sessão"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Salvar sessão"
   },
   "saveAllWindowsLabel": {
     "message": "Salvar todas as janelas"
@@ -138,25 +138,25 @@
     "message": "Nenhum resultado correspondente."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Nenhuma sessão selecionada."
   },
   "menuLabel": {
     "message": "Menu"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Fechar menu"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Fechar"
   },
   "renameLabel": {
     "message": "Renomear"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Renomear a sessão"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Abrir uma sessão"
   },
   "openInNewWindowLabel": {
     "message": "Abrir em uma nova janela"
@@ -177,7 +177,7 @@
     "message": "Adicionar abas à janela atual. Se a sessão contiver múltiplas janelas, será aberta em uma nova janela."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Editar uma sessão"
   },
   "replaceCurrentSessionLabel": {
     "message": "Substituir com sessão atual"
@@ -192,10 +192,10 @@
     "message": "Fazer uma cópia da sessão"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Registrar para a inicialização"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Remover da inicialização"
   },
   "errorLabel": {
     "message": "Erro"
@@ -225,7 +225,7 @@
     "message": "Sessões"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Atalhos"
   },
   "informationLabel": {
     "message": "Informações"
@@ -267,25 +267,25 @@
     "message": "Restaurar as posições e tamanhos das janelas ao abrir a sessão."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Inicialização"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Comportamento ao iniciar o navegador"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Abrir sessão anterior"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Abrir a sessão fechada pela última vez."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Abrir sessão de inicialização"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Abrir as sessões registradas para incialização. Você pode registrar para inicialização no menu da lista de sessões."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Não fazer nada"
   },
   "ifAutoSaveLabel": {
     "message": "Salvar a sessão regularmente"
@@ -327,7 +327,7 @@
     "message": "Número máximo guardado"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Número máximo de sessões salvas (desta forma)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Usar título da página como nome para salvar a sessão automaticamente"
@@ -336,22 +336,22 @@
     "message": "Ao salvar uma sessão automaticamente, use o título da página aberta como o nome da sessão."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Cópia de segurança"
   },
   "ifBackupLabel": {
     "message": "Salvar Backup"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Quando o navegador iniciar, crie um arquivo backup das sessões e salve ele na pasta de downloads."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Local para salvar"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Especifique a pasta para salvar o arquivo de backup. O local a ser escolhido deve estar dentro da pasta de downloads do navegador."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Pasta de download"
   },
   "backupFilesLimitLabel": {
     "message": "Quantidade máxima de backups salvos"
