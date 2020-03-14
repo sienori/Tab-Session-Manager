@@ -369,10 +369,10 @@
     "message": "Salvar janela privada"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Exibe a lista de URL a ser ignorada quando salvar a sessão"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Se a URL da guia fizer parte da lista, ela não será gravada na sessão. A lista permite caracteres curingas como \"*\"."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Se estiver desmarcada, ignora a janela privada ao salvar a sessão."
@@ -384,10 +384,10 @@
     "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Atraso na restauração da árvore (milissegundos)"
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Para restaurar o estado da árvore, espere o tempo necessário para abrir a guia. Aumente este valor se a árvore não for restaurada corretamente."
   },
   "truncateTitleLabel": {
     "message": "Exibir o nome da sessão em uma linha"
@@ -396,19 +396,19 @@
     "message": "Se o nome da sessão na lista sessão se estende por mais de uma linha, é truncado para exibição em uma linha."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Pop-up"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Funcionamento do botão \"Abrir\""
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Selecione o comportamento padrão do botão de abertura."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Comportamento do botão Salvar"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Selecione o comportamento padrão do botão de salvar."
   },
   "isShowSearchBarLabel": {
     "message": "Display the search bar"
