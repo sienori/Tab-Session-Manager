@@ -450,31 +450,31 @@
     "message": "Exibir página de opções ao atualizar"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Exibir a página de opções quando a Guia Gerenciador de Sessão é atualizada. Você pode saber o conteúdo da atualização rapidamente."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "A Guia Gerenciador de Sessão foi atualizada!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Ver mais"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Clique para ver as informações de atualização."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Ativar modo de depuração"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Quando o modo de depuração está ativado, o log é enviado para o depurador."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Redefinir as configurações"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Restaurar todas as configurações para o padrão."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Resetar"
   },
   "importLabel": {
     "message": "Sessões de importação"
@@ -492,16 +492,16 @@
     "message": "Limpar"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Importar lista de URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Crie uma sessão da lista de URLs e adicione-a à lista de sessão.<br>Formato: &lt;URL&gt; &lt;título da página (opcional)&gt;"
   },
   "exportLabel": {
     "message": "Sessões de exportação"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Salvar todas as sessões no computador."
   },
   "exportButtonLabel": {
     "message": "Exportar"
@@ -510,19 +510,19 @@
     "message": "Apagar as sessões"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Excluir todas as sessões."
   },
   "removeSessionsButtonLabel": {
     "message": "Excluir"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Atalhos de teclado"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Definir atalhos de teclado."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Digite um atalho"
   },
   "typeLetterMessage": {
     "message": "Type a letter"
