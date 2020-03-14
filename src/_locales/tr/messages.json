@@ -177,7 +177,7 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Oturumu düzenle"
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -189,7 +189,7 @@
     "message": "Add current window"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Oturumun kopyasını oluştur"
   },
   "registerStartupLabel": {
     "message": "Register for startup"
@@ -198,7 +198,7 @@
     "message": "Remove from startup"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Hata"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
@@ -225,7 +225,7 @@
     "message": "Oturumlar"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Kısayollar"
   },
   "informationLabel": {
     "message": "Bilgi"
