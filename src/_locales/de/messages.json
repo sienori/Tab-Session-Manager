@@ -285,7 +285,7 @@
     "message": "Öffnen Sie die zum Start registrierten Sitzungen. Sie können sich über das Menü in der Sitzungsliste für den Start registrieren."
   },
   "DoNothingLabel": {
-    "message": "Mach nichts"
+    "message": "Nichts machen"
   },
   "ifAutoSaveLabel": {
     "message": "Sitzung regelmäßig sichern"
