@@ -1,6 +1,4 @@
-# <sub><img src="https://raw.githubusercontent.com/sienori/Tab-Session-Manager/master/other/promotion/icon/chrome128.png" width=64px height=64px></sub> Tab Session Manager
-
-**Save and restore the state of windows and tabs. It also supports automatic saving.**
+![Screen shot](https://raw.githubusercontent.com/sienori/Tab-Session-Manager/master/other/promotion/screenshots/popup.png)
 
 ## Download
 
