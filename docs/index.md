@@ -1,9 +1,11 @@
-# <sub><img src="/src/icons/icon.svg" width=64px height=64px></sub> Tab-Session-Manager
+# <sub><img src="https://raw.githubusercontent.com/sienori/Tab-Session-Manager/master/other/promotion/icon/chrome128.png" width=64px height=64px></sub> Tab Session Manager
 
-#### Save and restore the state of windows and tabs. It also supports automatic saving.
+**Save and restore the state of windows and tabs. It also supports automatic saving.**
+
+## Download
 
 [<img src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png" align="left" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/tab-session-manager/)
-
+&ensp;
 [<img src="https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png" alt="for Chrome">](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
 
 ## Backers
@@ -32,3 +34,7 @@ You can contribute by translating Tab Session Manager on **[Crowdin](https://cro
 
 1. Open Firefox browser and navigate to `about:debugging`
 2. Click "Load Temporary Add-on" and from the file browser, choose `tab-session-manager/dev/firefox`
+
+## Privacy Policy
+
+[Privacy Policy](https://tab-session-manager.sienori.com/privacy-policy) of Tab Session Manager
