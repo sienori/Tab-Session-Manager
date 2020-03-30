@@ -30,9 +30,21 @@ export default props => {
     props.openModal(browser.i18n.getMessage("donationLabel"), <DonationMessage />);
   };
 
-  const handleSyncClick = () => {
-    browser.runtime.sendMessage({
+  const handleSyncClick = async () => {
+    props.openNotification({
+      message: browser.i18n.getMessage("syncingLabel"),
+      type: "success",
+      duration: 100000
+    });
+
+    await browser.runtime.sendMessage({
       message: "syncCloud"
+    });
+
+    props.openNotification({
+      message: browser.i18n.getMessage("syncCompletedLabel"),
+      type: "success",
+      duration: 5000
     });
   };
 

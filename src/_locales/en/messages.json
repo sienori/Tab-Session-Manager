@@ -404,6 +404,12 @@
   "enabledCloudSyncCaptionLabel": {
     "message": "Save sessions to Google Drive™ and sync with other computers."
   },
+  "syncingLabel": {
+    "message": "Syncing..."
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
   "signInLabel": {
     "message": "Sign in"
   },

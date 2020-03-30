@@ -130,8 +130,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
     case "signOutGoogle":
       return await signOutGoogle();
     case "syncCloud":
-      syncCloud();
-      break;
+      return await syncCloud();
   }
 };
 
