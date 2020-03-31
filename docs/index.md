@@ -1,4 +1,10 @@
-![Screen shot](https://raw.githubusercontent.com/sienori/Tab-Session-Manager/master/other/promotion/screenshots/popup.png)
+<img src="https://raw.githubusercontent.com/sienori/Tab-Session-Manager/master/src/icons/icon.png" align="left" height="64px" style="margin-right:10px">
+
+# Tab Session Manager
+
+Save and restore the state of windows and tabs. It also supports automatic saving.
+
+<img src="https://raw.githubusercontent.com/sienori/Tab-Session-Manager/master/other/promotion/screenshots/popup.png" width="640px">
 
 ## Download
 
