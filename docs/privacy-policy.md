@@ -4,7 +4,7 @@ title: Privacy Poricy
 
 # Privacy Poricy of Tab Session Manager
 
-**Effective Date: April 25, 2019**
+**Effective Date: March 31, 2020**
 
 ## 1. Introduction
 
@@ -18,7 +18,7 @@ The TSM is owned and operated by [Sienori](https://github.com/sienori) - a devel
 
 You can use the TSM to save open windows and tabs.
 Session data includes page title, URL, access date, tab order, etc.  
-**Session data is stored only on local storage and never sent to an external server.**
+**Session data is stored only on local storage and never sent to an external server** unless you have enabled the "Cloud sync" function.
 
 ### Setting data
 
@@ -28,6 +28,19 @@ You can change the settings on settings page of the TSM to customize the TSM beh
 ## 3. External service
 
 The TSM uses external services in the following cases:
+
+### When using the "Cloud sync" function
+
+If you enable "Cloud sync" function, you can sync session data between different computers using Google Drive.  
+In that case,
+- TSM saves Google login information (email address) on local storage.
+- TSM saves session data in the Google Drive App Folder. This data cannot be accessed by other apps or us.
+
+TSM uses Google APIs in accordance with Google API policies.  
+[Google API User Data Policy](https://developers.google.com/terms/api-services-user-data-policy)
+
+Please refer to the following link for Google's privacy policy.  
+[Google Privacy Policy](https://policies.google.com/privacy)
 
 ### When using the "Import URL list" function
 
@@ -44,14 +57,14 @@ When accessing external sites, the privacy policy of each site is applied.
 The TSM is hosted on addons.mozilla.org(AMO) and the Chrome Web Store.
 Please refer to the links below for information on which data is collected if you download the extension or during the regular updates.
 
-Firefox: https://www.mozilla.org/en-US/privacy/firefox/  
-Chrome: https://www.google.com/policies/privacy/
+[Firefox Privacy Policy](https://www.mozilla.org/en-US/privacy/firefox/)  
+[Google Privacy Policy](https://www.google.com/policies/privacy/)
 
 ## 4. Contact us
 
 If you have questions about this Privacy Policy, please contact us at the address below:
 
-Email: sienori.firefox+tsmpp@gmail.com
+Email: [sienori.firefox+tsmpp@gmail.com](sienori.firefox+tsmpp@gmail.com)
 
 ## 5. Changes to Privacy Policy
 
