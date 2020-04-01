@@ -395,6 +395,27 @@
   "truncateTitleCaptionLabel": {
     "message": "Jeśli nazwa sesji na liście sesji jest dłuższa niż jedna linia, jest ona obcinana do jednej inii i wyświetlana."
   },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing..."
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
+  },
   "popupLabel": {
     "message": "Wyskakujące okno"
   },
