@@ -408,13 +408,13 @@
     "message": "Synkroniserar..."
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Synkroniserad."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Logga in"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Logga ut"
   },
   "popupLabel": {
     "message": "Poppupp"
