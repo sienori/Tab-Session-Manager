@@ -396,7 +396,7 @@
     "message": "Ако името на сесия в списъка е на повече редове, то ще бъде съкратено и показано на един ред."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Синхронизиране в облака"
   },
   "enabledCloudSyncLabel": {
     "message": "Enable cloud sync (Beta)"
