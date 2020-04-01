@@ -395,6 +395,27 @@
   "truncateTitleCaptionLabel": {
     "message": "Nếu tên phiên làm việc trong danh sách phiên dài hơn một dòng, nó sẽ được hiển thị trong một dòng bằng cách cắt ngắn."
   },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing..."
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
+  },
   "popupLabel": {
     "message": "Popup"
   },
