@@ -395,6 +395,27 @@
   "truncateTitleCaptionLabel": {
     "message": "Se il nome della sessione nella lista delle sessioni si estende su più righe, viene troncato in un'unica riga."
   },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing..."
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
+  },
   "popupLabel": {
     "message": "Popup"
   },
