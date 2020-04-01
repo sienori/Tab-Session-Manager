@@ -395,6 +395,27 @@
   "truncateTitleCaptionLabel": {
     "message": "Wenn der Sitzungsname in der Sitzungsliste länger als eine Zeile ist, wird dieser am Ende abgeschnitten."
   },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing..."
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
+  },
   "popupLabel": {
     "message": "Popup"
   },
