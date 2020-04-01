@@ -395,6 +395,27 @@
   "truncateTitleCaptionLabel": {
     "message": "セッションリストのセッション名が複数行に渡る場合，1行に切り詰めて表示します。"
   },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing..."
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
+  },
   "popupLabel": {
     "message": "ポップアップ"
   },
