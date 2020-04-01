@@ -396,16 +396,16 @@
     "message": "Om namnet på sessionen överskrids i sessionslistan kommer det att kortas ner och visas på en rad."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Molnsynkronisering"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Aktivera molnsynkronisering (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Spara sessioner till Google Drive™ och synkronisera med andra datorer."
   },
   "syncingLabel": {
-    "message": "Syncing..."
+    "message": "Synkroniserar..."
   },
   "syncCompletedLabel": {
     "message": "Sync completed."
