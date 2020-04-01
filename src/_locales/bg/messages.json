@@ -399,22 +399,22 @@
     "message": "Синхронизиране в облака"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Включване на синхронизирането в облака (beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Запазване на сесиите в Google Drive™ и синхронизиране с други устройства."
   },
   "syncingLabel": {
-    "message": "Syncing..."
+    "message": "Синхронизиране..."
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Синхронизацията завърши"
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Вписване"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Отписване"
   },
   "popupLabel": {
     "message": "Изскачащо меню"
