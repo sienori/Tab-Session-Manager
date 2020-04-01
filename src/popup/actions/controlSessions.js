@@ -153,7 +153,7 @@ export const addCurrentWindow = async id => {
   session.windowsNumber += 1;
 
   delete currentWindow.tabs;
-  session.windowsInfo[windowId] = currentWindow;
+  if (session.windowsInfo) session.windowsInfo[windowId] = currentWindow;
 
   sendSessionUpdateMessage(session);
 };
@@ -166,6 +166,7 @@ export const makeCopySession = async id => {
   session.date = moment(session.date)
     .add(1, "ms")
     .valueOf();
+  session.lastEditedTime = Date.now();
   browser.runtime.sendMessage({
     message: "save",
     session: session

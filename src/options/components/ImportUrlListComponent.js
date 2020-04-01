@@ -12,6 +12,7 @@ const createSessionByUrl = inputText => {
     tabsNumber: 0,
     name: "",
     date: Date.now(),
+    lastEditedTime: Date.now(),
     tag: [],
     sessionStartTime: Date.now(),
     id: uuidv4()

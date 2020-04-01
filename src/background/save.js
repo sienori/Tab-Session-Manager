@@ -6,6 +6,7 @@ import Sessions from "./sessions.js";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceParameter } from "./replace.js";
 import ignoreUrls from "./ignoreUrls";
+import { pushRemovedQueue } from "./cloudSync.js";
 
 const logDir = "background/save";
 
@@ -27,6 +28,7 @@ export async function loadCurrentSession(name, tag, property) {
     tabsNumber: 0,
     name: name,
     date: Date.now(),
+    lastEditedTime: Date.now(),
     tag: tag,
     sessionStartTime: SessionStartTime,
     id: uuidv4()
@@ -99,6 +101,7 @@ export async function removeSession(id, isSendResponce = true) {
   log.log(logDir, "removeSession()", id, isSendResponce);
   try {
     await Sessions.delete(id);
+    pushRemovedQueue(id);
     if (isSendResponce) sendMessage("deleteSession", { id: id });
   } catch (e) {
     log.error(logDir, "removeSession()", e);
@@ -106,9 +109,10 @@ export async function removeSession(id, isSendResponce = true) {
   }
 }
 
-export async function updateSession(session, isSendResponce = true) {
-  log.log(logDir, "updateSession()", session, isSendResponce);
+export async function updateSession(session, isSendResponce = true, shouldUpdateEditedTime = true) {
+  log.log(logDir, "updateSession()", session, isSendResponce, shouldUpdateEditedTime);
   try {
+    if (shouldUpdateEditedTime) session.lastEditedTime = Date.now();
     await Sessions.put(session);
     if (isSendResponce) sendMessage("updateSession", { session: session });
   } catch (e) {

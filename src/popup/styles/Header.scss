@@ -40,6 +40,14 @@
         fill: var(--confirm);
       }
     }
+    .cloudSyncButton {
+      svg {
+        width: 24px;
+      }
+      &:hover svg {
+        fill: var(--highlight);
+      }
+    }
 
     .openInTabButton {
       svg {
