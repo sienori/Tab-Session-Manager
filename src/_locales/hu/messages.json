@@ -411,10 +411,10 @@
     "message": "Szinkronizálás kész."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Bejelentkezés"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Kijelentkezés"
   },
   "popupLabel": {
     "message": "Felugró ablak"
