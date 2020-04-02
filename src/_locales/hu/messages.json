@@ -396,19 +396,19 @@
     "message": "Munkamenet név méretre vágása a munkamenet listában, ha kilógna a sorából."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Szinkronizálás a felhővel"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Szinkronizálás a felhővel engedélyezése (Béta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Munkamenetek mentése Google Drive™ -ra és szinkronizálás más számítógépekkel."
   },
   "syncingLabel": {
-    "message": "Syncing..."
+    "message": "Szinkronizálás..."
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Szinkronizálás kész."
   },
   "signInLabel": {
     "message": "Sign in"
