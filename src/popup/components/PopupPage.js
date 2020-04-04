@@ -146,10 +146,13 @@ export default class PopupPage extends Component {
     const shouldShowCloudSync = getSettings("signedInEmail");
     const lastSyncTime = getSettings("lastSyncTime");
     const removedQueue = getSettings("removedQueue");
-    const needsSync =
-      shouldShowCloudSync &&
-      (removedQueue.length > 0 || sessions.some(session => session.lastEditedTime > lastSyncTime));
-    return needsSync;
+    if (!shouldShowCloudSync) return false;
+
+    const shouldDelete = removedQueue.length > 0;
+    const shouldUpload = sessions
+      .filter(session => !session.tag.includes("temp"))
+      .some(session => session.lastEditedTime > lastSyncTime);
+    return shouldDelete || shouldUpload;
   };
 
   handleMessage = request => {
