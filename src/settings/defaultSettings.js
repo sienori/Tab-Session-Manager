@@ -157,7 +157,6 @@ export default [
         captions: [],
         type: "none",
         default: "none",
-        new: true,
         childElements: [
           {
             id: "startupBehavior",
