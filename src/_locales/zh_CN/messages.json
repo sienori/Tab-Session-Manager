@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "扩展页面"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "导入会话"
   },
