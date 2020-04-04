@@ -405,7 +405,16 @@
     "message": "Spara sessioner till Google Drive™ och synkronisera med andra datorer."
   },
   "syncingLabel": {
-    "message": "Synkroniserar..."
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
   },
   "syncCompletedLabel": {
     "message": "Synkroniserad."
