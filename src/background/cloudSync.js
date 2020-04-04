@@ -7,43 +7,76 @@ import { saveSession } from "./save";
 
 const logDir = "background/cloudSync";
 
+const getShouldRemoveFiles = (files, sessions, removedQueue) => {
+  // 削除するべきfile:
+  // filesのうち removedQueueに含まれる かつ sessionsに存在しない
+  const shouldRemoveFiles = files
+    .filter(file => removedQueue.includes(file.name))
+    .filter(file => sessions.every(session => session.id !== file.name));
+
+  return shouldRemoveFiles;
+};
+
+const getShouldDownloadFiles = (files, sessions, shouldRemoveFiles) => {
+  // ダウンロードするべきfile:
+  // filesのうち sessionsに存在しない または lastEditedTimeが更新されている
+  // かつ shouldRemovedFilesに含まれない
+  const shouldDownloadFiles = files
+    .filter(file => {
+      const sameIdSession = sessions.find(session => session.id === file.name);
+      if (!sameIdSession) return true;
+      const isUpdated = file.appProperties.lastEditedTime > sameIdSession.lastEditedTime;
+      return isUpdated;
+    })
+    .filter(file => !shouldRemoveFiles.includes(file));
+
+  return shouldDownloadFiles;
+};
+
+const getShouldUploadSessions = (files, sessions, lastSyncTime) => {
+  // アップロードするべきsession:
+  // lastSyncedTime以降に編集されたsessionのうち filesに存在しない または filesに存在するものよりlastEditedTimeが新しい
+  const shouldUploadSessions = sessions
+    .filter(session => session.lastEditedTime > lastSyncTime)
+    .filter(session => {
+      const sameIdFile = files.find(file => file.name === session.id);
+      if (!sameIdFile) return true;
+      const isUpdated = session.lastEditedTime > sameIdFile.appProperties.lastEditedTime;
+      return isUpdated;
+    });
+
+  return shouldUploadSessions;
+};
+
 let isSyncing = false;
 export const syncCloud = async () => {
   if (isSyncing) return;
   isSyncing = true;
   log.log(logDir, "syncCloud()");
   const files = await listFiles();
-  const sessions = await getSessions();
+  const sessions = (await getSessions()).filter(session => !session.tag.includes("temp"));
   const removedQueue = getSettings("removedQueue") || [];
 
   const lastSyncTime = getSettings("lastSyncTime") || 0;
   const currentTime = Date.now();
 
-  for (const file of files) {
-    const shouldRemove = removedQueue.find(id => id == file.name);
-    if (shouldRemove) {
-      await deleteFile(file.id);
-      continue;
-    }
+  const shouldRemoveFiles = getShouldRemoveFiles(files, sessions, removedQueue);
+  const shouldDownloadFiles = getShouldDownloadFiles(files, sessions, shouldRemoveFiles);
+  const shouldUploadSessions = getShouldUploadSessions(files, sessions, lastSyncTime);
 
-    const sameIdSession = sessions.find(session => session.id === file.name);
-    const shouldDownload =
-      !sameIdSession || file.appProperties.lastEditedTime > sameIdSession.lastEditedTime;
-    if (shouldDownload) {
-      const session = await downloadFile(file.id);
-      saveSession(session);
-    }
+  for (const file of shouldDownloadFiles) {
+    const session = await downloadFile(file.id);
+    saveSession(session);
   }
 
-  for (const session of sessions) {
-    if (session.lastEditedTime < lastSyncTime) continue;
+  for (const session of shouldUploadSessions) {
     const sameIdFile = files.find(file => file.name === session.id);
-    if (sameIdFile) {
-      const shouldUpload = session.lastEditedTime > sameIdFile.appProperties.lastEditedTime;
-      if (shouldUpload) await uploadSession(session, sameIdFile.id);
-    } else {
-      await uploadSession(session);
-    }
+    if (sameIdFile) await uploadSession(session, sameIdFile.id);
+    else await uploadSession(session);
+  }
+
+  for (const file of shouldRemoveFiles) {
+    await deleteFile(file.id);
   }
 
   setSettings("lastSyncTime", currentTime);
