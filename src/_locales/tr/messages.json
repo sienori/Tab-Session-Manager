@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Extension page"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "Oturum içe aktarıldı."
   },
