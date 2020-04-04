@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Σελίδα πρόσθετου"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "Έγινε εισαγωγή των συνεδριών."
   },
