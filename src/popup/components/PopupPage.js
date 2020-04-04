@@ -52,7 +52,7 @@ export default class PopupPage extends Component {
         onClick: () => {}
       },
       syncStatus: {
-        status: "",
+        status: "complete",
         progress: 0,
         total: 0
       },
@@ -202,7 +202,11 @@ export default class PopupPage extends Component {
         break;
       }
     }
-    this.setState({ sessions: sessions, selectedSession: selectedSession, needsSync: true });
+    this.setState({
+      sessions: sessions,
+      selectedSession: selectedSession,
+      needsSync: this.state.syncStatus.status === "complete"
+    });
   };
 
   handleUpdateSyncStatus = request => {
