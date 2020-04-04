@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Kiegészítő oldala"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "Munkamenetek importálva."
   },
