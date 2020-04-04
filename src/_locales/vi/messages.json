@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Trang Cửa hàng tiện ích"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "Phiên làm việc đã được nhập."
   },
