@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Utökningssida"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "Sessioner importerade."
   },
