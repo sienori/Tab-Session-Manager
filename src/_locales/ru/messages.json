@@ -396,16 +396,16 @@
     "message": "Если имя сессии в списке занимает более одной строки, оно усекается на одну строку."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Облачная синхронизация"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Включить облачную синхронизацию (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Сохраните сессии в Google Drive и синхронизируйте их с другими компьютерами."
   },
   "syncingLabel": {
-    "message": "Syncing..."
+    "message": "Данные синхронизируются..."
   },
   "syncCompletedLabel": {
     "message": "Sync completed."
