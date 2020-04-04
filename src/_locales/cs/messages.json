@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Stránka rozšíření"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "Relace importovány."
   },
