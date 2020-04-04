@@ -3,7 +3,7 @@ import log from "loglevel";
 import { getSettings, setSettings } from "../settings/settings";
 import getSessions from "./getSessions";
 import { listFiles, uploadSession, downloadFile, deleteFile } from "./cloudAPIs";
-import { saveSession } from "./save";
+import { saveSession, updateSession } from "./save";
 
 const logDir = "background/cloudSync";
 
@@ -88,8 +88,10 @@ export const syncCloud = async () => {
 
   for (const [index, file] of shouldDownloadFiles.entries()) {
     updateSyncStatus(syncStatus.download, index + 1, shouldDownloadFiles.length);
-    const session = await downloadFile(file.id);
-    saveSession(session);
+    const downloadedSession = await downloadFile(file.id);
+    const isUpdate = sessions.some(session => session.id === downloadedSession.id);
+    if (isUpdate) updateSession(downloadedSession, true, false);
+    else saveSession(downloadedSession);
   }
 
   for (const [index, session] of shouldUploadSessions.entries()) {
