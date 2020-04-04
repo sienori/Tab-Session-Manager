@@ -405,16 +405,16 @@
     "message": "Spara sessioner till Google Drive™ och synkronisera med andra datorer."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Synkroniserar"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Laddar ner"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Laddar upp"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Tar bort"
   },
   "syncCompletedLabel": {
     "message": "Synkroniserad."
@@ -609,7 +609,7 @@
     "message": "Utökningssida"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Integritetspolicy"
   },
   "importMessage": {
     "message": "Sessioner importerade."
