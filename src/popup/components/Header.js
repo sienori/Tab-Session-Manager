@@ -70,6 +70,7 @@ export default props => {
               title={browser.i18n.getMessage("cloudSyncLabel")}
             >
               <CloudSyncIcon />
+              {props.needsSync && <div className="syncBadge">!</div>}
             </button>
           </React.Fragment>
         )}

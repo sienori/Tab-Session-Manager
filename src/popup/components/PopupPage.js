@@ -56,6 +56,7 @@ export default class PopupPage extends Component {
         progress: 0,
         total: 0
       },
+      needsSync: false,
       menu: {
         isOpen: false,
         x: 0,
@@ -109,12 +110,14 @@ export default class PopupPage extends Component {
     const isInit = await browser.runtime.sendMessage({ message: "getInitState" });
     if (!isInit) this.setState({ error: { isError: true, type: "indexedDB" } });
 
-    const keys = ["id", "name", "date", "tag", "tabsNumber", "windowsNumber"];
+    const keys = ["id", "name", "date", "tag", "tabsNumber", "windowsNumber", "lastEditedTime"];
     const sessions = await getSessions(null, keys);
+    const needsSync = this.calcNeedsSync(sessions);
     this.setState({
       sessions: sessions,
       isInitSessions: true,
-      filterValue: getSettings("filterValue") || "_displayAll"
+      filterValue: getSettings("filterValue") || "_displayAll",
+      needsSync: needsSync
     });
 
     const selectedSessionId = getSettings("selectedSessionId");
@@ -137,6 +140,16 @@ export default class PopupPage extends Component {
     if (Math.random() < 0.03) {
       this.openModal(browser.i18n.getMessage("donationLabel"), <DonationMessage />);
     }
+  };
+
+  calcNeedsSync = sessions => {
+    const shouldShowCloudSync = getSettings("signedInEmail");
+    const lastSyncTime = getSettings("lastSyncTime");
+    const removedQueue = getSettings("removedQueue");
+    const needsSync =
+      shouldShowCloudSync &&
+      (removedQueue.length > 0 || sessions.some(session => session.lastEditedTime > lastSyncTime));
+    return needsSync;
   };
 
   handleMessage = request => {
@@ -189,10 +202,11 @@ export default class PopupPage extends Component {
         break;
       }
     }
-    this.setState({ sessions: sessions, selectedSession: selectedSession });
+    this.setState({ sessions: sessions, selectedSession: selectedSession, needsSync: true });
   };
 
   handleUpdateSyncStatus = request => {
+    if (request.syncStatus.status == "pending") this.setState({ needsSync: false });
     this.setState({ syncStatus: request.syncStatus });
   };
 
@@ -400,6 +414,7 @@ export default class PopupPage extends Component {
           openModal={this.openModal}
           openNotification={this.openNotification}
           syncStatus={this.state.syncStatus}
+          needsSync={this.state.needsSync}
         />
         <div id="contents">
           <div className="column sidebar" style={{ width: `${this.state.sidebarWidth}px` }}>

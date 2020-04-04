@@ -42,11 +42,26 @@
     }
 
     .cloudSyncButton {
+      position: relative;
       svg {
         width: 24px;
       }
       &:hover svg {
         fill: var(--highlight);
+      }
+      .syncBadge {
+        position: absolute;
+        background-color: var(--confirm);
+        height: 15px;
+        width: 15px;
+        top: -5px;
+        right: -5px;
+        border-radius: 50%;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 1px 1px 1px #00000050;
       }
     }
 
