@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Página de extensión"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "Sesiones importadas."
   },
