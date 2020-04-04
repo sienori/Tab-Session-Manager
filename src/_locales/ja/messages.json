@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "拡張機能ページ"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "セッションをインポートしました。"
   },
