@@ -405,16 +405,16 @@
     "message": "Запазване на сесиите в Google Drive™ и синхронизиране с други устройства."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Синхронизиране"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Изтегляне"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Качване"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Изтриване"
   },
   "syncCompletedLabel": {
     "message": "Синхронизацията завърши"
