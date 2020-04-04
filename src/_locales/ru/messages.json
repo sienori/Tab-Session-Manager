@@ -405,16 +405,16 @@
     "message": "Сохраните сессии в Google Drive и синхронизируйте их с другими компьютерами."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Синхронизируется"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Скачивается"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Закачивается"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Удаляется"
   },
   "syncCompletedLabel": {
     "message": "Синхронизация завершена."
