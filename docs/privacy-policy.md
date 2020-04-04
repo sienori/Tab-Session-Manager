@@ -1,8 +1,8 @@
 ---
-title: Privacy Poricy
+title: Privacy Policy
 ---
 
-# Privacy Poricy of Tab Session Manager
+# Privacy Policy of Tab Session Manager
 
 **Effective Date: March 31, 2020**
 
