@@ -405,7 +405,16 @@
     "message": "Salva le sessioni in Google Drive™ e le sincronizza con gli altri computer."
   },
   "syncingLabel": {
-    "message": "Sincronizzazione in corso..."
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
   },
   "syncCompletedLabel": {
     "message": "Sincronizzazione completata."
