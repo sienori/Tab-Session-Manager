@@ -17,7 +17,7 @@ export const signInGoogle = async () => {
     setSettings("lastSyncTime", 0);
     setSettings("removedQueue", []);
     return true;
-  } catch (e) {
+  } catch {
     return false;
   }
 };
@@ -50,10 +50,14 @@ const getAuthTokens = async (email = "") => {
     `&scope=${encodeURIComponent(scopes.join(" "))}` +
     `${email && `&login_hint=${email}`}`;
 
-  const redirectedURL = await browser.identity.launchWebAuthFlow({
-    interactive: true,
-    url: authURL
-  });
+  const redirectedURL = await browser.identity
+    .launchWebAuthFlow({
+      interactive: true,
+      url: authURL
+    })
+    .catch(e => {
+      log.error(logDir, "getAuthTokens()", e);
+    });
 
   const params = new URL(redirectedURL.replace("#", "?")).searchParams;
   if (params.has("error")) {
