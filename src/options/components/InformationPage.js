@@ -114,6 +114,10 @@ export default props => {
               <a href="https://github.com/sienori/Tab-Session-Manager" target="_blank">
                 GitHub
               </a>
+              <span>　</span>
+              <a href="https://tab-session-manager.sienori.com/privacy-policy" target="_blank">
+                {browser.i18n.getMessage("privacyPolicyLabel")}
+              </a>
             </p>
           </div>
         }
