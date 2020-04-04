@@ -408,13 +408,13 @@
     "message": "Данные синхронизируются..."
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Синхронизация завершена."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Войти"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Выйти"
   },
   "popupLabel": {
     "message": "Всплывающее окно"
