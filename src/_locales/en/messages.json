@@ -405,7 +405,16 @@
     "message": "Save sessions to Google Drive™ and sync with other computers."
   },
   "syncingLabel": {
-    "message": "Syncing..."
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
   },
   "syncCompletedLabel": {
     "message": "Sync completed."

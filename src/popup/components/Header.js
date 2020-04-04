@@ -12,6 +12,25 @@ import "../styles/Header.scss";
 
 const logDir = "popup/components/Header";
 
+const SyncStatus = props => {
+  const { status, progress, total } = props.syncStatus;
+
+  const statusLabels = {
+    pending: `${browser.i18n.getMessage("syncingLabel")}...`,
+    download: `${browser.i18n.getMessage("downloadingLabel")}...`,
+    upload: `${browser.i18n.getMessage("uploadingLabel")}...`,
+    delete: `${browser.i18n.getMessage("deletingLabel")}...`,
+    complete: browser.i18n.getMessage("syncCompletedLabel")
+  };
+  const shouldShowProgress = status === "download" || status === "upload" || status === "delete";
+
+  return (
+    <div className={`syncStatus ${status}`}>
+      <span>{`${statusLabels[status]} ${shouldShowProgress ? `(${progress}/${total})` : ""}`}</span>
+    </div>
+  );
+};
+
 const openSettings = () => {
   log.info(logDir, "openSettings()");
   const url = "../options/index.html#settings";
@@ -31,20 +50,8 @@ export default props => {
   };
 
   const handleSyncClick = async () => {
-    props.openNotification({
-      message: browser.i18n.getMessage("syncingLabel"),
-      type: "success",
-      duration: 100000
-    });
-
     await browser.runtime.sendMessage({
       message: "syncCloud"
-    });
-
-    props.openNotification({
-      message: browser.i18n.getMessage("syncCompletedLabel"),
-      type: "success",
-      duration: 5000
     });
   };
 
@@ -54,6 +61,18 @@ export default props => {
     <div id="header">
       <div className="title">Tab Session Manager</div>
       <div className="rightButtons">
+        {shouldShowCloudSync && (
+          <React.Fragment>
+            <SyncStatus syncStatus={props.syncStatus} />
+            <button
+              className={"cloudSyncButton"}
+              onClick={handleSyncClick}
+              title={browser.i18n.getMessage("cloudSyncLabel")}
+            >
+              <CloudSyncIcon />
+            </button>
+          </React.Fragment>
+        )}
         <button
           className="heartButton"
           onClick={handleHeartClick}
@@ -61,15 +80,6 @@ export default props => {
         >
           <HeartIcon />
         </button>
-        {shouldShowCloudSync && (
-          <button
-            className={"cloudSyncButton"}
-            onClick={handleSyncClick}
-            title={browser.i18n.getMessage("cloudSyncLabel")}
-          >
-            <CloudSyncIcon />
-          </button>
-        )}
         <button
           className={"openInTabButton"}
           onClick={openSessionListInTab}

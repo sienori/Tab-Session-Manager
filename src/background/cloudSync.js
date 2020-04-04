@@ -48,11 +48,33 @@ const getShouldUploadSessions = (files, sessions, lastSyncTime) => {
   return shouldUploadSessions;
 };
 
+const syncStatus = {
+  pending: "pending",
+  download: "download",
+  upload: "upload",
+  delete: "delete",
+  complete: "complete"
+};
+
+const updateSyncStatus = (status, progress = 0, total = 0) => {
+  const syncStatus = {
+    status: status,
+    progress: progress,
+    total: total
+  };
+  browser.runtime
+    .sendMessage({ message: "updateSyncStatus", syncStatus: syncStatus })
+    .catch(() => {});
+};
+
 let isSyncing = false;
 export const syncCloud = async () => {
   if (isSyncing) return;
   isSyncing = true;
   log.log(logDir, "syncCloud()");
+
+  updateSyncStatus(syncStatus.pending);
+
   const files = await listFiles();
   const sessions = (await getSessions()).filter(session => !session.tag.includes("temp"));
   const removedQueue = getSettings("removedQueue") || [];
@@ -64,24 +86,28 @@ export const syncCloud = async () => {
   const shouldDownloadFiles = getShouldDownloadFiles(files, sessions, shouldRemoveFiles);
   const shouldUploadSessions = getShouldUploadSessions(files, sessions, lastSyncTime);
 
-  for (const file of shouldDownloadFiles) {
+  for (const [index, file] of shouldDownloadFiles.entries()) {
+    updateSyncStatus(syncStatus.download, index + 1, shouldDownloadFiles.length);
     const session = await downloadFile(file.id);
     saveSession(session);
   }
 
-  for (const session of shouldUploadSessions) {
+  for (const [index, session] of shouldUploadSessions.entries()) {
+    updateSyncStatus(syncStatus.upload, index + 1, shouldUploadSessions.length);
     const sameIdFile = files.find(file => file.name === session.id);
     if (sameIdFile) await uploadSession(session, sameIdFile.id);
     else await uploadSession(session);
   }
 
-  for (const file of shouldRemoveFiles) {
+  for (const [index, file] of shouldRemoveFiles.entries()) {
+    updateSyncStatus(syncStatus.delete, index + 1, shouldRemoveFiles.length);
     await deleteFile(file.id);
   }
 
   setSettings("lastSyncTime", currentTime);
   setSettings("removedQueue", []);
   isSyncing = false;
+  updateSyncStatus(syncStatus.complete);
 };
 
 export const pushRemovedQueue = id => {

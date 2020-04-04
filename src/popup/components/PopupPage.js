@@ -51,6 +51,11 @@ export default class PopupPage extends Component {
         buttonLabel: "",
         onClick: () => {}
       },
+      syncStatus: {
+        status: "",
+        progress: 0,
+        total: 0
+      },
       menu: {
         isOpen: false,
         x: 0,
@@ -115,7 +120,7 @@ export default class PopupPage extends Component {
     const selectedSessionId = getSettings("selectedSessionId");
     if (selectedSessionId) this.selectSession(selectedSessionId);
 
-    browser.runtime.onMessage.addListener(this.changeSessions);
+    browser.runtime.onMessage.addListener(this.handleMessage);
     browser.storage.onChanged.addListener(handleSettingsChange);
 
     if (getSettings("isShowUpdated")) {
@@ -131,6 +136,18 @@ export default class PopupPage extends Component {
 
     if (Math.random() < 0.03) {
       this.openModal(browser.i18n.getMessage("donationLabel"), <DonationMessage />);
+    }
+  };
+
+  handleMessage = request => {
+    switch (request.message) {
+      case "saveSession":
+      case "updateSession":
+      case "deleteSession":
+      case "deleteAll":
+        return this.changeSessions(request);
+      case "updateSyncStatus":
+        return this.handleUpdateSyncStatus(request);
     }
   };
 
@@ -173,6 +190,10 @@ export default class PopupPage extends Component {
       }
     }
     this.setState({ sessions: sessions, selectedSession: selectedSession });
+  };
+
+  handleUpdateSyncStatus = request => {
+    this.setState({ syncStatus: request.syncStatus });
   };
 
   changeFilterValue = value => {
@@ -375,7 +396,11 @@ export default class PopupPage extends Component {
         onClick={this.state.menu.isOpen ? this.closeMenu : null}
       >
         <Notification notification={this.state.notification} />
-        <Header openModal={this.openModal} openNotification={this.openNotification} />
+        <Header
+          openModal={this.openModal}
+          openNotification={this.openNotification}
+          syncStatus={this.state.syncStatus}
+        />
         <div id="contents">
           <div className="column sidebar" style={{ width: `${this.state.sidebarWidth}px` }}>
             <OptionsArea
