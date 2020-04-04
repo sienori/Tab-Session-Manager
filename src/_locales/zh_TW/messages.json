@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Chrome 應用程式商店頁面"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "已匯入瀏覽階段。"
   },
