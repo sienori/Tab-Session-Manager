@@ -90,8 +90,8 @@ export const syncCloud = async () => {
     updateSyncStatus(syncStatus.download, index + 1, shouldDownloadFiles.length);
     const downloadedSession = await downloadFile(file.id);
     const isUpdate = sessions.some(session => session.id === downloadedSession.id);
-    if (isUpdate) updateSession(downloadedSession, true, false);
-    else saveSession(downloadedSession);
+    if (isUpdate) updateSession(downloadedSession, true, false, true);
+    else saveSession(downloadedSession, true, true);
   }
 
   for (const [index, session] of shouldUploadSessions.entries()) {

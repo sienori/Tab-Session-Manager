@@ -85,11 +85,11 @@ async function sendMessage(message, options = {}) {
     .catch(() => {});
 }
 
-export async function saveSession(session, isSendResponce = true) {
+export async function saveSession(session, isSendResponce = true, saveBySync = false) {
   log.log(logDir, "saveSession()", session, isSendResponce);
   try {
     await Sessions.put(session);
-    if (isSendResponce) sendMessage("saveSession", { session: session });
+    if (isSendResponce) sendMessage("saveSession", { session: session, saveBySync: saveBySync });
     return session;
   } catch (e) {
     log.error(logDir, "saveSession()", e);
@@ -109,12 +109,17 @@ export async function removeSession(id, isSendResponce = true) {
   }
 }
 
-export async function updateSession(session, isSendResponce = true, shouldUpdateEditedTime = true) {
+export async function updateSession(
+  session,
+  isSendResponce = true,
+  shouldUpdateEditedTime = true,
+  saveBySync = false
+) {
   log.log(logDir, "updateSession()", session, isSendResponce, shouldUpdateEditedTime);
   try {
     if (shouldUpdateEditedTime) session.lastEditedTime = Date.now();
     await Sessions.put(session);
-    if (isSendResponce) sendMessage("updateSession", { session: session });
+    if (isSendResponce) sendMessage("updateSession", { session: session, saveBySync: saveBySync });
   } catch (e) {
     log.error(logDir, "updateSession()", e);
     return Promise.reject(e);

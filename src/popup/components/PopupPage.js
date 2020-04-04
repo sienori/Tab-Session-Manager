@@ -168,11 +168,13 @@ export default class PopupPage extends Component {
     log.info(logDir, "changeSessions()", request);
     let sessions;
     let selectedSession = this.state.selectedSession;
+    let needsSync = true;
 
     switch (request.message) {
       case "saveSession": {
         const newSession = request.session;
         sessions = this.state.sessions.concat(newSession);
+        needsSync = !request.saveBySync;
         break;
       }
       case "updateSession": {
@@ -183,6 +185,7 @@ export default class PopupPage extends Component {
         const index = sessions.findIndex(session => session.id === newSession.id);
         if (index === -1) sessions = this.state.sessions.concat(newSession);
         else sessions.splice(index, 1, newSession);
+        needsSync = !request.saveBySync;
         break;
       }
       case "deleteSession": {
@@ -205,7 +208,7 @@ export default class PopupPage extends Component {
     this.setState({
       sessions: sessions,
       selectedSession: selectedSession,
-      needsSync: this.state.syncStatus.status === "complete"
+      needsSync: needsSync
     });
   };
 
