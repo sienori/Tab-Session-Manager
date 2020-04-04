@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Страница на разширението"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "Сесиите са внесени."
   },
