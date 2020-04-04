@@ -608,6 +608,9 @@
   "extensionPageLabel": {
     "message": "Сторінка розширення"
   },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
+  },
   "importMessage": {
     "message": "Сесія імпортована."
   },
