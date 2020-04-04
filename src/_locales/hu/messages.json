@@ -405,7 +405,16 @@
     "message": "Munkamenetek mentése Google Drive™ -ra és szinkronizálás más számítógépekkel."
   },
   "syncingLabel": {
-    "message": "Szinkronizálás..."
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
   },
   "syncCompletedLabel": {
     "message": "Szinkronizálás kész."
