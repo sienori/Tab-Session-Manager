@@ -375,28 +375,28 @@
     "message": "Ако URL адресът на раздела съвпада със списъка, той няма да бъде записан в сесията. Списъка позволява използването на \"*\" заместващи символи."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Запазване името на устройството в сесията"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Добавяне името на устройството като маркер при запазване на сесия. Когато се използва облачно синхронизиране, можете да го различите от сесиите на други устройства."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Име на устройство"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Задаване на име за това устройство"
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Прилагане името на устройството към съществуващите сесии"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Добавяне името на устройството към всички запазени сесии"
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Прилагане името на устройството"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Прилагане името на устройството към всички сесии?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ако не е отметнато, поверителният прозорец ще бъде игнориран при запазване на сесията."
