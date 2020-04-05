@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "Αν το URL της καρτέλας είναι το ίδιο με εκείνο στη λίστα, δεν θα καταγραφεί. Στη λίστα επιτρέπεται ο χαρακτήρας μπαλαντέρ \"*\"."
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Save device name to session"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+  },
+  "deviceNameLabel": {
+    "message": "Device name"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Specify the name of this device."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Αν δεν επιλεγεί, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση των συνεδριών."
   },
