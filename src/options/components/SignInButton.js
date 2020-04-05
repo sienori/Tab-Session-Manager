@@ -29,7 +29,11 @@ export default class SignInButton extends Component {
 
   render() {
     const signInButton = (
-      <a href="javascript:void(0);" onClick={this.handleSignInClick}>
+      <a
+        style={{ cursor: "pointer" }}
+        onClick={this.handleSignInClick}
+        title={browser.i18n.getMessage("signInLabel")}
+      >
         <img src="/icons/google_signin.png" alt={browser.i18n.getMessage("signInLabel")} />
       </a>
     );
