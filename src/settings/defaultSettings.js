@@ -29,6 +29,31 @@ export default [
         ]
       },
       {
+        id: "isRestoreWindowPosition",
+        title: "isRestoreWindowPositionLabel",
+        captions: ["isRestoreWindowPositionCaptionLabel"],
+        type: "checkbox",
+        default: true
+      },
+      {
+        id: "ifSupportTst",
+        title: "ifSupportTstLabel",
+        captions: ["ifSupportTstCaptionLabel"],
+        type: "checkbox",
+        default: false,
+        childElements: [
+          {
+            id: "tstDelay",
+            title: "tstDelayLabel",
+            captions: ["tstDelayCaptionLabel"],
+            type: "number",
+            min: 0,
+            placeholder: 150,
+            default: 150
+          }
+        ]
+      },
+      {
         id: "ifSavePrivateWindow",
         title: "ifSavePrivateWindowLabel",
         captions: ["ifSavePrivateWindowCaptionLabel"],
@@ -65,31 +90,6 @@ export default [
             type: "button",
             value: "applyDeviceNameButtonLabel",
             onClick: handleApplyDeviceNameButtonClick
-          }
-        ]
-      },
-      {
-        id: "isRestoreWindowPosition",
-        title: "isRestoreWindowPositionLabel",
-        captions: ["isRestoreWindowPositionCaptionLabel"],
-        type: "checkbox",
-        default: true
-      },
-      {
-        id: "ifSupportTst",
-        title: "ifSupportTstLabel",
-        captions: ["ifSupportTstCaptionLabel"],
-        type: "checkbox",
-        default: false,
-        childElements: [
-          {
-            id: "tstDelay",
-            title: "tstDelayLabel",
-            captions: ["tstDelayCaptionLabel"],
-            type: "number",
-            min: 0,
-            placeholder: 150,
-            default: 150
           }
         ]
       },
