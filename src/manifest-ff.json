@@ -12,6 +12,7 @@
   "permissions": [
     "storage",
     "tabs",
+    "cookies",
     "downloads",
     "identity"
   ],
