@@ -378,25 +378,25 @@
     "message": "Gerätename in Sitzung speichern"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Fügen Sie den Gerätenamen als Tag hinzu, wenn Sie eine Sitzung speichern. Bei der Cloud-Synchronisierung können Sie ihn von Sitzungen auf anderen Geräten unterscheiden."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Gerätename"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Geben Sie den Namen dieses Geräts an."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Gerätename auf bestehende Sitzungen anwenden"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Fügen Sie den Gerätenamen zu allen gespeicherten Sitzungen hinzu."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Gerätename anwenden"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Gerätename auf bestehende Sitzungen anwenden?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
