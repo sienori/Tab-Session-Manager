@@ -3,6 +3,7 @@ import moment from "moment";
 import log from "loglevel";
 import Sessions from "./sessions.js";
 import { updateSession } from "./save.js";
+import { getSettings } from "src/settings/settings";
 
 const logDir = "background/tag";
 
@@ -80,4 +81,20 @@ export async function getSessionsByTag(tag, needKeys = null) {
   sessions.sort(newestSort);
 
   return sessions;
+}
+
+export async function applyDeviceName() {
+  const shouldSaveDeviceName = getSettings("shouldSaveDeviceName");
+  const deviceName = getSettings("deviceName");
+  if (!(shouldSaveDeviceName && deviceName)) return;
+  log.log(logDir, "applyDeviceName()", deviceName);
+
+  const sessions = await Sessions.getAll().catch(() => {});
+  for (let session of sessions) {
+    const validatedTag = getValidatedTag(deviceName, session);
+    if (validatedTag === "") continue;
+
+    session.tag.push(validatedTag);
+    await updateSession(session);
+  }
 }

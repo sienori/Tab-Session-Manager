@@ -386,6 +386,18 @@
   "deviceNameCaptionLabel": {
     "message": "Specify the name of this device."
   },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "If unchecked, ignores the private window when saving the session."
   },

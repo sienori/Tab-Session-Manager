@@ -1,5 +1,11 @@
+import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import SignInButton from "../options/components/SignInButton";
+
+const handleApplyDeviceNameButtonClick = () => {
+  const res = confirm(browser.i18n.getMessage("applyDeviceNameConfirmLabel"));
+  if (res) browser.runtime.sendMessage({ message: "applyDeviceName" });
+};
 
 export default [
   {
@@ -52,6 +58,13 @@ export default [
             type: "text",
             placeholder: "My laptop",
             default: ""
+          },
+          {
+            title: "applyDeviceNameLabel",
+            captions: ["applyDeviceNameCaptionLabel"],
+            type: "button",
+            value: "applyDeviceNameButtonLabel",
+            onClick: handleApplyDeviceNameButtonClick
           }
         ]
       },

@@ -25,7 +25,7 @@ import {
 } from "./save";
 import getSessions from "./getSessions";
 import { openSession } from "./open";
-import { addTag, removeTag } from "./tag";
+import { addTag, removeTag, applyDeviceName } from "./tag";
 import { initSettings, handleSettingsChange, getSettings } from "src/settings/settings";
 import exportSessions from "./export";
 import onInstalledListener from "./onInstalledListener";
@@ -131,6 +131,8 @@ const onMessageListener = async (request, sender, sendResponse) => {
       return await signOutGoogle();
     case "syncCloud":
       return await syncCloud();
+    case "applyDeviceName":
+      return await applyDeviceName();
   }
 };
 
