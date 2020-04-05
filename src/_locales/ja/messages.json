@@ -375,28 +375,28 @@
     "message": "タブのURLがリストに一致する場合，セッションに記録されません。リストにはワイルドカード \"*\" を使用できます。"
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "セッションにデバイス名を保存する"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "セッションを保存する際にデバイス名をタグとして追加します。クラウド同期機能を利用する際に他のデバイスのセッションと区別することができます。"
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "デバイス名"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "デバイスの名前を指定します。"
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "既存のセッションにデバイス名を適用"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "保存されている全てのセッションにデバイス名を追加します。"
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "デバイス名を適用"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "全てのセッションにデバイス名を適用しますか？"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "チェックをオフにすると，セッションの保存時にプライベートウィンドウを無視します。"
@@ -420,22 +420,22 @@
     "message": "セッションリストのセッション名が複数行に渡る場合，1行に切り詰めて表示します。"
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "クラウド同期"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "クラウド同期を有効にする (ベータ版)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "セッションをGoogle Drive™に保存して他のデバイスと同期します。"
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "同期中"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "ダウンロード中"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "アップロード中"
   },
   "deletingLabel": {
     "message": "Deleting"
