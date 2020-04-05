@@ -192,10 +192,10 @@
     "message": "Utwórz kopię sesji"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Zarejestruj do sesji startowej"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Usuń z sesji startowej"
   },
   "errorLabel": {
     "message": "Błąd"
@@ -207,7 +207,7 @@
     "message": "Jak rozwiązać ten problem"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Nie można otworzyć wielu wyskakujących okienek w tym samym czasie."
   },
   "winCloseSessionName": {
     "message": "Automatyczny zapis - okno zamknięte"
@@ -267,25 +267,25 @@
     "message": "Przywracanie położenia i rozmiaru okien podczas odtwarzania sesji."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Start"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Zachowanie podczas startu przeglądarki"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Otwórz poprzednią sesję"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Otwórz ostatnio zamkniętą sesję."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Otwórz sesję startową"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Otwórz sesje zarejestrowane do sesji startowej. Możesz zarejestrować do sesji startowej z menu na liście sesji."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Nic nie rób"
   },
   "ifAutoSaveLabel": {
     "message": "Zapisuj sesję regularnie"
@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "Jeśli URL karty pasuje do listy, nie zostanie ona zapisana w sesji. Na tej liście są dozwolone \"*\" symbole wieloznaczne."
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Save device name to session"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+  },
+  "deviceNameLabel": {
+    "message": "Device name"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Specify the name of this device."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Jeżeli odznaczone, podczas zapisywania sesji ignoruje okna prywatne."
   },
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "Jeśli nazwa sesji na liście sesji jest dłuższa niż jedna linia, jest ona obcinana do jednej inii i wyświetlana."
+  },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
   },
   "popupLabel": {
     "message": "Wyskakujące okno"
@@ -426,7 +480,7 @@
     "message": "Rozmiar"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Określ rozmiar wyskakującego okna."
   },
   "widthLabel": {
     "message": "Szerokość"
@@ -435,7 +489,7 @@
     "message": "Wysokość"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Szerokość paska bocznego"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Otwórz listę sesji w karcie"
@@ -576,7 +630,10 @@
     "message": "Strona dodatku"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Strona rozszerzenia"
+  },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
   },
   "importMessage": {
     "message": "Sesje zaimportowane."
