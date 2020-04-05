@@ -378,7 +378,7 @@
     "message": "Eszköznév mentése munkamenetbe"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Munkamenet mentésekor eszköznév címkeként való hozzáadása. Felhő szinkronizálás használatakor így megkülönböztethető más eszközökön lévő munkamenetektől."
   },
   "deviceNameLabel": {
     "message": "Eszköznév"
