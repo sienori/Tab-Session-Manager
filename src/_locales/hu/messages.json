@@ -375,28 +375,28 @@
     "message": "Ha a fül URL -je egyezik a listával, akkor nem lesz tárolva a munkamenetben. A lista engedélyezi a \"*\" helyettesítő karaktereket."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Eszköznév mentése munkamenetbe"
   },
   "shouldSaveDeviceNameCaptionLabel": {
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Eszköznév"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Adja meg ennek az eszköznek a nevét."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Eszköznév alkalmazása meglévő munkamenetekre"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Eszköznév hozzáadása minden mentett munkamenethez."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Eszköznév alkalmazása"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Eszköznév alkalmazása minden munkamenetre?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ha nincs bejelölve, nem menti a privát ablak tartalmát a munkamenet mentésekor."
@@ -429,16 +429,16 @@
     "message": "Munkamenetek mentése Google Drive™ -ra és szinkronizálás más számítógépekkel."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Szinkronizálás"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Letöltés"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Feltöltés"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Törlés"
   },
   "syncCompletedLabel": {
     "message": "Szinkronizálás kész."
@@ -633,7 +633,7 @@
     "message": "Kiegészítő oldala"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Adatvédelmi nyilatkozat"
   },
   "importMessage": {
     "message": "Munkamenetek importálva."
