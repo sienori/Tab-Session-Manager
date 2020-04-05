@@ -192,10 +192,10 @@
     "message": "Gör en kopia av sessionen"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Starta vid uppstart"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Starta inte vid uppstart"
   },
   "errorLabel": {
     "message": "Fel"
@@ -267,25 +267,25 @@
     "message": "Återställ fönsterplaceringar och storleken när en session öppnas."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Uppstart"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Vad händer när du startar webbläsaren"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Öppna föregående session"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Öppna sessionen som avslutades förra gången."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Öppna uppstartssessionen"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Öppna sessioner som markerats som uppstart. Du kan markera som uppstart från menyn i sessionslistan."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Gör ingenting"
   },
   "ifAutoSaveLabel": {
     "message": "Spara sessionen regelbundet"
@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "Om flikwebbadressen matchar listan, kommer den inte att spelas in i sessionen. Listan accepterar \"*\" jokertecken."
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Save device name to session"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+  },
+  "deviceNameLabel": {
+    "message": "Device name"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Specify the name of this device."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."
   },
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "Om namnet på sessionen överskrids i sessionslistan kommer det att kortas ner och visas på en rad."
+  },
+  "cloudSyncLabel": {
+    "message": "Molnsynkronisering"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Aktivera molnsynkronisering (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Spara sessioner till Google Drive™ och synkronisera med andra datorer."
+  },
+  "syncingLabel": {
+    "message": "Synkroniserar"
+  },
+  "downloadingLabel": {
+    "message": "Laddar ner"
+  },
+  "uploadingLabel": {
+    "message": "Laddar upp"
+  },
+  "deletingLabel": {
+    "message": "Tar bort"
+  },
+  "syncCompletedLabel": {
+    "message": "Synkroniserad."
+  },
+  "signInLabel": {
+    "message": "Logga in"
+  },
+  "signOutLabel": {
+    "message": "Logga ut"
   },
   "popupLabel": {
     "message": "Poppupp"
@@ -577,6 +631,9 @@
   },
   "extensionPageLabel": {
     "message": "Utökningssida"
+  },
+  "privacyPolicyLabel": {
+    "message": "Integritetspolicy"
   },
   "importMessage": {
     "message": "Sessioner importerade."
