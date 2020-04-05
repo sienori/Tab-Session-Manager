@@ -6,10 +6,10 @@
     "message": "Kaydedin ve pencerelerin ve sekmelerin durumunu onarın. Bu otomatik kaydetmeyi de destekler."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Paypal ile bağış yap"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Bağış yap"
   },
   "openSessionListInTabLabel": {
     "message": "Open session list in tab"
@@ -36,7 +36,7 @@
     "message": "Category filter"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Sırala"
   },
   "displayAllLabel": {
     "message": "Tümü"
@@ -78,7 +78,7 @@
     "message": "Bu oturum silinsin mi?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Oturum silindi."
   },
   "sessionWindowDeletedLabel": {
     "message": "Session window deleted."
@@ -102,7 +102,7 @@
     "message": "Session saved."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Oturum kaydetme başarısız oldu."
   },
   "cancelLabel": {
     "message": "Vazgeç"
@@ -114,7 +114,7 @@
     "message": "Etiketi kaldır"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Detay"
   },
   "windowLabel": {
     "message": "Pencere"
@@ -129,40 +129,40 @@
     "message": "Sekmeler"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Oturum yok."
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Eşleşen sonuç yok."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Hiçbir oturum seçilmedi."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Menü"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Menüyü kapat"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Kapat"
   },
   "renameLabel": {
     "message": "Yeniden adlandır"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Oturumu yeniden adlandır"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Oturum aç"
   },
   "openInNewWindowLabel": {
     "message": "Yeni pencerede aç"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Oturumu yeni pencerede aç."
   },
   "openInCurrentWindowLabel": {
     "message": "Mevcut pencerede aç"
@@ -177,7 +177,7 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Oturumu düzenle"
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -189,7 +189,7 @@
     "message": "Add current window"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Oturumun kopyasını oluştur"
   },
   "registerStartupLabel": {
     "message": "Register for startup"
@@ -198,7 +198,7 @@
     "message": "Remove from startup"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Hata"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
@@ -225,7 +225,7 @@
     "message": "Oturumlar"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Kısayollar"
   },
   "informationLabel": {
     "message": "Bilgi"
@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Save device name to session"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+  },
+  "deviceNameLabel": {
+    "message": "Device name"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Specify the name of this device."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Eğer işaretli değilse, oturumu kaydederken gizli pencereyi yok sayar."
   },
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "Oturum listesindeki oturum adı tek bir satırdan uzunsa, tek satır üzerinde kısaltılır ve görüntülenir."
+  },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
   },
   "popupLabel": {
     "message": "Popup"
@@ -577,6 +631,9 @@
   },
   "extensionPageLabel": {
     "message": "Extension page"
+  },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
   },
   "importMessage": {
     "message": "Oturum içe aktarıldı."
