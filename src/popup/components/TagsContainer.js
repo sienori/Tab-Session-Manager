@@ -25,10 +25,6 @@ export default class TagsContainer extends Component {
     this.props.openModal(title, content);
   };
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.sessionId !== this.props.sessionId) this.setState({ isOpenedInput: false });
-  }
-
   render() {
     const { sessionId, tags } = this.props;
     return (
