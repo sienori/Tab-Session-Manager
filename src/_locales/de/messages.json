@@ -375,7 +375,7 @@
     "message": "Wenn die Tab-URL mit der Liste übereinstimmt, wird sie in der Sitzung nicht aufgezeichnet. Die Liste erlaubt \"*\" Wildcards."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Gerätename in Sitzung speichern"
   },
   "shouldSaveDeviceNameCaptionLabel": {
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
