@@ -3,7 +3,6 @@
  * Released under the MIT license.
  * see https://opensource.org/licenses/MIT */
 
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const {
   getHTMLPlugins,
@@ -75,9 +74,11 @@ module.exports = [
     ...generalConfig,
     output: getOutput("chrome", config.tempDirectory),
     entry: getEntry(config.chromePath),
+    optimization: {
+      minimize: true
+    },
     plugins: [
       new CleanWebpackPlugin(["dist", "temp"]),
-      new UglifyJsPlugin(),
       ...getHTMLPlugins("chrome", config.tempDirectory, config.chromePath),
       ...getCopyPlugins("chrome", config.tempDirectory, config.chromePath),
       getZipPlugin(`${config.extName}-for-chrome-${extVersion}`, config.distDirectory)
@@ -87,9 +88,11 @@ module.exports = [
     ...generalConfig,
     output: getOutput("opera", config.tempDirectory),
     entry: getEntry(config.operaPath),
+    optimization: {
+      minimize: true
+    },
     plugins: [
       new CleanWebpackPlugin(["dist", "temp"]),
-      new UglifyJsPlugin(),
       ...getHTMLPlugins("opera", config.tempDirectory, config.operaPath),
       ...getCopyPlugins("opera", config.tempDirectory, config.operaPath),
       getZipPlugin(`${config.extName}-for-opera-${extVersion}`, config.distDirectory)
@@ -99,9 +102,11 @@ module.exports = [
     ...generalConfig,
     entry: getEntry(config.firefoxPath),
     output: getOutput("firefox", config.tempDirectory),
+    optimization: {
+      minimize: true
+    },
     plugins: [
       new CleanWebpackPlugin(["dist", "temp"]),
-      new UglifyJsPlugin(),
       ...getHTMLPlugins("firefox", config.tempDirectory, config.firefoxPath),
       ...getFirefoxCopyPlugins("firefox", config.tempDirectory, config.firefoxPath),
       getZipPlugin(`${config.extName}-for-firefox-${ffExtVersion}`, config.distDirectory)
