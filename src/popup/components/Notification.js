@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import PlusIcon from "../icons/plus.svg";
 import "../styles/Notification.scss";
 
@@ -6,54 +7,36 @@ export default class Notification extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false,
       notification: {
+        key: "0",
         message: "",
         type: "info",
         buttonLabel: "",
+        duration: 10000,
         onClick: () => {}
-      }
+      },
+      isOpen: true
     };
   }
-
-  openNotification = notification => {
-    this.setState({ isOpen: true, notification: notification });
-
-    const duration = notification.duration || 10000;
-    this.timer = setTimeout(() => {
-      this.closeNotification();
-    }, duration);
-  };
 
   closeNotification = () => {
     this.setState({ isOpen: false });
   };
 
   handleButtonClick = () => {
-    this.props.notification.onClick();
+    this.state.notification.onClick();
     this.closeNotification();
   };
 
-  shouldComponentUpdate(nextProps, nextState) {
-    return (
-      nextProps.notification.key !== this.props.notification.key ||
-      nextState.isOpen !== this.state.isOpen
-    );
-  }
+  static getDerivedStateFromProps(nextProps, prevState) {
+    const shouldShowNotification =
+      nextProps.notification.key && nextProps.notification.key !== prevState.notification.key;
+    if (!shouldShowNotification) return null;
 
-  componentWillReceiveProps(nextProps) {
-    const notification = nextProps.notification;
-    if (notification.key === this.props.notification.key) return;
-    clearTimeout(this.timer);
-
-    if (this.state.isOpen) {
-      this.closeNotification();
-      setTimeout(() => {
-        this.openNotification(notification);
-      }, 200);
-    } else {
-      this.openNotification(notification);
-    }
+    return {
+      notification: nextProps.notification,
+      isOpen: true
+    };
   }
 
   render() {
@@ -61,21 +44,23 @@ export default class Notification extends Component {
     const shouldShowButton = notification.onClick && notification.buttonLabel;
     return (
       <div id="notificationArea">
-        <div
-          id="notification"
-          className={this.state.isOpen ? "isOpen" : "isClose"}
-          data-type={notification.type}
-        >
-          <span className="message">{notification.message}</span>
-          <div className="buttons">
-            {shouldShowButton && (
-              <button onClick={this.handleButtonClick}>{notification.buttonLabel}</button>
-            )}
-            <button className="closeButton" onClick={this.closeNotification}>
-              <PlusIcon />
-            </button>
-          </div>
-        </div>
+        <TransitionGroup>
+          {this.state.isOpen && (
+            <CSSTransition key={notification.key} timeout={notification.duration || 10000}>
+              <div className="notification" data-type={notification.type}>
+                <span className="message">{notification.message}</span>
+                <div className="buttons">
+                  {shouldShowButton && (
+                    <button onClick={this.handleButtonClick}>{notification.buttonLabel}</button>
+                  )}
+                  <button className="closeButton" onClick={this.closeNotification}>
+                    <PlusIcon />
+                  </button>
+                </div>
+              </div>
+            </CSSTransition>
+          )}
+        </TransitionGroup>
       </div>
     );
   }

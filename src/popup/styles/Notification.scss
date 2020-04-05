@@ -1,7 +1,7 @@
 #notificationArea {
   position: relative;
   width: 100%;
-  #notification {
+  .notification {
     display: flex;
     position: absolute;
     width: 300px;
@@ -17,17 +17,29 @@
     padding: 10px;
     max-height: 90px;
     overflow: hidden;
-    transition-property: transform, opacity;
+    transition-property: transform, opacity, visibility;
     transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transform-origin: top;
+    opacity: 0;
+    visibility: hidden;
 
-    &.isOpen {
-      transform-origin: top;
+    &.enter {
+      opacity: 0;
+      visibility: hidden;
+      transform: scaleY(0);
+      transition-delay: 100ms;
+    }
+    &.enter-active,
+    &.exit {
       opacity: 1;
+      visibility: visible;
       transform: scaleY(1);
     }
-    &.isClose {
-      transform-origin: top;
+    &.exit-active,
+    &.enter-done {
       opacity: 0;
+      visibility: hidden;
       transform: scaleY(0);
     }
 
