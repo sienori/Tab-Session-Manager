@@ -375,28 +375,28 @@
     "message": "Если URL вкладки соответствует записям в списке, он не будет сохранён в сессии. В записях можно использовать звёздочку \"*\"."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Сохранить название устройства в сессии"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Маркировать сессию названием устройства. При облачной синхронизации вы сможете различать сессии с разных устройств."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Название устройства"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Указать название устройства."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Маркировать существующие сессии названием устройства"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Маркировать все сохранённые сессии названием устройства."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Маркировать названием устройства"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Маркировать все сессии названием устройства?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Если отключено, игнорирует приватное окно при сохранении сессии."
