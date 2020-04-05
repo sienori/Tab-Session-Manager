@@ -55,10 +55,7 @@ export default props => {
         type={"none"}
         extraCaption={
           <a href={patreonLink} target="_blank">
-            <img
-              src="https://c5.patreon.com/external/logo/become_a_patron_button.png"
-              alt="Patreon"
-            />
+            <img src="/icons/patreonButton.png" alt="Patreon" />
           </a>
         }
       />
@@ -68,10 +65,7 @@ export default props => {
         type={"none"}
         extraCaption={
           <a href={paypalLink} target="_blank">
-            <img
-              src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png"
-              alt="Paypal"
-            />
+            <img src="/icons/paypalButton.png" alt="Paypal" />
           </a>
         }
       />
