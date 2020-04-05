@@ -75,15 +75,6 @@ module.exports = [
   },
   {
     ...generalConfig,
-    entry: getEntry(config.operaPath),
-    output: getOutput("opera", config.devDirectory),
-    plugins: [
-      ...getHTMLPlugins("opera", config.devDirectory, config.operaPath),
-      ...getCopyPlugins("opera", config.devDirectory, config.operaPath)
-    ]
-  },
-  {
-    ...generalConfig,
     entry: getEntry(config.firefoxPath),
     output: getOutput("firefox", config.devDirectory),
     plugins: [

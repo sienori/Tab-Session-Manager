@@ -86,20 +86,6 @@ module.exports = [
   },
   {
     ...generalConfig,
-    output: getOutput("opera", config.tempDirectory),
-    entry: getEntry(config.operaPath),
-    optimization: {
-      minimize: true
-    },
-    plugins: [
-      new CleanWebpackPlugin(["dist", "temp"]),
-      ...getHTMLPlugins("opera", config.tempDirectory, config.operaPath),
-      ...getCopyPlugins("opera", config.tempDirectory, config.operaPath),
-      getZipPlugin(`${config.extName}-for-opera-${extVersion}`, config.distDirectory)
-    ]
-  },
-  {
-    ...generalConfig,
     entry: getEntry(config.firefoxPath),
     output: getOutput("firefox", config.tempDirectory),
     optimization: {
