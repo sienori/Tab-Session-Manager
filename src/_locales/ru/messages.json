@@ -279,10 +279,10 @@
     "message": "Открыть сессию, которая была закрыта в последний раз."
   },
   "openStartupSessionLabel": {
-    "message": "Открыть сессии, как при запуске"
+    "message": "Открыть заранее выбранные сессии"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Открыть сессии, настроенные для старта при запуске. Вы можете настроить сессии для запуска из меню в списке сессий."
+    "message": "Открыть сессии, выбранные для старта при запуске. Их можно выбрать из списка сессий в меню."
   },
   "DoNothingLabel": {
     "message": "Ничего не делать"
@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "Если URL вкладки соответствует записям в списке, он не будет сохранён в сессии. В записях можно использовать звёздочку \"*\"."
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Сохранить название устройства в сессии"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Маркировать сессию названием устройства. При облачной синхронизации вы сможете различать сессии с разных устройств."
+  },
+  "deviceNameLabel": {
+    "message": "Название устройства"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Указать название устройства."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Маркировать существующие сессии названием устройства"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Маркировать все сохранённые сессии названием устройства."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Маркировать названием устройства"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Маркировать все сессии названием устройства?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Если отключено, игнорирует приватное окно при сохранении сессии."
   },
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "Если имя сессии в списке занимает более одной строки, оно усекается на одну строку."
+  },
+  "cloudSyncLabel": {
+    "message": "Облачная синхронизация"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Включить облачную синхронизацию (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Сохраните сессии в Google Drive и синхронизируйте их с другими компьютерами."
+  },
+  "syncingLabel": {
+    "message": "Синхронизируется"
+  },
+  "downloadingLabel": {
+    "message": "Скачивается"
+  },
+  "uploadingLabel": {
+    "message": "Закачивается"
+  },
+  "deletingLabel": {
+    "message": "Удаляется"
+  },
+  "syncCompletedLabel": {
+    "message": "Синхронизация завершена."
+  },
+  "signInLabel": {
+    "message": "Войти"
+  },
+  "signOutLabel": {
+    "message": "Выйти"
   },
   "popupLabel": {
     "message": "Всплывающее окно"
@@ -577,6 +631,9 @@
   },
   "extensionPageLabel": {
     "message": "Страница расширения"
+  },
+  "privacyPolicyLabel": {
+    "message": "Политика конфиденциальности"
   },
   "importMessage": {
     "message": "Сессия импортирована."
