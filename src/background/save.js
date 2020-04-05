@@ -7,6 +7,7 @@ import { getSettings } from "src/settings/settings";
 import { returnReplaceParameter } from "./replace.js";
 import ignoreUrls from "./ignoreUrls";
 import { pushRemovedQueue } from "./cloudSync.js";
+import { getValidatedTag } from "./tag.js";
 
 const logDir = "background/save";
 
@@ -88,6 +89,12 @@ async function sendMessage(message, options = {}) {
 export async function saveSession(session, isSendResponce = true, saveBySync = false) {
   log.log(logDir, "saveSession()", session, isSendResponce);
   try {
+    const shouldSaveDeviceName = getSettings("shouldSaveDeviceName");
+    if (shouldSaveDeviceName && !saveBySync) {
+      const deviceName = getSettings("deviceName");
+      const validatedTag = getValidatedTag(deviceName, session);
+      if (validatedTag !== "") session.tag.push(deviceName);
+    }
     await Sessions.put(session);
     if (isSendResponce) sendMessage("saveSession", { session: session, saveBySync: saveBySync });
     return session;

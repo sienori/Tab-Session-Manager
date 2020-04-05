@@ -6,19 +6,11 @@ import { updateSession } from "./save.js";
 
 const logDir = "background/tag";
 
-export async function addTag(id, tag) {
-  log.log(logDir, "addTag()", id, tag);
-  let session = await Sessions.get(id).catch(() => {});
-  if (session == undefined) return;
-
+export const getValidatedTag = (tag, session) => {
   const beginningAndEndSpaces = /(^( |　)*)|(( |　)*$)/g;
   const multipleSpaces = /( )+/g;
-  tag = tag.replace(beginningAndEndSpaces, "");
-  tag = tag.replace(multipleSpaces, " ");
+  tag = tag.replace(beginningAndEndSpaces, "").replace(multipleSpaces, " ");
 
-  const isNotEqual = value => {
-    return value != tag;
-  };
   const reservedTag = [
     "regular",
     "winClose",
@@ -32,12 +24,24 @@ export async function addTag(id, tag) {
     browser.i18n.getMessage("browserExitSessionName"),
     browser.i18n.getMessage("startupLabel")
   ];
+  const isNotEqual = value => value != tag;
   const currentTags = session.tag;
-  if (!reservedTag.every(isNotEqual)) return;
-  if (!currentTags.every(isNotEqual)) return;
+  if (!reservedTag.every(isNotEqual)) return "";
+  if (!currentTags.every(isNotEqual)) return "";
 
   const onlySpaces = /^( |　)*$/;
-  if (onlySpaces.test(tag)) return;
+  if (onlySpaces.test(tag)) return "";
+
+  return tag;
+};
+
+export async function addTag(id, tag) {
+  log.log(logDir, "addTag()", id, tag);
+  let session = await Sessions.get(id).catch(() => {});
+  if (!session) return;
+
+  const validatedTag = getValidatedTag(tag, session);
+  if (validatedTag === "") return;
 
   session.tag.push(tag);
   updateSession(session);

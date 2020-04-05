@@ -38,6 +38,24 @@ export default [
         placeholder: "https://example.com/*\nhttps://example.net/*"
       },
       {
+        id: "shouldSaveDeviceName",
+        title: "shouldSaveDeviceNameLabel",
+        captions: ["shouldSaveDeviceNameCaptionLabel"],
+        type: "checkbox",
+        default: false,
+        new: true,
+        childElements: [
+          {
+            id: "deviceName",
+            title: "deviceNameLabel",
+            captions: ["deviceNameCaptionLabel"],
+            type: "text",
+            placeholder: "My laptop",
+            default: ""
+          }
+        ]
+      },
+      {
         id: "isRestoreWindowPosition",
         title: "isRestoreWindowPositionLabel",
         captions: ["isRestoreWindowPositionCaptionLabel"],
