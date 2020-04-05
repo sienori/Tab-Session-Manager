@@ -44,7 +44,7 @@ export async function addTag(id, tag) {
   const validatedTag = getValidatedTag(tag, session);
   if (validatedTag === "") return;
 
-  session.tag.push(tag);
+  session.tag.push(validatedTag);
   updateSession(session);
 }
 
