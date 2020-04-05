@@ -9,10 +9,10 @@
     "message": "Faire un don avec PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Faire un don"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Ouvrir la liste des sessions dans un onglet"
   },
   "saveLabel": {
     "message": "Enregistrer"
@@ -42,7 +42,7 @@
     "message": "Toutes"
   },
   "displayUserLabel": {
-    "message": "Sauvegarde de l’utilisateur"
+    "message": "Sauvegardes utilisateur"
   },
   "displayAutoLabel": {
     "message": "Sauvegarde automatique"
@@ -138,7 +138,7 @@
     "message": "Aucun résultat."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Aucune session sélectionnée."
   },
   "menuLabel": {
     "message": "Menu"
@@ -147,13 +147,13 @@
     "message": "Fermer le menu"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Fermer"
   },
   "renameLabel": {
     "message": "Renommer"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Renommer la session"
   },
   "OpenSessionLabel": {
     "message": "Ouvrir une session"
@@ -192,10 +192,10 @@
     "message": "Faire une copie de la session"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Ajouter au démarrage"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Retirer du démarrage"
   },
   "errorLabel": {
     "message": "Erreur"
@@ -267,25 +267,25 @@
     "message": "Rétablir la position et la taille de la fenêtre à l'ouverture de la session."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Démarrage"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Comportement lors du démarrage du navigateur"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Ouvrir la session précédente"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Ouvre la session qui a été fermée la dernière fois."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Ouvrir la session de démarrage"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Ouvrir les sessions ajoutées au démarrage. Vous pouvez ajouter une session au démarrage depuis le menu dans la liste des sessions."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Ne rien faire"
   },
   "ifAutoSaveLabel": {
     "message": "Enregistrer régulièrement la session"
@@ -369,10 +369,34 @@
     "message": "Enregistrer les fenêtres privées"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Liste des URL à ignorer lors d'une sauvegarde de session"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Si l'adresse d'un onglet correspond à l'une des URL de la liste, il ne sera pas pris enregistré. Caractères génériques \"*\" pris en compte."
+  },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Save device name to session"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+  },
+  "deviceNameLabel": {
+    "message": "Device name"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Specify the name of this device."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si cette case n'est pas cochée, les fenêtres privées ne seront pas enregistrées."
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "Si le nom d'une session dans la liste de sessions s’étend sur plusieurs lignes, il sera tronqué pour être affiché sur une seule ligne."
+  },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
   },
   "popupLabel": {
     "message": "Pop-up"
@@ -417,10 +471,10 @@
     "message": "Ajoute une fonction de recherche par nom de session."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Afficher les boutons Ouvrir / Supprimer dans la liste"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Afficher les boutons \"Ouvrir\" et \"Fermer\" quand le curseur survole des éléments dans la liste de sessions."
   },
   "sizeLabel": {
     "message": "Dimensions"
@@ -435,13 +489,13 @@
     "message": "Hauteur"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Largeur du menu"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Ouvrir la liste des sessions dans un onglet"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Ouvre la liste des sessions enregistrées dans un onglet quand le bouton de la barre d'outil est cliqué."
   },
   "otherLabel": {
     "message": "Autre"
@@ -558,7 +612,7 @@
     "message": "Réinitialiser"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Contributeurs"
   },
   "LicenseLabel": {
     "message": "Licence"
@@ -577,6 +631,9 @@
   },
   "extensionPageLabel": {
     "message": "Page de l'extension"
+  },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
   },
   "importMessage": {
     "message": "Sessions importées."
@@ -597,6 +654,6 @@
     "message": "https://addons.mozilla.org/fr/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "Cette page ne peut pas être ouvert par Tab Session Manager."
+    "message": "Cette page ne peut pas être ouverte par Tab Session Manager."
   }
 }

@@ -267,7 +267,7 @@
     "message": "開啟瀏覽階段時還原視窗的位置與大小。"
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "啟動"
   },
   "startupBehaviorLabel": {
     "message": "Behavior when starting the browser"
@@ -285,7 +285,7 @@
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "不執行任何動作"
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "若 URL 與清單內相符，則不會將它儲存到瀏覽階段中，此清單允許使用 \"*\" 萬用字元。"
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Save device name to session"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+  },
+  "deviceNameLabel": {
+    "message": "Device name"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Specify the name of this device."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "如果取消勾選，儲存瀏覽階段時將會忽略隱私視窗。"
   },
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "如果瀏覽階段名稱長度超過單行範圍，截斷為單行顯示。"
+  },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
   },
   "popupLabel": {
     "message": "彈出式視窗"
@@ -577,6 +631,9 @@
   },
   "extensionPageLabel": {
     "message": "Chrome 應用程式商店頁面"
+  },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
   },
   "importMessage": {
     "message": "已匯入瀏覽階段。"

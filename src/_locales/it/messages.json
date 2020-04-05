@@ -192,10 +192,10 @@
     "message": "Fai una copia della sessione"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Registra per l'avvio"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Rimuovi dall'avvio"
   },
   "errorLabel": {
     "message": "Errore"
@@ -267,25 +267,25 @@
     "message": "Ripristina la posizione e la dimensione delle finestre durante l'apertura di una sessione."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Avvio"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Comportamento all'avvio del browser"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Apri sessione precedente"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Apre la sessione aperta che è stata chiusa l'ultima volta."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Apri sessione di avvio"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Apre le sessioni registrate per l'avvio. Puoi registrarle nella lista delle sessioni."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Non fare nulla"
   },
   "ifAutoSaveLabel": {
     "message": "Salva la sessione regolarmente"
@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "Se l'URL della scheda corrisponde alla lista, non verrà salvata nella sessione. La lista permette le wildcard \"*\"."
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Save device name to session"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+  },
+  "deviceNameLabel": {
+    "message": "Device name"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Specify the name of this device."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Se deselezionato, ignora le finestre anonime durante il salvataggio della sessione."
   },
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "Se il nome della sessione nella lista delle sessioni si estende su più righe, viene troncato in un'unica riga."
+  },
+  "cloudSyncLabel": {
+    "message": "Sincronizzazione Cloud"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Abilita sincronizzazione cloud (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Salva le sessioni in Google Drive™ e le sincronizza con gli altri computer."
+  },
+  "syncingLabel": {
+    "message": "Sincronizzazione in corso"
+  },
+  "downloadingLabel": {
+    "message": "Download in corso"
+  },
+  "uploadingLabel": {
+    "message": "Upload in corso"
+  },
+  "deletingLabel": {
+    "message": "Eliminazione in corso"
+  },
+  "syncCompletedLabel": {
+    "message": "Sincronizzazione completata."
+  },
+  "signInLabel": {
+    "message": "Accedi"
+  },
+  "signOutLabel": {
+    "message": "Disconnetti"
   },
   "popupLabel": {
     "message": "Popup"
@@ -417,10 +471,10 @@
     "message": "Aggiunge la funzione per cercare una sessione per nome."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Visualizza i pulsanti apri/elimina nell'elenco delle sessioni"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Visualizza i pulsanti apri/elimina quando il cursore è sopra la lista delle sessioni."
   },
   "sizeLabel": {
     "message": "Dimensioni"
@@ -435,13 +489,13 @@
     "message": "Altezza"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Larghezza barra laterale"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Apri lista sessioni in una scheda"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Apre la lista delle sessioni in un una scheda quando viene cliccato il plusante sulla barra degli strumenti."
+    "message": "Apre la lista delle sessioni in un una scheda quando viene cliccato il pulsante sulla barra degli strumenti."
   },
   "otherLabel": {
     "message": "Altro"
@@ -577,6 +631,9 @@
   },
   "extensionPageLabel": {
     "message": "Pagina dell'estensione"
+  },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
   },
   "importMessage": {
     "message": "Sessioni importate."

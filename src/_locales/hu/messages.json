@@ -192,10 +192,10 @@
     "message": "Másolatot készítése a munkamenetről"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Automatikus indításra regisztrálás"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Automatikus indulásról leválasztás"
   },
   "errorLabel": {
     "message": "Hiba"
@@ -267,25 +267,25 @@
     "message": "Ablakok pozícióinak és méreteinek visszaállítása munkamenet megnyitáskor."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Automatikus indítás"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Böngésző induláskori viselkedés"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Előző munkamenet megnyitása"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Utolsó bezáráskori munkamenet megnyitása."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Induláskor automatikusan megnyíló munkamenet megnyitása"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Induláskori megnyitáshoz regisztrált munkamenetek megnyitása. Induláskori megnyitáshoz regisztrálhatsz munkameneteket a munkamenet menüben."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Ne tegyen semmit"
   },
   "ifAutoSaveLabel": {
     "message": "Munkamenet rendszeres mentése"
@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "Ha a fül URL -je egyezik a listával, akkor nem lesz tárolva a munkamenetben. A lista engedélyezi a \"*\" helyettesítő karaktereket."
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Eszköznév mentése munkamenetbe"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Munkamenet mentésekor eszköznév címkeként való hozzáadása. Felhő szinkronizálás használatakor így megkülönböztethető más eszközökön lévő munkamenetektől."
+  },
+  "deviceNameLabel": {
+    "message": "Eszköznév"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Adja meg ennek az eszköznek a nevét."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Eszköznév alkalmazása meglévő munkamenetekre"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Eszköznév hozzáadása minden mentett munkamenethez."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Eszköznév alkalmazása"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Eszköznév alkalmazása minden munkamenetre?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ha nincs bejelölve, nem menti a privát ablak tartalmát a munkamenet mentésekor."
   },
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "Munkamenet név méretre vágása a munkamenet listában, ha kilógna a sorából."
+  },
+  "cloudSyncLabel": {
+    "message": "Szinkronizálás a felhővel"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Szinkronizálás a felhővel engedélyezése (Béta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Munkamenetek mentése Google Drive™ -ra és szinkronizálás más számítógépekkel."
+  },
+  "syncingLabel": {
+    "message": "Szinkronizálás"
+  },
+  "downloadingLabel": {
+    "message": "Letöltés"
+  },
+  "uploadingLabel": {
+    "message": "Feltöltés"
+  },
+  "deletingLabel": {
+    "message": "Törlés"
+  },
+  "syncCompletedLabel": {
+    "message": "Szinkronizálás kész."
+  },
+  "signInLabel": {
+    "message": "Bejelentkezés"
+  },
+  "signOutLabel": {
+    "message": "Kijelentkezés"
   },
   "popupLabel": {
     "message": "Felugró ablak"
@@ -577,6 +631,9 @@
   },
   "extensionPageLabel": {
     "message": "Kiegészítő oldala"
+  },
+  "privacyPolicyLabel": {
+    "message": "Adatvédelmi nyilatkozat"
   },
   "importMessage": {
     "message": "Munkamenetek importálva."

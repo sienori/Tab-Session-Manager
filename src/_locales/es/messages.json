@@ -192,10 +192,10 @@
     "message": "Hacer una copia de la sesión"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Registrar en arranque"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Eliminar de arranque"
   },
   "errorLabel": {
     "message": "Error"
@@ -267,25 +267,25 @@
     "message": "Restaura la posición de la ventana y tamaño al abrir la sesión."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Arranque"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Comportamiento al iniciar el navegador"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Abrir sesión anterior"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Abrir la sesión que se cerró por última vez."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Abrir sesión de arranque"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Abra las sesiones registradas para el arranque. Puede registrar para el arranque desde el menú en la lista de sesiones."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "No hacer nada"
   },
   "ifAutoSaveLabel": {
     "message": "Guardar la sesión regularmente"
@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "Si la URL de la pestaña coincide con algún elemento de esta lista, la misma no será registrada en la sesión. La lista permite comodines \"*\"."
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Save device name to session"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+  },
+  "deviceNameLabel": {
+    "message": "Device name"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Specify the name of this device."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si no está marcada, ignorar la ventana privada al guardar la sesión."
   },
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "Si el nombre de la sesión en la lista de sesiones se extiende a más de una línea, se trunca en una línea y se muestra."
+  },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
   },
   "popupLabel": {
     "message": "Popup"
@@ -577,6 +631,9 @@
   },
   "extensionPageLabel": {
     "message": "Página de extensión"
+  },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
   },
   "importMessage": {
     "message": "Sesiones importadas."
