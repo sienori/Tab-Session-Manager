@@ -374,6 +374,30 @@
   "ignoreUrlListCaptionLabel": {
     "message": "Αν το URL της καρτέλας είναι το ίδιο με εκείνο στη λίστα, δεν θα καταγραφεί. Στη λίστα επιτρέπεται ο χαρακτήρας μπαλαντέρ \"*\"."
   },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Save device name to session"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+  },
+  "deviceNameLabel": {
+    "message": "Device name"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Specify the name of this device."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Apply device name to existing sessions"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Add the device name to all saved sessions."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Apply device name"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Apply device name to all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Αν δεν επιλεγεί, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση των συνεδριών."
   },
@@ -394,6 +418,36 @@
   },
   "truncateTitleCaptionLabel": {
     "message": "Αν το όνομα της συνεδρίας ξεπερνάει τη μία γραμμή, να αποκόπτεται κατά την εμφάνιση."
+  },
+  "cloudSyncLabel": {
+    "message": "Cloud sync"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Enable cloud sync (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Save sessions to Google Drive™ and sync with other computers."
+  },
+  "syncingLabel": {
+    "message": "Syncing"
+  },
+  "downloadingLabel": {
+    "message": "Downloading"
+  },
+  "uploadingLabel": {
+    "message": "Uploading"
+  },
+  "deletingLabel": {
+    "message": "Deleting"
+  },
+  "syncCompletedLabel": {
+    "message": "Sync completed."
+  },
+  "signInLabel": {
+    "message": "Sign in"
+  },
+  "signOutLabel": {
+    "message": "Sign out"
   },
   "popupLabel": {
     "message": "Αναδυόμενο παράθυρο"
@@ -577,6 +631,9 @@
   },
   "extensionPageLabel": {
     "message": "Σελίδα πρόσθετου"
+  },
+  "privacyPolicyLabel": {
+    "message": "Privacy policy"
   },
   "importMessage": {
     "message": "Έγινε εισαγωγή των συνεδριών."
