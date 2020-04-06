@@ -20,3 +20,6 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - José Lagunas
 - William Leung
 - kamidev
+- Emma Bartholomew
+- James J Boriotti
+- Vern Trumbly
