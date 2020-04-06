@@ -408,7 +408,7 @@
     "message": "Επαναφορά δέντρου από το Tree Style Tab.<br>Αν ενεργοποιηθεί θα καθυστερήσει η επαναφορά συνεδριών."
   },
   "tstDelayLabel": {
-    "message": "Αναμονή για την επαναφορά (milliseconds)"
+    "message": "Αναμονή προτού εκτελεστεί η επαναφορά (milliseconds)"
   },
   "tstDelayCaptionLabel": {
     "message": "Κατά την επαναφορά του δέντρου, απαιτείται κάποιος χρόνος. Αυξήστε το χρόνο αυτό αν η διαδικασία δεν γίνεται σωστά."
@@ -426,28 +426,28 @@
     "message": "Ενεργοποίηση συγχρονισμού στο Cloud (beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Αποθήκευση συνεδριών στο Google Drive™ και συγχρονισμός με άλλους υπολογιστές."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Γίνεται συγχρονισμός"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Γίνεται λήψη"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Γίνεται μεταφόρτωση"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Γίνεται διαγραφή"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Ο συγχρονισμός ολοκληρώθηκε."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Σύνδεση"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Αποσύνδεση"
   },
   "popupLabel": {
     "message": "Αναδυόμενο παράθυρο"
@@ -633,7 +633,7 @@
     "message": "Σελίδα πρόσθετου"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Πολιτική ιδιωτικότητας"
   },
   "importMessage": {
     "message": "Έγινε εισαγωγή των συνεδριών."
