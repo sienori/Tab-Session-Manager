@@ -375,28 +375,28 @@
     "message": "Se l'URL della scheda corrisponde alla lista, non verrà salvata nella sessione. La lista permette le wildcard \"*\"."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Salva il nome del dispositivo nella sessione"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Aggiungi il nome del dispositivo come tag durante il salvataggio di una sessione. Quando usi la sincronizzazione cloud, puoi distinguerlo dalle sessioni sugli altri dispositivi."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Nome dispositivo"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Specifica il nome di questo dispositivo."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Applica il nome del dispositivo alle sessioni esistenti"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Aggiunge il nome del dispositivo a tutte le sessioni salvate."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Applica nome dispositivo"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Vuoi applicare il nome del dispositivo a tutte le sessioni?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Se deselezionato, ignora le finestre anonime durante il salvataggio della sessione."
