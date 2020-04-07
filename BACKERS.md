@@ -23,3 +23,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Emma Bartholomew
 - James J Boriotti
 - Vern Trumbly
+- Sarah Sheridan
+- Alex W
