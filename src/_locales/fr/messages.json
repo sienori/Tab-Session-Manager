@@ -375,7 +375,7 @@
     "message": "Si l'adresse d'un onglet correspond à l'une des URL de la liste, il ne sera pas pris enregistré. Caractères génériques \"*\" pris en compte."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Enregistrer le nom de l'appareil dans la session"
   },
   "shouldSaveDeviceNameCaptionLabel": {
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
