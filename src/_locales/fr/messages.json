@@ -420,10 +420,10 @@
     "message": "Si le nom d'une session dans la liste de sessions s’étend sur plusieurs lignes, il sera tronqué pour être affiché sur une seule ligne."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Synchronisation infonuagique"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Activer la synchronisation (bêta)"
   },
   "enabledCloudSyncCaptionLabel": {
     "message": "Save sessions to Google Drive™ and sync with other computers."
