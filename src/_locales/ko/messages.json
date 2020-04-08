@@ -249,112 +249,112 @@
     "message": "탭 느리게 열기"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "세션을 열 때, 탭을 클릭하기 전까지는 각 페이지의 내용을 로드하지 않습니다.<br>비활성화 시, 세션이 열릴 때 메모리 사용이 급증합니다."
   },
   "isUseDiscardedLabel": {
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "이 옵션을 활성화하면 탭을 열 때 성능이 향상됩니다."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "느리게 여는 탭의 파비콘은 보여지지 않습니다."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "창 위치 복원하기"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "세션을 열 때 창 위치와 크기를 복원합니다."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "시작"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "브라우저를 켤 때"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "이전 세션 열기"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "지난 번에 닫았던 세션 열기"
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "홈페이지 세션 열기"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "홈페이지로 등록한 세션을 엽니다. 세션 목록의 메뉴에서 홈페이지로 등록할 수 있습니다."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "비활성화"
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "주기적으로 세션 자동 저장"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "매 X분 마다 세션 자동 저장"
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "간격 (분)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "최소 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "최대 저장 개수"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "이 방법으로 저장한 세션의 최대 개수"
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "창을 닫을 때 자동 저장"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "창을 닫을 때 해당 창만 자동 저장"
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "최대 저장 개수"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "이 방법으로 저장한 세션의 최대 개수"
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "브라우저를 끌 때 자동 저장"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "최대 저장 개수"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "이 방법으로 저장한 세션의 최대 개수"
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "페이지 제목을 자동 저장한 세션 이름으로"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "세션을 자동 저장할 때, 열려있는 페이지의 제목을 세션의 이름으로 등록합니다."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "백업"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "백업 저장"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "브라우저를 켤 때, 세션의 백업복을 만들어 다운로드 폴더에 저장합니다."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "저장 위치"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "백업본을 저장할 폴더를 지정해주세요. 저장 위치는 브라우저의 다운로드 폴더 내 하위 폴더만 가능합니다."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "다운로드 폴더"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "최대 백업본 저장 개수"
   },
   "backupFilesLimitCaptionLabel": {
     "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
