@@ -192,10 +192,10 @@
     "message": "세션의 복사본 만들기"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "홈페이지로 등록"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "홈페이지에서 제외"
   },
   "errorLabel": {
     "message": "오류"
@@ -243,7 +243,7 @@
     "message": "새 창에서 세션 열기"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "비활성화 시, 세션을 현재 창에 덮어씁니다."
   },
   "ifLazyLoadingLabel": {
     "message": "탭 느리게 열기"
@@ -387,19 +387,19 @@
     "message": "이 장치의 이름을 입력해주세요."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "기존 세션에 장치 이름 등록"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "모든 저장된 세션에 장치 이름 등록"
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "장치 이름 등록"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "모든 세션에 장치 이름을 등록하겠나요?"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "비활성화 시, 세션을 저장할 때 사생활 보호 모드 창은 저장하지 않습니다."
   },
   "ifSupportTstLabel": {
     "message": "Supports Tree Style Tab"
@@ -414,112 +414,112 @@
     "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "세션 이름을 한 줄로만 보이기"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "세션 목록에서 세션 이름이 한 줄을 넘어가면, 일부 생략하여 한 줄로 보입니다."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "클라우드 동기화"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "클라우드 동기화 활성화 (베타)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Google Drive에 세션을 저장하여 다른 장치와 동기화합니다."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "동기화 중"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "내려받는 중"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "올리는 중"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "삭제하는 중"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "동기화 완료"
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "로그인"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "로그아웃"
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "팝업"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "열기 버튼을 누르면"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "열기 버튼을 눌렀을 때의 기본 동작을 선택해주세요."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "저장 버튼을 누르면"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "저장 버튼을 눌렀을 때의 기본 동작을 선택해주세요."
   },
   "isShowSearchBarLabel": {
-    "message": "Display the search bar"
+    "message": "검색 창 보이기"
   },
   "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
+    "message": "세션 이름으로도 검색"
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "세션 목록에서 열기 / 삭제 버튼 보이기"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "커서가 세션 목록 상에 있을 때 열기 / 삭제 버튼을 보입니다."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "크기"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "팝업의 크기를 설정해주세요."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "너비"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "높이"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "사이드바 너비"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "세션 목록을 새 탭에서 열기"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "툴바의 버튼을 누르면 세션 목록을 새 창에서 엽니다."
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "기타"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "업데이트 후 설정 페이지 열기"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Tab Session Manager가 업데이트 되면, 설정 페이지를 표시합니다. 업데이트 내용을 빠르게 알 수 있습니다."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager 업데이트 완료!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "더보기"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "업데이트 정보를 보려면 클릭해주세요."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "디버그 모드 활성화"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "디버그 모드가 활성화되면, 디버거로 로그가 출력됩니다."
   },
   "resetSettingsLabel": {
     "message": "설정 초기화"
@@ -537,13 +537,13 @@
     "message": "컴퓨터 상에 저장한 세션을 불러와 세션 목록에 추가합니다.<br>SessionManager's 세션 파일(.session)도 지원합니다."
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "찾아보기..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "가져오기"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "지우기"
   },
   "urlImportLabel": {
     "message": "URL 목옥 가져오기"
@@ -552,31 +552,31 @@
     "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "세션 내보내기"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "모든 세션을 컴퓨터에 저장합니다."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "내보내기"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "세션 삭제"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "모든 세션 삭제"
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "삭제"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "키보드 단축키"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "키보드 단축키를 설정합니다."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "단축키 입력"
   },
   "typeLetterMessage": {
     "message": "Type a letter"
@@ -603,49 +603,49 @@
     "message": "Save session (all windows)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "모든 세션 내보내기"
   },
   "clear": {
     "message": "Clear"
   },
   "reset": {
-    "message": "Reset"
+    "message": "초기화"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "도움을 주신 분"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "라이센스"
   },
   "donationLabel": {
-    "message": "Please make a donation"
+    "message": "후원을 통해 응원해주세요"
   },
   "donationCaptionLabel": {
-    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+    "message": "Tab Session Manager을 사용해주셔서 감사합니다.<br>보내주신 응원은 저희가 계속 만들어나갈 수 있는 큰 힘이 되어줍니다.<br>Tab Session Manager를 좋아하신다면, 후원을 통한 응원을 고려해주세요."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "설치 페이지"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "설치 페이지"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "개인정보보호정책"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "세션을 가져왔습니다."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "실패하였습니다."
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "모든 세션을 삭제합니다. 확실한가요?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "세션"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
