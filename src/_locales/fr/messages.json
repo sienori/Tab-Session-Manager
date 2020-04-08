@@ -426,28 +426,28 @@
     "message": "Activer la synchronisation (bêta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Enregistrer les sessions sur Google Drive™ et synchroniser avec les autres ordinateurs."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Synchronisation en cours"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Téléchargement…"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Mise en ligne…"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Suppression en cours"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Synchronisation terminée."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Se connecter"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Se déconnecter"
   },
   "popupLabel": {
     "message": "Pop-up"
@@ -633,7 +633,7 @@
     "message": "Page de l'extension"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Politique de confidentialité"
   },
   "importMessage": {
     "message": "Sessions importées."
