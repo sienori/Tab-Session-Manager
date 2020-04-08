@@ -357,34 +357,34 @@
     "message": "최대 백업본 저장 개수"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "백업본의 수가 이 값을 넘는다면, 가장 오래된 것부터 자동 삭제됩니다."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "날짜 형식"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "예시: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "사생활 보호 모드의 창도 저장"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "세션 저장 시, 저장하지 않을 URL 목록"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "탭 URL이 목록 상에 있다면, 세션에 등록되지 않습니다. \"*\" 표현도 사용할 수 있습니다."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "장치 이름을 세션에 저장"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "세션 저장 시, 장치 이름을 태그로 등록합니다. 이를 통해 클라우드 동기화를 이용할 때, 다른 장치에서의 세션과 구분할 수 있습니다."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "장치 이름"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "이 장치의 이름을 입력해주세요."
   },
   "applyDeviceNameLabel": {
     "message": "Apply device name to existing sessions"
@@ -522,19 +522,19 @@
     "message": "When debug mode is enabled, the log is output to the debugger."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "설정 초기화"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "모든 설정을 기본값으로 복원"
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "초기화"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "세션 가져오기"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+    "message": "컴퓨터 상에 저장한 세션을 불러와 세션 목록에 추가합니다.<br>SessionManager's 세션 파일(.session)도 지원합니다."
   },
   "importButtonLabel": {
     "message": "Browse..."
