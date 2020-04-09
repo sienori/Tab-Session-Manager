@@ -9,10 +9,10 @@
     "message": "Doneren via PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Doneren"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Open sessielijst in tabblad"
   },
   "saveLabel": {
     "message": "Opslaan"
@@ -21,31 +21,31 @@
     "message": "Huidige sessie opslaan"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Sessie naam invoeren"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Sessie opslaan"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Alle vensters opslaan"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Enkel huidige venster opslaan"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Categorie filter"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Sorteren"
   },
   "displayAllLabel": {
     "message": "Alle"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Opgeslagen door gebruiker"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Automatisch opslaan"
   },
   "newestLabel": {
     "message": "Nieuwste"
@@ -60,10 +60,10 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Zoeken op sessie naam"
   },
   "search": {
-    "message": "Search"
+    "message": "Zoeken"
   },
   "clearSearch": {
     "message": "Clear search"
@@ -201,22 +201,22 @@
     "message": "Error"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB is niet beschikbaar in uw browser."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Hoe los je dit probleem op"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Meerdere pop-ups kunnen niet tegelijkertijd worden geopend."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Automatisch opslaan - venster gesloten"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Automatisch opslaan - browser beëindigd"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Automatisch opslaan - Regelmatig"
   },
   "settingsLabel": {
     "message": "Instellingen"
@@ -225,7 +225,7 @@
     "message": "Sessies"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Sneltoetsen"
   },
   "informationLabel": {
     "message": "Informatie"
@@ -255,7 +255,7 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Het inschakelen van deze optie verbetert de prestaties bij het openen van tabbladen."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
@@ -414,10 +414,10 @@
     "message": "Om de staat van een boomstructuur te herstellen, is een wachttijd vereist voor het openen van de tab. Verhoog deze waarde indien de boomstructuur niet correct wordt teruggezet."
   },
   "truncateTitleLabel": {
-    "message": "Sessienaam binnen één lijn weergeven"
+    "message": "Sessienaam op één regel weergeven"
   },
   "truncateTitleCaptionLabel": {
-    "message": "Indien de sessienaam in de sessielijst slanger is dan één regel, wordt het ingekort weergegeven op één regel."
+    "message": "Indien de sessienaam in de sessielijst langer is dan één regel, wordt deze ingekort weergegeven."
   },
   "cloudSyncLabel": {
     "message": "Cloud sync"
