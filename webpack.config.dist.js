@@ -114,6 +114,10 @@ module.exports = [
           to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/src/`)
         },
         {
+          from: `babel.config.js`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/babel.config.js`)
+        },
+        {
           from: `config.json`,
           to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/config.json`)
         },
@@ -124,6 +128,10 @@ module.exports = [
         {
           from: `package.json`,
           to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package.json`)
+        },
+        {
+          from: `package-lock.json`,
+          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package-lock.json`)
         },
         {
           from: `README.md`,
