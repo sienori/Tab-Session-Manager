@@ -192,19 +192,19 @@
     "message": "Make a copy of the session"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Opnemen bij opstarten"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Verwijderen uit opstarten"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Fout"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB is niet beschikbaar in uw browser."
   },
   "howToSolveLabel": {
-    "message": "Hoe los je dit probleem op"
+    "message": "Hoe lost u dit probleem op"
   },
   "noConnectionErrorLabel": {
     "message": "Meerdere pop-ups kunnen niet tegelijkertijd worden geopend."
