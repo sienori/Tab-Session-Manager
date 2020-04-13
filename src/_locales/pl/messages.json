@@ -432,13 +432,13 @@
     "message": "Syncing"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Pobieranie"
   },
   "uploadingLabel": {
     "message": "Uploading"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Usuwanie"
   },
   "syncCompletedLabel": {
     "message": "Sync completed."
