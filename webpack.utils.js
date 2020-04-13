@@ -1,4 +1,4 @@
-/* Copyright (c) 2018 Kamil Mikosz 
+/* Copyright (c) 2018 Kamil Mikosz
  * Copyright (c) 2018 Sienori
  * Released under the MIT license.
  * see https://opensource.org/licenses/MIT */
@@ -93,7 +93,7 @@ const getFirefoxCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src")
   ])
 ];
 
-const getZipPlugin = (browserDir, outputDir = "dist") =>
+const getZipPlugin = (browserDir, outputDir = "dist", exclude = "") =>
   new ZipPlugin({
     path: path.resolve(__dirname, `${outputDir}`),
     filename: browserDir,
@@ -106,7 +106,8 @@ const getZipPlugin = (browserDir, outputDir = "dist") =>
     },
     zipOptions: {
       forceZip64Format: false
-    }
+    },
+    exclude: exclude
   });
 
 module.exports = {

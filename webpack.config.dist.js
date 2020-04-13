@@ -150,7 +150,7 @@ module.exports = [
           to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.utils.js`)
         }
       ]),
-      getZipPlugin(`copiedSource-${config.extName}-${ffExtVersion}`, config.distDirectory)
+      getZipPlugin(`copiedSource-${config.extName}-${ffExtVersion}`, config.distDirectory, "other/")
     ]
   }
 ];
