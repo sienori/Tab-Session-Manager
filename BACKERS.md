@@ -25,4 +25,6 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Vern Trumbly
 - Sarah Sheridan
 - Alex W
-- Leif 
+- Leif
+- Alexey Noskov
+
