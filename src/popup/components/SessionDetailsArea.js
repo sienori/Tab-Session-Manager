@@ -12,7 +12,7 @@ import SessionMenuItems from "./SessionMenuItems";
 import MenuIcon from "../icons/menu.svg";
 import NewWindowIcon from "../icons/newWindow.svg";
 import DeleteIcon from "../icons/delete.svg";
-import "../styles/sessionDetailsArea.scss";
+import "../styles/SessionDetailsArea.scss";
 
 const getOpenButtonTitle = () => {
   const defaultBehavior = getSettings("openButtonBehavior");
