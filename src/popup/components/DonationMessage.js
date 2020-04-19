@@ -1,7 +1,7 @@
 import React from "react";
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
-import "../styles/donationMessage.scss";
+import "../styles/DonationMessage.scss";
 
 export default props => {
   const isChrome = browserInfo().name == "Chrome";
