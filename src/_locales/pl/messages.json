@@ -405,7 +405,7 @@
     "message": "Obsługa Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Przywróć drzewo kart rozszerzenia Tree Style Tab.<br>Gdy ta opcja jest włączona, przywracanie sesji trwa dłużej."
   },
   "tstDelayLabel": {
     "message": "Opóźnienie przywracania drzewa (milisekundy)"
