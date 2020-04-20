@@ -381,22 +381,22 @@
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Nazwa urządzenia"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Określ nazwę tego urządzenia."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Zastosuj nazwę urządzenia do istniejących sesji"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Dodaj nazwę urządzenia do wszystkich zapisanych sesji."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Zastosuj nazwę urządzenia"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Zastosować nazwę urządzenia do wszystkich sesji?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Jeżeli odznaczone, podczas zapisywania sesji ignoruje okna prywatne."
