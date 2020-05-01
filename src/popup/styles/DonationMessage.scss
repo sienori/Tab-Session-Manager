@@ -9,3 +9,10 @@
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+#modalBackground.isOpen #modal {
+  background-color: #313131;
+  color: #bfbfbf;
+}
+}

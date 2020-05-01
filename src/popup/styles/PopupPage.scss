@@ -29,3 +29,10 @@
     background-color: var(--line);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+#header, #popupPage, .inputForm input, #optionsArea .line .selectWrap select, #saveArea .inputForm .saveButton, #saveArea .inputForm .saveOptionButton, #menu, #menu ul li button, #contents {
+  background-color: #313131;
+  color: #bfbfbf;
+}
+}

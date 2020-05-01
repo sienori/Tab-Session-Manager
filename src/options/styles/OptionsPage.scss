@@ -25,3 +25,10 @@
 ::selection {
   background-color: var(--line);
 }
+
+@media (prefers-color-scheme: dark) {
+body, .optionsPage, input, textarea, input[type="button"], label.button.includeSpan {
+  background-color: #313131;
+  color: #bfbfbf;
+}
+}
