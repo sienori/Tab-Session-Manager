@@ -267,25 +267,25 @@
     "message": "还原会话时，同时还原窗口的位置与大小。"
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "启动"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "浏览器启动时的行为"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "打开先前的会话"
   },
   "openPreviousSessionCaptionLabel": {
     "message": "Open the session that was closed the last time."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "打开启动会话"
   },
   "openStartupSessionCaptionLabel": {
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "什么也不做"
   },
   "ifAutoSaveLabel": {
     "message": "定期保存会话"
@@ -375,28 +375,28 @@
     "message": "如标签 URL 匹配列表，则其不会保存到会话。此列表允许使用通配符 \"*\"。"
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "保存设备名称到会话"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "保存会话时添加设备名称为标签。使用云同步时，您可在其它设备上区分会话。"
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "设备名称"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "指定此设备的名称。"
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "应用设备名称到现有会话"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "添加设备名称到所有保存的会话。"
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "应用设备名称"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "应用设备名称到所有会话？"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "若未启用，保存会话时将忽略隐私窗口。"
@@ -420,34 +420,34 @@
     "message": "如果会话名称长度超过一行，则不显示超出的部分。"
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "云同步"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "开启云同步（Beta）"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "保存会话到 Google Drive™ 并与其它计算机同步。"
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "正在同步"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "正在下载"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "正在上传"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "正在删除"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "同步完成。"
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "登录"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "登出"
   },
   "popupLabel": {
     "message": "弹出面板"
@@ -474,7 +474,7 @@
     "message": "在会话列表内显示打开/删除按钮"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "当鼠标指针悬浮于会话列表之上时显示 打开/删除 按钮。"
   },
   "sizeLabel": {
     "message": "大小"
@@ -633,7 +633,7 @@
     "message": "扩展页面"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "隐私政策"
   },
   "importMessage": {
     "message": "导入会话"
