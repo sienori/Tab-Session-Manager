@@ -270,13 +270,13 @@
     "message": "啟動"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "啟動瀏覽器時的行為"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "開啟之前的瀏覽階段"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "開啟上次關閉的瀏覽階段。"
   },
   "openStartupSessionLabel": {
     "message": "Open startup session"
@@ -375,28 +375,28 @@
     "message": "若 URL 與清單內相符，則不會將它儲存到瀏覽階段中，此清單允許使用 \"*\" 萬用字元。"
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "將裝置名稱儲存於瀏覽階段"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "儲存瀏覽階段時將裝置名稱寫入標籤，當使用雲端同步時，便可分辨不同裝置上的瀏覽階段。"
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "裝置名稱"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "填入裝置名稱。"
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "套用裝置名稱至目前瀏覽階段"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "套用裝置名稱至所有儲存的瀏覽階段。"
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "套用裝置名稱"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "套用裝置名稱至所有瀏覽階段?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "如果取消勾選，儲存瀏覽階段時將會忽略隱私視窗。"
@@ -420,34 +420,34 @@
     "message": "如果瀏覽階段名稱長度超過單行範圍，截斷為單行顯示。"
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "雲端同步"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "啟用雲端同步 (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "儲存瀏覽階段至 Google Drive™ 並與其他電腦同步。"
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "正在同步"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "正在下載"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "正在上傳"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "正在刪除"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "同步完成。"
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "登入"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "登出"
   },
   "popupLabel": {
     "message": "彈出式視窗"
@@ -633,7 +633,7 @@
     "message": "Chrome 應用程式商店頁面"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "隱私權政策"
   },
   "importMessage": {
     "message": "已匯入瀏覽階段。"
