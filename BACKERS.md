@@ -27,4 +27,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Alex W
 - Leif
 - Alexey Noskov
-
+- 아영 김
