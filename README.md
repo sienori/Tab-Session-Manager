@@ -6,6 +6,8 @@
 
 [<img src="https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png" alt="for Chrome">](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
 
+[for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/jkjjclfiflhpjangefhgfjhgfbhajadk/)
+
 ## Backers
 
 Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md)** who supported Tab Session Manager!
