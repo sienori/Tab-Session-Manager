@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "현재 창만 저장"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "범주 필터"
   },

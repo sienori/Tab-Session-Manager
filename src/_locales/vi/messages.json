@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "Lưu chỉ cửa sổ hiện tại"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "Bộ lọc nhãn"
   },

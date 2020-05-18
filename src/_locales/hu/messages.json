@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "Csak a jelenlegi ablak mentése"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "Kategória szűrés"
   },

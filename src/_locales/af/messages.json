@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "Save only current window"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "Category filter"
   },

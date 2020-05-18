@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "Spara endast aktuellt fönster"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "Kategorifiltret"
   },

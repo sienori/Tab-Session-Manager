@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "Desa nomes la finestra actual"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "Filtre de categoria"
   },

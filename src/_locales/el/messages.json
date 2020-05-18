@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "Αποθήκευση αυτού του παράθυρου"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "Φίλτρο ετικέτας"
   },

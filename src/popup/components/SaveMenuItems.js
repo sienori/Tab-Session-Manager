@@ -8,6 +8,9 @@ export default props => {
   const handlesaveOnlyCurrentWindow = () => {
     props.saveSession(props.name, "saveOnlyCurrentWindow");
   };
+  const handlesaveOnlyCurrentTab = () => {
+    props.saveSession(props.name, "saveOnlyCurrentTab");
+  };
   const handleClickSection = e => {
     e.stopPropagation();
   };
@@ -25,6 +28,11 @@ export default props => {
       <li>
         <button onClick={handlesaveOnlyCurrentWindow}>
           {browser.i18n.getMessage("saveOnlyCurrentWindowLabel")}
+        </button>
+      </li>
+      <li>
+        <button onClick={handlesaveOnlyCurrentTab}>
+          {browser.i18n.getMessage("saveOnlyCurrentTabLabel")}
         </button>
       </li>
     </ul>

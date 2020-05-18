@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "Enkel huidige venster opslaan"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "Category filter"
   },

@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "Yalnızca mevcut pencereyi kaydet"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "Category filter"
   },

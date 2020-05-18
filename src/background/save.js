@@ -41,6 +41,11 @@ export async function loadCurrentSession(name, tag, property) {
       break;
     case "saveOnlyCurrentWindow":
       queryInfo.currentWindow = true;
+      break;
+    case "saveOnlyCurrentTab":
+      queryInfo.currentWindow = true;
+      queryInfo.active = true;
+      break;
   }
 
   const tabs = await browser.tabs.query(queryInfo);

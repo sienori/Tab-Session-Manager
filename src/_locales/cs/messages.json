@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "Uložit pouze aktuální okno"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "Filtr kategorií"
   },

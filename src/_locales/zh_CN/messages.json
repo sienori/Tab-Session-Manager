@@ -32,6 +32,9 @@
   "saveOnlyCurrentWindowLabel": {
     "message": "仅保存此窗口"
   },
+  "saveOnlyCurrentTabLabel": {
+    "message": "Save only current tab"
+  },
   "categoryFilterLabel": {
     "message": "标签过滤"
   },
