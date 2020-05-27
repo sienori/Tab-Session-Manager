@@ -381,7 +381,7 @@
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Назва пристрою"
   },
   "deviceNameCaptionLabel": {
     "message": "Specify the name of this device."
@@ -420,34 +420,34 @@
     "message": "Якщо назва сесії в списку займає більше одного рядка, вона буде скорочуватися до одного рядку."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Хмарна синхронізація"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Увімкнути хмарну синхронізацію (бета-версія)"
   },
   "enabledCloudSyncCaptionLabel": {
     "message": "Save sessions to Google Drive™ and sync with other computers."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Синхронізація"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Завантаження"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Вивантаження"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Видалення"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Синхронізацію завершено."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Увійти"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Вийти"
   },
   "popupLabel": {
     "message": "Спливаюче вікно"
@@ -633,7 +633,7 @@
     "message": "Сторінка розширення"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Політика конфіденційності"
   },
   "importMessage": {
     "message": "Сесія імпортована."
