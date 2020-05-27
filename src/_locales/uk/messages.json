@@ -375,28 +375,28 @@
     "message": "Якщо URL-адреса вкладки відповідає списку, вона не буде записана в сеанс. У списку можливі \"*\" підстановки."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Зберегти назву пристрою в сесії"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Маркувати сесію назвою пристрою. Під час хмарної синхронізації ви зможете розрізняти сесії з різних пристроїв."
   },
   "deviceNameLabel": {
     "message": "Назва пристрою"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Вказати назву пристрою."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Маркувати існуючі сесії назвою пристрою"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Маркувати всі збережені сесії назвою пристрою."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Маркувати назвою пристрою"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Маркувати всі сесії назвою пристрою?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
@@ -426,7 +426,7 @@
     "message": "Увімкнути хмарну синхронізацію (бета-версія)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Збережіть сесії в Google Drive™ та синхронізуйте їх з іншими комп'ютерами."
   },
   "syncingLabel": {
     "message": "Синхронізація"
