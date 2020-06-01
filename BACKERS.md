@@ -30,3 +30,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - 아영 김
 - Ali J. Nabavi
 - John Kirkilis
+- Kenichi Suzuki
