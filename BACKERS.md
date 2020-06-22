@@ -34,3 +34,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - John Lawrence-Curran
 - Oleg Golovin
 - ovgolovin
+- Ronan O'Connell
