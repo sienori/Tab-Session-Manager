@@ -42,6 +42,7 @@ export default class SearchBar extends Component {
             spellCheck={false}
             placeholder={browser.i18n.getMessage("searchBarPlaceholder")}
             onChange={this.handleChange}
+            autoFocus={true}
           />
         </div>
         {this.state.searchWord !== "" && (
