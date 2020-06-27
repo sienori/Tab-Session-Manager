@@ -450,10 +450,10 @@
     "message": "Disconnetti"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Sincronizza sessioni salvate automaticamente"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Carica e scarica sul cloud le sessioni salvate automaticamente."
   },
   "popupLabel": {
     "message": "Popup"
