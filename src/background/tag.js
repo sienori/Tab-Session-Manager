@@ -8,9 +8,13 @@ import { getSettings } from "src/settings/settings";
 const logDir = "background/tag";
 
 export const getValidatedTag = (tag, session) => {
+  const comma = /,/g;
   const beginningAndEndSpaces = /(^( |　)*)|(( |　)*$)/g;
   const multipleSpaces = /( )+/g;
-  tag = tag.replace(beginningAndEndSpaces, "").replace(multipleSpaces, " ");
+  tag = tag
+    .replace(comma, " ")
+    .replace(beginningAndEndSpaces, "")
+    .replace(multipleSpaces, " ");
 
   const reservedTag = [
     "regular",
