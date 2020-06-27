@@ -375,28 +375,28 @@
     "message": "Si l'adresse d'un onglet correspond à l'une des URL de la liste, il ne sera pas pris enregistré. Caractères génériques \"*\" pris en compte."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Enregistrer le nom de l'appareil dans la session"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Ajouter une étiquette avec le nom de l’appareil lors de l’enregistrement d’une session. Si vous utilisez la synchronisation infonuagique, vous pourrez différencier cette session de celles des autres appareils."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Nom de l’appareil"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Indiquez le nom de cet appareil."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Ajouter le nom de l’appareil aux sessions existantes"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Ajouter le nom de l’appareil à toutes les sessions enregistrées."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Ajouter le nom de l’appareil"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Ajouter le nom de l’appareil à toutes les sessions ?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si cette case n'est pas cochée, les fenêtres privées ne seront pas enregistrées."
@@ -420,34 +420,40 @@
     "message": "Si le nom d'une session dans la liste de sessions s’étend sur plusieurs lignes, il sera tronqué pour être affiché sur une seule ligne."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Synchronisation infonuagique"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Activer la synchronisation (bêta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Enregistrer les sessions sur Google Drive™ et synchroniser avec les autres ordinateurs."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Synchronisation en cours"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Téléchargement…"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Mise en ligne…"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Suppression en cours"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Synchronisation terminée."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Se connecter"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Se déconnecter"
+  },
+  "includesAutoSaveToSyncLabel": {
+    "message": "Sync auto save sessions"
+  },
+  "includesAutoSaveToSyncCaptionLabel": {
+    "message": "Upload / download auto save sessions in cloud sync."
   },
   "popupLabel": {
     "message": "Pop-up"
@@ -633,7 +639,7 @@
     "message": "Page de l'extension"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Politique de confidentialité"
   },
   "importMessage": {
     "message": "Sessions importées."
