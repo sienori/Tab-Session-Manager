@@ -449,6 +449,12 @@
   "signOutLabel": {
     "message": "Se déconnecter"
   },
+  "includesAutoSaveToSyncLabel": {
+    "message": "Sync auto save sessions"
+  },
+  "includesAutoSaveToSyncCaptionLabel": {
+    "message": "Upload / download auto save sessions in cloud sync."
+  },
   "popupLabel": {
     "message": "Pop-up"
   },
