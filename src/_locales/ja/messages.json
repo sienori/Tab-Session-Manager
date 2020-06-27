@@ -453,7 +453,7 @@
     "message": "自動保存セッションを同期する"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "クラウド同期時に自動保存されたセッションをアップロード・ダウンロードします。"
   },
   "popupLabel": {
     "message": "ポップアップ"
