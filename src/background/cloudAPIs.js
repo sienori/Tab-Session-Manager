@@ -17,6 +17,7 @@ export const listFiles = async (pageToken = "") => {
         "files/id",
         "files/name",
         "files/appProperties/lastEditedTime",
+        "files/appProperties/tag",
         "nextPageToken"
       ].join(","),
       pageSize: 1000,
@@ -30,6 +31,10 @@ export const listFiles = async (pageToken = "") => {
 
   let files = result.data.files;
   if (result.data.nextPageToken) files = files.concat(await listFiles(result.data.nextPageToken));
+  files = files.map(file => {
+    file.appProperties.tag = file.appProperties?.tag?.split(",") || [];
+    return file;
+  });
   log.log(logDir, "=>listFiles()", files);
   return files;
 };
@@ -43,7 +48,7 @@ export const uploadSession = async (session, fileId = "") => {
       name: session.name,
       date: session.date,
       lastEditedTime: session.lastEditedTime,
-      tag: session.tag,
+      tag: session.tag.join(","),
       tabsNumber: session.tabsNumber,
       windowsNumber: session.windowsNumber
     },
