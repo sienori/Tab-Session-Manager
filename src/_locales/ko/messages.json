@@ -450,10 +450,10 @@
     "message": "로그아웃"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "자동 저장된 세션을 동기화"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "클라우드 내 자동 저장된 세션을 올리기 / 내려받기"
   },
   "popupLabel": {
     "message": "팝업"
