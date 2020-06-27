@@ -30,7 +30,7 @@
     "message": "Αποθήκευση όλων των παραθύρων"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Αποθήκευση αυτού του παράθυρου"
+    "message": "Αποθήκευση αυτού του παραθύρου"
   },
   "categoryFilterLabel": {
     "message": "Φίλτρο ετικέτας"
@@ -186,16 +186,16 @@
     "message": "Αντικατάσταση με τρέχον παράθυρο"
   },
   "addCurrentWindowLabel": {
-    "message": "Προσθήκη αυτού του παράθυρου"
+    "message": "Προσθήκη αυτού του παραθύρου"
   },
   "makeCopySessionLabel": {
     "message": "Αντιγραφή της συνεδρίας"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Άνοιγμα κατά την εκκίνηση"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Διαγραφή από την εκκίνηση"
   },
   "errorLabel": {
     "message": "Σφάλμα"
@@ -210,13 +210,13 @@
     "message": "Δεν μπορούν να εμφανιστούν πολλά αναδυόμενα ταυτόχρονα."
   },
   "winCloseSessionName": {
-    "message": "Αυτόματη αποθήκευση όταν κλείσει το παράθυρο"
+    "message": "Αυτόματη αποθήκευση  - Όταν κλείσει το παράθυρο"
   },
   "browserExitSessionName": {
-    "message": "Αυτόματη αποθήκευση όταν κλείσει το πρόγραμμα περιήγησης"
+    "message": "Αυτόματη αποθήκευση  - Όταν κλείσει το πρόγραμμα περιήγησης"
   },
   "regularSaveSessionName": {
-    "message": "Αυτόματη αποθήκευση τακτικά"
+    "message": "Αυτόματη αποθήκευση - Τακτικά"
   },
   "settingsLabel": {
     "message": "Ρυθμίσεις"
@@ -267,28 +267,28 @@
     "message": "Επαναφορά θέσης και μεγέθους παραθύρων κατά το άνοιγμα της συνεδρίας."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Εκκίνηση"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Συμπεριφορά κατά την εκκίνηση του περιηγητή"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Άνοιγμα της προηγούμενης συνεδρίας"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Άνοιγμα της συνεδρίας που έκλεισε τελευταία."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Άνοιγμα της ορισμένης κατά την εκκίνηση συνεδρίας"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Άνοιγμα των ορισμένων κατά την εκκίνηση συνεδριών."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Καμία ενέργεια"
   },
   "ifAutoSaveLabel": {
-    "message": "Συχνή αποθήκευση συνεδρίας"
+    "message": "Τακτική αποθήκευση συνεδρίας"
   },
   "ifAutoSaveCaptionLabel": {
     "message": "Αποθήκευση συνεδρίας κάθε X λεπτά."
@@ -333,7 +333,7 @@
     "message": "Χρήση του τίτλου της σελίδας ως όνομα αποθήκευσης της συνεδρίας"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "Στην αυτόματη αποθήκευση, χρήση του τίτλου της σελίδας ως το όνομα της συνεδρίας."
+    "message": "Στην αυτόματη αποθήκευση συνεδρίας, χρήση του τίτλου της σελίδας ως το όνομα της συνεδρίας."
   },
   "backupLabel": {
     "message": "Αντίγραφο ασφαλείας"
@@ -375,28 +375,28 @@
     "message": "Αν το URL της καρτέλας είναι το ίδιο με εκείνο στη λίστα, δεν θα καταγραφεί. Στη λίστα επιτρέπεται ο χαρακτήρας μπαλαντέρ \"*\"."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Αποθήκευση του ονόματος της συσκευής στη συνεδρία"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Προσθέστε το όνομα της συσκευής ως ετικέτα."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Όνομα συσκευής"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Καθορίστε το όνομα αυτής της συσκευής."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Εφαρμογή του ονόματος συσκευής στις υπάρχουσες συνεδρίες"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Προσθήκη του ονόματος συσκευής σε όλες τις αποθηκευμένες συνεδρίες."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Εφαρμογή του ονόματος συσκευής"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Εφαρμογή του ονόματος συσκευής σε όλες τις συνεδρίες;"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Αν δεν επιλεγεί, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση των συνεδριών."
@@ -408,7 +408,7 @@
     "message": "Επαναφορά δέντρου από το Tree Style Tab.<br>Αν ενεργοποιηθεί θα καθυστερήσει η επαναφορά συνεδριών."
   },
   "tstDelayLabel": {
-    "message": "Αναμονή για την επαναφορά (milliseconds)"
+    "message": "Αναμονή προτού εκτελεστεί η επαναφορά (milliseconds)"
   },
   "tstDelayCaptionLabel": {
     "message": "Κατά την επαναφορά του δέντρου, απαιτείται κάποιος χρόνος. Αυξήστε το χρόνο αυτό αν η διαδικασία δεν γίνεται σωστά."
@@ -420,34 +420,40 @@
     "message": "Αν το όνομα της συνεδρίας ξεπερνάει τη μία γραμμή, να αποκόπτεται κατά την εμφάνιση."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Συγχρονισμός στο Cloud"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Ενεργοποίηση συγχρονισμού στο Cloud (beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Αποθήκευση συνεδριών στο Google Drive™ και συγχρονισμός με άλλους υπολογιστές."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Γίνεται συγχρονισμός"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Γίνεται λήψη"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Γίνεται μεταφόρτωση"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Γίνεται διαγραφή"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Ο συγχρονισμός ολοκληρώθηκε."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Σύνδεση"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Αποσύνδεση"
+  },
+  "includesAutoSaveToSyncLabel": {
+    "message": "Sync auto save sessions"
+  },
+  "includesAutoSaveToSyncCaptionLabel": {
+    "message": "Upload / download auto save sessions in cloud sync."
   },
   "popupLabel": {
     "message": "Αναδυόμενο παράθυρο"
@@ -633,7 +639,7 @@
     "message": "Σελίδα πρόσθετου"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Πολιτική ιδιωτικότητας"
   },
   "importMessage": {
     "message": "Έγινε εισαγωγή των συνεδριών."

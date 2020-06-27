@@ -375,28 +375,28 @@
     "message": "Om flikwebbadressen matchar listan, kommer den inte att spelas in i sessionen. Listan accepterar \"*\" jokertecken."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Spara enhetsnamnet till sessionen"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Lägg till enhetsnamnet som en tagg när du sparar en session. När du använder molnsynkronisering kan du se vilken session som kommer från vilken enhet."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Enhetsnamn"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Ange namnet på den här enheten."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Tillämpa enhetsnamnet på befintliga sessioner"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Lägg till enhetsnamnet till alla sparade sessioner."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Tillämpa enhetsnamnet"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Tillämpa enhetsnamnet till alla sessioner?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."
@@ -448,6 +448,12 @@
   },
   "signOutLabel": {
     "message": "Logga ut"
+  },
+  "includesAutoSaveToSyncLabel": {
+    "message": "Synkronisera automatiskt spara sessioner"
+  },
+  "includesAutoSaveToSyncCaptionLabel": {
+    "message": "Ladda upp / ladda ner automatiskt sparade sessioner i molnsynkronisering."
   },
   "popupLabel": {
     "message": "Poppupp"

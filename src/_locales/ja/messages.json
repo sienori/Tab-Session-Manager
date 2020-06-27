@@ -449,6 +449,12 @@
   "signOutLabel": {
     "message": "サインアウト"
   },
+  "includesAutoSaveToSyncLabel": {
+    "message": "自動保存セッションを同期する"
+  },
+  "includesAutoSaveToSyncCaptionLabel": {
+    "message": "クラウド同期時に自動保存されたセッションをアップロード・ダウンロードします。"
+  },
   "popupLabel": {
     "message": "ポップアップ"
   },

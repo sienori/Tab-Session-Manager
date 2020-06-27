@@ -252,13 +252,13 @@
     "message": "Przy otwieraniu sesji zawartość każdej strony nie jest ładowana, dopóki nie wybierzesz danej karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Użyj właśności \"discarded\" do leniwego ładowania"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Włączenie tej opcji poprawi wydajność podczas otwierania kart."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Favicona karty z leniwym ładowaniem nie jest wyświetlana."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Przywracanie pozycji okien"
@@ -375,28 +375,28 @@
     "message": "Jeśli URL karty pasuje do listy, nie zostanie ona zapisana w sesji. Na tej liście są dozwolone \"*\" symbole wieloznaczne."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Zapisz nazwę urządzenia wraz z sesją"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Otaguj zapisywaną sesję z użyciem nazwy urządzenia. Pozwoli to odróżnić ją od sesji z innych urządzeń przy korzystaniu z synchronizacji w chmurze."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Nazwa urządzenia"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Określ nazwę tego urządzenia."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Zastosuj nazwę urządzenia do istniejących sesji"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Dodaj nazwę urządzenia do wszystkich zapisanych sesji."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Zastosuj nazwę urządzenia"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Zastosować nazwę urządzenia do wszystkich sesji?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Jeżeli odznaczone, podczas zapisywania sesji ignoruje okna prywatne."
@@ -405,7 +405,7 @@
     "message": "Obsługa Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Przywróć drzewo kart rozszerzenia Tree Style Tab.<br>Gdy ta opcja jest włączona, przywracanie sesji trwa dłużej."
   },
   "tstDelayLabel": {
     "message": "Opóźnienie przywracania drzewa (milisekundy)"
@@ -420,34 +420,40 @@
     "message": "Jeśli nazwa sesji na liście sesji jest dłuższa niż jedna linia, jest ona obcinana do jednej inii i wyświetlana."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Synchronizacja w chmurze"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Włącz synchronizację w chmurze (beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Zapisz sesje na Dysku Google i synchronizuj z innymi komputerami."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Synchronizowanie"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Pobieranie"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Wysyłanie"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Usuwanie"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Synchronizacja zakończona."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Zaloguj się"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Wyloguj"
+  },
+  "includesAutoSaveToSyncLabel": {
+    "message": "Sync auto save sessions"
+  },
+  "includesAutoSaveToSyncCaptionLabel": {
+    "message": "Upload / download auto save sessions in cloud sync."
   },
   "popupLabel": {
     "message": "Wyskakujące okno"
@@ -519,7 +525,7 @@
     "message": "Włącz tryb debugowania"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Gdy tryb debugowania jest włączony, logi są przesyłane do debuggera."
   },
   "resetSettingsLabel": {
     "message": "Resetowanie ustawień"
@@ -582,10 +588,10 @@
     "message": "Wpisz literę"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Skorzystaj z klawiszy Ctrl lub Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Skorzystaj z klawiszy Command, Ctrl lub Alt"
   },
   "invalidLetterMessage": {
     "message": "Ta litera nie może zostać użyta"
@@ -633,7 +639,7 @@
     "message": "Strona rozszerzenia"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Polityka prywatności"
   },
   "importMessage": {
     "message": "Sesje zaimportowane."
