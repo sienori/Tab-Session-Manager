@@ -201,22 +201,22 @@
     "message": "Hata"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB tarayıcınızda mevcut değil."
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Bu sorun nasıl çözülür"
   },
   "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
+    "message": "Birden fazla pop-up aynı anda açılamaz."
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Otomatik Kayıt - Pencere kapatıldığında"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Otomatik Kayıt - Tarayıcı kapatıldığında"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Otomatik Kayıt - Düzenli olarak"
   },
   "settingsLabel": {
     "message": "Ayarlar"
@@ -630,7 +630,7 @@
     "message": "Sekme Oturum Yöneticisi'ni kullandığınız için teşekkürler.<br>Desteğiniz eklentiyi geliştirmem için büyük bir teşvik olacak.<br>Sekme Oturum Yöneticisi'ni beğendiyseniz, bağış yapmayı dikkate alırsanız memnun olurum."
   },
   "amazonTitleLabel": {
-    "message": "amazon.co.jp eGift Cards"
+    "message": "amazon.co.jp Hediye Kartları"
   },
   "addonPageLabel": {
     "message": "Add-on page"
@@ -642,13 +642,13 @@
     "message": "Privacy policy"
   },
   "importMessage": {
-    "message": "Oturum içe aktarıldı."
+    "message": "Oturumlar içe aktarıldı."
   },
   "readFailedMessage": {
     "message": "Okuma başarısız oldu"
   },
   "warningRemoveAllMessage": {
-    "message": "Tüm oturumlar silinsin mi? Tamam mı?"
+    "message": "Tüm oturumlar silinecek. Emin misiniz?"
   },
   "sessionLabel": {
     "message": "Oturum"
@@ -660,6 +660,6 @@
     "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "Bu sayfa Sekme Oturum Yöneticisi tarafından açılamaz."
+    "message": "Bu sayfa Tab Session Manager tarafından açılamaz."
   }
 }
