@@ -450,10 +450,10 @@
     "message": "Logga ut"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Synkronisera automatiskt spara sessioner"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Ladda upp / ladda ner automatiskt sparade sessioner i molnsynkronisering."
   },
   "popupLabel": {
     "message": "Poppupp"
