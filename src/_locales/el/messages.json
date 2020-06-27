@@ -450,10 +450,10 @@
     "message": "Αποσύνδεση"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Συγχρονισμός αυτόματα αποθηκευμένων συνεδριών"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Αποστολή/λήψη αυτόματα αποθηκευμένων συνεδριών στο σύννεφο."
   },
   "popupLabel": {
     "message": "Αναδυόμενο παράθυρο"
