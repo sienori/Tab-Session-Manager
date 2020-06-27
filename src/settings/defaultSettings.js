@@ -74,7 +74,6 @@ export default [
         captions: ["shouldSaveDeviceNameCaptionLabel"],
         type: "checkbox",
         default: false,
-        new: true,
         childElements: [
           {
             id: "deviceName",
@@ -245,7 +244,6 @@ export default [
         captions: ["enabledCloudSyncCaptionLabel"],
         type: "extra",
         extraForm: SignInButton,
-        new: true,
         childElements: [
           {
             id: "includesAutoSaveToSync",
