@@ -245,7 +245,17 @@ export default [
         captions: ["enabledCloudSyncCaptionLabel"],
         type: "extra",
         extraForm: SignInButton,
-        new: true
+        new: true,
+        childElements: [
+          {
+            id: "includesAutoSaveToSync",
+            title: "includesAutoSaveToSyncLabel",
+            captions: ["includesAutoSaveToSyncCaptionLabel"],
+            type: "checkbox",
+            default: true,
+            new: true
+          }
+        ]
       }
     ]
   },

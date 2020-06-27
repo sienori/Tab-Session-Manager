@@ -18,6 +18,15 @@ const getShouldRemoveFiles = (files, sessions, removedQueue) => {
 };
 
 const getShouldDownloadFiles = (files, sessions, shouldRemoveFiles) => {
+  if (!getSettings("includesAutoSaveToSync")) {
+    files = files.filter(
+      file =>
+        !file.appProperties.tag.includes("regular") &&
+        !file.appProperties.tag.includes("winClose") &&
+        !file.appProperties.tag.includes("browserExit")
+    );
+  }
+
   // ダウンロードするべきfile:
   // filesのうち sessionsに存在しない または lastEditedTimeが更新されている
   // かつ shouldRemovedFilesに含まれない
@@ -34,6 +43,15 @@ const getShouldDownloadFiles = (files, sessions, shouldRemoveFiles) => {
 };
 
 const getShouldUploadSessions = (files, sessions, lastSyncTime) => {
+  if (!getSettings("includesAutoSaveToSync")) {
+    sessions = sessions.filter(
+      session =>
+        !session.tag.includes("regular") &&
+        !session.tag.includes("winClose") &&
+        !session.tag.includes("browserExit")
+    );
+  }
+
   // アップロードするべきsession:
   // lastSyncedTime以降に編集されたsessionのうち filesに存在しない または filesに存在するものよりlastEditedTimeが新しい
   const shouldUploadSessions = sessions
