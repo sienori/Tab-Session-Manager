@@ -450,10 +450,10 @@
     "message": "Se déconnecter"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Synchroniser les sessions autosauvegardées"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Téléverser et télécharger dans le nuage de synchronisation les sessions enregistrées automatiquement."
   },
   "popupLabel": {
     "message": "Pop-up"
