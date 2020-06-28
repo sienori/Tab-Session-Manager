@@ -426,7 +426,7 @@
     "message": "Cloud-Sync aktivieren (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Sessions in Google DriveTM speichern und mit anderen Computern synchronisieren."
+    "message": "Sessions in Google Drive™ speichern und mit anderen Computern synchronisieren."
   },
   "syncingLabel": {
     "message": "Synchronisiere"
@@ -453,7 +453,7 @@
     "message": "Automatisch gespeicherte Sitzungen synchronisieren"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Upload und Download von automatisch gespeicherten Sitzungen via Cloud-Sync."
   },
   "popupLabel": {
     "message": "Popup"
