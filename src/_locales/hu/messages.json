@@ -450,10 +450,10 @@
     "message": "Kijelentkezés"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Automatikusan mentett munkamenetek szinkronizálása"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "A felhővel való szinkronizálásnál az automatikusan mentett munkameneteket is töltsük fel/le."
   },
   "popupLabel": {
     "message": "Felugró ablak"
