@@ -450,7 +450,7 @@
     "message": "Abmelden"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Automatisch gespeicherte Sitzungen synchronisieren"
   },
   "includesAutoSaveToSyncCaptionLabel": {
     "message": "Upload / download auto save sessions in cloud sync."
