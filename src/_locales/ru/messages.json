@@ -450,10 +450,10 @@
     "message": "Выйти"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Синхронизировать автоматически сохраняемые сессии"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Загружать и выгружать автоматически сохраняемые сессии при облачной синхронизации."
   },
   "popupLabel": {
     "message": "Всплывающее окно"
