@@ -110,7 +110,7 @@ export default [
         title: "ifAutoSaveLabel",
         captions: ["ifAutoSaveCaptionLabel"],
         type: "checkbox",
-        default: true,
+        default: false,
         childElements: [
           {
             id: "autoSaveInterval",
@@ -138,7 +138,7 @@ export default [
         title: "ifAutoSaveWhenCloseLabel",
         captions: ["ifAutoSaveWhenCloseCaptionLabel"],
         type: "checkbox",
-        default: true,
+        default: false,
         childElements: [
           {
             id: "autoSaveWhenCloseLimit",
@@ -156,7 +156,7 @@ export default [
         title: "ifAutoSaveWhenExitBrowserLabel",
         captions: ["ifAutoSaveWhenExitBrowserCaptionLabel"],
         type: "checkbox",
-        default: true,
+        default: false,
         childElements: [
           {
             id: "autoSaveWhenExitBrowserLimit",
