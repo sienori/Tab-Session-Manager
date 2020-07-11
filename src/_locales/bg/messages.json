@@ -450,10 +450,10 @@
     "message": "Отписване"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Синхронизиране на автоматичното запазване на сесии"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Качване/изтегляне на автоматичното запазване на сесии при облачно синхронизиране."
   },
   "popupLabel": {
     "message": "Изскачащо меню"
