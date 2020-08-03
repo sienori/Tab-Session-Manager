@@ -138,7 +138,7 @@
     "message": "No matching results."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "لم يتم تحديد أي جلسة."
   },
   "menuLabel": {
     "message": "قائمة"
@@ -177,7 +177,7 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "تعديل الجلسة"
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -186,7 +186,7 @@
     "message": "Replace with current window"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "إضافة النافذة الحالية"
   },
   "makeCopySessionLabel": {
     "message": "Make a copy of the session"
@@ -327,7 +327,7 @@
     "message": "تم حفظ العدد الأقصي"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "الحد الأقصي للجلسات المحفوظة (بهذا الأسلوب)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "استخدم عنوان الصفحة للحفظ التلقائي لإسم الجلسة"
