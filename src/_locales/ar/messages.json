@@ -66,7 +66,7 @@
     "message": "بحث"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "محو البحث"
   },
   "open": {
     "message": "افتح"
@@ -78,31 +78,31 @@
     "message": "هل تريد حذف هذا الجلسة؟"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "تم حذف الجلسة."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "تم حذف نافذة الجلسة."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "تم حذف تبويب الجلسة."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "استرجاع"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "فشل في حذف الجلسة."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "فشل في حذف نافذة الجلسة."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "فشل في حذف تبويب الجلسة."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "تم حفظ الجلسة."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "فشل في حفظ الجلسة."
   },
   "cancelLabel": {
     "message": "إلغاء"
@@ -114,7 +114,7 @@
     "message": "حذف كلمة مفتاحية"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "تفاصيل"
   },
   "windowLabel": {
     "message": "النافذة"
@@ -129,7 +129,7 @@
     "message": "التبويبات"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "لا توجد أي جلسة."
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
@@ -141,19 +141,19 @@
     "message": "No session selected."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "قائمة"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "أغلق القائمة"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "أغلق"
   },
   "renameLabel": {
     "message": "أعد التسمية"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "إعادة تسمية الجلسة"
   },
   "OpenSessionLabel": {
     "message": "Open a session"
