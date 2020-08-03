@@ -6,13 +6,13 @@
     "message": "احفظ و استعد حالة النوافذ و التبويبات. كما أنها تدعم الحفظ التلقائي."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "تبرع بواسطة PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "تبرع"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "فتح قائمة الجلسة في تبويب"
   },
   "saveLabel": {
     "message": "احفظ"
@@ -24,19 +24,19 @@
     "message": "Input session name"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "حفظ جلسة"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "حفظ جميع النوافذ"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "حفظ فقط النافذة الحالية"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "مرشح الفئات"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "فرز"
   },
   "displayAllLabel": {
     "message": "الكل"
@@ -45,7 +45,7 @@
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "حفظ تلقائي"
   },
   "newestLabel": {
     "message": "الأحدث"
@@ -60,10 +60,10 @@
     "message": "ي-أ"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "البحث باسم الجلسة"
   },
   "search": {
-    "message": "Search"
+    "message": "بحث"
   },
   "clearSearch": {
     "message": "Clear search"
