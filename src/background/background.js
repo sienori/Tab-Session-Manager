@@ -34,6 +34,7 @@ import { openStartupSessions } from "./startup";
 import { signInGoogle, signOutGoogle } from "./cloudAuth";
 import { syncCloud } from "./cloudSync";
 import { updateLogLevel, overWriteLogLevel } from "../common/log";
+import { getsearchInfo } from "./search";
 
 const logDir = "background/background";
 export const SessionStartTime = Date.now();
@@ -133,6 +134,8 @@ const onMessageListener = async (request, sender, sendResponse) => {
       return await syncCloud();
     case "applyDeviceName":
       return await applyDeviceName();
+    case "getsearchInfo":
+      return await getsearchInfo();
     case "requestAllSessions":
       const sendResponse = (sessions, isEnd) => browser.runtime.sendMessage({
         message: "responseAllSessions", sessions: sessions, isEnd: isEnd

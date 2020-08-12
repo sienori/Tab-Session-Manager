@@ -49,7 +49,7 @@ export default class SessionDetailsArea extends Component {
   };
 
   render() {
-    const { session, removeWindow, removeTab, openModal, closeModal } = this.props;
+    const { session, searchWords, removeWindow, removeTab, openModal, closeModal } = this.props;
 
     if (!session.id)
       return (
@@ -105,7 +105,12 @@ export default class SessionDetailsArea extends Component {
             </div>
           </div>
         </div>
-        <DetailsContainer session={session} removeWindow={removeWindow} removeTab={removeTab} />
+        <DetailsContainer
+          session={session}
+          searchWords={searchWords}
+          removeWindow={removeWindow}
+          removeTab={removeTab}
+        />
       </div>
     );
   }

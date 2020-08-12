@@ -28,6 +28,7 @@ import Modal from "./Modal";
 import Error from "./Error";
 import DonationMessage from "./DonationMessage";
 import "../styles/PopupPage.scss";
+import { makeSearchInfo } from "../../common/makeSearchInfo";
 
 const logDir = "popup/components/PopupPage";
 
@@ -36,13 +37,15 @@ export default class PopupPage extends Component {
     super(props);
     this.state = {
       sessions: [],
+      searchInfo: [],
       isInitSessions: false,
       selectedSession: {},
       removedSession: {},
       filterValue: "_displayAll",
       sortValue: "newest",
       isShowSearchBar: false,
-      searchWord: "",
+      searchWords: [],
+      searchedSessionIds: [],
       isInTab: false,
       sidebarWidth: 300,
       notification: {
@@ -190,12 +193,16 @@ export default class PopupPage extends Component {
         isInitSessions: true,
         needsSync: needsSync
       });
+
+      const searchInfo = await browser.runtime.sendMessage({ message: "getsearchInfo" });
+      this.setState({ searchInfo: searchInfo });
     }
   };
 
   changeSessions = async request => {
     log.info(logDir, "changeSessions()", request);
     let sessions;
+    let searchInfo;
     let selectedSession = this.state.selectedSession;
     let needsSync = true;
 
@@ -203,17 +210,27 @@ export default class PopupPage extends Component {
       case "saveSession": {
         const newSession = request.session;
         sessions = this.state.sessions.concat(newSession);
+        searchInfo = this.state.searchInfo.concat(makeSearchInfo(newSession));
         needsSync = !request.saveBySync;
         break;
       }
       case "updateSession": {
         const newSession = request.session;
+        const newSearchInfo = makeSearchInfo(newSession);
         if (newSession.id === selectedSession.id) selectedSession = newSession;
 
         sessions = this.state.sessions;
-        const index = sessions.findIndex(session => session.id === newSession.id);
-        if (index === -1) sessions = this.state.sessions.concat(newSession);
-        else sessions.splice(index, 1, newSession);
+        searchInfo = this.state.searchInfo;
+        const sessionIndex = sessions.findIndex(session => session.id === newSession.id);
+        const infoIndex = searchInfo.findIndex(info => info.id === newSearchInfo.id);
+        if (sessionIndex === -1) {
+          sessions = this.state.sessions.concat(newSession);
+          searchInfo = this.state.searchInfo.concat(newSearchInfo);
+        }
+        else {
+          sessions.splice(sessionIndex, 1, newSession);
+          searchInfo.splice(infoIndex, 1, newSearchInfo);
+        }
         needsSync = !request.saveBySync;
         break;
       }
@@ -222,20 +239,25 @@ export default class PopupPage extends Component {
         if (deletedSessionId === selectedSession.id) selectedSession = {};
 
         sessions = this.state.sessions;
-        const index = sessions.findIndex(session => session.id === deletedSessionId);
-        if (index === -1) return;
-        sessions.splice(index, 1);
+        searchInfo = this.state.searchInfo;
+        const sessionIndex = sessions.findIndex(session => session.id === deletedSessionId);
+        const infoIndex = searchInfo.findIndex(info => info.id === deletedSessionId);
+        if (sessionIndex === -1) return;
+        sessions.splice(sessionIndex, 1);
+        searchInfo.splice(infoIndex, 1);
         break;
       }
       case "deleteAll": {
         const keys = ["id", "name", "date", "tag", "tabsNumber", "windowsNumber"];
         sessions = await getSessions(null, keys);
+        searchInfo = [];
         selectedSession = {};
         break;
       }
     }
     this.setState({
       sessions: sessions,
+      searchInfo: searchInfo,
       selectedSession: selectedSession,
       needsSync: needsSync
     });
@@ -260,7 +282,26 @@ export default class PopupPage extends Component {
 
   changeSearchWord = searchWord => {
     log.info(logDir, "changeSearchValue()", searchWord);
-    this.setState({ searchWord: searchWord.trim() });
+    this.searchSessions(searchWord);
+  };
+
+  searchSessions = searchWord => {
+    log.info(logDir, "searchSessions()", searchWord);
+    const searchWords = searchWord.trim().toLowerCase().split(" ");
+    this.setState({ searchWords: searchWords });
+    if (searchWords.length === 0) return;
+
+    const matchedIdsBySessionName = this.state.sessions
+      .filter(session => searchWords.every(word => session.name.toLowerCase().includes(word)))
+      .map(session => session.id);
+
+    const matchedIdsByTabTitle = this.state.searchInfo
+      .filter(info => searchWords.every(word => info.tabsTitle.includes(word)))
+      .map(info => info.id);
+
+    const searchedSessionIds = Array.from(new Set(matchedIdsBySessionName.concat(matchedIdsByTabTitle)));
+    this.setState({ searchedSessionIds: searchedSessionIds });
+    log.info(logDir, "=>searchSessions()", searchedSessionIds);
   };
 
   selectSession = async id => {
@@ -470,7 +511,8 @@ export default class PopupPage extends Component {
               selectedSessionId={this.state.selectedSession.id || ""}
               filterValue={this.state.filterValue}
               sortValue={this.state.sortValue}
-              searchWord={this.state.searchWord}
+              searchWords={this.state.searchWords}
+              searchedSessionIds={this.state.searchedSessionIds || []}
               removeSession={this.removeSession}
               selectSession={this.selectSession}
               openMenu={this.openMenu}
@@ -490,6 +532,8 @@ export default class PopupPage extends Component {
           <div className="column">
             <SessionDetailsArea
               session={this.state.selectedSession}
+              searchWords={this.state.searchedSessionIds.includes(this.state.selectedSession.id) ?
+                this.state.searchWords : []}
               removeSession={this.removeSession}
               removeWindow={this.removeWindow}
               removeTab={this.removeTab}

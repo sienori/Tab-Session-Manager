@@ -5,6 +5,7 @@ import { sendOpenMessage } from "../actions/controlSessions";
 import PlusIcon from "../icons/plus.svg";
 import CollapseIcon from "../icons/collapse.svg";
 import "../styles/DetailsContainer.scss";
+import Highlighter from "react-highlight-words";
 
 const FavIcon = props => (
   <img
@@ -28,7 +29,7 @@ const RemoveButton = props => (
 );
 
 const TabContainer = props => {
-  const { tab, windowId, allTabsNumber, handleRemoveTab } = props;
+  const { tab, windowId, allTabsNumber, searchWords, handleRemoveTab } = props;
   const handleRemoveClick = () => {
     handleRemoveTab(windowId, tab.id);
   };
@@ -41,7 +42,9 @@ const TabContainer = props => {
     <div className="tabContainer">
       <button className="tabButton" onClick={handleOpenClick} title={`${tab.title}\n${tab.url}`}>
         <FavIcon favIconUrl={tab.favIconUrl} />
-        <span className="tabTitle">{tab.title}</span>
+        <span className="tabTitle">
+          <Highlighter searchWords={searchWords} textToHighlight={tab.title} autoEscape={true} />
+        </span>
       </button>
       {allTabsNumber > 1 && <RemoveButton handleClick={handleRemoveClick} />}
     </div>
@@ -84,6 +87,7 @@ class WindowContainer extends Component {
       tabs,
       windowsNumber,
       allTabsNumber,
+      searchWords,
       handleRemoveTab
     } = this.props;
     const sortedTabs = Object.values(tabs).sort((a, b) => a.index - b.index);
@@ -115,6 +119,7 @@ class WindowContainer extends Component {
               tab={tab}
               windowId={windowId}
               allTabsNumber={allTabsNumber}
+              searchWords={searchWords}
               handleRemoveTab={handleRemoveTab}
               key={tab.id}
             />
@@ -126,7 +131,7 @@ class WindowContainer extends Component {
 }
 
 export default props => {
-  const { session, removeWindow, removeTab } = props;
+  const { session, searchWords, removeWindow, removeTab } = props;
 
   if (!session.windows) return null;
 
@@ -149,6 +154,7 @@ export default props => {
           sessionId={session.id}
           windowsNumber={session.windowsNumber}
           allTabsNumber={session.tabsNumber}
+          searchWords={searchWords}
           handleRemoveWindow={handleRemoveWindow}
           handleRemoveTab={handleRemoveTab}
           key={`${session.id}${windowId}`}

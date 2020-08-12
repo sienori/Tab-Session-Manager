@@ -22,11 +22,9 @@ const matchesFilter = (tags, filterValue) => {
   }
 };
 
-const matchesSearch = (sessionName, searchWord) => {
-  if (searchWord === "") return true;
-  sessionName = sessionName.toLowerCase();
-  searchWord = searchWord.toLowerCase();
-  return sessionName.includes(searchWord);
+const matchesSearch = (searchWords, sessionId, searchedSessionIds) => {
+  if (searchWords.length === 0) return true;
+  return searchedSessionIds.includes(sessionId);
 };
 
 const newestSort = (a, b) => b.date - a.date;
@@ -41,16 +39,16 @@ const namelessSort = (a, b) => {
   else if (a.name == b.name) return newestSort(a, b);
 };
 
-const getSortedSessions = (sessions, sortValue, filterValue, searchWord) => {
+const getSortedSessions = (sessions, sortValue, filterValue, searchWords, searchedSessionIds) => {
   let sortedSessions = sessions.map(session => ({
     id: session.id,
     date: session.date,
     name: session.name,
     tag: session.tag
   }));
-  sortedSessions = sortedSessions.filter(
-    session => matchesFilter(session.tag, filterValue) && matchesSearch(session.name, searchWord)
-  );
+  sortedSessions = sortedSessions.filter(session =>
+    matchesFilter(session.tag, filterValue) &&
+    matchesSearch(searchWords, session.id, searchedSessionIds));
 
   switch (sortValue) {
     case "newest":
@@ -127,14 +125,15 @@ export default class SessionsArea extends Component {
       selectedSessionId,
       filterValue,
       sortValue,
-      searchWord,
+      searchWords,
+      searchedSessionIds,
       isInitSessions,
       removeSession,
       error,
       sessionsAreaRef
     } = this.props;
-
-    const sortedSessions = getSortedSessions(sessions, sortValue, filterValue, searchWord);
+    const sortedSessions =
+      getSortedSessions(sessions, sortValue, filterValue, searchWords, searchedSessionIds);
 
     const order = sortedSessions.findIndex(sortedSession => sortedSession.id === selectedSessionId);
     const maxOrder = sortedSessions.length - 1;
@@ -145,10 +144,10 @@ export default class SessionsArea extends Component {
       isInitSessions &&
       sortedSessions.length === 0 &&
       filterValue == "_displayAll" &&
-      searchWord === "" &&
+      searchWords.length === 0 &&
       !error.isError;
     const shouldShowNoResultMessage =
-      isInitSessions && sortedSessions.length === 0 && searchWord !== "" && !error.isError;
+      isInitSessions && sortedSessions.length === 0 && searchWords.length !== 0 && !error.isError;
 
     return (
       <div
@@ -161,13 +160,13 @@ export default class SessionsArea extends Component {
         {sessions.map(
           session =>
             matchesFilter(session.tag, filterValue) &&
-            matchesSearch(session.name, searchWord) && (
+            matchesSearch(searchWords, session.id, searchedSessionIds) && (
               <SessionItem
                 session={session}
                 isSelected={selectedSessionId === session.id}
                 ref={selectedSessionId === session.id ? this.selectedItemRef : null}
                 order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
-                searchWord={searchWord}
+                searchWords={searchWords}
                 removeSession={removeSession}
                 handleSessionSelect={this.handleSessionSelect}
                 key={session.id}

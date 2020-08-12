@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
-import Highlight from "react-highlighter";
+import Highlighter from "react-highlight-words";
 import { getSettings } from "src/settings/settings";
 import { sendOpenMessage } from "../actions/controlSessions";
 import generateTagLabel from "../actions/generateTagLabel";
@@ -34,7 +34,7 @@ export default class Session extends Component {
   }
 
   render() {
-    const { session, isSelected, order, searchWord, handleSessionSelect } = this.props;
+    const { session, isSelected, order, searchWords, handleSessionSelect } = this.props;
 
     return (
       <div className={`sessionItem ${isSelected ? "isSelected" : ""}`} style={{ order: order }}>
@@ -44,9 +44,11 @@ export default class Session extends Component {
           ref={this.sessionItemElement}
         >
           <span className={`name ${getSettings("truncateTitle") ? "isTruncate" : ""}`}>
-            <Highlight search={searchWord}>
-              {session.name.trim() === "" ? "_" : session.name}
-            </Highlight>
+            <Highlighter
+              searchWords={searchWords}
+              textToHighlight={session.name.trim() === "" ? "_" : session.name}
+              autoEscape={true}
+            />
           </span>
           <ul className="tagsContainer">
             {session.tag.map((tag, index) => (
