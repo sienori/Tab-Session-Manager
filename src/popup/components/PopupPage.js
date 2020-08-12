@@ -111,19 +111,18 @@ export default class PopupPage extends Component {
     if (!isInit) this.setState({ error: { isError: true, type: "indexedDB" } });
 
     const keys = ["id", "name", "date", "tag", "tabsNumber", "windowsNumber", "lastEditedTime"];
-    const sessions = await getSessions(null, keys);
-    const needsSync = this.calcNeedsSync(sessions);
-    this.setState({
-      sessions: sessions,
-      isInitSessions: true,
-      filterValue: getSettings("filterValue") || "_displayAll",
-      needsSync: needsSync
-    });
-
     const selectedSessionId = getSettings("selectedSessionId");
-    if (selectedSessionId) this.selectSession(selectedSessionId);
+    if (selectedSessionId) {
+      const selectedSession = await getSessions(selectedSessionId, keys);
+      if (selectedSession) {
+        this.setState({ sessions: [selectedSession] });
+        this.selectSession(selectedSessionId);
+      }
+    }
 
     browser.runtime.onMessage.addListener(this.handleMessage);
+    browser.runtime.sendMessage({ message: "requestAllSessions", needKeys: keys, count: 30 });
+
     browser.storage.onChanged.addListener(handleSettingsChange);
 
     if (getSettings("isShowUpdated")) {
@@ -172,6 +171,25 @@ export default class PopupPage extends Component {
         return this.changeSessions(request);
       case "updateSyncStatus":
         return this.handleUpdateSyncStatus(request);
+      case "responseAllSessions":
+        return this.handleResponseAllSessions(request);
+    }
+  };
+
+  handleResponseAllSessions = async request => {
+    const selectedSessionId = getSettings("selectedSessionId");
+    const sessions = request.sessions.filter(session => session.id !== selectedSessionId);
+    this.setState({
+      sessions: this.state.sessions.concat(sessions),
+      filterValue: getSettings("filterValue") || "_displayAll"
+    });
+
+    if (request.isEnd) {
+      const needsSync = this.calcNeedsSync(this.state.sessions);
+      this.setState({
+        isInitSessions: true,
+        needsSync: needsSync
+      });
     }
   };
 

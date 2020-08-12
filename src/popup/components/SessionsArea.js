@@ -75,9 +75,11 @@ const getSortedSessions = (sessions, sortValue, filterValue, searchWord) => {
 };
 
 export default class SessionsArea extends Component {
-  scrollToTop = () => {
+  selectedItemRef = React.createRef();
+
+  scrollTo = (top) => {
     const sessionsArea = this.props.sessionsAreaRef.current;
-    sessionsArea.scrollTo(0, 0);
+    sessionsArea.scrollTo(0, top);
   };
 
   handleSessionSelect = id => {
@@ -106,12 +108,17 @@ export default class SessionsArea extends Component {
   };
 
   componentDidUpdate() {
-    const { filterValue, sortValue } = this.props;
+    const { filterValue, sortValue, isInitSessions } = this.props;
     const { prevFilterValue, prevSortValue } = this;
 
-    if (filterValue !== prevFilterValue || sortValue !== prevSortValue) this.scrollToTop();
+    if (filterValue !== prevFilterValue || sortValue !== prevSortValue) this.scrollTo(0);
     this.prevFilterValue = filterValue;
     this.prevSortValue = sortValue;
+
+    if (!isInitSessions) {
+      const selectedItemTop = ReactDOM.findDOMNode(this.selectedItemRef?.current)?.offsetTop;
+      this.scrollTo(selectedItemTop);
+    }
   }
 
   render() {
@@ -158,6 +165,7 @@ export default class SessionsArea extends Component {
               <SessionItem
                 session={session}
                 isSelected={selectedSessionId === session.id}
+                ref={selectedSessionId === session.id ? this.selectedItemRef : null}
                 order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
                 searchWord={searchWord}
                 removeSession={removeSession}

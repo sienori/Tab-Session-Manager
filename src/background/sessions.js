@@ -165,6 +165,44 @@ export default {
     });
   },
 
+  getAllWithStream: (sendResponse, needKeys, count) => {
+    log.log(logDir, "getAllWithStream()", needKeys, count);
+    const db = DB;
+    const transaction = db.transaction("sessions", "readonly");
+    const store = transaction.objectStore("sessions");
+    const request = store.openCursor();
+
+    let sessions = [];
+
+    request.onsuccess = e => {
+      const cursor = request.result;
+      if (cursor) {
+        let session = {};
+        if (needKeys == null) {
+          session = cursor.value;
+        } else {
+          for (let i of needKeys) {
+            session[i] = cursor.value[i];
+          }
+        }
+
+        sessions.push(session);
+        if (sessions.length === count) {
+          sendResponse(sessions, false);
+          sessions = [];
+        }
+        cursor.continue();
+      } else {
+        log.log(logDir, "=>getAllWithStream()");
+        sendResponse(sessions, true);
+      }
+    };
+    request.onerror = e => {
+      log.error(logDir, "getAllWithStream()", e);
+      reject(request);
+    };
+  },
+
   search: (index, key) => {
     log.log(logDir, "search()", index, key);
     const db = DB;
