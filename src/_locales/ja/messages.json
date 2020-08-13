@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "お使いのブラウザではIndexedDBが利用できません。"
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "この問題を解決するには"
-  },
-  "noConnectionErrorLabel": {
-    "message": "複数のポップアップを同時に開くことはできません。"
   },
   "winCloseSessionName": {
     "message": "自動保存 - ウィンドウ終了"
