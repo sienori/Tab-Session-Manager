@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "搜尋瀏覽階段名稱"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "搜尋"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "選擇「儲存」按鈕的預設動作。"
-  },
-  "isShowSearchBarLabel": {
-    "message": "顯示搜尋列"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "新增搜尋瀏覽階段功能。"
   },
   "isShowOpenButtonsLabel": {
     "message": "在瀏覽階段清單上時顯示開啟/刪除按鈕"
