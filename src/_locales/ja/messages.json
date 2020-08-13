@@ -655,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "このページはTab Session Managerでは開けません。"
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
