@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB nie jest dostępne w twojej przeglądarce."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Jak rozwiązać ten problem"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Nie można otworzyć wielu wyskakujących okienek w tym samym czasie."
   },
   "winCloseSessionName": {
     "message": "Automatyczny zapis - okno zamknięte"
