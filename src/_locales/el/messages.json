@@ -60,7 +60,7 @@
     "message": "Ω-Α"
   },
   "searchBarPlaceholder": {
-    "message": "Αναζήτηση με βάση το όνομα της συνεδρίας"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Αναζήτηση"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Επιλέξτε την προεπιλεγμένη ενέργεια του πλήκτρου αποθήκευσης."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Εμφάνιση της μπάρας αναζήτησης"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Δυνατότητα αναζήτησης με βάση το όνομα της συνεδρίας."
   },
   "isShowOpenButtonsLabel": {
     "message": "Προβολή των κουμπιών άνοιγμα/διαγραφή στη λίστα"
