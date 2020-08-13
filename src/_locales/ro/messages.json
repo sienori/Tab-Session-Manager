@@ -655,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Această pagină nu poate fi deschisă de Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
