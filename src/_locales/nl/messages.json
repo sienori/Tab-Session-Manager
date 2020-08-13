@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB is niet beschikbaar in uw browser."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Hoe lost u dit probleem op"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Meerdere pop-ups kunnen niet tegelijkertijd worden geopend."
   },
   "winCloseSessionName": {
     "message": "Automatisch opslaan - venster gesloten"
