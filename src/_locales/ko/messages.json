@@ -655,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "이 페이지는 Tab Session Manager로 열릴 수 없습니다."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
