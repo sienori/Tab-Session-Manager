@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Търсене по име на сесия"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Търсене"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Избор на поведение по подразбиране за бутона за запазване."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Показване на лента за търсене"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Добавяне на функция за търсене по име на сесия."
   },
   "isShowOpenButtonsLabel": {
     "message": "Показване на бутони за отваряне / изтриване в списък със сесия"
