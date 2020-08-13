@@ -283,7 +283,10 @@ export default class PopupPage extends Component {
   toggleSearchBar = (isShow = !this.state.isShowSearchBar) => {
     this.setState({ isShowSearchBar: isShow });
     if (isShow) this.searchBarElement.current?.focus();
-    else this.sessionsAreaElement.current?.focus();
+    else {
+      this.changeSearchWord("");
+      this.sessionsAreaElement.current?.focus();
+    }
   };
 
   changeSearchWord = (searchWord, isEnter = false) => {

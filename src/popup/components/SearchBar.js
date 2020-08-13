@@ -24,7 +24,6 @@ export default class SearchBar extends Component {
 
   handleCrearButtonClick = () => {
     this.setState({ searchWord: "" });
-    this.props.changeSearchWord("");
     this.props.toggleSearchBar(false);
   };
 
