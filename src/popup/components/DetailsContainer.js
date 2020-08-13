@@ -43,7 +43,7 @@ const TabContainer = props => {
       <button className="tabButton" onClick={handleOpenClick} title={`${tab.title}\n${tab.url}`}>
         <FavIcon favIconUrl={tab.favIconUrl} />
         <span className="tabTitle">
-          <Highlighter searchWords={searchWords} textToHighlight={tab.title} autoEscape={true} />
+          <Highlighter searchWords={searchWords} textToHighlight={tab.title || ""} autoEscape={true} />
         </span>
       </button>
       {allTabsNumber > 1 && <RemoveButton handleClick={handleRemoveClick} />}

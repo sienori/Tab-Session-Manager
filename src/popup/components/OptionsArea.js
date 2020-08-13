@@ -3,6 +3,7 @@ import browser from "webextension-polyfill";
 import "../styles/OptionsArea.scss";
 import SearchBar from "./SearchBar";
 import generateTagLabel from "../actions/generateTagLabel";
+import SearchIcon from "../icons/search.svg";
 
 const alphabeticallySort = (a, b) => {
   if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
@@ -103,7 +104,6 @@ export default class OptionsArea extends Component {
     const tagsCount = countAllTags(this.props.sessions);
     return (
       <div id="optionsArea">
-        {this.props.isShowSearchBar && <SearchBar changeSearchWord={this.props.changeSearchWord} />}
         <div className="line">
           <div className="selectWrap filter">
             <select
@@ -159,7 +159,21 @@ export default class OptionsArea extends Component {
               <option value="zToA">{browser.i18n.getMessage("zToALabel")}</option>
             </select>
           </div>
+          <button
+            className="searchButton"
+            onClick={() => this.props.toggleSearchBar()}
+            title={browser.i18n.getMessage("search")}
+          >
+            <SearchIcon />
+          </button>
         </div>
+        {this.props.isShowSearchBar &&
+          <SearchBar
+            toggleSearchBar={this.props.toggleSearchBar}
+            changeSearchWord={this.props.changeSearchWord}
+            searchBarRef={this.props.searchBarRef}
+            sessionsAreaRef={this.props.sessionsAreaRef}
+          />}
       </div>
     );
   }

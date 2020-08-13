@@ -23,7 +23,7 @@ const matchesFilter = (tags, filterValue) => {
 };
 
 const matchesSearch = (searchWords, sessionId, searchedSessionIds) => {
-  if (searchWords.length === 0) return true;
+  if (searchWords.join() === "") return true;
   return searchedSessionIds.includes(sessionId);
 };
 
@@ -39,7 +39,7 @@ const namelessSort = (a, b) => {
   else if (a.name == b.name) return newestSort(a, b);
 };
 
-const getSortedSessions = (sessions, sortValue, filterValue, searchWords, searchedSessionIds) => {
+export const getSortedSessions = (sessions, sortValue, filterValue, searchWords, searchedSessionIds) => {
   let sortedSessions = sessions.map(session => ({
     id: session.id,
     date: session.date,
@@ -102,16 +102,21 @@ export default class SessionsArea extends Component {
     } else if (e.key === "Enter" && e.shiftKey) {
       const openBehavior = getSettings("openButtonBehavior");
       sendOpenMessage(selectedSessionId, openBehavior);
+    } else if (e.key !== "Enter" && !e.shiftKey) {
+      this.props.toggleSearchBar(true);
     }
   };
 
   componentDidUpdate() {
-    const { filterValue, sortValue, isInitSessions } = this.props;
-    const { prevFilterValue, prevSortValue } = this;
+    const { filterValue, sortValue, searchWords, isInitSessions } = this.props;
+    const { prevFilterValue, prevSortValue, prevSearchWords } = this;
 
-    if (filterValue !== prevFilterValue || sortValue !== prevSortValue) this.scrollTo(0);
+    if (filterValue !== prevFilterValue
+      || sortValue !== prevSortValue
+      || searchWords.join() !== prevSearchWords.join()) this.scrollTo(0);
     this.prevFilterValue = filterValue;
     this.prevSortValue = sortValue;
+    this.prevSearchWords = searchWords;
 
     if (!isInitSessions) {
       const selectedItemTop = ReactDOM.findDOMNode(this.selectedItemRef?.current)?.offsetTop;
@@ -144,10 +149,10 @@ export default class SessionsArea extends Component {
       isInitSessions &&
       sortedSessions.length === 0 &&
       filterValue == "_displayAll" &&
-      searchWords.length === 0 &&
+      searchWords.join() === "" &&
       !error.isError;
     const shouldShowNoResultMessage =
-      isInitSessions && sortedSessions.length === 0 && searchWords.length !== 0 && !error.isError;
+      isInitSessions && sortedSessions.length === 0 && searchWords.join() !== "" && !error.isError;
 
     return (
       <div

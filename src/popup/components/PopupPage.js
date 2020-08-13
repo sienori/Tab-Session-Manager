@@ -19,7 +19,7 @@ import { deleteWindow, deleteTab } from "../../common/editSessions.js";
 import openUrl from "../actions/openUrl";
 import Header from "./Header";
 import OptionsArea from "./OptionsArea";
-import SessionsArea from "./SessionsArea";
+import SessionsArea, { getSortedSessions } from "./SessionsArea";
 import SessionDetailsArea from "./SessionDetailsArea";
 import Notification from "./Notification";
 import SaveArea from "./SaveArea";
@@ -78,6 +78,7 @@ export default class PopupPage extends Component {
     };
 
     this.optionsAreaElement = React.createRef();
+    this.searchBarElement = React.createRef();
     this.sessionsAreaElement = React.createRef();
     this.saveAreaElement = React.createRef();
 
@@ -105,7 +106,6 @@ export default class PopupPage extends Component {
     }
     this.setState({
       sortValue: getSettings("sortValue") || "newest",
-      isShowSearchBar: getSettings("isShowSearchBar"),
       isInTab: isInTab,
       sidebarWidth: getSettings("sidebarWidth")
     });
@@ -280,9 +280,23 @@ export default class PopupPage extends Component {
     setSettings("sortValue", value);
   };
 
-  changeSearchWord = searchWord => {
+  toggleSearchBar = (isShow = !this.state.isShowSearchBar) => {
+    this.setState({ isShowSearchBar: isShow });
+    if (isShow) this.searchBarElement.current?.focus();
+    else this.sessionsAreaElement.current?.focus();
+  };
+
+  changeSearchWord = (searchWord, isEnter = false) => {
     log.info(logDir, "changeSearchValue()", searchWord);
     this.searchSessions(searchWord);
+    if (isEnter) {
+      const { sessions, sortValue, filterValue, searchWords, searchedSessionIds } = this.state;
+      const sortedSessions = getSortedSessions(sessions, sortValue, filterValue, searchWords, searchedSessionIds);
+      if (sortedSessions.length === 0) return;
+      this.selectSession(sortedSessions[0].id);
+      this.sessionsAreaElement.current.focus();
+      if (searchWord === "") this.toggleSearchBar(false);
+    }
   };
 
   searchSessions = searchWord => {
@@ -499,11 +513,14 @@ export default class PopupPage extends Component {
               sessions={this.state.sessions || []}
               filterValue={this.state.filterValue}
               sortValue={this.state.sortValue}
+              toggleSearchBar={this.toggleSearchBar}
               isShowSearchBar={this.state.isShowSearchBar}
               changeSearchWord={this.changeSearchWord}
               changeFilter={this.changeFilterValue}
               changeSort={this.changeSortValue}
               optionsAreaRef={this.optionsAreaElement}
+              searchBarRef={this.searchBarElement}
+              sessionsAreaRef={this.sessionsAreaElement}
             />
             <Error error={this.state.error} />
             <SessionsArea
@@ -516,6 +533,7 @@ export default class PopupPage extends Component {
               removeSession={this.removeSession}
               selectSession={this.selectSession}
               openMenu={this.openMenu}
+              toggleSearchBar={this.toggleSearchBar}
               isInitSessions={this.state.isInitSessions}
               error={this.state.error}
               sessionsAreaRef={this.sessionsAreaElement}

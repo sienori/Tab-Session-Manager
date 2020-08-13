@@ -54,5 +54,28 @@
         border-right: 2px solid var(--highlight);
       }
     }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+    }
+    .searchButton {
+      width: 25px;
+      margin-left: 3px;
+      z-index: 1;
+      svg {
+        height: 14px;
+        fill: var(--sub-text);
+      }
+      &:hover svg {
+        fill: var(--highlight);
+      }
+    }
   }
 }

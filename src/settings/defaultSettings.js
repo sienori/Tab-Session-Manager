@@ -314,13 +314,6 @@ export default [
         ]
       },
       {
-        id: "isShowSearchBar",
-        title: "isShowSearchBarLabel",
-        captions: ["isShowSearchBarCaptionLabel"],
-        type: "checkbox",
-        default: true
-      },
-      {
         id: "truncateTitle",
         title: "truncateTitleLabel",
         captions: ["truncateTitleCaptionLabel"],

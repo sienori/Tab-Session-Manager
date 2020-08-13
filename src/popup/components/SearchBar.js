@@ -16,25 +16,28 @@ export default class SearchBar extends Component {
     this.props.changeSearchWord(e.target.value);
   };
 
+  handleKeyDown = e => {
+    if (e.key === "Enter") {
+      this.props.changeSearchWord(e.target.value, true);
+    }
+  };
+
   handleCrearButtonClick = () => {
     this.setState({ searchWord: "" });
     this.props.changeSearchWord("");
+    this.props.toggleSearchBar(false);
   };
 
-  handleSearchButtonClick = () => {
-    this.props.changeSearchWord(this.state.searchWord);
+  componentDidMount = () => {
+    this.props.searchBarRef.current.focus();
   };
 
   render() {
     return (
       <div id="searchBar">
-        <button
-          className="searchButton"
-          onClick={this.handleSearchButtonClick}
-          title={browser.i18n.getMessage("search")}
-        >
+        <div className="searchIcon" >
           <SearchIcon />
-        </button>
+        </div>
         <div className="inputForm">
           <input
             type="text"
@@ -42,18 +45,19 @@ export default class SearchBar extends Component {
             spellCheck={false}
             placeholder={browser.i18n.getMessage("searchBarPlaceholder")}
             onChange={this.handleChange}
+            onKeyDown={this.handleKeyDown}
+            ref={this.props.searchBarRef}
           />
         </div>
-        {this.state.searchWord !== "" && (
-          <button
-            className="clearButton"
-            onClick={this.handleCrearButtonClick}
-            title={browser.i18n.getMessage("clearSearch")}
-          >
-            <PlusIcon />
-          </button>
-        )}
+
+        <button
+          className="clearButton"
+          onClick={this.handleCrearButtonClick}
+          title={browser.i18n.getMessage("clearSearch")}
+        >
+          <PlusIcon />
+        </button>
       </div>
     );
   }
-}
+};
