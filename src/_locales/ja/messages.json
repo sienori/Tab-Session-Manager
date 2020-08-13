@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "セッション名・タブ名で検索"
   },
   "search": {
     "message": "検索"
@@ -204,7 +204,7 @@
     "message": "お使いのブラウザではIndexedDBが利用できません。"
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "拡張機能を再読み込み"
   },
   "howToSolveLabel": {
     "message": "この問題を解決するには"
