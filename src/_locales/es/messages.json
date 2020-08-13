@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Búsqueda por nombre de la sesión"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Buscar"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB no está disponible en su navegador."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Cómo resolver este problema"
-  },
-  "noConnectionErrorLabel": {
-    "message": "No se pueden abrir múltiples ventanas emergentes al mismo tiempo."
   },
   "winCloseSessionName": {
     "message": "Auto guardado - Ventana Cerrada"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "Seleccione el comportamiento predeterminado del botón Guardar."
   },
-  "isShowSearchBarLabel": {
-    "message": "Mostrar la barra de búsqueda"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Agregar una función para buscar por nombre de la sesión."
-  },
   "isShowOpenButtonsLabel": {
     "message": "Mostrar botones de abrir/cerrar en la lista de sesiones"
   },
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Esta página no puede ser abierta por Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
