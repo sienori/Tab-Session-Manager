@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "在您的瀏覽器中 IndexedDB 無法使用。"
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "如何解決這個問題"
-  },
-  "noConnectionErrorLabel": {
-    "message": "無法同時開啟多個彈出式視窗。"
   },
   "winCloseSessionName": {
     "message": "自動儲存 - 視窗關閉時"
