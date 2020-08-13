@@ -138,7 +138,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
       return await getsearchInfo();
     case "requestAllSessions":
       const sendResponse = (sessions, isEnd) => browser.runtime.sendMessage({
-        message: "responseAllSessions", sessions: sessions, isEnd: isEnd
+        message: "responseAllSessions", sessions: sessions, isEnd: isEnd, port: request.port
       }).catch(() => { });
       return Sessions.getAllWithStream(sendResponse, request.needKeys, request.count);
   }

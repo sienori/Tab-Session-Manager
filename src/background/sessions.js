@@ -199,7 +199,6 @@ export default {
     };
     request.onerror = e => {
       log.error(logDir, "getAllWithStream()", e);
-      reject(request);
     };
   },
 

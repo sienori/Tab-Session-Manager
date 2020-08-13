@@ -114,6 +114,10 @@ export default class PopupPage extends Component {
     if (!isInit) this.setState({ error: { isError: true, type: "indexedDB" } });
 
     const keys = ["id", "name", "date", "tag", "tabsNumber", "windowsNumber", "lastEditedTime"];
+    this.port = Math.random();
+    browser.runtime.onMessage.addListener(this.handleMessage);
+    browser.runtime.sendMessage({ message: "requestAllSessions", needKeys: keys, count: 30, port: this.port });
+
     const selectedSessionId = getSettings("selectedSessionId");
     if (selectedSessionId) {
       const selectedSession = await getSessions(selectedSessionId, keys);
@@ -122,9 +126,6 @@ export default class PopupPage extends Component {
         this.selectSession(selectedSessionId);
       }
     }
-
-    browser.runtime.onMessage.addListener(this.handleMessage);
-    browser.runtime.sendMessage({ message: "requestAllSessions", needKeys: keys, count: 30 });
 
     browser.storage.onChanged.addListener(handleSettingsChange);
 
@@ -180,6 +181,7 @@ export default class PopupPage extends Component {
   };
 
   handleResponseAllSessions = async request => {
+    if (request.port != this.port) return;
     const selectedSessionId = getSettings("selectedSessionId");
     const sessions = request.sessions.filter(session => session.id !== selectedSessionId);
     this.setState({
@@ -486,15 +488,6 @@ export default class PopupPage extends Component {
     });
     this.lastFocusedElement.focus();
   };
-
-  componentDidUpdate() {
-    if (this.state.error.isError) return;
-    if (this.state.sessions === undefined || this.state.sessions === null) {
-      browser.runtime.onMessage.removeListener(this.changeSessions);
-      window.close();
-      this.setState({ error: { isError: true, type: "noConnection" } });
-    }
-  }
 
   render() {
     return (

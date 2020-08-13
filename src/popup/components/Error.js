@@ -16,13 +16,6 @@ const openIndexedDBWiki = () => {
 };
 
 const errorContent = {
-  noConnection: (
-    <div>
-      <b>{browser.i18n.getMessage("errorLabel")}</b>
-      <br />
-      {browser.i18n.getMessage("noConnectionErrorLabel")}
-    </div>
-  ),
   indexedDB: (
     <div>
       <b>{browser.i18n.getMessage("errorLabel")}</b>
