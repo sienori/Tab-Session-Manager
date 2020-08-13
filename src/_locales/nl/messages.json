@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Zoeken op sessie- of tabnaam"
   },
   "search": {
     "message": "Zoeken"
@@ -78,22 +78,22 @@
     "message": "Deze sessie verwijderen?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessie verwijderd."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Sessie venster verwijderd."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Sessie tabblad verwijderd."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Herstellen"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Verwijderen van de sessie is mislukt."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Verwijderen van sessie-venster mislukt."
   },
   "failedDeleteSessionTabLabel": {
     "message": "Failed to delete session tab."
@@ -369,7 +369,7 @@
     "message": "Privé venster opslaan"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Lijst te negeren URL's bij opslaan van sessie"
   },
   "ignoreUrlListCaptionLabel": {
     "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
@@ -390,7 +390,7 @@
     "message": "Apply device name to existing sessions"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Apparaatnaam toevoegen aan alle opgeslagen sessies."
   },
   "applyDeviceNameButtonLabel": {
     "message": "Apply device name"
@@ -591,19 +591,19 @@
     "message": "The letter can not be used"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "De snelkoppeling kan niet worden gebruikt"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Open werkbalk pop-up"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Sessie opslaan (alleen huidig venster)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Sessie opslaan (alle vensters)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Alle sessies exporteren"
   },
   "clear": {
     "message": "Clear"
