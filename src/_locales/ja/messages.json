@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "セッション名で検索"
+    "message": "セッション名・タブ名で検索"
   },
   "search": {
     "message": "検索"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "お使いのブラウザではIndexedDBが利用できません。"
   },
+  "reloadExtensionLabel": {
+    "message": "拡張機能を再読み込み"
+  },
   "howToSolveLabel": {
     "message": "この問題を解決するには"
-  },
-  "noConnectionErrorLabel": {
-    "message": "複数のポップアップを同時に開くことはできません。"
   },
   "winCloseSessionName": {
     "message": "自動保存 - ウィンドウ終了"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "保存ボタンの既定の動作を選択します。"
   },
-  "isShowSearchBarLabel": {
-    "message": "検索バーを表示する"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "セッション名で検索する機能を追加します。"
-  },
   "isShowOpenButtonsLabel": {
     "message": "セッションリストに開く/削除ボタンを表示する"
   },
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "このページはTab Session Managerでは開けません。"
+  },
+  "copyUrlLabel": {
+    "message": "URLをコピー"
+  },
+  "copiedLabel": {
+    "message": "コピーしました。"
   }
 }

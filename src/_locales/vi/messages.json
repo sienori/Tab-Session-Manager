@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Tìm theo tên phiên làm việc"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Tìm kiếm"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB không có sẵn trong trình duyệt của bạn."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Cách để giải quyết vấn đề này"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Nhiều popup không thể được mở cùng một lúc."
   },
   "winCloseSessionName": {
     "message": "Lưu tự động - Cửa sổ đóng"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "Chọn chế độ mặc định của nút lưu."
   },
-  "isShowSearchBarLabel": {
-    "message": "Hiển thị thanh tìm kiếm"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Thêm chức năng tìm kiếm bằng tên phiên."
-  },
   "isShowOpenButtonsLabel": {
     "message": "Display open / delete buttons in session list"
   },
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Trang này không thể mở được bởi Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }

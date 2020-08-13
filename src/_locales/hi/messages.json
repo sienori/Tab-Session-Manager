@@ -15,7 +15,7 @@
     "message": "Open session list in tab"
   },
   "saveLabel": {
-    "message": "सहेजें"
+    "message": "सेव करें"
   },
   "initialNameValue": {
     "message": "मौजूदा सत्र को बचाएं"
@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Search"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "How to solve this problem"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Auto Save - Window closed"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the save button."
   },
-  "isShowSearchBarLabel": {
-    "message": "Display the search bar"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
-  },
   "isShowOpenButtonsLabel": {
     "message": "Display open / delete buttons in session list"
   },
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "यह पृष्ठ टैब सत्र प्रबंधक द्वारा खोला नहीं जा सकता।"
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }

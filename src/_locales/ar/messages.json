@@ -6,13 +6,13 @@
     "message": "احفظ و استعد حالة النوافذ و التبويبات. كما أنها تدعم الحفظ التلقائي."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "تبرع بواسطة PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "تبرع"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "فتح قائمة الجلسة في تبويب"
   },
   "saveLabel": {
     "message": "احفظ"
@@ -24,19 +24,19 @@
     "message": "Input session name"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "حفظ جلسة"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "حفظ جميع النوافذ"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "حفظ فقط النافذة الحالية"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "مرشح الفئات"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "فرز"
   },
   "displayAllLabel": {
     "message": "الكل"
@@ -45,7 +45,7 @@
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "حفظ تلقائي"
   },
   "newestLabel": {
     "message": "الأحدث"
@@ -60,13 +60,13 @@
     "message": "ي-أ"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session name"
+    "message": "Search by session or tab name"
   },
   "search": {
-    "message": "Search"
+    "message": "بحث"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "محو البحث"
   },
   "open": {
     "message": "افتح"
@@ -78,31 +78,31 @@
     "message": "هل تريد حذف هذا الجلسة؟"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "تم حذف الجلسة."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "تم حذف نافذة الجلسة."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "تم حذف تبويب الجلسة."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "استرجاع"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "فشل في حذف الجلسة."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "فشل في حذف نافذة الجلسة."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "فشل في حذف تبويب الجلسة."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "تم حفظ الجلسة."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "فشل في حفظ الجلسة."
   },
   "cancelLabel": {
     "message": "إلغاء"
@@ -114,7 +114,7 @@
     "message": "حذف كلمة مفتاحية"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "تفاصيل"
   },
   "windowLabel": {
     "message": "النافذة"
@@ -129,7 +129,7 @@
     "message": "التبويبات"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "لا توجد أي جلسة."
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
@@ -138,25 +138,25 @@
     "message": "No matching results."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "لم يتم تحديد أي جلسة."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "قائمة"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "أغلق القائمة"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "أغلق"
   },
   "renameLabel": {
     "message": "أعد التسمية"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "إعادة تسمية الجلسة"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "فتح جلسة"
   },
   "openInNewWindowLabel": {
     "message": "افتح في نافذة جديدة"
@@ -177,7 +177,7 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "تعديل الجلسة"
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -186,7 +186,7 @@
     "message": "Replace with current window"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "إضافة النافذة الحالية"
   },
   "makeCopySessionLabel": {
     "message": "Make a copy of the session"
@@ -198,25 +198,25 @@
     "message": "Remove from startup"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "خطأ"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "How to solve this problem"
   },
-  "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
-  },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "حفظ تلقائي - إغلاق النافذة"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "حفظ تلقائي - إغلاق المتصفح"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "حفظ تلقائي - بانتظام"
   },
   "settingsLabel": {
     "message": "الإعدادات"
@@ -225,7 +225,7 @@
     "message": "الجلسات"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "اختصارات"
   },
   "informationLabel": {
     "message": "معلومة"
@@ -267,10 +267,10 @@
     "message": "Restore windows position and size when opening session."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "البدء"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "السلوك عند بدء المتصفح"
   },
   "openPreviousSessionLabel": {
     "message": "Open previous session"
@@ -285,7 +285,7 @@
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "لا تفعل شئ"
   },
   "ifAutoSaveLabel": {
     "message": "احفظ الجلسة بإنتظام"
@@ -324,10 +324,10 @@
     "message": "Save the session that includes multiple windows that was closed in a row."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "تم حفظ العدد الأقصي"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "الحد الأقصي للجلسات المحفوظة (بهذا الأسلوب)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "استخدم عنوان الصفحة للحفظ التلقائي لإسم الجلسة"
@@ -336,7 +336,7 @@
     "message": "عند حفظ الجلسة تلقائياً، استخدم عنوان الصفحة المفتوحة كـ إسم للجلسة."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "نسخ احتياطي"
   },
   "ifBackupLabel": {
     "message": "حفظ نسخة احتياطية"
@@ -345,13 +345,13 @@
     "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "حفظ الموقع"
   },
   "backupFolderCaptionLabel": {
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "مجلد التنزيلات"
   },
   "backupFilesLimitLabel": {
     "message": "الحد الأقصى لعدد النسخ الاحتياطية المحفوظة"
@@ -381,7 +381,7 @@
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "اسم الجهاز"
   },
   "deviceNameCaptionLabel": {
     "message": "Specify the name of this device."
@@ -393,7 +393,7 @@
     "message": "Add the device name to all saved sessions."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "تطبيق اسم الجهاز"
   },
   "applyDeviceNameConfirmLabel": {
     "message": "Apply device name to all sessions?"
@@ -429,22 +429,22 @@
     "message": "Save sessions to Google Drive™ and sync with other computers."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "مزامنة"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "جاري التنزيل"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "جاري التحميل"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "يتم الحذف"
   },
   "syncCompletedLabel": {
     "message": "Sync completed."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "تسجيل الدخول"
   },
   "signOutLabel": {
     "message": "Sign out"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the save button."
   },
-  "isShowSearchBarLabel": {
-    "message": "Display the search bar"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
-  },
   "isShowOpenButtonsLabel": {
     "message": "Display open / delete buttons in session list"
   },
@@ -483,7 +477,7 @@
     "message": "Display open / delete buttons when the cursor is over the session list."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "حجم"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
@@ -504,7 +498,7 @@
     "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "غير ذلك"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
     "message": "Display option page when updating"
@@ -534,7 +528,7 @@
     "message": "Restore all settings to default."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "إعادة تعيين"
   },
   "importLabel": {
     "message": "استرد جلسات"
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "لا يمكن فتح هذه الصفحة بواسطة Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }

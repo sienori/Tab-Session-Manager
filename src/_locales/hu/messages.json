@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Munkamenet név alapján keresés"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Keresés"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB nem áll rendelkezésre a böngészőben."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Hogyan lehet megoldani ezt a problémát"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Egyszerre csak egy felugró ablak nyitható meg."
   },
   "winCloseSessionName": {
     "message": "Automatikus mentés - Ablak be lett zárva"
@@ -450,10 +450,10 @@
     "message": "Kijelentkezés"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Automatikusan mentett munkamenetek szinkronizálása"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "A felhővel való szinkronizálásnál az automatikusan mentett munkameneteket is töltsük fel/le."
   },
   "popupLabel": {
     "message": "Felugró ablak"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Válassza ki a Mentés gomb alapértelmezett viselkedését."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Keresősáv megjelenítése"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Munkamenet neve lapján való keresés funkció hozzáadása."
   },
   "isShowOpenButtonsLabel": {
     "message": "Megnyitás / Törlés gombok megjelenítése a munkamenet listában"
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Ez az oldal nem nyitható meg a Tab Session Manager által."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }

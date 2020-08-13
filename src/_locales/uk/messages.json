@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Пошук за назвою сесії"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Пошук"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB не доступна у вашому браузері."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Як вирішити цю проблему"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Одночасно не можуть бути відкриті кілька спливаючих вікон."
   },
   "winCloseSessionName": {
     "message": "Автозбереження - Закриття вікна"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "Обирається типова поведінка для кнопки \"Зберегти\"."
   },
-  "isShowSearchBarLabel": {
-    "message": "Відображати панель пошуку"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Додати функцію пошуку за назвою сесії."
-  },
   "isShowOpenButtonsLabel": {
     "message": "Відображення кнопок відкрити / видалити у списку сесії"
   },
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Цю сторінку не можна відкрити в Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }

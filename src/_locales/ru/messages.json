@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Поиск по названию сессии"
+    "message": "Поиск по названию сессии или вкладки"
   },
   "search": {
     "message": "Поиск"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB не доступен в вашем браузере."
   },
+  "reloadExtensionLabel": {
+    "message": "Перезагрузить расширение"
+  },
   "howToSolveLabel": {
     "message": "Как решить эту проблему"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Несколько всплывающих окон не могут быть открыты одновременно."
   },
   "winCloseSessionName": {
     "message": "Автосохранение при закрытии окна"
@@ -450,10 +450,10 @@
     "message": "Выйти"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Синхронизировать автоматически сохраняемые сессии"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Загружать и выгружать автоматически сохраняемые сессии при облачной синхронизации."
   },
   "popupLabel": {
     "message": "Всплывающее окно"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Выберите поведение кнопки \"Сохранить\" по умолчанию."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Показать панель поиска"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Добавить функцию для поиска по имени сессии."
   },
   "isShowOpenButtonsLabel": {
     "message": "Показать кнопки открыть/удалить в списке сессий"
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Эта страница не может быть открыта в Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }

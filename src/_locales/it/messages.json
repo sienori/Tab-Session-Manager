@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Cerca per nome della sessione"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Cerca"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB non è disponibile nel tuo browser."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Come risolvere questo problema"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Popup multipli non possono essere aperti contemporaneamente."
   },
   "winCloseSessionName": {
     "message": "Salvataggio automatico - Finestra chiusa"
@@ -450,10 +450,10 @@
     "message": "Disconnetti"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Sincronizza sessioni salvate automaticamente"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Carica e scarica sul cloud le sessioni salvate automaticamente."
   },
   "popupLabel": {
     "message": "Popup"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Definisci il comportamento predefinito del pulsante Salva."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Mostra barra di ricerca"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Aggiunge la funzione per cercare una sessione per nome."
   },
   "isShowOpenButtonsLabel": {
     "message": "Visualizza i pulsanti apri/elimina nell'elenco delle sessioni"
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Questa pagina non può essere aperta da Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }

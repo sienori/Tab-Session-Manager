@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Sök efter sessionsnamn"
+    "message": "Sök efter session eller fliknamn"
   },
   "search": {
     "message": "Sök"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB är inte tillgänglig i din webbläsare."
   },
+  "reloadExtensionLabel": {
+    "message": "Ladda om tillägg"
+  },
   "howToSolveLabel": {
     "message": "Så här löser du detta problem"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Flera popups kan inte öppnas samtidigt."
   },
   "winCloseSessionName": {
     "message": "Spara automatiskt - Fönstret stängs"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "Välj standardbeteendet på sparaknappen."
   },
-  "isShowSearchBarLabel": {
-    "message": "Visa sökfältet"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Lägga till en funktion för att söka efter sessionsnamn."
-  },
   "isShowOpenButtonsLabel": {
     "message": "Visa knapparna öppna / ta bort i sessionslisten"
   },
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Denna sidan kan inte öppnas av Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }

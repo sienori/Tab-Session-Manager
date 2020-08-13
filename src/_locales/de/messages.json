@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Suchen nach Sitzungsnamen"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Suchen"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB ist in deinem Browser nicht verfügbar."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Wie dieses Problem gelöst werden kann"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Es können nicht mehrere Pop-ups zur gleichen Zeit geöffnet werden."
   },
   "winCloseSessionName": {
     "message": "Sitzung speichern, falls Fenster geschlossen wird"
@@ -426,7 +426,7 @@
     "message": "Cloud-Sync aktivieren (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Sessions in Google DriveTM speichern und mit anderen Computern synchronisieren."
+    "message": "Sessions in Google Drive™ speichern und mit anderen Computern synchronisieren."
   },
   "syncingLabel": {
     "message": "Synchronisiere"
@@ -450,10 +450,10 @@
     "message": "Abmelden"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Automatisch gespeicherte Sitzungen synchronisieren"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Upload und Download von automatisch gespeicherten Sitzungen via Cloud-Sync."
   },
   "popupLabel": {
     "message": "Popup"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Wähle das Standardverhalten des Speichern Buttons aus."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Suchleiste anzeigen"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Fügt die Funktion zum Suchen von Sitzungsnamen hinzu."
   },
   "isShowOpenButtonsLabel": {
     "message": "\"Öffnen / Löschen\" Schaltflächen in der Sitzungsliste anzeigen"
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Diese Seite kann von Tab Session Manager nicht geöffnet werden."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }

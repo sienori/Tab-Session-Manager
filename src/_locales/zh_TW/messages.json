@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "搜尋瀏覽階段名稱"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "搜尋"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "在您的瀏覽器中 IndexedDB 無法使用。"
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "如何解決這個問題"
-  },
-  "noConnectionErrorLabel": {
-    "message": "無法同時開啟多個彈出式視窗。"
   },
   "winCloseSessionName": {
     "message": "自動儲存 - 視窗關閉時"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "選擇「儲存」按鈕的預設動作。"
   },
-  "isShowSearchBarLabel": {
-    "message": "顯示搜尋列"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "新增搜尋瀏覽階段功能。"
-  },
   "isShowOpenButtonsLabel": {
     "message": "在瀏覽階段清單上時顯示開啟/刪除按鈕"
   },
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Tab Session Manager 無法開啟此頁面。"
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
