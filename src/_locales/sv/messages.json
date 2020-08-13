@@ -657,9 +657,9 @@
     "message": "Denna sidan kan inte öppnas av Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Kopiera webbadressen"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Kopierad."
   }
 }
