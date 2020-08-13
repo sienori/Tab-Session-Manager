@@ -204,7 +204,7 @@
     "message": "IndexedDB не доступен в вашем браузере."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Перезагрузить расширение"
   },
   "howToSolveLabel": {
     "message": "Как решить эту проблему"
