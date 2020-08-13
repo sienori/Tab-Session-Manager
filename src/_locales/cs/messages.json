@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB není k dispozici."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "How to solve this problem"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Multiple popups can not be opened at the same time."
   },
   "winCloseSessionName": {
     "message": "Auto Save - Window closed"
