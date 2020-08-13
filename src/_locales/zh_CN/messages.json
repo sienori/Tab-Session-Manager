@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "您的浏览器不支持 IndexedDB"
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "解决方案"
-  },
-  "noConnectionErrorLabel": {
-    "message": "无法同时打开多个弹出窗口。"
   },
   "winCloseSessionName": {
     "message": "自动保存 - 窗口关闭时"
