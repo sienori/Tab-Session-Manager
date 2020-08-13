@@ -22,6 +22,10 @@ const errorContent = {
       <br />
       {browser.i18n.getMessage("indexedDBErrorLabel")}
       <br />
+      <a onClick={() => browser.runtime.reload()}>
+        {browser.i18n.getMessage("reloadExtensionLabel")}
+      </a>
+      <br />
       <a onClick={openIndexedDBWiki}>{browser.i18n.getMessage("howToSolveLabel")}</a>
     </div>
   )

@@ -203,6 +203,9 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "How to solve this problem"
   },
