@@ -655,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Bu sayfa Tab Session Manager tarafından açılamaz."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
