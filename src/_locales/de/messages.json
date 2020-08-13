@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Suchen nach Sitzungsnamen"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Suchen"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Wähle das Standardverhalten des Speichern Buttons aus."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Suchleiste anzeigen"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Fügt die Funktion zum Suchen von Sitzungsnamen hinzu."
   },
   "isShowOpenButtonsLabel": {
     "message": "\"Öffnen / Löschen\" Schaltflächen in der Sitzungsliste anzeigen"
