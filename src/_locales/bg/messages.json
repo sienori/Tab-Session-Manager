@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB не е налична във вашият браузър."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Разрешаване на проблема"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Множество изскачащи прозорци не могат да бъдат отворяни в същото време."
   },
   "winCloseSessionName": {
     "message": "Авто запазени - при затваряне на прозорец"
