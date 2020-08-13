@@ -48,6 +48,13 @@ export default class SessionDetailsArea extends Component {
     this.props.removeSession(this.props.session.id);
   };
 
+  shouldComponentUpdate = (nextProps) => {
+    const isChangeSession = this.props.session.id !== nextProps.session.id;
+    const isUpdateSession = this.props.session.lastEditedTime !== nextProps.session.lastEditedTime;
+    const isLoadedSession = this.props.session.hasOwnProperty("windows") !== nextProps.session.hasOwnProperty("windows");
+    return isChangeSession || isUpdateSession || isLoadedSession;
+  };
+
   render() {
     const { session, searchWords, removeWindow, removeTab, openModal, closeModal } = this.props;
 
