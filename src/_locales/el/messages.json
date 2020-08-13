@@ -655,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Το Tab Session Manager δεν μπορεί να ανοίξει αυτή τη σελίδα."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
