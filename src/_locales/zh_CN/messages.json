@@ -60,7 +60,7 @@
     "message": "字母倒序"
   },
   "searchBarPlaceholder": {
-    "message": "按会话名称搜索"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "搜索"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "您的浏览器不支持 IndexedDB"
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "解决方案"
-  },
-  "noConnectionErrorLabel": {
-    "message": "无法同时打开多个弹出窗口。"
   },
   "winCloseSessionName": {
     "message": "自动保存 - 窗口关闭时"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "选择保存按钮的默认行为。"
   },
-  "isShowSearchBarLabel": {
-    "message": "显示搜索栏"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "开启按会话名搜索的功能。"
-  },
   "isShowOpenButtonsLabel": {
     "message": "在会话列表内显示打开/删除按钮"
   },
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Tab Session Manager 无法打开此页面。"
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
