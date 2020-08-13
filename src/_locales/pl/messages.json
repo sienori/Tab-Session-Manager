@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Szukaj wg nazwy sesji"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Szukaj"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Wybierz domyślne działanie przycisku zapisz."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Wyświetl pasek wyszukiwania"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Dodaj funkcję wyszukiwania sesji wg nazwy."
   },
   "isShowOpenButtonsLabel": {
     "message": "Wyświetl przyciski otwórz / usuń na liście sesji"
