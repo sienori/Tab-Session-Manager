@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB nem áll rendelkezésre a böngészőben."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Hogyan lehet megoldani ezt a problémát"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Egyszerre csak egy felugró ablak nyitható meg."
   },
   "winCloseSessionName": {
     "message": "Automatikus mentés - Ablak be lett zárva"
