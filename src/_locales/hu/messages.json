@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Munkamenet név alapján keresés"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Keresés"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Válassza ki a Mentés gomb alapértelmezett viselkedését."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Keresősáv megjelenítése"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Munkamenet neve lapján való keresés funkció hozzáadása."
   },
   "isShowOpenButtonsLabel": {
     "message": "Megnyitás / Törlés gombok megjelenítése a munkamenet listában"
