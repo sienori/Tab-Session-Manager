@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB không có sẵn trong trình duyệt của bạn."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Cách để giải quyết vấn đề này"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Nhiều popup không thể được mở cùng một lúc."
   },
   "winCloseSessionName": {
     "message": "Lưu tự động - Cửa sổ đóng"
