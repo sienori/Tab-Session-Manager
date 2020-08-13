@@ -60,7 +60,7 @@
     "message": "ي-أ"
   },
   "searchBarPlaceholder": {
-    "message": "البحث باسم الجلسة"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "بحث"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the save button."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Display the search bar"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
   },
   "isShowOpenButtonsLabel": {
     "message": "Display open / delete buttons in session list"
