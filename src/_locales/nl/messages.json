@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Zoeken op sessie naam"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Zoeken"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Select the default behavior of the save button."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Display the search bar"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Add a function to search by session name."
   },
   "isShowOpenButtonsLabel": {
     "message": "Display open / delete buttons in session list"
