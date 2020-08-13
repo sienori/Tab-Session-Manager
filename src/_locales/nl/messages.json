@@ -381,7 +381,7 @@
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Apparaatnaam"
   },
   "deviceNameCaptionLabel": {
     "message": "Specify the name of this device."
