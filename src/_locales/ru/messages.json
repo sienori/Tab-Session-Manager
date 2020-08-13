@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB не доступен в вашем браузере."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Как решить эту проблему"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Несколько всплывающих окон не могут быть открыты одновременно."
   },
   "winCloseSessionName": {
     "message": "Автосохранение при закрытии окна"
