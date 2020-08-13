@@ -60,7 +60,7 @@
     "message": "내림차순"
   },
   "searchBarPlaceholder": {
-    "message": "세션 이름으로 검색"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "검색"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "저장 버튼을 눌렀을 때의 기본 동작을 선택해주세요."
-  },
-  "isShowSearchBarLabel": {
-    "message": "검색 창 보이기"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "세션 이름으로도 검색"
   },
   "isShowOpenButtonsLabel": {
     "message": "세션 목록에서 열기 / 삭제 버튼 보이기"
