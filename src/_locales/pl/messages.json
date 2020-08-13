@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Szukaj wg nazwy sesji"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Szukaj"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB nie jest dostępne w twojej przeglądarce."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Jak rozwiązać ten problem"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Nie można otworzyć wielu wyskakujących okienek w tym samym czasie."
   },
   "winCloseSessionName": {
     "message": "Automatyczny zapis - okno zamknięte"
@@ -470,12 +470,6 @@
   "saveButtonBehaviorCaptionLabel": {
     "message": "Wybierz domyślne działanie przycisku zapisz."
   },
-  "isShowSearchBarLabel": {
-    "message": "Wyświetl pasek wyszukiwania"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Dodaj funkcję wyszukiwania sesji wg nazwy."
-  },
   "isShowOpenButtonsLabel": {
     "message": "Wyświetl przyciski otwórz / usuń na liście sesji"
   },
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Ta strona nie może zostać otwarta przez Tab Session Managera."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
