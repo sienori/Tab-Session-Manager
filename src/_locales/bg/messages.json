@@ -655,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Страницата не може да бъде отворена от Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
