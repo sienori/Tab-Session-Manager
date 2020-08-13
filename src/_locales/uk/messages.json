@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Пошук за назвою сесії"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Пошук"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Обирається типова поведінка для кнопки \"Зберегти\"."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Відображати панель пошуку"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Додати функцію пошуку за назвою сесії."
   },
   "isShowOpenButtonsLabel": {
     "message": "Відображення кнопок відкрити / видалити у списку сесії"
