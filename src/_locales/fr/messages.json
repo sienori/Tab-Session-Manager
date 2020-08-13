@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Rechercher par nom de session"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Rechercher"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Sélectionnez le comportement par défaut du bouton Enregistrer."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Afficher la barre de recherche"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Ajoute une fonction de recherche par nom de session."
   },
   "isShowOpenButtonsLabel": {
     "message": "Afficher les boutons Ouvrir / Supprimer dans la liste"
