@@ -38,6 +38,9 @@
       &:hover svg {
         fill: var(--highlight);
       }
+      &:focus svg {
+        outline: var(--button) 1px solid;
+      }
     }
 
     .date {
@@ -73,12 +76,12 @@
           fill: var(--highlight);
         }
 
-        &:hover {
+        &:hover, &:focus {
           text-decoration: underline;
         }
 
         &.remove {
-          &:hover {
+          &:hover, &:focus {
             color: var(--confirm);
             svg {
               fill: var(--confirm);

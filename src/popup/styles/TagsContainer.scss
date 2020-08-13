@@ -88,7 +88,7 @@
       word-break: break-all;
       transition: all 100ms;
 
-      &:hover {
+      &:hover, &:focus {
         text-decoration: underline;
       }
     }

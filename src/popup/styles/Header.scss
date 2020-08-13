@@ -36,7 +36,7 @@
     }
 
     .heartButton {
-      &:hover svg {
+      &:hover svg, &:focus svg {
         fill: var(--confirm);
       }
     }
@@ -46,7 +46,7 @@
       svg {
         width: 24px;
       }
-      &:hover svg {
+      &:hover svg, &:focus svg {
         fill: var(--highlight);
       }
       .syncBadge {
@@ -88,13 +88,13 @@
         stroke: var(--sub-text);
         stroke-width: 3;
       }
-      &:hover svg {
+      &:hover svg, &:focus svg {
         stroke: var(--highlight);
       }
     }
 
     .settingsButton {
-      &:hover svg {
+      &:hover svg, &:focus svg {
         fill: var(--highlight);
         transform: rotate(90deg);
       }

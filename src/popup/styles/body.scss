@@ -9,6 +9,9 @@ html {
     #root {
       height: 100%;
     }
+    :focus{
+      outline-style: none;
+    }
   }
 }
 

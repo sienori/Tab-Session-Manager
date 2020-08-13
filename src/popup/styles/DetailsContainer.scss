@@ -12,6 +12,10 @@
       padding: 3px 0px;
       width: 100%;
 
+      &:hover, &:focus, &:focus-within {
+        background-color: var(--line);
+      }
+
       .favIcon {
         width: 16px;
         height: 16px;
@@ -32,8 +36,12 @@
           fill: var(--sub-text);
           transform: rotate(45deg);
         }
-        &:hover svg {
+        &:hover svg, &:focus svg {
+          opacity: 1;
           fill: var(--confirm);
+        }
+        &:focus {
+          opacity: 1;
         }
       }
       &:hover .removeButton {
@@ -54,6 +62,11 @@
           svg {
             width: 16px;
             height: 16px;
+            stroke: var(--sub-text);
+            stroke-width: 2;
+          }
+          &:hover svg, &:focus svg {
+            stroke: var(--highlight);
           }
         }
         .windowTitle {
@@ -76,7 +89,7 @@
         .tabButton {
           display: flex;
           align-items: center;
-          max-width: 100%;
+          width: 100%;
           overflow: hidden;
           .tabTitle {
             line-height: 1.3em;
@@ -106,7 +119,7 @@
     outline: none;
     padding: 0;
     text-align: left;
-    &:hover {
+    &:hover, &:focus {
       text-decoration: underline;
     }
   }

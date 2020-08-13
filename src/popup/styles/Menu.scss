@@ -27,8 +27,11 @@
         background: inherit;
         text-align: left;
         transition: background-color 100ms;
-        &:hover {
+        &:hover{
           background-color: var(--line);
+        }
+        &:focus {
+          outline: var(--button) 1px solid;
         }
       }
       &.section {
@@ -60,7 +63,7 @@
       transform: rotate(45deg);
       fill: var(--sub-text);
     }
-    &:hover svg {
+    &:hover svg, &:focus svg {
       fill: var(--confirm);
     }
   }

@@ -68,8 +68,8 @@
           transform: rotate(45deg);
           fill: var(--sub-text);
         }
-        &:hover svg {
-          fill: var(--main-text);
+        &:hover svg, &:focus svg {
+          fill: var(--highlight);
         }
       }
     }

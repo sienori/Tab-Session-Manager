@@ -48,7 +48,7 @@ $transition: 150ms ease;
       transition: fill $transition;
     }
 
-    &:hover {
+    &:hover, &:focus {
       border-color: var(--highlight);
       svg {
         fill: var(--highlight);

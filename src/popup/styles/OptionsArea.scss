@@ -1,5 +1,4 @@
 #optionsArea {
-  padding: 10px;
   .line {
     display: flex;
     flex-direction: row;
@@ -31,7 +30,7 @@
         outline: none;
         transition: border-color 100ms;
 
-        &:hover {
+        &:hover, &:focus {
           border-color: var(--highlight);
         }
       }
@@ -49,7 +48,7 @@
         border-bottom: 2px solid var(--sub-text);
         border-right: 2px solid var(--sub-text);
       }
-      &:hover::before {
+      &:hover::before, &:focus::before {
         border-bottom: 2px solid var(--highlight);
         border-right: 2px solid var(--highlight);
       }
@@ -73,7 +72,7 @@
         height: 14px;
         fill: var(--sub-text);
       }
-      &:hover svg {
+      &:hover svg, &:focus svg {
         fill: var(--highlight);
       }
     }

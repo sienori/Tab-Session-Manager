@@ -41,7 +41,7 @@
     svg {
       transform: rotate(45deg);
     }
-    &:hover svg {
+    &:hover svg, &:focus svg {
       fill: var(--highlight);
     }
   }

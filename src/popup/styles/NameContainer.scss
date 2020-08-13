@@ -27,7 +27,7 @@
     padding: 0;
     text-align: left;
     max-width: 100%;
-    &:hover {
+    &:hover, &:focus {
       text-decoration: underline;
     }
   }
