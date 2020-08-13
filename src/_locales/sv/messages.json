@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Sök efter session eller fliknamn"
   },
   "search": {
     "message": "Sök"
@@ -204,7 +204,7 @@
     "message": "IndexedDB är inte tillgänglig i din webbläsare."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Ladda om tillägg"
   },
   "howToSolveLabel": {
     "message": "Så här löser du detta problem"
