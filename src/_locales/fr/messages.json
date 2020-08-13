@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Rechercher par nom de session"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Rechercher"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB n’est pas disponible dans votre navigateur."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Comment faire pour résoudre ce problème"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Il est impossible d’ouvrir plusieurs fenêtres surgissantes simultanément."
   },
   "winCloseSessionName": {
     "message": "Sauvegarde automatique – Fenêtre fermée"
@@ -450,10 +450,10 @@
     "message": "Se déconnecter"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Synchroniser les sessions autosauvegardées"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Téléverser et télécharger dans le nuage de synchronisation les sessions enregistrées automatiquement."
   },
   "popupLabel": {
     "message": "Pop-up"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Sélectionnez le comportement par défaut du bouton Enregistrer."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Afficher la barre de recherche"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Ajoute une fonction de recherche par nom de session."
   },
   "isShowOpenButtonsLabel": {
     "message": "Afficher les boutons Ouvrir / Supprimer dans la liste"
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Cette page ne peut pas être ouverte par Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
