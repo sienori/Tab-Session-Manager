@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Поиск по названию сессии"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Поиск"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Выберите поведение кнопки \"Сохранить\" по умолчанию."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Показать панель поиска"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Добавить функцию для поиска по имени сессии."
   },
   "isShowOpenButtonsLabel": {
     "message": "Показать кнопки открыть/удалить в списке сессий"
