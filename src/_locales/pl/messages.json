@@ -450,7 +450,7 @@
     "message": "Wyloguj"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Synchronizuj automatycznie zapisane sesje"
   },
   "includesAutoSaveToSyncCaptionLabel": {
     "message": "Upload / download auto save sessions in cloud sync."
