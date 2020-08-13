@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB는 이 브라우저에서 지원되지 않습니다."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "문제 해결하기"
-  },
-  "noConnectionErrorLabel": {
-    "message": "여러 팝업창은 동시에 열릴 수 없습니다."
   },
   "winCloseSessionName": {
     "message": "창 닫으면, 자동 저장"
