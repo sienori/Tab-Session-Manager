@@ -60,7 +60,7 @@
     "message": "내림차순"
   },
   "searchBarPlaceholder": {
-    "message": "세션 이름으로 검색"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "검색"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB는 이 브라우저에서 지원되지 않습니다."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "문제 해결하기"
-  },
-  "noConnectionErrorLabel": {
-    "message": "여러 팝업창은 동시에 열릴 수 없습니다."
   },
   "winCloseSessionName": {
     "message": "창 닫으면, 자동 저장"
@@ -450,10 +450,10 @@
     "message": "로그아웃"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "자동 저장된 세션을 동기화"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "클라우드 내 자동 저장된 세션을 올리기 / 내려받기"
   },
   "popupLabel": {
     "message": "팝업"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "저장 버튼을 눌렀을 때의 기본 동작을 선택해주세요."
-  },
-  "isShowSearchBarLabel": {
-    "message": "검색 창 보이기"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "세션 이름으로도 검색"
   },
   "isShowOpenButtonsLabel": {
     "message": "세션 목록에서 열기 / 삭제 버튼 보이기"
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "이 페이지는 Tab Session Manager로 열릴 수 없습니다."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
