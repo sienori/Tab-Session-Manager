@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Munkamenet vagy fül név alapú keresés"
   },
   "search": {
     "message": "Keresés"
@@ -204,7 +204,7 @@
     "message": "IndexedDB nem áll rendelkezésre a böngészőben."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Kiegészítő újratöltése"
   },
   "howToSolveLabel": {
     "message": "Hogyan lehet megoldani ezt a problémát"
@@ -657,9 +657,9 @@
     "message": "Ez az oldal nem nyitható meg a Tab Session Manager által."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "URL másolása"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Másolva."
   }
 }
