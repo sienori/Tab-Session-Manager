@@ -655,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Cette page ne peut pas être ouverte par Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
