@@ -655,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "यह पृष्ठ टैब सत्र प्रबंधक द्वारा खोला नहीं जा सकता।"
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
