@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Sök efter sessionsnamn"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Sök"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Välj standardbeteendet på sparaknappen."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Visa sökfältet"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Lägga till en funktion för att söka efter sessionsnamn."
   },
   "isShowOpenButtonsLabel": {
     "message": "Visa knapparna öppna / ta bort i sessionslisten"
