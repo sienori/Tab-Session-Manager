@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "Αυτός ο πλοηγός δεν έχει δυνατότητα IndexedDB."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Πώς να λύσετε αυτό το πρόβλημα"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Δεν μπορούν να εμφανιστούν πολλά αναδυόμενα ταυτόχρονα."
   },
   "winCloseSessionName": {
     "message": "Αυτόματη αποθήκευση  - Όταν κλείσει το παράθυρο"
