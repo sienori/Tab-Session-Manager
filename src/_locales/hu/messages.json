@@ -655,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Ez az oldal nem nyitható meg a Tab Session Manager által."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
