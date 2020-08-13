@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB no está disponible en su navegador."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Cómo resolver este problema"
-  },
-  "noConnectionErrorLabel": {
-    "message": "No se pueden abrir múltiples ventanas emergentes al mismo tiempo."
   },
   "winCloseSessionName": {
     "message": "Auto guardado - Ventana Cerrada"
