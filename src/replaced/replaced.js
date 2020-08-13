@@ -25,7 +25,7 @@ let parameter = returnReplaceParameter(location.href);
 
 document.title = parameter.title;
 document.getElementsByClassName("title")[0].innerText = parameter.title;
-document.getElementsByClassName("replacedUrl")[0].innerText = parameter.url;
+document.getElementsByClassName("replacedUrl")[0].value = parameter.url;
 if (parameter.favIconUrl === "" || parameter.favIconUrl === "undefined") {
   parameter.favIconUrl = "../icons/nofavicon.png";
 }
@@ -33,6 +33,16 @@ document.head.insertAdjacentHTML(
   "beforeend",
   `<link rel="shortcut icon" href="${sanitaize.encode(parameter.favIconUrl)}">`
 );
+
+const copy = () => {
+  const url = document.querySelector(".replacedUrl");
+  url.select();
+  document.execCommand("Copy");
+  document.querySelector(".copyButton").innerText = browser.i18n.getMessage("copiedLabel");
+};
+
+document.querySelector(".copyButton").onclick = copy;
+document.querySelector(".copyButton").innerText = browser.i18n.getMessage("copyUrlLabel");
 
 if (parameter.state == "open_faild") {
   document.getElementsByClassName("replacedPageMessage")[0].innerText = browser.i18n.getMessage(

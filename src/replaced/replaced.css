@@ -47,3 +47,17 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+input {
+  border: none;
+}
+
+a {
+  font-size: 13px;
+  color: var(--highlight);
+  cursor: pointer;
+  width: max-content;
+}
+a:hover {
+  text-decoration: underline;
+}
