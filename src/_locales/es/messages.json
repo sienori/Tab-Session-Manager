@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Búsqueda por nombre de la sesión"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Buscar"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Seleccione el comportamiento predeterminado del botón Guardar."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Mostrar la barra de búsqueda"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Agregar una función para buscar por nombre de la sesión."
   },
   "isShowOpenButtonsLabel": {
     "message": "Mostrar botones de abrir/cerrar en la lista de sesiones"
