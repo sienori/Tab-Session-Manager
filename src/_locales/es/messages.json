@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Buscar por nombre de sesión o pestaña"
   },
   "search": {
     "message": "Buscar"
@@ -204,7 +204,7 @@
     "message": "IndexedDB no está disponible en su navegador."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Recargar extensión"
   },
   "howToSolveLabel": {
     "message": "Cómo resolver este problema"
@@ -375,28 +375,28 @@
     "message": "Si la URL de la pestaña coincide con algún elemento de esta lista, la misma no será registrada en la sesión. La lista permite comodines \"*\"."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Guardar nombre de dispositivo en sesión"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Añadir el nombre del dispositivo como una etiqueta al guardar una sesión. Cuando se utiliza la sincronización en la nube, puede distinguirla de las sesiones en otros dispositivos."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Nombre del dispositivo"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Especifique el nombre de este dispositivo."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Aplicar nombre del dispositivo a las sesiones existentes"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Añadir el nombre del dispositivo a todas las sesiones guardadas."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Aplicar nombre del dispositivo"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "¿Aplicar el nombre del dispositivo a todas las sesiones?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si no está marcada, ignorar la ventana privada al guardar la sesión."
@@ -420,40 +420,40 @@
     "message": "Si el nombre de la sesión en la lista de sesiones se extiende a más de una línea, se trunca en una línea y se muestra."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Sincronización en la nube"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Habilitar sincronización en la nube (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Guardar sesiones en Google DriveTM y sincronizar con otros equipos."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Sincronizando"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Descargando"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Cargando"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Eliminando"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Sincronización completa."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Iniciar sesión"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Cerrar sesión"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Sincronizar sesiones de auto guardado"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Subir / descargar sesiones de guardado automático en la nube."
   },
   "popupLabel": {
     "message": "Popup"
@@ -633,7 +633,7 @@
     "message": "Página de extensión"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Política de privacidad"
   },
   "importMessage": {
     "message": "Sesiones importadas."
@@ -657,9 +657,9 @@
     "message": "Esta página no puede ser abierta por Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Copiar dirección URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Copiado."
   }
 }
