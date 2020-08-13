@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB tarayıcınızda mevcut değil."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Bu sorun nasıl çözülür"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Birden fazla pop-up aynı anda açılamaz."
   },
   "winCloseSessionName": {
     "message": "Otomatik Kayıt - Pencere kapatıldığında"
