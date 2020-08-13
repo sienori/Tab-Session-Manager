@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Tìm theo tên phiên làm việc"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Tìm kiếm"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Chọn chế độ mặc định của nút lưu."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Hiển thị thanh tìm kiếm"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Thêm chức năng tìm kiếm bằng tên phiên."
   },
   "isShowOpenButtonsLabel": {
     "message": "Display open / delete buttons in session list"
