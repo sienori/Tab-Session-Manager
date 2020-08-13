@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Търсене по име на сесия"
+    "message": "Search by session or tab name"
   },
   "search": {
     "message": "Търсене"
@@ -203,11 +203,11 @@
   "indexedDBErrorLabel": {
     "message": "IndexedDB не е налична във вашият браузър."
   },
+  "reloadExtensionLabel": {
+    "message": "Reload extension"
+  },
   "howToSolveLabel": {
     "message": "Разрешаване на проблема"
-  },
-  "noConnectionErrorLabel": {
-    "message": "Множество изскачащи прозорци не могат да бъдат отворяни в същото време."
   },
   "winCloseSessionName": {
     "message": "Авто запазени - при затваряне на прозорец"
@@ -450,10 +450,10 @@
     "message": "Отписване"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Синхронизиране на автоматичното запазване на сесии"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Качване/изтегляне на автоматичното запазване на сесии при облачно синхронизиране."
   },
   "popupLabel": {
     "message": "Изскачащо меню"
@@ -469,12 +469,6 @@
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Избор на поведение по подразбиране за бутона за запазване."
-  },
-  "isShowSearchBarLabel": {
-    "message": "Показване на лента за търсене"
-  },
-  "isShowSearchBarCaptionLabel": {
-    "message": "Добавяне на функция за търсене по име на сесия."
   },
   "isShowOpenButtonsLabel": {
     "message": "Показване на бутони за отваряне / изтриване в списък със сесия"
@@ -661,5 +655,11 @@
   },
   "replacedPageMessage": {
     "message": "Страницата не може да бъде отворена от Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Copy URL"
+  },
+  "copiedLabel": {
+    "message": "Copied."
   }
 }
