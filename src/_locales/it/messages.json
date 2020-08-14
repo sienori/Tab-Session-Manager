@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Cerca per sessione o nome scheda"
   },
   "search": {
     "message": "Cerca"
@@ -204,7 +204,7 @@
     "message": "IndexedDB non è disponibile nel tuo browser."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Ricarica estensione"
   },
   "howToSolveLabel": {
     "message": "Come risolvere questo problema"
@@ -657,9 +657,9 @@
     "message": "Questa pagina non può essere aperta da Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Copia URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Copiato."
   }
 }
