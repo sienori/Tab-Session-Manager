@@ -37,3 +37,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Ronan O'Connell
 - A P
 - Nenad Antic
+- Laurent Perthuis
