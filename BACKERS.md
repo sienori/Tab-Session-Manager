@@ -38,3 +38,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - A P
 - Nenad Antic
 - Laurent Perthuis
+- Norfair
