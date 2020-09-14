@@ -41,3 +41,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Norfair
 - Miro Janosik
 - daniel
+- nlsun
