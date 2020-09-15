@@ -42,3 +42,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Miro Janosik
 - daniel
 - nlsun
+- Jennifer Johnston
