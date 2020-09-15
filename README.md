@@ -2,6 +2,10 @@
 
 #### Save and restore the state of windows and tabs. It also supports automatic saving.
 
+<img src="https://raw.githubusercontent.com/sienori/Tab-Session-Manager/master/other/promotion/screenshots/popup.png" width="640px">
+
+## Download
+
 [<img src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png" align="left" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/tab-session-manager/)
 
 [<img src="https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png" alt="for Chrome">](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
