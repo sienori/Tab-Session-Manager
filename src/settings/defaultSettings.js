@@ -250,8 +250,7 @@ export default [
             title: "includesAutoSaveToSyncLabel",
             captions: ["includesAutoSaveToSyncCaptionLabel"],
             type: "checkbox",
-            default: true,
-            new: true
+            default: true
           }
         ]
       }
