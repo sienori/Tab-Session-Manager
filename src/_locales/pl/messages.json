@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Szukaj według nazwy sesji lub karty"
   },
   "search": {
     "message": "Szukaj"
@@ -204,7 +204,7 @@
     "message": "IndexedDB nie jest dostępne w twojej przeglądarce."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Przeładuj rozszerzenie"
   },
   "howToSolveLabel": {
     "message": "Jak rozwiązać ten problem"
@@ -450,10 +450,10 @@
     "message": "Wyloguj"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Synchronizuj automatycznie zapisane sesje"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Wyślij / pobierz automatycznie zapisane sesje do / z chmury."
   },
   "popupLabel": {
     "message": "Wyskakujące okno"
@@ -657,9 +657,9 @@
     "message": "Ta strona nie może zostać otwarta przez Tab Session Managera."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Kopiuj URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Skopiowane."
   }
 }
