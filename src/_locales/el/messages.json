@@ -60,7 +60,7 @@
     "message": "Ω-Α"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Αναζήτηση βάση ονόματος συνεδρίας ή καρτέλας"
   },
   "search": {
     "message": "Αναζήτηση"
@@ -204,7 +204,7 @@
     "message": "Αυτός ο πλοηγός δεν έχει δυνατότητα IndexedDB."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Επαναφόρτωση πρόσθετου"
   },
   "howToSolveLabel": {
     "message": "Πώς να λύσετε αυτό το πρόβλημα"
@@ -657,9 +657,9 @@
     "message": "Το Tab Session Manager δεν μπορεί να ανοίξει αυτή τη σελίδα."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Αντιγραφή URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Αντιγράφηκε."
   }
 }
