@@ -66,7 +66,7 @@
     "message": "Zoeken"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Wis zoekopdracht"
   },
   "open": {
     "message": "Openen"
@@ -135,28 +135,28 @@
     "message": "Let's save the session by clicking the lower right button."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Geen overeenkomende resultaten."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Geen sessie geselecteerd."
   },
   "menuLabel": {
     "message": "Menu"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Menu sluiten"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Sluiten"
   },
   "renameLabel": {
     "message": "Hernoemen"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Sessie hernoemen"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Sessie laden"
   },
   "openInNewWindowLabel": {
     "message": "In nieuw venster openen"
@@ -177,7 +177,7 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Sessie bewerken"
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -204,7 +204,7 @@
     "message": "IndexedDB is niet beschikbaar in uw browser."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Extensie opnieuw laden"
   },
   "howToSolveLabel": {
     "message": "Hoe lost u dit probleem op"
@@ -285,7 +285,7 @@
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Niets doen"
   },
   "ifAutoSaveLabel": {
     "message": "Sla de sessie regelmatig op"
@@ -345,13 +345,13 @@
     "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Opslaglocatie"
   },
   "backupFolderCaptionLabel": {
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Downloadmap"
   },
   "backupFilesLimitLabel": {
     "message": "Maximum aantal opgeslagen reservekopieën"
