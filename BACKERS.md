@@ -44,3 +44,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - nlsun
 - Jennifer Johnston
 - Salah Morabit
+- Tony Johnston
