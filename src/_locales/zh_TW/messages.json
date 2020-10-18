@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "依瀏覽階段名稱或分頁名稱搜尋"
   },
   "search": {
     "message": "搜尋"
@@ -192,10 +192,10 @@
     "message": "複製此瀏覽階段"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "登錄為啟始瀏覽階段"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "從啟始瀏覽階段中移除"
   },
   "errorLabel": {
     "message": "錯誤"
@@ -204,7 +204,7 @@
     "message": "在您的瀏覽器中 IndexedDB 無法使用。"
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "重新載入套件"
   },
   "howToSolveLabel": {
     "message": "如何解決這個問題"
@@ -228,7 +228,7 @@
     "message": "快速鍵"
   },
   "informationLabel": {
-    "message": "附加元件資訊"
+    "message": "資訊"
   },
   "generalLabel": {
     "message": "一般設定"
@@ -279,7 +279,7 @@
     "message": "開啟上次關閉的瀏覽階段。"
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "開啟啟始瀏覽階段"
   },
   "openStartupSessionCaptionLabel": {
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
