@@ -657,9 +657,9 @@
     "message": "Tab Session Manager 無法開啟此頁面。"
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "複製 URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "已複製。"
   }
 }
