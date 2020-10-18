@@ -450,7 +450,7 @@
     "message": "登出"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "同步並儲存瀏覽階段"
   },
   "includesAutoSaveToSyncCaptionLabel": {
     "message": "Upload / download auto save sessions in cloud sync."
