@@ -46,3 +46,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Salah Morabit
 - Tony Johnston
 - Jefferson Nunn
+- Ronald Gremban
