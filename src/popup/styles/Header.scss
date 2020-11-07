@@ -53,8 +53,12 @@
       &:hover svg{
         fill: var(--highlight);
       }
-      &.disable svg{
-        opacity: 0.2;
+      &.disable{
+        cursor: unset;
+        svg{
+          opacity: 0.2;
+          fill: var(--sub-text);
+        }
       }
     }
 
