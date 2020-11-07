@@ -107,6 +107,12 @@
   "cancelLabel": {
     "message": "Cancel·lar"
   },
+  "undoLabel": {
+    "message": "Undo"
+  },
+  "redoLabel": {
+    "message": "Redo"
+  },
   "addTagLabel": {
     "message": "Afegir etiqueta"
   },
