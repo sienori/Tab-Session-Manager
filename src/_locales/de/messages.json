@@ -108,10 +108,10 @@
     "message": "Abbrechen"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Rückgängig"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Aktion wiederholen"
   },
   "addTagLabel": {
     "message": "Schlagwort hinzufügen"
