@@ -107,6 +107,12 @@
   "cancelLabel": {
     "message": "Vazgeç"
   },
+  "undoLabel": {
+    "message": "Undo"
+  },
+  "redoLabel": {
+    "message": "Redo"
+  },
   "addTagLabel": {
     "message": "Etiket ekle"
   },

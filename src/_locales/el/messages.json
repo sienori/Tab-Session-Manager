@@ -107,6 +107,12 @@
   "cancelLabel": {
     "message": "Άκυρο"
   },
+  "undoLabel": {
+    "message": "Undo"
+  },
+  "redoLabel": {
+    "message": "Redo"
+  },
   "addTagLabel": {
     "message": "Προσθήκη ετικέτας"
   },

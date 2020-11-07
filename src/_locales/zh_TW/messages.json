@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "依瀏覽階段名稱或分頁名稱搜尋"
   },
   "search": {
     "message": "搜尋"
@@ -106,6 +106,12 @@
   },
   "cancelLabel": {
     "message": "取消"
+  },
+  "undoLabel": {
+    "message": "Undo"
+  },
+  "redoLabel": {
+    "message": "Redo"
   },
   "addTagLabel": {
     "message": "新增標籤"
@@ -192,10 +198,10 @@
     "message": "複製此瀏覽階段"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "登錄為啟始瀏覽階段"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "從啟始瀏覽階段中移除"
   },
   "errorLabel": {
     "message": "錯誤"
@@ -204,7 +210,7 @@
     "message": "在您的瀏覽器中 IndexedDB 無法使用。"
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "重新載入套件"
   },
   "howToSolveLabel": {
     "message": "如何解決這個問題"
@@ -228,7 +234,7 @@
     "message": "快速鍵"
   },
   "informationLabel": {
-    "message": "附加元件資訊"
+    "message": "資訊"
   },
   "generalLabel": {
     "message": "一般設定"
@@ -279,7 +285,7 @@
     "message": "開啟上次關閉的瀏覽階段。"
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "打開啟始瀏覽階段"
   },
   "openStartupSessionCaptionLabel": {
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
@@ -450,10 +456,10 @@
     "message": "登出"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "同步並儲存瀏覽階段"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "上傳/下載在雲端同步期間自動儲存的瀏覽階段。"
   },
   "popupLabel": {
     "message": "彈出式視窗"
@@ -657,9 +663,9 @@
     "message": "Tab Session Manager 無法開啟此頁面。"
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "複製 URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "已複製。"
   }
 }

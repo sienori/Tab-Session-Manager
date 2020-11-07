@@ -107,6 +107,12 @@
   "cancelLabel": {
     "message": "キャンセル"
   },
+  "undoLabel": {
+    "message": "取り消し"
+  },
+  "redoLabel": {
+    "message": "やり直し"
+  },
   "addTagLabel": {
     "message": "タグを追加"
   },
