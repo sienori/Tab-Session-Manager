@@ -107,6 +107,12 @@
   "cancelLabel": {
     "message": "إلغاء"
   },
+  "undoLabel": {
+    "message": "Undo"
+  },
+  "redoLabel": {
+    "message": "Redo"
+  },
   "addTagLabel": {
     "message": "اضف كلمة مفتاحية"
   },
