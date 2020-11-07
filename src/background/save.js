@@ -127,6 +127,7 @@ export async function updateSession(
     if (shouldUpdateEditedTime) session.lastEditedTime = Date.now();
     await Sessions.put(session);
     if (isSendResponce) sendMessage("updateSession", { session: session, saveBySync: saveBySync });
+    return session;
   } catch (e) {
     log.error(logDir, "updateSession()", e);
     return Promise.reject(e);
@@ -138,7 +139,7 @@ export async function renameSession(id, name) {
   let session = await Sessions.get(id).catch(() => {});
   if (session == undefined) return;
   session.name = name.trim();
-  updateSession(session);
+  return await updateSession(session);
 }
 
 export async function deleteAllSessions() {

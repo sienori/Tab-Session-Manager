@@ -180,3 +180,13 @@ export const sendExportSessionMessage = (id = null) => {
     id: id
   });
 };
+
+export const sendUndoMessage = async () => {
+  log.log(logDir, "sendUndoMessage()");
+  browser.runtime.sendMessage({ message: "undo" });
+};
+
+export const sendRedoMessage = async () => {
+  log.log(logDir, "sendRedoMessage()");
+  browser.runtime.sendMessage({ message: "redo" });
+};

@@ -35,6 +35,7 @@ import { signInGoogle, signOutGoogle } from "./cloudAuth";
 import { syncCloud } from "./cloudSync";
 import { updateLogLevel, overWriteLogLevel } from "../common/log";
 import { getsearchInfo } from "./search";
+import { recordChange, undo, redo, updateUndoStatus } from "./undo";
 
 const logDir = "background/background";
 export const SessionStartTime = Date.now();
@@ -86,23 +87,37 @@ const onStartupListener = async () => {
 const onMessageListener = async (request, sender, sendResponse) => {
   log.info(logDir, "onMessageListener()", request);
   switch (request.message) {
-    case "save":
-      saveSession(request.session);
-      break;
+    case "save": {
+      const afterSession = await saveSession(request.session);
+      recordChange(null, afterSession);
+      return afterSession;
+    }
     case "saveCurrentSession":
       const name = request.name;
       const property = request.property;
-      return await saveCurrentSession(name, [], property);
+      const afterSession = await saveCurrentSession(name, [], property);
+      recordChange(null, afterSession);
+      return afterSession;
     case "open":
       openSession(request.session, request.property);
       break;
     case "remove":
-      return await removeSession(request.id, request.isSendResponce);
-    case "rename":
-      renameSession(request.id, request.name);
+      const beforeSession = await getSessions(request.id);
+      await removeSession(request.id, request.isSendResponce);
+      recordChange(beforeSession, null);
       break;
-    case "update":
-      return updateSession(request.session, request.isSendResponce);
+    case "rename": {
+      const beforeSession = await getSessions(request.id);
+      const afterSession = await renameSession(request.id, request.name);
+      recordChange(beforeSession, afterSession);
+      break;
+    }
+    case "update": {
+      const beforeSession = await getSessions(request.session.id);
+      await updateSession(request.session, request.isSendResponce);
+      recordChange(beforeSession, request.session);
+      break;
+    }
     case "import":
       importSessions(request.importSessions);
       break;
@@ -115,16 +130,22 @@ const onMessageListener = async (request, sender, sendResponse) => {
     case "getSessions":
       const sessions = await getSessions(request.id, request.needKeys);
       return sessions;
-    case "addTag":
-      addTag(request.id, request.tag);
+    case "addTag": {
+      const beforeSession = await getSessions(request.id);
+      const afterSession = await addTag(request.id, request.tag);
+      recordChange(beforeSession, afterSession);
       break;
-    case "removeTag":
-      removeTag(request.id, request.tag);
+    }
+    case "removeTag": {
+      const beforeSession = await getSessions(request.id);
+      const afterSession = removeTag(request.id, request.tag);
+      recordChange(beforeSession, afterSession);
       break;
+    }
     case "getInitState":
       return IsInit;
     case "getCurrentSession":
-      const currentSession = await loadCurrentSession("", [], request.property).catch(() => {});
+      const currentSession = await loadCurrentSession("", [], request.property).catch(() => { });
       return currentSession;
     case "signInGoogle":
       return await signInGoogle();
@@ -141,6 +162,12 @@ const onMessageListener = async (request, sender, sendResponse) => {
         message: "responseAllSessions", sessions: sessions, isEnd: isEnd, port: request.port
       }).catch(() => { });
       return Sessions.getAllWithStream(sendResponse, request.needKeys, request.count);
+    case "undo":
+      return undo();
+    case "redo":
+      return redo();
+    case "updateUndoStatus":
+      return updateUndoStatus();
   }
 };
 

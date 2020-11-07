@@ -4,6 +4,9 @@ import log from "loglevel";
 import openUrl from "../actions/openUrl";
 import { getSettings } from "src/settings/settings";
 import DonationMessage from "./DonationMessage";
+import { sendUndoMessage, sendRedoMessage } from "../actions/controlSessions";
+import UndoIcon from "../icons/undo.svg";
+import RedoIcon from "../icons/redo.svg";
 import HeartIcon from "../icons/heart.svg";
 import CloudSyncIcon from "../icons/cloudSync.svg";
 import ExpandIcon from "../icons/expand.svg";
@@ -45,8 +48,10 @@ const openSessionListInTab = () => {
 };
 
 export default props => {
+  const { openModal, syncStatus, needsSync, undoStatus } = props;
+
   const handleHeartClick = () => {
-    props.openModal(browser.i18n.getMessage("donationLabel"), <DonationMessage />);
+    openModal(browser.i18n.getMessage("donationLabel"), <DonationMessage />);
   };
 
   const handleSyncClick = async () => {
@@ -61,18 +66,37 @@ export default props => {
     <div id="header">
       <div className="title">Tab Session Manager</div>
       <div className="rightButtons">
+        {shouldShowCloudSync && <SyncStatus syncStatus={syncStatus} />}
+        <button
+          className={`undoButton ${undoStatus.undoCount == 0 ? "disable" : ""}`}
+          onClick={sendUndoMessage}
+          title={browser.i18n.getMessage("undoLabel")}
+        >
+          <UndoIcon />
+          <div className="count">
+            {undoStatus.undoCount > 0 && undoStatus.undoCount}
+          </div>
+        </button>
+        <button
+          className={`redoButton ${undoStatus.redoCount == 0 ? "disable" : ""}`}
+          onClick={sendRedoMessage}
+          title={browser.i18n.getMessage("redoLabel")}
+        >
+          <RedoIcon />
+          <div className="count">
+            {undoStatus.redoCount > 0 && undoStatus.redoCount}
+          </div>
+        </button>
+        <div className="separation" />
         {shouldShowCloudSync && (
-          <React.Fragment>
-            <SyncStatus syncStatus={props.syncStatus} />
-            <button
-              className={"cloudSyncButton"}
-              onClick={handleSyncClick}
-              title={browser.i18n.getMessage("cloudSyncLabel")}
-            >
-              <CloudSyncIcon />
-              {props.needsSync && <div className="syncBadge">!</div>}
-            </button>
-          </React.Fragment>
+          <button
+            className={"cloudSyncButton"}
+            onClick={handleSyncClick}
+            title={browser.i18n.getMessage("cloudSyncLabel")}
+          >
+            <CloudSyncIcon />
+            {needsSync && <div className="syncBadge">!</div>}
+          </button>
         )}
         <button
           className="heartButton"

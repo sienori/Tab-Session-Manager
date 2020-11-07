@@ -49,7 +49,7 @@ export async function addTag(id, tag) {
   if (validatedTag === "") return;
 
   session.tag.push(validatedTag);
-  updateSession(session);
+  return await updateSession(session);
 }
 
 export async function removeTag(id, tag) {
@@ -67,7 +67,7 @@ export async function removeTag(id, tag) {
     return element != tag;
   });
 
-  updateSession(session);
+  return await updateSession(session);
 }
 
 //指定されたタグを含むセッションを新しい順に取得 needKeysにはtag, dateが必須

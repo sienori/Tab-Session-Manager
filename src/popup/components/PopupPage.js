@@ -13,7 +13,8 @@ import {
   getSessions,
   sendSessionSaveMessage,
   sendSessionRemoveMessage,
-  sendSessionUpdateMessage
+  sendSessionUpdateMessage,
+  sendUndoMessage
 } from "../actions/controlSessions";
 import { deleteWindow, deleteTab } from "../../common/editSessions.js";
 import openUrl from "../actions/openUrl";
@@ -40,7 +41,6 @@ export default class PopupPage extends Component {
       searchInfo: [],
       isInitSessions: false,
       selectedSession: {},
-      removedSession: {},
       filterValue: "_displayAll",
       sortValue: "newest",
       isShowSearchBar: false,
@@ -52,7 +52,7 @@ export default class PopupPage extends Component {
         message: "",
         type: "info",
         buttonLabel: "",
-        onClick: () => {}
+        onClick: () => { }
       },
       syncStatus: {
         status: "complete",
@@ -60,6 +60,10 @@ export default class PopupPage extends Component {
         total: 0
       },
       needsSync: false,
+      undoStatus: {
+        undoCount: 0,
+        redoCount: 0
+      },
       menu: {
         isOpen: false,
         x: 0,
@@ -128,6 +132,7 @@ export default class PopupPage extends Component {
     }
 
     browser.storage.onChanged.addListener(handleSettingsChange);
+    browser.runtime.sendMessage({ message: "updateUndoStatus" });
 
     if (getSettings("isShowUpdated")) {
       this.openNotification({
@@ -177,6 +182,8 @@ export default class PopupPage extends Component {
         return this.handleUpdateSyncStatus(request);
       case "responseAllSessions":
         return this.handleResponseAllSessions(request);
+      case "updateUndoStatus":
+        return this.handleUpdateUndoStatus(request);
     }
   };
 
@@ -270,6 +277,10 @@ export default class PopupPage extends Component {
     this.setState({ syncStatus: request.syncStatus });
   };
 
+  handleUpdateUndoStatus = request => {
+    this.setState({ undoStatus: request.undoStatus });
+  };
+
   changeFilterValue = value => {
     log.info(logDir, "changeFilterValue()", value);
     this.setState({ filterValue: value });
@@ -357,15 +368,13 @@ export default class PopupPage extends Component {
 
   removeSession = async id => {
     log.info(logDir, "removeSession()", id);
-    const removedSession = await getSessions(id);
-    this.saveRemovedSession(removedSession);
     try {
       await sendSessionRemoveMessage(id);
       this.openNotification({
         message: browser.i18n.getMessage("sessionDeletedLabel"),
         type: "warn",
-        buttonLabel: browser.i18n.getMessage("restoreSessionLabel"),
-        onClick: this.restoreRemovedSession
+        buttonLabel: browser.i18n.getMessage("undoLabel"),
+        onClick: sendUndoMessage
       });
     } catch (e) {
       this.openNotification({
@@ -376,15 +385,14 @@ export default class PopupPage extends Component {
   };
 
   removeWindow = async (session, winId) => {
-    this.saveRemovedSession(session);
     try {
       const editedSession = deleteWindow(session, winId);
       await sendSessionUpdateMessage(editedSession);
       this.openNotification({
         message: browser.i18n.getMessage("sessionWindowDeletedLabel"),
         type: "warn",
-        buttonLabel: browser.i18n.getMessage("restoreSessionLabel"),
-        onClick: this.restoreRemovedSession
+        buttonLabel: browser.i18n.getMessage("undoLabel"),
+        onClick: sendUndoMessage
       });
     } catch (e) {
       this.openNotification({
@@ -395,15 +403,14 @@ export default class PopupPage extends Component {
   };
 
   removeTab = async (session, winId, tabId) => {
-    this.saveRemovedSession(session);
     try {
       const editedSession = deleteTab(session, winId, tabId);
       await sendSessionUpdateMessage(editedSession);
       this.openNotification({
         message: browser.i18n.getMessage("sessionTabDeletedLabel"),
         type: "warn",
-        buttonLabel: browser.i18n.getMessage("restoreSessionLabel"),
-        onClick: this.restoreRemovedSession
+        buttonLabel: browser.i18n.getMessage("undoLabel"),
+        onClick: sendUndoMessage
       });
     } catch (e) {
       this.openNotification({
@@ -411,24 +418,6 @@ export default class PopupPage extends Component {
         type: "error"
       });
     }
-  };
-
-  saveRemovedSession = removedSession => {
-    log.info(logDir, "saveRemovedSession()");
-    this.setState({
-      removedSession: removedSession
-    });
-  };
-
-  restoreRemovedSession = async () => {
-    log.info(logDir, "restoreRemovedSession()");
-    const removedSession = this.state.removedSession;
-    if (removedSession.id == null) return;
-    await sendSessionUpdateMessage(removedSession);
-    this.selectSession(removedSession.id);
-    this.setState({
-      removedSession: {}
-    });
   };
 
   openNotification = notification => {
@@ -503,6 +492,7 @@ export default class PopupPage extends Component {
           openNotification={this.openNotification}
           syncStatus={this.state.syncStatus}
           needsSync={this.state.needsSync}
+          undoStatus={this.state.undoStatus}
         />
         <div id="contents">
           <div className="column sidebar" style={{ width: `${this.state.sidebarWidth}px` }}>

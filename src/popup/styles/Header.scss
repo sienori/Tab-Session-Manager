@@ -35,6 +35,29 @@
       margin-left: 10px;
     }
 
+    .separation{
+      height:20px;
+      border-right: 1px solid var(--button);
+      margin-left: 10px;
+    }
+
+    .undoButton, .redoButton {
+      position: relative;
+      .count{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 10px;
+        color: var(--sub-text);
+      }
+      &:hover svg{
+        fill: var(--highlight);
+      }
+      &.disable svg{
+        opacity: 0.2;
+      }
+    }
+
     .heartButton {
       &:hover svg, &:focus svg {
         fill: var(--confirm);
