@@ -6,6 +6,7 @@ import { sendOpenMessage } from "../actions/controlSessions";
 import generateTagLabel from "../actions/generateTagLabel";
 import generateWindowsInfo from "../actions/generateWindowsInfo";
 import SessionMenuItems from "./SessionMenuItems";
+import OpenMenuItems from "./OpenMenuItems";
 import moment from "moment";
 import TagIcon from "../icons/tag.svg";
 import NewWindowIcon from "../icons/newWindow.svg";
@@ -29,10 +30,17 @@ export default class Session extends Component {
     e.stopPropagation();
   };
 
-  handleContextMenu = e => {
+  handleSessionRightClick = e => {
     const rect = e.target.getBoundingClientRect();
     const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
     this.props.openMenu(x, y, <SessionMenuItems session={this.props.session} />);
+    e.preventDefault();
+  };
+
+  handleOpenRightClick = e => {
+    const rect = e.target.getBoundingClientRect();
+    const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
+    this.props.openMenu(x, y, <OpenMenuItems session={this.props.session} />);
     e.preventDefault();
   };
 
@@ -49,7 +57,7 @@ export default class Session extends Component {
         <button
           className="selectButton"
           onClick={() => handleSessionSelect(session.id)}
-          onContextMenu={this.handleContextMenu}
+          onContextMenu={this.handleSessionRightClick}
           ref={this.sessionItemElement}
         >
           <span className={`name ${getSettings("truncateTitle") ? "isTruncate" : ""}`}>
@@ -80,6 +88,7 @@ export default class Session extends Component {
             <button
               className="open"
               onClick={this.handleOpenClick}
+              onContextMenu={this.handleOpenRightClick}
               title={browser.i18n.getMessage("open")}
             >
               <NewWindowIcon />

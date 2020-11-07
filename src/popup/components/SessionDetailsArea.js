@@ -9,6 +9,7 @@ import NameContainer from "./NameContainer";
 import TagsContainer from "./TagsContainer";
 import DetailsContainer from "./DetailsContainer";
 import SessionMenuItems from "./SessionMenuItems";
+import OpenMenuItems from "./OpenMenuItems";
 import MenuIcon from "../icons/menu.svg";
 import NewWindowIcon from "../icons/newWindow.svg";
 import DeleteIcon from "../icons/delete.svg";
@@ -42,6 +43,13 @@ export default class SessionDetailsArea extends Component {
   handleOpenClick = () => {
     const defaultBehavior = getSettings("openButtonBehavior");
     sendOpenMessage(this.props.session.id, defaultBehavior);
+  };
+
+  handleOpenRightClick = e => {
+    const rect = e.target.getBoundingClientRect();
+    const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
+    this.props.openMenu(x, y, <OpenMenuItems session={this.props.session} />);
+    e.preventDefault();
   };
 
   handleRemoveClick = () => {
@@ -101,7 +109,10 @@ export default class SessionDetailsArea extends Component {
             </span>
 
             <div className="buttonsContainer">
-              <button className="open" onClick={this.handleOpenClick} title={getOpenButtonTitle()}>
+              <button className="open"
+                onClick={this.handleOpenClick}
+                onContextMenu={this.handleOpenRightClick}
+                title={getOpenButtonTitle()}>
                 <NewWindowIcon />
                 <span>{browser.i18n.getMessage("open")}</span>
               </button>
