@@ -107,6 +107,12 @@
   "cancelLabel": {
     "message": "Скасувати"
   },
+  "undoLabel": {
+    "message": "Undo"
+  },
+  "redoLabel": {
+    "message": "Redo"
+  },
   "addTagLabel": {
     "message": "Додати тег"
   },
