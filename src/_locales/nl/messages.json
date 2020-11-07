@@ -107,6 +107,12 @@
   "cancelLabel": {
     "message": "Annuleren"
   },
+  "undoLabel": {
+    "message": "Undo"
+  },
+  "redoLabel": {
+    "message": "Redo"
+  },
   "addTagLabel": {
     "message": "Voeg tag toe"
   },
