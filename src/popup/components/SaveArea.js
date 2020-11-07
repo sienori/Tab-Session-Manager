@@ -52,6 +52,7 @@ export default class SaveArea extends Component {
     const rect = e.target.getBoundingClientRect();
     const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
     this.props.openMenu(x, y, <SaveMenuItems name={name} saveSession={this.props.saveSession} />);
+    e.preventDefault();
   };
 
   setTabName = async () => {
@@ -93,6 +94,7 @@ export default class SaveArea extends Component {
           <button
             className="submitButton saveButton"
             onClick={this.saveSession}
+            onContextMenu={this.openMenu}
             title={this.getSaveButtonTitle()}
           >
             {browser.i18n.getMessage("saveLabel")}
@@ -100,6 +102,7 @@ export default class SaveArea extends Component {
           <button
             className="submitButton saveOptionButton"
             onClick={this.openMenu}
+            onContextMenu={this.openMenu}
             title={browser.i18n.getMessage("menuLabel")}
           >
             <TriangleIcon />
