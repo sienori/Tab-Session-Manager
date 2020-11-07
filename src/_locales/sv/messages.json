@@ -108,10 +108,10 @@
     "message": "Avbryt"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Ångra"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Gör om"
   },
   "addTagLabel": {
     "message": "Lägg till tagg"
