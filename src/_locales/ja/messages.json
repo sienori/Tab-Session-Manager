@@ -108,10 +108,10 @@
     "message": "キャンセル"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "取り消し"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "やり直し"
   },
   "addTagLabel": {
     "message": "タグを追加"
