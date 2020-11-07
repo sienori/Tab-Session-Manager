@@ -108,10 +108,10 @@
     "message": "取消"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "撤销"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "恢复"
   },
   "addTagLabel": {
     "message": "添加标签"
@@ -618,7 +618,7 @@
     "message": "重置"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "支持者"
   },
   "LicenseLabel": {
     "message": "许可证书"
@@ -663,7 +663,7 @@
     "message": "Tab Session Manager 无法打开此页面。"
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "复制 URL"
   },
   "copiedLabel": {
     "message": "Copied."
