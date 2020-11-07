@@ -34,13 +34,14 @@ const TabContainer = props => {
     handleRemoveTab(windowId, tab.id);
   };
 
-  const handleOpenClick = () => {
-    openUrl(tab.url, tab.title);
+  const handleOpenClick = (e) => {
+    if (e.button === 0) openUrl(tab.url, tab.title, true);
+    else if (e.button === 1) openUrl(tab.url, tab.title, false);
   };
 
   return (
     <div className="tabContainer">
-      <button className="tabButton" onClick={handleOpenClick} title={`${tab.title}\n${tab.url}`}>
+      <button className="tabButton" onMouseUp={handleOpenClick} title={`${tab.title}\n${tab.url}`}>
         <FavIcon favIconUrl={tab.favIconUrl} />
         <span className="tabTitle">
           <Highlighter searchWords={searchWords} textToHighlight={tab.title || ""} autoEscape={true} />
