@@ -288,7 +288,7 @@
     "message": "打开启动会话"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "打开已注册的启动会话。您可以在会话列表的菜单里注册启动会话。"
   },
   "DoNothingLabel": {
     "message": "什么也不做"
