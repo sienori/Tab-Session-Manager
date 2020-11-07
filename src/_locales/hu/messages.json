@@ -107,6 +107,12 @@
   "cancelLabel": {
     "message": "Mégse"
   },
+  "undoLabel": {
+    "message": "Undo"
+  },
+  "redoLabel": {
+    "message": "Redo"
+  },
   "addTagLabel": {
     "message": "Címke hozzáadása"
   },
