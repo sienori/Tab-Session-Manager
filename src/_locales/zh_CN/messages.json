@@ -60,7 +60,7 @@
     "message": "字母倒序"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "按会话或标签页名称搜索"
   },
   "search": {
     "message": "搜索"
@@ -198,7 +198,7 @@
     "message": "创建会话副本"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "启动浏览器时自动打开"
   },
   "removeStartupLabel": {
     "message": "Remove from startup"
@@ -666,6 +666,6 @@
     "message": "复制 URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "已复制"
   }
 }
