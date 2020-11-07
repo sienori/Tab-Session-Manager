@@ -107,6 +107,12 @@
   "cancelLabel": {
     "message": "Hủy"
   },
+  "undoLabel": {
+    "message": "Undo"
+  },
+  "redoLabel": {
+    "message": "Redo"
+  },
   "addTagLabel": {
     "message": "Thêm nhãn"
   },
