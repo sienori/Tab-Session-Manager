@@ -198,10 +198,10 @@
     "message": "创建会话副本"
   },
   "registerStartupLabel": {
-    "message": "启动浏览器时自动打开"
+    "message": "启动时自动打开"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "取消启动时自动打开"
   },
   "errorLabel": {
     "message": "错误"
@@ -210,7 +210,7 @@
     "message": "您的浏览器不支持 IndexedDB"
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "重新加载扩展"
   },
   "howToSolveLabel": {
     "message": "解决方案"
@@ -282,7 +282,7 @@
     "message": "打开先前的会话"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "打开最后一次关闭的会话。"
   },
   "openStartupSessionLabel": {
     "message": "打开启动会话"
@@ -336,7 +336,7 @@
     "message": "会话保存最大数量（以此方式）。"
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "使用网页标题作为自动保存的会话的名称"
+    "message": "使用页面标题作为自动保存会话的名称"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
     "message": "自动保存会话时，使用已打开页面的标题作为会话的名称。"
@@ -456,10 +456,10 @@
     "message": "登出"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "同步自动保存的会话"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "在云同步时上传/下载自动保存的会话。"
   },
   "popupLabel": {
     "message": "弹出面板"
