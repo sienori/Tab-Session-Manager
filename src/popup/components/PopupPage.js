@@ -122,12 +122,12 @@ export default class PopupPage extends Component {
     browser.runtime.onMessage.addListener(this.handleMessage);
     browser.runtime.sendMessage({ message: "requestAllSessions", needKeys: keys, count: 30, port: this.port });
 
-    const selectedSessionId = getSettings("selectedSessionId");
-    if (selectedSessionId) {
-      const selectedSession = await getSessions(selectedSessionId, keys);
+    this.firstSelectedSessionId = getSettings("selectedSessionId");
+    if (this.firstSelectedSessionId) {
+      const selectedSession = await getSessions(this.firstSelectedSessionId, keys);
       if (selectedSession) {
         this.setState({ sessions: [selectedSession] });
-        this.selectSession(selectedSessionId);
+        this.selectSession(this.firstSelectedSessionId);
       }
     }
 
@@ -189,8 +189,7 @@ export default class PopupPage extends Component {
 
   handleResponseAllSessions = async request => {
     if (request.port != this.port) return;
-    const selectedSessionId = getSettings("selectedSessionId");
-    const sessions = request.sessions.filter(session => session.id !== selectedSessionId);
+    const sessions = request.sessions.filter(session => session.id !== this.firstSelectedSessionId);
     this.setState({
       sessions: this.state.sessions.concat(sessions),
       filterValue: getSettings("filterValue") || "_displayAll"
