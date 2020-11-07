@@ -198,16 +198,16 @@
     "message": "创建会话副本"
   },
   "registerStartupLabel": {
-    "message": "启动时自动打开"
+    "message": "注册为启动会话"
   },
   "removeStartupLabel": {
-    "message": "取消启动时自动打开"
+    "message": "取消注册为启动会话"
   },
   "errorLabel": {
     "message": "错误"
   },
   "indexedDBErrorLabel": {
-    "message": "您的浏览器不支持 IndexedDB"
+    "message": "IndexedDB 在您的浏览器中不可用。"
   },
   "reloadExtensionLabel": {
     "message": "重新加载扩展"
@@ -627,7 +627,7 @@
     "message": "欢迎捐款"
   },
   "donationCaptionLabel": {
-    "message": "感谢您使用 Tab Session Manager.<br>你的支持将会成为我继续开发此附加组件的巨大鼓励。 <br>如果您喜欢 Tab Session Manager，希望您可以考虑捐助，我将为此感到欣慰。"
+    "message": "感谢您使用 Tab Session Manager.<br>您的支持将会成为我继续开发此附加组件的巨大鼓励。 <br>如果您喜欢 Tab Session Manager，希望您可以考虑捐助，我将为此感到欣慰。"
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp 电子礼品卡"
