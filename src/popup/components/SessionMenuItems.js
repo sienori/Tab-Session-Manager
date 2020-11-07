@@ -9,6 +9,8 @@ import {
   makeCopySession,
   sendExportSessionMessage
 } from "../actions/controlSessions";
+import NewWindowIcon from "../icons/newWindow.svg";
+import EditIcon from "../icons/edit.svg";
 
 export default props => {
   const handleOpenInNewWindow = () => {
@@ -50,6 +52,7 @@ export default props => {
   return (
     <ul>
       <li className="section" onClick={handleClickSection}>
+        <NewWindowIcon />
         {browser.i18n.getMessage("openSessionLabel")}
       </li>
       <li>
@@ -69,6 +72,7 @@ export default props => {
       </li>
       <hr />
       <li className="section" onClick={handleClickSection}>
+        <EditIcon />
         {browser.i18n.getMessage("editSessionLabel")}
       </li>
       <li>

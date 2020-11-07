@@ -3,6 +3,7 @@ import browser from "webextension-polyfill";
 import {
   sendOpenMessage,
 } from "../actions/controlSessions";
+import NewWindowIcon from "../icons/newWindow.svg";
 
 export default props => {
   const handleOpenInNewWindow = () => {
@@ -21,6 +22,7 @@ export default props => {
   return (
     <ul>
       <li className="section" onClick={handleClickSection}>
+        <NewWindowIcon />
         {browser.i18n.getMessage("openSessionLabel")}
       </li>
       <li>
