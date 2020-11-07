@@ -495,6 +495,7 @@ export default class PopupPage extends Component {
         id="popupPage"
         className={this.state.isInTab ? "isInTab" : ""}
         onClick={this.state.menu.isOpen ? this.closeMenu : null}
+        onContextMenu={this.state.menu.isOpen ? this.closeMenu : null}
       >
         <Notification notification={this.state.notification} />
         <Header

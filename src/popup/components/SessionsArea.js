@@ -135,7 +135,8 @@ export default class SessionsArea extends Component {
       isInitSessions,
       removeSession,
       error,
-      sessionsAreaRef
+      sessionsAreaRef,
+      openMenu
     } = this.props;
     const sortedSessions =
       getSortedSessions(sessions, sortValue, filterValue, searchWords, searchedSessionIds);
@@ -174,6 +175,7 @@ export default class SessionsArea extends Component {
                 searchWords={searchWords}
                 removeSession={removeSession}
                 handleSessionSelect={this.handleSessionSelect}
+                openMenu={openMenu}
                 key={session.id}
               />
             )

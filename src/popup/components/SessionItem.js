@@ -5,6 +5,7 @@ import { getSettings } from "src/settings/settings";
 import { sendOpenMessage } from "../actions/controlSessions";
 import generateTagLabel from "../actions/generateTagLabel";
 import generateWindowsInfo from "../actions/generateWindowsInfo";
+import SessionMenuItems from "./SessionMenuItems";
 import moment from "moment";
 import TagIcon from "../icons/tag.svg";
 import NewWindowIcon from "../icons/newWindow.svg";
@@ -28,6 +29,13 @@ export default class Session extends Component {
     e.stopPropagation();
   };
 
+  handleContextMenu = e => {
+    const rect = e.target.getBoundingClientRect();
+    const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
+    this.props.openMenu(x, y, <SessionMenuItems session={this.props.session} />);
+    e.preventDefault();
+  };
+
   componentDidUpdate(prevProps) {
     const shouldFocus = this.props.isSelected && !prevProps.isSelected;
     if (shouldFocus) this.sessionItemElement.current.focus();
@@ -41,6 +49,7 @@ export default class Session extends Component {
         <button
           className="selectButton"
           onClick={() => handleSessionSelect(session.id)}
+          onContextMenu={this.handleContextMenu}
           ref={this.sessionItemElement}
         >
           <span className={`name ${getSettings("truncateTitle") ? "isTruncate" : ""}`}>
