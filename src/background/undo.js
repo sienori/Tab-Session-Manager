@@ -8,6 +8,7 @@ let changes = [];
 let currentIndex = -1;
 
 export const recordChange = (beforeSession, afterSession) => {
+  if (beforeSession === undefined || afterSession === undefined) return;
   if (currentIndex < changes.length - 1) changes.splice(currentIndex + 1);
   changes.push({ before: beforeSession, after: afterSession });
   currentIndex = changes.length - 1;
