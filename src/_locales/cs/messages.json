@@ -192,16 +192,16 @@
     "message": "Nahradit stávajícím oknem"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Přidat aktuální okno"
   },
   "makeCopySessionLabel": {
     "message": "Vytvořit kopii relace"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Registrovat pro spuštění"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Odstranit ze startu"
   },
   "errorLabel": {
     "message": "Chyba"
@@ -210,19 +210,19 @@
     "message": "IndexedDB není k dispozici."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Znovu načíst rozšíření"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Jak vyřešit tento problém"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Automatické ukládání - Zavření okna"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Automatické ukládání - Zavření prohlížeče"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Automatické ukládání - Pravidelně"
   },
   "settingsLabel": {
     "message": "Nastavení"
@@ -231,25 +231,25 @@
     "message": "Relace"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Zkratky"
   },
   "informationLabel": {
     "message": "Informace"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Obecné"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Automatické ukládání"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Vzhled"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Otevřít relaci v novém okně"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "Pokud není zaškrtnuto, relace přepíše aktuální okno."
   },
   "ifLazyLoadingLabel": {
     "message": "Líné načítání panelů"
@@ -273,7 +273,7 @@
     "message": "Obnovit pozici a velikost oken při otevírání relace."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Po spuštění"
   },
   "startupBehaviorLabel": {
     "message": "Behavior when starting the browser"
