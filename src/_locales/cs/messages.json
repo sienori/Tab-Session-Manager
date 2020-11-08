@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Uložit a obnovit stav oken a panelů. Také podporuje automatické ukládání."
   },
   "donateWithPaypalLabel": {
     "message": "Podpořit přes PayPal"
@@ -21,7 +21,7 @@
     "message": "Uložit aktuální relaci"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Název vstupní relace"
   },
   "saveSessionLabel": {
     "message": "Uložit relaci"
@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Hledat podle relace nebo názvu karty"
   },
   "search": {
     "message": "Hledat"
@@ -81,10 +81,10 @@
     "message": "Relace smazána."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Okno relace smazáno."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Záložka relace byla smazána."
   },
   "restoreSessionLabel": {
     "message": "Obnovit"
@@ -93,25 +93,25 @@
     "message": "Chyba odstranění relace."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Nepodařilo se odstranit okno relace."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Nepodařilo se odstranit záložku relace."
   },
   "sessionSavedLabel": {
     "message": "Relace uložena."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Nepodařilo se uložit relaci."
   },
   "cancelLabel": {
     "message": "Zrušit"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Zpět"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Znovu"
   },
   "addTagLabel": {
     "message": "Přidat štítek"
@@ -138,19 +138,19 @@
     "message": "Žádná uložená relace."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Uložte relaci kliknutím na tlačítko vpravo dole."
   },
   "noResultLabel": {
     "message": "Žádné výsledky."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Nebyla vybrána žádná relace."
   },
   "menuLabel": {
     "message": "Nabídka"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Zavřít nabídku"
   },
   "closeLabel": {
     "message": "Zavžít"
@@ -159,7 +159,7 @@
     "message": "Přejmenovat"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Přejmenovat relaci"
   },
   "OpenSessionLabel": {
     "message": "Otevřít relaci"
@@ -546,25 +546,25 @@
     "message": "Browse..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Importovat"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "Smazat"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Importovat seznam URL"
   },
   "urlImportCaptionLabel": {
     "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "Exportovat relace"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Uložit všechny relace do počítače."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "Exportovat"
   },
   "removeSessionsLabel": {
     "message": "Delete sessions"
@@ -573,10 +573,10 @@
     "message": "Delete all sessions."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "Smazat"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Klávesové zkratky"
   },
   "setKeyboardShortCutsMessage": {
     "message": "Set keyboard shortcuts."
@@ -612,7 +612,7 @@
     "message": "Export all sessions"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Vyčistit"
   },
   "reset": {
     "message": "Reset"
@@ -663,9 +663,9 @@
     "message": "This page can not be opened by Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Kopírovat URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Zkopírováno."
   }
 }
