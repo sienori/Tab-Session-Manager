@@ -49,3 +49,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Ronald Gremban
 - Rain
 - [Gyurme](https://github.com/gpg-dev)
+- Point
