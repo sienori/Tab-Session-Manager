@@ -108,10 +108,10 @@
     "message": "Cancelar"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Deshacer"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Rehacer"
   },
   "addTagLabel": {
     "message": "Añadir etiqueta"
