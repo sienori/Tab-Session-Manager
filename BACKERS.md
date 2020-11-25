@@ -51,3 +51,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - [Gyurme](https://github.com/gpg-dev)
 - Point
 - Petr Korolev
+- Andreas Andersson
