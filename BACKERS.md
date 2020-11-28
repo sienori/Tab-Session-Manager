@@ -52,3 +52,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Point
 - Petr Korolev
 - Andreas Andersson
+- Gregory Werbin
