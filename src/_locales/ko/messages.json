@@ -72,19 +72,19 @@
     "message": "열기"
   },
   "remove": {
-    "message": "삭제"
+    "message": "지우기"
   },
   "removeConfirmLabel": {
-    "message": "이 세션을 삭제할까요?"
+    "message": "이 세션을 지울까요?"
   },
   "sessionDeletedLabel": {
-    "message": "세션 삭제됨."
+    "message": "세션 지움."
   },
   "sessionWindowDeletedLabel": {
-    "message": "세션 창 삭제됨."
+    "message": "세션 창 지움."
   },
   "sessionTabDeletedLabel": {
-    "message": "세션 탭 삭제됨."
+    "message": "세션 탭 지움."
   },
   "restoreSessionLabel": {
     "message": "복원"
@@ -93,10 +93,10 @@
     "message": "세션 삭제 실패."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "세션 창 삭제 실패."
+    "message": "세션 창 지우기 실패."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "세션 탭 삭제 실패."
+    "message": "세션 탭 지우기 실패."
   },
   "sessionSavedLabel": {
     "message": "세션 저장됨."
@@ -348,7 +348,7 @@
     "message": "백업 저장"
   },
   "ifBackupCaptionLabel": {
-    "message": "브라우저를 켤 때, 세션의 백업복을 만들어 다운로드 폴더에 저장합니다."
+    "message": "브라우저를 켤 때, 백업본을 만들어 다운로드 폴더에 저장합니다."
   },
   "backupFolderLabel": {
     "message": "저장 위치"
@@ -363,7 +363,7 @@
     "message": "최대 백업본 저장 개수"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "백업본의 수가 이 값을 넘는다면, 가장 오래된 것부터 자동 삭제됩니다."
+    "message": "백업본의 수가 이 값을 넘으면, 가장 오래된 것부터 자동으로 지웁니다."
   },
   "dateFormatLabel": {
     "message": "날짜 형식"
@@ -444,7 +444,7 @@
     "message": "올리는 중"
   },
   "deletingLabel": {
-    "message": "삭제하는 중"
+    "message": "지우는 중"
   },
   "syncCompletedLabel": {
     "message": "동기화 완료"
@@ -477,10 +477,10 @@
     "message": "저장 버튼을 눌렀을 때의 기본 동작을 선택해주세요."
   },
   "isShowOpenButtonsLabel": {
-    "message": "세션 목록에서 열기 / 삭제 버튼 보이기"
+    "message": "세션 목록에서 열기 / 지우기 버튼 보이기"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "커서가 세션 목록 상에 있을 때 열기 / 삭제 버튼을 보입니다."
+    "message": "커서가 세션 목록 위에 있을 때 열기 / 지우기 버튼을 보입니다."
   },
   "sizeLabel": {
     "message": "크기"
@@ -552,10 +552,10 @@
     "message": "지우기"
   },
   "urlImportLabel": {
-    "message": "URL 목옥 가져오기"
+    "message": "URL 목록 가져오기"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "URL 목록으로부터 새 세션을 만들어 저장하세요.<br>입력 양식: &lt;URL&gt;&lt;page title (optionally)&gt;"
   },
   "exportLabel": {
     "message": "세션 내보내기"
@@ -567,13 +567,13 @@
     "message": "내보내기"
   },
   "removeSessionsLabel": {
-    "message": "세션 삭제"
+    "message": "여러 세션 지우기"
   },
   "removeSessionsCaptionLabel": {
-    "message": "모든 세션 삭제"
+    "message": "모든 세션 지우기"
   },
   "removeSessionsButtonLabel": {
-    "message": "삭제"
+    "message": "지우기"
   },
   "keyboardShortcutsLabel": {
     "message": "키보드 단축키"
@@ -648,7 +648,7 @@
     "message": "실패하였습니다."
   },
   "warningRemoveAllMessage": {
-    "message": "모든 세션을 삭제합니다. 확실한가요?"
+    "message": "모든 세션을 지웁니다. 확실한가요?"
   },
   "sessionLabel": {
     "message": "세션"
