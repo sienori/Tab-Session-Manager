@@ -12,7 +12,7 @@
     "message": "Bağış yap"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Oturum listesini sekmede aç"
   },
   "saveLabel": {
     "message": "Kaydet"
@@ -21,19 +21,19 @@
     "message": "Geçerli oturumu kaydet"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Oturum adını girin"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Oturumu kaydet"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Tüm pencereleri kaydet"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Yalnızca mevcut pencereyi kaydet"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Kategori filtresi"
   },
   "sortLabel": {
     "message": "Sırala"
@@ -42,10 +42,10 @@
     "message": "Tümü"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Kullanıcı Kaydı"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Otomatik Kaydet"
   },
   "newestLabel": {
     "message": "En yeni"
@@ -60,13 +60,13 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Oturum veya sekme adına göre ara"
   },
   "search": {
-    "message": "Search"
+    "message": "Ara"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Aramayı temizle"
   },
   "open": {
     "message": "Açık"
@@ -81,25 +81,25 @@
     "message": "Oturum silindi."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Oturum penceresi silindi."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Oturum sekmesi silindi."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Geri Yükle"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Oturum silme başarısız oldu."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Oturum penceresi silme başarısız oldu."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Oturum sekmesi silme başarısız oldu."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Oturum kaydedildi."
   },
   "failedSaveSessionLabel": {
     "message": "Oturum kaydetme başarısız oldu."
@@ -108,10 +108,10 @@
     "message": "Vazgeç"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Geri Al"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Yeniden Yap"
   },
   "addTagLabel": {
     "message": "Etiket ekle"
@@ -138,7 +138,7 @@
     "message": "Oturum yok."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Sağ alttaki butona tıklayarak oturumu kaydedelim."
   },
   "noResultLabel": {
     "message": "Eşleşen sonuç yok."
@@ -174,34 +174,34 @@
     "message": "Mevcut pencerede aç"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Oturumu mevcut pencerede açın. Etkin olmayan pencereler ve tüm sekmeler kapatılır."
   },
   "addToCurrentWindowLabel": {
     "message": "Mevcut pencereye ekle"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Mevcut pencereye sekmeler ekleyin. Oturum birden fazla pencere içeriyorsa, yeni pencerede açın."
   },
   "EditSessionLabel": {
     "message": "Oturumu düzenle"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Mevcut oturumla değiştir"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Mevcut pencereyle değiştir"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Mevcut pencereye ekle"
   },
   "makeCopySessionLabel": {
     "message": "Oturumun kopyasını oluştur"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Başlangıç için kaydolun"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Başlangıçtan kaldır"
   },
   "errorLabel": {
     "message": "Hata"
@@ -249,13 +249,13 @@
     "message": "Yeni penceredeki açık oturumlar"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "İşaretli değilse, oturum mevcut pencerenin üzerine yazar."
+    "message": "Seçili değilse, oturum mevcut pencerenin üzerine yazar."
   },
   "ifLazyLoadingLabel": {
     "message": "Sekme yavaş yükleniyor"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Bir oturumu açarken, sekmeyi seçene kadar her sayfanın içeriği yüklenmez. <br> İşaretlenmezse, oturum geri yüklendiğinde bellek kullanımı büyük ölçüde artar."
+    "message": "Bir oturum açıldığında, her sayfanın içeriği siz sekme seçene kadar yüklenmez.<br>Eğer seçilmezse, oturum geri yüklendiğinde bellek kullanımı büyük ölçüde artar."
   },
   "isUseDiscardedLabel": {
     "message": "Use the \"discarded\" property for lazy loading"
