@@ -249,13 +249,13 @@
     "message": "Yeni penceredeki açık oturumlar"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "Kontrol işareti koyulduysa, oturum geçerli pencerenin üzerinde yazar."
+    "message": "İşaretli değilse, oturum mevcut pencerenin üzerine yazar."
   },
   "ifLazyLoadingLabel": {
     "message": "Sekme yavaş yükleniyor"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Bir oturum açtığında, her sayfanın içeriği siz sekme seçene kadar her sayfanın içeriği yüklenmez.<br>Kontrol işareti konulursa, oturum onarıldığında bellek kullanımı artar."
+    "message": "Bir oturumu açarken, sekmeyi seçene kadar her sayfanın içeriği yüklenmez. <br> İşaretlenmezse, oturum geri yüklendiğinde bellek kullanımı büyük ölçüde artar."
   },
   "isUseDiscardedLabel": {
     "message": "Use the \"discarded\" property for lazy loading"
