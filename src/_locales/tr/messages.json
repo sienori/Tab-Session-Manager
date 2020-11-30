@@ -210,7 +210,7 @@
     "message": "IndexedDB tarayıcınızda mevcut değil."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Uzantıyı yeniden yükle"
   },
   "howToSolveLabel": {
     "message": "Bu sorun nasıl çözülür"
@@ -261,37 +261,37 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Bu seçeneğin etkinleştirilmesi, sekmeleri açarken performansı artıracaktır."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Geç yükleme sekmesinin favicon'u görüntülenmez."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Pencere konumunu geri yükle"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Oturumu açarken pencerenin konumunu ve boyutunu geri yükleyin."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Başlangıç"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Tarayıcıyı başlatırkenki davranış"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Önceki oturumu aç"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "En son kapatılan oturumu açın."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Başlangıç oturumunu aç"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Başlangıç için kaydedilen oturumları açın. Oturum listesindeki menüden başlangıç için kayıt olabilirsiniz."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Hiç bir şey yapma"
   },
   "ifAutoSaveLabel": {
     "message": "Oturumu düzenli olarak kaydet"
@@ -324,16 +324,16 @@
     "message": "Bu şekilde kaydedilen maksimum sayı."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Tarayıcıdan çıkarken oturumu kaydedin"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Arka arkaya kapatılmış birden çok pencere içeren oturumu kaydedin."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maksimum sayı Kaydedildi"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Kaydedilen maksimum oturum sayısı (bu şekilde)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Otomatik kaydedilen oturum adı için sayfa başlığını kullan"
@@ -342,13 +342,13 @@
     "message": "Bir oturumu otomatik olarak kaydederken, oturum adı olarak açılan sayfanın başlığını kullan."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Yedek"
   },
   "ifBackupLabel": {
     "message": "Yedeklemeyi kaydet"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Tarayıcı başladığında, oturumlardan oluşan bir yedekleme dosyası oluşturun ve bunu indirme klasörüne kaydedin."
   },
   "backupFolderLabel": {
     "message": "Save location"
@@ -483,10 +483,10 @@
     "message": "Display open / delete buttons when the cursor is over the session list."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Boyut"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Pop-up'ın boyutunu belirtin."
   },
   "widthLabel": {
     "message": "Genişlik"
@@ -495,46 +495,46 @@
     "message": "Yükseklik"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Kenar çubuğu genişliği"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Oturum listesini sekmede aç"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Araç çubuğundaki buton tıklandığında oturum listesini sekmede açın."
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Diğer"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Güncelleme sırasında seçenek sayfasını görüntüle"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Sekme Oturum Yöneticisi güncellendiğinde seçenekler sayfasını görüntüleyin. Güncelleme içeriğini hızlı bir şekilde öğrenebilirsiniz."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Sekme Oturum Yöneticisi güncellendi!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Daha Fazlasını Gör"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Güncelleme bilgilerini görüntülemek için tıklayın."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Hata ayıklama modunu etkinleştir"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Hata ayıklama modu etkin olduğunda, sistem günlüğü hata ayıklayıcısına verilir."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Ayarları sıfırla"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Tüm ayarları varsayılana sıfırla."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Sıfırla"
   },
   "importLabel": {
     "message": "Oturumları al"
@@ -576,49 +576,49 @@
     "message": "Sil"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Klavye kısayolları"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Klavye kısayollarını ayarlayın."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Bir kısayol yazın"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Bir harf yazın"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Ctrl veya Alt’ı dahil et"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Command tuşunu, Ctrl veya Alt'ı dahil edin"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Harf kullanılamaz"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Kısayol kullanılamaz"
   },
   "openPopupDescription": {
     "message": "Open toolbar popup"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Oturumu kaydet (yalnızca mevcut pencere)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Oturumu kaydet (tüm pencereler)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Tüm oturumları dışa aktar"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Temizle"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Sıfırla"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Destekleyenler"
   },
   "LicenseLabel": {
     "message": "Lisans"
@@ -633,13 +633,13 @@
     "message": "amazon.co.jp Hediye Kartları"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Eklenti sayfası"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Uzantı sayfası"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Gizlilik Politikası"
   },
   "importMessage": {
     "message": "Oturumlar içe aktarıldı."
@@ -663,9 +663,9 @@
     "message": "Bu sayfa Tab Session Manager tarafından açılamaz."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "URL adresini kopyala"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Kopyalandı."
   }
 }
