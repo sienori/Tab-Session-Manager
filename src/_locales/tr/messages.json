@@ -315,7 +315,7 @@
     "message": "Pencere kapandığında oturumu kaydet"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Yalnızca bir kapalı pencere içeren oturumu kaydedin."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Kaydedilen maksimum sayı"
@@ -351,13 +351,13 @@
     "message": "Tarayıcı başladığında, oturumlardan oluşan bir yedekleme dosyası oluşturun ve bunu indirme klasörüne kaydedin."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Konumu kaydet"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Yedekleme dosyasını kaydetmek için klasörü belirtin. Kaydetme konumu, tarayıcı indirme klasörünün altındaki klasörle sınırlıdır."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "İndirme klasörü"
   },
   "backupFilesLimitLabel": {
     "message": "En fazla kayıtlı yedekleme sayısı"
@@ -375,34 +375,34 @@
     "message": "Gizli pencereyi kaydet"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Oturumu kaydederken göz ardı edilecek URL listesi"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Sekme URL'si listeyle eşleşirse, oturumda kaydedilmez. Liste \"*\" joker karakterlere izin verir."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Cihaz adını oturuma kaydet"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Bir oturumu kaydederken cihaz adını etiket olarak ekleyin. Bulut senkronizasyonunu kullanırken, onu diğer cihazlardaki oturumlardan ayırt edebilirsiniz."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Cihaz ismi"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Bu cihazın adını belirtin."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Cihaz adını mevcut oturumlara uygulayın"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Cihaz adını tüm kayıtlı oturumlara ekleyin."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Cihaz adını uygulayın"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Cihaz adı tüm oturumlara uygulansın mı?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Eğer işaretli değilse, oturumu kaydederken gizli pencereyi yok sayar."
@@ -426,61 +426,61 @@
     "message": "Oturum listesindeki oturum adı tek bir satırdan uzunsa, tek satır üzerinde kısaltılır ve görüntülenir."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Bulut Senkronizasyonu"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Bulut senkronizasyonunu etkinleştirin (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Oturumları Google Drive™'a kaydedin ve diğer bilgisayarlarla senkronize edin."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Eşitleniyor"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "İndiriliyor"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Yükleniyor"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Siliniyor"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Eşitleme tamamlandı."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Oturum aç"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Oturumu Kapat"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Otomatik kaydetme oturumlarını senkronize et"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Bulut senkronizasyonunda otomatik kaydetme oturumlarını yükleyin / indirin."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Açılır pencere (popup)"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Aç tuşu davranışı"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Aç tuşunun varsayılan davranışını seçin."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Kaydet tuşunun davranışı"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Kaydet tuşunun varsayılan davranışını seçin."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Oturum listesinde açma / silme tuşlarını görüntüle"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "İmleç oturum listesinin üzerindeyken açma / silme tuşlarını görüntüleyin."
   },
   "sizeLabel": {
     "message": "Boyut"
@@ -600,7 +600,7 @@
     "message": "Kısayol kullanılamaz"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Araç çubuğu açılır penceresini aç"
   },
   "saveCurrentWindowDescription": {
     "message": "Oturumu kaydet (yalnızca mevcut pencere)"
