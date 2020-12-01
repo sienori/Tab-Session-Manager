@@ -52,10 +52,10 @@ export const uploadSession = async (session, fileId = "") => {
       tabsNumber: session.tabsNumber,
       windowsNumber: session.windowsNumber
     },
-    mimeType: "aplication/json"
+    mimeType: "application/json"
   };
   if (!fileId) metadata.parents = ["appDataFolder"];
-  const file = new Blob([JSON.stringify(session)], { type: "aplication/json" });
+  const file = new Blob([JSON.stringify(session)], { type: "application/json" });
   const form = new FormData();
   form.append("metadata", new Blob([JSON.stringify(metadata)], { type: "application/json" }));
   form.append("file", file);
