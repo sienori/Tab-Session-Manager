@@ -73,15 +73,19 @@ const init = async () => {
   setAutoSave();
   backupSessions();
   addListeners();
-};
 
-const onStartupListener = async () => {
-  await init();
-  autoSaveWhenExitBrowser().then(() => {
+  if(IsStartup){
+    await autoSaveWhenExitBrowser();
     const startupBehavior = getSettings("startupBehavior");
     if (startupBehavior === "previousSession") openLastSession();
     else if (startupBehavior === "startupSession") openStartupSessions();
-  });
+  }
+};
+
+let IsStartup = false;
+const onStartupListener = async () => {
+  log.info(logDir, "onStartupListener()");
+  IsStartup = true;
 };
 
 const onMessageListener = async (request, sender, sendResponse) => {
@@ -172,7 +176,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
 };
 
 browser.runtime.onStartup.addListener(onStartupListener);
-browser.runtime.onInstalled.addListener(init);
 browser.runtime.onInstalled.addListener(onInstalledListener);
 browser.runtime.onMessage.addListener(onMessageListener);
 browser.commands.onCommand.addListener(onCommandListener);
+init();
