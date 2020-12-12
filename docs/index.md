@@ -8,9 +8,9 @@ Save and restore the state of windows and tabs. It also supports automatic savin
 
 ## Download
 
-[<img src="../other/promotion/badges/firefox.png" align="left" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/tab-session-manager/)
+[<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/firefox.png" align="left" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/tab-session-manager/)
 &ensp;
-[<img src="../other/promotion/badges/chrome.png" alt="for Chrome" height="60px">](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
+[<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/chrome.png" alt="for Chrome" height="60px">](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
 
 [for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/jkjjclfiflhpjangefhgfjhgfbhajadk)
 
@@ -18,8 +18,8 @@ Save and restore the state of windows and tabs. It also supports automatic savin
 
 Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md)** who supported Tab Session Manager!
 
-[<img src="../other/promotion/badges/patreon.png" alt="Became a Patreon">](https://www.patreon.com/sienori)
-[<img src="../other/promotion/badges/paypal.png" alt="Check out with PayPal">](https://www.paypal.me/sienoriExt)
+[<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/patreon.png" alt="Became a Patreon">](https://www.patreon.com/sienori)
+[<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/paypal.png" alt="Check out with PayPal">](https://www.paypal.me/sienoriExt)
 
 ## Translation
 
@@ -27,9 +27,13 @@ You can contribute by translating Tab Session Manager on **[Crowdin](https://cro
 
 ## Developing
 
-1. Clone the repository `git clone https://github.com/sienori/Tab-Session-Manager`
-2. Run `npm install`
-3. Run `npm run watch-dev`
+1. Clone the repository `git clone https://github.com/sienori/Tab-Session-Manager`  
+2. Create the file `src/credentials.js`  
+  ```src/credentials.js
+  export const clientId = "xxx"
+  ```
+3. Run `npm install`
+4. Run `npm run watch-dev`
 
 ### Load the extension in Chrome
 
