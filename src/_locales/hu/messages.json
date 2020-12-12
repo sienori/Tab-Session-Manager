@@ -108,10 +108,10 @@
     "message": "Mégse"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Visszavonás"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Mégis"
   },
   "addTagLabel": {
     "message": "Címke hozzáadása"
