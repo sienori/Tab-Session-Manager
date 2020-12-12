@@ -39,7 +39,7 @@
     "message": "Sort"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "සියල්ල"
   },
   "displayUserLabel": {
     "message": "User Save"
@@ -63,13 +63,13 @@
     "message": "Search by session or tab name"
   },
   "search": {
-    "message": "Search"
+    "message": "සොයන්න"
   },
   "clearSearch": {
     "message": "Clear search"
   },
   "open": {
-    "message": "Open"
+    "message": "විවෘත කරන්න"
   },
   "remove": {
     "message": "Delete"
@@ -105,13 +105,13 @@
     "message": "Failed to save session."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "අවලංගු කරන්න"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "පෙරසේ"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "පසුසේ"
   },
   "addTagLabel": {
     "message": "Add tag"
@@ -120,7 +120,7 @@
     "message": "Remove tag"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "විස්තරය"
   },
   "windowLabel": {
     "message": "Window"
@@ -204,7 +204,7 @@
     "message": "Remove from startup"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "දෝෂය"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
@@ -225,7 +225,7 @@
     "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "සැකසුම්"
   },
   "sessionsLabel": {
     "message": "Sessions"
@@ -234,7 +234,7 @@
     "message": "Shortcuts"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "තොරතුරු"
   },
   "generalLabel": {
     "message": "General"
@@ -387,7 +387,7 @@
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "උපාංගයේ නම"
   },
   "deviceNameCaptionLabel": {
     "message": "Specify the name of this device."
@@ -438,7 +438,7 @@
     "message": "Syncing"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "බාගත වෙමින්"
   },
   "uploadingLabel": {
     "message": "Uploading"
@@ -450,10 +450,10 @@
     "message": "Sync completed."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "පිවිසෙන්න"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "නික්මෙන්න"
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Sync auto save sessions"
@@ -483,7 +483,7 @@
     "message": "Display open / delete buttons when the cursor is over the session list."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "ප්‍රමාණය"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
@@ -504,7 +504,7 @@
     "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "වෙනත්"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
     "message": "Display option page when updating"
@@ -621,7 +621,7 @@
     "message": "Backers"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "බලපත්‍රය"
   },
   "donationLabel": {
     "message": "Please make a donation"
