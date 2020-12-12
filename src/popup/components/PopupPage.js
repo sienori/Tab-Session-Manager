@@ -277,6 +277,7 @@ export default class PopupPage extends Component {
   };
 
   handleUpdateUndoStatus = request => {
+    if (!request.undoStatus) return;
     this.setState({ undoStatus: request.undoStatus });
   };
 
