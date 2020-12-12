@@ -6,9 +6,9 @@
 
 ## Download
 
-[<img src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png" align="left" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/tab-session-manager/)
+[<img src="other/promotion/badges/firefox.png" align="left" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/tab-session-manager/)
 
-[<img src="https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png" alt="for Chrome">](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
+[<img src="other/promotion/badges/chrome.png" alt="for Chrome" height="60px">](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
 
 [for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/jkjjclfiflhpjangefhgfjhgfbhajadk/)
 
@@ -16,7 +16,8 @@
 
 Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md)** who supported Tab Session Manager!
 
-[<img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Became a Patreon">](https://www.patreon.com/sienori)
+[<img src="other/promotion/badges/patreon.png" alt="Became a Patreon">](https://www.patreon.com/sienori)
+[<img src="other/promotion/badges/paypal.png" alt="Check out with PayPal">](https://www.paypal.me/sienoriExt)
 
 ## Translation
 

@@ -2,9 +2,8 @@
 
 Thank you to the awesome backers who supported Tab Session Manager!
 
-<a href=https://www.patreon.com/sienori >
-<img src=https://c5.patreon.com/external/logo/become_a_patron_button.png alt="Became a patreon">
-</a>
+[<img src=https://c5.patreon.com/external/logo/become_a_patron_button.png alt="Became a patreon">](https://www.patreon.com/sienori)
+[<img src="other/promotion/badges/paypal.png" alt="Check out with PayPal">](https://www.paypal.me/sienoriExt)
 
 ## Backers via Patreon
 - level1imp
