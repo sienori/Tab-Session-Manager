@@ -60,7 +60,7 @@
     "message": "字母倒序"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "按会话或标签页名称搜索"
   },
   "search": {
     "message": "搜索"
@@ -108,10 +108,10 @@
     "message": "取消"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "撤销"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "恢复"
   },
   "addTagLabel": {
     "message": "添加标签"
@@ -198,19 +198,19 @@
     "message": "创建会话副本"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "注册为启动会话"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "取消注册为启动会话"
   },
   "errorLabel": {
     "message": "错误"
   },
   "indexedDBErrorLabel": {
-    "message": "您的浏览器不支持 IndexedDB"
+    "message": "IndexedDB 在您的浏览器中不可用。"
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "重新加载扩展"
   },
   "howToSolveLabel": {
     "message": "解决方案"
@@ -282,13 +282,13 @@
     "message": "打开先前的会话"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "打开最后一次关闭的会话。"
   },
   "openStartupSessionLabel": {
     "message": "打开启动会话"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "打开已注册的启动会话。您可以在会话列表的菜单里注册启动会话。"
   },
   "DoNothingLabel": {
     "message": "什么也不做"
@@ -336,7 +336,7 @@
     "message": "会话保存最大数量（以此方式）。"
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "使用网页标题作为自动保存的会话的名称"
+    "message": "使用页面标题作为自动保存会话的名称"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
     "message": "自动保存会话时，使用已打开页面的标题作为会话的名称。"
@@ -456,10 +456,10 @@
     "message": "登出"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "同步自动保存的会话"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "在云同步时上传/下载自动保存的会话。"
   },
   "popupLabel": {
     "message": "弹出面板"
@@ -618,7 +618,7 @@
     "message": "重置"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "支持者"
   },
   "LicenseLabel": {
     "message": "许可证书"
@@ -627,7 +627,7 @@
     "message": "欢迎捐款"
   },
   "donationCaptionLabel": {
-    "message": "感谢您使用 Tab Session Manager.<br>你的支持将会成为我继续开发此附加组件的巨大鼓励。 <br>如果您喜欢 Tab Session Manager，希望您可以考虑捐助，我将为此感到欣慰。"
+    "message": "感谢您使用 Tab Session Manager.<br>您的支持将会成为我继续开发此附加组件的巨大鼓励。 <br>如果您喜欢 Tab Session Manager，希望您可以考虑捐助，我将为此感到欣慰。"
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp 电子礼品卡"
@@ -663,9 +663,9 @@
     "message": "Tab Session Manager 无法打开此页面。"
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "复制 URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "已复制"
   }
 }
