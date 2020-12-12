@@ -18,7 +18,7 @@
     "react-svg-loader": "^3.0.3",
     "react-transition-group": "^4.3.0",
     "uuid": "^3.4.0",
-    "webextension-polyfill": "^0.3.1"
+    "webextension-polyfill": "^0.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
