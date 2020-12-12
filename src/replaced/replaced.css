@@ -7,6 +7,17 @@
   --main-bg: #ffffff;
 }
 
+@media (prefers-color-scheme: dark){
+  :root {
+    --main-text: #e6e6e6;
+    --sub-text: #aaaaaa;
+    --line: #373737;
+    --button: #929292;
+    --highlight: #36b2b2;
+    --main-bg:#181818;
+  }
+}
+
 body {
   font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica",
     sans-serif;
@@ -50,6 +61,7 @@ hr {
 
 input {
   border: none;
+  background-color: var(--main-bg);
 }
 
 a {

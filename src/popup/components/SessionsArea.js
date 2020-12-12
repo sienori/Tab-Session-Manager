@@ -158,6 +158,7 @@ export default class SessionsArea extends Component {
     return (
       <div
         id="sessionsArea"
+        className="scrollbar"
         ref={sessionsAreaRef}
         role="toolbar"
         tabIndex="0"

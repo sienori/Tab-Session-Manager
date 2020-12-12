@@ -146,7 +146,7 @@ export default props => {
 
   const windowLabel = browser.i18n.getMessage("windowLabel");
   return (
-    <div className="detailsContainer">
+    <div className="detailsContainer scrollbar">
       {Object.keys(session.windows).map(windowId => (
         <WindowContainer
           tabs={session.windows[windowId]}

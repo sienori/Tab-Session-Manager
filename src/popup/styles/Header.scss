@@ -12,7 +12,7 @@
   .title {
     font-size: 17px;
     font-weight: 400;
-    color: #666;
+    color: var(--sub-text);
     cursor: default;
     flex-shrink: 0;
   }
@@ -94,6 +94,7 @@
 
     .syncStatus {
       opacity: 0;
+      color: var(--main-text);
       &.pending {
         transition: opacity 200ms;
         opacity: 1;

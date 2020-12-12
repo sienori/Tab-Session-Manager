@@ -70,6 +70,7 @@
           }
         }
         .windowTitle {
+          color: var(--main-text);
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -92,6 +93,7 @@
           width: 100%;
           overflow: hidden;
           .tabTitle {
+            color: var(--main-text);
             line-height: 1.3em;
             overflow: hidden;
             text-overflow: ellipsis;

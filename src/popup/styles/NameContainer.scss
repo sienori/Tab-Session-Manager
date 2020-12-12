@@ -7,7 +7,7 @@
 
   .sessionName {
     display: block;
-    color: #444;
+    color: var(--main-text);
     font-weight: bold;
     font-size: 16px;
     text-overflow: ellipsis;

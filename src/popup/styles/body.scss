@@ -6,6 +6,21 @@ html {
     font-size: 13px;
     overflow: hidden;
     background-color: var(--main-bg);
+
+    .scrollbar{
+      scrollbar-color: var(--button) var(--line);
+      scrollbar-width: thin;
+      &::-webkit-scrollbar{
+        width: 8px;
+      }
+      &::-webkit-scrollbar-track{
+        background-color: var(--line);
+      }
+      &::-webkit-scrollbar-thumb{
+        background-color: var(--button);
+      }
+    }
+
     #root {
       height: 100%;
     }
@@ -28,4 +43,21 @@ html {
   --warn: #ff8f00;
   --success: #058b00;
   --info: #0a84ff;
+}
+
+@media (prefers-color-scheme: dark){
+  :root {
+    --main-text: #e6e6e6;
+    --sub-text: #aaaaaa;
+    --line: #373737;
+    --button: #929292;
+    --highlight: #36b2b2;
+    --main-bg:#181818;
+    --highlight-bg: #2e4343;
+    --confirm: #ed5f5f;
+    --error: #ca1532;
+    --warn: #ee8e12;
+    --success: #2a9c26;
+    --info: #1471d0;
+  }
 }

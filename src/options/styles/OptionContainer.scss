@@ -83,6 +83,8 @@ input,
 textarea {
   font-family: inherit;
   font-size: 14px;
+  background-color: var(--sub-bg);
+  color: var(--main-text);
 }
 
 textarea {
@@ -164,6 +166,7 @@ input[type="checkbox"] {
     height: 20px;
     border: 1px solid var(--button);
     border-radius: 2px;
+    background-color: var(--sub-bg);
   }
   &:hover::before {
     border-color: var(--highlight);
@@ -208,6 +211,7 @@ input[type="radio"] {
     height: 20px;
     border: 1px solid var(--button);
     border-radius: 50%;
+    background-color: var(--sub-bg);
   }
   &:hover::before {
     border-color: var(--highlight);
@@ -277,12 +281,12 @@ input[type="button"],
   color: var(--main-text);
   border: 1px solid var(--button);
   border-radius: 2px;
-  background-color: #fbfbfb;
+  background-color: var(--line);
   cursor: pointer;
   white-space: nowrap;
   &:hover,
   &:focus {
-    background: #f5f5f5;
+    background-color: var(--button);
     border-color: var(--highlight);
   }
   &.includeSpan {
@@ -301,7 +305,7 @@ input[type="button"],
   justify-content: center;
   align-items: center;
   &:focus-within {
-    background: #f5f5f5;
+    background-color: var(--button);
     border-color: var(--highlight);
   }
 }
