@@ -108,10 +108,10 @@
     "message": "Anuluj"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Cofnij"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Ponów"
   },
   "addTagLabel": {
     "message": "Dodaj tag"

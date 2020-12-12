@@ -3,55 +3,55 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Uložit a obnovit stav oken a panelů. Také podporuje automatické ukládání."
+    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
   },
   "donateWithPaypalLabel": {
-    "message": "Podpořit přes PayPal"
+    "message": "Donate with PayPal"
   },
   "donateLabel": {
-    "message": "Darovat"
+    "message": "පරිත්‍යාග කරන්න"
   },
   "openSessionListInTabLabel": {
-    "message": "Otevřít seznam relací v záložce"
+    "message": "Open session list in tab"
   },
   "saveLabel": {
-    "message": "Uložit"
+    "message": "සුරකින්න"
   },
   "initialNameValue": {
-    "message": "Uložit aktuální relaci"
+    "message": "Save current session"
   },
   "inputSessionNameLabel": {
-    "message": "Název vstupní relace"
+    "message": "Input session name"
   },
   "saveSessionLabel": {
-    "message": "Uložit relaci"
+    "message": "Save a session"
   },
   "saveAllWindowsLabel": {
-    "message": "Uložit všechna okna"
+    "message": "Save all windows"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Uložit pouze aktuální okno"
+    "message": "Save only current window"
   },
   "categoryFilterLabel": {
-    "message": "Filtr kategorií"
+    "message": "Category filter"
   },
   "sortLabel": {
-    "message": "Seřadit"
+    "message": "Sort"
   },
   "displayAllLabel": {
-    "message": "Všechny"
+    "message": "සියල්ල"
   },
   "displayUserLabel": {
-    "message": "Uložené uživatelem"
+    "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Uložené automaticky"
+    "message": "Auto Save"
   },
   "newestLabel": {
-    "message": "Nejnovější"
+    "message": "Newest"
   },
   "oldestLabel": {
-    "message": "Nejstarší"
+    "message": "Oldest"
   },
   "aToZLabel": {
     "message": "A-Z"
@@ -60,199 +60,199 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Hledat podle relace nebo názvu karty"
+    "message": "Search by session or tab name"
   },
   "search": {
-    "message": "Hledat"
+    "message": "සොයන්න"
   },
   "clearSearch": {
-    "message": "Vymazat vyhledávání"
+    "message": "Clear search"
   },
   "open": {
-    "message": "Otevřít"
+    "message": "විවෘත කරන්න"
   },
   "remove": {
-    "message": "Odstranit"
+    "message": "Delete"
   },
   "removeConfirmLabel": {
-    "message": "Odstranit tuto relaci?"
+    "message": "Delete this session?"
   },
   "sessionDeletedLabel": {
-    "message": "Relace smazána."
+    "message": "Session deleted."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Okno relace smazáno."
+    "message": "Session window deleted."
   },
   "sessionTabDeletedLabel": {
-    "message": "Záložka relace byla smazána."
+    "message": "Session tab deleted."
   },
   "restoreSessionLabel": {
-    "message": "Obnovit"
+    "message": "Restore"
   },
   "failedDeleteSessionLabel": {
-    "message": "Chyba odstranění relace."
+    "message": "Failed to delete session."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Nepodařilo se odstranit okno relace."
+    "message": "Failed to delete session window."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Nepodařilo se odstranit záložku relace."
+    "message": "Failed to delete session tab."
   },
   "sessionSavedLabel": {
-    "message": "Relace uložena."
+    "message": "Session saved."
   },
   "failedSaveSessionLabel": {
-    "message": "Nepodařilo se uložit relaci."
+    "message": "Failed to save session."
   },
   "cancelLabel": {
-    "message": "Zrušit"
+    "message": "අවලංගු කරන්න"
   },
   "undoLabel": {
-    "message": "Zpět"
+    "message": "පෙරසේ"
   },
   "redoLabel": {
-    "message": "Znovu"
+    "message": "පසුසේ"
   },
   "addTagLabel": {
-    "message": "Přidat štítek"
+    "message": "Add tag"
   },
   "removeTagLabel": {
-    "message": "Odstranit štítek"
+    "message": "Remove tag"
   },
   "detailLabel": {
-    "message": "Podrobnosti"
+    "message": "විස්තරය"
   },
   "windowLabel": {
-    "message": "Okno"
+    "message": "Window"
   },
   "windowsLabel": {
-    "message": "Okna"
+    "message": "Windows"
   },
   "tabLabel": {
-    "message": "Panel"
+    "message": "Tab"
   },
   "tabsLabel": {
-    "message": "Panely"
+    "message": "Tabs"
   },
   "noSessionLabel": {
-    "message": "Žádná uložená relace."
+    "message": "There is no session."
   },
   "letsSaveLabel": {
-    "message": "Uložte relaci kliknutím na tlačítko vpravo dole."
+    "message": "Let's save the session by clicking the lower right button."
   },
   "noResultLabel": {
-    "message": "Žádné výsledky."
+    "message": "No matching results."
   },
   "noSessionSelectedLabel": {
-    "message": "Nebyla vybrána žádná relace."
+    "message": "No session selected."
   },
   "menuLabel": {
-    "message": "Nabídka"
+    "message": "Menu"
   },
   "closeMenuLabel": {
-    "message": "Zavřít nabídku"
+    "message": "Close the menu"
   },
   "closeLabel": {
-    "message": "Zavžít"
+    "message": "Close"
   },
   "renameLabel": {
-    "message": "Přejmenovat"
+    "message": "Rename"
   },
   "renameSessionLabel": {
-    "message": "Přejmenovat relaci"
+    "message": "Rename session"
   },
   "OpenSessionLabel": {
-    "message": "Otevřít relaci"
+    "message": "Open a session"
   },
   "openInNewWindowLabel": {
-    "message": "Otevřít v novém okně"
+    "message": "Open in new window"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Otevřít relaci v novém okně."
+    "message": "Open the session in the new window."
   },
   "openInCurrentWindowLabel": {
-    "message": "Otevřít v aktuálním okně"
+    "message": "Open in current window"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Otevřít relaci v aktuální okně. Neaktivní okna a panely zavřít."
+    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
   },
   "addToCurrentWindowLabel": {
-    "message": "Přidat do aktuálního okna"
+    "message": "Add to current window"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Přidat panely do aktuálního okna. Pokud relace obsahuje více oken, otevříť v novém okně."
+    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Upravit relaci"
+    "message": "Edit a session"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Nahradit stávající relací"
+    "message": "Replace with current session"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Nahradit stávajícím oknem"
+    "message": "Replace with current window"
   },
   "addCurrentWindowLabel": {
-    "message": "Přidat aktuální okno"
+    "message": "Add current window"
   },
   "makeCopySessionLabel": {
-    "message": "Vytvořit kopii relace"
+    "message": "Make a copy of the session"
   },
   "registerStartupLabel": {
-    "message": "Registrovat pro spuštění"
+    "message": "Register for startup"
   },
   "removeStartupLabel": {
-    "message": "Odstranit ze startu"
+    "message": "Remove from startup"
   },
   "errorLabel": {
-    "message": "Chyba"
+    "message": "දෝෂය"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB není k dispozici."
+    "message": "IndexedDB is not available in your browser."
   },
   "reloadExtensionLabel": {
-    "message": "Znovu načíst rozšíření"
+    "message": "Reload extension"
   },
   "howToSolveLabel": {
-    "message": "Jak vyřešit tento problém"
+    "message": "How to solve this problem"
   },
   "winCloseSessionName": {
-    "message": "Automatické ukládání - Zavření okna"
+    "message": "Auto Save - Window closed"
   },
   "browserExitSessionName": {
-    "message": "Automatické ukládání - Zavření prohlížeče"
+    "message": "Auto Save - Browser exited"
   },
   "regularSaveSessionName": {
-    "message": "Automatické ukládání - Pravidelně"
+    "message": "Auto Save - Regularly"
   },
   "settingsLabel": {
-    "message": "Nastavení"
+    "message": "සැකසුම්"
   },
   "sessionsLabel": {
-    "message": "Relace"
+    "message": "Sessions"
   },
   "shortcutsLabel": {
-    "message": "Zkratky"
+    "message": "Shortcuts"
   },
   "informationLabel": {
-    "message": "Informace"
+    "message": "තොරතුරු"
   },
   "generalLabel": {
-    "message": "Obecné"
+    "message": "General"
   },
   "autoSaveLabel": {
-    "message": "Automatické ukládání"
+    "message": "Auto save"
   },
   "styleLabel": {
-    "message": "Vzhled"
+    "message": "Style"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Otevřít relaci v novém okně"
+    "message": "Open session in new window"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "Pokud není zaškrtnuto, relace přepíše aktuální okno."
+    "message": "If unchecked, the session overwrites the current window."
   },
   "ifLazyLoadingLabel": {
-    "message": "Líné načítání panelů"
+    "message": "Tab lazy loading"
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
@@ -267,13 +267,13 @@
     "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Obnovit pozici oken"
+    "message": "Restore windows position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Obnovit pozici a velikost oken při otevírání relace."
+    "message": "Restore windows position and size when opening session."
   },
   "startupLabel": {
-    "message": "Po spuštění"
+    "message": "Startup"
   },
   "startupBehaviorLabel": {
     "message": "Behavior when starting the browser"
@@ -294,13 +294,13 @@
     "message": "Do nothing"
   },
   "ifAutoSaveLabel": {
-    "message": "Ukládat relaci pravidelně"
+    "message": "Save the session regularly"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Ukládat relaci každých X minut."
+    "message": "Save the session every X minutes."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minuty)"
+    "message": "Interval (minutes)"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "Minimum value 0.1"
@@ -372,7 +372,7 @@
     "message": "Example: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Uložit anonymní okno"
+    "message": "Save private window"
   },
   "ignoreUrlListLabel": {
     "message": "URL list to ignore when saving session"
@@ -387,7 +387,7 @@
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "උපාංගයේ නම"
   },
   "deviceNameCaptionLabel": {
     "message": "Specify the name of this device."
@@ -405,7 +405,7 @@
     "message": "Apply device name to all sessions?"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "Při nevybrání této volby, ignoruje anonymní okno při ukládání relace."
+    "message": "If unchecked, ignores the private window when saving the session."
   },
   "ifSupportTstLabel": {
     "message": "Supports Tree Style Tab"
@@ -414,7 +414,7 @@
     "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
   },
   "tstDelayLabel": {
-    "message": "Zpoždění při obnovování stromů (milisekundy)"
+    "message": "Delay when tree restoration (millisecond)"
   },
   "tstDelayCaptionLabel": {
     "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
@@ -438,7 +438,7 @@
     "message": "Syncing"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "බාගත වෙමින්"
   },
   "uploadingLabel": {
     "message": "Uploading"
@@ -450,10 +450,10 @@
     "message": "Sync completed."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "පිවිසෙන්න"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "නික්මෙන්න"
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Sync auto save sessions"
@@ -483,7 +483,7 @@
     "message": "Display open / delete buttons when the cursor is over the session list."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "ප්‍රමාණය"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
@@ -504,7 +504,7 @@
     "message": "Open session list in tab when button on toolbar is clicked."
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "වෙනත්"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
     "message": "Display option page when updating"
@@ -531,7 +531,7 @@
     "message": "Reset settings"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Obnovit všechna nastavenína výchozí hodnotu."
+    "message": "Restore all settings to default."
   },
   "resetSettingsButtonLabel": {
     "message": "Reset"
@@ -546,25 +546,25 @@
     "message": "Browse..."
   },
   "importSaveButtonLabel": {
-    "message": "Importovat"
+    "message": "Import"
   },
   "importClearButtonLabel": {
-    "message": "Smazat"
+    "message": "Clear"
   },
   "urlImportLabel": {
-    "message": "Importovat seznam URL"
+    "message": "Import URL list"
   },
   "urlImportCaptionLabel": {
     "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
   },
   "exportLabel": {
-    "message": "Exportovat relace"
+    "message": "Export Sessions"
   },
   "exportCaptionLabel": {
-    "message": "Uložit všechny relace do počítače."
+    "message": "Save all sessions to the computer."
   },
   "exportButtonLabel": {
-    "message": "Exportovat"
+    "message": "Export"
   },
   "removeSessionsLabel": {
     "message": "Delete sessions"
@@ -573,10 +573,10 @@
     "message": "Delete all sessions."
   },
   "removeSessionsButtonLabel": {
-    "message": "Smazat"
+    "message": "Delete"
   },
   "keyboardShortcutsLabel": {
-    "message": "Klávesové zkratky"
+    "message": "Keyboard shortcuts"
   },
   "setKeyboardShortCutsMessage": {
     "message": "Set keyboard shortcuts."
@@ -612,7 +612,7 @@
     "message": "Export all sessions"
   },
   "clear": {
-    "message": "Vyčistit"
+    "message": "Clear"
   },
   "reset": {
     "message": "Reset"
@@ -621,7 +621,7 @@
     "message": "Backers"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "බලපත්‍රය"
   },
   "donationLabel": {
     "message": "Please make a donation"
@@ -636,22 +636,22 @@
     "message": "Add-on page"
   },
   "extensionPageLabel": {
-    "message": "Stránka rozšíření"
+    "message": "Extension page"
   },
   "privacyPolicyLabel": {
     "message": "Privacy policy"
   },
   "importMessage": {
-    "message": "Relace importovány."
+    "message": "Sessions imported."
   },
   "readFailedMessage": {
-    "message": "Čtení selhalo"
+    "message": "Read failed"
   },
   "warningRemoveAllMessage": {
-    "message": "Smazat všechny relace. Jste si jistí?"
+    "message": "Delete all sessions. Are you sure?"
   },
   "sessionLabel": {
-    "message": "Relace"
+    "message": "Session"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
@@ -663,9 +663,9 @@
     "message": "This page can not be opened by Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Kopírovat URL"
+    "message": "Copy URL"
   },
   "copiedLabel": {
-    "message": "Zkopírováno."
+    "message": "Copied."
   }
 }
