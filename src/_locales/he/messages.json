@@ -3,669 +3,669 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "שמור ושחזר את מצב החלונות וכרטיסיות. זה גם תומך בשמירה אוטומטית."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "תרום באמצעות PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "תרום"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "פתח רשימת פעילויות בכרטיסיה"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "שמור"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "שמור פעילות נוכחית"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "הזן שם פעילות"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "שמור פעילות"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "שמור את כל החלונות"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "שמור רק את החלון הנוכחי"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "סינון קטגוריות"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "מיון"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "הכל"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "שמירת משתמש"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "שמירה אוטומטית"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "החדש ביותר"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "הישן ביותר"
   },
   "aToZLabel": {
-    "message": "A-Z"
+    "message": "א-ת"
   },
   "zToALabel": {
-    "message": "Z-A"
+    "message": "ת-א"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "שמור לפי שם פעילות או כרטיסיה"
   },
   "search": {
-    "message": "Search"
+    "message": "חפש"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "נקה חיפוש"
   },
   "open": {
-    "message": "Open"
+    "message": "פתח"
   },
   "remove": {
-    "message": "Delete"
+    "message": "מחק"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "למחוק את הפעילות הזו?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "פעילות נמחקה."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "חלון פעילות נמחק."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "כרטיסיית פעילות נמחקה."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "שחזר"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "מחיקת פעילות נכשלה."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "מחיקת חלון פעילות נכשלה."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "מחיקת כרטיסיית פעילות נכשלה."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "פעילות נשמרה."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "שמירת פעילות נכשלה."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "ביטול"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "לבטל"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "לעשות מחדש"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "הוסף תג"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "הסר תג"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "פרטים"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "חלון"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "חלונות"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "כרטיסייה"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "כרטיסיות"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "אין פעילות."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "בואו נשמור את הפעילות באמצעות לחיצה על הכפתור הימני-תחתון."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "אין תוצאות תואמות."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "לא נבחרה פעילות."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "תפריט"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "סגור את התפריט"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "סגור"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "שנה שם"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "שנה שם פעילות"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "פתח פעילות"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "פתח בחלון חדש"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "פתח את הפעילות בחלון חדש."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "פתח בחלון נוכחי"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "פתח את הפעילות בחלון הנוכחי. חלונות לא פעילים וכל הכרטיסיות סגורים."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "הוסף לחלון נוכחי"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "הוסף כרטיסיות לחלון הנוכחי. אם הפעילות כוללת חלונות מרובים, פתח אותה בחלון חדש."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "ערוך פעילות"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "החלף בפעילות נוכחית"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "החלף בחלון נוכחי"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "הוסף חלון נוכחי"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "צור עותק מהפעילות"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "רשום להפעלה"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "הסר מהפעלה"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "שגיאה"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB לא זמין בדפדפן שלך."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "טען תוסף מחדש"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "כיצד לפתור בעיה זו"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "שמירה אוטומטית - חלון נסגר"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "שמירה אוטומטית - דפדפן נסגר"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "שמירה אוטומטית - באופן קבוע"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "הגדרות"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "פעילויות"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "קיצורים"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "מידע"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "כללי"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "שמירה אוטומטית"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "עיצוב"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "פתח פעילות בחלון חדש"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "אם לא מסומן, הפעילות מחליפה את החלון הנוכחי."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "טעינה עצלה של כרטיסיות"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "בעת פתיחת פעילות, התוכן של כל עמוד לא נטען עד שהכרטיסיה נבחרת.<br>אם לא מסומן, השימוש בזיכרון גדל מאוד כשהפעילות משוחזרת."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "השתמש במאפיין \"discarded\" עבור טעינה עצלה"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "הפעלת אפשרות זו תשפר את הביצועים בעת פתיחת כרטיסיות."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "ה-favicon של הכרטיסיה הנטענת באופן עצל אינה מוצגת."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "שחזר את מיקום חלונות"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "שחזר את מיקום וגודל החלונות בעת פתיחת הפעילות."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "הפעלה"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "התנהגות בעת הפעלת הדפדפן"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "פתח פעילות קודמת"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "פתח את הפעילות שנסגרה בפעם האחרונה."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "פתח פעילות הפעלה"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "פתח את הפעילויות הרשומות להפעלה. ניתן להירשם להפעלה מהתפריט ברשימת הפעילויות."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "אל תעשה כלום"
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "שמור את הפעילות באופן קבוע"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "שמור את הפעילות כל X דקות."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "מרווח (דקות)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "ערך מינימלי 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "מספר מירבי לשמירה"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "מספר מרבי של פעילויות שנשמרו (בדרך זו)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "שמור את הפעילות כשהחלון נסגר"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "שמור את הפעילות הכוללת חלון סגור אחד בלבד."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "מספר מירבי לשמירה"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "מספר מרבי של פעילויות שנשמרו (בדרך זו)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "שמור את הפעילות בעת סגירת הדפדפן"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "שמור את הפעילות הכוללת מספר חלונות שנסגרו ברצף."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "מספר מירבי לשמירה"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "מספר מרבי של פעילויות שנשמרו (בדרך זו)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "השתמש בכותרת העמוד לשם פעילות הנשמרת באופן אוטומטי"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "בעת שמירת הפעילות באופן אוטומטי, השתמש בכותרת העמוד שנפתח כשם הפעילות."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "גיבוי"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "שמור גיבוי"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "כאשר הדפדפן מופעל, צור קובץ גיבוי של הפעילויות ושמור אותו בתיקיית ההורדות."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "מיקום השמירה"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "ציין את התיקיה לשמירת קובץ הגיבוי. מיקום השמירה מוגבל לתיקיה תחת תיקיית ההורדות של הדפדפן."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "תיקיית הורדות"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "מספר מירבי של גיבויים שמורים"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "כאשר מספר קבצי הגיבוי עולה על ערך זה, הם נמחקים בסדר עולה מהישן ביותר."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "פורמט תאריך"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "לדוגמה: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "שמור חלון פרטי"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "רשימת כתובות אתרים להתעלם מהם בעת שמירת פעילות"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "אם כתובת האתר של הכרטיסיה תואמת את הרשימה, היא לא תוקלט בפעילות. הרשימה מאפשרת \"*\" תווים כלליים (wildcards)."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "שמור שם המכשיר לפעילות"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "הוסף את שם המכשיר כתג בעת שמירת הפעילות. בעת שימוש בסנכרון ענן, ניתן להבדיל בינה לבין פעילויות במכשירים אחרים."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "שם מכשיר"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "ציין את שם מכשיר זה."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "החל את שם המכשיר על פעילויות קיימות"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "הוסף את שם המכשיר לכל הפעילויות השמורות."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "החל שם מכשיר"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "החל שם מכשיר על כל הפעילויות?"
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "אם לא מסומן, מתעלם מחלון פרטי בעת שמירת הפעילות."
   },
   "ifSupportTstLabel": {
-    "message": "Supports Tree Style Tab"
+    "message": "תומך בכרטיסיה מסגנון עץ"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "שחזר את מצב העץ של כרטיסייה מסגנון עץ.<br>כאשר אפשרות זו מופעלת, לוקח זמן לשחזר את הפעילות."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "עיכוב בשיקום עצים (אלפית השנייה)"
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "כדי לשחזר את מצב העץ, נדרש זמן המתנה לפתיחת הכרטיסיה. הגדל ערך זה אם העץ אינו משוחזר כהלכה."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "הצג את שם הפעילות בשורה אחת"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "אם שם הפעילות ברשימת הפעילויות משתרע על יותר משורה אחת, הוא נחתך ומוצג בשורה אחת."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "סנכרון ענן"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "הפעל סנכרון ענן (בטא)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "שמור הפעלות ב-Google Drive™ וסנכרן עם מחשבים אחרים."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "מסנכרן"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "מוריד"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "מעלה"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "מוחק"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "סנכרון הושלם."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "התחבר"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "התנתק"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "סנכרן פעילויות הנשמרות אוטומטית"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "העלה/הורד פעילויות הנשמרות אוטומטית בסנכרון ענן."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "פופאפ"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "התנהגות כפתור הפתיחה"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "בחר את התנהגות ברירת המחדל של כפתור הפתיחה."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "התנהגות כפתור השמירה"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "בחר את התנהגות ברירת המחדל של כפתור השמירה."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "הצג את לחצני פתיחה/מחיקה ברשימת הפעילויות"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "הצג את לחצני פתיחה/מחיקה כשהסמן מעל רשימת הפעילויות."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "גודל"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "ציין את גודל הפופאפ."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "רוחב"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "גובה"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "רוחב סרגל-צד"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "פתח רשימת פעילויות בכרטיסיה"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "פתח רשימת פעילויות בכרטיסיה בעת לחיצה על הכפתור בסרגל הכלים."
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "אחר"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "הצג דף אפשרויות בעת עדכון"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "הצג את דף האפשרויות כאשר Tab Session Manager מעודכן. אתה יכול לדעת את תוכן העדכון במהירות."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager עודכן!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "ראה עוד"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "לחץ לצפייה במידע העדכון."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "הפעל מצב דיבאג"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "כשמצב דיבאג מופעל, הלוגים נפלט לדיבאגר."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "אפס הגדרות"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "שחזר את כל ההגדרות לברירת המחדל."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "אפס"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "ייבא פעילויות"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List.<br>It also supports SessionManager's session file (.session)."
+    "message": "טען פעילויות השמורות על המחשב והוסף אותן לרשימת הפעילויות.<br>זה גם תומך בקובץ פעילות (.session) של SessionManager."
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "דפדף..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "ייבא"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "נקה"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "ייבא רשימת כתובות אתרים"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "צור פעילות מרשימת כתובות אתרים והוסף אותה לרשימת הפעילויות.<br>פורמט: &lt;URL&gt; &lt;כותרת עמוד (אופציונלי)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "ייצא פעילויות"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "שמור את כל הפעילויות למחשב."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "ייצא"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "מחק פעילויות"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "מחק את כל הפעילויות."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "מחק"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "קיצורי מקלדת"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "הגדר קיצורי מקשים."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "הקלד קיצור דרך"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "הקלד תו"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "כלול Ctrl או Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "כלול את Command, Ctrl או Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "לא ניתן להשתמש בתו זה"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "לא ניתן להשתמש בקיצור זה"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "פתח את פופאפ סרגל הכלים"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "שמור פעילות (חלון נוכחי בלבד)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "שמור פעילות (כל החלונות)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "ייצא את כל הפעילויות"
   },
   "clear": {
-    "message": "Clear"
+    "message": "נקה"
   },
   "reset": {
-    "message": "Reset"
+    "message": "אפס"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "תומכים"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "רישיון"
   },
   "donationLabel": {
-    "message": "Please make a donation"
+    "message": "אנא תרום"
   },
   "donationCaptionLabel": {
-    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+    "message": "תודה לך על השימוש ב-Tab Session Manager.<br>התמיכה שלך תהווה עידוד גדול, בעודי ממשיך לפתח את התוסף.<br>אם אתה אוהב את Tab Session Manager, אשמח אם תשקול לתרום."
   },
   "amazonTitleLabel": {
-    "message": "amazon.co.jp eGift Cards"
+    "message": "כרטיסי amazon.co.jp eGift"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "עמוד תוסף"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "עמוד תוסף"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "מדיניות הפרטיות"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "פעילויות יובאו."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "קריאה נכשלה"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "מחק את כל הפעילויות. האם אתה בטוח?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "פעילות"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=he_IL"
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://addons.mozilla.org/he/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "לא ניתן לפתוח דף זה על ידי Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "העתק כתובת אתר"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "הועתק."
   }
 }
