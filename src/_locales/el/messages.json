@@ -108,10 +108,10 @@
     "message": "Άκυρο"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Αναίρεση"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Επανάληψη"
   },
   "addTagLabel": {
     "message": "Προσθήκη ετικέτας"
