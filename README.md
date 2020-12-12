@@ -24,9 +24,13 @@ You can contribute by translating Tab Session Manager on **[Crowdin](https://cro
 
 ## Developing
 
-1. Clone the repository `git clone https://github.com/sienori/Tab-Session-Manager`
-2. Run `npm install`
-3. Run `npm run watch-dev`
+1. Clone the repository `git clone https://github.com/sienori/Tab-Session-Manager`  
+2. Create the file `src/credentials.js`  
+  ```src/credentials.js
+  export const clientId = "xxx"
+  ```
+3. Run `npm install`
+4. Run `npm run watch-dev`
 
 ### Load the extension in Chrome
 
