@@ -53,3 +53,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Andreas Andersson
 - Gregory Werbin
 - Xavier Antoviaque
+- Akshay Balakrishnan
