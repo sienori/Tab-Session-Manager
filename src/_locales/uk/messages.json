@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "При натисканні на кнопку на панелі відкривати список сесії у вкладці (а не у спливаючому меню)."
   },
+  "themeLabel": {
+    "message": "Theme"
+  },
+  "themeCaptionLabel": {
+    "message": "Specify the color scheme."
+  },
+  "lightLabel": {
+    "message": "Light"
+  },
+  "darkLabel": {
+    "message": "Dark"
+  },
   "otherLabel": {
     "message": "Інше"
   },
