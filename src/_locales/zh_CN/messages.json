@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "点击工具栏上的按钮时在标签内打开会话列表。"
   },
+  "themeLabel": {
+    "message": "Theme"
+  },
+  "themeCaptionLabel": {
+    "message": "Specify the color scheme."
+  },
+  "lightLabel": {
+    "message": "Light"
+  },
+  "darkLabel": {
+    "message": "Dark"
+  },
   "otherLabel": {
     "message": "其它"
   },
