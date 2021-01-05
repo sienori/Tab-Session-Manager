@@ -1,4 +1,6 @@
-:root {
+body {
+  background-color: var(--main-bg);
+
   --main-text: #0c0c0d;
   --sub-text: #737373;
   --line: #ededf0;
@@ -7,10 +9,8 @@
   --main-bg: #ffffff;
   --sub-bg: #ffffff;
   --new: #ff4f4f;
-}
 
-@media (prefers-color-scheme: dark){
-  :root {
+  &[data-theme='dark']{
     --main-text: #e6e6e6;
     --sub-text: #aaaaaa;
     --line: #373737;
@@ -20,10 +20,10 @@
     --sub-bg: #101010;
     --new: #ed5f5f;
   }
-}
 
-body {
-  background-color: var(--main-bg);
+  &.transition{
+    &, *, *::before{transition: all 0.3s ease-out;}
+  }
 }
 
 .optionsPage {

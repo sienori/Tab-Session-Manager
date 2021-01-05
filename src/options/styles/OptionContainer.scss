@@ -228,6 +228,8 @@ input[type="color"] {
 /*select*/
 
 select {
+  background-color: var(--sub-bg);
+  color: var(--main-text);
   -moz-appearance: none;
   -webkit-appearance: none;
   text-overflow: ellipsis;

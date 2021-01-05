@@ -1,6 +1,7 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import log from "loglevel";
+import { getSettings } from "../settings/settings";
 
 const logDir = "background/replace";
 
@@ -20,6 +21,8 @@ export function returnReplaceParameter(url) {
 }
 
 export function returnReplaceURL(state, title, url, favIconUrl) {
+  const theme = getSettings("theme");
+
   let retUrl =
     "replaced/index.html" +
     "?state=" +
@@ -29,7 +32,9 @@ export function returnReplaceURL(state, title, url, favIconUrl) {
     "&url=" +
     encodeURIComponent(url) +
     "&favIconUrl=" +
-    encodeURIComponent(favIconUrl);
+    encodeURIComponent(favIconUrl) +
+    "&theme=" +
+    theme;
 
   //Reader mode
   if (url.substr(0, 17) == "about:reader?url=") {
@@ -43,7 +48,9 @@ export function returnReplaceURL(state, title, url, favIconUrl) {
       url.substr(17) +
       "&favIconUrl=" +
       encodeURIComponent(favIconUrl) +
-      "&openInReaderMode=true";
+      "&openInReaderMode=true" +
+      "&theme=" +
+      theme;
   }
 
   return retUrl;

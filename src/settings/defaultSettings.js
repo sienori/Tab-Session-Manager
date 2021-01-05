@@ -7,6 +7,9 @@ const handleApplyDeviceNameButtonClick = () => {
   if (res) browser.runtime.sendMessage({ message: "applyDeviceName" });
 };
 
+const getTheme = () =>
+  window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+
 export default [
   {
     category: "generalLabel",
@@ -91,14 +94,6 @@ export default [
             onClick: handleApplyDeviceNameButtonClick
           }
         ]
-      },
-      {
-        id: "dateFormat",
-        title: "dateFormatLabel",
-        captions: ["dateFormatCaptionLabel"],
-        type: "text",
-        placeholder: "YYYY.MM.DD HH:mm:ss",
-        default: "YYYY.MM.DD HH:mm:ss"
       }
     ]
   },
@@ -313,18 +308,34 @@ export default [
         ]
       },
       {
-        id: "truncateTitle",
-        title: "truncateTitleLabel",
-        captions: ["truncateTitleCaptionLabel"],
+        id: "isSessionListOpenInTab",
+        title: "isSessionListOpenInTabLabel",
+        captions: ["isSessionListOpenInTabCaptionLabel"],
         type: "checkbox",
-        default: true
-      },
+        default: false
+      }
+    ]
+  },
+  {
+    category: "styleLabel",
+    elements: [
       {
-        id: "isShowOpenButtons",
-        title: "isShowOpenButtonsLabel",
-        captions: ["isShowOpenButtonsCaptionLabel"],
-        type: "checkbox",
-        default: true
+        id: "theme",
+        title: "themeLabel",
+        captions: ["themeCaptionLabel"],
+        type: "select",
+        default: getTheme(),
+        options: [
+          {
+            name: "lightLabel",
+            value: "light"
+          },
+          {
+            name: "darkLabel",
+            value: "dark"
+          }
+        ],
+        new: true
       },
       {
         title: "sizeLabel",
@@ -364,12 +375,27 @@ export default [
         ]
       },
       {
-        id: "isSessionListOpenInTab",
-        title: "isSessionListOpenInTabLabel",
-        captions: ["isSessionListOpenInTabCaptionLabel"],
+        id: "dateFormat",
+        title: "dateFormatLabel",
+        captions: ["dateFormatCaptionLabel"],
+        type: "text",
+        placeholder: "YYYY.MM.DD HH:mm:ss",
+        default: "YYYY.MM.DD HH:mm:ss"
+      },
+      {
+        id: "truncateTitle",
+        title: "truncateTitleLabel",
+        captions: ["truncateTitleCaptionLabel"],
         type: "checkbox",
-        default: false
-      }
+        default: true
+      },
+      {
+        id: "isShowOpenButtons",
+        title: "isShowOpenButtonsLabel",
+        captions: ["isShowOpenButtonsCaptionLabel"],
+        type: "checkbox",
+        default: true
+      },
     ]
   },
   {

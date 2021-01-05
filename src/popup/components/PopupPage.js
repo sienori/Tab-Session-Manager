@@ -108,6 +108,9 @@ export default class PopupPage extends Component {
       document.documentElement.style.height = "100%";
       document.body.style.height = "100%";
     }
+
+    document.body.dataset.theme = getSettings("theme");
+
     this.setState({
       sortValue: getSettings("sortValue") || "newest",
       isInTab: isInTab,
