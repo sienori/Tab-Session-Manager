@@ -2,7 +2,7 @@
   "name": "tab-session-manager",
   "version": "0.0.0",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "browser-info": "^1.2.0",
     "clone": "^2.1.2",
     "lodash": "^4.17.20",
