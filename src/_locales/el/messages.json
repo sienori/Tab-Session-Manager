@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Άνοιγμα της λίστας της συνεδρίας όταν πατηθεί το κουμπί στη γραμμή εργαλείων."
   },
+  "themeLabel": {
+    "message": "Theme"
+  },
+  "themeCaptionLabel": {
+    "message": "Specify the color scheme."
+  },
+  "lightLabel": {
+    "message": "Light"
+  },
+  "darkLabel": {
+    "message": "Dark"
+  },
   "otherLabel": {
     "message": "Άλλο"
   },
