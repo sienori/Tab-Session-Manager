@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Sitzungsliste im Tab öffnen, wenn die Schaltfläche in der Symbolleiste angeklickt wird."
   },
+  "themeLabel": {
+    "message": "Theme"
+  },
+  "themeCaptionLabel": {
+    "message": "Specify the color scheme."
+  },
+  "lightLabel": {
+    "message": "Light"
+  },
+  "darkLabel": {
+    "message": "Dark"
+  },
   "otherLabel": {
     "message": "Anders"
   },
