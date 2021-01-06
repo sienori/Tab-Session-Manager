@@ -504,16 +504,16 @@
     "message": "При нажатии кнопки, во вкладке откроется список сессий."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Стиль"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Укажите цветовую схему."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Светлая"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Тёмная"
   },
   "otherLabel": {
     "message": "Другое"
