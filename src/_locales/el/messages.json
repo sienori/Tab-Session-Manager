@@ -504,16 +504,16 @@
     "message": "Άνοιγμα της λίστας της συνεδρίας όταν πατηθεί το κουμπί στη γραμμή εργαλείων."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Θέμα"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Καθορίστε το θέμα χρωμάτων."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Ανοιχτόχρωμο"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Σκούρο"
   },
   "otherLabel": {
     "message": "Άλλο"
