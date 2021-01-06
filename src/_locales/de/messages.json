@@ -504,16 +504,16 @@
     "message": "Sitzungsliste im Tab öffnen, wenn die Schaltfläche in der Symbolleiste angeklickt wird."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Aussehen"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Geben Sie das Farbschema an."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Hell"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Dunkel"
   },
   "otherLabel": {
     "message": "Anders"
