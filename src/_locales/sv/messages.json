@@ -504,16 +504,16 @@
     "message": "Öppna sessionslistan i fliken när du klickar på knappen i verktygsfältet."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Ange färgschemat."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Ljust"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Mörkt"
   },
   "otherLabel": {
     "message": "Annat"
