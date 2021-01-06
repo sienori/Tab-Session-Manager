@@ -504,16 +504,16 @@
     "message": "Munkamenet lista megnyitása a fülön ha az eszköztáron szereplő gomb megnyomva."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Téma"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Szín séma megadása."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Világos"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Sötét"
   },
   "otherLabel": {
     "message": "Egyéb"
