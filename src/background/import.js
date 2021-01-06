@@ -12,9 +12,9 @@ export default async function importSessions(importedSessions) {
     const currentSessions = await Sessions.search("date", importedSession.date);
 
     const isSameSession = session =>
-      session.id == importedSession.id && session.lastEditedTime <= importedSession.lastEditedTime;
+      session.id == importedSession.id && session.lastEditedTime >= importedSession.lastEditedTime;
     const existsSameSession = currentSessions.some(isSameSession);
-    if (existsSameSession) return;
+    if (existsSameSession) continue;
 
     importedSession.lastEditedTime = Date.now();
     saveSession(importedSession);
