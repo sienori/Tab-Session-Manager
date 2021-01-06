@@ -504,16 +504,16 @@
     "message": "Open session list in tab when button on toolbar is clicked."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Vzhled"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Zadejte barevné schéma."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Světlý"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Tmavý"
   },
   "otherLabel": {
     "message": "Other"
