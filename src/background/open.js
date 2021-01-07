@@ -221,10 +221,11 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
             property.url,
             property.favIconUrl
           );
-        await browser.tabs.create(createOption).catch(e => {
+        const newTab = await browser.tabs.create(createOption).catch(e => {
           log.error(logDir, "openTab() tryOpen() create", e);
           reject();
         }); //タブを開けなかった場合はreject
+        tabList[property.id] = newTab.id;
         resolve();
       }
     };
