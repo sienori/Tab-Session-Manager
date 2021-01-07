@@ -1,4 +1,5 @@
 import React from "react";
+import browser from "webextension-polyfill";
 import { HashRouter } from "react-router-dom";
 import { initSettings, getSettings } from "../../settings/settings";
 import SideBar from "./SideBar";
@@ -12,10 +13,7 @@ const setupTheme = async () => {
 
   browser.storage.onChanged.addListener((changes) => {
     if (changes.Settings.newValue.theme === changes.Settings.oldValue.theme) return;
-
     document.body.dataset.theme = changes.Settings.newValue.theme;
-    document.body.classList.add("transition");
-    setTimeout(() => document.body.classList.remove("transition"), 1000);
   });
 };
 
