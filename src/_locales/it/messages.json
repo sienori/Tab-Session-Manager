@@ -504,16 +504,16 @@
     "message": "Apre la lista delle sessioni in un una scheda quando viene cliccato il pulsante sulla barra degli strumenti."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Scegli il colore del tema."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Chiaro"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Scuro"
   },
   "otherLabel": {
     "message": "Altro"
