@@ -55,3 +55,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Xavier Antoviaque
 - Akshay Balakrishnan
 - jrosa
+- Cengiz Gunay
