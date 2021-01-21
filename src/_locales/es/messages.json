@@ -504,16 +504,16 @@
     "message": "Abrir la lista de sesiones en la pestaña cuando se presiona el botón de la barra de herramientas."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Especifique el esquema de color."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Claro"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Oscuro"
   },
   "otherLabel": {
     "message": "Otros"
