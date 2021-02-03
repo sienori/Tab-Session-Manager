@@ -57,3 +57,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - jrosa
 - Cengiz Gunay
 - David Anderson
+- Sorenjin
