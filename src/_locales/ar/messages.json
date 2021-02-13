@@ -21,7 +21,7 @@
     "message": "احفظ الجلسة الحالية"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "إدخال اسم الجلسة"
   },
   "saveSessionLabel": {
     "message": "حفظ جلسة"
@@ -42,7 +42,7 @@
     "message": "الكل"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "حفظ المستخدم"
   },
   "displayAutoLabel": {
     "message": "حفظ تلقائي"
@@ -60,7 +60,7 @@
     "message": "ي-أ"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "البحث حسب اسم الجلسة أو علامة التبويب"
   },
   "search": {
     "message": "بحث"
@@ -108,10 +108,10 @@
     "message": "إلغاء"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "التراجع"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "إعادة"
   },
   "addTagLabel": {
     "message": "اضف كلمة مفتاحية"
@@ -138,10 +138,10 @@
     "message": "لا توجد أي جلسة."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "دعونا نحفظ الجلسة بالنقر على الزر الأيمن السفلي."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "لا توجد نتائج مطابقة."
   },
   "noSessionSelectedLabel": {
     "message": "لم يتم تحديد أي جلسة."
@@ -168,7 +168,7 @@
     "message": "افتح في نافذة جديدة"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "افتح الجلسة في النافذة الجديدة."
   },
   "openInCurrentWindowLabel": {
     "message": "افتح في النافذة الحالية"
