@@ -504,16 +504,16 @@
     "message": "点击工具栏上的按钮时在标签内打开会话列表。"
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "主题"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "指定配色方案。"
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "浅色"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "深色"
   },
   "otherLabel": {
     "message": "其它"
