@@ -612,25 +612,25 @@
     "message": "هذا الإختصار لا يمكن إستخدامه"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "فتح شريط الأدوات المنبثق"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "حفظ الجلسة (النافذة الحالية فقط)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "حفظ الجلسة (جميع النوافذ)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "أصدر الجلسات"
   },
   "clear": {
-    "message": "Clear"
+    "message": "مسح"
   },
   "reset": {
-    "message": "Reset"
+    "message": "إعادة تعيين"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "الداعمون"
   },
   "LicenseLabel": {
     "message": "الترخيص"
@@ -645,13 +645,13 @@
     "message": "بطاقات هدايا amazon.co.jp"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "صفحة الاضافة"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "صفحة الإضافة"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "سياسة الخصوصية"
   },
   "importMessage": {
     "message": "الجلسات مستوردة."
@@ -675,9 +675,9 @@
     "message": "لا يمكن فتح هذه الصفحة بواسطة Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "نسخ الرابط"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "تم النسخ."
   }
 }
