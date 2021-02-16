@@ -597,19 +597,19 @@
     "message": "اختر اختصار"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "اكتب حرف"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "أدرج Ctrl أو Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "أدرج Command, Ctrl أو Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "هذا الحرف لا يمكن إستخدامه"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "هذا الإختصار لا يمكن إستخدامه"
   },
   "openPopupDescription": {
     "message": "Open toolbar popup"
