@@ -174,46 +174,46 @@
     "message": "افتح في النافذة الحالية"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "افتح الجلسة في النافذة الحالية. يتم إغلاق النوافذ الغير نشطة وجميع علامات التبويب."
   },
   "addToCurrentWindowLabel": {
     "message": "أضف للنافذة الحالية"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "إضافة علامات تبويب إلى النافذة الحالية. إذا كانت الجلسة تحتوي على نوافذ متعددة، قم بفتحها في النافذة الجديدة."
   },
   "EditSessionLabel": {
     "message": "تعديل الجلسة"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "استبدال بالصفحة الحالية"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "استبدال بالصفحة الحالية"
   },
   "addCurrentWindowLabel": {
     "message": "إضافة النافذة الحالية"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "إعداد نسخة من الدورة"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "سجل مجانًا"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "حذف من السجل؟"
   },
   "errorLabel": {
     "message": "خطأ"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "فهرس DB غير متوفر في المتصفح الخاص بك."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "إعادة تحميل الملحق"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "كيفية حل هذه المشكلة"
   },
   "winCloseSessionName": {
     "message": "حفظ تلقائي - إغلاق النافذة"
@@ -258,19 +258,19 @@
     "message": "عند فتح جلسة، لن يتم تحميل محتوى كل صفحة حتى يتم تحديد التبويب.<br>إذا لم يتم تحديدها، فسيزيد استخدام الذاكرة بشكل كبير عند استعادة الجلسة."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "استخدم خاصية \"تم التخلي عنها\" للتحميل الكسولي"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "تمكين هذا الخيار سيحسن الأداء عند فتح علامات التبويب."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "لم يتم عرض فيلم لتبويب التحميل الضخم."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "استعادة موضع النوافذ"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "استعادة موقع النوافذ وحجمها عند افتتاح الجلسة."
   },
   "startupLabel": {
     "message": "البدء"
@@ -279,16 +279,16 @@
     "message": "السلوك عند بدء المتصفح"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "الجلسة السابقة"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "افتح الجلسة التي تم إغلاقها في المرة الأخيرة."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "فتح جلسة"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "افتح الجلسات المسجلة لبدء التشغيل. يمكنك التسجيل لبدء التشغيل من القائمة في قائمة الجلسة."
   },
   "DoNothingLabel": {
     "message": "لا تفعل شئ"
@@ -315,7 +315,7 @@
     "message": "احفظ الجلسة عند إغلاق النافذة"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "احفظ الجلسة التي تحتوي على نافذة مغلقة واحدة فقط."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "الحد الأقصى محفوظ"
@@ -324,10 +324,10 @@
     "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "حفظ الجلسة عند الخروج من المتصفح"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "احفظ الجلسة التي تتضمن نوافذ متعددة تم إغلاقها على التوالي."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "تم حفظ العدد الأقصي"
@@ -348,13 +348,13 @@
     "message": "حفظ نسخة احتياطية"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "عند بدء تشغيل فايرفوكس، قم بإنشاء ملف النسخ احتياطي لجلسة وحفظه في مجلد التحميل."
   },
   "backupFolderLabel": {
     "message": "حفظ الموقع"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "حدد المجلد لحفظ ملف النسخ الاحتياطي. الموقع المحفوظ يقتصر على المجلد تحت مجلد تحميل المتصفح."
   },
   "downloadFolderLabel": {
     "message": "مجلد التنزيلات"
@@ -375,34 +375,34 @@
     "message": "احفظ النافذة الخاصة"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "قائمة URL لتجاهل عند حفظ الجلسة"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "إذا كان عنوان علامة التبويب يتطابق مع القائمة، فلن يتم تسجيله في الجلسة. تسمح القائمة ببطاقات برية \"*\"."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "حفظ اسم الجهاز إلى الجلسة"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "أضف اسم الجهاز كعلامة عند حفظ جلسة. عند استخدام المزامنة السحابية، يمكنك تمييزه عن الجلسات على أجهزة أخرى."
   },
   "deviceNameLabel": {
     "message": "اسم الجهاز"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "حدد اسم الخادم!"
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "تطبيق اسم الجهاز على الجلسات الموجودة"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "إضافة اسم الجهاز إلى جميع الجلسات المحفوظة."
   },
   "applyDeviceNameButtonLabel": {
     "message": "تطبيق اسم الجهاز"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "تطبيق اسم الجهاز على جميع الجلسات؟"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "إذا لم يتم التحديد، يتجاهل النافذة الخاصة عند حفظ الجلسة."
@@ -411,10 +411,10 @@
     "message": "يدعم نمط التبويب على شكل شجرة"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "استعادة حالة شجرة تبويب نمط الشجرة.<br>عندما يتم تمكين هذا الخيار، يستغرق الأمر وقتا لاستعادة الجلسة."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "تأخير عند استعادة الشجرة (المللي ثانية)"
   },
   "tstDelayCaptionLabel": {
     "message": "لاستعادة وضع الشجرة، وقت الانتظار غلزامي لفتح التبويب، رفع هذه القيمة إذا كانت لم يتم استعادة الشجرة بنجاح."
@@ -426,13 +426,13 @@
     "message": "إذا كان اسم الدورة في قائمة جلسات العمل التي تكون أكثر من سطر واحد، يتم اقتطاع سطر واحد وعرضه."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "المزامنة السحابية"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "تمكين المزامنة السحابية (بيتا)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "حفظ الجلسات إلى Google DriveTM والمزامنة مع أجهزة كمبيوتر أخرى."
   },
   "syncingLabel": {
     "message": "مزامنة"
@@ -447,46 +447,46 @@
     "message": "يتم الحذف"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "إكتملت عملية المزامنة."
   },
   "signInLabel": {
     "message": "تسجيل الدخول"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "تسجيل خروج"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "مزامنة حفظ الجلسات تلقائياً"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "تحميل / تحميل جلسات حفظ تلقائي في المزامنة السحابية."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "نافذة منبثقة"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "فتح سلوك الزر"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "حدد السلوك الافتراضي لزر الفتح."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "فتح سلوك الزر"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "حدد السلوك الافتراضي لزر الفتح."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "عرض أزرار مفتوحة / حذف في قائمة الجلسة"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "عرض أزرار مفتوحة / حذف عندما يكون المؤشر فوق قائمة الجلسة."
   },
   "sizeLabel": {
     "message": "حجم"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "حدد نمط شريط الأدوات المنبثق."
   },
   "widthLabel": {
     "message": "العرض"
@@ -495,55 +495,55 @@
     "message": "الطول"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "عرض الشريط الجانبي"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "فتح قائمة الجلسة في تبويب"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "فتح قائمة الجلسة في علامة التبويب عند النقر على زر شريط الأدوات."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "السِمة"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "حدد نظام الألوان."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "فاتح"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "داكن"
   },
   "otherLabel": {
     "message": "غير ذلك"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "عرض صفحة الإعدادات عند التحديث"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "عرض صفحة الخيارات عند تحديث مدير جلسة التبويب. يمكنك معرفة محتويات التحديث بسرعة."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "تم تحديث مدير جلسة التبويب!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "مشاهدة المزيد"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "انقر لعرض معلومات التحديث."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "فعل نمط التنقيح"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "عندما يكون وضع التنقيح مفعل، يخرج السجل إلى المصحح."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "إستعادة الإعدادات"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "إستعادة جميع الإعدادات الأولية."
   },
   "resetSettingsButtonLabel": {
     "message": "إعادة تعيين"
@@ -564,10 +564,10 @@
     "message": "امسح"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "إستيراد قائمة تغذية"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "إنشاء جلسة من قائمة عناوين URL وإضافتها إلى قائمة الجلسة.<br>التنسيق: &lt;URL&gt; &lt;page title (optionally)&gt;"
   },
   "exportLabel": {
     "message": "أصدر الجلسات"
@@ -588,13 +588,13 @@
     "message": "احذف"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "اختصارات لوحة المفاتيح"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "حدد اختصارات لوحة المفاتيح."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "اختر اختصار"
   },
   "typeLetterMessage": {
     "message": "Type a letter"
