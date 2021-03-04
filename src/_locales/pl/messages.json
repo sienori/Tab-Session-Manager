@@ -504,16 +504,16 @@
     "message": "Otwórz listę sesji w karcie po kliknięciu przycisku paska narzędzi."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Motyw"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Określ schemat kolorów."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Jasny"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Ciemny"
   },
   "otherLabel": {
     "message": "Inne"
