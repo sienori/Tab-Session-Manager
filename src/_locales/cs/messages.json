@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Open session list in tab when button on toolbar is clicked."
   },
+  "themeLabel": {
+    "message": "Vzhled"
+  },
+  "themeCaptionLabel": {
+    "message": "Zadejte barevné schéma."
+  },
+  "lightLabel": {
+    "message": "Světlý"
+  },
+  "darkLabel": {
+    "message": "Tmavý"
+  },
   "otherLabel": {
     "message": "Other"
   },
