@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "ツールバー上のボタンがクリックされたときにセッションリストをタブで開きます。"
   },
+  "themeLabel": {
+    "message": "テーマ"
+  },
+  "themeCaptionLabel": {
+    "message": "配色を指定します。"
+  },
+  "lightLabel": {
+    "message": "ライト"
+  },
+  "darkLabel": {
+    "message": "ダーク"
+  },
   "otherLabel": {
     "message": "その他"
   },

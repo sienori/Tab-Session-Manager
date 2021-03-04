@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Abrir la lista de sesiones en la pestaña cuando se presiona el botón de la barra de herramientas."
   },
+  "themeLabel": {
+    "message": "Tema"
+  },
+  "themeCaptionLabel": {
+    "message": "Especifique el esquema de color."
+  },
+  "lightLabel": {
+    "message": "Claro"
+  },
+  "darkLabel": {
+    "message": "Oscuro"
+  },
   "otherLabel": {
     "message": "Otros"
   },

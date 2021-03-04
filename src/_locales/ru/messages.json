@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "При нажатии кнопки, во вкладке откроется список сессий."
   },
+  "themeLabel": {
+    "message": "Стиль"
+  },
+  "themeCaptionLabel": {
+    "message": "Укажите цветовую схему."
+  },
+  "lightLabel": {
+    "message": "Светлая"
+  },
+  "darkLabel": {
+    "message": "Тёмная"
+  },
   "otherLabel": {
     "message": "Другое"
   },

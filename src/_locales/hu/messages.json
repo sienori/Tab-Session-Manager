@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Munkamenet lista megnyitása a fülön ha az eszköztáron szereplő gomb megnyomva."
   },
+  "themeLabel": {
+    "message": "Téma"
+  },
+  "themeCaptionLabel": {
+    "message": "Szín séma megadása."
+  },
+  "lightLabel": {
+    "message": "Világos"
+  },
+  "darkLabel": {
+    "message": "Sötét"
+  },
   "otherLabel": {
     "message": "Egyéb"
   },

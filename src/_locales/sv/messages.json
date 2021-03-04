@@ -503,6 +503,18 @@
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Öppna sessionslistan i fliken när du klickar på knappen i verktygsfältet."
   },
+  "themeLabel": {
+    "message": "Tema"
+  },
+  "themeCaptionLabel": {
+    "message": "Ange färgschemat."
+  },
+  "lightLabel": {
+    "message": "Ljust"
+  },
+  "darkLabel": {
+    "message": "Mörkt"
+  },
   "otherLabel": {
     "message": "Annat"
   },
