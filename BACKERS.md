@@ -60,3 +60,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Sorenjin
 - Alex Abdo
 - Concy
+- Joshua Hough
+- Johnny
