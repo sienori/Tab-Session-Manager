@@ -62,3 +62,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Concy
 - Joshua Hough
 - Johnny
+- mgulick  
