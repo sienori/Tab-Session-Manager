@@ -39,7 +39,7 @@
     "message": "Сортування"
   },
   "displayAllLabel": {
-    "message": "Всі"
+    "message": "Усі"
   },
   "displayUserLabel": {
     "message": "Збережено користувачем"
@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Шукати за назвою сеансу або вкладки"
   },
   "search": {
     "message": "Пошук"
@@ -108,10 +108,10 @@
     "message": "Скасувати"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Скасувати"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Повторити"
   },
   "addTagLabel": {
     "message": "Додати тег"
@@ -210,7 +210,7 @@
     "message": "IndexedDB не доступна у вашому браузері."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Перезавантажити розширення"
   },
   "howToSolveLabel": {
     "message": "Як вирішити цю проблему"
@@ -456,10 +456,10 @@
     "message": "Вийти"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Синхронізувати автозбереження сеансів"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Відвантажити/завантажити автозбережені сеанси в хмару синхронізації."
   },
   "popupLabel": {
     "message": "Спливаюче вікно"
@@ -504,16 +504,16 @@
     "message": "При натисканні на кнопку на панелі відкривати список сесії у вкладці (а не у спливаючому меню)."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Тема"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Вибрати колірну схему."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Світла"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Темна"
   },
   "otherLabel": {
     "message": "Інше"
@@ -675,9 +675,9 @@
     "message": "Цю сторінку не можна відкрити в Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Копіювати URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Скопійовано."
   }
 }
