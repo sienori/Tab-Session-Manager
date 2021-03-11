@@ -3,10 +3,10 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Менеджер сесій дозволяє зберігати та відновлювати стан вікон та вкладок. Підтримує автоматичні збереження."
+    "message": "Зберігання та відновлення стану вікон і вкладок. Також підтримує автозбереження."
   },
   "donateWithPaypalLabel": {
-    "message": "Зробити пожертву через PayPal"
+    "message": "Офірувати через PayPal"
   },
   "donateLabel": {
     "message": "Підтримати"
@@ -18,7 +18,7 @@
     "message": "Зберегти"
   },
   "initialNameValue": {
-    "message": "Зберегти поточну сесiю"
+    "message": "Зберегти поточну сесію"
   },
   "inputSessionNameLabel": {
     "message": "Введіть назву сесії"
@@ -165,22 +165,22 @@
     "message": "Відкрити сесію"
   },
   "openInNewWindowLabel": {
-    "message": "Відкрити у новому вікні"
+    "message": "Відкрити в новому вікні"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Відкрити сесію у новому вікні."
+    "message": "Відкрити сесію в новому вікні."
   },
   "openInCurrentWindowLabel": {
-    "message": "Відкрити у поточному вікні"
+    "message": "Відкрити в поточному вікні"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Відкрити сесію у поточному вікні. Неактивні вікна та всі вкладки закрити."
+    "message": "Відкрити сесію в поточному вікні. Неактивні вікна та всі вкладки закрити."
   },
   "addToCurrentWindowLabel": {
     "message": "Додати до поточного вікна"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікно - відкрити її в новому вікні."
+    "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікон - відкрити її в новому вікні."
   },
   "EditSessionLabel": {
     "message": "Редагувати сесію"
@@ -213,7 +213,7 @@
     "message": "Перезавантажити розширення"
   },
   "howToSolveLabel": {
-    "message": "Як вирішити цю проблему"
+    "message": "Вирішення проблеми"
   },
   "winCloseSessionName": {
     "message": "Автозбереження - Закриття вікна"
