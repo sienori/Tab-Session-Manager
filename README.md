@@ -12,6 +12,9 @@
 
 [for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/jkjjclfiflhpjangefhgfjhgfbhajadk/)
 
+## Sponsors
+[<img src="https://user-images.githubusercontent.com/29514424/110734700-b1247480-826b-11eb-9134-372867fa5f05.png" height=100px>](https://www.patreon.com/sienori)
+
 ## Backers
 
 Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md)** who supported Tab Session Manager!
