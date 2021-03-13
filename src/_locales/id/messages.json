@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "amazon.co.jp Kartu eGift"
   },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
   "addonPageLabel": {
     "message": "Add-on page"
   },
