@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "eKarty podarunkowe amazon.co.jp"
   },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
   "addonPageLabel": {
     "message": "Strona dodatku"
   },
