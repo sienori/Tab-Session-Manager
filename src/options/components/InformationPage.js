@@ -20,7 +20,7 @@ export default props => {
 
   useEffect(() => {
     const setHeight = e => {
-      if (e.data[0] !== "setHeight") return;
+      if (e.data[0] !== "setSponsorsHeight") return;
       setSponsorsHeight(e.data[1]);
     };
     window.addEventListener("message", setHeight);
