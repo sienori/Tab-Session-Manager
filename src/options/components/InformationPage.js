@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import queryString from "query-string";
@@ -12,9 +12,20 @@ export default props => {
   const isChrome = browserInfo().name == "Chrome";
   const paypalLink = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager ${
     isChrome ? "for Chrome " : ""
-  }- Donation`;
+    }- Donation`;
   const patreonLink = "https://www.patreon.com/sienori";
   const email = `sienori.firefox+tsm${isChrome ? "fc" : ""}@gmail.com`;
+
+  const [sponsorsHeihgt, setSponsorsHeight] = useState();
+
+  useEffect(() => {
+    const setHeight = e => {
+      if (e.data[0] !== "setHeight") return;
+      setSponsorsHeight(e.data[1]);
+    };
+    window.addEventListener("message", setHeight);
+    return () => window.removeEventListener("message", setHeight);
+  });
 
   return (
     <div>
@@ -82,6 +93,15 @@ export default props => {
             </p>
             <p className="caption">email: {email}</p>
           </div>
+        }
+      />
+      <hr />
+      <OptionsContainer
+        title={"sponsorsLabel"}
+        captions={[""]}
+        type={"none"}
+        extraCaption={
+          <iframe src="https://tab-session-manager.sienori.com/sponsors.html" height={sponsorsHeihgt} />
         }
       />
       <hr />

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="sponsors.css" />
+</head>
+
+<body>
+  <div id="banners">
+    <a href="https://jointoucan.com/partners/tab-session-manager" alt="Toucan" target="_blank">
+      <img src="img/toucan.png" />
+    </a>
+    <a href="https://www.patreon.com/sienori" alt="Add your logo" target="_blank">
+      <img src="img/addYourLogo.png" />
+    </a>
+  </div>
+  <script type="text/javascript">
+    window.onload = () => {
+      const height = document.querySelector("html").scrollHeight;
+      window.parent.postMessage(["setHeight", height], "*");
+    };
+  </script>
+</body>
+
+</html>
