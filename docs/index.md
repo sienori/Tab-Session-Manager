@@ -21,6 +21,14 @@ Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Mana
 [<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/patreon.png" alt="Became a Patreon">](https://www.patreon.com/sienori)
 [<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/paypal.png" alt="Check out with PayPal">](https://www.paypal.me/sienoriExt)
 
+## Sponsors
+
+Support Tab Session Manager by [becoming a sponsor](https://www.patreon.com/sienori). Thank you to our wonderful sponsors!
+
+[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/docs/img/toucan.png" height=110px align="left">](https://jointoucan.com/partners/tab-session-manager)
+
+[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/docs/img/addYourLogo.png" height=110px>](https://www.patreon.com/sienori)
+
 ## Translation
 
 You can contribute by translating Tab Session Manager on **[Crowdin](https://crowdin.com/project/tab-session-manager)**.
