@@ -8,9 +8,9 @@ Save and restore the state of windows and tabs. It also supports automatic savin
 
 ## Download
 
-[<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/firefox.png" align="left" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/tab-session-manager/)
+[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/other/promotion/badges/firefox.png" align="left" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/tab-session-manager/)
 &ensp;
-[<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/chrome.png" alt="for Chrome" height="60px">](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
+[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/other/promotion/badges/chrome.png" alt="for Chrome" height="60px">](https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae/)
 
 [for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/jkjjclfiflhpjangefhgfjhgfbhajadk)
 
@@ -18,15 +18,16 @@ Save and restore the state of windows and tabs. It also supports automatic savin
 
 Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md)** who supported Tab Session Manager!
 
-[<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/patreon.png" alt="Became a Patreon" height="44px" align="left">](https://www.patreon.com/sienori)
-[<img src="https://raw.githubusercontent.com/sienori/simple-translate/master/other/promotion/badges/paypal.png" alt="Check out with PayPal">](https://www.paypal.me/sienoriExt)
+[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/other/promotion/badges/patreon.png" alt="Became a Patreon" height="44px">](https://www.patreon.com/sienori)
+&ensp;
+[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/other/promotion/badges/paypal.png" alt="Check out with PayPal">](https://www.paypal.me/sienoriExt)
 
 ## Sponsors
 
 Support Tab Session Manager by [becoming a sponsor](https://www.patreon.com/sienori). Thank you to our wonderful sponsors!
 
-[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/docs/img/toucan.png" height=110px align="left">](https://jointoucan.com/partners/tab-session-manager)
-
+[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/docs/img/toucan.png" height=110px>](https://jointoucan.com/partners/tab-session-manager)
+&ensp;
 [<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/docs/img/addYourLogo.png" height=110px>](https://www.patreon.com/sienori)
 
 ## Translation
