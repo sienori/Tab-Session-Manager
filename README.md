@@ -25,7 +25,7 @@ Support Tab Session Manager by [becoming a sponsor](https://www.patreon.com/sien
 
 [<img src="docs/img/toucan.png" height=110px align="left">](https://jointoucan.com/partners/tab-session-manager)
 
-[<img src="docs/img/addYourlogo.png" height=110px>](https://www.patreon.com/sienori)
+[<img src="docs/img/addYourLogo.png" height=110px>](https://www.patreon.com/sienori)
 
 ## Translation
 
