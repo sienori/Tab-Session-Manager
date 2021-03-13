@@ -108,10 +108,10 @@
     "message": "取消"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "復原"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "重做"
   },
   "addTagLabel": {
     "message": "新增標籤"
@@ -504,16 +504,16 @@
     "message": "左鍵點選工具列圖示時，在新分頁中顯示瀏覽階段清單。"
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "主題"
   },
   "themeCaptionLabel": {
     "message": "Specify the color scheme."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "淺色"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "深色"
   },
   "otherLabel": {
     "message": "其他"
@@ -643,6 +643,9 @@
   },
   "amazonTitleLabel": {
     "message": "贊助我 amazon 電子禮品卡"
+  },
+  "sponsorsLabel": {
+    "message": "Sponsors"
   },
   "addonPageLabel": {
     "message": "附加元件說明頁面"
