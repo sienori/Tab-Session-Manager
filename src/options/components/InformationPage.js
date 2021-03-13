@@ -101,7 +101,8 @@ export default props => {
         captions={[""]}
         type={"none"}
         extraCaption={
-          <iframe src="https://tab-session-manager.sienori.com/sponsors.html" height={sponsorsHeihgt} />
+          <iframe src="https://tab-session-manager.sienori.com/sponsors.html"
+            style={{ height: sponsorsHeihgt, marginTop: 10 }} />
         }
       />
       <hr />
