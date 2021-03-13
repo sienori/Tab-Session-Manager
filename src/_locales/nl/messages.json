@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Kaarten"
   },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
   "addonPageLabel": {
     "message": "Add-on page"
   },
