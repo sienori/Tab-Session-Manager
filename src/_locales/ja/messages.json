@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "amazonギフト券 Eメールタイプ"
   },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
   "addonPageLabel": {
     "message": "アドオンページ"
   },
