@@ -334,8 +334,7 @@ export default [
             name: "darkLabel",
             value: "dark"
           }
-        ],
-        new: true
+        ]
       },
       {
         title: "sizeLabel",
