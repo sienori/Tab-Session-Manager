@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "贊助我 amazon 電子禮品卡"
   },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
   "addonPageLabel": {
     "message": "附加元件說明頁面"
   },
