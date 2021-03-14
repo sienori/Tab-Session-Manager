@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "amazon.co.jp 电子礼品卡"
   },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
   "addonPageLabel": {
     "message": "附加组件页面"
   },

@@ -3,10 +3,10 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Менеджер сесій дозволяє зберігати та відновлювати стан вікон та вкладок. Підтримує автоматичні збереження."
+    "message": "Зберігання та відновлення стану вікон і вкладок. Також підтримує автозбереження."
   },
   "donateWithPaypalLabel": {
-    "message": "Зробити пожертву через PayPal"
+    "message": "Офірувати через PayPal"
   },
   "donateLabel": {
     "message": "Підтримати"
@@ -18,7 +18,7 @@
     "message": "Зберегти"
   },
   "initialNameValue": {
-    "message": "Зберегти поточну сесiю"
+    "message": "Зберегти поточну сесію"
   },
   "inputSessionNameLabel": {
     "message": "Введіть назву сесії"
@@ -39,7 +39,7 @@
     "message": "Сортування"
   },
   "displayAllLabel": {
-    "message": "Всі"
+    "message": "Усі"
   },
   "displayUserLabel": {
     "message": "Збережено користувачем"
@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Шукати за назвою сеансу або вкладки"
   },
   "search": {
     "message": "Пошук"
@@ -108,10 +108,10 @@
     "message": "Скасувати"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Скасувати"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Повторити"
   },
   "addTagLabel": {
     "message": "Додати тег"
@@ -165,22 +165,22 @@
     "message": "Відкрити сесію"
   },
   "openInNewWindowLabel": {
-    "message": "Відкрити у новому вікні"
+    "message": "Відкрити в новому вікні"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Відкрити сесію у новому вікні."
+    "message": "Відкрити сесію в новому вікні."
   },
   "openInCurrentWindowLabel": {
-    "message": "Відкрити у поточному вікні"
+    "message": "Відкрити в поточному вікні"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Відкрити сесію у поточному вікні. Неактивні вікна та всі вкладки закрити."
+    "message": "Відкрити сесію в поточному вікні. Неактивні вікна та всі вкладки закрити."
   },
   "addToCurrentWindowLabel": {
     "message": "Додати до поточного вікна"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікно - відкрити її в новому вікні."
+    "message": "Додати вкладки до поточного вікна. Якщо сесія містить кілька вікон - відкрити її в новому вікні."
   },
   "EditSessionLabel": {
     "message": "Редагувати сесію"
@@ -210,10 +210,10 @@
     "message": "IndexedDB не доступна у вашому браузері."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Перезавантажити розширення"
   },
   "howToSolveLabel": {
-    "message": "Як вирішити цю проблему"
+    "message": "Вирішення проблеми"
   },
   "winCloseSessionName": {
     "message": "Автозбереження - Закриття вікна"
@@ -231,7 +231,7 @@
     "message": "Сесії"
   },
   "shortcutsLabel": {
-    "message": "Гарячі клавіші"
+    "message": "Швидкі клавіші"
   },
   "informationLabel": {
     "message": "Інформація"
@@ -240,7 +240,7 @@
     "message": "Загальні"
   },
   "autoSaveLabel": {
-    "message": "Автоматичне збереження"
+    "message": "Автозбереження"
   },
   "styleLabel": {
     "message": "Стиль"
@@ -255,7 +255,7 @@
     "message": "Відкладене завантаження вкладок"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Під час відкриття сесії вміст вкладок не завантажується, поки вкладка не буде активована вручну. <br>При відключенні зросте витрата пам'яті після відновлення сесії."
+    "message": "Під час відкриття сесії вміст вкладок не завантажується, поки вкладка не буде активована вручну. <br>При відключенні зросте витрата памʼяті після відновлення сесії."
   },
   "isUseDiscardedLabel": {
     "message": "Використовувати властивість \"відхилено\" для відкладеного завантаження"
@@ -303,10 +303,10 @@
     "message": "Інтервал (хвилини)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Мінімальне значення 0.1"
+    "message": "Найменше значення 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Максимальна кількість збережень"
+    "message": "Найбільша кількість збережень"
   },
   "autoSaveLimitCaptionLabel": {
     "message": "Максимальна кількість сесій збережених таким чином."
@@ -357,7 +357,7 @@
     "message": "Вкажіть теку для збереження файлу резервної копії. Місце збереження обмежується текою у теці завантаження браузера."
   },
   "downloadFolderLabel": {
-    "message": "Каталог завантажень"
+    "message": "Тека завантажень"
   },
   "backupFilesLimitLabel": {
     "message": "Максимальна кількість збережених резервних копій"
@@ -378,7 +378,7 @@
     "message": "Список URL-адрес, який ігнорується під час збереження сеансу"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "Якщо URL-адреса вкладки відповідає списку, вона не буде записана в сеанс. У списку можливі \"*\" підстановки."
+    "message": "Якщо URL-адреса вкладки відповідає списку, вона не запишеться в сеанс. У списку можливі маски \"*\"."
   },
   "shouldSaveDeviceNameLabel": {
     "message": "Зберегти назву пристрою в сесії"
@@ -456,10 +456,10 @@
     "message": "Вийти"
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Синхронізувати автозбереження сеансів"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Відвантажити/завантажити автозбережені сеанси в хмару синхронізації."
   },
   "popupLabel": {
     "message": "Спливаюче вікно"
@@ -504,16 +504,16 @@
     "message": "При натисканні на кнопку на панелі відкривати список сесії у вкладці (а не у спливаючому меню)."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Тема"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Вибрати колірну схему."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Світла"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Темна"
   },
   "otherLabel": {
     "message": "Інше"
@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
   },
+  "sponsorsLabel": {
+    "message": "Спонсори"
+  },
   "addonPageLabel": {
     "message": "Сторінка доповнення"
   },
@@ -675,9 +678,9 @@
     "message": "Цю сторінку не можна відкрити в Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Копіювати URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Скопійовано."
   }
 }

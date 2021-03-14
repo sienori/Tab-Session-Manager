@@ -108,10 +108,10 @@
     "message": "取消"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "復原"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "重做"
   },
   "addTagLabel": {
     "message": "新增標籤"
@@ -198,10 +198,10 @@
     "message": "複製此瀏覽階段"
   },
   "registerStartupLabel": {
-    "message": "登錄為啟始瀏覽階段"
+    "message": "登錄為啟動瀏覽階段"
   },
   "removeStartupLabel": {
-    "message": "從啟始瀏覽階段中移除"
+    "message": "從啟動瀏覽階段中移除"
   },
   "errorLabel": {
     "message": "錯誤"
@@ -285,10 +285,10 @@
     "message": "開啟上次關閉的瀏覽階段。"
   },
   "openStartupSessionLabel": {
-    "message": "打開啟始瀏覽階段"
+    "message": "打開啟動瀏覽階段"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "開啟已登錄的啟動瀏覽階段。您可以在瀏覽階段清單的右鍵選單中選擇要登錄的啟動瀏覽階段。"
   },
   "DoNothingLabel": {
     "message": "不執行任何動作"
@@ -459,7 +459,7 @@
     "message": "同步並儲存瀏覽階段"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "上傳/下載在雲端同步期間自動儲存的瀏覽階段。"
+    "message": "在雲端同步時上傳/下載自動儲存的瀏覽階段。"
   },
   "popupLabel": {
     "message": "彈出式視窗"
@@ -504,16 +504,16 @@
     "message": "左鍵點選工具列圖示時，在新分頁中顯示瀏覽階段清單。"
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "主題"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "指定色彩配置。"
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "淺色"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "深色"
   },
   "otherLabel": {
     "message": "其他"
@@ -643,6 +643,9 @@
   },
   "amazonTitleLabel": {
     "message": "贊助我 amazon 電子禮品卡"
+  },
+  "sponsorsLabel": {
+    "message": "贊助者"
   },
   "addonPageLabel": {
     "message": "附加元件說明頁面"

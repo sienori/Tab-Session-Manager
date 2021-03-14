@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "כרטיסי amazon.co.jp eGift"
   },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
   "addonPageLabel": {
     "message": "עמוד תוסף"
   },

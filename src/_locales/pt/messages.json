@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "amazon.co.jp Gift Cards"
   },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
   "addonPageLabel": {
     "message": "Add-on page"
   },
