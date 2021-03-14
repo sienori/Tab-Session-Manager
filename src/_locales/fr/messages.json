@@ -644,6 +644,9 @@
   "amazonTitleLabel": {
     "message": "Cartes Cadeaux (amazon.co.jp)"
   },
+  "sponsorsLabel": {
+    "message": "Sponsors"
+  },
   "addonPageLabel": {
     "message": "Page de l'extension"
   },
