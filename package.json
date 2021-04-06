@@ -2,7 +2,7 @@
   "name": "tab-session-manager",
   "version": "0.0.0",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "browser-info": "^1.2.0",
     "clone": "^2.1.2",
     "lodash": "^4.17.20",
@@ -37,7 +37,7 @@
     "npm-install-missing": "^0.1.4",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.21.0",
-    "webpack": "^4.42.1",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.11",
     "zip-webpack-plugin": "^3.0.0"
   },
