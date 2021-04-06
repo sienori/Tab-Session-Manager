@@ -24,11 +24,11 @@ Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Mana
 
 ## Sponsors
 
-Support Tab Session Manager by [becoming a sponsor](https://www.patreon.com/sienori). Thank you to our wonderful sponsors!
+Support Tab Session Manager by [becoming a sponsor](https://www.patreon.com/join/sienori). Thank you to our wonderful sponsors!
 
 [<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/docs/img/toucan.png" alt="Toucan" height=110px>](https://jointoucan.com/partners/tab-session-manager)
 &ensp;
-[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/docs/img/becomeSponsor.png" alt="Become a Sponsor" height=110px>](https://www.patreon.com/sienori)
+[<img src="https://raw.githubusercontent.com/sienori/tab-session-manager/master/docs/img/becomeSponsor.png" alt="Become a Sponsor" height=110px>](https://www.patreon.com/join/sienori)
 
 ## Translation
 
