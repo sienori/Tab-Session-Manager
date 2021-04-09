@@ -72,7 +72,7 @@ const init = async () => {
   await updateOldSessions();
 
   setAutoSave();
-  backupSessions();
+  setTimeout(backupSessions, 30000);
   addListeners();
   syncCloudAuto();
 
