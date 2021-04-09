@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "タグを削除"
   },
+  "inputTagLabel": {
+    "message": "タグ名を入力してください"
+  },
   "detailLabel": {
     "message": "詳細"
   },
@@ -454,6 +457,12 @@
   },
   "signOutLabel": {
     "message": "サインアウト"
+  },
+  "enabledAutoSyncLabel": {
+    "message": "自動的に同期する"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "ブラウザ起動時とセッション保存時に自動的にクラウド同期を実行します。"
   },
   "includesAutoSaveToSyncLabel": {
     "message": "自動保存セッションを同期する"

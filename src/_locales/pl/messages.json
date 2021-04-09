@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "Usuń tag"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "Szczegóły"
   },
@@ -454,6 +457,12 @@
   },
   "signOutLabel": {
     "message": "Wyloguj"
+  },
+  "enabledAutoSyncLabel": {
+    "message": "Automatically sync"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Execute cloud sync when the browser is launched and when the session is saved."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Synchronizuj automatycznie zapisane sesje"
