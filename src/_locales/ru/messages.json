@@ -108,16 +108,19 @@
     "message": "Отмена"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Отменить"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Повторить"
   },
   "addTagLabel": {
     "message": "Добавить метку"
   },
   "removeTagLabel": {
     "message": "Удалить метку"
+  },
+  "inputTagLabel": {
+    "message": "Input the tag name"
   },
   "detailLabel": {
     "message": "Подробности"
@@ -454,6 +457,12 @@
   },
   "signOutLabel": {
     "message": "Выйти"
+  },
+  "enabledAutoSyncLabel": {
+    "message": "Синхронизировать автоматически"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Синхронизировать с облаком, когда запускается браузер или сохраняется сессия."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Синхронизировать автоматически сохраняемые сессии"
