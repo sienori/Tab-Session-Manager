@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "Címke eltávolítása"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "Részletek"
   },
