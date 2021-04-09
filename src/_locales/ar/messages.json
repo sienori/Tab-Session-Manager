@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "حذف كلمة مفتاحية"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "تفاصيل"
   },
