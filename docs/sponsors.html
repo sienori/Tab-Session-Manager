@@ -15,7 +15,7 @@
   </div>
   <script type="text/javascript">
     window.onload = () => {
-      const height = document.querySelector("#banners").scrollHeight;
+      const height = document.querySelector("#banners").scrollHeight || 120;
       window.parent.postMessage(["setSponsorsHeight", height], "*");
     };
   </script>
