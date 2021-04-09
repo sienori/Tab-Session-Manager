@@ -64,10 +64,6 @@ const getCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src") => [
     {
       from: `${sourceDir}/manifest.json`,
       to: path.resolve(__dirname, `${outputDir}/${browserDir}/manifest.json`)
-    },
-    {
-      from: `${sourceDir}/replaced/replaced.scss`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/replaced/replaced.scss`)
     }
   ])
 ];
@@ -85,10 +81,6 @@ const getFirefoxCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src")
     {
       from: `${sourceDir}/manifest-ff.json`,
       to: path.resolve(__dirname, `${outputDir}/${browserDir}/manifest.json`)
-    },
-    {
-      from: `${sourceDir}/replaced/replaced.scss`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/replaced/replaced.scss`)
     }
   ])
 ];

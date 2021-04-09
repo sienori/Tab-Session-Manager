@@ -1,4 +1,5 @@
 import browser from "webextension-polyfill";
+import "./replaced.scss";
 
 const sanitaize = {
   encode: str => {
