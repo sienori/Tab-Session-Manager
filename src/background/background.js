@@ -29,6 +29,7 @@ import { addTag, removeTag, applyDeviceName } from "./tag";
 import { initSettings, handleSettingsChange, getSettings } from "src/settings/settings";
 import exportSessions from "./export";
 import onInstalledListener from "./onInstalledListener";
+import onUpdateAvailableListener from "./onUpdateAvailableListener";
 import { onCommandListener } from "./keyboardShortcuts";
 import { openStartupSessions } from "./startup";
 import { signInGoogle, signOutGoogle } from "./cloudAuth";
@@ -177,6 +178,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
 
 browser.runtime.onStartup.addListener(onStartupListener);
 browser.runtime.onInstalled.addListener(onInstalledListener);
+browser.runtime.onUpdateAvailable.addListener(onUpdateAvailableListener);
 browser.runtime.onMessage.addListener(onMessageListener);
 browser.commands.onCommand.addListener(onCommandListener);
 init();
