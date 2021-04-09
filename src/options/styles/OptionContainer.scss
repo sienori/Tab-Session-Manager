@@ -398,3 +398,14 @@ iframe {
   border: none;
   width: 100%;
 }
+
+.signOutButton {
+  display: flex;
+  flex-direction: column;
+  p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--sub-text);
+  }
+}

@@ -5,8 +5,8 @@ import { getSettings } from "src/settings/settings";
 export default class SignInButton extends Component {
   constructor(props) {
     super(props);
-    const signdInEmail = getSettings("signedInEmail");
-    this.state = { shouldSignIn: !signdInEmail };
+    const signedInEmail = getSettings("signedInEmail");
+    this.state = { shouldSignIn: !signedInEmail, signedInEmail: signedInEmail };
   }
 
   handleSignInClick = async () => {
@@ -38,11 +38,14 @@ export default class SignInButton extends Component {
       </a>
     );
     const signOutButton = (
-      <input
-        type="button"
-        value={browser.i18n.getMessage("signOutLabel")}
-        onClick={this.handleSignOutClick}
-      />
+      <div className="signOutButton">
+        <input
+          type="button"
+          value={browser.i18n.getMessage("signOutLabel")}
+          onClick={this.handleSignOutClick}
+        />
+        <p className="caption">{`${this.state.signedInEmail}`}</p>
+      </div>
     );
 
     return this.state.shouldSignIn ? signInButton : signOutButton;
