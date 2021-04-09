@@ -459,7 +459,7 @@
     "message": "登出"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "自動同步"
   },
   "enabledAutoSyncCaptionLabel": {
     "message": "Execute cloud sync when the browser is launched and when the session is saved."
