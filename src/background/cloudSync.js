@@ -139,3 +139,13 @@ export const pushRemovedQueue = id => {
   removedQueue.push(id);
   setSettings("removedQueue", removedQueue);
 };
+
+let autoSyncTimer;
+export const syncCloudAuto = () => {
+  const isLoggedIn = getSettings("signedInEmail");
+  const enabledAutoSync = getSettings("enabledAutoSync");
+  if (!(isLoggedIn && enabledAutoSync)) return;
+
+  clearTimeout(autoSyncTimer);
+  autoSyncTimer = setTimeout(syncCloud, 10000);
+};

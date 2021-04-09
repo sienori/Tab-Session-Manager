@@ -33,7 +33,7 @@ import onUpdateAvailableListener from "./onUpdateAvailableListener";
 import { onCommandListener } from "./keyboardShortcuts";
 import { openStartupSessions } from "./startup";
 import { signInGoogle, signOutGoogle } from "./cloudAuth";
-import { syncCloud } from "./cloudSync";
+import { syncCloud, syncCloudAuto } from "./cloudSync";
 import { updateLogLevel, overWriteLogLevel } from "../common/log";
 import { getsearchInfo } from "./search";
 import { recordChange, undo, redo, updateUndoStatus } from "./undo";
@@ -74,6 +74,7 @@ const init = async () => {
   setAutoSave();
   backupSessions();
   addListeners();
+  syncCloudAuto();
 
   if(IsStartup){
     await autoSaveWhenExitBrowser();

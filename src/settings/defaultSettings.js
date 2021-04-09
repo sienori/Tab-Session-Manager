@@ -241,6 +241,14 @@ export default [
         extraForm: SignInButton,
         childElements: [
           {
+            id: "enabledAutoSync",
+            title: "enabledAutoSyncLabel",
+            captions: ["enabledAutoSyncCaptionLabel"],
+            type: "checkbox",
+            default: false,
+            new: true
+          },
+          {
             id: "includesAutoSaveToSync",
             title: "includesAutoSaveToSyncLabel",
             captions: ["includesAutoSaveToSyncCaptionLabel"],
