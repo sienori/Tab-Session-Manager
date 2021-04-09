@@ -455,6 +455,12 @@
   "signOutLabel": {
     "message": "로그아웃"
   },
+  "enabledAutoSyncLabel": {
+    "message": "Automatically sync"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+  },
   "includesAutoSaveToSyncLabel": {
     "message": "자동 저장된 세션을 동기화"
   },
