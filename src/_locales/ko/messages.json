@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "태그 제거"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "세부 정보"
   },
