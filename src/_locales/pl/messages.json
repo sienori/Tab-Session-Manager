@@ -455,6 +455,12 @@
   "signOutLabel": {
     "message": "Wyloguj"
   },
+  "enabledAutoSyncLabel": {
+    "message": "Automatically sync"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+  },
   "includesAutoSaveToSyncLabel": {
     "message": "Synchronizuj automatycznie zapisane sesje"
   },
