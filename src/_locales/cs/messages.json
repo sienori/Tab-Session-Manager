@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "Odstranit štítek"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "Podrobnosti"
   },
