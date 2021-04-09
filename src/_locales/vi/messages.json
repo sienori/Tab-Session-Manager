@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "Xóa nhãn"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "Chi tiết"
   },
