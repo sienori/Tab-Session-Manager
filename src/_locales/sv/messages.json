@@ -120,7 +120,7 @@
     "message": "Ta bort tagg"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Skriv in taggens namn"
   },
   "detailLabel": {
     "message": "Detaljer"
@@ -459,10 +459,10 @@
     "message": "Logga ut"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Synkronisera automatiskt"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Kör molnsynkronisering när webbläsaren startas och när sessionen sparas."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Synkronisera automatiskt spara sessioner"
