@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "حذف كلمة مفتاحية"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "تفاصيل"
   },
@@ -454,6 +457,12 @@
   },
   "signOutLabel": {
     "message": "تسجيل خروج"
+  },
+  "enabledAutoSyncLabel": {
+    "message": "Automatically sync"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Execute cloud sync when the browser is launched and when the session is saved."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "مزامنة حفظ الجلسات تلقائياً"
