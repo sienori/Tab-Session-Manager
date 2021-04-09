@@ -108,10 +108,10 @@
     "message": "Отмена"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Отменить"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Повторить"
   },
   "addTagLabel": {
     "message": "Добавить метку"
@@ -459,10 +459,10 @@
     "message": "Выйти"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Синхронизировать автоматически"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Синхронизировать с облаком, когда запускается браузер или сохраняется сессия."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Синхронизировать автоматически сохраняемые сессии"
