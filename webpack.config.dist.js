@@ -99,6 +99,7 @@ module.exports = [
     ]
   },
   {
+    ...generalConfig,
     mode: "production",
     resolve: {
       alias: {
