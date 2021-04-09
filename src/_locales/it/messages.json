@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "Rimuovi tag"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "Dettagli"
   },
