@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "Κατάργηση ετικέτας"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "Λεπτομέρεια"
   },
@@ -454,6 +457,12 @@
   },
   "signOutLabel": {
     "message": "Αποσύνδεση"
+  },
+  "enabledAutoSyncLabel": {
+    "message": "Automatically sync"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Execute cloud sync when the browser is launched and when the session is saved."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Συγχρονισμός αυτόματα αποθηκευμένων συνεδριών"
