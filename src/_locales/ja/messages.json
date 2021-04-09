@@ -455,6 +455,12 @@
   "signOutLabel": {
     "message": "サインアウト"
   },
+  "enabledAutoSyncLabel": {
+    "message": "Automatically sync"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+  },
   "includesAutoSaveToSyncLabel": {
     "message": "自動保存セッションを同期する"
   },
