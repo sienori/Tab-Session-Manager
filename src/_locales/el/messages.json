@@ -459,10 +459,10 @@
     "message": "Αποσύνδεση"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Αυτόματος συγχρονισμός"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Εκτέλεση του συγχρονισμού στο cloud κατά την εκκίνηση του προγράμματος περιήγησης και κατά την αποθήκευση της συνεδρίας."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Συγχρονισμός αυτόματα αποθηκευμένων συνεδριών"
