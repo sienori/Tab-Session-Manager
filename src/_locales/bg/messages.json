@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "Премахване на етикета"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "Подробности"
   },
