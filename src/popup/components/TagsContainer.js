@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import { sendTagRemoveMessage, sendTagAddMessage } from "../actions/controlSessions";
 import generateTagLabel from "../actions/generateTagLabel";
-import TextInputModalContent from "./TextInputModalContent";
+import TagInputModalContent from "./TagInputModalContent";
 import PlusIcon from "../icons/plus.svg";
 import TagIcon from "../icons/tag.svg";
 import "../styles/TagsContainer.scss";
@@ -18,9 +18,10 @@ export default class TagsContainer extends Component {
   };
 
   handleAddTagClick = () => {
+    const { tagList, closeModal } = this.props;
     const title = browser.i18n.getMessage("addTagLabel");
     const content = (
-      <TextInputModalContent onSave={this.addTag} closeModal={this.props.closeModal} />
+      <TagInputModalContent onSave={this.addTag} closeModal={closeModal} tagList={tagList} />
     );
     this.props.openModal(title, content);
   };

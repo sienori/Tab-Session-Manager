@@ -60,11 +60,12 @@ export default class SessionDetailsArea extends Component {
     const isChangeSession = this.props.session.id !== nextProps.session.id;
     const isUpdateSession = this.props.session.lastEditedTime !== nextProps.session.lastEditedTime;
     const isLoadedSession = this.props.session.hasOwnProperty("windows") !== nextProps.session.hasOwnProperty("windows");
-    return isChangeSession || isUpdateSession || isLoadedSession;
+    const isChangedTagList = this.props.tagList !== nextProps.tagList;
+    return isChangeSession || isUpdateSession || isLoadedSession || isChangedTagList;
   };
 
   render() {
-    const { session, searchWords, removeWindow, removeTab, openModal, closeModal } = this.props;
+    const { session, searchWords, removeWindow, removeTab, openModal, closeModal, tagList } = this.props;
 
     if (!session.id)
       return (
@@ -97,6 +98,7 @@ export default class SessionDetailsArea extends Component {
             <TagsContainer
               sessionId={session.id}
               tags={session.tag}
+              tagList={tagList}
               openModal={openModal}
               closeModal={closeModal}
             />

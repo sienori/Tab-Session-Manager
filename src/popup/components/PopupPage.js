@@ -64,6 +64,7 @@ export default class PopupPage extends Component {
         undoCount: 0,
         redoCount: 0
       },
+      tagList: [],
       menu: {
         isOpen: false,
         x: 0,
@@ -174,6 +175,22 @@ export default class PopupPage extends Component {
     return shouldDelete || shouldUpload;
   };
 
+  updateTagList = sessions => {
+    console.log("updateTagList", sessions);
+    const reservedTags = [
+      "regular",
+      "winClose",
+      "browserExit",
+      "temp",
+      "_startup"
+    ];
+    const allTags = sessions.map(session => session.tag).flat().concat(this.state.tagList);
+    const uniqueTags = Array.from(new Set(allTags)).filter(tag => !reservedTags.includes(tag))
+      .sort((a, b) => a.localeCompare(b));
+
+    this.setState({ tagList: uniqueTags });
+  };
+
   handleMessage = request => {
     switch (request.message) {
       case "saveSession":
@@ -200,9 +217,10 @@ export default class PopupPage extends Component {
 
     if (request.isEnd) {
       const needsSync = this.calcNeedsSync(this.state.sessions);
+      this.updateTagList(this.state.sessions);
       this.setState({
         isInitSessions: true,
-        needsSync: needsSync
+        needsSync: needsSync,
       });
 
       const searchInfo = await browser.runtime.sendMessage({ message: "getsearchInfo" });
@@ -223,6 +241,7 @@ export default class PopupPage extends Component {
         sessions = this.state.sessions.concat(newSession);
         searchInfo = this.state.searchInfo.concat(makeSearchInfo(newSession));
         needsSync = !request.saveBySync;
+        this.updateTagList([newSession]);
         break;
       }
       case "updateSession": {
@@ -243,6 +262,7 @@ export default class PopupPage extends Component {
           searchInfo.splice(infoIndex, 1, newSearchInfo);
         }
         needsSync = !request.saveBySync;
+        this.updateTagList([newSession]);
         break;
       }
       case "deleteSession": {
@@ -542,6 +562,7 @@ export default class PopupPage extends Component {
               session={this.state.selectedSession}
               searchWords={this.state.searchedSessionIds.includes(this.state.selectedSession.id) ?
                 this.state.searchWords : []}
+              tagList={this.state.tagList}
               removeSession={this.removeSession}
               removeWindow={this.removeWindow}
               removeTab={this.removeTab}

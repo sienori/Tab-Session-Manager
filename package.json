@@ -11,6 +11,7 @@
     "prop-types": "^15.7.2",
     "query-string": "^6.11.1",
     "react": "^16.13.1",
+    "react-autosuggest": "^10.1.0",
     "react-dom": "^16.13.1",
     "react-highlight-words": "^0.16.0",
     "react-router": "^5.1.2",
