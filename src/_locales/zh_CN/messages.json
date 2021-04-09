@@ -455,6 +455,12 @@
   "signOutLabel": {
     "message": "登出"
   },
+  "enabledAutoSyncLabel": {
+    "message": "Automatically sync"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+  },
   "includesAutoSaveToSyncLabel": {
     "message": "同步自动保存的会话"
   },
