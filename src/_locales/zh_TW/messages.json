@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "移除標籤"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "詳細資訊"
   },
@@ -454,6 +457,12 @@
   },
   "signOutLabel": {
     "message": "登出"
+  },
+  "enabledAutoSyncLabel": {
+    "message": "Automatically sync"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Execute cloud sync when the browser is launched and when the session is saved."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "同步並儲存瀏覽階段"
