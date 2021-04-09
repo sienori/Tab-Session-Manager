@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "移除标签"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "详细信息"
   },
