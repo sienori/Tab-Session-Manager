@@ -119,6 +119,9 @@
   "removeTagLabel": {
     "message": "タグを削除"
   },
+  "inputTagLabel": {
+    "message": "Input the tag name"
+  },
   "detailLabel": {
     "message": "詳細"
   },
