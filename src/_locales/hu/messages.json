@@ -120,7 +120,7 @@
     "message": "Címke eltávolítása"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Adja meg a címke nevét"
   },
   "detailLabel": {
     "message": "Részletek"
@@ -459,10 +459,10 @@
     "message": "Kijelentkezés"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Automatikus szinkronizálás"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Felhővel való szinkronizálás végrehajtása amikor a böngésző indul és amikor a munkamenet elmentődik."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Automatikusan mentett munkamenetek szinkronizálása"
