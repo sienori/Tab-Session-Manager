@@ -120,7 +120,7 @@
     "message": "Usuń tag"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Wprowadź nazwę tagu"
   },
   "detailLabel": {
     "message": "Szczegóły"
@@ -459,7 +459,7 @@
     "message": "Wyloguj"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Synchronizuj automatycznie"
   },
   "enabledAutoSyncCaptionLabel": {
     "message": "Execute cloud sync when the browser is launched and when the session is saved."
