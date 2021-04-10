@@ -120,7 +120,7 @@
     "message": "Schlagwort entfernen"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Marke Name eingeben"
   },
   "detailLabel": {
     "message": "Details"
@@ -459,10 +459,10 @@
     "message": "Abmelden"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Automatisch synchronisieren"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Cloud-Sync ausführen, wenn der Browser gestartet wird und wenn die Sitzung gespeichert wird."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Automatisch gespeicherte Sitzungen synchronisieren"
