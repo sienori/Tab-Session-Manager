@@ -387,25 +387,25 @@
     "message": "Salvar o nome do dispositivo na sessão"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Adicionar o nome do dispositivo como uma tag ao salvar uma sessão. Ao usar a sincronização em nuvem, você pode distingui-la das sessões em outros dispositivos."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Nome do dispositivo"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Especifique o nome deste dispositivo."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Aplicar o nome do dispositivo às sessões existentes"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Adicionar o nome do dispositivo a todas as sessões salvas."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Aplicar nome do dispositivo"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Aplicar o nome do dispositivo a todas as sessões?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Se estiver desmarcada, ignora a janela privada ao salvar a sessão."
@@ -414,7 +414,7 @@
     "message": "Suporta Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Restaurar o estado da árvore da guia Tree Style Tab.<br>Quando esta opção está ativada, leva algum tempo para restaurar a sessão."
   },
   "tstDelayLabel": {
     "message": "Atraso na restauração da árvore (milissegundos)"
@@ -429,37 +429,37 @@
     "message": "Se o nome da sessão na lista sessão se estende por mais de uma linha, é truncado para exibição em uma linha."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Sincronização em nuvem"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Ativar sincronização em nuvem (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Salvar sessões no Google Drive™ e sincronizar com outros computadores."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Sincronizando"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Baixando"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Fazendo upload"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Excluindo"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Sincronização completa."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Iniciar sessão"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Finalizar sessão"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Sincronizar automaticamente"
   },
   "enabledAutoSyncCaptionLabel": {
     "message": "Execute cloud sync when the browser is launched and when the session is saved."
