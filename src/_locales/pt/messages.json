@@ -462,13 +462,13 @@
     "message": "Sincronizar automaticamente"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Executar a sincronização em nuvem quando o navegador for iniciado e quando a sessão for salva."
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Sincronizar sessões de salvamento automático"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Enviar / baixar sessões de salvamento automático em sincronização na nuvem."
   },
   "popupLabel": {
     "message": "Pop-up"
@@ -513,16 +513,16 @@
     "message": "Abrir lista de sessão na guia quando o botão da barra de ferramentas é clicado."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Especifique o esquema de cores."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Claro"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Escuro"
   },
   "otherLabel": {
     "message": "Outros"
@@ -606,40 +606,40 @@
     "message": "Digite um atalho"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Digite uma letra"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Incluir Ctrl ou Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Incluir Command, Ctrl ou Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "A letra não pode ser usada"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "O atalho não pode ser usado"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Abrir popup da barra de ferramentas"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Salvar sessão (apenas janela atual)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Salvar sessão (todas as janelas)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Exportar todas as sessões"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Limpar"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Redefinir"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Apoiadores"
   },
   "LicenseLabel": {
     "message": "Licença"
@@ -654,10 +654,10 @@
     "message": "amazon.co.jp Gift Cards"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Patrocinadores"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Página da extensão"
   },
   "extensionPageLabel": {
     "message": "Extension page"
