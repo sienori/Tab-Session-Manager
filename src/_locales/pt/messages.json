@@ -201,7 +201,7 @@
     "message": "Fazer uma cópia da sessão"
   },
   "registerStartupLabel": {
-    "message": "Registrar para a inicialização"
+    "message": "Adicionar a inicialização"
   },
   "removeStartupLabel": {
     "message": "Remover da inicialização"
@@ -210,7 +210,7 @@
     "message": "Erro"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB não está disponível em seu navegador."
+    "message": "IndexedDB não está disponível no seu navegador."
   },
   "reloadExtensionLabel": {
     "message": "Recarregar extensão"
@@ -219,10 +219,10 @@
     "message": "Como resolver este problema"
   },
   "winCloseSessionName": {
-    "message": "Salvamento Automático - Janela fechada"
+    "message": "Salvamento automático - Janela fechada"
   },
   "browserExitSessionName": {
-    "message": "Salvamento automático - Ao sair do navegador"
+    "message": "Salvamento automático - Navegador encerrado"
   },
   "regularSaveSessionName": {
     "message": "Salvamento automático - Regularmente"
@@ -258,7 +258,7 @@
     "message": "Carregamento lento de aba"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba. <br> Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
+    "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba.<br>Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
   },
   "isUseDiscardedLabel": {
     "message": "Use a propriedade \"descartado\" para carregamento lento"
