@@ -65,3 +65,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - mgulick  
 - Ian Griffiths
 - atti710f
+- Ken Montague
