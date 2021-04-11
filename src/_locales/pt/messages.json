@@ -291,7 +291,7 @@
     "message": "Abrir sessão de inicialização"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Abrir as sessões registradas para incialização. Você pode registrar para inicialização no menu da lista de sessões."
+    "message": "Abrir as sessões registradas para inicialização. Você pode registrar para inicialização no menu da lista de sessões."
   },
   "DoNothingLabel": {
     "message": "Não fazer nada"
@@ -300,7 +300,7 @@
     "message": "Salvar a sessão regularmente"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Salve a sessão a cada X minutos."
+    "message": "Salvar a sessão a cada X minutos."
   },
   "autoSaveIntervalLabel": {
     "message": "Intervado (minutos)"
@@ -309,7 +309,7 @@
     "message": "Valor minimo 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Número máximo guardado"
+    "message": "Número máximo salvo"
   },
   "autoSaveLimitCaptionLabel": {
     "message": "Número máximo de sessões salvas (desta forma)."
