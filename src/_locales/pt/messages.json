@@ -162,7 +162,7 @@
     "message": "Renomear"
   },
   "renameSessionLabel": {
-    "message": "Renomear a sessão"
+    "message": "Renomear sessão"
   },
   "OpenSessionLabel": {
     "message": "Abrir uma sessão"
@@ -657,13 +657,13 @@
     "message": "Patrocinadores"
   },
   "addonPageLabel": {
-    "message": "Página da extensão"
+    "message": "Página do add-on"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Página da extensão"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Política de privacidade"
   },
   "importMessage": {
     "message": "Sessões de importados."
@@ -687,9 +687,9 @@
     "message": "Esta página não pode ser aberta pelo Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Copiar URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Copiado."
   }
 }
