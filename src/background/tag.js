@@ -21,7 +21,6 @@ export const getValidatedTag = (tag, session) => {
     "winClose",
     "browserExit",
     "temp",
-    "_startup",
     "_displayAll",
     "_user",
     "_auto",
