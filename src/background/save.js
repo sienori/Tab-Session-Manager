@@ -1,4 +1,5 @@
 import browser from "webextension-polyfill";
+import browserInfo from "browser-info";
 import uuidv4 from "uuid/v4";
 import log from "loglevel";
 import { SessionStartTime } from "./background.js";
@@ -8,8 +9,11 @@ import { returnReplaceParameter } from "./replace.js";
 import ignoreUrls from "./ignoreUrls";
 import { pushRemovedQueue, syncCloudAuto } from "./cloudSync.js";
 import { getValidatedTag } from "./tag.js";
+import { queryTabGroups } from "../common/tabGroups";
 
 const logDir = "background/save";
+
+const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
 
 export async function saveCurrentSession(name, tag, property) {
   log.log(logDir, "saveCurrentSession()", name, tag, property);
@@ -71,6 +75,13 @@ export async function loadCurrentSession(name, tag, property) {
     session.windowsInfo[i] = window;
   }
 
+  if (isEnabledTabGroups && getSettings("saveTabGroups")) {
+    const tabGroups = await queryTabGroups();
+    const filteredTabGroups = tabGroups.filter(tabGroup =>
+      Object.keys(session.windows).includes(String(tabGroup.windowId)));
+    if (filteredTabGroups.length > 0) session.tabGroups = filteredTabGroups;
+  }
+
   return new Promise((resolve, reject) => {
     if (session.tabsNumber > 0) resolve(session);
     else reject();
@@ -83,7 +94,7 @@ async function sendMessage(message, options = {}) {
       message: message,
       ...options
     })
-    .catch(() => {});
+    .catch(() => { });
 }
 
 export async function saveSession(session, isSendResponce = true, saveBySync = false) {
@@ -139,7 +150,7 @@ export async function updateSession(
 
 export async function renameSession(id, name) {
   log.log(logDir, "renameSession()", id, name);
-  let session = await Sessions.get(id).catch(() => {});
+  let session = await Sessions.get(id).catch(() => { });
   if (session == undefined) return;
   session.name = name.trim();
   return await updateSession(session);

@@ -3,6 +3,7 @@ import browserInfo from "browser-info";
 import log from "loglevel";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
+import { updateTabGroups } from "../common/tabGroups";
 
 const logDir = "background/open";
 
@@ -105,7 +106,7 @@ async function removeNowOpenTabs() {
   return await browser.windows.get(currentWinId, { populate: true });
 }
 
-const createTabGroups = async (windowId, tabs) => {
+const createTabGroups = async (windowId, tabs, tabGroupsInfo) => {
   let groups = {};
   for (let tab of tabs) {
     if (!(tab.groupId > 0)) continue;
@@ -121,6 +122,10 @@ const createTabGroups = async (windowId, tabs) => {
     browser.tabs.group({
       createProperties: { windowId: windowId },
       tabIds: group.tabIds
+    }, groupId => {
+      const groupInfo = tabGroupsInfo.find(info => info.id === group.originalGroupId);
+      if (!groupInfo) return;
+      updateTabGroups(groupId, groupInfo);
     });
   }
 };
@@ -155,7 +160,7 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
 
   if (isEnabledTabGroups) {
     await Promise.all(openedTabs);
-    createTabGroups(currentWindow.id, sortedTabs);
+    createTabGroups(currentWindow.id, sortedTabs, session.tabGroups || []);
   }
 }
 

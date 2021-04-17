@@ -1,4 +1,5 @@
 import browser from "webextension-polyfill";
+import browserInfo from "browser-info";
 import _ from "lodash";
 import clone from "clone";
 import uuidv4 from "uuid/v4";
@@ -6,6 +7,8 @@ import moment from "moment";
 import log from "loglevel";
 import "core-js/fn/array/flat-map";
 import { returnReplaceParameter } from "src/background/replace.js";
+import { queryTabGroups } from "../../common/tabGroups";
+import { getSettings } from "src/settings/settings";
 
 const logDir = "popup/actions/controlSessions";
 
@@ -154,6 +157,14 @@ export const addCurrentWindow = async id => {
 
   delete currentWindow.tabs;
   if (session.windowsInfo) session.windowsInfo[windowId] = currentWindow;
+
+  const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
+  if (isEnabledTabGroups && getSettings("saveTabGroups")) {
+    const tabGroups = await queryTabGroups({ windowId: currentWindow.id });
+    if (tabGroups.length > 0) {
+      session.tabGroups = (session.tabGroups || []).concat(tabGroups);
+    }
+  }
 
   sendSessionUpdateMessage(session);
 };
