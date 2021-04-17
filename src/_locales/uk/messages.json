@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Затримка під час відновленні дерева (мілісекунди)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Save tab groups"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Save the state of tab groups. To enable this feature, you need to install the following extension."
+  },
   "tstDelayCaptionLabel": {
     "message": "Для відновлення стану дерева та відкриття вкладки потрібен певний час. Збільште це значення, якщо дерево не відновлюється коректно."
   },
