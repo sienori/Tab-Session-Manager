@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Trì hoãn khi phục hồi cây (mi-li-giây)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Save tab groups"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Save the state of tab groups. To enable this feature, you need to install the following extension."
+  },
   "tstDelayCaptionLabel": {
     "message": "Để phục hồi trạng thái của cây, cần có thời gian chờ để mở tab. Tăng thời gian chờ nếu cây không được khôi phục một cách chính xác."
   },
