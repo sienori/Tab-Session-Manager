@@ -420,7 +420,7 @@
     "message": "Ritardo del ripristino ad albero (millisecondi)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Salva gruppi di schede"
   },
   "saveTabGroupsCaptionLabel": {
     "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
