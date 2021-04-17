@@ -120,7 +120,7 @@
     "message": "Rimuovi tag"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Inserisci il nome del tag"
   },
   "detailLabel": {
     "message": "Dettagli"
@@ -423,7 +423,7 @@
     "message": "Salva gruppi di schede"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Salva e ripristina lo stato dei gruppi di schede. Per abilitare questa funzione, devi installare la seguente estensione."
   },
   "tstDelayCaptionLabel": {
     "message": "Per ripristinare lo stato dell'alberatura, è necessario un tempo d'attesa per aprire la scheda. Aumenta questo valore se l'alberatura non viene ripristinata correttamente."
@@ -465,10 +465,10 @@
     "message": "Disconnetti"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Sincronizza automaticamente"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Esegue la sincronizzazione in cloud quando il browser viene avviato e quando la sessione viene salvata."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Sincronizza sessioni salvate automaticamente"
