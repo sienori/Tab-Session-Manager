@@ -423,7 +423,7 @@
     "message": "Save tab groups"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
   },
   "tstDelayCaptionLabel": {
     "message": "Pour restaurer l’état de l’arborescence, un temps d’attente est nécessaire pour ouvrir l’onglet. Augmentez cette valeur si l’arborescence n’est pas restaurée correctement."
