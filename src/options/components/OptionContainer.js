@@ -180,6 +180,10 @@ export default props => {
               </p>
             ))}
             {props.extraCaption ? props.extraCaption : ""}
+            {props.link &&
+              <p className="caption">
+                <a href={props.link.href} target="_blank">{props.link.text}</a>
+              </p>}
           </div>
           <div className="optionForm">{optionForm}</div>
         </div>
