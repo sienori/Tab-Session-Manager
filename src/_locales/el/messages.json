@@ -423,7 +423,7 @@
     "message": "Save tab groups"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Αποθηκεύστε και επαναφέρετε την κατάσταση των ομάδων καρτελών. Για να ενεργοποιήσετε αυτήν τη λειτουργία, πρέπει να εγκαταστήσετε την ακόλουθη επέκταση."
   },
   "tstDelayCaptionLabel": {
     "message": "Κατά την επαναφορά του δέντρου, απαιτείται κάποιος χρόνος. Αυξήστε το χρόνο αυτό αν η διαδικασία δεν γίνεται σωστά."
