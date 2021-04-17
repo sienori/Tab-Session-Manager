@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Ritardo del ripristino ad albero (millisecondi)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Save tab groups"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Save the state of tab groups. To enable this feature, you need to install the following extension."
+  },
   "tstDelayCaptionLabel": {
     "message": "Per ripristinare lo stato dell'alberatura, è necessario un tempo d'attesa per aprire la scheda. Aumenta questo valore se l'alberatura non viene ripristinata correttamente."
   },
