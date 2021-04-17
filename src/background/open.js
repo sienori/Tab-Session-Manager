@@ -83,6 +83,7 @@ const isEnabledOpenerTabId =
   (browserInfo().name == "Chrome" && browserInfo().version >= 18);
 const isEnabledDiscarded = browserInfo().name == "Firefox" && browserInfo().version >= 63;
 const isEnabledOpenInReaderMode = browserInfo().name == "Firefox" && browserInfo().version >= 58;
+const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
 
 //ウィンドウとタブを閉じてcurrentWindowを返す
 async function removeNowOpenTabs() {
@@ -104,6 +105,26 @@ async function removeNowOpenTabs() {
   return await browser.windows.get(currentWinId, { populate: true });
 }
 
+const createTabGroups = async (windowId, tabs) => {
+  let groups = {};
+  for (let tab of tabs) {
+    if (!(tab.groupId > 0)) continue;
+
+    if (!groups[tab.groupId]) groups[tab.groupId] = {
+      originalGroupId: tab.groupId,
+      tabIds: []
+    };
+    groups[tab.groupId].tabIds.push(tabList[tab.id]);
+  }
+
+  for (let group of Object.values(groups)) {
+    browser.tabs.group({
+      createProperties: { windowId: windowId },
+      tabIds: group.tabIds
+    });
+  }
+};
+
 //現在のウィンドウにタブを生成
 async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = false) {
   log.log(logDir, "createTabs()", session, win, currentWindow, isAddtoCurrentWindow);
@@ -118,6 +139,7 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   });
 
   const firstTabId = currentWindow.tabs[0].id;
+  let openedTabs = [];
   let tabNumber = 0;
   for (let tab of sortedTabs) {
     const openedTab = openTab(session, win, currentWindow, tab.id, isAddtoCurrentWindow)
@@ -126,8 +148,14 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
         if (tabNumber == 1 && !isAddtoCurrentWindow) browser.tabs.remove(firstTabId);
         if (tabNumber == sortedTabs.length) replacePage(currentWindow.id);
       })
-      .catch(() => {});
+      .catch(() => { });
+    openedTabs.push(openedTab);
     if (getSettings("ifSupportTst")) await openedTab;
+  }
+
+  if (isEnabledTabGroups) {
+    await Promise.all(openedTabs);
+    createTabGroups(currentWindow.id, sortedTabs);
   }
 }
 
@@ -135,7 +163,7 @@ let tabList = {};
 //実際にタブを開く
 function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
   log.log(logDir, "openTab()", session, win, currentWindow, tab, isOpenToLastIndex);
-  return new Promise(async function(resolve, reject) {
+  return new Promise(async function (resolve, reject) {
     const property = session.windows[win][tab];
     let createOption = {
       active: property.active,
