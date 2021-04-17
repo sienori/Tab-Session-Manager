@@ -132,8 +132,8 @@ const createTabGroups = async (windowId, tabs, tabGroupsInfo) => {
 };
 
 const setWindowTitle = (session, windowId, currentWindow) => {
-  const windowTitle = session.windowsInfo[windowId].title;
-  const activeTabTitle = Object.values(session.windows[windowId]).find(window => window.active).title;
+  const windowTitle = session?.windowsInfo?.[windowId]?.title || "";
+  const activeTabTitle = Object.values(session.windows[windowId]).find(window => window.active)?.title;
   const reg = new RegExp("(?<title>.+)" + activeTabTitle, "u");
   const title = windowTitle.match(reg)?.groups?.title;
 
