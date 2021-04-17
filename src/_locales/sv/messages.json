@@ -420,10 +420,10 @@
     "message": "Fördröj trädåterställningen (millisekunder)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Spara flikgrupper"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Spara och återställ läget för flikgrupper. För att aktivera den här funktionen måste du installera följande tillägg."
   },
   "tstDelayCaptionLabel": {
     "message": "För att återställa trädet krävs det väntetid innan fliken öppnas. Höj värdet om trädet inte återställs korrekt."
