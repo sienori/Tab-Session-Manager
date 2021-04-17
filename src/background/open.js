@@ -85,6 +85,7 @@ const isEnabledOpenerTabId =
 const isEnabledDiscarded = browserInfo().name == "Firefox" && browserInfo().version >= 63;
 const isEnabledOpenInReaderMode = browserInfo().name == "Firefox" && browserInfo().version >= 58;
 const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
+const isEnabledWindowTitle = browserInfo().name == "Firefox";
 
 //ウィンドウとタブを閉じてcurrentWindowを返す
 async function removeNowOpenTabs() {
@@ -130,6 +131,24 @@ const createTabGroups = async (windowId, tabs, tabGroupsInfo) => {
   }
 };
 
+const setWindowTitle = (session, windowId, currentWindow) => {
+  const windowTitle = session.windowsInfo[windowId].title;
+  const activeTabTitle = Object.values(session.windows[windowId]).find(window => window.active).title;
+  const reg = new RegExp("(?<title>.+)" + activeTabTitle, "u");
+  const title = windowTitle.match(reg)?.groups?.title;
+
+  if (title) {
+    let count = 0;
+    // タブがloading中だとtitlePrefaceのセットに失敗するため読み込めるまで繰り返す
+    const interval = setInterval(async () => {
+      browser.windows.update(currentWindow.id, { titlePreface: title });
+      const tabInfo = await browser.tabs.query({ windowId: currentWindow.id, active: true });
+      count++;
+      if (tabInfo[0].status == "complete" || count > 20) clearInterval(interval);
+    }, 1000);
+  }
+};
+
 //現在のウィンドウにタブを生成
 async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = false) {
   log.log(logDir, "createTabs()", session, win, currentWindow, isAddtoCurrentWindow);
@@ -161,6 +180,11 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   if (isEnabledTabGroups) {
     await Promise.all(openedTabs);
     createTabGroups(currentWindow.id, sortedTabs, session.tabGroups || []);
+  }
+
+  if (isEnabledWindowTitle) {
+    await Promise.all(openedTabs);
+    setWindowTitle(session, win, currentWindow);
   }
 }
 
