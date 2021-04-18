@@ -258,8 +258,7 @@ export default [
             title: "enabledAutoSyncLabel",
             captions: ["enabledAutoSyncCaptionLabel"],
             type: "checkbox",
-            default: false,
-            new: true
+            default: false
           },
           {
             id: "includesAutoSaveToSync",
