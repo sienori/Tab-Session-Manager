@@ -33,7 +33,7 @@
     "message": "Сохранить только текущее окно"
   },
   "categoryFilterLabel": {
-    "message": "Фильтр категории"
+    "message": "Фильтр по категории"
   },
   "sortLabel": {
     "message": "Сортировать"
@@ -120,7 +120,7 @@
     "message": "Удалить метку"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Введите имя тега"
   },
   "detailLabel": {
     "message": "Подробности"
@@ -420,10 +420,10 @@
     "message": "Задержка при восстановлении дерева (миллисекунды)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Сохранить группы вкладок"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Сохраните и восстановите состояние группы вкладок. Чтобы включить эту функцию, необходимо установить следующее расширение."
   },
   "tstDelayCaptionLabel": {
     "message": "Для восстановления состояние дерева и открытия вкладки требуется некоторое время. Увеличьте это значение, если дерево не восстанавливается корректно."
