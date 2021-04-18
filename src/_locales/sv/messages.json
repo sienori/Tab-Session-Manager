@@ -120,7 +120,7 @@
     "message": "Ta bort tagg"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Skriv in taggens namn"
   },
   "detailLabel": {
     "message": "Detaljer"
@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Fördröj trädåterställningen (millisekunder)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Spara flikgrupper"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Spara och återställ läget för flikgrupper. För att aktivera den här funktionen måste du installera följande tillägg."
+  },
   "tstDelayCaptionLabel": {
     "message": "För att återställa trädet krävs det väntetid innan fliken öppnas. Höj värdet om trädet inte återställs korrekt."
   },
@@ -459,10 +465,10 @@
     "message": "Logga ut"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Synkronisera automatiskt"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Kör molnsynkronisering när webbläsaren startas och när sessionen sparas."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Synkronisera automatiskt spara sessioner"
