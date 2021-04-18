@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Tree Style Tab 還原時的延遲載入時間(毫秒)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Save tab groups"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+  },
   "tstDelayCaptionLabel": {
     "message": "若要還原分頁為樹狀結構狀態，需要等待一段時間才能開啟分頁，若無法正確還原為樹狀結構之時，請增加此值。"
   },
@@ -459,7 +465,7 @@
     "message": "登出"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "自動同步"
   },
   "enabledAutoSyncCaptionLabel": {
     "message": "Execute cloud sync when the browser is launched and when the session is saved."

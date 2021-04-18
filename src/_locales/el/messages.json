@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Αναμονή προτού εκτελεστεί η επαναφορά (milliseconds)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Save tab groups"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Αποθηκεύστε και επαναφέρετε την κατάσταση των ομάδων καρτελών. Για να ενεργοποιήσετε αυτήν τη λειτουργία, πρέπει να εγκαταστήσετε την ακόλουθη επέκταση."
+  },
   "tstDelayCaptionLabel": {
     "message": "Κατά την επαναφορά του δέντρου, απαιτείται κάποιος χρόνος. Αυξήστε το χρόνο αυτό αν η διαδικασία δεν γίνεται σωστά."
   },
@@ -459,10 +465,10 @@
     "message": "Αποσύνδεση"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Αυτόματος συγχρονισμός"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Εκτέλεση του συγχρονισμού στο cloud κατά την εκκίνηση του προγράμματος περιήγησης και κατά την αποθήκευση της συνεδρίας."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Συγχρονισμός αυτόματα αποθηκευμένων συνεδριών"

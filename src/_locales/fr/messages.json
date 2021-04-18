@@ -108,10 +108,10 @@
     "message": "Annuler"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Annuler"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Rétablir"
   },
   "addTagLabel": {
     "message": "Ajouter une étiquette"
@@ -120,7 +120,7 @@
     "message": "Supprimer une étiquette"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Entrez le nom de l’étiquette"
   },
   "detailLabel": {
     "message": "Détail"
@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Délais de rétablissement de l'arborescence (millisecondes)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Sauvegarder les groupes d’onglet"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Enregistrer et restaurer l’état des groupes d’onglets. Pour activer cette fonctionnalité, vous devez installer l’extension suivante."
+  },
   "tstDelayCaptionLabel": {
     "message": "Pour restaurer l’état de l’arborescence, un temps d’attente est nécessaire pour ouvrir l’onglet. Augmentez cette valeur si l’arborescence n’est pas restaurée correctement."
   },
@@ -459,10 +465,10 @@
     "message": "Se déconnecter"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Synchroniser automatiquement"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Exécuter une synchronisation infonuagique quand le navigateur se lance et quand la session est sauvegardée."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Synchroniser les sessions autosauvegardées"
@@ -513,16 +519,16 @@
     "message": "Ouvre la liste des sessions enregistrées dans un onglet quand le bouton de la barre d'outil est cliqué."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Thème"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Indiquer la palette de couleurs."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Clair"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Sombre"
   },
   "otherLabel": {
     "message": "Autre"
@@ -654,7 +660,7 @@
     "message": "Cartes Cadeaux (amazon.co.jp)"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Parraineurs"
   },
   "addonPageLabel": {
     "message": "Page de l'extension"

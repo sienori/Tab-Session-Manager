@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Retrasar al árbol de restauración (milisegundos)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Save tab groups"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+  },
   "tstDelayCaptionLabel": {
     "message": "Para restaurar el estado del árbol, es requerido un tiempo de espera para abrir la pestaña. Incremente este valor si el árbol no se restaura correctamente."
   },

@@ -120,7 +120,7 @@
     "message": "Usuń tag"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Wprowadź nazwę tagu"
   },
   "detailLabel": {
     "message": "Szczegóły"
@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Opóźnienie przywracania drzewa (milisekundy)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Save tab groups"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+  },
   "tstDelayCaptionLabel": {
     "message": "Aby przywrócić stan drzewa, wymagany jest czas oczekiwania na otwarcie karty. Zwiększ tą wartość, jeśli drzewo nie jest przywracane prawidłowo."
   },
@@ -459,7 +465,7 @@
     "message": "Wyloguj"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Synchronizuj automatycznie"
   },
   "enabledAutoSyncCaptionLabel": {
     "message": "Execute cloud sync when the browser is launched and when the session is saved."
