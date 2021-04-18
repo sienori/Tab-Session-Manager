@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Suchen nach Sitzungs- oder Tabnamen"
+    "message": "Suchen nach Sitzung oder Tabnamen"
   },
   "search": {
     "message": "Suchen"
@@ -120,7 +120,7 @@
     "message": "Schlagwort entfernen"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Marke Name eingeben"
   },
   "detailLabel": {
     "message": "Details"
@@ -419,6 +419,12 @@
   "tstDelayLabel": {
     "message": "Verzögerung bei der Wiederherstellung der Baumstruktur (Millisekunden)"
   },
+  "saveTabGroupsLabel": {
+    "message": "Tab-Gruppen speichern"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Speichern und Wiederherstellen des Status von Tab-Gruppen. Um diese Funktion zu aktivieren, müssen Sie die folgende Erweiterung installieren."
+  },
   "tstDelayCaptionLabel": {
     "message": "Um den Zustand der Baumstruktur wiederherzustellen, ist eine gewisse Verzögerung notwendig. Falls die Baumstruktur nicht korrekt wiederhergestellt wird, kann der Wert erhöht werden."
   },
@@ -459,10 +465,10 @@
     "message": "Abmelden"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Automatisch synchronisieren"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Cloud-Sync ausführen, wenn der Browser gestartet wird und wenn die Sitzung gespeichert wird."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Automatisch gespeicherte Sitzungen synchronisieren"
