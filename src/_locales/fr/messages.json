@@ -108,10 +108,10 @@
     "message": "Annuler"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Annuler"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Rétablir"
   },
   "addTagLabel": {
     "message": "Ajouter une étiquette"
@@ -420,7 +420,7 @@
     "message": "Délais de rétablissement de l'arborescence (millisecondes)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Sauvegarder les groupes d’onglet"
   },
   "saveTabGroupsCaptionLabel": {
     "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
@@ -660,7 +660,7 @@
     "message": "Cartes Cadeaux (amazon.co.jp)"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Parraineurs"
   },
   "addonPageLabel": {
     "message": "Page de l'extension"
