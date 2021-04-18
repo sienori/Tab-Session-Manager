@@ -420,10 +420,10 @@
     "message": "Késleltetés fa helyreállításnál (ezredmásodperc)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Fül csoportok mentése"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Fül csoportok mentése és visszaállítása. Ennek a képességnek a használatához az alábbi kiegészítőt kell telepítenie."
   },
   "tstDelayCaptionLabel": {
     "message": "A fa struktúra visszaállításához, idő szükséges a fül megnyitásánál. Növeld ezt az értéket, ha nem áll vissza rendesen a fa struktúra."
