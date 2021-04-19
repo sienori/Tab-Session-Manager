@@ -120,7 +120,7 @@
     "message": "Quitar etiqueta"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Introduzca el nombre de la etiqueta"
   },
   "detailLabel": {
     "message": "Detalles"
@@ -420,10 +420,10 @@
     "message": "Retrasar al árbol de restauración (milisegundos)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Guardar grupos de pestañas"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Guardar y restaurar el estado de los grupos de pestañas. Para habilitar esta función, necesita instalar la siguiente extensión."
   },
   "tstDelayCaptionLabel": {
     "message": "Para restaurar el estado del árbol, es requerido un tiempo de espera para abrir la pestaña. Incremente este valor si el árbol no se restaura correctamente."
@@ -465,10 +465,10 @@
     "message": "Cerrar sesión"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Sincronizar automáticamente"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Ejecutar sincronización en la nube cuando se inicia el navegador y cuando se guarda la sesión."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Sincronizar sesiones de auto guardado"
@@ -660,7 +660,7 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Patrocinador"
   },
   "addonPageLabel": {
     "message": "Página de Add-on"
