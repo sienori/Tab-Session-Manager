@@ -66,3 +66,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Ian Griffiths
 - atti710f
 - Ken Montague
+- Florin Marin
