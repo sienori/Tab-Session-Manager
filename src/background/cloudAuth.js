@@ -51,12 +51,16 @@ const getAuthTokens = async (email = "") => {
     `&scope=${encodeURIComponent(scopes.join(" "))}` +
     `${email && `&login_hint=${email}`}`;
 
-  const redirectedURL = await browser.identity
-    .launchWebAuthFlow({
-      interactive: true,
-      url: authURL
-    })
-    .catch(e => {
+  const redirectedURL = await browser.identity.launchWebAuthFlow({ url: authURL })
+    .catch(async e => {
+      if (e.message === "User interaction required." ||
+        e.message === "Requires user interaction") {
+        return await browser.identity
+          .launchWebAuthFlow({
+            interactive: true,
+            url: authURL
+          });
+      }
       log.error(logDir, "getAuthTokens()", e);
     });
 
