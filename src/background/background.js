@@ -13,7 +13,7 @@ import {
 import Sessions from "./sessions";
 import { replacePage } from "./replace";
 import importSessions from "./import";
-import backupSessions from "./backup";
+import { backupSessions, resetLastBackupTime } from "./backup";
 import {
   loadCurrentSession,
   saveCurrentSession,
@@ -50,6 +50,7 @@ const addListeners = () => {
     handleSettingsChange(changes, areaName);
     setAutoSave(changes, areaName);
     updateLogLevel();
+    resetLastBackupTime(changes);
   });
 
   browser.tabs.onUpdated.addListener(handleTabUpdated);

@@ -1,65 +1,45 @@
 import browser from "webextension-polyfill";
-import moment from "moment";
 import log from "loglevel";
 import Sessions from "./sessions.js";
-import { getSettings } from "src/settings/settings";
+import { getSettings, setSettings } from "src/settings/settings";
+import exportSessions from "./export.js";
 
 const logDir = "background/backup";
 
-export default async function backupSessions() {
-  const sessions = await Sessions.getAll().catch(() => {});
-
+export const backupSessions = async () => {
   if (!getSettings("ifBackup")) return;
-  if (sessions.length == 0) return;
-  log.log(logDir, "backupSessions()");
+  log.log(logDir, "backupSessions");
 
-  const downloadUrl = URL.createObjectURL(
-    new Blob([JSON.stringify(sessions, null, "    ")], {
-      type: "aplication/json"
-    })
-  );
+  const currentTime = Date.now();
+  const lastBackupTime = getSettings("lastBackupTime") || 0;
+  const backupFolder = getSettings("backupFolder");
+  const labels = {
+    regular: browser.i18n.getMessage("regularSaveSessionName"),
+    browserExit: browser.i18n.getMessage("browserExitSessionName"),
+    winClose: browser.i18n.getMessage("winCloseSessionName"),
+    userSave: browser.i18n.getMessage("displayUserLabel")
+  };
+  const sessions = await Sessions.getAll(["id", "lastEditedTime", "tag"]).catch(() => { });
 
-  const backupFolder = replaceBackupFolderName(getSettings("backupFolder"));
-  const fileName = returnFileName(sessions);
+  for (let session of sessions) {
+    if (session.lastEditedTime < lastBackupTime) continue;
+    if (session.tag.includes("temp")) continue;
 
-  await browser.downloads.download({
-    url: downloadUrl,
-    filename: `${backupFolder}${backupFolder == "" ? "" : "/"}${fileName}.json`,
-    conflictAction: "uniquify",
-    saveAs: false
-  });
-}
+    let folderName = backupFolder;
+    if (session.tag.includes("regular")) folderName += `\\${labels.regular}`;
+    else if (session.tag.includes("winClose")) folderName += `\\${labels.winClose}`;
+    else if (session.tag.includes("browserExit")) folderName += `\\${labels.browserExit}`;
+    else folderName += `\\${labels.userSave}`;
 
-function replaceBackupFolderName(folderName) {
-  log.log(logDir, "replaceBackupFolderName()", folderName);
-  const specialChars = /\:|\?|\.|"|<|>|\|/g; //使用できない特殊文字
-  const slash = /\//g; //単一のスラッシュ
-  const spaces = /\s\s+/g; //連続したスペース
-  const backSlashs = /\\\\+/g; //連続したバックスラッシュ
-  const sandwich = /(\s\\|\\\s)+(\s|\\)?/g; //バックスラッシュとスペースが交互に出てくるパターン
-  const beginningEnd = /^(\s|\\)+|(\s|\\)+$/g; //先頭と末尾のスペース,バックスラッシュ
+    await exportSessions(session.id, folderName, true);
+  }
 
-  folderName = folderName
-    .replace(specialChars, "-")
-    .replace(slash, "\\")
-    .replace(spaces, " ")
-    .replace(backSlashs, "\\")
-    .replace(sandwich, "\\")
-    .replace(beginningEnd, "");
+  setSettings("lastBackupTime", currentTime);
+};
 
-  return folderName;
-}
-
-function returnFileName(sessions) {
-  log.log(logDir, "returnFileName()", sessions);
-  const sessionLabel = browser.i18n.getMessage("sessionLabel").toLowerCase();
-  const sessionsLabel = browser.i18n.getMessage("sessionsLabel").toLowerCase();
-
-  let fileName = `${moment().format(getSettings("dateFormat"))} (${sessions.length} ${
-    sessions.length == 1 ? sessionLabel : sessionsLabel
-  })`;
-
-  const pattern = /\\|\/|\:|\?|\.|"|<|>|\|/g;
-  fileName = fileName.replace(pattern, "-");
-  return fileName;
-}
+export const resetLastBackupTime = (changes) => {
+  const isChangedBackupSettings =
+    !changes?.Settings?.oldValue?.ifBackup && changes?.Settings?.newValue?.ifBackup ||
+    changes?.Settings?.oldValue?.backupFolder !== changes?.Settings?.newValue?.backupFolder;
+  if (isChangedBackupSettings) setSettings("lastBackupTime", 0);
+};
