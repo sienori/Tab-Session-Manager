@@ -86,22 +86,21 @@
 
   .buttonsContainer {
     position: absolute;
-    visibility: hidden;
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(10px);
     background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
     right: 0;
     bottom: 0;
     display: flex;
     flex-direction: row;
     flex-shrink: 1;
-    transition: all 300ms;
+    transition: all 200ms;
 
     button {
       display: flex;
       align-items: center;
-      padding: 5px;
-      margin: 5px;
+      padding: 13px;
       border: none;
       background-color: transparent;
       cursor: pointer;
@@ -113,11 +112,13 @@
       }
 
       &:hover {
-        background-color: var(--button);
+        background-color: rgba(0, 0, 0, 0.2);
       }
 
-      &.remove:hover {
-        svg {
+      &.remove {
+        margin-left: 5px;
+
+        &:hover svg{
           fill: var(--confirm);
         }
       }
@@ -125,7 +126,6 @@
   }
 
   &:hover .buttonsContainer {
-    visibility: visible;
     opacity: 1;
     transform: translateX(0);
     transition: all 300ms;

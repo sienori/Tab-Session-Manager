@@ -56,10 +56,11 @@ export default class Session extends Component {
     return (
       <div className={`sessionItem ${isSelected ? "isSelected" : ""}`}
         style={{ order: order }}
-        onDoubleClick={this.handleOpenClick}>
+      >
         <button
           className="selectButton"
           onClick={() => handleSessionSelect(session.id)}
+          onDoubleClick={this.handleOpenClick}
           onContextMenu={this.handleSessionRightClick}
           ref={this.sessionItemElement}
         >
