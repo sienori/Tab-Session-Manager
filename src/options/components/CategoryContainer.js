@@ -15,23 +15,19 @@ export default props => {
         </legend>
         <ul className="categoryElements">
           {elements.map((option, index) => (
-            <div key={index}>
-              <OptionContainer {...option}>
-                {option.hasOwnProperty("childElements") ? (
-                  <ul className="childElements">
-                    {option.childElements.map((option, index) => (
-                      <OptionContainer {...option} key={index} />
-                    ))}
-                  </ul>
-                ) : (
-                  ""
-                )}
-              </OptionContainer>
-              <hr />
-            </div>
+            <OptionContainer {...option} key={index}>
+              {option.hasOwnProperty("childElements") && (
+                <ul className="childElements">
+                  {option.childElements.map((option, index) => (
+                    <OptionContainer {...option} key={index} />
+                  ))}
+                </ul>
+              )}
+              < hr />
+            </OptionContainer>
           ))}
         </ul>
       </fieldset>
-    </li>
+    </li >
   );
 };
