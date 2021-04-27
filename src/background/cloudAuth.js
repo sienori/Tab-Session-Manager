@@ -76,6 +76,7 @@ const getAuthCode = async (email = "") => {
 };
 
 const getRefreshTokens = async authCode => {
+  log.log(logDir, "getRefreshTokens()");
   const options = {
     method: "post",
     url: "https://www.googleapis.com/oauth2/v4/token",
@@ -102,6 +103,7 @@ const getRefreshTokens = async authCode => {
 };
 
 const getAccessToken = async refreshToken => {
+  log.log(logDir, "getAccessToken()");
   const options = {
     method: "post",
     url: "https://www.googleapis.com/oauth2/v4/token",
