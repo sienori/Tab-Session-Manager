@@ -37,6 +37,7 @@ You can contribute by translating Tab Session Manager on **[Crowdin](https://cro
 2. Create the file `src/credentials.js`  
   ```src/credentials.js
   export const clientId = "xxx"
+  export const clientSecret = "xxx"
   ```
 3. Run `npm install`
 4. Run `npm run watch-dev`
