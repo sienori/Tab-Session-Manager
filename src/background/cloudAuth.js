@@ -28,7 +28,9 @@ export const signOutGoogle = async () => {
   log.log(logDir, "signOutGoogle()");
   try {
     const accessToken = getSettings("accessToken");
+    const refreshToken = getSettings("refreshToken");
     revokeToken(accessToken);
+    revokeToken(refreshToken);
     setSettings("signedInEmail", "");
     setSettings("accessToken", "");
     setSettings("refreshToken", "");
@@ -158,7 +160,8 @@ export const refreshAccessToken = async () => {
 };
 
 const revokeToken = async token => {
+  if (!token) return;
   let params = new URLSearchParams();
   params.append("token", token);
-  await axios.post(`https://oauth2.googleapis.com/revoke`, params);
+  await axios.post(`https://oauth2.googleapis.com/revoke`, params).catch(e => { });
 };
