@@ -42,7 +42,8 @@ export const signOutGoogle = async () => {
   }
 };
 
-const getAuthCode = async () => {
+const getAuthCode = async (email = "") => {
+  log.log(logDir, "getAuthCode()");
   const scopes = [
     "https://www.googleapis.com/auth/drive.appfolder",
     "https://www.googleapis.com/auth/userinfo.email"
@@ -54,7 +55,8 @@ const getAuthCode = async () => {
     `&response_type=code` +
     `&redirect_uri=${encodeURIComponent(redirectUri)}` +
     `&scope=${encodeURIComponent(scopes.join(" "))}` +
-    `&access_type=offline`;
+    `&access_type=offline` +
+    (email && `&login_hint=${email}`);
 
   const redirectedURL = await browser.identity.launchWebAuthFlow({
     url: authURL,
@@ -148,7 +150,8 @@ export const refreshAccessToken = async () => {
     setTokenExpiration(expiresIn);
     return accessToken;
   } else {
-    const authCode = await getAuthCode();
+    const currentEmail = getSettings("signedInEmail");
+    const authCode = await getAuthCode(currentEmail);
     const { accessToken, expiresIn, refreshToken } = await getRefreshTokens(authCode);
     const email = await getEmail(accessToken);
     setSettings("signedInEmail", email);
