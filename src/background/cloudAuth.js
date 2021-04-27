@@ -144,12 +144,12 @@ export const refreshAccessToken = async () => {
   log.log(logDir, "refreshAccessToken()");
   const refreshToken = getSettings("refreshToken");
 
-  if (refreshToken) {
+  try {
     const { accessToken, expiresIn } = await getAccessToken(refreshToken);
     setSettings("accessToken", accessToken);
     setTokenExpiration(expiresIn);
     return accessToken;
-  } else {
+  } catch (e) {
     const currentEmail = getSettings("signedInEmail");
     const authCode = await getAuthCode(currentEmail);
     const { accessToken, expiresIn, refreshToken } = await getRefreshTokens(authCode);
