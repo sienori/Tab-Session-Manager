@@ -92,8 +92,12 @@ export const syncCloud = async () => {
   log.log(logDir, "syncCloud()");
 
   updateSyncStatus(syncStatus.pending);
-
-  const files = await listFiles();
+  const files = await listFiles().catch(e => null);
+  if (files === null) {
+    log.error(logDir, "syncCloud() listFiles");
+    isSyncing = false;
+    return;
+  }
   const sessions = (await getSessions()).filter(session => !session.tag.includes("temp"));
   const removedQueue = getSettings("removedQueue") || [];
 
