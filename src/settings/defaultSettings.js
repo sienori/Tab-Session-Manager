@@ -230,6 +230,7 @@ export default [
         captions: ["ifBackupCaptionLabel"],
         type: "checkbox",
         default: false,
+        new: true,
         childElements: [
           {
             id: "backupFolder",
