@@ -1,7 +1,6 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import _ from "lodash";
-import clone from "clone";
 import uuidv4 from "uuid/v4";
 import moment from "moment";
 import log from "loglevel";
