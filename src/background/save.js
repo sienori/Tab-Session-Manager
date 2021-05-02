@@ -10,6 +10,7 @@ import ignoreUrls from "./ignoreUrls";
 import { pushRemovedQueue, syncCloudAuto } from "./cloudSync.js";
 import { getValidatedTag } from "./tag.js";
 import { queryTabGroups } from "../common/tabGroups";
+import { compressDataUrl } from "../common/compressDataUrl";
 
 const logDir = "background/save";
 
@@ -62,6 +63,12 @@ export async function loadCurrentSession(name, tag, property) {
     const parameter = returnReplaceParameter(tab.url);
     if (parameter.isReplaced) {
       tab.url = parameter.url;
+    }
+
+    // Compress favicon url
+    if (tab?.favIconUrl?.startsWith("data:image")) {
+      const compressedDataUrl = await compressDataUrl(tab.favIconUrl);
+      tab.favIconUrl = compressedDataUrl;
     }
 
     session.windows[tab.windowId][tab.id] = tab;
