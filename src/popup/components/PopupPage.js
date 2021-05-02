@@ -121,6 +121,7 @@ export default class PopupPage extends Component {
     const isInit = await browser.runtime.sendMessage({ message: "getInitState" });
     if (!isInit) this.setState({ error: { isError: true, type: "indexedDB" } });
 
+    this.firstFilterValue = getSettings("filterValue");
     this.firstSelectedSessionId = getSettings("selectedSessionId");
 
     const keys = ["id", "name", "date", "tag", "tabsNumber", "windowsNumber", "lastEditedTime"];
@@ -213,10 +214,11 @@ export default class PopupPage extends Component {
     const sessions = request.sessions.filter(session => session.id !== this.firstSelectedSessionId);
     this.setState({
       sessions: this.state.sessions.concat(sessions),
-      filterValue: getSettings("filterValue") || "_displayAll"
+      filterValue: this.firstFilterValue || "_displayAll"
     });
 
     if (request.isEnd) {
+      this.changeFilterValue(this.firstFilterValue);
       const needsSync = this.calcNeedsSync(this.state.sessions);
       this.updateTagList(this.state.sessions);
       this.setState({
