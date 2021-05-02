@@ -13,7 +13,7 @@ export default async function exportSessions(id = null, folderName = "", isBacku
   if (!Array.isArray(sessions)) sessions = [sessions];
 
   const downloadUrl = URL.createObjectURL(
-    new Blob([JSON.stringify(sessions, null, "    ")], {
+    new Blob([JSON.stringify(sessions, null, "  ")], {
       type: "aplication/json"
     })
   );
