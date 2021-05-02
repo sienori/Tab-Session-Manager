@@ -9,6 +9,7 @@ import "core-js/fn/array/flat-map";
 import { returnReplaceParameter } from "src/background/replace.js";
 import { queryTabGroups } from "../../common/tabGroups";
 import { getSettings } from "src/settings/settings";
+import { compressDataUrl } from "../../common/compressDataUrl";
 
 const logDir = "popup/actions/controlSessions";
 
@@ -148,6 +149,13 @@ export const addCurrentWindow = async id => {
     const replacedParams = returnReplaceParameter(tab.url);
     if (replacedParams.isReplaced) {
       tab.url = replacedParams.url;
+    }
+
+
+    // Compress favicon url
+    if (tab?.favIconUrl?.startsWith("data:image")) {
+      const compressedDataUrl = await compressDataUrl(tab.favIconUrl);
+      tab.favIconUrl = compressedDataUrl;
     }
 
     session.windows[windowId][tab.id] = tab;
