@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Session Compressor | Tab Session Mangaer</title>
+</head>
+
+<body>
+<div id="header_wrap" class="outer">
+  <header class="inner">
+    <a id="forkme_banner" href="https://github.com/sienori/Tab-Session-Manager">View on GitHub</a>
+    <h1 id="project_title">Tab Session Manager</h1>
+    <h2 id="project_tagline">WebExtensions for restoring and saving window / tab states</h2>
+  </header>
+
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      <h1>Session Compressor</h1>
+      <p><strong>A tool for compressing sessions of Tab Session Manager</strong></p>
+
+      <div id="app">
+        <p>Load session files: 
+        <input id="loadSessions" type="file" accept=".json" multiple>
+        </p>
+        <p id="fileInfo"></p>
+        <p id="compressProgress"></p>
+        <a id="downloadLink"></a>
+      </div>
+
+      <h2>What is this</h2>
+      </p>
+        The session of Tab Session Manager stores favicons of the page.
+        Sessions saved by TSM version 6.7.0 or lower may cause performance issues due to the large size of favicons.
+        This tool can be used to compress favicons in sessions to reduce memory usage.
+        <br>
+        <strong>This tool works in locally. Loaded sessions will not be sent to the Internet.</strong>
+      </p>
+  
+      <h2>How to use</h2>  
+      <ol>
+        <li>Export sessions in Tab Session Manager</li>
+        <li>Load session files in this tool</li>
+        <li>Compress!</li>
+        <li>Download session files and import it into Tab Session Manager</li>
+      </ol>
+    
+    </section>
+  </div>
+
+
+  <div id="footer_wrap" class="outer">
+    <footer class="inner">
+      <p class="copyright">Tab Session Manager maintained by <a href="https://github.com/sienori">sienori</a></p>
+      <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+    </footer>
+  </div>
+</div>
+
+<script src="browser-image-compression.js"></script>
+<script src="script.js"></script>
+</body> 
+
+</html> 
