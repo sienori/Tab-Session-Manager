@@ -121,16 +121,17 @@ export default class PopupPage extends Component {
     const isInit = await browser.runtime.sendMessage({ message: "getInitState" });
     if (!isInit) this.setState({ error: { isError: true, type: "indexedDB" } });
 
+    this.firstSelectedSessionId = getSettings("selectedSessionId");
+
     const keys = ["id", "name", "date", "tag", "tabsNumber", "windowsNumber", "lastEditedTime"];
     this.port = Math.random();
     browser.runtime.onMessage.addListener(this.handleMessage);
     browser.runtime.sendMessage({ message: "requestAllSessions", needKeys: keys, count: 30, port: this.port });
 
-    this.firstSelectedSessionId = getSettings("selectedSessionId");
     if (this.firstSelectedSessionId) {
       const selectedSession = await getSessions(this.firstSelectedSessionId, keys);
       if (selectedSession) {
-        this.setState({ sessions: [selectedSession] });
+        this.setState({ sessions: this.state.sessions.concat([selectedSession]) });
         this.selectSession(this.firstSelectedSessionId);
       }
     }
