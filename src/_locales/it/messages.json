@@ -414,22 +414,22 @@
     "message": "Vuoi applicare il nome del dispositivo a tutte le sessioni?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Comprimi favicon (icone)"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Comprimi le icone durante il salvataggio della sessione."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Comprimi tutte le sessioni"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Comprimi tutte le icone delle sessioni salvate. Ridurrà il consumo di memoria e velocizzerà il caricamento delle sessioni."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Comprimi"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Vuoi comprimere tutte le sessioni?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Se deselezionato, ignora le finestre anonime durante il salvataggio della sessione."
