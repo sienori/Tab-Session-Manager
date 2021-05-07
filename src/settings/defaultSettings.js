@@ -12,7 +12,7 @@ const getTheme = () =>
 
 export default [
   {
-    category: "generalLabel",
+    category: "open",
     elements: [
       {
         id: "ifLazyLoading",
@@ -55,7 +55,12 @@ export default [
             default: 150
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    category: "saveLabel",
+    elements: [
       {
         id: "saveTabGroups",
         title: "saveTabGroupsLabel",
