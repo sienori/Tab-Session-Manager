@@ -31,6 +31,7 @@ export default async function exportSessions(id = null, folderName = "", isBacku
     .catch(e => {
       log.warn(logDir, "exportSessions()", e);
     });
+  URL.revokeObjectURL(downloadUrl);
 }
 
 function generateFileName(sessions, isBackup) {
