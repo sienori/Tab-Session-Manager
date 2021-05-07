@@ -354,10 +354,10 @@
     "message": "При запуске браузера, создать резервный файл сессий и сохранить его в папке \"Загрузки\"."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Хранить бэкап по частям"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Каждая сессия сохраняется в отдельном файле.<br>Если флажок не установлен, все сессии сохранятся в едином файле, который может оказаться слишком большим."
   },
   "backupFolderLabel": {
     "message": "Расположение"
