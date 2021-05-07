@@ -230,8 +230,15 @@ export default [
         captions: ["ifBackupCaptionLabel"],
         type: "checkbox",
         default: false,
-        new: true,
         childElements: [
+          {
+            id: "individualBackup",
+            title: "individualBackupLabel",
+            captions: ["individualBackupCaptionLabel"],
+            type: "checkbox",
+            default: true,
+            new: true,
+          },
           {
             id: "backupFolder",
             title: "backupFolderLabel",

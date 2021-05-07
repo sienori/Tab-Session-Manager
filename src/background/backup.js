@@ -8,7 +8,13 @@ const logDir = "background/backup";
 
 export const backupSessions = async () => {
   if (!getSettings("ifBackup")) return;
-  log.log(logDir, "backupSessions");
+
+  if (getSettings("individualBackup")) backupIndividualSessions();
+  else backupAllSessions();
+};
+
+const backupIndividualSessions = async () => {
+  log.log(logDir, "backupIndividualSessions");
 
   const currentTime = Date.now();
   const lastBackupTime = getSettings("lastBackupTime") || 0;
@@ -35,6 +41,12 @@ export const backupSessions = async () => {
   }
 
   setSettings("lastBackupTime", currentTime);
+};
+
+const backupAllSessions = async () => {
+  log.log(logDir, "backupAllSessions");
+  const folder = getSettings("backupFolder");
+  await exportSessions(null, folder, true);
 };
 
 export const resetLastBackupTime = (changes) => {
