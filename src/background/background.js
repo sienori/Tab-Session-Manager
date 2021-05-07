@@ -37,6 +37,7 @@ import { syncCloud, syncCloudAuto } from "./cloudSync";
 import { updateLogLevel, overWriteLogLevel } from "../common/log";
 import { getsearchInfo } from "./search";
 import { recordChange, undo, redo, updateUndoStatus } from "./undo";
+import { compressAllSessions } from "./compressAllSessions";
 
 const logDir = "background/background";
 export const SessionStartTime = Date.now();
@@ -175,6 +176,8 @@ const onMessageListener = async (request, sender, sendResponse) => {
       return redo();
     case "updateUndoStatus":
       return updateUndoStatus();
+    case "compressAllSessions":
+      return compressAllSessions();
   }
 };
 

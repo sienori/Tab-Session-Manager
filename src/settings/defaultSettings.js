@@ -7,6 +7,11 @@ const handleApplyDeviceNameButtonClick = () => {
   if (res) browser.runtime.sendMessage({ message: "applyDeviceName" });
 };
 
+const handleCompressAllSessionsButtonClick = () => {
+  const res = confirm(browser.i18n.getMessage("compressAllSessionsConfirmLabel"));
+  if (res) browser.runtime.sendMessage({ message: "compressAllSessions" });
+};
+
 const getTheme = () =>
   window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
 
@@ -120,6 +125,15 @@ export default [
         type: "checkbox",
         default: true,
         new: true,
+        childElements: [
+          {
+            title: "compressAllSessionsLabel",
+            captions: ["compressAllSessionsCaptionLabel"],
+            type: "button",
+            value: "compressLabel",
+            onClick: handleCompressAllSessionsButtonClick
+          }
+        ]
       }
     ]
   },
