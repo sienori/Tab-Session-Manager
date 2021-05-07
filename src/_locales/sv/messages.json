@@ -354,10 +354,10 @@
     "message": "När webbläsaren startas, skapa en säkerhetskopia av sessionen i nerladdningsmappen."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Individuell säkerhetskopia"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Varje session sparas i en enskild fil.<br>Om detta avmarkeras sparas alla sessioner som en enda fil, vilket kan tynga ner ditt lagringsutrymme."
   },
   "backupFolderLabel": {
     "message": "Spara plats"
@@ -423,7 +423,7 @@
     "message": "Komprimera alla sessioner"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Komprimera favoritikonerna för alla aktuella sparade sessioner. Detta sparar minnesanvändning och snabbar upp sessionsladdningen."
   },
   "compressLabel": {
     "message": "Komprimera"
