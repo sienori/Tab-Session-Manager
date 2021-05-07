@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "Wenn der Browser startet, wird eine Sicherungskopiedatei von allen Sitzungen erstellt und im Download Ordner gespeichert."
   },
+  "individualBackupLabel": {
+    "message": "Individual backup"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+  },
   "backupFolderLabel": {
     "message": "Gespeichert unter"
   },
