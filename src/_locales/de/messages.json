@@ -413,6 +413,24 @@
   "applyDeviceNameConfirmLabel": {
     "message": "Gerätename auf bestehende Sitzungen anwenden?"
   },
+  "compressFaviconUrlLabel": {
+    "message": "Compress favicons"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Compress the favicons when saving a session."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Compress all sessions"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+  },
+  "compressLabel": {
+    "message": "Compress"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Compress all sessions?"
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
   },
