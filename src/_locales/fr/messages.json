@@ -354,10 +354,10 @@
     "message": "Lorsque le navigateur démarre, créer un fichier de sauvegarde des sessions et l'enregistrer dans le dossier des téléchargements."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Sauvegardes individuelles"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Chaque session est sauvegardée dans un fichier individuel.<br>Si décoché, toutes les sessions seront enregistrées dans un fichier unique qui pourrait surcharger votre espace de stockage."
   },
   "backupFolderLabel": {
     "message": "Emplacement de la sauvegarde"
