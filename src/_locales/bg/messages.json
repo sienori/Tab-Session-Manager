@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "Създаване резервно копие на сесиите и запазване в папката за изтегляния при стартиране на браузъра."
   },
+  "individualBackupLabel": {
+    "message": "Individual backup"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+  },
   "backupFolderLabel": {
     "message": "Местоположение за запис"
   },
