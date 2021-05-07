@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "Коли веб-переглядач запускається, створити файл резервної копії сесій та зберегти його у теці завантаження."
   },
+  "individualBackupLabel": {
+    "message": "Individual backup"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+  },
   "backupFolderLabel": {
     "message": "Зберегти розташування"
   },
