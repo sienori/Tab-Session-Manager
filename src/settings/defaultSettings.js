@@ -112,6 +112,14 @@ export default [
             onClick: handleApplyDeviceNameButtonClick
           }
         ]
+      },
+      {
+        id: "compressFaviconUrl",
+        title: "compressFaviconUrlLabel",
+        captions: ["compressFaviconUrlCaptionLabel"],
+        type: "checkbox",
+        default: true,
+        new: true,
       }
     ]
   },

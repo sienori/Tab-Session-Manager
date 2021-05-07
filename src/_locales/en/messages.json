@@ -413,6 +413,12 @@
   "applyDeviceNameConfirmLabel": {
     "message": "Apply device name to all sessions?"
   },
+  "compressFaviconUrlLabel": {
+    "message": "Compress favicons"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Compress the favicons when saving a session."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "If unchecked, ignores the private window when saving the session."
   },

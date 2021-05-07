@@ -66,7 +66,7 @@ export async function loadCurrentSession(name, tag, property) {
     }
 
     // Compress favicon url
-    if (tab?.favIconUrl?.startsWith("data:image")) {
+    if (getSettings("compressFaviconUrl") && tab?.favIconUrl?.startsWith("data:image")) {
       const compressedDataUrl = await compressDataUrl(tab.favIconUrl);
       tab.favIconUrl = compressedDataUrl;
     }
