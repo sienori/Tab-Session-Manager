@@ -6,7 +6,7 @@
     "browser-image-compression": "^1.0.14",
     "browser-info": "^1.2.0",
     "clone": "^2.1.2",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "loglevel": "^1.6.7",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
