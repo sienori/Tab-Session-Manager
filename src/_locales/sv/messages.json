@@ -414,22 +414,22 @@
     "message": "Tillämpa enhetsnamnet till alla sessioner?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Komprimera favoritikoner"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Komprimera favoritikonerna när du sparar en session."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Komprimera alla sessioner"
   },
   "compressAllSessionsCaptionLabel": {
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Komprimera"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Komprimera alla sessioner?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."
