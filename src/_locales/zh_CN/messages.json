@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "浏览器启动时，创建会话备份文件并保存它到下载文件夹。"
   },
+  "individualBackupLabel": {
+    "message": "Individual backup"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+  },
   "backupFolderLabel": {
     "message": "保存位置"
   },
