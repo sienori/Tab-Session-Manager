@@ -354,10 +354,10 @@
     "message": "Κατά την εκκίνηση του προγράμματος περιήγησης, να γίνεται αντίγραφο ασφαλείας των συνεδριών και αποθήκευσή τους στο φάκελο λήψης."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Μεμονωμένο αντίγραφο ασφαλείας"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Κάθε συνεδρία αποθηκεύεται σε ένα μεμονωμένο αρχείο.<br>Αν δεν επιλεγεί, όλες οι συνεδρίες θα αποθηκευτούν ως ένα μόνο αρχείο, το οποίο μπορεί να κατακλύσει τον αποθηκευτικό σας χώρο."
   },
   "backupFolderLabel": {
     "message": "Αποθήκευση σε"
