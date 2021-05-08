@@ -414,10 +414,10 @@
     "message": "Eszköznév alkalmazása minden munkamenetre?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Oldal ikonok tömörítése"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Oldal ikonok tömörítése munkamenet mentésekor."
   },
   "compressAllSessionsLabel": {
     "message": "Minden munkamenet tömörítése"
