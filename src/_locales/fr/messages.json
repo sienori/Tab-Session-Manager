@@ -435,7 +435,7 @@
     "message": "Compression en cours"
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Compression terminée."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si cette case n'est pas cochée, les fenêtres privées ne seront pas enregistrées."
