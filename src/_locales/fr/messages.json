@@ -432,7 +432,7 @@
     "message": "Compresser toutes les sessions?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Compression en cours"
   },
   "compressionCompleteLabel": {
     "message": "Compression completed."
