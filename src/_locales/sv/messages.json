@@ -431,6 +431,12 @@
   "compressAllSessionsConfirmLabel": {
     "message": "Komprimera alla sessioner?"
   },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."
   },
