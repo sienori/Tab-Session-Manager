@@ -73,7 +73,6 @@ export default [
         type: "checkbox",
         default: false,
         shouldShow: browserInfo().name == "Chrome" && browserInfo().version >= 89,
-        new: true
       },
       {
         id: "ifSavePrivateWindow",
