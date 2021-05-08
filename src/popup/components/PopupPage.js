@@ -178,7 +178,6 @@ export default class PopupPage extends Component {
   };
 
   updateTagList = sessions => {
-    console.log("updateTagList", sessions);
     const reservedTags = [
       "regular",
       "winClose",
