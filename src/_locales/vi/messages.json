@@ -431,6 +431,12 @@
   "compressAllSessionsConfirmLabel": {
     "message": "Compress all sessions?"
   },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Nếu không được chọn, bỏ qua cửa sổ riêng tư khi lưu phiên làm việc."
   },
