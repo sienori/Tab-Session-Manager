@@ -354,10 +354,10 @@
     "message": "Amikor a böngésző indul, munkamenetekről biztonsági mentés létrehozása és a Letöltések mappába mentése."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Egyéni biztonsági mentés"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Minden munkamenet külön fájlba mentődik.<br>Ha nincs bepipálva, minden munkamenet egy fájlba mentődik, ami lehet megtelíti a tárhelyed."
   },
   "backupFolderLabel": {
     "message": "Mentés helye"
@@ -420,22 +420,22 @@
     "message": "Compress the favicons when saving a session."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Minden munkamenet tömörítése"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Minden jelenleg mentett munkamenet ikonjának tömörítése. Ez felszabadít memóriát és felgyorsítja a munkamenetek betöltését."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Tömörít"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Minden munkamenet tömörítése?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Tömörítés..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Tömörítés befejeződött."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ha nincs bejelölve, nem menti a privát ablak tartalmát a munkamenet mentésekor."
