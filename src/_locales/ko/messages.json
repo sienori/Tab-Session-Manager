@@ -431,6 +431,12 @@
   "compressAllSessionsConfirmLabel": {
     "message": "Compress all sessions?"
   },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "비활성화 시, 세션을 저장할 때 사생활 보호 모드 창은 저장하지 않습니다."
   },
