@@ -431,6 +431,12 @@
   "compressAllSessionsConfirmLabel": {
     "message": "Compress all sessions?"
   },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "إذا لم يتم التحديد، يتجاهل النافذة الخاصة عند حفظ الجلسة."
   },
