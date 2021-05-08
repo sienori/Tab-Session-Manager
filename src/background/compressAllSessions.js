@@ -6,18 +6,21 @@ import { updateSession } from "./save";
 
 const logDir = "background/compressAllSessions";
 
-export const compressAllSessions = async () => {
+export const compressAllSessions = async (sendResponse) => {
   log.log(logDir, "compressAllSessions()");
 
   const sessions = await getSessions();
   const beforeSessionsSize = calcSessionsSize(sessions);
 
+  let count = 0;
   for (let session of sessions) {
+    sendResponse({ status: "compressing", count: ++count, maxCount: sessions.length });
     await compressSession(session);
   }
 
   const afterSessions = await getSessions();
   const afterSessionsSize = calcSessionsSize(afterSessions);
+  sendResponse({ status: "complete", beforeSessionsSize, afterSessionsSize });
   log.log(logDir, "=>compressAllSessions()", beforeSessionsSize, afterSessionsSize);
 };
 

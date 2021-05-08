@@ -78,7 +78,7 @@ const init = async () => {
   addListeners();
   syncCloudAuto();
 
-  if(IsStartup){
+  if (IsStartup) {
     await autoSaveWhenExitBrowser();
     const startupBehavior = getSettings("startupBehavior");
     if (startupBehavior === "previousSession") openLastSession();
@@ -165,19 +165,26 @@ const onMessageListener = async (request, sender, sendResponse) => {
       return await applyDeviceName();
     case "getsearchInfo":
       return await getsearchInfo();
-    case "requestAllSessions":
+    case "requestAllSessions": {
       const sendResponse = (sessions, isEnd) => browser.runtime.sendMessage({
         message: "responseAllSessions", sessions: sessions, isEnd: isEnd, port: request.port
       }).catch(() => { });
       return Sessions.getAllWithStream(sendResponse, request.needKeys, request.count);
+    }
     case "undo":
       return undo();
     case "redo":
       return redo();
     case "updateUndoStatus":
       return updateUndoStatus();
-    case "compressAllSessions":
-      return compressAllSessions();
+    case "compressAllSessions": {
+      const sendResponse = (status) => browser.runtime.sendMessage({
+        message: "updateCompressStatus",
+        status: status,
+        port: request.port
+      }).catch(() => { });
+      return compressAllSessions(sendResponse);
+    }
   }
 };
 

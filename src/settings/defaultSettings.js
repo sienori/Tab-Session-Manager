@@ -1,15 +1,11 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import SignInButton from "../options/components/SignInButton";
+import CompressAllSessionsForm from "../options/components/CompressAllSessionsForm";
 
 const handleApplyDeviceNameButtonClick = () => {
   const res = confirm(browser.i18n.getMessage("applyDeviceNameConfirmLabel"));
   if (res) browser.runtime.sendMessage({ message: "applyDeviceName" });
-};
-
-const handleCompressAllSessionsButtonClick = () => {
-  const res = confirm(browser.i18n.getMessage("compressAllSessionsConfirmLabel"));
-  if (res) browser.runtime.sendMessage({ message: "compressAllSessions" });
 };
 
 const getTheme = () =>
@@ -129,9 +125,8 @@ export default [
           {
             title: "compressAllSessionsLabel",
             captions: ["compressAllSessionsCaptionLabel"],
-            type: "button",
-            value: "compressLabel",
-            onClick: handleCompressAllSessionsButtonClick
+            type: "extra",
+            extraForm: CompressAllSessionsForm
           }
         ]
       }
