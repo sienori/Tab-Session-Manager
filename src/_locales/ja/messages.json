@@ -354,7 +354,7 @@
     "message": "ブラウザの起動時にセッションのバックアップファイルを作成し，ダウンロードフォルダに保存します。"
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "個別バックアップ"
   },
   "individualBackupCaptionLabel": {
     "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
@@ -430,6 +430,12 @@
   },
   "compressAllSessionsConfirmLabel": {
     "message": "Compress all sessions?"
+  },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "チェックをオフにすると，セッションの保存時にプライベートウィンドウを無視します。"
