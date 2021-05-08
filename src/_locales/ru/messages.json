@@ -431,6 +431,12 @@
   "compressAllSessionsConfirmLabel": {
     "message": "Сжать для всех сессий?"
   },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Если отключено, игнорирует приватное окно при сохранении сессии."
   },
