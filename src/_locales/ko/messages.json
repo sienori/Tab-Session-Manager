@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "브라우저를 켤 때, 백업본을 만들어 다운로드 폴더에 저장합니다."
   },
+  "individualBackupLabel": {
+    "message": "Individual backup"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+  },
   "backupFolderLabel": {
     "message": "저장 위치"
   },
@@ -406,6 +412,30 @@
   },
   "applyDeviceNameConfirmLabel": {
     "message": "모든 세션에 장치 이름을 등록하겠나요?"
+  },
+  "compressFaviconUrlLabel": {
+    "message": "Compress favicons"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Compress the favicons when saving a session."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Compress all sessions"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+  },
+  "compressLabel": {
+    "message": "Compress"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Compress all sessions?"
+  },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "비활성화 시, 세션을 저장할 때 사생활 보호 모드 창은 저장하지 않습니다."

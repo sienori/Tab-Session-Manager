@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "All'avvio del browser, crea un file di backup delle sessioni e salvalo nella cartella dei download."
   },
+  "individualBackupLabel": {
+    "message": "Backup individuale"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Ogni sessione viene salvata in un file separato.<br>Se deselezionato, tutte le sessioni verranno salvate in un singolo file, che potrebbe diventare molto grande."
+  },
   "backupFolderLabel": {
     "message": "Salva posizione"
   },
@@ -406,6 +412,30 @@
   },
   "applyDeviceNameConfirmLabel": {
     "message": "Vuoi applicare il nome del dispositivo a tutte le sessioni?"
+  },
+  "compressFaviconUrlLabel": {
+    "message": "Comprimi favicon (icone)"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Comprimi le icone durante il salvataggio della sessione."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Comprimi tutte le sessioni"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Comprimi tutte le icone delle sessioni salvate. Ridurrà il consumo di memoria e velocizzerà il caricamento delle sessioni."
+  },
+  "compressLabel": {
+    "message": "Comprimi"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Vuoi comprimere tutte le sessioni?"
+  },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Se deselezionato, ignora le finestre anonime durante il salvataggio della sessione."

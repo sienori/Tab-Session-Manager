@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "När webbläsaren startas, skapa en säkerhetskopia av sessionen i nerladdningsmappen."
   },
+  "individualBackupLabel": {
+    "message": "Individuell säkerhetskopia"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Varje session sparas i en enskild fil.<br>Om detta avmarkeras sparas alla sessioner som en enda fil, vilket kan tynga ner ditt lagringsutrymme."
+  },
   "backupFolderLabel": {
     "message": "Spara plats"
   },
@@ -406,6 +412,30 @@
   },
   "applyDeviceNameConfirmLabel": {
     "message": "Tillämpa enhetsnamnet till alla sessioner?"
+  },
+  "compressFaviconUrlLabel": {
+    "message": "Komprimera favoritikoner"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Komprimera favoritikonerna när du sparar en session."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Komprimera alla sessioner"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Komprimera favoritikonerna för alla aktuella sparade sessioner. Detta sparar minnesanvändning och snabbar upp sessionsladdningen."
+  },
+  "compressLabel": {
+    "message": "Komprimera"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Komprimera alla sessioner?"
+  },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."

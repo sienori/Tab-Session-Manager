@@ -120,7 +120,7 @@
     "message": "Quitar etiqueta"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Introduzca el nombre de la etiqueta"
   },
   "detailLabel": {
     "message": "Detalles"
@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "Cuando el navegador se inicie, crear una copia de seguridad de las sesiones y se puede guardar en la carpeta de descargas."
   },
+  "individualBackupLabel": {
+    "message": "Individual backup"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+  },
   "backupFolderLabel": {
     "message": "Guardar ubicación"
   },
@@ -407,6 +413,30 @@
   "applyDeviceNameConfirmLabel": {
     "message": "¿Aplicar el nombre del dispositivo a todas las sesiones?"
   },
+  "compressFaviconUrlLabel": {
+    "message": "Compress favicons"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Compress the favicons when saving a session."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Compress all sessions"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+  },
+  "compressLabel": {
+    "message": "Compress"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Compress all sessions?"
+  },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
+  },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si no está marcada, ignorar la ventana privada al guardar la sesión."
   },
@@ -420,10 +450,10 @@
     "message": "Retrasar al árbol de restauración (milisegundos)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Guardar grupos de pestañas"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Guardar y restaurar el estado de los grupos de pestañas. Para habilitar esta función, necesita instalar la siguiente extensión."
   },
   "tstDelayCaptionLabel": {
     "message": "Para restaurar el estado del árbol, es requerido un tiempo de espera para abrir la pestaña. Incremente este valor si el árbol no se restaura correctamente."
@@ -465,10 +495,10 @@
     "message": "Cerrar sesión"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Sincronizar automáticamente"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Ejecutar sincronización en la nube cuando se inicia el navegador y cuando se guarda la sesión."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Sincronizar sesiones de auto guardado"
@@ -660,7 +690,7 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Patrocinador"
   },
   "addonPageLabel": {
     "message": "Página de Add-on"

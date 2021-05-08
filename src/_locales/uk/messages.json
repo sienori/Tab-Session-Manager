@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "Коли веб-переглядач запускається, створити файл резервної копії сесій та зберегти його у теці завантаження."
   },
+  "individualBackupLabel": {
+    "message": "Individual backup"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+  },
   "backupFolderLabel": {
     "message": "Зберегти розташування"
   },
@@ -406,6 +412,30 @@
   },
   "applyDeviceNameConfirmLabel": {
     "message": "Маркувати всі сесії назвою пристрою?"
+  },
+  "compressFaviconUrlLabel": {
+    "message": "Compress favicons"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Compress the favicons when saving a session."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Compress all sessions"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+  },
+  "compressLabel": {
+    "message": "Compress"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Compress all sessions?"
+  },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."

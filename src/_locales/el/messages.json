@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "Κατά την εκκίνηση του προγράμματος περιήγησης, να γίνεται αντίγραφο ασφαλείας των συνεδριών και αποθήκευσή τους στο φάκελο λήψης."
   },
+  "individualBackupLabel": {
+    "message": "Μεμονωμένο αντίγραφο ασφαλείας"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Κάθε συνεδρία αποθηκεύεται σε ένα μεμονωμένο αρχείο.<br>Αν δεν επιλεγεί, όλες οι συνεδρίες θα αποθηκευτούν ως ένα μόνο αρχείο, το οποίο μπορεί να κατακλύσει τον αποθηκευτικό σας χώρο."
+  },
   "backupFolderLabel": {
     "message": "Αποθήκευση σε"
   },
@@ -406,6 +412,30 @@
   },
   "applyDeviceNameConfirmLabel": {
     "message": "Εφαρμογή του ονόματος συσκευής σε όλες τις συνεδρίες;"
+  },
+  "compressFaviconUrlLabel": {
+    "message": "Compress favicons"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Compress the favicons when saving a session."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Compress all sessions"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+  },
+  "compressLabel": {
+    "message": "Compress"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Compress all sessions?"
+  },
+  "compressingLabel": {
+    "message": "Συμπίεση..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Η συμπίεση ολοκληρώθηκε."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Αν δεν επιλεγεί, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση των συνεδριών."

@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "Lorsque le navigateur démarre, créer un fichier de sauvegarde des sessions et l'enregistrer dans le dossier des téléchargements."
   },
+  "individualBackupLabel": {
+    "message": "Sauvegardes individuelles"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Chaque session est sauvegardée dans un fichier individuel.<br>Si décoché, toutes les sessions seront enregistrées dans un fichier unique qui pourrait surcharger votre espace de stockage."
+  },
   "backupFolderLabel": {
     "message": "Emplacement de la sauvegarde"
   },
@@ -406,6 +412,30 @@
   },
   "applyDeviceNameConfirmLabel": {
     "message": "Ajouter le nom de l’appareil à toutes les sessions ?"
+  },
+  "compressFaviconUrlLabel": {
+    "message": "Compresser les favicônes"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Compresser les favicônes lors de la sauvegarde d’une session."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Compresser toutes les sessions"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Compresser les favicônes de toutes les sessions actuellement enregistrées. Cela permettra d’économiser de la mémoire et d’accélérer le chargement des sessions."
+  },
+  "compressLabel": {
+    "message": "Compresser"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Compresser toutes les sessions?"
+  },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Si cette case n'est pas cochée, les fenêtres privées ne seront pas enregistrées."

@@ -353,6 +353,12 @@
   "ifBackupCaptionLabel": {
     "message": "При запуске браузера, создать резервный файл сессий и сохранить его в папке \"Загрузки\"."
   },
+  "individualBackupLabel": {
+    "message": "Хранить бэкап по частям"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Каждая сессия сохраняется в отдельном файле.<br>Если флажок не установлен, все сессии сохранятся в едином файле, который может оказаться слишком большим."
+  },
   "backupFolderLabel": {
     "message": "Расположение"
   },
@@ -406,6 +412,30 @@
   },
   "applyDeviceNameConfirmLabel": {
     "message": "Маркировать все сессии названием устройства?"
+  },
+  "compressFaviconUrlLabel": {
+    "message": "Сжать иконки"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Сжать иконки сайтов при сохранении сессии."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Сжать для всех сессий"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Сжать иконки для всех сохранённых сессий. Это уменьшит место для их хранения и ускорит загрузку."
+  },
+  "compressLabel": {
+    "message": "Сжать"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Сжать для всех сессий?"
+  },
+  "compressingLabel": {
+    "message": "Compressing..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Compression completed."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Если отключено, игнорирует приватное окно при сохранении сессии."
