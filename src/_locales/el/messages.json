@@ -432,10 +432,10 @@
     "message": "Compress all sessions?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Συμπίεση..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Η συμπίεση ολοκληρώθηκε."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Αν δεν επιλεγεί, αγνοεί τα ιδιωτικά παράθυρα κατά την αποθήκευση των συνεδριών."
