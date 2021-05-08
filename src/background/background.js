@@ -27,7 +27,7 @@ import getSessions from "./getSessions";
 import { openSession } from "./open";
 import { addTag, removeTag, applyDeviceName } from "./tag";
 import { initSettings, handleSettingsChange, getSettings } from "src/settings/settings";
-import exportSessions from "./export";
+import exportSessions, { handleDownloadsChanged } from "./export";
 import onInstalledListener from "./onInstalledListener";
 import onUpdateAvailableListener from "./onUpdateAvailableListener";
 import { onCommandListener } from "./keyboardShortcuts";
@@ -59,8 +59,8 @@ const addListeners = () => {
   browser.tabs.onCreated.addListener(setUpdateTempTimer);
   browser.tabs.onMoved.addListener(setUpdateTempTimer);
   browser.windows.onCreated.addListener(setUpdateTempTimer);
-
   browser.windows.onRemoved.addListener(autoSaveWhenWindowClose);
+  browser.downloads.onChanged.addListener(handleDownloadsChanged);
 };
 
 let IsInit = false;

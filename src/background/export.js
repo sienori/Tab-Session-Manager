@@ -21,7 +21,7 @@ export default async function exportSessions(id = null, folderName = "", isBacku
   const replacedFolderName = replaceFolderName(folderName);
   const fileName = generateFileName(sessions, isBackup);
 
-  await browser.downloads
+  const downloadId = await browser.downloads
     .download({
       url: downloadUrl,
       filename: `${replacedFolderName}${fileName}.json`,
@@ -30,8 +30,10 @@ export default async function exportSessions(id = null, folderName = "", isBacku
     })
     .catch(e => {
       log.warn(logDir, "exportSessions()", e);
+      URL.revokeObjectURL(downloadUrl);
     });
-  URL.revokeObjectURL(downloadUrl);
+
+  if (downloadId) recordDownloadUrl(downloadId, downloadUrl);
 }
 
 function generateFileName(sessions, isBackup) {
@@ -73,3 +75,21 @@ function replaceFolderName(folderName) {
   if (folderName !== "") folderName += "\\";
   return folderName;
 }
+
+let downloadRecords = {};
+
+export const handleDownloadsChanged = (status) => {
+  if (status.state?.current === "complete") revokeDownloadUrl(status.id);
+};
+
+const recordDownloadUrl = (downloadId, downloadUrl) => {
+  downloadRecords[downloadId] = downloadUrl;
+};
+
+const revokeDownloadUrl = (downloadId) => {
+  const downloadUrl = downloadRecords[downloadId];
+  if (downloadUrl) {
+    URL.revokeObjectURL(downloadUrl);
+    delete downloadRecords[downloadId];
+  }
+};
