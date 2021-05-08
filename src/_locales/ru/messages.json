@@ -414,22 +414,22 @@
     "message": "Маркировать все сессии названием устройства?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Сжать иконки"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Сжать иконки сайтов при сохранении сессии."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Сжать для всех сессий"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Сжать иконки для всех сохранённых сессий. Это уменьшит место для их хранения и ускорит загрузку."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Сжать"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Сжать для всех сессий?"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Если отключено, игнорирует приватное окно при сохранении сессии."
