@@ -432,10 +432,10 @@
     "message": "Сжать для всех сессий?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Сжимаем..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Сжатие завершено."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Если отключено, игнорирует приватное окно при сохранении сессии."
