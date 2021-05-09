@@ -432,10 +432,10 @@
     "message": "Vuoi comprimere tutte le sessioni?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Compressione..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Compressione completata."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Se deselezionato, ignora le finestre anonime durante il salvataggio della sessione."
