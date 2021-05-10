@@ -357,7 +357,7 @@
     "message": "单独备份"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "将每个会话保存在单独的文件中。<br>如果未选中，所有的会话将被保存为同一个文件，这可能会占用您大量的存储空间。"
   },
   "backupFolderLabel": {
     "message": "保存位置"
@@ -414,13 +414,13 @@
     "message": "应用设备名称到所有会话？"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "压缩网站图标"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "保存会话时压缩网站图标。"
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "压缩所有会话"
   },
   "compressAllSessionsCaptionLabel": {
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
