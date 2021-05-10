@@ -58,21 +58,21 @@ function generateFileName(sessions, isBackup) {
 
 function replaceFolderName(folderName) {
   const specialChars = /\:|\?|\.|"|<|>|\|/g; //使用できない特殊文字
-  const slash = /\//g; //単一のスラッシュ
+  const backSlash = /\\/g; //単一のバックスラッシュ
   const spaces = /\s\s+/g; //連続したスペース
-  const backSlashs = /\\\\+/g; //連続したバックスラッシュ
-  const sandwich = /(\s\\|\\\s)+(\s|\\)?/g; //バックスラッシュとスペースが交互に出てくるパターン
-  const beginningEnd = /^(\s|\\)+|(\s|\\)+$/g; //先頭と末尾のスペース,バックスラッシュ
+  const slashs = /\/\/+/g; //連続したスラッシュ
+  const sandwich = /(\s\/|\/\s)+(\s|\/)?/g; //スラッシュとスペースが交互に出てくるパターン
+  const beginningEnd = /^(\s|\/)+|(\s|\/)+$/g; //先頭と末尾のスペース,スラッシュ
 
   folderName = folderName
     .replace(specialChars, "-")
-    .replace(slash, "\\")
+    .replace(backSlash, "\/")
     .replace(spaces, " ")
-    .replace(backSlashs, "\\")
-    .replace(sandwich, "\\")
+    .replace(slashs, "\/")
+    .replace(sandwich, "\/")
     .replace(beginningEnd, "");
 
-  if (folderName !== "") folderName += "\\";
+  if (folderName !== "") folderName += "\/";
   return folderName;
 }
 

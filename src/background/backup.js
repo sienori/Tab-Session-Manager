@@ -32,10 +32,10 @@ const backupIndividualSessions = async () => {
     if (session.tag.includes("temp")) continue;
 
     let folderName = backupFolder;
-    if (session.tag.includes("regular")) folderName += `\\${labels.regular}`;
-    else if (session.tag.includes("winClose")) folderName += `\\${labels.winClose}`;
-    else if (session.tag.includes("browserExit")) folderName += `\\${labels.browserExit}`;
-    else folderName += `\\${labels.userSave}`;
+    if (session.tag.includes("regular")) folderName += `\/${labels.regular}`;
+    else if (session.tag.includes("winClose")) folderName += `\/${labels.winClose}`;
+    else if (session.tag.includes("browserExit")) folderName += `\/${labels.browserExit}`;
+    else folderName += `\/${labels.userSave}`;
 
     await exportSessions(session.id, folderName, true);
   }
