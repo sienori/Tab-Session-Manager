@@ -453,7 +453,7 @@
     "message": "保存标签页组"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "保存和还原标签页组的状态。要启用此功能，您需要安装以下扩展。"
   },
   "tstDelayCaptionLabel": {
     "message": "为还原标签的树状结构，需要等待一段时间才能打开标签页。若标签树未能正确还原，则增高此值。"
@@ -582,7 +582,7 @@
     "message": "开启调试模式"
   },
   "isDebugModeCaptionLabel": {
-    "message": "开启 调试模式后，输出日志到调试器。"
+    "message": "启用调试模式后，日志将输出到调试器。"
   },
   "resetSettingsLabel": {
     "message": "恢复默认设置"
