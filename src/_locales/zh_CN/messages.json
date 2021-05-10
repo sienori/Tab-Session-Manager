@@ -189,10 +189,10 @@
     "message": "编辑会话"
   },
   "replaceCurrentSessionLabel": {
-    "message": "使用当前会话替换此会话"
+    "message": "替换为当前会话"
   },
   "replaceCurrentWindowLabel": {
-    "message": "使用当前窗口替换此会话"
+    "message": "替换为当前窗口"
   },
   "addCurrentWindowLabel": {
     "message": "添加当前窗口"
@@ -444,7 +444,7 @@
     "message": "支持 Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "还原 Tree Style Tab 的树状标签。<br>若启用此选项，还原会话时便需要额外的时间。"
+    "message": "还原 Tree Style Tab 的标签树状态。<br>启用此选项后，还原会话将需要更多时间。"
   },
   "tstDelayLabel": {
     "message": "标签树恢复延迟（毫秒）"
