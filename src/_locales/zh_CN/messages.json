@@ -120,7 +120,7 @@
     "message": "移除标签"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "输入标签名称"
   },
   "detailLabel": {
     "message": "详细信息"
@@ -354,7 +354,7 @@
     "message": "浏览器启动时，创建会话备份文件并保存它到下载文件夹。"
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "单独备份"
   },
   "individualBackupCaptionLabel": {
     "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
