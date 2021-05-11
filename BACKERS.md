@@ -49,7 +49,6 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Rain
 - [Gyurme](https://github.com/gpg-dev)
 - Point
-- Petr Korolev
 - Andreas Andersson
 - Gregory Werbin
 - Xavier Antoviaque
@@ -69,3 +68,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Florin Marin
 - TheoUnderStars
 - Petr Korolev
+- Shigeru Tanaka
+- boistordu 
