@@ -70,3 +70,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Petr Korolev
 - Shigeru Tanaka
 - boistordu 
+- Louis Opter
