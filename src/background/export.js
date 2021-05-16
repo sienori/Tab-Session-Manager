@@ -79,7 +79,7 @@ function replaceFolderName(folderName) {
 let downloadRecords = {};
 
 export const handleDownloadsChanged = (status) => {
-  const downloadUrl = downloadRecords[status.id].downloadUrl;
+  const downloadUrl = downloadRecords[status.id]?.downloadUrl;
   if (!downloadUrl) return;
 
   if (status.state?.current === "complete") revokeDownloadUrl(status.id);
