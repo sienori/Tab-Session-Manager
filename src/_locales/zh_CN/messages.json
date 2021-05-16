@@ -36,7 +36,7 @@
     "message": "标签过滤"
   },
   "sortLabel": {
-    "message": "排序方式"
+    "message": "排序"
   },
   "displayAllLabel": {
     "message": "全部"
@@ -120,7 +120,7 @@
     "message": "移除标签"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "输入标签名称"
   },
   "detailLabel": {
     "message": "详细信息"
@@ -189,10 +189,10 @@
     "message": "编辑会话"
   },
   "replaceCurrentSessionLabel": {
-    "message": "使用当前会话替换此会话"
+    "message": "替换为当前会话"
   },
   "replaceCurrentWindowLabel": {
-    "message": "使用当前窗口替换此会话"
+    "message": "替换为当前窗口"
   },
   "addCurrentWindowLabel": {
     "message": "添加当前窗口"
@@ -354,10 +354,10 @@
     "message": "浏览器启动时，创建会话备份文件并保存它到下载文件夹。"
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "单独备份"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "将每个会话保存在单独的文件中。<br>如果未选中，所有的会话将被保存为同一个文件，这可能会占用您大量的存储空间。"
   },
   "backupFolderLabel": {
     "message": "保存位置"
@@ -414,28 +414,28 @@
     "message": "应用设备名称到所有会话？"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "压缩网站图标"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "保存会话时压缩网站图标。"
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "压缩所有会话"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "压缩所有当前已保存会话的网站图标。这将节省内存使用量并加速会话的加载。"
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "压缩"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "压缩所有会话？"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "压缩中…"
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "压缩完成"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "若未启用，保存会话时将忽略隐私窗口。"
@@ -444,16 +444,16 @@
     "message": "支持 Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "还原 Tree Style Tab 的树状标签。<br>若启用此选项，还原会话时便需要额外的时间。"
+    "message": "还原 Tree Style Tab 的标签树状态。<br>启用此选项后，还原会话将需要更多时间。"
   },
   "tstDelayLabel": {
     "message": "标签树恢复延迟（毫秒）"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "保存标签页组"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "保存和还原标签页组的状态。要启用此功能，您需要安装以下扩展。"
   },
   "tstDelayCaptionLabel": {
     "message": "为还原标签的树状结构，需要等待一段时间才能打开标签页。若标签树未能正确还原，则增高此值。"
@@ -495,10 +495,10 @@
     "message": "登出"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "自动同步"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "当浏览器启动和保存会话时，执行云同步操作。"
   },
   "includesAutoSaveToSyncLabel": {
     "message": "同步自动保存的会话"
@@ -582,7 +582,7 @@
     "message": "开启调试模式"
   },
   "isDebugModeCaptionLabel": {
-    "message": "开启 调试模式后，输出日志到调试器。"
+    "message": "启用调试模式后，日志将输出到调试器。"
   },
   "resetSettingsLabel": {
     "message": "恢复默认设置"
@@ -690,7 +690,7 @@
     "message": "amazon.co.jp 电子礼品卡"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "赞助商"
   },
   "addonPageLabel": {
     "message": "附加组件页面"
