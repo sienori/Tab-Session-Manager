@@ -33,7 +33,7 @@ export default async function exportSessions(id = null, folderName = "", isBacku
       URL.revokeObjectURL(downloadUrl);
     });
 
-  if (downloadId) recordDownloadUrl(downloadId, downloadUrl);
+  if (downloadId) recordDownloadUrl(downloadId, downloadUrl, isBackup);
 }
 
 function generateFileName(sessions, isBackup) {
@@ -79,6 +79,9 @@ function replaceFolderName(folderName) {
 let downloadRecords = {};
 
 export const handleDownloadsChanged = (status) => {
+  const downloadUrl = downloadRecords[status.id].downloadUrl;
+  if (!downloadUrl) return;
+
   if (status.state?.current === "complete") revokeDownloadUrl(status.id);
   if (status?.error?.current === "FILE_FAILED") {
     log.error(logDir, "handleDownloadsChanged()", "failed", status, downloadRecords[status.id]);
@@ -86,14 +89,13 @@ export const handleDownloadsChanged = (status) => {
   }
 };
 
-const recordDownloadUrl = (downloadId, downloadUrl) => {
-  downloadRecords[downloadId] = downloadUrl;
+const recordDownloadUrl = (downloadId, downloadUrl, isBackup) => {
+  downloadRecords[downloadId] = { downloadUrl, isBackup };
 };
 
 const revokeDownloadUrl = (downloadId) => {
-  const downloadUrl = downloadRecords[downloadId];
-  if (downloadUrl) {
-    URL.revokeObjectURL(downloadUrl);
-    delete downloadRecords[downloadId];
-  }
+  const { downloadUrl, isBackup } = downloadRecords[downloadId];
+  if (isBackup) browser.downloads.erase({ id: downloadId });
+  URL.revokeObjectURL(downloadUrl);
+  delete downloadRecords[downloadId];
 };
