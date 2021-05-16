@@ -80,6 +80,10 @@ let downloadRecords = {};
 
 export const handleDownloadsChanged = (status) => {
   if (status.state?.current === "complete") revokeDownloadUrl(status.id);
+  if (status?.error?.current === "FILE_FAILED") {
+    log.error(logDir, "handleDownloadsChanged()", "failed", status, downloadRecords[status.id]);
+    revokeDownloadUrl(status.id);
+  }
 };
 
 const recordDownloadUrl = (downloadId, downloadUrl) => {
