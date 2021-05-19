@@ -71,3 +71,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Shigeru Tanaka
 - boistordu 
 - Louis Opter
+- Laura Manson
