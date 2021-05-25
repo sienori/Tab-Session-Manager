@@ -74,3 +74,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Laura Manson
 - Ryan Reedy
 - Phaze
+- Максим
