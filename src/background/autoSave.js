@@ -87,7 +87,6 @@ export const setUpdateTempTimer = () => {
     !getSettings("ifOpenLastSessionWhenStartUp")
   )
     return;
-  log.info(logDir, "setUpdateTempTimer()");
 
   clearTimeout(updateTempTimer);
   updateTempTimer = setTimeout(updateTemp, 1500);
@@ -95,13 +94,11 @@ export const setUpdateTempTimer = () => {
 
 export const handleTabUpdated = (tabId, changeInfo, tab) => {
   if (changeInfo.status != "complete") return;
-  log.info(logDir, "handleTabUpdated()");
   setUpdateTempTimer();
 };
 
 export const handleTabRemoved = (tabId, removeInfo) => {
   if (removeInfo.isWindowClosing) return;
-  log.info(logDir, "handleTabRemoved()");
   setUpdateTempTimer();
 };
 
