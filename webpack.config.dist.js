@@ -10,11 +10,13 @@ const {
   getCopyPlugins,
   getZipPlugin,
   getFirefoxCopyPlugins,
+  getMiniCssExtractPlugin,
   getEntry
 } = require("./webpack.utils");
 const path = require("path");
 const config = require("./config.json");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const extVersion = require("./src/manifest.json").version;
 const ffExtVersion = require("./src/manifest-ff.json").version;
@@ -40,7 +42,7 @@ const generalConfig = {
         test: /\.scss$/,
         use: [
           {
-            loader: "style-loader"
+            loader: MiniCssExtractPlugin.loader
           },
           {
             loader: "css-loader",
@@ -82,6 +84,7 @@ module.exports = [
     },
     plugins: [
       new CleanWebpackPlugin(["dist", "temp"]),
+      ...getMiniCssExtractPlugin(),
       ...getHTMLPlugins("chrome", config.tempDirectory, config.chromePath),
       ...getCopyPlugins("chrome", config.tempDirectory, config.chromePath),
       getZipPlugin(`${config.extName}-for-chrome-${extVersion}`, config.distDirectory)
@@ -96,6 +99,7 @@ module.exports = [
     },
     plugins: [
       new CleanWebpackPlugin(["dist", "temp"]),
+      ...getMiniCssExtractPlugin(),
       ...getHTMLPlugins("firefox", config.tempDirectory, config.firefoxPath),
       ...getFirefoxCopyPlugins("firefox", config.tempDirectory, config.firefoxPath),
       getZipPlugin(`${config.extName}-for-firefox-${ffExtVersion}`, config.distDirectory)
@@ -109,9 +113,10 @@ module.exports = [
         src: path.resolve(__dirname, "src/")
       }
     },
-    entry: { other: path.resolve(__dirname, `src/replaced/replaced.js`) },
+    entry: { other: path.resolve(__dirname, `src/common/log.js`) },
     output: getOutput("copiedSource", config.tempDirectory),
     plugins: [
+      new MiniCssExtractPlugin(),
       new CopyWebpackPlugin([
         {
           from: `src`,

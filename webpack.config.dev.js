@@ -7,10 +7,12 @@ const {
   getOutput,
   getCopyPlugins,
   getFirefoxCopyPlugins,
+  getMiniCssExtractPlugin,
   getEntry
 } = require("./webpack.utils");
 const path = require("path");
 const config = require("./config.json");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const generalConfig = {
   mode: "development",
@@ -34,7 +36,7 @@ const generalConfig = {
         test: /\.scss$/,
         use: [
           {
-            loader: "style-loader"
+            loader: MiniCssExtractPlugin.loader
           },
           {
             loader: "css-loader",
@@ -72,6 +74,7 @@ module.exports = [
     entry: getEntry(config.chromePath),
     output: getOutput("chrome", config.devDirectory),
     plugins: [
+      ...getMiniCssExtractPlugin(),
       ...getHTMLPlugins("chrome", config.devDirectory, config.chromePath),
       ...getCopyPlugins("chrome", config.devDirectory, config.chromePath)
     ]
@@ -81,6 +84,7 @@ module.exports = [
     entry: getEntry(config.firefoxPath),
     output: getOutput("firefox", config.devDirectory),
     plugins: [
+      ...getMiniCssExtractPlugin(),
       ...getFirefoxCopyPlugins("firefox", config.devDirectory, config.firefoxPath),
       ...getHTMLPlugins("firefox", config.devDirectory, config.firefoxPath)
     ]

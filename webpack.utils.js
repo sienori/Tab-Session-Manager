@@ -5,6 +5,7 @@
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ZipPlugin = require("zip-webpack-plugin");
 const path = require("path");
 
@@ -85,6 +86,12 @@ const getFirefoxCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src")
   ])
 ];
 
+const getMiniCssExtractPlugin = () => [
+  new MiniCssExtractPlugin({
+    filename: "[name]/[name].css"
+  })
+];
+
 const getZipPlugin = (browserDir, outputDir = "dist", exclude = "") =>
   new ZipPlugin({
     path: path.resolve(__dirname, `${outputDir}`),
@@ -107,6 +114,7 @@ module.exports = {
   getOutput,
   getCopyPlugins,
   getFirefoxCopyPlugins,
+  getMiniCssExtractPlugin,
   getZipPlugin,
   getEntry
 };
