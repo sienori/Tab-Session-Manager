@@ -119,7 +119,6 @@ export default [
         captions: ["compressFaviconUrlCaptionLabel"],
         type: "checkbox",
         default: true,
-        new: true,
         childElements: [
           {
             title: "compressAllSessionsLabel",
@@ -258,7 +257,6 @@ export default [
             captions: ["individualBackupCaptionLabel"],
             type: "checkbox",
             default: true,
-            new: true,
           },
           {
             id: "backupFolder",
