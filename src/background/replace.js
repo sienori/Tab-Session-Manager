@@ -61,8 +61,9 @@ export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) 
     active: true,
     windowId: windowId
   }).catch(e => { });
+  if (info && !info[0]) return;
 
-  if (info == undefined || info[0].status != "complete") {
+  if (!info || info[0].status != "complete") {
     setTimeout(() => replacePage(windowId), 100);
     return;
   }
