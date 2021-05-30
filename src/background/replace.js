@@ -60,11 +60,10 @@ export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) 
   const info = await browser.tabs.query({
     active: true,
     windowId: windowId
-  });
-  if (info[0] == undefined) return;
+  }).catch(e => { });
 
-  if (info[0].status != "complete") {
-    setTimeout(() => replacePage(windowId), 500);
+  if (info == undefined || info[0].status != "complete") {
+    setTimeout(() => replacePage(windowId), 100);
     return;
   }
 
