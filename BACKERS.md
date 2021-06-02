@@ -75,3 +75,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Ryan Reedy
 - Phaze
 - Максим
+- László Dr. Gerő
