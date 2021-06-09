@@ -699,13 +699,13 @@
     "message": "拡張機能ページ"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Firefoxアドオン"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Chromeウェブストア"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edgeアドオン"
   },
   "privacyPolicyLabel": {
     "message": "プライバシーポリシー"
