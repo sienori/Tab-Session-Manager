@@ -110,16 +110,24 @@ export default props => {
           <div>
             <p>
               <a
-                href={
-                  browserInfo().name === "Firefox"
-                    ? "https://addons.mozilla.org/firefox/addon/tab-session-manager/?src=optionpage"
-                    : "https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae"
-                }
+                href="https://addons.mozilla.org/firefox/addon/tab-session-manager/?src=optionpage"
                 target="_blank"
               >
-                {browserInfo().name === "Firefox"
-                  ? browser.i18n.getMessage("addonPageLabel")
-                  : browser.i18n.getMessage("extensionPageLabel")}
+                {browser.i18n.getMessage("firefoxLabel")}
+              </a>
+              <span>　</span>
+              <a
+                href="https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae"
+                target="_blank"
+              >
+                {browser.i18n.getMessage("chromeLabel")}
+              </a>
+              <span>　</span>
+              <a
+                href="https://microsoftedge.microsoft.com/addons/detail/tab-session-manager/jkjjclfiflhpjangefhgfjhgfbhajadk"
+                target="_blank"
+              >
+                {browser.i18n.getMessage("edgeLabel")}
               </a>
               <span>　</span>
               <a href="https://github.com/sienori/Tab-Session-Manager" target="_blank">
