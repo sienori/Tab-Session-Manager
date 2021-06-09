@@ -432,10 +432,10 @@
     "message": "Komprimera alla sessioner?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Komprimerar..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Komprimerat."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Om denna är omarkerad, kommer privata fönster inte att sparas med i sessionen."
@@ -699,13 +699,13 @@
     "message": "Utökningssida"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Firefox-tillägg"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge-tillägg"
   },
   "privacyPolicyLabel": {
     "message": "Integritetspolicy"
