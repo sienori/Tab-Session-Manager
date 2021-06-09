@@ -698,6 +698,15 @@
   "extensionPageLabel": {
     "message": "Chrome 應用程式商店頁面"
   },
+  "firefoxLabel": {
+    "message": "Firefox Add-ons"
+  },
+  "chromeLabel": {
+    "message": "Chrome Web Store"
+  },
+  "edgeLabel": {
+    "message": "Edge Add-ons"
+  },
   "privacyPolicyLabel": {
     "message": "隱私權政策"
   },

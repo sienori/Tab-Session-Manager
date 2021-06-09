@@ -698,6 +698,15 @@
   "extensionPageLabel": {
     "message": "扩展页面"
   },
+  "firefoxLabel": {
+    "message": "Firefox Add-ons"
+  },
+  "chromeLabel": {
+    "message": "Chrome Web Store"
+  },
+  "edgeLabel": {
+    "message": "Edge Add-ons"
+  },
   "privacyPolicyLabel": {
     "message": "隐私政策"
   },

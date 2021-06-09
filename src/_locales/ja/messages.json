@@ -698,6 +698,15 @@
   "extensionPageLabel": {
     "message": "拡張機能ページ"
   },
+  "firefoxLabel": {
+    "message": "Firefoxアドオン"
+  },
+  "chromeLabel": {
+    "message": "Chromeウェブストア"
+  },
+  "edgeLabel": {
+    "message": "Edgeアドオン"
+  },
   "privacyPolicyLabel": {
     "message": "プライバシーポリシー"
   },
