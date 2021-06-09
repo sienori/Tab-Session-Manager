@@ -699,13 +699,13 @@
     "message": "Страница расширения"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Дополнения Firefox"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Веб-магазин Chrome"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Дополнения Edge"
   },
   "privacyPolicyLabel": {
     "message": "Политика конфиденциальности"
