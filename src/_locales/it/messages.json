@@ -699,13 +699,13 @@
     "message": "Pagina dell'estensione"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Estensioni di Firefox"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Estensioni di Edge"
   },
   "privacyPolicyLabel": {
     "message": "Privacy policy"
