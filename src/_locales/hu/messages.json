@@ -699,13 +699,13 @@
     "message": "Kiegészítő oldala"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Firefox kiegészítők"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Chrome Webáruház"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge bővítmények"
   },
   "privacyPolicyLabel": {
     "message": "Adatvédelmi nyilatkozat"
