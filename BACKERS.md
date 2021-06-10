@@ -76,3 +76,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Phaze
 - Максим
 - László Dr. Gerő
+- Dania.m 
