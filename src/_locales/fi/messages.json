@@ -261,37 +261,37 @@
     "message": "Kun avaat istunnon, sivujen sisällöt eivät lataudu ennen kuin valitset kyseiset välilehdet.<br>Jos tämä ei ole valittuna, muistin käyttö kasvaa suuresti, kun istunto palautetaan."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Käytä \"pois heitetty\"-määritettä laiskassa välilehtien lataamisessa"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Tämän asetuksen valitseminen parantaa välilehtien avaamisen suorituskykyä."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Laiskasti ladattavat välilehden faviconia ei näytetä."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Palauta ikkunoiden sijainnit"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Palauta ikkunoiden sijainnit ja koot istunto avattaessa."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Käynnistys"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Käyttäytyminen selainta käynnistettäessä"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Avaa edellinen istunto"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Avaa istunto, joka suljettiin viime kerralla."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Avaa käynnistysistunto"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Avaa istunnot, jotka on merkitty käynnistykseen. Voit merkitä istuntoja käynnistykseen istuntovalikosta."
   },
   "DoNothingLabel": {
     "message": "Älä tee mitään"
@@ -714,13 +714,13 @@
     "message": "Sessions imported."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Lukeminen epäonnistui"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Poistaa kaikki istunnot. Oletko varma?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Istunto"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
