@@ -357,52 +357,52 @@
     "message": "Erilliset varmuuskopiot"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Jokainen istunto tallennetaan erilliseen tiedostoon.<br>Jos tätä ei ole valittu, kaikki istunnot tallennetaan yhteen ja samaan tiedostoon, mikä voi ylikuormittaa tallennustilasi."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Tallennussijainti"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Määritä kansio, mihin varmuuskopiotiedosto tallennetaan. Tallennussijainti on rajattu selaimen latauskansion alikansioihin."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Latauskansio"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Tallennettujen varmuuskopioiden enimmäismäärä"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Kun varmuuskopiotiedostojen lukumäärä ylittää tämän arvon, vanhimmat varmuuskopiot poistetaan."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Päivämäärän muoto"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "Esimerkki: DD.MM.YYYY HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Tallenna yksityinen ikkuna"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Luettelo osoitteista, jotka jätetään pois kun istunto tallennetaan"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Jos välilehden osoite löytyy luettelosta, sitä ei tallenneta istuntoon. Lista sallii \"*\"-jokerimerkin."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Tallenna laitteen nimi istuntoon"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Lisää laitteen nimi tunnisteeksi, kun istunto tallennetaan. Kun käytetään pilvisynkronointia, pystyt erottamaan sen muiden laitteiden istunnoista."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Laitteen nimi"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Määritä tämän laitteen nimi."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Aseta laitteen nimi olemassa oleviin istuntoihin"
   },
   "applyDeviceNameCaptionLabel": {
     "message": "Aseta laitteen nimi kaikkiin tallennettuihin istuntoihin."
@@ -534,40 +534,40 @@
     "message": "Määritä ponnahdusikkunan koko."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Leveys"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Korkeus"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Sivupalkin leveys"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Avaa istuntolista välilehdessä"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Avaa istuntolista välilehdessä, kun työkalupalkin painiketta painetaan."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Teema"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Määritä väriteema."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Vaalea"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Tumma"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Muu"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Näytä asetukset-sivu päivitettäessä"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Näytä asetukset-sivu, kun Tab Session Manager päivitetään uuteen versioon. Saat tietää päivityksen sisällön nopeasti."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager has been updated!"
