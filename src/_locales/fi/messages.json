@@ -306,55 +306,55 @@
     "message": "Aikaväli (minuuttia)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Vähimmäisarvo 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maksimimäärä tallennuksia"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Tallennettujen istuntojen enimmäismäärä (tällä tavalla)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "Tallenna istunto, kun ikkuna suljetaan"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Tallenna istunto joka sisältää vain yhden suljetun ikkunan."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Enimmäismäärä tallennuksia"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Tallennettujen istuntojen enimmäismäärä (tällä tavalla)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Tallenna istunto selainta suljettaessa"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Tallenna istunto, jossa suljetaan monta ikkunaa peräkkäin."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Enimmäismäärä tallennuksia"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Tallennettujen istuntojen enimmäismäärä (tällä tavalla)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Käytä sivun otsikkoa automaattisesti tallennetun istunnon nimenä"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Kun istunto automaattitallennetaan, käytä avoinna olevan sivun otsikkoa istunnon nimenä."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Varmuuskopio"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Tallenna varmuuskopio"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Kun selain käynnistyy, luo varmuuskopiotiedosto istunnoista ja tallenna se latauskansioon."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Erilliset varmuuskopiot"
   },
   "individualBackupCaptionLabel": {
     "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
