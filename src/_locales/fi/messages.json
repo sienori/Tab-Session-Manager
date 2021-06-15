@@ -153,112 +153,112 @@
     "message": "Valikko"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Sulje valikko"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Sulje"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Nimeä uudelleen"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Nimeä istunto uudelleen"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Avaa istunto"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Avaa uudessa ikkunassa"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Avaa istunto uudessa ikkunassa."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Avaa nykyisessä ikkunassa"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Avaa istunto nykyisessä ikkunassa. Passiiviset/epäaktiiviset ikkunat ja kaikki välilehdet suljetaan."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Lisää nykyiseen ikkunaan"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Lisää välilehdet nykyiseen ikkunaan. Jos istunto sisältää useita ikkunoita, avaa se uudessa ikkunassa."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Muokkaa istuntoa"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Korvaa nykyisellä istunnolla"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Korvaa nykyisellä ikkunalla"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Lisää nykyinen ikkuna"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Tee kopio istunnosta"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Merkitse käynnistykseen"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Poista käynnistyksestä"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Virhe"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB ei ole käytettävissä selaimessasi."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Lataa laajennus uudelleen"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Miten ratkaista tämä ongelma"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Automaattitallennus - Ikkuna suljettu"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Automaattitallennus - Selain suljettu"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Automaattinen tallennus - Ajoittain"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "Asetukset"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "Istunnot"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Pikakuvakkeet"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "Tietoa"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Yleiset"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Automaattinen tallennus"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Tyyli"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Avaa istunto uudessa ikkunassa"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "Jos tätä ei ole valittu, istunto korvaa nykyisen ikkunan."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Välilehden laiska lataaminen"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "Kun avaat istunnon, sivujen sisällöt eivät lataudu ennen kuin valitset kyseiset välilehdet.<br>Jos tämä ei ole valittuna, muistin käyttö kasvaa suuresti, kun istunto palautetaan."
   },
   "isUseDiscardedLabel": {
     "message": "Use the \"discarded\" property for lazy loading"
@@ -570,7 +570,7 @@
     "message": "Näytä asetukset-sivu, kun Tab Session Manager päivitetään uuteen versioon. Saat tietää päivityksen sisällön nopeasti."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager on päivitetty!"
   },
   "seeMoreLabel": {
     "message": "See more"
@@ -729,7 +729,7 @@
     "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "Tätä sivua ei voi avata Tab Session Managerilla."
   },
   "copyUrlLabel": {
     "message": "Kopioi osoite"
