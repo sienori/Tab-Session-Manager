@@ -77,3 +77,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Максим
 - László Dr. Gerő
 - Dania.m 
+- ChrigiGee
