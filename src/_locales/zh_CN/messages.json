@@ -699,13 +699,13 @@
     "message": "扩展页面"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Firefox 附加组件"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Chrome Web 商店"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge 附加组件"
   },
   "privacyPolicyLabel": {
     "message": "隐私政策"
