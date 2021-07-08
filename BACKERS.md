@@ -78,3 +78,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - László Dr. Gerő
 - Dania.m 
 - ChrigiGee
+- Roger Fajman
