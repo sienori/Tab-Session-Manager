@@ -80,3 +80,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - ChrigiGee
 - Roger Fajman
 - Sebastian Fohler
+- Nicole J. LeBoeuf
