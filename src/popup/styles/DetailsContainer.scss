@@ -14,6 +14,9 @@
 
       &:hover, &:focus, &:focus-within {
         background-color: var(--line);
+        .buttonsContainer{
+          display: flex;
+        }
       }
 
       .favIcon {
@@ -23,29 +26,34 @@
         flex-shrink: 0;
       }
 
-      .removeButton {
-        width: 15px;
-        height: 15px;
-        opacity: 0;
-        margin-left: 10px;
-        margin-right: 2px;
-        transition: opacity 100ms;
-        svg {
-          width: 13px;
-          height: 12px;
-          fill: var(--sub-text);
-          transform: rotate(45deg);
+      .buttonsContainer{
+        display: none;
+        flex-direction: row;
+        button {
+          width: 15px;
+          height: 15px;
+          margin-left: 2px;
+          margin-right: 2px;
+          svg {
+            width: 13px;
+            height: 12px;
+            fill: var(--sub-text);
+          }
         }
-        &:hover svg, &:focus svg {
-          opacity: 1;
-          fill: var(--confirm);
+
+        .removeButton{
+          svg {
+            transform: rotate(45deg);
+          }
+          &:hover svg, &:focus svg {
+            fill: var(--confirm);
+          }
         }
-        &:focus {
-          opacity: 1;
+        .editButton{
+          &:hover svg, &:focus svg {
+            fill: var(--highlight);
+          }
         }
-      }
-      &:hover .removeButton {
-        opacity: 1;
       }
     }
 
@@ -55,6 +63,8 @@
         align-items: center;
         overflow: hidden;
         width: 100%;
+        margin-right: 10px;
+        box-sizing: border-box;
         .collapseButton {
           margin-right: 5px;
           transform: rotate(180deg);
@@ -91,6 +101,8 @@
           display: flex;
           align-items: center;
           width: 100%;
+          margin-right: 10px;
+          box-sizing: border-box;
           overflow: hidden;
           .tabTitle {
             color: var(--main-text);

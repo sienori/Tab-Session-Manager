@@ -65,7 +65,7 @@ export default class SessionDetailsArea extends Component {
   };
 
   render() {
-    const { session, searchWords, removeWindow, removeTab, openModal, closeModal, tagList } = this.props;
+    const { session, searchWords, removeWindow, removeTab, openModal, closeModal, tagList, openMenu } = this.props;
 
     if (!session.id)
       return (
@@ -130,6 +130,7 @@ export default class SessionDetailsArea extends Component {
           searchWords={searchWords}
           removeWindow={removeWindow}
           removeTab={removeTab}
+          openMenu={openMenu}
         />
       </div>
     );

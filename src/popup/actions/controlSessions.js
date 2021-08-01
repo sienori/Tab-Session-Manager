@@ -176,6 +176,50 @@ export const addCurrentWindow = async id => {
   sendSessionUpdateMessage(session);
 };
 
+export const addCurrentTab = async (sessionId, windowId) => {
+  windowId = parseInt(windowId);
+  log.info(logDir, "AddCurrentTab()", sessionId, windowId);
+  let session = await getSessions(sessionId);
+  let currentTab = (await browser.tabs.query({ currentWindow: true, active: true }))[0];
+  if (!currentTab) return;
+
+  // Set unique tabId
+  const tabIdList = Object.values(session.windows).flatMap(window => Object.values(window).map(tab => tab.id));
+  const maxTabId = Math.max(...tabIdList);
+  currentTab.id = maxTabId + 1;
+
+  // Set tab index
+  currentTab.index = Object.keys(session.windows[windowId]).length;
+
+  // Set windowId
+  currentTab.windowId = windowId;
+
+  // Remove openerTabId
+  if (currentTab.openerTabId) delete currentTab.openerTabId;
+
+  // Compress favicon url
+  if (currentTab?.favIconUrl?.startsWith("data:image")) {
+    const compressedDataUrl = await compressDataUrl(currentTab.favIconUrl);
+    currentTab.favIconUrl = compressedDataUrl;
+  }
+
+  // Set tabGroup
+  const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
+  if (currentTab?.groupId > 0 && isEnabledTabGroups && getSettings("saveTabGroups")) {
+    const tabGroups = await queryTabGroups({ windowId: windowId });
+    const currentTabGroup = tabGroups.find(group => group.id === currentTab.groupId);
+    const hasTabGroup = session?.tabGroups.some(group => group.id === currentTab.groupId);
+    if (currentTabGroup && !hasTabGroup) {
+      session.tabGroups = (session.tabGroups || []).concat([currentTabGroup]);
+    }
+  }
+
+  session.windows[windowId][currentTab.id] = currentTab;
+  session.tabsNumber += 1;
+
+  sendSessionUpdateMessage(session);
+};
+
 export const makeCopySession = async id => {
   log.info(logDir, "makeCopySession()", id);
   let session = await getSessions(id);

@@ -4,6 +4,8 @@ import openUrl from "../actions/openUrl";
 import { sendOpenMessage } from "../actions/controlSessions";
 import PlusIcon from "../icons/plus.svg";
 import CollapseIcon from "../icons/collapse.svg";
+import EditIcon from "../icons/edit.svg";
+import WindowMenuItems from "./WindowMenuItems";
 import "../styles/DetailsContainer.scss";
 import Highlighter from "react-highlight-words";
 
@@ -28,6 +30,16 @@ const RemoveButton = props => (
   </button>
 );
 
+const EditButton = props => (
+  <button
+    className="editButton"
+    onClick={props.handleClick}
+    title={browser.i18n.getMessage("editWindowLabel")}
+  >
+    <EditIcon />
+  </button>
+);
+
 const TabContainer = props => {
   const { tab, windowId, allTabsNumber, searchWords, handleRemoveTab } = props;
   const handleRemoveClick = () => {
@@ -47,7 +59,9 @@ const TabContainer = props => {
           <Highlighter searchWords={searchWords} textToHighlight={tab.title || ""} autoEscape={true} />
         </span>
       </button>
-      {allTabsNumber > 1 && <RemoveButton handleClick={handleRemoveClick} />}
+      <div className="buttonsContainer">
+        {allTabsNumber > 1 && <RemoveButton handleClick={handleRemoveClick} />}
+      </div>
     </div>
   );
 };
@@ -76,6 +90,14 @@ class WindowContainer extends Component {
     sendOpenMessage(sessionId, "openInNewWindow", windowId);
   };
 
+  handleEditClick = e => {
+    const { sessionId, windowId } = this.props;
+    const rect = e.target.getBoundingClientRect();
+    const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
+    this.props.openMenu(x, y, <WindowMenuItems sessionId={sessionId} windowId={windowId} />);
+    e.preventDefault();
+  };
+
   toggleCollapsed = () => {
     const isCollapsed = !this.state.isCollapsed;
     this.setState({ isCollapsed: isCollapsed });
@@ -95,7 +117,7 @@ class WindowContainer extends Component {
 
     return (
       <div className={`windowContainer ${this.state.isCollapsed ? "isCollapsed" : ""}`}>
-        <div className="windowInfo">
+        <div className="windowInfo" onContextMenu={this.handleEditClick}>
           <div className="leftWrapper">
             <button className="collapseButton" onClick={this.toggleCollapsed}>
               <CollapseIcon />
@@ -111,6 +133,7 @@ class WindowContainer extends Component {
             <span className="tabsNumber">{this.getTabsNumberText()}</span>
           </div>
           <div className="buttonsContainer">
+            <EditButton handleClick={this.handleEditClick} />
             {windowsNumber > 1 && <RemoveButton handleClick={this.handleRemoveClick} />}
           </div>
         </div>
@@ -132,7 +155,7 @@ class WindowContainer extends Component {
 }
 
 export default props => {
-  const { session, searchWords, removeWindow, removeTab } = props;
+  const { session, searchWords, removeWindow, removeTab, openMenu } = props;
 
   if (!session.windows) return null;
 
@@ -158,6 +181,7 @@ export default props => {
           searchWords={searchWords}
           handleRemoveWindow={handleRemoveWindow}
           handleRemoveTab={handleRemoveTab}
+          openMenu={openMenu}
           key={`${session.id}${windowId}`}
         />
       ))}
