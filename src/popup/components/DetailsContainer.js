@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
+import browserInfo from "browser-info";
 import openUrl from "../actions/openUrl";
 import { sendOpenMessage } from "../actions/controlSessions";
 import PlusIcon from "../icons/plus.svg";
 import CollapseIcon from "../icons/collapse.svg";
 import EditIcon from "../icons/edit.svg";
 import WindowMenuItems from "./WindowMenuItems";
+import WindowIcon from "../icons/window.svg";
+import WindowIncognitoChromeIcon from "../icons/window_incognito_chrome.svg";
+import WindowIncognitoFirefoxIcon from "../icons/window_incognito_firefox.svg";
+
 import "../styles/DetailsContainer.scss";
 import Highlighter from "react-highlight-words";
 
@@ -114,6 +119,7 @@ class WindowContainer extends Component {
       handleRemoveTab
     } = this.props;
     const sortedTabs = Object.values(tabs).sort((a, b) => a.index - b.index);
+    const isIncognito = Object.values(tabs)[0].incognito;
 
     return (
       <div className={`windowContainer ${this.state.isCollapsed ? "isCollapsed" : ""}`}>
@@ -122,7 +128,12 @@ class WindowContainer extends Component {
             <button className="collapseButton" onClick={this.toggleCollapsed}>
               <CollapseIcon />
             </button>
-            <FavIcon favIconUrl="/icons/window.png" />
+            <div className="windowIcon">
+              {isIncognito ?
+                browserInfo().name === "Chrome" ? <WindowIncognitoChromeIcon /> : <WindowIncognitoFirefoxIcon /> :
+                <WindowIcon />
+              }
+            </div>
             <button
               className="windowTitle"
               onClick={this.handleOpenClick}
