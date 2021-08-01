@@ -120,7 +120,7 @@
     "message": "הסר תג"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "הכנס שם תוית"
   },
   "detailLabel": {
     "message": "פרטים"
@@ -205,6 +205,12 @@
   },
   "removeStartupLabel": {
     "message": "הסר מהפעלה"
+  },
+  "editWindowLabel": {
+    "message": "Edit a window"
+  },
+  "addCurrentTabLabel": {
+    "message": "Add current tab"
   },
   "errorLabel": {
     "message": "שגיאה"
