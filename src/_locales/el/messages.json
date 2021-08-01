@@ -207,10 +207,10 @@
     "message": "Διαγραφή από την εκκίνηση"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Επεξεργασία παραθύρου"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Προσθήκη τρέχουσας καρτέλας"
   },
   "errorLabel": {
     "message": "Σφάλμα"
