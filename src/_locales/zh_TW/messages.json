@@ -206,6 +206,12 @@
   "removeStartupLabel": {
     "message": "從啟動瀏覽階段中移除"
   },
+  "editWindowLabel": {
+    "message": "Edit a window"
+  },
+  "addCurrentTabLabel": {
+    "message": "Add current tab"
+  },
   "errorLabel": {
     "message": "錯誤"
   },
@@ -450,7 +456,7 @@
     "message": "Tree Style Tab 還原時的延遲載入時間(毫秒)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "儲存分頁群組"
   },
   "saveTabGroupsCaptionLabel": {
     "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
@@ -699,13 +705,13 @@
     "message": "Chrome 應用程式商店頁面"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Firefox 附加元件"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Chrome 線上應用程式商店"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge 擴充功能"
   },
   "privacyPolicyLabel": {
     "message": "隱私權政策"

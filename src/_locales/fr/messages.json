@@ -206,6 +206,12 @@
   "removeStartupLabel": {
     "message": "Retirer du démarrage"
   },
+  "editWindowLabel": {
+    "message": "Modifier une fenêtre"
+  },
+  "addCurrentTabLabel": {
+    "message": "Ajouter l’onglet actuel"
+  },
   "errorLabel": {
     "message": "Erreur"
   },
@@ -699,13 +705,13 @@
     "message": "Page de l'extension"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Extensions pour Firefox"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Extensions pour Edge"
   },
   "privacyPolicyLabel": {
     "message": "Politique de confidentialité"

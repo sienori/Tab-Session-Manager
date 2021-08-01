@@ -3,55 +3,55 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Tallenna ja palauta ikkunoiden ja välilehtien tila. Pilvisynkronointia tuetaan myös."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Lahjoita PayPalilla"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Lahjoita"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Avaa istuntolista välilehdessä"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "Tallenna"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "Tallenna nykyinen istunto"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Anna istunnon nimi"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Tallenna istunto"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Tallenna kaikki ikkunat"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Tallenna vain nykyinen ikkuna"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Kategoria-suodatin"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Järjestä"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Kaikki"
   },
   "displayUserLabel": {
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Automaattitallennus"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Uusin"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Vanhin"
   },
   "aToZLabel": {
     "message": "A-Z"
@@ -60,517 +60,523 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Etsi istunnon tai välilehden nimellä"
   },
   "search": {
-    "message": "Search"
+    "message": "Etsi"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Tyhjennä haku"
   },
   "open": {
-    "message": "Open"
+    "message": "Avaa"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Poista"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Poista tämä istunto?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Istunto poistettu."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Istuntoikkuna poistettu."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Istuntovälilehti poistettu."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Plauta"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Istunnon palautus epäonnistui."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Istuntoikkunan palautus epäonnistui."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Istuntovälilehden palautus epäonnistui."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Istunto tallennettu."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Istunnon tallennus epäonnistui."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Peruuta"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Kumoa"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Tee uudelleen"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Lisää tunniste"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Poista tunniste"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Anna tunnisteelle nimi"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Lisätieto"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "Ikkuna"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "Ikkunat"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "Välilehti"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "Välilehdet"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Istuntoa ei ole."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Tallennetaan istunto klikkaamalla alempaa oikeaa painiketta."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Ei vastaavia tuloksia."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Istuntoa ei ole valittu."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Valikko"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Sulje valikko"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Sulje"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Nimeä uudelleen"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Nimeä istunto uudelleen"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Avaa istunto"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Avaa uudessa ikkunassa"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Avaa istunto uudessa ikkunassa."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Avaa nykyisessä ikkunassa"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Avaa istunto nykyisessä ikkunassa. Passiiviset/epäaktiiviset ikkunat ja kaikki välilehdet suljetaan."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Lisää nykyiseen ikkunaan"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Lisää välilehdet nykyiseen ikkunaan. Jos istunto sisältää useita ikkunoita, avaa se uudessa ikkunassa."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Muokkaa istuntoa"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Korvaa nykyisellä istunnolla"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Korvaa nykyisellä ikkunalla"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Lisää nykyinen ikkuna"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Tee kopio istunnosta"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Merkitse käynnistykseen"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Poista käynnistyksestä"
+  },
+  "editWindowLabel": {
+    "message": "Edit a window"
+  },
+  "addCurrentTabLabel": {
+    "message": "Add current tab"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Virhe"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB ei ole käytettävissä selaimessasi."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Lataa laajennus uudelleen"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Miten ratkaista tämä ongelma"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Automaattitallennus - Ikkuna suljettu"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Automaattitallennus - Selain suljettu"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Automaattinen tallennus - Ajoittain"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "Asetukset"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "Istunnot"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Pikakuvakkeet"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "Tietoa"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Yleiset"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Automaattinen tallennus"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Tyyli"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Avaa istunto uudessa ikkunassa"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "Jos tätä ei ole valittu, istunto korvaa nykyisen ikkunan."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Välilehden laiska lataaminen"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "Kun avaat istunnon, sivujen sisällöt eivät lataudu ennen kuin valitset kyseiset välilehdet.<br>Jos tämä ei ole valittuna, muistin käyttö kasvaa suuresti, kun istunto palautetaan."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Käytä \"pois heitetty\"-määritettä laiskassa välilehtien lataamisessa"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Tämän asetuksen valitseminen parantaa välilehtien avaamisen suorituskykyä."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Laiskasti ladattavat välilehden faviconia ei näytetä."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Palauta ikkunoiden sijainnit"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Palauta ikkunoiden sijainnit ja koot istunto avattaessa."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Käynnistys"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Käyttäytyminen selainta käynnistettäessä"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Avaa edellinen istunto"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Avaa istunto, joka suljettiin viime kerralla."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Avaa käynnistysistunto"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Avaa istunnot, jotka on merkitty käynnistykseen. Voit merkitä istuntoja käynnistykseen istuntovalikosta."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Älä tee mitään"
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "Tallenna istunto säännöllisesti"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "Tallenna istunto X minuutin välein."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "Aikaväli (minuuttia)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Vähimmäisarvo 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maksimimäärä tallennuksia"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Tallennettujen istuntojen enimmäismäärä (tällä tavalla)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "Tallenna istunto, kun ikkuna suljetaan"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Tallenna istunto joka sisältää vain yhden suljetun ikkunan."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Enimmäismäärä tallennuksia"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Tallennettujen istuntojen enimmäismäärä (tällä tavalla)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Tallenna istunto selainta suljettaessa"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Tallenna istunto, jossa suljetaan monta ikkunaa peräkkäin."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Enimmäismäärä tallennuksia"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Tallennettujen istuntojen enimmäismäärä (tällä tavalla)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Käytä sivun otsikkoa automaattisesti tallennetun istunnon nimenä"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Kun istunto automaattitallennetaan, käytä avoinna olevan sivun otsikkoa istunnon nimenä."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Varmuuskopio"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Tallenna varmuuskopio"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Kun selain käynnistyy, luo varmuuskopiotiedosto istunnoista ja tallenna se latauskansioon."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Erilliset varmuuskopiot"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Jokainen istunto tallennetaan erilliseen tiedostoon.<br>Jos tätä ei ole valittu, kaikki istunnot tallennetaan yhteen ja samaan tiedostoon, mikä voi ylikuormittaa tallennustilasi."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Tallennussijainti"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Määritä kansio, mihin varmuuskopiotiedosto tallennetaan. Tallennussijainti on rajattu selaimen latauskansion alikansioihin."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Latauskansio"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Tallennettujen varmuuskopioiden enimmäismäärä"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Kun varmuuskopiotiedostojen lukumäärä ylittää tämän arvon, vanhimmat varmuuskopiot poistetaan."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Päivämäärän muoto"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "Esimerkki: DD.MM.YYYY HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Tallenna yksityinen ikkuna"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Luettelo osoitteista, jotka jätetään pois kun istunto tallennetaan"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Jos välilehden osoite löytyy luettelosta, sitä ei tallenneta istuntoon. Lista sallii \"*\"-jokerimerkin."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Tallenna laitteen nimi istuntoon"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Lisää laitteen nimi tunnisteeksi, kun istunto tallennetaan. Kun käytetään pilvisynkronointia, pystyt erottamaan sen muiden laitteiden istunnoista."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Laitteen nimi"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Määritä tämän laitteen nimi."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Aseta laitteen nimi olemassa oleviin istuntoihin"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Aseta laitteen nimi kaikkiin tallennettuihin istuntoihin."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Aseta laitteen nimi"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Aseta laitteen nimi kaikkiin istuntoihin?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Pakkaa faviconit"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Pakkaa faviconit, kun istunto tallennetaan."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Pakkaa kaikki istunnot"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Pakkaa kaikkien tällä hetkellä tallennetujen istuntojen faviconit. Tämä säästää muistia ja nopeuttaa istuntojen latausta."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Pakkaa"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Pakkaa kaikki istunnot?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Pakataan..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Pakkaaminen suoritettu."
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Jos tämä on valitsematta, yksityiset ikkunat jätetään huomiotta, kun istunto tallennetaan."
   },
   "ifSupportTstLabel": {
-    "message": "Supports Tree Style Tab"
+    "message": "Tukee puu-tyylisiä välilehtiä"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Palauta puu-tyylisen välilehden puu-tila.<br>Kun tämä on valittu, istunnon palauttaminen vie aikaa."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Viive puun palautuksessa (millisekunneissa)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Tallenna välilehtijoukot"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Tallenna ja palauta välilehtijoukkojen tila. Ottaaksesi tämän ominaisuuden käyttöön, sinun täytyy asentaa seuraava laajennus."
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Välilehden avaamiseen tarvitaan odotusaika, että puun tila saadaan palautettua. Nosta tätä arvoa, jos puu ei palaudu oikein."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Näytä istunnon nimi yhdellä rivillä"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Jos istunnon nimi istuntolistassa ylittää yhden rivin pituuden, se katkaistaan yhden rivin pituiseksi ja näytetään."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Pilvisynkronointi"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Ota käyttöön pilvisynkronointi (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Tallenna istunnot Google Driveen™ ja synkronoi muiden tietokoneiden kanssa."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Synkronoidaan"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Ladataan"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Lähetetään"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Poistetaan"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Synkronointi suoritettu."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Kirjaudu"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Kirjaudu ulos"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Synkronoi automaattisesti"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Suorita pilvisynkronointi, kun selain käynnistetään, ja kun istunto tallennetaan."
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Synkronoi automaattisesti tallennetut istunnot"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Lähetä / Lataa automaattisesti tallennetut istunnot pilvisynkronoinnissa."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Ponnahdusikkuna"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Avaa-painikkeen käyttäytyminen"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Valitse oletuskäyttäytyminen avaa-painikkeelle."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Tallenna-painikkeen käyttäytyminen"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Valitse oletuskäyttäytyminen tallenna-painikkeelle."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Näytä avaa- / poista-painikkeet istuntolistassa"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Näytä avaa- / poista-painikkeet kun osoitin on istuntolistan päällä."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Koko"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Määritä ponnahdusikkunan koko."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Leveys"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Korkeus"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Sivupalkin leveys"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Avaa istuntolista välilehdessä"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Avaa istuntolista välilehdessä, kun työkalupalkin painiketta painetaan."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Teema"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Määritä väriteema."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Vaalea"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Tumma"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Muu"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Näytä asetukset-sivu päivitettäessä"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Näytä asetukset-sivu, kun Tab Session Manager päivitetään uuteen versioon. Saat tietää päivityksen sisällön nopeasti."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager on päivitetty!"
   },
   "seeMoreLabel": {
     "message": "See more"
@@ -714,13 +720,13 @@
     "message": "Sessions imported."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Lukeminen epäonnistui"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Poistaa kaikki istunnot. Oletko varma?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Istunto"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
@@ -729,12 +735,12 @@
     "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "Tätä sivua ei voi avata Tab Session Managerilla."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Kopioi osoite"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Kopioitu."
   }
 }
