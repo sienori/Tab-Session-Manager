@@ -20,10 +20,10 @@ export async function openSession(session, property = "openInNewWindow") {
     const openInNewWindow = async () => {
       log.log(logDir, "openSession() openInNewWindow()");
       let createData = {};
-      if (browserInfo().name === "Firefox") {
-        const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
-        createData.incognito = firstTab.incognito;
-      }
+
+      const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
+      createData.incognito = firstTab.incognito;
+
 
       const isSetPosition =
         getSettings("isRestoreWindowPosition") && session.windowsInfo != undefined;
@@ -232,12 +232,15 @@ function openTab(session, win, currentWindow, tab, isOpenToLastIndex = false) {
           createOption.title = property.title;
         }
       } else {
-        createOption.url = returnReplaceURL(
-          "redirect",
-          property.title,
-          property.url,
-          property.favIconUrl
-        );
+        // Chromeのincognitoウィンドウでは拡張機能ページを開けないため
+        if (!(browserInfo().name === "Chrome" && currentWindow.incognito)) {
+          createOption.url = returnReplaceURL(
+            "redirect",
+            property.title,
+            property.url,
+            property.favIconUrl
+          );
+        }
       }
     }
 
