@@ -206,6 +206,12 @@
   "removeStartupLabel": {
     "message": "Διαγραφή από την εκκίνηση"
   },
+  "editWindowLabel": {
+    "message": "Edit a window"
+  },
+  "addCurrentTabLabel": {
+    "message": "Add current tab"
+  },
   "errorLabel": {
     "message": "Σφάλμα"
   },
