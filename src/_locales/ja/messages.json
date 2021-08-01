@@ -206,6 +206,12 @@
   "removeStartupLabel": {
     "message": "スタートアップから削除"
   },
+  "editWindowLabel": {
+    "message": "ウィンドウを編集"
+  },
+  "addCurrentTabLabel": {
+    "message": "現在のタブを追加"
+  },
   "errorLabel": {
     "message": "エラー"
   },
