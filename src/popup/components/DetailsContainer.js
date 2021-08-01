@@ -128,7 +128,7 @@ class WindowContainer extends Component {
               onClick={this.handleOpenClick}
               title={browser.i18n.getMessage("openInNewWindowLabel")}
             >
-              {windowTitle || browser.i18n.getMessage("windowLabel")}
+              {windowTitle || Object.values(tabs).find(tab => tab.active)?.title || browser.i18n.getMessage("windowLabel")}
             </button>
             <span className="tabsNumber">{this.getTabsNumberText()}</span>
           </div>
@@ -167,13 +167,12 @@ export default props => {
     removeTab(session, windowId, tabId);
   };
 
-  const windowLabel = browser.i18n.getMessage("windowLabel");
   return (
     <div className="detailsContainer scrollbar">
       {Object.keys(session.windows).map(windowId => (
         <WindowContainer
           tabs={session.windows[windowId]}
-          windowTitle={session.windowsInfo ? session.windowsInfo[windowId].title : windowLabel}
+          windowTitle={session?.windowsInfo?.[windowId]?.title}
           windowId={windowId}
           sessionId={session.id}
           windowsNumber={session.windowsNumber}
