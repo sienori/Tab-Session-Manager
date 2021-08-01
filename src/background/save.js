@@ -21,8 +21,7 @@ export async function saveCurrentSession(name, tag, property) {
   const session = await loadCurrentSession(name, tag, property).catch(() => {
     return Promise.reject();
   });
-  const editedSession = ignoreUrls(session);
-  return await saveSession(editedSession);
+  return await saveSession(session);
 }
 
 export async function loadCurrentSession(name, tag, property) {
@@ -89,8 +88,10 @@ export async function loadCurrentSession(name, tag, property) {
     if (filteredTabGroups.length > 0) session.tabGroups = filteredTabGroups;
   }
 
+  const ignoredUrlSession = ignoreUrls(session);
+
   return new Promise((resolve, reject) => {
-    if (session.tabsNumber > 0) resolve(session);
+    if (session.tabsNumber > 0) resolve(ignoredUrlSession);
     else reject();
   });
 }
