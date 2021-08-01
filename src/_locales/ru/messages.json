@@ -206,6 +206,12 @@
   "removeStartupLabel": {
     "message": "Не открывать при запуске"
   },
+  "editWindowLabel": {
+    "message": "Редактировать окно"
+  },
+  "addCurrentTabLabel": {
+    "message": "Добавить текущую вкладку"
+  },
   "errorLabel": {
     "message": "Ошибка"
   },
@@ -699,13 +705,13 @@
     "message": "Страница расширения"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Дополнения Firefox"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Веб-магазин Chrome"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Дополнения Edge"
   },
   "privacyPolicyLabel": {
     "message": "Политика конфиденциальности"
