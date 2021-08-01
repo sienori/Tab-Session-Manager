@@ -206,6 +206,12 @@
   "removeStartupLabel": {
     "message": "從啟動瀏覽階段中移除"
   },
+  "editWindowLabel": {
+    "message": "Edit a window"
+  },
+  "addCurrentTabLabel": {
+    "message": "Add current tab"
+  },
   "errorLabel": {
     "message": "錯誤"
   },
