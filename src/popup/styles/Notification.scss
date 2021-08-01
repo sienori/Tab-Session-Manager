@@ -5,16 +5,17 @@
     display: flex;
     position: absolute;
     width: 300px;
-    right: 0;
     left: 0;
     z-index: 1;
-    margin: auto;
     flex-direction: row;
     flex-shrink: 0;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--confirm);
     color: #fff;
-    padding: 10px;
+    padding: 10px 15px;
+    margin-top: 2px;
+    border-radius: 0 5px 5px 0;
     max-height: 90px;
     overflow: hidden;
     transition-property: transform, opacity, visibility;
@@ -27,20 +28,20 @@
     &.enter {
       opacity: 0;
       visibility: hidden;
-      transform: scaleY(0);
+      transform: translateX(-300px);
       transition-delay: 100ms;
     }
     &.enter-active,
     &.exit {
       opacity: 1;
       visibility: visible;
-      transform: scaleY(1);
+      transform: translateX(0px);
     }
     &.exit-active,
     &.enter-done {
       opacity: 0;
       visibility: hidden;
-      transform: scaleY(0);
+      transform: translateX(-300px);
     }
 
     &[data-type="error"] {
