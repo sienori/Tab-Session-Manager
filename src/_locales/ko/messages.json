@@ -206,6 +206,12 @@
   "removeStartupLabel": {
     "message": "홈페이지에서 제외"
   },
+  "editWindowLabel": {
+    "message": "Edit a window"
+  },
+  "addCurrentTabLabel": {
+    "message": "Add current tab"
+  },
   "errorLabel": {
     "message": "오류"
   },
