@@ -207,10 +207,10 @@
     "message": "Starta inte vid uppstart"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Redigera ett fönster"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Lägg till aktuell flik"
   },
   "errorLabel": {
     "message": "Fel"
