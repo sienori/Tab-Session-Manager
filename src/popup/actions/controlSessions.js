@@ -191,6 +191,9 @@ export const addCurrentTab = async (sessionId, windowId) => {
   // Set tab index
   currentTab.index = Object.keys(session.windows[windowId]).length;
 
+  // Deactivate current tab
+  currentTab.active = false;
+
   // Set windowId
   currentTab.windowId = windowId;
 
