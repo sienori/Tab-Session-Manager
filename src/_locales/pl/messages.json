@@ -206,6 +206,12 @@
   "removeStartupLabel": {
     "message": "Usuń z sesji startowej"
   },
+  "editWindowLabel": {
+    "message": "Edit a window"
+  },
+  "addCurrentTabLabel": {
+    "message": "Add current tab"
+  },
   "errorLabel": {
     "message": "Błąd"
   },
