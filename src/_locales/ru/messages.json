@@ -207,10 +207,10 @@
     "message": "Не открывать при запуске"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Редактировать окно"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Добавить текущую вкладку"
   },
   "errorLabel": {
     "message": "Ошибка"
