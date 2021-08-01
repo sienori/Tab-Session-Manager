@@ -207,10 +207,10 @@
     "message": "スタートアップから削除"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "ウィンドウを編集"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "現在のタブを追加"
   },
   "errorLabel": {
     "message": "エラー"
