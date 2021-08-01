@@ -207,10 +207,10 @@
     "message": "Retirer du démarrage"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Modifier une fenêtre"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Ajouter l’onglet actuel"
   },
   "errorLabel": {
     "message": "Erreur"
