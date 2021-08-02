@@ -207,10 +207,10 @@
     "message": "Automatikus indulásról leválasztás"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Ablak szerkesztése"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Jelenlegi fül hozzáadása"
   },
   "errorLabel": {
     "message": "Hiba"
