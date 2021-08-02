@@ -207,10 +207,10 @@
     "message": "Rimuovi dall'avvio"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Modifica una finestra"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Aggiungi scheda corrente"
   },
   "errorLabel": {
     "message": "Errore"
