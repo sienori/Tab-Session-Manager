@@ -207,10 +207,10 @@
     "message": "Eliminar de arranque"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Editar una ventana"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Agregar pestaña actual"
   },
   "errorLabel": {
     "message": "Error"
