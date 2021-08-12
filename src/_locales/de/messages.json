@@ -360,7 +360,7 @@
     "message": "Wenn der Browser startet, wird eine Sicherungskopiedatei von allen Sitzungen erstellt und im Download Ordner gespeichert."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Separate Sicherung"
   },
   "individualBackupCaptionLabel": {
     "message": "Jede Sitzung wird in einer eigenen Datei gespeichert.<br>Wenn diese Option nicht aktiviert ist, werden alle Sitzungen in einer einzigen Datei gespeichert, was Ihren Speicherplatz überlasten kann."
