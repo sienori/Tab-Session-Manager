@@ -420,16 +420,16 @@
     "message": "Gerätename auf bestehende Sitzungen anwenden?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Favicons komprimieren"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Favicons beim Speichern einer Sitzung komprimieren."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Alle Sitzungen komprimieren"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Komprimiert die Favicons aller aktuell gespeicherten Sitzungen. Dadurch wird weniger Arbeitsspeicher benötigt und das Laden von Sitzungen beschleunigt."
   },
   "compressLabel": {
     "message": "Compress"
