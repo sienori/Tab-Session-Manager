@@ -120,7 +120,7 @@
     "message": "Schlagwort entfernen"
   },
   "inputTagLabel": {
-    "message": "Marke Name eingeben"
+    "message": "Den Tag-Namen eingeben"
   },
   "detailLabel": {
     "message": "Details"
@@ -459,7 +459,7 @@
     "message": "Tab-Gruppen speichern"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Speichern und Wiederherstellen des Status von Tab-Gruppen. Um diese Funktion zu aktivieren, müssen Sie die folgende Erweiterung installieren."
+    "message": "Speichern und Wiederherstellen des Zustands von Tab-Gruppen. Um diese Funktion zu aktivieren, müssen Sie die folgende Erweiterung installieren."
   },
   "tstDelayCaptionLabel": {
     "message": "Um den Zustand der Baumstruktur wiederherzustellen, ist eine gewisse Verzögerung notwendig. Falls die Baumstruktur nicht korrekt wiederhergestellt wird, kann der Wert erhöht werden."
