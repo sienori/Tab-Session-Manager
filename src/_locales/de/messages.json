@@ -432,16 +432,16 @@
     "message": "Komprimiert die Favicons aller aktuell gespeicherten Sitzungen. Dadurch wird weniger Arbeitsspeicher benötigt und das Laden von Sitzungen beschleunigt."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Komprimiere"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Alle Sitzungen komprimieren?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Wird komprimiert..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Komprimierung abgeschlossen."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
