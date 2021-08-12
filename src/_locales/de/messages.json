@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Suchen nach Sitzung oder Tabnamen"
+    "message": "Suchen nach Sitzungs- oder Tabnamen"
   },
   "search": {
     "message": "Suchen"
@@ -219,7 +219,7 @@
     "message": "IndexedDB ist in deinem Browser nicht verfügbar."
   },
   "reloadExtensionLabel": {
-    "message": "Erweiterung neuladen"
+    "message": "Erweiterung neu laden"
   },
   "howToSolveLabel": {
     "message": "Wie dieses Problem gelöst werden kann"
@@ -477,7 +477,7 @@
     "message": "Cloud-Sync aktivieren (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Sessions in Google Drive™ speichern und mit anderen Computern synchronisieren."
+    "message": "Sitzungen in Google Drive™ speichern und mit anderen Computern synchronisieren."
   },
   "syncingLabel": {
     "message": "Synchronisiere"
@@ -486,13 +486,13 @@
     "message": "Lade herunter"
   },
   "uploadingLabel": {
-    "message": "Hochladen"
+    "message": "Wird hochgeladen"
   },
   "deletingLabel": {
-    "message": "Löschen"
+    "message": "Wird gelöscht"
   },
   "syncCompletedLabel": {
-    "message": "Sync abgeschlossen."
+    "message": "Synchronisierung abgeschlossen."
   },
   "signInLabel": {
     "message": "Anmelden"
