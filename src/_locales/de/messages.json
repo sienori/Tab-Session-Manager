@@ -291,7 +291,7 @@
     "message": "Vorherige Sitzung öffnen"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Öffnen Sie die Sitzung, die das letzte Mal geschlossen wurde."
+    "message": "Öffnen Sie die zuletzt geschlossene Sitzung."
   },
   "openStartupSessionLabel": {
     "message": "Öffne Autostart Sitzung"
@@ -363,7 +363,7 @@
     "message": "Individual backup"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Jede Sitzung wird in einer eigenen Datei gespeichert.<br>Wenn diese Option nicht aktiviert ist, werden alle Sitzungen in einer einzigen Datei gespeichert, was Ihren Speicherplatz überlasten kann."
   },
   "backupFolderLabel": {
     "message": "Gespeichert unter"
@@ -714,7 +714,7 @@
     "message": "Edge Add-ons"
   },
   "privacyPolicyLabel": {
-    "message": "Datenschutzrichtlinien"
+    "message": "Datenschutzrichtlinie"
   },
   "importMessage": {
     "message": "Sitzungen importiert."
