@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Suchen nach Sitzung oder Tabnamen"
+    "message": "Suchen nach Sitzungs- oder Tabnamen"
   },
   "search": {
     "message": "Suchen"
@@ -120,7 +120,7 @@
     "message": "Schlagwort entfernen"
   },
   "inputTagLabel": {
-    "message": "Marke Name eingeben"
+    "message": "Den Tag-Namen eingeben"
   },
   "detailLabel": {
     "message": "Details"
@@ -207,10 +207,10 @@
     "message": "Vom Start entfernen"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Bearbeite ein Fenster"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Aktuelle Registerkarte hinzufügen"
   },
   "errorLabel": {
     "message": "Fehler"
@@ -219,7 +219,7 @@
     "message": "IndexedDB ist in deinem Browser nicht verfügbar."
   },
   "reloadExtensionLabel": {
-    "message": "Erweiterung neuladen"
+    "message": "Erweiterung neu laden"
   },
   "howToSolveLabel": {
     "message": "Wie dieses Problem gelöst werden kann"
@@ -291,7 +291,7 @@
     "message": "Vorherige Sitzung öffnen"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Öffnen Sie die Sitzung, die das letzte Mal geschlossen wurde."
+    "message": "Öffnen Sie die zuletzt geschlossene Sitzung."
   },
   "openStartupSessionLabel": {
     "message": "Öffne Autostart Sitzung"
@@ -360,10 +360,10 @@
     "message": "Wenn der Browser startet, wird eine Sicherungskopiedatei von allen Sitzungen erstellt und im Download Ordner gespeichert."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Separate Sicherung"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Jede Sitzung wird in einer eigenen Datei gespeichert.<br>Wenn diese Option nicht aktiviert ist, werden alle Sitzungen in einer einzigen Datei gespeichert, was Ihren Speicherplatz überlasten kann."
   },
   "backupFolderLabel": {
     "message": "Gespeichert unter"
@@ -420,28 +420,28 @@
     "message": "Gerätename auf bestehende Sitzungen anwenden?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Favicons komprimieren"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Favicons beim Speichern einer Sitzung komprimieren."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Alle Sitzungen komprimieren"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Komprimiert die Favicons aller aktuell gespeicherten Sitzungen. Dadurch wird weniger Arbeitsspeicher benötigt und das Laden von Sitzungen beschleunigt."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Komprimiere"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Alle Sitzungen komprimieren?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Wird komprimiert..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Komprimierung abgeschlossen."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ignoriert private Fenster beim Speichern der Sitzung, wenn dieses Feld inaktiv ist."
@@ -459,7 +459,7 @@
     "message": "Tab-Gruppen speichern"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Speichern und Wiederherstellen des Status von Tab-Gruppen. Um diese Funktion zu aktivieren, müssen Sie die folgende Erweiterung installieren."
+    "message": "Speichern und Wiederherstellen des Zustands von Tab-Gruppen. Um diese Funktion zu aktivieren, müssen Sie die folgende Erweiterung installieren."
   },
   "tstDelayCaptionLabel": {
     "message": "Um den Zustand der Baumstruktur wiederherzustellen, ist eine gewisse Verzögerung notwendig. Falls die Baumstruktur nicht korrekt wiederhergestellt wird, kann der Wert erhöht werden."
@@ -477,7 +477,7 @@
     "message": "Cloud-Sync aktivieren (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Sessions in Google Drive™ speichern und mit anderen Computern synchronisieren."
+    "message": "Sitzungen in Google Drive™ speichern und mit anderen Computern synchronisieren."
   },
   "syncingLabel": {
     "message": "Synchronisiere"
@@ -486,13 +486,13 @@
     "message": "Lade herunter"
   },
   "uploadingLabel": {
-    "message": "Hochladen"
+    "message": "Wird hochgeladen"
   },
   "deletingLabel": {
-    "message": "Löschen"
+    "message": "Wird gelöscht"
   },
   "syncCompletedLabel": {
-    "message": "Sync abgeschlossen."
+    "message": "Synchronisierung abgeschlossen."
   },
   "signInLabel": {
     "message": "Anmelden"
@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "Wenn der Debug-Modus aktiviert ist, wird der Log zum Debugger ausgegeben."
   },
+  "exportSettingsLabel": {
+    "message": "Export settings"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Save the settings as a json file on the computer."
+  },
+  "importSettingsLabel": {
+    "message": "Import Settings"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Load the settings file saved on the computer."
+  },
   "resetSettingsLabel": {
     "message": "Einstellungen zurücksetzen"
   },
@@ -603,7 +615,13 @@
     "message": "Sitzungen importieren"
   },
   "importCaptionLabel": {
-    "message": "Lokal gespeicherte Sitzungen laden und zu der aktuellen Liste der Sitzungen hinzufügen.<br>Session-Dateien von SessionManager (.session) werden auch unterstützt."
+    "message": "Load sessions saved on the computer and add them to the session List."
+  },
+  "importCaptionLabel2": {
+    "message": "Supported files:"
+  },
+  "importCaptionLabel3": {
+    "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
     "message": "Auswählen..."
@@ -714,7 +732,7 @@
     "message": "Edge Add-ons"
   },
   "privacyPolicyLabel": {
-    "message": "Datenschutzrichtlinien"
+    "message": "Datenschutzrichtlinie"
   },
   "importMessage": {
     "message": "Sitzungen importiert."
