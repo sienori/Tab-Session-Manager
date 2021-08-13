@@ -591,10 +591,10 @@
     "message": "デバッグモードを有効にすると，デバッガにログが出力されます。"
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "設定をエクスポート"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "設定をjsonファイルとしてコンピュータに保存します。"
   },
   "importSettingsLabel": {
     "message": "Import Settings"
