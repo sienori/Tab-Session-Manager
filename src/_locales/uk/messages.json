@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "Коли увімкнено режим налагодження, журнал виводиться до налагоджувача."
   },
+  "exportSettingsLabel": {
+    "message": "Export settings"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Save the settings as a json file on the computer."
+  },
+  "importSettingsLabel": {
+    "message": "Import Settings"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Load the settings file saved on the computer."
+  },
   "resetSettingsLabel": {
     "message": "Скинути налаштувань"
   },
@@ -603,7 +615,13 @@
     "message": "Імпорт сесій"
   },
   "importCaptionLabel": {
-    "message": "Завантажити збережені раніше сесії. <br>Також підтримуються файли SessionManager (.session)."
+    "message": "Load sessions saved on the computer and add them to the session List."
+  },
+  "importCaptionLabel2": {
+    "message": "Supported files:"
+  },
+  "importCaptionLabel3": {
+    "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
     "message": "Перегляд..."
