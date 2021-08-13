@@ -615,7 +615,13 @@
     "message": "Імпорт сесій"
   },
   "importCaptionLabel": {
-    "message": "Завантажити збережені раніше сесії. <br>Також підтримуються файли SessionManager (.session)."
+    "message": "Load sessions saved on the computer and add them to the session List."
+  },
+  "importCaptionLabel2": {
+    "message": "Supported files:"
+  },
+  "importCaptionLabel3": {
+    "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
     "message": "Перегляд..."
