@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "디버그 모드가 활성화되면, 디버거로 로그가 출력됩니다."
   },
+  "exportSettingsLabel": {
+    "message": "Export settings"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Save the settings as a json file on the computer."
+  },
+  "importSettingsLabel": {
+    "message": "Import Settings"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Load the settings file saved on the computer."
+  },
   "resetSettingsLabel": {
     "message": "설정 초기화"
   },
