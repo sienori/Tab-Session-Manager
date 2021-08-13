@@ -615,7 +615,13 @@
     "message": "匯入瀏覽階段"
   },
   "importCaptionLabel": {
-    "message": "匯入電腦中儲存的瀏覽階段<br>此功能支援匯入 SessionManager 的瀏覽階段備份檔案 (.session)"
+    "message": "Load sessions saved on the computer and add them to the session List."
+  },
+  "importCaptionLabel2": {
+    "message": "Supported files:"
+  },
+  "importCaptionLabel3": {
+    "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
     "message": "瀏覽..."
