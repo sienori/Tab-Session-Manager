@@ -591,16 +591,16 @@
     "message": "Όταν έχει ενεργοποιηθεί η κατάσταση εντοπισμού σφαλμάτων, αποστέλλονται αρχεία καταγραφής στον αποσφαλματωτή."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Εξαγωγή ρυθμίσεων"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Αποθηκεύστε τις ρυθμίσεις ως αρχείο json στον υπολογιστή."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Εισαγωγή ρυθμίσεων"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Φόρτωση του αποθηκευμένου στον υπολογιστή αρχείου ρυθμίσεων."
   },
   "resetSettingsLabel": {
     "message": "Επαναφορά ρυθμίσεων"
