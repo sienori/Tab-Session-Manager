@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "Quando la modalità di debug è abilitata, il log viene mostrato nel debugger."
   },
+  "exportSettingsLabel": {
+    "message": "Export settings"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Save the settings as a json file on the computer."
+  },
+  "importSettingsLabel": {
+    "message": "Import Settings"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Load the settings file saved on the computer."
+  },
   "resetSettingsLabel": {
     "message": "Ripristina impostazioni"
   },
