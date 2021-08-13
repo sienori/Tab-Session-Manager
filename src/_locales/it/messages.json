@@ -615,7 +615,13 @@
     "message": "Importa sessioni"
   },
   "importCaptionLabel": {
-    "message": "Ripristina sessioni salvate sul computer e le aggiunge alla lista delle sessioni.<br>Supporta anche i file sessione di SessionManager (.session)."
+    "message": "Load sessions saved on the computer and add them to the session List."
+  },
+  "importCaptionLabel2": {
+    "message": "Supported files:"
+  },
+  "importCaptionLabel3": {
+    "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
     "message": "Sfoglia..."
