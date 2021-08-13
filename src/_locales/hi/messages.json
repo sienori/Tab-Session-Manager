@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "When debug mode is enabled, the log is output to the debugger."
   },
+  "exportSettingsLabel": {
+    "message": "Export settings"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Save the settings as a json file on the computer."
+  },
+  "importSettingsLabel": {
+    "message": "Import Settings"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Load the settings file saved on the computer."
+  },
   "resetSettingsLabel": {
     "message": "Reset settings"
   },
@@ -603,7 +615,13 @@
     "message": "सत्रों को आयात करें"
   },
   "importCaptionLabel": {
-    "message": "कंप्यूटर पर सहेजे गए सत्र लोड करें और उन्हें सत्र सूची में जोड़ें।<br>यह सत्र प्रबंधक की सत्र फ़ाइल (.सत्र) का भी समर्थन करता है।"
+    "message": "Load sessions saved on the computer and add them to the session List."
+  },
+  "importCaptionLabel2": {
+    "message": "Supported files:"
+  },
+  "importCaptionLabel3": {
+    "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
     "message": "ब्राउज़ करें..."
