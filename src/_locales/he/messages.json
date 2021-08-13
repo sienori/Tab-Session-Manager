@@ -615,7 +615,13 @@
     "message": "ייבא פעילויות"
   },
   "importCaptionLabel": {
-    "message": "טען פעילויות השמורות על המחשב והוסף אותן לרשימת הפעילויות.<br>זה גם תומך בקובץ פעילות (.session) של SessionManager."
+    "message": "Load sessions saved on the computer and add them to the session List."
+  },
+  "importCaptionLabel2": {
+    "message": "Supported files:"
+  },
+  "importCaptionLabel3": {
+    "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
     "message": "דפדף..."
