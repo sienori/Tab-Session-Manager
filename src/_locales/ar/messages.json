@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "عندما يكون وضع التنقيح مفعل، يخرج السجل إلى المصحح."
   },
+  "exportSettingsLabel": {
+    "message": "Export settings"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Save the settings as a json file on the computer."
+  },
+  "importSettingsLabel": {
+    "message": "Import Settings"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Load the settings file saved on the computer."
+  },
   "resetSettingsLabel": {
     "message": "إستعادة الإعدادات"
   },
