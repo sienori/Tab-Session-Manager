@@ -207,10 +207,10 @@
     "message": "Automatikus indulásról leválasztás"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Ablak szerkesztése"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Jelenlegi fül hozzáadása"
   },
   "errorLabel": {
     "message": "Hiba"
@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "Ha a hibakeresési mód engedélyezve, a napló a hibakeresőbe íródik."
   },
+  "exportSettingsLabel": {
+    "message": "Export settings"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Save the settings as a json file on the computer."
+  },
+  "importSettingsLabel": {
+    "message": "Import Settings"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Load the settings file saved on the computer."
+  },
   "resetSettingsLabel": {
     "message": "Alapbeállítások használata"
   },
@@ -603,7 +615,13 @@
     "message": "Munkamenetek importálása"
   },
   "importCaptionLabel": {
-    "message": "Munkamenetek betöltése a számítógépről és hozzáadása a munkamenet listához.<br>A SessionManager munkamenet fájlja (.session) is támogatva van."
+    "message": "Load sessions saved on the computer and add them to the session List."
+  },
+  "importCaptionLabel2": {
+    "message": "Supported files:"
+  },
+  "importCaptionLabel3": {
+    "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
     "message": "Tallózás..."
