@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "Όταν έχει ενεργοποιηθεί η κατάσταση εντοπισμού σφαλμάτων, αποστέλλονται αρχεία καταγραφής στον αποσφαλματωτή."
   },
+  "exportSettingsLabel": {
+    "message": "Εξαγωγή ρυθμίσεων"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Αποθηκεύστε τις ρυθμίσεις ως αρχείο json στον υπολογιστή."
+  },
+  "importSettingsLabel": {
+    "message": "Εισαγωγή ρυθμίσεων"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Φόρτωση του αποθηκευμένου στον υπολογιστή αρχείου ρυθμίσεων."
+  },
   "resetSettingsLabel": {
     "message": "Επαναφορά ρυθμίσεων"
   },
@@ -603,7 +615,13 @@
     "message": "Εισαγωγή συνεδριών"
   },
   "importCaptionLabel": {
-    "message": "Φόρτωση των αποθηκευμένων στον υπολογιστή συνεδριών και προσθήκη τους στη λίστα Συνεδρίες.<br>Υποστηρίζονται και αρχεία του SessionManager (.session)."
+    "message": "Load sessions saved on the computer and add them to the session List."
+  },
+  "importCaptionLabel2": {
+    "message": "Supported files:"
+  },
+  "importCaptionLabel3": {
+    "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
     "message": "Αναζήτηση..."
