@@ -53,7 +53,8 @@ const additionalCategory = {
       type: "file",
       accept: ".json",
       value: "importSaveButtonLabel",
-      onChange: importSettings
+      onChange: importSettings,
+      new: true
     },
     {
       id: "exportSettings",
@@ -63,7 +64,8 @@ const additionalCategory = {
       value: "exportButtonLabel",
       onClick: async () => {
         await exportSettings();
-      }
+      },
+      new: true
     },
     {
       id: "resetSettings",
