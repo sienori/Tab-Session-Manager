@@ -615,13 +615,13 @@
     "message": "Импорт сессий"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Загрузить сохранённые на своём компьютере сессии и добавить их в список сессий."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Поддерживаемые файлы:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Как импортировать сессии из других расширений"
   },
   "importButtonLabel": {
     "message": "Открыть"
