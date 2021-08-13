@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "デバッグモードを有効にすると，デバッガにログが出力されます。"
   },
+  "exportSettingsLabel": {
+    "message": "設定をエクスポート"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "設定をjsonファイルとしてコンピュータに保存します。"
+  },
+  "importSettingsLabel": {
+    "message": "設定をインポート"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "コンピュータに保存された設定ファイルを読み込みます。"
+  },
   "resetSettingsLabel": {
     "message": "設定をリセット"
   },
@@ -603,7 +615,13 @@
     "message": "セッションをインポート"
   },
   "importCaptionLabel": {
-    "message": "コンピュータに保存されたセッションを読み込んでセッションリストに追加します。<br>Session Managerのセッションファイル(.session)にも対応しています。"
+    "message": "コンピュータに保存されたセッションを読み込み，セッションリストに追加します。"
+  },
+  "importCaptionLabel2": {
+    "message": "対応ファイル:"
+  },
+  "importCaptionLabel3": {
+    "message": "他の拡張機能からセッションをインポートする方法"
   },
   "importButtonLabel": {
     "message": "参照..."
