@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "デバッグモードを有効にすると，デバッガにログが出力されます。"
   },
+  "exportSettingsLabel": {
+    "message": "Export settings"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Save the settings as a json file on the computer."
+  },
+  "importSettingsLabel": {
+    "message": "Import Settings"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Load the settings file saved on the computer."
+  },
   "resetSettingsLabel": {
     "message": "設定をリセット"
   },
