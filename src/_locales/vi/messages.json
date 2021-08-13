@@ -590,6 +590,18 @@
   "isDebugModeCaptionLabel": {
     "message": "Khi chế độ gỡ lỗi được bật, bản ghi sẽ được xuất ra trình gỡ lỗi."
   },
+  "exportSettingsLabel": {
+    "message": "Export settings"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Save the settings as a json file on the computer."
+  },
+  "importSettingsLabel": {
+    "message": "Import Settings"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Load the settings file saved on the computer."
+  },
   "resetSettingsLabel": {
     "message": "Đặt lại cài đặt"
   },
