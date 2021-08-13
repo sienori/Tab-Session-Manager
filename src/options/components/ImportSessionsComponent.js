@@ -5,28 +5,26 @@ import uuidv4 from "uuid/v4";
 import OptionContainer from "./OptionContainer";
 
 const fileOpen = file => {
-  return new Promise(function(resolve, reject) {
-    let reader = new FileReader();
-    reader.onload = event => {
+  return new Promise(resolve => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      let text = reader.result;
       if (file.name.toLowerCase().endsWith(".json")) {
-        if (!isJSON(reader.result)) {
-          //jsonの構文を判定
-          resolve(); //失敗
-        } else {
-          let jsonFile = JSON.parse(reader.result);
-          if (checkImportFile(jsonFile)) {
-            //データの構造を判定
-            jsonFile = parseSession(jsonFile);
-            resolve(jsonFile);
-          } else {
-            resolve(); //失敗
-          }
-        }
-      } else if (file.name.toLowerCase().endsWith(".session")) {
-        resolve(parseOldSession(reader.result));
-      } else {
-        resolve();
+        // Ignore BOM
+        if (text.charCodeAt(0) === 0xFEFF) text = text.substr(1);
+        if (!isJSON(text)) return resolve();
+
+        let jsonFile = JSON.parse(text);
+        if (isTSM(jsonFile)) return resolve(parseSession(jsonFile));
+        if (isSessionBuddy(jsonFile)) return resolve(convertSessionBuddy(jsonFile));
+        return resolve();
       }
+
+      if (file.name.toLowerCase().endsWith(".session")) {
+        return resolve(convertSessionManager(text));
+      }
+
+      return resolve();
     };
     reader.readAsText(file);
   });
@@ -47,7 +45,7 @@ const isArray = o => {
   return Object.prototype.toString.call(o) === "[object Array]";
 };
 
-const checkImportFile = file => {
+const isTSM = file => {
   if (!isArray(file)) return false;
 
   const correctKeys = ["windows", "tabsNumber", "name", "date", "tag", "sessionStartTime"];
@@ -91,7 +89,45 @@ const parseSession = file => {
   return file;
 };
 
-const parseOldSession = file => {
+const isSessionBuddy = file => {
+  const correctKeys = ["type", "generated", "created", "modified", "id", "gid", "windows"];
+  return file.hasOwnProperty("sessions") && correctKeys.every(key => file.sessions[0].hasOwnProperty(key));
+};
+
+const convertSessionBuddy = file => {
+  let sessions = [];
+  for (const SBSession of file.sessions) {
+    let session = {
+      windows: {},
+      windowsNumber: 0,
+      windowsInfo: {},
+      tabsNumber: 0,
+      name: SBSession?.name || "Unnamed Session",
+      date: moment(SBSession.created).valueOf(),
+      lastEditedTime: Date.now(),
+      tag: [],
+      sessionStartTime: moment(SBSession.generated).valueOf(),
+      id: uuidv4()
+    };
+
+    for (const window of SBSession.windows) {
+      session.windows[window.id] = {};
+      for (const tab of window.tabs) {
+        session.windows[window.id][tab.id] = tab;
+        session.tabsNumber++;
+      }
+      session.windowsInfo[window.id] = window;
+      delete session.windowsInfo[window.id].tabs;
+      session.windowsNumber++;
+    }
+
+    sessions.push(session);
+  }
+
+  return sessions;
+};
+
+const convertSessionManager = file => {
   let session = {};
   const line = file.split(/\r\n|\r|\n/);
 
@@ -229,7 +265,14 @@ export default class ImportSessionsComponent extends Component {
         <OptionContainer
           id="import"
           title="importLabel"
-          captions={["importCaptionLabel"]}
+          captions={["importCaptionLabel", "importCaptionLabel2"]}
+          extraCaption={<p className="caption">
+            - Tab Session Manager (.json)<br />
+            - Session Buddy (.json)<br />
+            - Session Manager (.session)<br />
+            <a href="https://github.com/sienori/Tab-Session-Manager/wiki/Q&A:-How-to-import-sessions-from-other-extensions"
+              target="_blank">{browser.i18n.getMessage("importCaptionLabel3")} </a>
+          </p>}
           type="file"
           value="importButtonLabel"
           accept=".json, .session"
