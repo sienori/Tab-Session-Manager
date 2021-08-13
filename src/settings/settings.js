@@ -57,3 +57,57 @@ export const handleSettingsChange = (changes, area) => {
     currentSettings = changes.Settings.newValue;
   }
 };
+
+export const exportSettings = async () => {
+  const settingsIds = getSettingsIds();
+
+  let settingsObj = {};
+  for (const id of settingsIds) {
+    settingsObj[id] = getSettings(id);
+  }
+
+  const downloadUrl = URL.createObjectURL(
+    new Blob([JSON.stringify(settingsObj, null, "  ")], {
+      type: "aplication/json"
+    })
+  );
+
+  await browser.downloads.download({
+    url: downloadUrl,
+    filename: `TabSessionManager_Settings.json`,
+    saveAs: true
+  });
+};
+
+export const importSettings = async e => {
+  const reader = new FileReader();
+
+  reader.onload = async () => {
+    const importedSettings = JSON.parse(reader.result);
+    const settingsIds = getSettingsIds();
+
+    for (const id of settingsIds) {
+      if (importedSettings[id] !== undefined) await setSettings(id, importedSettings[id]);
+    }
+
+    location.reload(true);
+  };
+
+  const file = e.target.files[0];
+  reader.readAsText(file);
+};
+
+const getSettingsIds = () => {
+  let settingsIds = [];
+  defaultSettings.forEach(category => {
+    category.elements.forEach(optionElement => {
+      if (optionElement.id && optionElement.default !== undefined) settingsIds.push(optionElement.id);
+      if (optionElement.childElements) {
+        optionElement.childElements.forEach(childElement => {
+          if (childElement.id && childElement.default !== undefined) settingsIds.push(childElement.id);
+        });
+      }
+    });
+  });
+  return settingsIds;
+};
