@@ -591,16 +591,16 @@
     "message": "Lorsque le mode débogage est activé, le journal est affiché dans le débogueur."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Exporter les paramètres"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Enregistre les paramètres sous forme d’un fichier JSON sur l’ordinateur."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importer des paramètres"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Charge le fichier de paramètres conservé sur l’ordinateur."
   },
   "resetSettingsLabel": {
     "message": "Réinitialiser les paramètres"
