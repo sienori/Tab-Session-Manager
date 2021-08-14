@@ -615,13 +615,13 @@
     "message": "Sitzungen importieren"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Lade Sitzungen vom Computer und füge sie zur Session-Liste."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Unterstützte Dateitypen:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Wie man Sitzungen von anderen Erweiterungen importiert"
   },
   "importButtonLabel": {
     "message": "Auswählen..."
