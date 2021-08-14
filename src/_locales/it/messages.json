@@ -591,13 +591,13 @@
     "message": "Quando la modalità di debug è abilitata, il log viene mostrato nel debugger."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Esporta impostazioni"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Salva le impostazioni in un file json sul computer."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importa impostazioni"
   },
   "importSettingsCaptionLabel": {
     "message": "Load the settings file saved on the computer."
@@ -615,13 +615,13 @@
     "message": "Importa sessioni"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Carica le sessioni salvate sul computer e aggiungile alla lista delle sessioni."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "File supportati:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Come importare sessioni da altre estensioni"
   },
   "importButtonLabel": {
     "message": "Sfoglia..."
