@@ -591,16 +591,16 @@
     "message": "Ha a hibakeresési mód engedélyezve, a napló a hibakeresőbe íródik."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Beállítások exportálása"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Beállítások mentése a gépre json fájlként."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Beállítások importálása"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "A gépre mentett beállítások fájl betöltése."
   },
   "resetSettingsLabel": {
     "message": "Alapbeállítások használata"
@@ -615,13 +615,13 @@
     "message": "Munkamenetek importálása"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Gépen tárolt munkamenetek betöltése és a munkamenet listához hozzáadása."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Támogatott fájlok:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Hogyan lehet munkameneteket importálni más kiegészítőkből"
   },
   "importButtonLabel": {
     "message": "Tallózás..."
