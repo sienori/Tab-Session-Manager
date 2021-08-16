@@ -82,3 +82,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Sebastian Fohler
 - Nicole J. LeBoeuf
 - Bill Nichols
+- baswein
