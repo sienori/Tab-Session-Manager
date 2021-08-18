@@ -83,3 +83,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Nicole J. LeBoeuf
 - Bill Nichols
 - baswein
+- Brooke Austin
