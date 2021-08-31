@@ -456,10 +456,10 @@
     "message": "Atraso na restauração da árvore (milissegundos)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Salvar grupos de aba"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Salva e restaura o estado dos grupos de aba. Para ativar esta função, deve instalar a seguinte extensão."
   },
   "tstDelayCaptionLabel": {
     "message": "Para restaurar o estado da árvore, espere o tempo necessário para abrir a guia. Aumente este valor se a árvore não for restaurada corretamente."
@@ -591,16 +591,16 @@
     "message": "Quando o modo de depuração está ativado, o log é enviado para o depurador."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Exportar configurações"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Salva as configurações no computador como um arquivo json."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importar configurações"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Carrega o arquivo de configurações salvo no computador."
   },
   "resetSettingsLabel": {
     "message": "Redefinir as configurações"
