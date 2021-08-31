@@ -360,10 +360,10 @@
     "message": "Quando o navegador iniciar, crie um arquivo backup das sessões e salve ele na pasta de downloads."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Backup individual"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Cada sessão é salva num arquivo separado.<br>Se desmarcado, todas as sessões serão salvas num único arquivo, que pode ficar muito grande."
   },
   "backupFolderLabel": {
     "message": "Local para salvar"
