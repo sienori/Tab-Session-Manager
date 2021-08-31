@@ -618,10 +618,10 @@
     "message": "Carrega as sessões salvas no computador e ade-as à lista de sessão."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Arquivos suportados:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Como importar sessões de outras estensões"
   },
   "importButtonLabel": {
     "message": "Explorar..."
@@ -723,13 +723,13 @@
     "message": "Página da extensão"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Extensões para o Firefox"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Complementos do Edge"
   },
   "privacyPolicyLabel": {
     "message": "Política de privacidade"
