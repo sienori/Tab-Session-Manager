@@ -120,7 +120,7 @@
     "message": "태그 제거"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "태그 이름 입력하기"
   },
   "detailLabel": {
     "message": "세부 정보"
@@ -207,10 +207,10 @@
     "message": "홈페이지에서 제외"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "창 수정하기"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "현재 탭 추가하기"
   },
   "errorLabel": {
     "message": "오류"
