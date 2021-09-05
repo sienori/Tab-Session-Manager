@@ -420,7 +420,7 @@
     "message": "모든 세션에 장치 이름을 등록하겠나요?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "파비콘 압축"
   },
   "compressFaviconUrlCaptionLabel": {
     "message": "Compress the favicons when saving a session."
