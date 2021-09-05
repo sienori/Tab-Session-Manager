@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "창과 탭의 상태를 저장하고 복원합니다. 자동 저장도 지원합니다."
+    "message": "창과 탭의 상태를 저장하고 복원합니다. 자동 저장 또한 지원합니다."
   },
   "donateWithPaypalLabel": {
     "message": "페이팔로 후원하기"
@@ -621,7 +621,7 @@
     "message": "지원되는 파일들:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "다른 확장 프로그램에서 세션을 불러오는 방법"
   },
   "importButtonLabel": {
     "message": "찾아보기..."
@@ -681,7 +681,7 @@
     "message": "사용할 수 없는 단축키입니다"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "툴바 팝업 열기"
   },
   "saveCurrentWindowDescription": {
     "message": "세션 저장 (현재 창만)"
@@ -711,10 +711,10 @@
     "message": "Tab Session Manager을 사용해주셔서 감사합니다.<br>보내주신 응원은 저희가 계속 만들어나갈 수 있는 큰 힘이 되어줍니다.<br>Tab Session Manager를 좋아하신다면, 후원을 통한 응원을 고려해주세요."
   },
   "amazonTitleLabel": {
-    "message": "amazon.co.jp eGift Cards"
+    "message": "amazon.co.jp eGift 카드"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "스폰서"
   },
   "addonPageLabel": {
     "message": "설치 페이지"
@@ -723,13 +723,13 @@
     "message": "설치 페이지"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "파이어폭스 추가 기능"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Chrome 웹 스토어"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge 애드온"
   },
   "privacyPolicyLabel": {
     "message": "개인정보보호정책"
