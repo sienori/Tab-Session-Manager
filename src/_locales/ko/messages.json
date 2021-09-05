@@ -267,7 +267,7 @@
     "message": "세션을 열 때, 탭을 클릭하기 전까지는 각 페이지의 내용을 로드하지 않습니다.<br>비활성화 시, 세션이 열릴 때 메모리 사용이 급증합니다."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "탭 느리게 열기를 위해 \"discarded\" 속성 사용"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "이 옵션을 활성화하면 탭을 열 때 성능이 향상됩니다."
@@ -360,10 +360,10 @@
     "message": "브라우저를 켤 때, 백업본을 만들어 다운로드 폴더에 저장합니다."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "개별 백업"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "각 세션은 개별 파일에 저장됩니다.<br>체크하지 않았다면 모든 세션은 한 파일에 저장 됩니다, 이는 사용자의 저장 공간을 가득 채울 수도 있습니다."
   },
   "backupFolderLabel": {
     "message": "저장 위치"
