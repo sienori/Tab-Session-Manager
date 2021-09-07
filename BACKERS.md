@@ -85,3 +85,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - baswein
 - Brooke Austin
 - Olzhas Suleimen
+- Ymje Sköld
