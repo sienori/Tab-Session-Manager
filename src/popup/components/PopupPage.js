@@ -138,6 +138,7 @@ export default class PopupPage extends Component {
     }
 
     browser.storage.onChanged.addListener(handleSettingsChange);
+    window.addEventListener("unload", this.handleUnload, { once: true });
     browser.runtime.sendMessage({ message: "updateUndoStatus" });
 
     if (getSettings("isShowUpdated")) {
@@ -304,6 +305,10 @@ export default class PopupPage extends Component {
   handleUpdateUndoStatus = request => {
     if (!request.undoStatus) return;
     this.setState({ undoStatus: request.undoStatus });
+  };
+
+  handleUnload = () => {
+    browser.storage.onChanged.removeListener(handleSettingsChange);
   };
 
   changeFilterValue = value => {
