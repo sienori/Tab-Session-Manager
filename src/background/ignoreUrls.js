@@ -16,7 +16,7 @@ const matchesPageUrl = (pageUrl, urlPattern) => {
 
 export default session => {
   const ignoreUrlList = getSettings("ignoreUrlList").split("\n");
-  ignoreUrlList.push(`${browser.extension.getURL("popup/index.html")}*`);
+  ignoreUrlList.push(`${browser.runtime.getURL("popup/index.html")}*`);
   log.log(logDir, "ignoreUrls()", session, ignoreUrlList);
 
   let editedSession = clone(session);
