@@ -20,6 +20,9 @@ const generalConfig = {
   resolve: {
     alias: {
       src: path.resolve(__dirname, "src/")
+    },
+    fallback: {
+      "url": require.resolve("url/")
     }
   },
   module: {

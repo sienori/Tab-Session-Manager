@@ -26,6 +26,9 @@ const generalConfig = {
   resolve: {
     alias: {
       src: path.resolve(__dirname, "src/")
+    },
+    fallback: {
+      "url": require.resolve("url/")
     }
   },
   module: {
@@ -117,48 +120,51 @@ module.exports = [
     output: getOutput("copiedSource", config.tempDirectory),
     plugins: [
       new MiniCssExtractPlugin(),
-      new CopyWebpackPlugin([
-        {
-          from: `src`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/src/`)
-        },
-        {
-          from: `babel.config.js`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/babel.config.js`)
-        },
-        {
-          from: `config.json`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/config.json`)
-        },
-        {
-          from: `LICENSE`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/LICENSE`)
-        },
-        {
-          from: `package.json`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package.json`)
-        },
-        {
-          from: `package-lock.json`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package-lock.json`)
-        },
-        {
-          from: `README.md`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/README.md`)
-        },
-        {
-          from: `webpack.config.dev.js`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.config.dev.js`)
-        },
-        {
-          from: `webpack.config.dist.js`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.config.dist.js`)
-        },
-        {
-          from: `webpack.utils.js`,
-          to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.utils.js`)
-        }
-      ]),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: `src`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/src/`),
+            info: { minimized: true },
+          },
+          {
+            from: `babel.config.js`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/babel.config.js`)
+          },
+          {
+            from: `config.json`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/config.json`)
+          },
+          {
+            from: `LICENSE`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/LICENSE`)
+          },
+          {
+            from: `package.json`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package.json`)
+          },
+          {
+            from: `package-lock.json`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/package-lock.json`)
+          },
+          {
+            from: `README.md`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/README.md`)
+          },
+          {
+            from: `webpack.config.dev.js`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.config.dev.js`)
+          },
+          {
+            from: `webpack.config.dist.js`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.config.dist.js`)
+          },
+          {
+            from: `webpack.utils.js`,
+            to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/webpack.utils.js`)
+          }
+        ]
+      }),
       getZipPlugin(`copiedSource-${config.extName}-${ffExtVersion}`, config.distDirectory, "other/")
     ]
   }

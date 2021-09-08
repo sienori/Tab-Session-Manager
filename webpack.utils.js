@@ -53,37 +53,41 @@ const getEntry = (sourceDir = "src") => {
 };
 
 const getCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src") => [
-  new CopyWebpackPlugin([
-    {
-      from: `${sourceDir}/icons`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/icons`)
-    },
-    {
-      from: `${sourceDir}/_locales`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/_locales`)
-    },
-    {
-      from: `${sourceDir}/manifest.json`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/manifest.json`)
-    }
-  ])
+  new CopyWebpackPlugin({
+    patterns: [
+      {
+        from: `${sourceDir}/icons`,
+        to: path.resolve(__dirname, `${outputDir}/${browserDir}/icons`)
+      },
+      {
+        from: `${sourceDir}/_locales`,
+        to: path.resolve(__dirname, `${outputDir}/${browserDir}/_locales`)
+      },
+      {
+        from: `${sourceDir}/manifest.json`,
+        to: path.resolve(__dirname, `${outputDir}/${browserDir}/manifest.json`)
+      }
+    ]
+  })
 ];
 
 const getFirefoxCopyPlugins = (browserDir, outputDir = "dev", sourceDir = "src") => [
-  new CopyWebpackPlugin([
-    {
-      from: `${sourceDir}/icons`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/icons`)
-    },
-    {
-      from: `${sourceDir}/_locales`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/_locales`)
-    },
-    {
-      from: `${sourceDir}/manifest-ff.json`,
-      to: path.resolve(__dirname, `${outputDir}/${browserDir}/manifest.json`)
-    }
-  ])
+  new CopyWebpackPlugin({
+    patterns: [
+      {
+        from: `${sourceDir}/icons`,
+        to: path.resolve(__dirname, `${outputDir}/${browserDir}/icons`)
+      },
+      {
+        from: `${sourceDir}/_locales`,
+        to: path.resolve(__dirname, `${outputDir}/${browserDir}/_locales`)
+      },
+      {
+        from: `${sourceDir}/manifest-ff.json`,
+        to: path.resolve(__dirname, `${outputDir}/${browserDir}/manifest.json`)
+      }
+    ]
+  })
 ];
 
 const getMiniCssExtractPlugin = () => [
