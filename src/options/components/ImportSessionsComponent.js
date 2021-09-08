@@ -278,7 +278,6 @@ export default class ImportSessionsComponent extends Component {
           accept=".json, .session"
           multiple={true}
           onChange={this.readSessions.bind(this)}
-          new={true}
         >
           <ul className="childElements">
             {this.state.importedFiles.map((file, index) => (
