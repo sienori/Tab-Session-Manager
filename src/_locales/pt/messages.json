@@ -3,10 +3,10 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Salve e restaure o estado de janelas e abas. Também suporta salvamento automático."
+    "message": "Salve e restaure o estado das janelas e abas. Também oferece salvamento automático."
   },
   "donateWithPaypalLabel": {
-    "message": "Doe com PayPal"
+    "message": "Doar com PayPal"
   },
   "donateLabel": {
     "message": "Doar"
