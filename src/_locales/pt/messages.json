@@ -24,13 +24,13 @@
     "message": "Inserir nome da sessão"
   },
   "saveSessionLabel": {
-    "message": "Salvar sessão"
+    "message": "Salvar uma sessão"
   },
   "saveAllWindowsLabel": {
     "message": "Salvar todas as janelas"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Salvar somente a janela atual"
+    "message": "Salvar apenas a janela atual"
   },
   "categoryFilterLabel": {
     "message": "Filtro de categorias"
