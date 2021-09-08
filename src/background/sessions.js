@@ -7,6 +7,7 @@ let DB;
 export default {
   init: () => {
     log.log(logDir, "init()");
+    navigator.storage.persist();
     const request = window.indexedDB.open("sessions", 1);
 
     request.onupgradeneeded = e => {

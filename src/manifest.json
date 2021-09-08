@@ -6,6 +6,7 @@
   "default_locale": "en",
   "permissions": [
     "storage",
+    "unlimitedStorage",
     "tabs",
     "downloads",
     "identity"
