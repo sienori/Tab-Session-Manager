@@ -591,16 +591,16 @@
     "message": "När felsökningsläget är aktiverat skickas loggen till avlusaren."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Exportinställningar"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Spara inställningarna som en json-fil på datorn."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importinställningar"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Ladda den sparade inställningsfilen från datorn."
   },
   "resetSettingsLabel": {
     "message": "Återställ inställningarna"
@@ -615,13 +615,13 @@
     "message": "Importera sessioner"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Ladda sessioner sparade på datorn och lägg till dem i sessionslistan."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Filer som stöds:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Hur man importerar sessioner från andra tillägg"
   },
   "importButtonLabel": {
     "message": "Bläddra..."

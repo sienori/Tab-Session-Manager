@@ -120,7 +120,7 @@
     "message": "移除標籤"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "輸入標籤名稱"
   },
   "detailLabel": {
     "message": "詳細資訊"
@@ -210,7 +210,7 @@
     "message": "Edit a window"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "新增目前分頁"
   },
   "errorLabel": {
     "message": "錯誤"
@@ -420,7 +420,7 @@
     "message": "套用裝置名稱至所有瀏覽階段?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "壓縮網站圖示"
   },
   "compressFaviconUrlCaptionLabel": {
     "message": "Compress the favicons when saving a session."
@@ -432,13 +432,13 @@
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "壓縮"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "確認要壓縮所有瀏覽階段？"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "正在壓縮..."
   },
   "compressionCompleteLabel": {
     "message": "Compression completed."
