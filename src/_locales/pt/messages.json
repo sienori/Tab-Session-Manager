@@ -309,7 +309,7 @@
     "message": "Salvar a sessão a cada X minutos."
   },
   "autoSaveIntervalLabel": {
-    "message": "Intervado (minutos)"
+    "message": "Intervalo (minutos)"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "Valor mínimo 0.1"
@@ -321,7 +321,7 @@
     "message": "Número máximo de sessões salvas (desta forma)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Salvar a sessão quando a janela foi fechada"
+    "message": "Salvar a sessão quando a janela for fechada"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
     "message": "Salvar a sessão que inclui somente uma janela fechada."
@@ -708,7 +708,7 @@
     "message": "Por favor, faça uma doação"
   },
   "donationCaptionLabel": {
-    "message": "Obrigado por usar Tab Session Manager.<br>Seu apoio será um grande incentivo, como eu continuar a desenvolver o complemento. <br> Se você gosta de Tab Session Manager, ficaria satisfeito se você poderia considerar a doação."
+    "message": "Obrigado por usar o Tab Session Manager.<br>Seu apoio será um grande incentivo, à medida que continuo a desenvolver o complemento.<br>Se você gosta do Tab Session Manager, eu ficaria grato se você pudesse considerar uma doação."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp Gift Cards"
@@ -717,7 +717,7 @@
     "message": "Patrocinadores"
   },
   "addonPageLabel": {
-    "message": "Página do add-on"
+    "message": "Página do complemento"
   },
   "extensionPageLabel": {
     "message": "Página da extensão"
@@ -735,13 +735,13 @@
     "message": "Política de privacidade"
   },
   "importMessage": {
-    "message": "Sessões de importados."
+    "message": "Sessões importadas."
   },
   "readFailedMessage": {
     "message": "Falha de leitura"
   },
   "warningRemoveAllMessage": {
-    "message": "Apagar todas as sessões. Tem certeza?"
+    "message": "Excluir todas as sessões. Você tem certeza?"
   },
   "sessionLabel": {
     "message": "Sessão"
@@ -750,7 +750,7 @@
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://addons.mozilla.org/pt-BR/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Esta página não pode ser aberta pelo Tab Session Manager."
