@@ -612,16 +612,16 @@
     "message": "Redefinir"
   },
   "importLabel": {
-    "message": "Sessões de importação"
+    "message": "Importar sessões"
   },
   "importCaptionLabel": {
-    "message": "Carrega as sessões salvas no computador e ade-as à lista de sessão."
+    "message": "Carregar as sessões salvas no computador e adicioná-las à lista de sessão."
   },
   "importCaptionLabel2": {
     "message": "Arquivos suportados:"
   },
   "importCaptionLabel3": {
-    "message": "Como importar sessões de outras estensões"
+    "message": "Como importar sessões de outras extensões"
   },
   "importButtonLabel": {
     "message": "Explorar..."
