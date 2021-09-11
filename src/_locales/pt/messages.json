@@ -357,7 +357,7 @@
     "message": "Salvar backup"
   },
   "ifBackupCaptionLabel": {
-    "message": "Quando o navegador iniciar, crie um arquivo backup das sessões e salve ele na pasta de downloads."
+    "message": "Quando o navegador iniciar, crie um arquivo de backup das sessões e salve ele na pasta de downloads."
   },
   "individualBackupLabel": {
     "message": "Backup individual"
@@ -384,7 +384,7 @@
     "message": "Formato da data"
   },
   "dateFormatCaptionLabel": {
-    "message": "Exemplo: YYYY. MM. DD HH:mm:ss"
+    "message": "Exemplo: AAAA. MM. DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
     "message": "Salvar janela privada"
@@ -420,16 +420,16 @@
     "message": "Aplicar o nome do dispositivo a todas as sessões?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Comprimir favicons"
+    "message": "Comprimir ícones da página"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Comprime os ícones de página ao salvar uma sessão."
+    "message": "Comprimir os ícones da página ao salvar uma sessão."
   },
   "compressAllSessionsLabel": {
     "message": "Comprimir todas as sessões"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Comprime os favicons de todas as sessões salvas atualmente. Isso poupará memória e agilizará a carga de sessão."
+    "message": "Comprimir os ícones da página de todas as sessões salvas atualmente. Isso poupará memória e agilizará a carga de sessão."
   },
   "compressLabel": {
     "message": "Comprimir"
@@ -450,7 +450,7 @@
     "message": "Suporta Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restaurar o estado da árvore da guia Tree Style Tab.<br>Quando esta opção está ativada, leva algum tempo para restaurar a sessão."
+    "message": "Restaurar o estado da árvore da aba Tree Style Tab.<br>Quando esta opção está ativada, leva algum tempo para restaurar a sessão."
   },
   "tstDelayLabel": {
     "message": "Atraso na restauração da árvore (milissegundos)"
@@ -459,7 +459,7 @@
     "message": "Salvar grupos de aba"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Salva e restaura o estado dos grupos de aba. Para ativar esta função, deve instalar a seguinte extensão."
+    "message": "Salvar e restaurar o estado dos grupos de aba. Para ativar esta função, deve instalar a seguinte extensão."
   },
   "tstDelayCaptionLabel": {
     "message": "Para restaurar o estado da árvore, espere o tempo necessário para abrir a guia. Aumente este valor se a árvore não for restaurada corretamente."
