@@ -528,10 +528,10 @@
     "message": "Selecione o comportamento padrão do botão de \"Salvar\"."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Mostrar botões \"Abrir\" ou \"Deletar\" na lista de sessões"
+    "message": "Mostrar botões \"Abrir\" / \"Excluir\" na lista de sessões"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Mostrar botões \"Abrir\" ou \"Deletar\" quando o cursor estiver sobre a lista de sessão."
+    "message": "Mostrar botões \"Abrir\" / \"Excluir\" quando o cursor estiver sobre a lista de sessão."
   },
   "sizeLabel": {
     "message": "Tamanho"
@@ -549,10 +549,10 @@
     "message": "Largura da barra lateral"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Abrir lista de sessões na guia"
+    "message": "Abrir lista de sessões na aba"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Abrir lista de sessão na guia quando o botão da barra de ferramentas é clicado."
+    "message": "Abrir lista de sessão na aba quando o botão da barra de ferramentas é clicado."
   },
   "themeLabel": {
     "message": "Tema"
@@ -573,16 +573,16 @@
     "message": "Exibir página de opções ao atualizar"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Exibir a página de opções quando a Guia Gerenciador de Sessão é atualizada. Você pode saber o conteúdo da atualização rapidamente."
+    "message": "Exibir a página de opções quando o Tab Session Manager for atualizado. Você pode saber o conteúdo da atualização rapidamente."
   },
   "NotificationOnUpdateLabel": {
-    "message": "A Guia Gerenciador de Sessão foi atualizada!"
+    "message": "Tab Session Manager foi atualizado!"
   },
   "seeMoreLabel": {
     "message": "Ver mais"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Clique para ver as informações de atualização."
+    "message": "Clique para ver as informações da atualização."
   },
   "isDebugModeLabel": {
     "message": "Ativar modo de depuração"
@@ -594,13 +594,13 @@
     "message": "Exportar configurações"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Salva as configurações no computador como um arquivo json."
+    "message": "Salvar as configurações como um arquivo json no computador."
   },
   "importSettingsLabel": {
     "message": "Importar configurações"
   },
   "importSettingsCaptionLabel": {
-    "message": "Carrega o arquivo de configurações salvo no computador."
+    "message": "Carregar o arquivo de configurações salvo no computador."
   },
   "resetSettingsLabel": {
     "message": "Redefinir as configurações"
@@ -609,7 +609,7 @@
     "message": "Restaurar todas as configurações para o padrão."
   },
   "resetSettingsButtonLabel": {
-    "message": "Resetar"
+    "message": "Redefinir"
   },
   "importLabel": {
     "message": "Sessões de importação"
