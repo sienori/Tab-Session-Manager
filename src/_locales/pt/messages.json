@@ -324,7 +324,7 @@
     "message": "Salvar a sessão quando a janela for fechada"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Salve a sessão que inclui somente uma janela fechada."
+    "message": "Salvar a sessão que inclui somente uma janela fechada."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Número máximo salvo"
@@ -423,13 +423,13 @@
     "message": "Comprimir ícones da página"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Comprime os ícones de página ao salvar uma sessão."
+    "message": "Comprimir os ícones da página ao salvar uma sessão."
   },
   "compressAllSessionsLabel": {
     "message": "Comprimir todas as sessões"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Comprimir os ícones da página de todas as sessões salvas atualmente. Isso poupará memória e agilizará a carga de sessão."
+    "message": "Comprimir os ícones de página de todas as sessões salvas atualmente. Isso poupará memória e agilizará a carga de sessão."
   },
   "compressLabel": {
     "message": "Comprimir"
@@ -708,7 +708,7 @@
     "message": "Por favor, faça uma doação"
   },
   "donationCaptionLabel": {
-    "message": "Obrigado por usar o Tab Session Manager.<br>Seu apoio será um grande incentivo, à medida que continuo a desenvolver o complemento.<br>Se você gosta do Tab Session Manager, eu ficaria grato se você pudesse considerar uma doação."
+    "message": "Obrigado por usar Tab Session Manager.<br>Seu apoio será um grande estímulo para eu continuar a desenvolver a extensão.<br>Se você gosta do Tab Session Manager, eu apreciaria se considerasse doar."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp Gift Cards"
@@ -717,7 +717,7 @@
     "message": "Patrocinadores"
   },
   "addonPageLabel": {
-    "message": "Página do complemento"
+    "message": "Página da extensão"
   },
   "extensionPageLabel": {
     "message": "Página da extensão"
