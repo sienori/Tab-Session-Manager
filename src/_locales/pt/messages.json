@@ -636,10 +636,10 @@
     "message": "Importar lista de URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Crie uma sessão da lista de URLs e adicione-a à lista de sessão.<br>Formato: &lt;URL&gt; &lt;título da página (opcional)&gt;"
+    "message": "Criar uma sessão da lista de URLs e adicioná-la à lista de sessão.<br>Formato: &lt;URL&gt; &lt;título da página (opcional)&gt;"
   },
   "exportLabel": {
-    "message": "Sessões de exportação"
+    "message": "Exportar sessões"
   },
   "exportCaptionLabel": {
     "message": "Salvar todas as sessões no computador."
@@ -648,7 +648,7 @@
     "message": "Exportar"
   },
   "removeSessionsLabel": {
-    "message": "Apagar as sessões"
+    "message": "Excluir sessões"
   },
   "removeSessionsCaptionLabel": {
     "message": "Excluir todas as sessões."
@@ -657,10 +657,10 @@
     "message": "Excluir"
   },
   "keyboardShortcutsLabel": {
-    "message": "Atalhos de teclado"
+    "message": "Atalhos do teclado"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Definir atalhos de teclado."
+    "message": "Definir atalhos do teclado."
   },
   "typeShortcutMessage": {
     "message": "Digite um atalho"
@@ -705,7 +705,7 @@
     "message": "Licença"
   },
   "donationLabel": {
-    "message": "Faça uma doação"
+    "message": "Por favor, faça uma doação"
   },
   "donationCaptionLabel": {
     "message": "Obrigado por usar Tab Session Manager.<br>Seu apoio será um grande incentivo, como eu continuar a desenvolver o complemento. <br> Se você gosta de Tab Session Manager, ficaria satisfeito se você poderia considerar a doação."
