@@ -504,7 +504,7 @@
     "message": "Sincronizar automaticamente"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Executar a sincronização na nuvem quando o navegador for iniciado e quando a sessão for salva."
+    "message": "Executar sincronização na nuvem ao iniciar o navegador e ao salvar a sessão."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Sincronizar sessões de salvamento automático"
@@ -552,7 +552,7 @@
     "message": "Abrir lista de sessões na aba"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Abrir lista de sessão na aba quando o botão da barra de ferramentas é clicado."
+    "message": "Abrir lista de sessão na aba ao clicar no botão da barra de ferramentas."
   },
   "themeLabel": {
     "message": "Tema"
