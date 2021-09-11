@@ -78,25 +78,25 @@
     "message": "Excluir esta sessão?"
   },
   "sessionDeletedLabel": {
-    "message": "Sessão apagada."
+    "message": "Sessão excluída."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Janela da sessão apagada."
+    "message": "Janela da sessão excluída."
   },
   "sessionTabDeletedLabel": {
-    "message": "Aba da sessão apagada."
+    "message": "Aba da sessão excluída."
   },
   "restoreSessionLabel": {
     "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Falha ao apagar sessão."
+    "message": "Falha ao excluir sessão."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Falha ao apagar janela da sessão."
+    "message": "Falha ao excluir janela da sessão."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Falha ao apagar aba da sessão."
+    "message": "Falha ao excluir aba da sessão."
   },
   "sessionSavedLabel": {
     "message": "Sessão salva."
@@ -210,7 +210,7 @@
     "message": "Editar uma janela"
   },
   "addCurrentTabLabel": {
-    "message": "Adir aba atual"
+    "message": "Adicionar aba atual"
   },
   "errorLabel": {
     "message": "Erro"
@@ -312,7 +312,7 @@
     "message": "Intervado (minutos)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Valor minimo 0.1"
+    "message": "Valor mínimo 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Número máximo salvo"
@@ -324,10 +324,10 @@
     "message": "Salvar a sessão quando a janela foi fechada"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Salve a sessão que inclui somente uma janela fechada."
+    "message": "Salvar a sessão que inclui somente uma janela fechada."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Número máximo guardado"
+    "message": "Número máximo salvo"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Número máximo de sessões salvas (desta forma)."
@@ -339,7 +339,7 @@
     "message": "Salvar a sessão quando várias janelas forem fechadas em sequência."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Número máximo guardado"
+    "message": "Número máximo salvo"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
     "message": "Número máximo de sessões salvas (desta forma)."
@@ -351,10 +351,10 @@
     "message": "Ao salvar uma sessão automaticamente, use o título da página aberta como o nome da sessão."
   },
   "backupLabel": {
-    "message": "Cópia de segurança"
+    "message": "Backup"
   },
   "ifBackupLabel": {
-    "message": "Salvar Backup"
+    "message": "Salvar backup"
   },
   "ifBackupCaptionLabel": {
     "message": "Quando o navegador iniciar, crie um arquivo backup das sessões e salve ele na pasta de downloads."
