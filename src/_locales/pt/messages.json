@@ -462,7 +462,7 @@
     "message": "Salvar e restaurar o estado dos grupos de aba. Para ativar esta função, deve instalar a seguinte extensão."
   },
   "tstDelayCaptionLabel": {
-    "message": "Para restaurar o estado da árvore, espere o tempo necessário para abrir a guia. Aumente este valor se a árvore não for restaurada corretamente."
+    "message": "Para restaurar o estado da árvore, espere o tempo necessário para abrir a aba. Aumente este valor se a árvore não for restaurada corretamente."
   },
   "truncateTitleLabel": {
     "message": "Exibir o nome da sessão em uma linha"
@@ -471,10 +471,10 @@
     "message": "Se o nome da sessão na lista sessão se estende por mais de uma linha, é truncado para exibição em uma linha."
   },
   "cloudSyncLabel": {
-    "message": "Sincronização em nuvem"
+    "message": "Sincronização na nuvem"
   },
   "enabledCloudSyncLabel": {
-    "message": "Ativar sincronização em nuvem (Beta)"
+    "message": "Ativar sincronização na nuvem (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
     "message": "Salvar sessões no Google Drive™ e sincronizar com outros computadores."
@@ -504,7 +504,7 @@
     "message": "Sincronizar automaticamente"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Executar a sincronização em nuvem quando o navegador for iniciado e quando a sessão for salva."
+    "message": "Executar a sincronização na nuvem quando o navegador for iniciado e quando a sessão for salva."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Sincronizar sessões de salvamento automático"
@@ -516,16 +516,16 @@
     "message": "Pop-up"
   },
   "openButtonBehaviorLabel": {
-    "message": "Funcionamento do botão \"Abrir\""
+    "message": "Comportamento do botão \"Abrir\""
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Selecione o comportamento padrão do botão \"Abrir\"."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Comportamento do botão Salvar"
+    "message": "Comportamento do botão \"Salvar\""
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Selecione o comportamento padrão do botão de salvar."
+    "message": "Selecione o comportamento padrão do botão de \"Salvar\"."
   },
   "isShowOpenButtonsLabel": {
     "message": "Mostrar botões \"Abrir\" ou \"Deletar\" na lista de sessões"
