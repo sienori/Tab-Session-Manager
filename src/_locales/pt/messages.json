@@ -255,7 +255,7 @@
     "message": "Estilo"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Sessão aberta em nova janela"
+    "message": "Abrir sessão em uma nova janela"
   },
   "ifOpenNewWindowCaptionLabel": {
     "message": "Se desmarcada, a sessão substitui a janela atual."
@@ -576,7 +576,7 @@
     "message": "Exibir a página de opções quando o Tab Session Manager for atualizado. Você pode saber o conteúdo da atualização rapidamente."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager foi atualizado!"
+    "message": "O Tab Session Manager foi atualizado!"
   },
   "seeMoreLabel": {
     "message": "Ver mais"
