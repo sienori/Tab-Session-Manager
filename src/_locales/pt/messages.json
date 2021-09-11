@@ -324,7 +324,7 @@
     "message": "Salvar a sessão quando a janela for fechada"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Salvar a sessão que inclui somente uma janela fechada."
+    "message": "Salve a sessão que inclui somente uma janela fechada."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Número máximo salvo"
@@ -357,7 +357,7 @@
     "message": "Salvar backup"
   },
   "ifBackupCaptionLabel": {
-    "message": "Quando o navegador iniciar, crie um arquivo de backup das sessões e salve ele na pasta de downloads."
+    "message": "Iniciado o navegador, criar um arquivo de backup das sessões e salvá-lo nas pasta de downloads."
   },
   "individualBackupLabel": {
     "message": "Backup individual"
@@ -423,7 +423,7 @@
     "message": "Comprimir ícones da página"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Comprimir os ícones da página ao salvar uma sessão."
+    "message": "Comprime os ícones de página ao salvar uma sessão."
   },
   "compressAllSessionsLabel": {
     "message": "Comprimir todas as sessões"
