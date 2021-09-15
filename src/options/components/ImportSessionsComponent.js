@@ -90,7 +90,7 @@ const parseSession = file => {
 };
 
 const isSessionBuddy = file => {
-  const correctKeys = ["type", "generated", "created", "modified", "id", "gid", "windows"];
+  const correctKeys = ["type", "generated", "created", "id", "gid", "windows"];
   return file.hasOwnProperty("sessions") && correctKeys.every(key => file.sessions[0].hasOwnProperty(key));
 };
 
