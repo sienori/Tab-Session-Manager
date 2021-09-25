@@ -363,7 +363,7 @@
     "message": "Indywidualna kopia zapasowa"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Każda sesja jest zapisywana w oddzielnym pliku.<br>Jeśli pole zostanie odznaczone, każda sesja zostanie zapisana w oddzielnych plik, które mogą przeciążyć twoją przestrzeń dyskową."
   },
   "backupFolderLabel": {
     "message": "Lokalizacja zapisu"
@@ -420,16 +420,16 @@
     "message": "Zastosować nazwę urządzenia do wszystkich sesji?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Kompresuj favicon'y"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Kompresuj favicon'y podczas zaposywania sesji."
   },
   "compressAllSessionsLabel": {
     "message": "Kompresuj wszystkie sesje"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Kompresuj wszystkie favicon'y w aktualnie zapisanych sesjach. Pozwoli to zaoszczędzić pamięć i przyspieszyć ładowanie sesji."
   },
   "compressLabel": {
     "message": "Kompresuj"
@@ -459,7 +459,7 @@
     "message": "Zapisz grupy kart"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Zapisz i przywróć stan grup kart. Aby włączyć tę funkcję, musisz zainstalować następujące rozszerzenie."
   },
   "tstDelayCaptionLabel": {
     "message": "Aby przywrócić stan drzewa, wymagany jest czas oczekiwania na otwarcie karty. Zwiększ tą wartość, jeśli drzewo nie jest przywracane prawidłowo."
@@ -504,7 +504,7 @@
     "message": "Synchronizuj automatycznie"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Wykonaj synchronizację z chmurą po uruchomieniu przeglądarki i zapisaniu sesji."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Synchronizuj automatycznie zapisane sesje"
