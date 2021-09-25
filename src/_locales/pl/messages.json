@@ -207,10 +207,10 @@
     "message": "Usuń z sesji startowej"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Edytuj okno"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Dodaj bieżącą kartę"
   },
   "errorLabel": {
     "message": "Błąd"
@@ -360,7 +360,7 @@
     "message": "Po uruchomieniu przeglądarki, utwórz plik kopii zapasowej wszystkich sesji i zapisz go w folderze pobierania."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Indywidualna kopia zapasowa"
   },
   "individualBackupCaptionLabel": {
     "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
@@ -438,10 +438,10 @@
     "message": "Compress all sessions?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Kompresowanie..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Kompresja zakończona."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Jeżeli odznaczone, podczas zapisywania sesji ignoruje okna prywatne."
@@ -456,7 +456,7 @@
     "message": "Opóźnienie przywracania drzewa (milisekundy)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Zapisz grupy kart"
   },
   "saveTabGroupsCaptionLabel": {
     "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
@@ -591,13 +591,13 @@
     "message": "Gdy tryb debugowania jest włączony, logi są przesyłane do debuggera."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Eksportuj ustawienia"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Zapisz ustawienia jako plik json na komputerze."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importuj ustawienia"
   },
   "importSettingsCaptionLabel": {
     "message": "Load the settings file saved on the computer."
@@ -618,10 +618,10 @@
     "message": "Load sessions saved on the computer and add them to the session List."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Obsługiwane pliki:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Jak zaimportować sesje z innych rozszerzeń"
   },
   "importButtonLabel": {
     "message": "Przeglądaj..."
@@ -723,7 +723,7 @@
     "message": "Strona rozszerzenia"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Dodatki do Firefoxa"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
