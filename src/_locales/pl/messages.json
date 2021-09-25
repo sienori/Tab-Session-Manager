@@ -426,16 +426,16 @@
     "message": "Compress the favicons when saving a session."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Kompresuj wszystkie sesje"
   },
   "compressAllSessionsCaptionLabel": {
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Kompresuj"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Skompresować wszystkie sesje?"
   },
   "compressingLabel": {
     "message": "Kompresowanie..."
@@ -600,7 +600,7 @@
     "message": "Importuj ustawienia"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Załaduj plik ustawień zapisany na komputerze."
   },
   "resetSettingsLabel": {
     "message": "Resetowanie ustawień"
@@ -615,7 +615,7 @@
     "message": "Importuj sesje"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Załaduj sesje zapisane na komputerze i dodaj je do listy sesji."
   },
   "importCaptionLabel2": {
     "message": "Obsługiwane pliki:"
