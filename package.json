@@ -33,6 +33,7 @@
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "buffer": "^6.0.3",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
