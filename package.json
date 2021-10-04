@@ -9,6 +9,7 @@
     "lodash": "^4.17.21",
     "loglevel": "^1.6.7",
     "moment": "^2.24.0",
+    "mozlz4a": "^1.1.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.11.1",
     "react": "^16.13.1",
