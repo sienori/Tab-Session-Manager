@@ -8,6 +8,7 @@ const {
   getCopyPlugins,
   getFirefoxCopyPlugins,
   getMiniCssExtractPlugin,
+  getBufferPlugin,
   getEntry
 } = require("./webpack.utils");
 const path = require("path");
@@ -79,7 +80,8 @@ module.exports = [
     plugins: [
       ...getMiniCssExtractPlugin(),
       ...getHTMLPlugins("chrome", config.devDirectory, config.chromePath),
-      ...getCopyPlugins("chrome", config.devDirectory, config.chromePath)
+      ...getCopyPlugins("chrome", config.devDirectory, config.chromePath),
+      ...getBufferPlugin(),
     ]
   },
   {
@@ -89,7 +91,8 @@ module.exports = [
     plugins: [
       ...getMiniCssExtractPlugin(),
       ...getFirefoxCopyPlugins("firefox", config.devDirectory, config.firefoxPath),
-      ...getHTMLPlugins("firefox", config.devDirectory, config.firefoxPath)
+      ...getHTMLPlugins("firefox", config.devDirectory, config.firefoxPath),
+      ...getBufferPlugin(),
     ]
   }
 ];

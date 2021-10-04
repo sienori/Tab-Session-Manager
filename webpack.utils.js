@@ -8,6 +8,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ZipPlugin = require("zip-webpack-plugin");
 const path = require("path");
+const webpack = require("webpack");
 
 const getHTMLPlugins = (browserDir, outputDir = "dev", sourceDir = "src") => [
   new HtmlWebpackPlugin({
@@ -113,12 +114,19 @@ const getZipPlugin = (browserDir, outputDir = "dist", exclude = "") =>
     exclude: exclude
   });
 
+const getBufferPlugin = () => [
+  new webpack.ProvidePlugin({
+    Buffer: [require.resolve("buffer/"), "Buffer"],
+  }),
+];
+
 module.exports = {
   getHTMLPlugins,
   getOutput,
   getCopyPlugins,
   getFirefoxCopyPlugins,
   getMiniCssExtractPlugin,
+  getBufferPlugin,
   getZipPlugin,
   getEntry
 };

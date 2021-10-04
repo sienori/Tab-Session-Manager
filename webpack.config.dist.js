@@ -11,6 +11,7 @@ const {
   getZipPlugin,
   getFirefoxCopyPlugins,
   getMiniCssExtractPlugin,
+  getBufferPlugin,
   getEntry
 } = require("./webpack.utils");
 const path = require("path");
@@ -90,7 +91,8 @@ module.exports = [
       ...getMiniCssExtractPlugin(),
       ...getHTMLPlugins("chrome", config.tempDirectory, config.chromePath),
       ...getCopyPlugins("chrome", config.tempDirectory, config.chromePath),
-      getZipPlugin(`${config.extName}-for-chrome-${extVersion}`, config.distDirectory)
+      getZipPlugin(`${config.extName}-for-chrome-${extVersion}`, config.distDirectory),
+      ...getBufferPlugin(),
     ]
   },
   {
@@ -105,7 +107,8 @@ module.exports = [
       ...getMiniCssExtractPlugin(),
       ...getHTMLPlugins("firefox", config.tempDirectory, config.firefoxPath),
       ...getFirefoxCopyPlugins("firefox", config.tempDirectory, config.firefoxPath),
-      getZipPlugin(`${config.extName}-for-firefox-${ffExtVersion}`, config.distDirectory)
+      getZipPlugin(`${config.extName}-for-firefox-${ffExtVersion}`, config.distDirectory),
+      ...getBufferPlugin(),
     ]
   },
   {
