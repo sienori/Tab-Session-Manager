@@ -1,10 +1,28 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import moment from "moment";
+import mozlz4a from "mozlz4a";
 import uuidv4 from "uuid/v4";
 import OptionContainer from "./OptionContainer";
 
+
 const fileOpen = file => {
+  if (/(?:\.jsonlz4|\.baklz4)(-\d+)?$/.test(file.name.toLowerCase())) {
+    // sessionstore.jsonlz4
+    // previous.jsonlz4
+    // recovery.baklz4
+    // upgrade.jsonlz4-20211001010123
+    return new Promise(resolve => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        let input = new Uint8Array(reader.result);
+        let output = mozlz4a.decompress(input);
+        return resolve(convertMozLz4Sessionstore(output));
+      };
+      reader.readAsArrayBuffer(file);
+    });
+  }
+
   return new Promise(resolve => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -167,6 +185,46 @@ const convertSessionManager = file => {
   return [session];
 };
 
+const convertMozLz4Sessionstore = async file => {
+  const mozSession = JSON.parse(new TextDecoder().decode(file));
+  if (!(mozSession.version[0] === 'sessionrestore' && mozSession.version[1] === 1)) {
+    return;
+  }
+
+  let session = {};
+  session.windows = {};
+  session.windowsNumber = 0;
+  session.tabsNumber = 0;
+  session.name = 'sessionstore backup ' + moment(mozSession.session.lastUpdate).toLocaleString();
+  session.date = mozSession.session.lastUpdate;
+  session.lastEditedTime = Date.now();
+  session.tag = [];
+  session.sessionStartTime = mozSession.session.startTime;
+  session.id = uuidv4();
+
+  for (const win in mozSession.windows) {
+    session.windows[win] = {};
+    let index = 0;
+    for (const tab of mozSession.windows[win].tabs) {
+      const entryIndex = tab.index - 1;
+      session.windows[win][index] = {
+        id: index,
+        index: index,
+        windowId: parseInt(win),
+        lastAccessed: tab.lastAccessed,
+        url: tab.entries[entryIndex].url,
+        title: tab.entries[entryIndex].title,
+        favIconUrl: tab.image,
+        discarded: true,
+      };
+      index++;
+    }
+    session.tabsNumber += index;
+  }
+  session.windowsNumber = Object.keys(session.windows).length;
+  return [session];
+};
+
 const getSessionsState = sessions => {
   const sessionLabel = browser.i18n.getMessage("sessionLabel").toLowerCase();
   const sessionsLabel = browser.i18n.getMessage("sessionsLabel").toLowerCase();
@@ -270,12 +328,13 @@ export default class ImportSessionsComponent extends Component {
             - Tab Session Manager (.json)<br />
             - Session Buddy (.json)<br />
             - Session Manager (.session)<br />
+            - Firefox Session Store Backup (.jsonlz4)<br />
             <a href="https://github.com/sienori/Tab-Session-Manager/wiki/Q&A:-How-to-import-sessions-from-other-extensions"
               target="_blank">{browser.i18n.getMessage("importCaptionLabel3")} </a>
           </p>}
           type="file"
           value="importButtonLabel"
-          accept=".json, .session"
+          accept=".json, .session, .jsonlz4, .baklz4"
           multiple={true}
           onChange={this.readSessions.bind(this)}
         >
