@@ -5,6 +5,7 @@ import getSessions from "./getSessions";
 import { listFiles, uploadSession, downloadFile, deleteFile } from "./cloudAPIs";
 import { refreshAccessToken } from "./cloudAuth";
 import { saveSession, updateSession } from "./save";
+import { showSyncErrorBadge, hideBadge } from "./setBadge";
 
 const logDir = "background/cloudSync";
 
@@ -68,22 +69,36 @@ const getShouldUploadSessions = (files, sessions, lastSyncTime) => {
 };
 
 const syncStatus = {
+  none: "none",
   pending: "pending",
   download: "download",
   upload: "upload",
   delete: "delete",
-  complete: "complete"
+  complete: "complete",
+  signInRequired: "signInRequired",
+};
+
+let currentSyncStatus = {
+  status: syncStatus.none,
+  progress: 0,
+  total: 0
 };
 
 const updateSyncStatus = (status, progress = 0, total = 0) => {
-  const syncStatus = {
+  currentSyncStatus = {
     status: status,
     progress: progress,
     total: total
   };
-  browser.runtime
-    .sendMessage({ message: "updateSyncStatus", syncStatus: syncStatus })
-    .catch(() => {});
+  if (status !== syncStatus.none) {
+    browser.runtime
+      .sendMessage({ message: "updateSyncStatus", syncStatus: currentSyncStatus })
+      .catch(() => { });
+  }
+};
+
+export const getSyncStatus = () => {
+  return currentSyncStatus;
 };
 
 let isSyncing = false;
@@ -91,12 +106,14 @@ export const syncCloud = async () => {
   if (isSyncing) return;
   isSyncing = true;
   log.log(logDir, "syncCloud()");
+  hideBadge();
 
   updateSyncStatus(syncStatus.pending);
   const files = await listFiles().catch(e => null);
   if (files === null) {
     log.error(logDir, "syncCloud() listFiles");
     isSyncing = false;
+    updateSyncStatus(syncStatus.none);
     return;
   }
   const sessions = (await getSessions()).filter(session => !session.tag.includes("temp"));
@@ -133,6 +150,7 @@ export const syncCloud = async () => {
   setSettings("removedQueue", []);
   isSyncing = false;
   updateSyncStatus(syncStatus.complete);
+  updateSyncStatus(syncStatus.none);
 };
 
 export const pushRemovedQueue = id => {
@@ -159,6 +177,8 @@ export const syncCloudAuto = () => {
       syncCloud();
     } catch (e) {
       log.error(logDir, "syncCloudAuto()", "Sign in Required");
+      updateSyncStatus(syncStatus.signInRequired);
+      showSyncErrorBadge();
     }
   }, 10000);
 };

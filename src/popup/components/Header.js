@@ -19,11 +19,13 @@ const SyncStatus = props => {
   const { status, progress, total } = props.syncStatus;
 
   const statusLabels = {
+    none: "",
     pending: `${browser.i18n.getMessage("syncingLabel")}...`,
     download: `${browser.i18n.getMessage("downloadingLabel")}...`,
     upload: `${browser.i18n.getMessage("uploadingLabel")}...`,
     delete: `${browser.i18n.getMessage("deletingLabel")}...`,
-    complete: browser.i18n.getMessage("syncCompletedLabel")
+    complete: browser.i18n.getMessage("syncCompletedLabel"),
+    signInRequired: browser.i18n.getMessage("signInRequiredLabel")
   };
   const shouldShowProgress = status === "download" || status === "upload" || status === "delete";
 
@@ -61,6 +63,7 @@ export default props => {
   };
 
   const shouldShowCloudSync = getSettings("signedInEmail");
+  const syncError = syncStatus.status === "signInRequired";
 
   return (
     <div id="header">
@@ -95,7 +98,7 @@ export default props => {
             title={browser.i18n.getMessage("cloudSyncLabel")}
           >
             <CloudSyncIcon />
-            {needsSync && <div className="syncBadge">!</div>}
+            {(needsSync || syncError) && <div className={`syncBadge ${syncError ? "syncError" : ""}`}>!</div>}
           </button>
         )}
         <button

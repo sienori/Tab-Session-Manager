@@ -220,10 +220,12 @@ export default class PopupPage extends Component {
     if (request.isEnd) {
       this.changeFilterValue(this.firstFilterValue);
       const needsSync = this.calcNeedsSync(this.state.sessions);
+      const syncStatus = await browser.runtime.sendMessage({ message: "getSyncStatus" });
       this.updateTagList(this.state.sessions);
       this.setState({
         isInitSessions: true,
         needsSync: needsSync,
+        syncStatus: syncStatus
       });
 
       const searchInfo = await browser.runtime.sendMessage({ message: "getsearchInfo" });

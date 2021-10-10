@@ -33,7 +33,7 @@ import onUpdateAvailableListener from "./onUpdateAvailableListener";
 import { onCommandListener } from "./keyboardShortcuts";
 import { openStartupSessions } from "./startup";
 import { signInGoogle, signOutGoogle } from "./cloudAuth";
-import { syncCloud, syncCloudAuto } from "./cloudSync";
+import { syncCloud, syncCloudAuto, getSyncStatus } from "./cloudSync";
 import { updateLogLevel, overWriteLogLevel } from "../common/log";
 import { getsearchInfo } from "./search";
 import { recordChange, undo, redo, updateUndoStatus } from "./undo";
@@ -161,6 +161,8 @@ const onMessageListener = async (request, sender, sendResponse) => {
       return await signOutGoogle();
     case "syncCloud":
       return await syncCloud();
+    case "getSyncStatus":
+      return getSyncStatus();
     case "applyDeviceName":
       return await applyDeviceName();
     case "getsearchInfo":

@@ -90,6 +90,9 @@
         color: #fff;
         text-shadow: 1px 1px 1px #00000050;
       }
+      .syncBadge.syncError{
+        background-color: var(--error);
+      }
     }
 
     .syncStatus {
@@ -107,6 +110,10 @@
       &.complete {
         transition: opacity 200ms 3s;
         opacity: 0;
+      }
+      &.signInRequired{
+        transition: opacity 200ms;
+        opacity: 1;
       }
     }
 
