@@ -243,7 +243,7 @@
     "message": "Atalhos"
   },
   "informationLabel": {
-    "message": "Informações"
+    "message": "Informação"
   },
   "generalLabel": {
     "message": "Geral"
@@ -493,6 +493,9 @@
   },
   "syncCompletedLabel": {
     "message": "Sincronização completa."
+  },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
   },
   "signInLabel": {
     "message": "Iniciar sessão"
