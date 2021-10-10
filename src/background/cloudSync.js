@@ -3,6 +3,7 @@ import log from "loglevel";
 import { getSettings, setSettings } from "../settings/settings";
 import getSessions from "./getSessions";
 import { listFiles, uploadSession, downloadFile, deleteFile } from "./cloudAPIs";
+import { refreshAccessToken } from "./cloudAuth";
 import { saveSession, updateSession } from "./save";
 
 const logDir = "background/cloudSync";
@@ -145,10 +146,18 @@ export const pushRemovedQueue = id => {
 };
 
 let autoSyncTimer;
-export const syncCloudAuto = () => {
+export const syncCloudAuto = async () => {
   const isLoggedIn = getSettings("signedInEmail");
   const enabledAutoSync = getSettings("enabledAutoSync");
   if (!(isLoggedIn && enabledAutoSync)) return;
+
+  try {
+    // Check login required
+    await refreshAccessToken(false);
+  } catch (e) {
+    log.error(logDir, "syncCloudAuto()", "Login Required");
+    return;
+  }
 
   clearTimeout(autoSyncTimer);
   autoSyncTimer = setTimeout(syncCloud, 10000);

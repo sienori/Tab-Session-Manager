@@ -42,7 +42,7 @@ export const signOutGoogle = async () => {
   }
 };
 
-const getAuthCode = async (email = "") => {
+const getAuthCode = async (email = "", shouldShowLogin = true) => {
   log.log(logDir, "getAuthCode()");
   const scopes = [
     "https://www.googleapis.com/auth/drive.appfolder",
@@ -60,7 +60,10 @@ const getAuthCode = async (email = "") => {
 
   const redirectedURL = await browser.identity.launchWebAuthFlow({
     url: authURL,
-    interactive: true
+    interactive: shouldShowLogin
+    // interactiveについて
+    // ユーザが手動操作したとき: true 必要に応じてログインプロンプトが表示される
+    // 自動同期時: false 手動ログインが必要な場合はサイレントに終了しエラーを返す
   }).catch(async e => {
     log.error(logDir, "getAuthCode()", e);
     throw new Error();
@@ -138,7 +141,7 @@ const setTokenExpiration = async expirationSec => {
   setSettings("tokenExpiration", currentTimeMs + expirationSec * 1000);
 };
 
-export const refreshAccessToken = async () => {
+export const refreshAccessToken = async (shouldShowLogin = true) => {
   const currentAccessToken = getSettings("accessToken");
   const tokenExpiration = getSettings("tokenExpiration");
   if (Date.now() < tokenExpiration) return currentAccessToken;
@@ -153,7 +156,7 @@ export const refreshAccessToken = async () => {
     return accessToken;
   } catch (e) {
     const currentEmail = getSettings("signedInEmail");
-    const authCode = await getAuthCode(currentEmail);
+    const authCode = await getAuthCode(currentEmail, shouldShowLogin).catch(e => { throw new Error(); });
     const { accessToken, expiresIn, refreshToken } = await getRefreshTokens(authCode);
     const email = await getEmail(accessToken);
     setSettings("signedInEmail", email);
