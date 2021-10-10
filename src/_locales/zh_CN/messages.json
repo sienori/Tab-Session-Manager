@@ -494,6 +494,9 @@
   "syncCompletedLabel": {
     "message": "同步完成。"
   },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
+  },
   "signInLabel": {
     "message": "登录"
   },
