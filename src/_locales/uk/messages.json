@@ -494,6 +494,9 @@
   "syncCompletedLabel": {
     "message": "Синхронізацію завершено."
   },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
+  },
   "signInLabel": {
     "message": "Увійти"
   },
