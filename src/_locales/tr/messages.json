@@ -494,6 +494,9 @@
   "syncCompletedLabel": {
     "message": "Eşitleme tamamlandı."
   },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
+  },
   "signInLabel": {
     "message": "Oturum aç"
   },
