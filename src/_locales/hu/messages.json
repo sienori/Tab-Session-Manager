@@ -494,6 +494,9 @@
   "syncCompletedLabel": {
     "message": "Szinkronizálás kész."
   },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
+  },
   "signInLabel": {
     "message": "Bejelentkezés"
   },
