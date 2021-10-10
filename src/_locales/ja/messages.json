@@ -494,6 +494,9 @@
   "syncCompletedLabel": {
     "message": "同期が完了しました。"
   },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
+  },
   "signInLabel": {
     "message": "サインイン"
   },
