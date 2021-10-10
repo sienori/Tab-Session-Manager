@@ -1,6 +1,7 @@
 import axios from "axios";
 import log from "loglevel";
 import { refreshAccessToken } from "./cloudAuth";
+import { sliceTextByBytes } from "../common/sliceTextByBytes";
 
 const logDir = "background/cloudAPIs";
 
@@ -45,10 +46,10 @@ export const uploadSession = async (session, fileId = "") => {
     name: session.id,
     appProperties: {
       id: session.id,
-      name: session.name,
+      name: sliceTextByBytes(session.name, 115), // limited 124bytes
       date: session.date,
       lastEditedTime: session.lastEditedTime,
-      tag: session.tag.join(","),
+      tag: sliceTextByBytes(session.tag.join(","), 115),
       tabsNumber: session.tabsNumber,
       windowsNumber: session.windowsNumber
     },
@@ -68,7 +69,7 @@ export const uploadSession = async (session, fileId = "") => {
   };
   const url = `https://www.googleapis.com/upload/drive/v3/files${
     fileId ? `/${fileId}` : ""
-  }?uploadType=multipart`;
+    }?uploadType=multipart`;
 
   const result = await fetch(url, init).catch(e => {
     log.error(logDir, "uploadSession()", e);
