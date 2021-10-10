@@ -495,7 +495,7 @@
     "message": "Synkroniserad."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Kräver inloggning för molnsynkronisering."
   },
   "signInLabel": {
     "message": "Logga in"
