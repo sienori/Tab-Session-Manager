@@ -495,7 +495,7 @@
     "message": "Sincronizzazione completata."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "È richiesto l'accesso per la sincronizzazione cloud."
   },
   "signInLabel": {
     "message": "Accedi"
