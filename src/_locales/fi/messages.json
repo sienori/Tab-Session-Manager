@@ -494,6 +494,9 @@
   "syncCompletedLabel": {
     "message": "Synkronointi suoritettu."
   },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
+  },
   "signInLabel": {
     "message": "Kirjaudu"
   },
