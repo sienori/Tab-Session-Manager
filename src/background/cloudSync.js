@@ -146,19 +146,19 @@ export const pushRemovedQueue = id => {
 };
 
 let autoSyncTimer;
-export const syncCloudAuto = async () => {
+export const syncCloudAuto = () => {
   const isLoggedIn = getSettings("signedInEmail");
   const enabledAutoSync = getSettings("enabledAutoSync");
   if (!(isLoggedIn && enabledAutoSync)) return;
 
-  try {
-    // Check login required
-    await refreshAccessToken(false);
-  } catch (e) {
-    log.error(logDir, "syncCloudAuto()", "Login Required");
-    return;
-  }
-
   clearTimeout(autoSyncTimer);
-  autoSyncTimer = setTimeout(syncCloud, 10000);
+  autoSyncTimer = setTimeout(async () => {
+    try {
+      //Check sign in required
+      await refreshAccessToken(false);
+      syncCloud();
+    } catch (e) {
+      log.error(logDir, "syncCloudAuto()", "Sign in Required");
+    }
+  }, 10000);
 };
