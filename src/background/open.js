@@ -164,7 +164,7 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
 
   const firstTabId = currentWindow.tabs[0].id;
   if (currentWindow.tabs[0].pinned) {
-    sortedTabs = sortedTabs.map(tab => ({...tab, index: tab.index + 1}))
+    sortedTabs.forEach(tab => tab.index++);
   }
   let openedTabs = [];
   let tabNumber = 0;
