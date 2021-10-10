@@ -494,6 +494,9 @@
   "syncCompletedLabel": {
     "message": "동기화 완료"
   },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
+  },
   "signInLabel": {
     "message": "로그인"
   },
