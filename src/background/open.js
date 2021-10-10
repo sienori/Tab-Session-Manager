@@ -193,8 +193,8 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
 
 let tabList = {};
 //実際にタブを開く
-function openTab(tab, win, currentWindow, isOpenToLastIndex = false) {
-  log.log(logDir, "openTab()", tab, win, currentWindow, isOpenToLastIndex);
+function openTab(tab, currentWindow, isOpenToLastIndex = false) {
+  log.log(logDir, "openTab()", tab, currentWindow, isOpenToLastIndex);
   return new Promise(async function (resolve, reject) {
     let createOption = {
       active: tab.active,
