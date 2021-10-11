@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "주기적으로 자동 저장"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "설정"
   },
