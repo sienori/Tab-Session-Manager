@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Spara automatiskt - Regelbundet"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "Inställningar"
   },
