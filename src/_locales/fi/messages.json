@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Automaattinen tallennus - Ajoittain"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "Asetukset"
   },
@@ -493,6 +502,9 @@
   },
   "syncCompletedLabel": {
     "message": "Synkronointi suoritettu."
+  },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
   },
   "signInLabel": {
     "message": "Kirjaudu"

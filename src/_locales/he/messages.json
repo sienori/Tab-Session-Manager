@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "שמירה אוטומטית - באופן קבוע"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "הגדרות"
   },
@@ -493,6 +502,9 @@
   },
   "syncCompletedLabel": {
     "message": "סנכרון הושלם."
+  },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
   },
   "signInLabel": {
     "message": "התחבר"

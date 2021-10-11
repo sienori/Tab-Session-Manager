@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Automatikus mentés - Rendszeresen"
   },
+  "winCloseSessionNameShort": {
+    "message": "Ablak bezárva"
+  },
+  "browserExitSessionNameShort": {
+    "message": "A böngésző kilépett"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Rendszeresen"
+  },
   "settingsLabel": {
     "message": "Beállítások"
   },
@@ -493,6 +502,9 @@
   },
   "syncCompletedLabel": {
     "message": "Szinkronizálás kész."
+  },
+  "signInRequiredLabel": {
+    "message": "Bejelentkezés szükséges a felhővel való szinkronizáláshoz."
   },
   "signInLabel": {
     "message": "Bejelentkezés"

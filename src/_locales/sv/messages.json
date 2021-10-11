@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Spara automatiskt - Regelbundet"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "Inställningar"
   },
@@ -493,6 +502,9 @@
   },
   "syncCompletedLabel": {
     "message": "Synkroniserad."
+  },
+  "signInRequiredLabel": {
+    "message": "Kräver inloggning för molnsynkronisering."
   },
   "signInLabel": {
     "message": "Logga in"

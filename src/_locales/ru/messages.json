@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Автосохранение - регулярное"
   },
+  "winCloseSessionNameShort": {
+    "message": "При закрытии окна"
+  },
+  "browserExitSessionNameShort": {
+    "message": "При выходе из браузера"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Регулярно"
+  },
   "settingsLabel": {
     "message": "Настройки"
   },
@@ -493,6 +502,9 @@
   },
   "syncCompletedLabel": {
     "message": "Синхронизация завершена."
+  },
+  "signInRequiredLabel": {
+    "message": "Требуется вход для облачной синхронизации."
   },
   "signInLabel": {
     "message": "Войти"

@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Авто запазени - редовно"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "Настройки"
   },
@@ -493,6 +502,9 @@
   },
   "syncCompletedLabel": {
     "message": "Синхронизацията завърши"
+  },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
   },
   "signInLabel": {
     "message": "Вписване"

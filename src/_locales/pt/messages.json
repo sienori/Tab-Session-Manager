@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Auto Save - Regularly"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "Configurações"
   },
@@ -493,6 +502,9 @@
   },
   "syncCompletedLabel": {
     "message": "Sync completed."
+  },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
   },
   "signInLabel": {
     "message": "Sign in"

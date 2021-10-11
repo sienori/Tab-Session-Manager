@@ -207,10 +207,10 @@
     "message": "Usuń z sesji startowej"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Edytuj okno"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Dodaj bieżącą kartę"
   },
   "errorLabel": {
     "message": "Błąd"
@@ -232,6 +232,15 @@
   },
   "regularSaveSessionName": {
     "message": "Automatyczny zapis - regularnie"
+  },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
   },
   "settingsLabel": {
     "message": "Ustawienia"
@@ -360,10 +369,10 @@
     "message": "Po uruchomieniu przeglądarki, utwórz plik kopii zapasowej wszystkich sesji i zapisz go w folderze pobierania."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Indywidualna kopia zapasowa"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Każda sesja jest zapisywana w oddzielnym pliku.<br>Jeśli pole zostanie odznaczone, każda sesja zostanie zapisana w oddzielnych plik, które mogą przeciążyć twoją przestrzeń dyskową."
   },
   "backupFolderLabel": {
     "message": "Lokalizacja zapisu"
@@ -420,28 +429,28 @@
     "message": "Zastosować nazwę urządzenia do wszystkich sesji?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Kompresuj favicon'y"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Kompresuj favicon'y podczas zaposywania sesji."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Kompresuj wszystkie sesje"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Kompresuj wszystkie favicon'y w aktualnie zapisanych sesjach. Pozwoli to zaoszczędzić pamięć i przyspieszyć ładowanie sesji."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Kompresuj"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Skompresować wszystkie sesje?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Kompresowanie..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Kompresja zakończona."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Jeżeli odznaczone, podczas zapisywania sesji ignoruje okna prywatne."
@@ -456,10 +465,10 @@
     "message": "Opóźnienie przywracania drzewa (milisekundy)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Zapisz grupy kart"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Zapisz i przywróć stan grup kart. Aby włączyć tę funkcję, musisz zainstalować następujące rozszerzenie."
   },
   "tstDelayCaptionLabel": {
     "message": "Aby przywrócić stan drzewa, wymagany jest czas oczekiwania na otwarcie karty. Zwiększ tą wartość, jeśli drzewo nie jest przywracane prawidłowo."
@@ -494,6 +503,9 @@
   "syncCompletedLabel": {
     "message": "Synchronizacja zakończona."
   },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
+  },
   "signInLabel": {
     "message": "Zaloguj się"
   },
@@ -504,7 +516,7 @@
     "message": "Synchronizuj automatycznie"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Wykonaj synchronizację z chmurą po uruchomieniu przeglądarki i zapisaniu sesji."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Synchronizuj automatycznie zapisane sesje"
@@ -591,16 +603,16 @@
     "message": "Gdy tryb debugowania jest włączony, logi są przesyłane do debuggera."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Eksportuj ustawienia"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Zapisz ustawienia jako plik json na komputerze."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importuj ustawienia"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Załaduj plik ustawień zapisany na komputerze."
   },
   "resetSettingsLabel": {
     "message": "Resetowanie ustawień"
@@ -615,13 +627,13 @@
     "message": "Importuj sesje"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Załaduj sesje zapisane na komputerze i dodaj je do listy sesji."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Obsługiwane pliki:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Jak zaimportować sesje z innych rozszerzeń"
   },
   "importButtonLabel": {
     "message": "Przeglądaj..."
@@ -723,13 +735,13 @@
     "message": "Strona rozszerzenia"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Dodatki do Firefoxa"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Dodatki programu Edge"
   },
   "privacyPolicyLabel": {
     "message": "Polityka prywatności"

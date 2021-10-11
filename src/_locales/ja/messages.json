@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "自動保存 - 定期実行"
   },
+  "winCloseSessionNameShort": {
+    "message": "ウィンドウ終了"
+  },
+  "browserExitSessionNameShort": {
+    "message": "ブラウザ終了"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "定期実行"
+  },
   "settingsLabel": {
     "message": "設定"
   },
@@ -493,6 +502,9 @@
   },
   "syncCompletedLabel": {
     "message": "同期が完了しました。"
+  },
+  "signInRequiredLabel": {
+    "message": "クラウド同期にはサインインが必要です。"
   },
   "signInLabel": {
     "message": "サインイン"

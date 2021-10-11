@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "주기적으로 자동 저장"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "설정"
   },
@@ -493,6 +502,9 @@
   },
   "syncCompletedLabel": {
     "message": "동기화 완료"
+  },
+  "signInRequiredLabel": {
+    "message": "Requires sign in for cloud sync."
   },
   "signInLabel": {
     "message": "로그인"
