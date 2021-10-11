@@ -237,10 +237,10 @@
     "message": "Janela fechada"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Navegador cessado"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regularmente"
   },
   "settingsLabel": {
     "message": "Configurações"
@@ -504,7 +504,7 @@
     "message": "Sincronização completa."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Sincronização na nuvem requer login."
   },
   "signInLabel": {
     "message": "Iniciar sessão"
