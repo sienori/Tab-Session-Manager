@@ -495,7 +495,7 @@
     "message": "Синхронизация завершена."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Требуется вход для облачной синхронизации."
   },
   "signInLabel": {
     "message": "Войти"
