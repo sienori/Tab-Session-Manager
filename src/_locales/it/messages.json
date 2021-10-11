@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Salvataggio automatico - Progammato"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "Impostazioni"
   },
