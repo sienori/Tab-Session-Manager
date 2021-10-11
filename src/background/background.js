@@ -8,7 +8,8 @@ import {
   autoSaveWhenWindowClose,
   autoSaveWhenExitBrowser,
   setUpdateTempTimer,
-  openLastSession
+  openLastSession,
+  autoSaveWhenOpenInCurrentWindow
 } from "./autoSave";
 import Sessions from "./sessions";
 import { replacePage } from "./replace";
@@ -107,6 +108,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
       recordChange(null, afterSession);
       return afterSession;
     case "open":
+      if (request.property === "openInCurrentWindow") await autoSaveWhenOpenInCurrentWindow();
       openSession(request.session, request.property);
       break;
     case "remove":

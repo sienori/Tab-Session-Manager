@@ -100,6 +100,12 @@ export const handleTabRemoved = (tabId, removeInfo) => {
   setUpdateTempTimer();
 };
 
+export const autoSaveWhenOpenInCurrentWindow = async () => {
+  if (!getSettings("ifAutoSaveWhenClose")) return;
+  const currentWindow = await browser.windows.getCurrent({ populate: true });
+  if (currentWindow.tabs.length > 2) await autoSaveWhenWindowClose(currentWindow.id);
+};
+
 export const autoSaveWhenWindowClose = async removedWindowId => {
   if (!getSettings("ifAutoSaveWhenClose")) return;
   log.info(logDir, "autoSaveWhenWindowClose()", removedWindowId);
