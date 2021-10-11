@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Automatyczny zapis - regularnie"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "Ustawienia"
   },
