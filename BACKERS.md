@@ -87,3 +87,6 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Olzhas Suleimen
 - Ymje Sköld
 - Michael
+- Ruchira
+- Ekaterina Staneva
+- Allen.YL
