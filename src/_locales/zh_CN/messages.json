@@ -495,7 +495,7 @@
     "message": "同步完成。"
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "云同步需要登录使用。"
   },
   "signInLabel": {
     "message": "登录"
