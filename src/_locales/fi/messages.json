@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Automaattinen tallennus - Ajoittain"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "Asetukset"
   },
