@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Lưu tự động - Thường xuyên"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "Cài đặt"
   },
