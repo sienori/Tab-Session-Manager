@@ -88,6 +88,9 @@
 
   &:not(.isSelected):hover {
     background-color: var(--line);
+    .tag{
+      background-color:var(--line2);
+    }
   }
 
   .buttonsContainer {
