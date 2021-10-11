@@ -234,7 +234,7 @@
     "message": "Автосохранение - регулярное"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Окно закрыто"
   },
   "browserExitSessionNameShort": {
     "message": "Browser exited"
