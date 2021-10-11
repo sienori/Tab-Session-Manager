@@ -17,7 +17,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const generalConfig = {
   mode: "development",
-  devtool: "source-map",
+  devtool: "inline-source-map",
   resolve: {
     alias: {
       src: path.resolve(__dirname, "src/")
