@@ -234,13 +234,13 @@
     "message": "自動保存 - 定期実行"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "ウィンドウ終了"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "ブラウザ終了"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "定期実行"
   },
   "settingsLabel": {
     "message": "設定"
@@ -504,7 +504,7 @@
     "message": "同期が完了しました。"
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "クラウド同期にはサインインが必要です。"
   },
   "signInLabel": {
     "message": "サインイン"
