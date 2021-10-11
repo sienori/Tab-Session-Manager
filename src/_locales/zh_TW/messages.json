@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "自動儲存 - 定期執行"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "設定"
   },
