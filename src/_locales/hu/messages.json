@@ -234,13 +234,13 @@
     "message": "Automatikus mentés - Rendszeresen"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Ablak bezárva"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "A böngésző kilépett"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Rendszeresen"
   },
   "settingsLabel": {
     "message": "Beállítások"
@@ -504,7 +504,7 @@
     "message": "Szinkronizálás kész."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Bejelentkezés szükséges a felhővel való szinkronizáláshoz."
   },
   "signInLabel": {
     "message": "Bejelentkezés"
