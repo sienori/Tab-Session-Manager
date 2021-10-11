@@ -234,13 +234,13 @@
     "message": "Sitzung regelmäßig sichern"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Fenster geschlossen"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Browser beendet"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regelmäßig"
   },
   "settingsLabel": {
     "message": "Einstellungen"
@@ -504,7 +504,7 @@
     "message": "Synchronisierung abgeschlossen."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Einloggen nötig für Cloud-Synchronisierung."
   },
   "signInLabel": {
     "message": "Anmelden"
