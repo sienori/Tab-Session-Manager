@@ -49,10 +49,16 @@
       padding: 0;
       list-style-type: none;
       .tag {
-        svg {
+        .tagIcon, .autoSaveIcon, .startupIcon {
           width: 11px;
           margin-right: 3px;
           fill: var(--sub-text);
+        }
+        .autoSaveIcon{
+          width: 16px;
+        }
+        .startupIcon{
+          width: 14px;
         }
         span {
           text-overflow: ellipsis;

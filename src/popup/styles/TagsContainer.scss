@@ -24,11 +24,17 @@
       margin-right: 5px;
       overflow: hidden;
 
-      .tagIcon {
+      .tagIcon, .autoSaveIcon, .startupIcon {
         width: 11px;
         margin-right: 3px;
         fill: var(--sub-text);
         flex-shrink: 0;
+      }
+      .autoSaveIcon{
+        width: 16px;
+      }
+      .startupIcon{
+        width: 14px;
       }
 
       span {

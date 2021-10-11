@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import "../styles/OptionsArea.scss";
 import SearchBar from "./SearchBar";
-import generateTagLabel from "../actions/generateTagLabel";
+import { generateTagLabel } from "../actions/generateTagLabel";
 import SearchIcon from "../icons/search.svg";
 
 const alphabeticallySort = (a, b) => {

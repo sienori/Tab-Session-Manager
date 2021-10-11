@@ -3,12 +3,11 @@ import browser from "webextension-polyfill";
 import Highlighter from "react-highlight-words";
 import { getSettings } from "src/settings/settings";
 import { sendOpenMessage } from "../actions/controlSessions";
-import generateTagLabel from "../actions/generateTagLabel";
+import { generateTagLabel, generateTagIcon } from "../actions/generateTagLabel";
 import generateWindowsInfo from "../actions/generateWindowsInfo";
 import SessionMenuItems from "./SessionMenuItems";
 import OpenMenuItems from "./OpenMenuItems";
 import moment from "moment";
-import TagIcon from "../icons/tag.svg";
 import NewWindowIcon from "../icons/newWindow.svg";
 import DeleteIcon from "../icons/delete.svg";
 import "../styles/SessionItem.scss";
@@ -74,7 +73,7 @@ export default class Session extends Component {
           <ul className="tagsContainer">
             {session.tag.map((tag, index) => (
               <li className="tag" key={index}>
-                <TagIcon />
+                {generateTagIcon(tag)}
                 <span>{generateTagLabel(tag)}</span>
               </li>
             ))}

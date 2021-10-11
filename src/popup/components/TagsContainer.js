@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import { sendTagRemoveMessage, sendTagAddMessage } from "../actions/controlSessions";
-import generateTagLabel from "../actions/generateTagLabel";
+import { generateTagLabel, generateTagIcon } from "../actions/generateTagLabel";
 import TagInputModalContent from "./TagInputModalContent";
 import PlusIcon from "../icons/plus.svg";
 import TagIcon from "../icons/tag.svg";
@@ -32,7 +32,7 @@ export default class TagsContainer extends Component {
       <div className="tagsContainer">
         {tags.map((tag, index) => (
           <div className="tag" key={index}>
-            <TagIcon className="tagIcon" />
+            {generateTagIcon(tag)}
             <span>{generateTagLabel(tag)}</span>
             <button
               className="removeTagButton"
