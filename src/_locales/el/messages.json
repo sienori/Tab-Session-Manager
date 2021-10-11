@@ -495,7 +495,7 @@
     "message": "Ο συγχρονισμός ολοκληρώθηκε."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Απαιτείται σύνδεση για συγχρονισμό στο σύννεφο."
   },
   "signInLabel": {
     "message": "Σύνδεση"
