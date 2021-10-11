@@ -234,13 +234,13 @@
     "message": "Автосохранение - регулярное"
   },
   "winCloseSessionNameShort": {
-    "message": "Окно закрыто"
+    "message": "При закрытии окна"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "При выходе из браузера"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Регулярно"
   },
   "settingsLabel": {
     "message": "Настройки"
