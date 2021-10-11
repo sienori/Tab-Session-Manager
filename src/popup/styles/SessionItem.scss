@@ -82,11 +82,15 @@
     }
   }
 
+  &.isActive {
+    background-color: var(--active-bg);
+  }
+
   &.isSelected {
     background-color: var(--highlight-bg);
   }
 
-  &:not(.isSelected):hover {
+  &:not(.isActive):not(.isSelected):hover {
     background-color: var(--line);
     .tag{
       background-color:var(--line2);

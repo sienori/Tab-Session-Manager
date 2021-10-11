@@ -6,6 +6,9 @@ import { getSessionsByTag } from "./tag.js";
 import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
 import ignoreUrls from "./ignoreUrls";
+import getSessions from "./getSessions";
+import { updateSession } from "./save";
+import { recordChange } from "./undo";
 
 const logDir = "background/autoSave";
 let autoSaveTimer;
@@ -22,6 +25,10 @@ const autoSaveRegular = async () => {
 
     const isChanged = await isChangedAutoSaveSession(session);
     if (!isChanged) return;
+
+    if (getSettings('keepTrackOfActiveSession')) {
+      updateActiveSession(session);
+    }
 
     await saveSession(session);
     const limit = getSettings("autoSaveLimit");
@@ -132,6 +139,10 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
   session.windowsNumber = 1;
   session.tabsNumber = Object.keys(session.windows[removedWindowId]).length;
 
+  if (getSettings('keepTrackOfActiveSession')) {
+    updateActiveSession(session);
+  }
+
   await saveSession(session);
 
   const limit = getSettings("autoSaveWhenCloseLimit");
@@ -149,6 +160,10 @@ export const autoSaveWhenExitBrowser = async () => {
   session.tag = ["browserExit"];
   if (!getSettings("ifAutoSaveWhenExitBrowser")) session.tag.push("temp");
   session.id = uuidv4();
+
+  if (getSettings('keepTrackOfActiveSession')) {
+    updateActiveSession(session);
+  }
 
   await saveSession(session);
 
@@ -228,4 +243,28 @@ async function isChangedAutoSaveSession(session) {
 
   //前回保存時とタブが異なればtrue
   return tabsToString(regularSessions[0]) != tabsToString(session);
+}
+
+// Persists the session corresponding to the currently active session (if any),
+// with the current status of the session (currently open tabs), passed in the
+// "withSession" argument (withSession needs to be a valid session)
+async function updateActiveSession(withSession = {}) {
+  const activeSession = getSettings('activeSession');
+  if (activeSession) {
+    const beforeSession = await getSessions(activeSession.id);
+    if (beforeSession) {
+      const newSession = {
+        ...withSession,
+        id: beforeSession.id,
+        name: beforeSession.name,
+        tag: beforeSession.tag,
+        sessionStartTime: activeSession.sessionStartTime,
+        date: beforeSession.date,
+        lastEditedTime: beforeSession.lastEditedTime, // This will get replaced upon update
+      };
+
+      await updateSession(newSession);
+      recordChange(beforeSession, newSession);
+    }
+  }
 }

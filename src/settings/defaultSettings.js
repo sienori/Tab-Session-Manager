@@ -40,6 +40,13 @@ export default [
         default: true
       },
       {
+        id: "keepTrackOfActiveSession",
+        title: "keepTrackOfActiveSessionLabel",
+        captions: ["keepTrackOfActiveSessionCaptionLabel"],
+        type: "checkbox",
+        default: false
+      },
+      {
         id: "ifSupportTst",
         title: "ifSupportTstLabel",
         captions: ["ifSupportTstCaptionLabel"],

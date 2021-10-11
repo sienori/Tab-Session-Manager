@@ -1,7 +1,7 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import log from "loglevel";
-import { getSettings } from "src/settings/settings";
+import { getSettings, setSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 import { updateTabGroups } from "../common/tabGroups";
 
@@ -11,6 +11,15 @@ export async function openSession(session, property = "openInNewWindow") {
   log.log(logDir, "openSession()", session, property);
   let isFirstWindowFlag = true;
   tabList = {};
+
+  // Sets an internal, non-exportable setting for the currently active session
+  // It's non exportable because it's value is associated to the user sessions
+  // which are not exported with the settings.
+  // Session start time for active session begins when the user either opens or creates it
+  setSettings('activeSession', getSettings("keepTrackOfActiveSession")
+    ? {name: session.name, id: session.id, sessionStartTime: Date.now()}
+    : null);
+
   for (let win in session.windows) {
     const openInCurrentWindow = async () => {
       log.log(logDir, "openSession() openInCurrentWindow()");

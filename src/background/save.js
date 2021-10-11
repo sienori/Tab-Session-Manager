@@ -4,7 +4,7 @@ import uuidv4 from "uuid/v4";
 import log from "loglevel";
 import { SessionStartTime } from "./background.js";
 import Sessions from "./sessions.js";
-import { getSettings } from "src/settings/settings";
+import { getSettings, setSettings } from "src/settings/settings";
 import { returnReplaceParameter } from "./replace.js";
 import ignoreUrls from "./ignoreUrls";
 import { pushRemovedQueue, syncCloudAuto } from "./cloudSync.js";
@@ -21,6 +21,13 @@ export async function saveCurrentSession(name, tag, property) {
   const session = await loadCurrentSession(name, tag, property).catch(() => {
     return Promise.reject();
   });
+
+  // When the user saves the current session, s/he's implicitly setting the active
+  // session, if the Setting to track the active session is enabled
+  setSettings('activeSession', getSettings("keepTrackOfActiveSession")
+    ? {name: session.name, id: session.id, sessionStartTime: Date.now()}
+    : null);
+
   return await saveSession(session);
 }
 
@@ -129,6 +136,13 @@ export async function saveSession(session, isSendResponce = true, saveBySync = f
 export async function removeSession(id, isSendResponce = true) {
   log.log(logDir, "removeSession()", id, isSendResponce);
   try {
+    // Remove the active session setting if the id matches, regardless of whether
+    // we are tracking the active session or not.
+    const activeSession = getSettings("activeSession");
+    if (activeSession && activeSession.id === id) {
+      setSettings('activeSession', null);
+    }
+
     await Sessions.delete(id);
     pushRemovedQueue(id);
     if (isSendResponce) sendMessage("deleteSession", { id: id });

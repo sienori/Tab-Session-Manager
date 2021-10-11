@@ -50,10 +50,11 @@ export default class Session extends Component {
   }
 
   render() {
-    const { session, isSelected, order, searchWords, handleSessionSelect } = this.props;
+    const { session, isActive, isSelected, order, searchWords, handleSessionSelect } = this.props;
 
     return (
-      <div className={`sessionItem ${isSelected ? "isSelected" : ""}`}
+      // An item can be active and selected at the same time. In that case, selected takes precedence
+      <div className={`sessionItem ${isActive ? "isActive" : ""} ${isSelected ? "isSelected" : ""}`}
         style={{ order: order }}
       >
         <button

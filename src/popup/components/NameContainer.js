@@ -29,15 +29,17 @@ export default class NameContainer extends Component {
   };
 
   render() {
-    const { sessionName } = this.props;
+    const { sessionName, canRename = true, forceTruncate = false } = this.props;
+    const isTruncateClass = forceTruncate || getSettings("truncateTitle") ? 'isTruncate' : '';
+    const buttonTitle = browser.i18n.getMessage("renameSessionLabel");
+    const displayName = sessionName.trim() === "" ? "_" : sessionName;
+    const session = <span className="sessionName">{displayName}</span>
     return (
-      <div className={`nameContainer ${getSettings("truncateTitle") ? "isTruncate" : ""}`}>
-        <button
-          onClick={this.handleRenameClick}
-          title={browser.i18n.getMessage("renameSessionLabel")}
-        >
-          <span className="sessionName">{sessionName.trim() === "" ? "_" : sessionName}</span>
-        </button>
+      <div className={`nameContainer ${isTruncateClass}`}>
+        {canRename ? (
+          <button onClick={this.handleRenameClick} title={buttonTitle}>
+            {session}
+          </button>) : session}
       </div>
     );
   }

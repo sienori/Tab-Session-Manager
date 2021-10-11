@@ -155,6 +155,13 @@ export default class SessionsArea extends Component {
     const shouldShowNoResultMessage =
       isInitSessions && sortedSessions.length === 0 && searchWords.join() !== "" && !error.isError;
 
+    const shouldShowActiveSession = getSettings("keepTrackOfActiveSession");
+    let activeSessionId = null;
+    if (shouldShowActiveSession) {
+      const activeSession = getSettings("activeSession");
+      activeSessionId = activeSession ? activeSession.id : null;
+    }
+
     return (
       <div
         id="sessionsArea"
@@ -170,6 +177,7 @@ export default class SessionsArea extends Component {
             matchesSearch(searchWords, session.id, searchedSessionIds) && (
               <SessionItem
                 session={session}
+                isActive={shouldShowActiveSession && (activeSessionId === session.id)}
                 isSelected={selectedSessionId === session.id}
                 ref={selectedSessionId === session.id ? this.selectedItemRef : null}
                 order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}

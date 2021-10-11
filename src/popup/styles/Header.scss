@@ -9,12 +9,18 @@
   -moz-user-select: none;
   -webkit-user-select: none;
 
-  .title {
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--sub-text);
-    cursor: default;
-    flex-shrink: 0;
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .title {
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--sub-text);
+      cursor: default;
+      flex-shrink: 0;
+    }
   }
 
   .rightButtons {

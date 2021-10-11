@@ -5,6 +5,7 @@ import openUrl from "../actions/openUrl";
 import { getSettings } from "src/settings/settings";
 import DonationMessage from "./DonationMessage";
 import { sendUndoMessage, sendRedoMessage } from "../actions/controlSessions";
+import NameContainer from "./NameContainer";
 import UndoIcon from "../icons/undo.svg";
 import RedoIcon from "../icons/redo.svg";
 import HeartIcon from "../icons/heart.svg";
@@ -65,9 +66,26 @@ export default props => {
   const shouldShowCloudSync = getSettings("signedInEmail");
   const syncError = syncStatus.status === "signInRequired";
 
+  const shouldShowActiveSession = getSettings("keepTrackOfActiveSession");
+  let sessionName = '';
+  if (shouldShowActiveSession) {
+    const activeSession = getSettings("activeSession");
+    const activeSessionName = activeSession ? activeSession.name : '_';
+    const activeSessionLabel = browser.i18n.getMessage("activeSessionLabel");
+    sessionName = `${activeSessionLabel}: ${activeSessionName}`
+  }
+
   return (
     <div id="header">
-      <div className="title">Tab Session Manager</div>
+      <div className="titleContainer">
+        <div className="title">Tab Session Manager</div>
+        {shouldShowActiveSession && (
+          <NameContainer
+            canRename={false}
+            forceTruncate={true}
+            sessionName={sessionName} />
+        )}
+      </div>
       <div className="rightButtons">
         {shouldShowCloudSync && <SyncStatus syncStatus={syncStatus} />}
         <button
