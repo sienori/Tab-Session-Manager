@@ -233,6 +233,15 @@
   "regularSaveSessionName": {
     "message": "Auto Save - Regularly"
   },
+  "winCloseSessionNameShort": {
+    "message": "Window closed"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Browser exited"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Regularly"
+  },
   "settingsLabel": {
     "message": "सेटिंग्स"
   },
