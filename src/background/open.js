@@ -1,7 +1,7 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import log from "loglevel";
-import { getSettings, setSettings } from "src/settings/settings";
+import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 import { updateTabGroups } from "../common/tabGroups";
 import { setActiveSession } from "./save";
