@@ -294,7 +294,7 @@
     "message": "Keep track of the active session"
   },
   "keepTrackOfActiveSessionCaptionLabel": {
-    "message": "Remembers the last open session so that, if the auto-save options are enabled, then all changes in the current session will be saved to it automatically as well."
+    "message": "Remembers the last open session so that, if the auto-save options are enabled, then all changes in the current session will be saved to it automatically."
   },
   "activeSessionLabel": {
     "message": "Active session"

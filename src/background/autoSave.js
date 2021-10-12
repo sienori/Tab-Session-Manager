@@ -6,9 +6,7 @@ import { getSessionsByTag } from "./tag.js";
 import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
 import ignoreUrls from "./ignoreUrls";
-import getSessions from "./getSessions";
-import { updateSession } from "./save";
-import { recordChange } from "./undo";
+import { updateActiveSession } from "./save";
 
 const logDir = "background/autoSave";
 let autoSaveTimer;
@@ -243,32 +241,4 @@ async function isChangedAutoSaveSession(session) {
 
   //前回保存時とタブが異なればtrue
   return tabsToString(regularSessions[0]) != tabsToString(session);
-}
-
-// Persists the session corresponding to the currently active session (if any),
-// with the session passed as argument in "withSession" (needs to be a valid
-// session). If no argument is passed, it will fetch the current session
-export async function updateActiveSession(withSession) {
-  if (withSession === undefined) {
-    withSession = await loadCurrentSession('', [], "saveAllWindows");
-  }
-
-  const activeSession = getSettings('activeSession');
-  if (activeSession && typeof withSession === 'object') {
-    const beforeSession = await getSessions(activeSession.id);
-    if (beforeSession) {
-      const newSession = {
-        ...withSession,
-        id: beforeSession.id,
-        name: beforeSession.name,
-        tag: beforeSession.tag,
-        sessionStartTime: activeSession.sessionStartTime,
-        date: beforeSession.date,
-        lastEditedTime: beforeSession.lastEditedTime, // This will get replaced upon update
-      };
-
-      await updateSession(newSession);
-      recordChange(beforeSession, newSession);
-    }
-  }
 }

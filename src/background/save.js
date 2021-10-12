@@ -11,7 +11,8 @@ import { pushRemovedQueue, syncCloudAuto } from "./cloudSync.js";
 import { getValidatedTag } from "./tag.js";
 import { queryTabGroups } from "../common/tabGroups";
 import { compressDataUrl } from "../common/compressDataUrl";
-import { updateActiveSession } from "./autoSave.js";
+import getSessions from "./getSessions";
+import { recordChange } from "./undo";
 
 const logDir = "background/save";
 
@@ -23,16 +24,9 @@ export async function saveCurrentSession(name, tag, property) {
     return Promise.reject();
   });
 
-  // Auto-save the active session before switching to a different one (if the
-  // relevant setting is enabled)
-  if (getSettings('autoSaveBeforeActiveSessionChange')) {
-    await updateActiveSession(session);
-  }
   // When the user saves the current session, s/he's implicitly setting the active
-  // session to the new session (if the Setting to track the active session is enabled)
-  setSettings('activeSession', getSettings("keepTrackOfActiveSession")
-    ? {name: session.name, id: session.id, sessionStartTime: Date.now()}
-    : null);
+  // session to the new session
+  setActiveSession(session.id, session.name, session);
 
   return await saveSession(session);
 }
@@ -192,4 +186,49 @@ export async function deleteAllSessions() {
   } catch (e) {
     log.error(logDir, "deleteAllSessions()", e);
   }
+}
+
+// Persists the session corresponding to the currently active session (if any),
+// with the session passed as argument in "withSession" (needs to be a valid
+// session). If no argument is passed, it will fetch the current session
+export async function updateActiveSession(withSession) {
+  if (withSession === undefined) {
+    withSession = await loadCurrentSession('', [], "saveAllWindows");
+  }
+
+  const activeSession = getSettings('activeSession');
+  if (activeSession && typeof withSession === 'object') {
+    const beforeSession = await getSessions(activeSession.id);
+    if (beforeSession) {
+      const newSession = {
+        ...withSession,
+        id: beforeSession.id,
+        name: beforeSession.name,
+        tag: beforeSession.tag,
+        sessionStartTime: activeSession.sessionStartTime,
+        date: beforeSession.date,
+        lastEditedTime: beforeSession.lastEditedTime, // This will get replaced upon update
+      };
+
+      await updateSession(newSession);
+      recordChange(beforeSession, newSession);
+    }
+  }
+}
+
+// Sets an internal, non-exportable setting for the currently active session
+// It's non exportable because it's value is associated to the user sessions,
+// which are not exported together with the settings.
+export function setActiveSession(id, name, sessionToSave) {
+  // Auto-save the active session before switching to a different one (if the
+  // relevant setting is enabled)
+  // If no sessionToSave is passed, updateActiveSession will fetch the current session
+  if (getSettings('autoSaveBeforeActiveSessionChange')) {
+    await updateActiveSession(sessionToSave);
+  }
+
+  // Session start time for active sessions begins when the user either sets the active session
+  setSettings('activeSession', getSettings("keepTrackOfActiveSession")
+    ? {id, name, sessionStartTime: Date.now()}
+    : null);
 }

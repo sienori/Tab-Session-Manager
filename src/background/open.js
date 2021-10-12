@@ -4,7 +4,7 @@ import log from "loglevel";
 import { getSettings, setSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 import { updateTabGroups } from "../common/tabGroups";
-import { updateActiveSession } from "./autoSave.js";
+import { setActiveSession } from "./save";
 
 const logDir = "background/open";
 
@@ -13,18 +13,8 @@ export async function openSession(session, property = "openInNewWindow") {
   let isFirstWindowFlag = true;
   tabList = {};
 
-  // Auto-save the active session before switching to a different one (if the
-  // relevant setting is enabled)
-  if (getSettings('autoSaveBeforeActiveSessionChange')) {
-    await updateActiveSession();
-  }
-  // Sets an internal, non-exportable setting for the currently active session
-  // It's non exportable because it's value is associated to the user sessions
-  // which are not exported with the settings.
-  // Session start time for active session begins when the user either opens or creates it
-  setSettings('activeSession', getSettings('keepTrackOfActiveSession')
-    ? {name: session.name, id: session.id, sessionStartTime: Date.now()}
-    : null);
+  // Set the currently active session when opening an existing saved session
+  setActiveSession(session.id, session.name);
 
   for (let win in session.windows) {
     const openInCurrentWindow = async () => {
