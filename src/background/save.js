@@ -223,7 +223,7 @@ export async function setActiveSession(id, name, sessionToSave) {
   // Auto-save the active session before switching to a different one (if the
   // relevant setting is enabled)
   // If no sessionToSave is passed, updateActiveSession will fetch the current session
-  if (getSettings('autoSaveBeforeActiveSessionChange')) {
+  if (getSettings("keepTrackOfActiveSession") && getSettings('autoSaveBeforeActiveSessionChange')) {
     await updateActiveSession(sessionToSave);
   }
 
