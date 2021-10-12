@@ -14,7 +14,7 @@ export async function openSession(session, property = "openInNewWindow") {
   tabList = {};
 
   // Set the currently active session when opening an existing saved session
-  setActiveSession(session.id, session.name);
+  await setActiveSession(session.id, session.name);
 
   for (let win in session.windows) {
     const openInCurrentWindow = async () => {

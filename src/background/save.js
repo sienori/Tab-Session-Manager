@@ -26,7 +26,7 @@ export async function saveCurrentSession(name, tag, property) {
 
   // When the user saves the current session, s/he's implicitly setting the active
   // session to the new session
-  setActiveSession(session.id, session.name, session);
+  await setActiveSession(session.id, session.name, session);
 
   return await saveSession(session);
 }
@@ -219,7 +219,7 @@ export async function updateActiveSession(withSession) {
 // Sets an internal, non-exportable setting for the currently active session
 // It's non exportable because it's value is associated to the user sessions,
 // which are not exported together with the settings.
-export function setActiveSession(id, name, sessionToSave) {
+export async function setActiveSession(id, name, sessionToSave) {
   // Auto-save the active session before switching to a different one (if the
   // relevant setting is enabled)
   // If no sessionToSave is passed, updateActiveSession will fetch the current session
