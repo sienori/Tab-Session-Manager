@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import { updateLogLevel, overWriteLogLevel } from "src/common/log";
-import { initSettings, resetAllSettings, handleSettingsChange, exportSettings, importSettings } from "src/settings/settings";
+import { initSettings, getAllSettings, resetAllSettings, handleSettingsChange, exportSettings, importSettings } from "src/settings/settings";
 import defaultSettings from "src/settings/defaultSettings";
 import CategoryContainer from "./CategoryContainer";
-import OptionContainer from "./OptionContainer";
 
 export default class SettingsPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isInit: false
+      isInit: false,
+      currentValues: {}
     };
     this.init();
   }
@@ -19,15 +19,19 @@ export default class SettingsPage extends Component {
     await initSettings();
     overWriteLogLevel();
     updateLogLevel();
-    this.setState({ isInit: true });
-    browser.storage.onChanged.addListener(handleSettingsChange);
+    this.setState({ isInit: true, currentValues: getAllSettings() });
+    browser.storage.onChanged.addListener(changes => {
+      const newSettings = handleSettingsChange(changes);
+      if (newSettings) this.setState({currentValues: newSettings})
+    });
   }
 
   render() {
+    const {isInit, currentValues} = this.state;
     const settingsContent = (
       <ul>
         {defaultSettings.map((category, index) => (
-          <CategoryContainer {...category} key={index} />
+          <CategoryContainer {...category} currentValues={currentValues} key={index} />
         ))}
         <CategoryContainer {...additionalCategory} />
       </ul>
@@ -37,7 +41,7 @@ export default class SettingsPage extends Component {
       <div>
         <p className="contentTitle">{browser.i18n.getMessage("settingsLabel")}</p>
         <hr />
-        {this.state.isInit ? settingsContent : ""}
+        {isInit ? settingsContent : ""}
       </div>
     );
   }

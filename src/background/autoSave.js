@@ -246,11 +246,15 @@ async function isChangedAutoSaveSession(session) {
 }
 
 // Persists the session corresponding to the currently active session (if any),
-// with the current status of the session (currently open tabs), passed in the
-// "withSession" argument (withSession needs to be a valid session)
-async function updateActiveSession(withSession = {}) {
+// with the session passed as argument in "withSession" (needs to be a valid
+// session). If no argument is passed, it will fetch the current session
+export async function updateActiveSession(withSession) {
+  if (withSession === undefined) {
+    withSession = await loadCurrentSession('', [], "saveAllWindows");
+  }
+
   const activeSession = getSettings('activeSession');
-  if (activeSession) {
+  if (activeSession && typeof withSession === 'object') {
     const beforeSession = await getSessions(activeSession.id);
     if (beforeSession) {
       const newSession = {

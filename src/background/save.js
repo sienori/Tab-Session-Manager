@@ -11,6 +11,7 @@ import { pushRemovedQueue, syncCloudAuto } from "./cloudSync.js";
 import { getValidatedTag } from "./tag.js";
 import { queryTabGroups } from "../common/tabGroups";
 import { compressDataUrl } from "../common/compressDataUrl";
+import { updateActiveSession } from "./autoSave.js";
 
 const logDir = "background/save";
 
@@ -22,8 +23,13 @@ export async function saveCurrentSession(name, tag, property) {
     return Promise.reject();
   });
 
+  // Auto-save the active session before switching to a different one (if the
+  // relevant setting is enabled)
+  if (getSettings('autoSaveBeforeActiveSessionChange')) {
+    await updateActiveSession(session);
+  }
   // When the user saves the current session, s/he's implicitly setting the active
-  // session, if the Setting to track the active session is enabled
+  // session to the new session (if the Setting to track the active session is enabled)
   setSettings('activeSession', getSettings("keepTrackOfActiveSession")
     ? {name: session.name, id: session.id, sessionStartTime: Date.now()}
     : null);

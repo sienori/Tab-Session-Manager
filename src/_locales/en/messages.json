@@ -299,6 +299,12 @@
   "activeSessionLabel": {
     "message": "Active session"
   },
+  "autoSaveBeforeActiveSessionChangeLabel": {
+    "message": "Save the active session before switching"
+  },
+  "autoSaveBeforeActiveSessionChangeCaptionLabel": {
+    "message": "Save the currently active session before switching to a different session."
+  },
   "startupLabel": {
     "message": "Startup"
   },

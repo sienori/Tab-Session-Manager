@@ -1,11 +1,11 @@
 import React from "react";
 import browser from "webextension-polyfill";
-import { setSettings, getSettings } from "src/settings/settings";
+import { setSettings, getAllSettings } from "src/settings/settings";
 import KeyboardShortcutForm from "./KeyboardShortcutForm";
 import "../styles/OptionContainer.scss";
 
 export default props => {
-  const { title, captions, type, id, children } = props;
+  const { title, captions, type, id, children, currentValue, shouldShow } = props;
 
   const handleValueChange = e => {
     let value = e.target.value;
@@ -35,7 +35,7 @@ export default props => {
             type="checkbox"
             id={formId}
             onChange={handleCheckedChange}
-            defaultChecked={getSettings(id)}
+            defaultChecked={currentValue}
           />
           <span className="checkbox" />
         </label>
@@ -52,7 +52,7 @@ export default props => {
           step={props.step}
           placeholder={props.placeholder}
           onChange={handleValueChange}
-          defaultValue={getSettings(id)}
+          defaultValue={currentValue}
         />
       );
       break;
@@ -64,7 +64,7 @@ export default props => {
           id={formId}
           placeholder={props.placeholder}
           onChange={handleValueChange}
-          defaultValue={getSettings(id)}
+          defaultValue={currentValue}
         />
       );
       break;
@@ -76,7 +76,7 @@ export default props => {
           spellCheck={false}
           placeholder={props.placeholder}
           onChange={handleValueChange}
-          defaultValue={getSettings(id)}
+          defaultValue={currentValue}
         />
       );
       break;
@@ -90,7 +90,7 @@ export default props => {
             name={id}
             value={props.value}
             onChange={handleValueChange}
-            defaultChecked={props.value === getSettings(id) ? "checked" : ""}
+            defaultChecked={props.value === currentValue ? "checked" : ""}
           />
           <span className="radio" />
         </label>
@@ -104,7 +104,7 @@ export default props => {
             type="color"
             id={formId}
             onChange={handleValueChange}
-            defaultValue={getSettings(id)}
+            defaultValue={currentValue}
           />
         </label>
       );
@@ -113,7 +113,7 @@ export default props => {
       formId = id;
       optionForm = (
         <div className="selectWrap">
-          <select id={formId} onChange={handleValueChange} defaultValue={getSettings(id)}>
+          <select id={formId} onChange={handleValueChange} defaultValue={currentValue}>
             {props.options.map((option, index) => (
               <option value={option.value} key={index}>
                 {browser.i18n.getMessage(option.name)}
@@ -160,10 +160,11 @@ export default props => {
       break;
   }
 
-  const shouldShow = props.shouldShow == undefined || props.shouldShow;
+  const shouldShowOption = shouldShow === undefined
+    || (typeof shouldShow === 'function' ? shouldShow(getAllSettings()) : shouldShow);
 
   return (
-    shouldShow && (
+    shouldShowOption && (
       <li className={`optionContainer ${props.updated ? "updated" : ""} ${props.new ? "new" : ""}`}>
         <div className={`optionElement ${type == "textarea" ? "showColumn" : ""}`}>
           <div className="optionText">

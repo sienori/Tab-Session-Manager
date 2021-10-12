@@ -210,7 +210,15 @@ export default [
         captions: ["useTabTitleforAutoSaveCaptionLabel"],
         type: "checkbox",
         default: true
-      }
+      },
+      {
+        id: "autoSaveBeforeActiveSessionChange",
+        title: "autoSaveBeforeActiveSessionChangeLabel",
+        captions: ["autoSaveBeforeActiveSessionChangeCaptionLabel"],
+        type: "checkbox",
+        default: true,
+        shouldShow: (settings) => settings['keepTrackOfActiveSession']
+      },
     ]
   },
   {

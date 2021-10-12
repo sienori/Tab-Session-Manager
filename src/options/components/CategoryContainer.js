@@ -4,7 +4,7 @@ import OptionContainer from "./OptionContainer";
 import "../styles/CategoryContainer.scss";
 
 export default props => {
-  const { category, elements } = props;
+  const { category, elements, currentValues = {} } = props;
   return (
     <li className="categoryContainer">
       <fieldset>
@@ -15,11 +15,11 @@ export default props => {
         </legend>
         <ul className="categoryElements">
           {elements.map((option, index) => (
-            <OptionContainer {...option} key={index}>
+            <OptionContainer {...option} currentValue={currentValues[option.id]} key={index}>
               {option.hasOwnProperty("childElements") && (
                 <ul className="childElements">
                   {option.childElements.map((option, index) => (
-                    <OptionContainer {...option} key={index} />
+                    <OptionContainer {...option} currentValue={currentValues[option.id]} key={index} />
                   ))}
                 </ul>
               )}

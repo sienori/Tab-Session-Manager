@@ -45,6 +45,10 @@ export const getSettings = id => {
   return currentSettings[id];
 };
 
+export const getAllSettings = () => {
+  return currentSettings;
+};
+
 export const resetAllSettings = async () => {
   log.info(logDir, "resetAllSettings()");
   currentSettings = {};
@@ -52,10 +56,12 @@ export const resetAllSettings = async () => {
   await initSettings();
 };
 
-export const handleSettingsChange = (changes, area) => {
+export const handleSettingsChange = (changes) => {
   if (Object.keys(changes).includes("Settings")) {
     currentSettings = changes.Settings.newValue;
+    return currentSettings;
   }
+  return null;
 };
 
 export const exportSettings = async () => {
