@@ -234,13 +234,13 @@
     "message": "Αυτόματη αποθήκευση - Τακτικά"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Το παράθυρο έκλεισε"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Ο περιηγητής έκλεισε"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Τακτικά"
   },
   "settingsLabel": {
     "message": "Ρυθμίσεις"
