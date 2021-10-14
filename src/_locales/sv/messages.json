@@ -234,13 +234,13 @@
     "message": "Spara automatiskt - Regelbundet"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Fönster stängt"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Webbläsaren avslutad"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regelbundet"
   },
   "settingsLabel": {
     "message": "Inställningar"
