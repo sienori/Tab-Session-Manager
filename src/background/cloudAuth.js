@@ -56,6 +56,7 @@ const getAuthCode = async (email = "", shouldShowLogin = true) => {
     `&redirect_uri=${encodeURIComponent(redirectUri)}` +
     `&scope=${encodeURIComponent(scopes.join(" "))}` +
     `&access_type=offline` +
+    `&prompt=consent` +
     (email && `&login_hint=${email}`);
 
   const redirectedURL = await browser.identity.launchWebAuthFlow({
