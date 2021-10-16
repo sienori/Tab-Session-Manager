@@ -234,13 +234,13 @@
     "message": "Sauvegarde automatique – Périodique"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Fenêtre fermée"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Navigateur fermé"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Régulièrement"
   },
   "settingsLabel": {
     "message": "Paramètres"
