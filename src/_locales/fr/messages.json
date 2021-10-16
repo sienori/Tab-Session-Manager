@@ -504,7 +504,7 @@
     "message": "Synchronisation terminée."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Nécessite de se connecter pour la synchronisation infonuagique."
   },
   "signInLabel": {
     "message": "Se connecter"
