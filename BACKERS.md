@@ -90,3 +90,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Ruchira
 - Ekaterina Staneva
 - Allen.YL
+- Brandon Boren
+- CV
