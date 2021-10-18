@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Търсене по име на сесия или раздел"
   },
   "search": {
     "message": "Търсене"
@@ -108,10 +108,10 @@
     "message": "Отказ"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Отмяна"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Връщане"
   },
   "addTagLabel": {
     "message": "Добавяне на етикет"
@@ -120,7 +120,7 @@
     "message": "Премахване на етикета"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Въвеждане името на таг-а"
   },
   "detailLabel": {
     "message": "Подробности"
@@ -207,10 +207,10 @@
     "message": "Премахване от стартирането"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Редактиране на прозорец"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Добавяне на текущия раздел"
   },
   "errorLabel": {
     "message": "Грешка"
@@ -219,7 +219,7 @@
     "message": "IndexedDB не е налична във вашият браузър."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Презареждане на разширението"
   },
   "howToSolveLabel": {
     "message": "Разрешаване на проблема"
@@ -234,13 +234,13 @@
     "message": "Авто запазени - редовно"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Прозорецът е затворен"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Излизане от браузъра"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Редовно"
   },
   "settingsLabel": {
     "message": "Настройки"
@@ -369,10 +369,10 @@
     "message": "Създаване резервно копие на сесиите и запазване в папката за изтегляния при стартиране на браузъра."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Индивидуално резервно копие"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Всяка сесия се записва в отделен файл.<br>Ако отметката не бъде отбелязана, всички сесии ще бъдат записани в един файл, което може да доведе до претоварване на мястото за съхранение."
   },
   "backupFolderLabel": {
     "message": "Местоположение за запис"
