@@ -210,7 +210,7 @@ const convertMozLz4Sessionstore = async file => {
       session.windows[win][index] = {
         id: index,
         index: index,
-        windowId: parseInt(win),
+        windowId: parseInt(win, 10),
         lastAccessed: tab.lastAccessed,
         url: tab.entries[entryIndex].url,
         title: tab.entries[entryIndex].title,
