@@ -207,16 +207,30 @@ const convertMozLz4Sessionstore = async file => {
     let index = 0;
     for (const tab of mozSession.windows[win].tabs) {
       const entryIndex = tab.index - 1;
-      session.windows[win][index] = {
-        id: index,
-        index: index,
-        windowId: parseInt(win, 10),
-        lastAccessed: tab.lastAccessed,
-        url: tab.entries[entryIndex].url,
-        title: tab.entries[entryIndex].title,
-        favIconUrl: tab.image,
-        discarded: true,
-      };
+      if (tab.entries[entryIndex]) {
+        session.windows[win][index] = {
+          id: index,
+          index: index,
+          windowId: parseInt(win, 10),
+          lastAccessed: tab.lastAccessed,
+          url: tab.entries[entryIndex].url,
+          title: tab.entries[entryIndex].title,
+          favIconUrl: tab.image,
+          discarded: true,
+        };
+      } else {
+        // User typed value into URL bar but page was not loaded
+        session.windows[win][index] = {
+          id: index,
+          index: index,
+          windowId: parseInt(win, 10),
+          lastAccessed: tab.lastAccessed,
+          url: 'about:blank#' + tab.userTypedValue,
+          title: 'New Tab',
+          favIconUrl: tab.image,
+          discarded: true,
+        };
+      }
       index++;
     }
     session.tabsNumber += index;
