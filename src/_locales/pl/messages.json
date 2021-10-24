@@ -234,13 +234,13 @@
     "message": "Automatyczny zapis - regularnie"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Zamknięte okno"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Wyjście z przeglądarki"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regularnie"
   },
   "settingsLabel": {
     "message": "Ustawienia"
@@ -504,7 +504,7 @@
     "message": "Synchronizacja zakończona."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Wymaga zalogowania w celu synchronizacji z chmurą."
   },
   "signInLabel": {
     "message": "Zaloguj się"
