@@ -92,3 +92,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Allen.YL
 - Brandon Boren
 - CV
+- Alejandro Cavazos
