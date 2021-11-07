@@ -504,7 +504,7 @@
     "message": "Synchronisierung abgeschlossen."
   },
   "signInRequiredLabel": {
-    "message": "Einloggen nötig für Cloud-Synchronisierung."
+    "message": "Erfordert die Anmeldung für die Cloud-Synchronisierung."
   },
   "signInLabel": {
     "message": "Anmelden"
@@ -606,13 +606,13 @@
     "message": "Einstellungen Exportieren"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Einstellungen als json-Datei auf dem Computer Speichern."
+    "message": "Einstellungen als json-Datei auf dem Computer speichern."
   },
   "importSettingsLabel": {
     "message": "Einstellungen Importieren"
   },
   "importSettingsCaptionLabel": {
-    "message": "Einstellungsdatei vom Computer Laden."
+    "message": "Laden Sie die auf dem Computer gespeicherte Einstellungsdatei."
   },
   "resetSettingsLabel": {
     "message": "Einstellungen zurücksetzen"
@@ -627,7 +627,7 @@
     "message": "Sitzungen importieren"
   },
   "importCaptionLabel": {
-    "message": "Lade Sitzungen vom Computer und füge sie zur Session-Liste."
+    "message": "Laden Sie auf dem Computer gespeicherte Sitzungen und fügen Sie diese der Sitzungsliste hinzu."
   },
   "importCaptionLabel2": {
     "message": "Unterstützte Dateitypen:"
