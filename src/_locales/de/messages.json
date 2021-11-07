@@ -120,7 +120,7 @@
     "message": "Schlagwort entfernen"
   },
   "inputTagLabel": {
-    "message": "Den Tag-Namen eingeben"
+    "message": "Tag-Namen eingeben"
   },
   "detailLabel": {
     "message": "Details"
@@ -408,7 +408,7 @@
     "message": "Gerätename in Sitzung speichern"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Fügen Sie den Gerätenamen als Tag hinzu, wenn Sie eine Sitzung speichern. Bei der Cloud-Synchronisierung können Sie ihn von Sitzungen auf anderen Geräten unterscheiden."
+    "message": "Fügen Sie den Gerätenamen als Tag hinzu, wenn Sie eine Sitzung speichern. Bei der Cloud-Synchronisierung können Sie es von Sitzungen auf anderen Geräten unterscheiden."
   },
   "deviceNameLabel": {
     "message": "Gerätename"
@@ -735,13 +735,13 @@
     "message": "Erweiterungs Seite"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Firefox Addons"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge Addons"
   },
   "privacyPolicyLabel": {
     "message": "Datenschutzrichtlinie"
