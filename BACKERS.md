@@ -93,3 +93,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Brandon Boren
 - CV
 - Alejandro Cavazos
+- Deckard
