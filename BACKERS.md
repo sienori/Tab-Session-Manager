@@ -94,3 +94,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - CV
 - Alejandro Cavazos
 - Deckard
+- Susannah Lai
