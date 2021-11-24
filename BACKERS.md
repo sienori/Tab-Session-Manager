@@ -95,3 +95,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Alejandro Cavazos
 - Deckard
 - Susannah Lai
+- Hassan Williamson
