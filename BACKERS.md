@@ -96,3 +96,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Deckard
 - Susannah Lai
 - Hassan Williamson
+- Kamran Razvan
