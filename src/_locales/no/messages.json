@@ -507,10 +507,10 @@
     "message": "Requires sign in for cloud sync."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Logg inn"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Logg ut"
   },
   "enabledAutoSyncLabel": {
     "message": "Automatically sync"
@@ -735,42 +735,42 @@
     "message": "Utvidelsesside"
   },
   "firefoxLabel": {
-    "message": "Firefox Tillegg"
+    "message": "Firefox Add-ons"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Chrome Nettmarked"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge-tillegg"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Persovernerklæring"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "Økter importert."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Lesing mislyktes"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Er du sikker på at du vil slette alle øktene?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Økt"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://addons.mozilla.org/nb-NO/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "Denne siden kan ikke åpnes av Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Kopier URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Kopiert."
   }
 }
