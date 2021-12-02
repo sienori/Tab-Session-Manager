@@ -42,7 +42,7 @@
     "message": "Alle"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Manuelt lagret"
   },
   "displayAutoLabel": {
     "message": "Automatisk lagret"
@@ -273,7 +273,7 @@
     "message": "Tab lazy loading"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "Når en økt åpnes, vil ikke innholdet på nettsidene lastes inn før du velger fanen.<br>Hvis umerket, vil minnebruken øke betydelig når en økt blir gjenopprettet."
   },
   "isUseDiscardedLabel": {
     "message": "Use the \"discarded\" property for lazy loading"
@@ -453,7 +453,7 @@
     "message": "Komprimering fullført."
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Hvis umerket blir private vinduer ignorert når økten lagres."
   },
   "ifSupportTstLabel": {
     "message": "Støtter Tree Style Tab"
@@ -486,7 +486,7 @@
     "message": "Slå på skysynkronisering (beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Lagre økter på Google Drive™ og synkroniser med andre datamaskiner."
   },
   "syncingLabel": {
     "message": "Synkroniserer"
@@ -582,7 +582,7 @@
     "message": "Annet"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Åpne innstillingsside etter oppdatering"
+    "message": "Åpne innstillingssiden etter oppdatering"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
     "message": "Åpne innstillingssiden når Tab Session Manager har blitt oppdatert. Du kan finne ut av innholdet i oppdateringen så fort som mulig."
