@@ -12,7 +12,7 @@
     "message": "Doner"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Åpne øktliste i fane"
   },
   "saveLabel": {
     "message": "Lagre"
@@ -66,7 +66,7 @@
     "message": "Søk"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Tøm søk"
   },
   "open": {
     "message": "Åpne"
@@ -153,34 +153,34 @@
     "message": "Meny"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Lukk menyen"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Lukk"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Gi nytt navn"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Gi økten nytt navn"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Åpne en økt"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Åpne i nytt vindu"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Åpne økten i det nye vinduet."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Åpne i dette vinduet"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Åpne økten i dette vinduet. Inaktive vinduer og alle faner blir lukket."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Åpne i dette vinduet"
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
@@ -642,7 +642,7 @@
     "message": "Importer"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "Tøm"
   },
   "urlImportLabel": {
     "message": "Importer URL-liste"
@@ -696,19 +696,19 @@
     "message": "Open toolbar popup"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Lagre økt (kun gjeldene vindu)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Lagre økt (alle vinduer)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Eksporter alle økter"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Tøm"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Tilbakestill"
   },
   "backersLabel": {
     "message": "Backers"
