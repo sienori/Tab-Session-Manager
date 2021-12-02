@@ -45,7 +45,7 @@
     "message": "User Save"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Automatisk lagret"
   },
   "newestLabel": {
     "message": "Nyeste"
@@ -111,7 +111,7 @@
     "message": "Angre"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Gjør om igjen"
   },
   "addTagLabel": {
     "message": "Legg til etikett"
@@ -123,7 +123,7 @@
     "message": "Skriv inn navnet til etiketten"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Detaljer"
   },
   "windowLabel": {
     "message": "Vindu"
@@ -225,19 +225,19 @@
     "message": "Hvordan løse dette problemet"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Automatisk lagret - Vindu lukket"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Automatisk lagret - Nettleser lukket"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Automatisk lagret - Regelmessig"
   },
   "winCloseSessionNameShort": {
     "message": "Vindu lukket"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Nettleseren lukket"
   },
   "regularSaveSessionNameShort": {
     "message": "Regelmessig"
@@ -306,7 +306,7 @@
     "message": "Åpne oppstartsøkten"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Åpne oppstartsøktene. Du kan legge til flere i menyen i øktlista."
   },
   "DoNothingLabel": {
     "message": "Ikke gjør noe"
@@ -354,10 +354,10 @@
     "message": "Maksimalt antall lagrede økter (på denne måten)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Bruk sidetittel til navnet på automatisk lagrede økter"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Når en økt blir lagret automatisk, bruk tittelen til den åpne nettsiden som navn på økten."
   },
   "backupLabel": {
     "message": "Sikkerhetskopi"
@@ -465,7 +465,7 @@
     "message": "Delay when tree restoration (millisecond)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Lagre fanegrupper"
   },
   "saveTabGroupsCaptionLabel": {
     "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
@@ -558,13 +558,13 @@
     "message": "Høyde"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Bredden til sidestolpen"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Åpne øktliste i fane"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Åpne øktlista i fanen når du klikker på knappen i verktøyslina."
   },
   "themeLabel": {
     "message": "Tema"
