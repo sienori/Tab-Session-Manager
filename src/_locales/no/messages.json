@@ -93,64 +93,64 @@
     "message": "Klarte ikke a slette økten."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Klarte ikke a slette øktvinduet."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Klarte ikke å slette øktfanen."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Økt lagret."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Klarte ikke å lagre økten."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Avbryt"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Angre"
   },
   "redoLabel": {
     "message": "Redo"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Legg til etikett"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Fjern etikett"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Skriv inn navnet til etiketten"
   },
   "detailLabel": {
     "message": "Detail"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "Vindu"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "Vinduer"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "Fane"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "Faner"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Det er ingen økt."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "La oss lagre økten ved å klikke på knappen nede til høyre."
   },
   "noResultLabel": {
     "message": "No matching results."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Ingen økt valgt."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Meny"
   },
   "closeMenuLabel": {
     "message": "Close the menu"
