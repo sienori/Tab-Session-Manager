@@ -582,49 +582,49 @@
     "message": "Annet"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Åpne innstillingsside etter oppdatering"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Åpne innstillingssiden når Tab Session Manager har blitt oppdatert. Du kan finne ut av innholdet i oppdateringen så fort som mulig."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager har blitt oppdatert!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Se mer"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Klikk for å se oppdateringsinformasjon."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Slå på feilsøkingsmodus"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Når feilsøkingsmodus er påslått, vil feilsøkeren skrive til loggen."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Eksporter innstillingene"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Lagre innstillingene som en json-fil på datamaskinen."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importer innstillinger"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Last inn innstillingsfilen fra datamaskinen."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Tilbakestill innstillingene"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Tilbakestill alle innstillingene til standard."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Tilbakestill"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "Importer økter"
   },
   "importCaptionLabel": {
     "message": "Load sessions saved on the computer and add them to the session List."
