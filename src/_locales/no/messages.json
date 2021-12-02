@@ -318,40 +318,40 @@
     "message": "Lagre økten hvert X. minutt."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "Intervall (minutter)"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maksimalt antall Lagrede"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maksimalt antall lagrede økter (på denne måten)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "Lagre økten når vinduet lukkes"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Lagre økten inkludert når kun ett vindu ble lukket."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maksimalt antall Lagrede"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maksimalt antall lagrede økter (på denne måten)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Lagre økten når nettleseren lukkes"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Lagre økten inkluderert når flere vinduer ble lukket på rad."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maksimalt antall Lagrede"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maksimalt antall lagrede økter (på denne måten)."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Use page title for auto save session name"
@@ -360,13 +360,13 @@
     "message": "When saving a session automatically, use the title of the opened page as the name of the session."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Sikkerhetskopi"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Lagre sikkerhetskopier"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Ta en sikkerhetskopi av øktene når nettleseren starter og lagre den i nedlastingsmappa."
   },
   "individualBackupLabel": {
     "message": "Individual backup"
