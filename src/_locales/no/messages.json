@@ -183,22 +183,22 @@
     "message": "Åpne i dette vinduet"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Åpne fanene i dette vinduet. Åpne det i det nye vinduet, hvis økten inneholder flere vinduer."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Rediger en økt"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Bytt ut med denne økten"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Bytt ut med dette vinduet"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Legg til dette vinduet"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Lag en kopi av økten"
   },
   "registerStartupLabel": {
     "message": "Register for startup"
@@ -207,22 +207,22 @@
     "message": "Remove from startup"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Rediger et vindu"
   },
   "addCurrentTabLabel": {
     "message": "Add current tab"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Feil"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB er ikke tilgjenglig i nettleseren din."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Last inn utvidelsen på nytt"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Hvordan løse dette problemet"
   },
   "winCloseSessionName": {
     "message": "Auto Save - Window closed"
@@ -234,7 +234,7 @@
     "message": "Auto Save - Regularly"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Vindu lukket"
   },
   "browserExitSessionNameShort": {
     "message": "Browser exited"
