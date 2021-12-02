@@ -279,43 +279,43 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Å slå på dette alternativet vil forbedre ytelsen når du åpner faner."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Gjenopprett vindusposisjonene"
   },
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Restore windows position and size when opening session."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Oppstart"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Oppførsel når nettleseren startes"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Åpne forrige økt"
   },
   "openPreviousSessionCaptionLabel": {
     "message": "Open the session that was closed the last time."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Åpne oppstartsøkten"
   },
   "openStartupSessionCaptionLabel": {
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Ikke gjør noe"
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "Lagre økten regelmessig"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "Lagre økten hvert X. minutt."
   },
   "autoSaveIntervalLabel": {
     "message": "Interval (minutes)"
