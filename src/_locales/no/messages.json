@@ -144,7 +144,7 @@
     "message": "La oss lagre økten ved å klikke på knappen nede til høyre."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Ingen treff."
   },
   "noSessionSelectedLabel": {
     "message": "Ingen økt valgt."
@@ -201,16 +201,16 @@
     "message": "Lag en kopi av økten"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Legg til oppstart"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Fjern fra oppstart"
   },
   "editWindowLabel": {
     "message": "Rediger et vindu"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Legg til denne fanen"
   },
   "errorLabel": {
     "message": "Feil"
@@ -258,7 +258,7 @@
     "message": "General"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Lagre automatisk"
   },
   "styleLabel": {
     "message": "Stil"
@@ -321,7 +321,7 @@
     "message": "Intervall (minutter)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Minimumsverdi: 0,1"
   },
   "autoSaveLimitLabel": {
     "message": "Maksimalt antall Lagrede"
@@ -444,7 +444,7 @@
     "message": "Komprimer"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Komprimer alle økter?"
   },
   "compressingLabel": {
     "message": "Komprimerer..."
@@ -480,31 +480,31 @@
     "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Skysynkroniser"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Slå på skysynkronisering (beta)"
   },
   "enabledCloudSyncCaptionLabel": {
     "message": "Save sessions to Google Drive™ and sync with other computers."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Synkroniserer"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Laster ned"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Laster opp"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Sletter"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Synkronisering fullført."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Krever innlogging for synkronisering."
   },
   "signInLabel": {
     "message": "Logg inn"
@@ -513,16 +513,16 @@
     "message": "Logg ut"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Synkroniser automatisk"
   },
   "enabledAutoSyncCaptionLabel": {
     "message": "Utfør sky-synkronisering når nettleseren starter opp, og når økten er lagret."
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Synkroniser automatisk lagrede økter"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Last opp/ned automatisk lagrede økter med skysynkronisering."
   },
   "popupLabel": {
     "message": "Popup"
