@@ -390,43 +390,43 @@
     "message": "Når antall sikkerhetskopier går over denne verdien, slettes de i stigende rekkefølge fra den eldste."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Datoformat"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "Eksempel: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Lagre privat vindu"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "URL-liste som vil bli ignorert når en økt lagres"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Hvis fanen sin URL samsvarer med listen, vil den ikke bli lagret i økten. Listen tillater jokertegn (*)."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Lagre enhetsnavnet til økten"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Legg til enhetsnavnet som en etikett når du lagrer en økt. Når du bruker skysynkronisering kan du skille den fra økter på andre enheter."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Enhetsnavn"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Angi navnet til denne enheten."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Bruk enhetsnavn på eksisterende økter"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Legg til enhetsnavn på alle lagrede økter."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Bruk enhetsnavn"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Bruk enhetsnavn på alle økter?"
   },
   "compressFaviconUrlLabel": {
     "message": "Compress favicons"
@@ -435,13 +435,13 @@
     "message": "Compress the favicons when saving a session."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Komprimer alle økter"
   },
   "compressAllSessionsCaptionLabel": {
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Komprimer"
   },
   "compressAllSessionsConfirmLabel": {
     "message": "Compress all sessions?"
@@ -567,19 +567,19 @@
     "message": "Open session list in tab when button on toolbar is clicked."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Angi fargetema."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Lyst"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Mørkt"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Annet"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
     "message": "Display option page when updating"
