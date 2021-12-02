@@ -627,70 +627,70 @@
     "message": "Importer økter"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Last inn økter fra datamaskinen og legg dem til i øktlisten."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Støttede filtyper:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Hvordan importere økter fra andre utvidelser"
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "Utforsk..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Importer"
   },
   "importClearButtonLabel": {
     "message": "Clear"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Importer URL-liste"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Opprett en økt fra en liste med URL-er og legg den til i øktlisten.<br>Format: &lt;URL&gt; &lt;sidetittel (valgfri)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "Eksporter økter"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Lagre alle øktene til datamaskinen."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "Eksporter"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "Slett øktene"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Slett alle øktene."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "Slett"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Hurtigtaster"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Sett hurtigtaster."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Skriv inn en hurtigtast"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Skriv inn en bokstav"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Inkluder enten Ctrl eller Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Inkluder enten Kommando, Ctrl eller Alt"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Bokstaven kan ikke bukes"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Hurtigtasten kan ikke brukes"
   },
   "openPopupDescription": {
     "message": "Open toolbar popup"
