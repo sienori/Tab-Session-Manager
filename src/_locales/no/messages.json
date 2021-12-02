@@ -33,7 +33,7 @@
     "message": "Kun lagre dette vinduet"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Kategorifilter"
   },
   "sortLabel": {
     "message": "Sorter"
@@ -528,22 +528,22 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Oppførsel til åpneknappen"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Velg oppførselen til åpneknappen."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Oppførsel til lagreknappen"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Velg oppførselen til lagreknappen."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Vis åpne/slett-knapper i øktlista"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Vis åpne/slett-knapper når musepekeren er over øktlista."
   },
   "sizeLabel": {
     "message": "Størrelse"
@@ -711,7 +711,7 @@
     "message": "Tilbakestill"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Støttespillere"
   },
   "LicenseLabel": {
     "message": "Lisens"
@@ -720,7 +720,7 @@
     "message": "Please make a donation"
   },
   "donationCaptionLabel": {
-    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+    "message": "Takk for at du bruker Tab Session Manager.<br>Din støtte er en stor oppmuntring for meg, mens jeg fortsetter å utvikle utvidelsen.<br>Hvis du liker Tab Session Manager, ville jeg virkelig sette pris på en donasjon fra deg."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
