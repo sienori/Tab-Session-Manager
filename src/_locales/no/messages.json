@@ -369,25 +369,25 @@
     "message": "Ta en sikkerhetskopi av øktene når nettleseren starter og lagre den i nedlastingsmappa."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Individuell sikkerhetskopi"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Hver økt blir lagret i hver sin fil.<br>Hvis ikke sjekket av vil alle økter bli lagret i en enkel fil. Noe som kan overvelde lagringsplassen din."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Lagringssted"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Angi mappe for lagring av sikkerhetskopien. Lagringsstedet må være inni nedlastingsmappa til nettleseren."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Nedlastingsmappe"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Maksimalt antall lagrede sikkerhetskopier"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Når antall sikkerhetskopier går over denne verdien, slettes de i stigende rekkefølge fra den eldste."
   },
   "dateFormatLabel": {
     "message": "Date format"
