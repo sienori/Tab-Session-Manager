@@ -240,19 +240,19 @@
     "message": "Browser exited"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regelmessig"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "Innstillinger"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "Økter"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Hurtigtaster"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "Om"
   },
   "generalLabel": {
     "message": "General"
@@ -261,10 +261,10 @@
     "message": "Auto save"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Stil"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Åpne økt i nytt vindu"
   },
   "ifOpenNewWindowCaptionLabel": {
     "message": "If unchecked, the session overwrites the current window."
@@ -402,7 +402,7 @@
     "message": "URL-liste som vil bli ignorert når en økt lagres"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "Hvis fanen sin URL samsvarer med listen, vil den ikke bli lagret i økten. Listen tillater jokertegn (*)."
+    "message": "Hvis fanen sin URL samsvarer med lista, vil den ikke bli lagret i økten. Listen tillater jokertegn (*)."
   },
   "shouldSaveDeviceNameLabel": {
     "message": "Lagre enhetsnavnet til økten"
@@ -447,16 +447,16 @@
     "message": "Compress all sessions?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Komprimerer..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Komprimering fullført."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "If unchecked, ignores the private window when saving the session."
   },
   "ifSupportTstLabel": {
-    "message": "Supports Tree Style Tab"
+    "message": "Støtter Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
     "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
@@ -516,7 +516,7 @@
     "message": "Automatically sync"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Utfør sky-synkronisering når nettleseren starter opp, og når økten er lagret."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Sync auto save sessions"
@@ -546,22 +546,22 @@
     "message": "Display open / delete buttons when the cursor is over the session list."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Størrelse"
   },
   "popupSizeCaptionLabel": {
     "message": "Specify the size of the popup."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Bredde"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Høyde"
   },
   "sidebarWidthLabel": {
     "message": "Sidebar width"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Åpne øktliste i fane"
   },
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Open session list in tab when button on toolbar is clicked."
@@ -627,7 +627,7 @@
     "message": "Importer økter"
   },
   "importCaptionLabel": {
-    "message": "Last inn økter fra datamaskinen og legg dem til i øktlisten."
+    "message": "Last inn økter fra datamaskinen og legg dem til i øktlista."
   },
   "importCaptionLabel2": {
     "message": "Støttede filtyper:"
@@ -648,7 +648,7 @@
     "message": "Importer URL-liste"
   },
   "urlImportCaptionLabel": {
-    "message": "Opprett en økt fra en liste med URL-er og legg den til i øktlisten.<br>Format: &lt;URL&gt; &lt;sidetittel (valgfri)&gt;"
+    "message": "Opprett en økt fra en liste med URL-er og legg den til i øktlista.<br>Format: &lt;URL&gt; &lt;sidetittel (valgfri)&gt;"
   },
   "exportLabel": {
     "message": "Eksporter økter"
@@ -714,7 +714,7 @@
     "message": "Backers"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "Lisens"
   },
   "donationLabel": {
     "message": "Please make a donation"
@@ -726,16 +726,16 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Sponsorere"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Tillegsside"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Utvidelsesside"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Firefox Tillegg"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
