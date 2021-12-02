@@ -15,31 +15,31 @@
     "message": "Open session list in tab"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "Lagre"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "Lagre denne økten"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Skriv inn navnet til økten"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Lagre en økt"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Lagre alle vinduer"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Kun lagre dette vinduet"
   },
   "categoryFilterLabel": {
     "message": "Category filter"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Sorter"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Alle"
   },
   "displayUserLabel": {
     "message": "User Save"
@@ -48,49 +48,49 @@
     "message": "Auto Save"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Nyeste"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Eldste"
   },
   "aToZLabel": {
-    "message": "A-Z"
+    "message": "A-Å"
   },
   "zToALabel": {
-    "message": "Z-A"
+    "message": "Å-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Søk etter økt- eller fanenavn"
   },
   "search": {
-    "message": "Search"
+    "message": "Søk"
   },
   "clearSearch": {
     "message": "Clear search"
   },
   "open": {
-    "message": "Open"
+    "message": "Åpne"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Slett"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Slette denne økten?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Økt slettet."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Øktvindu slettet."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Øktfane slettet."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Gjenopprett"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Klarte ikke a slette økten."
   },
   "failedDeleteSessionWindowLabel": {
     "message": "Failed to delete session window."
