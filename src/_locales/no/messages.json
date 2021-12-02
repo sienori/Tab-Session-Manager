@@ -267,7 +267,7 @@
     "message": "Åpne økt i nytt vindu"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "Hvis umerket, vil økten overskrive dette vinduet."
   },
   "ifLazyLoadingLabel": {
     "message": "Tab lazy loading"
@@ -300,7 +300,7 @@
     "message": "Åpne forrige økt"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Åpne økten som ble lukket sist gang."
   },
   "openStartupSessionLabel": {
     "message": "Åpne oppstartsøkten"
@@ -372,7 +372,7 @@
     "message": "Individuell sikkerhetskopi"
   },
   "individualBackupCaptionLabel": {
-    "message": "Hver økt blir lagret i hver sin fil.<br>Hvis ikke sjekket av vil alle økter bli lagret i en enkel fil. Noe som kan overvelde lagringsplassen din."
+    "message": "Hver økt blir lagret i hver sin fil.<br>Hvis umerket vil alle økter bli lagret i en enkel fil. Noe som kan overvelde lagringsplassen din."
   },
   "backupFolderLabel": {
     "message": "Lagringssted"
@@ -429,16 +429,16 @@
     "message": "Bruk enhetsnavn på alle økter?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Komprimer favorittikoner"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Komprimer favorittikonene når en økt lagres."
   },
   "compressAllSessionsLabel": {
     "message": "Komprimer alle økter"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Komprimer favorittikonene i alle de lagrede øktene. Dette vil spare minnebruk og gjøre øktinnlasting raskere."
   },
   "compressLabel": {
     "message": "Komprimer"
@@ -468,7 +468,7 @@
     "message": "Lagre fanegrupper"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Lagre og gjenopprett plasseringa til fanegrupper. For å slå på denne funksjonen, trenger du den følgende utvidelsen."
   },
   "tstDelayCaptionLabel": {
     "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
