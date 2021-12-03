@@ -276,19 +276,19 @@
     "message": "Når en økt åpnes, vil ikke innholdet på nettsidene lastes inn før du velger fanen.<br>Hvis umerket, vil minnebruken øke betydelig når en økt blir gjenopprettet."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Bruk \"discarded\"-egenskapen for doven innlasting"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Å slå på dette alternativet vil forbedre ytelsen når du åpner faner."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Favorittikonet til den dovne innlastede fanen blir ikke vist frem."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Gjenopprett vindusposisjonene"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Gjenopprett posisjonen og størrelsen til vinduene når du åpner en økt."
   },
   "startupLabel": {
     "message": "Oppstart"
@@ -459,7 +459,7 @@
     "message": "Støtter Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Gjenopprett trestrukturen til Tree Style Tab.<br>Når dette alternativet er påslått, vil det ta lengre tid å gjenopprette økten."
   },
   "tstDelayLabel": {
     "message": "Delay when tree restoration (millisecond)"
