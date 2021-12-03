@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Lagre og gjenopprett vinduer og faner. Støtter også automatisk lagring."
   },
   "donateWithPaypalLabel": {
     "message": "Doner med PayPal"
@@ -270,7 +270,7 @@
     "message": "Hvis umerket, vil økten overskrive dette vinduet."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Doven innlasting av faner"
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "Når en økt åpnes, vil ikke innholdet på nettsidene lastes inn før du velger fanen.<br>Hvis umerket, vil minnebruken øke betydelig når en økt blir gjenopprettet."
