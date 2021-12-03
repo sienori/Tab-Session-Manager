@@ -462,7 +462,7 @@
     "message": "Gjenopprett trestrukturen til Tree Style Tab.<br>Når dette alternativet er påslått, vil det ta lengre tid å gjenopprette økten."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Ventetid under gjenopprettelse av treet (millisekunder)"
   },
   "saveTabGroupsLabel": {
     "message": "Lagre fanegrupper"
@@ -471,13 +471,13 @@
     "message": "Lagre og gjenopprett plasseringa til fanegrupper. For å slå på denne funksjonen, trenger du den følgende utvidelsen."
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "For å gjenopprette trestrukturen må du vente litt før du kan åpne fanen. Øk denne verdien vis treet ikke blir gjenopprettet riktig."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Vis frem øktnavn på en linje"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Hvis navnet på økten i øktlisten er lengre enn en linje, blir den forkortet og vist frem på en linje."
   },
   "cloudSyncLabel": {
     "message": "Skysynkroniser"
@@ -525,7 +525,7 @@
     "message": "Last opp/ned automatisk lagrede økter med skysynkronisering."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Sprettoppvindu"
   },
   "openButtonBehaviorLabel": {
     "message": "Oppførsel til åpneknappen"
@@ -549,7 +549,7 @@
     "message": "Størrelse"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Angi størrelsen på sprettoppvinduet."
   },
   "widthLabel": {
     "message": "Bredde"
