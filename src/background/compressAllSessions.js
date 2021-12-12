@@ -25,7 +25,7 @@ export const compressAllSessions = async (sendResponse) => {
 };
 
 const calcSessionsSize = (sessions) => {
-  const blob = new Blob([JSON.stringify(sessions, null, "  ")], { type: "aplication/json" });
+  const blob = new Blob([JSON.stringify(sessions, null, "  ")], { type: "application/json" });
   return blob.size;
 };
 

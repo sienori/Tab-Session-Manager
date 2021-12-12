@@ -100,7 +100,7 @@ const compressDataUrl = async dataUrl => {
 };
 
 const showDownloadLink = (sessions) => {
-  const blob = new Blob([JSON.stringify(sessions, null, "  ")], { type: "aplication/json" });
+  const blob = new Blob([JSON.stringify(sessions, null, "  ")], { type: "application/json" });
   const downloadUrl = URL.createObjectURL(blob);
 
   const a = document.querySelector("#downloadLink");
