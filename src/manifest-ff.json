@@ -9,6 +9,7 @@
       "id": "Tab-Session-Manager@sienori"
     }
   },
+  "content_security_policy": "default-src 'none'; script-src 'self'; object-src 'self'; connect-src 'none';",
   "permissions": [
     "storage",
     "unlimitedStorage",

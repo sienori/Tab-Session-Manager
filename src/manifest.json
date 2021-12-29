@@ -4,6 +4,7 @@
   "name": "__MSG_extName__",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
+  "content_security_policy": "default-src 'none'; script-src 'self'; object-src 'self'; connect-src 'none';",
   "permissions": [
     "storage",
     "unlimitedStorage",
