@@ -228,28 +228,28 @@
     "message": "Automatisk lagra - Vindauge lukka"
   },
   "browserExitSessionName": {
-    "message": "Automatisk lagra - Nettleser lukka"
+    "message": "Automatisk lagra - Nettlesar lukka"
   },
   "regularSaveSessionName": {
-    "message": "Automatisk lagret - Regelmessig"
+    "message": "Automatisk lagra - Jamnleg"
   },
   "winCloseSessionNameShort": {
-    "message": "Vindu lukket"
+    "message": "Vindauge lukka"
   },
   "browserExitSessionNameShort": {
-    "message": "Nettleseren lukket"
+    "message": "Nettlesar lukka"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regelmessig"
+    "message": "Jamnleg"
   },
   "settingsLabel": {
-    "message": "Innstillinger"
+    "message": "Innstillingar"
   },
   "sessionsLabel": {
     "message": "Økter"
   },
   "shortcutsLabel": {
-    "message": "Hurtigtaster"
+    "message": "Hurtigtastar"
   },
   "informationLabel": {
     "message": "Om"
@@ -264,22 +264,22 @@
     "message": "Stil"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Åpne økt i nytt vindu"
+    "message": "Opna økt i eit nytt vindauge"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "Hvis umerket, vil økten overskrive dette vinduet."
+    "message": "Viss denne er umerka, vil økta overskriva dette vindauget."
   },
   "ifLazyLoadingLabel": {
     "message": "Doven innlasting av faner"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Når en økt åpnes, vil ikke innholdet på nettsidene lastes inn før du velger fanen.<br>Hvis umerket, vil minnebruken øke betydelig når en økt blir gjenopprettet."
+    "message": "Når ei økt opnas, vil ikkje innhaldet på nettsidene lastas inn før du veljer fanen.<br>Viss denne er umerka, vil minnebruken øke betydeleg når ei økt blir gjenoppretta."
   },
   "isUseDiscardedLabel": {
-    "message": "Bruk \"discarded\"-egenskapen for doven innlasting"
+    "message": "Bruk «discarded»-eigenskapen for doven innlasting"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Å slå på dette alternativet vil forbedre ytelsen når du åpner faner."
+    "message": "Å slå på dette alternativet vil forbetre ytinga når du opner faner."
   },
   "isUseDiscardedCaption2Label": {
     "message": "Favorittikonet til den dovne innlastede fanen blir ikke vist frem."
