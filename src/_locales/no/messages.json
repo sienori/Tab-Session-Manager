@@ -111,7 +111,7 @@
     "message": "Angre"
   },
   "redoLabel": {
-    "message": "Gjer om att"
+    "message": "Gjer om"
   },
   "addTagLabel": {
     "message": "Legg til etikett"
@@ -696,10 +696,10 @@
     "message": "Opna sprettoppvindauget"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Lagra økt (kun dette vindauget)"
   },
   "saveAllWindowDescription": {
-    "message": "Lagre økt (alle vinduer)"
+    "message": "Lagra økt (alle vindauger)"
   },
   "exportSessionsDescription": {
     "message": "Eksporter alle økter"
@@ -711,19 +711,19 @@
     "message": "Tilbakestill"
   },
   "backersLabel": {
-    "message": "Støttespillere"
+    "message": "Støttespelarar"
   },
   "LicenseLabel": {
     "message": "Lisens"
   },
   "donationLabel": {
-    "message": "Gi gjerne en donasjon"
+    "message": "Doner gjerne ein slant"
   },
   "donationCaptionLabel": {
-    "message": "Takk for at du bruker Tab Session Manager.<br>Din støtte er en stor oppmuntring for meg, mens jeg fortsetter å utvikle utvidelsen.<br>Hvis du liker Tab Session Manager, ville jeg virkelig sette pris på en donasjon fra deg."
+    "message": "Takk for at du bruker Tab Session Manager.<br>Støtta din er ei stor oppmuntring for meg, mens eg fortsett å utvikla utvidinga.<br>Viss du likar Tab Session Manager, vil eg verkeleg settja pris på ein donasjon."
   },
   "amazonTitleLabel": {
-    "message": "amazon.co.jp eGift Cards"
+    "message": "Elektronisk gåvekort frå «amazon.co.jp»"
   },
   "sponsorsLabel": {
     "message": "Sponsorere"
