@@ -177,43 +177,43 @@
     "message": "Opna i dette vindauget"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Åpne økten i dette vinduet. Inaktive vinduer og alle faner blir lukket."
+    "message": "Opna økta i dette vindauget. Inaktive vindauger og alle faner vart lukka."
   },
   "addToCurrentWindowLabel": {
-    "message": "Åpne i dette vinduet"
+    "message": "Legg til i dette vindauget"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Åpne fanene i dette vinduet. Åpne det i det nye vinduet, hvis økten inneholder flere vinduer."
+    "message": "Opna fanene i dette vindauget. Opna den i det nye vindauget viss økta inneheld fleire vindauger."
   },
   "EditSessionLabel": {
     "message": "Rediger en økt"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Bytt ut med denne økten"
+    "message": "Byt ut med denne økta"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Bytt ut med dette vinduet"
+    "message": "Byt ut med dette vindauget"
   },
   "addCurrentWindowLabel": {
-    "message": "Legg til dette vinduet"
+    "message": "Legg til dette vindauget"
   },
   "makeCopySessionLabel": {
-    "message": "Lag en kopi av økten"
+    "message": "Lag ein kopi av økta"
   },
   "registerStartupLabel": {
-    "message": "Legg til oppstart"
+    "message": "Register for startup"
   },
   "removeStartupLabel": {
-    "message": "Fjern fra oppstart"
+    "message": "Remove from startup"
   },
   "editWindowLabel": {
-    "message": "Rediger et vindu"
+    "message": "Rediger eit vindauge"
   },
   "addCurrentTabLabel": {
-    "message": "Legg til denne fanen"
+    "message": "Legg til denne fana"
   },
   "errorLabel": {
-    "message": "Feil"
+    "message": "Error"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB er ikke tilgjenglig i nettleseren din."
