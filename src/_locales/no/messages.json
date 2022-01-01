@@ -402,40 +402,40 @@
     "message": "Liste med URL-ar som vil varte ignorert når ei økt lagras"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "Hvis fanen sin URL samsvarer med lista, vil den ikke bli lagret i økten. Listen tillater jokertegn (*)."
+    "message": "Viss URL-en til fana samsvarer med lista vil den ikkje varte lara i økta. Jokerteikn (*) er tillat."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Lagre enhetsnavnet til økten"
+    "message": "Lagra einingsnamnet til økta"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Legg til enhetsnavnet som en etikett når du lagrer en økt. Når du bruker skysynkronisering kan du skille den fra økter på andre enheter."
+    "message": "Legg til einingsnamnet som ein etikett når du lagrer ei økt. Når du bruker skysynkronisering kan du skilla den frå økter på andre eininger."
   },
   "deviceNameLabel": {
-    "message": "Enhetsnavn"
+    "message": "Einingsnamn"
   },
   "deviceNameCaptionLabel": {
     "message": "Angi navnet til denne enheten."
   },
   "applyDeviceNameLabel": {
-    "message": "Bruk enhetsnavn på eksisterende økter"
+    "message": "Legg til einingsnamn på økter"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Legg til enhetsnavn på alle lagrede økter."
+    "message": "Legg til einingsnamn på alle dei lagra øktene."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Bruk enhetsnavn"
+    "message": "Legg til einingsnamn"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Bruk enhetsnavn på alle økter?"
+    "message": "Vil du leggja til einingsnamnet på alle øktane?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Komprimer favorittikoner"
+    "message": "Komprimer favorittikon"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Komprimer favorittikonene når en økt lagres."
+    "message": "Komprimer favorittikona når ei økt lagras."
   },
   "compressAllSessionsLabel": {
-    "message": "Komprimer alle økter"
+    "message": "Komprimer alle øktene"
   },
   "compressAllSessionsCaptionLabel": {
     "message": "Komprimer favorittikonene i alle de lagrede øktene. Dette vil spare minnebruk og gjøre øktinnlasting raskere."
@@ -447,7 +447,7 @@
     "message": "Komprimer alle økter?"
   },
   "compressingLabel": {
-    "message": "Komprimerer..."
+    "message": "Komprimerer …"
   },
   "compressionCompleteLabel": {
     "message": "Komprimering fullført."
