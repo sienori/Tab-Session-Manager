@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Lagre og gjenopprett vinduer og faner. Støtter også automatisk lagring."
+    "message": "Lagra og gjenopprett vindauger og faner. Støtter òg automatisk lagring."
   },
   "donateWithPaypalLabel": {
     "message": "Doner med PayPal"
@@ -12,22 +12,22 @@
     "message": "Doner"
   },
   "openSessionListInTabLabel": {
-    "message": "Åpne øktliste i fane"
+    "message": "Opne øktliste i fane"
   },
   "saveLabel": {
     "message": "Lagre"
   },
   "initialNameValue": {
-    "message": "Lagre denne økten"
+    "message": "Lagre denne økta"
   },
   "inputSessionNameLabel": {
     "message": "Skriv inn navnet til økten"
   },
   "saveSessionLabel": {
-    "message": "Lagre en økt"
+    "message": "Lagre ei økt"
   },
   "saveAllWindowsLabel": {
-    "message": "Lagre alle vinduer"
+    "message": "Lagre alle vindauga"
   },
   "saveOnlyCurrentWindowLabel": {
     "message": "Kun lagre dette vinduet"
