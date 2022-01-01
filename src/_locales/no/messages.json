@@ -414,7 +414,7 @@
     "message": "Einingsnamn"
   },
   "deviceNameCaptionLabel": {
-    "message": "Angi navnet til denne enheten."
+    "message": "Angje namn til denne eininga."
   },
   "applyDeviceNameLabel": {
     "message": "Legg til einingsnamn på økter"
@@ -546,31 +546,31 @@
     "message": "Vis opna/slett-knappar når musepeikaren er over øktlista."
   },
   "sizeLabel": {
-    "message": "Størrelse"
+    "message": "Storleik"
   },
   "popupSizeCaptionLabel": {
-    "message": "Angi størrelsen på sprettoppvinduet."
+    "message": "Angje storleik på sprettoppvindauget."
   },
   "widthLabel": {
-    "message": "Bredde"
+    "message": "Breidd"
   },
   "heightLabel": {
-    "message": "Høyde"
+    "message": "Høgd"
   },
   "sidebarWidthLabel": {
-    "message": "Bredden til sidestolpen"
+    "message": "Breidda til sidestolpa"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Åpne øktliste i fane"
+    "message": "Opna øktlista i ei fane"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Åpne øktlista i fanen når du klikker på knappen i verktøyslina."
+    "message": "Opna øktlista i ei fane når du trykkjer på knappen i verktøylinja."
   },
   "themeLabel": {
     "message": "Tema"
   },
   "themeCaptionLabel": {
-    "message": "Angi fargetema."
+    "message": "Angje fargetema."
   },
   "lightLabel": {
     "message": "Lyst"
@@ -579,22 +579,22 @@
     "message": "Mørkt"
   },
   "otherLabel": {
-    "message": "Annet"
+    "message": "Anna"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Åpne innstillingssiden etter oppdatering"
+    "message": "Opna innstillingssida etter ei oppdatering"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Åpne innstillingssiden når Tab Session Manager har blitt oppdatert. Du kan finne ut av innholdet i oppdateringen så fort som mulig."
+    "message": "Opna innstillingssida når Tab Session Manager har vorte oppdatert, så du kan finne ut av kva som er nytt så fort som mogleg."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager har blitt oppdatert!"
+    "message": "Tab Session Manager har vorte oppdatert."
   },
   "seeMoreLabel": {
-    "message": "Se mer"
+    "message": "Sjå meir"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Klikk for å se oppdateringsinformasjon."
+    "message": "Trykk for å sjå informasjon om oppdateringa."
   },
   "isDebugModeLabel": {
     "message": "Slå på feilsøkingsmodus"
