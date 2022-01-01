@@ -600,25 +600,25 @@
     "message": "Slå på feilsøkingsmodus"
   },
   "isDebugModeCaptionLabel": {
-    "message": "Når feilsøkingsmodus er påslått, vil feilsøkeren skrive til loggen."
+    "message": "Når feilsøkingsmodus er slått på vil feilsøkjaren skrive til loggen."
   },
   "exportSettingsLabel": {
-    "message": "Eksporter innstillingene"
+    "message": "Eksporter innstillingane"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Lagre innstillingene som en json-fil på datamaskinen."
+    "message": "Lagra innstillingane som ei JSON-fil på datamaskinen."
   },
   "importSettingsLabel": {
-    "message": "Importer innstillinger"
+    "message": "Importer innstillingar"
   },
   "importSettingsCaptionLabel": {
-    "message": "Last inn innstillingsfilen fra datamaskinen."
+    "message": "Last inn innstillingsfila frå datamaskinen."
   },
   "resetSettingsLabel": {
-    "message": "Tilbakestill innstillingene"
+    "message": "Tilbakestill innstillingane"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Tilbakestill alle innstillingene til standard."
+    "message": "Tilbakestill alle innstillingane til standard."
   },
   "resetSettingsButtonLabel": {
     "message": "Tilbakestill"
@@ -627,16 +627,16 @@
     "message": "Importer økter"
   },
   "importCaptionLabel": {
-    "message": "Last inn økter fra datamaskinen og legg dem til i øktlista."
+    "message": "Last inn økter frå datamaskinen og legg dei til i øktlista."
   },
   "importCaptionLabel2": {
-    "message": "Støttede filtyper:"
+    "message": "Støtta filtyper:"
   },
   "importCaptionLabel3": {
-    "message": "Hvordan importere økter fra andre utvidelser"
+    "message": "Korleis importera økter frå andre utvidinger"
   },
   "importButtonLabel": {
-    "message": "Utforsk..."
+    "message": "Bla gjennom …"
   },
   "importSaveButtonLabel": {
     "message": "Importer"
@@ -648,13 +648,13 @@
     "message": "Importer URL-liste"
   },
   "urlImportCaptionLabel": {
-    "message": "Opprett en økt fra en liste med URL-er og legg den til i øktlista.<br>Format: &lt;URL&gt; &lt;sidetittel (valgfri)&gt;"
+    "message": "Opprett ei økt frå ei liste med URL-ar og legg den til i øktlista.<br>Format: &lt;URL&gt; &lt;sidetittel (valfri)&gt;"
   },
   "exportLabel": {
     "message": "Eksporter økter"
   },
   "exportCaptionLabel": {
-    "message": "Lagre alle øktene til datamaskinen."
+    "message": "Lagra alle øktene til datamaskinen."
   },
   "exportButtonLabel": {
     "message": "Eksporter"
@@ -672,31 +672,31 @@
     "message": "Hurtigtaster"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Sett hurtigtaster."
+    "message": "Vel hurtigtaster."
   },
   "typeShortcutMessage": {
-    "message": "Skriv inn en hurtigtast"
+    "message": "Skriv inn ein hurtigtast"
   },
   "typeLetterMessage": {
-    "message": "Skriv inn en bokstav"
+    "message": "Skriv inn ein bokstav"
   },
   "includeModifierKeysMessage": {
-    "message": "Inkluder enten Ctrl eller Alt"
+    "message": "Ta med «Ctrl» eller «Alt»"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Inkluder enten Kommando, Ctrl eller Alt"
+    "message": "Ta med «Kommando», «Ctrl» eller «Alt»"
   },
   "invalidLetterMessage": {
-    "message": "Bokstaven kan ikke bukes"
+    "message": "Bokstaven kan ikkje brukas"
   },
   "invalidShortcutMessage": {
-    "message": "Hurtigtasten kan ikke brukes"
+    "message": "Hurtigtasten kan ikkje brukas"
   },
   "openPopupDescription": {
-    "message": "Åpne sprettoppvinduet"
+    "message": "Opna sprettoppvindauget"
   },
   "saveCurrentWindowDescription": {
-    "message": "Lagre økt (kun gjeldene vindu)"
+    "message": "Save session (only current window)"
   },
   "saveAllWindowDescription": {
     "message": "Lagre økt (alle vinduer)"
