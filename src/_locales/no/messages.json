@@ -357,37 +357,37 @@
     "message": "Bruk sidetittel som namn på automatisk lagra økter"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "Når en økt blir lagret automatisk, bruk tittelen til den åpne nettsiden som navn på økten."
+    "message": "Bruk tittelen til den opne nettsida som namn på økta når ei økt vert lagra automatisk."
   },
   "backupLabel": {
-    "message": "Sikkerhetskopi"
+    "message": "Sikkerheitskopier"
   },
   "ifBackupLabel": {
-    "message": "Lagre sikkerhetskopier"
+    "message": "Lagra sikkerheitskopier"
   },
   "ifBackupCaptionLabel": {
-    "message": "Ta en sikkerhetskopi av øktene når nettleseren starter og lagre den i nedlastingsmappa."
+    "message": "Ta ein sikkerheitskopi av øktene når nettlesaren starter og lagra den i nedlastingsmappa."
   },
   "individualBackupLabel": {
-    "message": "Individuell sikkerhetskopi"
+    "message": "Individuell sikkerheitskopi"
   },
   "individualBackupCaptionLabel": {
-    "message": "Hver økt blir lagret i hver sin fil.<br>Hvis umerket vil alle økter bli lagret i en enkel fil. Noe som kan overvelde lagringsplassen din."
+    "message": "Kvar økt vert lagra i kvar si fil.<br>Viss denne er umerka, vil alle øktene verte lagra i éin enkel fil. Noko som kan overbelasta lagringsplassen din."
   },
   "backupFolderLabel": {
-    "message": "Lagringssted"
+    "message": "Lagringsplassering"
   },
   "backupFolderCaptionLabel": {
-    "message": "Angi mappe for lagring av sikkerhetskopien. Lagringsstedet må være inni nedlastingsmappa til nettleseren."
+    "message": "Vel mappe for lagring av sikkerhetskopien. Lagringsplasseringa må være inni nedlastingsmappa til nettlesaren."
   },
   "downloadFolderLabel": {
     "message": "Nedlastingsmappe"
   },
   "backupFilesLimitLabel": {
-    "message": "Maksimalt antall lagrede sikkerhetskopier"
+    "message": "Største antal lagra sikkerhetskopier"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "Når antall sikkerhetskopier går over denne verdien, slettes de i stigende rekkefølge fra den eldste."
+    "message": "Når antal sikkerhetskopier går over denne verdien, slettes de i stigande rekkjefølgje frå den eldste."
   },
   "dateFormatLabel": {
     "message": "Datoformat"
@@ -396,10 +396,10 @@
     "message": "Eksempel: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Lagre privat vindu"
+    "message": "Lagra privat vindauge"
   },
   "ignoreUrlListLabel": {
-    "message": "URL-liste som vil bli ignorert når en økt lagres"
+    "message": "Liste med URL-ar som vil varte ignorert når ei økt lagras"
   },
   "ignoreUrlListCaptionLabel": {
     "message": "Hvis fanen sin URL samsvarer med lista, vil den ikke bli lagret i økten. Listen tillater jokertegn (*)."
