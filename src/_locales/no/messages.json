@@ -438,7 +438,7 @@
     "message": "Komprimer alle øktene"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Komprimer favorittikonene i alle de lagrede øktene. Dette vil spare minnebruk og gjøre øktinnlasting raskere."
+    "message": "Komprimer favorittikona i alle dei lagra øktene. Dette vil bruka mindre minne og gjera det raskare å lasta inn øktene."
   },
   "compressLabel": {
     "message": "Komprimer"
@@ -450,25 +450,25 @@
     "message": "Komprimerer …"
   },
   "compressionCompleteLabel": {
-    "message": "Komprimering fullført."
+    "message": "Fullførte komprimeringa."
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "Hvis umerket blir private vinduer ignorert når økten lagres."
+    "message": "Ta med private vindauger når økta lagras."
   },
   "ifSupportTstLabel": {
-    "message": "Støtter Tree Style Tab"
+    "message": "Støtter «Tree Style Tab»"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Gjenopprett trestrukturen til Tree Style Tab.<br>Når dette alternativet er påslått, vil det ta lengre tid å gjenopprette økten."
+    "message": "Gjenopprett trestrukturen til Tree Style Tab.<br>Dette vil gjere at det tar lengre tid for å gjenoppretta økta."
   },
   "tstDelayLabel": {
-    "message": "Ventetid under gjenopprettelse av treet (millisekunder)"
+    "message": "Forseinking når treet gjenopprettas (millisekund)"
   },
   "saveTabGroupsLabel": {
-    "message": "Lagre fanegrupper"
+    "message": "Lagra fanegrupper"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Lagre og gjenopprett plasseringa til fanegrupper. For å slå på denne funksjonen, trenger du den følgende utvidelsen."
+    "message": "Lagra og gjenopprett plasseringa til fanegrupper. For å slå på denne funksjonen treng du den følgjande utvidinga."
   },
   "tstDelayCaptionLabel": {
     "message": "For å gjenopprette trestrukturen må du vente litt før du kan åpne fanen. Øk denne verdien vis treet ikke blir gjenopprettet riktig."
