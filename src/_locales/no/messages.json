@@ -291,10 +291,10 @@
     "message": "Gjenopprett posisjonane og storleikane til vindauga når du opner ei økt."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Oppstart"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Kva som skjer når nettlesaren startar"
   },
   "openPreviousSessionLabel": {
     "message": "Opna førre økt"
@@ -303,7 +303,7 @@
     "message": "Opna økta som vart lukka sist gong."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Opna oppstartsøkta"
   },
   "openStartupSessionCaptionLabel": {
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
@@ -726,13 +726,13 @@
     "message": "Elektronisk gåvekort frå «amazon.co.jp»"
   },
   "sponsorsLabel": {
-    "message": "Sponsorere"
+    "message": "Sponsorar"
   },
   "addonPageLabel": {
-    "message": "Tillegsside"
+    "message": "Tilleggsside"
   },
   "extensionPageLabel": {
-    "message": "Utvidelsesside"
+    "message": "Utvidingsside"
   },
   "firefoxLabel": {
     "message": "Firefox Add-ons"
@@ -747,13 +747,13 @@
     "message": "Persovernerklæring"
   },
   "importMessage": {
-    "message": "Økter importert."
+    "message": "Økter vart importert."
   },
   "readFailedMessage": {
-    "message": "Lesing mislyktes"
+    "message": "Lesing mislykkas"
   },
   "warningRemoveAllMessage": {
-    "message": "Er du sikker på at du vil slette alle øktene?"
+    "message": "Er du sikker på at du vil sletta alle øktene?"
   },
   "sessionLabel": {
     "message": "Økt"
@@ -762,10 +762,10 @@
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/nb-NO/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://addons.mozilla.org/nn-NO/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "Denne siden kan ikke åpnes av Tab Session Manager."
+    "message": "Denne sida kan ikkje opnas av Tab Session Manager."
   },
   "copyUrlLabel": {
     "message": "Kopier URL"
