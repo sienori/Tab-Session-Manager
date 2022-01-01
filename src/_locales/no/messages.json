@@ -216,19 +216,19 @@
     "message": "Error"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB er ikke tilgjenglig i nettleseren din."
+    "message": "IndexedDB er ikkje tilgjengeleg i nettlesaren din."
   },
   "reloadExtensionLabel": {
-    "message": "Last inn utvidelsen på nytt"
+    "message": "Last inn utviding på nytt"
   },
   "howToSolveLabel": {
-    "message": "Hvordan løse dette problemet"
+    "message": "Korleis løsa dette problemet"
   },
   "winCloseSessionName": {
-    "message": "Automatisk lagret - Vindu lukket"
+    "message": "Automatisk lagra - Vindauge lukka"
   },
   "browserExitSessionName": {
-    "message": "Automatisk lagret - Nettleser lukket"
+    "message": "Automatisk lagra - Nettleser lukka"
   },
   "regularSaveSessionName": {
     "message": "Automatisk lagret - Regelmessig"
@@ -258,7 +258,7 @@
     "message": "Generelt"
   },
   "autoSaveLabel": {
-    "message": "Lagre automatisk"
+    "message": "Automatisk lagra"
   },
   "styleLabel": {
     "message": "Stil"
