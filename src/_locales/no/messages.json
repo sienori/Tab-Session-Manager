@@ -39,7 +39,7 @@
     "message": "Sorter"
   },
   "displayAllLabel": {
-    "message": "Alle"
+    "message": "Alt"
   },
   "displayUserLabel": {
     "message": "Lagret av bruker"
@@ -75,7 +75,7 @@
     "message": "Slett"
   },
   "removeConfirmLabel": {
-    "message": "Slette denne økten?"
+    "message": "Vil du slette denne økten?"
   },
   "sessionDeletedLabel": {
     "message": "Økt slettet."
