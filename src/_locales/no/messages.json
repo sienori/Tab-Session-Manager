@@ -111,7 +111,7 @@
     "message": "Angre"
   },
   "redoLabel": {
-    "message": "Gjør om igjen"
+    "message": "Gjer om att"
   },
   "addTagLabel": {
     "message": "Legg til etikett"
@@ -120,16 +120,16 @@
     "message": "Fjern etikett"
   },
   "inputTagLabel": {
-    "message": "Skriv inn navnet til etiketten"
+    "message": "Skriv inn namn på etiketten"
   },
   "detailLabel": {
-    "message": "Detaljer"
+    "message": "Detaljar"
   },
   "windowLabel": {
-    "message": "Vindu"
+    "message": "Vindauge"
   },
   "windowsLabel": {
-    "message": "Vinduer"
+    "message": "Vindauge"
   },
   "tabLabel": {
     "message": "Fane"
@@ -138,16 +138,16 @@
     "message": "Faner"
   },
   "noSessionLabel": {
-    "message": "Det er ingen økt."
+    "message": "Det er inga økt."
   },
   "letsSaveLabel": {
-    "message": "La oss lagre økten ved å klikke på knappen nede til høyre."
+    "message": "Lagra økta ved å trykka på knappen nede til høgre."
   },
   "noResultLabel": {
     "message": "Ingen treff."
   },
   "noSessionSelectedLabel": {
-    "message": "Ingen økt valgt."
+    "message": "Inga økt er vald."
   },
   "menuLabel": {
     "message": "Meny"
@@ -159,22 +159,22 @@
     "message": "Lukk"
   },
   "renameLabel": {
-    "message": "Gi nytt navn"
+    "message": "Gje nytt namn"
   },
   "renameSessionLabel": {
-    "message": "Gi økten nytt navn"
+    "message": "Gje økta eit nytt namn"
   },
   "OpenSessionLabel": {
-    "message": "Åpne en økt"
+    "message": "Opna ei økt"
   },
   "openInNewWindowLabel": {
-    "message": "Åpne i nytt vindu"
+    "message": "Opna i eit nytt vindauge"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Åpne økten i det nye vinduet."
+    "message": "Opna økta i det nye vindauget."
   },
   "openInCurrentWindowLabel": {
-    "message": "Åpne i dette vinduet"
+    "message": "Opna i dette vindauget"
   },
   "openInCurrentWindowCaptionLabel": {
     "message": "Åpne økten i dette vinduet. Inaktive vinduer og alle faner blir lukket."
