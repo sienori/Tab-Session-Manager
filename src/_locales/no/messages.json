@@ -282,52 +282,52 @@
     "message": "Å slå på dette alternativet vil forbetre ytinga når du opner faner."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "Favorittikonet til den dovne innlastede fanen blir ikke vist frem."
+    "message": "Favorittikonet til den dovne innlasta fanen vart ikkje vist fram."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Gjenopprett vindusposisjonene"
+    "message": "Gjenopprett posisjonane til vindauga"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Gjenopprett posisjonen og størrelsen til vinduene når du åpner en økt."
+    "message": "Gjenopprett posisjonane og storleikane til vindauga når du opner ei økt."
   },
   "startupLabel": {
-    "message": "Oppstart"
+    "message": "Startup"
   },
   "startupBehaviorLabel": {
-    "message": "Oppførsel når nettleseren startes"
+    "message": "Behavior when starting the browser"
   },
   "openPreviousSessionLabel": {
-    "message": "Åpne forrige økt"
+    "message": "Opna førre økt"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Åpne økten som ble lukket sist gang."
+    "message": "Opna økta som vart lukka sist gong."
   },
   "openStartupSessionLabel": {
-    "message": "Åpne oppstartsøkten"
+    "message": "Open startup session"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Åpne oppstartsøktene. Du kan legge til flere i menyen i øktlista."
+    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Ikke gjør noe"
+    "message": "Ikkje gjer noko"
   },
   "ifAutoSaveLabel": {
-    "message": "Lagre økten regelmessig"
+    "message": "Lagra økta jamnleg"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Lagre økten hvert X. minutt."
+    "message": "Lagra økta kvart X. minutt."
   },
   "autoSaveIntervalLabel": {
-    "message": "Intervall (minutter)"
+    "message": "Intervall (minutt)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimumsverdi: 0,1"
+    "message": "Minste verdi: 0,1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maksimalt antall Lagrede"
+    "message": "Største antal lagra økter"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maksimalt antall lagrede økter (på denne måten)."
+    "message": "Største antal laggra økter (på denne måten)."
   },
   "ifAutoSaveWhenCloseLabel": {
     "message": "Lagre økten når vinduet lukkes"
