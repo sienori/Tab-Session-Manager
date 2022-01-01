@@ -327,34 +327,34 @@
     "message": "Største antal lagra økter"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Største antal laggra økter (på denne måten)."
+    "message": "Største antal lagra økter (på dette viset)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Lagre økten når vinduet lukkes"
+    "message": "Lagra økt når vindauge lukkas"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Lagre økten inkludert når kun ett vindu ble lukket."
+    "message": "Lagra økter kor kun eitt vindauge vert lukka."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maksimalt antall Lagrede"
+    "message": "Største antal lagra økter"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maksimalt antall lagrede økter (på denne måten)."
+    "message": "Største antal lagra økter (på dette viset)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Lagre økten når nettleseren lukkes"
+    "message": "Lagra økta når nettlesaren lukkas"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Lagre økten inkluderert når flere vinduer ble lukket på rad."
+    "message": "Lagra økter kor fleire vindauger vert lukka på ein gong."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maksimalt antall Lagrede"
+    "message": "Største antal lagra økter"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maksimalt antall lagrede økter (på denne måten)."
+    "message": "Største antal lagra økter (på dette viset)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Bruk sidetittel til navnet på automatisk lagrede økter"
+    "message": "Bruk sidetittel som namn på automatisk lagra økter"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
     "message": "Når en økt blir lagret automatisk, bruk tittelen til den åpne nettsiden som navn på økten."
