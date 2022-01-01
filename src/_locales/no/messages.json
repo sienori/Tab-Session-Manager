@@ -12,25 +12,25 @@
     "message": "Doner"
   },
   "openSessionListInTabLabel": {
-    "message": "Opne øktliste i fane"
+    "message": "Opna øktlista i fane"
   },
   "saveLabel": {
-    "message": "Lagre"
+    "message": "Lagra"
   },
   "initialNameValue": {
-    "message": "Lagre denne økta"
+    "message": "Lagra denne økta"
   },
   "inputSessionNameLabel": {
-    "message": "Skriv inn navnet til økten"
+    "message": "Skriv inn namn på økt"
   },
   "saveSessionLabel": {
-    "message": "Lagre ei økt"
+    "message": "Lagra ei økt"
   },
   "saveAllWindowsLabel": {
-    "message": "Lagre alle vindauga"
+    "message": "Lagra alle vindauga"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Kun lagre dette vinduet"
+    "message": "Lagra kun dette vindauget"
   },
   "categoryFilterLabel": {
     "message": "Kategorifilter"
@@ -42,13 +42,13 @@
     "message": "Alt"
   },
   "displayUserLabel": {
-    "message": "Lagret av bruker"
+    "message": "Lagra av bruker"
   },
   "displayAutoLabel": {
-    "message": "Automatisk lagret"
+    "message": "Lagra automatisk"
   },
   "newestLabel": {
-    "message": "Nyeste"
+    "message": "Nyaste"
   },
   "oldestLabel": {
     "message": "Eldste"
@@ -60,7 +60,7 @@
     "message": "Å-A"
   },
   "searchBarPlaceholder": {
-    "message": "Søk etter økt- eller fanenavn"
+    "message": "Søk etter økt- eller fanenamn"
   },
   "search": {
     "message": "Søk"
@@ -69,40 +69,40 @@
     "message": "Tøm søk"
   },
   "open": {
-    "message": "Åpne"
+    "message": "Opna"
   },
   "remove": {
     "message": "Slett"
   },
   "removeConfirmLabel": {
-    "message": "Vil du slette denne økten?"
+    "message": "Vil du sletta denne økta?"
   },
   "sessionDeletedLabel": {
-    "message": "Økt slettet."
+    "message": "Sletta økt."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Øktvindu slettet."
+    "message": "Sletta øktvindauge."
   },
   "sessionTabDeletedLabel": {
-    "message": "Øktfane slettet."
+    "message": "Sletta øktfane."
   },
   "restoreSessionLabel": {
     "message": "Gjenopprett"
   },
   "failedDeleteSessionLabel": {
-    "message": "Klarte ikke a slette økten."
+    "message": "Klarte ikkje sletta økta."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Klarte ikke a slette øktvinduet."
+    "message": "Klarte ikkje sletta øktvindauget."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Klarte ikke å slette øktfanen."
+    "message": "Klarte ikkje sletta øktfana."
   },
   "sessionSavedLabel": {
-    "message": "Økt lagret."
+    "message": "Lagra økt."
   },
   "failedSaveSessionLabel": {
-    "message": "Klarte ikke å lagre økten."
+    "message": "Klarte ikkje lagra økta."
   },
   "cancelLabel": {
     "message": "Avbryt"
