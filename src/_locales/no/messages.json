@@ -201,10 +201,10 @@
     "message": "Lag ein kopi av økta"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Registrer for oppstart"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Fjern frå oppstart"
   },
   "editWindowLabel": {
     "message": "Rediger eit vindauge"
@@ -213,7 +213,7 @@
     "message": "Legg til denne fana"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Feil"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB er ikkje tilgjengeleg i nettlesaren din."
@@ -306,7 +306,7 @@
     "message": "Opna oppstartsøkta"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Opna øktene som er registrert for oppstart. Du kan registrera økter for oppstart i menyen til økta i øktlista."
   },
   "DoNothingLabel": {
     "message": "Ikkje gjer noko"
