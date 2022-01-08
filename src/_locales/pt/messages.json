@@ -504,7 +504,7 @@
     "message": "Sincronização completa."
   },
   "signInRequiredLabel": {
-    "message": "Requer login para sincronização em nuvem."
+    "message": "Sincronizar na nuvem requer login."
   },
   "signInLabel": {
     "message": "Iniciar sessão"
