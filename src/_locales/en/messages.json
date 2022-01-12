@@ -296,6 +296,12 @@
   "keepTrackOfActiveSessionCaptionLabel": {
     "message": "Remembers the last open session so that, if the auto-save options are enabled, then all changes in the current session will be saved to it automatically."
   },
+  "clearActiveSessionOnBrowserCloseLabel": {
+    "message": "Clear active session on Browser close"
+  },
+  "clearActiveSessionOnBrowserCloseCaptionLabel": {
+    "message": "Clears the active session upon browser close, this way if your browser tabs are not configured to \"Continue where you left of\", then your active session won't be overwritten, but you'll need to manually reopen your session again every time you open the browser."
+  },
   "activeSessionLabel": {
     "message": "Active session"
   },

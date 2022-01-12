@@ -47,6 +47,14 @@ export default [
         default: false
       },
       {
+        id: "clearActiveSessionOnBrowserClose",
+        title: "clearActiveSessionOnBrowserCloseLabel",
+        captions: ["clearActiveSessionOnBrowserCloseCaptionLabel"],
+        type: "checkbox",
+        default: false,
+        shouldShow: (settings) => settings['keepTrackOfActiveSession']
+      },
+      {
         id: "ifSupportTst",
         title: "ifSupportTstLabel",
         captions: ["ifSupportTstCaptionLabel"],

@@ -6,7 +6,7 @@ import { getSessionsByTag } from "./tag.js";
 import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
 import ignoreUrls from "./ignoreUrls";
-import { updateActiveSession } from "./save";
+import { updateActiveSession, setActiveSession } from "./save";
 
 const logDir = "background/autoSave";
 let autoSaveTimer;
@@ -161,6 +161,11 @@ export const autoSaveWhenExitBrowser = async () => {
 
   if (getSettings('keepTrackOfActiveSession')) {
     updateActiveSession(session);
+  }
+
+  // Clears the active session upon browser close if such setting is set
+  if (getSettings('clearActiveSessionOnBrowserClose')) {
+    await setActiveSession();
   }
 
   await saveSession(session);

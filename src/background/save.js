@@ -219,6 +219,7 @@ export async function updateActiveSession(withSession) {
 // Sets an internal, non-exportable setting for the currently active session
 // It's non exportable because it's value is associated to the user sessions,
 // which are not exported together with the settings.
+// Calling the function without id and name will clear the active session
 export async function setActiveSession(id, name, sessionToSave) {
   // Auto-save the active session before switching to a different one (if the
   // relevant setting is enabled)
@@ -228,7 +229,7 @@ export async function setActiveSession(id, name, sessionToSave) {
   }
 
   // Session start time for active sessions begins when the user either sets the active session
-  setSettings('activeSession', getSettings("keepTrackOfActiveSession")
+  setSettings('activeSession', getSettings("keepTrackOfActiveSession") && id && name
     ? {id, name, sessionStartTime: Date.now()}
     : null);
 }
