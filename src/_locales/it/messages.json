@@ -234,13 +234,13 @@
     "message": "Salvataggio automatico - Progammato"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Finestra chiusa"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Uscito dal browser"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Periodicamente"
   },
   "settingsLabel": {
     "message": "Impostazioni"
