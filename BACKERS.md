@@ -98,3 +98,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Hassan Williamson
 - Kamran Razvan
 - Denikos
+- Claudio Salvio
