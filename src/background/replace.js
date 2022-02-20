@@ -37,7 +37,7 @@ export function returnReplaceURL(state, title, url, favIconUrl) {
     theme;
 
   //Reader mode
-  if (url.substr(0, 17) == "about:reader?url=") {
+  if (url.startsWith("about:reader?url=")) {
     retUrl =
       "replaced/index.html" +
       "?state=" +
@@ -45,7 +45,7 @@ export function returnReplaceURL(state, title, url, favIconUrl) {
       "&title=" +
       encodeURIComponent(title) +
       "&url=" +
-      url.substr(17) +
+      url.slice(17) +
       "&favIconUrl=" +
       encodeURIComponent(favIconUrl) +
       "&openInReaderMode=true" +

@@ -29,7 +29,7 @@ const fileOpen = file => {
       let text = reader.result;
       if (file.name.toLowerCase().endsWith(".json")) {
         // Ignore BOM
-        if (text.charCodeAt(0) === 0xFEFF) text = text.substr(1);
+        if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
         if (!isJSON(text)) return resolve();
 
         let jsonFile = JSON.parse(text);
@@ -152,11 +152,11 @@ const convertSessionManager = file => {
   session.windows = {};
   session.windowsNumber = 0;
   session.tabsNumber = 0;
-  session.name = line[1].substr(5);
-  session.date = moment(parseInt(line[2].substr(10))).valueOf();
+  session.name = line[1].slice(5);
+  session.date = moment(parseInt(line[2].slice(10))).valueOf();
   session.lastEditedTime = Date.now();
   session.tag = [];
-  session.sessionStartTime = parseInt(line[2].substr(10));
+  session.sessionStartTime = parseInt(line[2].slice(10));
   session.id = uuidv4();
 
   if (!isJSON(line[4])) return;
