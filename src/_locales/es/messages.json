@@ -234,10 +234,10 @@
     "message": "Auto guardado - Regularmente"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Ventana cerrada"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Navegador cerrado"
   },
   "regularSaveSessionNameShort": {
     "message": "Regularly"
@@ -603,7 +603,7 @@
     "message": "Cuando está habilitado el modo de depuración, el registro es salida al depurador."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Exportar configuración"
   },
   "exportSettingsCaptionLabel": {
     "message": "Save the settings as a json file on the computer."
