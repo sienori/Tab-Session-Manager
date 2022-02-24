@@ -504,7 +504,7 @@
     "message": "Sincronización completa."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Requiere iniciar sesión para sincronizar la nube."
   },
   "signInLabel": {
     "message": "Iniciar sesión"
@@ -606,13 +606,13 @@
     "message": "Exportar configuración"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Guarda la configuración como un fichero JSON en el ordenador."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importar configuración"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Cargar el archivo de configuración guardado en el equipo."
   },
   "resetSettingsLabel": {
     "message": "Restablecer ajustes"
@@ -627,13 +627,13 @@
     "message": "Importar sesiones"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Cargar sesiones guardadas en el equipo y añadirlas a la lista de sesiones."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Tipos de Archivo Admitidos:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Cómo importar sesiones de otras extensiones"
   },
   "importButtonLabel": {
     "message": "Examinar..."
