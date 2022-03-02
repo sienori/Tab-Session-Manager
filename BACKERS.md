@@ -100,3 +100,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Denikos
 - Claudio Salvio
 - Mitrakov Artem
+- Sam McCann
