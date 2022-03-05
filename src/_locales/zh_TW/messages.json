@@ -207,7 +207,7 @@
     "message": "從啟動瀏覽階段中移除"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "編輯視窗"
   },
   "addCurrentTabLabel": {
     "message": "新增目前分頁"
@@ -234,13 +234,13 @@
     "message": "自動儲存 - 定期執行"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "視窗關閉時"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "瀏覽器結束時"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "定時"
   },
   "settingsLabel": {
     "message": "設定"
@@ -369,7 +369,7 @@
     "message": "當瀏覽器啟動時，建立瀏覽階段的備份檔並儲存於下載資料夾中。"
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "單獨備份"
   },
   "individualBackupCaptionLabel": {
     "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
