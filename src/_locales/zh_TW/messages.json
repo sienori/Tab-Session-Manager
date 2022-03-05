@@ -372,7 +372,7 @@
     "message": "單獨備份"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "將每個瀏覽階段儲存在單獨的檔案中。<br>若未選取此功能，所有瀏覽階段將會儲存在同一個檔案中，這可能會佔用電腦大量儲存空間。"
   },
   "backupFolderLabel": {
     "message": "儲存位置"
@@ -432,25 +432,25 @@
     "message": "壓縮網站圖示"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "儲存瀏覽階段時壓縮網站圖示。"
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "壓縮所有瀏覽階段"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "壓縮所有目前已儲存瀏覽階段的網站圖示，此做法能節省記憶體並能加快瀏覽階段載入。"
   },
   "compressLabel": {
     "message": "壓縮"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "確認要壓縮所有瀏覽階段？"
+    "message": "確定要壓縮所有瀏覽階段？"
   },
   "compressingLabel": {
     "message": "正在壓縮..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "壓縮完成。"
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "如果取消勾選，儲存瀏覽階段時將會忽略隱私視窗。"
@@ -468,7 +468,7 @@
     "message": "儲存分頁群組"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "儲存和還原分頁群組狀態。要啟用此功能，您需安裝以下套件。"
   },
   "tstDelayCaptionLabel": {
     "message": "若要還原分頁為樹狀結構狀態，需要等待一段時間才能開啟分頁，若無法正確還原為樹狀結構之時，請增加此值。"
@@ -504,7 +504,7 @@
     "message": "同步完成。"
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "需要登入帳號才能使用雲端同步功能。"
   },
   "signInLabel": {
     "message": "登入"
@@ -516,7 +516,7 @@
     "message": "自動同步"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "當瀏覽器啟動或儲存瀏覽階段時，自動執行雲端同步。"
   },
   "includesAutoSaveToSyncLabel": {
     "message": "同步並儲存瀏覽階段"
@@ -606,13 +606,13 @@
     "message": "匯出設定"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "將設定以 json 格式儲存到電腦上。"
   },
   "importSettingsLabel": {
     "message": "匯入設定"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "載入儲存在電腦上的設定檔案。"
   },
   "resetSettingsLabel": {
     "message": "重設設定"
@@ -627,13 +627,13 @@
     "message": "匯入瀏覽階段"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "載入已儲存在電腦上的瀏覽階段，並將它新增至瀏覽階段清單。"
   },
   "importCaptionLabel2": {
     "message": "支援的檔案："
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "如何從其他套件匯入瀏覽階段"
   },
   "importButtonLabel": {
     "message": "瀏覽..."
