@@ -84,7 +84,7 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Bill Nichols
 - baswein
 - Brooke Austin
-- Olzhas Suleimen
+- [Olzhas Suleimen](https://github.com/ykmnkmi)
 - Ymje Sköld
 - Michael
 - Ruchira
