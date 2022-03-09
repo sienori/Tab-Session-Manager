@@ -96,7 +96,7 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Deckard
 - Susannah Lai
 - Hassan Williamson
-- Kamran Razvan
+- Kamran Razvan ([Click & Pledge](https://clickandpledge.com/))
 - Denikos
 - Claudio Salvio
 - Mitrakov Artem
