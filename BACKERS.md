@@ -102,3 +102,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Mitrakov Artem
 - Sam McCann
 - Eric Beasley
+- Vladimir Chupin
