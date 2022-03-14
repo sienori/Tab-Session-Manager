@@ -103,3 +103,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Sam McCann
 - Eric Beasley
 - Vladimir Chupin
+- Butch Deadlift
+- SpaceAlpaca
