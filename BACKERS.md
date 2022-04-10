@@ -105,3 +105,6 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Vladimir Chupin
 - Butch Deadlift
 - SpaceAlpaca
+- Kimberly Frick Arndts
+- Drew Neilson
+- 魁獵首
