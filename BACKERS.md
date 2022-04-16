@@ -108,3 +108,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Kimberly Frick Arndts
 - Drew Neilson
 - 魁獵首
+- Paul Cristian Sarbu
+- Alexander Jahn
