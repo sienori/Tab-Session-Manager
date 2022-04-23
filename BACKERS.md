@@ -110,3 +110,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - 魁獵首
 - Paul Cristian Sarbu
 - Alexander Jahn
+- Reed
