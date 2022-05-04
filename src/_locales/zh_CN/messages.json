@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "创建会话副本"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "注册为启动会话"
   },
@@ -234,13 +240,13 @@
     "message": "自动保存 - 定期"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "窗口关闭时"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "浏览器退出时"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "定时"
   },
   "settingsLabel": {
     "message": "设置"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "什么也不做"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "定期保存会话"
