@@ -315,7 +315,7 @@ export default class PopupPage extends Component {
   };
 
   handleUpdateTrackingStatus = request => {
-    this.setState({ trackingSessions: request.trackingSessions });
+    this.setState({ trackingSessions: request.trackingSessions || [] });
   };
 
   handleUnload = () => {
