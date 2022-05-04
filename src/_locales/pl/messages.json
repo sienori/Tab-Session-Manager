@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Utwórz kopię sesji"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "Zarejestruj do sesji startowej"
   },
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Nic nie rób"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "Zapisuj sesję regularnie"
