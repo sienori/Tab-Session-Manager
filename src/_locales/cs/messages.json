@@ -201,10 +201,10 @@
     "message": "Vytvořit kopii relace"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Sledovat změny okna"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Smazat sledování"
   },
   "registerStartupLabel": {
     "message": "Registrovat pro spuštění"
@@ -318,16 +318,16 @@
     "message": "Do nothing"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Sledování relace"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Sledování"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Stopa nově otevřených oken"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Když je v rámci sledovací relace otevřeno nové okno, přidejte ho do sledování."
   },
   "ifAutoSaveLabel": {
     "message": "Ukládat relaci pravidelně"
