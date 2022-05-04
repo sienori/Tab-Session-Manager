@@ -60,7 +60,7 @@
     "message": "Я-А"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Търсене по име на сесия или раздел"
   },
   "search": {
     "message": "Търсене"
@@ -108,10 +108,10 @@
     "message": "Отказ"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Отмяна"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Връщане"
   },
   "addTagLabel": {
     "message": "Добавяне на етикет"
@@ -120,7 +120,7 @@
     "message": "Премахване на етикета"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Въвеждане името на таг-а"
   },
   "detailLabel": {
     "message": "Подробности"
@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Създаване копие на сесията"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "Регистриране за стартиране"
   },
@@ -207,10 +213,10 @@
     "message": "Премахване от стартирането"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Редактиране на прозорец"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Добавяне на текущия раздел"
   },
   "errorLabel": {
     "message": "Грешка"
@@ -219,7 +225,7 @@
     "message": "IndexedDB не е налична във вашият браузър."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Презареждане на разширението"
   },
   "howToSolveLabel": {
     "message": "Разрешаване на проблема"
@@ -234,13 +240,13 @@
     "message": "Авто запазени - редовно"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Прозорецът е затворен"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Излизане от браузъра"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Редовно"
   },
   "settingsLabel": {
     "message": "Настройки"
@@ -311,6 +317,18 @@
   "DoNothingLabel": {
     "message": "Да не се прави нищо"
   },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
+  },
   "ifAutoSaveLabel": {
     "message": "Редовно запазване на сесията"
   },
@@ -369,10 +387,10 @@
     "message": "Създаване резервно копие на сесиите и запазване в папката за изтегляния при стартиране на браузъра."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Индивидуално резервно копие"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Всяка сесия се записва в отделен файл.<br>Ако отметката не бъде отбелязана, всички сесии ще бъдат записани в един файл, което може да доведе до претоварване на мястото за съхранение."
   },
   "backupFolderLabel": {
     "message": "Местоположение за запис"
@@ -429,28 +447,28 @@
     "message": "Прилагане името на устройството към всички сесии?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Компресиране на любими икони"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Компресиране на любимите икони при запазване на сесия."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Компресиране на всички сесии"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Компресиране на любимите икони на всички запазени сесии в момента. Това ще спести използване на памет и ще ускори зареждането на сесиите."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Компресиране"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Компресиране на всички сесии?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Компресиране..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Компресирането завърши."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Ако не е отметнато, поверителният прозорец ще бъде игнориран при запазване на сесията."
@@ -465,10 +483,10 @@
     "message": "Забавяне при възстановяване на дървото (милисекунди)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Запазване на групи раздели"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Запазване и възстановяване на състоянието на групите раздели. За активиране на тази функция, трябва да се инсталира следното разширение."
   },
   "tstDelayCaptionLabel": {
     "message": "Изисква се време за изчакване при възстановяване на раздела със състоянието на дървото. Увеличете тази стойност при неправилно възстановяване."
@@ -504,7 +522,7 @@
     "message": "Синхронизацията завърши"
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Изисква влизане за синхронизиране в облака."
   },
   "signInLabel": {
     "message": "Вписване"
@@ -513,10 +531,10 @@
     "message": "Отписване"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Автоматично синхронизиране"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Извършване на синхронизация в облака при стартиране на браузъра и при запазване на сесията."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Синхронизиране на автоматичното запазване на сесии"
@@ -567,16 +585,16 @@
     "message": "При щракване на бутона в лентата, сесиите се отварят в раздел."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Тема"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Определяне на цветовата схема."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Светла"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Тъмна"
   },
   "otherLabel": {
     "message": "Други"
@@ -603,16 +621,16 @@
     "message": "Когато режима за отстраняване на грешки е активиран, регистъра се извежда в дебъгера."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Изнасяне на настройки"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Запазване на настройките като json файл на компютъра."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Внасяне на настройки"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Зареждане на файла с настройките, записан на компютъра."
   },
   "resetSettingsLabel": {
     "message": "Възстановяване на настройки"
@@ -627,13 +645,13 @@
     "message": "Внасяне на сесии"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Зареждане на сесии, записани на компютъра, и добавянето им в списъка със сесии."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Поддържани файлове:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Как се внасят сесии от други разширения"
   },
   "importButtonLabel": {
     "message": "Преглед..."
@@ -726,7 +744,7 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Спонсори"
   },
   "addonPageLabel": {
     "message": "Страница на добавката"
@@ -768,9 +786,9 @@
     "message": "Страницата не може да бъде отворена от Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Копиране на URL адреса"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Копирано."
   }
 }

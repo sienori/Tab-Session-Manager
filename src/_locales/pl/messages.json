@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Utwórz kopię sesji"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "Zarejestruj do sesji startowej"
   },
@@ -234,13 +240,13 @@
     "message": "Automatyczny zapis - regularnie"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Zamknięte okno"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Wyjście z przeglądarki"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regularnie"
   },
   "settingsLabel": {
     "message": "Ustawienia"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Nic nie rób"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "Zapisuj sesję regularnie"
@@ -504,7 +522,7 @@
     "message": "Synchronizacja zakończona."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Wymaga zalogowania w celu synchronizacji z chmurą."
   },
   "signInLabel": {
     "message": "Zaloguj się"

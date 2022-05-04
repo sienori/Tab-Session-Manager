@@ -120,7 +120,7 @@
     "message": "Видалити тег"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Уведіть назву мітки"
   },
   "detailLabel": {
     "message": "Подробиці"
@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Створити копію сесії"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "Зареєструвати для запуску"
   },
@@ -207,10 +213,10 @@
     "message": "Видалити з запуску"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Змінити вікно"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Додати поточну вкладку"
   },
   "errorLabel": {
     "message": "Помилка"
@@ -234,13 +240,13 @@
     "message": "Автозбереження - Регулярно"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Вікно закрите"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "З оглядача вийдено"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Постійно"
   },
   "settingsLabel": {
     "message": "Налаштування"
@@ -311,6 +317,18 @@
   "DoNothingLabel": {
     "message": "Нічого не робити"
   },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
+  },
   "ifAutoSaveLabel": {
     "message": "Періодично зберігати сесію"
   },
@@ -369,7 +387,7 @@
     "message": "Коли веб-переглядач запускається, створити файл резервної копії сесій та зберегти його у теці завантаження."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Індивідуальна резервна копія"
   },
   "individualBackupCaptionLabel": {
     "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
@@ -435,22 +453,22 @@
     "message": "Compress the favicons when saving a session."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Стискати всі сеанси"
   },
   "compressAllSessionsCaptionLabel": {
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Стиснути"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Стиснути всі сеанси?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Стиснення..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Стиснення завершено."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "Якщо вимкнено, ігнорує приватне вікно при збереженні сеансу."
@@ -465,7 +483,7 @@
     "message": "Затримка під час відновленні дерева (мілісекунди)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Зберегти групу вкладок"
   },
   "saveTabGroupsCaptionLabel": {
     "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
@@ -603,16 +621,16 @@
     "message": "Коли увімкнено режим налагодження, журнал виводиться до налагоджувача."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Експортувати налаштування"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Зберегти налаштування у файл json на комп’ютері."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Імпортувати налаштування"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Завантажити збережений на комп’ютері файл налаштувань."
   },
   "resetSettingsLabel": {
     "message": "Скинути налаштувань"
@@ -630,7 +648,7 @@
     "message": "Load sessions saved on the computer and add them to the session List."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Підтримувані файли:"
   },
   "importCaptionLabel3": {
     "message": "How to import sessions from other extensions"
@@ -735,13 +753,13 @@
     "message": "Сторінка розширення"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Додатки Firefox"
   },
   "chromeLabel": {
     "message": "Chrome Web Store"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Додатки Edge"
   },
   "privacyPolicyLabel": {
     "message": "Політика конфіденційності"

@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Faire une copie de la session"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "Ajouter au démarrage"
   },
@@ -234,13 +240,13 @@
     "message": "Sauvegarde automatique – Périodique"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Fenêtre fermée"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Navigateur fermé"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Régulièrement"
   },
   "settingsLabel": {
     "message": "Paramètres"
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Ne rien faire"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "Enregistrer régulièrement la session"
@@ -504,7 +522,7 @@
     "message": "Synchronisation terminée."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Nécessite de se connecter pour la synchronisation infonuagique."
   },
   "signInLabel": {
     "message": "Se connecter"
