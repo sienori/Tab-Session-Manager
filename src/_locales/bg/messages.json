@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Създаване копие на сесията"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "Регистриране за стартиране"
   },
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Да не се прави нищо"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "Редовно запазване на сесията"
