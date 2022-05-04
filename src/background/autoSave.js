@@ -6,6 +6,7 @@ import { getSessionsByTag } from "./tag.js";
 import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
 import ignoreUrls from "./ignoreUrls";
+import { IsTracking, updateTrackingSession } from "./track.js";
 
 const logDir = "background/autoSave";
 let autoSaveTimer;
@@ -72,6 +73,8 @@ const updateTemp = async () => {
     //現在のセッションをtempとして保存
     if (tempSessions[0]) session.id = tempSessions[0].id;
     await saveSession(session, false);
+
+    if (IsTracking) updateTrackingSession(session);
   } catch (e) {
     log.error(logDir, "updateTemp()", e);
   }
@@ -82,7 +85,8 @@ export const setUpdateTempTimer = () => {
   if (
     !getSettings("ifAutoSaveWhenClose") &&
     !getSettings("ifAutoSaveWhenExitBrowser") &&
-    !getSettings("ifOpenLastSessionWhenStartUp")
+    !getSettings("ifOpenLastSessionWhenStartUp") &&
+    !IsTracking
   )
     return;
 

@@ -3,6 +3,7 @@ import browser from "webextension-polyfill";
 import TagIcon from "../icons/tag.svg";
 import AutoSaveIcon from "../icons/update.svg";
 import StartupIcon from "../icons/star.svg";
+import TrackingIcon from "../icons/circle.svg";
 
 export const generateTagLabel = tag => {
   switch (tag) {
@@ -14,6 +15,8 @@ export const generateTagLabel = tag => {
       return browser.i18n.getMessage("browserExitSessionNameShort");
     case "_startup":
       return browser.i18n.getMessage("startupLabel");
+    case "_tracking":
+      return browser.i18n.getMessage("trackingLabel");
     default:
       return tag;
   }
@@ -27,6 +30,8 @@ export const generateTagIcon = tag => {
       return <AutoSaveIcon className="autoSaveIcon" />;
     case "_startup":
       return <StartupIcon className="startupIcon" />;
+    case "_tracking":
+      return <TrackingIcon className="trackingIcon" />;
     default:
       return <TagIcon className="tagIcon" />;
   }

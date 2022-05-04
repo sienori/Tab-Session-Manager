@@ -27,11 +27,11 @@ export default class TagsContainer extends Component {
   };
 
   render() {
-    const { sessionId, tags } = this.props;
+    const { sessionId, tags, isTracking } = this.props;
     return (
       <div className="tagsContainer">
         {tags.map((tag, index) => (
-          <div className="tag" key={index}>
+          <div className={`tag ${isTracking ? "isTracking" : ""}`} key={index}>
             {generateTagIcon(tag)}
             <span>{generateTagLabel(tag)}</span>
             <button

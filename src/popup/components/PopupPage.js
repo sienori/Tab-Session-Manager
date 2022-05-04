@@ -14,7 +14,8 @@ import {
   sendSessionSaveMessage,
   sendSessionRemoveMessage,
   sendSessionUpdateMessage,
-  sendUndoMessage
+  sendUndoMessage,
+  sendEndTrackingByWindowDeleteMessage
 } from "../actions/controlSessions";
 import { deleteWindow, deleteTab } from "../../common/editSessions.js";
 import openUrl from "../actions/openUrl";
@@ -65,6 +66,7 @@ export default class PopupPage extends Component {
         redoCount: 0
       },
       tagList: [],
+      trackingSessions: [],
       menu: {
         isOpen: false,
         x: 0,
@@ -140,6 +142,7 @@ export default class PopupPage extends Component {
     browser.storage.onChanged.addListener(handleSettingsChange);
     window.addEventListener("unload", this.handleUnload, { once: true });
     browser.runtime.sendMessage({ message: "updateUndoStatus" });
+    browser.runtime.sendMessage({ message: "updateTrackingStatus" });
 
     if (getSettings("isShowUpdated")) {
       this.openNotification({
@@ -206,6 +209,8 @@ export default class PopupPage extends Component {
         return this.handleResponseAllSessions(request);
       case "updateUndoStatus":
         return this.handleUpdateUndoStatus(request);
+      case "updateTrackingStatus":
+        return this.handleUpdateTrackingStatus(request);
     }
   };
 
@@ -307,6 +312,10 @@ export default class PopupPage extends Component {
   handleUpdateUndoStatus = request => {
     if (!request.undoStatus) return;
     this.setState({ undoStatus: request.undoStatus });
+  };
+
+  handleUpdateTrackingStatus = request => {
+    this.setState({ trackingSessions: request.trackingSessions });
   };
 
   handleUnload = () => {
@@ -420,6 +429,9 @@ export default class PopupPage extends Component {
     try {
       const editedSession = deleteWindow(session, winId);
       await sendSessionUpdateMessage(editedSession);
+
+      if (this.state.trackingSessions.includes(session.id)) sendEndTrackingByWindowDeleteMessage(session.id, winId);
+
       this.openNotification({
         message: browser.i18n.getMessage("sessionWindowDeletedLabel"),
         type: "warn",
@@ -549,6 +561,7 @@ export default class PopupPage extends Component {
               sortValue={this.state.sortValue}
               searchWords={this.state.searchWords}
               searchedSessionIds={this.state.searchedSessionIds || []}
+              trackingSessions={this.state.trackingSessions}
               removeSession={this.removeSession}
               selectSession={this.selectSession}
               openMenu={this.openMenu}
@@ -572,6 +585,7 @@ export default class PopupPage extends Component {
               searchWords={this.state.searchedSessionIds.includes(this.state.selectedSession.id) ?
                 this.state.searchWords : []}
               tagList={this.state.tagList}
+              isTracking={this.state.trackingSessions.includes(this.state.selectedSession.id)}
               removeSession={this.removeSession}
               removeWindow={this.removeWindow}
               removeTab={this.removeTab}

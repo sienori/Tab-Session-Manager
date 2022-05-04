@@ -39,6 +39,7 @@ import { updateLogLevel, overWriteLogLevel } from "../common/log";
 import { getsearchInfo } from "./search";
 import { recordChange, undo, redo, updateUndoStatus } from "./undo";
 import { compressAllSessions } from "./compressAllSessions";
+import { startTracking, endTrackingByWindowDelete, updateTrackingStatus } from "./track";
 
 const logDir = "background/background";
 export const SessionStartTime = Date.now();
@@ -189,6 +190,12 @@ const onMessageListener = async (request, sender, sendResponse) => {
       }).catch(() => { });
       return compressAllSessions(sendResponse);
     }
+    case "updateTrackingStatus":
+      return updateTrackingStatus();
+    case "startTracking":
+      return startTracking(request.sessionId, request.originalWindowId, request.openedWindowId);
+    case "endTrackingByWindowDelete":
+      return endTrackingByWindowDelete(request.sessionId, request.originalWindowId);
   }
 };
 

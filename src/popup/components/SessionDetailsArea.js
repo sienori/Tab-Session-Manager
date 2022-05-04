@@ -37,7 +37,7 @@ export default class SessionDetailsArea extends Component {
   handleMenuClick = e => {
     const rect = e.target.getBoundingClientRect();
     const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
-    this.props.openMenu(x, y, <SessionMenuItems session={this.props.session} />);
+    this.props.openMenu(x, y, <SessionMenuItems session={this.props.session} isTracking={this.props.isTracking} />);
   };
 
   handleOpenClick = () => {
@@ -61,11 +61,12 @@ export default class SessionDetailsArea extends Component {
     const isUpdateSession = this.props.session.lastEditedTime !== nextProps.session.lastEditedTime;
     const isLoadedSession = this.props.session.hasOwnProperty("windows") !== nextProps.session.hasOwnProperty("windows");
     const isChangedTagList = this.props.tagList !== nextProps.tagList;
-    return isChangeSession || isUpdateSession || isLoadedSession || isChangedTagList;
+    const isChangedTracking = this.props.isTracking !== nextProps.isTracking;
+    return isChangeSession || isUpdateSession || isLoadedSession || isChangedTagList || isChangedTracking;
   };
 
   render() {
-    const { session, searchWords, removeWindow, removeTab, openModal, closeModal, tagList, openMenu } = this.props;
+    const { session, searchWords, isTracking, removeWindow, removeTab, openModal, closeModal, tagList, openMenu } = this.props;
 
     if (!session.id)
       return (
@@ -99,6 +100,7 @@ export default class SessionDetailsArea extends Component {
               sessionId={session.id}
               tags={session.tag}
               tagList={tagList}
+              isTracking={isTracking}
               openModal={openModal}
               closeModal={closeModal}
             />

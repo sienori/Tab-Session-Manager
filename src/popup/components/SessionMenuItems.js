@@ -29,10 +29,16 @@ export default props => {
     replaceCurrentSession(props.session.id, "saveOnlyCurrentWindow");
   };
   const handleAddCurrentWindow = () => {
-    addCurrentWindow(props.session.id);
+    addCurrentWindow(props.session.id, props.isTracking);
   };
   const handleMakeCopySession = () => {
     makeCopySession(props.session.id);
+  };
+  const handleRegisterTracking = () => {
+    sendTagAddMessage(props.session.id, "_tracking");
+  };
+  const handleRemoveTracking = () => {
+    sendTagRemoveMessage(props.session.id, "_tracking");
   };
   const handleRegisterStartup = () => {
     sendTagAddMessage(props.session.id, "_startup");
@@ -46,6 +52,8 @@ export default props => {
   const handleClickSection = e => {
     e.stopPropagation();
   };
+
+  const isTracking = () => props.session.tag.includes("_tracking");
 
   const isStartup = () => props.session.tag.includes("_startup");
 
@@ -96,6 +104,11 @@ export default props => {
         </button>
       </li>
       <hr />
+      <li>
+        <button onClick={isTracking() ? handleRemoveTracking : handleRegisterTracking}>
+          {browser.i18n.getMessage(isTracking() ? "removeTrackingLabel" : "registerTrackingLabel")}
+        </button>
+      </li>
       <li>
         <button onClick={isStartup() ? handleRemoveStartup : handleRegisterStartup}>
           {browser.i18n.getMessage(isStartup() ? "removeStartupLabel" : "registerStartupLabel")}

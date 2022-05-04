@@ -94,6 +94,25 @@ export const sendTagAddMessage = (sessionId, tagName) => {
   });
 };
 
+export const sendStartTrackingMessage = (sessionId, originalWindowId, openedWindowId) => {
+  log.info(logDir, "sendStartTrackingMessage()", sessionId, originalWindowId, openedWindowId);
+  browser.runtime.sendMessage({
+    message: "startTracking",
+    sessionId,
+    originalWindowId,
+    openedWindowId
+  });
+};
+
+export const sendEndTrackingByWindowDeleteMessage = (sessionId, originalWindowId) => {
+  log.info(logDir, "sendendTrackingByWindowDeleteMessage()", sessionId, originalWindowId);
+  browser.runtime.sendMessage({
+    message: "endTrackingByWindowDelete",
+    sessionId,
+    originalWindowId
+  });
+};
+
 export const replaceCurrentSession = async (id, property = "default") => {
   log.info(logDir, "replaceCurrentSession()", id, property);
   let currentSession = await browser.runtime.sendMessage({
@@ -117,7 +136,7 @@ const generateUniqueId = (originalId, isIdDuplicate) => {
   return id;
 };
 
-export const addCurrentWindow = async id => {
+export const addCurrentWindow = async (id, isTracking = false) => {
   log.info(logDir, "AddCurrentWindow()", id);
   const session = await getSessions(id);
   const currentWindow = await browser.windows.getCurrent({ populate: true });
@@ -173,6 +192,7 @@ export const addCurrentWindow = async id => {
     }
   }
 
+  if (isTracking) sendStartTrackingMessage(id, windowId, currentWindow.id);
   sendSessionUpdateMessage(session);
 };
 

@@ -4,6 +4,7 @@ import log from "loglevel";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 import { updateTabGroups } from "../common/tabGroups";
+import { isTrackingSession, startTracking } from "./track.js";
 
 const logDir = "background/open";
 
@@ -188,6 +189,11 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   if (isEnabledWindowTitle) {
     await Promise.all(openedTabs);
     setWindowTitle(session, win, currentWindow);
+  }
+
+  if (isTrackingSession(session.tag)) {
+    await Promise.all(openedTabs);
+    startTracking(session.id, win, currentWindow.id);
   }
 }
 

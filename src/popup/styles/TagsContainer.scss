@@ -24,7 +24,7 @@
       margin-right: 5px;
       overflow: hidden;
 
-      .tagIcon, .autoSaveIcon, .startupIcon {
+      .tagIcon, .autoSaveIcon, .startupIcon, .trackingIcon {
         width: 11px;
         margin-right: 3px;
         fill: var(--sub-text);
@@ -35,6 +35,13 @@
       }
       .startupIcon{
         width: 14px;
+      }
+      .trackingIcon {
+        width: 14px;
+      }
+
+      &.isTracking .trackingIcon{
+        fill: var(--error);
       }
 
       span {

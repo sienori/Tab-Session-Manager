@@ -4,6 +4,7 @@ import log from "loglevel";
 import Sessions from "./sessions.js";
 import { updateSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
+import { endTrackingBySessionId } from "./track.js";
 
 const logDir = "background/tag";
 
@@ -67,6 +68,7 @@ export async function removeTag(id, tag) {
     return element != tag;
   });
 
+  if (tag === "_tracking") endTrackingBySessionId(id);
   return await updateSession(session);
 }
 

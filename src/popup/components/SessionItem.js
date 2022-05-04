@@ -50,10 +50,10 @@ export default class Session extends Component {
   }
 
   render() {
-    const { session, isSelected, order, searchWords, handleSessionSelect } = this.props;
+    const { session, isSelected, isTracking, order, searchWords, handleSessionSelect } = this.props;
 
     return (
-      <div className={`sessionItem ${isSelected ? "isSelected" : ""}`}
+      <div className={`sessionItem ${isSelected ? "isSelected" : ""} ${isTracking ? "isTracking" : ""}`}
         style={{ order: order }}
       >
         <button

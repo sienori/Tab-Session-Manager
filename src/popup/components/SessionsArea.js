@@ -136,7 +136,8 @@ export default class SessionsArea extends Component {
       removeSession,
       error,
       sessionsAreaRef,
-      openMenu
+      openMenu,
+      trackingSessions
     } = this.props;
     const sortedSessions =
       getSortedSessions(sessions, sortValue, filterValue, searchWords, searchedSessionIds);
@@ -171,6 +172,7 @@ export default class SessionsArea extends Component {
               <SessionItem
                 session={session}
                 isSelected={selectedSessionId === session.id}
+                isTracking={trackingSessions.includes(session.id)}
                 ref={selectedSessionId === session.id ? this.selectedItemRef : null}
                 order={sortedSessions.findIndex(sortedSession => sortedSession.id === session.id)}
                 searchWords={searchWords}
