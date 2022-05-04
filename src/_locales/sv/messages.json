@@ -201,10 +201,10 @@
     "message": "Gör en kopia av sessionen"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Spåra fönsterändringar"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Ta bort spårning"
   },
   "registerStartupLabel": {
     "message": "Starta vid uppstart"
@@ -318,13 +318,13 @@
     "message": "Gör ingenting"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Spårningssession"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Spårning"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Spåra nyöppnade fönster"
   },
   "shouldTrackNewWindowCaptionLabel": {
     "message": "When a new window is opened within a tracking session, include it in the tracking."
