@@ -16,7 +16,7 @@ export const compressDataUrl = async dataUrl => {
       reader.readAsDataURL(compressedFile);
     });
   }
-  catch{
+  catch {
     return dataUrl;
   }
 };

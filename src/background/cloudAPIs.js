@@ -67,9 +67,7 @@ export const uploadSession = async (session, fileId = "") => {
     headers: new Headers({ Authorization: "Bearer " + accessToken }),
     body: form
   };
-  const url = `https://www.googleapis.com/upload/drive/v3/files${
-    fileId ? `/${fileId}` : ""
-    }?uploadType=multipart`;
+  const url = `https://www.googleapis.com/upload/drive/v3/files${fileId ? `/${fileId}` : ""}?uploadType=multipart`;
 
   const result = await fetch(url, init).catch(e => {
     log.error(logDir, "uploadSession()", e);

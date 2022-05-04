@@ -10,8 +10,7 @@ export default props => {
 
   const extensionVersion = manifest.version;
   const isChrome = browserInfo().name == "Chrome";
-  const paypalLink = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager ${
-    isChrome ? "for Chrome " : ""
+  const paypalLink = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager ${isChrome ? "for Chrome " : ""
     }- Donation`;
   const patreonLink = "https://www.patreon.com/sienori";
   const email = `sienori.firefox+tsm${isChrome ? "fc" : ""}@gmail.com`;
