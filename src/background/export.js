@@ -14,7 +14,7 @@ export default async function exportSessions(id = null, folderName = "", isBacku
 
   const downloadUrl = URL.createObjectURL(
     new Blob([JSON.stringify(sessions, null, "  ")], {
-      type: "aplication/json"
+      type: "application/json"
     })
   );
 

@@ -68,7 +68,7 @@ export const exportSettings = async () => {
 
   const downloadUrl = URL.createObjectURL(
     new Blob([JSON.stringify(settingsObj, null, "  ")], {
-      type: "aplication/json"
+      type: "application/json"
     })
   );
 
