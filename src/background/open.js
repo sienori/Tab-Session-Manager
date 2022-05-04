@@ -253,7 +253,7 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
     }
 
     //Reader mode
-    if (tab.url.substr(0, 17) == "about:reader?url=") {
+    if (tab.url.startsWith("about:reader?url=")) {
       if (getSettings("ifLazyLoading")) {
         createOption.url = returnReplaceURL(
           "redirect",
@@ -263,7 +263,7 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
         );
       } else {
         if (isEnabledOpenInReaderMode) createOption.openInReaderMode = true;
-        createOption.url = decodeURIComponent(tab.url.substr(17));
+        createOption.url = decodeURIComponent(tab.url.slice(17));
       }
     }
 
