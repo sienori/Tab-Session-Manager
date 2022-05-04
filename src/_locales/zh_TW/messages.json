@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "複製此瀏覽階段"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "登錄為啟動瀏覽階段"
   },
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "不執行任何動作"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
