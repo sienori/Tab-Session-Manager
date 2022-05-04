@@ -200,6 +200,12 @@
   "makeCopySessionLabel": {
     "message": "Vytvořit kopii relace"
   },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
+  },
   "registerStartupLabel": {
     "message": "Registrovat pro spuštění"
   },
@@ -310,6 +316,18 @@
   },
   "DoNothingLabel": {
     "message": "Do nothing"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
     "message": "Ukládat relaci pravidelně"
