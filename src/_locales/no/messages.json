@@ -3,774 +3,792 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Lagra og gjenopprett vindauger og faner. Støtter òg automatisk lagring."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Doner med PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Doner"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Opna øktlista i fane"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "Lagra"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "Lagra denne økta"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Skriv inn namn på økt"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Lagra ei økt"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Lagra alle vindauga"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Lagra kun dette vindauget"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Kategorifilter"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Sorter"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Alt"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Lagra av bruker"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Lagra automatisk"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Nyaste"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Eldste"
   },
   "aToZLabel": {
-    "message": "A-Z"
+    "message": "A-Å"
   },
   "zToALabel": {
-    "message": "Z-A"
+    "message": "Å-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Søk etter økt- eller fanenamn"
   },
   "search": {
-    "message": "Search"
+    "message": "Søk"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Tøm søk"
   },
   "open": {
-    "message": "Open"
+    "message": "Opna"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Slett"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Vil du sletta denne økta?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sletta økt."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Sletta øktvindauge."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Sletta øktfane."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Gjenopprett"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Klarte ikkje sletta økta."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Klarte ikkje sletta øktvindauget."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Klarte ikkje sletta øktfana."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Lagra økt."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Klarte ikkje lagra økta."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Avbryt"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Angre"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Gjer om"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Legg til etikett"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Fjern etikett"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Skriv inn namn på etiketten"
   },
   "detailLabel": {
-    "message": "Detail"
+    "message": "Detaljar"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "Vindauge"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "Vindauge"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "Fane"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "Faner"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Det er inga økt."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Lagra økta ved å trykka på knappen nede til høgre."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Ingen treff."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Inga økt er vald."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Meny"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Lukk menyen"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Lukk"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Gje nytt namn"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Gje økta eit nytt namn"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Opna ei økt"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Opna i eit nytt vindauge"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Opna økta i det nye vindauget."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Opna i dette vindauget"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Opna økta i dette vindauget. Inaktive vindauger og alle faner vart lukka."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Legg til i dette vindauget"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Opna fanene i dette vindauget. Opna den i det nye vindauget viss økta inneheld fleire vindauger."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Rediger en økt"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Byt ut med denne økta"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Byt ut med dette vindauget"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Legg til dette vindauget"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Lag ein kopi av økta"
+  },
+  "registerTrackingLabel": {
+    "message": "Track window changes"
+  },
+  "removeTrackingLabel": {
+    "message": "Delete tracking"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Registrer for oppstart"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Fjern frå oppstart"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Rediger eit vindauge"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Legg til denne fana"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Feil"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB er ikkje tilgjengeleg i nettlesaren din."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Last inn utviding på nytt"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Korleis løsa dette problemet"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Automatisk lagra - Vindauge lukka"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Automatisk lagra - Nettlesar lukka"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Automatisk lagra - Jamnleg"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Vindauge lukka"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Nettlesar lukka"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Jamnleg"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "Innstillingar"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "Økter"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Hurtigtastar"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "Om"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Generelt"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Automatisk lagra"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Stil"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Opna økt i eit nytt vindauge"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "If unchecked, the session overwrites the current window."
+    "message": "Viss denne er umerka, vil økta overskriva dette vindauget."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Doven innlasting av faner"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
+    "message": "Når ei økt opnas, vil ikkje innhaldet på nettsidene lastas inn før du veljer fanen.<br>Viss denne er umerka, vil minnebruken øke betydeleg når ei økt blir gjenoppretta."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Bruk «discarded»-eigenskapen for doven innlasting"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Å slå på dette alternativet vil forbetre ytinga når du opner faner."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "Favorittikonet til den dovne innlasta fanen vart ikkje vist fram."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Gjenopprett posisjonane til vindauga"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Gjenopprett posisjonane og storleikane til vindauga når du opner ei økt."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Oppstart"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Kva som skjer når nettlesaren startar"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Opna førre økt"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Opna økta som vart lukka sist gong."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Opna oppstartsøkta"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Opna øktene som er registrert for oppstart. Du kan registrera økter for oppstart i menyen til økta i øktlista."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Ikkje gjer noko"
+  },
+  "trackingSessionLabel": {
+    "message": "Tracking session"
+  },
+  "trackingLabel": {
+    "message": "Tracking"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Track newly opened windows"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "Lagra økta jamnleg"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "Lagra økta kvart X. minutt."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "Intervall (minutt)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Minste verdi: 0,1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Største antal lagra økter"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Største antal lagra økter (på dette viset)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "Lagra økt når vindauge lukkas"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Lagra økter kor kun eitt vindauge vert lukka."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Største antal lagra økter"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Største antal lagra økter (på dette viset)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Lagra økta når nettlesaren lukkas"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Lagra økter kor fleire vindauger vert lukka på ein gong."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Største antal lagra økter"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Største antal lagra økter (på dette viset)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Bruk sidetittel som namn på automatisk lagra økter"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Bruk tittelen til den opne nettsida som namn på økta når ei økt vert lagra automatisk."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Sikkerheitskopier"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Lagra sikkerheitskopier"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Ta ein sikkerheitskopi av øktene når nettlesaren starter og lagra den i nedlastingsmappa."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Individuell sikkerheitskopi"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Kvar økt vert lagra i kvar si fil.<br>Viss denne er umerka, vil alle øktene verte lagra i éin enkel fil. Noko som kan overbelasta lagringsplassen din."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Lagringsplassering"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Vel mappe for lagring av sikkerhetskopien. Lagringsplasseringa må være inni nedlastingsmappa til nettlesaren."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Nedlastingsmappe"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Største antal lagra sikkerhetskopier"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Når antal sikkerhetskopier går over denne verdien, slettes de i stigande rekkjefølgje frå den eldste."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Datoformat"
   },
   "dateFormatCaptionLabel": {
-    "message": "Example: YYYY.MM.DD HH:mm:ss"
+    "message": "Eksempel: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Lagra privat vindauge"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Liste med URL-ar som vil varte ignorert når ei økt lagras"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Viss URL-en til fana samsvarer med lista vil den ikkje varte lara i økta. Jokerteikn (*) er tillat."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Lagra einingsnamnet til økta"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Legg til einingsnamnet som ein etikett når du lagrer ei økt. Når du bruker skysynkronisering kan du skilla den frå økter på andre eininger."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Einingsnamn"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Angje namn til denne eininga."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Legg til einingsnamn på økter"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Legg til einingsnamn på alle dei lagra øktene."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Legg til einingsnamn"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Vil du leggja til einingsnamnet på alle øktane?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Komprimer favorittikon"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Komprimer favorittikona når ei økt lagras."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Komprimer alle øktene"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Komprimer favorittikona i alle dei lagra øktene. Dette vil bruka mindre minne og gjera det raskare å lasta inn øktene."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Komprimer"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Komprimer alle økter?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Komprimerer …"
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Fullførte komprimeringa."
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "If unchecked, ignores the private window when saving the session."
+    "message": "Ta med private vindauger når økta lagras."
   },
   "ifSupportTstLabel": {
-    "message": "Supports Tree Style Tab"
+    "message": "Støtter «Tree Style Tab»"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Gjenopprett trestrukturen til Tree Style Tab.<br>Dette vil gjere at det tar lengre tid for å gjenoppretta økta."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Forseinking når treet gjenopprettas (millisekund)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Lagra fanegrupper"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Lagra og gjenopprett plasseringa til fanegrupper. For å slå på denne funksjonen treng du den følgjande utvidinga."
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "For å gjenoppretta trestrukturen må du venta litt før du kan opna fana. Øk denne verdien viss treet ikkje vert gjenoppretta riktig."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Vis fram øktnamn på éi linje"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Viss namnet til økta i øktlista er lengre enn éi linje, vert den forkorta slik at den vert vist fram på kun éi linje."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Skysynkronisering"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Slå på skysynkronisering (beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Lagra økter på Google Drive™ og synkroniser med andre datamaskinar."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Synkroniserer"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Lastar ned"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Lastar opp"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Sletter"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Fullførte synkroniseringa."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Krev innlogging for synkronisering."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Logg inn"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Logg ut"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Synkroniser automatisk"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Synkroniser når nettlesaren startar opp og når ei økt vert lagra."
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Synkroniser automatisk lagra økter"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Last opp/ned automatisk lagra økter med skysynkronisering."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Sprettoppvindu"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Oppførsel til opnaknappen"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Vel oppførselen til opnaknappen."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Oppførsel til lagraknappen"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Vel oppførselen til lagraknappen."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Vis opna/slett-knappar i øktlista"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Vis opna/slett-knappar når musepeikaren er over øktlista."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Storleik"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Angje storleik på sprettoppvindauget."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Breidd"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Høgd"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Breidda til sidestolpa"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Opna øktlista i ei fane"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Opna øktlista i ei fane når du trykkjer på knappen i verktøylinja."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Angje fargetema."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Lyst"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Mørkt"
   },
   "otherLabel": {
-    "message": "Other"
+    "message": "Anna"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Display option page when updating"
+    "message": "Opna innstillingssida etter ei oppdatering"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Opna innstillingssida når Tab Session Manager har vorte oppdatert, så du kan finne ut av kva som er nytt så fort som mogleg."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager har vorte oppdatert."
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Sjå meir"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Trykk for å sjå informasjon om oppdateringa."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Slå på feilsøkingsmodus"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Når feilsøkingsmodus er slått på vil feilsøkjaren skrive til loggen."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Eksporter innstillingane"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Lagra innstillingane som ei JSON-fil på datamaskinen."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importer innstillingar"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Last inn innstillingsfila frå datamaskinen."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Tilbakestill innstillingane"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Tilbakestill alle innstillingane til standard."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Tilbakestill"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "Importer økter"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Last inn økter frå datamaskinen og legg dei til i øktlista."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Støtta filtyper:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Korleis importera økter frå andre utvidinger"
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "Bla gjennom …"
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Importer"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "Tøm"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Importer URL-liste"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Opprett ei økt frå ei liste med URL-ar og legg den til i øktlista.<br>Format: &lt;URL&gt; &lt;sidetittel (valfri)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "Eksporter økter"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Lagra alle øktene til datamaskinen."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "Eksporter"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "Slett øktene"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Slett alle øktene."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "Slett"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Hurtigtaster"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Vel hurtigtaster."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Skriv inn ein hurtigtast"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Skriv inn ein bokstav"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Ta med «Ctrl» eller «Alt»"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Ta med «Kommando», «Ctrl» eller «Alt»"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Bokstaven kan ikkje brukas"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Hurtigtasten kan ikkje brukas"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Opna sprettoppvindauget"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Lagra økt (kun dette vindauget)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Lagra økt (alle vindauger)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Eksporter alle økter"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Tøm"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Tilbakestill"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Støttespelarar"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "Lisens"
   },
   "donationLabel": {
-    "message": "Please make a donation"
+    "message": "Doner gjerne ein slant"
   },
   "donationCaptionLabel": {
-    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+    "message": "Takk for at du bruker Tab Session Manager.<br>Støtta din er ei stor oppmuntring for meg, mens eg fortsett å utvikla utvidinga.<br>Viss du likar Tab Session Manager, vil eg verkeleg settja pris på ein donasjon."
   },
   "amazonTitleLabel": {
-    "message": "amazon.co.jp eGift Cards"
+    "message": "Elektronisk gåvekort frå «amazon.co.jp»"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Sponsorar"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Tilleggsside"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Utvidingsside"
   },
   "firefoxLabel": {
     "message": "Firefox Add-ons"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Chrome Nettmarked"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge-tillegg"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Persovernerklæring"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "Økter vart importert."
   },
   "readFailedMessage": {
-    "message": "Read failed"
+    "message": "Lesing mislykkas"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Er du sikker på at du vil sletta alle øktene?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Økt"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://addons.mozilla.org/nn-NO/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "Denne sida kan ikkje opnas av Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Kopier URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Kopiert."
   }
 }
