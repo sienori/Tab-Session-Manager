@@ -201,7 +201,7 @@
     "message": "Sitzung kopieren"
   },
   "registerTrackingLabel": {
-    "message": "Änderungen des Fensters verfolgen"
+    "message": "Änderungen im Fenster verfolgen"
   },
   "removeTrackingLabel": {
     "message": "Tracking löschen"
