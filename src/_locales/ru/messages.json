@@ -204,7 +204,7 @@
     "message": "Track window changes"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Прекратить отслеживать"
   },
   "registerStartupLabel": {
     "message": "Открывать при запуске"
@@ -321,10 +321,10 @@
     "message": "Tracking session"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Отслеживание"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Отслеживать открывающиеся окна"
   },
   "shouldTrackNewWindowCaptionLabel": {
     "message": "When a new window is opened within a tracking session, include it in the tracking."
