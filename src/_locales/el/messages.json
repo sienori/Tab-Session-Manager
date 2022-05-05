@@ -201,10 +201,10 @@
     "message": "Αντιγραφή της συνεδρίας"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Παρακολούθηση αλλαγών"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Διαγραφή παρακολούθησης"
   },
   "registerStartupLabel": {
     "message": "Άνοιγμα κατά την εκκίνηση"
@@ -318,16 +318,16 @@
     "message": "Καμία ενέργεια"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Παρακολούθηση συνεδρίας"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Παρακολούθηση"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Παρακολούθηση νέων ανοιγμένων παραθύρων"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Όταν ανοίγει ένα νέο παράθυρο μέσα σε μια συνεδρία παρακολούθησης, συμπεριλάβετέ το στην παρακολούθηση."
   },
   "ifAutoSaveLabel": {
     "message": "Τακτική αποθήκευση συνεδρίας"
