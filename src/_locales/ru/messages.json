@@ -201,7 +201,7 @@
     "message": "Создать копию сессии"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Отслеживать изменения окон"
   },
   "removeTrackingLabel": {
     "message": "Прекратить отслеживать"
@@ -318,7 +318,7 @@
     "message": "Ничего не делать"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Сессия отслеживания"
   },
   "trackingLabel": {
     "message": "Отслеживание"
@@ -327,7 +327,7 @@
     "message": "Отслеживать открывающиеся окна"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Когда во время работы сессии отслеживания открывается новое окно, отслеживать его тоже."
   },
   "ifAutoSaveLabel": {
     "message": "Периодически сохранять сессию"
