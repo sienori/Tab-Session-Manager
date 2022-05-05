@@ -201,10 +201,10 @@
     "message": "Másolatot készítése a munkamenetről"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Ablak változások nyomon követése"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Követés eltávolítása"
   },
   "registerStartupLabel": {
     "message": "Automatikus indításra regisztrálás"
