@@ -324,7 +324,7 @@
     "message": "Tracking"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Neugeöffnete Fenster verfolgen"
+    "message": "Neu geöffnete Fenster verfolgen"
   },
   "shouldTrackNewWindowCaptionLabel": {
     "message": "Wenn ein neues Fenster innerhalb einer Tracking-Sitzung geöffnet wird, fügen Sie es in das Tracking ein."
