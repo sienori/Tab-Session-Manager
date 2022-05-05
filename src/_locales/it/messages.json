@@ -201,10 +201,10 @@
     "message": "Fai una copia della sessione"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Monitora i cambiamenti della finestra"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Elimina monitoraggio"
   },
   "registerStartupLabel": {
     "message": "Registra per l'avvio"
@@ -318,16 +318,16 @@
     "message": "Non fare nulla"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Monitoraggio sessione"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Monitoraggio"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Monitora le nuove finestre aperte"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Quando una nuova finestra viene aperta all'interno di una sessione monitorata, includila nel monitoraggio."
   },
   "ifAutoSaveLabel": {
     "message": "Salva la sessione regolarmente"
