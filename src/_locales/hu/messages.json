@@ -318,16 +318,16 @@
     "message": "Ne tegyen semmit"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Követés munkamenet"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Követés"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Újonnan megnyitott ablakok követése"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Ha új ablak nyílt a követés munkamenetben, kövessük azt is."
   },
   "ifAutoSaveLabel": {
     "message": "Munkamenet rendszeres mentése"
