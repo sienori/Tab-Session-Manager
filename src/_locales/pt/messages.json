@@ -318,16 +318,16 @@
     "message": "Não fazer nada"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Sessão rastreada"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Rastreando"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Rastrear janelas abertas recentemente"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Quando uma nova janela é aberta dentro de uma sessão rastreada, inclua-a no rastreamento."
   },
   "ifAutoSaveLabel": {
     "message": "Salvar a sessão regularmente"
