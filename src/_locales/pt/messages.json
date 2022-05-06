@@ -201,10 +201,10 @@
     "message": "Fazer uma cópia da sessão"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Rastrear alterações da janela"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Remover rastreamento"
   },
   "registerStartupLabel": {
     "message": "Adicionar a inicialização"
