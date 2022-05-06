@@ -201,10 +201,10 @@
     "message": "Fazer uma cópia da sessão"
   },
   "registerTrackingLabel": {
-    "message": "Rastrear alterações da janela"
+    "message": "Monitorar mudanças na janela"
   },
   "removeTrackingLabel": {
-    "message": "Remover rastreamento"
+    "message": "Excluir monitoração"
   },
   "registerStartupLabel": {
     "message": "Adicionar a inicialização"
@@ -318,13 +318,13 @@
     "message": "Não fazer nada"
   },
   "trackingSessionLabel": {
-    "message": "Sessão rastreada"
+    "message": "Sessão monitorada"
   },
   "trackingLabel": {
-    "message": "Rastreando"
+    "message": "Monitoração"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Rastrear janelas abertas recentemente"
+    "message": "Monitorar janelas recém-abertas"
   },
   "shouldTrackNewWindowCaptionLabel": {
     "message": "Quando uma nova janela é aberta dentro de uma sessão rastreada, inclua-a no rastreamento."
