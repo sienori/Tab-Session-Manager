@@ -327,7 +327,7 @@
     "message": "Monitorar janelas recém-abertas"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "Quando uma nova janela é aberta dentro de uma sessão rastreada, inclua-a no rastreamento."
+    "message": "Quando se abre uma janela nova numa sessão monitorada, incluí-la na monitoração."
   },
   "ifAutoSaveLabel": {
     "message": "Salvar a sessão regularmente"
