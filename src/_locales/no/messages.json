@@ -204,7 +204,7 @@
     "message": "Spor vindaugsendringar"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Fjern sporinga"
   },
   "registerStartupLabel": {
     "message": "Registrer for oppstart"
@@ -318,16 +318,16 @@
     "message": "Ikkje gjer noko"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Sporingsøkt"
   },
   "trackingLabel": {
     "message": "Sporing"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Spor nyopna vindauge"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Ta med nye vindauge når dei vert opna inni ei sporingsøkt."
   },
   "ifAutoSaveLabel": {
     "message": "Lagra økta jamnleg"
