@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Lagra og gjenopprett vindauger og faner. Støtter òg automatisk lagring."
+    "message": "Lagra og gjenopprett vindauger og faner. Støttar òg automatisk lagring."
   },
   "donateWithPaypalLabel": {
     "message": "Doner med PayPal"
@@ -474,7 +474,7 @@
     "message": "Ta med private vindauger når økta lagras."
   },
   "ifSupportTstLabel": {
-    "message": "Støtter «Tree Style Tab»"
+    "message": "Støttar Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
     "message": "Gjenopprett trestrukturen til Tree Style Tab.<br>Dette vil gjere at det tar lengre tid for å gjenoppretta økta."
