@@ -201,7 +201,7 @@
     "message": "Lag ein kopi av økta"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Spor vindaugsendringar"
   },
   "removeTrackingLabel": {
     "message": "Delete tracking"
@@ -321,7 +321,7 @@
     "message": "Tracking session"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Sporing"
   },
   "shouldTrackNewWindowLabel": {
     "message": "Track newly opened windows"
