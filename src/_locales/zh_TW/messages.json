@@ -201,7 +201,7 @@
     "message": "複製此瀏覽階段"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "追蹤視窗變更"
   },
   "removeTrackingLabel": {
     "message": "Delete tracking"
@@ -318,10 +318,10 @@
     "message": "不執行任何動作"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "追蹤瀏覽階段"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "追蹤"
   },
   "shouldTrackNewWindowLabel": {
     "message": "Track newly opened windows"
