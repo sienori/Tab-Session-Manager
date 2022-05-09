@@ -714,10 +714,10 @@
     "message": "開啟工具列彈出式視窗"
   },
   "saveCurrentWindowDescription": {
-    "message": "儲存瀏覽階段（僅限目前視窗）"
+    "message": "儲存瀏覽階段 (僅限目前視窗)"
   },
   "saveAllWindowDescription": {
-    "message": "儲存瀏覽階段（所有視窗）"
+    "message": "儲存瀏覽階段 (所有視窗)"
   },
   "exportSessionsDescription": {
     "message": "匯出所有瀏覽階段"
@@ -735,10 +735,10 @@
     "message": "授權條款"
   },
   "donationLabel": {
-    "message": "希望您贊助我！"
+    "message": "您可以贊助我！"
   },
   "donationCaptionLabel": {
-    "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您能夠贊助我。"
+    "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>若您喜歡 Tab Session Manager，希望您能夠贊助我。"
   },
   "amazonTitleLabel": {
     "message": "贊助我 amazon 電子禮品卡"
