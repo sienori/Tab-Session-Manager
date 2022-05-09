@@ -282,7 +282,7 @@
     "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>如果關閉此選項，還原瀏覽階段時的記憶體使用量將會增加。"
   },
   "isUseDiscardedLabel": {
-    "message": "使用\"discarded\"屬性進行延遲載入"
+    "message": "使用「discarded」屬性進行延遲載入"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "啟用此選項將提升開啟分頁時的效能。"
