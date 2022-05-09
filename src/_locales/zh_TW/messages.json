@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "儲存與還原視窗跟分頁的瀏覽狀態。也支援自動儲存功能。"
+    "message": "儲存與還原視窗跟分頁的瀏覽狀態。並支援自動儲存功能。"
   },
   "donateWithPaypalLabel": {
     "message": "透過 PayPal 贊助"
@@ -177,7 +177,7 @@
     "message": "在目前視窗中開啟"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "在目前視窗中開啟瀏覽階段。非使用中視窗和所有分頁都已關閉。"
+    "message": "在目前視窗中開啟瀏覽階段。非使用中視窗和所有分頁皆已關閉。"
   },
   "addToCurrentWindowLabel": {
     "message": "新增至目前視窗"
@@ -204,7 +204,7 @@
     "message": "追蹤視窗變更"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "解除追蹤"
   },
   "registerStartupLabel": {
     "message": "登錄為啟動瀏覽階段"
@@ -324,10 +324,10 @@
     "message": "追蹤"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "追蹤新開啟的視窗"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "在已追蹤的瀏覽階段中開啟新視窗時，將新開的視窗加入為追蹤對象。"
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
