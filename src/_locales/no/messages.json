@@ -603,7 +603,7 @@
     "message": "Opna innstillingssida etter ei oppdatering"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Opna innstillingssida når Tab Session Manager har vorte oppdatert, så du kan finne ut av kva som er nytt så fort som mogleg."
+    "message": "Opna innstillingssida når Tab Session Manager vart oppdatert, så du kan finna ut av kva som er nytt så fort som mogleg."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager har vorte oppdatert."
@@ -618,7 +618,7 @@
     "message": "Slå på feilsøkingsmodus"
   },
   "isDebugModeCaptionLabel": {
-    "message": "Når feilsøkingsmodus er slått på vil feilsøkjaren skrive til loggen."
+    "message": "Når feilsøkingsmodus er slått på vil feilsøkaren skrive til loggen."
   },
   "exportSettingsLabel": {
     "message": "Eksporter innstillingane"
@@ -690,7 +690,7 @@
     "message": "Hurtigtaster"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Vel hurtigtaster."
+    "message": "Vel hurtigtastar."
   },
   "typeShortcutMessage": {
     "message": "Skriv inn ein hurtigtast"
@@ -705,10 +705,10 @@
     "message": "Ta med «Kommando», «Ctrl» eller «Alt»"
   },
   "invalidLetterMessage": {
-    "message": "Bokstaven kan ikkje brukas"
+    "message": "Bokstaven kan ikkje brukast"
   },
   "invalidShortcutMessage": {
-    "message": "Hurtigtasten kan ikkje brukas"
+    "message": "Hurtigtasten kan ikkje brukast"
   },
   "openPopupDescription": {
     "message": "Opna sprettoppvindauget"
