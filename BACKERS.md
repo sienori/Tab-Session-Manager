@@ -112,3 +112,8 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Alexander Jahn
 - Reed
 - Tom Yates
+- سليمان العقل
+- Cani Glauss
+- Lee Sweet
+
+
