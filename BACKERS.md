@@ -115,5 +115,6 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - سليمان العقل
 - Cani Glauss
 - Lee Sweet
+- SrPersimmon
 
 
