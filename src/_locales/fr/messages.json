@@ -711,7 +711,7 @@
     "message": "Ce raccourci ne peut pas être utilisé"
   },
   "openPopupDescription": {
-    "message": "Ouvrir la barre d’outil surgissante"
+    "message": "Ouvrir la fenêtre surgissante de la barre d'outils"
   },
   "saveCurrentWindowDescription": {
     "message": "Enregistrer la session (uniquement la fenêtre active)"
