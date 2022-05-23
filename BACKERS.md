@@ -116,5 +116,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Cani Glauss
 - Lee Sweet
 - SrPersimmon
-
-
+- Daniel
