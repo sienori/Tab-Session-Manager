@@ -117,3 +117,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Lee Sweet
 - SrPersimmon
 - Daniel
+- A TA
+- bob sauerbrey
