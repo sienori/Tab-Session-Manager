@@ -120,3 +120,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - A TA
 - bob sauerbrey
 - David Nicholson
+- JJ
