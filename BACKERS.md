@@ -121,3 +121,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - bob sauerbrey
 - David Nicholson
 - JJ
+- David Hajek ([@hdavid4444](https://mobile.twitter.com/hdavid4444))
+
