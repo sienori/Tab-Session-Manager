@@ -123,4 +123,7 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - JJ
 - David Hajek ([@hdavid4444](https://mobile.twitter.com/hdavid4444))
 - Jeffrey Galli
+- Mariano Absatz
+- David Hajek
+- Steve Walsh
 
