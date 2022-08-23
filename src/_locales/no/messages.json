@@ -183,7 +183,7 @@
     "message": "Legg til i dette vindauget"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Opna fanene i dette vindauget. Opna den i det nye vindauget viss økta inneheld fleire vindauger."
+    "message": "Opna fanene i dette vindauget. Opna den i det nye vindauget viss økta inneheld fleire vindauge."
   },
   "EditSessionLabel": {
     "message": "Rediger en økt"
@@ -288,7 +288,7 @@
     "message": "Å slå på dette alternativet vil forbetre ytinga når du opner faner."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "Favorittikonet til den dovne innlasta fanen vart ikkje vist fram."
+    "message": "Favorittikonet til den dovne innlasta fana vart ikkje vist fram."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Gjenopprett posisjonane til vindauga"
