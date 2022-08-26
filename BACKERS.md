@@ -126,4 +126,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Mariano Absatz
 - David Hajek
 - Steve Walsh
-
+- Richard McClintock, Sr.
