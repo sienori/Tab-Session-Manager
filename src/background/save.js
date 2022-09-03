@@ -82,8 +82,12 @@ export async function loadCurrentSession(name, tag, property) {
   }
 
   if (isEnabledTabGroups && getSettings("saveTabGroups")) {
-    const tabGroups = await queryTabGroups();
-    const filteredTabGroups = tabGroups.filter(tabGroup =>
+    // ポップアップやPWAにはタブ自体が存在しないので、normalタイプのウィンドウのみクエリする
+    const filteredWindows = Object.values(session.windowsInfo).filter(window => window.type === "normal");
+    const tabGroups = await Promise.all(filteredWindows.map(window => queryTabGroups({
+      windowId: window.id,
+    })));
+    const filteredTabGroups = tabGroups.flat().filter(tabGroup =>
       Object.keys(session.windows).includes(String(tabGroup.windowId)));
     if (filteredTabGroups.length > 0) session.tabGroups = filteredTabGroups;
   }
