@@ -127,3 +127,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - David Hajek
 - Steve Walsh
 - Richard McClintock, Sr.
+- Chris Bolton 
