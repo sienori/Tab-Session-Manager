@@ -291,10 +291,10 @@
     "message": "不顯示延遲載入分頁的圖示。"
   },
   "isRestoreWindowPositionLabel": {
-    "message": "還原視窗位置"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "開啟瀏覽階段時還原視窗的位置與大小。"
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "啟動"
