@@ -291,10 +291,10 @@
     "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Obnovit pozici oken"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Obnovit pozici a velikost oken při otevírání relace."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Po spuštění"
