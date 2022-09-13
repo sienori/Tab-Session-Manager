@@ -1,6 +1,6 @@
 # <sub><img src="/src/icons/icon.svg" width=64px height=64px></sub> Tab-Session-Manager
 
-#### Save and restore the state of windows and tabs. It also supports automatic saving.
+#### Save and restore the state of browser windows and tabs. It also supports automatic saving.
 
 <img src="https://raw.githubusercontent.com/sienori/Tab-Session-Manager/master/other/promotion/screenshots/popup.png" width="640px">
 
@@ -14,7 +14,7 @@
 
 ## Backers
 
-Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md)** who supported Tab Session Manager!
+Thank you to the awesome **[backers](https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md)** who support Tab Session Manager!
 
 [<img src="other/promotion/badges/patreon.png" alt="Became a Patreon" height="44px" align="left">](https://www.patreon.com/sienori)
 [<img src="other/promotion/badges/paypal.png" alt="Check out with PayPal">](https://www.paypal.me/sienoriExt)
@@ -30,7 +30,7 @@ Support Tab Session Manager by [becoming a sponsor](https://www.patreon.com/join
 ## Tools
 
 **[Session Compressor](https://tab-session-manager.sienori.com/compressor/index.html)**  
-A tool for compressing sessions of Tab Session Manager
+A tool for compressing sessions created by Tab Session Manager
 
 **[Save Tab Groups for Tab Session Manager](https://chrome.google.com/webstore/detail/aghdiknflpelpkepifoplhodcnfildao)**  
 Additional extension for saving tab groups in Tab Session Manager for Chrome
@@ -41,7 +41,7 @@ You can contribute by translating Tab Session Manager on **[Crowdin](https://cro
 
 ## Developing
 
-> Required Node 14+
+> Required: Node 14+
 
 1. Clone the repository `git clone https://github.com/sienori/Tab-Session-Manager`  
 2. Create the file `src/credentials.js`  
