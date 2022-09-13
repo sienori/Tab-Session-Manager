@@ -291,10 +291,10 @@
     "message": "Δεν εμφανίζεται το favicon της αργής φόρτωσης."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Επαναφορά θέσης παραθύρων"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Επαναφορά θέσης και μεγέθους παραθύρων κατά το άνοιγμα της συνεδρίας."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Εκκίνηση"
