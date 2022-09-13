@@ -291,10 +291,10 @@
     "message": "Das Favicon vom verzögert ladenden Tab wird nicht angezeigt."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Fensterposition wiederherstellen"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Position und Größe des Fensters beim Öffnen der Sitzung wiederherstellen."
   },
   "startupLabel": {
     "message": "Autostart"
