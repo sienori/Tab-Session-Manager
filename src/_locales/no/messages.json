@@ -291,10 +291,10 @@
     "message": "Favorittikonet til den dovne innlasta fana vart ikkje vist fram."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Gjenopprett posisjonane til vindauga"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Gjenopprett posisjonane og storleikane til vindauga når du opner ei økt."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Oppstart"
