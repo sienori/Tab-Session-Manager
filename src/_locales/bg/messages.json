@@ -291,10 +291,10 @@
     "message": "При ръчно зареждане на раздели, иконката на сайта не се показва."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Възстановяване позицията на прозорците"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Възстановяване позицията и размера на прозорците при отваряне на сесия."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Стартиране"
