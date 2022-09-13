@@ -291,10 +291,10 @@
     "message": "遅延読み込みタブのファビコンは表示されません。"
   },
   "isRestoreWindowPositionLabel": {
-    "message": "ウィンドウの位置を復元する"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "セッションを開いたときにウィンドウの位置とサイズを復元します。"
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "スタートアップ"
