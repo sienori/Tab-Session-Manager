@@ -6,7 +6,7 @@
     "message": "Запазване и възстановяване състоянието на прозорци и раздели. Поддържа се и автоматично запазване."
   },
   "donateWithPaypalLabel": {
-    "message": "Дарете чрез PayPal"
+    "message": "Дарение чрез PayPal"
   },
   "donateLabel": {
     "message": "Дарение"
@@ -291,10 +291,10 @@
     "message": "При ръчно зареждане на раздели, иконката на сайта не се показва."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Възстановяване позицията на прозореца"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Възстановява позицията и размера на прозореца при отваряне на сесията."
   },
   "startupLabel": {
     "message": "Стартиране"
