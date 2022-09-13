@@ -291,10 +291,10 @@
     "message": "Geç yükleme sekmesinin favicon'u görüntülenmez."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Pencere konumunu geri yükle"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Oturumu açarken pencerenin konumunu ve boyutunu geri yükleyin."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Başlangıç"
