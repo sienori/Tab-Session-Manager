@@ -291,10 +291,10 @@
     "message": "Biểu tượng của tab được tải chậm sẽ không được hiển thị."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Khôi phục vị trí cửa sổ"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Khôi phục vị trí và kích thước cửa sổ khi mở phiên làm việc."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Startup"
