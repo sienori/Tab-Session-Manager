@@ -291,10 +291,10 @@
     "message": "Favoritikonen i fliken som laddar efterhand visas inte."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Återställ fönsterplaceringar"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Återställ fönsterplaceringar och storleken när en session öppnas."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Uppstart"
