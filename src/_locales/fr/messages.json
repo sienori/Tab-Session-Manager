@@ -291,10 +291,10 @@
     "message": "La favicon de l’onglet chargé de manière différée n’est pas affichée."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Rétablir la position de la fenêtre"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Rétablir la position et la taille de la fenêtre à l'ouverture de la session."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Démarrage"
