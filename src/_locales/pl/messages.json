@@ -291,10 +291,10 @@
     "message": "Favicona karty z leniwym ładowaniem nie jest wyświetlana."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Przywracanie pozycji okien"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Przywracanie położenia i rozmiaru okien podczas odtwarzania sesji."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Start"
