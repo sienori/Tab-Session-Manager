@@ -291,10 +291,10 @@
     "message": "Lusta betöltésű lap faviconjának megjelenítésének mellőzése."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Ablakok pozícióinak visszaállítása"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Ablakok pozícióinak és méreteinek visszaállítása munkamenet megnyitáskor."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Automatikus indítás"
