@@ -291,10 +291,10 @@
     "message": "ה-favicon של הכרטיסיה הנטענת באופן עצל אינה מוצגת."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "שחזר את מיקום חלונות"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "שחזר את מיקום וגודל החלונות בעת פתיחת הפעילות."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "הפעלה"
