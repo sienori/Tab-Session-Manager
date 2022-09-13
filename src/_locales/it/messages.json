@@ -291,10 +291,10 @@
     "message": "L'icona delle schede con caricamento posticipato non verrà mostrata."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Ripristina posizione delle finestre"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Ripristina la posizione e la dimensione delle finestre durante l'apertura di una sessione."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Avvio"
