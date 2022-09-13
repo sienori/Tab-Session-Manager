@@ -291,10 +291,10 @@
     "message": "කම්මැලි පැටවීමේ පටිත්තෙහි ෆේවිකෝනය දර්ශනය නොවේ."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "වින්ඩෝස් පිහිටීම යථා තත්වයට පත් කරන්න"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "සැසිය විවෘත කරන විට වින්ඩෝස් පිහිටීම සහ ප්‍රමාණය ප්‍රතිසාධනය කරන්න."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "පණ ගන්වන්න"
