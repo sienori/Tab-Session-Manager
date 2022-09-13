@@ -291,10 +291,10 @@
     "message": "Иконка вкладки при фоновой загрузке не отображается."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Восстановить расположение окна"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Восстановить размер и расположение окна при открытии сессии."
   },
   "startupLabel": {
     "message": "При запуске"
