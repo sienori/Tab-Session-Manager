@@ -204,7 +204,7 @@
     "message": "Surveiller les changements de fenêtre"
   },
   "removeTrackingLabel": {
-    "message": "Arrêter le suivi"
+    "message": "Arrêter la surveillance"
   },
   "registerStartupLabel": {
     "message": "Ajouter au démarrage"
@@ -318,16 +318,16 @@
     "message": "Ne rien faire"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Surveillance de la session"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Surveillée"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Surveiller les nouvelles fenêtres"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Lorsqu’une nouvelle fenêtre est ouverte dans une session surveillée, l’inclure dans la surveillance."
   },
   "ifAutoSaveLabel": {
     "message": "Enregistrer régulièrement la session"
