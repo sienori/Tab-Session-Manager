@@ -291,10 +291,10 @@
     "message": "Favoritikonen i fliken som laddar efterhand visas inte."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Återställ fönsterplaceringar"
+    "message": "Återställ fönstrets position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Återställ fönsterplaceringar och storleken när en session öppnas."
+    "message": "Återställ fönstrets position och storlek när du öppnar sessionen."
   },
   "startupLabel": {
     "message": "Uppstart"
@@ -327,7 +327,7 @@
     "message": "Spåra nyöppnade fönster"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "När ett nytt fönster öppnas inom en spårningssession, inkludera det i spårningen."
   },
   "ifAutoSaveLabel": {
     "message": "Spara sessionen regelbundet"
