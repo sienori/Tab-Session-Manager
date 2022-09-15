@@ -291,10 +291,10 @@
     "message": "No se muestra el favicon de la ficha de carga lenta."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restaurar posición de la ventana"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restaura la posición de la ventana y tamaño al abrir la sesión."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Arranque"
