@@ -201,10 +201,10 @@
     "message": "Faire une copie de la session"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Surveiller les changements de fenêtre"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Arrêter la surveillance"
   },
   "registerStartupLabel": {
     "message": "Ajouter au démarrage"
@@ -294,7 +294,7 @@
     "message": "Rétablir la position de la fenêtre"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Rétablir la position et la taille de la fenêtre à l'ouverture de la session."
+    "message": "Rétablir la position et la taille de la fenêtre à l’ouverture de la session."
   },
   "startupLabel": {
     "message": "Démarrage"
@@ -318,16 +318,16 @@
     "message": "Ne rien faire"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Surveillance de la session"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Surveillée"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Surveiller les nouvelles fenêtres"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Lorsqu’une nouvelle fenêtre est ouverte dans une session surveillée, l’inclure dans la surveillance."
   },
   "ifAutoSaveLabel": {
     "message": "Enregistrer régulièrement la session"
@@ -645,13 +645,13 @@
     "message": "Importer des sessions"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Charger des sessions enregistrées sur l'ordinateur et les ajouter à la liste des sessions."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Fichiers pris en charge :"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Comment importer des sessions d'autres extensions"
   },
   "importButtonLabel": {
     "message": "Parcourir..."
@@ -711,7 +711,7 @@
     "message": "Ce raccourci ne peut pas être utilisé"
   },
   "openPopupDescription": {
-    "message": "Ouvrir la barre d’outil surgissante"
+    "message": "Ouvrir la fenêtre surgissante de la barre d'outils"
   },
   "saveCurrentWindowDescription": {
     "message": "Enregistrer la session (uniquement la fenêtre active)"
