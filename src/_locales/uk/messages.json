@@ -291,10 +291,10 @@
     "message": "Значок відкладеного завантаження вкладки не відображається."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Відновляти розташування вікон"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Відновити розмір та положення вікон під час відкриття сесії."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Початкові дії"
