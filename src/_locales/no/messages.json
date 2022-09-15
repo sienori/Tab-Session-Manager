@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Lagra og gjenopprett vindauger og faner. Støtter òg automatisk lagring."
+    "message": "Lagra og gjenopprett vindauger og faner. Støttar òg automatisk lagring."
   },
   "donateWithPaypalLabel": {
     "message": "Doner med PayPal"
@@ -183,7 +183,7 @@
     "message": "Legg til i dette vindauget"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Opna fanene i dette vindauget. Opna den i det nye vindauget viss økta inneheld fleire vindauger."
+    "message": "Opna fanene i dette vindauget. Opna den i det nye vindauget viss økta inneheld fleire vindauge."
   },
   "EditSessionLabel": {
     "message": "Rediger en økt"
@@ -201,10 +201,10 @@
     "message": "Lag ein kopi av økta"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Spor vindaugsendringar"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Fjern sporinga"
   },
   "registerStartupLabel": {
     "message": "Registrer for oppstart"
@@ -288,13 +288,13 @@
     "message": "Å slå på dette alternativet vil forbetre ytinga når du opner faner."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "Favorittikonet til den dovne innlasta fanen vart ikkje vist fram."
+    "message": "Favorittikonet til den dovne innlasta fana vart ikkje vist fram."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Gjenopprett posisjonane til vindauga"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Gjenopprett posisjonane og storleikane til vindauga når du opner ei økt."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Oppstart"
@@ -318,16 +318,16 @@
     "message": "Ikkje gjer noko"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Sporingsøkt"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Sporing"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Spor nyopna vindauge"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Ta med nye vindauge når dei vert opna inni ei sporingsøkt."
   },
   "ifAutoSaveLabel": {
     "message": "Lagra økta jamnleg"
@@ -474,7 +474,7 @@
     "message": "Ta med private vindauger når økta lagras."
   },
   "ifSupportTstLabel": {
-    "message": "Støtter «Tree Style Tab»"
+    "message": "Støttar Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
     "message": "Gjenopprett trestrukturen til Tree Style Tab.<br>Dette vil gjere at det tar lengre tid for å gjenoppretta økta."
@@ -603,7 +603,7 @@
     "message": "Opna innstillingssida etter ei oppdatering"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Opna innstillingssida når Tab Session Manager har vorte oppdatert, så du kan finne ut av kva som er nytt så fort som mogleg."
+    "message": "Opna innstillingssida når Tab Session Manager vart oppdatert, så du kan finna ut av kva som er nytt så fort som mogleg."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager har vorte oppdatert."
@@ -618,7 +618,7 @@
     "message": "Slå på feilsøkingsmodus"
   },
   "isDebugModeCaptionLabel": {
-    "message": "Når feilsøkingsmodus er slått på vil feilsøkjaren skrive til loggen."
+    "message": "Når feilsøkingsmodus er slått på vil feilsøkaren skrive til loggen."
   },
   "exportSettingsLabel": {
     "message": "Eksporter innstillingane"
@@ -636,7 +636,7 @@
     "message": "Tilbakestill innstillingane"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Tilbakestill alle innstillingane til standard."
+    "message": "Tilbakestill alle innstillingane."
   },
   "resetSettingsButtonLabel": {
     "message": "Tilbakestill"
@@ -690,7 +690,7 @@
     "message": "Hurtigtaster"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Vel hurtigtaster."
+    "message": "Vel hurtigtastar."
   },
   "typeShortcutMessage": {
     "message": "Skriv inn ein hurtigtast"
@@ -705,10 +705,10 @@
     "message": "Ta med «Kommando», «Ctrl» eller «Alt»"
   },
   "invalidLetterMessage": {
-    "message": "Bokstaven kan ikkje brukas"
+    "message": "Bokstaven kan ikkje brukast"
   },
   "invalidShortcutMessage": {
-    "message": "Hurtigtasten kan ikkje brukas"
+    "message": "Hurtigtasten kan ikkje brukast"
   },
   "openPopupDescription": {
     "message": "Opna sprettoppvindauget"
