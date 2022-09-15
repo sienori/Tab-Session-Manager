@@ -187,7 +187,8 @@ export default class PopupPage extends Component {
       "winClose",
       "browserExit",
       "temp",
-      "_startup"
+      "_startup",
+      "_tracking"
     ];
     const allTags = sessions.map(session => session.tag).flat().concat(this.state.tagList);
     const uniqueTags = Array.from(new Set(allTags)).filter(tag => !reservedTags.includes(tag))
