@@ -201,10 +201,10 @@
     "message": "Fazer uma cópia da sessão"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Monitorar mudanças na janela"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Excluir monitoração"
   },
   "registerStartupLabel": {
     "message": "Adicionar a inicialização"
@@ -291,10 +291,10 @@
     "message": "O favicon da guia em carregamento lento não é exibido."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restaurar posição das janelas"
+    "message": "Restaurar posição da janela"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restaurar as posições e tamanhos das janelas ao abrir a sessão."
+    "message": "Recupera posição e tamanho da janela ao abrir sessão."
   },
   "startupLabel": {
     "message": "Inicialização"
@@ -318,16 +318,16 @@
     "message": "Não fazer nada"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Sessão monitorada"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Monitoração"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Monitorar janelas recém-abertas"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Quando se abre uma janela nova numa sessão monitorada, incluí-la na monitoração."
   },
   "ifAutoSaveLabel": {
     "message": "Salvar a sessão regularmente"
