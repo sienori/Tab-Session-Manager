@@ -6,7 +6,7 @@
     "message": "Запазване и възстановяване състоянието на прозорци и раздели. Поддържа се и автоматично запазване."
   },
   "donateWithPaypalLabel": {
-    "message": "Дарете чрез PayPal"
+    "message": "Дарение чрез PayPal"
   },
   "donateLabel": {
     "message": "Дарение"
@@ -201,10 +201,10 @@
     "message": "Създаване копие на сесията"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Проследяване на промените в прозорците"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Изтриване на проследяването"
   },
   "registerStartupLabel": {
     "message": "Регистриране за стартиране"
@@ -291,10 +291,10 @@
     "message": "При ръчно зареждане на раздели, иконката на сайта не се показва."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Възстановяване позицията на прозорците"
+    "message": "Възстановяване позицията на прозореца"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Възстановяване позицията и размера на прозорците при отваряне на сесия."
+    "message": "Възстановява позицията и размера на прозореца при отваряне на сесията."
   },
   "startupLabel": {
     "message": "Стартиране"
@@ -318,16 +318,16 @@
     "message": "Да не се прави нищо"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Сесия на проследяване"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Проследяване"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Проследяване на новоотворени прозорци"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Когато се отвори нов прозорец в рамките на сесия за проследяване, включете го в проследяването."
   },
   "ifAutoSaveLabel": {
     "message": "Редовно запазване на сесията"
