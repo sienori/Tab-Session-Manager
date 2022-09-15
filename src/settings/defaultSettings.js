@@ -250,7 +250,6 @@ export default [
         captions: ["shouldTrackNewWindowCaptionLabel"],
         type: "checkbox",
         default: true,
-        new: true
       }
     ]
   },
