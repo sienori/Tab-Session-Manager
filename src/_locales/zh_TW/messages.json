@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "儲存與還原視窗跟分頁的瀏覽狀態。也支援自動儲存功能。"
+    "message": "儲存與還原視窗跟分頁的瀏覽狀態。並支援自動儲存功能。"
   },
   "donateWithPaypalLabel": {
     "message": "透過 PayPal 贊助"
@@ -177,7 +177,7 @@
     "message": "在目前視窗中開啟"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "在目前視窗中開啟瀏覽階段。非使用中視窗和所有分頁都已關閉。"
+    "message": "在目前視窗中開啟瀏覽階段。非使用中視窗和所有分頁皆已關閉。"
   },
   "addToCurrentWindowLabel": {
     "message": "新增至目前視窗"
@@ -201,10 +201,10 @@
     "message": "複製此瀏覽階段"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "追蹤視窗變更"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "解除追蹤"
   },
   "registerStartupLabel": {
     "message": "登錄為啟動瀏覽階段"
@@ -282,7 +282,7 @@
     "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>如果關閉此選項，還原瀏覽階段時的記憶體使用量將會增加。"
   },
   "isUseDiscardedLabel": {
-    "message": "使用\"discarded\"屬性進行延遲載入"
+    "message": "使用「discarded」屬性進行延遲載入"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "啟用此選項將提升開啟分頁時的效能。"
@@ -318,16 +318,16 @@
     "message": "不執行任何動作"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "追蹤瀏覽階段"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "追蹤"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "追蹤新開啟的視窗"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "在已追蹤的瀏覽階段中開啟新視窗時，將新開的視窗加入為追蹤對象。"
   },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
@@ -363,7 +363,7 @@
     "message": "結束瀏覽器時儲存瀏覽階段"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "儲存瀏覽階段，此瀏覽階段由幾個連續關閉的視窗組成。\n"
+    "message": "儲存瀏覽階段，此瀏覽階段由幾個連續關閉的視窗組成。"
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "最大儲存數量"
@@ -375,7 +375,7 @@
     "message": "使用網頁標題作為自動儲存的瀏覽階段名稱"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "當自動儲存瀏覽階段之時，使用已開啟頁面的標題作為瀏覽階段名稱。"
+    "message": "當自動儲存瀏覽階段時，使用已開啟頁面的標題作為瀏覽階段名稱。"
   },
   "backupLabel": {
     "message": "備份"
@@ -405,13 +405,13 @@
     "message": "最大儲存備份數量"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "當備份檔超過這個數量的時候，將刪除舊的備份檔。"
+    "message": "當備份檔超過這個數量的時候，將從最舊的備份檔開始刪除。"
   },
   "dateFormatLabel": {
     "message": "日期格式"
   },
   "dateFormatCaptionLabel": {
-    "message": "例如 YYYY.MM.DD HH:mm:ss"
+    "message": "例如： YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
     "message": "儲存隱私視窗"
@@ -420,7 +420,7 @@
     "message": "儲存瀏覽階段時要忽略的 URL 清單"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "若 URL 與清單內相符，則不會將它儲存到瀏覽階段中，此清單允許使用 \"*\" 萬用字元。"
+    "message": "若 URL 與清單內相符，則不會將它儲存到瀏覽階段中，此清單允許使用 「*」 萬用字元。"
   },
   "shouldSaveDeviceNameLabel": {
     "message": "將裝置名稱儲存於瀏覽階段"
@@ -444,7 +444,7 @@
     "message": "套用裝置名稱"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "套用裝置名稱至所有瀏覽階段?"
+    "message": "確定要套用裝置名稱至所有瀏覽階段？"
   },
   "compressFaviconUrlLabel": {
     "message": "壓縮網站圖示"
@@ -456,7 +456,7 @@
     "message": "壓縮所有瀏覽階段"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "壓縮所有目前已儲存瀏覽階段的網站圖示，此做法能節省記憶體並能加快瀏覽階段載入。"
+    "message": "壓縮所有目前已儲存瀏覽階段的網站圖示，此做法能節省記憶體並能加速瀏覽階段載入。"
   },
   "compressLabel": {
     "message": "壓縮"
@@ -672,7 +672,7 @@
     "message": "匯出瀏覽階段"
   },
   "exportCaptionLabel": {
-    "message": "將所有的瀏覽階段儲存至電腦中。"
+    "message": "將所有瀏覽階段儲存至電腦中。"
   },
   "exportButtonLabel": {
     "message": "匯出"
@@ -702,7 +702,7 @@
     "message": "包括 Ctrl 鍵 或 Alt 鍵"
   },
   "includeMacModifierKeysMessage": {
-    "message": "包括 Command 鍵, Ctrl 鍵或 Alt 鍵"
+    "message": "包括 Command 鍵、 Ctrl 鍵或 Alt 鍵"
   },
   "invalidLetterMessage": {
     "message": "這個文字無法使用"
@@ -714,10 +714,10 @@
     "message": "開啟工具列彈出式視窗"
   },
   "saveCurrentWindowDescription": {
-    "message": "儲存瀏覽階段(僅限目前視窗)"
+    "message": "儲存瀏覽階段 (僅限目前視窗)"
   },
   "saveAllWindowDescription": {
-    "message": "儲存瀏覽階段(所有視窗)"
+    "message": "儲存瀏覽階段 (所有視窗)"
   },
   "exportSessionsDescription": {
     "message": "匯出所有瀏覽階段"
@@ -735,10 +735,10 @@
     "message": "授權條款"
   },
   "donationLabel": {
-    "message": "希望您贊助我！"
+    "message": "您可以贊助我！"
   },
   "donationCaptionLabel": {
-    "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>如果您喜歡 Tab Session Manager，希望您能夠贊助我。"
+    "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>若您喜歡 Tab Session Manager，希望您能夠贊助我。"
   },
   "amazonTitleLabel": {
     "message": "贊助我 amazon 電子禮品卡"

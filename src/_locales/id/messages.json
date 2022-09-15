@@ -291,10 +291,10 @@
     "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore windows position"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore windows position and size when opening session."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Startup"

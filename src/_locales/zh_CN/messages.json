@@ -291,10 +291,10 @@
     "message": "不显示惰性加载标签的 favicon。"
   },
   "isRestoreWindowPositionLabel": {
-    "message": "还原窗口位置大小"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "还原会话时，同时还原窗口的位置与大小。"
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "启动"

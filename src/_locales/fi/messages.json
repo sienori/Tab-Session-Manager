@@ -291,10 +291,10 @@
     "message": "Laiskasti ladattavat välilehden faviconia ei näytetä."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Palauta ikkunoiden sijainnit"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Palauta ikkunoiden sijainnit ja koot istunto avattaessa."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "Käynnistys"

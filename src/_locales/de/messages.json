@@ -201,10 +201,10 @@
     "message": "Sitzung kopieren"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Änderungen des Fensters verfolgen"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Tracking löschen"
   },
   "registerStartupLabel": {
     "message": "Zum Start registrieren"
@@ -291,10 +291,10 @@
     "message": "Das Favicon vom verzögert ladenden Tab wird nicht angezeigt."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Fensterpositionen wiederherstellen"
+    "message": "Fensterposition wiederherstellen"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Stelle Fensterposition und -größe wieder her beim Öffnen einer Sitzung."
+    "message": "Position und Größe des Fensters beim Öffnen der Sitzung wiederherstellen."
   },
   "startupLabel": {
     "message": "Autostart"
@@ -318,16 +318,16 @@
     "message": "Nichts machen"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Verfolgungs-Sitzung"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Verfolgung"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Neu geöffnete Fenster verfolgen"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Neues Fenster zur Verfolgung hinzufügen, falls es innerhalb einer Verfolgungs-Sitzung geöffnet wird."
   },
   "ifAutoSaveLabel": {
     "message": "Sitzung regelmäßig sichern"
