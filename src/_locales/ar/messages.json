@@ -291,10 +291,10 @@
     "message": "لم يتم عرض فيلم لتبويب التحميل الضخم."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "استعادة موضع النوافذ"
+    "message": "Restore window's position"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "استعادة موقع النوافذ وحجمها عند افتتاح الجلسة."
+    "message": "Restore window's position and size when opening session."
   },
   "startupLabel": {
     "message": "البدء"
