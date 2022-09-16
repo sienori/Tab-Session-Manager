@@ -324,10 +324,10 @@
     "message": "跟踪中"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "跟踪新打开的窗口"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "在跟踪会话中打开新窗口时，将其加入跟踪。"
   },
   "ifAutoSaveLabel": {
     "message": "定期保存会话"
