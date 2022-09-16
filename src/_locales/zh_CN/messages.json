@@ -204,7 +204,7 @@
     "message": "跟踪窗口更改"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "删除跟踪"
   },
   "registerStartupLabel": {
     "message": "注册为启动会话"
@@ -291,10 +291,10 @@
     "message": "不显示惰性加载标签的 favicon。"
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "还原窗口位置"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "打开会话时还原窗口的位置和大小。"
   },
   "startupLabel": {
     "message": "启动"
@@ -318,10 +318,10 @@
     "message": "什么也不做"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "跟踪会话"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "跟踪中"
   },
   "shouldTrackNewWindowLabel": {
     "message": "Track newly opened windows"
