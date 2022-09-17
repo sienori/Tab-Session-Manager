@@ -447,16 +447,16 @@
     "message": "Cihaz adı tüm oturumlara uygulansın mı?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Faviconları sıkıştır"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Bir oturumu kaydederken faviconları sıkıştırın."
   },
   "compressAllSessionsLabel": {
     "message": "Tüm oturumları sıkıştır"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Şu anda kayıtlı tüm oturumların favori simgelerini (favicon) sıkıştırın. Bu, bellek kullanımından tasarruf sağlayacak ve oturum yüklemesini hızlandıracaktır."
   },
   "compressLabel": {
     "message": "Sıkıştır"
