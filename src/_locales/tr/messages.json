@@ -120,7 +120,7 @@
     "message": "Etiketi kaldır"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Etiket adını girin"
   },
   "detailLabel": {
     "message": "Detay"
@@ -201,10 +201,10 @@
     "message": "Oturumun kopyasını oluştur"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Pencere değişikliklerini izle"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "İzlemeyi sil"
   },
   "registerStartupLabel": {
     "message": "Başlangıç için kaydolun"
@@ -213,10 +213,10 @@
     "message": "Başlangıçtan kaldır"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Pencereyi düzenle"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Geçerli sekmeyi ekle"
   },
   "errorLabel": {
     "message": "Hata"
@@ -240,13 +240,13 @@
     "message": "Otomatik Kayıt - Düzenli olarak"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Pencere kapalı"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Tarayıcıdan çıkıldı"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Düzenli olarak"
   },
   "settingsLabel": {
     "message": "Ayarlar"
@@ -282,7 +282,7 @@
     "message": "Bir oturum açıldığında, her sayfanın içeriği siz sekme seçene kadar yüklenmez.<br>Eğer seçilmezse, oturum geri yüklendiğinde bellek kullanımı büyük ölçüde artar."
   },
   "isUseDiscardedLabel": {
-    "message": "Use the \"discarded\" property for lazy loading"
+    "message": "Geç yükleme için \"atılan\" özelliğini kullanın"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Bu seçeneğin etkinleştirilmesi, sekmeleri açarken performansı artıracaktır."
@@ -291,10 +291,10 @@
     "message": "Geç yükleme sekmesinin favicon'u görüntülenmez."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Pencere konumunu geri yükle"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Oturumu açarken pencerenin konumunu ve boyutunu geri yükleyin."
   },
   "startupLabel": {
     "message": "Başlangıç"
@@ -318,16 +318,16 @@
     "message": "Hiç bir şey yapma"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Oturumları izleme"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "İzleme"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Yeni açılan pencereleri takip edin"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Bir izleme oturumunda yeni bir pencere açıldığında, onu izlemeye dahil edin."
   },
   "ifAutoSaveLabel": {
     "message": "Oturumu düzenli olarak kaydet"
@@ -387,10 +387,10 @@
     "message": "Tarayıcı başladığında, oturumlardan oluşan bir yedekleme dosyası oluşturun ve bunu indirme klasörüne kaydedin."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Bireysel yedekleme"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Her oturum ayrı bir dosyaya kaydedilir.<br>İşaretlenmezse, tüm oturumlar tek bir dosya olarak kaydedilir ve bu da depolama alanınızı doldurabilir."
   },
   "backupFolderLabel": {
     "message": "Konumu kaydet"
@@ -462,7 +462,7 @@
     "message": "Sıkıştır"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Tüm oturumlar sıkıştırılsın mı?"
   },
   "compressingLabel": {
     "message": "Sıkıştırılıyor..."
@@ -477,16 +477,16 @@
     "message": "Ağaç Stili Sekmeyi Destekler"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
+    "message": "Ağaç Stili Sekmesinin ağaç durumunu geri yükle.<br>Bu seçenek etkinleştirildiğinde, oturumu geri yüklemek zaman alır."
   },
   "tstDelayLabel": {
     "message": "Ağaç restorasyonunda gecikme (milisaniye)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Sekme gruplarını kaydet"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Sekme gruplarının durumunu kaydedin ve geri yükleyin. Bu özelliği etkinleştirmek için aşağıdaki uzantıyı yüklemeniz gerekir."
   },
   "tstDelayCaptionLabel": {
     "message": "Ağacın durumunu geri yüklemek için sekmeyi açmak için bekleme süresi gerekiyor. Ağaç düzgün şekilde geri yüklenmezse bu değeri artırın."
@@ -522,7 +522,7 @@
     "message": "Eşitleme tamamlandı."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Bulut senkronizasyonu için oturum açmanız gerekiyor."
   },
   "signInLabel": {
     "message": "Oturum aç"
@@ -531,10 +531,10 @@
     "message": "Oturumu Kapat"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Otomatik olarak senkronize et"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Tarayıcı başlatıldığında ve oturum kaydedildiğinde bulut senkronizasyonunu yürütün."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Otomatik kaydetme oturumlarını senkronize et"
