@@ -453,7 +453,7 @@
     "message": "Compress the favicons when saving a session."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Tüm oturumları sıkıştır"
   },
   "compressAllSessionsCaptionLabel": {
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
