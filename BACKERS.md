@@ -130,3 +130,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Chris Bolton 
 - Haviland Wright
 - empty_child
+- Love Lain
+- Paul Suh
