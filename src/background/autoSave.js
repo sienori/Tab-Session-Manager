@@ -135,7 +135,8 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
   session.id = uuidv4();
   session.windowsNumber = 1;
   session.tabsNumber = Object.keys(session.windows[removedWindowId]).length;
-  if(session.tabsNumber!=1)
+  
+  if (session.tabsNumber != 1)
   await saveSession(session);
 
   const limit = getSettings("autoSaveWhenCloseLimit");
