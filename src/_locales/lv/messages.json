@@ -15,16 +15,16 @@
     "message": "Open session list in tab"
   },
   "saveLabel": {
-    "message": "Save"
+    "message": "Saglabāt"
   },
   "initialNameValue": {
-    "message": "Save current session"
+    "message": "Saglabāt pašreizējo sesiju"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Ievadiet sesijas nosaukumu"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Saglabāt sesiju"
   },
   "saveAllWindowsLabel": {
     "message": "Save all windows"
@@ -36,7 +36,7 @@
     "message": "Category filter"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Kārtot"
   },
   "displayAllLabel": {
     "message": "All"
@@ -63,7 +63,7 @@
     "message": "Search by session or tab name"
   },
   "search": {
-    "message": "Search"
+    "message": "Meklēt"
   },
   "clearSearch": {
     "message": "Clear search"
@@ -72,10 +72,10 @@
     "message": "Open"
   },
   "remove": {
-    "message": "Delete"
+    "message": "Dzēst"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Dzēst šo sesiju?"
   },
   "sessionDeletedLabel": {
     "message": "Session deleted."
@@ -87,7 +87,7 @@
     "message": "Session tab deleted."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Atjaunot"
   },
   "failedDeleteSessionLabel": {
     "message": "Failed to delete session."
@@ -126,10 +126,10 @@
     "message": "Detail"
   },
   "windowLabel": {
-    "message": "Window"
+    "message": "Logs"
   },
   "windowsLabel": {
-    "message": "Windows"
+    "message": "Logi"
   },
   "tabLabel": {
     "message": "Cilne"
@@ -150,7 +150,7 @@
     "message": "No session selected."
   },
   "menuLabel": {
-    "message": "Menu"
+    "message": "Izvēlne"
   },
   "closeMenuLabel": {
     "message": "Close the menu"
@@ -159,19 +159,19 @@
     "message": "Close"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Pārsaukt"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Pārsaukt sesiju"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Atvērt sesiju"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Atvērt jaunā logā"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Atvērt sesiju jaunā logā."
   },
   "openInCurrentWindowLabel": {
     "message": "Open in current window"
@@ -507,10 +507,10 @@
     "message": "Save sessions to Google Drive™ and sync with other computers."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Notiek sinhronizēšana"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Lejupielādē"
   },
   "uploadingLabel": {
     "message": "Augšupielādē"
@@ -525,10 +525,10 @@
     "message": "Requires sign in for cloud sync."
   },
   "signInLabel": {
-    "message": "Sign in"
+    "message": "Pierakstīties"
   },
   "signOutLabel": {
-    "message": "Sign out"
+    "message": "Izrakstīties"
   },
   "enabledAutoSyncLabel": {
     "message": "Automatically sync"
@@ -570,10 +570,10 @@
     "message": "Specify the size of the popup."
   },
   "widthLabel": {
-    "message": "Width"
+    "message": "Platums"
   },
   "heightLabel": {
-    "message": "Height"
+    "message": "Augstums"
   },
   "sidebarWidthLabel": {
     "message": "Sidebar width"
@@ -585,16 +585,16 @@
     "message": "Open session list in tab when button on toolbar is clicked."
   },
   "themeLabel": {
-    "message": "Theme"
+    "message": "Tēma"
   },
   "themeCaptionLabel": {
     "message": "Specify the color scheme."
   },
   "lightLabel": {
-    "message": "Light"
+    "message": "Gaiša"
   },
   "darkLabel": {
-    "message": "Dark"
+    "message": "Tumša"
   },
   "otherLabel": {
     "message": "Other"
@@ -621,13 +621,13 @@
     "message": "When debug mode is enabled, the log is output to the debugger."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Eksportēt iestatījumus"
   },
   "exportSettingsCaptionLabel": {
     "message": "Save the settings as a json file on the computer."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Importēt iestatījumus"
   },
   "importSettingsCaptionLabel": {
     "message": "Load the settings file saved on the computer."
@@ -675,7 +675,7 @@
     "message": "Save all sessions to the computer."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "Eksportēt"
   },
   "removeSessionsLabel": {
     "message": "Delete sessions"
@@ -684,10 +684,10 @@
     "message": "Delete all sessions."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "Dzēst"
   },
   "keyboardShortcutsLabel": {
-    "message": "Keyboard shortcuts"
+    "message": "Īsinājumtaustiņi"
   },
   "setKeyboardShortCutsMessage": {
     "message": "Set keyboard shortcuts."
