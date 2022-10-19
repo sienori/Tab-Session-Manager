@@ -6,10 +6,10 @@
     "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Ziedot izmantojot PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Ziedot"
   },
   "openSessionListInTabLabel": {
     "message": "Open session list in tab"
@@ -105,7 +105,7 @@
     "message": "Failed to save session."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Atcelt"
   },
   "undoLabel": {
     "message": "Undo"
@@ -114,7 +114,7 @@
     "message": "Redo"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Pievienot birku"
   },
   "removeTagLabel": {
     "message": "Remove tag"
@@ -132,10 +132,10 @@
     "message": "Windows"
   },
   "tabLabel": {
-    "message": "Tab"
+    "message": "Cilne"
   },
   "tabsLabel": {
-    "message": "Tabs"
+    "message": "Cilnes"
   },
   "noSessionLabel": {
     "message": "There is no session."
@@ -219,7 +219,7 @@
     "message": "Add current tab"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Kļūda"
   },
   "indexedDBErrorLabel": {
     "message": "IndexedDB is not available in your browser."
@@ -336,7 +336,7 @@
     "message": "Save the session every X minutes."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "Intervāls (minūtes)"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "Minimum value 0.1"
@@ -459,7 +459,7 @@
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Saspiest"
   },
   "compressAllSessionsConfirmLabel": {
     "message": "Compress all sessions?"
@@ -513,10 +513,10 @@
     "message": "Downloading"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Augšupielādē"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Dzēš"
   },
   "syncCompletedLabel": {
     "message": "Sync completed."
