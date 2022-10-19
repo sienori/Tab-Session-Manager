@@ -33,13 +33,13 @@
     "message": "Saglabāt tikai pašreizējo logu"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Birku filtrs"
   },
   "sortLabel": {
     "message": "Kārtot"
   },
   "displayAllLabel": {
-    "message": "All"
+    "message": "Viss"
   },
   "displayUserLabel": {
     "message": "Lietotājs saglabāja"
@@ -48,10 +48,10 @@
     "message": "Automātiski saglabāts"
   },
   "newestLabel": {
-    "message": "Newest"
+    "message": "Jaunākie"
   },
   "oldestLabel": {
-    "message": "Oldest"
+    "message": "Vecākie"
   },
   "aToZLabel": {
     "message": "A-Z"
@@ -60,16 +60,16 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Meklēt pēc sesijas vai cilnes nosaukuma"
   },
   "search": {
     "message": "Meklēt"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Notīrīt meklēšanu"
   },
   "open": {
-    "message": "Open"
+    "message": "Atvērt"
   },
   "remove": {
     "message": "Dzēst"
@@ -78,31 +78,31 @@
     "message": "Dzēst šo sesiju?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sesija izdzēsta."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Sesijas logs dzēsts."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Sesijas cilne dzēsta."
   },
   "restoreSessionLabel": {
     "message": "Atjaunot"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Neizdevās dzēst sesiju."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Neizdevās dzēst sesijas logu."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Neizdevās dzēst sesijas cilni."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sesija saglabāta."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Neizdevās saglabāt sesiju."
   },
   "cancelLabel": {
     "message": "Atcelt"
@@ -213,7 +213,7 @@
     "message": "Remove from startup"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Rediģēt logu"
   },
   "addCurrentTabLabel": {
     "message": "Add current tab"
@@ -240,7 +240,7 @@
     "message": "Auto Save - Regularly"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Logs aizvērts"
   },
   "browserExitSessionNameShort": {
     "message": "Browser exited"
@@ -270,7 +270,7 @@
     "message": "Style"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Open session in new window"
+    "message": "Atvērt sesiju jaunā logā"
   },
   "ifOpenNewWindowCaptionLabel": {
     "message": "If unchecked, the session overwrites the current window."
@@ -303,10 +303,10 @@
     "message": "Behavior when starting the browser"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Atvērt iepriekšējo sesiju"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Atvērt sesiju, kas tika aizvērta pēdējo reizi."
   },
   "openStartupSessionLabel": {
     "message": "Open startup session"
@@ -315,7 +315,7 @@
     "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Neko nedarīt"
   },
   "trackingSessionLabel": {
     "message": "Tracking session"
@@ -333,7 +333,7 @@
     "message": "Save the session regularly"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Save the session every X minutes."
+    "message": "Saglabāt sesiju ik pēc X minūtēm."
   },
   "autoSaveIntervalLabel": {
     "message": "Intervāls (minūtes)"
@@ -342,7 +342,7 @@
     "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maksimālais skaits saglabāts"
   },
   "autoSaveLimitCaptionLabel": {
     "message": "Maximum number of saved sessions (in this way)."
@@ -354,34 +354,34 @@
     "message": "Save the session that includes only one closed window."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maksimālais skaits saglabāts"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Maximum number of saved sessions (in this way)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Saglabāt sesiju, kad aizver pārlūkprogrammu"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Maksimālais skaits saglabāts"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
     "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Izmantot lapas nosaukumu automātiski saglabātu sesijas nosaukumos"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Saglabājot sesiju automātiski, izmantot atvērtās lapas nosaukumu kā sesijas nosaukumu."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Rezerves kopija"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Saglabāt rezerves kopiju"
   },
   "ifBackupCaptionLabel": {
     "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
@@ -402,10 +402,10 @@
     "message": "Download folder"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Maksimālais saglabājamo rezerves kopiju skaits"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Ja rezerves kopiju failu skaits pārsniedz šo vērtību, tie tiek dzēsti augošā secībā vispirms vecākais."
   },
   "dateFormatLabel": {
     "message": "Datuma formāts"
@@ -414,7 +414,7 @@
     "message": "Example: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Saglabāt privāto logu"
   },
   "ignoreUrlListLabel": {
     "message": "URL list to ignore when saving session"
@@ -423,7 +423,7 @@
     "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Saglabāt ierīces nosaukumu sesijā"
   },
   "shouldSaveDeviceNameCaptionLabel": {
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
@@ -438,13 +438,13 @@
     "message": "Lietot ierīces nosaukumu esošām sesijām"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Pievienot ierīces nosaukumu visām saglabātajām sesijām."
   },
   "applyDeviceNameButtonLabel": {
     "message": "Lietot ierīces nosaukumu"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Vai lietot ierīces nosaukumu visām sesijām?"
   },
   "compressFaviconUrlLabel": {
     "message": "Saspiest favicon ikonas"
@@ -480,7 +480,7 @@
     "message": "Restore tree state of Tree Style Tab.<br>When this option is enabled, it takes time to restore the session."
   },
   "tstDelayLabel": {
-    "message": "Delay when tree restoration (millisecond)"
+    "message": "Koka atjaunošanas aizkave (milisekundes)"
   },
   "saveTabGroupsLabel": {
     "message": "Saglabāt ciļņu grupas"
@@ -498,10 +498,10 @@
     "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
   },
   "cloudSyncLabel": {
-    "message": "Cloud sync"
+    "message": "Mākoņa sinhronizācija"
   },
   "enabledCloudSyncLabel": {
-    "message": "Enable cloud sync (Beta)"
+    "message": "Iespējot mākoņa sinhronizāciju (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
     "message": "Save sessions to Google Drive™ and sync with other computers."
@@ -519,7 +519,7 @@
     "message": "Dzēš"
   },
   "syncCompletedLabel": {
-    "message": "Sync completed."
+    "message": "Sinhronizācija pabeigta."
   },
   "signInRequiredLabel": {
     "message": "Requires sign in for cloud sync."
@@ -543,19 +543,19 @@
     "message": "Upload / download auto save sessions in cloud sync."
   },
   "popupLabel": {
-    "message": "Popup"
+    "message": "Uznirstošais logs"
   },
   "openButtonBehaviorLabel": {
-    "message": "Open button behavior"
+    "message": "Atvēršanas pogas uzvedība"
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the open button."
+    "message": "Atlasiet atvēršanas pogas noklusējuma darbību."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Save button behavior"
+    "message": "Saglabāšanas pogas uzvedība"
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Select the default behavior of the save button."
+    "message": "Atlasiet saglabāšanas pogas noklusējuma darbību."
   },
   "isShowOpenButtonsLabel": {
     "message": "Display open / delete buttons in session list"
@@ -564,10 +564,10 @@
     "message": "Display open / delete buttons when the cursor is over the session list."
   },
   "sizeLabel": {
-    "message": "Size"
+    "message": "Izmērs"
   },
   "popupSizeCaptionLabel": {
-    "message": "Specify the size of the popup."
+    "message": "Norādiet uznirstošā loga izmēru."
   },
   "widthLabel": {
     "message": "Platums"
@@ -576,7 +576,7 @@
     "message": "Augstums"
   },
   "sidebarWidthLabel": {
-    "message": "Sidebar width"
+    "message": "Sānjoslas platums"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Open session list in tab"
@@ -588,7 +588,7 @@
     "message": "Tēma"
   },
   "themeCaptionLabel": {
-    "message": "Specify the color scheme."
+    "message": "Norādiet krāsu paleti."
   },
   "lightLabel": {
     "message": "Gaiša"
@@ -606,10 +606,10 @@
     "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager has been updated!"
+    "message": "Tab Session Manager atjaunināts!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Skatīt vairāk"
   },
   "NotificationOnUpdateCaptionLabel": {
     "message": "Click to view update information."
@@ -633,31 +633,31 @@
     "message": "Load the settings file saved on the computer."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Atiestatīt iestatījumus"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Atjaunojiet visus iestatījumus uz noklusējuma vērtībām."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Atiestatīt"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "Importēt sesijas"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Ielādēt datorā saglabātās sesijas un pievienot tās sesiju sarakstam."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Atbalstītie faili:"
   },
   "importCaptionLabel3": {
     "message": "How to import sessions from other extensions"
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "Pārlūkot..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Importēt"
   },
   "importClearButtonLabel": {
     "message": "Clear"
@@ -669,19 +669,19 @@
     "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
   },
   "exportLabel": {
-    "message": "Export Sessions"
+    "message": "Eksportēt sesijas"
   },
   "exportCaptionLabel": {
-    "message": "Save all sessions to the computer."
+    "message": "Saglabāt visas sesijas datorā."
   },
   "exportButtonLabel": {
     "message": "Eksportēt"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "Dzēst sesijas"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Dzēst visas sesijas."
   },
   "removeSessionsButtonLabel": {
     "message": "Dzēst"
@@ -690,105 +690,105 @@
     "message": "Īsinājumtaustiņi"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Set keyboard shortcuts."
+    "message": "Iestatīt īsinājumtaustiņus."
   },
   "typeShortcutMessage": {
-    "message": "Type a shortcut"
+    "message": "Ievadiet īsinājumtaustiņa kombināciju"
   },
   "typeLetterMessage": {
-    "message": "Type a letter"
+    "message": "Ievadiet burtu"
   },
   "includeModifierKeysMessage": {
-    "message": "Include either Ctrl or Alt"
+    "message": "Iekļaujiet vai nu Ctrl, vai Alt taustiņu"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Include either Command, Ctrl or Alt"
+    "message": "Iekļaujiet vai nu Command, Ctrl vai nu Alt taustiņu"
   },
   "invalidLetterMessage": {
-    "message": "The letter can not be used"
+    "message": "Burtu nevar izmantot"
   },
   "invalidShortcutMessage": {
-    "message": "The shortcut can not be used"
+    "message": "Īsinājumtaustiņu nevar izmantot"
   },
   "openPopupDescription": {
     "message": "Open toolbar popup"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Saglabāt sesiju (tikai pašreizējo logu)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Saglabāt sesiju (visus logus)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Eksportēt visas sesijas"
   },
   "clear": {
     "message": "Clear"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Atiestatīt"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Atbalstītāji"
   },
   "LicenseLabel": {
-    "message": "License"
+    "message": "Licence"
   },
   "donationLabel": {
-    "message": "Please make a donation"
+    "message": "Lūdzu, ziedojiet"
   },
   "donationCaptionLabel": {
-    "message": "Thank you for using Tab Session Manager.<br>Your support will be a big encouragement, as I continue to develop the add-on.<br>If you like Tab Session Manager, I would be pleased if you could consider donating."
+    "message": "Paldies, ka izmantojat Tab Session Manager.<br>Jūsu atbalsts būs liels iedrošinājums, lai es turpinātu uzlabot papildinājumu.<br>Ja jums patīk un izmantojat Tab Session Manager ikdienā, es priecātos, ja jūs apsvērtu iespēju ziedot."
   },
   "amazonTitleLabel": {
-    "message": "amazon.co.jp eGift Cards"
+    "message": "amazon.co.jp e-Dāvanu kartes"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Sponsori"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Papildinājuma vietne"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Papildinājuma vietne"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Firefox papildinājumi"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Chrome interneta veikals"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Edge papildinājumi"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Konfidencialitātes politika"
   },
   "importMessage": {
-    "message": "Sessions imported."
+    "message": "Sesijas importētas."
   },
   "readFailedMessage": {
     "message": "Read failed"
   },
   "warningRemoveAllMessage": {
-    "message": "Delete all sessions. Are you sure?"
+    "message": "Dzēst visas sesijas. Vai esat pārliecināti?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Sesija"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": "https://amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://addons.mozilla.org/lv/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "This page can not be opened by Tab Session Manager."
+    "message": "Šo lapu nevar atvērt izmantojot Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Kopēt vietnes URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Nokopēts."
   }
 }
