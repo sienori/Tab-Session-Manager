@@ -12,7 +12,7 @@
     "message": "Ziedot"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Atvērt sesiju sarakstu cilnē"
   },
   "saveLabel": {
     "message": "Saglabāt"
@@ -27,10 +27,10 @@
     "message": "Saglabāt sesiju"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Saglabāt visus logus"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Saglabāt tikai pašreizējo logu"
   },
   "categoryFilterLabel": {
     "message": "Category filter"
@@ -42,10 +42,10 @@
     "message": "All"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Lietotājs saglabāja"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Automātiski saglabāts"
   },
   "newestLabel": {
     "message": "Newest"
@@ -153,10 +153,10 @@
     "message": "Izvēlne"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Aizvērt izvēlni"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Aizvērt"
   },
   "renameLabel": {
     "message": "Pārsaukt"
@@ -174,7 +174,7 @@
     "message": "Atvērt sesiju jaunā logā."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Atvērt pašreizējā logā"
   },
   "openInCurrentWindowCaptionLabel": {
     "message": "Open the session in the current window. Inactive windows and all tabs are closed."
@@ -186,7 +186,7 @@
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Rediģēt sesiju"
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -249,16 +249,16 @@
     "message": "Regularly"
   },
   "settingsLabel": {
-    "message": "Settings"
+    "message": "Iestatījumi"
   },
   "sessionsLabel": {
-    "message": "Sessions"
+    "message": "Sesijas"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Īsinājumtaustiņi"
   },
   "informationLabel": {
-    "message": "Information"
+    "message": "Informācija"
   },
   "generalLabel": {
     "message": "General"
@@ -408,7 +408,7 @@
     "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Datuma formāts"
   },
   "dateFormatCaptionLabel": {
     "message": "Example: YYYY.MM.DD HH:mm:ss"
@@ -429,31 +429,31 @@
     "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Ierīces nosaukums"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Norādiet šīs ierīces nosaukumu."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Lietot ierīces nosaukumu esošām sesijām"
   },
   "applyDeviceNameCaptionLabel": {
     "message": "Add the device name to all saved sessions."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Lietot ierīces nosaukumu"
   },
   "applyDeviceNameConfirmLabel": {
     "message": "Apply device name to all sessions?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Saspiest favicon ikonas"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Saspiest favicon ikonas, kas saglabā sesiju."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Saspiest visas sesijas"
   },
   "compressAllSessionsCaptionLabel": {
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
@@ -462,13 +462,13 @@
     "message": "Saspiest"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Vai saspiest visas sesijas?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Saspiež..."
   },
   "compressionCompleteLabel": {
-    "message": "Compression completed."
+    "message": "Saspiešana pabeigta."
   },
   "ifSavePrivateWindowCaptionLabel": {
     "message": "If unchecked, ignores the private window when saving the session."
@@ -483,7 +483,7 @@
     "message": "Delay when tree restoration (millisecond)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Saglabāt ciļņu grupas"
   },
   "saveTabGroupsCaptionLabel": {
     "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
