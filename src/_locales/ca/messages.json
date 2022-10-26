@@ -108,10 +108,10 @@
     "message": "Cancel·lar"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Desfés"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Refés"
   },
   "addTagLabel": {
     "message": "Afegir etiqueta"
@@ -162,31 +162,31 @@
     "message": "Reanomenar"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Reanomena sessió"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Obre una sessió"
   },
   "openInNewWindowLabel": {
-    "message": "Open in new window"
+    "message": "Obre en una finestra nova"
   },
   "openInNewWindowCaptionLabel": {
     "message": "Open the session in the new window."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Obre a la finestra actual"
   },
   "openInCurrentWindowCaptionLabel": {
     "message": "Open the session in the current window. Inactive windows and all tabs are closed."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Afegeix a la finestra actual"
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Edita una sessió"
   },
   "replaceCurrentSessionLabel": {
     "message": "Replace with current session"
@@ -225,7 +225,7 @@
     "message": "IndexedDB is not available in your browser."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Recarrega l'extensió"
   },
   "howToSolveLabel": {
     "message": "How to solve this problem"
@@ -336,10 +336,10 @@
     "message": "Save the session every X minutes."
   },
   "autoSaveIntervalLabel": {
-    "message": "Interval (minutes)"
+    "message": "Interval (minuts)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Valor mínim 0,1"
   },
   "autoSaveLimitLabel": {
     "message": "Maximum number Saved"
@@ -408,7 +408,7 @@
     "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
   },
   "dateFormatLabel": {
-    "message": "Date format"
+    "message": "Format de data"
   },
   "dateFormatCaptionLabel": {
     "message": "Example: YYYY.MM.DD HH:mm:ss"
@@ -459,13 +459,13 @@
     "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
   },
   "compressLabel": {
-    "message": "Compress"
+    "message": "Comprimeix"
   },
   "compressAllSessionsConfirmLabel": {
     "message": "Compress all sessions?"
   },
   "compressingLabel": {
-    "message": "Compressing..."
+    "message": "Comprimint..."
   },
   "compressionCompleteLabel": {
     "message": "Compression completed."
@@ -507,16 +507,16 @@
     "message": "Save sessions to Google Drive™ and sync with other computers."
   },
   "syncingLabel": {
-    "message": "Syncing"
+    "message": "Sincronitzant"
   },
   "downloadingLabel": {
-    "message": "Downloading"
+    "message": "Descarregant"
   },
   "uploadingLabel": {
-    "message": "Uploading"
+    "message": "Pujant"
   },
   "deletingLabel": {
-    "message": "Deleting"
+    "message": "Esborrant"
   },
   "syncCompletedLabel": {
     "message": "Sync completed."
@@ -657,10 +657,10 @@
     "message": "Browse..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Importa"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "Neteja"
   },
   "urlImportLabel": {
     "message": "Import URL list"
@@ -675,16 +675,16 @@
     "message": "Save all sessions to the computer."
   },
   "exportButtonLabel": {
-    "message": "Export"
+    "message": "Exporta"
   },
   "removeSessionsLabel": {
-    "message": "Delete sessions"
+    "message": "Esborra sessions"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Delete all sessions."
+    "message": "Esborra totes les sessions."
   },
   "removeSessionsButtonLabel": {
-    "message": "Delete"
+    "message": "Esborra"
   },
   "keyboardShortcutsLabel": {
     "message": "Keyboard shortcuts"
@@ -774,7 +774,7 @@
     "message": "Delete all sessions. Are you sure?"
   },
   "sessionLabel": {
-    "message": "Session"
+    "message": "Sessió"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
@@ -789,6 +789,6 @@
     "message": "Copy URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Copiat."
   }
 }
