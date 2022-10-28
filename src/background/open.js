@@ -249,7 +249,7 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
     }
 
     //Lazy loading
-    if (getSettings("ifLazyLoading") && matchesPageUrl(tab.url,getSettings("ignoreLazyLoadingUrls"))) {
+    if (getSettings("ifLazyLoading") && !matchesPageUrl(tab.url,getSettings("ignoreLazyLoadingUrls"))) {
       if (getSettings("isUseDiscarded") && isEnabledDiscarded) {
         if (!createOption.active && !createOption.pinned) {
           createOption.discarded = true;
