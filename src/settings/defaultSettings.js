@@ -33,6 +33,14 @@ export default [
         ]
       },
       {
+        id: "ignoreLazyLoadingUrls",
+        title: "ignoreLazyLoadingUrlsLabel",
+        captions: ["ignoreLazyLoadingUrlsCaptionLabel"],
+        type: "textarea",
+        default: "",
+        placeholder: "https://example.com/*\nhttps://example.net/*"
+      },
+      {
         id: "isRestoreWindowPosition",
         title: "isRestoreWindowPositionLabel",
         captions: ["isRestoreWindowPositionCaptionLabel"],

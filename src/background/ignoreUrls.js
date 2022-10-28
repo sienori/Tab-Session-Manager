@@ -6,7 +6,7 @@ import { deleteTab } from "src/common/editSessions";
 
 const logDir = "background/ignoreUrls";
 
-const matchesPageUrl = (pageUrl, urlPattern) => {
+export const matchesPageUrl = (pageUrl, urlPattern) => {
   const pattern = urlPattern
     .trim()
     .replace(/[-[\]{}()*+?.,\\^$|#\s]/g, match => (match === "*" ? ".*" : "\\" + match));

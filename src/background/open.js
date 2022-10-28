@@ -2,6 +2,7 @@ import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import log from "loglevel";
 import { getSettings } from "src/settings/settings";
+import { matchesPageUrl } from "./ignoreUrls.js";
 import { returnReplaceURL, replacePage } from "./replace.js";
 import { updateTabGroups } from "../common/tabGroups";
 import { isTrackingSession, startTracking } from "./track.js";
@@ -248,7 +249,7 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
     }
 
     //Lazy loading
-    if (getSettings("ifLazyLoading")) {
+    if (getSettings("ifLazyLoading") && matchesPageUrl(tab.url,getSettings("ignoreLazyLoadingUrls"))) {
       if (getSettings("isUseDiscarded") && isEnabledDiscarded) {
         if (!createOption.active && !createOption.pinned) {
           createOption.discarded = true;
