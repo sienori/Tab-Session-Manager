@@ -42,7 +42,7 @@
     "message": "Kaikki"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Käyttäjätallennus"
   },
   "displayAutoLabel": {
     "message": "Automaattitallennus"
@@ -120,10 +120,10 @@
     "message": "Poista tunniste"
   },
   "inputTagLabel": {
-    "message": "Anna tunnisteelle nimi"
+    "message": "Syötä tunnisteen nimi"
   },
   "detailLabel": {
-    "message": "Lisätieto"
+    "message": "Tiedot"
   },
   "windowLabel": {
     "message": "Ikkuna"
@@ -177,7 +177,7 @@
     "message": "Avaa nykyisessä ikkunassa"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Avaa istunto nykyisessä ikkunassa. Passiiviset/epäaktiiviset ikkunat ja kaikki välilehdet suljetaan."
+    "message": "Avaa istunto nykyisessä ikkunassa. Passiiviset ikkunat ja kaikki välilehdet suljetaan."
   },
   "addToCurrentWindowLabel": {
     "message": "Lisää nykyiseen ikkunaan"
@@ -201,10 +201,10 @@
     "message": "Tee kopio istunnosta"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Seuraa ikkunamuutoksia"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Poista seuranta"
   },
   "registerStartupLabel": {
     "message": "Merkitse käynnistykseen"
@@ -213,10 +213,10 @@
     "message": "Poista käynnistyksestä"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Muokkaa ikkunaa"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Lisää nykyinen välilehti"
   },
   "errorLabel": {
     "message": "Virhe"
@@ -228,7 +228,7 @@
     "message": "Lataa laajennus uudelleen"
   },
   "howToSolveLabel": {
-    "message": "Miten ratkaista tämä ongelma"
+    "message": "Miten ongelma ratkaistaan"
   },
   "winCloseSessionName": {
     "message": "Automaattitallennus - Ikkuna suljettu"
@@ -240,13 +240,13 @@
     "message": "Automaattinen tallennus - Ajoittain"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Ikkunan sulkeutuessa"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Selaimen sulkeutuessa"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Ajoitetusti"
   },
   "settingsLabel": {
     "message": "Asetukset"
@@ -255,16 +255,16 @@
     "message": "Istunnot"
   },
   "shortcutsLabel": {
-    "message": "Pikakuvakkeet"
+    "message": "Pikanäppäimet"
   },
   "informationLabel": {
-    "message": "Tietoa"
+    "message": "Tiedot"
   },
   "generalLabel": {
     "message": "Yleiset"
   },
   "autoSaveLabel": {
-    "message": "Automaattinen tallennus"
+    "message": "Automaattitallennus"
   },
   "styleLabel": {
     "message": "Tyyli"
@@ -291,10 +291,10 @@
     "message": "Laiskasti ladattavat välilehden faviconia ei näytetä."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Palauta ikkunan sijainti"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Palauta ikkunoiden sijainnit ja koot, kun istunto avataan."
   },
   "startupLabel": {
     "message": "Käynnistys"
@@ -318,16 +318,16 @@
     "message": "Älä tee mitään"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Istunnon seuranta"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Seuranta"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Seuraa uusia avattuja ikkunoita"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Kun seurannassa olevassa istunnossa avautuu uusi ikkuna, sisällytä se seurantaan."
   },
   "ifAutoSaveLabel": {
     "message": "Tallenna istunto säännöllisesti"
@@ -522,7 +522,7 @@
     "message": "Synkronointi suoritettu."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Pilvisynkronointi edellyttää kirjautumista."
   },
   "signInLabel": {
     "message": "Kirjaudu"
@@ -609,61 +609,61 @@
     "message": "Tab Session Manager on päivitetty!"
   },
   "seeMoreLabel": {
-    "message": "See more"
+    "message": "Näytä lisää"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Näytä päivitystiedot painamalla."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Käytä vianetsintätilaa"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Kun vianetsintätila on käytössä, loki toimitetaan vianetsijälle."
   },
   "exportSettingsLabel": {
-    "message": "Export settings"
+    "message": "Vie asetukset"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Tallenna asetukset tietokoneelle JSON-tiedostona."
   },
   "importSettingsLabel": {
-    "message": "Import Settings"
+    "message": "Tuo asetukset"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Lataa tietokoneelle tallennettu asetustiedosto."
   },
   "resetSettingsLabel": {
-    "message": "Reset settings"
+    "message": "Palauta asetukset"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Restore all settings to default."
+    "message": "Palauta kaikkien asetusten oletukset."
   },
   "resetSettingsButtonLabel": {
-    "message": "Reset"
+    "message": "Palauta"
   },
   "importLabel": {
-    "message": "Import sessions"
+    "message": "Tuo istunnot"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Lataa tietokoneelle tallennetut istunnot ja lisää ne istuntolistalle."
   },
   "importCaptionLabel2": {
-    "message": "Supported files:"
+    "message": "Tuetut tiedostot:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Miten istuntoja tuodaan muista laajennuksista"
   },
   "importButtonLabel": {
-    "message": "Browse..."
+    "message": "Selaa..."
   },
   "importSaveButtonLabel": {
-    "message": "Import"
+    "message": "Tuo"
   },
   "importClearButtonLabel": {
-    "message": "Clear"
+    "message": "Tyhjennä"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Tuo URL-lista"
   },
   "urlImportCaptionLabel": {
     "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
