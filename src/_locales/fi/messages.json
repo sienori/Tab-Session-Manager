@@ -96,7 +96,7 @@
     "message": "Istuntoikkunan palautus epäonnistui."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Istuntovälilehden palautus epäonnistui."
+    "message": "Istuntovälilehden poisto epäonnistui."
   },
   "sessionSavedLabel": {
     "message": "Istunto tallennettu."
