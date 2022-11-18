@@ -132,3 +132,7 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - empty_child
 - Love Lain
 - Paul Suh
+- Adrien de Pierres
+- Joel Carver
+- Noah
+- Antonio Narvaez
