@@ -204,7 +204,7 @@
     "message": "Track window changes"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Eliminar rastreo"
   },
   "registerStartupLabel": {
     "message": "Registrar en arranque"
@@ -246,7 +246,7 @@
     "message": "Navegador cerrado"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regularmente"
   },
   "settingsLabel": {
     "message": "Ajustes"
@@ -294,7 +294,7 @@
     "message": "Restaurar la posición de las ventanas"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Restaurar la posición y el tamaño de las ventanas al abrir la sesión."
   },
   "startupLabel": {
     "message": "Arranque"
@@ -318,16 +318,16 @@
     "message": "No hacer nada"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Sesión de rastreo"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Rastreo"
   },
   "shouldTrackNewWindowLabel": {
     "message": "Track newly opened windows"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Cuando se abra una nueva ventana dentro de una sesión de rastreo, inclúyala en el rastreo."
   },
   "ifAutoSaveLabel": {
     "message": "Guardar la sesión regularmente"
