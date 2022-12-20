@@ -136,3 +136,6 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Joel Carver
 - Noah
 - Antonio Narvaez
+- Frank
+- Sondra Maze Ladd
+- Ed Cummings
