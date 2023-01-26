@@ -546,13 +546,13 @@
     "message": "Popup"
   },
   "openButtonBehaviorLabel": {
-    "message": "Öffne Button Verhalten"
+    "message": "Verhalten des Öffnen-Buttons"
   },
   "openButtonBehaviorCaptionLabel": {
     "message": "Wähle das Standardverhalten des Öffnen Buttons aus."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Speichern Button Verhalten"
+    "message": "Verhalten des Speichern-Buttons"
   },
   "saveButtonBehaviorCaptionLabel": {
     "message": "Wähle das Standardverhalten des Speichern Buttons aus."
@@ -576,7 +576,7 @@
     "message": "Höhe"
   },
   "sidebarWidthLabel": {
-    "message": "Seitenleiste Breite"
+    "message": "Breite der Seitenleiste"
   },
   "isSessionListOpenInTabLabel": {
     "message": "Öffne die Sitzungsliste im Tab"
@@ -621,13 +621,13 @@
     "message": "Wenn der Debug-Modus aktiviert ist, wird der Log zum Debugger ausgegeben."
   },
   "exportSettingsLabel": {
-    "message": "Einstellungen Exportieren"
+    "message": "Einstellungen exportieren"
   },
   "exportSettingsCaptionLabel": {
     "message": "Einstellungen als json-Datei auf dem Computer speichern."
   },
   "importSettingsLabel": {
-    "message": "Einstellungen Importieren"
+    "message": "Einstellungen importieren"
   },
   "importSettingsCaptionLabel": {
     "message": "Laden Sie die auf dem Computer gespeicherte Einstellungsdatei."
