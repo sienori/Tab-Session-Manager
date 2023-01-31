@@ -140,3 +140,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Sondra Maze Ladd
 - Ed Cummings
 - Michael Maor
+- sd361106
