@@ -4,7 +4,6 @@ import _ from "lodash";
 import uuidv4 from "uuid/v4";
 import moment from "moment";
 import log from "loglevel";
-import "core-js/fn/array/flat-map";
 import { returnReplaceParameter } from "src/background/replace.js";
 import { queryTabGroups } from "../../common/tabGroups";
 import { getSettings } from "src/settings/settings";
