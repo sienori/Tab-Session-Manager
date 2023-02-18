@@ -141,3 +141,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Ed Cummings
 - Michael Maor
 - sd361106
+- Rajvigneswaran Kaneysan
+- Alvaro Díaz Ruelas
