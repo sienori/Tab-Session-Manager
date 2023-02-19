@@ -143,3 +143,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - sd361106
 - Rajvigneswaran Kaneysan
 - Alvaro Díaz Ruelas
+- amagikuser
