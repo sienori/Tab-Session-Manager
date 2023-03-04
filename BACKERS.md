@@ -144,3 +144,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Rajvigneswaran Kaneysan
 - Alvaro Díaz Ruelas
 - amagikuser
+- Cameron Wetzel
