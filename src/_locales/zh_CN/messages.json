@@ -201,10 +201,10 @@
     "message": "创建会话副本"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "追踪窗口变更"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "停止追踪"
   },
   "registerStartupLabel": {
     "message": "注册为启动会话"
@@ -291,10 +291,10 @@
     "message": "不显示惰性加载标签的 favicon。"
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "还原窗口位置"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "打开会话时还原窗口位置和尺寸。"
   },
   "startupLabel": {
     "message": "启动"
@@ -318,16 +318,16 @@
     "message": "什么也不做"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "追踪会话"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "追踪"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "追踪新打开的窗口"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "当新窗口在追踪会话中打开时将其加入该会话。"
   },
   "ifAutoSaveLabel": {
     "message": "定期保存会话"
