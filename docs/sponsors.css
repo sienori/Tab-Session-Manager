@@ -1,10 +1,16 @@
 body {
+  width: 640px;
   margin: 0;
+}
+
+#banners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 img {
   height: 110px;
-  margin-right: 20px;
 }
 
 a {
