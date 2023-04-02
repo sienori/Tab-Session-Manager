@@ -128,3 +128,22 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Steve Walsh
 - Richard McClintock, Sr.
 - Chris Bolton 
+- Haviland Wright
+- empty_child
+- Love Lain
+- Paul Suh
+- Adrien de Pierres
+- Joel Carver
+- Noah
+- Antonio Narvaez
+- Frank
+- Sondra Maze Ladd
+- Ed Cummings
+- Michael Maor
+- sd361106
+- Rajvigneswaran Kaneysan
+- Alvaro Díaz Ruelas
+- amagikuser
+- Cameron Wetzel
+- Glenroy walker
+- Bobbi Mason
