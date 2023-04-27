@@ -4,7 +4,7 @@ import log from "loglevel";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 import { updateTabGroups } from "../common/tabGroups";
-import { isTrackingSession, startTracking } from "./track.js";
+import { isTrackingSession, startTracking, setFocusedId } from "./track.js";
 
 const logDir = "background/open";
 
@@ -13,6 +13,7 @@ export async function openSession(session, property = "openInNewWindow") {
   let isFirstWindowFlag = true;
   tabList = {};
   for (let win in session.windows) {
+    setFocusedId(browser.windows.WINDOW_ID_NONE);
     const openInCurrentWindow = async () => {
       log.log(logDir, "openSession() openInCurrentWindow()");
       const currentWindow = await removeNowOpenTabs();
@@ -24,7 +25,6 @@ export async function openSession(session, property = "openInNewWindow") {
 
       const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
       createData.incognito = firstTab.incognito;
-
 
       const isSetPosition =
         getSettings("isRestoreWindowPosition") && session.windowsInfo != undefined;

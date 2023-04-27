@@ -250,6 +250,13 @@ export default [
         captions: ["shouldTrackNewWindowCaptionLabel"],
         type: "checkbox",
         default: true,
+      },
+      {
+        id: "shouldTrackDeletedWindows",
+        title: "shouldTrackDeletedWindowsLabel",
+        captions: ["shouldTrackDeletedWindowsCaptionLabel"],
+        type: "checkbox",
+        default: false,
       }
     ]
   },
