@@ -329,6 +329,12 @@
   "shouldTrackNewWindowCaptionLabel": {
     "message": "Ta med nye vindauge når dei vert opna inni ei sporingsøkt."
   },
+  "shouldTrackDeletedWindowsLabel": {
+    "message": "Remove closed windows from saved sessions"
+  },
+  "shouldTrackDeletedWindowsCaptionLabel": {
+    "message": "When a window is closed within a tracking session, remove it from the tracked session."
+  },
   "ifAutoSaveLabel": {
     "message": "Lagra økta jamnleg"
   },

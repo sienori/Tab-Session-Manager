@@ -329,6 +329,12 @@
   "shouldTrackNewWindowCaptionLabel": {
     "message": "Quando una nuova finestra viene aperta all'interno di una sessione monitorata, includila nel monitoraggio."
   },
+  "shouldTrackDeletedWindowsLabel": {
+    "message": "Remove closed windows from saved sessions"
+  },
+  "shouldTrackDeletedWindowsCaptionLabel": {
+    "message": "When a window is closed within a tracking session, remove it from the tracked session."
+  },
   "ifAutoSaveLabel": {
     "message": "Salva la sessione regolarmente"
   },

@@ -329,6 +329,12 @@
   "shouldTrackNewWindowCaptionLabel": {
     "message": "在已追蹤的瀏覽階段中開啟新視窗時，將新開的視窗加入為追蹤對象。"
   },
+  "shouldTrackDeletedWindowsLabel": {
+    "message": "Remove closed windows from saved sessions"
+  },
+  "shouldTrackDeletedWindowsCaptionLabel": {
+    "message": "When a window is closed within a tracking session, remove it from the tracked session."
+  },
   "ifAutoSaveLabel": {
     "message": "定期將開啟的分頁瀏覽階段自動儲存"
   },

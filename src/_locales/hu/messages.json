@@ -329,6 +329,12 @@
   "shouldTrackNewWindowCaptionLabel": {
     "message": "Ha új ablak nyílt a követés munkamenetben, kövessük azt is."
   },
+  "shouldTrackDeletedWindowsLabel": {
+    "message": "Remove closed windows from saved sessions"
+  },
+  "shouldTrackDeletedWindowsCaptionLabel": {
+    "message": "When a window is closed within a tracking session, remove it from the tracked session."
+  },
   "ifAutoSaveLabel": {
     "message": "Munkamenet rendszeres mentése"
   },

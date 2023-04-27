@@ -329,6 +329,12 @@
   "shouldTrackNewWindowCaptionLabel": {
     "message": "ලුහුබැඳීමේ සැසියක් තුළ නව කවුළුවක් විවෘත කළ විට, එය ලුහුබැඳීම තුළ ඇතුළත් කරන්න."
   },
+  "shouldTrackDeletedWindowsLabel": {
+    "message": "Remove closed windows from saved sessions"
+  },
+  "shouldTrackDeletedWindowsCaptionLabel": {
+    "message": "When a window is closed within a tracking session, remove it from the tracked session."
+  },
   "ifAutoSaveLabel": {
     "message": "සැසිය නිතිපතා සුරකින්න"
   },
