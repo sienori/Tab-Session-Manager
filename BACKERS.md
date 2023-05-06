@@ -148,3 +148,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Glenroy walker
 - Bobbi Mason
 - Bionic Knee
+- Redno FPV
