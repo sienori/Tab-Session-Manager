@@ -149,3 +149,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Bobbi Mason
 - Bionic Knee
 - Redno FPV
+- Vasil Kolev
+- Rachel Carr
