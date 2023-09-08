@@ -150,7 +150,7 @@
     "message": "No ha seleccionado sesión."
   },
   "menuLabel": {
-    "message": "Menú"
+    "message": "Menu"
   },
   "closeMenuLabel": {
     "message": "Cerrar menú"
@@ -201,10 +201,10 @@
     "message": "Hacer una copia de la sesión"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Rastrear cambios en la ventana"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Eliminar rastreo"
   },
   "registerStartupLabel": {
     "message": "Registrar en arranque"
@@ -246,7 +246,7 @@
     "message": "Navegador cerrado"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regularmente"
   },
   "settingsLabel": {
     "message": "Ajustes"
@@ -291,10 +291,10 @@
     "message": "No se muestra el favicon de la ficha de carga lenta."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Restaurar la posición de las ventanas"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Restaurar la posición y el tamaño de las ventanas al abrir la sesión."
   },
   "startupLabel": {
     "message": "Arranque"
@@ -318,16 +318,16 @@
     "message": "No hacer nada"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Sesión de rastreo"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Rastreo"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Rastrear ventanas recién abiertas"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Cuando se abra una nueva ventana dentro de una sesión de rastreo, inclúyala en el rastreo."
   },
   "ifAutoSaveLabel": {
     "message": "Guardar la sesión regularmente"
@@ -504,7 +504,7 @@
     "message": "Habilitar sincronización en la nube (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Guardar sesiones en Google DriveTM y sincronizar con otros equipos."
+    "message": "Guardar sesiones en Google Drive™ y sincronizar con otros equipos."
   },
   "syncingLabel": {
     "message": "Sincronizando"
@@ -744,7 +744,7 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "sponsorsLabel": {
-    "message": "Patrocinador"
+    "message": "Patrocinadores"
   },
   "addonPageLabel": {
     "message": "Página de Add-on"
@@ -753,7 +753,7 @@
     "message": "Página de extensión"
   },
   "firefoxLabel": {
-    "message": "Complemento de Firefox"
+    "message": "Complementos de Firefox"
   },
   "chromeLabel": {
     "message": "Tienda Web de Chrome"
@@ -786,7 +786,7 @@
     "message": "Esta página no puede ser abierta por Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copiar dirección URL"
+    "message": "Copiar URL"
   },
   "copiedLabel": {
     "message": "Copiado."
