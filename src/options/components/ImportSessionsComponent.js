@@ -5,7 +5,6 @@ import mozlz4a from "mozlz4a";
 import uuidv4 from "uuid/v4";
 import OptionContainer from "./OptionContainer";
 
-
 const fileOpen = file => {
   if (/(?:\.jsonlz4|\.baklz4)(-\d+)?$/.test(file.name.toLowerCase())) {
     // sessionstore.jsonlz4
@@ -33,8 +32,13 @@ const fileOpen = file => {
         if (!isJSON(text)) return resolve();
 
         let jsonFile = JSON.parse(text);
-        if (isTSM(jsonFile)) return resolve(parseSession(jsonFile));
-        if (isSessionBuddy(jsonFile)) return resolve(convertSessionBuddy(jsonFile));
+        if (isTSM(jsonFile)) {
+          return resolve(parseSession(jsonFile));
+        }
+        if (isSessionBuddy(jsonFile)) {
+          return resolve(convertSessionBuddy(jsonFile));
+        }
+        
         return resolve();
       }
 
@@ -108,8 +112,26 @@ const parseSession = file => {
 };
 
 const isSessionBuddy = file => {
-  const correctKeys = ["type", "generated", "created", "id", "gid", "windows"];
-  return file.hasOwnProperty("sessions") && correctKeys.every(key => file.sessions[0].hasOwnProperty(key));
+  const currentKeys = ["generated", "type", "windows"]
+  const previousKeys = ["created", "generated", "gid", "id", "type", "windows"]
+  const savedKeys = ["created", "generated", "gid", "id", "modified", "name", "type", "windows"];
+  if(file.hasOwnProperty("sessions")) {
+    return file.sessions.every(session => {
+      if(session.type == "current") {
+        return currentKeys.every(key => session.hasOwnProperty(key))
+      }
+      if(session.type == "previous") {
+        return previousKeys.every(key => session.hasOwnProperty(key))
+      }
+      if(session.type == "saved") {
+        return savedKeys.every(key => session.hasOwnProperty(key))
+      }
+
+      return false
+    })
+  } else {
+    return false
+  }
 };
 
 const convertSessionBuddy = file => {
@@ -121,10 +143,10 @@ const convertSessionBuddy = file => {
       windowsInfo: {},
       tabsNumber: 0,
       name: SBSession?.name || "Unnamed Session",
-      date: moment(SBSession.created).valueOf(),
+      date: moment(SBSession?.created || new Date()).valueOf(),
       lastEditedTime: Date.now(),
       tag: [],
-      sessionStartTime: moment(SBSession.generated).valueOf(),
+      sessionStartTime: moment(SBSession?.generated || new Date()).valueOf(),
       id: uuidv4()
     };
 
