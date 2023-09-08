@@ -2,7 +2,6 @@ import browser from "webextension-polyfill";
 import _ from "lodash";
 import clone from "clone";
 import log from "loglevel";
-import "core-js/fn/array/flat-map";
 
 const logDir = "common/editSessions";
 
