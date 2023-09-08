@@ -40,7 +40,6 @@
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^9.0.0",
-    "npm-install-missing": "^0.1.4",
     "sass-loader": "^12.1.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^4.8.0",
