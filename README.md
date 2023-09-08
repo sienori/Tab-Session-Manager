@@ -41,7 +41,7 @@ You can contribute by translating Tab Session Manager on **[Crowdin](https://cro
 
 ## Developing
 
-> Required: Node 14+
+> Required: Node 18.17.1
 
 1. Clone the repository `git clone https://github.com/sienori/Tab-Session-Manager`  
 2. Create the file `src/credentials.js`  
