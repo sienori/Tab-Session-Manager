@@ -9,10 +9,10 @@
     "message": "Đóng góp bằng PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Ủng hộ"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Hiển thị danh sách các phiên đang mở trên một tab"
   },
   "saveLabel": {
     "message": "Lưu"
@@ -24,7 +24,7 @@
     "message": "Nhập tên phiên làm việc"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Lưu phiên"
   },
   "saveAllWindowsLabel": {
     "message": "Lưu tất cả cửa sổ"
@@ -60,7 +60,7 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Tìm kiếm bằng phiên hoặc tên tab"
   },
   "search": {
     "message": "Tìm kiếm"
@@ -108,10 +108,10 @@
     "message": "Hủy"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Hủy bỏ"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Khôi phục"
   },
   "addTagLabel": {
     "message": "Thêm nhãn"
@@ -120,7 +120,7 @@
     "message": "Xóa nhãn"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Nhập tên của thẻ"
   },
   "detailLabel": {
     "message": "Chi tiết"
@@ -147,25 +147,25 @@
     "message": "Không có kết quả phù hợp."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Không có phiên nào được chọn."
   },
   "menuLabel": {
     "message": "Menu"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Đóng menu"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Đóng"
   },
   "renameLabel": {
     "message": "Đổi tên"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Đổi tên phiên"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Mở phiên"
   },
   "openInNewWindowLabel": {
     "message": "Mở trong cửa sổ mới"
@@ -186,7 +186,7 @@
     "message": "Thêm tab vào cửa sổ hiện tại. Nếu phiên làm việc chứa nhiều cửa sổ, mở nó trong cửa sổ mới."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Sửa phiên"
   },
   "replaceCurrentSessionLabel": {
     "message": "Thay thế bằng phiên hiện tại"
@@ -201,22 +201,22 @@
     "message": "Tạo bản sao của phiên"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Theo dõi các thay đổi của cửa sổ"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Xóa theo dõi"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Đăng ký khởi động"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Xóa khởi động"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Sửa cửa sổ"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Thêm tab hiện tại"
   },
   "errorLabel": {
     "message": "Lỗi"
@@ -225,7 +225,7 @@
     "message": "IndexedDB không có sẵn trong trình duyệt của bạn."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Khởi động lại tiện ích"
   },
   "howToSolveLabel": {
     "message": "Cách để giải quyết vấn đề này"
@@ -240,13 +240,13 @@
     "message": "Lưu tự động - Thường xuyên"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Cửa sổ đã đóng"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Trình duyệt đã đóng"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Thường xuyên"
   },
   "settingsLabel": {
     "message": "Cài đặt"
@@ -255,7 +255,7 @@
     "message": "Phiên làm việc"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Lối tắt"
   },
   "informationLabel": {
     "message": "Thông tin"
@@ -291,43 +291,43 @@
     "message": "Biểu tượng của tab được tải chậm sẽ không được hiển thị."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Khôi phục vị trí cửa sổ"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Khôi phục vị trí và kích thước cửa sổ khi mở phiên."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Khởi động"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Hành vi khi khởi động trình duyệt"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Mở phiên trước"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Mở phiên làm việc trước đó đã bị đóng lại."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Bắt đầu phiên khởi động"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Mở các phiên đăng ký cho startup. Bạn có thể đăng ký cho startup từ danh sách phiên trong menu."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Không có gì"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Theo dõi phiên"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Theo dõi"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Theo dõi các cửa sổ mới được mở"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Khi mở một cửa sổ mới trong phiên theo dõi, hãy bao gồm nó vào việc theo dõi."
   },
   "ifAutoSaveLabel": {
     "message": "Lưu lại phiên làm việc thường xuyên"
@@ -387,10 +387,10 @@
     "message": "Khi trình duyệt khởi động, tạo một tệp tin sao lưu của các phiên và lưu nó ở thư mục tải xuống."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Sao lưu cá nhân"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Mỗi phiên được lưu vào một tệp riêng.<br> Nếu bỏ chọn, tất cả các phiên sẽ được lưu vào một tệp duy nhất, điều này có thể làm tràn bộ nhớ lưu trữ của bạn."
   },
   "backupFolderLabel": {
     "message": "Vị trí lưu"
@@ -417,37 +417,37 @@
     "message": "Lưu cửa sổ riêng tư"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Danh sách URL bị bỏ qua khi lưu phiên làm việc"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Nếu địa chỉ URL của tab phù hợp với danh sách, nó sẽ không được ghi lại trong phiên. Danh sách cho phép sử dụng ký tự đại diện \"*\", để bao gồm nhiều trường hợp khác nhau."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Lưu tên thiết bị vào phiên làm việc hiện tại"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Khi lưu phiên làm việc, hãy bao gồm tên thiết bị như một thẻ. Điều này sẽ giúp phân biệt nó với các phiên trên các thiết bị khác khi bạn sử dụng đồng bộ hóa đám mây."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Tên thiết bị"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Vui lòng chỉ định tên của thiết bị này."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Gán tên thiết bị cho các phiên đang hoạt động"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Thêm tên thiết bị vào tất cả các phiên đã lưu."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Apply device name"
+    "message": "Áp dụng tên thiết bị"
   },
   "applyDeviceNameConfirmLabel": {
-    "message": "Apply device name to all sessions?"
+    "message": "Áp dụng tên thiết bị cho tất cả phiên?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Nén biểu tượng trang"
   },
   "compressFaviconUrlCaptionLabel": {
     "message": "Compress the favicons when saving a session."
@@ -717,19 +717,19 @@
     "message": "Save session (only current window)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Lưu phiên (tất cả cửa sổ)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Xuất toàn bộ phiên"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Dọn dẹp"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Khôi phục"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Nhà đầu tư"
   },
   "LicenseLabel": {
     "message": "Giấy phép"
@@ -744,7 +744,7 @@
     "message": "amazon.co.jp eGift Cards"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Nhà tài trợ"
   },
   "addonPageLabel": {
     "message": "Trang Tiện ích"
@@ -753,16 +753,16 @@
     "message": "Trang Cửa hàng tiện ích"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Cửa hàng Firefox Add-ons"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Cửa hàng Chrome Web Store"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Cửa hàng Edge Add-ons"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Chính sách bảo mật"
   },
   "importMessage": {
     "message": "Phiên làm việc đã được nhập."
@@ -786,9 +786,9 @@
     "message": "Trang này không thể mở được bởi Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Sao chép URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Đã sao chép."
   }
 }
