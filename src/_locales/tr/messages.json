@@ -48,10 +48,10 @@
     "message": "Otomatik kayıt"
   },
   "newestLabel": {
-    "message": "En yeni"
+    "message": "Yeni-eski"
   },
   "oldestLabel": {
-    "message": "En eski"
+    "message": "Eski-yeni"
   },
   "aToZLabel": {
     "message": "A-Z"
