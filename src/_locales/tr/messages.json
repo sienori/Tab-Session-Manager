@@ -12,7 +12,7 @@
     "message": "Bağış yap"
   },
   "openSessionListInTabLabel": {
-    "message": "Oturum listesini sekmede aç"
+    "message": "Oturum listesi sekmede açılsın"
   },
   "saveLabel": {
     "message": "Kayıt"
@@ -27,10 +27,10 @@
     "message": "Oturumu kaydet"
   },
   "saveAllWindowsLabel": {
-    "message": "Tüm pencereleri kaydet"
+    "message": "Tüm pencereler kaydedilsin"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Geçerli pencereyi kaydet"
+    "message": "Geçerli pencere kaydedilsin"
   },
   "categoryFilterLabel": {
     "message": "Kategori süzgeci"
@@ -168,22 +168,22 @@
     "message": "Oturum aç"
   },
   "openInNewWindowLabel": {
-    "message": "Yeni pencerede aç"
+    "message": "Yeni pencerede açılsın"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Oturumu yeni pencerede aç."
+    "message": "Oturum yeni pencerede açılır."
   },
   "openInCurrentWindowLabel": {
-    "message": "Geçerli pencerede aç"
+    "message": "Geçerli pencerede açılsın"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Oturumu geçerli pencerede açar. Etkin olmayan pencereler ve tüm sekmeler kapatılır."
+    "message": "Oturum geçerli pencerede açılır. Etkin olmayan pencereler ve tüm sekmeler kapatılır."
   },
   "addToCurrentWindowLabel": {
-    "message": "Geçerli pencereye ekle"
+    "message": "Geçerli pencereye eklensin"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Geçerli pencereye sekmeler ekler. Oturumda birden fazla pencere varsa yeni pencerede açar."
+    "message": "Geçerli pencereye sekmeler eklenir. Oturumda birden fazla pencere varsa yeni pencerede açılır."
   },
   "EditSessionLabel": {
     "message": "Oturumu düzenle"
@@ -270,13 +270,13 @@
     "message": "Biçem"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Oturumu yeni pencerede aç"
+    "message": "Oturum yeni pencerede açılsın"
   },
   "ifOpenNewWindowCaptionLabel": {
     "message": "İşaretlenmediğinde oturum geçerli pencerenin üzerine yazılır."
   },
   "ifLazyLoadingLabel": {
-    "message": "Sekme yavaş yükleniyor"
+    "message": "Sekme yavaş yüklensin"
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "Bir oturum açıldığında, sayfaların içeriği siz sekmeleri seçene kadar yüklenmez.<br>İşaretlenmediğinde, oturum geri yüklendiğinde bellek kullanımı büyük ölçüde artar."
@@ -285,7 +285,7 @@
     "message": "Yavaş yükleme için \"discarded\" özelliği kullanılsın"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Bu seçeneğin etkinleştirilmesi, sekmelerin açılma başarımını artırır."
+    "message": "Sekmelerin açılma başarımını artırır."
   },
   "isUseDiscardedCaption2Label": {
     "message": "Yavaş yüklenen sekmede site simgesi görüntülenmez."
@@ -294,25 +294,25 @@
     "message": "Pencere konumu geri yüklensin"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Oturumu açarken pencerenin konumunu ve boyutunu geri yükler."
+    "message": "Oturum açılırken pencerenin konumu ve boyutu geri yüklenir."
   },
   "startupLabel": {
     "message": "Başlangıç"
   },
   "startupBehaviorLabel": {
-    "message": "Tarayıcıyı başlangıcındaki davranış"
+    "message": "Tarayıcıyı başlatma davranışı"
   },
   "openPreviousSessionLabel": {
     "message": "Önceki oturum açılsın"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Son kapatılan oturumu açar."
+    "message": "Son kapatılan oturum açılır."
   },
   "openStartupSessionLabel": {
     "message": "Başlangıç oturumu açılsın"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Başlangıca kaydedilmiş oturumları açar. Oturum listesindeki menüden başlangıçta açılacakları belirleyebilirsiniz."
+    "message": "Başlangıca kaydedilmiş oturumlar açılır. Oturum listesindeki menüden başlangıçta açılacakları belirleyebilirsiniz."
   },
   "DoNothingLabel": {
     "message": "Hiç bir şey yapılmasın"
@@ -333,43 +333,43 @@
     "message": "Oturum düzenli olarak kaydedilsin"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Oturumu her X dakikada bir kaydeder."
+    "message": "Oturum her X dakikada bir kaydedilir."
   },
   "autoSaveIntervalLabel": {
     "message": "Aralık (dakika)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "En küçük değer 0.1"
+    "message": "En küçük değer 0.1 olabilir"
   },
   "autoSaveLimitLabel": {
-    "message": "Kaydedilen en büyük değer"
+    "message": "Kaydedilecek en fazla oturum sayısı"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Bu yöntemle kaydedilen en fazla oturum sayısı."
+    "message": "Bu yöntemle kaydedilecek en fazla oturum sayısını yazın."
   },
   "ifAutoSaveWhenCloseLabel": {
     "message": "Pencere kapatıldığında oturum kaydedilsin"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Yalnızca bir kapatılmış pencere bulunan oturumu kaydeder."
+    "message": "Yalnızca bir kapatılmış pencere bulunan oturum kaydedilir."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Kaydedilen en büyük değer"
+    "message": "Kaydedilecek en fazla oturum sayısı"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Bu yöntemle kaydedilen en fazla oturum sayısı."
+    "message": "Bu yöntemle kaydedilecek en fazla oturum sayısını yazın."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Tarayıcıdan çıkılırken oturum kaydedilsin"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Arka arkaya birkaç pencerenin kapatıldığı oturumu kaydeder."
+    "message": "Arka arkaya birkaç pencerenin kapatıldığı oturum kaydedilir."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Kaydedilen en büyük değer"
+    "message": "Kaydedilecek en fazla oturum sayısı"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Bu yöntemle kaydedilen en fazla oturum sayısı."
+    "message": "Bu yöntemle kaydedilecek en fazla oturum sayısını yazın."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Otomatik kaydedilen oturum adı için sayfa başlığı kullanılsın"
@@ -381,7 +381,7 @@
     "message": "Yedek"
   },
   "ifBackupLabel": {
-    "message": "Yedeği kaydet"
+    "message": "Yedek kaydedilsin"
   },
   "ifBackupCaptionLabel": {
     "message": "Tarayıcı başlatıldığında, oturumların bulunduğu bir yedek dosyası oluşturulur ve bu dosya indirmeler klasörüne kaydedilir."
@@ -402,7 +402,7 @@
     "message": "İndirme klasörü"
   },
   "backupFilesLimitLabel": {
-    "message": "Kaydedilebilecek en fazla yedek sayısı"
+    "message": "Kaydedilebilecek en fazla yedek sayısını yazın"
   },
   "backupFilesLimitCaptionLabel": {
     "message": "Yedek sayısı bu değeri aştığında, en eskiden başlayarak silinir."
@@ -414,7 +414,7 @@
     "message": "Örnek: YYYY.MM.DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Gizli pencereyi kaydet"
+    "message": "Gizli pencere kaydedilsin"
   },
   "ignoreUrlListLabel": {
     "message": "Oturumu kaydederken yok sayılacak adres listesi"
@@ -426,22 +426,22 @@
     "message": "Aygıt adı oturuma kaydedilsin"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Bir oturumu kaydederken aygıt adını etiket olarak ekler. Bulut eşitlemesi kullanılırken, aygıtların ayırt edilebilmesini sağlar."
+    "message": "Bir oturumu kaydedilirken aygıt adı etiket olarak eklenir. Bulut eşitlemesi kullanılırken, aygıtların ayırt edilebilmesini sağlar."
   },
   "deviceNameLabel": {
     "message": "Aygıt adı"
   },
   "deviceNameCaptionLabel": {
-    "message": "Bu aygıtın adını belirtin."
+    "message": "Bu aygıt için bir ad yazın."
   },
   "applyDeviceNameLabel": {
-    "message": "Aygıt adını geçerli oturumlara uygula"
+    "message": "Aygıt adı geçerli oturumlara eklensin"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Aygıt adını tüm kayıtlı oturumlara ekler."
+    "message": "Aygıtın adı tüm kayıtlı oturumlara eklenir."
   },
   "applyDeviceNameButtonLabel": {
-    "message": "Aygıt adını uygula"
+    "message": "Aygıt adını ekle"
   },
   "applyDeviceNameConfirmLabel": {
     "message": "Aygıt adı tüm oturumlara uygulansın mı?"
@@ -450,13 +450,13 @@
     "message": "Site simgeleri sıkıştırılsın"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Bir oturumu kaydederken site simgelerini sıkıştırır."
+    "message": "Oturum kaydedilirken site simgeleri sıkıştırılır."
   },
   "compressAllSessionsLabel": {
     "message": "Tüm oturumlar sıkıştırılsın"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Şu anda kayıtlı tüm oturumların site simgelerini sıkıştırır. Bellek kullanımından kazanç sağlayarak oturumun yüklemesini hızlandırır."
+    "message": "Şu anda kayıtlı tüm oturumların site simgeleri sıkıştırılır. Bellek kullanımından kazanç sağlayarak oturumun yüklemesini hızlandırır."
   },
   "compressLabel": {
     "message": "Sıkıştır"
@@ -489,7 +489,7 @@
     "message": "Sekme gruplarının durumunu kaydeder ve geri yükler. Bu özelliği etkinleştirmek için aşağıdaki eklenti kurulmuş olmalıdır."
   },
   "tstDelayCaptionLabel": {
-    "message": "Ağacın durumunu geri yüklemek için sekmeyi açma bekleme süresi gerekiyor. Ağaç düzgün şekilde geri yüklenmezse bu değeri artırın."
+    "message": "Ağacın durumunu geri yüklemek için sekmeyi açarken bekleme süresi gereklidir. Ağaç düzgün şekilde geri yüklenmezse bu değeri artırın."
   },
   "truncateTitleLabel": {
     "message": "Oturum adı tek satırda görüntülensin"
@@ -504,7 +504,7 @@
     "message": "Bulut eşitlemesi kullanılsın (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Oturumları Google Drive™ üzerine kaydedin ve diğer bilgisayarlarla eşitleyin."
+    "message": "Oturumlar Google Drive™ üzerine kaydedilir ve diğer bilgisayarlarla eşitlenir."
   },
   "syncingLabel": {
     "message": "Eşitleniyor"
@@ -531,7 +531,7 @@
     "message": "Oturumu kapat"
   },
   "enabledAutoSyncLabel": {
-    "message": "Otomatik olarak eşitle"
+    "message": "Otomatik olarak eşitlensin"
   },
   "enabledAutoSyncCaptionLabel": {
     "message": "Tarayıcı başlatıldığında ve oturum kaydedildiğinde bulut eşitlemesi yapılır."
@@ -540,7 +540,7 @@
     "message": "Otomatik kaydedilen oturumlar eşitlensin"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Bulut eşitlemesinde otomatik olarak kaydedilmiş oturumları yükler ya da indirir."
+    "message": "Bulut eşitlemesinde otomatik olarak kaydedilmiş oturumlar yüklenir ya da indirilir."
   },
   "popupLabel": {
     "message": "Açılan pencere"
@@ -561,7 +561,7 @@
     "message": "Oturum listesinde aç / sil düğmeleri görüntülensin"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "İmleç oturum listesinin üzerindeyken aç / sil düğmelerini görüntüler."
+    "message": "İmleç oturum listesinin üzerindeyken aç / sil düğmeleri görüntülenir."
   },
   "sizeLabel": {
     "message": "Boyut"
@@ -579,10 +579,10 @@
     "message": "Yan çubuk genişliği"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Oturum listesini sekmede aç"
+    "message": "Oturum listesi sekmede açılsın"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Araç çubuğundaki düğmeye tıklandığında oturum listesini sekmede açar."
+    "message": "Araç çubuğundaki düğmeye tıklandığında oturum listesi sekmede açılır."
   },
   "themeLabel": {
     "message": "Tema"
@@ -603,7 +603,7 @@
     "message": "Güncelleme sırasında seçenek sayfası görüntülensin"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Tab Session Manager güncellendiğinde seçenekler sayfasını görüntüler. Güncelleme içeriğini hızlı bir şekilde öğrenebilirsiniz."
+    "message": "Tab Session Manager güncellendiğinde seçenekler sayfası görüntülenir. Güncelleme içeriğini hızlıca öğrenebilirsiniz."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager güncellendi!"
@@ -615,37 +615,37 @@
     "message": "Güncelleme bilgilerini görüntülemek için tıklayın."
   },
   "isDebugModeLabel": {
-    "message": "Hata ayıklama kipini etkinleştir"
+    "message": "Hata ayıklama kipi açılsın"
   },
   "isDebugModeCaptionLabel": {
-    "message": "Hata ayıklama kipi etkinleştirildiğinde, günlük kayıtları hata ayıklayıcıya gönderilir."
+    "message": "Hata ayıklama kipi açıldığında, günlük kayıtları hata ayıklayıcıya gönderilir."
   },
   "exportSettingsLabel": {
-    "message": "Ayarları dışa aktar"
+    "message": "Ayarları dışa aktarma"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Ayarları bilgisayarda JSON dosyası olarak kaydeder."
+    "message": "Ayarlar JSON dosyası olarak bilgisayar üzerine kaydedilir."
   },
   "importSettingsLabel": {
-    "message": "Ayarları içe aktar"
+    "message": "Ayarları içe aktarma"
   },
   "importSettingsCaptionLabel": {
-    "message": "Bilgisayara kaydedilmiş ayarlar dosyasını yükler."
+    "message": "Bilgisayara kaydedilmiş ayarlar dosyası içe aktarılır."
   },
   "resetSettingsLabel": {
-    "message": "Ayarları sıfırla"
+    "message": "Ayarları sıfırlama"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Tüm ayarları varsayılan değerlerine sıfırlar."
+    "message": "Tüm ayarlar varsayılan değerlerine sıfırlanır."
   },
   "resetSettingsButtonLabel": {
     "message": "Sıfırla"
   },
   "importLabel": {
-    "message": "Oturumları içe aktar"
+    "message": "Oturumları içe aktarma"
   },
   "importCaptionLabel": {
-    "message": "Bilgisayarda kayıtlı oturumları yükler ve oturum listesine ekler."
+    "message": "Bilgisayarda kayıtlı oturumlar yüklenir ve oturum listesine eklenir."
   },
   "importCaptionLabel2": {
     "message": "Desteklenen dosyalar:"
@@ -663,16 +663,16 @@
     "message": "Temizle"
   },
   "urlImportLabel": {
-    "message": "Adres listesini içe aktar"
+    "message": "Adres listesini içe aktarma"
   },
   "urlImportCaptionLabel": {
-    "message": "Adres listesinden bir oturum oluşturur ve oturum listesine ekler.<br>Biçim: &lt;Adres&gt; &lt;sayfa başlığı (isteğe bağlı)&gt;"
+    "message": "Adres listesinden bir oturum oluşturulur ve oturum listesine eklenir.<br>Biçim: &lt;Adres&gt; &lt;sayfa başlığı (isteğe bağlı)&gt;"
   },
   "exportLabel": {
-    "message": "Oturumları dışa aktar"
+    "message": "Oturumları dışa aktarma"
   },
   "exportCaptionLabel": {
-    "message": "Tüm oturumları bilgisayara kaydeder."
+    "message": "Tüm oturumlar bilgisayara kaydedilir."
   },
   "exportButtonLabel": {
     "message": "Dışa aktar"
@@ -681,7 +681,7 @@
     "message": "Oturumları sil"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Tüm oturumları siler."
+    "message": "Tüm oturumlar silinir."
   },
   "removeSessionsButtonLabel": {
     "message": "Sil"
