@@ -151,3 +151,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Redno FPV
 - Vasil Kolev
 - Rachel Carr
+- Jack Leonard
+- Jay Rice
