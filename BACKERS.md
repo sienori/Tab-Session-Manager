@@ -153,3 +153,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Rachel Carr
 - Jack Leonard
 - Jay Rice
+- Eyüp deniz Taşdelen
