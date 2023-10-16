@@ -154,3 +154,4 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Jack Leonard
 - Jay Rice
 - Eyüp deniz Taşdelen
+- Mladen Fernežir
