@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Я-А"
   },
+  "tabsDesLabel": {
+    "message": "tabs ↓"
+  },
+  "tabsAscLabel": {
+    "message": "tabs ↑"
+  },
   "searchBarPlaceholder": {
     "message": "Шукати за назвою сеансу або вкладки"
   },
