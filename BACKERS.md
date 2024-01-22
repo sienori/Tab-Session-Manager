@@ -159,3 +159,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Tony Pujals
 - Rick Duggan
 - Dave Badia
+- Thumbsy
+- VerdantSkies
