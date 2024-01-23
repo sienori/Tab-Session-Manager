@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "tabs ↓"
+  },
+  "tabsAscLabel": {
+    "message": "tabs ↑"
+  },
   "searchBarPlaceholder": {
     "message": "Buscar por nombre de sesión o pestaña"
   },

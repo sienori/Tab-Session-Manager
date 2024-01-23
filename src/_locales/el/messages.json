@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Ω-Α"
   },
+  "tabsDesLabel": {
+    "message": "tabs ↓"
+  },
+  "tabsAscLabel": {
+    "message": "tabs ↑"
+  },
   "searchBarPlaceholder": {
     "message": "Αναζήτηση βάση ονόματος συνεδρίας ή καρτέλας"
   },
