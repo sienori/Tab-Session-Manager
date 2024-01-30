@@ -1,10 +1,13 @@
 import browser from "webextension-polyfill";
+import browserInfo from "browser-info";
 import log from "loglevel";
 import { getSettings } from "src/settings/settings";
+import { queryTabGroups } from "../common/tabGroups";
 import { updateSession } from "./save";
 import getSessions from "./getSessions";
 
 const logDir = "background/track";
+const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
 
 export let IsTracking = false;
 
@@ -31,6 +34,17 @@ export const updateTrackingSession = async (tempSession) => {
     trackedSession.tabsNumber = 0;
     for (const win of Object.values(trackedSession.windows)) {
       trackedSession.tabsNumber += Object.keys(win).length;
+    }
+
+    //Update Group Information
+    if (isEnabledTabGroups && getSettings("saveTabGroups")) {
+      const filteredWindows = Object.values(trackedSession.windowsInfo).filter(window => window.type === "normal");
+      const tabGroups = await Promise.all(filteredWindows.map(window => queryTabGroups({
+        windowId: window.id,
+      })));
+      const filteredTabGroups = tabGroups.flat().filter(tabGroup =>
+        Object.keys(trackedSession.windows).includes(String(tabGroup.windowId)));
+      if (filteredTabGroups.length > 0) trackedSession.tabGroups = filteredTabGroups;
     }
 
     await updateSession(trackedSession);
