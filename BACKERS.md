@@ -161,3 +161,9 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Dave Badia
 - Thumbsy
 - VerdantSkies
+- Eddie Kero
+- Nils Ackermann
+- Indiaminah Lawrence
+- Gaspar Ghostie
+- Mitchell Marks
+- Noah Andrews
