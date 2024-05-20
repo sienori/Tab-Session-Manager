@@ -9,7 +9,7 @@ export default {
     log.log(logDir, "init()");
     // NOTE: ChromeのService Workerからは呼び出せないが、unlimitedStorage権限があるため削除されることはない
     if (navigator.storage.persist) navigator.storage.persist();
-    const request = window.indexedDB.open("sessions", 1);
+    const request = indexedDB.open("sessions", 1);
 
     request.onupgradeneeded = e => {
       const db = request.result;
@@ -97,7 +97,7 @@ export default {
     log.log(logDir, "deleteAll()");
     DB.close("sessions");
 
-    const request = window.indexedDB.deleteDatabase("sessions");
+    const request = indexedDB.deleteDatabase("sessions");
 
     return new Promise(resolve => {
       request.onsuccess = () => {
