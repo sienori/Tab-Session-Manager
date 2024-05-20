@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "version": "6.12.2",
   "name": "__MSG_extName__",
   "description": "__MSG_extDescription__",
@@ -11,7 +11,7 @@
     "downloads",
     "identity"
   ],
-  "optional_permissions": [
+  "optional_host_permissions": [
     "https://www.googleapis.com/*"
   ],
   "options_ui": {
@@ -23,11 +23,10 @@
     "64": "icons/icon.png"
   },
   "background": {
-    "scripts": [
-      "background/background.js"
-    ]
+    "service_worker": "background/background.js",
+    "type": "module"
   },
-  "browser_action": {
+  "action": {
     "default_icon": {
       "16": "icons/icon_min.png",
       "64": "icons/icon.png"
@@ -35,7 +34,7 @@
     "default_popup": "popup/index.html"
   },
   "commands": {
-    "_execute_browser_action": {
+    "_execute_action": {
       "description": "__MSG_openPopupDescription__",
       "suggested_key": {
         "default": "Ctrl+Shift+L"
