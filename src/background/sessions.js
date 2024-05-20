@@ -7,7 +7,8 @@ let DB;
 export default {
   init: () => {
     log.log(logDir, "init()");
-    navigator.storage.persist();
+    // NOTE: ChromeのService Workerからは呼び出せないが、unlimitedStorage権限があるため削除されることはない
+    if (navigator.storage.persist) navigator.storage.persist();
     const request = window.indexedDB.open("sessions", 1);
 
     request.onupgradeneeded = e => {
