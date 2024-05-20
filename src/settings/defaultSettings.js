@@ -8,9 +8,6 @@ const handleApplyDeviceNameButtonClick = () => {
   if (res) browser.runtime.sendMessage({ message: "applyDeviceName" });
 };
 
-const getTheme = () =>
-  window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
-
 export default [
   {
     category: "open",
@@ -383,7 +380,7 @@ export default [
         title: "themeLabel",
         captions: ["themeCaptionLabel"],
         type: "select",
-        default: getTheme(),
+        default: "light",
         options: [
           {
             name: "lightLabel",
