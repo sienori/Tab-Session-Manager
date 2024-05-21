@@ -10,9 +10,8 @@ import { IsTracking, updateTrackingSession } from "./track.js";
 import { init } from "./background.js";
 
 const logDir = "background/autoSave";
-let autoSaveTimer;
 
-const autoSaveRegular = async () => {
+export const autoSaveRegular = async () => {
   log.info(logDir, "autoSaveRegular()");
   try {
     const name = getSettings("useTabTitleforAutoSave")
@@ -33,22 +32,13 @@ const autoSaveRegular = async () => {
   }
 };
 
-function startAutoSave() {
-  log.log(logDir, "startAutoSave()");
-  autoSaveTimer = setInterval(autoSaveRegular, getSettings("autoSaveInterval") * 60 * 1000);
-}
-
-function stopAutoSave() {
-  clearInterval(autoSaveTimer);
-}
-
-//定期保存の設定が変更されたときにセット
-export function setAutoSave(changes, areaName) {
+//定期保存の設定が変更されたとき、起動・インストール時に自動保存のアラームをセット
+export async function setAutoSave(changes, areaName) {
   if (isChangeAutoSaveSettings(changes, areaName)) {
-    log.info(logDir, "setAutoSave()", changes, areaName);
-    stopAutoSave();
+    await browser.alarms.clear("autoSaveRegular");
     if (!getSettings("ifAutoSave")) return;
-    startAutoSave();
+    log.info(logDir, "setAutoSave");
+    browser.alarms.create("autoSaveRegular", { periodInMinutes: Number(getSettings("autoSaveInterval")) });
   }
 }
 

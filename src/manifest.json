@@ -9,7 +9,8 @@
     "unlimitedStorage",
     "tabs",
     "downloads",
-    "identity"
+    "identity",
+    "alarms"
   ],
   "optional_host_permissions": [
     "https://www.googleapis.com/*"

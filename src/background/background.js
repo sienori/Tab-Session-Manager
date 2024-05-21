@@ -9,7 +9,8 @@ import {
   autoSaveWhenExitBrowser,
   setUpdateTempTimer,
   openLastSession,
-  autoSaveWhenOpenInCurrentWindow
+  autoSaveWhenOpenInCurrentWindow,
+  autoSaveRegular
 } from "./autoSave";
 import Sessions from "./sessions";
 import { replacePage } from "./replace";
@@ -54,8 +55,6 @@ export const init = async () => {
   await Sessions.init();
   IsInit = true;
 
-  //TODO: service workerで動くようにする
-  setAutoSave();
   syncCloudAuto();
 };
 
@@ -67,6 +66,7 @@ const onStartupListener = async () => {
   const startupBehavior = getSettings("startupBehavior");
   if (startupBehavior === "previousSession") openLastSession();
   else if (startupBehavior === "startupSession") openStartupSessions();
+  setAutoSave();
   setTimeout(backupSessions, 30000);
 };
 
@@ -189,6 +189,15 @@ const onChangeStorageListener = async (changes, areaName) => {
   resetLastBackupTime(changes);
 }
 
+const onAlarmListener = async (alarmInfo) => {
+  await init();
+  log.info(logDir, "onAlarmListener()", alarmInfo);
+  switch (alarmInfo.name) {
+    case "autoSaveRegular":
+      return autoSaveRegular();
+  }
+}
+
 browser.runtime.onStartup.addListener(onStartupListener);
 browser.runtime.onInstalled.addListener(onInstalledListener);
 browser.runtime.onUpdateAvailable.addListener(onUpdateAvailableListener);
@@ -204,3 +213,4 @@ browser.windows.onCreated.addListener(setUpdateTempTimer);
 browser.windows.onRemoved.addListener(autoSaveWhenWindowClose);
 browser.downloads.onChanged.addListener(handleDownloadsChanged);
 browser.storage.local.onChanged.addListener(onChangeStorageListener);
+browser.alarms.onAlarm.addListener(onAlarmListener);

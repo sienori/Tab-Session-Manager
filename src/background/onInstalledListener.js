@@ -5,6 +5,7 @@ import { initShortcuts } from "./keyboardShortcuts";
 import { init } from "./background";
 import updateOldSessions from "./updateOldSessions";
 import { setSessionStartTime } from "./save";
+import { setAutoSave } from "./autoSave";
 
 const logDir = "background/onInstalledListener";
 
@@ -28,4 +29,5 @@ export default async details => {
   }
   setSettings("isShowUpdated", true);
   await updateOldSessions();
+  setAutoSave();
 };
