@@ -2,7 +2,6 @@ import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import uuidv4 from "uuid/v4";
 import log from "loglevel";
-import { SessionStartTime } from "./background.js";
 import Sessions from "./sessions.js";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceParameter } from "./replace.js";
@@ -35,7 +34,7 @@ export async function loadCurrentSession(name, tag, property) {
     date: Date.now(),
     lastEditedTime: Date.now(),
     tag: tag,
-    sessionStartTime: SessionStartTime,
+    sessionStartTime: await getSessionStartTime(),
     id: uuidv4()
   };
 
@@ -176,4 +175,12 @@ export async function deleteAllSessions() {
   } catch (e) {
     log.error(logDir, "deleteAllSessions()", e);
   }
+}
+
+export const setSessionStartTime = async () => {
+  await browser.storage.session.set({ sessionStartTime: Date.now() });
+}
+
+export const getSessionStartTime = async () => {
+  return (await browser.storage.session.get("sessionStartTime")).sessionStartTime || Date.now();
 }

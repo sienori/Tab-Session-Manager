@@ -22,7 +22,8 @@ import {
   removeSession,
   deleteAllSessions,
   updateSession,
-  renameSession
+  renameSession,
+  setSessionStartTime
 } from "./save";
 import getSessions from "./getSessions";
 import { openSession } from "./open";
@@ -42,7 +43,6 @@ import { compressAllSessions } from "./compressAllSessions";
 import { startTracking, endTrackingByWindowDelete, updateTrackingStatus } from "./track";
 
 const logDir = "background/background";
-export const SessionStartTime = Date.now();
 
 let IsInit = false;
 export const init = async () => {
@@ -62,6 +62,7 @@ export const init = async () => {
 const onStartupListener = async () => {
   await init();
   log.info(logDir, "onStartupListener()");
+  await setSessionStartTime();
   await autoSaveWhenExitBrowser();
   const startupBehavior = getSettings("startupBehavior");
   if (startupBehavior === "previousSession") openLastSession();
