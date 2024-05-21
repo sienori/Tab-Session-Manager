@@ -142,7 +142,7 @@ export default [
             title: "autoSaveIntervalLabel",
             captions: ["autoSaveIntervalCaptionLabel"],
             type: "number",
-            min: 0.1,
+            min: 0.5,
             step: 0.1,
             placeholder: 15,
             default: 15
