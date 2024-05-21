@@ -71,6 +71,8 @@ const updateTemp = async () => {
   }
 };
 
+// NOTE: updateTempTimerは、updateTempを呼びすぎないためのバッファとして利用している
+// ブラウザ起動時とタブの変更直後に呼び出されるので、setTimeoutの完了前にserviceWorkerが停止することはなく、問題なく実行される想定
 let updateTempTimer;
 export const setUpdateTempTimer = async () => {
   await init();
