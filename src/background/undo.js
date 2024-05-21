@@ -4,19 +4,28 @@ import { updateSession, removeSession } from "./save";
 
 const logDir = "background/undo";
 
-let changes = [];
-let currentIndex = -1;
+const setHistory = async (changes, currentIndex) => {
+  await browser.storage.session.set({ history: { changes, currentIndex } });
+}
 
-export const recordChange = (beforeSession, afterSession) => {
+const getHistory = async () => {
+  return (await browser.storage.session.get('history')).history || { changes: [], currentIndex: -1 };
+}
+
+export const recordChange = async (beforeSession, afterSession) => {
   if (beforeSession === undefined || afterSession === undefined) return;
+  let { changes, currentIndex } = await getHistory();
+
   if (currentIndex < changes.length - 1) changes.splice(currentIndex + 1);
   changes.push({ before: beforeSession, after: afterSession });
   currentIndex = changes.length - 1;
 
+  await setHistory(changes, currentIndex);
   updateUndoStatus();
 };
 
-export const undo = () => {
+export const undo = async () => {
+  let { changes, currentIndex } = await getHistory();
   if (currentIndex < 0) return;
   log.log(logDir, "undo()", currentIndex, changes);
 
@@ -24,21 +33,25 @@ export const undo = () => {
   else removeSession(changes[currentIndex].after.id);
   currentIndex -= 1;
 
+  await setHistory(changes, currentIndex);
   updateUndoStatus();
 };
 
-export const redo = () => {
+export const redo = async () => {
+  let { changes, currentIndex } = await getHistory();
   if (currentIndex >= changes.length - 1) return;
-  log.log(logDir, "redo()", currentIndex, changes);
 
   currentIndex += 1;
   if (changes[currentIndex].after) updateSession(changes[currentIndex].after);
   else removeSession(changes[currentIndex].before.id);
 
+  await setHistory(changes, currentIndex);
   updateUndoStatus();
 };
 
-export const updateUndoStatus = () => {
+export const updateUndoStatus = async () => {
+  const { changes, currentIndex } = await getHistory();
+
   const undoStatus = {
     undoCount: currentIndex + 1,
     redoCount: changes.length - 1 - currentIndex,
