@@ -7,6 +7,7 @@ import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } fr
 import { getSettings } from "src/settings/settings";
 import ignoreUrls from "./ignoreUrls";
 import { IsTracking, updateTrackingSession } from "./track.js";
+import { init } from "./background.js";
 
 const logDir = "background/autoSave";
 let autoSaveTimer;
@@ -81,7 +82,8 @@ const updateTemp = async () => {
 };
 
 let updateTempTimer;
-export const setUpdateTempTimer = () => {
+export const setUpdateTempTimer = async () => {
+  await init();
   if (
     !getSettings("ifAutoSaveWhenClose") &&
     !getSettings("ifAutoSaveWhenExitBrowser") &&
@@ -111,6 +113,7 @@ export const autoSaveWhenOpenInCurrentWindow = async () => {
 };
 
 export const autoSaveWhenWindowClose = async removedWindowId => {
+  await init();
   if (!getSettings("ifAutoSaveWhenClose")) return;
   log.info(logDir, "autoSaveWhenWindowClose()", removedWindowId);
 

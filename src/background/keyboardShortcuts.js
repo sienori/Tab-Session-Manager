@@ -48,6 +48,7 @@ const getCurrentTabName = async () => {
 };
 
 export const onCommandListener = async command => {
+  await init();
   log.log(logDir, "onCommandListener()", command);
   switch (command) {
     case "saveAllWindow": {

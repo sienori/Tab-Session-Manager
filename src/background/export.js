@@ -78,7 +78,8 @@ function replaceFolderName(folderName) {
 
 let downloadRecords = {};
 
-export const handleDownloadsChanged = (status) => {
+export const handleDownloadsChanged = async (status) => {
+  await init();
   const downloadUrl = downloadRecords[status.id]?.downloadUrl;
   if (!downloadUrl) return;
 

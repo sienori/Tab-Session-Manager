@@ -44,57 +44,33 @@ import { startTracking, endTrackingByWindowDelete, updateTrackingStatus } from "
 const logDir = "background/background";
 export const SessionStartTime = Date.now();
 
-const addListeners = () => {
-  const handleReplace = () => replacePage();
-  browser.tabs.onActivated.addListener(handleReplace);
-  browser.windows.onFocusChanged.addListener(handleReplace);
-
-  browser.storage.onChanged.addListener((changes, areaName) => {
-    handleSettingsChange(changes, areaName);
-    setAutoSave(changes, areaName);
-    updateLogLevel();
-    resetLastBackupTime(changes);
-  });
-
-  browser.tabs.onUpdated.addListener(handleTabUpdated);
-  browser.tabs.onRemoved.addListener(handleTabRemoved);
-  browser.tabs.onCreated.addListener(setUpdateTempTimer);
-  browser.tabs.onMoved.addListener(setUpdateTempTimer);
-  browser.windows.onCreated.addListener(setUpdateTempTimer);
-  browser.windows.onRemoved.addListener(autoSaveWhenWindowClose);
-  browser.downloads.onChanged.addListener(handleDownloadsChanged);
-};
-
 let IsInit = false;
-const init = async () => {
+export const init = async () => {
+  if (IsInit) return;
   await initSettings();
   overWriteLogLevel();
   updateLogLevel();
   log.info(logDir, "init()");
   await Sessions.init();
   IsInit = true;
-  await updateOldSessions();
 
+  //TODO: service workerで動くようにする
   setAutoSave();
-  setTimeout(backupSessions, 30000);
-  addListeners();
   syncCloudAuto();
-
-  if (IsStartup) {
-    await autoSaveWhenExitBrowser();
-    const startupBehavior = getSettings("startupBehavior");
-    if (startupBehavior === "previousSession") openLastSession();
-    else if (startupBehavior === "startupSession") openStartupSessions();
-  }
 };
 
-let IsStartup = false;
 const onStartupListener = async () => {
+  await init();
   log.info(logDir, "onStartupListener()");
-  IsStartup = true;
+  await autoSaveWhenExitBrowser();
+  const startupBehavior = getSettings("startupBehavior");
+  if (startupBehavior === "previousSession") openLastSession();
+  else if (startupBehavior === "startupSession") openStartupSessions();
+  setTimeout(backupSessions, 30000);
 };
 
 const onMessageListener = async (request, sender, sendResponse) => {
+  await init();
   log.info(logDir, "onMessageListener()", request);
   switch (request.message) {
     case "save": {
@@ -199,9 +175,31 @@ const onMessageListener = async (request, sender, sendResponse) => {
   }
 };
 
+const handleReplace = async () => {
+  await init();
+  replacePage();
+}
+
+const onChangeStorageListener = async (changes, areaName) => {
+  await init();
+  handleSettingsChange(changes, areaName);
+  setAutoSave(changes, areaName);
+  updateLogLevel();
+  resetLastBackupTime(changes);
+}
+
 browser.runtime.onStartup.addListener(onStartupListener);
 browser.runtime.onInstalled.addListener(onInstalledListener);
 browser.runtime.onUpdateAvailable.addListener(onUpdateAvailableListener);
 browser.runtime.onMessage.addListener(onMessageListener);
 browser.commands.onCommand.addListener(onCommandListener);
-init();
+browser.tabs.onActivated.addListener(handleReplace);
+browser.windows.onFocusChanged.addListener(handleReplace);
+browser.tabs.onUpdated.addListener(handleTabUpdated);
+browser.tabs.onRemoved.addListener(handleTabRemoved);
+browser.tabs.onCreated.addListener(setUpdateTempTimer);
+browser.tabs.onMoved.addListener(setUpdateTempTimer);
+browser.windows.onCreated.addListener(setUpdateTempTimer);
+browser.windows.onRemoved.addListener(autoSaveWhenWindowClose);
+browser.downloads.onChanged.addListener(handleDownloadsChanged);
+browser.storage.onChanged.addListener(onChangeStorageListener);
