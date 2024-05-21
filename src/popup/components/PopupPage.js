@@ -139,7 +139,7 @@ export default class PopupPage extends Component {
       }
     }
 
-    browser.storage.onChanged.addListener(handleSettingsChange);
+    browser.storage.local.onChanged.addListener(handleSettingsChange);
     window.addEventListener("unload", this.handleUnload, { once: true });
     browser.runtime.sendMessage({ message: "updateUndoStatus" });
     browser.runtime.sendMessage({ message: "updateTrackingStatus" });
@@ -320,7 +320,7 @@ export default class PopupPage extends Component {
   };
 
   handleUnload = () => {
-    browser.storage.onChanged.removeListener(handleSettingsChange);
+    browser.storage.local.onChanged.removeListener(handleSettingsChange);
   };
 
   changeFilterValue = value => {

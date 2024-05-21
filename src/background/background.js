@@ -202,4 +202,4 @@ browser.tabs.onMoved.addListener(setUpdateTempTimer);
 browser.windows.onCreated.addListener(setUpdateTempTimer);
 browser.windows.onRemoved.addListener(autoSaveWhenWindowClose);
 browser.downloads.onChanged.addListener(handleDownloadsChanged);
-browser.storage.onChanged.addListener(onChangeStorageListener);
+browser.storage.local.onChanged.addListener(onChangeStorageListener);

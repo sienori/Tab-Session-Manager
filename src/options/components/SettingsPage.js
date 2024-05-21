@@ -20,7 +20,7 @@ export default class SettingsPage extends Component {
     overWriteLogLevel();
     updateLogLevel();
     this.setState({ isInit: true });
-    browser.storage.onChanged.addListener(handleSettingsChange);
+    browser.storage.local.onChanged.addListener(handleSettingsChange);
   }
 
   render() {
