@@ -1,4 +1,3 @@
-import axios from "axios";
 import log from "loglevel";
 import { refreshAccessToken } from "./cloudAuth";
 import { sliceTextByBytes } from "../common/sliceTextByBytes";
@@ -8,36 +7,37 @@ const logDir = "background/cloudAPIs";
 export const listFiles = async (pageToken = "") => {
   log.log(logDir, "listFiles()");
   const accessToken = await refreshAccessToken();
-  const options = {
-    method: "get",
-    url: "https://www.googleapis.com/drive/v3/files",
-    headers: { Authorization: `Bearer ${accessToken}` },
-    params: {
-      spaces: "appDataFolder",
-      fields: [
-        "files/id",
-        "files/name",
-        "files/appProperties/lastEditedTime",
-        "files/appProperties/tag",
-        "nextPageToken"
-      ].join(","),
-      pageSize: 1000,
-      pageToken: pageToken
-    }
-  };
+  const params = {
+    spaces: "appDataFolder",
+    fields: [
+      "files/id",
+      "files/name",
+      "files/appProperties/lastEditedTime",
+      "files/appProperties/tag",
+      "nextPageToken"
+    ].join(","),
+    pageSize: 1000,
+    pageToken: pageToken
+  }
+  const url = `https://www.googleapis.com/drive/v3/files?${new URLSearchParams(params)}`;
+  const headers = { Authorization: `Bearer ${accessToken}` }
 
-  const result = await axios(options).catch(e => {
-    log.error(logDir, "listFiles()", e.response);
-  });
+  try {
+    const response = await fetch(url, { headers: headers });
+    const result = await response.json();
 
-  let files = result.data.files;
-  if (result.data.nextPageToken) files = files.concat(await listFiles(result.data.nextPageToken));
-  files = files.map(file => {
-    file.appProperties.tag = file.appProperties?.tag?.split(",") || [];
-    return file;
-  });
-  log.log(logDir, "=>listFiles()", files);
-  return files;
+    let files = result.files;
+    if (result.nextPageToken) files = files.concat(await listFiles(result.nextPageToken));
+    files = files.map(file => {
+      file.appProperties.tag = file.appProperties?.tag?.split(",") || [];
+      return file;
+    });
+    log.log(logDir, "=>listFiles()", files);
+    return files;
+  } catch (e) {
+    log.error(logDir, "listFiles()", e);
+    throw new Error();
+  }
 };
 
 export const uploadSession = async (session, fileId = "") => {
@@ -80,19 +80,20 @@ export const uploadSession = async (session, fileId = "") => {
 export const downloadFile = async fileId => {
   log.log(logDir, "downloadFile()", fileId);
   const accessToken = await refreshAccessToken();
-  const options = {
-    method: "get",
-    url: `https://www.googleapis.com/drive/v3/files/${fileId}`,
-    headers: { Authorization: `Bearer ${accessToken}` },
-    params: { alt: "media" }
-  };
+  const params = { alt: "media" };
+  const url = `https://www.googleapis.com/drive/v3/files/${fileId}?${new URLSearchParams(params)}`;
+  const headers = { Authorization: `Bearer ${accessToken}` };
 
-  const result = await axios(options).catch(e => {
-    log.error(logDir, "downloadFile", e.response);
-  });
+  try {
+    const response = await fetch(url, { headers: headers })
+    const result = await response.json();
 
-  log.log(logDir, "=>downloadFile()", result.data);
-  return result.data;
+    log.log(logDir, "=>downloadFile()", result);
+    return result;
+  } catch (e) {
+    log.error(logDir, "downloadFile", e);
+    throw new Error();
+  }
 };
 
 export const deleteAllFiles = async () => {
@@ -106,13 +107,13 @@ export const deleteAllFiles = async () => {
 export const deleteFile = async fileId => {
   log.log(logDir, "deleteFiles()", fileId);
   const accessToken = await refreshAccessToken();
-  const options = {
-    method: "delete",
-    url: `https://www.googleapis.com/drive/v3/files/${fileId}`,
-    headers: { Authorization: `Bearer ${accessToken}` }
-  };
+  const url = `https://www.googleapis.com/drive/v3/files/${fileId}`;
+  const headers = { Authorization: `Bearer ${accessToken}` };
 
-  await axios(options).catch(e => {
+  try {
+    await fetch(url, { method: "DELETE", headers: headers });
+  } catch (e) {
     log.error(logDir, "deleteFiles()", e.response);
-  });
+    throw new Error();
+  }
 };

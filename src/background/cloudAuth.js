@@ -1,5 +1,4 @@
 import browser from "webextension-polyfill";
-import axios from "axios";
 import log from "loglevel";
 import { clientId, clientSecret } from "../credentials";
 import { getSettings, setSettings } from "../settings/settings";
@@ -81,60 +80,65 @@ const getAuthCode = async (email = "", shouldShowLogin = true) => {
 
 const getRefreshTokens = async authCode => {
   log.log(logDir, "getRefreshTokens()");
-  const options = {
-    method: "post",
-    url: "https://www.googleapis.com/oauth2/v4/token",
-    params: {
-      client_id: clientId,
-      client_secret: clientSecret,
-      code: authCode,
-      grant_type: "authorization_code",
-      redirect_uri: browser.identity.getRedirectURL()
-    }
+  const url = "https://www.googleapis.com/oauth2/v4/token";
+  const params = {
+    client_id: clientId,
+    client_secret: clientSecret,
+    code: authCode,
+    grant_type: "authorization_code",
+    redirect_uri: browser.identity.getRedirectURL()
   };
 
-  const result = await axios(options)
-    .catch(e => {
-      log.error(logDir, "getRefreshTokens()", e.response);
-      throw new Error();
-    });
+  try {
+    const response = await fetch(url, { method: "POST", body: JSON.stringify(params) });
+    const result = await response.json();
 
-  return {
-    accessToken: result.data.access_token,
-    expiresIn: result.data.expires_in,
-    refreshToken: result.data.refresh_token
-  };
+    return {
+      accessToken: result.access_token,
+      expiresIn: result.expires_in,
+      refreshToken: result.refresh_token
+    };
+  }
+  catch (e) {
+    log.error(logDir, "getRefreshTokens()", e);
+    throw new Error();
+  }
 };
 
 const getAccessToken = async refreshToken => {
   log.log(logDir, "getAccessToken()");
-  const options = {
-    method: "post",
-    url: "https://www.googleapis.com/oauth2/v4/token",
-    params: {
-      client_id: clientId,
-      client_secret: clientSecret,
-      grant_type: "refresh_token",
-      refresh_token: refreshToken
-    }
-  };
+  const url = "https://www.googleapis.com/oauth2/v4/token";
+  const params = {
+    client_id: clientId,
+    client_secret: clientSecret,
+    grant_type: "refresh_token",
+    refresh_token: refreshToken
+  }
 
-  const result = await axios(options)
-    .catch(e => {
-      log.error(logDir, "getAccessToken()", e.response);
-      throw new Error();
-    });
+  try {
+    const response = await fetch(url, { method: "POST", body: JSON.stringify(params) });
+    const result = await response.json();
 
-  return {
-    accessToken: result.data.access_token,
-    expiresIn: result.data.expires_in
-  };
+    return {
+      accessToken: result.access_token,
+      expiresIn: result.expires_in
+    };
+  } catch (e) {
+    log.error(logDir, "getAccessToken()", e.response);
+    throw new Error();
+  }
 };
 
 const getEmail = async accessToken => {
   const url = "https://www.googleapis.com/oauth2/v1/userinfo" + `?access_token=${accessToken}`;
-  const response = await axios.get(url);
-  return response.data.email;
+  try {
+    const response = await fetch(url);
+    const result = await response.json();
+    return result.email;
+  } catch (e) {
+    log.error(logDir, "getEmail()", e);
+    throw new Error();
+  }
 };
 
 const setTokenExpiration = async expirationSec => {
@@ -170,7 +174,9 @@ export const refreshAccessToken = async (shouldShowLogin = true) => {
 
 const revokeToken = async token => {
   if (!token) return;
-  let params = new URLSearchParams();
-  params.append("token", token);
-  await axios.post(`https://oauth2.googleapis.com/revoke`, params).catch(e => { });
+  const params = {
+    token: token
+  };
+  await fetch("https://oauth2.googleapis.com/revoke", { method: "POST", body: JSON.stringify(params) })
+
 };
