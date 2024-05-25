@@ -11,12 +11,12 @@ export const showSyncErrorBadge = () => {
 };
 
 export const showBadge = (text, backgroundColor, textColor = "#fff") => {
-  browser.browserAction.setBadgeBackgroundColor({ color: backgroundColor });
+  browser.action.setBadgeBackgroundColor({ color: backgroundColor });
   const isEnableSetTextColor = browserInfo().name == "Firefox" && browserInfo().version >= 63;
-  if (isEnableSetTextColor) browser.browserAction.setBadgeTextColor({ color: textColor });
-  browser.browserAction.setBadgeText({ text: text });
+  if (isEnableSetTextColor) browser.action.setBadgeTextColor({ color: textColor });
+  browser.action.setBadgeText({ text: text });
 };
 
 export const hideBadge = () => {
-  browser.browserAction.setBadgeText({ text: "" });
+  browser.action.setBadgeText({ text: "" });
 };
