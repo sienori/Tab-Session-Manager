@@ -54,8 +54,6 @@ export const init = async () => {
   log.info(logDir, "init()");
   await Sessions.init();
   IsInit = true;
-
-  syncCloudAuto();
 };
 
 const onStartupListener = async () => {
@@ -68,6 +66,7 @@ const onStartupListener = async () => {
   else if (startupBehavior === "startupSession") openStartupSessions();
   setAutoSave();
   setTimeout(backupSessions, 30000);
+  syncCloudAuto();
 };
 
 const onMessageListener = async (request, sender, sendResponse) => {

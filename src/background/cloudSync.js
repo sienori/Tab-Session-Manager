@@ -169,6 +169,7 @@ export const syncCloudAuto = () => {
   const enabledAutoSync = getSettings("enabledAutoSync");
   if (!(isLoggedIn && enabledAutoSync)) return;
 
+  // 起動時またはセッション保存時に呼び出されるため、10秒以内にServiceWorkerが停止することはない想定
   clearTimeout(autoSyncTimer);
   autoSyncTimer = setTimeout(async () => {
     try {
