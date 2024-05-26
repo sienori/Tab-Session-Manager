@@ -6,7 +6,7 @@ import { getSessionsByTag } from "./tag.js";
 import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
 import ignoreUrls from "./ignoreUrls";
-import { IsTracking, updateTrackingSession } from "./track.js";
+import { getTrackingInfo, updateTrackingSession } from "./track.js";
 import { init } from "./background.js";
 
 const logDir = "background/autoSave";
@@ -65,7 +65,8 @@ const updateTemp = async () => {
     if (tempSessions[0]) session.id = tempSessions[0].id;
     await saveSession(session, false);
 
-    if (IsTracking) updateTrackingSession(session);
+    const { isTracking } = await getTrackingInfo();
+    if (isTracking) updateTrackingSession(session);
   } catch (e) {
     log.error(logDir, "updateTemp()", e);
   }
@@ -76,11 +77,12 @@ const updateTemp = async () => {
 let updateTempTimer;
 export const setUpdateTempTimer = async () => {
   await init();
+  const { isTracking } = await getTrackingInfo();
   if (
     !getSettings("ifAutoSaveWhenClose") &&
     !getSettings("ifAutoSaveWhenExitBrowser") &&
     !getSettings("ifOpenLastSessionWhenStartUp") &&
-    !IsTracking
+    !isTracking
   )
     return;
 
