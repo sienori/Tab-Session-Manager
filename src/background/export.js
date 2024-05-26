@@ -3,6 +3,7 @@ import moment from "moment";
 import log from "loglevel";
 import getSessions from "./getSessions";
 import { getSettings } from "../settings/settings";
+import { init } from "./background";
 
 const logDir = "background/export";
 
@@ -12,12 +13,7 @@ export default async function exportSessions(id = null, folderName = "", isBacku
   if (sessions == undefined) return;
   if (!Array.isArray(sessions)) sessions = [sessions];
 
-  const downloadUrl = URL.createObjectURL(
-    new Blob([JSON.stringify(sessions, null, "  ")], {
-      type: "application/json"
-    })
-  );
-
+  const downloadUrl = await createObjectURL(sessions);
   const replacedFolderName = replaceFolderName(folderName);
   const fileName = generateFileName(sessions, isBackup);
 
@@ -30,7 +26,7 @@ export default async function exportSessions(id = null, folderName = "", isBacku
     })
     .catch(e => {
       log.warn(logDir, "exportSessions()", e);
-      URL.revokeObjectURL(downloadUrl);
+      revokeObjectURL(downloadUrl);
     });
 
   if (downloadId) recordDownloadUrl(downloadId, downloadUrl, isBackup);
@@ -76,6 +72,7 @@ function replaceFolderName(folderName) {
   return folderName;
 }
 
+// バックアップ開始からダウンロード完了までの間にServiceWorkerは停止しない想定
 let downloadRecords = {};
 
 export const handleDownloadsChanged = async (status) => {
@@ -83,10 +80,10 @@ export const handleDownloadsChanged = async (status) => {
   const downloadUrl = downloadRecords[status.id]?.downloadUrl;
   if (!downloadUrl) return;
 
-  if (status.state?.current === "complete") revokeDownloadUrl(status.id);
+  if (status.state?.current === "complete") await revokeDownloadUrl(status.id);
   if (status?.error?.current === "FILE_FAILED") {
     log.error(logDir, "handleDownloadsChanged()", "failed", status, downloadRecords[status.id]);
-    revokeDownloadUrl(status.id);
+    await revokeDownloadUrl(status.id);
   }
 };
 
@@ -94,9 +91,48 @@ const recordDownloadUrl = (downloadId, downloadUrl, isBackup) => {
   downloadRecords[downloadId] = { downloadUrl, isBackup };
 };
 
-const revokeDownloadUrl = (downloadId) => {
+const revokeDownloadUrl = async (downloadId) => {
   const { downloadUrl, isBackup } = downloadRecords[downloadId];
   if (isBackup) browser.downloads.erase({ id: downloadId });
-  URL.revokeObjectURL(downloadUrl);
+  revokeObjectURL(downloadUrl);
   delete downloadRecords[downloadId];
 };
+
+const revokeObjectURL = downloadUrl => {
+  if (URL?.revokeObjectURL) {
+    URL.revokeObjectURL(downloadUrl);
+  } else {
+    browser.runtime.sendMessage({
+      message: "offscreen_revokeObjectUrl",
+      downloadUrl: downloadUrl
+    });
+  }
+}
+
+const createObjectURL = async (sessions) => {
+  if (URL?.createObjectURL) {
+    return URL.createObjectURL(
+      new Blob([JSON.stringify(sessions, null, "  ")], {
+        type: "application/json"
+      })
+    );
+  } else {
+    // ChromeのServiceWorkerではURL.createObjectURLが利用できないため、offscreen経由で生成する
+    const existingContexts = await browser.runtime.getContexts({
+      contextTypes: ['OFFSCREEN_DOCUMENT'],
+      documentUrls: [browser.runtime.getURL("offscreen/index.html")]
+    });
+    if (existingContexts == 0) {
+      await browser.offscreen.createDocument({
+        url: "offscreen/index.html",
+        reasons: ["BLOBS"],
+        justification: 'Use URL.createObjectURL',
+      });
+    }
+
+    return await browser.runtime.sendMessage({
+      message: "offscreen_createObjectUrl",
+      sessions: sessions
+    });
+  }
+}

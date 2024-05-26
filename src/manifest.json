@@ -10,7 +10,8 @@
     "tabs",
     "downloads",
     "identity",
-    "alarms"
+    "alarms",
+    "offscreen"
   ],
   "optional_host_permissions": [
     "https://www.googleapis.com/*"

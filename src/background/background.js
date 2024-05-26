@@ -65,8 +65,8 @@ const onStartupListener = async () => {
   if (startupBehavior === "previousSession") openLastSession();
   else if (startupBehavior === "startupSession") openStartupSessions();
   setAutoSave();
-  setTimeout(backupSessions, 30000);
   syncCloudAuto();
+  browser.alarms.create("backupSessions", { delayInMinutes: 0.5 });
 };
 
 const onMessageListener = async (request, sender, sendResponse) => {
@@ -194,6 +194,8 @@ const onAlarmListener = async (alarmInfo) => {
   switch (alarmInfo.name) {
     case "autoSaveRegular":
       return autoSaveRegular();
+    case "backupSessions":
+      return backupSessions();
   }
 }
 
