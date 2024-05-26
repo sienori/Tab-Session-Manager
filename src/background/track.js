@@ -51,7 +51,20 @@ export const updateTrackingSession = async (tempSession) => {
   }
 };
 
+let _isLocked = false;
+const waitLock = async () => {
+  while (_isLocked) {
+    return new Promise(resolve => setTimeout(() => {
+      resolve(waitLock());
+    }, 10));
+  }
+}
+
 export const startTracking = async (sessionId, originalWindowId, openedWindowId) => {
+  // トラッキングセッションに複数ウィンドウが含まれる場合、trackingInfoの取得と更新が競合しすべて反映されないためロックを取る
+  if (_isLocked) await waitLock();
+  _isLocked = true;
+
   let { trackingWindows, isTracking } = await getTrackingInfo();
   // 同一のトラッキングセッションが複数開かれた際に、最後に開かれたもののみ追跡する
   trackingWindows = trackingWindows.filter(x => x.openedWindowId != originalWindowId && x.originalWindowId != originalWindowId);
@@ -66,6 +79,7 @@ export const startTracking = async (sessionId, originalWindowId, openedWindowId)
   }
 
   await setTrackingInfo(trackingWindows, isTracking);
+  _isLocked = false;
   await updateTrackingStatus();
   log.log(logDir, "startTracking()", { sessionId, originalWindowId, openedWindowId, trackingWindows });
 };
