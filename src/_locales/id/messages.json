@@ -339,7 +339,7 @@
     "message": "Interval (menit)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Nilai minimum 0.1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Jumlah maksimum yang disimpan"
