@@ -339,7 +339,7 @@
     "message": "儲存間隔(分鐘) : "
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "最小值為 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "最大儲存數量"
