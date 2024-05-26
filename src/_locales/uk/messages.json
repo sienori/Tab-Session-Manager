@@ -339,7 +339,7 @@
     "message": "Інтервал (хвилини)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Мінімальне значення 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Найбільша кількість збережень"
