@@ -339,7 +339,7 @@
     "message": "Intervallo (minuti)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Valore minimo 0.1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Numero massimo salvato"
