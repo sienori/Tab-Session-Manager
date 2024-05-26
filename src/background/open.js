@@ -4,7 +4,7 @@ import log from "loglevel";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
 import { updateTabGroups } from "../common/tabGroups";
-import { isTrackingSession, startTracking } from "./track.js";
+import { isTrackingSession, setLastFocusedWindowId, startTracking } from "./track.js";
 
 const logDir = "background/open";
 
@@ -45,6 +45,8 @@ export async function openSession(session, property = "openInNewWindow") {
         }
       }
       let currentWindow
+      // 開いたウィンドウがトラッキングセッションに追加されるのを防ぐ
+      await setLastFocusedWindowId(browser.windows.WINDOW_ID_NONE);
       try {
         currentWindow = await browser.windows.create(createData);
       } catch (e) {

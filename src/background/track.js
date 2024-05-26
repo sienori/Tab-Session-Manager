@@ -11,7 +11,16 @@ const setTrackingInfo = async (trackingWindows, isTracking) => {
 }
 
 export const getTrackingInfo = async () => {
-  return (await browser.storage.session.get('trackingInfo')).trackingInfo || { trackingWindows: [], isTracking: false };
+  return (await browser.storage.session.get("trackingInfo")).trackingInfo || { trackingWindows: [], isTracking: false };
+}
+
+export const setLastFocusedWindowId = async (lastFocusedWindowId) => {
+  log.log(logDir, 'setLastFocusedWindowId()', lastFocusedWindowId);
+  await browser.storage.session.set({ lastFocusedWindowId });
+}
+
+const getLastFocusedWindowId = async () => {
+  return (await browser.storage.session.get("lastFocusedWindowId")).lastFocusedWindowId || browser.windows.WINDOW_ID_NONE;
 }
 
 export const updateTrackingSession = async (tempSession) => {
@@ -49,21 +58,30 @@ export const startTracking = async (sessionId, originalWindowId, openedWindowId)
   trackingWindows.push({ sessionId, originalWindowId, openedWindowId });
 
   if (!isTracking) {
+    browser.windows.onFocusChanged.addListener(setLastFocusedWindowId);
     browser.windows.onRemoved.addListener(endTrackingByWindowClose);
     browser.windows.onCreated.addListener(handleCreateWindow);
     isTracking = true;
+    setLastFocusedWindowId(openedWindowId);
   }
 
   await setTrackingInfo(trackingWindows, isTracking);
-  updateTrackingStatus();
-  log.info(logDir, "startTracking()", trackingWindows);
+  await updateTrackingStatus();
+  log.log(logDir, "startTracking()", { sessionId, originalWindowId, openedWindowId, trackingWindows });
 };
 
 const handleCreateWindow = async (window) => {
   if (!getSettings("shouldTrackNewWindow")) return;
+
+  // trackingWindowsから開かれたウィンドウのみをトラッキングセッションに追加する
+  const lastFocusedWindowId = await getLastFocusedWindowId();
   const { trackingWindows } = await getTrackingInfo();
-  // TODO: 初回にundefinedになる
-  startTracking(trackingWindows[trackingWindows.length - 1].sessionId, window.id, window.id);
+  const focusedWindow = trackingWindows.find(x => x.openedWindowId == lastFocusedWindowId || x.originalWindowId == lastFocusedWindowId);
+
+  log.log(logDir, "handleCreateWindow()", { window, lastFocusedWindowId, trackingWindows, focusedWindow });
+  if (!focusedWindow || lastFocusedWindowId == browser.windows.WINDOW_ID_NONE) return;
+
+  await startTracking(focusedWindow.sessionId, window.id, window.id);
 };
 
 const endTrackingByWindowClose = async (removedWindowId) => {
@@ -91,6 +109,7 @@ const finalizeEndTracking = async () => {
   let { trackingWindows, isTracking } = await getTrackingInfo();
   if (trackingWindows.length == 0) {
     isTracking = false;
+    browser.windows.onFocusChanged.removeListener(setLastFocusedWindowId);
     browser.windows.onRemoved.removeListener(endTrackingByWindowClose);
     browser.windows.onCreated.removeListener(handleCreateWindow);
     await setTrackingInfo(trackingWindows, isTracking);
