@@ -2,7 +2,6 @@
   "name": "tab-session-manager",
   "version": "0.0.0",
   "dependencies": {
-    "axios": "^0.21.2",
     "browser-image-compression": "^1.0.14",
     "browser-info": "^1.2.0",
     "clone": "^2.1.2",
