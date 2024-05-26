@@ -339,7 +339,7 @@
     "message": "Промежуток (минуты)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Наименьшее значение 0,1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Предельное число сохранений"
