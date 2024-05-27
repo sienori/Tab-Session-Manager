@@ -339,7 +339,7 @@
     "message": "Khoảng thời gian (phút)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Giá trị nhỏ nhất 0,1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Số lượng lưu lại lớn nhất"

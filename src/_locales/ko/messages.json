@@ -339,7 +339,7 @@
     "message": "간격 (분)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "최소 0.1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "최대 저장 개수"

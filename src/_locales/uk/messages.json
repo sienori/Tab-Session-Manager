@@ -33,7 +33,7 @@
     "message": "Зберегти лише поточне вікно"
   },
   "categoryFilterLabel": {
-    "message": "Фільтр категорії"
+    "message": "Фільтр за категоріями"
   },
   "sortLabel": {
     "message": "Сортування"
@@ -201,10 +201,10 @@
     "message": "Створити копію сесії"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Відстежуємо зміни вікна"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Видалити відстеження"
   },
   "registerStartupLabel": {
     "message": "Зареєструвати для запуску"
@@ -291,10 +291,10 @@
     "message": "Значок відкладеного завантаження вкладки не відображається."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Відновити розташування вікон"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Відновити розмір і положення вікон під час відкриття сесії."
   },
   "startupLabel": {
     "message": "Початкові дії"
@@ -318,16 +318,16 @@
     "message": "Нічого не робити"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Сесія відстеження"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Відстеження"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Відстежувати нещодавно відкриті вікна"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Коли нове вікно відкривається у сеансі відстеження, включаємо його теж у відстеженні."
   },
   "ifAutoSaveLabel": {
     "message": "Періодично зберігати сесію"
@@ -339,7 +339,7 @@
     "message": "Інтервал (хвилини)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Найменше значення 0.1"
+    "message": "Мінімальне значення 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Найбільша кількість збережень"
@@ -390,7 +390,7 @@
     "message": "Індивідуальна резервна копія"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Кожна сесія збережена в окремому файлі.<br>Якщо вимкнено, всі сесії будуть збережені як один файл, що може зашкодити вашому сховищу."
   },
   "backupFolderLabel": {
     "message": "Зберегти розташування"
@@ -447,16 +447,16 @@
     "message": "Маркувати всі сесії назвою пристрою?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Стискати піктограми"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Стискати піктограми під час збереження сесії."
   },
   "compressAllSessionsLabel": {
     "message": "Стискати всі сеанси"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Стиснути піктограми для всіх збережених сесій. Це дозволить зберегти використання пам'яті та прискорити завантаження сесії."
   },
   "compressLabel": {
     "message": "Стиснути"
@@ -486,7 +486,7 @@
     "message": "Зберегти групу вкладок"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Зберегти та відновити стан груп вкладок. Щоб увімкнути цю функцію, вам потрібно встановити наступне розширення."
   },
   "tstDelayCaptionLabel": {
     "message": "Для відновлення стану дерева та відкриття вкладки потрібен певний час. Збільште це значення, якщо дерево не відновлюється коректно."
@@ -522,7 +522,7 @@
     "message": "Синхронізацію завершено."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Вимагає авторизації для хмарної синхронізації."
   },
   "signInLabel": {
     "message": "Увійти"
@@ -531,10 +531,10 @@
     "message": "Вийти"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Автоматично синхронізувати"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Виконувати синхронізацію з хмарою, коли запущений браузер чи при збереженні сесії."
   },
   "includesAutoSaveToSyncLabel": {
     "message": "Синхронізувати автозбереження сеансів"
@@ -645,13 +645,13 @@
     "message": "Імпорт сесій"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Завантажити збережені сесії на комп'ютері та додати їх до списку сесій."
   },
   "importCaptionLabel2": {
     "message": "Підтримувані файли:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Як імпортувати сесії з інших розширень"
   },
   "importButtonLabel": {
     "message": "Перегляд..."
@@ -756,7 +756,7 @@
     "message": "Додатки Firefox"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Веб-магазин Chrome"
   },
   "edgeLabel": {
     "message": "Додатки Edge"
