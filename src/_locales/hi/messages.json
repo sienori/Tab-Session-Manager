@@ -339,7 +339,7 @@
     "message": "मध्यान्तर (मिनट)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "न्यूनतम मान 0.1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "अधिकतम संख्या सहेजा गया"
