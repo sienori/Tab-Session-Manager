@@ -339,7 +339,7 @@
     "message": "Intervāls (minūtes)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Maksimālais skaits saglabāts"
