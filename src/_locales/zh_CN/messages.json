@@ -339,7 +339,7 @@
     "message": "间隔（分钟）"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "最小值为 0.1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "最大数量"
