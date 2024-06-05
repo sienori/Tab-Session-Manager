@@ -85,10 +85,10 @@ export async function openSession(session, property = "openInNewWindow") {
           await openInCurrentWindow();
           break;
         case "openInNewWindow":
-          openInNewWindow();
+          await openInNewWindow();
           break;
         case "addToCurrentWindow":
-          addToCurrentWindow();
+          await addToCurrentWindow();
           break;
       }
     } else {
