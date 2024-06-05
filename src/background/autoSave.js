@@ -3,9 +3,8 @@ import uuidv4 from "uuid/v4";
 import log from "loglevel";
 import { openSession } from "./open.js";
 import { getSessionsByTag } from "./tag.js";
-import { loadCurrentSession, saveCurrentSession, saveSession, removeSession } from "./save.js";
+import { loadCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
-import ignoreUrls from "./ignoreUrls";
 import { getTrackingInfo, updateTrackingSession } from "./track.js";
 import { init } from "./background.js";
 

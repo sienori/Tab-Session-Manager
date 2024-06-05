@@ -1,6 +1,5 @@
 import browser from "webextension-polyfill";
 import log from "loglevel";
-import updateOldSessions from "./updateOldSessions";
 import {
   setAutoSave,
   handleTabUpdated,
