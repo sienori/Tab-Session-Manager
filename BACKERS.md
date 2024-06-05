@@ -167,3 +167,8 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Gaspar Ghostie
 - Mitchell Marks
 - Noah Andrews
+- Oli
+- Willis Hernandez
+- Jack
+- Yvonne Wilson
+- Mal Den
