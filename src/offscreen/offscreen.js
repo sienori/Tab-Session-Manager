@@ -1,6 +1,19 @@
 import browser from "webextension-polyfill";
 
-const createObjectURL = sessions => {
+let downloadCounter = 0;
+
+const waitForDownloadLimit = async (limit) => {
+    while (downloadCounter > limit) {
+        return new Promise(resolve => setTimeout(() => {
+            resolve(waitForDownloadLimit(limit));
+        }, 100));
+    }
+}
+
+const createObjectURL = async sessions => {
+    downloadCounter++;
+    await waitForDownloadLimit(5);
+
     return URL.createObjectURL(
         new Blob([JSON.stringify(sessions, null, "  ")], {
             type: "application/json"
@@ -9,13 +22,14 @@ const createObjectURL = sessions => {
 }
 
 const revokeObjectURL = downloadUrl => {
+    downloadCounter--;
     URL.revokeObjectURL(downloadUrl);
 }
 
 const onMessageListener = async (request, sender, sendResponse) => {
     switch (request.message) {
         case "offscreen_createObjectUrl":
-            return createObjectURL(request.sessions);
+            return await createObjectURL(request.sessions);
         case "offscreen_revokeObjectUrl":
             return revokeObjectURL(request.downloadUrl);
     }
