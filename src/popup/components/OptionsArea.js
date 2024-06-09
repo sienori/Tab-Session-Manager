@@ -156,6 +156,8 @@ export default class OptionsArea extends Component {
               <option value="oldest">{browser.i18n.getMessage("oldestLabel")}</option>
               <option value="aToZ">{browser.i18n.getMessage("aToZLabel")}</option>
               <option value="zToA">{browser.i18n.getMessage("zToALabel")}</option>
+              <option value="tabsDes">{browser.i18n.getMessage("tabsDesLabel")}</option>
+              <option value="tabsAsc">{browser.i18n.getMessage("tabsAscLabel")}</option>
             </select>
           </div>
           <button

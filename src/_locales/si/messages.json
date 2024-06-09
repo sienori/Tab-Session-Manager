@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "ZA"
   },
+  "tabsDesLabel": {
+    "message": "tabs ↓"
+  },
+  "tabsAscLabel": {
+    "message": "tabs ↑"
+  },
   "searchBarPlaceholder": {
     "message": "සැසිය හෝ ටැබ් නම අනුව සොයන්න"
   },

@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "tabs ↓"
+  },
+  "tabsAscLabel": {
+    "message": "tabs ↑"
+  },
   "searchBarPlaceholder": {
     "message": "依瀏覽階段名稱或分頁名稱搜尋"
   },

@@ -38,6 +38,7 @@ const namelessSort = (a, b) => {
   else if (a.name != "" && b.name == "") return -1;
   else if (a.name == b.name) return newestSort(a, b);
 };
+const tabsSort = (a, b) => b.tabsNumber - a.tabsNumber;
 
 export const getSortedSessions = (sessions, sortValue, filterValue, searchWords, searchedSessionIds) => {
   let sortedSessions = sessions.map(session => ({
@@ -66,6 +67,13 @@ export const getSortedSessions = (sessions, sortValue, filterValue, searchWords,
       sortedSessions.sort(alphabeticallySort);
       sortedSessions.reverse();
       sortedSessions.sort(namelessSort);
+      break;
+    case "tabsAsc":
+      sortedSessions.sort(tabsSort);
+      break;
+    case "tabsDes":
+      sortedSessions.sort(tabsSort);
+      sortedSessions.reverse();
       break;
   }
 
