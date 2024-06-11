@@ -90,19 +90,19 @@
     "message": "还原"
   },
   "failedDeleteSessionLabel": {
-    "message": "删除会话失败。"
+    "message": "会话删除失败。"
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "删除会话窗口失败。"
+    "message": "会话窗口删除失败。"
   },
   "failedDeleteSessionTabLabel": {
-    "message": "删除会话标签失败。"
+    "message": "会话标签删除失败。"
   },
   "sessionSavedLabel": {
     "message": "会话已保存。"
   },
   "failedSaveSessionLabel": {
-    "message": "保存会话失败。"
+    "message": "会话保存失败。"
   },
   "cancelLabel": {
     "message": "取消"
@@ -339,10 +339,10 @@
     "message": "间隔（分钟）"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "最小值为 0.5"
   },
   "autoSaveLimitLabel": {
-    "message": "最大数量"
+    "message": "最大保存数量"
   },
   "autoSaveLimitCaptionLabel": {
     "message": "（以此种方式）自动保存的会话的最大数量。"
@@ -354,7 +354,7 @@
     "message": "保存仅关闭单个窗口的会话。"
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "最大数量"
+    "message": "最大保存数量"
   },
   "autoSaveWhenCloseCaptionLabel": {
     "message": "（以此种方式）自动保存的会话的最大数量。"
@@ -369,7 +369,7 @@
     "message": "最大保存数量"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "会话保存最大数量（以此方式）。"
+    "message": "（以此方式）保存会话的最大数量。"
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "使用页面标题作为自动保存会话的名称"
@@ -501,7 +501,7 @@
     "message": "云同步"
   },
   "enabledCloudSyncLabel": {
-    "message": "开启云同步（Beta）"
+    "message": "启用云同步（Beta）"
   },
   "enabledCloudSyncCaptionLabel": {
     "message": "保存会话到 Google Drive™ 并与其它计算机同步。"
@@ -612,7 +612,7 @@
     "message": "查看更多"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "点击查看更新信息"
+    "message": "点击查看更新信息。"
   },
   "isDebugModeLabel": {
     "message": "开启调试模式"
@@ -624,19 +624,19 @@
     "message": "导出配置"
   },
   "exportSettingsCaptionLabel": {
-    "message": "将配置保存为json 文件"
+    "message": "将配置保存为 json 文件。"
   },
   "importSettingsLabel": {
     "message": "导入配置"
   },
   "importSettingsCaptionLabel": {
-    "message": "读取已保存的配置文件"
+    "message": "读取已保存的配置文件。"
   },
   "resetSettingsLabel": {
     "message": "恢复默认设置"
   },
   "resetSettingsCaptionLabel": {
-    "message": "将所有设置恢复为默认值"
+    "message": "将所有设置恢复为默认值。"
   },
   "resetSettingsButtonLabel": {
     "message": "恢复"
