@@ -108,16 +108,16 @@
     "message": "Скасувати"
   },
   "undoLabel": {
-    "message": "Скасувати"
+    "message": "Повернути"
   },
   "redoLabel": {
     "message": "Повторити"
   },
   "addTagLabel": {
-    "message": "Додати тег"
+    "message": "Додати мітку"
   },
   "removeTagLabel": {
-    "message": "Видалити тег"
+    "message": "Вилучити мітку"
   },
   "inputTagLabel": {
     "message": "Уведіть назву мітки"
