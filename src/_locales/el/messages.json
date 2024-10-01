@@ -120,7 +120,7 @@
     "message": "Κατάργηση ετικέτας"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Εισαγάγετε το όνομα της ετικέτας"
   },
   "detailLabel": {
     "message": "Λεπτομέρεια"
@@ -339,7 +339,7 @@
     "message": "Διάστημα (σε λεπτά)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Ελάχιστη τιμή: 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Μέγιστος αριθμός Αποθηκευμένων"
@@ -447,22 +447,22 @@
     "message": "Εφαρμογή του ονόματος συσκευής σε όλες τις συνεδρίες;"
   },
   "compressFaviconUrlLabel": {
-    "message": "Compress favicons"
+    "message": "Συμπίεση εικονιδίων"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Compress the favicons when saving a session."
+    "message": "Συμπίεση των εικονιδίων ιστοτόπων κατά την αποθήκευση μιας συνεδρίας."
   },
   "compressAllSessionsLabel": {
-    "message": "Compress all sessions"
+    "message": "Συμπίεση όλων των συνεδριών"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Compress the favicons of all currently saved sessions. This will save memory usage and speed up session loading."
+    "message": "Συμπίεση των εικονιδίων ιστοτόπων από όλες τις αποθηκευμένες συνεδρίες. Αυτό θα μειώσει τη χρήση μνήμης και θα επιταχύνει τη φόρτωση της συνεδρίας."
   },
   "compressLabel": {
     "message": "Συμπίεση"
   },
   "compressAllSessionsConfirmLabel": {
-    "message": "Compress all sessions?"
+    "message": "Συμπίεση όλων των συνεδριών;"
   },
   "compressingLabel": {
     "message": "Συμπίεση..."
@@ -483,7 +483,7 @@
     "message": "Αναμονή προτού εκτελεστεί η επαναφορά (milliseconds)"
   },
   "saveTabGroupsLabel": {
-    "message": "Save tab groups"
+    "message": "Αποθήκευση ομάδων καρτελών"
   },
   "saveTabGroupsCaptionLabel": {
     "message": "Αποθηκεύστε και επαναφέρετε την κατάσταση των ομάδων καρτελών. Για να ενεργοποιήσετε αυτήν τη λειτουργία, πρέπει να εγκαταστήσετε την ακόλουθη επέκταση."
@@ -645,13 +645,13 @@
     "message": "Εισαγωγή συνεδριών"
   },
   "importCaptionLabel": {
-    "message": "Load sessions saved on the computer and add them to the session List."
+    "message": "Φόρτωση των συνεδριών που έχουν αποθηκευτεί στον υπολογιστή και προσθήκη τους στη λίστα συνεδριών."
   },
   "importCaptionLabel2": {
     "message": "Υποστηριζόμενα αρχεία:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Πώς να εισαγάγετε συνεδρίες από άλλες επεκτάσεις"
   },
   "importButtonLabel": {
     "message": "Αναζήτηση..."
