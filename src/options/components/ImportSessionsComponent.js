@@ -112,22 +112,10 @@ const parseSession = file => {
 };
 
 const isSessionBuddy = file => {
-  const currentKeys = ["generated", "type", "windows"]
-  const previousKeys = ["created", "generated", "gid", "id", "type", "windows"]
-  const savedKeys = ["created", "generated", "gid", "id", "modified", "name", "type", "windows"];
-  if(file.hasOwnProperty("sessions")) {
-    return file.sessions.every(session => {
-      if(session.type == "current") {
-        return currentKeys.every(key => session.hasOwnProperty(key))
-      }
-      if(session.type == "previous") {
-        return previousKeys.every(key => session.hasOwnProperty(key))
-      }
-      if(session.type == "saved") {
-        return savedKeys.every(key => session.hasOwnProperty(key))
-      }
-
-      return false
+  const savedKeys = ["id", "sourceType", "created", "pinned", "updated", "touched", "folders"];
+  if(file.hasOwnProperty("collections")) {
+    return file.collections.every(collection => {
+      return savedKeys.every(key => collection.hasOwnProperty(key))
     })
   } else {
     return false
@@ -136,28 +124,28 @@ const isSessionBuddy = file => {
 
 const convertSessionBuddy = file => {
   let sessions = [];
-  for (const SBSession of file.sessions) {
+  for (const SBSession of file.collections) {
     let session = {
       windows: {},
       windowsNumber: 0,
       windowsInfo: {},
       tabsNumber: 0,
-      name: SBSession?.name || "Unnamed Session",
+      name: SBSession?.title || "Unnamed Session",
       date: moment(SBSession?.created || new Date()).valueOf(),
       lastEditedTime: Date.now(),
       tag: [],
-      sessionStartTime: moment(SBSession?.generated || new Date()).valueOf(),
+      sessionStartTime: moment(SBSession?.touched || new Date()).valueOf(),
       id: uuidv4()
     };
 
-    for (const window of SBSession.windows) {
-      session.windows[window.id] = {};
-      for (const tab of window.tabs) {
-        session.windows[window.id][tab.id] = tab;
+    for (const folder of SBSession.folders) {
+      session.windows[folder.id] = {};
+      for (const link of folder.links) {
+        session.windows[folder.id][link.id] = link;
         session.tabsNumber++;
       }
-      session.windowsInfo[window.id] = window;
-      delete session.windowsInfo[window.id].tabs;
+      session.windowsInfo[folder.id] = folder;
+      delete session.windowsInfo[folder.id].tabs;
       session.windowsNumber++;
     }
 
