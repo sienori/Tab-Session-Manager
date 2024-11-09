@@ -6,13 +6,13 @@
     "message": "Salve e restaure o estado de janelas e abas. Também suporta salvamento automático."
   },
   "donateWithPaypalLabel": {
-    "message": "Donate with PayPal"
+    "message": "Doar com PayPal"
   },
   "donateLabel": {
-    "message": "Donate"
+    "message": "Doar"
   },
   "openSessionListInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Abrir a lista de sessões no separador"
   },
   "saveLabel": {
     "message": "Salvar"
@@ -21,31 +21,31 @@
     "message": "Salvar a sessão atual"
   },
   "inputSessionNameLabel": {
-    "message": "Input session name"
+    "message": "Inserir nome da sessão"
   },
   "saveSessionLabel": {
-    "message": "Save a session"
+    "message": "Guardar uma sessão"
   },
   "saveAllWindowsLabel": {
-    "message": "Save all windows"
+    "message": "Guardar todas as janelas"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Save only current window"
+    "message": "Guardar apenas a janela atual"
   },
   "categoryFilterLabel": {
     "message": "Category filter"
   },
   "sortLabel": {
-    "message": "Sort"
+    "message": "Ordenar"
   },
   "displayAllLabel": {
     "message": "Todos"
   },
   "displayUserLabel": {
-    "message": "User Save"
+    "message": "Guardar manual"
   },
   "displayAutoLabel": {
-    "message": "Auto Save"
+    "message": "Guardar automático"
   },
   "newestLabel": {
     "message": "O mais novo"
