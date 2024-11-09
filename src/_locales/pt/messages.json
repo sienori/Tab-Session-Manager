@@ -285,49 +285,49 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "A ativação desta opção irá melhorar o desempenho ao abrir separadores."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "The favicon of the lazy loading tab is not displayed."
+    "message": "O favicon do separador de carregamento lento não é apresentado."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Restaurar posição da janela"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restore window's position and size when opening session."
+    "message": "Restaurar posição e tamanho da janela ao abrir a sessão."
   },
   "startupLabel": {
-    "message": "Startup"
+    "message": "Arranque"
   },
   "startupBehaviorLabel": {
-    "message": "Behavior when starting the browser"
+    "message": "Comportamento ao iniciar o navegador"
   },
   "openPreviousSessionLabel": {
-    "message": "Open previous session"
+    "message": "Abrir sessão anterior"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Open the session that was closed the last time."
+    "message": "Abrir a sessão que foi fechada da última vez."
   },
   "openStartupSessionLabel": {
-    "message": "Open startup session"
+    "message": "Abrir a sessão de arranque"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Open the sessions registered for startup. You can register for startup from the menu in the session list."
+    "message": "Abre as sessões registadas para arranque. Pode registar as sessões para arranque a partir do menu na lista de sessões."
   },
   "DoNothingLabel": {
-    "message": "Do nothing"
+    "message": "Não fazer nada"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Rastreamento da sessão"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Rastreamento"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Rastrear janelas abertas recentemente"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Quando uma nova janela é aberta dentro de uma sessão de rastreamento, incluia-a no rastreamento."
   },
   "ifAutoSaveLabel": {
     "message": "Gurdar a sessão regularmente"
@@ -339,7 +339,7 @@
     "message": "Intervado (minutos)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Valor mínimo 0,5"
   },
   "autoSaveLimitLabel": {
     "message": "Número máximo guardado"
@@ -351,7 +351,7 @@
     "message": "Guardar a sessão quando a janela foi fechada"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Save the session that includes only one closed window."
+    "message": "Guardar a sessão que inclui apenas uma janela fechada."
   },
   "autoSaveWhenCloseLimitLabel": {
     "message": "Número máximo guardado"
@@ -360,52 +360,52 @@
     "message": "Número máximo de sessões guardadas (desta forma)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Save the session when exiting browser"
+    "message": "Guardar a sessão ao sair do browser"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Save the session that includes multiple windows that was closed in a row."
+    "message": "Guardar a sessão que inclui várias janelas que foram fechadas de seguida."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Maximum number Saved"
+    "message": "Número máximo guardado"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Número máximo de sessões guardadas (desta forma)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Use page title for auto save session name"
+    "message": "Usar título da página para guardar automaticamente o nome da sessão"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "When saving a session automatically, use the title of the opened page as the name of the session."
+    "message": "Quando guardar uma sessão automaticamente, utiliza o título da página aberta como o nome da sessão."
   },
   "backupLabel": {
-    "message": "Backup"
+    "message": "Cópia de segurança"
   },
   "ifBackupLabel": {
-    "message": "Save backup"
+    "message": "Guardar cópia de segurança"
   },
   "ifBackupCaptionLabel": {
-    "message": "When browser starts up, create a backup file of sessions and save it in the download folder."
+    "message": "Quando o navegador for iniciado, cria um ficheiro de cópia de segurança das sessões e guarda-o na pasta de descarregamentos."
   },
   "individualBackupLabel": {
-    "message": "Individual backup"
+    "message": "Cópia de segurança individual"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Cada sessão é guardada num ficheiro individual.<br>Se não estiver selecionado, todas as sessões serão guardadas como um único ficheiro, o que pode sobrecarregar o seu espaço de armazenamento."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Local de armazenamento"
   },
   "backupFolderCaptionLabel": {
-    "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
+    "message": "Especifique a pasta para guardar o ficheiro de cópia de segurança. A localização para guardar está limitada à pasta sob a pasta de descarregamentos do navegador."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Pasta de descargas"
   },
   "backupFilesLimitLabel": {
-    "message": "Maximum number of saved backups"
+    "message": "Número máximo de cópias de segurança guardadas"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "When the number of backup files exceeds this value, they are deleted in ascending order of oldest."
+    "message": "Quando o número de ficheiros de cópia de segurança excede este valor, estes são eliminados por ordem crescente dos mais antigos."
   },
   "dateFormatLabel": {
     "message": "Formato da data"
@@ -414,31 +414,31 @@
     "message": "Exemplo: YYYY. MM. DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Save private window"
+    "message": "Guardar janela privada"
   },
   "ignoreUrlListLabel": {
-    "message": "URL list to ignore when saving session"
+    "message": "Lista de URL a ignorar ao guardar a sessão"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "If the tab URL matches the list, it will not be recorded in the session. The list allows \"*\" wildcards."
+    "message": "Se o URL do separador corresponder à lista, não será registado na sessão. A lista permite caracteres curinga “*”."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Save device name to session"
+    "message": "Guardar o nome do dispositivo na sessão"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Add the device name as a tag when saving a session. When using cloud sync, you can distinguish it from sessions on other devices."
+    "message": "Adiciona o nome do dispositivo como uma etiqueta quando guardar uma sessão. Ao utilizar a sincronização na nuvem, pode distingui-la das sessões noutros dispositivos."
   },
   "deviceNameLabel": {
-    "message": "Device name"
+    "message": "Nome do dispositivo"
   },
   "deviceNameCaptionLabel": {
-    "message": "Specify the name of this device."
+    "message": "Especifique o nome deste dispositivo."
   },
   "applyDeviceNameLabel": {
-    "message": "Apply device name to existing sessions"
+    "message": "Aplicar o nome do dispositivo às sessões existentes"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Add the device name to all saved sessions."
+    "message": "Adicionar o nome do dispositivo a todas as sessões guardadas."
   },
   "applyDeviceNameButtonLabel": {
     "message": "Apply device name"
