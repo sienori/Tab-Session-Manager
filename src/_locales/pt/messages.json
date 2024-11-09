@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Salve e restaure o estado de janelas e abas. Também suporta salvamento automático."
+    "message": "Guarda e restaura o estado das janelas e dos separadores. Também suporta a gravação automática."
   },
   "donateWithPaypalLabel": {
     "message": "Doar com PayPal"
@@ -15,10 +15,10 @@
     "message": "Abrir a lista de sessões no separador"
   },
   "saveLabel": {
-    "message": "Salvar"
+    "message": "Guardar"
   },
   "initialNameValue": {
-    "message": "Salvar a sessão atual"
+    "message": "Guardar sessão atual"
   },
   "inputSessionNameLabel": {
     "message": "Inserir nome da sessão"
@@ -33,13 +33,13 @@
     "message": "Guardar apenas a janela atual"
   },
   "categoryFilterLabel": {
-    "message": "Category filter"
+    "message": "Filtro de categorias"
   },
   "sortLabel": {
     "message": "Ordenar"
   },
   "displayAllLabel": {
-    "message": "Todos"
+    "message": "Tudo"
   },
   "displayUserLabel": {
     "message": "Guardar manual"
@@ -48,7 +48,7 @@
     "message": "Guardar automático"
   },
   "newestLabel": {
-    "message": "O mais novo"
+    "message": "Mais recente"
   },
   "oldestLabel": {
     "message": "Mais antigo"
@@ -60,67 +60,67 @@
     "message": "Z-A"
   },
   "searchBarPlaceholder": {
-    "message": "Search by session or tab name"
+    "message": "Pesquisar por nome de sessão ou separador"
   },
   "search": {
-    "message": "Search"
+    "message": "Pesquisar"
   },
   "clearSearch": {
-    "message": "Clear search"
+    "message": "Limpar pesquisa"
   },
   "open": {
     "message": "Abrir"
   },
   "remove": {
-    "message": "Excluir"
+    "message": "Eliminar"
   },
   "removeConfirmLabel": {
-    "message": "Delete this session?"
+    "message": "Eliminar esta sessão?"
   },
   "sessionDeletedLabel": {
-    "message": "Session deleted."
+    "message": "Sessão eliminada."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Session window deleted."
+    "message": "Janela da sessão eliminada."
   },
   "sessionTabDeletedLabel": {
-    "message": "Session tab deleted."
+    "message": "Separador da sessão eliminado."
   },
   "restoreSessionLabel": {
-    "message": "Restore"
+    "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Failed to delete session."
+    "message": "Falha ao eliminar sessão."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Failed to delete session window."
+    "message": "Falha ao eliminar a janela da sessão."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Falha ao eliminar o separador da sessão."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessão guardada."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Falha ao guardar a sessão."
   },
   "cancelLabel": {
-    "message": "Cancel"
+    "message": "Cancelar"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Desfazer"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Refazer"
   },
   "addTagLabel": {
-    "message": "Add tag"
+    "message": "Adicionar etiqueta"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Remover etiqueta"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Digite o nome da etiqueta"
   },
   "detailLabel": {
     "message": "Detail"
@@ -132,121 +132,121 @@
     "message": "Janelas"
   },
   "tabLabel": {
-    "message": "Aba"
+    "message": "Separador"
   },
   "tabsLabel": {
-    "message": "Abas"
+    "message": "Separadores"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Não há nenhuma sessão."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Vamos guardar a sessão clicando no botão inferior direito."
   },
   "noResultLabel": {
-    "message": "No matching results."
+    "message": "Não foram encontrados resultados correspondentes."
   },
   "noSessionSelectedLabel": {
-    "message": "No session selected."
+    "message": "Nenhuma sessão selecionada."
   },
   "menuLabel": {
     "message": "Menu"
   },
   "closeMenuLabel": {
-    "message": "Close the menu"
+    "message": "Fechar o menu"
   },
   "closeLabel": {
-    "message": "Close"
+    "message": "Fechar"
   },
   "renameLabel": {
-    "message": "Rename"
+    "message": "Alterar nome"
   },
   "renameSessionLabel": {
-    "message": "Rename session"
+    "message": "Alterar nome da sessão"
   },
   "OpenSessionLabel": {
-    "message": "Open a session"
+    "message": "Abrir uma sessão"
   },
   "openInNewWindowLabel": {
     "message": "Abrir numa nova janela"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Abrir a sessão numa nova janela."
   },
   "openInCurrentWindowLabel": {
-    "message": "Open in current window"
+    "message": "Abrir na janela atual"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Abre a sessão na janela atual. As janelas inactivas e todos os separadores são fechados."
   },
   "addToCurrentWindowLabel": {
-    "message": "Add to current window"
+    "message": "Adicionar à janela atual"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Adiciona separadores à janela atual. Se a sessão contiver várias janelas, abre-a numa nova janela."
   },
   "EditSessionLabel": {
-    "message": "Edit a session"
+    "message": "Editar uma sessão"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Substituir pela sessão atual"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Substituir pela janela atual"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Adicionar janela atual"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Fazer uma cópia da sessão"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Rastrear alterações da janela"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Eliminar rastreamento"
   },
   "registerStartupLabel": {
-    "message": "Register for startup"
+    "message": "Adicionar à inicialização"
   },
   "removeStartupLabel": {
-    "message": "Remove from startup"
+    "message": "Remover da inicialização"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Editar uma janela"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Adicionar separador atual"
   },
   "errorLabel": {
-    "message": "Error"
+    "message": "Erro"
   },
   "indexedDBErrorLabel": {
-    "message": "IndexedDB is not available in your browser."
+    "message": "IndexedDB não está disponível no seu navegador."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Recarregar extensão"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Como resolver este problema"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Guardar automático - Janela fechada"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Guardar automático - Ao sair do navegador"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Guardar automático - regularmente"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Janela fechada"
   },
   "browserExitSessionNameShort": {
-    "message": "Browser exited"
+    "message": "Sair do navegador"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regularmente"
   },
   "settingsLabel": {
     "message": "Configurações"
@@ -255,31 +255,31 @@
     "message": "Sessões"
   },
   "shortcutsLabel": {
-    "message": "Shortcuts"
+    "message": "Atalhos"
   },
   "informationLabel": {
     "message": "Informações"
   },
   "generalLabel": {
-    "message": "General"
+    "message": "Geral"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Guardar automático"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Estilo"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Sessão aberta em nova janela"
+    "message": "Abrir a sessão numa nova janela"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "Se desmarcada, a sessão substitui a janela atual."
+    "message": "Se desmarcado, a sessão substitui a janela atual."
   },
   "ifLazyLoadingLabel": {
-    "message": "Carregamento lento de aba"
+    "message": "Carregamento lento de separador"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba. <br> Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
+    "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até selecionar o separador.<br>Se não estiver selecionado, a utilização da memória aumenta consideravelmente quando a sessão é restaurada."
   },
   "isUseDiscardedLabel": {
     "message": "Use the \"discarded\" property for lazy loading"
@@ -330,10 +330,10 @@
     "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
-    "message": "Salvar a sessão regularmente"
+    "message": "Gurdar a sessão regularmente"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Salve a sessão a cada X minutos."
+    "message": "Guardar a sessão a cada X minutos."
   },
   "autoSaveIntervalLabel": {
     "message": "Intervado (minutos)"
@@ -345,10 +345,10 @@
     "message": "Número máximo guardado"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Número máximo de sessões salvas (desta forma)."
+    "message": "Número máximo de sessões gardadas (desta forma)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Salvar a sessão quando a janela foi fechada"
+    "message": "Guardar a sessão quando a janela foi fechada"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
     "message": "Save the session that includes only one closed window."
@@ -357,7 +357,7 @@
     "message": "Número máximo guardado"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Número máximo de sessões salvas (desta forma)."
+    "message": "Número máximo de sessões guardadas (desta forma)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Save the session when exiting browser"
@@ -642,7 +642,7 @@
     "message": "Reset"
   },
   "importLabel": {
-    "message": "Sessões de importação"
+    "message": "Importar sessões"
   },
   "importCaptionLabel": {
     "message": "Load sessions saved on the computer and add them to the session List."
@@ -669,7 +669,7 @@
     "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
   },
   "exportLabel": {
-    "message": "Sessões de exportação"
+    "message": "Exportar sessões"
   },
   "exportCaptionLabel": {
     "message": "Save all sessions to the computer."
@@ -678,13 +678,13 @@
     "message": "Exportar"
   },
   "removeSessionsLabel": {
-    "message": "Apagar as sessões"
+    "message": "Eliminar sessões"
   },
   "removeSessionsCaptionLabel": {
     "message": "Delete all sessions."
   },
   "removeSessionsButtonLabel": {
-    "message": "Excluir"
+    "message": "Eliminar"
   },
   "keyboardShortcutsLabel": {
     "message": "Keyboard shortcuts"
@@ -714,22 +714,22 @@
     "message": "Open toolbar popup"
   },
   "saveCurrentWindowDescription": {
-    "message": "Save session (only current window)"
+    "message": "Guardar a sessão (apenas a janela atual)"
   },
   "saveAllWindowDescription": {
-    "message": "Save session (all windows)"
+    "message": "Guardar a sessão (todas as janelas)"
   },
   "exportSessionsDescription": {
-    "message": "Export all sessions"
+    "message": "Exportar todas as sessões"
   },
   "clear": {
-    "message": "Clear"
+    "message": "Limpar"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Repor"
   },
   "backersLabel": {
-    "message": "Backers"
+    "message": "Apoiantes"
   },
   "LicenseLabel": {
     "message": "Licença"
@@ -738,40 +738,40 @@
     "message": "Faça uma doação"
   },
   "donationCaptionLabel": {
-    "message": "Obrigado por usar Tab Session Manager.<br>Seu apoio será um grande incentivo, como eu continuar a desenvolver o complemento. <br> Se você gosta de Tab Session Manager, ficaria satisfeito se você poderia considerar a doação."
+    "message": "Obrigado por usar o Tab Session Manager.<br>O seu apoio será um grande incentivo, uma vez que continuo a desenvolver este extra.<br>Se gosta do Tab Session Manager, ficaria satisfeito se pudesse considerar fazer um donativo."
   },
   "amazonTitleLabel": {
-    "message": "amazon.co.jp Gift Cards"
+    "message": "Cartões de oferta amazon.co.jp"
   },
   "sponsorsLabel": {
-    "message": "Sponsors"
+    "message": "Patrocinadores"
   },
   "addonPageLabel": {
-    "message": "Add-on page"
+    "message": "Página da extensão"
   },
   "extensionPageLabel": {
-    "message": "Extension page"
+    "message": "Página da extensão"
   },
   "firefoxLabel": {
-    "message": "Firefox Add-ons"
+    "message": "Complementos do Firefox"
   },
   "chromeLabel": {
-    "message": "Chrome Web Store"
+    "message": "Loja Web do Chrome"
   },
   "edgeLabel": {
-    "message": "Edge Add-ons"
+    "message": "Complementos do Edge"
   },
   "privacyPolicyLabel": {
-    "message": "Privacy policy"
+    "message": "Política de privacidade"
   },
   "importMessage": {
-    "message": "Sessões de importados."
+    "message": "Sessões importadas."
   },
   "readFailedMessage": {
     "message": "Falha de leitura"
   },
   "warningRemoveAllMessage": {
-    "message": "Apagar todas as sessões. Tem certeza?"
+    "message": "As sessões serão todas eliminadas. Tem a certeza?"
   },
   "sessionLabel": {
     "message": "Sessão"
@@ -780,15 +780,15 @@
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://addons.mozilla.org/pt-PT/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Esta página não pode ser aberta pelo Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Copy URL"
+    "message": "Copiar URL"
   },
   "copiedLabel": {
-    "message": "Copied."
+    "message": "Copiado."
   }
 }
