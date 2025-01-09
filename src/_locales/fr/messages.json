@@ -174,13 +174,13 @@
     "message": "Ouvrir la session dans une nouvelle fenêtre."
   },
   "openInCurrentWindowLabel": {
-    "message": "Ouvrir dans la fenêtre actuelle"
+    "message": "Ouvrir et fermer les autres fenêtres"
   },
   "openInCurrentWindowCaptionLabel": {
     "message": "Ouvrir la session dans la fenêtre actuelle. Les autres fenêtres et tous les onglets seront fermés."
   },
   "addToCurrentWindowLabel": {
-    "message": "Ajouter à la fenêtre en cours"
+    "message": "Ajouter les onglets à la fenêtre en cours"
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Ajouter les onglets à la fenêtre actuelle. Si la session contient plusieurs fenêtres, l’ouvrir dans une nouvelle fenêtre."
