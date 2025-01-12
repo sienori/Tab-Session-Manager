@@ -339,7 +339,7 @@
     "message": "Intervall (minutt)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimumsverdi 0,5"
   },
   "autoSaveLimitLabel": {
     "message": "Største antal lagra økter"
