@@ -96,19 +96,19 @@
     "message": "Verwijderen van sessie-venster mislukt."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Failed to delete session tab."
+    "message": "Verwijderen van sessietabblad mislukt."
   },
   "sessionSavedLabel": {
-    "message": "Session saved."
+    "message": "Sessie opgeslagen."
   },
   "failedSaveSessionLabel": {
-    "message": "Failed to save session."
+    "message": "Opslaan van de sessie is mislukt."
   },
   "cancelLabel": {
     "message": "Annuleren"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Ongedaan maken"
   },
   "redoLabel": {
     "message": "Redo"
