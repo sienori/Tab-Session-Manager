@@ -111,7 +111,7 @@
     "message": "Ongedaan maken"
   },
   "redoLabel": {
-    "message": "Redo"
+    "message": "Opnieuw uitvoeren"
   },
   "addTagLabel": {
     "message": "Voeg tag toe"
@@ -138,7 +138,7 @@
     "message": "Tabbladen"
   },
   "noSessionLabel": {
-    "message": "There is no session."
+    "message": "Er is geen sessie."
   },
   "letsSaveLabel": {
     "message": "Let's save the session by clicking the lower right button."
@@ -171,7 +171,7 @@
     "message": "In nieuw venster openen"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Open the session in the new window."
+    "message": "Open de sessie in een nieuw venster."
   },
   "openInCurrentWindowLabel": {
     "message": "Open in bestaand venster"
