@@ -120,7 +120,7 @@
     "message": "Tag verwijderen"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Voer de tag naam in"
   },
   "detailLabel": {
     "message": "Detail"
@@ -141,7 +141,7 @@
     "message": "Er is geen sessie."
   },
   "letsSaveLabel": {
-    "message": "Let's save the session by clicking the lower right button."
+    "message": "Laten we de sessie opslaan door op de knop rechts onderin te klikken."
   },
   "noResultLabel": {
     "message": "Geen overeenkomende resultaten."
@@ -177,34 +177,34 @@
     "message": "Open in bestaand venster"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Open the session in the current window. Inactive windows and all tabs are closed."
+    "message": "Open de sessie in het huidige venster. Inactieve vensters en alle tabbladen worden gesloten."
   },
   "addToCurrentWindowLabel": {
     "message": "Toevoegen aan huidige venster"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Add tabs to the current window. If the session contains multiple windows, open it in the new window."
+    "message": "Voeg tabbladen toe aan het huidige venster. Als de sessie meerdere vensters bevat, openen deze in een nieuw venster."
   },
   "EditSessionLabel": {
     "message": "Sessie bewerken"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Replace with current session"
+    "message": "Vervang door huidige sessie"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Replace with current window"
+    "message": "Vervang door huidig venster"
   },
   "addCurrentWindowLabel": {
-    "message": "Add current window"
+    "message": "Voeg huidig venster toe"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Maak een kopie van de sessie"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Wijzigingen in venster bijhouden"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Wijziging bijhouden verwijderen"
   },
   "registerStartupLabel": {
     "message": "Opnemen bij opstarten"
@@ -213,10 +213,10 @@
     "message": "Verwijderen uit opstarten"
   },
   "editWindowLabel": {
-    "message": "Edit a window"
+    "message": "Venster bewerken"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Huidig tabblad toevoegen"
   },
   "errorLabel": {
     "message": "Fout"
@@ -240,7 +240,7 @@
     "message": "Automatisch opslaan - Regelmatig"
   },
   "winCloseSessionNameShort": {
-    "message": "Window closed"
+    "message": "Venster gesloten"
   },
   "browserExitSessionNameShort": {
     "message": "Browser exited"
