@@ -96,7 +96,7 @@
     "message": "Error al eliminar sesión de ventana."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Error al eliminar sesión de pesataña."
+    "message": "Error al eliminar sesión de pestaña."
   },
   "sessionSavedLabel": {
     "message": "Sesión guardada."
