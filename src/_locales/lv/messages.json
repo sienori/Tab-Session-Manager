@@ -339,7 +339,7 @@
     "message": "Intervāls (minūtes)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimālā vērtība 0,5"
+    "message": "Minimālā vērtība 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Maksimālais skaits saglabāts"
@@ -348,7 +348,7 @@
     "message": "Maximum number of saved sessions (in this way)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "Saglabāt sesiju, kad aizver logu"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
     "message": "Save the session that includes only one closed window."
@@ -357,7 +357,7 @@
     "message": "Maksimālais skaits saglabāts"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maksimālais sesiju skaits, ko saglabāt šādā veidā."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Saglabāt sesiju, kad aizver pārlūku"
@@ -390,10 +390,10 @@
     "message": "Individual backup"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Katra sesija tiek saglabāta atsevišķā failā.<br>Ja atķeksēts, visas sesijas tiks saglabātas vienā failā, kas var izaugt pārmērīgi lielos izmēros un aizpildīt jūsu krātuves vietu."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Saglabāšanas vieta"
   },
   "backupFolderCaptionLabel": {
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
@@ -582,7 +582,7 @@
     "message": "Atvērt sesiju sarakstu cilnē"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Atvērt sesiju sarakstu cilnē, kad uzspiež uz rīkjoslas pogu."
   },
   "themeLabel": {
     "message": "Tēma"
@@ -636,7 +636,7 @@
     "message": "Atiestatīt iestatījumus"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Atjaunojiet visus iestatījumus uz noklusējuma vērtībām."
+    "message": "Atjaunot visus iestatījumus uz noklusējuma vērtībām."
   },
   "resetSettingsButtonLabel": {
     "message": "Atiestatīt"
@@ -711,7 +711,7 @@
     "message": "Īsinājumtaustiņu nevar izmantot"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Atvērt uznirstošo logu"
   },
   "saveCurrentWindowDescription": {
     "message": "Saglabāt sesiju (tikai pašreizējo logu)"
