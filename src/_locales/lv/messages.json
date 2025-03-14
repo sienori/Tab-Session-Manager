@@ -264,7 +264,7 @@
     "message": "General"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Automātiski saglabāts"
   },
   "styleLabel": {
     "message": "Style"
@@ -504,7 +504,7 @@
     "message": "Iespējot mākoņa sinhronizāciju (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Saglabāt sesijas Google Drive™ un sinhronizēt tās ar citiem datoriem."
   },
   "syncingLabel": {
     "message": "Notiek sinhronizēšana"
@@ -531,7 +531,7 @@
     "message": "Izrakstīties"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Sinhronizēt automātiski"
   },
   "enabledAutoSyncCaptionLabel": {
     "message": "Execute cloud sync when the browser is launched and when the session is saved."
@@ -579,7 +579,7 @@
     "message": "Sānjoslas platums"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Atvērt sesiju sarakstu cilnē"
   },
   "isSessionListOpenInTabCaptionLabel": {
     "message": "Open session list in tab when button on toolbar is clicked."
@@ -615,10 +615,10 @@
     "message": "Click to view update information."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Iespējot atkļūdošanas režīmu"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Kad ir iespējots atkļūdošanas režīms, žurnāls tiek izvadīts atkļūdotājā."
   },
   "exportSettingsLabel": {
     "message": "Eksportēt iestatījumus"
