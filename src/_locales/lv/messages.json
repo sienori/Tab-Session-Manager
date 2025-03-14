@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Ļauj saglabāt un atjaunot logus un to cilņu stāvokli. Kā arī atbalsta automātisko saglabāšanu."
   },
   "donateWithPaypalLabel": {
     "message": "Ziedot izmantojot PayPal"
@@ -339,7 +339,7 @@
     "message": "Intervāls (minūtes)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimālā vērtība 0,5"
   },
   "autoSaveLimitLabel": {
     "message": "Maksimālais skaits saglabāts"
@@ -360,7 +360,7 @@
     "message": "Maximum number of saved sessions (in this way)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Saglabāt sesiju, kad aizver pārlūkprogrammu"
+    "message": "Saglabāt sesiju, kad aizver pārlūku"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
@@ -375,7 +375,7 @@
     "message": "Izmantot lapas virsrakstu automātiski saglabātas sesijas nosaukumā"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "Saglabājot sesiju automātiski, izmantot atvērtās lapas nosaukumu kā sesijas nosaukumu."
+    "message": "Kad sesija tiek saglabāta automātiski, izmantot atvērtās lapas virsrakstu kā sesijas nosaukumu."
   },
   "backupLabel": {
     "message": "Rezerves kopija"
@@ -534,10 +534,10 @@
     "message": "Sinhronizēt automātiski"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Veikt mākoņa sinhronizāciju, kad pārlūks palaists vai kad sesija saglabāta."
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Sinhronizēt automātiski saglabātās sesijas"
   },
   "includesAutoSaveToSyncCaptionLabel": {
     "message": "Upload / download auto save sessions in cloud sync."
