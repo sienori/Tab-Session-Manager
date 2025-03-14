@@ -108,7 +108,7 @@
     "message": "Atcelt"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Atsaukt"
   },
   "redoLabel": {
     "message": "Redo"
@@ -117,7 +117,7 @@
     "message": "Pievienot birku"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Dzēst birku"
   },
   "inputTagLabel": {
     "message": "Ievadiet birkas nosaukumu"
@@ -267,7 +267,7 @@
     "message": "Automātiskā saglabāšana"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Stils"
   },
   "ifOpenNewWindowLabel": {
     "message": "Atvērt sesiju jaunā logā"
