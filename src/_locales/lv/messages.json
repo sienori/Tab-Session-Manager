@@ -39,7 +39,7 @@
     "message": "Kārtot"
   },
   "displayAllLabel": {
-    "message": "Viss"
+    "message": "Visas"
   },
   "displayUserLabel": {
     "message": "Lietotājs saglabāja"
@@ -345,7 +345,7 @@
     "message": "Maksimālais skaits saglabāts"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maksimālais sesiju skaits, ko saglabāt šādā veidā."
   },
   "ifAutoSaveWhenCloseLabel": {
     "message": "Saglabāt sesiju, kad aizver logu"
@@ -369,7 +369,7 @@
     "message": "Maksimālais skaits saglabāts"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maksimālais sesiju skaits, ko saglabāt šādā veidā."
   },
   "useTabTitleforAutoSaveLabel": {
     "message": "Izmantot lapas virsrakstu automātiski saglabātas sesijas nosaukumā"
