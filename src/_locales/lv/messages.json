@@ -558,7 +558,7 @@
     "message": "Atlasiet saglabāšanas pogas noklusējuma darbību."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Rādīt atvērt / dzēst pogas sesiju sarakstā"
   },
   "isShowOpenButtonsCaptionLabel": {
     "message": "Display open / delete buttons when the cursor is over the session list."
