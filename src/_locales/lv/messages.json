@@ -561,7 +561,7 @@
     "message": "Rādīt atvērt / dzēst pogas sesiju sarakstā"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Rādīt atvērt / dzēst pogas, kad kursors ir virs sesiju saraksta."
   },
   "sizeLabel": {
     "message": "Izmērs"
