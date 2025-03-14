@@ -45,7 +45,7 @@
     "message": "Lietotājs saglabāja"
   },
   "displayAutoLabel": {
-    "message": "Automātiski saglabāts"
+    "message": "Automātiski saglabāta"
   },
   "newestLabel": {
     "message": "Jaunākie"
@@ -120,7 +120,7 @@
     "message": "Remove tag"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Ievadiet birkas nosaukumu"
   },
   "detailLabel": {
     "message": "Detail"
@@ -201,7 +201,7 @@
     "message": "Make a copy of the session"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Sekot loga izmaiņām"
   },
   "removeTrackingLabel": {
     "message": "Delete tracking"
@@ -225,19 +225,19 @@
     "message": "IndexedDB is not available in your browser."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Pārlādēt paplašinājumu"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Kā atrisināt šo problēmu"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Automātiski saglabātās, kad logs aizvērts"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Automātiski saglabātās, kad pārlūks aizvērts"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Automātiski saglabātās pēc noteiktas regularitātes"
   },
   "winCloseSessionNameShort": {
     "message": "Logs aizvērts"
@@ -246,7 +246,7 @@
     "message": "Browser exited"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regulāri"
   },
   "settingsLabel": {
     "message": "Iestatījumi"
@@ -264,7 +264,7 @@
     "message": "General"
   },
   "autoSaveLabel": {
-    "message": "Automātiski saglabāts"
+    "message": "Automātiskā saglabāšana"
   },
   "styleLabel": {
     "message": "Style"
@@ -330,7 +330,7 @@
     "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "Regulāri saglabāt sesiju"
   },
   "ifAutoSaveCaptionLabel": {
     "message": "Saglabāt sesiju ik pēc X minūtēm."
@@ -372,7 +372,7 @@
     "message": "Maximum number of saved sessions (in this way)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Izmantot lapas nosaukumu automātiski saglabātu sesijas nosaukumos"
+    "message": "Izmantot lapas virsrakstu automātiski saglabātas sesijas nosaukumā"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
     "message": "Saglabājot sesiju automātiski, izmantot atvērtās lapas nosaukumu kā sesijas nosaukumu."
