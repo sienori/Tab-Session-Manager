@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Search by session or tab name"
   },
@@ -339,7 +345,7 @@
     "message": "Interval (menit)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Jumlah maksimum yang disimpan"
