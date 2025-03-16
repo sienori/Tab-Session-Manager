@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Zoeken op sessie- of tabnaam"
   },
@@ -339,7 +345,7 @@
     "message": "Interval (minuten)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Maximale aantal opgeslagen"
