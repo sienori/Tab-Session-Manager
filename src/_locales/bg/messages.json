@@ -345,7 +345,7 @@
     "message": "Интервал (минути)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Максимален брой запазени"
