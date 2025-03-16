@@ -60,10 +60,10 @@
     "message": "Z-A"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "更多分頁"
   },
   "tabsAscLabel": {
-    "message": "Fewest tabs"
+    "message": "最少分頁"
   },
   "searchBarPlaceholder": {
     "message": "依瀏覽階段名稱或分頁名稱搜尋"
