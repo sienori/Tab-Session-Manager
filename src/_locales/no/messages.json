@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Å-A"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Søk etter økt- eller fanenamn"
   },
@@ -339,7 +345,7 @@
     "message": "Intervall (minutt)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimumsverdi 0,5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Største antal lagra økter"
