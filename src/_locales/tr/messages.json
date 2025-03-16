@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Oturum veya sekme adına göre ara"
   },
@@ -339,7 +345,7 @@
     "message": "Aralık (dakika)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "En küçük değer 0.5 olabilir"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Kaydedilecek en fazla oturum sayısı"
