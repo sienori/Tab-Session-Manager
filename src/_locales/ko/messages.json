@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "내림차순"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "세션이나 탭 이름으로 검색"
   },
@@ -339,7 +345,7 @@
     "message": "간격 (분)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "최대 저장 개수"
