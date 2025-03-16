@@ -204,7 +204,7 @@
     "message": "Add current window"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Izveidot sesijas kopiju"
   },
   "registerTrackingLabel": {
     "message": "Sekot loga izmaiņām"
@@ -291,13 +291,13 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Iespējojot šo iestatījumu, uzlabos veiktspēju, atverot cilnes."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Atjaunot loga pozīciju"
   },
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Restore window's position and size when opening session."
@@ -345,7 +345,7 @@
     "message": "Intervāls (minūtes)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimālā vērtība 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Maksimālais skaits saglabāts"
@@ -405,7 +405,7 @@
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Lejupielādes mape"
   },
   "backupFilesLimitLabel": {
     "message": "Maksimālais saglabājamo rezerves kopiju skaits"
@@ -498,10 +498,10 @@
     "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Rādīt sesijas nosaukumu vienā rindā"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Ja sesijas nosaukums sesiju sarakstā aizņem vairāk nekā vienu rindu, tas tiek saīsināts vienā rindā un parādīts."
   },
   "cloudSyncLabel": {
     "message": "Mākoņa sinhronizācija"
@@ -528,7 +528,7 @@
     "message": "Sinhronizācija pabeigta."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Nepieciešams pierakstīties, lai varētu veikt mākoņa sinhronizāciju."
   },
   "signInLabel": {
     "message": "Pierakstīties"
