@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "ת-א"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "שמור לפי שם פעילות או כרטיסיה"
   },
@@ -339,7 +345,7 @@
     "message": "מרווח (דקות)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "מספר מירבי לשמירה"
