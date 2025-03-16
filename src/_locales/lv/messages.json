@@ -669,7 +669,7 @@
     "message": "Clear"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Importēt vietņu URL sarakstu"
   },
   "urlImportCaptionLabel": {
     "message": "Izveidot sesiju no vietņu URL saraksta un pievienot to sesiju sarakstam.<br>Formāts: &lt;vietnes URL adrese&gt; &lt;lapas virsraksts (nav obligāti, pēc izvēles)&gt;"
