@@ -471,7 +471,7 @@
     "message": "Vai saspiest visas sesijas?"
   },
   "compressingLabel": {
-    "message": "Saspiež..."
+    "message": "Saspiež…"
   },
   "compressionCompleteLabel": {
     "message": "Saspiešana pabeigta."
@@ -546,7 +546,7 @@
     "message": "Sinhronizēt automātiski saglabātās sesijas"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Mākoņu sinhronizācijas laikā augšupielādēt un lejupielādēt automātiski saglabātās sesijas."
   },
   "popupLabel": {
     "message": "Uznirstošais logs"
@@ -618,7 +618,7 @@
     "message": "Skatīt vairāk"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Noklikšķiniet, lai skatītu atjaunināšanas informāciju."
   },
   "isDebugModeLabel": {
     "message": "Iespējot atkļūdošanas režīmu"
@@ -630,13 +630,13 @@
     "message": "Eksportēt iestatījumus"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Saglabāt iestatījumus JSON faila formātā."
   },
   "importSettingsLabel": {
     "message": "Importēt iestatījumus"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Ielādēt iestatījumus no saglabātā faila."
   },
   "resetSettingsLabel": {
     "message": "Atiestatīt iestatījumus"
@@ -657,10 +657,10 @@
     "message": "Atbalstītie faili:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Kā importēt sesijas no citiem paplašinājumiem"
   },
   "importButtonLabel": {
-    "message": "Pārlūkot..."
+    "message": "Pārlūkot…"
   },
   "importSaveButtonLabel": {
     "message": "Importēt"
@@ -777,7 +777,7 @@
     "message": "Read failed"
   },
   "warningRemoveAllMessage": {
-    "message": "Dzēst visas sesijas. Vai esat pārliecināti?"
+    "message": "Dzēst visas sesijas. Vai tiešām?"
   },
   "sessionLabel": {
     "message": "Sesija"
