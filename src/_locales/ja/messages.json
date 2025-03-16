@@ -345,7 +345,7 @@
     "message": "保存間隔(分)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "最小値 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "上限保存数"
