@@ -48,8 +48,8 @@ function isChangeAutoSaveSettings(changes, areaName) {
   const oldValue = changes.Settings.oldValue;
   const newValue = changes.Settings.newValue;
   return (
-    oldValue.ifAutoSave != newValue.ifAutoSave ||
-    oldValue.autoSaveInterval != newValue.autoSaveInterval
+    oldValue?.ifAutoSave != newValue.ifAutoSave ||
+    oldValue?.autoSaveInterval != newValue.autoSaveInterval
   );
 }
 
