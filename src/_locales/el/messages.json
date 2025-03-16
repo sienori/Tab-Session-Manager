@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Ω-Α"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Αναζήτηση βάση ονόματος συνεδρίας ή καρτέλας"
   },
@@ -339,7 +345,7 @@
     "message": "Διάστημα (σε λεπτά)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Ελάχιστη τιμή: 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Μέγιστος αριθμός Αποθηκευμένων"
