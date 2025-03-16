@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "更多分頁"
+  },
+  "tabsAscLabel": {
+    "message": "最少分頁"
+  },
   "searchBarPlaceholder": {
     "message": "依瀏覽階段名稱或分頁名稱搜尋"
   },
@@ -339,7 +345,7 @@
     "message": "儲存間隔(分鐘) : "
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "最小值為 0.5"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "最大儲存數量"

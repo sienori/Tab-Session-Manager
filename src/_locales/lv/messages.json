@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Save and restore the state of windows and tabs. It also supports automatic saving."
+    "message": "Ļauj saglabāt un atjaunot logus un to cilņu stāvokli. Kā arī atbalsta automātisko saglabāšanu."
   },
   "donateWithPaypalLabel": {
     "message": "Ziedot izmantojot PayPal"
@@ -39,13 +39,13 @@
     "message": "Kārtot"
   },
   "displayAllLabel": {
-    "message": "Viss"
+    "message": "Visas"
   },
   "displayUserLabel": {
     "message": "Lietotājs saglabāja"
   },
   "displayAutoLabel": {
-    "message": "Automātiski saglabāts"
+    "message": "Automātiski saglabāta"
   },
   "newestLabel": {
     "message": "Jaunākie"
@@ -58,6 +58,12 @@
   },
   "zToALabel": {
     "message": "Z-A"
+  },
+  "tabsDesLabel": {
+    "message": "Vairāk cilņu"
+  },
+  "tabsAscLabel": {
+    "message": "Mazāk cilņu"
   },
   "searchBarPlaceholder": {
     "message": "Meklēt pēc sesijas vai cilnes nosaukuma"
@@ -108,7 +114,7 @@
     "message": "Atcelt"
   },
   "undoLabel": {
-    "message": "Undo"
+    "message": "Atsaukt"
   },
   "redoLabel": {
     "message": "Redo"
@@ -117,10 +123,10 @@
     "message": "Pievienot birku"
   },
   "removeTagLabel": {
-    "message": "Remove tag"
+    "message": "Dzēst birku"
   },
   "inputTagLabel": {
-    "message": "Input the tag name"
+    "message": "Ievadiet birkas nosaukumu"
   },
   "detailLabel": {
     "message": "Detail"
@@ -201,7 +207,7 @@
     "message": "Make a copy of the session"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Sekot loga izmaiņām"
   },
   "removeTrackingLabel": {
     "message": "Delete tracking"
@@ -225,19 +231,19 @@
     "message": "IndexedDB is not available in your browser."
   },
   "reloadExtensionLabel": {
-    "message": "Reload extension"
+    "message": "Pārlādēt paplašinājumu"
   },
   "howToSolveLabel": {
-    "message": "How to solve this problem"
+    "message": "Kā atrisināt šo problēmu"
   },
   "winCloseSessionName": {
-    "message": "Auto Save - Window closed"
+    "message": "Automātiski saglabātās, kad logs aizvērts"
   },
   "browserExitSessionName": {
-    "message": "Auto Save - Browser exited"
+    "message": "Automātiski saglabātās, kad pārlūks aizvērts"
   },
   "regularSaveSessionName": {
-    "message": "Auto Save - Regularly"
+    "message": "Automātiski saglabātās pēc noteiktas regularitātes"
   },
   "winCloseSessionNameShort": {
     "message": "Logs aizvērts"
@@ -246,7 +252,7 @@
     "message": "Browser exited"
   },
   "regularSaveSessionNameShort": {
-    "message": "Regularly"
+    "message": "Regulāri"
   },
   "settingsLabel": {
     "message": "Iestatījumi"
@@ -264,10 +270,10 @@
     "message": "General"
   },
   "autoSaveLabel": {
-    "message": "Auto save"
+    "message": "Automātiskā saglabāšana"
   },
   "styleLabel": {
-    "message": "Style"
+    "message": "Stils"
   },
   "ifOpenNewWindowLabel": {
     "message": "Atvērt sesiju jaunā logā"
@@ -330,7 +336,7 @@
     "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
   "ifAutoSaveLabel": {
-    "message": "Save the session regularly"
+    "message": "Regulāri saglabāt sesiju"
   },
   "ifAutoSaveCaptionLabel": {
     "message": "Saglabāt sesiju ik pēc X minūtēm."
@@ -345,10 +351,10 @@
     "message": "Maksimālais skaits saglabāts"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maksimālais sesiju skaits, ko saglabāt šādā veidā."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Save the session when window was closed"
+    "message": "Saglabāt sesiju, kad aizver logu"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
     "message": "Save the session that includes only one closed window."
@@ -357,10 +363,10 @@
     "message": "Maksimālais skaits saglabāts"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maksimālais sesiju skaits, ko saglabāt šādā veidā."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Saglabāt sesiju, kad aizver pārlūkprogrammu"
+    "message": "Saglabāt sesiju, kad aizver pārlūku"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
     "message": "Save the session that includes multiple windows that was closed in a row."
@@ -369,13 +375,13 @@
     "message": "Maksimālais skaits saglabāts"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Maximum number of saved sessions (in this way)."
+    "message": "Maksimālais sesiju skaits, ko saglabāt šādā veidā."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Izmantot lapas nosaukumu automātiski saglabātu sesijas nosaukumos"
+    "message": "Izmantot lapas virsrakstu automātiski saglabātas sesijas nosaukumā"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "Saglabājot sesiju automātiski, izmantot atvērtās lapas nosaukumu kā sesijas nosaukumu."
+    "message": "Kad sesija tiek saglabāta automātiski, izmantot atvērtās lapas virsrakstu kā sesijas nosaukumu."
   },
   "backupLabel": {
     "message": "Rezerves kopija"
@@ -390,10 +396,10 @@
     "message": "Individual backup"
   },
   "individualBackupCaptionLabel": {
-    "message": "Each session is saved in an individual file.<br>If unchecked, all sessions will be saved as a single file, which may overwhelm your storage space."
+    "message": "Katra sesija tiek saglabāta atsevišķā failā.<br>Ja atķeksēts, visas sesijas tiks saglabātas vienā failā, kas var izaugt pārmērīgi lielos izmēros un aizpildīt jūsu krātuves vietu."
   },
   "backupFolderLabel": {
-    "message": "Save location"
+    "message": "Saglabāšanas vieta"
   },
   "backupFolderCaptionLabel": {
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
@@ -504,7 +510,7 @@
     "message": "Iespējot mākoņa sinhronizāciju (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Save sessions to Google Drive™ and sync with other computers."
+    "message": "Saglabāt sesijas Google Drive™ un sinhronizēt tās ar citiem datoriem."
   },
   "syncingLabel": {
     "message": "Notiek sinhronizēšana"
@@ -531,13 +537,13 @@
     "message": "Izrakstīties"
   },
   "enabledAutoSyncLabel": {
-    "message": "Automatically sync"
+    "message": "Sinhronizēt automātiski"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Execute cloud sync when the browser is launched and when the session is saved."
+    "message": "Veikt mākoņa sinhronizāciju, kad pārlūks palaists vai kad sesija saglabāta."
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sync auto save sessions"
+    "message": "Sinhronizēt automātiski saglabātās sesijas"
   },
   "includesAutoSaveToSyncCaptionLabel": {
     "message": "Upload / download auto save sessions in cloud sync."
@@ -558,10 +564,10 @@
     "message": "Atlasiet saglabāšanas pogas noklusējuma darbību."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Display open / delete buttons in session list"
+    "message": "Rādīt atvērt / dzēst pogas sesiju sarakstā"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Display open / delete buttons when the cursor is over the session list."
+    "message": "Rādīt atvērt / dzēst pogas, kad kursors ir virs sesiju saraksta."
   },
   "sizeLabel": {
     "message": "Izmērs"
@@ -579,10 +585,10 @@
     "message": "Sānjoslas platums"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Open session list in tab"
+    "message": "Atvērt sesiju sarakstu cilnē"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Open session list in tab when button on toolbar is clicked."
+    "message": "Atvērt sesiju sarakstu cilnē, kad uzspiež uz rīkjoslas pogu."
   },
   "themeLabel": {
     "message": "Tēma"
@@ -615,10 +621,10 @@
     "message": "Click to view update information."
   },
   "isDebugModeLabel": {
-    "message": "Enable debug mode"
+    "message": "Iespējot atkļūdošanas režīmu"
   },
   "isDebugModeCaptionLabel": {
-    "message": "When debug mode is enabled, the log is output to the debugger."
+    "message": "Kad ir iespējots atkļūdošanas režīms, žurnāls tiek izvadīts atkļūdotājā."
   },
   "exportSettingsLabel": {
     "message": "Eksportēt iestatījumus"
@@ -636,7 +642,7 @@
     "message": "Atiestatīt iestatījumus"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Atjaunojiet visus iestatījumus uz noklusējuma vērtībām."
+    "message": "Atjaunot visus iestatījumus uz noklusējuma vērtībām."
   },
   "resetSettingsButtonLabel": {
     "message": "Atiestatīt"
@@ -711,7 +717,7 @@
     "message": "Īsinājumtaustiņu nevar izmantot"
   },
   "openPopupDescription": {
-    "message": "Open toolbar popup"
+    "message": "Atvērt uznirstošo logu"
   },
   "saveCurrentWindowDescription": {
     "message": "Saglabāt sesiju (tikai pašreizējo logu)"

@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Sök efter session eller fliknamn"
   },
@@ -339,7 +345,7 @@
     "message": "Intervall (minuter)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minsta värde 0.5"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Maximalt antal sparade"

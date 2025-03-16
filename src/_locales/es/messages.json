@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Buscar por nombre de sesión o pestaña"
   },
@@ -93,10 +99,10 @@
     "message": "Error al eliminar la sesión."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Error al eliminar sesión de ventana."
+    "message": "Error al eliminar ventana de sesión."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Error al eliminar sesión de pesataña."
+    "message": "Error al eliminar pestaña de sesión."
   },
   "sessionSavedLabel": {
     "message": "Sesión guardada."
@@ -600,7 +606,7 @@
     "message": "Otros"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Mostrar página de configuracion cuando se actualize"
+    "message": "Mostrar página de configuración cuando se actualiza"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
     "message": "Mostrar la página de opciones cuando se actualiza Tab Session Manager. Puede saber el contenido de la actualización rápidamente."

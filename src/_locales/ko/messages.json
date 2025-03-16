@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "내림차순"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "세션이나 탭 이름으로 검색"
   },

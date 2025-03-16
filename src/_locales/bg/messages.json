@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Я-А"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Търсене по име на сесия или раздел"
   },

@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "ي-أ"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "البحث حسب اسم الجلسة أو علامة التبويب"
   },

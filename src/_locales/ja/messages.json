@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "タブが多い順"
+  },
+  "tabsAscLabel": {
+    "message": "タブが少ない順"
+  },
   "searchBarPlaceholder": {
     "message": "セッション名・タブ名で検索"
   },

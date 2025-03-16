@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Rechercher par nom de session ou d’onglet"
   },
@@ -174,13 +180,13 @@
     "message": "Ouvrir la session dans une nouvelle fenêtre."
   },
   "openInCurrentWindowLabel": {
-    "message": "Ouvrir dans la fenêtre actuelle"
+    "message": "Ouvrir et fermer les autres fenêtres"
   },
   "openInCurrentWindowCaptionLabel": {
     "message": "Ouvrir la session dans la fenêtre actuelle. Les autres fenêtres et tous les onglets seront fermés."
   },
   "addToCurrentWindowLabel": {
-    "message": "Ajouter à la fenêtre en cours"
+    "message": "Ajouter les onglets à la fenêtre en cours"
   },
   "addToCurrentWindowCaptionLabel": {
     "message": "Ajouter les onglets à la fenêtre actuelle. Si la session contient plusieurs fenêtres, l’ouvrir dans une nouvelle fenêtre."
@@ -339,7 +345,7 @@
     "message": "Intervalle (minutes)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Valeur minimale 0,5"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Nombre maximum enregistrées"
@@ -540,7 +546,7 @@
     "message": "Synchroniser les sessions autosauvegardées"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Téléverser et télécharger dans le nuage de synchronisation les sessions enregistrées automatiquement."
+    "message": "Charger / télécharger via une synchronisation cloud les sessions enregistrées automatiquement."
   },
   "popupLabel": {
     "message": "Pop-up"

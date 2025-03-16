@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Я-А"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Шукати за назвою сеансу або вкладки"
   },
@@ -108,16 +114,16 @@
     "message": "Скасувати"
   },
   "undoLabel": {
-    "message": "Скасувати"
+    "message": "Повернути"
   },
   "redoLabel": {
     "message": "Повторити"
   },
   "addTagLabel": {
-    "message": "Додати тег"
+    "message": "Додати мітку"
   },
   "removeTagLabel": {
-    "message": "Видалити тег"
+    "message": "Вилучити мітку"
   },
   "inputTagLabel": {
     "message": "Уведіть назву мітки"
@@ -339,7 +345,7 @@
     "message": "Інтервал (хвилини)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Мінімальне значення 0.5"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Найбільша кількість збережень"
