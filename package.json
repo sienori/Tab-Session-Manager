@@ -1,6 +1,10 @@
 {
   "name": "tab-session-manager",
   "version": "0.0.0",
+  "engines": {
+    "node": "18.19.1",
+    "npm": "10.2.4"
+  },
   "dependencies": {
     "browser-image-compression": "^1.0.14",
     "browser-info": "^1.2.0",
