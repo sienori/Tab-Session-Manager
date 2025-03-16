@@ -45,7 +45,8 @@ export const getSortedSessions = (sessions, sortValue, filterValue, searchWords,
     id: session.id,
     date: session.date,
     name: session.name,
-    tag: session.tag
+    tag: session.tag,
+    tabsNumber: session.tabsNumber
   }));
   sortedSessions = sortedSessions.filter(session =>
     matchesFilter(session.tag, filterValue) &&
@@ -69,11 +70,10 @@ export const getSortedSessions = (sessions, sortValue, filterValue, searchWords,
       sortedSessions.sort(namelessSort);
       break;
     case "tabsAsc":
-      sortedSessions.sort(tabsSort);
+      sortedSessions.sort(tabsSort).reverse();
       break;
     case "tabsDes":
       sortedSessions.sort(tabsSort);
-      sortedSessions.reverse();
       break;
   }
 
