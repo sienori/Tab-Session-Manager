@@ -13,23 +13,34 @@ export default async function exportSessions(id = null, folderName = "", isBacku
   if (sessions == undefined) return;
   if (!Array.isArray(sessions)) sessions = [sessions];
 
-  const downloadUrl = await createObjectURL(sessions);
-  const replacedFolderName = replaceFolderName(folderName);
-  const fileName = generateFileName(sessions, isBackup);
+  // セッションが多すぎるとメッセージサイズの制限やパフォーマンス上の問題を引き起こすので、セッションを分割する
+  const sessionsStringSize = JSON.stringify(sessions).length;
+  const MAX_FILE_SIZE = 32 * 1024 * 1024;
+  const chunkSize = Math.ceil(sessionsStringSize / MAX_FILE_SIZE);
+  const chunkSessions = [];
+  for (let i = 0; i < chunkSize; i++) {
+    chunkSessions.push(sessions.slice(i * sessions.length / chunkSize, (i + 1) * sessions.length / chunkSize));
+  }
 
-  const downloadId = await browser.downloads
-    .download({
-      url: downloadUrl,
-      filename: `${replacedFolderName}${fileName}.json`,
-      conflictAction: isBackup ? "overwrite" : "uniquify",
-      saveAs: !isBackup
-    })
-    .catch(e => {
-      log.warn(logDir, "exportSessions()", e);
-      revokeObjectURL(downloadUrl);
-    });
+  for (const [index, chunkSession] of chunkSessions.entries()) {
+    const downloadUrl = await createObjectURL(chunkSession);
+    const replacedFolderName = replaceFolderName(folderName);
+    const fileName = generateFileName(chunkSession, isBackup);
 
-  if (downloadId) recordDownloadUrl(downloadId, downloadUrl, isBackup);
+    const downloadId = await browser.downloads
+      .download({
+        url: downloadUrl,
+        filename: `${replacedFolderName}${fileName}${index > 0 ? '_' + index : ''}.json`,
+        conflictAction: isBackup ? "overwrite" : "uniquify",
+        saveAs: !isBackup
+      })
+      .catch(e => {
+        log.warn(logDir, "exportSessions()", e);
+        revokeObjectURL(downloadUrl);
+      });
+
+    if (downloadId) recordDownloadUrl(downloadId, downloadUrl, isBackup);
+  }
 }
 
 function generateFileName(sessions, isBackup) {
@@ -107,7 +118,7 @@ const revokeObjectURL = downloadUrl => {
       downloadUrl: downloadUrl
     });
   }
-}
+};
 
 const createObjectURL = async (sessions) => {
   if (URL?.createObjectURL) {
@@ -135,4 +146,4 @@ const createObjectURL = async (sessions) => {
       sessions: sessions
     });
   }
-}
+};
