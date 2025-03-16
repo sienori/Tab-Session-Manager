@@ -60,10 +60,10 @@
     "message": "Z-A"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "タブが多い順"
   },
   "tabsAscLabel": {
-    "message": "Fewest tabs"
+    "message": "タブが少ない順"
   },
   "searchBarPlaceholder": {
     "message": "セッション名・タブ名で検索"
@@ -345,7 +345,7 @@
     "message": "保存間隔(分)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.1"
+    "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "上限保存数"
