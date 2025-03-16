@@ -3,7 +3,7 @@
     "message": "Tab Session Manager"
   },
   "extDescription": {
-    "message": "Guarda e restaura o estado das janelas e dos separadores. Também suporta a gravação automática."
+    "message": "Salve e restaure o estado das janelas e abas. Também oferece salvamento automático."
   },
   "donateWithPaypalLabel": {
     "message": "Doar com PayPal"
@@ -12,40 +12,40 @@
     "message": "Doar"
   },
   "openSessionListInTabLabel": {
-    "message": "Abrir a lista de sessões no separador"
+    "message": "Abrir lista de sessões na aba"
   },
   "saveLabel": {
-    "message": "Guardar"
+    "message": "Salvar"
   },
   "initialNameValue": {
-    "message": "Guardar sessão atual"
+    "message": "Salvar a sessão atual"
   },
   "inputSessionNameLabel": {
     "message": "Inserir nome da sessão"
   },
   "saveSessionLabel": {
-    "message": "Guardar uma sessão"
+    "message": "Salvar sessão"
   },
   "saveAllWindowsLabel": {
-    "message": "Guardar todas as janelas"
+    "message": "Salvar todas as janelas"
   },
   "saveOnlyCurrentWindowLabel": {
-    "message": "Guardar apenas a janela atual"
+    "message": "Salvar apenas a janela atual"
   },
   "categoryFilterLabel": {
-    "message": "Filtro de categorias"
+    "message": "Filtro de categoria"
   },
   "sortLabel": {
     "message": "Ordenar"
   },
   "displayAllLabel": {
-    "message": "Tudo"
+    "message": "Todos"
   },
   "displayUserLabel": {
-    "message": "Guardar manual"
+    "message": "Salvamento do usuário"
   },
   "displayAutoLabel": {
-    "message": "Guardar automático"
+    "message": "Salvamento automático"
   },
   "newestLabel": {
     "message": "Mais recente"
@@ -66,10 +66,10 @@
     "message": "Fewest tabs"
   },
   "searchBarPlaceholder": {
-    "message": "Pesquisar por nome de sessão ou separador"
+    "message": "Buscar por sessão ou nome da aba"
   },
   "search": {
-    "message": "Pesquisar"
+    "message": "Buscar"
   },
   "clearSearch": {
     "message": "Limpar pesquisa"
@@ -78,37 +78,37 @@
     "message": "Abrir"
   },
   "remove": {
-    "message": "Eliminar"
+    "message": "Excluir"
   },
   "removeConfirmLabel": {
-    "message": "Eliminar esta sessão?"
+    "message": "Excluir esta sessão?"
   },
   "sessionDeletedLabel": {
-    "message": "Sessão eliminada."
+    "message": "Sessão excluída."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Janela da sessão eliminada."
+    "message": "Janela da sessão excluída."
   },
   "sessionTabDeletedLabel": {
-    "message": "Separador da sessão eliminado."
+    "message": "Aba da sessão excluída."
   },
   "restoreSessionLabel": {
     "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Falha ao eliminar sessão."
+    "message": "Falha ao excluir sessão."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Falha ao eliminar a janela da sessão."
+    "message": "Falha ao excluir janela da sessão."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Falha ao eliminar o separador da sessão."
+    "message": "Falha ao excluir aba da sessão."
   },
   "sessionSavedLabel": {
-    "message": "Sessão guardada."
+    "message": "Sessão salva."
   },
   "failedSaveSessionLabel": {
-    "message": "Falha ao guardar a sessão."
+    "message": "Falha ao salvar sessão."
   },
   "cancelLabel": {
     "message": "Cancelar"
@@ -120,10 +120,10 @@
     "message": "Refazer"
   },
   "addTagLabel": {
-    "message": "Adicionar etiqueta"
+    "message": "Adicionar tag"
   },
   "removeTagLabel": {
-    "message": "Remover etiqueta"
+    "message": "Remover tag"
   },
   "inputTagLabel": {
     "message": "Digite o nome da etiqueta"
@@ -138,19 +138,19 @@
     "message": "Janelas"
   },
   "tabLabel": {
-    "message": "Separador"
+    "message": "Aba"
   },
   "tabsLabel": {
-    "message": "Separadores"
+    "message": "Abas"
   },
   "noSessionLabel": {
-    "message": "Não há nenhuma sessão."
+    "message": "Não há sessão."
   },
   "letsSaveLabel": {
-    "message": "Vamos guardar a sessão clicando no botão inferior direito."
+    "message": "Vamos salvar a sessão ao clicar no botão no canto inferior direito."
   },
   "noResultLabel": {
-    "message": "Não foram encontrados resultados correspondentes."
+    "message": "Nenhum resultado correspondente."
   },
   "noSessionSelectedLabel": {
     "message": "Nenhuma sessão selecionada."
@@ -159,61 +159,61 @@
     "message": "Menu"
   },
   "closeMenuLabel": {
-    "message": "Fechar o menu"
+    "message": "Fechar menu"
   },
   "closeLabel": {
     "message": "Fechar"
   },
   "renameLabel": {
-    "message": "Alterar nome"
+    "message": "Renomear"
   },
   "renameSessionLabel": {
-    "message": "Alterar nome da sessão"
+    "message": "Renomear sessão"
   },
   "OpenSessionLabel": {
     "message": "Abrir uma sessão"
   },
   "openInNewWindowLabel": {
-    "message": "Abrir numa nova janela"
+    "message": "Abrir em uma nova janela"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "Abrir a sessão numa nova janela."
+    "message": "Abrir a sessão em uma nova janela."
   },
   "openInCurrentWindowLabel": {
     "message": "Abrir na janela atual"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "Abre a sessão na janela atual. As janelas inactivas e todos os separadores são fechados."
+    "message": "Abrir a sessão na janela atual. Janelas inativas e todas as abas são fechadas."
   },
   "addToCurrentWindowLabel": {
-    "message": "Adicionar à janela atual"
+    "message": "Adicionar na janela atual"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "Adiciona separadores à janela atual. Se a sessão contiver várias janelas, abre-a numa nova janela."
+    "message": "Adicionar abas à janela atual. Se a sessão contiver múltiplas janelas, será aberta em uma nova janela."
   },
   "EditSessionLabel": {
     "message": "Editar uma sessão"
   },
   "replaceCurrentSessionLabel": {
-    "message": "Substituir pela sessão atual"
+    "message": "Substituir com a sessão atual"
   },
   "replaceCurrentWindowLabel": {
-    "message": "Substituir pela janela atual"
+    "message": "Substituir com a janela atual"
   },
   "addCurrentWindowLabel": {
-    "message": "Adicionar janela atual"
+    "message": "Adicionar a janela atual"
   },
   "makeCopySessionLabel": {
     "message": "Fazer uma cópia da sessão"
   },
   "registerTrackingLabel": {
-    "message": "Rastrear alterações da janela"
+    "message": "Monitorar mudanças na janela"
   },
   "removeTrackingLabel": {
-    "message": "Eliminar rastreamento"
+    "message": "Excluir monitoração"
   },
   "registerStartupLabel": {
-    "message": "Adicionar à inicialização"
+    "message": "Adicionar a inicialização"
   },
   "removeStartupLabel": {
     "message": "Remover da inicialização"
@@ -222,7 +222,7 @@
     "message": "Editar uma janela"
   },
   "addCurrentTabLabel": {
-    "message": "Adicionar separador atual"
+    "message": "Adicionar aba atual"
   },
   "errorLabel": {
     "message": "Erro"
@@ -237,19 +237,19 @@
     "message": "Como resolver este problema"
   },
   "winCloseSessionName": {
-    "message": "Guardar automático - Janela fechada"
+    "message": "Salvamento automático - Janela fechada"
   },
   "browserExitSessionName": {
-    "message": "Guardar automático - Ao sair do navegador"
+    "message": "Salvamento automático - Navegador encerrado"
   },
   "regularSaveSessionName": {
-    "message": "Guardar automático - regularmente"
+    "message": "Salvamento automático - Regularmente"
   },
   "winCloseSessionNameShort": {
     "message": "Janela fechada"
   },
   "browserExitSessionNameShort": {
-    "message": "Sair do navegador"
+    "message": "Navegador fechado"
   },
   "regularSaveSessionNameShort": {
     "message": "Regularmente"
@@ -270,40 +270,40 @@
     "message": "Geral"
   },
   "autoSaveLabel": {
-    "message": "Guardar automático"
+    "message": "Salvar automaticamente"
   },
   "styleLabel": {
     "message": "Estilo"
   },
   "ifOpenNewWindowLabel": {
-    "message": "Abrir a sessão numa nova janela"
+    "message": "Abrir sessão em uma nova janela"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "Se desmarcado, a sessão substitui a janela atual."
+    "message": "Se desmarcada, a sessão substitui a janela atual."
   },
   "ifLazyLoadingLabel": {
-    "message": "Carregamento lento de separador"
+    "message": "Carregamento lento de aba"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até selecionar o separador.<br>Se não estiver selecionado, a utilização da memória aumenta consideravelmente quando a sessão é restaurada."
+    "message": "Ao abrir uma sessão, o conteúdo de cada página não é carregado até você selecionar a aba.<br>Se desmarcado, o uso da memória aumenta consideravelmente quando a sessão é restaurada."
   },
   "isUseDiscardedLabel": {
-    "message": "Utilizar a propriedade “discarded” para o carregamento lento"
+    "message": "Use a propriedade \"descartado\" para carregamento lento"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "A ativação desta opção irá melhorar o desempenho ao abrir separadores."
+    "message": "Ativar esta opção irá melhorar o desempenho ao abrir abas."
   },
   "isUseDiscardedCaption2Label": {
-    "message": "O favicon do separador de carregamento lento não é apresentado."
+    "message": "O favicon da guia em carregamento lento não é exibido."
   },
   "isRestoreWindowPositionLabel": {
     "message": "Restaurar posição da janela"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "Restaurar posição e tamanho da janela ao abrir a sessão."
+    "message": "Recupera posição e tamanho da janela ao abrir sessão."
   },
   "startupLabel": {
-    "message": "Arranque"
+    "message": "Inicialização"
   },
   "startupBehaviorLabel": {
     "message": "Comportamento ao iniciar o navegador"
@@ -312,127 +312,127 @@
     "message": "Abrir sessão anterior"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "Abrir a sessão que foi fechada da última vez."
+    "message": "Abrir a sessão fechada pela última vez."
   },
   "openStartupSessionLabel": {
-    "message": "Abrir a sessão de arranque"
+    "message": "Abrir sessão de inicialização"
   },
   "openStartupSessionCaptionLabel": {
-    "message": "Abre as sessões registadas para arranque. Pode registar as sessões para arranque a partir do menu na lista de sessões."
+    "message": "Abrir as sessões registradas para inicialização. Você pode registrar para inicialização no menu da lista de sessões."
   },
   "DoNothingLabel": {
     "message": "Não fazer nada"
   },
   "trackingSessionLabel": {
-    "message": "Rastreamento da sessão"
+    "message": "Sessão monitorada"
   },
   "trackingLabel": {
-    "message": "Rastreamento"
+    "message": "Monitoração"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Rastrear janelas abertas recentemente"
+    "message": "Monitorar janelas recém-abertas"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "Quando uma nova janela é aberta dentro de uma sessão de rastreamento, incluia-a no rastreamento."
+    "message": "Quando se abre uma janela nova numa sessão monitorada, incluí-la na monitoração."
   },
   "ifAutoSaveLabel": {
-    "message": "Gurdar a sessão regularmente"
+    "message": "Salvar a sessão regularmente"
   },
   "ifAutoSaveCaptionLabel": {
-    "message": "Guardar a sessão a cada X minutos."
+    "message": "Salvar a sessão a cada X minutos."
   },
   "autoSaveIntervalLabel": {
-    "message": "Intervado (minutos)"
+    "message": "Intervalo (minutos)"
   },
   "autoSaveIntervalCaptionLabel": {
     "message": "Minimum value 0.5"
   },
   "autoSaveLimitLabel": {
-    "message": "Número máximo guardado"
+    "message": "Número máximo salvo"
   },
   "autoSaveLimitCaptionLabel": {
-    "message": "Número máximo de sessões gardadas (desta forma)."
+    "message": "Número máximo de sessões salvas (desta forma)."
   },
   "ifAutoSaveWhenCloseLabel": {
-    "message": "Guardar a sessão quando a janela foi fechada"
+    "message": "Salvar a sessão quando a janela for fechada"
   },
   "ifAutoSaveWhenCloseCaptionLabel": {
-    "message": "Guardar a sessão que inclui apenas uma janela fechada."
+    "message": "Salvar a sessão que inclui somente uma janela fechada."
   },
   "autoSaveWhenCloseLimitLabel": {
-    "message": "Número máximo guardado"
+    "message": "Número máximo salvo"
   },
   "autoSaveWhenCloseCaptionLabel": {
-    "message": "Número máximo de sessões guardadas (desta forma)."
+    "message": "Número máximo de sessões salvas (desta forma)."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "Guardar a sessão ao sair do browser"
+    "message": "Salvar a sessão ao sair do navegador"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Guardar a sessão que inclui várias janelas que foram fechadas de seguida."
+    "message": "Salvar a sessão quando várias janelas forem fechadas em sequência."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
-    "message": "Número máximo guardado"
+    "message": "Número máximo salvo"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Número máximo de sessões guardadas (desta forma)."
+    "message": "Número máximo de sessões salvas (desta forma)."
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "Usar título da página para guardar automaticamente o nome da sessão"
+    "message": "Usar título da página como nome para salvar a sessão automaticamente"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "Quando guardar uma sessão automaticamente, utiliza o título da página aberta como o nome da sessão."
+    "message": "Ao salvar uma sessão automaticamente, use o título da página aberta como o nome da sessão."
   },
   "backupLabel": {
-    "message": "Cópia de segurança"
+    "message": "Backup"
   },
   "ifBackupLabel": {
-    "message": "Guardar cópia de segurança"
+    "message": "Salvar backup"
   },
   "ifBackupCaptionLabel": {
-    "message": "Quando o navegador for iniciado, cria um ficheiro de cópia de segurança das sessões e guarda-o na pasta de descarregamentos."
+    "message": "Iniciado o navegador, criar um arquivo de backup das sessões e salvá-lo nas pasta de downloads."
   },
   "individualBackupLabel": {
-    "message": "Cópia de segurança individual"
+    "message": "Backup individual"
   },
   "individualBackupCaptionLabel": {
-    "message": "Cada sessão é guardada num ficheiro individual.<br>Se não estiver selecionado, todas as sessões serão guardadas como um único ficheiro, o que pode sobrecarregar o seu espaço de armazenamento."
+    "message": "Cada sessão é salva num arquivo separado.<br>Se desmarcado, todas as sessões serão salvas num único arquivo, que pode ficar muito grande."
   },
   "backupFolderLabel": {
-    "message": "Local de armazenamento"
+    "message": "Local para salvar"
   },
   "backupFolderCaptionLabel": {
-    "message": "Especifique a pasta para guardar o ficheiro de cópia de segurança. A localização para guardar está limitada à pasta sob a pasta de descarregamentos do navegador."
+    "message": "Especifique a pasta para salvar o arquivo de backup. O local a ser escolhido deve estar dentro da pasta de downloads do navegador."
   },
   "downloadFolderLabel": {
-    "message": "Pasta de descargas"
+    "message": "Pasta de download"
   },
   "backupFilesLimitLabel": {
-    "message": "Número máximo de cópias de segurança guardadas"
+    "message": "Quantidade máxima de backups salvos"
   },
   "backupFilesLimitCaptionLabel": {
-    "message": "Quando o número de ficheiros de cópia de segurança excede este valor, estes são eliminados por ordem crescente dos mais antigos."
+    "message": "Quando o número de arquivos de backup excede esse valor, os mais antigos são excluídos."
   },
   "dateFormatLabel": {
     "message": "Formato da data"
   },
   "dateFormatCaptionLabel": {
-    "message": "Exemplo: YYYY. MM. DD HH:mm:ss"
+    "message": "Exemplo: AAAA. MM. DD HH:mm:ss"
   },
   "ifSavePrivateWindowLabel": {
-    "message": "Guardar janela privada"
+    "message": "Salvar janela privada"
   },
   "ignoreUrlListLabel": {
-    "message": "Lista de URL a ignorar ao guardar a sessão"
+    "message": "Exibe a lista de URL a ser ignorada quando salvar a sessão"
   },
   "ignoreUrlListCaptionLabel": {
-    "message": "Se o URL do separador corresponder à lista, não será registado na sessão. A lista permite caracteres curinga “*”."
+    "message": "Se a URL da guia fizer parte da lista, ela não será gravada na sessão. A lista permite caracteres curingas como \"*\"."
   },
   "shouldSaveDeviceNameLabel": {
-    "message": "Guardar o nome do dispositivo na sessão"
+    "message": "Salvar o nome do dispositivo na sessão"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Adiciona o nome do dispositivo como uma etiqueta quando guardar uma sessão. Ao utilizar a sincronização na nuvem, pode distingui-la das sessões noutros dispositivos."
+    "message": "Adicionar o nome do dispositivo como uma tag ao salvar uma sessão. Ao usar a sincronização em nuvem, você pode distingui-la das sessões em outros dispositivos."
   },
   "deviceNameLabel": {
     "message": "Nome do dispositivo"
@@ -444,7 +444,7 @@
     "message": "Aplicar o nome do dispositivo às sessões existentes"
   },
   "applyDeviceNameCaptionLabel": {
-    "message": "Adicionar o nome do dispositivo a todas as sessões guardadas."
+    "message": "Adicionar o nome do dispositivo a todas as sessões salvas."
   },
   "applyDeviceNameButtonLabel": {
     "message": "Aplicar nome do dispositivo"
@@ -453,16 +453,16 @@
     "message": "Aplicar o nome do dispositivo a todas as sessões?"
   },
   "compressFaviconUrlLabel": {
-    "message": "Comprimir favicons"
+    "message": "Comprimir ícones da página"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Comprimir os favicons ao guardar uma sessão."
+    "message": "Comprimir os ícones da página ao salvar uma sessão."
   },
   "compressAllSessionsLabel": {
     "message": "Comprimir todas as sessões"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Comprime os favicons de todas as sessões atualmente guardadas. Isso economizará o uso de memória e acelerará o carregamento da sessão."
+    "message": "Comprimir os ícones de página de todas as sessões salvas atualmente. Isso poupará memória e agilizará a carga de sessão."
   },
   "compressLabel": {
     "message": "Comprimir"
@@ -471,103 +471,103 @@
     "message": "Comprimir todas as sessões?"
   },
   "compressingLabel": {
-    "message": "A comprimir..."
+    "message": "Comprimindo..."
   },
   "compressionCompleteLabel": {
     "message": "Compressão concluída."
   },
   "ifSavePrivateWindowCaptionLabel": {
-    "message": "Se desmarcada, ignora a janela privada ao guardar a sessão."
+    "message": "Se estiver desmarcada, ignora a janela privada ao salvar a sessão."
   },
   "ifSupportTstLabel": {
     "message": "Suporta Tree Style Tab"
   },
   "ifSupportTstCaptionLabel": {
-    "message": "Restaura o estado do Tree Style Tab.<br>Quando esta opção está ativada, é necessário um tempo para restaurar a sessão."
+    "message": "Restaurar o estado da árvore da aba Tree Style Tab.<br>Quando esta opção está ativada, leva algum tempo para restaurar a sessão."
   },
   "tstDelayLabel": {
-    "message": "Atraso da restauração da árvore (milissegundos)"
+    "message": "Atraso na restauração da árvore (milissegundos)"
   },
   "saveTabGroupsLabel": {
-    "message": "Guardar grupos de separadores"
+    "message": "Salvar grupos de aba"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Guardar e restaurar o estado dos grupos de separadores. Para ativar esta funcionalidade, é necessário instalar a seguinte extensão."
+    "message": "Salvar e restaurar o estado dos grupos de aba. Para ativar esta função, deve instalar a seguinte extensão."
   },
   "tstDelayCaptionLabel": {
-    "message": "Para restaurar o estado da árvore, é necessário um tempo de espera para abrir o separador. Aumente este valor se a árvore não for restaurada corretamente."
+    "message": "Para restaurar o estado da árvore, espere o tempo necessário para abrir a aba. Aumente este valor se a árvore não for restaurada corretamente."
   },
   "truncateTitleLabel": {
-    "message": "Mostrar o nome da sessão numa linha"
+    "message": "Exibir o nome da sessão em uma linha"
   },
   "truncateTitleCaptionLabel": {
-    "message": "Se o nome da sessão na lista de sessões se estender por mais de uma linha, é truncado numa linha e apresentado."
+    "message": "Se o nome da sessão na lista sessão se estende por mais de uma linha, é truncado para exibição em uma linha."
   },
   "cloudSyncLabel": {
     "message": "Sincronização na nuvem"
   },
   "enabledCloudSyncLabel": {
-    "message": "Ativar sincronização na nuvem (beta)"
+    "message": "Ativar sincronização na nuvem (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Guardar sessões no Google DriveTM e sincronizar com outros computadores."
+    "message": "Salvar sessões no Google Drive™ e sincronizar com outros computadores."
   },
   "syncingLabel": {
-    "message": "A sincronizar"
+    "message": "Sincronizando"
   },
   "downloadingLabel": {
-    "message": "A descarregar"
+    "message": "Baixando"
   },
   "uploadingLabel": {
-    "message": "A enviar"
+    "message": "Fazendo upload"
   },
   "deletingLabel": {
-    "message": "A eliminar"
+    "message": "Excluindo"
   },
   "syncCompletedLabel": {
-    "message": "A sincronização está concluída."
+    "message": "Sincronização completa."
   },
   "signInRequiredLabel": {
-    "message": "Requer início de sessão para sincronização na nuvem."
+    "message": "Sincronizar na nuvem requer login."
   },
   "signInLabel": {
     "message": "Iniciar sessão"
   },
   "signOutLabel": {
-    "message": "Terminar sessão"
+    "message": "Finalizar sessão"
   },
   "enabledAutoSyncLabel": {
     "message": "Sincronizar automaticamente"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Executar a sincronização na nuvem quando o navegador é iniciado e quando a sessão é guardada."
+    "message": "Executar sincronização na nuvem ao iniciar o navegador e ao salvar a sessão."
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Sincronizar sessões guardadas automaticamente"
+    "message": "Sincronizar sessões de salvamento automático"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Enviar / descarregar sessões guardadas automaticamente na sincronização da nuvem."
+    "message": "Enviar / baixar sessões de salvamento automático em sincronização na nuvem."
   },
   "popupLabel": {
     "message": "Pop-up"
   },
   "openButtonBehaviorLabel": {
-    "message": "Funcionamento do botão \"Abrir\""
+    "message": "Comportamento do botão \"Abrir\""
   },
   "openButtonBehaviorCaptionLabel": {
-    "message": "Selecione o comportamento padrão do botão Abrir."
+    "message": "Selecione o comportamento padrão do botão \"Abrir\"."
   },
   "saveButtonBehaviorLabel": {
-    "message": "Funcionamento do botão \"Guardar\""
+    "message": "Comportamento do botão \"Salvar\""
   },
   "saveButtonBehaviorCaptionLabel": {
-    "message": "Selecione o comportamento padrão do botão Guardar."
+    "message": "Selecione o comportamento padrão do botão de \"Salvar\"."
   },
   "isShowOpenButtonsLabel": {
-    "message": "Mostrar botões de abrir / eliminar na lista de sessões"
+    "message": "Mostrar botões \"Abrir\" / \"Excluir\" na lista de sessões"
   },
   "isShowOpenButtonsCaptionLabel": {
-    "message": "Mostrar os botões de abrir / eliminar quando o cursor estiver sobre a lista de sessões."
+    "message": "Mostrar botões \"Abrir\" / \"Excluir\" quando o cursor estiver sobre a lista de sessão."
   },
   "sizeLabel": {
     "message": "Tamanho"
@@ -585,16 +585,16 @@
     "message": "Largura da barra lateral"
   },
   "isSessionListOpenInTabLabel": {
-    "message": "Abrir a lista de sessões no separador"
+    "message": "Abrir lista de sessões na aba"
   },
   "isSessionListOpenInTabCaptionLabel": {
-    "message": "Abrir a lista de sessões no separador quando se clica no botão da barra de ferramentas."
+    "message": "Abrir lista de sessão na aba ao clicar no botão da barra de ferramentas."
   },
   "themeLabel": {
     "message": "Tema"
   },
   "themeCaptionLabel": {
-    "message": "Especifica o esquema de cores."
+    "message": "Especifique o esquema de cores."
   },
   "lightLabel": {
     "message": "Claro"
@@ -606,10 +606,10 @@
     "message": "Outros"
   },
   "isShowOptionsPageWhenUpdatedLabel": {
-    "message": "Mostrar página de opções ao atualizar"
+    "message": "Exibir página de opções ao atualizar"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Mostra a página de opções quando o Tab Session Manager é atualizado. Pode saber o conteúdo da atualização rapidamente."
+    "message": "Exibir a página de opções quando o Tab Session Manager for atualizado. Você pode saber o conteúdo da atualização rapidamente."
   },
   "NotificationOnUpdateLabel": {
     "message": "O Tab Session Manager foi atualizado!"
@@ -618,43 +618,43 @@
     "message": "Ver mais"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Clique para ver as informações de atualização."
+    "message": "Clique para ver as informações da atualização."
   },
   "isDebugModeLabel": {
     "message": "Ativar modo de depuração"
   },
   "isDebugModeCaptionLabel": {
-    "message": "Quando o modo de depuração está ativado, o registo é enviado para o depurador."
+    "message": "Quando o modo de depuração está ativado, o log é enviado para o depurador."
   },
   "exportSettingsLabel": {
     "message": "Exportar configurações"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Guarda as configurações como um ficheiro json no computador."
+    "message": "Salvar as configurações como um arquivo json no computador."
   },
   "importSettingsLabel": {
     "message": "Importar configurações"
   },
   "importSettingsCaptionLabel": {
-    "message": "Carrega o ficheiro de configurações guardado no computador."
+    "message": "Carregar o arquivo de configurações salvo no computador."
   },
   "resetSettingsLabel": {
-    "message": "Repor configurações"
+    "message": "Redefinir as configurações"
   },
   "resetSettingsCaptionLabel": {
-    "message": "Repõe todas as configurações para as que estão predefinidas."
+    "message": "Restaurar todas as configurações para o padrão."
   },
   "resetSettingsButtonLabel": {
-    "message": "Repor"
+    "message": "Redefinir"
   },
   "importLabel": {
     "message": "Importar sessões"
   },
   "importCaptionLabel": {
-    "message": "Carrega as sessões guardadas no computador e adiciona-as à lista de sessões."
+    "message": "Carregar as sessões salvas no computador e adicioná-las à lista de sessão."
   },
   "importCaptionLabel2": {
-    "message": "Ficheiros suportados:"
+    "message": "Arquivos aceitos:"
   },
   "importCaptionLabel3": {
     "message": "Como importar sessões de outras extensões"
@@ -672,31 +672,31 @@
     "message": "Importar lista de URL"
   },
   "urlImportCaptionLabel": {
-    "message": "Cria uma sessão a partir de uma lista de URLs e adiciona-a à lista de sessões.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Criar uma sessão da lista de URLs e adicioná-la à lista de sessão.<br>Formato: &lt;URL&gt; &lt;título da página (opcional)&gt;"
   },
   "exportLabel": {
     "message": "Exportar sessões"
   },
   "exportCaptionLabel": {
-    "message": "Guarda todas as sessões no computador."
+    "message": "Salvar todas as sessões no computador."
   },
   "exportButtonLabel": {
     "message": "Exportar"
   },
   "removeSessionsLabel": {
-    "message": "Eliminar sessões"
+    "message": "Excluir sessões"
   },
   "removeSessionsCaptionLabel": {
-    "message": "Eliminar todas as sessões."
+    "message": "Excluir todas as sessões."
   },
   "removeSessionsButtonLabel": {
-    "message": "Eliminar"
+    "message": "Excluir"
   },
   "keyboardShortcutsLabel": {
     "message": "Atalhos do teclado"
   },
   "setKeyboardShortCutsMessage": {
-    "message": "Configure os atalhos do teclado."
+    "message": "Definir atalhos do teclado."
   },
   "typeShortcutMessage": {
     "message": "Digite um atalho"
@@ -705,10 +705,10 @@
     "message": "Digite uma letra"
   },
   "includeModifierKeysMessage": {
-    "message": "Inclua Ctrl ou Alt"
+    "message": "Incluir Ctrl ou Alt"
   },
   "includeMacModifierKeysMessage": {
-    "message": "Inclua Command, Ctrl ou Alt"
+    "message": "Incluir Command, Ctrl ou Alt"
   },
   "invalidLetterMessage": {
     "message": "A letra não pode ser usada"
@@ -717,13 +717,13 @@
     "message": "O atalho não pode ser usado"
   },
   "openPopupDescription": {
-    "message": "Abrir pop-up da barra de ferramentas"
+    "message": "Abrir popup da barra de ferramentas"
   },
   "saveCurrentWindowDescription": {
-    "message": "Guardar a sessão (apenas a janela atual)"
+    "message": "Salvar sessão (apenas janela atual)"
   },
   "saveAllWindowDescription": {
-    "message": "Guardar a sessão (todas as janelas)"
+    "message": "Salvar sessão (todas as janelas)"
   },
   "exportSessionsDescription": {
     "message": "Exportar todas as sessões"
@@ -732,22 +732,22 @@
     "message": "Limpar"
   },
   "reset": {
-    "message": "Repor"
+    "message": "Redefinir"
   },
   "backersLabel": {
-    "message": "Apoiantes"
+    "message": "Apoiadores"
   },
   "LicenseLabel": {
     "message": "Licença"
   },
   "donationLabel": {
-    "message": "Faça uma doação"
+    "message": "Por favor, faça uma doação"
   },
   "donationCaptionLabel": {
-    "message": "Obrigado por usar o Tab Session Manager.<br>O seu apoio será um grande incentivo, uma vez que continuo a desenvolver este extra.<br>Se gosta do Tab Session Manager, ficaria satisfeito se pudesse considerar fazer um donativo."
+    "message": "Obrigado por usar Tab Session Manager.<br>Seu apoio será um grande estímulo para eu continuar a desenvolver a extensão.<br>Se você gosta do Tab Session Manager, eu apreciaria se considerasse doar."
   },
   "amazonTitleLabel": {
-    "message": "Cartões de oferta amazon.co.jp"
+    "message": "amazon.co.jp Gift Cards"
   },
   "sponsorsLabel": {
     "message": "Patrocinadores"
@@ -759,10 +759,10 @@
     "message": "Página da extensão"
   },
   "firefoxLabel": {
-    "message": "Complementos do Firefox"
+    "message": "Extensões para o Firefox"
   },
   "chromeLabel": {
-    "message": "Loja Web do Chrome"
+    "message": "Chrome Web Store"
   },
   "edgeLabel": {
     "message": "Complementos do Edge"
@@ -777,7 +777,7 @@
     "message": "Falha de leitura"
   },
   "warningRemoveAllMessage": {
-    "message": "As sessões serão todas eliminadas. Tem a certeza?"
+    "message": "Excluir todas as sessões. Você tem certeza?"
   },
   "sessionLabel": {
     "message": "Sessão"
@@ -786,7 +786,7 @@
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/pt-PT/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://addons.mozilla.org/pt-BR/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
     "message": "Esta página não pode ser aberta pelo Tab Session Manager."
