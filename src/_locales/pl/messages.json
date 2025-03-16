@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Szukaj według nazwy sesji lub karty"
   },
@@ -339,7 +345,7 @@
     "message": "Odstęp czasowy (w minutach)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Maksymalna liczba zapisanych"
