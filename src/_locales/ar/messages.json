@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "ي-أ"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "البحث حسب اسم الجلسة أو علامة التبويب"
   },
@@ -339,7 +345,7 @@
     "message": "الفترة الزمنية (دقائق)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "الحد الأقصى محفوظ"
