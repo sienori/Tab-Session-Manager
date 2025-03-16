@@ -60,10 +60,10 @@
     "message": "Я-А"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "Больше вкладок"
   },
   "tabsAscLabel": {
-    "message": "Fewest tabs"
+    "message": "Меньше вкладок"
   },
   "searchBarPlaceholder": {
     "message": "Поиск по названию сессии или вкладки"
@@ -345,7 +345,7 @@
     "message": "Промежуток (минуты)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Минимальное значение 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Предельное число сохранений"
