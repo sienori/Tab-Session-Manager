@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "字母倒序"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "按会话或标签页名称搜索"
   },
@@ -339,7 +345,7 @@
     "message": "间隔（分钟）"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "最小值为 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "最大保存数量"
