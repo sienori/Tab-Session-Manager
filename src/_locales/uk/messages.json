@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Я-А"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Шукати за назвою сеансу або вкладки"
   },
@@ -339,7 +345,7 @@
     "message": "Інтервал (хвилини)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Мінімальне значення 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Найбільша кількість збережень"
