@@ -59,6 +59,12 @@
   "zToALabel": {
     "message": "Z-A"
   },
+  "tabsDesLabel": {
+    "message": "Most tabs"
+  },
+  "tabsAscLabel": {
+    "message": "Fewest tabs"
+  },
   "searchBarPlaceholder": {
     "message": "Munkamenet vagy fül név alapú keresés"
   },
@@ -339,7 +345,7 @@
     "message": "Időköz (percben)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimum value 0.1"
   },
   "autoSaveLimitLabel": {
     "message": "Elmentettek maximális száma"
