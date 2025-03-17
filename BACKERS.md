@@ -172,3 +172,16 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Jack
 - Yvonne Wilson
 - Mal Den
+- Chris Coetzee
+- Raif Derin Esmer
+- Ryan Swift
+- Kaisa Knutson
+- Nunyabizniss
+- Jimmy
+- cherubino
+- Tom Fools
+- AgroCrypto Labs LLC
+- Heath Holcomb
+- Adrian
+- Mitchell Marks
+- LocustSwarm
