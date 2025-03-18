@@ -282,7 +282,7 @@
     "message": "If unchecked, the session overwrites the current window."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Lēnām ielādēt cilni"
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
@@ -492,10 +492,10 @@
     "message": "Saglabāt ciļņu grupas"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Saglabāt un atjaunot ciļņu grupas stāvokli. Lai iespējotu šo funkciju, jums ir nepieciešams uzstādīt zemāk pieminēto paplašinājumu."
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Lai atjaunotu koka stāvokli un atvērtu cilni, ir nepieciešams kāds laiks. Palieliniet šo vērtību, ja koks nav atjaunots pareizi."
   },
   "truncateTitleLabel": {
     "message": "Rādīt sesijas nosaukumu vienā rindā"
