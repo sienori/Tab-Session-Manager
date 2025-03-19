@@ -60,10 +60,10 @@
     "message": "Z-A"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "Maioria das abas"
   },
   "tabsAscLabel": {
-    "message": "Fewest tabs"
+    "message": "Menos abas"
   },
   "searchBarPlaceholder": {
     "message": "Buscar por sessão ou nome da aba"
@@ -345,7 +345,7 @@
     "message": "Intervalo (minutos)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Valor mínimo 0,5"
   },
   "autoSaveLimitLabel": {
     "message": "Número máximo salvo"

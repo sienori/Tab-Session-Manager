@@ -204,7 +204,7 @@
     "message": "Add current window"
   },
   "makeCopySessionLabel": {
-    "message": "Make a copy of the session"
+    "message": "Izveidot sesijas kopiju"
   },
   "registerTrackingLabel": {
     "message": "Sekot loga izmaiņām"
@@ -222,7 +222,7 @@
     "message": "Rediģēt logu"
   },
   "addCurrentTabLabel": {
-    "message": "Add current tab"
+    "message": "Pievienot pašreizējo cilni"
   },
   "errorLabel": {
     "message": "Kļūda"
@@ -282,7 +282,7 @@
     "message": "If unchecked, the session overwrites the current window."
   },
   "ifLazyLoadingLabel": {
-    "message": "Tab lazy loading"
+    "message": "Lēnām ielādēt cilni"
   },
   "ifLazyLoadingCaptionLabel": {
     "message": "When opening a session, the contents of each page are not loaded until you select the tab.<br>If unchecked, memory usage greatly increases when session is restored."
@@ -291,13 +291,13 @@
     "message": "Use the \"discarded\" property for lazy loading"
   },
   "isUseDiscardedCaptionLabel": {
-    "message": "Enabling this option will improve performance when opening tabs."
+    "message": "Iespējojot šo iestatījumu, uzlabos veiktspēju, atverot cilnes."
   },
   "isUseDiscardedCaption2Label": {
     "message": "The favicon of the lazy loading tab is not displayed."
   },
   "isRestoreWindowPositionLabel": {
-    "message": "Restore window's position"
+    "message": "Atjaunot loga pozīciju"
   },
   "isRestoreWindowPositionCaptionLabel": {
     "message": "Restore window's position and size when opening session."
@@ -345,7 +345,7 @@
     "message": "Intervāls (minūtes)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Minimālā vērtība 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Maksimālais skaits saglabāts"
@@ -405,7 +405,7 @@
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
   "downloadFolderLabel": {
-    "message": "Download folder"
+    "message": "Lejupielādes mape"
   },
   "backupFilesLimitLabel": {
     "message": "Maksimālais saglabājamo rezerves kopiju skaits"
@@ -471,7 +471,7 @@
     "message": "Vai saspiest visas sesijas?"
   },
   "compressingLabel": {
-    "message": "Saspiež..."
+    "message": "Saspiež…"
   },
   "compressionCompleteLabel": {
     "message": "Saspiešana pabeigta."
@@ -492,16 +492,16 @@
     "message": "Saglabāt ciļņu grupas"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Saglabāt un atjaunot ciļņu grupas stāvokli. Lai iespējotu šo funkciju, jums ir nepieciešams uzstādīt zemāk pieminēto paplašinājumu."
   },
   "tstDelayCaptionLabel": {
-    "message": "To restore the state of the tree, wait time is required to open the tab. Increase this value if the tree is not restored correctly."
+    "message": "Lai atjaunotu koka stāvokli un atvērtu cilni, ir nepieciešams kāds laiks. Palieliniet šo vērtību, ja koks nav atjaunots pareizi."
   },
   "truncateTitleLabel": {
-    "message": "Display session name within one line"
+    "message": "Rādīt sesijas nosaukumu vienā rindā"
   },
   "truncateTitleCaptionLabel": {
-    "message": "If the session name in the session list extends over more than one line, it is truncated on one line and displayed."
+    "message": "Ja sesijas nosaukums sesiju sarakstā aizņem vairāk nekā vienu rindu, tas tiek saīsināts vienā rindā un parādīts."
   },
   "cloudSyncLabel": {
     "message": "Mākoņa sinhronizācija"
@@ -528,7 +528,7 @@
     "message": "Sinhronizācija pabeigta."
   },
   "signInRequiredLabel": {
-    "message": "Requires sign in for cloud sync."
+    "message": "Nepieciešams pierakstīties, lai varētu veikt mākoņa sinhronizāciju."
   },
   "signInLabel": {
     "message": "Pierakstīties"
@@ -546,7 +546,7 @@
     "message": "Sinhronizēt automātiski saglabātās sesijas"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Upload / download auto save sessions in cloud sync."
+    "message": "Mākoņu sinhronizācijas laikā augšupielādēt un lejupielādēt automātiski saglabātās sesijas."
   },
   "popupLabel": {
     "message": "Uznirstošais logs"
@@ -618,7 +618,7 @@
     "message": "Skatīt vairāk"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Click to view update information."
+    "message": "Noklikšķiniet, lai skatītu atjaunināšanas informāciju."
   },
   "isDebugModeLabel": {
     "message": "Iespējot atkļūdošanas režīmu"
@@ -630,13 +630,13 @@
     "message": "Eksportēt iestatījumus"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Save the settings as a json file on the computer."
+    "message": "Saglabāt iestatījumus JSON faila formātā."
   },
   "importSettingsLabel": {
     "message": "Importēt iestatījumus"
   },
   "importSettingsCaptionLabel": {
-    "message": "Load the settings file saved on the computer."
+    "message": "Ielādēt iestatījumus no saglabātā faila."
   },
   "resetSettingsLabel": {
     "message": "Atiestatīt iestatījumus"
@@ -657,10 +657,10 @@
     "message": "Atbalstītie faili:"
   },
   "importCaptionLabel3": {
-    "message": "How to import sessions from other extensions"
+    "message": "Kā importēt sesijas no citiem paplašinājumiem"
   },
   "importButtonLabel": {
-    "message": "Pārlūkot..."
+    "message": "Pārlūkot…"
   },
   "importSaveButtonLabel": {
     "message": "Importēt"
@@ -669,10 +669,10 @@
     "message": "Clear"
   },
   "urlImportLabel": {
-    "message": "Import URL list"
+    "message": "Importēt vietņu URL sarakstu"
   },
   "urlImportCaptionLabel": {
-    "message": "Create a session from list of URLs and add it to the session list.<br>Format: &lt;URL&gt; &lt;page title (optionally)&gt;"
+    "message": "Izveidot sesiju no vietņu URL saraksta un pievienot to sesiju sarakstam.<br>Formāts: &lt;vietnes URL adrese&gt; &lt;lapas virsraksts (nav obligāti, pēc izvēles)&gt;"
   },
   "exportLabel": {
     "message": "Eksportēt sesijas"
@@ -777,7 +777,7 @@
     "message": "Read failed"
   },
   "warningRemoveAllMessage": {
-    "message": "Dzēst visas sesijas. Vai esat pārliecināti?"
+    "message": "Dzēst visas sesijas. Vai tiešām?"
   },
   "sessionLabel": {
     "message": "Sesija"
