@@ -42,7 +42,7 @@
     "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^1.6.0",
-    "node-sass": "^9.0.0",
+    "sass": "^1.86.0",
     "sass-loader": "^14.2.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^4.8.0",
