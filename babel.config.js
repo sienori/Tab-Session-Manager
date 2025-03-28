@@ -13,6 +13,6 @@ module.exports = {
   plugins: [
     "@babel/plugin-proposal-optional-chaining",
     "@babel/plugin-proposal-object-rest-spread",
-    "transform-class-properties"
+    "@babel/plugin-transform-class-properties"
   ]
 };
