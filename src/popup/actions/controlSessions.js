@@ -1,7 +1,7 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import _ from "lodash";
-import uuidv4 from "uuid/v4";
+import { v4 as uuidv4 } from "uuid";
 import moment from "moment";
 import log from "loglevel";
 import { returnReplaceParameter } from "src/background/replace.js";

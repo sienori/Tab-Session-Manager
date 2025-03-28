@@ -1,7 +1,7 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import moment from "moment";
-import uuidv4 from "uuid/v4";
+import { v4 as uuidv4 } from "uuid";
 import log from "loglevel";
 import Sessions from "./sessions";
 import { updateSession, saveSession } from "./save";

@@ -1,5 +1,5 @@
 import browser from "webextension-polyfill";
-import uuidv4 from "uuid/v4";
+import { v4 as uuidv4 } from "uuid";
 import log from "loglevel";
 import { openSession } from "./open.js";
 import { getSessionsByTag } from "./tag.js";

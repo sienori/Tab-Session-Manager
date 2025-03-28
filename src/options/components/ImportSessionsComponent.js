@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import moment from "moment";
 import mozlz4a from "mozlz4a";
-import uuidv4 from "uuid/v4";
+import { v4 as uuidv4 } from "uuid";
 import OptionContainer from "./OptionContainer";
 
 const fileOpen = file => {
@@ -38,7 +38,7 @@ const fileOpen = file => {
         if (isSessionBuddy(jsonFile)) {
           return resolve(convertSessionBuddy(jsonFile));
         }
-        
+
         return resolve();
       }
 
@@ -112,25 +112,25 @@ const parseSession = file => {
 };
 
 const isSessionBuddy = file => {
-  const currentKeys = ["generated", "type", "windows"]
-  const previousKeys = ["created", "generated", "gid", "id", "type", "windows"]
+  const currentKeys = ["generated", "type", "windows"];
+  const previousKeys = ["created", "generated", "gid", "id", "type", "windows"];
   const savedKeys = ["created", "generated", "gid", "id", "modified", "name", "type", "windows"];
-  if(file.hasOwnProperty("sessions")) {
+  if (file.hasOwnProperty("sessions")) {
     return file.sessions.every(session => {
-      if(session.type == "current") {
-        return currentKeys.every(key => session.hasOwnProperty(key))
+      if (session.type == "current") {
+        return currentKeys.every(key => session.hasOwnProperty(key));
       }
-      if(session.type == "previous") {
-        return previousKeys.every(key => session.hasOwnProperty(key))
+      if (session.type == "previous") {
+        return previousKeys.every(key => session.hasOwnProperty(key));
       }
-      if(session.type == "saved") {
-        return savedKeys.every(key => session.hasOwnProperty(key))
+      if (session.type == "saved") {
+        return savedKeys.every(key => session.hasOwnProperty(key));
       }
 
-      return false
-    })
+      return false;
+    });
   } else {
-    return false
+    return false;
   }
 };
 

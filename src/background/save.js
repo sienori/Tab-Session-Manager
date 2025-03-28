@@ -1,6 +1,6 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
-import uuidv4 from "uuid/v4";
+import { v4 as uuidv4 } from "uuid";
 import log from "loglevel";
 import Sessions from "./sessions.js";
 import { getSettings } from "src/settings/settings";
@@ -179,8 +179,8 @@ export async function deleteAllSessions() {
 
 export const setSessionStartTime = async () => {
   await browser.storage.session.set({ sessionStartTime: Date.now() });
-}
+};
 
 export const getSessionStartTime = async () => {
   return (await browser.storage.session.get("sessionStartTime")).sessionStartTime || Date.now();
-}
+};
