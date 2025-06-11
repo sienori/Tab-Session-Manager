@@ -102,7 +102,9 @@ const isEnabledOpenerTabId =
   (browserInfo().name == "Chrome" && browserInfo().version >= 18);
 const isEnabledDiscarded = browserInfo().name == "Firefox" && browserInfo().version >= 63;
 const isEnabledOpenInReaderMode = browserInfo().name == "Firefox" && browserInfo().version >= 58;
-const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
+const isEnabledTabGroups =
+  (browserInfo().name == "Chrome" && browserInfo().version >= 89) ||
+  (browserInfo().name == "Firefox" && browserInfo().version >= 137);
 const isEnabledWindowTitle = browserInfo().name == "Firefox";
 
 //ウィンドウとタブを閉じてcurrentWindowを返す

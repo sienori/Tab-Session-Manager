@@ -11,7 +11,8 @@
     "downloads",
     "identity",
     "alarms",
-    "offscreen"
+    "offscreen",
+    "tabGroups"
   ],
   "optional_host_permissions": [
     "https://www.googleapis.com/*"

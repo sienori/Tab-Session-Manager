@@ -13,7 +13,9 @@ import { compressDataUrl } from "../common/compressDataUrl";
 
 const logDir = "background/save";
 
-const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
+const isEnabledTabGroups =
+  (browserInfo().name == "Chrome" && browserInfo().version >= 89) ||
+  (browserInfo().name == "Firefox" && browserInfo().version >= 137);
 
 export async function saveCurrentSession(name, tag, property) {
   log.log(logDir, "saveCurrentSession()", name, tag, property);

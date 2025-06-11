@@ -492,7 +492,7 @@
     "message": "Lagra fanegrupper"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Lagra og gjenopprett plasseringa til fanegrupper. For å slå på denne funksjonen treng du den følgjande utvidinga."
+    "message": "Lagra og gjenopprett plasseringa til fanegrupper."
   },
   "tstDelayCaptionLabel": {
     "message": "For å gjenoppretta trestrukturen må du venta litt før du kan opna fana. Øk denne verdien viss treet ikkje vert gjenoppretta riktig."

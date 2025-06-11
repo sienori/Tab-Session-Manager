@@ -63,13 +63,9 @@ export default [
         id: "saveTabGroups",
         title: "saveTabGroupsLabel",
         captions: ["saveTabGroupsCaptionLabel"],
-        link: {
-          href: "https://chrome.google.com/webstore/detail/aghdiknflpelpkepifoplhodcnfildao/",
-          text: "Save Tab Groups for Tab Session Manager"
-        },
         type: "checkbox",
         default: false,
-        shouldShow: browserInfo().name == "Chrome" && browserInfo().version >= 89,
+        shouldShow: (browserInfo().name == "Chrome" && browserInfo().version >= 89) || (browserInfo().name == "Firefox" && browserInfo().version >= 137),
       },
       {
         id: "ifSavePrivateWindow",
