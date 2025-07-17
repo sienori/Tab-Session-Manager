@@ -32,6 +32,17 @@ export const initSettings = async () => {
   };
 
   fetchDefaultSettings();
+
+  if (!Array.isArray(currentSettings.removedQueue)) {
+    currentSettings.removedQueue = [];
+    shouldSave = true;
+  }
+
+  if (typeof currentSettings.lastSyncTime !== "number") {
+    currentSettings.lastSyncTime = 0;
+    shouldSave = true;
+  }
+
   if (shouldSave) await browser.storage.local.set({ Settings: currentSettings });
 };
 
@@ -110,4 +121,30 @@ const getSettingsIds = () => {
     });
   });
   return settingsIds;
+};
+
+// Enqueue a session-ID for later remote-delete propagation
+export const enqueueRemovedId = async (sessionId) => {
+  const queue = new Set(currentSettings.removedQueue);
+  queue.add(sessionId);
+  currentSettings.removedQueue = Array.from(queue).slice(-1000);
+  await browser.storage.local.set({ Settings: currentSettings });
+  log.info(logDir, "enqueueRemovedId()", sessionId);
+};
+
+// Atomically grab—and clear—the list of IDs that have been removed locally since the last sync
+export const dequeueAllRemovedIds = () => {
+  const queue = currentSettings.removedQueue || [];
+  currentSettings.removedQueue = [];
+  browser.storage.local.set({ Settings: currentSettings });
+  return queue;
+};
+
+// Read the timestamp (ms) of the last successful sync
+export const getLastSyncTime = () => currentSettings.lastSyncTime || 0;
+
+// Persist a new “last sync” timestamp (defaults to now)
+export const setLastSyncTime = async (ts = Date.now()) => {
+  currentSettings.lastSyncTime = ts;
+  await browser.storage.local.set({ Settings: currentSettings });
 };
