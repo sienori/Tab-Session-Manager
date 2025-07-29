@@ -185,3 +185,13 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Adrian
 - Mitchell Marks
 - LocustSwarm
+- mumeiyamibito
+- Joachim Fuglsang-Frederiksen
+- 淳一 吉田
+- Bren Letson
+- Sai
+- Jon Mulligan
+- Winter Perry
+- leisa kaleid
+- Omegaomelet
+- U D
