@@ -492,7 +492,7 @@
     "message": "Save tab groups"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "Om de staat van een boomstructuur te herstellen, is een wachttijd vereist voor het openen van de tab. Verhoog deze waarde indien de boomstructuur niet correct wordt teruggezet."

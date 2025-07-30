@@ -16,7 +16,8 @@
     "cookies",
     "downloads",
     "identity",
-    "alarms"
+    "alarms",
+    "tabGroups"
   ],
   "optional_permissions": [
     "https://www.googleapis.com/*"
