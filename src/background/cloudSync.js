@@ -1,10 +1,10 @@
 import browser from "webextension-polyfill";
 import log from "loglevel";
-import { getSettings, setSettings } from "../settings/settings";
+import { getSettings, enqueueRemovedId, dequeueAllRemovedIds, getLastSyncTime, setLastSyncTime } from "../settings/settings";
 import getSessions from "./getSessions";
 import { listFiles, uploadSession, downloadFile, deleteFile } from "./cloudAPIs";
 import { refreshAccessToken } from "./cloudAuth";
-import { saveSession, updateSession } from "./save";
+import { saveSession, updateSession, removeSession } from "./save";
 import { showSyncErrorBadge, hideBadge } from "./setBadge";
 
 const logDir = "background/cloudSync";
@@ -117,9 +117,10 @@ export const syncCloud = async () => {
     return;
   }
   const sessions = (await getSessions()).filter(session => !session.tag.includes("temp"));
-  const removedQueue = getSettings("removedQueue") || [];
-
-  const lastSyncTime = getSettings("lastSyncTime") || 0;
+  // grab & clear local "removed" IDs in one step
+  const removedQueue = dequeueAllRemovedIds();
+  // read when last synced
+  const lastSyncTime = getLastSyncTime();
   const currentTime = Date.now();
 
   const shouldRemoveFiles = getShouldRemoveFiles(files, sessions, removedQueue);
@@ -146,21 +147,33 @@ export const syncCloud = async () => {
     await deleteFile(file.id);
   }
 
-  setSettings("lastSyncTime", currentTime);
-  setSettings("removedQueue", []);
+  await setLastSyncTime(currentTime);
   isSyncing = false;
   updateSyncStatus(syncStatus.complete);
   updateSyncStatus(syncStatus.none);
+
+  // Remove any local sessions that vanished on Google Cloud and weren’t edited locally ──
+  const remoteIds = new Set(files.map(f => f.name));
+  const staleLocals = sessions.filter(
+    s => !remoteIds.has(s.id) && s.lastEditedTime <= lastSyncTime
+  );
+  if (staleLocals.length) {
+    log.info(logDir,
+      "syncCloud() remove local sessions missing in Drive:",
+      staleLocals.map(s => s.id)
+    );
+    for (const sess of staleLocals) {
+      // delete locally
+      await removeSession(sess.id, true);
+    }
+  }
 };
 
 export const pushRemovedQueue = id => {
   const isSignedIn = getSettings("signedInEmail");
   if (!isSignedIn) return;
-
   log.log(logDir, "pushRemovedQueue()", id);
-  let removedQueue = getSettings("removedQueue") || [];
-  removedQueue.push(id);
-  setSettings("removedQueue", removedQueue);
+  enqueueRemovedId(id);
 };
 
 let autoSyncTimer;
