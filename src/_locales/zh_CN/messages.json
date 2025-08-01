@@ -60,10 +60,10 @@
     "message": "字母倒序"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "标签页最多"
   },
   "tabsAscLabel": {
-    "message": "Fewest tabs"
+    "message": "标签页最少"
   },
   "searchBarPlaceholder": {
     "message": "按会话或标签页名称搜索"
@@ -345,7 +345,7 @@
     "message": "间隔（分钟）"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "最小值为 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "最大保存数量"
