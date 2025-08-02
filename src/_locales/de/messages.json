@@ -60,10 +60,10 @@
     "message": "Z-A"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "Meiste Tabs"
   },
   "tabsAscLabel": {
-    "message": "Fewest tabs"
+    "message": "Wenigste Tabs"
   },
   "searchBarPlaceholder": {
     "message": "Suchen nach Sitzungs- oder Tabnamen"
