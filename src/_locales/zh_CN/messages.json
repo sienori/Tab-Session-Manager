@@ -549,7 +549,7 @@
     "message": "在云同步时上传/下载自动保存的会话。"
   },
   "popupLabel": {
-    "message": "弹出面板"
+    "message": "弹出窗口"
   },
   "openButtonBehaviorLabel": {
     "message": "打开按钮行为"
@@ -645,7 +645,7 @@
     "message": "将所有设置恢复为默认值。"
   },
   "resetSettingsButtonLabel": {
-    "message": "恢复"
+    "message": "重置"
   },
   "importLabel": {
     "message": "导入会话"
