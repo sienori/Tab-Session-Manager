@@ -1,6 +1,8 @@
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 
+const actionApi = browser.action || browser.browserAction;
+
 export const showDoneBadge = () => {
   showBadge("✓", "#36b2b2");
   setTimeout(hideBadge, 3000);
@@ -11,12 +13,14 @@ export const showSyncErrorBadge = () => {
 };
 
 export const showBadge = (text, backgroundColor, textColor = "#fff") => {
-  browser.action.setBadgeBackgroundColor({ color: backgroundColor });
+  if (!actionApi) return;
+  actionApi.setBadgeBackgroundColor({ color: backgroundColor });
   const isEnableSetTextColor = browserInfo().name == "Firefox" && browserInfo().version >= 63;
-  if (isEnableSetTextColor) browser.action.setBadgeTextColor({ color: textColor });
-  browser.action.setBadgeText({ text: text });
+  if (isEnableSetTextColor && actionApi.setBadgeTextColor) actionApi.setBadgeTextColor({ color: textColor });
+  actionApi.setBadgeText({ text: text });
 };
 
 export const hideBadge = () => {
-  browser.action.setBadgeText({ text: "" });
+  if (!actionApi) return;
+  actionApi.setBadgeText({ text: "" });
 };

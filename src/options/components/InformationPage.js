@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import queryString from "query-string";
@@ -13,18 +13,6 @@ export default props => {
   const paypalLink = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager ${isChrome ? "for Chrome " : ""
     }- Donation`;
   const patreonLink = "https://www.patreon.com/sienori";
-  const email = `sienori.firefox+tsm${isChrome ? "fc" : ""}@gmail.com`;
-
-  const [sponsorsHeihgt, setSponsorsHeight] = useState();
-
-  useEffect(() => {
-    const setHeight = e => {
-      if (e.data[0] !== "setSponsorsHeight") return;
-      setSponsorsHeight(e.data[1]);
-    };
-    window.addEventListener("message", setHeight);
-    return () => window.removeEventListener("message", setHeight);
-  });
 
   return (
     <div>
@@ -58,18 +46,25 @@ export default props => {
         type={"none"}
       />
       <hr />
-      <OptionsContainer title={"donationLabel"} captions={["donationCaptionLabel"]} type={"none"} />
+      <OptionsContainer
+        title={"donationLabel"}
+        captions={["forkSupportNotice"]}
+        type={"none"}
+      />
       <OptionsContainer
         title={""}
         captions={[""]}
         type={"none"}
         extraCaption={
           <div>
-            <a href={patreonLink} target="_blank">
-              <img src="/icons/patreonButton.png" alt="Patreon"
-                style={{ height: 44, marginRight: 20 }} />
+            <a href={patreonLink} target="_blank" rel="noreferrer">
+              <img
+                src="/icons/patreonButton.png"
+                alt="Patreon"
+                style={{ height: 44, marginRight: 20 }}
+              />
             </a>
-            <a href={paypalLink} target="_blank">
+            <a href={paypalLink} target="_blank" rel="noreferrer">
               <img src="/icons/paypalButton.png" alt="Paypal" />
             </a>
           </div>
@@ -77,33 +72,12 @@ export default props => {
       />
       <OptionsContainer
         title={""}
-        captions={[""]}
+        captions={["forkContactNotice", "forkSponsorNotice"]}
         type={"none"}
-        extraCaption={
-          <div>
-            <p className="caption">
-              <a className="amazonUrl" href={browser.i18n.getMessage("amazonUrl")} target="_blank">
-                {browser.i18n.getMessage("amazonTitleLabel")}
-              </a>
-            </p>
-            <p className="caption">email: {email}</p>
-          </div>
-        }
       />
-      <hr />
-      <OptionsContainer
-        title={"sponsorsLabel"}
-        captions={[""]}
-        type={"none"}
-        extraCaption={
-          <iframe src="https://tab-session-manager.sienori.com/sponsors.html"
-            style={{ height: sponsorsHeihgt, marginTop: 10 }} />
-        }
-      />
-      <hr />
       <OptionsContainer
         title={""}
-        captions={[""]}
+        captions={["forkLinksNotice"]}
         type={"none"}
         extraCaption={
           <div>
@@ -111,6 +85,7 @@ export default props => {
               <a
                 href="https://addons.mozilla.org/firefox/addon/tab-session-manager/?src=optionpage"
                 target="_blank"
+                rel="noreferrer"
               >
                 {browser.i18n.getMessage("firefoxLabel")}
               </a>
@@ -118,6 +93,7 @@ export default props => {
               <a
                 href="https://chrome.google.com/webstore/detail/tab-session-manager/iaiomicjabeggjcfkbimgmglanimpnae"
                 target="_blank"
+                rel="noreferrer"
               >
                 {browser.i18n.getMessage("chromeLabel")}
               </a>
@@ -125,15 +101,16 @@ export default props => {
               <a
                 href="https://microsoftedge.microsoft.com/addons/detail/tab-session-manager/jkjjclfiflhpjangefhgfjhgfbhajadk"
                 target="_blank"
+                rel="noreferrer"
               >
                 {browser.i18n.getMessage("edgeLabel")}
               </a>
               <span>　</span>
-              <a href="https://github.com/sienori/Tab-Session-Manager" target="_blank">
+              <a href="https://github.com/sienori/Tab-Session-Manager" target="_blank" rel="noreferrer">
                 GitHub
               </a>
               <span>　</span>
-              <a href="https://tab-session-manager.sienori.com/privacy-policy" target="_blank">
+              <a href="https://tab-session-manager.sienori.com/privacy-policy" target="_blank" rel="noreferrer">
                 {browser.i18n.getMessage("privacyPolicyLabel")}
               </a>
             </p>

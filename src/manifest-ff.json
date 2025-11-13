@@ -1,12 +1,18 @@
 {
-  "manifest_version": 3,
-  "version": "7.1.1",
+  "manifest_version": 2,
+  "version": "7.1.1.6",
   "name": "__MSG_extName__",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
   "browser_specific_settings": {
     "gecko": {
-      "id": "Tab-Session-Manager@sienori"
+      "id": "tabboard@local",
+      "data_collection_permissions": {
+        "collects_data": false,
+        "required": [
+          "none"
+        ]
+      }
     }
   },
   "permissions": [
@@ -16,7 +22,8 @@
     "cookies",
     "downloads",
     "identity",
-    "alarms"
+    "alarms",
+    "<all_urls>"
   ],
   "optional_permissions": [
     "https://www.googleapis.com/*"
@@ -33,9 +40,9 @@
     "scripts": [
       "background/background.js"
     ],
-    "type": "module"
+    "persistent": true
   },
-  "action": {
+  "browser_action": {
     "default_icon": {
       "16": "icons/icon_min.svg",
       "64": "icons/icon.svg"

@@ -18,7 +18,7 @@ export const autoSaveRegular = async () => {
       : browser.i18n.getMessage("regularSaveSessionName");
     const tag = ["regular"];
     const property = "saveAllWindows";
-    const session = await loadCurrentSession(name, tag, property);
+    const session = await loadCurrentSession(name, tag, property, { captureAssets: false });
 
     const isChanged = await isChangedAutoSaveSession(session);
     if (!isChanged) return;
@@ -57,7 +57,7 @@ const updateTemp = async () => {
   log.log(logDir, "updateTemp()");
   try {
     const name = await getCurrentTabName();
-    let session = await loadCurrentSession(name, ["temp"], "default");
+    let session = await loadCurrentSession(name, ["temp"], "default", { captureAssets: false });
     const tempSessions = await getSessionsByTag("temp");
 
     //現在のセッションをtempとして保存

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import browser from "webextension-polyfill";
 import moment from "moment";
 import { getSettings } from "src/settings/settings";
@@ -30,10 +29,6 @@ const getOpenButtonTitle = () => {
 };
 
 export default class SessionDetailsArea extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   handleMenuClick = e => {
     const rect = e.target.getBoundingClientRect();
     const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
@@ -56,17 +51,52 @@ export default class SessionDetailsArea extends Component {
     this.props.removeSession(this.props.session.id);
   };
 
-  shouldComponentUpdate = (nextProps) => {
-    const isChangeSession = this.props.session.id !== nextProps.session.id;
-    const isUpdateSession = this.props.session.lastEditedTime !== nextProps.session.lastEditedTime;
-    const isLoadedSession = this.props.session.hasOwnProperty("windows") !== nextProps.session.hasOwnProperty("windows");
-    const isChangedTagList = this.props.tagList !== nextProps.tagList;
-    const isChangedTracking = this.props.isTracking !== nextProps.isTracking;
-    return isChangeSession || isUpdateSession || isLoadedSession || isChangedTagList || isChangedTracking;
+  handleViewModeClick = mode => {
+    if (this.props.onViewModeChange) this.props.onViewModeChange(mode);
   };
 
+  handleThumbnailSizeInput = event => {
+    const value = Number(event.target.value);
+    if (this.props.onThumbnailSizeChange) this.props.onThumbnailSizeChange(value);
+  };
+
+  handleThumbnailSourceToggle = event => {
+    if (this.props.onThumbnailSourceToggle) this.props.onThumbnailSourceToggle(event.target.checked);
+  };
+
+  shouldComponentUpdate(nextProps) {
+    const propKeys = [
+      "session",
+      "searchWords",
+      "isTracking",
+      "tagList",
+      "viewMode",
+      "thumbnailSize",
+      "thumbnailSource"
+    ];
+
+    for (const key of propKeys) {
+      if (this.props[key] !== nextProps[key]) return true;
+    }
+
+    return false;
+  }
+
   render() {
-    const { session, searchWords, isTracking, removeWindow, removeTab, openModal, closeModal, tagList, openMenu } = this.props;
+    const {
+      session,
+      searchWords,
+      isTracking,
+      removeWindow,
+      removeTab,
+      openModal,
+      closeModal,
+      tagList,
+      openMenu,
+      viewMode,
+      thumbnailSize,
+      thumbnailSource
+    } = this.props;
 
     if (!session.id)
       return (
@@ -127,12 +157,54 @@ export default class SessionDetailsArea extends Component {
             </div>
           </div>
         </div>
+        <div className="viewControls">
+          <div className="viewToggle">
+            <button
+              type="button"
+              className={viewMode === "list" ? "isActive" : ""}
+              onClick={() => this.handleViewModeClick("list")}
+            >
+              {browser.i18n.getMessage("listViewLabel")}
+            </button>
+            <button
+              type="button"
+              className={viewMode === "grid" ? "isActive" : ""}
+              onClick={() => this.handleViewModeClick("grid")}
+            >
+              {browser.i18n.getMessage("gridViewLabel")}
+            </button>
+            <label className="thumbnailSourceToggle">
+              <input
+                type="checkbox"
+                checked={thumbnailSource === "screenshot"}
+                onChange={this.handleThumbnailSourceToggle}
+              />
+              <span>{browser.i18n.getMessage("thumbnailSourceScreenshotShortLabel")}</span>
+            </label>
+          </div>
+          {viewMode === "grid" && (
+            <label className="thumbnailSizeControl">
+              <span>{browser.i18n.getMessage("thumbnailSizeLabel")}</span>
+              <input
+                type="range"
+                min="120"
+                max="320"
+                step="10"
+                value={thumbnailSize}
+                onChange={this.handleThumbnailSizeInput}
+              />
+              <span className="thumbnailSizeValue">{`${thumbnailSize}px`}</span>
+            </label>
+          )}
+        </div>
         <DetailsContainer
           session={session}
           searchWords={searchWords}
           removeWindow={removeWindow}
           removeTab={removeTab}
           openMenu={openMenu}
+          viewMode={viewMode}
+          thumbnailSize={thumbnailSize}
         />
       </div>
     );

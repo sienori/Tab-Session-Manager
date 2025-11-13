@@ -23,7 +23,8 @@ import {
   deleteAllSessions,
   updateSession,
   renameSession,
-  setSessionStartTime
+  setSessionStartTime,
+  captureAssetsForLiveTab
 } from "./save";
 import getSessions from "./getSessions";
 import { openSession } from "./open";
@@ -41,6 +42,15 @@ import { getsearchInfo } from "./search";
 import { recordChange, undo, redo, updateUndoStatus } from "./undo";
 import { compressAllSessions } from "./compressAllSessions";
 import { startTracking, endTrackingByWindowDelete, updateTrackingStatus } from "./track";
+import {
+  initTabAssets,
+  getThumbnail,
+  getOfflinePage,
+  deleteBySession as deleteAssetsBySession,
+  deleteThumbnails,
+  deleteOfflinePages,
+  deleteAllAssets
+} from "./tabAssets";
 
 const logDir = "background/background";
 
@@ -52,6 +62,7 @@ export const init = async () => {
   updateLogLevel();
   log.info(logDir, "init()");
   await Sessions.init();
+  await initTabAssets();
   IsInit = true;
 };
 
@@ -80,7 +91,9 @@ const onMessageListener = async (request, sender, sendResponse) => {
     case "saveCurrentSession":
       const name = request.name;
       const property = request.property;
-      const afterSession = await saveCurrentSession(name, [], property);
+      const afterSession = await saveCurrentSession(name, [], property, {
+        thumbnailSource: request.thumbnailSource
+      });
       recordChange(null, afterSession);
       return afterSession;
     case "open":
@@ -111,11 +124,41 @@ const onMessageListener = async (request, sender, sendResponse) => {
       exportSessions(request.id);
       break;
     case "deleteAllSessions":
-      deleteAllSessions();
+      await deleteAllSessions();
+      await deleteAllAssets();
       break;
     case "getSessions":
       const sessions = await getSessions(request.id, request.needKeys);
       return sessions;
+    case "getThumbnail": {
+      const thumbnail = await getThumbnail(request.id);
+      if (!thumbnail?.blob) return null;
+      const buffer = await thumbnail.blob.arrayBuffer();
+      return {
+        id: request.id,
+        buffer,
+        mimeType: thumbnail.blob.type,
+        type: thumbnail.type
+      };
+    }
+    case "getOfflineBackup": {
+      const page = await getOfflinePage(request.id);
+      if (!page) return null;
+      let html = page.html;
+      if (page.html instanceof Blob) {
+        html = await page.html.text();
+      }
+      return {
+        id: request.id,
+        html,
+        url: page.url,
+        title: page.title
+      };
+    }
+    case "captureLiveTabAssets":
+      return await captureAssetsForLiveTab(request.sessionId, request.tabId, request.overrideTabId, {
+        thumbnailSource: request.thumbnailSource
+      });
     case "addTag": {
       const beforeSession = await getSessions(request.id);
       const afterSession = await addTag(request.id, request.tag);
@@ -131,7 +174,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
     case "getInitState":
       return IsInit;
     case "getCurrentSession":
-      const currentSession = await loadCurrentSession("", [], request.property).catch(() => { });
+      const currentSession = await loadCurrentSession("", [], request.property, { captureAssets: false }).catch(() => { });
       return currentSession;
     case "signInGoogle":
       return await signInGoogle();

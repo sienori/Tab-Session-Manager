@@ -3,3 +3,4 @@ dist
 dev
 temp
 src/credentials.js
+backups/

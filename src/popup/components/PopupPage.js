@@ -49,6 +49,9 @@ export default class PopupPage extends Component {
       searchedSessionIds: [],
       isInTab: false,
       sidebarWidth: 300,
+      viewMode: "list",
+      thumbnailSize: 200,
+      thumbnailSource: "representative",
       notification: {
         message: "",
         type: "info",
@@ -114,10 +117,14 @@ export default class PopupPage extends Component {
 
     document.body.dataset.theme = getSettings("theme");
 
+    const storedThumbnailSize = Number(getSettings("thumbnailSize"));
     this.setState({
       sortValue: getSettings("sortValue") || "newest",
       isInTab: isInTab,
-      sidebarWidth: getSettings("sidebarWidth")
+      sidebarWidth: getSettings("sidebarWidth"),
+      viewMode: getSettings("thumbnailViewMode") || "list",
+      thumbnailSize: Number.isFinite(storedThumbnailSize) ? storedThumbnailSize : 200,
+      thumbnailSource: getSettings("thumbnailImageSource") || "representative"
     });
 
     const isInit = await browser.runtime.sendMessage({ message: "getInitState" });
@@ -140,6 +147,7 @@ export default class PopupPage extends Component {
     }
 
     browser.storage.local.onChanged.addListener(handleSettingsChange);
+    browser.storage.local.onChanged.addListener(this.handleViewPreferencesChange);
     window.addEventListener("unload", this.handleUnload, { once: true });
     browser.runtime.sendMessage({ message: "updateUndoStatus" });
     browser.runtime.sendMessage({ message: "updateTrackingStatus" });
@@ -196,6 +204,44 @@ export default class PopupPage extends Component {
 
     this.setState({ tagList: uniqueTags });
   };
+  handleViewModeChange = mode => {
+    setSettings("thumbnailViewMode", mode);
+    this.setState({ viewMode: mode });
+  };
+
+  handleThumbnailSizeChange = value => {
+    const numericValue = Number(value);
+    const clampedValue = Number.isFinite(numericValue) ? Math.min(Math.max(numericValue, 120), 320) : 200;
+    setSettings("thumbnailSize", clampedValue);
+    this.setState({ thumbnailSize: clampedValue });
+  };
+
+  handleThumbnailSourceToggle = isScreenshot => {
+    const value = isScreenshot ? "screenshot" : "representative";
+    setSettings("thumbnailImageSource", value);
+    this.setState({ thumbnailSource: value });
+  };
+
+  handleViewPreferencesChange = (changes, areaName) => {
+    if (areaName !== "local" || !changes.Settings) return;
+    const updatedViewMode = getSettings("thumbnailViewMode") || "list";
+    const rawSize = Number(getSettings("thumbnailSize"));
+    const updatedSize = Number.isFinite(rawSize) ? rawSize : 200;
+    const updatedSource = getSettings("thumbnailImageSource") || "representative";
+
+    this.setState(prev => {
+      const shouldUpdate =
+        prev.viewMode !== updatedViewMode ||
+        prev.thumbnailSize !== updatedSize ||
+        prev.thumbnailSource !== updatedSource;
+      return shouldUpdate ? {
+        viewMode: updatedViewMode,
+        thumbnailSize: updatedSize,
+        thumbnailSource: updatedSource
+      } : null;
+    });
+  };
+
 
   handleMessage = request => {
     switch (request.message) {
@@ -321,6 +367,7 @@ export default class PopupPage extends Component {
 
   handleUnload = () => {
     browser.storage.local.onChanged.removeListener(handleSettingsChange);
+    browser.storage.local.onChanged.removeListener(this.handleViewPreferencesChange);
   };
 
   changeFilterValue = value => {
@@ -393,7 +440,9 @@ export default class PopupPage extends Component {
   saveSession = async (name, property) => {
     log.info(logDir, "saveSession()", name, property);
     try {
-      const savedSession = await sendSessionSaveMessage(name, property);
+      const savedSession = await sendSessionSaveMessage(name, property, {
+        thumbnailSource: this.state.thumbnailSource
+      });
       this.selectSession(savedSession.id);
       this.openNotification({
         message: browser.i18n.getMessage("sessionSavedLabel"),
@@ -593,6 +642,12 @@ export default class PopupPage extends Component {
               openMenu={this.openMenu}
               openModal={this.openModal}
               closeModal={this.closeModal}
+              viewMode={this.state.viewMode}
+              thumbnailSize={this.state.thumbnailSize}
+              thumbnailSource={this.state.thumbnailSource}
+              onViewModeChange={this.handleViewModeChange}
+              onThumbnailSizeChange={this.handleThumbnailSizeChange}
+              onThumbnailSourceToggle={this.handleThumbnailSourceToggle}
             />
           </div>
         </div>

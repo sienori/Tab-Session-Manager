@@ -569,6 +569,57 @@
   "isShowOpenButtonsCaptionLabel": {
     "message": "Display open / delete buttons when the cursor is over the session list."
   },
+  "thumbnailImageSourceLabel": {
+    "message": "Thumbnail source"
+  },
+  "thumbnailImageSourceCaption": {
+    "message": "Use screenshots for a live preview or representative images when screenshots may be disruptive."
+  },
+  "thumbnailSourceRepresentativeLabel": {
+    "message": "Representative image"
+  },
+  "thumbnailSourceScreenshotLabel": {
+    "message": "Screenshot"
+  },
+  "thumbnailSourceScreenshotShortLabel": {
+    "message": "Screenshot"
+  },
+  "tabViewModeLabel": {
+    "message": "Default tab view"
+  },
+  "tabViewModeCaptionLabel": {
+    "message": "Choose how saved tabs are displayed by default."
+  },
+  "listViewLabel": {
+    "message": "List view"
+  },
+  "gridViewLabel": {
+    "message": "Grid view"
+  },
+  "thumbnailSizeLabel": {
+    "message": "Thumbnail size"
+  },
+  "thumbnailColumnsLabel": {
+    "message": "Number of columns"
+  },
+  "thumbnailSingleColumnValue": {
+    "message": "1 column"
+  },
+  "thumbnailColumnCountValue": {
+    "message": "$COLUMN_COUNT$ columns",
+    "placeholders": {
+      "column_count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "hideThumbnailTextLabel": {
+    "message": "Hide text under tiles"
+  },
+  "hideThumbnailTextCaptionLabel": {
+    "message": "Show title and URL only on hover"
+  },
   "sizeLabel": {
     "message": "Size"
   },
@@ -796,5 +847,17 @@
   },
   "copiedLabel": {
     "message": "Copied."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501."
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

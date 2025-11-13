@@ -48,12 +48,13 @@ export const sendSessionRemoveMessage = async id => {
   });
 };
 
-export const sendSessionSaveMessage = async (name, property = "saveAllWindows") => {
-  log.info(logDir, "sendSessionSaveMessage()", name, property);
+export const sendSessionSaveMessage = async (name, property = "saveAllWindows", options = {}) => {
+  log.info(logDir, "sendSessionSaveMessage()", name, property, options);
   return await browser.runtime.sendMessage({
     message: "saveCurrentSession",
     name: name,
-    property: property
+    property: property,
+    thumbnailSource: options.thumbnailSource
   });
 };
 
@@ -135,7 +136,7 @@ const generateUniqueId = (originalId, isIdDuplicate) => {
   return id;
 };
 
-export const addCurrentWindow = async (id, isTracking = false) => {
+export const addCurrentWindow = async (id, isTracking = false, options = {}) => {
   log.info(logDir, "AddCurrentWindow()", id);
   const session = await getSessions(id);
   const currentWindow = await browser.windows.getCurrent({ populate: true });
@@ -155,11 +156,28 @@ export const addCurrentWindow = async (id, isTracking = false) => {
   const isWindowIdDuplicate = id => session.windows.hasOwnProperty(id);
   const windowId = generateUniqueId(currentWindow.id, isWindowIdDuplicate);
 
+  const captureResults = {};
+  const { thumbnailSource = getSettings("thumbnailImageSource") || "representative" } = options || {};
+  for (const tab of currentWindow.tabs) {
+    const originalTabId = tab.id;
+    const newTabId = updatedTabIdMap[originalTabId];
+    const assets = await browser.runtime.sendMessage({
+      message: "captureLiveTabAssets",
+      sessionId: session.id,
+      tabId: originalTabId,
+      overrideTabId: newTabId,
+      thumbnailSource: thumbnailSource
+    }).catch(() => ({ }));
+    captureResults[newTabId] = assets || {};
+  }
+
   //sessionを更新
   session.windows[windowId] = {};
   for (const tab of currentWindow.tabs) {
+    const originalTabId = tab.id;
+    const newTabId = updatedTabIdMap[originalTabId];
     tab.windowId = windowId;
-    tab.id = updatedTabIdMap[tab.id];
+    tab.id = newTabId;
     if (tab.openerTabId) tab.openerTabId = updatedTabIdMap[tab.openerTabId];
 
     //replasedページならURLを更新
@@ -173,6 +191,16 @@ export const addCurrentWindow = async (id, isTracking = false) => {
     if (tab?.favIconUrl?.startsWith("data:image")) {
       const compressedDataUrl = await compressDataUrl(tab.favIconUrl);
       tab.favIconUrl = compressedDataUrl;
+    }
+
+    const assets = captureResults[newTabId] || {};
+    if (assets.thumbnailId) {
+      tab.thumbnailId = assets.thumbnailId;
+      tab.thumbnailType = assets.thumbnailType;
+    }
+    if (assets.offlineBackupId) {
+      tab.offlineBackupId = assets.offlineBackupId;
+      tab.hasOfflineBackup = true;
     }
 
     session.windows[windowId][tab.id] = tab;
@@ -205,7 +233,18 @@ export const addCurrentTab = async (sessionId, windowId) => {
   // Set unique tabId
   const tabIdList = Object.values(session.windows).flatMap(window => Object.values(window).map(tab => tab.id));
   const maxTabId = Math.max(...tabIdList);
-  currentTab.id = maxTabId + 1;
+  const newTabId = maxTabId + 1;
+
+  const thumbnailSource = getSettings("thumbnailImageSource") || "representative";
+  const capturedAssets = await browser.runtime.sendMessage({
+    message: "captureLiveTabAssets",
+    sessionId: sessionId,
+    tabId: currentTab.id,
+    overrideTabId: newTabId,
+    thumbnailSource: thumbnailSource
+  }).catch(() => ({ }));
+
+  currentTab.id = newTabId;
 
   // Set tab index
   currentTab.index = Object.keys(session.windows[windowId]).length;
@@ -234,6 +273,15 @@ export const addCurrentTab = async (sessionId, windowId) => {
     if (currentTabGroup && !hasTabGroup) {
       session.tabGroups = (session.tabGroups || []).concat([currentTabGroup]);
     }
+  }
+
+  if (capturedAssets?.thumbnailId) {
+    currentTab.thumbnailId = capturedAssets.thumbnailId;
+    currentTab.thumbnailType = capturedAssets.thumbnailType;
+  }
+  if (capturedAssets?.offlineBackupId) {
+    currentTab.offlineBackupId = capturedAssets.offlineBackupId;
+    currentTab.hasOfflineBackup = true;
   }
 
   session.windows[windowId][currentTab.id] = currentTab;

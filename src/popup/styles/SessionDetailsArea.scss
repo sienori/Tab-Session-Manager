@@ -92,6 +92,81 @@
     }
   }
 
+  .viewControls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    .viewToggle {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+
+      button {
+        padding: 4px 14px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--sub-text);
+        transition: background 120ms ease-in-out, color 120ms ease-in-out;
+
+        &.isActive {
+          background: var(--line);
+          color: var(--main-text);
+          font-weight: 600;
+        }
+
+        &:not(.isActive):hover,
+        &:not(.isActive):focus {
+          background: var(--line);
+          color: var(--main-text);
+        }
+      }
+    }
+
+    .thumbnailSourceToggle {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 12px;
+      gap: 6px;
+      color: var(--sub-text);
+
+      input {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+      }
+
+      span {
+        white-space: nowrap;
+      }
+    }
+
+    .thumbnailSizeControl {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--sub-text);
+
+      span {
+        white-space: nowrap;
+      }
+
+      input[type="range"] {
+        width: 170px;
+      }
+
+      .thumbnailSizeValue {
+        font-size: 12px;
+        color: var(--main-text);
+      }
+    }
+  }
+
   .noSession {
     p {
       color: var(--sub-text);

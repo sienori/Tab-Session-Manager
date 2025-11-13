@@ -6,10 +6,14 @@ import { sendOpenMessage } from "../actions/controlSessions";
 import PlusIcon from "../icons/plus.svg";
 import CollapseIcon from "../icons/collapse.svg";
 import EditIcon from "../icons/edit.svg";
+import DeleteIcon from "../icons/delete.svg";
+import NewWindowIcon from "../icons/newWindow.svg";
+import CopyIcon from "../icons/copy.svg";
 import WindowMenuItems from "./WindowMenuItems";
 import WindowIcon from "../icons/window.svg";
 import WindowIncognitoChromeIcon from "../icons/window_incognito_chrome.svg";
 import WindowIncognitoFirefoxIcon from "../icons/window_incognito_firefox.svg";
+import TabThumbnail from "./TabThumbnail";
 
 import "../styles/DetailsContainer.scss";
 import Highlighter from "react-highlight-words";
@@ -46,19 +50,152 @@ const EditButton = props => (
 );
 
 const TabContainer = props => {
-  const { tab, windowId, allTabsNumber, searchWords, handleRemoveTab } = props;
-  const handleRemoveClick = () => {
+  const {
+    tab,
+    windowId,
+    allTabsNumber,
+    searchWords,
+    handleRemoveTab,
+    viewMode,
+    thumbnailSize
+  } = props;
+
+  const openInForeground = () => {
+    openUrl(tab.url, tab.title, true, tab.offlineBackupId);
+  };
+
+  const openInBackground = () => {
+    openUrl(tab.url, tab.title, false, tab.offlineBackupId);
+  };
+
+  const handleRemoveClick = e => {
+    e.preventDefault();
+    e.stopPropagation();
     handleRemoveTab(windowId, tab.id);
   };
 
-  const handleOpenClick = (e) => {
-    if (e.button === 0) openUrl(tab.url, tab.title, true);
-    else if (e.button === 1) openUrl(tab.url, tab.title, false);
+  const handleKeyDown = e => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      openInForeground();
+    }
   };
+
+  const handleCopyLink = async e => {
+    e.preventDefault();
+    e.stopPropagation();
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(tab.url);
+      } else {
+        const textarea = document.createElement("textarea");
+        textarea.value = tab.url;
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+      }
+    } catch (error) {
+      console.warn("Failed to copy tab URL", error);
+    }
+  };
+
+  const handleTileClick = e => {
+    if (e.defaultPrevented) return;
+    if (e.target.closest(".thumbnailToolbar")) return;
+    openInForeground();
+  };
+
+  const handleAuxClick = e => {
+    if (e.button === 1) {
+      e.preventDefault();
+      openInBackground();
+    }
+  };
+
+  if (viewMode === "grid") {
+    return (
+      <div className="tabTile" style={{ "--thumbnail-size": `${thumbnailSize}px` }}>
+        <div
+          className="thumbnailWrapper"
+          role="button"
+          tabIndex={0}
+          onClick={handleTileClick}
+          onAuxClick={handleAuxClick}
+          onKeyDown={handleKeyDown}
+          title={`${tab.title || ""}\n${tab.url}`}
+        >
+          <TabThumbnail
+            thumbnailId={tab.thumbnailId}
+            thumbnailType={tab.thumbnailType}
+            fallback={tab.favIconUrl}
+            alt={tab.title}
+          />
+          <div className="thumbnailToolbar">
+            <button
+              type="button"
+              className="thumbnailAction open"
+              onClick={e => {
+                e.preventDefault();
+                e.stopPropagation();
+                openInForeground();
+              }}
+              onMouseDown={e => e.stopPropagation()}
+              onMouseUp={e => e.stopPropagation()}
+              title={browser.i18n.getMessage("open")}
+              aria-label={browser.i18n.getMessage("open")}
+            >
+              <NewWindowIcon />
+            </button>
+            <button
+              type="button"
+              className="thumbnailAction copy"
+              onClick={handleCopyLink}
+              onMouseDown={e => e.stopPropagation()}
+              onMouseUp={e => e.stopPropagation()}
+              title={browser.i18n.getMessage("copyUrlLabel")}
+              aria-label={browser.i18n.getMessage("copyUrlLabel")}
+            >
+              <CopyIcon />
+            </button>
+            {allTabsNumber > 1 && (
+              <button
+                type="button"
+                className="thumbnailAction delete"
+                onClick={handleRemoveClick}
+                onMouseDown={e => e.stopPropagation()}
+                onMouseUp={e => e.stopPropagation()}
+                title={browser.i18n.getMessage("remove")}
+                aria-label={browser.i18n.getMessage("remove")}
+              >
+                <DeleteIcon />
+              </button>
+            )}
+          </div>
+        </div>
+        <div className="tabTileInfo">
+          <span className="tabTitle">
+            <Highlighter searchWords={searchWords} textToHighlight={tab.title || ""} autoEscape={true} />
+          </span>
+          <span className="tabUrl">{tab.url}</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="tabContainer">
-      <button className="tabButton" onMouseUp={handleOpenClick} title={`${tab.title}\n${tab.url}`}>
+      <button
+        type="button"
+        className="tabButton"
+        onClick={openInForeground}
+        onAuxClick={handleAuxClick}
+        onKeyDown={handleKeyDown}
+        title={`${tab.title}\n${tab.url}`}
+      >
         <FavIcon favIconUrl={tab.favIconUrl} />
         <span className="tabTitle">
           <Highlighter searchWords={searchWords} textToHighlight={tab.title || ""} autoEscape={true} />
@@ -116,10 +253,14 @@ class WindowContainer extends Component {
       windowsNumber,
       allTabsNumber,
       searchWords,
-      handleRemoveTab
+      handleRemoveTab,
+      viewMode,
+      thumbnailSize
     } = this.props;
     const sortedTabs = Object.values(tabs).sort((a, b) => a.index - b.index);
     const isIncognito = Object.values(tabs)[0].incognito;
+    const tabsContainerClass = `tabs ${viewMode === "grid" ? "isGrid" : ""}`;
+    const tabsStyle = viewMode === "grid" ? { "--thumbnail-size": `${thumbnailSize}px` } : undefined;
 
     return (
       <div className={`windowContainer ${this.state.isCollapsed ? "isCollapsed" : ""}`}>
@@ -148,7 +289,7 @@ class WindowContainer extends Component {
             {windowsNumber > 1 && <RemoveButton handleClick={this.handleRemoveClick} />}
           </div>
         </div>
-        <div className="tabs">
+        <div className={tabsContainerClass} style={tabsStyle}>
           {Object.values(sortedTabs).map(tab => (
             <TabContainer
               tab={tab}
@@ -156,6 +297,8 @@ class WindowContainer extends Component {
               allTabsNumber={allTabsNumber}
               searchWords={searchWords}
               handleRemoveTab={handleRemoveTab}
+              viewMode={viewMode}
+              thumbnailSize={thumbnailSize}
               key={tab.id}
             />
           ))}
@@ -166,7 +309,7 @@ class WindowContainer extends Component {
 }
 
 export default props => {
-  const { session, searchWords, removeWindow, removeTab, openMenu } = props;
+  const { session, searchWords, removeWindow, removeTab, openMenu, viewMode, thumbnailSize } = props;
 
   if (!session.windows) return null;
 
@@ -178,8 +321,10 @@ export default props => {
     removeTab(session, windowId, tabId);
   };
 
+  const containerClass = `detailsContainer scrollbar ${viewMode === "grid" ? "gridView" : ""}`;
+
   return (
-    <div className="detailsContainer scrollbar">
+    <div className={containerClass}>
       {Object.keys(session.windows).map(windowId => (
         <WindowContainer
           tabs={session.windows[windowId]}
@@ -192,6 +337,8 @@ export default props => {
           handleRemoveWindow={handleRemoveWindow}
           handleRemoveTab={handleRemoveTab}
           openMenu={openMenu}
+          viewMode={viewMode}
+          thumbnailSize={thumbnailSize}
           key={`${session.id}${windowId}`}
         />
       ))}

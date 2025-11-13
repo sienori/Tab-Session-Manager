@@ -2,6 +2,24 @@
 
 #### Save and restore the state of browser windows and tabs. It also supports automatic saving.
 
+---
+
+## TabBoard Fork Notes
+
+This repository now contains the TabBoard/Gridview fork directly at the project root.  
+Additional folders that are specific to this fork:
+
+- `branding/` – SVG assets of the custom TabBoard logo (restored from the 7.1.1.6 XPI).
+- `backups/` – unpacked XPIs and prior build snapshots (read-only, ignored by Git).
+  - `backups/xpi-7.1.1.6/` – full backup of the original TabBoard build before restructuring.
+  - `backups/root-build-pre-source/` – previous root build that used to be loaded directly in Firefox.
+
+When working on the extension:
+
+1. Use the regular workflow described below (`npm install`, `npm run watch-dev`, `npm run build`).
+2. The production bundles land in `dist/` (zips for Firefox/Chrome plus the unpacked bundle).
+3. If you need to compare with older builds, pull them from `backups/...` instead of keeping extra copies in the root.
+
 <img src="https://raw.githubusercontent.com/sienori/Tab-Session-Manager/master/other/promotion/screenshots/popup.png" width="640px">
 
 ## Download

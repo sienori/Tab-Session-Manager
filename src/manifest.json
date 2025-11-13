@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "7.1.1",
+  "version": "7.1.1.6",
   "name": "__MSG_extName__",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
@@ -12,6 +12,9 @@
     "identity",
     "alarms",
     "offscreen"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ],
   "optional_host_permissions": [
     "https://www.googleapis.com/*"

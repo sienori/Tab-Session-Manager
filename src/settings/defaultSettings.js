@@ -451,6 +451,52 @@ export default [
         type: "checkbox",
         default: true
       },
+      {
+        id: "thumbnailImageSource",
+        title: "thumbnailImageSourceLabel",
+        captions: ["thumbnailImageSourceCaption"],
+        type: "select",
+        default: "representative",
+        options: [
+          {
+            name: "thumbnailSourceRepresentativeLabel",
+            value: "representative"
+          },
+          {
+            name: "thumbnailSourceScreenshotLabel",
+            value: "screenshot"
+          }
+        ]
+      },
+      {
+        id: "thumbnailViewMode",
+        title: "tabViewModeLabel",
+        captions: ["tabViewModeCaptionLabel"],
+        type: "select",
+        default: "list",
+        shouldShow: false,
+        options: [
+          {
+            name: "listViewLabel",
+            value: "list"
+          },
+          {
+            name: "gridViewLabel",
+            value: "grid"
+          }
+        ]
+      },
+      {
+        id: "thumbnailSize",
+        title: "thumbnailSizeLabel",
+        captions: [""],
+        type: "number",
+        min: 120,
+        max: 320,
+        step: 10,
+        default: 200,
+        shouldShow: false
+      }
     ]
   },
   {
