@@ -48,13 +48,15 @@ export const sendSessionRemoveMessage = async id => {
   });
 };
 
-export const sendSessionSaveMessage = async (name, property = "saveAllWindows", options = {}) => {
-  log.info(logDir, "sendSessionSaveMessage()", name, property, options);
+const DEFAULT_THUMBNAIL_SOURCE = "screenshot";
+
+export const sendSessionSaveMessage = async (name, property = "saveAllWindows") => {
+  log.info(logDir, "sendSessionSaveMessage()", name, property);
   return await browser.runtime.sendMessage({
     message: "saveCurrentSession",
     name: name,
     property: property,
-    thumbnailSource: options.thumbnailSource
+    thumbnailSource: DEFAULT_THUMBNAIL_SOURCE
   });
 };
 
@@ -136,7 +138,7 @@ const generateUniqueId = (originalId, isIdDuplicate) => {
   return id;
 };
 
-export const addCurrentWindow = async (id, isTracking = false, options = {}) => {
+export const addCurrentWindow = async (id, isTracking = false) => {
   log.info(logDir, "AddCurrentWindow()", id);
   const session = await getSessions(id);
   const currentWindow = await browser.windows.getCurrent({ populate: true });
@@ -157,7 +159,7 @@ export const addCurrentWindow = async (id, isTracking = false, options = {}) => 
   const windowId = generateUniqueId(currentWindow.id, isWindowIdDuplicate);
 
   const captureResults = {};
-  const { thumbnailSource = getSettings("thumbnailImageSource") || "representative" } = options || {};
+  const thumbnailSource = DEFAULT_THUMBNAIL_SOURCE;
   for (const tab of currentWindow.tabs) {
     const originalTabId = tab.id;
     const newTabId = updatedTabIdMap[originalTabId];
@@ -235,7 +237,7 @@ export const addCurrentTab = async (sessionId, windowId) => {
   const maxTabId = Math.max(...tabIdList);
   const newTabId = maxTabId + 1;
 
-  const thumbnailSource = getSettings("thumbnailImageSource") || "representative";
+  const thumbnailSource = DEFAULT_THUMBNAIL_SOURCE;
   const capturedAssets = await browser.runtime.sendMessage({
     message: "captureLiveTabAssets",
     sessionId: sessionId,

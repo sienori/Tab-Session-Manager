@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import log from "loglevel";
 import url from "url";
+import cloneDeep from "lodash/cloneDeep";
 import {
   initSettings,
   getSettings,
@@ -41,6 +42,56 @@ const THUMBNAIL_PIXEL_MAX = 320;
 
 const logDir = "popup/components/PopupPage";
 
+const reorderSessionTab = (
+  session,
+  sourceWindowId,
+  targetWindowId,
+  tabId,
+  anchorTabId,
+  position = "before"
+) => {
+  if (!session?.windows?.[sourceWindowId]?.[tabId] || !session?.windows?.[targetWindowId]) {
+    throw new Error("Invalid tab to reorder");
+  }
+  const updatedSession = cloneDeep(session);
+  const sourceWindow = updatedSession.windows[sourceWindowId];
+  const targetWindow = updatedSession.windows[targetWindowId];
+  const sourceTabs = Object.values(sourceWindow).sort((a, b) => a.index - b.index);
+  const sourceIndex = sourceTabs.findIndex((tab) => tab.id === tabId);
+  if (sourceIndex < 0) {
+    return updatedSession;
+  }
+  const [movedTab] = sourceTabs.splice(sourceIndex, 1);
+  const movingWithinSameWindow = sourceWindowId === targetWindowId;
+  if (!movingWithinSameWindow) {
+    delete sourceWindow[movedTab.id];
+    movedTab.windowId = targetWindowId;
+    sourceTabs.forEach((tab, index) => {
+      sourceWindow[tab.id].index = index;
+    });
+  }
+  const targetTabs = movingWithinSameWindow
+    ? sourceTabs
+    : Object.values(targetWindow).sort((a, b) => a.index - b.index);
+  let insertIndex = targetTabs.length;
+  if (anchorTabId) {
+    const anchorIndex = targetTabs.findIndex((tab) => tab.id === anchorTabId);
+    if (anchorIndex >= 0) {
+      insertIndex = position === "after" ? anchorIndex + 1 : anchorIndex;
+    }
+  }
+  if (insertIndex < 0) insertIndex = 0;
+  if (insertIndex > targetTabs.length) insertIndex = targetTabs.length;
+  targetTabs.splice(insertIndex, 0, movedTab);
+  if (!movingWithinSameWindow) {
+    targetWindow[movedTab.id] = movedTab;
+  }
+  targetTabs.forEach((tab, index) => {
+    targetWindow[tab.id].index = index;
+  });
+  return updatedSession;
+};
+
 export default class PopupPage extends Component {
   constructor(props) {
     super(props);
@@ -58,7 +109,6 @@ export default class PopupPage extends Component {
       sidebarWidth: 300,
       viewMode: "list",
       thumbnailSize: THUMBNAIL_COLUMNS_DEFAULT,
-      thumbnailSource: "representative",
       hideThumbnailText: false,
       notification: {
         message: "",
@@ -133,7 +183,6 @@ export default class PopupPage extends Component {
       sidebarWidth: getSettings("sidebarWidth"),
       viewMode: getSettings("thumbnailViewMode") || "list",
       thumbnailSize: storedThumbnailSize,
-      thumbnailSource: getSettings("thumbnailImageSource") || "representative",
       hideThumbnailText: storedHideText === true || storedHideText === "true"
     });
 
@@ -249,7 +298,6 @@ export default class PopupPage extends Component {
     if (areaName !== "local" || !changes.Settings) return;
     const updatedViewMode = getSettings("thumbnailViewMode") || "list";
     const updatedSize = this.normalizeThumbnailColumns(getSettings("thumbnailSize"));
-    const updatedSource = getSettings("thumbnailImageSource") || "representative";
     const hideTextPref = getSettings("hideThumbnailText");
     const updatedHideText = hideTextPref === true || hideTextPref === "true";
 
@@ -257,12 +305,10 @@ export default class PopupPage extends Component {
       const shouldUpdate =
         prev.viewMode !== updatedViewMode ||
         prev.thumbnailSize !== updatedSize ||
-        prev.thumbnailSource !== updatedSource ||
         prev.hideThumbnailText !== updatedHideText;
       return shouldUpdate ? {
         viewMode: updatedViewMode,
         thumbnailSize: updatedSize,
-        thumbnailSource: updatedSource,
         hideThumbnailText: updatedHideText
       } : null;
     });
@@ -467,9 +513,7 @@ export default class PopupPage extends Component {
   saveSession = async (name, property) => {
     log.info(logDir, "saveSession()", name, property);
     try {
-      const savedSession = await sendSessionSaveMessage(name, property, {
-        thumbnailSource: this.state.thumbnailSource
-      });
+      const savedSession = await sendSessionSaveMessage(name, property);
       this.selectSession(savedSession.id);
       this.openNotification({
         message: browser.i18n.getMessage("sessionSavedLabel"),
@@ -518,6 +562,18 @@ export default class PopupPage extends Component {
     } catch (e) {
       this.openNotification({
         message: browser.i18n.getMessage("failedDeleteSessionWindowLabel"),
+        type: "error"
+      });
+    }
+  };
+
+  reorderTab = async (session, sourceWindowId, targetWindowId, tabId, anchorTabId, position = "before") => {
+    try {
+      const updatedSession = reorderSessionTab(session, sourceWindowId, targetWindowId, tabId, anchorTabId, position);
+      await sendSessionUpdateMessage(updatedSession);
+    } catch (error) {
+      this.openNotification({
+        message: browser.i18n.getMessage("failedReorderSessionTabLabel"),
         type: "error"
       });
     }
@@ -672,6 +728,7 @@ export default class PopupPage extends Component {
               viewMode={this.state.viewMode}
               thumbnailSize={this.state.thumbnailSize}
               hideThumbnailText={this.state.hideThumbnailText}
+              reorderTab={this.reorderTab}
               onViewModeChange={this.handleViewModeChange}
               onThumbnailSizeChange={this.handleThumbnailSizeChange}
               onHideThumbnailTextChange={this.handleHideThumbnailTextChange}

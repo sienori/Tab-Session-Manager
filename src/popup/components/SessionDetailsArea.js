@@ -95,7 +95,8 @@ export default class SessionDetailsArea extends Component {
       openMenu,
       viewMode,
       thumbnailSize,
-      hideThumbnailText
+      hideThumbnailText,
+      reorderTab
     } = this.props;
 
     if (!session.id)
@@ -212,6 +213,7 @@ export default class SessionDetailsArea extends Component {
           viewMode={viewMode}
           thumbnailSize={thumbnailSize}
           hideThumbnailText={hideThumbnailText}
+          reorderTab={reorderTab}
         />
       </div>
     );

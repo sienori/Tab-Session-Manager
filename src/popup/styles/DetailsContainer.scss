@@ -158,6 +158,16 @@
       display: grid;
       gap: 14px;
       grid-template-columns: repeat(var(--thumbnail-columns, 3), minmax(0, 1fr));
+      &.isSingleColumn {
+        .tabTile::after {
+          right: 0;
+          left: 0;
+          width: 0;
+        }
+        .tabTile.isToolbarLeft::after {
+          left: 0;
+        }
+      }
     }
 
     .tabTile {
@@ -167,21 +177,56 @@
       gap: 6px;
       position: relative;
       overflow: visible;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -8px;
+        bottom: -8px;
+        right: -60px;
+        width: 60px;
+        pointer-events: none;
+      }
+
+      &.isToolbarLeft::after {
+        right: auto;
+        left: -60px;
+      }
+
+      &:hover::after,
+      &:focus-within::after {
+        pointer-events: auto;
+      }
+
+      &.isDragging {
+        opacity: 0.6;
+      }
+
+      &.isDragOverBefore {
+        box-shadow: 0 -3px 0 var(--highlight);
+      }
+
+      &.isDragOverAfter {
+        box-shadow: 0 3px 0 var(--highlight);
+      }
+
       &.isTextHidden {
         padding-bottom: 0;
         .tabTileInfo {
           position: absolute;
           left: 0;
           right: 0;
-          bottom: -36px;
+          top: calc(100% + 6px);
           opacity: 0;
           pointer-events: none;
-          background: var(--main-bg);
+          background: rgba(18, 18, 18, 0.92);
           border-radius: 8px;
-          padding: 8px;
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-          transition: opacity 0.2s ease, transform 0.2s ease;
+          padding: 10px 14px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+          color: #fff;
           transform: translateY(6px);
+          transition: opacity 140ms ease, transform 140ms ease;
+          box-sizing: border-box;
+          z-index: 2;
         }
         &:hover,
         &:focus-within {
@@ -191,6 +236,12 @@
             transform: translateY(0);
           }
         }
+        .tabTitle {
+          color: #fff;
+        }
+        .tabUrl {
+          color: #e7e7e7;
+        }
       }
     }
 
@@ -198,7 +249,7 @@
       position: relative;
       width: 100%;
       border-radius: 8px;
-      overflow: hidden;
+      overflow: visible;
       background: var(--line);
       cursor: pointer;
       outline: none;
@@ -218,6 +269,11 @@
       height: 100%;
     }
 
+    .tabThumbnail {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
     .tabThumbnail img {
       object-fit: cover;
       display: block;
@@ -230,13 +286,19 @@
     .thumbnailToolbar {
       position: absolute;
       top: 8px;
-      right: 8px;
+      right: -44px;
       display: flex;
       flex-direction: column;
       gap: 6px;
       opacity: 0;
       pointer-events: none;
       transition: opacity 120ms ease-in-out;
+      z-index: 4;
+    }
+
+    .tabTile.isToolbarLeft .thumbnailToolbar {
+      left: -44px;
+      right: auto;
     }
 
     .thumbnailWrapper:hover .thumbnailToolbar,
@@ -278,6 +340,11 @@
     .thumbnailAction.delete:hover,
     .thumbnailAction.delete:focus {
       background: rgba(173, 35, 35, 0.9);
+    }
+
+    .thumbnailAction.isCopyFeedback {
+      background: var(--highlight);
+      color: #fff;
     }
 
     .tabTileInfo {

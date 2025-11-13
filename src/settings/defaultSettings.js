@@ -452,23 +452,6 @@ export default [
         default: true
       },
       {
-        id: "thumbnailImageSource",
-        title: "thumbnailImageSourceLabel",
-        captions: ["thumbnailImageSourceCaption"],
-        type: "select",
-        default: "representative",
-        options: [
-          {
-            name: "thumbnailSourceRepresentativeLabel",
-            value: "representative"
-          },
-          {
-            name: "thumbnailSourceScreenshotLabel",
-            value: "screenshot"
-          }
-        ]
-      },
-      {
         id: "thumbnailViewMode",
         title: "tabViewModeLabel",
         captions: ["tabViewModeCaptionLabel"],

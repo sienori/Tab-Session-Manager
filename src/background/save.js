@@ -19,6 +19,7 @@ import {
 } from "./tabAssets";
 
 const logDir = "background/save";
+const DEFAULT_THUMBNAIL_SOURCE = "screenshot";
 
 const ensureOffscreenDocument = async () => {
   if (!browser?.offscreen) return;
@@ -389,7 +390,7 @@ export async function loadCurrentSession(name, tag, property, options = {}) {
   }
 
   const tabs = await browser.tabs.query(queryInfo);
-  const imagePreference = options.thumbnailSource || getSettings("thumbnailImageSource") || "representative";
+  const imagePreference = options.thumbnailSource || DEFAULT_THUMBNAIL_SOURCE;
   const captureAssets = options.captureAssets !== undefined ? options.captureAssets : true;
   const shouldCaptureScreenshots = captureAssets && imagePreference === "screenshot";
   const windowStateMap = shouldCaptureScreenshots ? new Map() : null;
@@ -569,7 +570,7 @@ export const captureAssetsForLiveTab = async (sessionId, tabId, overrideTabId = 
   log.log(logDir, "captureAssetsForLiveTab()", sessionId, tabId, overrideTabId, options);
   try {
     const tab = await browser.tabs.get(tabId);
-    const imagePreference = options.thumbnailSource || getSettings("thumbnailImageSource") || "representative";
+    const imagePreference = options.thumbnailSource || DEFAULT_THUMBNAIL_SOURCE;
     const shouldCaptureScreenshots = options.captureAssets !== false && imagePreference === "screenshot";
     const windowStateMap = shouldCaptureScreenshots ? new Map() : null;
     const originalFocusedWindowRef = { current: null };

@@ -49,6 +49,20 @@ const EditButton = props => (
   </button>
 );
 
+const TAB_DRAG_STATE = {
+  tabId: null,
+  windowId: null
+};
+const setTabDragState = (tabId, windowId) => {
+  TAB_DRAG_STATE.tabId = tabId;
+  TAB_DRAG_STATE.windowId = windowId;
+};
+const clearTabDragState = () => {
+  TAB_DRAG_STATE.tabId = null;
+  TAB_DRAG_STATE.windowId = null;
+};
+const getTabDragState = () => TAB_DRAG_STATE;
+
 const TabContainer = props => {
   const {
     tab,
@@ -57,7 +71,13 @@ const TabContainer = props => {
     searchWords,
     handleRemoveTab,
     viewMode,
-    hideThumbnailText
+    hideThumbnailText,
+    onDragStart,
+    onDragOver,
+    onDrop,
+    onDragEnd,
+    isDragOver,
+    isDragging
   } = props;
 
   const openInForeground = () => {
@@ -116,11 +136,24 @@ const TabContainer = props => {
     }
   };
 
-  if (viewMode === "grid") {
+  const isGridView = viewMode === "grid";
+
+  if (isGridView) {
     const tileClassNames = ["tabTile"];
     if (hideThumbnailText) tileClassNames.push("isTextHidden");
+    if (isDragging) tileClassNames.push("isDragging");
+    if (isDragOver === "before") tileClassNames.push("isDragOverBefore");
+    if (isDragOver === "after") tileClassNames.push("isDragOverAfter");
+
     return (
-      <div className={tileClassNames.join(" ")}>
+      <div
+        className={tileClassNames.join(" ")}
+        draggable
+        onDragStart={event => onDragStart?.(tab.id, event)}
+        onDragOver={event => onDragOver?.(tab.id, event)}
+        onDrop={event => onDrop?.(tab.id, event)}
+        onDragEnd={onDragEnd}
+      >
         <div
           className="thumbnailWrapper"
           role="button"
@@ -213,8 +246,169 @@ const TabContainer = props => {
 class WindowContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = { isCollapsed: false };
+    this.state = {
+      isCollapsed: false,
+      draggingTabId: null,
+      dragOverTabId: null,
+      dragPosition: null
+    };
+    this.tabsContainer = null;
   }
+
+  componentDidMount() {
+    this.updateToolbarSide();
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (
+      prevProps.viewMode !== this.props.viewMode ||
+      prevProps.thumbnailSize !== this.props.thumbnailSize ||
+      prevProps.tabs !== this.props.tabs ||
+      prevProps.hideThumbnailText !== this.props.hideThumbnailText
+    ) {
+      this.updateToolbarSide();
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
+  setTabsRef = (node) => {
+    this.tabsContainer = node;
+    this.updateToolbarSide();
+  };
+
+  handleResize = () => {
+    this.updateToolbarSide();
+  };
+
+  handleDragStart = (tabId, event) => {
+    if (this.props.viewMode !== "grid") return;
+    event.stopPropagation();
+    if (event.dataTransfer) {
+      event.dataTransfer.effectAllowed = "move";
+      event.dataTransfer.setData("text/plain", tabId || "tab");
+    }
+    setTabDragState(tabId, this.props.windowId);
+    this.setState({ draggingTabId: tabId, dragOverTabId: null, dragPosition: null });
+  };
+
+  handleDragOver = (tabId, event) => {
+    if (this.props.viewMode !== "grid") return;
+    const draggingTabId = this.state.draggingTabId || getTabDragState().tabId;
+    if (!draggingTabId || draggingTabId === tabId) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (event.dataTransfer) {
+      event.dataTransfer.dropEffect = "move";
+    }
+    const rect = event.currentTarget.getBoundingClientRect();
+    const nextPosition = event.clientY < rect.top + rect.height / 2 ? "before" : "after";
+    this.setState(prev =>
+      prev.dragOverTabId === tabId && prev.dragPosition === nextPosition
+        ? null
+        : { dragOverTabId: tabId, dragPosition: nextPosition }
+    );
+  };
+
+  handleDrop = (tabId, event) => {
+    if (this.props.viewMode !== "grid") return;
+    event.preventDefault();
+    event.stopPropagation();
+    const dragState = getTabDragState();
+    const draggingTabId = this.state.draggingTabId || dragState.tabId;
+    const sourceWindowId = dragState.windowId;
+    const targetWindowId = this.props.windowId;
+    if (!draggingTabId || (draggingTabId === tabId && sourceWindowId === targetWindowId)) {
+      this.resetDragState();
+      return;
+    }
+    const position = this.state.dragPosition || "before";
+    this.props.handleReorderTab?.(sourceWindowId || targetWindowId, targetWindowId, draggingTabId, tabId, position);
+    this.resetDragState();
+    clearTabDragState();
+  };
+
+  handleContainerDragOver = event => {
+    if (this.props.viewMode !== "grid") return;
+    const draggingTabId = this.state.draggingTabId || getTabDragState().tabId;
+    if (!draggingTabId) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (this.state.dragOverTabId || this.state.dragPosition) {
+      this.setState({ dragOverTabId: null, dragPosition: null });
+    }
+  };
+
+  handleContainerDrop = event => {
+    if (this.props.viewMode !== "grid") return;
+    event.preventDefault();
+    event.stopPropagation();
+    const dragState = getTabDragState();
+    const draggingTabId = this.state.draggingTabId || dragState.tabId;
+    const sourceWindowId = dragState.windowId;
+    const targetWindowId = this.props.windowId;
+    if (!draggingTabId) {
+      this.resetDragState();
+      return;
+    }
+    this.props.handleReorderTab?.(sourceWindowId || targetWindowId, targetWindowId, draggingTabId, null, "after");
+    this.resetDragState();
+    clearTabDragState();
+  };
+
+  handleDragEnd = () => {
+    if (this.props.viewMode !== "grid") return;
+    this.resetDragState();
+    clearTabDragState();
+  };
+
+  resetDragState = () => {
+    this.setState({ draggingTabId: null, dragOverTabId: null, dragPosition: null });
+  };
+
+  updateToolbarSide = () => {
+    if (!this.tabsContainer) return;
+    const tiles = Array.from(this.tabsContainer.querySelectorAll(".tabTile"));
+    if (!tiles.length) return;
+    tiles.forEach((tile) => tile.classList.remove("isToolbarLeft"));
+    if (this.props.viewMode !== "grid") return;
+
+    const containerRect = this.tabsContainer.getBoundingClientRect();
+    if (!containerRect.width) return;
+
+    const tileData = tiles.map((tile) => {
+      const wrapper = tile.querySelector(".thumbnailWrapper");
+      const rect = wrapper ? wrapper.getBoundingClientRect() : tile.getBoundingClientRect();
+      return { tile, rect };
+    });
+
+    const tolerance = 16;
+    const rows = [];
+    tileData.forEach((entry) => {
+      const existingRow = rows.find((row) => Math.abs(row.top - entry.rect.top) < tolerance);
+      if (existingRow) {
+        existingRow.items.push(entry);
+      } else {
+        rows.push({ top: entry.rect.top, items: [entry] });
+      }
+    });
+
+    const toolbarRightEdge = containerRect.right - 52;
+    rows.forEach((row) => {
+      const furthest = row.items.reduce((current, candidate) =>
+        candidate.rect.right > current.rect.right ? candidate : current,
+        row.items[0]
+      );
+      const shouldFlip = furthest.rect.right > toolbarRightEdge;
+      furthest.tile.classList.toggle("isToolbarLeft", shouldFlip);
+      row.items.forEach((entry) => {
+        entry.tile.dataset.toolbarRow = Math.round(furthest.rect.top);
+      });
+    });
+  };
 
   getTabsNumberText = () => {
     const tabLabel = browser.i18n.getMessage("tabLabel");
@@ -258,7 +452,8 @@ class WindowContainer extends Component {
       handleRemoveTab,
       viewMode,
       thumbnailSize,
-      hideThumbnailText
+      hideThumbnailText,
+      handleReorderTab
     } = this.props;
     const sortedTabs = Object.values(tabs).sort((a, b) => a.index - b.index);
     const isIncognito = Object.values(tabs)[0].incognito;
@@ -292,7 +487,13 @@ class WindowContainer extends Component {
             {windowsNumber > 1 && <RemoveButton handleClick={this.handleRemoveClick} />}
           </div>
         </div>
-        <div className={tabsContainerClass} style={tabsStyle}>
+        <div
+          className={tabsContainerClass}
+          style={tabsStyle}
+          ref={this.setTabsRef}
+          onDragOver={this.handleContainerDragOver}
+          onDrop={this.handleContainerDrop}
+        >
           {Object.values(sortedTabs).map(tab => (
             <TabContainer
               tab={tab}
@@ -302,6 +503,12 @@ class WindowContainer extends Component {
               handleRemoveTab={handleRemoveTab}
               viewMode={viewMode}
               hideThumbnailText={hideThumbnailText}
+              onDragStart={this.handleDragStart}
+              onDragOver={this.handleDragOver}
+              onDrop={this.handleDrop}
+              onDragEnd={this.handleDragEnd}
+              isDragOver={this.state.dragOverTabId === tab.id ? this.state.dragPosition : null}
+              isDragging={this.state.draggingTabId === tab.id}
               key={tab.id}
             />
           ))}
@@ -312,7 +519,17 @@ class WindowContainer extends Component {
 }
 
 export default props => {
-  const { session, searchWords, removeWindow, removeTab, openMenu, viewMode, thumbnailSize, hideThumbnailText } = props;
+  const {
+    session,
+    searchWords,
+    removeWindow,
+    removeTab,
+    openMenu,
+    viewMode,
+    thumbnailSize,
+    hideThumbnailText,
+    reorderTab
+  } = props;
 
   if (!session.windows) return null;
 
@@ -325,6 +542,12 @@ export default props => {
   };
 
   const containerClass = `detailsContainer scrollbar ${viewMode === "grid" ? "gridView" : ""}`;
+
+  const handleReorderTab = (sourceWindowId, targetWindowId, tabId, anchorTabId, position) => {
+    if (typeof reorderTab === "function") {
+      reorderTab(session, sourceWindowId, targetWindowId, tabId, anchorTabId, position);
+    }
+  };
 
   return (
     <div className={containerClass}>
@@ -343,6 +566,7 @@ export default props => {
           viewMode={viewMode}
           thumbnailSize={thumbnailSize}
           hideThumbnailText={hideThumbnailText}
+          handleReorderTab={handleReorderTab}
           key={`${session.id}${windowId}`}
         />
       ))}
