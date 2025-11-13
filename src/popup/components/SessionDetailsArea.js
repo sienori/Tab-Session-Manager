@@ -60,10 +60,6 @@ export default class SessionDetailsArea extends Component {
     if (this.props.onThumbnailSizeChange) this.props.onThumbnailSizeChange(value);
   };
 
-  handleThumbnailSourceToggle = event => {
-    if (this.props.onThumbnailSourceToggle) this.props.onThumbnailSourceToggle(event.target.checked);
-  };
-
   handleHideThumbnailTextInput = event => {
     if (this.props.onHideThumbnailTextChange) this.props.onHideThumbnailTextChange(event.target.checked);
   };
@@ -76,7 +72,7 @@ export default class SessionDetailsArea extends Component {
       "tagList",
       "viewMode",
       "thumbnailSize",
-      "thumbnailSource"
+      "hideThumbnailText"
     ];
 
     for (const key of propKeys) {
@@ -99,7 +95,6 @@ export default class SessionDetailsArea extends Component {
       openMenu,
       viewMode,
       thumbnailSize,
-      thumbnailSource,
       hideThumbnailText
     } = this.props;
 
@@ -196,14 +191,6 @@ export default class SessionDetailsArea extends Component {
                     ? browser.i18n.getMessage("thumbnailSingleColumnValue") || `${thumbnailSize}`
                     : browser.i18n.getMessage("thumbnailColumnCountValue", [`${thumbnailSize}`]) || `${thumbnailSize}`}
                 </span>
-              </label>
-              <label className="thumbnailSourceToggle">
-                <input
-                  type="checkbox"
-                  checked={thumbnailSource === "screenshot"}
-                  onChange={this.handleThumbnailSourceToggle}
-                />
-                <span>{browser.i18n.getMessage("thumbnailSourceScreenshotShortLabel")}</span>
               </label>
               <label className="thumbnailTextToggle">
                 <input

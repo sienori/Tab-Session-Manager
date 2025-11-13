@@ -240,12 +240,6 @@ export default class PopupPage extends Component {
     this.setState({ thumbnailSize: normalized });
   };
 
-  handleThumbnailSourceToggle = isScreenshot => {
-    const value = isScreenshot ? "screenshot" : "representative";
-    setSettings("thumbnailImageSource", value);
-    this.setState({ thumbnailSource: value });
-  };
-
   handleHideThumbnailTextChange = isHidden => {
     setSettings("hideThumbnailText", !!isHidden);
     this.setState({ hideThumbnailText: !!isHidden });
@@ -677,11 +671,9 @@ export default class PopupPage extends Component {
               closeModal={this.closeModal}
               viewMode={this.state.viewMode}
               thumbnailSize={this.state.thumbnailSize}
-              thumbnailSource={this.state.thumbnailSource}
               hideThumbnailText={this.state.hideThumbnailText}
               onViewModeChange={this.handleViewModeChange}
               onThumbnailSizeChange={this.handleThumbnailSizeChange}
-              onThumbnailSourceToggle={this.handleThumbnailSourceToggle}
               onHideThumbnailTextChange={this.handleHideThumbnailTextChange}
             />
           </div>
