@@ -4,6 +4,7 @@ import log from "loglevel";
 import getSessions from "./getSessions";
 import { getSettings } from "../settings/settings";
 import { init } from "./background";
+import { collectAssetIds, getThumbnail, getOfflinePage } from "./tabAssets";
 
 const logDir = "background/export";
 
@@ -12,6 +13,8 @@ export default async function exportSessions(id = null, folderName = "", isBacku
   let sessions = await getSessions(id);
   if (sessions == undefined) return;
   if (!Array.isArray(sessions)) sessions = [sessions];
+
+  await Promise.all(sessions.map(embedAssetsForSession));
 
   // セッションが多すぎるとメッセージサイズの制限やパフォーマンス上の問題を引き起こすので、セッションを分割する
   const sessionsStringSize = JSON.stringify(sessions).length;
@@ -42,6 +45,66 @@ export default async function exportSessions(id = null, folderName = "", isBacku
     if (downloadId) recordDownloadUrl(downloadId, downloadUrl, isBackup);
   }
 }
+
+const blobToDataUrl = blob =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onerror = reject;
+    reader.onloadend = () => resolve(reader.result);
+    reader.readAsDataURL(blob);
+  });
+
+const embedAssetsForSession = async session => {
+  const { thumbnailIds, offlineIds } = collectAssetIds(session);
+  const uniqueThumbnailIds = Array.from(new Set(thumbnailIds));
+  const uniqueOfflineIds = Array.from(new Set(offlineIds));
+
+  if (uniqueThumbnailIds.length === 0 && uniqueOfflineIds.length === 0) {
+    return;
+  }
+
+  const embeddedAssets = {
+    thumbnails: {},
+    offlinePages: {}
+  };
+
+  await Promise.all(
+    uniqueThumbnailIds.map(async id => {
+      try {
+        const record = await getThumbnail(id);
+        if (!record?.blob) return;
+        const dataUrl = await blobToDataUrl(record.blob);
+        const { blob, ...rest } = record;
+        embeddedAssets.thumbnails[id] = {
+          ...rest,
+          mimeType: blob.type || "image/png",
+          dataUrl
+        };
+      } catch (error) {
+        log.warn(logDir, "embedAssetsForSession() thumbnail error", id, error);
+      }
+    })
+  );
+
+  await Promise.all(
+    uniqueOfflineIds.map(async id => {
+      try {
+        const record = await getOfflinePage(id);
+        if (!record) return;
+        embeddedAssets.offlinePages[id] = record;
+      } catch (error) {
+        log.warn(logDir, "embedAssetsForSession() offline error", id, error);
+      }
+    })
+  );
+
+  if (
+    Object.keys(embeddedAssets.thumbnails).length > 0 ||
+    Object.keys(embeddedAssets.offlinePages).length > 0
+  ) {
+    session._embeddedAssets = embeddedAssets;
+  }
+};
 
 function generateFileName(sessions, isBackup) {
   let fileName;
