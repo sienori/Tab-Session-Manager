@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 16.933333 16.933334">
-  <g id="layer1" transform="translate(0,-280.06664)">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458335"
-       width="12.700001"
-       height="12.699994"
-       x="2.1166668"
-       y="282.18332"
-       ry="1.2111329e-005" />
-    <path
-       style="fill:#36b2b2;fill-opacity:1;stroke-width:1"
-       d="M 0 0 L 0 64 L 64 64 L 64 15 L 64 12 L 52 0 L 0 0 z M 8 8 L 16 8 L 16 24 L 48 24 L 48 8 L 49 8 L 56 15 L 56 56 L 8 56 L 8 8 z M 36 8 L 38 8 L 40 8 L 42 8 L 42 20 L 40 20 L 38 20 L 36 20 L 36 8 z "
-       transform="matrix(0.26458334,0,0,0.26458334,0,280.06664)" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">SessionTiles Icon</title>
+  <desc id="desc">Zentrierte Tabzeile mit Segmenten und vier kräftig farbigen Kacheln</desc>
+  <rect x="16" y="10" width="96" height="22" rx="11" fill="#d4d4d8"/>
+  <circle cx="27" cy="21" r="3" fill="#4b5563"/>
+  <line x1="33" y1="21" x2="43" y2="21" stroke="#4b5563" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="57" cy="21" r="3" fill="#4b5563"/>
+  <line x1="63" y1="21" x2="73" y2="21" stroke="#4b5563" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="87" cy="21" r="3" fill="#4b5563"/>
+  <line x1="93" y1="21" x2="103" y2="21" stroke="#4b5563" stroke-width="2" stroke-linecap="round"/>
+  <rect x="16" y="44" width="44" height="30" rx="6" fill="#fbbf24"/>
+  <rect x="68" y="44" width="44" height="30" rx="6" fill="#3b82f6"/>
+  <rect x="16" y="88" width="44" height="30" rx="6" fill="#22c55e"/>
+  <rect x="68" y="88" width="44" height="30" rx="6" fill="#ec4899"/>
 </svg>

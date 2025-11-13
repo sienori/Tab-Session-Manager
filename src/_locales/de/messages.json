@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "Speichern und Wiederherstellen aller Fenster und Tabs. Unterstützt automatisches Speichern."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "Spenden via PayPal"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "Spenden"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "Öffne die Sitzungsliste im Tab"
@@ -103,6 +103,9 @@
   },
   "failedDeleteSessionTabLabel": {
     "message": "Sitzungs Tab konnte nicht gelöscht werden."
+  },
+  "failedReorderSessionTabLabel": {
+    "message": "Registerkarte konnte nicht neu angeordnet werden."
   },
   "sessionSavedLabel": {
     "message": "Sitzung gespeichert."
@@ -609,10 +612,10 @@
     "message": "Öffne die Einstellungen bei Aktualisierungen"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Zeigt die Einstellugen an, wenn der Tab Session Manager aktualisiert wurde. Dadurch können die neuen Aktiualisierungsinhalte schnell betrachtet werden."
+    "message": "Zeigt die Einstellugen an, wenn der TabBoard - Fork of Tab Session Manager aktualisiert wurde. Dadurch können die neuen Aktiualisierungsinhalte schnell betrachtet werden."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager wurde aktualisiert!"
+    "message": "TabBoard - Fork of Tab Session Manager wurde aktualisiert!"
   },
   "seeMoreLabel": {
     "message": "Mehr anzeigen"
@@ -741,10 +744,10 @@
     "message": "Lizenz"
   },
   "donationLabel": {
-    "message": "Bitte spende etwas"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Danke, dass du Tab Session Manager nutzst.<br>Deine Unterstützung ist ein großer Ansporn bei der Weiterentwicklung dieses Add-ons.<br>Wenn dir Tab Session Manager gefällt, erwäge bitte eine Spende."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
@@ -783,18 +786,51 @@
     "message": "Sitzung"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/de/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "Diese Seite kann von Tab Session Manager nicht geöffnet werden."
+    "message": "Diese Seite kann von TabBoard - Fork of Tab Session Manager nicht geöffnet werden."
   },
   "copyUrlLabel": {
     "message": "URL kopieren"
   },
   "copiedLabel": {
     "message": "Kopiert."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Unterstütze dieses Fork-Projekt direkt per Überweisung (IBAN: DE55500240241771157501)."
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
+  },
+  "thumbnailColumnsLabel": {
+    "message": "Anzahl Spalten"
+  },
+  "thumbnailSingleColumnValue": {
+    "message": "1 Spalte"
+  },
+  "thumbnailColumnCountValue": {
+    "message": "$COLUMN_COUNT$ Spalten",
+    "placeholders": {
+      "column_count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "hideThumbnailTextLabel": {
+    "message": "Text unter Kacheln ausblenden"
+  },
+  "hideThumbnailTextCaptionLabel": {
+    "message": "Titel und URL nur beim Überfahren mit der Maus zeigen"
   }
 }

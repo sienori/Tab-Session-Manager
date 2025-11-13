@@ -31,6 +31,7 @@ import Error from "./Error";
 import DonationMessage from "./DonationMessage";
 import "../styles/PopupPage.scss";
 import { makeSearchInfo } from "../../common/makeSearchInfo";
+import { initToolbarLayout, disposeToolbarLayout } from "../toolbarLayout";
 
 const logDir = "popup/components/PopupPage";
 
@@ -148,6 +149,7 @@ export default class PopupPage extends Component {
 
     browser.storage.local.onChanged.addListener(handleSettingsChange);
     browser.storage.local.onChanged.addListener(this.handleViewPreferencesChange);
+    initToolbarLayout();
     window.addEventListener("unload", this.handleUnload, { once: true });
     browser.runtime.sendMessage({ message: "updateUndoStatus" });
     browser.runtime.sendMessage({ message: "updateTrackingStatus" });
@@ -367,6 +369,7 @@ export default class PopupPage extends Component {
 
   handleUnload = () => {
     browser.storage.local.onChanged.removeListener(handleSettingsChange);
+    disposeToolbarLayout();
     browser.storage.local.onChanged.removeListener(this.handleViewPreferencesChange);
   };
 
