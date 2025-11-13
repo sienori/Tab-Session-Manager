@@ -1,6 +1,5 @@
 import React from "react";
 import browser from "webextension-polyfill";
-import browserInfo from "browser-info";
 import queryString from "query-string";
 import OptionsContainer from "./OptionContainer";
 import manifest from "src/manifest.json";
@@ -9,10 +8,8 @@ export default props => {
   const query = queryString.parse(props.location.search);
 
   const extensionVersion = manifest.version;
-  const isChrome = browserInfo().name == "Chrome";
-  const paypalLink = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&no_shipping=1&business=sienori.firefox@gmail.com&item_name=Tab Session Manager ${isChrome ? "for Chrome " : ""
-    }- Donation`;
-  const patreonLink = "https://www.patreon.com/sienori";
+  const releaseLink = "https://github.com/maximilianbottcher/tab-session-manager-gridview/releases";
+  const repoLink = "https://github.com/maximilianbottcher/tab-session-manager-gridview";
 
   return (
     <div>
@@ -25,14 +22,11 @@ export default props => {
         updated={query.action === "updated"}
         extraCaption={
           <p className="caption">
-            <a href="https://github.com/sienori/Tab-Session-Manager/releases" target="_blank">
+            <a href={releaseLink} target="_blank" rel="noreferrer">
               Version {extensionVersion}
             </a>
             <span>　</span>
-            <a
-              href="https://github.com/sienori/Tab-Session-Manager/blob/master/BACKERS.md"
-              target="_blank"
-            >
+            <a href={repoLink} target="_blank" rel="noreferrer">
               {browser.i18n.getMessage("backersLabel")}
             </a>
           </p>
@@ -48,7 +42,7 @@ export default props => {
       <hr />
       <OptionsContainer
         title={"donationLabel"}
-        captions={["forkSupportNotice"]}
+        captions={["donationCaptionLabel"]}
         type={"none"}
       />
       <OptionsContainer
@@ -56,23 +50,17 @@ export default props => {
         captions={[""]}
         type={"none"}
         extraCaption={
-          <div>
-            <a href={patreonLink} target="_blank" rel="noreferrer">
-              <img
-                src="/icons/patreonButton.png"
-                alt="Patreon"
-                style={{ height: 44, marginRight: 20 }}
-              />
-            </a>
-            <a href={paypalLink} target="_blank" rel="noreferrer">
-              <img src="/icons/paypalButton.png" alt="Paypal" />
-            </a>
-          </div>
+          <p className="caption">{browser.i18n.getMessage("forkSupportNotice")}</p>
         }
       />
       <OptionsContainer
         title={""}
-        captions={["forkContactNotice", "forkSponsorNotice"]}
+        captions={["forkContactNotice"]}
+        type={"none"}
+      />
+      <OptionsContainer
+        title={"sponsorsLabel"}
+        captions={["forkSponsorNotice"]}
         type={"none"}
       />
       <OptionsContainer
