@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "احفظ و استعد حالة النوافذ و التبويبات. كما أنها تدعم الحفظ التلقائي."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "تبرع بواسطة PayPal"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "تبرع"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "فتح قائمة الجلسة في تبويب"
@@ -741,10 +741,10 @@
     "message": "الترخيص"
   },
   "donationLabel": {
-    "message": "الرجاء قدم تبرع"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "شكرا لك لاستخدام Tab Session Manager.<br> دعمك سوف يكون تشجيع كبير،كما أني اواصل تطوير الوظائف الإضافية.<br>إذا أعجبك Tab Session Manager، سوف أكون مسرورا إذا قدمت تبرعات."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "بطاقات هدايا amazon.co.jp"
@@ -783,18 +783,30 @@
     "message": "الجلسة"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=ar_DZ"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/ar-DZ/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "لا يمكن فتح هذه الصفحة بواسطة Tab Session Manager."
+    "message": "لا يمكن فتح هذه الصفحة بواسطة TabBoard - Fork of Tab Session Manager."
   },
   "copyUrlLabel": {
     "message": "نسخ الرابط"
   },
   "copiedLabel": {
     "message": "تم النسخ."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

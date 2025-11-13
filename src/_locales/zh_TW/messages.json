@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "儲存與還原視窗跟分頁的瀏覽狀態。並支援自動儲存功能。"
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "透過 PayPal 贊助"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "贊助"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "在新分頁顯示瀏覽階段清單"
@@ -609,10 +609,10 @@
     "message": "更新時顯示選項頁面"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "更新 Tab Session Manager 時顯示選項頁面。讓您可以快速瞭解更新內容。"
+    "message": "更新 TabBoard - Fork of Tab Session Manager 時顯示選項頁面。讓您可以快速瞭解更新內容。"
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager 已更新！"
+    "message": "TabBoard - Fork of Tab Session Manager 已更新！"
   },
   "seeMoreLabel": {
     "message": "顯示更多"
@@ -741,10 +741,10 @@
     "message": "授權條款"
   },
   "donationLabel": {
-    "message": "您可以贊助我！"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "感謝您使用 Tab Session Manager。<br>您的支持是我繼續開發這個附加元件的動力。<br>若您喜歡 Tab Session Manager，希望您能夠贊助我。"
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "贊助我 amazon 電子禮品卡"
@@ -783,18 +783,30 @@
     "message": "瀏覽階段"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=zh_CN"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/zh-TW/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "Tab Session Manager 無法開啟此頁面。"
+    "message": "TabBoard - Fork of Tab Session Manager 無法開啟此頁面。"
   },
   "copyUrlLabel": {
     "message": "複製 URL"
   },
   "copiedLabel": {
     "message": "已複製。"
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

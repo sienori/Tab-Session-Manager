@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "Lưu và khôi phục lại trạng thái của cửa sổ và thẻ. Nó cũng hỗ trợ việc lưu tự động."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "Đóng góp bằng PayPal"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "Ủng hộ"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "Hiển thị danh sách các phiên đang mở trên một tab"
@@ -609,10 +609,10 @@
     "message": "Hiển thị trang tùy chọn khi cập nhật"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Hiển thị trang tùy chọn khi Tab Session Manager được cập nhật. Bạn có thể nhanh chóng biết được nội dung cập nhật."
+    "message": "Hiển thị trang tùy chọn khi TabBoard - Fork of Tab Session Manager được cập nhật. Bạn có thể nhanh chóng biết được nội dung cập nhật."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager đã được cập nhật!"
+    "message": "TabBoard - Fork of Tab Session Manager đã được cập nhật!"
   },
   "seeMoreLabel": {
     "message": "Xem thêm"
@@ -741,10 +741,10 @@
     "message": "Giấy phép"
   },
   "donationLabel": {
-    "message": "Hãy tài trợ cho tôi"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Cảm ơn bạn đã sử dụng Tab Session Manager.<br>Sự hỗ trợ của bạn sẽ là một sự động viên lớn, khi tôi tiếp tục phát triển tiện ích này.<br>Nếu bạn thích Tab Session Manager, tôi rất vui lòng nếu bạn xem xét tài trợ."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
@@ -783,18 +783,30 @@
     "message": "Phiên làm việc"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/vi/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "Trang này không thể mở được bởi Tab Session Manager."
+    "message": "Trang này không thể mở được bởi TabBoard - Fork of Tab Session Manager."
   },
   "copyUrlLabel": {
     "message": "Sao chép URL"
   },
   "copiedLabel": {
     "message": "Đã sao chép."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

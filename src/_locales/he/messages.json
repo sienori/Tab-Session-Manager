@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "שמור ושחזר את מצב החלונות וכרטיסיות. זה גם תומך בשמירה אוטומטית."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "תרום באמצעות PayPal"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "תרום"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "פתח רשימת פעילויות בכרטיסיה"
@@ -609,10 +609,10 @@
     "message": "הצג דף אפשרויות בעת עדכון"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "הצג את דף האפשרויות כאשר Tab Session Manager מעודכן. אתה יכול לדעת את תוכן העדכון במהירות."
+    "message": "הצג את דף האפשרויות כאשר TabBoard - Fork of Tab Session Manager מעודכן. אתה יכול לדעת את תוכן העדכון במהירות."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager עודכן!"
+    "message": "TabBoard - Fork of Tab Session Manager עודכן!"
   },
   "seeMoreLabel": {
     "message": "ראה עוד"
@@ -741,10 +741,10 @@
     "message": "רישיון"
   },
   "donationLabel": {
-    "message": "אנא תרום"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "תודה לך על השימוש ב-Tab Session Manager.<br>התמיכה שלך תהווה עידוד גדול, בעודי ממשיך לפתח את התוסף.<br>אם אתה אוהב את Tab Session Manager, אשמח אם תשקול לתרום."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "כרטיסי amazon.co.jp eGift"
@@ -783,18 +783,30 @@
     "message": "פעילות"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=he_IL"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/he/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "לא ניתן לפתוח דף זה על ידי Tab Session Manager."
+    "message": "לא ניתן לפתוח דף זה על ידי TabBoard - Fork of Tab Session Manager."
   },
   "copyUrlLabel": {
     "message": "העתק כתובת אתר"
   },
   "copiedLabel": {
     "message": "הועתק."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

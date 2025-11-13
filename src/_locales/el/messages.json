@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "Αποθηκεύει και επαναφέρει παράθυρα και καρτέλες. Υποστηρίζει και αυτόματη αποθήκευση."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "Δωρεά μέσω PayPal"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "Δωρίστε"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "Άνοιγμα της λίστας της συνεδρίας στην καρτέλα"
@@ -609,10 +609,10 @@
     "message": "Εμφάνιση επιλογών μετά από ενημέρωση"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Να εμφανίζεται η σελίδα των επιλογών μετά από ενημέρωση του Tab Session Manager. Μπορείτε έτσι να δείτε γρήγορα τι έχει ενημερωθεί."
+    "message": "Να εμφανίζεται η σελίδα των επιλογών μετά από ενημέρωση του TabBoard - Fork of Tab Session Manager. Μπορείτε έτσι να δείτε γρήγορα τι έχει ενημερωθεί."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Το Tab Session Manager ενημερώθηκε!"
+    "message": "Το TabBoard - Fork of Tab Session Manager ενημερώθηκε!"
   },
   "seeMoreLabel": {
     "message": "Δείτε περισσότερα"
@@ -741,10 +741,10 @@
     "message": "Άδεια"
   },
   "donationLabel": {
-    "message": "Παρακαλούμε κάντε μας μια δωρεά"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Ευχαριστούμε που χρησιμοποιείτε το Tab Session Manager.<br>Η υποοστήριξή σας μου δίνει κουράγιο ώστε να συνεχίσω την ανάπτυξη αυτού του πρόσθετου.<br>Αν σας αρέσει το Tab Session Manager και μπορείτε και να συνεισφέρετε κάτι, θα σας ήμουν υπόχρεος."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
@@ -783,18 +783,30 @@
     "message": "Συνεδρία"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "Το Tab Session Manager δεν μπορεί να ανοίξει αυτή τη σελίδα."
+    "message": "Το TabBoard - Fork of Tab Session Manager δεν μπορεί να ανοίξει αυτή τη σελίδα."
   },
   "copyUrlLabel": {
     "message": "Αντιγραφή URL"
   },
   "copiedLabel": {
     "message": "Αντιγράφηκε."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

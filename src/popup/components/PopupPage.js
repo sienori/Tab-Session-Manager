@@ -33,6 +33,12 @@ import "../styles/PopupPage.scss";
 import { makeSearchInfo } from "../../common/makeSearchInfo";
 import { initToolbarLayout, disposeToolbarLayout } from "../toolbarLayout";
 
+const THUMBNAIL_COLUMNS_MIN = 1;
+const THUMBNAIL_COLUMNS_MAX = 6;
+const THUMBNAIL_COLUMNS_DEFAULT = 3;
+const THUMBNAIL_PIXEL_MIN = 80;
+const THUMBNAIL_PIXEL_MAX = 320;
+
 const logDir = "popup/components/PopupPage";
 
 export default class PopupPage extends Component {
@@ -51,8 +57,9 @@ export default class PopupPage extends Component {
       isInTab: false,
       sidebarWidth: 300,
       viewMode: "list",
-      thumbnailSize: 200,
+      thumbnailSize: THUMBNAIL_COLUMNS_DEFAULT,
       thumbnailSource: "representative",
+      hideThumbnailText: false,
       notification: {
         message: "",
         type: "info",
@@ -118,14 +125,16 @@ export default class PopupPage extends Component {
 
     document.body.dataset.theme = getSettings("theme");
 
-    const storedThumbnailSize = Number(getSettings("thumbnailSize"));
+    const storedThumbnailSize = this.normalizeThumbnailColumns(getSettings("thumbnailSize"));
+    const storedHideText = getSettings("hideThumbnailText");
     this.setState({
       sortValue: getSettings("sortValue") || "newest",
       isInTab: isInTab,
       sidebarWidth: getSettings("sidebarWidth"),
       viewMode: getSettings("thumbnailViewMode") || "list",
-      thumbnailSize: Number.isFinite(storedThumbnailSize) ? storedThumbnailSize : 200,
-      thumbnailSource: getSettings("thumbnailImageSource") || "representative"
+      thumbnailSize: storedThumbnailSize,
+      thumbnailSource: getSettings("thumbnailImageSource") || "representative",
+      hideThumbnailText: storedHideText === true || storedHideText === "true"
     });
 
     const isInit = await browser.runtime.sendMessage({ message: "getInitState" });
@@ -206,16 +215,29 @@ export default class PopupPage extends Component {
 
     this.setState({ tagList: uniqueTags });
   };
+  normalizeThumbnailColumns = (value) => {
+    const numericValue = Number(value);
+    if (!Number.isFinite(numericValue)) {
+      return THUMBNAIL_COLUMNS_DEFAULT;
+    }
+    if (numericValue > THUMBNAIL_COLUMNS_MAX) {
+      const clampedPixels = Math.min(Math.max(numericValue, THUMBNAIL_PIXEL_MIN), THUMBNAIL_PIXEL_MAX);
+      const ratio = (clampedPixels - THUMBNAIL_PIXEL_MIN) / (THUMBNAIL_PIXEL_MAX - THUMBNAIL_PIXEL_MIN);
+      const derivedColumns = THUMBNAIL_COLUMNS_MAX - ratio * (THUMBNAIL_COLUMNS_MAX - THUMBNAIL_COLUMNS_MIN);
+      return Math.min(Math.max(Math.round(derivedColumns), THUMBNAIL_COLUMNS_MIN), THUMBNAIL_COLUMNS_MAX);
+    }
+    return Math.min(Math.max(Math.round(numericValue), THUMBNAIL_COLUMNS_MIN), THUMBNAIL_COLUMNS_MAX);
+  };
+
   handleViewModeChange = mode => {
     setSettings("thumbnailViewMode", mode);
     this.setState({ viewMode: mode });
   };
 
   handleThumbnailSizeChange = value => {
-    const numericValue = Number(value);
-    const clampedValue = Number.isFinite(numericValue) ? Math.min(Math.max(numericValue, 120), 320) : 200;
-    setSettings("thumbnailSize", clampedValue);
-    this.setState({ thumbnailSize: clampedValue });
+    const normalized = this.normalizeThumbnailColumns(value);
+    setSettings("thumbnailSize", normalized);
+    this.setState({ thumbnailSize: normalized });
   };
 
   handleThumbnailSourceToggle = isScreenshot => {
@@ -224,22 +246,30 @@ export default class PopupPage extends Component {
     this.setState({ thumbnailSource: value });
   };
 
+  handleHideThumbnailTextChange = isHidden => {
+    setSettings("hideThumbnailText", !!isHidden);
+    this.setState({ hideThumbnailText: !!isHidden });
+  };
+
   handleViewPreferencesChange = (changes, areaName) => {
     if (areaName !== "local" || !changes.Settings) return;
     const updatedViewMode = getSettings("thumbnailViewMode") || "list";
-    const rawSize = Number(getSettings("thumbnailSize"));
-    const updatedSize = Number.isFinite(rawSize) ? rawSize : 200;
+    const updatedSize = this.normalizeThumbnailColumns(getSettings("thumbnailSize"));
     const updatedSource = getSettings("thumbnailImageSource") || "representative";
+    const hideTextPref = getSettings("hideThumbnailText");
+    const updatedHideText = hideTextPref === true || hideTextPref === "true";
 
     this.setState(prev => {
       const shouldUpdate =
         prev.viewMode !== updatedViewMode ||
         prev.thumbnailSize !== updatedSize ||
-        prev.thumbnailSource !== updatedSource;
+        prev.thumbnailSource !== updatedSource ||
+        prev.hideThumbnailText !== updatedHideText;
       return shouldUpdate ? {
         viewMode: updatedViewMode,
         thumbnailSize: updatedSize,
-        thumbnailSource: updatedSource
+        thumbnailSource: updatedSource,
+        hideThumbnailText: updatedHideText
       } : null;
     });
   };
@@ -648,9 +678,11 @@ export default class PopupPage extends Component {
               viewMode={this.state.viewMode}
               thumbnailSize={this.state.thumbnailSize}
               thumbnailSource={this.state.thumbnailSource}
+              hideThumbnailText={this.state.hideThumbnailText}
               onViewModeChange={this.handleViewModeChange}
               onThumbnailSizeChange={this.handleThumbnailSizeChange}
               onThumbnailSourceToggle={this.handleThumbnailSourceToggle}
+              onHideThumbnailTextChange={this.handleHideThumbnailTextChange}
             />
           </div>
         </div>

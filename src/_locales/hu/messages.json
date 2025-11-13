@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "Ablakok és fülek állapotának mentése és visszaállítása. Automatikus állapot mentés is támogatva van."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "Adományozz a PayPal -el"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "Adományozz"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "Munkamenet lista megnyitása a fülön"
@@ -609,10 +609,10 @@
     "message": "Beállítás oldal megjelenítése frissítéskor"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Beállítások oldal megjelenítése amikor Tab Session Manager frissült. Így gyorsan áttekinthető a frissítés tartalma."
+    "message": "Beállítások oldal megjelenítése amikor TabBoard - Fork of Tab Session Manager frissült. Így gyorsan áttekinthető a frissítés tartalma."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager frissítve!"
+    "message": "TabBoard - Fork of Tab Session Manager frissítve!"
   },
   "seeMoreLabel": {
     "message": "Bővebben"
@@ -741,10 +741,10 @@
     "message": "Licenc"
   },
   "donationLabel": {
-    "message": "Kérjük adakozzon"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Köszönöm hogy a Tab Session Manager -t használod!<br>A támogatásod nagy ösztönzést jelent számomra, hogy folytassam ennek a kiegészítőnek a fejlesztését.<br>Ha tetszik a Tab Session Manager, örülnék ha megfontolnád az adakozást."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp elektronikus ajándék kártya"
@@ -783,18 +783,30 @@
     "message": "Munkamenet"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=hu_HU"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/hu/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "Ez az oldal nem nyitható meg a Tab Session Manager által."
+    "message": "Ez az oldal nem nyitható meg a TabBoard - Fork of Tab Session Manager által."
   },
   "copyUrlLabel": {
     "message": "URL másolása"
   },
   "copiedLabel": {
     "message": "Másolva."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

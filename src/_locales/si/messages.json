@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "කවුළු සහ ටැබ් වල තත්වය සුරකින්න සහ ප්‍රතිසාධනය කරන්න. එය ස්වයංක්‍රීය ඉතිරිකිරීම් සඳහාද සහාය වේ."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "PayPal සමඟ පරිත්‍යාග කරන්න"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "පරිත්‍යාග කරන්න"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "ටැබය තුළ සැසි ලැයිස්තුව විවෘත කරන්න"
@@ -609,10 +609,10 @@
     "message": "යාවත්කාලීන කිරීමේදී විකල්ප පිටුව පෙන්වන්න"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Tab Session Manager යාවත්කාලීන වූ විට විකල්ප පිටුව පෙන්වන්න. යාවත්කාලීන අන්තර්ගතයන් ඔබට ඉක්මනින් දැනගත හැකිය."
+    "message": "TabBoard - Fork of Tab Session Manager යාවත්කාලීන වූ විට විකල්ප පිටුව පෙන්වන්න. යාවත්කාලීන අන්තර්ගතයන් ඔබට ඉක්මනින් දැනගත හැකිය."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager යාවත්කාලීන කර ඇත!"
+    "message": "TabBoard - Fork of Tab Session Manager යාවත්කාලීන කර ඇත!"
   },
   "seeMoreLabel": {
     "message": "තව බලන්න"
@@ -741,10 +741,10 @@
     "message": "බලපත්රය"
   },
   "donationLabel": {
-    "message": "කරුණාකර පරිත්‍යාගයක් කරන්න"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Tab Session Manager භාවිතා කිරීම ගැන ඔබට ස්තුතියි.<br>මම add-on එක දිගටම දියුණු කරන නිසා ඔබේ සහයෝගය විශාල දිරිගැන්වීමක් වේවි.<br>ඔබ ටැබ් සැසි කළමනාකරුට කැමති නම්, ඔබට පරිත්‍යාග කිරීම ගැන සලකා බැලිය හැකි නම් මම සතුටු වෙමි."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift කාඩ්පත්"
@@ -783,18 +783,30 @@
     "message": "වාරය"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "මෙම පිටුව Tab Session Manager විසින් විවෘත කළ නොහැක."
+    "message": "මෙම පිටුව TabBoard - Fork of Tab Session Manager විසින් විවෘත කළ නොහැක."
   },
   "copyUrlLabel": {
     "message": "URL පිටපත් කරන්න"
   },
   "copiedLabel": {
     "message": "පිටපත් කර ඇත."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

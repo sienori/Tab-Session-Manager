@@ -128,24 +128,6 @@
       }
     }
 
-    .thumbnailSourceToggle {
-      display: inline-flex;
-      align-items: center;
-      margin-left: 12px;
-      gap: 6px;
-      color: var(--sub-text);
-
-      input {
-        width: 18px;
-        height: 18px;
-        margin: 0;
-      }
-
-      span {
-        white-space: nowrap;
-      }
-    }
-
     .thumbnailSizeControl {
       display: flex;
       align-items: center;
@@ -163,6 +145,24 @@
       .thumbnailSizeValue {
         font-size: 12px;
         color: var(--main-text);
+      }
+    }
+
+    .thumbnailSourceToggle,
+    .thumbnailTextToggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--sub-text);
+
+      input {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+      }
+
+      span {
+        white-space: nowrap;
       }
     }
   }

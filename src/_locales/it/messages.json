@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "Salva e ripristina lo stato di finestre e schede. Supporta anche il salvataggio automatico."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "Dona con PayPal"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "Fai una donazione"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "Apri lista sessioni in una scheda"
@@ -609,10 +609,10 @@
     "message": "Mostra pagina impostazioni durante l'aggiornamento"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Mostra la pagina delle impostazioni quando Tab Session Manager viene aggiornato. Ti permette di conoscere rapidamente le novità dell'aggiornamento."
+    "message": "Mostra la pagina delle impostazioni quando TabBoard - Fork of Tab Session Manager viene aggiornato. Ti permette di conoscere rapidamente le novità dell'aggiornamento."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager è stato aggiornato!"
+    "message": "TabBoard - Fork of Tab Session Manager è stato aggiornato!"
   },
   "seeMoreLabel": {
     "message": "Mostra altro"
@@ -741,10 +741,10 @@
     "message": "Licenza"
   },
   "donationLabel": {
-    "message": "Per favore, considera una donazione"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Grazie per utilizzare Tab Session Manager.<br>Il tuo supporto sarà un grande incoraggiamento mentre continuo a sviluppare questo componente aggiuntivo.<br>Se ti piace Tab Session Manager, sarei felice se potessi prendere in considerazione una donazione."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "Buoni Regalo amazon.co.jp"
@@ -783,18 +783,30 @@
     "message": "Sessione"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "Questa pagina non può essere aperta da Tab Session Manager."
+    "message": "Questa pagina non può essere aperta da TabBoard - Fork of Tab Session Manager."
   },
   "copyUrlLabel": {
     "message": "Copia URL"
   },
   "copiedLabel": {
     "message": "Copiato."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

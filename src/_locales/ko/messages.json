@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "창과 탭의 상태를 저장하고 복원합니다. 자동 저장 또한 지원합니다."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "페이팔로 후원하기"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "후원하기"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "새 탭에서 세션 목록 열기"
@@ -609,10 +609,10 @@
     "message": "업데이트 후 설정 페이지 열기"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Tab Session Manager가 업데이트 되면, 설정 페이지를 표시합니다. 업데이트 내용을 빠르게 알 수 있습니다."
+    "message": "TabBoard - Fork of Tab Session Manager가 업데이트 되면, 설정 페이지를 표시합니다. 업데이트 내용을 빠르게 알 수 있습니다."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager 업데이트 완료!"
+    "message": "TabBoard - Fork of Tab Session Manager 업데이트 완료!"
   },
   "seeMoreLabel": {
     "message": "더보기"
@@ -741,10 +741,10 @@
     "message": "라이센스"
   },
   "donationLabel": {
-    "message": "후원을 통해 응원해주세요"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Tab Session Manager을 사용해주셔서 감사합니다.<br>보내주신 응원은 저희가 계속 만들어나갈 수 있는 큰 힘이 되어줍니다.<br>Tab Session Manager를 좋아하신다면, 후원을 통한 응원을 고려해주세요."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift 카드"
@@ -783,18 +783,30 @@
     "message": "세션"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "이 페이지는 Tab Session Manager로 열릴 수 없습니다."
+    "message": "이 페이지는 TabBoard - Fork of Tab Session Manager로 열릴 수 없습니다."
   },
   "copyUrlLabel": {
     "message": "URL 복사"
   },
   "copiedLabel": {
     "message": "복사됨."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

@@ -157,7 +157,7 @@
       margin-left: 0;
       display: grid;
       gap: 14px;
-      grid-template-columns: repeat(auto-fill, minmax(var(--thumbnail-size, 200px), 1fr));
+      grid-template-columns: repeat(var(--thumbnail-columns, 3), minmax(0, 1fr));
     }
 
     .tabTile {
@@ -165,6 +165,33 @@
       flex-direction: column;
       color: var(--main-text);
       gap: 6px;
+      position: relative;
+      overflow: visible;
+      &.isTextHidden {
+        padding-bottom: 0;
+        .tabTileInfo {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -36px;
+          opacity: 0;
+          pointer-events: none;
+          background: var(--main-bg);
+          border-radius: 8px;
+          padding: 8px;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+          transition: opacity 0.2s ease, transform 0.2s ease;
+          transform: translateY(6px);
+        }
+        &:hover,
+        &:focus-within {
+          .tabTileInfo {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+          }
+        }
+      }
     }
 
     .thumbnailWrapper {

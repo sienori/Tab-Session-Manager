@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "開いているタブやウィンドウを保存し、復元することができます。自動保存にも対応しています。"
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "PayPalで寄付"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "寄付する"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "セッションリストをタブで開く"
@@ -609,10 +609,10 @@
     "message": "更新時にオプションページを表示する"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Tab Session Managerが更新されたときにオプションページを表示します。更新内容をすぐに知ることができます。"
+    "message": "TabBoard - Fork of Tab Session Managerが更新されたときにオプションページを表示します。更新内容をすぐに知ることができます。"
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Managerが更新されました！"
+    "message": "TabBoard - Fork of Tab Session Managerが更新されました！"
   },
   "seeMoreLabel": {
     "message": "もっと見る"
@@ -741,10 +741,10 @@
     "message": "ライセンス"
   },
   "donationLabel": {
-    "message": "ご寄付のお願い"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Tab Session Managerをご利用いただきありがとうございます。<br>アドオンの開発を続けていく上で、皆様のご支援が大きな励みになります。<br>もしあなたがTab Session Managerを気に入ってくれたなら、ご寄付をご検討いただけると幸いです。"
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "amazonギフト券 Eメールタイプ"
@@ -783,18 +783,30 @@
     "message": "セッション"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=ja_JP"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/ja/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "このページはTab Session Managerでは開けません。"
+    "message": "このページはTabBoard - Fork of Tab Session Managerでは開けません。"
   },
   "copyUrlLabel": {
     "message": "URLをコピー"
   },
   "copiedLabel": {
     "message": "コピーしました。"
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

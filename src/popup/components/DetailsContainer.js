@@ -57,7 +57,7 @@ const TabContainer = props => {
     searchWords,
     handleRemoveTab,
     viewMode,
-    thumbnailSize
+    hideThumbnailText
   } = props;
 
   const openInForeground = () => {
@@ -117,8 +117,10 @@ const TabContainer = props => {
   };
 
   if (viewMode === "grid") {
+    const tileClassNames = ["tabTile"];
+    if (hideThumbnailText) tileClassNames.push("isTextHidden");
     return (
-      <div className="tabTile" style={{ "--thumbnail-size": `${thumbnailSize}px` }}>
+      <div className={tileClassNames.join(" ")}>
         <div
           className="thumbnailWrapper"
           role="button"
@@ -255,12 +257,13 @@ class WindowContainer extends Component {
       searchWords,
       handleRemoveTab,
       viewMode,
-      thumbnailSize
+      thumbnailSize,
+      hideThumbnailText
     } = this.props;
     const sortedTabs = Object.values(tabs).sort((a, b) => a.index - b.index);
     const isIncognito = Object.values(tabs)[0].incognito;
     const tabsContainerClass = `tabs ${viewMode === "grid" ? "isGrid" : ""}`;
-    const tabsStyle = viewMode === "grid" ? { "--thumbnail-size": `${thumbnailSize}px` } : undefined;
+    const tabsStyle = viewMode === "grid" ? { "--thumbnail-columns": `${thumbnailSize}` } : undefined;
 
     return (
       <div className={`windowContainer ${this.state.isCollapsed ? "isCollapsed" : ""}`}>
@@ -298,7 +301,7 @@ class WindowContainer extends Component {
               searchWords={searchWords}
               handleRemoveTab={handleRemoveTab}
               viewMode={viewMode}
-              thumbnailSize={thumbnailSize}
+              hideThumbnailText={hideThumbnailText}
               key={tab.id}
             />
           ))}
@@ -309,7 +312,7 @@ class WindowContainer extends Component {
 }
 
 export default props => {
-  const { session, searchWords, removeWindow, removeTab, openMenu, viewMode, thumbnailSize } = props;
+  const { session, searchWords, removeWindow, removeTab, openMenu, viewMode, thumbnailSize, hideThumbnailText } = props;
 
   if (!session.windows) return null;
 
@@ -339,6 +342,7 @@ export default props => {
           openMenu={openMenu}
           viewMode={viewMode}
           thumbnailSize={thumbnailSize}
+          hideThumbnailText={hideThumbnailText}
           key={`${session.id}${windowId}`}
         />
       ))}

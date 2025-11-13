@@ -488,13 +488,21 @@ export default [
       },
       {
         id: "thumbnailSize",
-        title: "thumbnailSizeLabel",
+        title: "thumbnailColumnsLabel",
         captions: [""],
         type: "number",
-        min: 120,
-        max: 320,
-        step: 10,
-        default: 200,
+        min: 1,
+        max: 6,
+        step: 1,
+        default: 3,
+        shouldShow: false
+      },
+      {
+        id: "hideThumbnailText",
+        title: "hideThumbnailTextLabel",
+        captions: ["hideThumbnailTextCaptionLabel"],
+        type: "checkbox",
+        default: false,
         shouldShow: false
       }
     ]

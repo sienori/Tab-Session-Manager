@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "Запазване и възстановяване състоянието на прозорци и раздели. Поддържа се и автоматично запазване."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "Дарение чрез PayPal"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "Дарение"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "Отваряне на списъка със сесии в раздел"
@@ -609,10 +609,10 @@
     "message": "Показване на страницата с настройки при обновяване"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Показване на тази страница с настройки, когато Tab Session Manager бъде обновен. Можете бързо да научите за новите неща."
+    "message": "Показване на тази страница с настройки, когато TabBoard - Fork of Tab Session Manager бъде обновен. Можете бързо да научите за новите неща."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager беше обновен!"
+    "message": "TabBoard - Fork of Tab Session Manager беше обновен!"
   },
   "seeMoreLabel": {
     "message": "Вижте повече"
@@ -741,10 +741,10 @@
     "message": "Лиценз"
   },
   "donationLabel": {
-    "message": "Моля, направете дарение"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Благодаря Ви, че използвате Tab Session Manager.<br>Вашата подкрепа би означавала много за мен, докато продължавам да разработвам добавката.<br>Ако харесвате Tab Session Manager, бих се радвал да помислите за дарение."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp eGift Cards"
@@ -783,18 +783,30 @@
     "message": "Сесия"
   },
   "amazonUrl": {
-    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "Страницата не може да бъде отворена от Tab Session Manager."
+    "message": "Страницата не може да бъде отворена от TabBoard - Fork of Tab Session Manager."
   },
   "copyUrlLabel": {
     "message": "Копиране на URL адреса"
   },
   "copiedLabel": {
     "message": "Копирано."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }

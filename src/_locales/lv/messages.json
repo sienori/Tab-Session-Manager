@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "Tab Session Manager"
+    "message": "TabBoard - Fork of Tab Session Manager"
   },
   "extDescription": {
-    "message": "Ļauj saglabāt un atjaunot logus un to cilņu stāvokli. Kā arī atbalsta automātisko saglabāšanu."
+    "message": "Community-maintained fork with grid view enhancements; not affiliated with the original project."
   },
   "donateWithPaypalLabel": {
-    "message": "Ziedot izmantojot PayPal"
+    "message": "Support upstream via PayPal"
   },
   "donateLabel": {
-    "message": "Ziedot"
+    "message": "Support upstream project"
   },
   "openSessionListInTabLabel": {
     "message": "Atvērt sesiju sarakstu cilnē"
@@ -609,10 +609,10 @@
     "message": "Display option page when updating"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Display the options page when Tab Session Manager is updated. You can know the update contents quickly."
+    "message": "Display the options page when TabBoard - Fork of Tab Session Manager is updated. You can know the update contents quickly."
   },
   "NotificationOnUpdateLabel": {
-    "message": "Tab Session Manager atjaunināts!"
+    "message": "TabBoard - Fork of Tab Session Manager atjaunināts!"
   },
   "seeMoreLabel": {
     "message": "Skatīt vairāk"
@@ -741,10 +741,10 @@
     "message": "Licence"
   },
   "donationLabel": {
-    "message": "Lūdzu, ziedojiet"
+    "message": "About this fork"
   },
   "donationCaptionLabel": {
-    "message": "Paldies, ka izmantojat Tab Session Manager.<br>Jūsu atbalsts būs liels iedrošinājums, lai es turpinātu uzlabot papildinājumu.<br>Ja jums patīk un izmantojat Tab Session Manager ikdienā, es priecātos, ja jūs apsvērtu iespēju ziedot."
+    "message": "TabBoard - Fork of Tab Session Manager is a community-maintained project and is not affiliated with the original author."
   },
   "amazonTitleLabel": {
     "message": "amazon.co.jp e-Dāvanu kartes"
@@ -783,18 +783,30 @@
     "message": "Sesija"
   },
   "amazonUrl": {
-    "message": "https://amazon.co.jp/dp/B004N3APGO?language=en_US"
+    "message": ""
   },
   "addonUrl": {
-    "message": "https://addons.mozilla.org/lv/firefox/addon/tab-session-manager/?src=optionpage"
+    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
-    "message": "Šo lapu nevar atvērt izmantojot Tab Session Manager."
+    "message": "Šo lapu nevar atvērt izmantojot TabBoard - Fork of Tab Session Manager."
   },
   "copyUrlLabel": {
     "message": "Kopēt vietnes URL"
   },
   "copiedLabel": {
     "message": "Nokopēts."
+  },
+  "forkSupportNotice": {
+    "message": "Support the original Tab Session Manager project via its official donation pages."
+  },
+  "forkContactNotice": {
+    "message": "This fork does not collect donations; refer to the upstream project for contact details."
+  },
+  "forkSponsorNotice": {
+    "message": "Support this fork directly via IBAN: DE55500240241771157501"
+  },
+  "forkLinksNotice": {
+    "message": "Store listings for TabBoard - Fork of Tab Session Manager are not yet available; follow the project repository for updates."
   }
 }
