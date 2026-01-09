@@ -345,7 +345,7 @@
     "message": "Odstęp czasowy (w minutach)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Wartość minimalna 0,5"
   },
   "autoSaveLimitLabel": {
     "message": "Maksymalna liczba zapisanych"
