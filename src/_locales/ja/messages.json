@@ -492,7 +492,7 @@
     "message": "タブグループを保存する"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups."
+    "message": "タブグループの状態を保存・復元します。"
   },
   "tstDelayCaptionLabel": {
     "message": "ツリーの状態を復元するにはタブを開く際に待ち時間が必要です。ツリーが正しく復元されない場合にはこの値を大きくしてください。"
