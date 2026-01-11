@@ -18,9 +18,9 @@ export const listFiles = async (pageToken = "") => {
     ].join(","),
     pageSize: 1000,
     pageToken: pageToken
-  }
+  };
   const url = `https://www.googleapis.com/drive/v3/files?${new URLSearchParams(params)}`;
-  const headers = { Authorization: `Bearer ${accessToken}` }
+  const headers = { Authorization: `Bearer ${accessToken}` };
 
   try {
     const response = await fetch(url, { headers: headers });
@@ -85,7 +85,7 @@ export const downloadFile = async fileId => {
   const headers = { Authorization: `Bearer ${accessToken}` };
 
   try {
-    const response = await fetch(url, { headers: headers })
+    const response = await fetch(url, { headers: headers });
     const result = await response.json();
 
     log.log(logDir, "=>downloadFile()", result);

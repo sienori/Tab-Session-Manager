@@ -13,7 +13,7 @@ const {
 } = require("./webpack.utils");
 const path = require("path");
 const config = require("./config.json");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const generalConfig = {
   mode: "development",
@@ -23,7 +23,7 @@ const generalConfig = {
       src: path.resolve(__dirname, "src/")
     },
     fallback: {
-      "url": require.resolve("url/")
+      url: require.resolve("url/")
     }
   },
   module: {
@@ -70,7 +70,7 @@ module.exports = [
       ...getMiniCssExtractPlugin(),
       ...getHTMLPlugins("chrome", config.devDirectory, config.chromePath),
       ...getCopyPlugins("chrome", config.devDirectory, config.chromePath),
-      ...getBufferPlugin(),
+      ...getBufferPlugin()
     ]
   },
   {
@@ -81,7 +81,7 @@ module.exports = [
       ...getMiniCssExtractPlugin(),
       ...getFirefoxCopyPlugins("firefox", config.devDirectory, config.firefoxPath),
       ...getHTMLPlugins("firefox", config.devDirectory, config.firefoxPath),
-      ...getBufferPlugin(),
+      ...getBufferPlugin()
     ]
   }
 ];

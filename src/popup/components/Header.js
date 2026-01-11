@@ -76,9 +76,7 @@ export default props => {
           title={browser.i18n.getMessage("undoLabel")}
         >
           <UndoIcon />
-          <div className="count">
-            {undoStatus.undoCount > 0 && undoStatus.undoCount}
-          </div>
+          <div className="count">{undoStatus.undoCount > 0 && undoStatus.undoCount}</div>
         </button>
         <button
           className={`redoButton ${undoStatus.redoCount == 0 ? "disable" : ""}`}
@@ -86,9 +84,7 @@ export default props => {
           title={browser.i18n.getMessage("redoLabel")}
         >
           <RedoIcon />
-          <div className="count">
-            {undoStatus.redoCount > 0 && undoStatus.redoCount}
-          </div>
+          <div className="count">{undoStatus.redoCount > 0 && undoStatus.redoCount}</div>
         </button>
         <div className="separation" />
         {shouldShowCloudSync && (
@@ -98,7 +94,9 @@ export default props => {
             title={browser.i18n.getMessage("cloudSyncLabel")}
           >
             <CloudSyncIcon />
-            {(needsSync || syncError) && <div className={`syncBadge ${syncError ? "syncError" : ""}`}>!</div>}
+            {(needsSync || syncError) && (
+              <div className={`syncBadge ${syncError ? "syncError" : ""}`}>!</div>
+            )}
           </button>
         )}
         <button

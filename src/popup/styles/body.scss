@@ -1,22 +1,22 @@
 html {
   body {
     margin: 0;
-    font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica",
-      sans-serif;
+    font-family:
+      "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica", sans-serif;
     font-size: 13px;
     overflow: hidden;
     background-color: var(--main-bg);
 
-    .scrollbar{
+    .scrollbar {
       scrollbar-color: var(--button) var(--line);
       scrollbar-width: thin;
-      &::-webkit-scrollbar{
+      &::-webkit-scrollbar {
         width: 8px;
       }
-      &::-webkit-scrollbar-track{
+      &::-webkit-scrollbar-track {
         background-color: var(--line);
       }
-      &::-webkit-scrollbar-thumb{
+      &::-webkit-scrollbar-thumb {
         background-color: var(--button);
       }
     }
@@ -24,7 +24,7 @@ html {
     #root {
       height: 100%;
     }
-    :focus{
+    :focus {
       outline-style: none;
     }
 
@@ -42,14 +42,14 @@ html {
     --success: #058b00;
     --info: #0a84ff;
 
-    &[data-theme='dark']{
+    &[data-theme="dark"] {
       --main-text: #e6e6e6;
       --sub-text: #aaaaaa;
       --line: #454545;
       --line2: #555;
       --button: #929292;
       --highlight: #36b2b2;
-      --main-bg:#181818;
+      --main-bg: #181818;
       --highlight-bg: #305656;
       --confirm: #ed5f5f;
       --error: #ca1532;

@@ -30,7 +30,8 @@
       transition: border-color 150ms ease;
       cursor: pointer;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         border-color: var(--highlight);
       }
     }
@@ -38,7 +39,8 @@
       background-color: var(--highlight);
       color: var(--main-bg);
       border-color: var(--highlight);
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         border-color: var(--main-text);
       }
     }

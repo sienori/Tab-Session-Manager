@@ -75,7 +75,7 @@ const syncStatus = {
   upload: "upload",
   delete: "delete",
   complete: "complete",
-  signInRequired: "signInRequired",
+  signInRequired: "signInRequired"
 };
 
 let currentSyncStatus = {
@@ -93,7 +93,7 @@ const updateSyncStatus = (status, progress = 0, total = 0) => {
   if (status !== syncStatus.none) {
     browser.runtime
       .sendMessage({ message: "updateSyncStatus", syncStatus: currentSyncStatus })
-      .catch(() => { });
+      .catch(() => {});
   }
 };
 

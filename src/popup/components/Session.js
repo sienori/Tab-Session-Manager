@@ -67,8 +67,9 @@ export default class Session extends Component {
     const tabLabel = browser.i18n.getMessage("tabLabel");
     const tabsLabel = browser.i18n.getMessage("tabsLabel");
 
-    const detailText = `${session.windowsNumber} ${session.windowsNumber == 1 ? windowLabel : windowsLabel
-      } - ${session.tabsNumber} ${session.tabsNumber == 1 ? tabLabel : tabsLabel}`;
+    const detailText = `${session.windowsNumber} ${
+      session.windowsNumber == 1 ? windowLabel : windowsLabel
+    } - ${session.tabsNumber} ${session.tabsNumber == 1 ? tabLabel : tabsLabel}`;
 
     return (
       <div className="session" style={{ order: order }}>

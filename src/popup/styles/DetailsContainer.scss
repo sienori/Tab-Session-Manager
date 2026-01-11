@@ -12,9 +12,11 @@
       padding: 3px 0px;
       width: 100%;
 
-      &:hover, &:focus, &:focus-within {
+      &:hover,
+      &:focus,
+      &:focus-within {
         background-color: var(--line);
-        .buttonsContainer{
+        .buttonsContainer {
           display: flex;
         }
       }
@@ -26,19 +28,19 @@
         flex-shrink: 0;
       }
 
-      .windowIcon{
+      .windowIcon {
         padding-right: 8px;
         flex-shrink: 0;
         display: flex;
         align-items: center;
-        svg{
+        svg {
           width: 20px;
           height: 20px;
           fill: var(--sub-text);
         }
       }
 
-      .buttonsContainer{
+      .buttonsContainer {
         display: none;
         flex-direction: row;
         button {
@@ -53,16 +55,18 @@
           }
         }
 
-        .removeButton{
+        .removeButton {
           svg {
             transform: rotate(45deg);
           }
-          &:hover svg, &:focus svg {
+          &:hover svg,
+          &:focus svg {
             fill: var(--confirm);
           }
         }
-        .editButton{
-          &:hover svg, &:focus svg {
+        .editButton {
+          &:hover svg,
+          &:focus svg {
             fill: var(--highlight);
           }
         }
@@ -87,7 +91,8 @@
             stroke: var(--sub-text);
             stroke-width: 2;
           }
-          &:hover svg, &:focus svg {
+          &:hover svg,
+          &:focus svg {
             stroke: var(--highlight);
           }
         }
@@ -145,7 +150,8 @@
     outline: none;
     padding: 0;
     text-align: left;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       text-decoration: underline;
     }
   }

@@ -25,7 +25,6 @@ export async function openSession(session, property = "openInNewWindow") {
       const firstTab = session.windows[win][Object.keys(session.windows[win])[0]];
       createData.incognito = firstTab.incognito;
 
-
       const isSetPosition =
         getSettings("isRestoreWindowPosition") && session.windowsInfo != undefined;
 
@@ -44,7 +43,7 @@ export async function openSession(session, property = "openInNewWindow") {
             break;
         }
       }
-      let currentWindow
+      let currentWindow;
       // 開いたウィンドウがトラッキングセッションに追加されるのを防ぐ
       await setLastFocusedWindowId(browser.windows.WINDOW_ID_NONE);
       try {
@@ -60,7 +59,7 @@ export async function openSession(session, property = "openInNewWindow") {
           width: 800,
           height: 600,
           top: 0,
-          left: 0,
+          left: 0
         });
       }
 
@@ -129,28 +128,34 @@ const createTabGroups = async (windowId, tabs, tabGroupsInfo) => {
   for (let tab of tabs) {
     if (!(tab.groupId > 0)) continue;
 
-    if (!groups[tab.groupId]) groups[tab.groupId] = {
-      originalGroupId: tab.groupId,
-      tabIds: []
-    };
+    if (!groups[tab.groupId])
+      groups[tab.groupId] = {
+        originalGroupId: tab.groupId,
+        tabIds: []
+      };
     groups[tab.groupId].tabIds.push(tabList[tab.id]);
   }
 
   for (let group of Object.values(groups)) {
-    browser.tabs.group({
-      createProperties: { windowId: windowId },
-      tabIds: group.tabIds
-    }, groupId => {
-      const groupInfo = tabGroupsInfo.find(info => info.id === group.originalGroupId);
-      if (!groupInfo) return;
-      if (getSettings("saveTabGroupsV2")) updateTabGroups(groupId, groupInfo);
-    });
+    browser.tabs.group(
+      {
+        createProperties: { windowId: windowId },
+        tabIds: group.tabIds
+      },
+      groupId => {
+        const groupInfo = tabGroupsInfo.find(info => info.id === group.originalGroupId);
+        if (!groupInfo) return;
+        if (getSettings("saveTabGroupsV2")) updateTabGroups(groupId, groupInfo);
+      }
+    );
   }
 };
 
 const setWindowTitle = (session, windowId, currentWindow) => {
   const windowTitle = session?.windowsInfo?.[windowId]?.title || "";
-  const activeTabTitle = Object.values(session.windows[windowId]).find(window => window.active)?.title;
+  const activeTabTitle = Object.values(session.windows[windowId]).find(
+    window => window.active
+  )?.title;
   const reg = new RegExp("(?<title>.+)" + activeTabTitle, "u");
   const title = windowTitle.match(reg)?.groups?.title;
 
@@ -192,7 +197,7 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
         if (tabNumber == 1 && !isAddtoCurrentWindow) browser.tabs.remove(firstTabId);
         if (tabNumber == sortedTabs.length) replacePage(currentWindow.id);
       })
-      .catch(() => { });
+      .catch(() => {});
     openedTabs.push(openedTab);
     if (getSettings("ifSupportTst")) await openedTab;
   }
@@ -258,12 +263,7 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
       } else {
         // Chromeのincognitoウィンドウでは拡張機能ページを開けないため
         if (!(browserInfo().name === "Chrome" && currentWindow.incognito)) {
-          createOption.url = returnReplaceURL(
-            "redirect",
-            tab.title,
-            tab.url,
-            tab.favIconUrl
-          );
+          createOption.url = returnReplaceURL("redirect", tab.title, tab.url, tab.favIconUrl);
         }
       }
     }
@@ -271,12 +271,7 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
     //Reader mode
     if (tab.url.startsWith("about:reader?url=")) {
       if (getSettings("ifLazyLoading")) {
-        createOption.url = returnReplaceURL(
-          "redirect",
-          tab.title,
-          tab.url,
-          tab.favIconUrl
-        );
+        createOption.url = returnReplaceURL("redirect", tab.title, tab.url, tab.favIconUrl);
       } else {
         if (isEnabledOpenInReaderMode) createOption.openInReaderMode = true;
         createOption.url = decodeURIComponent(tab.url.slice(17));
@@ -298,13 +293,7 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
         log.warn(logDir, "openTab() tryOpen() replace", e);
         const isRemovedContainer = e.message.startsWith("No cookie store exists with ID");
         if (isRemovedContainer) delete createOption.cookieStoreId;
-        else
-          createOption.url = returnReplaceURL(
-            "open_faild",
-            tab.title,
-            tab.url,
-            tab.favIconUrl
-          );
+        else createOption.url = returnReplaceURL("open_faild", tab.title, tab.url, tab.favIconUrl);
         const newTab = await browser.tabs.create(createOption).catch(e => {
           log.error(logDir, "openTab() tryOpen() create", e);
           reject();

@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
 import { updateLogLevel, overWriteLogLevel } from "src/common/log";
-import { initSettings, resetAllSettings, handleSettingsChange, exportSettings, importSettings } from "src/settings/settings";
+import {
+  initSettings,
+  resetAllSettings,
+  handleSettingsChange,
+  exportSettings,
+  importSettings
+} from "src/settings/settings";
 import defaultSettings from "src/settings/defaultSettings";
 import CategoryContainer from "./CategoryContainer";
 import OptionContainer from "./OptionContainer";

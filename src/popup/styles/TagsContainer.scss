@@ -24,23 +24,26 @@
       margin-right: 5px;
       overflow: hidden;
 
-      .tagIcon, .autoSaveIcon, .startupIcon, .trackingIcon {
+      .tagIcon,
+      .autoSaveIcon,
+      .startupIcon,
+      .trackingIcon {
         width: 11px;
         margin-right: 3px;
         fill: var(--sub-text);
         flex-shrink: 0;
       }
-      .autoSaveIcon{
+      .autoSaveIcon {
         width: 16px;
       }
-      .startupIcon{
+      .startupIcon {
         width: 14px;
       }
       .trackingIcon {
         width: 14px;
       }
 
-      &.isTracking .trackingIcon{
+      &.isTracking .trackingIcon {
         fill: var(--error);
       }
 
@@ -102,7 +105,8 @@
       word-break: break-all;
       transition: all 100ms;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         text-decoration: underline;
       }
     }

@@ -76,12 +76,14 @@
           fill: var(--highlight);
         }
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           text-decoration: underline;
         }
 
         &.remove {
-          &:hover, &:focus {
+          &:hover,
+          &:focus {
             color: var(--confirm);
             svg {
               fill: var(--confirm);

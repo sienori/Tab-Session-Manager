@@ -58,16 +58,18 @@ const getAuthCode = async (email = "", shouldShowLogin = true) => {
     `&prompt=consent` +
     (email && `&login_hint=${email}`);
 
-  const redirectedURL = await browser.identity.launchWebAuthFlow({
-    url: authURL,
-    interactive: shouldShowLogin
-    // interactiveについて
-    // ユーザが手動操作したとき: true 必要に応じてログインプロンプトが表示される
-    // 自動同期時: false 手動ログインが必要な場合はサイレントに終了しエラーを返す
-  }).catch(async e => {
-    log.error(logDir, "getAuthCode()", e);
-    throw new Error();
-  });
+  const redirectedURL = await browser.identity
+    .launchWebAuthFlow({
+      url: authURL,
+      interactive: shouldShowLogin
+      // interactiveについて
+      // ユーザが手動操作したとき: true 必要に応じてログインプロンプトが表示される
+      // 自動同期時: false 手動ログインが必要な場合はサイレントに終了しエラーを返す
+    })
+    .catch(async e => {
+      log.error(logDir, "getAuthCode()", e);
+      throw new Error();
+    });
 
   const params = new URL(redirectedURL.replace("#", "?")).searchParams;
   if (params.has("error")) {
@@ -98,8 +100,7 @@ const getRefreshTokens = async authCode => {
       expiresIn: result.expires_in,
       refreshToken: result.refresh_token
     };
-  }
-  catch (e) {
+  } catch (e) {
     log.error(logDir, "getRefreshTokens()", e);
     throw new Error();
   }
@@ -113,7 +114,7 @@ const getAccessToken = async refreshToken => {
     client_secret: clientSecret,
     grant_type: "refresh_token",
     refresh_token: refreshToken
-  }
+  };
 
   try {
     const response = await fetch(url, { method: "POST", body: JSON.stringify(params) });
@@ -161,7 +162,9 @@ export const refreshAccessToken = async (shouldShowLogin = true) => {
     return accessToken;
   } catch (e) {
     const currentEmail = getSettings("signedInEmail");
-    const authCode = await getAuthCode(currentEmail, shouldShowLogin).catch(e => { throw new Error(); });
+    const authCode = await getAuthCode(currentEmail, shouldShowLogin).catch(e => {
+      throw new Error();
+    });
     const { accessToken, expiresIn, refreshToken } = await getRefreshTokens(authCode);
     const email = await getEmail(accessToken);
     setSettings("signedInEmail", email);
@@ -177,6 +180,8 @@ const revokeToken = async token => {
   const params = {
     token: token
   };
-  await fetch("https://oauth2.googleapis.com/revoke", { method: "POST", body: JSON.stringify(params) })
-
+  await fetch("https://oauth2.googleapis.com/revoke", {
+    method: "POST",
+    body: JSON.stringify(params)
+  });
 };

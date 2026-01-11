@@ -10,22 +10,30 @@ const logDir = "background/track";
 
 const setTrackingInfo = async (trackingWindows, isTracking) => {
   await browser.storage.session.set({ trackingInfo: { trackingWindows, isTracking } });
-}
+};
 
 export const getTrackingInfo = async () => {
-  return (await browser.storage.session.get("trackingInfo")).trackingInfo || { trackingWindows: [], isTracking: false };
-}
+  return (
+    (await browser.storage.session.get("trackingInfo")).trackingInfo || {
+      trackingWindows: [],
+      isTracking: false
+    }
+  );
+};
 
-export const setLastFocusedWindowId = async (lastFocusedWindowId) => {
-  log.log(logDir, 'setLastFocusedWindowId()', lastFocusedWindowId);
+export const setLastFocusedWindowId = async lastFocusedWindowId => {
+  log.log(logDir, "setLastFocusedWindowId()", lastFocusedWindowId);
   await browser.storage.session.set({ lastFocusedWindowId });
-}
+};
 
 const getLastFocusedWindowId = async () => {
-  return (await browser.storage.session.get("lastFocusedWindowId")).lastFocusedWindowId || browser.windows.WINDOW_ID_NONE;
-}
+  return (
+    (await browser.storage.session.get("lastFocusedWindowId")).lastFocusedWindowId ||
+    browser.windows.WINDOW_ID_NONE
+  );
+};
 
-export const updateTrackingSession = async (tempSession) => {
+export const updateTrackingSession = async tempSession => {
   const { trackingWindows, isTracking } = await getTrackingInfo();
   if (!isTracking) return;
 
@@ -51,12 +59,21 @@ export const updateTrackingSession = async (tempSession) => {
 
     //Update Group Information
     if (isEnabledTabGroups && getSettings("saveTabGroupsV2")) {
-      const filteredWindows = Object.values(trackedSession.windowsInfo).filter(window => window.type === "normal");
-      const tabGroups = await Promise.all(filteredWindows.map(window => queryTabGroups({
-        windowId: window.id,
-      })));
-      const filteredTabGroups = tabGroups.flat().filter(tabGroup =>
-        Object.keys(trackedSession.windows).includes(String(tabGroup.windowId)));
+      const filteredWindows = Object.values(trackedSession.windowsInfo).filter(
+        window => window.type === "normal"
+      );
+      const tabGroups = await Promise.all(
+        filteredWindows.map(window =>
+          queryTabGroups({
+            windowId: window.id
+          })
+        )
+      );
+      const filteredTabGroups = tabGroups
+        .flat()
+        .filter(tabGroup =>
+          Object.keys(trackedSession.windows).includes(String(tabGroup.windowId))
+        );
       if (filteredTabGroups.length > 0) trackedSession.tabGroups = filteredTabGroups;
     }
 
@@ -67,11 +84,13 @@ export const updateTrackingSession = async (tempSession) => {
 let _isLocked = false;
 const waitLock = async () => {
   while (_isLocked) {
-    return new Promise(resolve => setTimeout(() => {
-      resolve(waitLock());
-    }, 10));
+    return new Promise(resolve =>
+      setTimeout(() => {
+        resolve(waitLock());
+      }, 10)
+    );
   }
-}
+};
 
 export const startTracking = async (sessionId, originalWindowId, openedWindowId) => {
   // トラッキングセッションに複数ウィンドウが含まれる場合、trackingInfoの取得と更新が競合しすべて反映されないためロックを取る
@@ -80,7 +99,9 @@ export const startTracking = async (sessionId, originalWindowId, openedWindowId)
 
   let { trackingWindows, isTracking } = await getTrackingInfo();
   // 同一のトラッキングセッションが複数開かれた際に、最後に開かれたもののみ追跡する
-  trackingWindows = trackingWindows.filter(x => x.openedWindowId != originalWindowId && x.originalWindowId != originalWindowId);
+  trackingWindows = trackingWindows.filter(
+    x => x.openedWindowId != originalWindowId && x.originalWindowId != originalWindowId
+  );
   trackingWindows.push({ sessionId, originalWindowId, openedWindowId });
 
   if (!isTracking) {
@@ -94,24 +115,36 @@ export const startTracking = async (sessionId, originalWindowId, openedWindowId)
   await setTrackingInfo(trackingWindows, isTracking);
   _isLocked = false;
   await updateTrackingStatus();
-  log.log(logDir, "startTracking()", { sessionId, originalWindowId, openedWindowId, trackingWindows });
+  log.log(logDir, "startTracking()", {
+    sessionId,
+    originalWindowId,
+    openedWindowId,
+    trackingWindows
+  });
 };
 
-const handleCreateWindow = async (window) => {
+const handleCreateWindow = async window => {
   if (!getSettings("shouldTrackNewWindow")) return;
 
   // trackingWindowsから開かれたウィンドウのみをトラッキングセッションに追加する
   const lastFocusedWindowId = await getLastFocusedWindowId();
   const { trackingWindows } = await getTrackingInfo();
-  const focusedWindow = trackingWindows.find(x => x.openedWindowId == lastFocusedWindowId || x.originalWindowId == lastFocusedWindowId);
+  const focusedWindow = trackingWindows.find(
+    x => x.openedWindowId == lastFocusedWindowId || x.originalWindowId == lastFocusedWindowId
+  );
 
-  log.log(logDir, "handleCreateWindow()", { window, lastFocusedWindowId, trackingWindows, focusedWindow });
+  log.log(logDir, "handleCreateWindow()", {
+    window,
+    lastFocusedWindowId,
+    trackingWindows,
+    focusedWindow
+  });
   if (!focusedWindow || lastFocusedWindowId == browser.windows.WINDOW_ID_NONE) return;
 
   await startTracking(focusedWindow.sessionId, window.id, window.id);
 };
 
-const endTrackingByWindowClose = async (removedWindowId) => {
+const endTrackingByWindowClose = async removedWindowId => {
   let { trackingWindows, isTracking } = await getTrackingInfo();
   trackingWindows = trackingWindows.filter(x => x.openedWindowId != removedWindowId);
   await setTrackingInfo(trackingWindows, isTracking);
@@ -127,7 +160,13 @@ export const endTrackingBySessionId = async sessionId => {
 
 export const endTrackingByWindowDelete = async (sessionId, windowId) => {
   let { trackingWindows, isTracking } = await getTrackingInfo();
-  trackingWindows = trackingWindows.filter(x => !(x.sessionId == sessionId && (x.originalWindowId == windowId || x.openedWindowId == windowId)));
+  trackingWindows = trackingWindows.filter(
+    x =>
+      !(
+        x.sessionId == sessionId &&
+        (x.originalWindowId == windowId || x.openedWindowId == windowId)
+      )
+  );
   await setTrackingInfo(trackingWindows, isTracking);
   await finalizeEndTracking();
 };
@@ -148,10 +187,13 @@ const finalizeEndTracking = async () => {
 export const updateTrackingStatus = async () => {
   const { trackingWindows } = await getTrackingInfo();
   browser.runtime
-    .sendMessage({ message: "updateTrackingStatus", trackingSessions: trackingWindows.map(x => x.sessionId) })
-    .catch(() => { });
+    .sendMessage({
+      message: "updateTrackingStatus",
+      trackingSessions: trackingWindows.map(x => x.sessionId)
+    })
+    .catch(() => {});
 };
 
-export const isTrackingSession = (tags) => {
+export const isTrackingSession = tags => {
   return tags.includes("_tracking");
 };

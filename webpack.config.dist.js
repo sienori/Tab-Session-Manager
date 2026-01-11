@@ -17,7 +17,7 @@ const {
 const path = require("path");
 const config = require("./config.json");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const extVersion = require("./src/manifest.json").version;
 const ffExtVersion = require("./src/manifest-ff.json").version;
@@ -29,7 +29,7 @@ const generalConfig = {
       src: path.resolve(__dirname, "src/")
     },
     fallback: {
-      "url": require.resolve("url/")
+      url: require.resolve("url/")
     }
   },
   module: {
@@ -81,7 +81,7 @@ module.exports = [
       ...getHTMLPlugins("chrome", config.tempDirectory, config.chromePath),
       ...getCopyPlugins("chrome", config.tempDirectory, config.chromePath),
       getZipPlugin(`${config.extName}-for-chrome-${extVersion}`, config.distDirectory),
-      ...getBufferPlugin(),
+      ...getBufferPlugin()
     ]
   },
   {
@@ -97,7 +97,7 @@ module.exports = [
       ...getHTMLPlugins("firefox", config.tempDirectory, config.firefoxPath),
       ...getFirefoxCopyPlugins("firefox", config.tempDirectory, config.firefoxPath),
       getZipPlugin(`${config.extName}-for-firefox-${ffExtVersion}`, config.distDirectory),
-      ...getBufferPlugin(),
+      ...getBufferPlugin()
     ]
   },
   {
@@ -110,7 +110,7 @@ module.exports = [
           {
             from: `src`,
             to: path.resolve(__dirname, `${config.tempDirectory}/copiedSource/src/`),
-            info: { minimized: true },
+            info: { minimized: true }
           },
           {
             from: "*",

@@ -27,18 +27,20 @@ export default () => {
         onClick={handleCompressClick}
       />
       <p className="caption">
-        {status.status === "compressing" &&
-          <>{browser.i18n.getMessage("compressingLabel")}
+        {status.status === "compressing" && (
+          <>
+            {browser.i18n.getMessage("compressingLabel")}
             <br />
             {`${status.count} / ${status.maxCount}`}
           </>
-        }
-        {status.status === "complete" &&
-          <>{browser.i18n.getMessage("compressionCompleteLabel")}
+        )}
+        {status.status === "complete" && (
+          <>
+            {browser.i18n.getMessage("compressionCompleteLabel")}
             <br />
             {`${(status.beforeSessionsSize / 1000 / 1000).toFixed(2)} MB → ${(status.afterSessionsSize / 1000 / 1000).toFixed(2)} MB`}
           </>
-        }
+        )}
       </p>
     </div>
   );

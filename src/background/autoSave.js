@@ -37,7 +37,9 @@ export async function setAutoSave(changes, areaName) {
     await browser.alarms.clear("autoSaveRegular");
     if (!getSettings("ifAutoSave")) return;
     log.info(logDir, "setAutoSave");
-    browser.alarms.create("autoSaveRegular", { periodInMinutes: Number(getSettings("autoSaveInterval")) });
+    browser.alarms.create("autoSaveRegular", {
+      periodInMinutes: Number(getSettings("autoSaveInterval"))
+    });
   }
 }
 

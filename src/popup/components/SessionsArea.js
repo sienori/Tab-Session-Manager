@@ -40,7 +40,13 @@ const namelessSort = (a, b) => {
 };
 const tabsSort = (a, b) => b.tabsNumber - a.tabsNumber;
 
-export const getSortedSessions = (sessions, sortValue, filterValue, searchWords, searchedSessionIds) => {
+export const getSortedSessions = (
+  sessions,
+  sortValue,
+  filterValue,
+  searchWords,
+  searchedSessionIds
+) => {
   let sortedSessions = sessions.map(session => ({
     id: session.id,
     date: session.date,
@@ -48,9 +54,11 @@ export const getSortedSessions = (sessions, sortValue, filterValue, searchWords,
     tag: session.tag,
     tabsNumber: session.tabsNumber
   }));
-  sortedSessions = sortedSessions.filter(session =>
-    matchesFilter(session.tag, filterValue) &&
-    matchesSearch(searchWords, session.id, searchedSessionIds));
+  sortedSessions = sortedSessions.filter(
+    session =>
+      matchesFilter(session.tag, filterValue) &&
+      matchesSearch(searchWords, session.id, searchedSessionIds)
+  );
 
   switch (sortValue) {
     case "newest":
@@ -83,7 +91,7 @@ export const getSortedSessions = (sessions, sortValue, filterValue, searchWords,
 export default class SessionsArea extends Component {
   selectedItemRef = React.createRef();
 
-  scrollTo = (top) => {
+  scrollTo = top => {
     const sessionsArea = this.props.sessionsAreaRef.current;
     sessionsArea.scrollTo(0, top);
   };
@@ -119,9 +127,12 @@ export default class SessionsArea extends Component {
     const { filterValue, sortValue, searchWords, isInitSessions } = this.props;
     const { prevFilterValue, prevSortValue, prevSearchWords } = this;
 
-    if (filterValue !== prevFilterValue
-      || sortValue !== prevSortValue
-      || searchWords.join() !== prevSearchWords.join()) this.scrollTo(0);
+    if (
+      filterValue !== prevFilterValue ||
+      sortValue !== prevSortValue ||
+      searchWords.join() !== prevSearchWords.join()
+    )
+      this.scrollTo(0);
     this.prevFilterValue = filterValue;
     this.prevSortValue = sortValue;
     this.prevSearchWords = searchWords;
@@ -147,8 +158,13 @@ export default class SessionsArea extends Component {
       openMenu,
       trackingSessions
     } = this.props;
-    const sortedSessions =
-      getSortedSessions(sessions, sortValue, filterValue, searchWords, searchedSessionIds);
+    const sortedSessions = getSortedSessions(
+      sessions,
+      sortValue,
+      filterValue,
+      searchWords,
+      searchedSessionIds
+    );
 
     const order = sortedSessions.findIndex(sortedSession => sortedSession.id === selectedSessionId);
     const maxOrder = sortedSessions.length - 1;

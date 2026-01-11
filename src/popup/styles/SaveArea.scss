@@ -11,10 +11,11 @@
       border-radius: 0px;
       margin-right: -1px;
       border-right: var(--main-bg) solid 1px;
-      &:hover, &:focus{
-        border:var(--highlight) solid 1px;
+      &:hover,
+      &:focus {
+        border: var(--highlight) solid 1px;
         & + .saveOptionButton {
-          border:var(--highlight) solid 1px;
+          border: var(--highlight) solid 1px;
           border-left: var(--main-bg) solid 0px;
         }
       }
@@ -23,7 +24,8 @@
       padding: 0px;
       width: 16px;
       border-left: var(--main-bg) solid 1px;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         border: var(--highlight) solid 1px;
       }
       svg {

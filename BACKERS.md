@@ -6,6 +6,7 @@ Thank you to the awesome backers who supported Tab Session Manager!
 [<img src="other/promotion/badges/paypal.png" alt="Check out with PayPal">](https://www.paypal.me/sienoriExt)
 
 ## Backers via Patreon
+
 - level1imp
 - alberto bursi
 - Ronald Averyt
@@ -61,7 +62,7 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Concy
 - Joshua Hough
 - Johnny
-- mgulick  
+- mgulick
 - Ian Griffiths
 - atti710f
 - Ken Montague
@@ -69,14 +70,14 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - TheoUnderStars
 - Petr Korolev
 - Shigeru Tanaka
-- boistordu 
+- boistordu
 - Louis Opter
 - Laura Manson
 - Ryan Reedy
 - Phaze
 - Максим
 - László Dr. Gerő
-- Dania.m 
+- Dania.m
 - ChrigiGee
 - Roger Fajman
 - Sebastian Fohler
@@ -127,7 +128,7 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - David Hajek
 - Steve Walsh
 - Richard McClintock, Sr.
-- Chris Bolton 
+- Chris Bolton
 - Haviland Wright
 - empty_child
 - Love Lain

@@ -11,7 +11,9 @@
   min-width: 150px;
   width: max-content;
 
-  transition: opacity, visibility 200ms;
+  transition:
+    opacity,
+    visibility 200ms;
   -moz-user-select: none;
   -webkit-user-select: none;
   ul {
@@ -29,7 +31,7 @@
         background: inherit;
         text-align: left;
         transition: background-color 100ms;
-        &:hover{
+        &:hover {
           background-color: var(--line);
         }
         &:focus {
@@ -73,7 +75,8 @@
       transform: rotate(45deg);
       fill: var(--sub-text);
     }
-    &:hover svg, &:focus svg {
+    &:hover svg,
+    &:focus svg {
       fill: var(--confirm);
     }
   }

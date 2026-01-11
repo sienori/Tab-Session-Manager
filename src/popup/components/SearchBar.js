@@ -34,7 +34,7 @@ export default class SearchBar extends Component {
   render() {
     return (
       <div id="searchBar">
-        <div className="searchIcon" >
+        <div className="searchIcon">
           <SearchIcon />
         </div>
         <div className="inputForm">
@@ -59,4 +59,4 @@ export default class SearchBar extends Component {
       </div>
     );
   }
-};
+}

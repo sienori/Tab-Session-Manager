@@ -57,10 +57,12 @@ export function returnReplaceURL(state, title, url, favIconUrl) {
 }
 
 export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) {
-  const info = await browser.tabs.query({
-    active: true,
-    windowId: windowId
-  }).catch(e => { });
+  const info = await browser.tabs
+    .query({
+      active: true,
+      windowId: windowId
+    })
+    .catch(e => {});
   if (info && !info[0]) return;
 
   if (!info || info[0].status != "complete") {

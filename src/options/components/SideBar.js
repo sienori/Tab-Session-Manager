@@ -20,10 +20,11 @@ const SideBar = props => (
     </div>
     <ul>
       <li
-        className={`sideBarItem ${["/sessions", "/shortcuts", "/information"].every(path => path != props.location.pathname)
+        className={`sideBarItem ${
+          ["/sessions", "/shortcuts", "/information"].every(path => path != props.location.pathname)
             ? "selected"
             : ""
-          }`}
+        }`}
       >
         <Link to="/settings">{browser.i18n.getMessage("settingsLabel")}</Link>
       </li>

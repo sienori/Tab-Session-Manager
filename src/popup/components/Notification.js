@@ -13,7 +13,7 @@ export default class Notification extends Component {
         type: "info",
         buttonLabel: "",
         duration: 10000,
-        onClick: () => { }
+        onClick: () => {}
       },
       isOpen: true
     };

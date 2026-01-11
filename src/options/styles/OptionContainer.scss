@@ -399,7 +399,8 @@ iframe {
   width: 100%;
 }
 
-.signOutButton, .compressButton {
+.signOutButton,
+.compressButton {
   display: flex;
   flex-direction: column;
   p {

@@ -6,11 +6,13 @@ const logDir = "background/undo";
 
 const setHistory = async (changes, currentIndex) => {
   await browser.storage.session.set({ history: { changes, currentIndex } });
-}
+};
 
 const getHistory = async () => {
-  return (await browser.storage.session.get('history')).history || { changes: [], currentIndex: -1 };
-}
+  return (
+    (await browser.storage.session.get("history")).history || { changes: [], currentIndex: -1 }
+  );
+};
 
 export const recordChange = async (beforeSession, afterSession) => {
   if (beforeSession === undefined || afterSession === undefined) return;
@@ -54,9 +56,9 @@ export const updateUndoStatus = async () => {
 
   const undoStatus = {
     undoCount: currentIndex + 1,
-    redoCount: changes.length - 1 - currentIndex,
+    redoCount: changes.length - 1 - currentIndex
   };
   browser.runtime
     .sendMessage({ message: "updateUndoStatus", undoStatus: undoStatus })
-    .catch(() => { });
+    .catch(() => {});
 };

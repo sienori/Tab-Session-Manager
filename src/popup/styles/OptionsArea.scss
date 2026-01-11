@@ -27,7 +27,8 @@
         outline: none;
         transition: border-color 100ms;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           border-color: var(--highlight);
         }
       }
@@ -45,7 +46,8 @@
         border-bottom: 2px solid var(--sub-text);
         border-right: 2px solid var(--sub-text);
       }
-      &:hover::before, &:focus::before {
+      &:hover::before,
+      &:focus::before {
         border-bottom: 2px solid var(--highlight);
         border-right: 2px solid var(--highlight);
       }
@@ -69,7 +71,8 @@
         height: 14px;
         fill: var(--sub-text);
       }
-      &:hover svg, &:focus svg {
+      &:hover svg,
+      &:focus svg {
         fill: var(--highlight);
       }
     }

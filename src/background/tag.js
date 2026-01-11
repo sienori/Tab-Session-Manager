@@ -12,10 +12,7 @@ export const getValidatedTag = (tag, session) => {
   const comma = /,/g;
   const beginningAndEndSpaces = /(^( |　)*)|(( |　)*$)/g;
   const multipleSpaces = /( )+/g;
-  tag = tag
-    .replace(comma, " ")
-    .replace(beginningAndEndSpaces, "")
-    .replace(multipleSpaces, " ");
+  tag = tag.replace(comma, " ").replace(beginningAndEndSpaces, "").replace(multipleSpaces, " ");
 
   const reservedTag = [
     "regular",
@@ -43,7 +40,7 @@ export const getValidatedTag = (tag, session) => {
 
 export async function addTag(id, tag) {
   log.log(logDir, "addTag()", id, tag);
-  let session = await Sessions.get(id).catch(() => { });
+  let session = await Sessions.get(id).catch(() => {});
   if (!session) return;
 
   const validatedTag = getValidatedTag(tag, session);
@@ -55,7 +52,7 @@ export async function addTag(id, tag) {
 
 export async function removeTag(id, tag) {
   log.log(logDir, "removeTag()", id, tag);
-  let session = await Sessions.get(id).catch(() => { });
+  let session = await Sessions.get(id).catch(() => {});
   if (session == undefined) return;
 
   const isNotEqual = value => {
@@ -82,7 +79,7 @@ export async function getSessionsByTag(tag, needKeys = null) {
     return element.tag.includes(tag);
   };
 
-  let sessions = await Sessions.getAll(needKeys).catch(() => { });
+  let sessions = await Sessions.getAll(needKeys).catch(() => {});
   sessions = sessions.filter(isIncludesTag);
   sessions.sort(newestSort);
 
@@ -95,7 +92,7 @@ export async function applyDeviceName() {
   if (!(shouldSaveDeviceName && deviceName)) return;
   log.log(logDir, "applyDeviceName()", deviceName);
 
-  const sessions = await Sessions.getAll().catch(() => { });
+  const sessions = await Sessions.getAll().catch(() => {});
   for (let session of sessions) {
     const validatedTag = getValidatedTag(deviceName, session);
     if (validatedTag === "") continue;

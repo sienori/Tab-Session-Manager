@@ -58,7 +58,7 @@ export default class KeyboardShortcutForm extends Component {
     window.document.onkeypress = () => true;
   }
 
-  handleChange(e) { }
+  handleChange(e) {}
 
   handleKeyDown(e) {
     if (e.repeat) return;
@@ -81,8 +81,9 @@ export default class KeyboardShortcutForm extends Component {
         : browser.i18n.getMessage("includeModifierKeysMessage");
     else if (normalizedKey == "") error = browser.i18n.getMessage("invalidLetterMessage");
 
-    const value = `${e.ctrlKey ? (this.isMac ? "MacCtrl+" : "Ctrl+") : ""}${e.metaKey && this.isMac ? "Command+" : ""
-      }${e.altKey ? "Alt+" : ""}${e.shiftKey ? "Shift+" : ""}${normalizedKey}`;
+    const value = `${e.ctrlKey ? (this.isMac ? "MacCtrl+" : "Ctrl+") : ""}${
+      e.metaKey && this.isMac ? "Command+" : ""
+    }${e.altKey ? "Alt+" : ""}${e.shiftKey ? "Shift+" : ""}${normalizedKey}`;
 
     this.setState({ error: error, value: value || "" });
     const isValidShortcut = value != "" && error == "";
@@ -105,7 +106,7 @@ export default class KeyboardShortcutForm extends Component {
   }
 
   async clearShortcut() {
-    await browser.commands.reset(this.props.id).catch(() => { });
+    await browser.commands.reset(this.props.id).catch(() => {});
     this.setState({ shortcut: "", value: "" });
   }
 

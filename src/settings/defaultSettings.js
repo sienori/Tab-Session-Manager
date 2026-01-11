@@ -244,7 +244,7 @@ export default [
         title: "shouldTrackNewWindowLabel",
         captions: ["shouldTrackNewWindowCaptionLabel"],
         type: "checkbox",
-        default: true,
+        default: true
       }
     ]
   },
@@ -263,7 +263,7 @@ export default [
             title: "individualBackupLabel",
             captions: ["individualBackupCaptionLabel"],
             type: "checkbox",
-            default: true,
+            default: true
           },
           {
             id: "backupFolder",
@@ -448,7 +448,7 @@ export default [
         captions: ["isShowOpenButtonsCaptionLabel"],
         type: "checkbox",
         default: true
-      },
+      }
     ]
   },
   {

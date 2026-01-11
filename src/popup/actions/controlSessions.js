@@ -168,7 +168,6 @@ export const addCurrentWindow = async (id, isTracking = false) => {
       tab.url = replacedParams.url;
     }
 
-
     // Compress favicon url
     if (tab?.favIconUrl?.startsWith("data:image")) {
       const compressedDataUrl = await compressDataUrl(tab.favIconUrl);
@@ -202,7 +201,9 @@ export const addCurrentTab = async (sessionId, windowId) => {
   if (!currentTab) return;
 
   // Set unique tabId
-  const tabIdList = Object.values(session.windows).flatMap(window => Object.values(window).map(tab => tab.id));
+  const tabIdList = Object.values(session.windows).flatMap(window =>
+    Object.values(window).map(tab => tab.id)
+  );
   const maxTabId = Math.max(...tabIdList);
   currentTab.id = maxTabId + 1;
 
@@ -245,9 +246,7 @@ export const makeCopySession = async id => {
   let session = await getSessions(id);
 
   session.id = uuidv4();
-  session.date = moment(session.date)
-    .add(1, "ms")
-    .valueOf();
+  session.date = moment(session.date).add(1, "ms").valueOf();
   session.lastEditedTime = Date.now();
   browser.runtime.sendMessage({
     message: "save",

@@ -6,7 +6,7 @@ import { updateSession } from "./save";
 
 const logDir = "background/compressAllSessions";
 
-export const compressAllSessions = async (sendResponse) => {
+export const compressAllSessions = async sendResponse => {
   log.log(logDir, "compressAllSessions()");
 
   const sessions = await getSessions();
@@ -24,12 +24,12 @@ export const compressAllSessions = async (sendResponse) => {
   log.log(logDir, "=>compressAllSessions()", beforeSessionsSize, afterSessionsSize);
 };
 
-const calcSessionsSize = (sessions) => {
+const calcSessionsSize = sessions => {
   const blob = new Blob([JSON.stringify(sessions, null, "  ")], { type: "application/json" });
   return blob.size;
 };
 
-const compressSession = async (session) => {
+const compressSession = async session => {
   log.log(logDir, "compressSession()", session.id);
 
   for (let winId in session.windows) {

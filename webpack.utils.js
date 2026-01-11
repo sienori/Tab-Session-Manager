@@ -5,7 +5,7 @@
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ZipPlugin = require("zip-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
@@ -123,8 +123,8 @@ const getZipPlugin = (browserDir, outputDir = "dist", exclude = "") =>
 
 const getBufferPlugin = () => [
   new webpack.ProvidePlugin({
-    Buffer: [require.resolve("buffer/"), "Buffer"],
-  }),
+    Buffer: [require.resolve("buffer/"), "Buffer"]
+  })
 ];
 
 module.exports = {

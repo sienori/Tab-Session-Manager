@@ -10,21 +10,21 @@ body {
   --sub-bg: #ffffff;
   --new: #ff4f4f;
 
-  &[data-theme='dark']{
+  &[data-theme="dark"] {
     --main-text: #e6e6e6;
     --sub-text: #aaaaaa;
     --line: #454545;
     --button: #929292;
     --highlight: #36b2b2;
-    --main-bg:#181818;
+    --main-bg: #181818;
     --sub-bg: #101010;
     --new: #ed5f5f;
   }
 }
 
 .optionsPage {
-  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica",
-    sans-serif;
+  font-family:
+    "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: var(--main-text);

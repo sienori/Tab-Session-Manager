@@ -169,13 +169,14 @@ export default class OptionsArea extends Component {
             <SearchIcon />
           </button>
         </div>
-        {this.props.isShowSearchBar &&
+        {this.props.isShowSearchBar && (
           <SearchBar
             toggleSearchBar={this.props.toggleSearchBar}
             changeSearchWord={this.props.changeSearchWord}
             searchBarRef={this.props.searchBarRef}
             sessionsAreaRef={this.props.sessionsAreaRef}
-          />}
+          />
+        )}
       </div>
     );
   }

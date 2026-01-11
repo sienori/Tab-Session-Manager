@@ -51,7 +51,7 @@ const TabContainer = props => {
     handleRemoveTab(windowId, tab.id);
   };
 
-  const handleOpenClick = (e) => {
+  const handleOpenClick = e => {
     if (e.button === 0) openUrl(tab.url, tab.title, true);
     else if (e.button === 1) openUrl(tab.url, tab.title, false);
   };
@@ -61,7 +61,11 @@ const TabContainer = props => {
       <button className="tabButton" onMouseUp={handleOpenClick} title={`${tab.title}\n${tab.url}`}>
         <FavIcon favIconUrl={tab.favIconUrl} />
         <span className="tabTitle">
-          <Highlighter searchWords={searchWords} textToHighlight={tab.title || ""} autoEscape={true} />
+          <Highlighter
+            searchWords={searchWords}
+            textToHighlight={tab.title || ""}
+            autoEscape={true}
+          />
         </span>
       </button>
       <div className="buttonsContainer">
@@ -129,17 +133,24 @@ class WindowContainer extends Component {
               <CollapseIcon />
             </button>
             <div className="windowIcon">
-              {isIncognito ?
-                browserInfo().name === "Chrome" ? <WindowIncognitoChromeIcon /> : <WindowIncognitoFirefoxIcon /> :
+              {isIncognito ? (
+                browserInfo().name === "Chrome" ? (
+                  <WindowIncognitoChromeIcon />
+                ) : (
+                  <WindowIncognitoFirefoxIcon />
+                )
+              ) : (
                 <WindowIcon />
-              }
+              )}
             </div>
             <button
               className="windowTitle"
               onClick={this.handleOpenClick}
               title={browser.i18n.getMessage("openInNewWindowLabel")}
             >
-              {windowTitle || Object.values(tabs).find(tab => tab.active)?.title || browser.i18n.getMessage("windowLabel")}
+              {windowTitle ||
+                Object.values(tabs).find(tab => tab.active)?.title ||
+                browser.i18n.getMessage("windowLabel")}
             </button>
             <span className="tabsNumber">{this.getTabsNumberText()}</span>
           </div>

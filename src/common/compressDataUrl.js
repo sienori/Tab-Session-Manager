@@ -1,4 +1,4 @@
-import imageCompression from 'browser-image-compression';
+import imageCompression from "browser-image-compression";
 
 export const compressDataUrl = async dataUrl => {
   try {
@@ -15,8 +15,7 @@ export const compressDataUrl = async dataUrl => {
       reader.onload = e => resolve(e.target.result);
       reader.readAsDataURL(compressedFile);
     });
-  }
-  catch {
+  } catch {
     return dataUrl;
   }
 };

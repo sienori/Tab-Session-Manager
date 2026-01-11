@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
-import Autosuggest from 'react-autosuggest';
+import Autosuggest from "react-autosuggest";
 import "../styles/TextInputModalContent.scss";
 import "../styles/TagInputModalContent.scss";
 
 const getSuggestionValue = suggestion => suggestion;
-const renderSuggestion = suggestion => (<div>{suggestion}</div>);
+const renderSuggestion = suggestion => <div>{suggestion}</div>;
 
 export default class TextInputModalContent extends Component {
   constructor(props) {
@@ -13,15 +13,15 @@ export default class TextInputModalContent extends Component {
     this.state = { suggestions: [], value: "" };
   }
 
-  getSuggestions = (value) => {
+  getSuggestions = value => {
     const { tagList } = this.props;
     const inputValue = value.trim().toLowerCase();
     const inputLength = inputValue.length;
 
-    return inputLength === 0 ? tagList : tagList.filter((tag) =>
-      tag.toLowerCase().slice(0, inputLength) === inputValue);
+    return inputLength === 0
+      ? tagList
+      : tagList.filter(tag => tag.toLowerCase().slice(0, inputLength) === inputValue);
   };
-
 
   onSuggestionsFetchRequested = ({ value }) => {
     const suggestions = this.getSuggestions(value);
@@ -32,7 +32,7 @@ export default class TextInputModalContent extends Component {
 
   onSuggestionsClearRequested = () => {
     this.setState({
-      suggestions: this.props.tagList,
+      suggestions: this.props.tagList
     });
   };
 
@@ -45,7 +45,6 @@ export default class TextInputModalContent extends Component {
   handleChange = (e, { newValue }) => {
     this.setState({ value: newValue });
   };
-
 
   initInput = defaultText => {
     this.setState({ value: defaultText || "" });
@@ -65,7 +64,7 @@ export default class TextInputModalContent extends Component {
     const inputProps = {
       placeholder: browser.i18n.getMessage("inputTagLabel"),
       value: this.state.value,
-      onChange: this.handleChange,
+      onChange: this.handleChange
     };
 
     return (

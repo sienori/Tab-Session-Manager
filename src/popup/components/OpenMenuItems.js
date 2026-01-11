@@ -1,8 +1,6 @@
 import React from "react";
 import browser from "webextension-polyfill";
-import {
-  sendOpenMessage,
-} from "../actions/controlSessions";
+import { sendOpenMessage } from "../actions/controlSessions";
 import NewWindowIcon from "../icons/newWindow.svg";
 
 export default props => {

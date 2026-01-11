@@ -12,7 +12,8 @@
     }
   }
 
-  button, .searchIcon {
+  button,
+  .searchIcon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +23,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .searchIcon,
   .clearButton {
     width: 25px;
@@ -41,7 +42,8 @@
     svg {
       transform: rotate(45deg);
     }
-    &:hover svg, &:focus svg {
+    &:hover svg,
+    &:focus svg {
       fill: var(--highlight);
     }
   }

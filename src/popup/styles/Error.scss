@@ -3,7 +3,8 @@
   a {
     color: var(--highlight);
     cursor: pointer;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       text-decoration: underline;
     }
   }

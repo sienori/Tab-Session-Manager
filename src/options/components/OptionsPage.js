@@ -11,7 +11,7 @@ const setupTheme = async () => {
   await initSettings();
   document.body.dataset.theme = getSettings("theme");
 
-  browser.storage.local.onChanged.addListener((changes) => {
+  browser.storage.local.onChanged.addListener(changes => {
     if (changes.Settings.newValue.theme === changes.Settings.oldValue.theme) return;
     document.body.dataset.theme = changes.Settings.newValue.theme;
   });

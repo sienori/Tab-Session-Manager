@@ -1,8 +1,6 @@
 import React from "react";
 import browser from "webextension-polyfill";
-import {
-  addCurrentTab
-} from "../actions/controlSessions";
+import { addCurrentTab } from "../actions/controlSessions";
 import EditIcon from "../icons/edit.svg";
 
 export default props => {

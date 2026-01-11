@@ -50,15 +50,18 @@
       padding: 0;
       list-style-type: none;
       .tag {
-        .tagIcon, .autoSaveIcon, .startupIcon, .trackingIcon {
+        .tagIcon,
+        .autoSaveIcon,
+        .startupIcon,
+        .trackingIcon {
           width: 11px;
           margin-right: 3px;
           fill: var(--sub-text);
         }
-        .autoSaveIcon{
+        .autoSaveIcon {
           width: 16px;
         }
-        .startupIcon{
+        .startupIcon {
           width: 14px;
         }
         .trackingIcon {
@@ -92,12 +95,12 @@
 
   &:not(.isSelected):hover {
     background-color: var(--line);
-    .tag{
-      background-color:var(--line2);
+    .tag {
+      background-color: var(--line2);
     }
   }
 
-  &.isTracking .tagsContainer .tag .trackingIcon{
+  &.isTracking .tagsContainer .tag .trackingIcon {
     fill: var(--error);
   }
 
@@ -135,7 +138,7 @@
       &.remove {
         margin-left: 5px;
 
-        &:hover svg{
+        &:hover svg {
           fill: var(--confirm);
         }
       }

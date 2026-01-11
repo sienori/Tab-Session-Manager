@@ -20,7 +20,7 @@ export default async () => {
 
 const addNewValues = async () => {
   log.log(logDir, "addNewValues()");
-  const sessions = await Sessions.getAll().catch(() => { });
+  const sessions = await Sessions.getAll().catch(() => {});
   for (let session of sessions) {
     let shouldUpdate = false;
     if (session.windowsNumber === undefined) {

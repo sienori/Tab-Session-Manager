@@ -6,7 +6,8 @@
     align-items: center;
     a {
       margin: 5px 0px;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         outline: var(--button) 1px solid;
       }
     }

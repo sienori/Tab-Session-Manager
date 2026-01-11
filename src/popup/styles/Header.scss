@@ -35,27 +35,28 @@
       margin-left: 10px;
     }
 
-    .separation{
-      height:20px;
+    .separation {
+      height: 20px;
       border-right: 1px solid var(--button);
       margin-left: 10px;
     }
 
-    .undoButton, .redoButton {
+    .undoButton,
+    .redoButton {
       position: relative;
-      .count{
+      .count {
         position: absolute;
         top: 10px;
         left: 20px;
         font-size: 10px;
         color: var(--sub-text);
       }
-      &:hover svg{
+      &:hover svg {
         fill: var(--highlight);
       }
-      &.disable{
+      &.disable {
         cursor: unset;
-        svg{
+        svg {
           opacity: 0.2;
           fill: var(--sub-text);
         }
@@ -63,7 +64,8 @@
     }
 
     .heartButton {
-      &:hover svg, &:focus svg {
+      &:hover svg,
+      &:focus svg {
         fill: var(--confirm);
       }
     }
@@ -73,7 +75,8 @@
       svg {
         width: 24px;
       }
-      &:hover svg, &:focus svg {
+      &:hover svg,
+      &:focus svg {
         fill: var(--highlight);
       }
       .syncBadge {
@@ -90,7 +93,7 @@
         color: #fff;
         text-shadow: 1px 1px 1px #00000050;
       }
-      .syncBadge.syncError{
+      .syncBadge.syncError {
         background-color: var(--error);
       }
     }
@@ -111,7 +114,7 @@
         transition: opacity 200ms 3s;
         opacity: 0;
       }
-      &.signInRequired{
+      &.signInRequired {
         transition: opacity 200ms;
         opacity: 1;
       }
@@ -123,13 +126,15 @@
         stroke: var(--sub-text);
         stroke-width: 3;
       }
-      &:hover svg, &:focus svg {
+      &:hover svg,
+      &:focus svg {
         stroke: var(--highlight);
       }
     }
 
     .settingsButton {
-      &:hover svg, &:focus svg {
+      &:hover svg,
+      &:focus svg {
         fill: var(--highlight);
         transform: rotate(90deg);
       }
@@ -139,7 +144,9 @@
       height: 20px;
       width: 20px;
       fill: var(--sub-text);
-      transition: fill 100ms, transform 300ms ease;
+      transition:
+        fill 100ms,
+        transform 300ms ease;
     }
   }
 }

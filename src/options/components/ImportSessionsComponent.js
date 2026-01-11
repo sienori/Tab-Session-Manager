@@ -28,7 +28,7 @@ const fileOpen = file => {
       let text = reader.result;
       if (file.name.toLowerCase().endsWith(".json")) {
         // Ignore BOM
-        if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
+        if (text.charCodeAt(0) === 0xfeff) text = text.slice(1);
         if (!isJSON(text)) return resolve();
 
         let jsonFile = JSON.parse(text);
@@ -209,7 +209,7 @@ const convertSessionManager = file => {
 
 const convertMozLz4Sessionstore = async file => {
   const mozSession = JSON.parse(new TextDecoder().decode(file));
-  if (!(mozSession.version[0] === 'sessionrestore' && mozSession.version[1] === 1)) {
+  if (!(mozSession.version[0] === "sessionrestore" && mozSession.version[1] === 1)) {
     return;
   }
 
@@ -217,7 +217,7 @@ const convertMozLz4Sessionstore = async file => {
   session.windows = {};
   session.windowsNumber = 0;
   session.tabsNumber = 0;
-  session.name = 'sessionstore backup ' + moment(mozSession.session.lastUpdate).toLocaleString();
+  session.name = "sessionstore backup " + moment(mozSession.session.lastUpdate).toLocaleString();
   session.date = mozSession.session.lastUpdate;
   session.lastEditedTime = Date.now();
   session.tag = [];
@@ -238,7 +238,7 @@ const convertMozLz4Sessionstore = async file => {
           url: tab.entries[entryIndex].url,
           title: tab.entries[entryIndex].title,
           favIconUrl: tab.image,
-          discarded: true,
+          discarded: true
         };
       } else {
         // User typed value into URL bar but page was not loaded
@@ -247,10 +247,10 @@ const convertMozLz4Sessionstore = async file => {
           index: index,
           windowId: parseInt(win, 10),
           lastAccessed: tab.lastAccessed,
-          url: 'about:blank#' + tab.userTypedValue,
-          title: 'New Tab',
+          url: "about:blank#" + tab.userTypedValue,
+          title: "New Tab",
           favIconUrl: tab.image,
-          discarded: true,
+          discarded: true
         };
       }
       index++;
@@ -360,14 +360,24 @@ export default class ImportSessionsComponent extends Component {
           id="import"
           title="importLabel"
           captions={["importCaptionLabel", "importCaptionLabel2"]}
-          extraCaption={<p className="caption">
-            - Tab Session Manager (.json)<br />
-            - Session Buddy (.json)<br />
-            - Session Manager (.session)<br />
-            - Firefox Session Store Backup (.jsonlz4 .baklz4)<br />
-            <a href="https://github.com/sienori/Tab-Session-Manager/wiki/Q&A:-How-to-import-sessions-from-other-extensions"
-              target="_blank">{browser.i18n.getMessage("importCaptionLabel3")} </a>
-          </p>}
+          extraCaption={
+            <p className="caption">
+              - Tab Session Manager (.json)
+              <br />
+              - Session Buddy (.json)
+              <br />
+              - Session Manager (.session)
+              <br />
+              - Firefox Session Store Backup (.jsonlz4 .baklz4)
+              <br />
+              <a
+                href="https://github.com/sienori/Tab-Session-Manager/wiki/Q&A:-How-to-import-sessions-from-other-extensions"
+                target="_blank"
+              >
+                {browser.i18n.getMessage("importCaptionLabel3")}{" "}
+              </a>
+            </p>
+          }
           type="file"
           value="importButtonLabel"
           accept=".json, .session, .jsonlz4, .baklz4"

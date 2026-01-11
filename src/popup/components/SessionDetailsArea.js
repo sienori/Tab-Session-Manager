@@ -37,7 +37,11 @@ export default class SessionDetailsArea extends Component {
   handleMenuClick = e => {
     const rect = e.target.getBoundingClientRect();
     const { x, y } = { x: e.pageX || rect.x, y: e.pageY || rect.y };
-    this.props.openMenu(x, y, <SessionMenuItems session={this.props.session} isTracking={this.props.isTracking} />);
+    this.props.openMenu(
+      x,
+      y,
+      <SessionMenuItems session={this.props.session} isTracking={this.props.isTracking} />
+    );
   };
 
   handleOpenClick = () => {
@@ -56,17 +60,30 @@ export default class SessionDetailsArea extends Component {
     this.props.removeSession(this.props.session.id);
   };
 
-  shouldComponentUpdate = (nextProps) => {
+  shouldComponentUpdate = nextProps => {
     const isChangeSession = this.props.session.id !== nextProps.session.id;
     const isUpdateSession = this.props.session.lastEditedTime !== nextProps.session.lastEditedTime;
-    const isLoadedSession = this.props.session.hasOwnProperty("windows") !== nextProps.session.hasOwnProperty("windows");
+    const isLoadedSession =
+      this.props.session.hasOwnProperty("windows") !== nextProps.session.hasOwnProperty("windows");
     const isChangedTagList = this.props.tagList !== nextProps.tagList;
     const isChangedTracking = this.props.isTracking !== nextProps.isTracking;
-    return isChangeSession || isUpdateSession || isLoadedSession || isChangedTagList || isChangedTracking;
+    return (
+      isChangeSession || isUpdateSession || isLoadedSession || isChangedTagList || isChangedTracking
+    );
   };
 
   render() {
-    const { session, searchWords, isTracking, removeWindow, removeTab, openModal, closeModal, tagList, openMenu } = this.props;
+    const {
+      session,
+      searchWords,
+      isTracking,
+      removeWindow,
+      removeTab,
+      openModal,
+      closeModal,
+      tagList,
+      openMenu
+    } = this.props;
 
     if (!session.id)
       return (
@@ -113,10 +130,12 @@ export default class SessionDetailsArea extends Component {
             </span>
 
             <div className="buttonsContainer">
-              <button className="open"
+              <button
+                className="open"
                 onClick={this.handleOpenClick}
                 onContextMenu={this.handleOpenRightClick}
-                title={getOpenButtonTitle()}>
+                title={getOpenButtonTitle()}
+              >
                 <NewWindowIcon />
                 <span>{browser.i18n.getMessage("open")}</span>
               </button>

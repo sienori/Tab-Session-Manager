@@ -19,9 +19,7 @@
     "identity",
     "alarms"
   ],
-  "optional_permissions": [
-    "https://www.googleapis.com/*"
-  ],
+  "optional_permissions": ["https://www.googleapis.com/*"],
   "options_ui": {
     "page": "options/index.html",
     "open_in_tab": true
@@ -31,9 +29,7 @@
     "64": "icons/icon.svg"
   },
   "background": {
-    "scripts": [
-      "background/background.js"
-    ],
+    "scripts": ["background/background.js"],
     "type": "module"
   },
   "action": {

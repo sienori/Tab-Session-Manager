@@ -47,9 +47,8 @@ document.querySelector(".copyButton").onclick = copy;
 document.querySelector(".copyButton").innerText = browser.i18n.getMessage("copyUrlLabel");
 
 if (parameter.state == "open_faild") {
-  document.getElementsByClassName("replacedPageMessage")[0].innerText = browser.i18n.getMessage(
-    "replacedPageMessage"
-  );
+  document.getElementsByClassName("replacedPageMessage")[0].innerText =
+    browser.i18n.getMessage("replacedPageMessage");
 }
 
 function returnReplaceParameter(url) {

@@ -50,14 +50,14 @@ export default class Session extends Component {
   }
 
   render() {
-    const { session, isSelected, isTracking, order, searchWords, handleSessionSelect } = this.props;
+    const { session, isSelected, isTracking, order, searchWords,
+      handleSessionSelect } = this.props;
 
     return (
       <div className={`sessionItem ${isSelected ? "isSelected" : ""} ${isTracking ? "isTracking" : ""}`}
         style={{ order: order }}
       >
-        <button
-          className="selectButton"
+        <button className="selectButton"
           onClick={() => handleSessionSelect(session.id)}
           onDoubleClick={this.handleOpenClick}
           onContextMenu={this.handleSessionRightClick}
