@@ -33,7 +33,7 @@
     "message": "Guardad sólo la ventana actual"
   },
   "categoryFilterLabel": {
-    "message": "Filtro de categorías"
+    "message": "Filtro por categorías"
   },
   "sortLabel": {
     "message": "Ordenar"
@@ -42,10 +42,10 @@
     "message": "Todo"
   },
   "displayUserLabel": {
-    "message": "Guardado de usuario"
+    "message": "Guardar usuario"
   },
   "displayAutoLabel": {
-    "message": "Guardar automáticamente"
+    "message": "Guardado automático"
   },
   "newestLabel": {
     "message": "Más reciente"
@@ -60,10 +60,10 @@
     "message": "Z-A"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "Más pestañas"
   },
   "tabsAscLabel": {
-    "message": "Fewest tabs"
+    "message": "Menos pestañas"
   },
   "searchBarPlaceholder": {
     "message": "Buscar por nombre de sesión o pestaña"
@@ -87,22 +87,22 @@
     "message": "Sesión eliminada."
   },
   "sessionWindowDeletedLabel": {
-    "message": "Sesión de ventana eliminada."
+    "message": "Sesión en ventana eliminada."
   },
   "sessionTabDeletedLabel": {
-    "message": "Sesión de pestaña eliminada."
+    "message": "Sesión en pestaña eliminada."
   },
   "restoreSessionLabel": {
     "message": "Restaurar"
   },
   "failedDeleteSessionLabel": {
-    "message": "Error al eliminar la sesión."
+    "message": "Error al eliminar sesión."
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "Error al eliminar ventana de sesión."
+    "message": "Error al eliminar sesión en ventana."
   },
   "failedDeleteSessionTabLabel": {
-    "message": "Error al eliminar pestaña de sesión."
+    "message": "Error al eliminar sesión en pestaña."
   },
   "sessionSavedLabel": {
     "message": "Sesión guardada."
@@ -126,7 +126,7 @@
     "message": "Quitar etiqueta"
   },
   "inputTagLabel": {
-    "message": "Introduzca el nombre de la etiqueta"
+    "message": "Introduzca nombre de etiqueta"
   },
   "detailLabel": {
     "message": "Detalles"
@@ -147,7 +147,7 @@
     "message": "No hay ninguna sesión."
   },
   "letsSaveLabel": {
-    "message": "Vamos a guardar la sesión haciendo clic en el botón inferior derecho."
+    "message": "Guardar sesión haciendo clic en el botón inferior derecho."
   },
   "noResultLabel": {
     "message": "No se encontraron resultados."
@@ -345,7 +345,7 @@
     "message": "Intervalo (minutos)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Valor mínimo 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "Guardado número máximo"
@@ -492,7 +492,7 @@
     "message": "Guardar grupos de pestañas"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Guardar y restaurar el estado de los grupos de pestañas. Para habilitar esta función, necesita instalar la siguiente extensión."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "Para restaurar el estado del árbol, es requerido un tiempo de espera para abrir la pestaña. Incremente este valor si el árbol no se restaura correctamente."

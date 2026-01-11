@@ -492,7 +492,7 @@
     "message": "탭 그룹 저장"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "탭 그룹 상태를 저장하고 복원. 이 기능을 활성화하려면 다음과 같은 확장 프로그램을 설치해야 합니다."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "트리 상태를 복원하기 위해 탭을 여는 데에 시간이 소요됩니다. 복원이 정상적으로 진행 되지 않는 다면 해당 값을 증가 시키십시오."

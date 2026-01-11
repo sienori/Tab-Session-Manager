@@ -60,10 +60,10 @@
     "message": "字母倒序"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "标签页最多"
   },
   "tabsAscLabel": {
-    "message": "Fewest tabs"
+    "message": "标签页最少"
   },
   "searchBarPlaceholder": {
     "message": "按会话或标签页名称搜索"
@@ -345,7 +345,7 @@
     "message": "间隔（分钟）"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "最小值为 0.5"
   },
   "autoSaveLimitLabel": {
     "message": "最大保存数量"
@@ -492,7 +492,7 @@
     "message": "保存标签页组"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "保存和还原标签页组的状态。要启用此功能，您需要安装以下扩展。"
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "为还原标签的树状结构，需要等待一段时间才能打开标签页。若标签树未能正确还原，则增高此值。"
@@ -549,7 +549,7 @@
     "message": "在云同步时上传/下载自动保存的会话。"
   },
   "popupLabel": {
-    "message": "弹出面板"
+    "message": "弹出窗口"
   },
   "openButtonBehaviorLabel": {
     "message": "打开按钮行为"
@@ -645,7 +645,7 @@
     "message": "将所有设置恢复为默认值。"
   },
   "resetSettingsButtonLabel": {
-    "message": "恢复"
+    "message": "重置"
   },
   "importLabel": {
     "message": "导入会话"

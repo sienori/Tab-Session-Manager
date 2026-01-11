@@ -492,7 +492,7 @@
     "message": "Saglabāt ciļņu grupas"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Saglabāt un atjaunot ciļņu grupas stāvokli. Lai iespējotu šo funkciju, jums ir nepieciešams uzstādīt zemāk pieminēto paplašinājumu."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "Lai atjaunotu koka stāvokli un atvērtu cilni, ir nepieciešams kāds laiks. Palieliniet šo vērtību, ja koks nav atjaunots pareizi."

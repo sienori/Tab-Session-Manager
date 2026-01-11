@@ -492,7 +492,7 @@
     "message": "Salvar grupos de aba"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Salvar e restaurar o estado dos grupos de aba. Para ativar esta função, deve instalar a seguinte extensão."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "Para restaurar o estado da árvore, espere o tempo necessário para abrir a aba. Aumente este valor se a árvore não for restaurada corretamente."

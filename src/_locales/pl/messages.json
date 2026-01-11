@@ -60,10 +60,10 @@
     "message": "Z-A"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "Najwięcej kart"
   },
   "tabsAscLabel": {
-    "message": "Fewest tabs"
+    "message": "Najmniej kart"
   },
   "searchBarPlaceholder": {
     "message": "Szukaj według nazwy sesji lub karty"
@@ -207,10 +207,10 @@
     "message": "Utwórz kopię sesji"
   },
   "registerTrackingLabel": {
-    "message": "Track window changes"
+    "message": "Śledź zmiany w oknie"
   },
   "removeTrackingLabel": {
-    "message": "Delete tracking"
+    "message": "Usuń śledzenie"
   },
   "registerStartupLabel": {
     "message": "Zarejestruj do sesji startowej"
@@ -288,7 +288,7 @@
     "message": "Przy otwieraniu sesji zawartość każdej strony nie jest ładowana, dopóki nie wybierzesz danej karty.<br> Jeżeli odznaczone, użycie pamięci zostanie znacznie zwiększone, gdy sesja zostanie przywrócona."
   },
   "isUseDiscardedLabel": {
-    "message": "Użyj właśności \"discarded\" do leniwego ładowania"
+    "message": "Użyj funkcji \"odrzuć\" do leniwego ładowania"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Włączenie tej opcji poprawi wydajność podczas otwierania kart."
@@ -324,16 +324,16 @@
     "message": "Nic nie rób"
   },
   "trackingSessionLabel": {
-    "message": "Tracking session"
+    "message": "Sesja śledzenia"
   },
   "trackingLabel": {
-    "message": "Tracking"
+    "message": "Śledzenie"
   },
   "shouldTrackNewWindowLabel": {
-    "message": "Track newly opened windows"
+    "message": "Śledź nowo otwarte okna"
   },
   "shouldTrackNewWindowCaptionLabel": {
-    "message": "When a new window is opened within a tracking session, include it in the tracking."
+    "message": "Śledź zmiany, gdy nowe okno zostanie otwarte"
   },
   "ifAutoSaveLabel": {
     "message": "Zapisuj sesję regularnie"
@@ -345,7 +345,7 @@
     "message": "Odstęp czasowy (w minutach)"
   },
   "autoSaveIntervalCaptionLabel": {
-    "message": "Minimum value 0.5"
+    "message": "Wartość minimalna 0,5"
   },
   "autoSaveLimitLabel": {
     "message": "Maksymalna liczba zapisanych"
@@ -369,7 +369,7 @@
     "message": "Zapisz sesję podczas zamykania przeglądarki"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "Zapisz sesję zawierającą wiele okien zamkniętych pod rząd."
+    "message": "Zapisz sesję zawierającą wiele okien zamkniętych jedno po drugim."
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "Maksymalna liczba zapisanych"
@@ -390,13 +390,13 @@
     "message": "Zapisz kopię zapasową"
   },
   "ifBackupCaptionLabel": {
-    "message": "Po uruchomieniu przeglądarki, utwórz plik kopii zapasowej wszystkich sesji i zapisz go w folderze pobierania."
+    "message": "Po uruchomieniu przeglądarki utwórz plik kopii zapasowej wszystkich sesji i zapisz go w folderze pobierania."
   },
   "individualBackupLabel": {
     "message": "Indywidualna kopia zapasowa"
   },
   "individualBackupCaptionLabel": {
-    "message": "Każda sesja jest zapisywana w oddzielnym pliku.<br>Jeśli pole zostanie odznaczone, każda sesja zostanie zapisana w oddzielnych plik, które mogą przeciążyć twoją przestrzeń dyskową."
+    "message": "Każda sesja jest zapisywana w oddzielnym pliku.<br>Jeśli pole zostanie odznaczone, wszystkie sesje zostaną zapisane w jednym pliku, co może spowodować przepełnienie przestrzeni dyskowej."
   },
   "backupFolderLabel": {
     "message": "Lokalizacja zapisu"
@@ -432,7 +432,7 @@
     "message": "Zapisz nazwę urządzenia wraz z sesją"
   },
   "shouldSaveDeviceNameCaptionLabel": {
-    "message": "Otaguj zapisywaną sesję z użyciem nazwy urządzenia. Pozwoli to odróżnić ją od sesji z innych urządzeń przy korzystaniu z synchronizacji w chmurze."
+    "message": "Dodaj nazwę urządzenia jako znacznik podczas zapisywania sesji. Pozwoli to odróżnić ją od sesji z innych urządzeń przy korzystaniu z synchronizacji w chmurze."
   },
   "deviceNameLabel": {
     "message": "Nazwa urządzenia"
@@ -456,7 +456,7 @@
     "message": "Kompresuj favicon'y"
   },
   "compressFaviconUrlCaptionLabel": {
-    "message": "Kompresuj favicon'y podczas zaposywania sesji."
+    "message": "Kompresuj favicon'y podczas zapisywania sesji."
   },
   "compressAllSessionsLabel": {
     "message": "Kompresuj wszystkie sesje"
@@ -492,13 +492,13 @@
     "message": "Zapisz grupy kart"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Zapisz i przywróć stan grup kart. Aby włączyć tę funkcję, musisz zainstalować następujące rozszerzenie."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "Aby przywrócić stan drzewa, wymagany jest czas oczekiwania na otwarcie karty. Zwiększ tą wartość, jeśli drzewo nie jest przywracane prawidłowo."
   },
   "truncateTitleLabel": {
-    "message": "Pokaż nazwę sesji w jednej lini"
+    "message": "Pokaż nazwę sesji w jednej linii"
   },
   "truncateTitleCaptionLabel": {
     "message": "Jeśli nazwa sesji na liście sesji jest dłuższa niż jedna linia, jest ona obcinana do jednej inii i wyświetlana."

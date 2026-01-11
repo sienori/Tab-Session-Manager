@@ -60,7 +60,7 @@
     "message": "ي-أ"
   },
   "tabsDesLabel": {
-    "message": "Most tabs"
+    "message": "معظم علامات التبويب"
   },
   "tabsAscLabel": {
     "message": "Fewest tabs"
@@ -492,7 +492,7 @@
     "message": "Save tab groups"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups. To enable this feature, you need to install the following extension."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "لاستعادة وضع الشجرة، وقت الانتظار غلزامي لفتح التبويب، رفع هذه القيمة إذا كانت لم يتم استعادة الشجرة بنجاح."
