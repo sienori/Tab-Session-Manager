@@ -124,7 +124,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
     }
     case "removeTag": {
       const beforeSession = await getSessions(request.id);
-      const afterSession = removeTag(request.id, request.tag);
+      const afterSession = await removeTag(request.id, request.tag);
       recordChange(beforeSession, afterSession);
       break;
     }
