@@ -492,7 +492,7 @@
     "message": "保存标签页组"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "保存和还原标签页组的状态。要启用此功能，您需要安装以下扩展。"
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "为还原标签的树状结构，需要等待一段时间才能打开标签页。若标签树未能正确还原，则增高此值。"
