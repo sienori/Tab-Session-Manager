@@ -3,7 +3,7 @@ import browserInfo from "browser-info";
 import log from "loglevel";
 import { getSettings } from "src/settings/settings";
 import { returnReplaceURL, replacePage } from "./replace.js";
-import { updateTabGroups } from "../common/tabGroups";
+import { updateTabGroups, isEnabledTabGroups } from "../common/tabGroups";
 import { isTrackingSession, setLastFocusedWindowId, startTracking } from "./track.js";
 
 const logDir = "background/open";
@@ -102,7 +102,6 @@ const isEnabledOpenerTabId =
   (browserInfo().name == "Chrome" && browserInfo().version >= 18);
 const isEnabledDiscarded = browserInfo().name == "Firefox" && browserInfo().version >= 63;
 const isEnabledOpenInReaderMode = browserInfo().name == "Firefox" && browserInfo().version >= 58;
-const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
 const isEnabledWindowTitle = browserInfo().name == "Firefox";
 
 //ウィンドウとタブを閉じてcurrentWindowを返す

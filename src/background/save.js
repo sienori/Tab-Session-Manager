@@ -8,12 +8,10 @@ import { returnReplaceParameter } from "./replace.js";
 import ignoreUrls from "./ignoreUrls";
 import { pushRemovedQueue, syncCloudAuto } from "./cloudSync.js";
 import { getValidatedTag } from "./tag.js";
-import { queryTabGroups } from "../common/tabGroups";
+import { queryTabGroups, isEnabledTabGroups } from "../common/tabGroups";
 import { compressDataUrl } from "../common/compressDataUrl";
 
 const logDir = "background/save";
-
-const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
 
 export async function saveCurrentSession(name, tag, property) {
   log.log(logDir, "saveCurrentSession()", name, tag, property);

@@ -2,6 +2,7 @@ import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import SignInButton from "../options/components/SignInButton";
 import CompressAllSessionsForm from "../options/components/CompressAllSessionsForm";
+import { isEnabledTabGroups } from "../common/tabGroups";
 
 const handleApplyDeviceNameButtonClick = () => {
   const res = confirm(browser.i18n.getMessage("applyDeviceNameConfirmLabel"));
@@ -69,7 +70,7 @@ export default [
         },
         type: "checkbox",
         default: false,
-        shouldShow: browserInfo().name == "Chrome" && browserInfo().version >= 89,
+        shouldShow: isEnabledTabGroups
       },
       {
         id: "ifSavePrivateWindow",

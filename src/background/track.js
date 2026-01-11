@@ -2,12 +2,11 @@ import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import log from "loglevel";
 import { getSettings } from "src/settings/settings";
-import { queryTabGroups } from "../common/tabGroups";
+import { queryTabGroups, isEnabledTabGroups } from "../common/tabGroups";
 import { updateSession } from "./save";
 import getSessions from "./getSessions";
 
 const logDir = "background/track";
-const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
 
 const setTrackingInfo = async (trackingWindows, isTracking) => {
   await browser.storage.session.set({ trackingInfo: { trackingWindows, isTracking } });

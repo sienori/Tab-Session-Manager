@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import moment from "moment";
 import log from "loglevel";
 import { returnReplaceParameter } from "src/background/replace.js";
-import { queryTabGroups } from "../../common/tabGroups";
+import { queryTabGroups, isEnabledTabGroups } from "../../common/tabGroups";
 import { getSettings } from "src/settings/settings";
 import { compressDataUrl } from "../../common/compressDataUrl";
 
@@ -183,7 +183,6 @@ export const addCurrentWindow = async (id, isTracking = false) => {
   delete currentWindow.tabs;
   if (session.windowsInfo) session.windowsInfo[windowId] = currentWindow;
 
-  const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
   if (isEnabledTabGroups && getSettings("saveTabGroups")) {
     const tabGroups = await queryTabGroups({ windowId: currentWindow.id });
     if (tabGroups.length > 0) {
@@ -226,7 +225,6 @@ export const addCurrentTab = async (sessionId, windowId) => {
   }
 
   // Set tabGroup
-  const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
   if (currentTab?.groupId > 0 && isEnabledTabGroups && getSettings("saveTabGroups")) {
     const tabGroups = await queryTabGroups({ windowId: windowId });
     const currentTabGroup = tabGroups.find(group => group.id === currentTab.groupId);

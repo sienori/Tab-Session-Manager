@@ -13,6 +13,7 @@
     "storage",
     "unlimitedStorage",
     "tabs",
+    "tabGroups",
     "cookies",
     "downloads",
     "identity",
