@@ -44,13 +44,16 @@
     "mini-css-extract-plugin": "^1.6.0",
     "sass": "^1.86.0",
     "sass-loader": "^14.2.1",
+    "prettier": "^3.0.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^4.8.0",
     "zip-webpack-plugin": "^4.0.1"
   },
   "scripts": {
     "watch-dev": "webpack --config webpack.config.dev.js --watch",
-    "build": "webpack --config webpack.config.dist.js"
+    "build": "webpack --config webpack.config.dist.js",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,scss,html,md}\" \"*.{js,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,json,scss,html,md}\" \"*.{js,json,md}\""
   },
   "repository": {
     "type": "git",

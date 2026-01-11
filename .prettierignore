@@ -1,0 +1,7 @@
+node_modules
+dist
+dev
+temp
+*.zip
+package-lock.json
+_locales
