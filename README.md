@@ -32,9 +32,6 @@ Support Tab Session Manager by [becoming a sponsor](https://www.patreon.com/join
 **[Session Compressor](https://tab-session-manager.sienori.com/compressor/index.html)**  
 A tool for compressing sessions created by Tab Session Manager
 
-**[Save Tab Groups for Tab Session Manager](https://chrome.google.com/webstore/detail/aghdiknflpelpkepifoplhodcnfildao)**  
-Additional extension for saving tab groups in Tab Session Manager for Chrome
-
 ## Translation
 
 You can contribute by translating Tab Session Manager on **[Crowdin](https://crowdin.com/project/tab-session-manager)**.
