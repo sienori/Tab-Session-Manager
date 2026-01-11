@@ -196,3 +196,16 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - leisa kaleid
 - Omegaomelet
 - U D
+- MikeDNC
+- Emma Kovak
+- longIdiot
+- Jan
+- HarleyCheshire
+- Lionel L.
+- Ethan Cheng
+- Ἐπίκουρος
+- Wolfgang Scherer
+- mydarkstar
+- Erin Almaz
+- Nico Kokonas
+- Sean Lynch
