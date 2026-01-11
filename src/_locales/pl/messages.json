@@ -492,7 +492,7 @@
     "message": "Zapisz grupy kart"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Zapisz i przywróć stan grup kart. Aby włączyć tę funkcję, musisz zainstalować następujące rozszerzenie."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "Aby przywrócić stan drzewa, wymagany jest czas oczekiwania na otwarcie karty. Zwiększ tą wartość, jeśli drzewo nie jest przywracane prawidłowo."
