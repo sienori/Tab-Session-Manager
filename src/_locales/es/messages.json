@@ -492,7 +492,7 @@
     "message": "Guardar grupos de pestañas"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Guardar y restaurar el estado de los grupos de pestañas. Para habilitar esta función, necesita instalar la siguiente extensión."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "Para restaurar el estado del árbol, es requerido un tiempo de espera para abrir la pestaña. Incremente este valor si el árbol no se restaura correctamente."
