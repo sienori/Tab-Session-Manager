@@ -50,7 +50,7 @@ export const updateTrackingSession = async (tempSession) => {
     }
 
     //Update Group Information
-    if (isEnabledTabGroups && getSettings("saveTabGroups")) {
+    if (isEnabledTabGroups && getSettings("saveTabGroupsV2")) {
       const filteredWindows = Object.values(trackedSession.windowsInfo).filter(window => window.type === "normal");
       const tabGroups = await Promise.all(filteredWindows.map(window => queryTabGroups({
         windowId: window.id,

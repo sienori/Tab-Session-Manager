@@ -183,7 +183,7 @@ export const addCurrentWindow = async (id, isTracking = false) => {
   delete currentWindow.tabs;
   if (session.windowsInfo) session.windowsInfo[windowId] = currentWindow;
 
-  if (isEnabledTabGroups && getSettings("saveTabGroups")) {
+  if (isEnabledTabGroups && getSettings("saveTabGroupsV2")) {
     const tabGroups = await queryTabGroups({ windowId: currentWindow.id });
     if (tabGroups.length > 0) {
       session.tabGroups = (session.tabGroups || []).concat(tabGroups);
@@ -225,7 +225,7 @@ export const addCurrentTab = async (sessionId, windowId) => {
   }
 
   // Set tabGroup
-  if (currentTab?.groupId > 0 && isEnabledTabGroups && getSettings("saveTabGroups")) {
+  if (currentTab?.groupId > 0 && isEnabledTabGroups && getSettings("saveTabGroupsV2")) {
     const tabGroups = await queryTabGroups({ windowId: windowId });
     const currentTabGroup = tabGroups.find(group => group.id === currentTab.groupId);
     const hasTabGroup = session?.tabGroups.some(group => group.id === currentTab.groupId);

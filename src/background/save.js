@@ -78,7 +78,7 @@ export async function loadCurrentSession(name, tag, property) {
     session.windowsInfo[i] = window;
   }
 
-  if (isEnabledTabGroups && getSettings("saveTabGroups")) {
+  if (isEnabledTabGroups && getSettings("saveTabGroupsV2")) {
     // ポップアップやPWAにはタブ自体が存在しないので、normalタイプのウィンドウのみクエリする
     const filteredWindows = Object.values(session.windowsInfo).filter(window => window.type === "normal");
     const tabGroups = await Promise.all(filteredWindows.map(window => queryTabGroups({

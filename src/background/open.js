@@ -143,7 +143,7 @@ const createTabGroups = async (windowId, tabs, tabGroupsInfo) => {
     }, groupId => {
       const groupInfo = tabGroupsInfo.find(info => info.id === group.originalGroupId);
       if (!groupInfo) return;
-      if (getSettings("saveTabGroups")) updateTabGroups(groupId, groupInfo);
+      if (getSettings("saveTabGroupsV2")) updateTabGroups(groupId, groupInfo);
     });
   }
 };

@@ -21,7 +21,11 @@ export default props => {
   };
 
   const handleCheckedChange = e => {
-    setSettings(id, e.target.checked);
+    if (props.onChange) {
+      props.onChange(id, e.target.checked);
+    } else {
+      setSettings(id, e.target.checked);
+    }
   };
 
   let formId;
