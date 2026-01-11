@@ -492,7 +492,7 @@
     "message": "Spara flikgrupper"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Spara och återställ läget för flikgrupper. För att aktivera den här funktionen måste du installera följande tillägg."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "För att återställa trädet krävs det väntetid innan fliken öppnas. Höj värdet om trädet inte återställs korrekt."
