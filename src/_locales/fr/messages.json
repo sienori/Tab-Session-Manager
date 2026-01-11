@@ -492,7 +492,7 @@
     "message": "Sauvegarder les groupes d’onglet"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Enregistrer et restaurer l’état des groupes d’onglets. Pour activer cette fonctionnalité, vous devez installer l’extension suivante."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "Pour restaurer l’état de l’arborescence, un temps d’attente est nécessaire pour ouvrir l’onglet. Augmentez cette valeur si l’arborescence n’est pas restaurée correctement."
