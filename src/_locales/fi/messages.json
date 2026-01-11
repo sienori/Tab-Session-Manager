@@ -492,7 +492,7 @@
     "message": "Tallenna välilehtiryhmät"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Tallenna ja palauta välilehtiryhmien tila. Ominaisuuden käyttöönotto edellyttää seuraavan laajennuksen asennusta."
+    "message": "Save and restore the state of tab groups."
   },
   "tstDelayCaptionLabel": {
     "message": "Puun tilan palauttamiseksi välilehden avautumista on viivästettävä. Korota arvoa, jos puu ei palaudu oikein."
