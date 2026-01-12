@@ -410,6 +410,15 @@
   "backupFolderCaptionLabel": {
     "message": "Specify the folder to save the backup file. The save location is limited to the folder under browser download folder."
   },
+  "backupFolderHintLabel": {
+    "message": "A folder will be created in your Downloads folder. Backups are saved there and won't clutter your Downloads - the folder stays in place and doesn't move to the top with each backup."
+  },
+  "ifScheduledBackupLabel": {
+    "message": "Scheduled backup"
+  },
+  "ifScheduledBackupCaptionLabel": {
+    "message": "Automatically run backup daily at 3:00 AM (or on next wakeup if device was sleeping) and after every 3 manual session saves."
+  },
   "downloadFolderLabel": {
     "message": "Download folder"
   },
@@ -841,9 +850,6 @@
   },
   "amazonUrl": {
     "message": ""
-  },
-  "addonUrl": {
-    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
     "message": "This page can not be opened by TabBoard - Fork of Tab Session Manager."

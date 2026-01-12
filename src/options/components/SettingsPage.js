@@ -1,17 +1,21 @@
 import React, { Component } from "react";
 import browser from "webextension-polyfill";
+import queryString from "query-string";
 import { updateLogLevel, overWriteLogLevel } from "src/common/log";
-import { initSettings, resetAllSettings, handleSettingsChange, exportSettings, importSettings } from "src/settings/settings";
+import { initSettings, resetAllSettings, handleSettingsChange, exportSettings, importSettings, getSettings, setSettings } from "src/settings/settings";
 import defaultSettings from "src/settings/defaultSettings";
 import CategoryContainer from "./CategoryContainer";
 import OptionContainer from "./OptionContainer";
+import BackupSetupModal from "./BackupSetupModal";
 
 export default class SettingsPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isInit: false
+      isInit: false,
+      shouldShowBackupModal: false
     };
+    this.sectionTarget = "";
     this.init();
   }
 
@@ -19,9 +23,42 @@ export default class SettingsPage extends Component {
     await initSettings();
     overWriteLogLevel();
     updateLogLevel();
-    this.setState({ isInit: true });
+    this.sectionTarget = this.getSectionFromProps(this.props);
+    const shouldShowBackupModal = getSettings("shouldPromptBackupFolder") !== false;
+    this.setState({ isInit: true, shouldShowBackupModal });
+    this.scrollToSection();
     browser.storage.local.onChanged.addListener(handleSettingsChange);
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (!prevState.isInit && this.state.isInit) {
+      this.sectionTarget = this.getSectionFromProps(this.props);
+      this.scrollToSection();
+    }
+
+    if (this.state.isInit && prevProps.location?.search !== this.props.location?.search) {
+      this.sectionTarget = this.getSectionFromProps(this.props);
+      this.scrollToSection();
+    }
+  }
+
+  getSectionFromProps = props => {
+    const query = queryString.parse(props?.location?.search || "");
+    if (query.section) return query.section;
+    return getSettings("pendingOptionsSection") || "";
+  };
+
+  scrollToSection = () => {
+    if (!this.sectionTarget) return;
+    requestAnimationFrame(() => {
+      const selector = `[data-settings-section="${this.sectionTarget}"]`;
+      const element = document.querySelector(selector);
+      if (element && typeof element.scrollIntoView === "function") {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        setSettings("pendingOptionsSection", "");
+      }
+    });
+  };
 
   render() {
     const settingsContent = (
@@ -35,6 +72,9 @@ export default class SettingsPage extends Component {
 
     return (
       <div>
+        {this.state.shouldShowBackupModal && (
+          <BackupSetupModal onClose={() => this.setState({ shouldShowBackupModal: false })} />
+        )}
         <p className="contentTitle">{browser.i18n.getMessage("settingsLabel")}</p>
         <hr />
         {this.state.isInit ? settingsContent : ""}

@@ -5,17 +5,24 @@ import defaultSettings from "./defaultSettings";
 const logDir = "settings/settings";
 let currentSettings = {};
 
+export const DEFAULT_BACKUP_FOLDER = "TabSessionManager - Backup";
+
 export const initSettings = async () => {
   const response = await browser.storage.local.get("Settings");
   currentSettings = response.Settings || {};
   let shouldSave = false;
 
-  const pushSettings = element => {
-    if (element.id == undefined || element.default == undefined) return;
-    if (currentSettings[element.id] == undefined) {
-      currentSettings[element.id] = element.default;
+  const ensureSetting = (id, defaultValue) => {
+    if (id == undefined || defaultValue == undefined) return;
+    if (currentSettings[id] == undefined) {
+      currentSettings[id] = defaultValue;
       shouldSave = true;
     }
+  };
+
+  const pushSettings = element => {
+    if (element.id == undefined || element.default == undefined) return;
+    ensureSetting(element.id, element.default);
   };
 
   const fetchDefaultSettings = () => {
@@ -32,6 +39,18 @@ export const initSettings = async () => {
   };
 
   fetchDefaultSettings();
+
+  const { backupFolder: syncedFolder, ifBackup: syncedIfBackup } = await loadBackupSyncSettings();
+  if (syncedFolder) ensureSetting("backupFolder", syncedFolder);
+  if (typeof syncedIfBackup === "boolean") ensureSetting("ifBackup", syncedIfBackup);
+
+  ensureSetting("pendingOptionsSection", "");
+
+  if (currentSettings.shouldPromptBackupFolder == undefined) {
+    currentSettings.shouldPromptBackupFolder = true;
+    shouldSave = true;
+  }
+
   if (shouldSave) await browser.storage.local.set({ Settings: currentSettings });
 };
 
@@ -39,6 +58,8 @@ export const setSettings = async (id, value) => {
   log.info(logDir, "setSettings()", id, value);
   currentSettings[id] = value;
   await browser.storage.local.set({ Settings: currentSettings });
+  if (id === "backupFolder") await syncBackupFolder(value);
+  if (id === "ifBackup") await syncIfBackup(value);
 };
 
 export const getSettings = id => {
@@ -110,4 +131,36 @@ const getSettingsIds = () => {
     });
   });
   return settingsIds;
+};
+
+const loadBackupSyncSettings = async () => {
+  if (!browser?.storage?.sync) return {};
+  try {
+    const result = await browser.storage.sync.get(["backupFolder", "ifBackup"]);
+    return result || {};
+  } catch (e) {
+    log.warn(logDir, "loadBackupSyncSettings()", e);
+    return {};
+  }
+};
+
+const syncBackupFolder = async (folderValue) => {
+  if (!browser?.storage?.sync) return;
+  const sanitized = typeof folderValue === "string" && folderValue.trim() !== ""
+    ? folderValue
+    : DEFAULT_BACKUP_FOLDER;
+  try {
+    await browser.storage.sync.set({ backupFolder: sanitized });
+  } catch (e) {
+    log.warn(logDir, "syncBackupFolder()", e);
+  }
+};
+
+const syncIfBackup = async (value) => {
+  if (!browser?.storage?.sync) return;
+  try {
+    await browser.storage.sync.set({ ifBackup: !!value });
+  } catch (e) {
+    log.warn(logDir, "syncIfBackup()", e);
+  }
 };

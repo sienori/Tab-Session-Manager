@@ -14,7 +14,7 @@ import {
 import Sessions from "./sessions";
 import { replacePage } from "./replace";
 import importSessions from "./import";
-import { backupSessions, resetLastBackupTime } from "./backup";
+import { backupSessions, resetLastBackupTime, setupScheduledBackup, runScheduledBackup, trackManualSave } from "./backup";
 import {
   loadCurrentSession,
   saveCurrentSession,
@@ -77,6 +77,7 @@ const onStartupListener = async () => {
   setAutoSave();
   syncCloudAuto();
   browser.alarms.create("backupSessions", { delayInMinutes: 0.5 });
+  setupScheduledBackup();
 };
 
 const onMessageListener = async (request, sender, sendResponse) => {
@@ -88,14 +89,16 @@ const onMessageListener = async (request, sender, sendResponse) => {
       recordChange(null, afterSession);
       return afterSession;
     }
-    case "saveCurrentSession":
+    case "saveCurrentSession": {
       const name = request.name;
       const property = request.property;
       const afterSession = await saveCurrentSession(name, [], property, {
         thumbnailSource: request.thumbnailSource
       });
       recordChange(null, afterSession);
+      trackManualSave();
       return afterSession;
+    }
     case "open":
       if (request.property === "openInCurrentWindow") await autoSaveWhenOpenInCurrentWindow();
       openSession(request.session, request.property);
@@ -210,6 +213,12 @@ const onMessageListener = async (request, sender, sendResponse) => {
     }
     case "updateTrackingStatus":
       return updateTrackingStatus();
+    case "runBackupNow":
+      return backupSessions();
+    case "openImportSessions":
+      return openOptionsImport();
+    case "reopenPopup":
+      return reopenPopup();
     case "startTracking":
       return startTracking(request.sessionId, request.originalWindowId, request.openedWindowId);
     case "endTrackingByWindowDelete":
@@ -227,7 +236,7 @@ const onChangeStorageListener = async (changes, areaName) => {
   handleSettingsChange(changes, areaName);
   setAutoSave(changes, areaName);
   updateLogLevel();
-  resetLastBackupTime(changes);
+  await resetLastBackupTime(changes);
 }
 
 const onAlarmListener = async (alarmInfo) => {
@@ -238,6 +247,8 @@ const onAlarmListener = async (alarmInfo) => {
       return autoSaveRegular();
     case "backupSessions":
       return backupSessions();
+    case "scheduledBackup":
+      return runScheduledBackup();
   }
 }
 
@@ -257,3 +268,26 @@ browser.windows.onRemoved.addListener(autoSaveWhenWindowClose);
 browser.downloads.onChanged.addListener(handleDownloadsChanged);
 browser.storage.local.onChanged.addListener(onChangeStorageListener);
 browser.alarms.onAlarm.addListener(onAlarmListener);
+const openOptionsImport = async () => {
+  const url = browser.runtime.getURL("options/index.html#sessions");
+  const shouldUseRuntimeApi = typeof browser.runtime.openOptionsPage === "function";
+  if (shouldUseRuntimeApi) {
+    try {
+      await browser.runtime.openOptionsPage();
+      return;
+    } catch (error) {
+      log.warn("background/openOptionsImport", error);
+    }
+  }
+  await browser.tabs.create({ url, active: true });
+};
+
+const reopenPopup = async () => {
+  if (browser.browserAction?.openPopup) {
+    try {
+      await browser.browserAction.openPopup();
+    } catch (error) {
+      log.warn("background/reopenPopup", error);
+    }
+  }
+};

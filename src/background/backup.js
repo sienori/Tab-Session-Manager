@@ -6,11 +6,16 @@ import exportSessions from "./export.js";
 
 const logDir = "background/backup";
 
+// Track manual saves for scheduled backup trigger
+let manualSaveCount = 0;
+
 export const backupSessions = async () => {
   if (!getSettings("ifBackup")) return;
 
-  if (getSettings("individualBackup")) backupIndividualSessions();
-  else backupAllSessions();
+  if (getSettings("individualBackup")) await backupIndividualSessions();
+  else await backupAllSessions();
+
+  await setSettings("shouldPromptBackupFolder", false);
 };
 
 const backupIndividualSessions = async () => {
@@ -49,9 +54,61 @@ const backupAllSessions = async () => {
   await exportSessions(null, folder, true);
 };
 
-export const resetLastBackupTime = (changes) => {
-  const isChangedBackupSettings =
-    !changes?.Settings?.oldValue?.ifBackup && changes?.Settings?.newValue?.ifBackup ||
-    changes?.Settings?.oldValue?.backupFolder !== changes?.Settings?.newValue?.backupFolder;
-  if (isChangedBackupSettings) setSettings("lastBackupTime", 0);
+export const resetLastBackupTime = async (changes) => {
+  const oldSettings = changes?.Settings?.oldValue;
+  const newSettings = changes?.Settings?.newValue;
+  const enabledBackup = !oldSettings?.ifBackup && newSettings?.ifBackup;
+  const changedFolder = oldSettings?.backupFolder !== newSettings?.backupFolder;
+
+  if (enabledBackup) await setSettings("shouldPromptBackupFolder", false);
+  if (enabledBackup || changedFolder) await setSettings("lastBackupTime", 0);
+};
+
+// ============================================
+// Scheduled Backup - daily at 3:00 AM + after 3 manual saves
+// ============================================
+
+export const trackManualSave = async () => {
+  if (!getSettings("ifBackup") || !getSettings("ifScheduledBackup")) return;
+
+  manualSaveCount++;
+  log.log(logDir, "trackManualSave()", manualSaveCount);
+
+  if (manualSaveCount >= 3) {
+    manualSaveCount = 0;
+    await backupSessions();
+  }
+};
+
+export const setupScheduledBackup = async () => {
+  // Clear existing alarm
+  await browser.alarms.clear("scheduledBackup");
+
+  if (!getSettings("ifBackup") || !getSettings("ifScheduledBackup")) return;
+
+  // Schedule for 3:00 AM - will run on next wakeup if missed
+  const now = new Date();
+  const target = new Date();
+  target.setHours(3, 0, 0, 0);
+
+  // If it's already past 3 AM, schedule for tomorrow
+  if (now > target) {
+    target.setDate(target.getDate() + 1);
+  }
+
+  const delayInMinutes = (target.getTime() - now.getTime()) / (1000 * 60);
+
+  browser.alarms.create("scheduledBackup", {
+    delayInMinutes: delayInMinutes,
+    periodInMinutes: 24 * 60 // Repeat every 24 hours
+  });
+
+  log.log(logDir, "setupScheduledBackup()", `Next backup at ${target.toLocaleString()}`);
+};
+
+export const runScheduledBackup = async () => {
+  if (!getSettings("ifBackup") || !getSettings("ifScheduledBackup")) return;
+
+  log.log(logDir, "runScheduledBackup()");
+  await backupSessions();
 };

@@ -3,11 +3,10 @@ import browser from "webextension-polyfill";
 import log from "loglevel";
 import openUrl from "../actions/openUrl";
 import { getSettings } from "src/settings/settings";
-import DonationMessage from "./DonationMessage";
 import { sendUndoMessage, sendRedoMessage } from "../actions/controlSessions";
 import UndoIcon from "../icons/undo.svg";
 import RedoIcon from "../icons/redo.svg";
-import HeartIcon from "../icons/heart.svg";
+import BackupIcon from "../icons/backup.svg";
 import CloudSyncIcon from "../icons/cloudSync.svg";
 import ExpandIcon from "../icons/expand.svg";
 import SettingsIcon from "../icons/settings.svg";
@@ -50,10 +49,9 @@ const openSessionListInTab = () => {
 };
 
 export default props => {
-  const { openModal, syncStatus, needsSync, undoStatus } = props;
-
-  const handleHeartClick = () => {
-    openModal(browser.i18n.getMessage("donationLabel"), <DonationMessage />);
+  const { openBackupModal, syncStatus, needsSync, undoStatus, isBackupEnabled } = props;
+  const handleBackupClick = () => {
+    openBackupModal();
   };
 
   const handleSyncClick = async () => {
@@ -102,11 +100,11 @@ export default props => {
           </button>
         )}
         <button
-          className="heartButton"
-          onClick={handleHeartClick}
-          title={browser.i18n.getMessage("donateLabel")}
+          className={`backupButton ${isBackupEnabled ? "active" : ""}`}
+          onClick={handleBackupClick}
+          title={browser.i18n.getMessage("backupLabel")}
         >
-          <HeartIcon />
+          <BackupIcon />
         </button>
         <button
           className={"openInTabButton"}

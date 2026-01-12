@@ -29,7 +29,7 @@ import SaveArea from "./SaveArea";
 import Menu from "./Menu";
 import Modal from "./Modal";
 import Error from "./Error";
-import DonationMessage from "./DonationMessage";
+import BackupRecoveryModal from "./BackupRecoveryModal";
 import "../styles/PopupPage.scss";
 import { makeSearchInfo } from "../../common/makeSearchInfo";
 import { initToolbarLayout, disposeToolbarLayout } from "../toolbarLayout";
@@ -116,6 +116,7 @@ export default class PopupPage extends Component {
         buttonLabel: "",
         onClick: () => { }
       },
+      isBackupEnabled: false,
       syncStatus: {
         status: "complete",
         progress: 0,
@@ -183,7 +184,8 @@ export default class PopupPage extends Component {
       sidebarWidth: getSettings("sidebarWidth"),
       viewMode: getSettings("thumbnailViewMode") || "list",
       thumbnailSize: storedThumbnailSize,
-      hideThumbnailText: storedHideText === true || storedHideText === "true"
+      hideThumbnailText: storedHideText === true || storedHideText === "true",
+      isBackupEnabled: !!getSettings("ifBackup")
     });
 
     const isInit = await browser.runtime.sendMessage({ message: "getInitState" });
@@ -212,7 +214,8 @@ export default class PopupPage extends Component {
     browser.runtime.sendMessage({ message: "updateUndoStatus" });
     browser.runtime.sendMessage({ message: "updateTrackingStatus" });
 
-    if (getSettings("isShowUpdated")) {
+    const shouldShowUpdatedNotification = getSettings("isShowUpdated");
+    if (shouldShowUpdatedNotification) {
       this.openNotification({
         message: browser.i18n.getMessage("NotificationOnUpdateLabel"),
         type: "info",
@@ -222,10 +225,8 @@ export default class PopupPage extends Component {
       });
       setSettings("isShowUpdated", false);
     }
+    this.showBackupReminder();
 
-    if (Math.random() < 0.03) {
-      this.openModal(browser.i18n.getMessage("donationLabel"), <DonationMessage />);
-    }
   };
 
   calcNeedsSync = sessions => {
@@ -312,6 +313,27 @@ export default class PopupPage extends Component {
         hideThumbnailText: updatedHideText
       } : null;
     });
+
+    const updatedBackupFlag = !!getSettings("ifBackup");
+    this.setState(prev => (prev.isBackupEnabled === updatedBackupFlag ? null : { isBackupEnabled: updatedBackupFlag }));
+  };
+
+  showBackupReminder = () => {
+    const shouldPrompt = getSettings("shouldPromptBackupFolder");
+    const needsPrompt = shouldPrompt !== false; // treat undefined as true for fresh installs
+    if (!needsPrompt) return;
+    setTimeout(() => this.openBackupModal(), 150);
+  };
+
+  openBackupModal = () => {
+    const handleCloseBackupModal = async () => {
+      await setSettings("shouldPromptBackupFolder", false);
+      this.closeModal();
+    };
+    this.openModal(
+      browser.i18n.getMessage("backupLabel"),
+      <BackupRecoveryModal closeModal={handleCloseBackupModal} />
+    );
   };
 
 
@@ -665,11 +687,11 @@ export default class PopupPage extends Component {
       >
         <Notification notification={this.state.notification} />
         <Header
-          openModal={this.openModal}
-          openNotification={this.openNotification}
+          openBackupModal={this.openBackupModal}
           syncStatus={this.state.syncStatus}
           needsSync={this.state.needsSync}
           undoStatus={this.state.undoStatus}
+          isBackupEnabled={this.state.isBackupEnabled}
         />
         <div id="contents">
           <div className="column sidebar" style={{ width: `${this.state.sidebarWidth}px` }}>

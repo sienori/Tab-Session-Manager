@@ -49,7 +49,6 @@ const EditButton = props => (
   </button>
 );
 
-const DEFAULT_GRID_COLUMNS = 3;
 const TAB_DRAG_STATE = {
   tabId: null,
   windowId: null
@@ -454,19 +453,12 @@ class WindowContainer extends Component {
       viewMode,
       thumbnailSize,
       hideThumbnailText,
-      handleReorderTab,
-      sessionId
+      handleReorderTab
     } = this.props;
     const sortedTabs = Object.values(tabs).sort((a, b) => a.index - b.index);
     const isIncognito = Object.values(tabs)[0].incognito;
-    const columnCount = Number.isFinite(Number(thumbnailSize)) ? Number(thumbnailSize) : DEFAULT_GRID_COLUMNS;
-    const isSingleColumn = viewMode === "grid" && columnCount <= 1;
-    const tabsContainerClass = [
-      "tabs",
-      viewMode === "grid" ? "isGrid" : "",
-      isSingleColumn ? "isSingleColumn" : ""
-    ].filter(Boolean).join(" ");
-    const tabsStyle = viewMode === "grid" ? { "--thumbnail-columns": `${columnCount}` } : undefined;
+    const tabsContainerClass = `tabs ${viewMode === "grid" ? "isGrid" : ""}`;
+    const tabsStyle = viewMode === "grid" ? { "--thumbnail-columns": `${thumbnailSize}` } : undefined;
 
     return (
       <div className={`windowContainer ${this.state.isCollapsed ? "isCollapsed" : ""}`}>

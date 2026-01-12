@@ -41,7 +41,7 @@ export default [
         title: "ifSupportTstLabel",
         captions: ["ifSupportTstCaptionLabel"],
         type: "checkbox",
-        default: false,
+        default: true,
         childElements: [
           {
             id: "tstDelay",
@@ -252,6 +252,7 @@ export default [
   },
   {
     category: "backupLabel",
+    sectionId: "backup",
     elements: [
       {
         id: "ifBackup",
@@ -276,6 +277,13 @@ export default [
             default: "TabSessionManager - Backup"
           }
         ]
+      },
+      {
+        id: "ifScheduledBackup",
+        title: "ifScheduledBackupLabel",
+        captions: ["ifScheduledBackupCaptionLabel"],
+        type: "checkbox",
+        default: true
       }
     ]
   },

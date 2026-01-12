@@ -407,6 +407,15 @@
   "backupFolderCaptionLabel": {
     "message": "Gebe an, wo das Backup gespeichert werden soll. Der Speicherort ist auf den vom Browser eingestellten Download Ordner limitiert."
   },
+  "backupFolderHintLabel": {
+    "message": "Ein Ordner wird in deinem Downloads-Ordner angelegt. Backups werden dort gespeichert und überfüllen nicht deinen Downloads-Ordner - der Ordner bleibt an seinem Platz und rutscht nicht bei jedem Backup nach oben."
+  },
+  "ifScheduledBackupLabel": {
+    "message": "Geplantes Backup"
+  },
+  "ifScheduledBackupCaptionLabel": {
+    "message": "Führt automatisch täglich um 3:00 Uhr ein Backup durch (oder beim nächsten Aufwachen, falls das Gerät im Standby war) sowie nach jeweils 3 manuellen Session-Speicherungen."
+  },
   "downloadFolderLabel": {
     "message": "Download-Ordner"
   },
@@ -787,9 +796,6 @@
   },
   "amazonUrl": {
     "message": ""
-  },
-  "addonUrl": {
-    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
   },
   "replacedPageMessage": {
     "message": "Diese Seite kann von TabBoard - Fork of Tab Session Manager nicht geöffnet werden."

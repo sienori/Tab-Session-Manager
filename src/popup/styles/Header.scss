@@ -62,9 +62,14 @@
       }
     }
 
-    .heartButton {
+    .backupButton {
       &:hover svg, &:focus svg {
-        fill: var(--confirm);
+        fill: var(--highlight);
+      }
+      &.active {
+        svg {
+          fill: var(--success);
+        }
       }
     }
 
