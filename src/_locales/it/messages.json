@@ -785,9 +785,6 @@
   "amazonUrl": {
     "message": ""
   },
-  "addonUrl": {
-    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
-  },
   "replacedPageMessage": {
     "message": "Questa pagina non può essere aperta da TabBoard - Fork of Tab Session Manager."
   },

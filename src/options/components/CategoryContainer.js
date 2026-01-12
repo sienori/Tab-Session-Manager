@@ -4,9 +4,13 @@ import OptionContainer from "./OptionContainer";
 import "../styles/CategoryContainer.scss";
 
 export default props => {
-  const { category, elements } = props;
+  const { category, elements, sectionId } = props;
   return (
-    <li className="categoryContainer">
+    <li
+      className="categoryContainer"
+      data-settings-section={sectionId || undefined}
+      id={sectionId ? `settings-section-${sectionId}` : undefined}
+    >
       <fieldset>
         <legend>
           <p className="categoryTitle">

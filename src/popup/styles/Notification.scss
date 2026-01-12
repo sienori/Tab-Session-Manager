@@ -59,6 +59,7 @@
 
     .message {
       flex-shrink: 1;
+      white-space: pre-line;
     }
     .buttons {
       display: flex;

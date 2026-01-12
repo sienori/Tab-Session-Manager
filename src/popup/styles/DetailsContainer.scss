@@ -1,6 +1,8 @@
 .detailsContainer {
   overflow-y: auto;
   margin-top: 10px;
+  flex-grow: 1;
+  min-height: 0;
   .windowContainer {
     margin-bottom: 10px;
     .windowInfo,
@@ -153,6 +155,11 @@
 
 .detailsContainer.gridView {
   .windowContainer {
+    &.isCollapsed {
+      .tabs {
+        display: none !important;
+      }
+    }
     .tabs {
       margin-left: 0;
       display: grid;
@@ -166,6 +173,21 @@
         }
         .tabTile.isToolbarLeft::after {
           left: 0;
+        }
+        .thumbnailToolbar {
+          right: 8px;
+          left: auto;
+          top: 8px;
+        }
+        .tabTile.isToolbarLeft .thumbnailToolbar {
+          left: 8px;
+          right: auto;
+        }
+        .thumbnailWrapper:hover .thumbnailToolbar,
+        .tabTile:hover .thumbnailToolbar,
+        .tabTile:focus-within .thumbnailToolbar {
+          opacity: 1;
+          pointer-events: auto;
         }
       }
     }
@@ -242,6 +264,13 @@
         .tabUrl {
           color: #e7e7e7;
         }
+        &.isToolbarLeft {
+          .tabTileInfo {
+            left: 0;
+            right: 0;
+            margin: 0;
+          }
+        }
       }
     }
 
@@ -283,6 +312,7 @@
       background: var(--line);
     }
 
+
     .thumbnailToolbar {
       position: absolute;
       top: 8px;
@@ -302,7 +332,9 @@
     }
 
     .thumbnailWrapper:hover .thumbnailToolbar,
-    .thumbnailWrapper:focus-within .thumbnailToolbar {
+    .thumbnailWrapper:focus-within .thumbnailToolbar,
+    .tabTile:hover .thumbnailToolbar,
+    .tabTile:focus-within .thumbnailToolbar {
       opacity: 1;
       pointer-events: auto;
     }
@@ -319,6 +351,7 @@
       color: #fff;
       cursor: pointer;
       transition: background 120ms ease-in-out, transform 120ms ease-in-out;
+      position: relative;
     }
 
     .thumbnailAction:hover,
@@ -347,10 +380,31 @@
       color: #fff;
     }
 
+    .thumbnailAction.isCopyFeedback svg {
+      opacity: 0;
+    }
+
+    .thumbnailAction.isCopyFeedback::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 6px;
+      border: 2px solid currentColor;
+      border-top: none;
+      border-right: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%) rotate(-45deg);
+    }
+
     .tabTileInfo {
       display: flex;
       flex-direction: column;
       gap: 2px;
+      -moz-user-select: text;
+      -webkit-user-select: text;
+      user-select: text;
+      cursor: text;
     }
 
     .tabTileInfo .tabTitle {

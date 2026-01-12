@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import browser from "webextension-polyfill";
-
 const thumbnailCache = new Map();
 const DEFAULT_PLACEHOLDER = "/icons/favicon.png";
 
@@ -36,6 +34,15 @@ export default class TabThumbnail extends Component {
       URL.revokeObjectURL(this.objectUrl);
       this.objectUrl = null;
     }
+  }
+
+  isAllowedUrl(url) {
+    if (!url) return false;
+    const lower = String(url).toLowerCase();
+    if (lower.startsWith("chrome://") || lower.startsWith("resource://")) {
+      return false;
+    }
+    return true;
   }
 
   async loadThumbnail() {
@@ -86,7 +93,8 @@ export default class TabThumbnail extends Component {
   render() {
     const { src, isLoading } = this.state;
     const { fallback, alt } = this.props;
-    const displaySrc = src || fallback || DEFAULT_PLACEHOLDER;
+    const resolvedFallback = this.isAllowedUrl(fallback) ? fallback : DEFAULT_PLACEHOLDER;
+    const displaySrc = src || resolvedFallback;
 
     return (
       <div className={`tabThumbnail ${isLoading ? "isLoading" : ""}`}>

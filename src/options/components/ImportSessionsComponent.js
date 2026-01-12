@@ -280,6 +280,22 @@ export default class ImportSessionsComponent extends Component {
     };
   }
 
+  componentDidMount() {
+    this.autoTriggerImport();
+  }
+
+  autoTriggerImport = async () => {
+    const { PendingImportSessions } = await browser.storage.local.get("PendingImportSessions");
+    if (!PendingImportSessions) return;
+    const input = document.getElementById("import");
+    if (input) {
+      input.click();
+      await browser.storage.local.remove("PendingImportSessions");
+    } else {
+      setTimeout(this.autoTriggerImport, 200);
+    }
+  };
+
   async readSessions(e) {
     const files = e.target.files;
     if (files == undefined) return;

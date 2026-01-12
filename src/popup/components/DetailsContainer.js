@@ -148,16 +148,22 @@ const TabContainer = props => {
     return (
       <div
         className={tileClassNames.join(" ")}
-        draggable
-        onDragStart={event => onDragStart?.(tab.id, event)}
         onDragOver={event => onDragOver?.(tab.id, event)}
         onDrop={event => onDrop?.(tab.id, event)}
-        onDragEnd={onDragEnd}
       >
         <div
           className="thumbnailWrapper"
           role="button"
           tabIndex={0}
+          draggable
+          onDragStart={event => onDragStart?.(tab.id, event)}
+          onDragEnd={event => {
+            // Remove focus from any focused element to hide toolbar
+            if (document.activeElement) {
+              document.activeElement.blur();
+            }
+            onDragEnd?.(event);
+          }}
           onClick={handleTileClick}
           onAuxClick={handleAuxClick}
           onKeyDown={handleKeyDown}

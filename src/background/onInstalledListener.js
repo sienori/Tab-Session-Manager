@@ -9,11 +9,35 @@ import { setAutoSave } from "./autoSave";
 
 const logDir = "background/onInstalledListener";
 
-const openOptionsPage = active => {
-  browser.tabs.create({
-    url: "options/index.html#information?action=updated",
-    active: active
-  });
+const openOptionsPage = async (active, target = "information?action=updated") => {
+  const url = browser.runtime.getURL(`options/index.html#${target}`);
+  const sectionMatch = target.startsWith("settings?section=")
+    ? target.replace("settings?section=", "")
+    : "";
+
+  if (sectionMatch) {
+    await setSettings("pendingOptionsSection", sectionMatch);
+  }
+
+  const shouldUseRuntimeApi = sectionMatch && typeof browser.runtime.openOptionsPage === "function";
+
+  if (shouldUseRuntimeApi) {
+    try {
+      await browser.runtime.openOptionsPage();
+      return;
+    } catch (error) {
+      log.warn(logDir, "openOptionsPage()", error);
+    }
+  }
+
+  try {
+    await browser.tabs.create({
+      url,
+      active
+    });
+  } catch (error) {
+    log.error(logDir, "openOptionsPage tabs.create()", error);
+  }
 };
 
 export default async details => {
@@ -24,10 +48,12 @@ export default async details => {
   initShortcuts();
   const isShowOptionsPage = getSettings("isShowOptionsPageWhenUpdated");
 
-  if (isShowOptionsPage) {
-    openOptionsPage(false);
+  if (details.reason === "install") {
+    await openOptionsPage(true, "settings?section=backup");
+  } else if (isShowOptionsPage) {
+    await openOptionsPage(false);
   }
-  setSettings("isShowUpdated", true);
+  await setSettings("isShowUpdated", details.reason === "update");
   await updateOldSessions();
   setAutoSave();
 };

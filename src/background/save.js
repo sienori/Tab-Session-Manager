@@ -283,8 +283,9 @@ const generateAssetsForTab = async (
   };
 
   const { captureAssets: shouldCaptureAssets = true, thumbnailSource = imagePreference } = options || {};
+  const isCaptureSupported = isSupportedForCapture(tab.url);
 
-  if (tab.incognito || !isSupportedForCapture(tab.url)) {
+  if (tab.incognito) {
     return assets;
   }
 
@@ -295,7 +296,8 @@ const generateAssetsForTab = async (
   const canFetchOffline =
     manifestVersion >= 3 &&
     shouldCaptureAssets &&
-    thumbnailSource !== "representative";
+    thumbnailSource !== "representative" &&
+    isCaptureSupported;
   if (canFetchOffline) {
     offlineHtml = await fetchOfflineHtml(tab.url);
   }

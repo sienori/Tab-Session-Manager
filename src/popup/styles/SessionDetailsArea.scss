@@ -149,19 +149,18 @@
     }
 
     .thumbnailTextToggle {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       color: var(--sub-text);
 
       input {
-        width: 18px;
-        height: 18px;
         margin: 0;
       }
 
       span {
         white-space: nowrap;
+        color: var(--main-text);
       }
     }
   }

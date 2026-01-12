@@ -785,9 +785,6 @@
   "amazonUrl": {
     "message": ""
   },
-  "addonUrl": {
-    "message": "https://github.com/maximilianbottcher/tab-session-manager-gridview"
-  },
   "replacedPageMessage": {
     "message": "यह पृष्ठ टैब सत्र प्रबंधक द्वारा खोला नहीं जा सकता।"
   },
