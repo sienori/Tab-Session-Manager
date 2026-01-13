@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "Bash(npm run *)",
+      "Bash(node tests/*)",
+      "Bash(web-ext *)",
+      "Bash(ls *)",
+      "Bash(ls)",
+      "Bash(which *)",
+      "Bash(mkdir *)",
+      "Bash(unzip *)",
+      "Bash(git *)",
+      "Bash(cat *)",
+      "Bash(rm *)",
+      "Bash(cp *)",
+      "Bash(mv *)"
+    ]
+  }
+}
