@@ -4,3 +4,4 @@ dev
 temp
 src/credentials.js
 backups/
+.DS_Store
