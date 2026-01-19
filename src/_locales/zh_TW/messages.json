@@ -492,7 +492,7 @@
     "message": "儲存分頁群組"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups."
+    "message": "儲存並還原分頁群組的狀態。"
   },
   "tstDelayCaptionLabel": {
     "message": "若要還原分頁為樹狀結構狀態，需要等待一段時間才能開啟分頁，若無法正確還原為樹狀結構之時，請增加此值。"
