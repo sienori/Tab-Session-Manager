@@ -209,3 +209,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Erin Almaz
 - Nico Kokonas
 - Sean Lynch
+- Matt Hilden
+- Tomaz Strukelj
