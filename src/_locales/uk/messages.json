@@ -492,7 +492,7 @@
     "message": "Зберегти групу вкладок"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups."
+    "message": "Зберегти та відновити стан груп вкладок."
   },
   "tstDelayCaptionLabel": {
     "message": "Для відновлення стану дерева та відкриття вкладки потрібен певний час. Збільште це значення, якщо дерево не відновлюється коректно."
