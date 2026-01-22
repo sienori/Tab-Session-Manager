@@ -8,7 +8,7 @@ import { returnReplaceParameter } from "./replace.js";
 import ignoreUrls from "./ignoreUrls";
 import { pushRemovedQueue, syncCloudAuto } from "./cloudSync.js";
 import { getValidatedTag } from "./tag.js";
-import { queryTabGroups } from "../common/tabGroups";
+import { queryTabGroups, isEnabledTabGroups } from "../common/tabGroups";
 import { compressDataUrl } from "../common/compressDataUrl";
 import {
   putThumbnail,
@@ -40,8 +40,6 @@ const ensureOffscreenDocument = async () => {
     log.warn(logDir, "ensureOffscreenDocument()", error);
   }
 };
-
-const isEnabledTabGroups = browserInfo().name == "Chrome" && browserInfo().version >= 89;
 
 const SUPPORTED_CAPTURE_PROTOCOLS = new Set(["http:", "https:"]);
 const MAX_OFFLINE_HTML_LENGTH = 1024 * 1024 * 2; // 2MB cap per page snapshot
@@ -450,7 +448,7 @@ export async function loadCurrentSession(name, tag, property, options = {}) {
     session.windowsInfo[i] = window;
   }
 
-  if (isEnabledTabGroups && getSettings("saveTabGroups")) {
+  if (isEnabledTabGroups && getSettings("saveTabGroupsV2")) {
     // ポップアップやPWAにはタブ自体が存在しないので、normalタイプのウィンドウのみクエリする
     const filteredWindows = Object.values(session.windowsInfo).filter(window => window.type === "normal");
     const tabGroups = await Promise.all(filteredWindows.map(window => queryTabGroups({
