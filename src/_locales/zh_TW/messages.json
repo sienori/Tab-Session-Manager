@@ -12,19 +12,19 @@
     "message": "贊助"
   },
   "openSessionListInTabLabel": {
-    "message": "在新分頁顯示瀏覽階段清單"
+    "message": "在新分頁顯示瀏覽工作階段清單"
   },
   "saveLabel": {
     "message": "儲存"
   },
   "initialNameValue": {
-    "message": "儲存目前的瀏覽階段"
+    "message": "儲存目前的瀏覽工作階段"
   },
   "inputSessionNameLabel": {
-    "message": "輸入瀏覽階段名稱"
+    "message": "輸入瀏覽工作階段名稱"
   },
   "saveSessionLabel": {
-    "message": "儲存瀏覽階段"
+    "message": "儲存瀏覽工作階段"
   },
   "saveAllWindowsLabel": {
     "message": "儲存所有視窗"
@@ -66,7 +66,7 @@
     "message": "最少分頁"
   },
   "searchBarPlaceholder": {
-    "message": "依瀏覽階段名稱或分頁名稱搜尋"
+    "message": "依瀏覽工作階段或分頁名稱搜尋"
   },
   "search": {
     "message": "搜尋"
@@ -81,34 +81,34 @@
     "message": "刪除"
   },
   "removeConfirmLabel": {
-    "message": "確定要刪除此瀏覽階段？"
+    "message": "確定要刪除此瀏覽工作階段？"
   },
   "sessionDeletedLabel": {
-    "message": "已刪除瀏覽階段。"
+    "message": "已刪除瀏覽工作階段。"
   },
   "sessionWindowDeletedLabel": {
-    "message": "已刪除瀏覽階段視窗。"
+    "message": "已刪除瀏覽工作階段視窗。"
   },
   "sessionTabDeletedLabel": {
-    "message": "已刪除瀏覽階段分頁。"
+    "message": "已刪除瀏覽工作階段分頁。"
   },
   "restoreSessionLabel": {
     "message": "還原"
   },
   "failedDeleteSessionLabel": {
-    "message": "瀏覽階段刪除失敗。"
+    "message": "瀏覽工作階段刪除失敗。"
   },
   "failedDeleteSessionWindowLabel": {
-    "message": "瀏覽階段視窗刪除失敗。"
+    "message": "瀏覽工作階段視窗刪除失敗。"
   },
   "failedDeleteSessionTabLabel": {
-    "message": "瀏覽階段分頁刪除失敗。"
+    "message": "瀏覽工作階段分頁刪除失敗。"
   },
   "sessionSavedLabel": {
-    "message": "已儲存瀏覽階段。"
+    "message": "已儲存瀏覽工作階段。"
   },
   "failedSaveSessionLabel": {
-    "message": "瀏覽階段儲存失敗。"
+    "message": "瀏覽工作階段儲存失敗。"
   },
   "cancelLabel": {
     "message": "取消"
@@ -144,16 +144,16 @@
     "message": "分頁"
   },
   "noSessionLabel": {
-    "message": "沒有已儲存的瀏覽階段。"
+    "message": "沒有已儲存的瀏覽工作階段。"
   },
   "letsSaveLabel": {
-    "message": "點選右下角按鈕以儲存瀏覽階段。"
+    "message": "點選右下角按鈕以儲存瀏覽工作階段。"
   },
   "noResultLabel": {
     "message": "沒有符合的結果。"
   },
   "noSessionSelectedLabel": {
-    "message": "尚未選取瀏覽階段。"
+    "message": "尚未選取瀏覽工作階段。"
   },
   "menuLabel": {
     "message": "選單"
@@ -168,34 +168,34 @@
     "message": "重新命名"
   },
   "renameSessionLabel": {
-    "message": "重新命名瀏覽階段"
+    "message": "重新命名瀏覽工作階段"
   },
   "OpenSessionLabel": {
-    "message": "開啟瀏覽階段"
+    "message": "開啟瀏覽工作階段"
   },
   "openInNewWindowLabel": {
     "message": "在新視窗中開啟"
   },
   "openInNewWindowCaptionLabel": {
-    "message": "在新視窗中開啟瀏覽階段。"
+    "message": "在新視窗中開啟瀏覽工作階段。"
   },
   "openInCurrentWindowLabel": {
     "message": "在目前視窗中開啟"
   },
   "openInCurrentWindowCaptionLabel": {
-    "message": "在目前視窗中開啟瀏覽階段。非使用中視窗和所有分頁皆已關閉。"
+    "message": "在目前視窗中開啟瀏覽工作階段。非使用中視窗和所有分頁皆已關閉。"
   },
   "addToCurrentWindowLabel": {
     "message": "新增至目前視窗"
   },
   "addToCurrentWindowCaptionLabel": {
-    "message": "將分頁新增至目前視窗。 如果瀏覽階段包含多個視窗，請在新視窗中將其開啟。"
+    "message": "將分頁新增至目前視窗。 如果瀏覽工作階段包含多個視窗，請在新視窗中將其開啟。"
   },
   "EditSessionLabel": {
-    "message": "編輯瀏覽階段"
+    "message": "編輯瀏覽工作階段"
   },
   "replaceCurrentSessionLabel": {
-    "message": "使用目前瀏覽階段取代此瀏覽階段"
+    "message": "使用目前瀏覽工作階段取代此瀏覽工作階段"
   },
   "replaceCurrentWindowLabel": {
     "message": "使用目前視窗取代"
@@ -204,7 +204,7 @@
     "message": "新增目前視窗"
   },
   "makeCopySessionLabel": {
-    "message": "複製此瀏覽階段"
+    "message": "複製此瀏覽工作階段"
   },
   "registerTrackingLabel": {
     "message": "追蹤視窗變更"
@@ -213,10 +213,10 @@
     "message": "解除追蹤"
   },
   "registerStartupLabel": {
-    "message": "登錄為啟動瀏覽階段"
+    "message": "設為啟動瀏覽工作階段"
   },
   "removeStartupLabel": {
-    "message": "從啟動瀏覽階段中移除"
+    "message": "從啟動瀏覽工作階段中移除"
   },
   "editWindowLabel": {
     "message": "編輯視窗"
@@ -258,7 +258,7 @@
     "message": "設定"
   },
   "sessionsLabel": {
-    "message": "瀏覽階段"
+    "message": "瀏覽工作階段"
   },
   "shortcutsLabel": {
     "message": "快速鍵"
@@ -276,16 +276,16 @@
     "message": "樣式"
   },
   "ifOpenNewWindowLabel": {
-    "message": "在新視窗中開啟瀏覽階段"
+    "message": "於新視窗中開啟瀏覽工作階段"
   },
   "ifOpenNewWindowCaptionLabel": {
-    "message": "如果取消勾選，開啟瀏覽階段時將會覆寫目前視窗。"
+    "message": "若是取消勾選，開啟瀏覽工作階段時將會覆寫目前視窗。"
   },
   "ifLazyLoadingLabel": {
     "message": "分頁延遲載入"
   },
   "ifLazyLoadingCaptionLabel": {
-    "message": "開啟瀏覽階段後，在選擇該分頁前不載入頁面內容。<br>如果關閉此選項，還原瀏覽階段時的記憶體使用量將會增加。"
+    "message": "開啟瀏覽工作階段後，在選擇該分頁前不載入頁面內容。<br>如果關閉此選項，還原瀏覽工作階段時的記憶體使用量將會增加。"
   },
   "isUseDiscardedLabel": {
     "message": "使用「discarded」屬性進行延遲載入"
@@ -300,7 +300,7 @@
     "message": "還原視窗位置"
   },
   "isRestoreWindowPositionCaptionLabel": {
-    "message": "開啟瀏覽階段時還原視窗的位置與大小。"
+    "message": "開啟瀏覽工作階段時還原視窗的位置與大小。"
   },
   "startupLabel": {
     "message": "啟動"
@@ -309,13 +309,13 @@
     "message": "啟動瀏覽器時的行為"
   },
   "openPreviousSessionLabel": {
-    "message": "開啟之前的瀏覽階段"
+    "message": "開啟之前的瀏覽工作階段"
   },
   "openPreviousSessionCaptionLabel": {
-    "message": "開啟上次關閉的瀏覽階段。"
+    "message": "開啟上次關閉的瀏覽工作階段。"
   },
   "openStartupSessionLabel": {
-    "message": "打開啟動瀏覽階段"
+    "message": "開啟啟動瀏覽工作階段"
   },
   "openStartupSessionCaptionLabel": {
     "message": "開啟已登錄的啟動瀏覽階段。您可以在瀏覽階段清單的右鍵選單中選擇要登錄的啟動瀏覽階段。"
@@ -366,22 +366,22 @@
     "message": "透過這種方式儲存的瀏覽階段數量。"
   },
   "ifAutoSaveWhenExitBrowserLabel": {
-    "message": "結束瀏覽器時儲存瀏覽階段"
+    "message": "結束瀏覽器時儲存瀏覽工作階段"
   },
   "ifAutoSaveWhenExitBrowserCaptionLabel": {
-    "message": "儲存瀏覽階段，此瀏覽階段由幾個連續關閉的視窗組成。"
+    "message": "儲存瀏覽工作階段，此瀏覽工作階段由幾個連續關閉的視窗組成。"
   },
   "autoSaveWhenExitBrowserLimitLabel": {
     "message": "最大儲存數量"
   },
   "autoSaveWhenExitBrowserCaptionLabel": {
-    "message": "透過這種方式儲存的瀏覽階段數量。"
+    "message": "透過這種方式儲存的瀏覽工作階段數量。"
   },
   "useTabTitleforAutoSaveLabel": {
-    "message": "使用網頁標題作為自動儲存的瀏覽階段名稱"
+    "message": "使用網頁標題作為自動儲存的瀏覽工作階段名稱"
   },
   "useTabTitleforAutoSaveCaptionLabel": {
-    "message": "當自動儲存瀏覽階段時，使用已開啟頁面的標題作為瀏覽階段名稱。"
+    "message": "當自動儲存瀏覽工作階段時，使用已開啟頁面的標題作為瀏覽工作階段的名稱。"
   },
   "backupLabel": {
     "message": "備份"
@@ -390,7 +390,7 @@
     "message": "儲存備份"
   },
   "ifBackupCaptionLabel": {
-    "message": "當瀏覽器啟動時，建立瀏覽階段的備份檔並儲存於下載資料夾中。"
+    "message": "當瀏覽器啟動時，建立瀏覽工作階段的備份檔並儲存於下載資料夾中。"
   },
   "individualBackupLabel": {
     "message": "單獨備份"
@@ -780,7 +780,7 @@
     "message": "確定要刪除所有瀏覽階段嗎？"
   },
   "sessionLabel": {
-    "message": "瀏覽階段"
+    "message": "瀏覽工作階段"
   },
   "amazonUrl": {
     "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=zh_CN"
