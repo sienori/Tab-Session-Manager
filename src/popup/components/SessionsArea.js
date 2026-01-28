@@ -28,6 +28,7 @@ const matchesSearch = (searchWords, sessionId, searchedSessionIds) => {
 };
 
 const newestSort = (a, b) => b.date - a.date;
+const modifiedNewestSort = (a, b) => b.modified - a.modified;
 const alphabeticallySort = (a, b) => {
   if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
   else if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
@@ -48,12 +49,15 @@ export const getSortedSessions = (
   searchedSessionIds
 ) => {
   let sortedSessions = sessions.map(session => ({
-    id: session.id,
-    date: session.date,
-    name: session.name,
-    tag: session.tag,
-    tabsNumber: session.tabsNumber
-  }));
+  id: session.id,
+  date: session.date,
+  modified: session.lastEditedTime ?? session.modified ?? session.date,
+ // fallback, ha régi mentésben nincs modified
+  name: session.name,
+  tag: session.tag,
+  tabsNumber: session.tabsNumber
+}));
+
   sortedSessions = sortedSessions.filter(
     session =>
       matchesFilter(session.tag, filterValue) &&
@@ -61,6 +65,13 @@ export const getSortedSessions = (
   );
 
   switch (sortValue) {
+case "modifiedNewest":
+    sortedSessions.sort(modifiedNewestSort);
+    break;
+  case "modifiedOldest":
+    sortedSessions.sort(modifiedNewestSort);
+    sortedSessions.reverse();
+    break;
     case "newest":
       sortedSessions.sort(newestSort);
       break;
