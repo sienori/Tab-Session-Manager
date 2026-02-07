@@ -492,7 +492,7 @@
     "message": "Sekme gruplarını kaydet"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups."
+    "message": "Sekme gruplarının durumunu kaydeder ve geri yükler."
   },
   "tstDelayCaptionLabel": {
     "message": "Ağacın durumunu geri yüklemek için sekmeyi açarken bekleme süresi gereklidir. Ağaç düzgün şekilde geri yüklenmezse bu değeri artırın."
