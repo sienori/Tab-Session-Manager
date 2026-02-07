@@ -288,7 +288,7 @@
     "message": "При открытии сессии содержимое вкладок не загружается, пока вкладка не будет выбрана вручную.<br>Если выключено, при восстановлении сессии значительно увеличивается потребление оперативной памяти."
   },
   "isUseDiscardedLabel": {
-    "message": "Используйте свойство \"discarded\" для отложенной загрузки"
+    "message": "Используйте опцию \"discarded\" для отложенной загрузки"
   },
   "isUseDiscardedCaptionLabel": {
     "message": "Включение этой настройки улучшит производительность при открытии вкладок."
@@ -462,16 +462,16 @@
     "message": "Сжать для всех сессий"
   },
   "compressAllSessionsCaptionLabel": {
-    "message": "Сжать значки для всех сохранённых сессий. Это уменьшит место для их хранения и ускорит загрузку."
+    "message": "Сжать значки сайтов (favicons) для всех сохранённых сессий. Это сэкономит место для хранения и ускорит загрузку сессий."
   },
   "compressLabel": {
-    "message": "Сжать"
+    "message": "Сжать значки"
   },
   "compressAllSessionsConfirmLabel": {
     "message": "Сжать для всех сессий?"
   },
   "compressingLabel": {
-    "message": "Сжимаем..."
+    "message": "Сжатие..."
   },
   "compressionCompleteLabel": {
     "message": "Сжатие завершено."
@@ -495,13 +495,13 @@
     "message": "Сохранять и восстанавливать состояние групп вкладок."
   },
   "tstDelayCaptionLabel": {
-    "message": "Для восстановления состояние дерева и открытия вкладки требуется некоторое время. Увеличьте это значение, если дерево не восстанавливается корректно."
+    "message": "Для восстановления состояние дерева и открытия вкладки требуется некоторое время. Увеличьте это значение, если дерево восстанавливается некорректно."
   },
   "truncateTitleLabel": {
     "message": "Отображать имя сессии в одной строке"
   },
   "truncateTitleCaptionLabel": {
-    "message": "Если имя сессии в списке занимает более одной строки, оно усекается на одну строку."
+    "message": "Если имя сессии в списке занимает более одной строки, оно обрезается и отображается в таком виде."
   },
   "cloudSyncLabel": {
     "message": "Облачная синхронизация"
@@ -510,25 +510,25 @@
     "message": "Включить облачную синхронизацию (Beta)"
   },
   "enabledCloudSyncCaptionLabel": {
-    "message": "Сохраните сессии в Google Drive и синхронизируйте их с другими компьютерами."
+    "message": "Сохраните сессии в Google Drive™ и синхронизируйте их с другими компьютерами."
   },
   "syncingLabel": {
-    "message": "Синхронизируется"
+    "message": "Синхронизация"
   },
   "downloadingLabel": {
-    "message": "Скачивается"
+    "message": "Скачивание"
   },
   "uploadingLabel": {
-    "message": "Закачивается"
+    "message": "Выгрузка"
   },
   "deletingLabel": {
-    "message": "Удаляется"
+    "message": "Удаление"
   },
   "syncCompletedLabel": {
     "message": "Синхронизация завершена."
   },
   "signInRequiredLabel": {
-    "message": "Требуется вход для облачной синхронизации."
+    "message": "Для синхронизации с облаком необходимо выполнить вход."
   },
   "signInLabel": {
     "message": "Войти"
@@ -540,13 +540,13 @@
     "message": "Синхронизировать автоматически"
   },
   "enabledAutoSyncCaptionLabel": {
-    "message": "Синхронизировать с облаком, когда запускается браузер или сохраняется сессия."
+    "message": "Выполнять синхронизацию при запуске браузера и при сохранении сессии."
   },
   "includesAutoSaveToSyncLabel": {
-    "message": "Синхронизировать автоматически сохраняемые сессии"
+    "message": "Синхронизировать автосохранённые сессии"
   },
   "includesAutoSaveToSyncCaptionLabel": {
-    "message": "Загружать и выгружать автоматически сохраняемые сессии при облачной синхронизации."
+    "message": "Выгружать и скачивать автосохранённые сессии."
   },
   "popupLabel": {
     "message": "Всплывающее окно"
@@ -609,7 +609,7 @@
     "message": "Показывать страницу настроек при обновлении"
   },
   "isShowOptionsPageWhenUpdatedCaptionLabel": {
-    "message": "Отображать страницу параметров при обновлении Tab Session Manager. Вы можете быстро узнать историю изменений."
+    "message": "Отображать страницу настроек при обновлении Tab Session Manager. Так вы будете в курсе последних изменений."
   },
   "NotificationOnUpdateLabel": {
     "message": "Tab Session Manager был обновлен!"
@@ -618,7 +618,7 @@
     "message": "Подробнее"
   },
   "NotificationOnUpdateCaptionLabel": {
-    "message": "Нажмите, чтобы просмотреть информацию о обновлении."
+    "message": "Нажмите, чтобы посмотреть информацию об обновлении."
   },
   "isDebugModeLabel": {
     "message": "Включить режим отладки"
@@ -630,13 +630,13 @@
     "message": "Экспортировать настройки"
   },
   "exportSettingsCaptionLabel": {
-    "message": "Сохраните настройки в виде json-файла на своём компьютере."
+    "message": "Сохранить настройки в виде JSON-файла на своём компьютере."
   },
   "importSettingsLabel": {
     "message": "Импортировать настройки"
   },
   "importSettingsCaptionLabel": {
-    "message": "Загрузите сохранённый файл настроек со своего компьютера."
+    "message": "Загрузить файл с настройками со своего компьютера."
   },
   "resetSettingsLabel": {
     "message": "Сброс настроек"
@@ -651,16 +651,16 @@
     "message": "Импорт сессий"
   },
   "importCaptionLabel": {
-    "message": "Загрузить сохранённые на своём компьютере сессии и добавить их в список сессий."
+    "message": "Загрузить файл с сохранёнными сессиями и добавить их в список сессий."
   },
   "importCaptionLabel2": {
-    "message": "Поддерживаемые файлы:"
+    "message": "Поддерживаемые форматы файлов:"
   },
   "importCaptionLabel3": {
     "message": "Как импортировать сессии из других расширений"
   },
   "importButtonLabel": {
-    "message": "Открыть"
+    "message": "Открыть..."
   },
   "importSaveButtonLabel": {
     "message": "Импорт"
@@ -678,13 +678,13 @@
     "message": "Экспорт сессий"
   },
   "exportCaptionLabel": {
-    "message": "Сохранить все сессии на этот компьютер."
+    "message": "Сохранить файл со всеми сессиями на компьютер."
   },
   "exportButtonLabel": {
     "message": "Экспорт"
   },
   "removeSessionsLabel": {
-    "message": "Удалить сессии"
+    "message": "Удаление сессий"
   },
   "removeSessionsCaptionLabel": {
     "message": "Удалить все сессии."
@@ -762,22 +762,22 @@
     "message": "Дополнения Firefox"
   },
   "chromeLabel": {
-    "message": "Веб-магазин Chrome"
+    "message": "Интернет-магазин Chrome"
   },
   "edgeLabel": {
-    "message": "Дополнения Edge"
+    "message": "Расширения Edge"
   },
   "privacyPolicyLabel": {
     "message": "Политика конфиденциальности"
   },
   "importMessage": {
-    "message": "Сессия импортирована."
+    "message": "Сессии импортированы."
   },
   "readFailedMessage": {
     "message": "Ошибка чтения"
   },
   "warningRemoveAllMessage": {
-    "message": "Будут удалены ВСЕ сохранённые сессии. Хотите продолжить?"
+    "message": "Будут удалены ВСЕ сессии. Хотите продолжить?"
   },
   "sessionLabel": {
     "message": "Сессия"
@@ -789,7 +789,7 @@
     "message": "https://addons.mozilla.org/ru/firefox/addon/tab-session-manager/?src=optionpage"
   },
   "replacedPageMessage": {
-    "message": "Эта страница не может быть открыта в Tab Session Manager."
+    "message": "Эту страницу нельзя открыть с помощью Tab Session Manager."
   },
   "copyUrlLabel": {
     "message": "Скопировать ссылку"
