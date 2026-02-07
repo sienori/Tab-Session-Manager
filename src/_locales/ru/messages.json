@@ -252,7 +252,7 @@
     "message": "При выходе из браузера"
   },
   "regularSaveSessionNameShort": {
-    "message": "Регулярно"
+    "message": "Регулярное"
   },
   "settingsLabel": {
     "message": "Настройки"
@@ -792,7 +792,7 @@
     "message": "Эту страницу нельзя открыть с помощью Tab Session Manager."
   },
   "copyUrlLabel": {
-    "message": "Скопировать ссылку"
+    "message": "Скопировать URL"
   },
   "copiedLabel": {
     "message": "Скопировано."
