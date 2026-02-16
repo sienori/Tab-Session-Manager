@@ -124,6 +124,11 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
   }
   const removedWindow = session.windows[removedWindowId];
   if (removedWindow == undefined) return;
+
+  const tabsNumber = Object.keys(removedWindow).length;
+  const minTabs = getSettings("autoSaveWhenCloseMinTabs")
+  if (tabsNumber < minTabs) return;
+
   if (getSettings("useTabTitleforAutoSave")) {
     const activeTab = Object.values(removedWindow).find(tab => tab.active);
     session.name = activeTab.title;
@@ -134,7 +139,7 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
   session.tag = ["winClose"];
   session.id = uuidv4();
   session.windowsNumber = 1;
-  session.tabsNumber = Object.keys(removedWindow).length;
+  session.tabsNumber = tabsNumber;
 
   await saveSession(session);
 

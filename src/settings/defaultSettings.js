@@ -171,6 +171,15 @@ export default [
             min: 1,
             placeholder: 10,
             default: 10
+          },
+          {
+            id: "autoSaveWhenCloseMinTabs",
+            title: "autoSaveWhenCloseMinTabsLabel",
+            captions: ["autoSaveWhenCloseMinTabsCaptionLabel"],
+            type: "number",
+            min: 1,
+            placeholder: 1,
+            default: 1
           }
         ]
       },
