@@ -44,3 +44,33 @@ export const deleteTab = (session, winId, tabId) => {
 
   return session;
 };
+
+export const reorderTab = (session, winId, fromTabId, toTabId) => {
+  log.info(logDir, "reorderTab()", session, winId, fromTabId, toTabId);
+  session = clone(session);
+  const window = session.windows[winId];
+  if (!window || !window[fromTabId] || !window[toTabId]) return session;
+
+  const fromIndex = window[fromTabId].index;
+  const toIndex = window[toTabId].index;
+  if (fromIndex === toIndex) return session;
+
+  // Update indices for all affected tabs
+  for (const tabId in window) {
+    const tab = window[tabId];
+    if (fromIndex < toIndex) {
+      // Dragging down: shift tabs between (fromIndex, toIndex] up by 1
+      if (tab.index > fromIndex && tab.index <= toIndex) {
+        tab.index--;
+      }
+    } else {
+      // Dragging up: shift tabs between [toIndex, fromIndex) down by 1
+      if (tab.index >= toIndex && tab.index < fromIndex) {
+        tab.index++;
+      }
+    }
+  }
+  window[fromTabId].index = toIndex;
+
+  return session;
+};

@@ -17,7 +17,7 @@ import {
   sendUndoMessage,
   sendEndTrackingByWindowDeleteMessage
 } from "../actions/controlSessions";
-import { deleteWindow, deleteTab } from "../../common/editSessions.js";
+import { deleteWindow, deleteTab, reorderTab } from "../../common/editSessions.js";
 import openUrl from "../actions/openUrl";
 import Header from "./Header";
 import OptionsArea from "./OptionsArea";
@@ -475,6 +475,15 @@ export default class PopupPage extends Component {
     }
   };
 
+  reorderTabInSession = async (session, winId, fromTabId, toTabId) => {
+    try {
+      const editedSession = reorderTab(session, winId, fromTabId, toTabId);
+      await sendSessionUpdateMessage(editedSession);
+    } catch (e) {
+      log.error(logDir, "reorderTabInSession()", e);
+    }
+  };
+
   openNotification = notification => {
     log.info(logDir, "openNotification()", notification);
     this.setState({
@@ -603,6 +612,7 @@ export default class PopupPage extends Component {
               removeSession={this.removeSession}
               removeWindow={this.removeWindow}
               removeTab={this.removeTab}
+              reorderTab={this.reorderTabInSession}
               openMenu={this.openMenu}
               openModal={this.openModal}
               closeModal={this.closeModal}

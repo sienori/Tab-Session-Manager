@@ -114,6 +114,22 @@
     .tabs {
       margin-left: 32px;
       .tabContainer {
+        transition: background-color 150ms ease;
+        cursor: grab;
+
+        &.isDragging {
+          opacity: 0.4;
+        }
+
+        &.isDragOver {
+          border-top: 2px solid var(--highlight);
+          padding-top: 1px;
+        }
+
+        &:active {
+          cursor: grabbing;
+        }
+
         .tabButton {
           display: flex;
           align-items: center;

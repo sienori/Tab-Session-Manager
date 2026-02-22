@@ -46,7 +46,19 @@ const EditButton = props => (
 );
 
 const TabContainer = props => {
-  const { tab, windowId, allTabsNumber, searchWords, handleRemoveTab } = props;
+  const {
+    tab,
+    windowId,
+    allTabsNumber,
+    searchWords,
+    handleRemoveTab,
+    onDragStart,
+    onDragOver,
+    onDragEnd,
+    onDrop,
+    isDragging,
+    isDragOver
+  } = props;
   const handleRemoveClick = () => {
     handleRemoveTab(windowId, tab.id);
   };
@@ -57,7 +69,14 @@ const TabContainer = props => {
   };
 
   return (
-    <div className="tabContainer">
+    <div
+      className={`tabContainer${isDragging ? " isDragging" : ""}${isDragOver ? " isDragOver" : ""}`}
+      draggable
+      onDragStart={e => onDragStart(e, tab.id)}
+      onDragOver={e => onDragOver(e, tab.id)}
+      onDragEnd={onDragEnd}
+      onDrop={e => onDrop(e, tab.id)}
+    >
       <button className="tabButton" onMouseUp={handleOpenClick} title={`${tab.title}\n${tab.url}`}>
         <FavIcon favIconUrl={tab.favIconUrl} />
         <span className="tabTitle">
@@ -78,7 +97,7 @@ const TabContainer = props => {
 class WindowContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = { isCollapsed: false };
+    this.state = { isCollapsed: false, draggingTabId: null, dragOverTabId: null };
   }
 
   getTabsNumberText = () => {
@@ -110,6 +129,35 @@ class WindowContainer extends Component {
   toggleCollapsed = () => {
     const isCollapsed = !this.state.isCollapsed;
     this.setState({ isCollapsed: isCollapsed });
+  };
+
+  handleDragStart = (e, tabId) => {
+    this.setState({ draggingTabId: tabId });
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text/plain", String(tabId));
+  };
+
+  handleDragOver = (e, tabId) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+    if (tabId !== this.state.draggingTabId) {
+      this.setState({ dragOverTabId: tabId });
+    }
+  };
+
+  handleDragEnd = () => {
+    this.setState({ draggingTabId: null, dragOverTabId: null });
+  };
+
+  handleDrop = (e, toTabId) => {
+    e.preventDefault();
+    const fromTabId = this.state.draggingTabId;
+    this.setState({ draggingTabId: null, dragOverTabId: null });
+    if (fromTabId == null || fromTabId === toTabId) return;
+    const { handleReorderTab, windowId } = this.props;
+    if (handleReorderTab) {
+      handleReorderTab(windowId, fromTabId, toTabId);
+    }
   };
 
   render() {
@@ -167,6 +215,12 @@ class WindowContainer extends Component {
               allTabsNumber={allTabsNumber}
               searchWords={searchWords}
               handleRemoveTab={handleRemoveTab}
+              onDragStart={this.handleDragStart}
+              onDragOver={this.handleDragOver}
+              onDragEnd={this.handleDragEnd}
+              onDrop={this.handleDrop}
+              isDragging={this.state.draggingTabId === tab.id}
+              isDragOver={this.state.dragOverTabId === tab.id}
               key={tab.id}
             />
           ))}
@@ -177,7 +231,7 @@ class WindowContainer extends Component {
 }
 
 export default props => {
-  const { session, searchWords, removeWindow, removeTab, openMenu } = props;
+  const { session, searchWords, removeWindow, removeTab, reorderTab, openMenu } = props;
 
   if (!session.windows) return null;
 
@@ -187,6 +241,10 @@ export default props => {
 
   const handleRemoveTab = (windowId, tabId) => {
     removeTab(session, windowId, tabId);
+  };
+
+  const handleReorderTab = (windowId, fromTabId, toTabId) => {
+    if (reorderTab) reorderTab(session, windowId, fromTabId, toTabId);
   };
 
   return (
@@ -202,6 +260,7 @@ export default props => {
           searchWords={searchWords}
           handleRemoveWindow={handleRemoveWindow}
           handleRemoveTab={handleRemoveTab}
+          handleReorderTab={handleReorderTab}
           openMenu={openMenu}
           key={`${session.id}${windowId}`}
         />

@@ -3,3 +3,5 @@ dist
 dev
 temp
 src/credentials.js
+.idea
+.snow
