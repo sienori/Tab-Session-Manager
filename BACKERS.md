@@ -213,3 +213,5 @@ Thank you to the awesome backers who supported Tab Session Manager!
 - Tomaz Strukelj
 - Sam
 - Tristan
+- Conner Goldsmith
+- Preston A. Rickwood
