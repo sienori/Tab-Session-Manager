@@ -366,10 +366,10 @@
     "message": "この方法で保存できるセッションの上限"
   },
   "autoSaveWhenCloseMinTabsLabel": {
-    "message": "Minimum number of tabs"
+    "message": "最小のタブ数"
   },
   "autoSaveWhenCloseMinTabsCaptionLabel": {
-    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
+    "message": "ウィンドウを閉じたとき、この数以上のタブがあるウィンドウだけが自動的に保存されます。"
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "ブラウザ終了時にセッションを保存する"
