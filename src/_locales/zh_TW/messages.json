@@ -366,10 +366,10 @@
     "message": "透過這種方式儲存的瀏覽工作階段數量。"
   },
   "autoSaveWhenCloseMinTabsLabel": {
-    "message": "Minimum number of tabs"
+    "message": "最少分頁數量"
   },
   "autoSaveWhenCloseMinTabsCaptionLabel": {
-    "message": "If the number of tabs is fewer, the window is not saved."
+    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "結束瀏覽器時儲存瀏覽工作階段"
