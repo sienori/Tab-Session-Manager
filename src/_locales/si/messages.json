@@ -365,6 +365,12 @@
   "autoSaveWhenCloseCaptionLabel": {
     "message": "සුරැකි සැසි උපරිම ගණන (මේ ආකාරයෙන්)."
   },
+  "autoSaveWhenCloseMinTabsLabel": {
+    "message": "Minimum number of tabs"
+  },
+  "autoSaveWhenCloseMinTabsCaptionLabel": {
+    "message": "If the number of tabs is fewer, the window is not saved."
+  },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "බ්‍රවුසරයෙන් පිටවන විට සැසිය සුරකින්න"
   },
