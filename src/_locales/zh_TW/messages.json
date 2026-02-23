@@ -365,6 +365,12 @@
   "autoSaveWhenCloseCaptionLabel": {
     "message": "透過這種方式儲存的瀏覽工作階段數量。"
   },
+  "autoSaveWhenCloseMinTabsLabel": {
+    "message": "Minimum number of tabs"
+  },
+  "autoSaveWhenCloseMinTabsCaptionLabel": {
+    "message": "If the number of tabs is fewer, the window is not saved."
+  },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "結束瀏覽器時儲存瀏覽工作階段"
   },
