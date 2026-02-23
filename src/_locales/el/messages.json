@@ -365,6 +365,12 @@
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Μέγιστος αριθμός συνεδριών που μπορούν να αποθηκευτούν (με αυτόν τον τρόπο)."
   },
+  "autoSaveWhenCloseMinTabsLabel": {
+    "message": "Minimum number of tabs"
+  },
+  "autoSaveWhenCloseMinTabsCaptionLabel": {
+    "message": "If the number of tabs is fewer, the window is not saved."
+  },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Αποθήκευση συνεδρίας όταν κλείνει το πρόγραμμα περιήγησης"
   },
