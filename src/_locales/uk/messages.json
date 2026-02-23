@@ -365,6 +365,12 @@
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Максимальна кількість сесій збережених таким чином."
   },
+  "autoSaveWhenCloseMinTabsLabel": {
+    "message": "Minimum number of tabs"
+  },
+  "autoSaveWhenCloseMinTabsCaptionLabel": {
+    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
+  },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Зберігати сесію при виході з браузера"
   },
@@ -492,7 +498,7 @@
     "message": "Зберегти групу вкладок"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups."
+    "message": "Зберегти та відновити стан груп вкладок."
   },
   "tstDelayCaptionLabel": {
     "message": "Для відновлення стану дерева та відкриття вкладки потрібен певний час. Збільште це значення, якщо дерево не відновлюється коректно."

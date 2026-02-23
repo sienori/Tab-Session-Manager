@@ -365,6 +365,12 @@
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Bu yöntemle kaydedilecek en fazla oturum sayısını yazın."
   },
+  "autoSaveWhenCloseMinTabsLabel": {
+    "message": "Minimum number of tabs"
+  },
+  "autoSaveWhenCloseMinTabsCaptionLabel": {
+    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
+  },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Tarayıcıdan çıkılırken oturum kaydedilsin"
   },
@@ -492,7 +498,7 @@
     "message": "Sekme gruplarını kaydet"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups."
+    "message": "Sekme gruplarının durumunu kaydeder ve geri yükler."
   },
   "tstDelayCaptionLabel": {
     "message": "Ağacın durumunu geri yüklemek için sekmeyi açarken bekleme süresi gereklidir. Ağaç düzgün şekilde geri yüklenmezse bu değeri artırın."
