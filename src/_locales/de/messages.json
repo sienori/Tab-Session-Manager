@@ -365,6 +365,12 @@
   "autoSaveWhenCloseCaptionLabel": {
     "message": "Höchstwert der auf diesem Weg gespeicherten Sitzungen."
   },
+  "autoSaveWhenCloseMinTabsLabel": {
+    "message": "Minimum number of tabs"
+  },
+  "autoSaveWhenCloseMinTabsCaptionLabel": {
+    "message": "If the number of tabs is fewer, the window is not saved."
+  },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Sitzung speichern, falls der Browser geschlossen wird"
   },
