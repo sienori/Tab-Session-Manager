@@ -365,6 +365,12 @@
   "autoSaveWhenCloseCaptionLabel": {
     "message": "الحد الأقصى لعدد الجلسات المحفوظة (بهذه الطريقة)."
   },
+  "autoSaveWhenCloseMinTabsLabel": {
+    "message": "Minimum number of tabs"
+  },
+  "autoSaveWhenCloseMinTabsCaptionLabel": {
+    "message": "If the number of tabs is fewer, the window is not saved."
+  },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "حفظ الجلسة عند الخروج من المتصفح"
   },
