@@ -369,7 +369,7 @@
     "message": "Minimum number of tabs"
   },
   "autoSaveWhenCloseMinTabsCaptionLabel": {
-    "message": "If the number of tabs is fewer, the window is not saved."
+    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "ブラウザ終了時にセッションを保存する"
