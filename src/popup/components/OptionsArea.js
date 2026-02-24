@@ -152,7 +152,11 @@ export default class OptionsArea extends Component {
               value={this.props.sortValue}
               title={browser.i18n.getMessage("sortLabel")}
             >
-              <option value="newest">{browser.i18n.getMessage("newestLabel")}</option>
+              
+		<option value="modifiedNewest">{browser.i18n.getMessage("modifiedNewestLabel")}</option>
+		<option value="modifiedOldest">{browser.i18n.getMessage("modifiedOldestLabel")}</option>
+
+		<option value="newest">{browser.i18n.getMessage("newestLabel")}</option>
               <option value="oldest">{browser.i18n.getMessage("oldestLabel")}</option>
               <option value="aToZ">{browser.i18n.getMessage("aToZLabel")}</option>
               <option value="zToA">{browser.i18n.getMessage("zToALabel")}</option>
