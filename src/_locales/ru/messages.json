@@ -369,7 +369,7 @@
     "message": "Минимальное количество вкладок"
   },
   "autoSaveWhenCloseMinTabsCaptionLabel": {
-    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
+    "message": "Минимальное количество вкладок, при котором для закрываемого окна будет автоматически сохраняться сессия."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Сохранять сессию при выходе из браузера"
