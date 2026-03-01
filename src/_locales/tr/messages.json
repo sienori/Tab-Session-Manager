@@ -366,10 +366,10 @@
     "message": "Bu yöntemle kaydedilecek en fazla oturum sayısını yazın."
   },
   "autoSaveWhenCloseMinTabsLabel": {
-    "message": "Minimum number of tabs"
+    "message": "En az sekme sayısı"
   },
   "autoSaveWhenCloseMinTabsCaptionLabel": {
-    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
+    "message": "Bir pencere kapatıldığında, yalnızca en az bu kadar sekmesi varsa otomatik olarak kaydedilir."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Tarayıcıdan çıkılırken oturum kaydedilsin"
