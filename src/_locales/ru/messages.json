@@ -366,7 +366,7 @@
     "message": "Максимальное количество сессий, сохранённых таким способом (при появлении новой сессии, самая старая удаляется)."
   },
   "autoSaveWhenCloseMinTabsLabel": {
-    "message": "Minimum number of tabs"
+    "message": "Минимальное количество вкладок"
   },
   "autoSaveWhenCloseMinTabsCaptionLabel": {
     "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
