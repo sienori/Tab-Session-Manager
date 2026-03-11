@@ -17,14 +17,18 @@ export default class SignInButton extends Component {
     const isSucceeded = await browser.runtime.sendMessage({
       message: "signInGoogle"
     });
-    if (isSucceeded) this.setState({ shouldSignIn: !this.state.shouldSignIn });
+    if (isSucceeded) {
+      const response = await browser.storage.local.get("Settings");
+      const signedInEmail = response.Settings?.signedInEmail || "";
+      this.setState({ shouldSignIn: false, signedInEmail });
+    }
   };
 
   handleSignOutClick = async () => {
     const isSucceeded = await browser.runtime.sendMessage({
       message: "signOutGoogle"
     });
-    if (isSucceeded) this.setState({ shouldSignIn: !this.state.shouldSignIn });
+    if (isSucceeded) this.setState({ shouldSignIn: true, signedInEmail: "" });
   };
 
   render() {

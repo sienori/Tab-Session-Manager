@@ -11,12 +11,14 @@ export const signInGoogle = async () => {
     const authCode = await getAuthCode();
     const { accessToken, expiresIn, refreshToken } = await getRefreshTokens(authCode);
     const email = await getEmail(accessToken);
-    setSettings("signedInEmail", email);
-    setSettings("accessToken", accessToken);
-    setSettings("refreshToken", refreshToken);
-    setTokenExpiration(expiresIn);
-    setSettings("lastSyncTime", 0);
-    setSettings("removedQueue", []);
+    await Promise.all([
+      setSettings("signedInEmail", email),
+      setSettings("accessToken", accessToken),
+      setSettings("refreshToken", refreshToken),
+      setTokenExpiration(expiresIn),
+      setSettings("lastSyncTime", 0),
+      setSettings("removedQueue", [])
+    ]);
     return true;
   } catch {
     return false;
@@ -30,11 +32,13 @@ export const signOutGoogle = async () => {
     const refreshToken = getSettings("refreshToken");
     revokeToken(accessToken);
     revokeToken(refreshToken);
-    setSettings("signedInEmail", "");
-    setSettings("accessToken", "");
-    setSettings("refreshToken", "");
-    setSettings("lastSyncTime", 0);
-    setSettings("removedQueue", []);
+    await Promise.all([
+      setSettings("signedInEmail", ""),
+      setSettings("accessToken", ""),
+      setSettings("refreshToken", ""),
+      setSettings("lastSyncTime", 0),
+      setSettings("removedQueue", [])
+    ]);
     return true;
   } catch {
     return false;
@@ -144,7 +148,7 @@ const getEmail = async accessToken => {
 
 const setTokenExpiration = async expirationSec => {
   const currentTimeMs = Date.now();
-  setSettings("tokenExpiration", currentTimeMs + expirationSec * 1000);
+  await setSettings("tokenExpiration", currentTimeMs + expirationSec * 1000);
 };
 
 export const refreshAccessToken = async (shouldShowLogin = true) => {
@@ -157,8 +161,10 @@ export const refreshAccessToken = async (shouldShowLogin = true) => {
 
   try {
     const { accessToken, expiresIn } = await getAccessToken(refreshToken);
-    setSettings("accessToken", accessToken);
-    setTokenExpiration(expiresIn);
+    await Promise.all([
+      setSettings("accessToken", accessToken),
+      setTokenExpiration(expiresIn)
+    ]);
     return accessToken;
   } catch (e) {
     const currentEmail = getSettings("signedInEmail");
@@ -167,10 +173,12 @@ export const refreshAccessToken = async (shouldShowLogin = true) => {
     });
     const { accessToken, expiresIn, refreshToken } = await getRefreshTokens(authCode);
     const email = await getEmail(accessToken);
-    setSettings("signedInEmail", email);
-    setSettings("accessToken", accessToken);
-    setSettings("refreshToken", refreshToken);
-    setTokenExpiration(expiresIn);
+    await Promise.all([
+      setSettings("signedInEmail", email),
+      setSettings("accessToken", accessToken),
+      setSettings("refreshToken", refreshToken),
+      setTokenExpiration(expiresIn)
+    ]);
     return accessToken;
   }
 };
