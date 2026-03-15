@@ -9,11 +9,16 @@ import "../styles/OptionsPage.scss";
 
 const setupTheme = async () => {
   await initSettings();
-  document.body.dataset.theme = getSettings("theme");
+  document.body.classList.add(getSettings("theme") + "-theme");
 
   browser.storage.local.onChanged.addListener(changes => {
-    if (changes.Settings.newValue.theme === changes.Settings.oldValue.theme) return;
-    document.body.dataset.theme = changes.Settings.newValue.theme;
+    if (changes.Settings.newValue.theme === changes.Settings.oldValue.theme)
+      return;
+
+    document.body.classList.replace(
+      changes.Settings.oldValue.theme + "-theme",
+      changes.Settings.newValue.theme + "-theme"
+    );
   });
 };
 

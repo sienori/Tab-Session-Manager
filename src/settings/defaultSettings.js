@@ -387,7 +387,7 @@ export default [
         title: "themeLabel",
         captions: ["themeCaptionLabel"],
         type: "select",
-        default: "light",
+        default: 'system',
         options: [
           {
             name: "lightLabel",
@@ -396,6 +396,10 @@ export default [
           {
             name: "darkLabel",
             value: "dark"
+          },
+          {
+            name: "systemLabel",
+            value: "system"
           }
         ]
       },

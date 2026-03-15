@@ -1,3 +1,69 @@
+.light-theme {
+  --main-text: #0c0c0d;
+  --sub-text: #737373;
+  --line: #ededf0;
+  --line2: #dfdfdf;
+  --button: #d7d7db;
+  --highlight: #36b2b2;
+  --main-bg: #ffffff;
+  --highlight-bg: #90dede;
+  --confirm: #ff4f4f;
+  --error: #d70022;
+  --warn: #ff8f00;
+  --success: #058b00;
+  --info: #0a84ff;
+}
+
+.dark-theme {
+  --main-text: #e6e6e6;
+  --sub-text: #aaaaaa;
+  --line: #454545;
+  --line2: #555;
+  --button: #929292;
+  --highlight: #36b2b2;
+  --main-bg: #181818;
+  --highlight-bg: #305656;
+  --confirm: #ed5f5f;
+  --error: #ca1532;
+  --warn: #ee8e12;
+  --success: #2a9c26;
+  --info: #1471d0;
+}
+
+.system-theme {
+  --main-text: #0c0c0d;
+  --sub-text: #737373;
+  --line: #ededf0;
+  --line2: #dfdfdf;
+  --button: #d7d7db;
+  --highlight: #36b2b2;
+  --main-bg: #ffffff;
+  --highlight-bg: #90dede;
+  --confirm: #ff4f4f;
+  --error: #d70022;
+  --warn: #ff8f00;
+  --success: #058b00;
+  --info: #0a84ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .system-theme {
+    --main-text: #e6e6e6;
+    --sub-text: #aaaaaa;
+    --line: #454545;
+    --line2: #555;
+    --button: #929292;
+    --highlight: #36b2b2;
+    --main-bg: #181818;
+    --highlight-bg: #305656;
+    --confirm: #ed5f5f;
+    --error: #ca1532;
+    --warn: #ee8e12;
+    --success: #2a9c26;
+    --info: #1471d0;
+  }
+}
+
 html {
   body {
     margin: 0;
@@ -26,36 +92,6 @@ html {
     }
     :focus {
       outline-style: none;
-    }
-
-    --main-text: #0c0c0d;
-    --sub-text: #737373;
-    --line: #ededf0;
-    --line2: #dfdfdf;
-    --button: #d7d7db;
-    --highlight: #36b2b2;
-    --main-bg: #ffffff;
-    --highlight-bg: #90dede;
-    --confirm: #ff4f4f;
-    --error: #d70022;
-    --warn: #ff8f00;
-    --success: #058b00;
-    --info: #0a84ff;
-
-    &[data-theme="dark"] {
-      --main-text: #e6e6e6;
-      --sub-text: #aaaaaa;
-      --line: #454545;
-      --line2: #555;
-      --button: #929292;
-      --highlight: #36b2b2;
-      --main-bg: #181818;
-      --highlight-bg: #305656;
-      --confirm: #ed5f5f;
-      --error: #ca1532;
-      --warn: #ee8e12;
-      --success: #2a9c26;
-      --info: #1471d0;
     }
   }
 }

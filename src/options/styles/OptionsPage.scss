@@ -1,16 +1,38 @@
-body {
-  background-color: var(--main-bg);
-
+.light-theme {
   --main-text: #0c0c0d;
   --sub-text: #737373;
   --line: #ededf0;
   --button: #d7d7db;
-  --highlight: #36b2b2;
+  --highlight: #5595ff;
   --main-bg: #ffffff;
   --sub-bg: #ffffff;
   --new: #ff4f4f;
+}
 
-  &[data-theme="dark"] {
+.dark-theme {
+  --main-text: #e6e6e6;
+  --sub-text: #aaaaaa;
+  --line: #373737;
+  --button: #929292;
+  --highlight: #5595ff;
+  --main-bg: #181818;
+  --sub-bg: #101010;
+  --new: #ed5f5f;
+}
+
+.system-theme {
+  --main-text: #0c0c0d;
+  --sub-text: #737373;
+  --line: #ededf0;
+  --button: #d7d7db;
+  --highlight: #5595ff;
+  --main-bg: #ffffff;
+  --sub-bg: #ffffff;
+  --new: #ff4f4f;
+}
+
+@media (prefers-color-scheme: dark) {
+  .system-theme {
     --main-text: #e6e6e6;
     --sub-text: #aaaaaa;
     --line: #454545;
@@ -20,6 +42,10 @@ body {
     --sub-bg: #101010;
     --new: #ed5f5f;
   }
+}
+
+body {
+  background-color: var(--main-bg);
 }
 
 .optionsPage {

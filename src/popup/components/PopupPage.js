@@ -112,7 +112,8 @@ export default class PopupPage extends Component {
       document.body.style.height = "100%";
     }
 
-    document.body.dataset.theme = getSettings("theme");
+    this.themeClass = getSettings("theme") + "-theme";
+    document.body.classList.add(this.themeClass)
 
     this.setState({
       sortValue: getSettings("sortValue") || "newest",
