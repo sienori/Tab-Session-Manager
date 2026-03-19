@@ -3,7 +3,8 @@ import { v4 as uuidv4 } from "uuid";
 import log from "loglevel";
 import { openSession } from "./open.js";
 import { getSessionsByTag } from "./tag.js";
-import { loadCurrentSession, saveSession, removeSession } from "./save.js";
+import removeSession from "./removeSession";
+import { loadCurrentSession, saveSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
 import { getTrackingInfo, updateTrackingSession } from "./track.js";
 import { init } from "./background.js";
@@ -126,7 +127,7 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
   if (removedWindow == undefined) return;
 
   const tabsNumber = Object.keys(removedWindow).length;
-  const minTabs = getSettings("autoSaveWhenCloseMinTabs")
+  const minTabs = getSettings("autoSaveWhenCloseMinTabs");
   if (tabsNumber < minTabs) return;
 
   if (getSettings("useTabTitleforAutoSave")) {

@@ -15,11 +15,10 @@ import Sessions from "./sessions";
 import { replacePage } from "./replace";
 import importSessions from "./import";
 import { backupSessions, resetLastBackupTime } from "./backup";
+import removeSession from "./removeSession";
 import {
   loadCurrentSession,
-  saveCurrentSession,
   saveSession,
-  removeSession,
   deleteAllSessions,
   updateSession,
   renameSession,
@@ -28,6 +27,7 @@ import {
 import getSessions from "./getSessions";
 import { openSession } from "./open";
 import { addTag, removeTag, applyDeviceName } from "./tag";
+import saveCurrentSessionWithTracking from "./saveCurrentSessionWithTracking";
 import { initSettings, handleSettingsChange, getSettings } from "src/settings/settings";
 import exportSessions, { handleDownloadsChanged } from "./export";
 import onInstalledListener from "./onInstalledListener";
@@ -40,7 +40,12 @@ import { updateLogLevel, overWriteLogLevel } from "../common/log";
 import { getsearchInfo } from "./search";
 import { recordChange, undo, redo, updateUndoStatus } from "./undo";
 import { compressAllSessions } from "./compressAllSessions";
-import { startTracking, endTrackingByWindowDelete, updateTrackingStatus } from "./track";
+import {
+  startTracking,
+  endAllTracking,
+  endTrackingByWindowDelete,
+  updateTrackingStatus
+} from "./track";
 
 const logDir = "background/background";
 
@@ -80,7 +85,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
     case "saveCurrentSession":
       const name = request.name;
       const property = request.property;
-      const afterSession = await saveCurrentSession(name, [], property);
+      const afterSession = await saveCurrentSessionWithTracking(name, [], property);
       recordChange(null, afterSession);
       return afterSession;
     case "open":
@@ -111,7 +116,8 @@ const onMessageListener = async (request, sender, sendResponse) => {
       exportSessions(request.id);
       break;
     case "deleteAllSessions":
-      deleteAllSessions();
+      await deleteAllSessions();
+      await endAllTracking();
       break;
     case "getSessions":
       const sessions = await getSessions(request.id, request.needKeys);

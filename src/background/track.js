@@ -158,6 +158,12 @@ export const endTrackingBySessionId = async sessionId => {
   await finalizeEndTracking();
 };
 
+export const endAllTracking = async () => {
+  let { isTracking } = await getTrackingInfo();
+  await setTrackingInfo([], isTracking);
+  await finalizeEndTracking();
+};
+
 export const endTrackingByWindowDelete = async (sessionId, windowId) => {
   let { trackingWindows, isTracking } = await getTrackingInfo();
   trackingWindows = trackingWindows.filter(
