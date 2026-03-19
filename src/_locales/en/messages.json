@@ -335,6 +335,12 @@
   "shouldTrackNewWindowCaptionLabel": {
     "message": "When a new window is opened within a tracking session, include it in the tracking."
   },
+  "autoTrackCurrentWindowSessionLabel": {
+    "message": "Automatically track when current window saved"
+  },
+  "autoTrackCurrentWindowSessionCaptionLabel": {
+    "message": "When a new session saved with only the current window, and it is not tracked yet, automatically enable tracking."
+  },
   "ifAutoSaveLabel": {
     "message": "Save the session regularly"
   },

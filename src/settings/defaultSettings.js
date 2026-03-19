@@ -254,6 +254,13 @@ export default [
         captions: ["shouldTrackNewWindowCaptionLabel"],
         type: "checkbox",
         default: true
+      },
+      {
+        id: "autoTrackCurrentWindowSession",
+        title: "autoTrackCurrentWindowSessionLabel",
+        captions: ["autoTrackCurrentWindowSessionCaptionLabel"],
+        type: "checkbox",
+        default: false
       }
     ]
   },

@@ -18,7 +18,6 @@ import { backupSessions, resetLastBackupTime } from "./backup";
 import removeSession from "./removeSession";
 import {
   loadCurrentSession,
-  saveCurrentSession,
   saveSession,
   deleteAllSessions,
   updateSession,
@@ -28,6 +27,7 @@ import {
 import getSessions from "./getSessions";
 import { openSession } from "./open";
 import { addTag, removeTag, applyDeviceName } from "./tag";
+import saveCurrentSessionWithTracking from "./saveCurrentSessionWithTracking";
 import { initSettings, handleSettingsChange, getSettings } from "src/settings/settings";
 import exportSessions, { handleDownloadsChanged } from "./export";
 import onInstalledListener from "./onInstalledListener";
@@ -85,7 +85,7 @@ const onMessageListener = async (request, sender, sendResponse) => {
     case "saveCurrentSession":
       const name = request.name;
       const property = request.property;
-      const afterSession = await saveCurrentSession(name, [], property);
+      const afterSession = await saveCurrentSessionWithTracking(name, [], property);
       recordChange(null, afterSession);
       return afterSession;
     case "open":

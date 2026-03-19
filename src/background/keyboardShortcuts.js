@@ -2,7 +2,7 @@ import browser from "webextension-polyfill";
 import browserInfo from "browser-info";
 import log from "loglevel";
 import { getSettings, setSettings } from "src/settings/settings";
-import { saveCurrentSession } from "./save";
+import saveCurrentSessionWithTracking from "./saveCurrentSessionWithTracking";
 import exportSessions from "./export";
 import getShortcut from "src/common/getShortcut";
 import { showDoneBadge } from "./setBadge";
@@ -52,13 +52,13 @@ export const onCommandListener = async command => {
   switch (command) {
     case "saveAllWindow": {
       const name = await getCurrentTabName();
-      saveCurrentSession(name, [], "saveAllWindows");
+      saveCurrentSessionWithTracking(name, [], "saveAllWindows");
       showDoneBadge();
       break;
     }
     case "saveCurrentWindow": {
       const name = await getCurrentTabName();
-      saveCurrentSession(name, [], "saveOnlyCurrentWindow");
+      saveCurrentSessionWithTracking(name, [], "saveOnlyCurrentWindow");
       showDoneBadge();
       break;
     }
