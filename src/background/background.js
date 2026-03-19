@@ -15,11 +15,11 @@ import Sessions from "./sessions";
 import { replacePage } from "./replace";
 import importSessions from "./import";
 import { backupSessions, resetLastBackupTime } from "./backup";
+import removeSession from "./removeSession";
 import {
   loadCurrentSession,
   saveCurrentSession,
   saveSession,
-  removeSession,
   deleteAllSessions,
   updateSession,
   renameSession,
@@ -40,7 +40,12 @@ import { updateLogLevel, overWriteLogLevel } from "../common/log";
 import { getsearchInfo } from "./search";
 import { recordChange, undo, redo, updateUndoStatus } from "./undo";
 import { compressAllSessions } from "./compressAllSessions";
-import { startTracking, endTrackingByWindowDelete, updateTrackingStatus } from "./track";
+import {
+  startTracking,
+  endAllTracking,
+  endTrackingByWindowDelete,
+  updateTrackingStatus
+} from "./track";
 
 const logDir = "background/background";
 
@@ -111,7 +116,8 @@ const onMessageListener = async (request, sender, sendResponse) => {
       exportSessions(request.id);
       break;
     case "deleteAllSessions":
-      deleteAllSessions();
+      await deleteAllSessions();
+      await endAllTracking();
       break;
     case "getSessions":
       const sessions = await getSessions(request.id, request.needKeys);

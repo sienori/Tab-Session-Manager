@@ -1,6 +1,7 @@
 import browser from "webextension-polyfill";
 import log from "loglevel";
-import { updateSession, removeSession } from "./save";
+import removeSession from "./removeSession";
+import { updateSession } from "./save";
 
 const logDir = "background/undo";
 
