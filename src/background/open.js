@@ -91,7 +91,7 @@ export async function openSession(session, property = "openInNewWindow") {
           break;
       }
     } else {
-      openInNewWindow();
+      await openInNewWindow();
     }
   }
 }
