@@ -366,10 +366,10 @@
     "message": "Maksymalna liczba zapisanych (w ten sposób) sesji."
   },
   "autoSaveWhenCloseMinTabsLabel": {
-    "message": "Minimum number of tabs"
+    "message": "Minimalna liczba kart"
   },
   "autoSaveWhenCloseMinTabsCaptionLabel": {
-    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
+    "message": "Sesja zostanie zapisana jedynie wtedy, kiedy będzie zawierała przynajmniej tyle kart."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Zapisz sesję podczas zamykania przeglądarki"
@@ -498,7 +498,7 @@
     "message": "Zapisz grupy kart"
   },
   "saveTabGroupsCaptionLabel": {
-    "message": "Save and restore the state of tab groups."
+    "message": "Zapisz i przywróć stan grup kart."
   },
   "tstDelayCaptionLabel": {
     "message": "Aby przywrócić stan drzewa, wymagany jest czas oczekiwania na otwarcie karty. Zwiększ tą wartość, jeśli drzewo nie jest przywracane prawidłowo."
