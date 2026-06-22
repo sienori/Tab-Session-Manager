@@ -49,7 +49,7 @@ export default [
             title: "tstDelayLabel",
             captions: ["tstDelayCaptionLabel"],
             type: "number",
-            min: 0,
+            min: -1,
             placeholder: 150,
             default: 150
           }

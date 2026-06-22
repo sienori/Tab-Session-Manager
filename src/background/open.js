@@ -184,38 +184,59 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
     return a.index - b.index;
   });
 
+  let openDelay = -1;
+  if (getSettings("ifSupportTst") && isEnabledOpenerTabId) {
+    openDelay = getSettings("tstDelay");
+  }
+
   const firstTabId = currentWindow.tabs[0].id;
   if (currentWindow.tabs[0].pinned) {
     sortedTabs.forEach(tab => tab.index++);
   }
+
+  const existingTabCount = currentWindow.tabs.length;
   let openedTabs = [];
-  let tabNumber = 0;
   for (let tab of sortedTabs) {
     const openedTab = openTab(tab, currentWindow, isAddtoCurrentWindow)
-      .then(() => {
-        tabNumber++;
-        if (tabNumber == 1 && !isAddtoCurrentWindow) browser.tabs.remove(firstTabId);
-        if (tabNumber == sortedTabs.length) replacePage(currentWindow.id);
-      })
       .catch(() => {});
     openedTabs.push(openedTab);
-    if (getSettings("ifSupportTst")) await openedTab;
+    if (openDelay >= 0) await openedTab;
+  }
+
+  await Promise.all(openedTabs);
+  if (!isAddtoCurrentWindow) browser.tabs.remove(firstTabId);
+  replacePage(currentWindow.id);
+
+  if (getSettings("ifSupportTst") && isEnabledOpenerTabId) {
+    const offset = isAddtoCurrentWindow ? existingTabCount : 0;
+    await restoreTabHierarchy(sortedTabs, offset);
   }
 
   if (isEnabledTabGroups) {
-    await Promise.all(openedTabs);
     createTabGroups(currentWindow.id, sortedTabs, session.tabGroups || []);
   }
 
   if (isEnabledWindowTitle) {
-    await Promise.all(openedTabs);
     setWindowTitle(session, win, currentWindow);
   }
 
   if (isTrackingSession(session.tag)) {
-    await Promise.all(openedTabs);
     startTracking(session.id, win, currentWindow.id);
   }
+}
+
+async function restoreTabHierarchy(tabs, offset = 0) {
+  log.log(logDir, "restoreTabHierarchy()", tabs, offset);
+
+  const validTabOrdering = tabs.filter(tab => tabList?.[tab.id] !== undefined);
+
+  //ensure tabs are not jumbled before restoring hierarchy
+  const validTabIds = validTabOrdering.map(tab => tabList[tab.id]);
+  await browser.tabs.move(validTabIds, { index: offset });
+
+  const tasks = validTabOrdering
+    .map(tab => browser.tabs.update(tabList[tab.id], { openerTabId: tabList[tab.openerTabId] ?? -1 }));
+  await Promise.all(tasks);
 }
 
 let tabList = {};
@@ -249,7 +270,6 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
     //Tree Style Tab
     let openDelay = 0;
     if (getSettings("ifSupportTst") && isEnabledOpenerTabId) {
-      createOption.openerTabId = tabList[tab.openerTabId];
       openDelay = getSettings("tstDelay");
     }
 
