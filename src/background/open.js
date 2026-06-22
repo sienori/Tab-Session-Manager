@@ -193,6 +193,8 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   if (currentWindow.tabs[0].pinned) {
     sortedTabs.forEach(tab => tab.index++);
   }
+
+  const existingTabCount = currentWindow.tabs.length;
   let openedTabs = [];
   for (let tab of sortedTabs) {
     const openedTab = openTab(tab, currentWindow, isAddtoCurrentWindow)
@@ -200,12 +202,14 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
     openedTabs.push(openedTab);
     if (openDelay >= 0) await openedTab;
   }
+
   await Promise.all(openedTabs);
   if (!isAddtoCurrentWindow) browser.tabs.remove(firstTabId);
   replacePage(currentWindow.id);
 
   if (getSettings("ifSupportTst") && isEnabledOpenerTabId) {
-    await restoreTabHierarchy(sortedTabs);
+    const offset = isAddtoCurrentWindow ? existingTabCount : 0;
+    await restoreTabHierarchy(sortedTabs, offset);
   }
 
   if (isEnabledTabGroups) {
@@ -221,14 +225,14 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   }
 }
 
-async function restoreTabHierarchy(tabs) {
-  log.log(logDir, "restoreTabHierarchy()", tabs);
+async function restoreTabHierarchy(tabs, offset = 0) {
+  log.log(logDir, "restoreTabHierarchy()", tabs, offset);
 
   const validTabOrdering = tabs.filter(tab => tabList?.[tab.id] !== undefined);
 
   //ensure tabs are not jumbled before restoring hierarchy
   const validTabIds = validTabOrdering.map(tab => tabList[tab.id]);
-  await browser.tabs.move(validTabIds, { index: 0 });
+  await browser.tabs.move(validTabIds, { index: offset });
 
   const tasks = validTabOrdering
     .map(tab => browser.tabs.update(tabList[tab.id], { openerTabId: tabList[tab.openerTabId] ?? -1 }));
