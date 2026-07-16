@@ -86,6 +86,31 @@ export async function getSessionsByTag(tag, needKeys = null) {
   return sessions;
 }
 
+export async function getLatestSessionByTag(tag) {
+  log.log(logDir, "getLatestSessionByTag()", tag);
+  const newestSort = (a, b) => {
+    return moment(b.date).unix() - moment(a.date).unix();
+  };
+  const isIncludesTag = (element, index, array) => {
+    return element.tag.includes(tag);
+  };
+
+  // Get all session keys with the necessary fields
+  const needKeys = ["id", "tag", "date"];
+  let sessionsKeyList = await Sessions.getAll(needKeys).catch(() => []);
+
+  sessionsKeyList = sessionsKeyList.filter(isIncludesTag);
+  sessionsKeyList.sort(newestSort);
+
+  if (sessionsKeyList.length === 0) return;
+  const latestSession = sessionsKeyList[0];
+
+  // Fetch the full session data for the latest session
+  let session = await Sessions.get(latestSession.id).catch(() => {});
+
+  return session;
+}
+
 export async function applyDeviceName() {
   const shouldSaveDeviceName = getSettings("shouldSaveDeviceName");
   const deviceName = getSettings("deviceName");

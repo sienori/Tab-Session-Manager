@@ -2,7 +2,7 @@ import browser from "webextension-polyfill";
 import { v4 as uuidv4 } from "uuid";
 import log from "loglevel";
 import { openSession } from "./open.js";
-import { getSessionsByTag } from "./tag.js";
+import { getSessionsByTag, getLatestSessionByTag } from "./tag.js";
 import { loadCurrentSession, saveSession, removeSession } from "./save.js";
 import { getSettings } from "src/settings/settings";
 import { getTrackingInfo, updateTrackingSession } from "./track.js";
@@ -60,10 +60,10 @@ const updateTemp = async () => {
   try {
     const name = await getCurrentTabName();
     let session = await loadCurrentSession(name, ["temp"], "default");
-    const tempSessions = await getSessionsByTag("temp");
+    const tempSession = await getLatestSessionByTag("temp");
 
     //現在のセッションをtempとして保存
-    if (tempSessions[0]) session.id = tempSessions[0].id;
+    if (tempSession) session.id = tempSession.id;
     await saveSession(session, false);
 
     const { isTracking } = await getTrackingInfo();
@@ -112,10 +112,10 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
   if (!getSettings("ifAutoSaveWhenClose")) return;
   log.info(logDir, "autoSaveWhenWindowClose()", removedWindowId);
 
-  const tempSessions = await getSessionsByTag("temp");
-  if (!tempSessions[0]) return;
+  const tempSession = await getLatestSessionByTag("temp");
+  if (!tempSession) return;
 
-  let session = tempSessions[0];
+  let session = tempSession;
   for (const windowId in session.windows) {
     if (windowId != removedWindowId) {
       delete session.windows[windowId];
@@ -148,11 +148,11 @@ export const autoSaveWhenWindowClose = async removedWindowId => {
 };
 
 export const autoSaveWhenExitBrowser = async () => {
-  const tempSessions = await getSessionsByTag("temp");
-  if (!tempSessions[0]) return;
+  const tempSession = await getLatestSessionByTag("temp");
+  if (!tempSession) return;
   log.info(logDir, "autoSaveWhenExitBrowser()");
 
-  let session = tempSessions[0];
+  let session = tempSession;
   if (!getSettings("useTabTitleforAutoSave"))
     session.name = browser.i18n.getMessage("browserExitSessionName");
   session.tag = ["browserExit"];
@@ -172,10 +172,10 @@ export const openLastSession = async () => {
   log.info(logDir, "openLastSession()");
 
   const currentWindows = await browser.windows.getAll();
-  const browserExitSessions = await getSessionsByTag("browserExit");
-  if (!browserExitSessions[0]) return;
+  const browserExitSession = await getLatestSessionByTag("browserExit");
+  if (!browserExitSession) return;
 
-  await openSession(browserExitSessions[0], "openInNewWindow");
+  await openSession(browserExitSession, "openInNewWindow");
 
   for (const window of currentWindows) {
     await browser.windows.remove(window.id);
