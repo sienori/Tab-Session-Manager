@@ -20,22 +20,36 @@ export default async () => {
 
 const addNewValues = async () => {
   log.log(logDir, "addNewValues()");
-  const sessions = await Sessions.getAll().catch(() => {});
-  for (let session of sessions) {
+
+  // Get all session keys with the necessary fields
+  const needKeys = ["id", "date", "windowsNumber", "lastEditedTime"];
+  const sessionKeyList = await Sessions.getAll(needKeys).catch(() => []);
+
+  if (!sessionKeyList || sessionKeyList.length === 0) return;
+
+  for (const sessionKey of sessionKeyList) {
     let shouldUpdate = false;
+
+    if (sessionKey.windowsNumber === undefined) shouldUpdate = true;
+    if (typeof sessionKey.date !== "number") shouldUpdate = true;
+    if (!sessionKey.lastEditedTime) shouldUpdate = true;
+
+    if (!shouldUpdate) continue;
+
+    // Fetch the full session data only if an update is needed
+    let session = await Sessions.get(sessionKey.id).catch(() => {});
+    if (!session) continue;
+
     if (session.windowsNumber === undefined) {
       session.windowsNumber = Object.keys(session.windows).length;
-      shouldUpdate = true;
     }
     if (typeof session.date !== "number") {
       session.date = moment(session.date).valueOf();
-      shouldUpdate = true;
     }
     if (!session.lastEditedTime) {
       session.lastEditedTime = session.date;
-      shouldUpdate = true;
     }
-    if (shouldUpdate) await updateSession(session, true, false);
+    await updateSession(session, true, false);
   }
 };
 
