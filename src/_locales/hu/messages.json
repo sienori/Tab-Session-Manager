@@ -608,6 +608,9 @@
   "darkLabel": {
     "message": "Sötét"
   },
+  "systemLabel": {
+    "message": "System"
+  },
   "otherLabel": {
     "message": "Egyéb"
   },
