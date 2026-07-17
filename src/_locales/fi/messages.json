@@ -608,6 +608,9 @@
   "darkLabel": {
     "message": "Tumma"
   },
+  "systemLabel": {
+    "message": "System"
+  },
   "otherLabel": {
     "message": "Muu"
   },
