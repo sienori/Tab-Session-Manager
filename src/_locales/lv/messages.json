@@ -608,6 +608,9 @@
   "darkLabel": {
     "message": "Tumša"
   },
+  "systemLabel": {
+    "message": "System"
+  },
   "otherLabel": {
     "message": "Other"
   },
