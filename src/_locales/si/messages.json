@@ -608,6 +608,9 @@
   "darkLabel": {
     "message": "අඳුරු"
   },
+  "systemLabel": {
+    "message": "System"
+  },
   "otherLabel": {
     "message": "වෙනත්"
   },
