@@ -608,6 +608,9 @@
   "darkLabel": {
     "message": "어두운 테마"
   },
+  "systemLabel": {
+    "message": "System"
+  },
   "otherLabel": {
     "message": "기타"
   },
