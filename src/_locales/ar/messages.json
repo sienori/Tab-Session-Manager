@@ -608,6 +608,9 @@
   "darkLabel": {
     "message": "داكن"
   },
+  "systemLabel": {
+    "message": "System"
+  },
   "otherLabel": {
     "message": "غير ذلك"
   },
