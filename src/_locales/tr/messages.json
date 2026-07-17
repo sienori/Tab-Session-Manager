@@ -608,6 +608,9 @@
   "darkLabel": {
     "message": "Koyu"
   },
+  "systemLabel": {
+    "message": "System"
+  },
   "otherLabel": {
     "message": "Diğer"
   },
