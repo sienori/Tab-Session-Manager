@@ -608,6 +608,9 @@
   "darkLabel": {
     "message": "Dunkel"
   },
+  "systemLabel": {
+    "message": "System"
+  },
   "otherLabel": {
     "message": "Anders"
   },
