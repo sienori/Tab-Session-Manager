@@ -608,6 +608,9 @@
   "darkLabel": {
     "message": "Σκούρο"
   },
+  "systemLabel": {
+    "message": "System"
+  },
   "otherLabel": {
     "message": "Άλλο"
   },
