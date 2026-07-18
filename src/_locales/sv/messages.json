@@ -366,10 +366,10 @@
     "message": "Maximalt antal sparade sessioner (på det här sättet)."
   },
   "autoSaveWhenCloseMinTabsLabel": {
-    "message": "Minimum number of tabs"
+    "message": "Minsta antal flikar"
   },
   "autoSaveWhenCloseMinTabsCaptionLabel": {
-    "message": "When a window is closed, it will only be saved automatically if it has at least this many tabs."
+    "message": "När ett fönster stängs sparas det endast automatiskt om det har minst så här många flikar."
   },
   "ifAutoSaveWhenExitBrowserLabel": {
     "message": "Spara sessionen när webbläsaren avslutas"
