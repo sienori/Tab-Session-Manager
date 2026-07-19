@@ -11,6 +11,17 @@
   "donateLabel": {
     "message": "Adományozz"
   },
+
+
+"modifiedNewestLabel": {
+  "message": "Legutóbb frissítve"
+},
+"modifiedOldestLabel": {
+  "message": "Legrégebb frissítve"
+},
+
+
+
   "openSessionListInTabLabel": {
     "message": "Munkamenet lista megnyitása a fülön"
   },

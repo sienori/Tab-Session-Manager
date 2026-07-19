@@ -53,6 +53,14 @@
   "oldestLabel": {
     "message": "Oldest"
   },
+
+"modifiedNewestLabel": {
+  "message": "Last updated (newest)"
+},
+"modifiedOldestLabel": {
+  "message": "Last updated (oldest)"
+},
+
   "aToZLabel": {
     "message": "A-Z"
   },
