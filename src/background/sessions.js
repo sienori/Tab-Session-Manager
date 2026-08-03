@@ -167,41 +167,65 @@ export default {
     });
   },
 
-  getAllWithStream: (sendResponse, needKeys, count) => {
+  getAllWithStream: async (sendResponse, needKeys, count) => {
     log.log(logDir, "getAllWithStream()", needKeys, count);
     const db = DB;
-    const transaction = db.transaction("sessions", "readonly");
-    const store = transaction.objectStore("sessions");
-    const request = store.openCursor();
+    const storeName = "sessions";
+    const hasNeedKeys = needKeys != null;
+    const keysLength = hasNeedKeys ? needKeys.length : 0;
 
-    let sessions = [];
+    let lastKey = null;
+    let isFinished = false;
 
-    request.onsuccess = e => {
-      const cursor = request.result;
-      if (cursor) {
-        let session = {};
-        if (needKeys == null) {
-          session = cursor.value;
-        } else {
-          for (let i of needKeys) {
-            session[i] = cursor.value[i];
+    try {
+      while (!isFinished) {
+        const rawBatch = await new Promise((resolve, reject) => {
+          const transaction = db.transaction(storeName, "readonly");
+          const store = transaction.objectStore(storeName);
+
+          const range = lastKey ? IDBKeyRange.lowerBound(lastKey, true) : null;
+          const request = store.getAll(range, count);
+
+          request.onsuccess = () => resolve(request.result);
+          request.onerror = e => reject(e);
+        });
+
+        if (!rawBatch || rawBatch.length === 0) {
+          log.log(logDir, "=>getAllWithStream()");
+          sendResponse([], true);
+          break;
+        }
+
+        let sessions = [];
+
+        if (hasNeedKeys) {
+          for (let item of rawBatch) {
+            let session = {};
+            for (let i = 0; i < keysLength; i++) {
+              const key = needKeys[i];
+              session[key] = item[key];
+            }
+
+            sessions.push(session);
           }
+        } else {
+          sessions = rawBatch;
         }
 
-        sessions.push(session);
-        if (sessions.length === count) {
-          sendResponse(sessions, false);
-          sessions = [];
+        const lastItem = sessions[sessions.length - 1];
+        lastKey = lastItem.id;
+
+        isFinished = sessions.length < count;
+
+        if (isFinished) {
+          log.log(logDir, "=>getAllWithStream()");
         }
-        cursor.continue();
-      } else {
-        log.log(logDir, "=>getAllWithStream()");
-        sendResponse(sessions, true);
+
+        sendResponse(sessions, isFinished);
       }
-    };
-    request.onerror = e => {
+    } catch (e) {
       log.error(logDir, "getAllWithStream()", e);
-    };
+    }
   },
 
   search: (index, key) => {
