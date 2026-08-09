@@ -1,0 +1,809 @@
+{
+  "extName": {
+    "message": "Tab Session Manager"
+  },
+  "extDescription": {
+    "message": "Uloží a obnoví stav okien a kariet. Podporuje aj automatické ukladanie."
+  },
+  "donateWithPaypalLabel": {
+    "message": "Prispieť cez PayPal"
+  },
+  "donateLabel": {
+    "message": "Prispieť"
+  },
+  "openSessionListInTabLabel": {
+    "message": "Otvoriť zoznam relácií na karte"
+  },
+  "saveLabel": {
+    "message": "Uložiť"
+  },
+  "initialNameValue": {
+    "message": "Uložiť aktuálnu reláciu"
+  },
+  "inputSessionNameLabel": {
+    "message": "Zadajte názov relácie"
+  },
+  "saveSessionLabel": {
+    "message": "Uložiť reláciu"
+  },
+  "saveAllWindowsLabel": {
+    "message": "Uložiť všetky okná"
+  },
+  "saveOnlyCurrentWindowLabel": {
+    "message": "Uložiť iba aktuálne okno"
+  },
+  "categoryFilterLabel": {
+    "message": "Filter kategórií"
+  },
+  "sortLabel": {
+    "message": "Zoradiť"
+  },
+  "displayAllLabel": {
+    "message": "Všetky"
+  },
+  "displayUserLabel": {
+    "message": "Uložené používateľom"
+  },
+  "displayAutoLabel": {
+    "message": "Automaticky uložené"
+  },
+  "newestLabel": {
+    "message": "Najnovšie"
+  },
+  "oldestLabel": {
+    "message": "Najstaršie"
+  },
+  "aToZLabel": {
+    "message": "A-Z"
+  },
+  "zToALabel": {
+    "message": "Z-A"
+  },
+  "tabsDesLabel": {
+    "message": "Najviac kariet"
+  },
+  "tabsAscLabel": {
+    "message": "Najmenej kariet"
+  },
+  "searchBarPlaceholder": {
+    "message": "Hľadať podľa názvu relácie alebo karty"
+  },
+  "search": {
+    "message": "Hľadať"
+  },
+  "clearSearch": {
+    "message": "Vymazať hľadanie"
+  },
+  "open": {
+    "message": "Otvoriť"
+  },
+  "remove": {
+    "message": "Odstrániť"
+  },
+  "removeConfirmLabel": {
+    "message": "Odstrániť túto reláciu?"
+  },
+  "sessionDeletedLabel": {
+    "message": "Relácia bola odstránená."
+  },
+  "sessionWindowDeletedLabel": {
+    "message": "Okno relácie bolo odstránené."
+  },
+  "sessionTabDeletedLabel": {
+    "message": "Karta relácie bola odstránená."
+  },
+  "restoreSessionLabel": {
+    "message": "Obnoviť"
+  },
+  "failedDeleteSessionLabel": {
+    "message": "Odstránenie relácie zlyhalo."
+  },
+  "failedDeleteSessionWindowLabel": {
+    "message": "Odstránenie okna relácie zlyhalo."
+  },
+  "failedDeleteSessionTabLabel": {
+    "message": "Odstránenie karty relácie zlyhalo."
+  },
+  "sessionSavedLabel": {
+    "message": "Relácia bola uložená."
+  },
+  "failedSaveSessionLabel": {
+    "message": "Uloženie relácie zlyhalo."
+  },
+  "cancelLabel": {
+    "message": "Zrušiť"
+  },
+  "undoLabel": {
+    "message": "Späť"
+  },
+  "redoLabel": {
+    "message": "Znova"
+  },
+  "addTagLabel": {
+    "message": "Pridať štítok"
+  },
+  "removeTagLabel": {
+    "message": "Odstrániť štítok"
+  },
+  "inputTagLabel": {
+    "message": "Zadajte názov štítka"
+  },
+  "detailLabel": {
+    "message": "Detail"
+  },
+  "windowLabel": {
+    "message": "Okno"
+  },
+  "windowsLabel": {
+    "message": "Okná"
+  },
+  "tabLabel": {
+    "message": "Karta"
+  },
+  "tabsLabel": {
+    "message": "Karty"
+  },
+  "noSessionLabel": {
+    "message": "Neexistuje žiadna relácia."
+  },
+  "letsSaveLabel": {
+    "message": "Uložte reláciu kliknutím na tlačidlo vpravo dole."
+  },
+  "noResultLabel": {
+    "message": "Žiadne zodpovedajúce výsledky."
+  },
+  "noSessionSelectedLabel": {
+    "message": "Nie je vybraná žiadna relácia."
+  },
+  "menuLabel": {
+    "message": "Ponuka"
+  },
+  "closeMenuLabel": {
+    "message": "Zavrieť ponuku"
+  },
+  "closeLabel": {
+    "message": "Zavrieť"
+  },
+  "renameLabel": {
+    "message": "Premenovať"
+  },
+  "renameSessionLabel": {
+    "message": "Premenovať reláciu"
+  },
+  "OpenSessionLabel": {
+    "message": "Otvoriť reláciu"
+  },
+  "openInNewWindowLabel": {
+    "message": "Otvoriť v novom okne"
+  },
+  "openInNewWindowCaptionLabel": {
+    "message": "Otvorí reláciu v novom okne."
+  },
+  "openInCurrentWindowLabel": {
+    "message": "Otvoriť v aktuálnom okne"
+  },
+  "openInCurrentWindowCaptionLabel": {
+    "message": "Otvorí reláciu v aktuálnom okne. Neaktívne okná a všetky karty budú zatvorené."
+  },
+  "addToCurrentWindowLabel": {
+    "message": "Pridať do aktuálneho okna"
+  },
+  "addToCurrentWindowCaptionLabel": {
+    "message": "Pridá karty do aktuálneho okna. Ak relácia obsahuje viacero okien, otvorí ju v novom okne."
+  },
+  "EditSessionLabel": {
+    "message": "Upraviť reláciu"
+  },
+  "replaceCurrentSessionLabel": {
+    "message": "Nahradiť aktuálnou reláciou"
+  },
+  "replaceCurrentWindowLabel": {
+    "message": "Nahradiť aktuálnym oknom"
+  },
+  "addCurrentWindowLabel": {
+    "message": "Pridať aktuálne okno"
+  },
+  "makeCopySessionLabel": {
+    "message": "Vytvoriť kópiu relácie"
+  },
+  "registerTrackingLabel": {
+    "message": "Sledovať zmeny okna"
+  },
+  "removeTrackingLabel": {
+    "message": "Zrušiť sledovanie"
+  },
+  "registerStartupLabel": {
+    "message": "Zaregistrovať pri spustení"
+  },
+  "removeStartupLabel": {
+    "message": "Odstrániť zo spustenia"
+  },
+  "editWindowLabel": {
+    "message": "Upraviť okno"
+  },
+  "addCurrentTabLabel": {
+    "message": "Pridať aktuálnu kartu"
+  },
+  "errorLabel": {
+    "message": "Chyba"
+  },
+  "indexedDBErrorLabel": {
+    "message": "IndexedDB nie je vo vašom prehliadači dostupná."
+  },
+  "reloadExtensionLabel": {
+    "message": "Znova načítať rozšírenie"
+  },
+  "howToSolveLabel": {
+    "message": "Ako vyriešiť tento problém"
+  },
+  "winCloseSessionName": {
+    "message": "Automatické uloženie - Okno zatvorené"
+  },
+  "browserExitSessionName": {
+    "message": "Automatické uloženie - Ukončenie prehliadača"
+  },
+  "regularSaveSessionName": {
+    "message": "Automatické uloženie - Pravidelne"
+  },
+  "winCloseSessionNameShort": {
+    "message": "Okno zatvorené"
+  },
+  "browserExitSessionNameShort": {
+    "message": "Ukončenie prehliadača"
+  },
+  "regularSaveSessionNameShort": {
+    "message": "Pravidelne"
+  },
+  "settingsLabel": {
+    "message": "Nastavenia"
+  },
+  "sessionsLabel": {
+    "message": "Relácie"
+  },
+  "shortcutsLabel": {
+    "message": "Skratky"
+  },
+  "informationLabel": {
+    "message": "Informácie"
+  },
+  "generalLabel": {
+    "message": "Všeobecné"
+  },
+  "autoSaveLabel": {
+    "message": "Automatické ukladanie"
+  },
+  "styleLabel": {
+    "message": "Štýl"
+  },
+  "ifOpenNewWindowLabel": {
+    "message": "Otvoriť reláciu v novom okne"
+  },
+  "ifOpenNewWindowCaptionLabel": {
+    "message": "Ak nie je zaškrtnuté, relácia prepíše aktuálne okno."
+  },
+  "ifLazyLoadingLabel": {
+    "message": "Postupné načítavanie kariet"
+  },
+  "ifLazyLoadingCaptionLabel": {
+    "message": "Pri otváraní relácie sa obsah jednotlivých stránok nenačíta, kým kartu nevyberiete.<br>Ak nie je zaškrtnuté, pri obnovení relácie výrazne narastie spotreba pamäte."
+  },
+  "isUseDiscardedLabel": {
+    "message": "Použiť vlastnosť \"discarded\" na postupné načítavanie"
+  },
+  "isUseDiscardedCaptionLabel": {
+    "message": "Zapnutie tejto voľby zlepší výkon pri otváraní kariet."
+  },
+  "isUseDiscardedCaption2Label": {
+    "message": "Favicon postupne načítavanej karty sa nezobrazí."
+  },
+  "isRestoreWindowPositionLabel": {
+    "message": "Obnoviť polohu okna"
+  },
+  "isRestoreWindowPositionCaptionLabel": {
+    "message": "Pri otváraní relácie obnoví polohu a veľkosť okna."
+  },
+  "startupLabel": {
+    "message": "Spustenie"
+  },
+  "startupBehaviorLabel": {
+    "message": "Správanie pri spustení prehliadača"
+  },
+  "openPreviousSessionLabel": {
+    "message": "Otvoriť predchádzajúcu reláciu"
+  },
+  "openPreviousSessionCaptionLabel": {
+    "message": "Otvorí reláciu, ktorá bola naposledy zatvorená."
+  },
+  "openStartupSessionLabel": {
+    "message": "Otvoriť štartovaciu reláciu"
+  },
+  "openStartupSessionCaptionLabel": {
+    "message": "Otvorí relácie zaregistrované na spustenie. Zaregistrovať ich môžete z ponuky v zozname relácií."
+  },
+  "DoNothingLabel": {
+    "message": "Nerobiť nič"
+  },
+  "trackingSessionLabel": {
+    "message": "Sledovaná relácia"
+  },
+  "trackingLabel": {
+    "message": "Sledovanie"
+  },
+  "shouldTrackNewWindowLabel": {
+    "message": "Sledovať novo otvorené okná"
+  },
+  "shouldTrackNewWindowCaptionLabel": {
+    "message": "Keď sa v rámci sledovanej relácie otvorí nové okno, zahrnie ho do sledovania."
+  },
+  "ifAutoSaveLabel": {
+    "message": "Pravidelne ukladať reláciu"
+  },
+  "ifAutoSaveCaptionLabel": {
+    "message": "Uloží reláciu každých X minút."
+  },
+  "autoSaveIntervalLabel": {
+    "message": "Interval (minúty)"
+  },
+  "autoSaveIntervalCaptionLabel": {
+    "message": "Minimálna hodnota 0,5"
+  },
+  "autoSaveLimitLabel": {
+    "message": "Maximálny počet uložených"
+  },
+  "autoSaveLimitCaptionLabel": {
+    "message": "Maximálny počet takto uložených relácií."
+  },
+  "ifAutoSaveWhenCloseLabel": {
+    "message": "Uložiť reláciu pri zatvorení okna"
+  },
+  "ifAutoSaveWhenCloseCaptionLabel": {
+    "message": "Uloží reláciu obsahujúcu iba jedno zatvorené okno."
+  },
+  "autoSaveWhenCloseLimitLabel": {
+    "message": "Maximálny počet uložených"
+  },
+  "autoSaveWhenCloseCaptionLabel": {
+    "message": "Maximálny počet takto uložených relácií."
+  },
+  "autoSaveWhenCloseMinTabsLabel": {
+    "message": "Minimálny počet kariet"
+  },
+  "autoSaveWhenCloseMinTabsCaptionLabel": {
+    "message": "Pri zatvorení okna sa automaticky uloží iba vtedy, ak obsahuje aspoň toľko kariet."
+  },
+  "ifAutoSaveWhenExitBrowserLabel": {
+    "message": "Uložiť reláciu pri ukončení prehliadača"
+  },
+  "ifAutoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Uloží reláciu obsahujúcu viacero okien, ktoré boli zatvorené za sebou."
+  },
+  "autoSaveWhenExitBrowserLimitLabel": {
+    "message": "Maximálny počet uložených"
+  },
+  "autoSaveWhenExitBrowserCaptionLabel": {
+    "message": "Maximálny počet takto uložených relácií."
+  },
+  "useTabTitleforAutoSaveLabel": {
+    "message": "Použiť názov stránky ako názov automaticky uloženej relácie"
+  },
+  "useTabTitleforAutoSaveCaptionLabel": {
+    "message": "Pri automatickom ukladaní relácie použije ako názov relácie titulok otvorenej stránky."
+  },
+  "backupLabel": {
+    "message": "Záloha"
+  },
+  "ifBackupLabel": {
+    "message": "Ukladať zálohu"
+  },
+  "ifBackupCaptionLabel": {
+    "message": "Pri spustení prehliadača vytvorí záložný súbor relácií a uloží ho do priečinka na sťahovanie."
+  },
+  "individualBackupLabel": {
+    "message": "Samostatná záloha"
+  },
+  "individualBackupCaptionLabel": {
+    "message": "Každá relácia sa uloží do samostatného súboru.<br>Ak nie je zaškrtnuté, všetky relácie sa uložia do jedného súboru, čo môže zaťažiť vaše úložisko."
+  },
+  "backupFolderLabel": {
+    "message": "Miesto uloženia"
+  },
+  "backupFolderCaptionLabel": {
+    "message": "Určite priečinok na uloženie záložného súboru. Miesto uloženia je obmedzené na priečinok v rámci priečinka na sťahovanie prehliadača."
+  },
+  "downloadFolderLabel": {
+    "message": "Priečinok na sťahovanie"
+  },
+  "backupFilesLimitLabel": {
+    "message": "Maximálny počet uložených záloh"
+  },
+  "backupFilesLimitCaptionLabel": {
+    "message": "Keď počet záložných súborov prekročí túto hodnotu, najstaršie sa postupne odstránia."
+  },
+  "dateFormatLabel": {
+    "message": "Formát dátumu"
+  },
+  "dateFormatCaptionLabel": {
+    "message": "Príklad: YYYY.MM.DD HH:mm:ss"
+  },
+  "ifSavePrivateWindowLabel": {
+    "message": "Ukladať súkromné okno"
+  },
+  "ignoreUrlListLabel": {
+    "message": "Zoznam URL adries ignorovaných pri ukladaní relácie"
+  },
+  "ignoreUrlListCaptionLabel": {
+    "message": "Ak sa URL adresa karty zhoduje so zoznamom, nebude zaznamenaná v relácii. V zozname je možné použiť zástupný znak \"*\"."
+  },
+  "shouldSaveDeviceNameLabel": {
+    "message": "Uložiť názov zariadenia do relácie"
+  },
+  "shouldSaveDeviceNameCaptionLabel": {
+    "message": "Pri ukladaní relácie pridá názov zariadenia ako štítok. Pri používaní cloudovej synchronizácie ju tak môžete odlíšiť od relácií z iných zariadení."
+  },
+  "deviceNameLabel": {
+    "message": "Názov zariadenia"
+  },
+  "deviceNameCaptionLabel": {
+    "message": "Zadajte názov tohto zariadenia."
+  },
+  "applyDeviceNameLabel": {
+    "message": "Použiť názov zariadenia na existujúce relácie"
+  },
+  "applyDeviceNameCaptionLabel": {
+    "message": "Pridá názov zariadenia do všetkých uložených relácií."
+  },
+  "applyDeviceNameButtonLabel": {
+    "message": "Použiť názov zariadenia"
+  },
+  "applyDeviceNameConfirmLabel": {
+    "message": "Použiť názov zariadenia na všetky relácie?"
+  },
+  "compressFaviconUrlLabel": {
+    "message": "Komprimovať favicony"
+  },
+  "compressFaviconUrlCaptionLabel": {
+    "message": "Skomprimuje favicony pri ukladaní relácie."
+  },
+  "compressAllSessionsLabel": {
+    "message": "Komprimovať všetky relácie"
+  },
+  "compressAllSessionsCaptionLabel": {
+    "message": "Skomprimuje favicony všetkých aktuálne uložených relácií. Zníži to spotrebu pamäte a zrýchli načítavanie relácií."
+  },
+  "compressLabel": {
+    "message": "Komprimovať"
+  },
+  "compressAllSessionsConfirmLabel": {
+    "message": "Komprimovať všetky relácie?"
+  },
+  "compressingLabel": {
+    "message": "Komprimuje sa..."
+  },
+  "compressionCompleteLabel": {
+    "message": "Komprimácia dokončená."
+  },
+  "ifSavePrivateWindowCaptionLabel": {
+    "message": "Ak nie je zaškrtnuté, súkromné okno sa pri ukladaní relácie ignoruje."
+  },
+  "ifSupportTstLabel": {
+    "message": "Podpora Tree Style Tab"
+  },
+  "ifSupportTstCaptionLabel": {
+    "message": "Obnoví stav stromu rozšírenia Tree Style Tab.<br>Keď je táto voľba zapnutá, obnovenie relácie trvá dlhšie."
+  },
+  "tstDelayLabel": {
+    "message": "Oneskorenie pri obnove stromu (v milisekundách)"
+  },
+  "saveTabGroupsLabel": {
+    "message": "Ukladať skupiny kariet"
+  },
+  "saveTabGroupsCaptionLabel": {
+    "message": "Uloží a obnoví stav skupín kariet."
+  },
+  "tstDelayCaptionLabel": {
+    "message": "Na obnovenie stavu stromu je potrebný čas čakania na otvorenie karty. Ak sa strom neobnoví správne, zvýšte túto hodnotu."
+  },
+  "truncateTitleLabel": {
+    "message": "Zobraziť názov relácie na jednom riadku"
+  },
+  "truncateTitleCaptionLabel": {
+    "message": "Ak sa názov relácie v zozname relácií rozťahuje na viac riadkov, skráti sa a zobrazí na jednom riadku."
+  },
+  "cloudSyncLabel": {
+    "message": "Cloudová synchronizácia"
+  },
+  "enabledCloudSyncLabel": {
+    "message": "Zapnúť cloudovú synchronizáciu (Beta)"
+  },
+  "enabledCloudSyncCaptionLabel": {
+    "message": "Uloží relácie na Google Drive™ a synchronizuje ich s ostatnými počítačmi."
+  },
+  "syncingLabel": {
+    "message": "Synchronizuje sa"
+  },
+  "downloadingLabel": {
+    "message": "Sťahuje sa"
+  },
+  "uploadingLabel": {
+    "message": "Nahráva sa"
+  },
+  "deletingLabel": {
+    "message": "Odstraňuje sa"
+  },
+  "syncCompletedLabel": {
+    "message": "Synchronizácia dokončená."
+  },
+  "signInRequiredLabel": {
+    "message": "Pre cloudovú synchronizáciu je potrebné prihlásenie."
+  },
+  "signInLabel": {
+    "message": "Prihlásiť sa"
+  },
+  "signOutLabel": {
+    "message": "Odhlásiť sa"
+  },
+  "enabledAutoSyncLabel": {
+    "message": "Automaticky synchronizovať"
+  },
+  "enabledAutoSyncCaptionLabel": {
+    "message": "Vykoná cloudovú synchronizáciu pri spustení prehliadača a pri uložení relácie."
+  },
+  "includesAutoSaveToSyncLabel": {
+    "message": "Synchronizovať automaticky uložené relácie"
+  },
+  "includesAutoSaveToSyncCaptionLabel": {
+    "message": "Nahráva/sťahuje automaticky uložené relácie pri cloudovej synchronizácii."
+  },
+  "popupLabel": {
+    "message": "Vyskakovacie okno"
+  },
+  "openButtonBehaviorLabel": {
+    "message": "Správanie tlačidla Otvoriť"
+  },
+  "openButtonBehaviorCaptionLabel": {
+    "message": "Vyberte predvolené správanie tlačidla otvorenia."
+  },
+  "saveButtonBehaviorLabel": {
+    "message": "Správanie tlačidla Uložiť"
+  },
+  "saveButtonBehaviorCaptionLabel": {
+    "message": "Vyberte predvolené správanie tlačidla uloženia."
+  },
+  "isShowOpenButtonsLabel": {
+    "message": "Zobraziť tlačidlá otvoriť/odstrániť v zozname relácií"
+  },
+  "isShowOpenButtonsCaptionLabel": {
+    "message": "Zobrazí tlačidlá otvoriť/odstrániť, keď je kurzor nad zoznamom relácií."
+  },
+  "sizeLabel": {
+    "message": "Veľkosť"
+  },
+  "popupSizeCaptionLabel": {
+    "message": "Zadajte veľkosť vyskakovacieho okna."
+  },
+  "widthLabel": {
+    "message": "Šírka"
+  },
+  "heightLabel": {
+    "message": "Výška"
+  },
+  "sidebarWidthLabel": {
+    "message": "Šírka bočného panela"
+  },
+  "isSessionListOpenInTabLabel": {
+    "message": "Otvoriť zoznam relácií na karte"
+  },
+  "isSessionListOpenInTabCaptionLabel": {
+    "message": "Otvorí zoznam relácií na karte po kliknutí na tlačidlo na paneli s nástrojmi."
+  },
+  "themeLabel": {
+    "message": "Motív"
+  },
+  "themeCaptionLabel": {
+    "message": "Zadajte farebnú schému."
+  },
+  "lightLabel": {
+    "message": "Svetlý"
+  },
+  "darkLabel": {
+    "message": "Tmavý"
+  },
+  "systemLabel": {
+    "message": "Systémový"
+  },
+  "otherLabel": {
+    "message": "Iné"
+  },
+  "isShowOptionsPageWhenUpdatedLabel": {
+    "message": "Zobraziť stránku nastavení pri aktualizácii"
+  },
+  "isShowOptionsPageWhenUpdatedCaptionLabel": {
+    "message": "Zobrazí stránku nastavení po aktualizácii Tab Session Manager. Rýchlo tak zistíte obsah aktualizácie."
+  },
+  "NotificationOnUpdateLabel": {
+    "message": "Tab Session Manager bol aktualizovaný!"
+  },
+  "seeMoreLabel": {
+    "message": "Zobraziť viac"
+  },
+  "NotificationOnUpdateCaptionLabel": {
+    "message": "Kliknutím zobrazíte informácie o aktualizácii."
+  },
+  "isDebugModeLabel": {
+    "message": "Zapnúť režim ladenia"
+  },
+  "isDebugModeCaptionLabel": {
+    "message": "Keď je zapnutý režim ladenia, záznam sa vypisuje do debuggera."
+  },
+  "exportSettingsLabel": {
+    "message": "Exportovať nastavenia"
+  },
+  "exportSettingsCaptionLabel": {
+    "message": "Uloží nastavenia ako súbor json do počítača."
+  },
+  "importSettingsLabel": {
+    "message": "Importovať nastavenia"
+  },
+  "importSettingsCaptionLabel": {
+    "message": "Načíta súbor s nastaveniami uložený v počítači."
+  },
+  "resetSettingsLabel": {
+    "message": "Obnoviť predvolené nastavenia"
+  },
+  "resetSettingsCaptionLabel": {
+    "message": "Obnoví všetky nastavenia na predvolené."
+  },
+  "resetSettingsButtonLabel": {
+    "message": "Obnoviť"
+  },
+  "importLabel": {
+    "message": "Importovať relácie"
+  },
+  "importCaptionLabel": {
+    "message": "Načíta relácie uložené v počítači a pridá ich do zoznamu relácií."
+  },
+  "importCaptionLabel2": {
+    "message": "Podporované súbory:"
+  },
+  "importCaptionLabel3": {
+    "message": "Ako importovať relácie z iných rozšírení"
+  },
+  "importButtonLabel": {
+    "message": "Prehľadávať..."
+  },
+  "importSaveButtonLabel": {
+    "message": "Importovať"
+  },
+  "importClearButtonLabel": {
+    "message": "Vymazať"
+  },
+  "urlImportLabel": {
+    "message": "Importovať zoznam URL adries"
+  },
+  "urlImportCaptionLabel": {
+    "message": "Vytvorí reláciu zo zoznamu URL adries a pridá ju do zoznamu relácií.<br>Formát: &lt;URL&gt; &lt;titulok stránky (voliteľné)&gt;"
+  },
+  "exportLabel": {
+    "message": "Exportovať relácie"
+  },
+  "exportCaptionLabel": {
+    "message": "Uloží všetky relácie do počítača."
+  },
+  "exportButtonLabel": {
+    "message": "Exportovať"
+  },
+  "removeSessionsLabel": {
+    "message": "Odstrániť relácie"
+  },
+  "removeSessionsCaptionLabel": {
+    "message": "Odstráni všetky relácie."
+  },
+  "removeSessionsButtonLabel": {
+    "message": "Odstrániť"
+  },
+  "keyboardShortcutsLabel": {
+    "message": "Klávesové skratky"
+  },
+  "setKeyboardShortCutsMessage": {
+    "message": "Nastavte klávesové skratky."
+  },
+  "typeShortcutMessage": {
+    "message": "Zadajte skratku"
+  },
+  "typeLetterMessage": {
+    "message": "Zadajte písmeno"
+  },
+  "includeModifierKeysMessage": {
+    "message": "Zahrňte Ctrl alebo Alt"
+  },
+  "includeMacModifierKeysMessage": {
+    "message": "Zahrňte Command, Ctrl alebo Alt"
+  },
+  "invalidLetterMessage": {
+    "message": "Toto písmeno nie je možné použiť"
+  },
+  "invalidShortcutMessage": {
+    "message": "Túto skratku nie je možné použiť"
+  },
+  "openPopupDescription": {
+    "message": "Otvoriť vyskakovacie okno panela s nástrojmi"
+  },
+  "saveCurrentWindowDescription": {
+    "message": "Uložiť reláciu (iba aktuálne okno)"
+  },
+  "saveAllWindowDescription": {
+    "message": "Uložiť reláciu (všetky okná)"
+  },
+  "exportSessionsDescription": {
+    "message": "Exportovať všetky relácie"
+  },
+  "clear": {
+    "message": "Vymazať"
+  },
+  "reset": {
+    "message": "Obnoviť"
+  },
+  "backersLabel": {
+    "message": "Podporovatelia"
+  },
+  "LicenseLabel": {
+    "message": "Licencia"
+  },
+  "donationLabel": {
+    "message": "Prosím, prispejte"
+  },
+  "donationCaptionLabel": {
+    "message": "Ďakujem, že používate Tab Session Manager.<br>Vaša podpora bude veľkým povzbudením pri ďalšom vývoji tohto doplnku.<br>Ak sa vám Tab Session Manager páči, budem rád, ak zvážite príspevok."
+  },
+  "amazonTitleLabel": {
+    "message": "Darčekové karty amazon.co.jp"
+  },
+  "sponsorsLabel": {
+    "message": "Sponzori"
+  },
+  "addonPageLabel": {
+    "message": "Stránka doplnku"
+  },
+  "extensionPageLabel": {
+    "message": "Stránka rozšírenia"
+  },
+  "firefoxLabel": {
+    "message": "Firefox Add-ons"
+  },
+  "chromeLabel": {
+    "message": "Chrome Web Store"
+  },
+  "edgeLabel": {
+    "message": "Edge Add-ons"
+  },
+  "privacyPolicyLabel": {
+    "message": "Zásady ochrany osobných údajov"
+  },
+  "importMessage": {
+    "message": "Relácie boli importované."
+  },
+  "readFailedMessage": {
+    "message": "Čítanie zlyhalo"
+  },
+  "warningRemoveAllMessage": {
+    "message": "Odstránenie všetkých relácií. Naozaj chcete pokračovať?"
+  },
+  "sessionLabel": {
+    "message": "Relácia"
+  },
+  "amazonUrl": {
+    "message": "https://www.amazon.co.jp/dp/B004N3APGO?language=en_US"
+  },
+  "addonUrl": {
+    "message": "https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/?src=optionpage"
+  },
+  "replacedPageMessage": {
+    "message": "Túto stránku nie je možné otvoriť pomocou Tab Session Manager."
+  },
+  "copyUrlLabel": {
+    "message": "Kopírovať URL adresu"
+  },
+  "copiedLabel": {
+    "message": "Skopírované."
+  }
+}
