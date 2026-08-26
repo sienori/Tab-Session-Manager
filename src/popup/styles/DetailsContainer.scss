@@ -1,8 +1,13 @@
 .detailsContainer {
-  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
   margin-top: 10px;
   .windowContainer {
     margin-bottom: 10px;
+
+    &.virtualRow {
+      margin-bottom: 0;
+    }
     .windowInfo,
     .tabs .tabContainer {
       display: flex;
