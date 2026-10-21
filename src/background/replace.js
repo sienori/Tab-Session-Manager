@@ -56,21 +56,32 @@ export function returnReplaceURL(state, title, url, favIconUrl) {
   return retUrl;
 }
 
-export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) {
+// Keep at most one pending retry per window, so repeated tab/focus events do not stack up polling loops
+const replaceTimers = {};
+const MAX_REPLACE_RETRIES = 50;
+
+export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT, retryCount = 0) {
+  clearTimeout(replaceTimers[windowId]);
+  delete replaceTimers[windowId];
+
   const info = await browser.tabs
     .query({
       active: true,
       windowId: windowId
     })
     .catch(e => {});
-  if (info && !info[0]) return;
-
-  if (!info || info[0].status != "complete") {
-    setTimeout(() => replacePage(windowId), 100);
-    return;
-  }
+  if (!info || !info[0]) return;
 
   const parameter = returnReplaceParameter(info[0].url);
+
+  // Only the replaced page (or a new tab that has not committed its URL yet) needs to be waited for
+  if (!parameter.isReplaced && info[0].url != "about:blank") return;
+
+  if (info[0].status != "complete") {
+    if (retryCount < MAX_REPLACE_RETRIES)
+      replaceTimers[windowId] = setTimeout(() => replacePage(windowId, retryCount + 1), 100);
+    return;
+  }
 
   if (parameter.isReplaced && parameter.state == "redirect") {
     log.info(logDir, "replacePage()", windowId);
@@ -78,7 +89,7 @@ export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) 
     updateProperties.url = parameter.url;
 
     const bInfo = browserInfo();
-    const isEnabledLoadReplace = bInfo.name == "Firefox" && bInfo.version >= "57";
+    const isEnabledLoadReplace = bInfo.name == "Firefox" && Number(bInfo.version) >= 57;
     if (isEnabledLoadReplace) updateProperties.loadReplace = true;
 
     browser.tabs
