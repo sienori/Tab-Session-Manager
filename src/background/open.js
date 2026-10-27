@@ -16,7 +16,7 @@ export async function openSession(session, property = "openInNewWindow") {
     const openInCurrentWindow = async () => {
       log.log(logDir, "openSession() openInCurrentWindow()");
       const currentWindow = await removeNowOpenTabs();
-      createTabs(session, win, currentWindow);
+      await createTabs(session, win, currentWindow);
     };
     const openInNewWindow = async () => {
       log.log(logDir, "openSession() openInNewWindow()");
@@ -67,14 +67,14 @@ export async function openSession(session, property = "openInNewWindow") {
         browser.windows.update(currentWindow.id, { state: "maximized" });
       }
 
-      createTabs(session, win, currentWindow);
+      await createTabs(session, win, currentWindow);
     };
     const addToCurrentWindow = async () => {
       log.log(logDir, "openSession() addToCurrentWindow()");
       const currentTabs = await browser.tabs.query({ currentWindow: true });
       const currentWinId = currentTabs[0].windowId;
       const currentWindow = await browser.windows.get(currentWinId, { populate: true });
-      createTabs(session, win, currentWindow, true);
+      await createTabs(session, win, currentWindow, true);
     };
 
     if (isFirstWindowFlag) {
@@ -91,7 +91,7 @@ export async function openSession(session, property = "openInNewWindow") {
           break;
       }
     } else {
-      openInNewWindow();
+      await openInNewWindow();
     }
   }
 }
@@ -188,32 +188,27 @@ async function createTabs(session, win, currentWindow, isAddtoCurrentWindow = fa
   if (currentWindow.tabs[0].pinned) {
     sortedTabs.forEach(tab => tab.index++);
   }
-  let openedTabs = [];
   let tabNumber = 0;
   for (let tab of sortedTabs) {
-    const openedTab = openTab(tab, currentWindow, isAddtoCurrentWindow)
-      .then(() => {
-        tabNumber++;
-        if (tabNumber == 1 && !isAddtoCurrentWindow) browser.tabs.remove(firstTabId);
-        if (tabNumber == sortedTabs.length) replacePage(currentWindow.id);
-      })
-      .catch(() => {});
-    openedTabs.push(openedTab);
-    if (getSettings("ifSupportTst")) await openedTab;
+    try {
+      await openTab(tab, currentWindow, isAddtoCurrentWindow);
+      tabNumber++;
+      if (tabNumber == 1 && !isAddtoCurrentWindow) await browser.tabs.remove(firstTabId);
+    } catch (e) {
+      log.error(logDir, "createTabs() open", e);
+    }
   }
+  replacePage(currentWindow.id);
 
   if (isEnabledTabGroups && getSettings("saveTabGroupsV2")) {
-    await Promise.all(openedTabs);
     createTabGroups(currentWindow.id, sortedTabs, session.tabGroups || []);
   }
 
   if (isEnabledWindowTitle) {
-    await Promise.all(openedTabs);
     setWindowTitle(session, win, currentWindow);
   }
 
   if (isTrackingSession(session.tag)) {
-    await Promise.all(openedTabs);
     startTracking(session.id, win, currentWindow.id);
   }
 }
@@ -296,8 +291,9 @@ function openTab(tab, currentWindow, isOpenToLastIndex = false) {
         else createOption.url = returnReplaceURL("open_faild", tab.title, tab.url, tab.favIconUrl);
         const newTab = await browser.tabs.create(createOption).catch(e => {
           log.error(logDir, "openTab() tryOpen() create", e);
-          reject();
+          reject(e);
         }); //タブを開けなかった場合はreject
+        if (!newTab) return;
         tabList[tab.id] = newTab.id;
         resolve();
       }
