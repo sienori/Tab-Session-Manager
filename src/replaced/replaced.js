@@ -1,4 +1,5 @@
 import browser from "webextension-polyfill";
+import log from "loglevel";
 import "./replaced.scss";
 
 const sanitaize = {
@@ -34,9 +35,7 @@ document.head.insertAdjacentHTML(
   "beforeend",
   `<link rel="shortcut icon" href="${sanitaize.encode(parameter.favIconUrl)}">`
 );
-const theme = ["light", "dark", "system"].includes(parameter.theme)
-  ? parameter.theme
-  : "light";
+const theme = ["light", "dark", "system"].includes(parameter.theme) ? parameter.theme : "light";
 document.body.classList.add(theme + "-theme");
 
 const copy = () => {
@@ -53,6 +52,17 @@ if (parameter.state == "open_faild") {
   document.getElementsByClassName("replacedPageMessage")[0].innerText =
     browser.i18n.getMessage("replacedPageMessage");
 }
+
+const restoreWhenVisible = async () => {
+  if (document.visibilityState !== "visible") return;
+  try {
+    await browser.runtime.sendMessage({ message: "replacePage" });
+  } catch (error) {
+    log.warn("replaced/replaced", "restoreWhenVisible()", error);
+  }
+};
+document.addEventListener("visibilitychange", restoreWhenVisible);
+restoreWhenVisible();
 
 function returnReplaceParameter(url) {
   let parameter = {};

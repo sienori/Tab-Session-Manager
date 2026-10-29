@@ -4,15 +4,17 @@ import log from "loglevel";
 import { getSettings } from "../settings/settings";
 
 const logDir = "background/replace";
+const pendingTabs = new Set();
 
-export function returnReplaceParameter(url) {
+export function returnReplaceParameter(url = "") {
   let parameter = {};
+  const pageUrl = url.split("?")[0];
   parameter.isReplaced =
-    url.includes(browser.runtime.getURL("replaced/index.html")) ||
-    url.includes(browser.runtime.getURL("replaced/replaced.html"));
+    pageUrl === browser.runtime.getURL("replaced/index.html") ||
+    pageUrl === browser.runtime.getURL("replaced/replaced.html");
 
   if (parameter.isReplaced) {
-    let paras = url.split("?")[1].split("&");
+    let paras = (url.split("?")[1] || "").split("&");
     for (let p of paras) {
       parameter[p.split("=")[0]] = decodeURIComponent(p.split("=")[1]);
     }
@@ -56,47 +58,66 @@ export function returnReplaceURL(state, title, url, favIconUrl) {
   return retUrl;
 }
 
-export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT) {
-  const info = await browser.tabs
-    .query({
-      active: true,
-      windowId: windowId
-    })
-    .catch(e => {});
-  if (info && !info[0]) return;
-
-  if (!info || info[0].status != "complete") {
-    setTimeout(() => replacePage(windowId), 100);
+export async function replacePage(windowId = browser.windows.WINDOW_ID_CURRENT, tabId) {
+  let tab;
+  try {
+    tab =
+      tabId === undefined
+        ? (await browser.tabs.query({ active: true, windowId }))[0]
+        : await browser.tabs.get(tabId);
+    if (!tab || pendingTabs.has(tab.id)) return;
+    tabId = tab.id;
+    pendingTabs.add(tabId);
+  } catch (error) {
+    log.warn(logDir, "replacePage()", error);
     return;
   }
 
-  const parameter = returnReplaceParameter(info[0].url);
+  try {
+    for (let attempt = 0; attempt < 3; attempt++) {
+      if (attempt > 0) tab = await browser.tabs.get(tabId);
+      if (!tab.active || tab.status !== "complete") return;
+      const parameter = returnReplaceParameter(tab.url);
+      if (!parameter.isReplaced || !parameter.url) return;
 
-  if (parameter.isReplaced && parameter.state == "redirect") {
-    log.info(logDir, "replacePage()", windowId);
-    let updateProperties = {};
-    updateProperties.url = parameter.url;
+      log.info(logDir, "replacePage()", tabId);
+      const updateProperties = { url: parameter.url };
+      const bInfo = browserInfo();
+      if (bInfo.name == "Firefox" && parseInt(bInfo.version, 10) >= 57) {
+        updateProperties.loadReplace = true;
+      }
 
-    const bInfo = browserInfo();
-    const isEnabledLoadReplace = bInfo.name == "Firefox" && bInfo.version >= "57";
-    if (isEnabledLoadReplace) updateProperties.loadReplace = true;
-
-    browser.tabs
-      .update(info[0].id, updateProperties)
-      .then(() => {
-        if (parameter.openInReaderMode == "true") {
-          toggleReaderMode(info[0].id);
+      try {
+        await browser.tabs.update(tabId, updateProperties);
+        if (parameter.openInReaderMode == "true") toggleReaderMode(tabId);
+        return;
+      } catch (error) {
+        log.warn(logDir, "replacePage()", tabId, error);
+        if (
+          String(error.message || error).includes("Tabs cannot be edited right now") &&
+          attempt < 2
+        ) {
+          await new Promise(resolve => setTimeout(resolve, 100));
+          continue;
         }
-      })
-      .catch(() => {
-        updateProperties.url = returnReplaceURL(
-          "open_faild",
-          parameter.title,
-          parameter.url,
-          parameter.favIconUrl
-        );
-        browser.tabs.update(info[0].id, updateProperties);
-      });
+        if (parameter.state != "open_faild") {
+          await browser.tabs.update(tabId, {
+            ...updateProperties,
+            url: returnReplaceURL(
+              "open_faild",
+              parameter.title,
+              parameter.url,
+              parameter.favIconUrl
+            )
+          });
+        }
+        return;
+      }
+    }
+  } catch (error) {
+    log.warn(logDir, "replacePage()", tabId, error);
+  } finally {
+    pendingTabs.delete(tabId);
   }
 }
 

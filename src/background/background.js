@@ -12,7 +12,7 @@ import {
   autoSaveRegular
 } from "./autoSave";
 import Sessions from "./sessions";
-import { replacePage } from "./replace";
+import { replacePage, returnReplaceParameter } from "./replace";
 import importSessions from "./import";
 import { backupSessions, resetLastBackupTime } from "./backup";
 import {
@@ -72,6 +72,15 @@ const onMessageListener = async (request, sender, sendResponse) => {
   await init();
   log.info(logDir, "onMessageListener()", request);
   switch (request.message) {
+    case "replacePage":
+      if (
+        sender.id === browser.runtime.id &&
+        sender.tab &&
+        returnReplaceParameter(sender.url).isReplaced
+      ) {
+        return replacePage(sender.tab.windowId, sender.tab.id);
+      }
+      return;
     case "save": {
       const afterSession = await saveSession(request.session);
       recordChange(null, afterSession);
@@ -183,9 +192,10 @@ const onMessageListener = async (request, sender, sendResponse) => {
   }
 };
 
-const handleReplace = async () => {
+const handleReplace = async (windowId, tabId) => {
+  if (windowId === browser.windows.WINDOW_ID_NONE) return;
   await init();
-  replacePage();
+  return replacePage(windowId, tabId);
 };
 
 const onChangeStorageListener = async (changes, areaName) => {
@@ -212,8 +222,17 @@ browser.runtime.onInstalled.addListener(onInstalledListener);
 browser.runtime.onUpdateAvailable.addListener(onUpdateAvailableListener);
 browser.runtime.onMessage.addListener(onMessageListener);
 browser.commands.onCommand.addListener(onCommandListener);
-browser.tabs.onActivated.addListener(handleReplace);
+browser.tabs.onActivated.addListener(({ windowId, tabId }) => handleReplace(windowId, tabId));
 browser.windows.onFocusChanged.addListener(handleReplace);
+browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (
+    tab.active &&
+    changeInfo.status === "complete" &&
+    returnReplaceParameter(tab.url).isReplaced
+  ) {
+    return handleReplace(tab.windowId, tabId);
+  }
+});
 browser.tabs.onUpdated.addListener(handleTabUpdated);
 browser.tabs.onRemoved.addListener(handleTabRemoved);
 browser.tabs.onCreated.addListener(setUpdateTempTimer);
